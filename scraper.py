@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 # --- Configuration ---
-OUTPUT_DIR = 'output'
+OUTPUT_DIR = 'outputs'
 URLS_FILE = 'urls.txt'
 
 def setup_directory():
