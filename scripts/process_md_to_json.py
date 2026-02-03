@@ -6,7 +6,7 @@ import datetime
 import sys
 
 # Configuration
-INPUT_DIR = 'markdown_output'  # Where your .md files live
+INPUT_DIR = 'IPFR-Webpages'  # Where your .md files live
 OUTPUT_DIR = 'json_output'     # Where JSON files will go
 CSV_PATH = '260203_IPFRMetaTable.csv'
 REPORT_PATH = 'after_action_report.txt'
