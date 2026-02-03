@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "What happens in an IP Australia hearing?",
+  "description": "",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "E1018"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-03",
+  "dateModified": "2026-02-03",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": [
+      "Australian Small Business Owners",
+      "\"IP Basics\""
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "mainEntity": [
+    {
+      "@type": "Service",
+      "provider": {
+        "@type": "Organization",
+        "name": "Third-Party Provider"
+      },
+      "description": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It’s handled by a hearing officer from IP Australia who specialises in the relevant field of IP law. \n\nThese hearings can deal with both *inter partes* (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and *ex partes* matters such as an IP applicant challenging an examination decision made by IP Australia. \n\nThe hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.  \n\nProcess steps: \n\n* (*For inter partes matters*) File an opposition: You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.\n* Request a hearing: You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.\n* Hearing: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.\n* Decision: The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.\n\nOutcomes and next steps: \n\n* The decision may uphold, refuse, or change the scope of the IP right/s in question.\n* Appeals: If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.",
+      "serviceOutput": {}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happens in an IP Australia hearing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with What happens in an IP Australia hearing?",
+      "step": []
+    }
+  ],
+  "relatedLink": [
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings"
+  ],
+  "citation": {
+    "@type": "Legislation",
+    "name": "\"Any dispute\""
+  }
+}
