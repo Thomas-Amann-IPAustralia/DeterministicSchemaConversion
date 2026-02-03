@@ -1,0 +1,152 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "RegisterYourRightUseYourDesignExclusively",
+  "alternativeHeadline": "",
+  "description": "If you create a new look for a product, registering the design with IP Australia may grant you exclusive commercial rights. The registration protects the overal",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "Dxxxx"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-03",
+  "dateModified": "2026-02-03",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Intellectual Property Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "RegisterYourRightUseYourDesignExclusively",
+      "description": "If you create a new look for a product, registering the design with IP Australia may grant you exclusive commercial rights. The registration protects the overall appearance that results from visual features such as shape, configuration, pattern or ornamentation applied to a product.\u00a0\n\nThe process begins with an online application through [IP Australia\u2019s Online Services](https://portal.ipaustralia.gov.au/login). You upload clear drawings (or photographs) of the design, identify the product it is applied to, choose whether to seek registration immediately or defer registration, and pay the application fee. Australia works on a first-to-file basis under the Designs Act 2003, so applying before you disclose the design publicly can be critical. Once the formalities check is complete, the design is registered and published, and a public record is created\u00a0\n\nRegistration alone does not give you enforceable rights against suspected infringers. You, or any third party, may later request certification to test whether the design is new and distinctive over earlier designs. Only certified designs can be enforced in court; uncertified registrations provide deterrence but not immediate enforceability. For more information about design certification, please see [Request Certification for a Registered Design](https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design)\u00a0\u00a0\n\nA registered design lasts up to ten years: an initial five-year term that can be renewed once for a further five years. A six\u2011month grace period applies for late renewal after the initial term.\u00a0\n\nIf your design has been disclosed to the public before you apply to protect it, you may still be able to secure a design right if you meet the requirements of the grace period. The grace period allows a design to be shared publicly (under certain conditions) without impacting the ability to secure a design right in Australia. It can benefit those who:\u00a0\n\n* Accidentally publish their design\n* Were unaware they needed to file for protection before disclosure.\n\nYou'll need to **submit your application for a design right within 12 months of disclosing your design** if you want to claim the grace period.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "Organization",
+        "name": "Third-Party Provider"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Registration creates a dated, searchable public record of ownership. * Registering a design gives you a period within which infringement may occur. * Exclusive rights may deter competitors and improve negotiating power."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Application fees are non-refundable even if the design is later found to be invalid. * Publication reveals your design to competitors, which may prompt challenges or copying overseas. * You cannot enforce the right until it is certified, so extra examination fees and time may apply. * If your claims are unfounded, such as commencing enforcing based on an uncertified design right, alleged infringers may commence legal proceedings for unjustified threats. * Failing to renew after five years (including the six\u2011month grace period) will cause the registration to cease and the design enters the public domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The design is registered and later certified, giving you enforceable rights. * The design is registered but never certified, providing a deterrent against its use by others. * Examination finds the design not new or distinctive and issues are raised. Failure to overcome all the issues in time means the registration ceases. * A hearing is requested to further rule on the issues. * The application is withdrawn, amended or allowed to lapse if fees or formalities are not met."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Most small businesses file online and pay $200 for the first design; $150 for each additional design in the same application. * Requesting examination (certification) currently costs $500 per request by the registered owner. * Additional fees apply for a renewal at year 5 (and within the six\u2011month grace period). * If you engage an IP professional, expect professional fees on top of official charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registering a design in Australia takes at least 2 months. Certifying a design is discretionary and, when requested, will take approximately 13 weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any individual or business that creates a new and distinctive design."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+    "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+    "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
+  ]
+}

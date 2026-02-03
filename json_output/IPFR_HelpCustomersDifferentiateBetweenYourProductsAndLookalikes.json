@@ -1,0 +1,187 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "HelpCustomersDifferentiateBetweenYourProductsAndLookalikes",
+  "alternativeHeadline": "",
+  "description": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of bein",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "Dxxxx"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-03",
+  "dateModified": "2026-02-03",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Intellectual Property Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "HelpCustomersDifferentiateBetweenYourProductsAndLookalikes",
+      "description": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied.\u00a0\n\nWhile it\u2019s a legal question as to whether something infringes your rights, it\u2019s often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart \u2014 and how to identify a fake \u2014 can reduce that risk.\u00a0\n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues.\u00a0\n\nCustomer education can include:\u00a0\n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools\u2014such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the \u00ae symbol to indicate a\u00a0*trade mark*\u00a0has been registered, or using a \u00a9 symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "Organization",
+        "name": "Third-Party Provider"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Helps customers choose your product over confusing or inferior copies. * Supports your brand positioning and long-term customer loyalty. * Makes suspected infringement easier to detect and explain. * Can reduce the incentive for others to copy your product if consumers avoid fakes. * May already align with your existing marketing and advertising spend. * Non-confrontational way to respond when you suspect copying. * Can diversify your business\u2019 sources of value outside of reliance on registered IP alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Careless wording may be seen as an attack on a competitor. * Poorly designed campaigns might confuse or alienate customers. * May have limited impact if not paired with broader brand strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are few easily-measurable outcomes from customer education. These may include:\u00a0  * Customers become better at identifying and choosing your genuine products. * Reduced sales of counterfeit or lookalike products. * For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs depend on how much new work is required. Many businesses already spend on brand marketing, and customer education may be integrated into that. If you engage a marketing firm or IP commercialisation expert, additional fees apply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Minor updates to packaging or website content: A few hours to a few weeks. * Developing a new customer education campaign: Several weeks to a few months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* This approach is most applicable for business that offer products or services to the public. * Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip"
+  ]
+}

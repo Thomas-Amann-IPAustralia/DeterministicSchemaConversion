@@ -1,0 +1,90 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "CopyrightInfringement",
+  "alternativeHeadline": "",
+  "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement)",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "Dxxxx"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-03",
+  "dateModified": "2026-02-03",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Intellectual Property Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "CopyrightInfringement",
+      "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement)\"",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "Organization",
+        "name": "Third-Party Provider"
+      }
+    }
+  ]
+}
