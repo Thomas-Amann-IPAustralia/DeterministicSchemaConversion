@@ -45,11 +45,19 @@ def parse_markdown_file(filepath, meta_db, report_log):
         report_log.append(f"[SKIP] {filename}: No 'PageURL' found in markdown header.")
         return None
 
-    page_url = url_match.group(1).strip()
+    # FIX: Clean the URL if it comes in as a markdown link [url](url)
+    raw_url_string = url_match.group(1).strip()
+    if '](' in raw_url_string:
+        # Extracts https://... from [https://...](https://...)
+        page_url = raw_url_string.split('](')[1].rstrip(')')
+    else:
+        page_url = raw_url_string
+
     meta_data = meta_db.get(page_url)
     
     if not meta_data:
-        report_log.append(f"[SKIP] {filename}: URL '{page_url}' not found in CSV.")
+        # Log the exact mismatch to help debug
+        report_log.append(f"[SKIP] {filename}: Cleaned URL '{page_url}' not found in CSV keys.")
         return None
 
     # --- Phase 2: Archetype & Structure ---
