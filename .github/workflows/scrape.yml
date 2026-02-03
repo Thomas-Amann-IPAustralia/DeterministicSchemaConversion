@@ -1,10 +1,10 @@
 name: Manual Web Scraper
 
 on:
-  workflow_dispatch: # This allows the manual trigger button
+  workflow_dispatch: # Allows manual trigger
 
 permissions:
-  contents: write
+  contents: write # CRITICAL: Allows the Action to push changes to the repo
 
 jobs:
   scrape:
@@ -26,9 +26,16 @@ jobs:
       - name: Run Scraper
         run: python scraper.py
 
-      - name: Upload Output
-        uses: actions/upload-artifact@v4
-        with:
-          name: scraped-data
-          path: output/
-          retention-days: 5
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          
+          # Force add the outputs folder
+          git add outputs/
+          
+          # Commit changes (silently fail if no changes exist)
+          git commit -m "Auto-update scraped outputs" || echo "No changes to commit"
+          
+          # Push changes back to the repository
+          git push
