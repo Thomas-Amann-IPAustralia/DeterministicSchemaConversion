@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "IAmNotHappyIpAustraliaWhatCanIDo",
+  "alternativeHeadline": "",
+  "description": "If you are not happy with the service you received from IP Australia, there are ways you can raise your concerns. A complaint allows you to explain what went wr",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "Dxxxx"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-03",
+  "dateModified": "2026-02-03",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Intellectual Property Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "IAmNotHappyIpAustraliaWhatCanIDo",
+      "description": "If you are not happy with the service you received from IP Australia, there are ways you can raise your concerns. A complaint allows you to explain what went wrong and what outcome you would like.\u00a0\n\nComplaints are handled separately from IP decisions. Making a complaint does not replace or pause any formal review or appeal deadlines. If you want to challenge a formal decision (for example, an objection being raised for a trade mark or patent), you need to use the separate review and appeal processes available. **For more information about this process please see here:** [**What can I do if I disagree with IP Australia\u2019s examination decision? | IP Australia First Response**](https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision).\n\nWhen making a complaint, it helps if you include:\u00a0\n\n* your name and contact details\n* details of the issue, including any reference numbers\n* what outcome you are hoping for (such as an explanation, correction, or apology)\n* any evidence or documents that support your complaint.\n\nIP Australia staff are required to follow the Australian Public Service (APS) Code of Conduct. This means they must behave honestly, act with care and diligence, and treat everyone with respect and courtesy. If you feel this did not happen, you may raise that in your complaint.\u00a0\n\nYou can start by contacting IP Australia directly through their online feedback form or by using the [contact channels](https://www.ipaustralia.gov.au/about-us/contact-us)  on their website. If you are not satisfied with the response, you may take your complaint to [the Commonwealth Ombudsman](https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint), who handles complaints about Australian Government agencies. The Ombudsman can review how your complaint was managed but cannot overturn IP Australia\u2019s formal decisions.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "Organization",
+        "name": "Third-Party Provider"
+      }
+    }
+  ],
+  "relatedLink": [
+    "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+    "https://www.ipaustralia.gov.au/feedback-form",
+    "https://www.ipaustralia.gov.au/about-us/contact-us",
+    "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
+    "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint"
+  ]
+}
