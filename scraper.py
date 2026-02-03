@@ -1,166 +1,133 @@
-import os
-import re
-import time
 import json
+import os
+import sys
+import time
 import random
+import logging
+import re
+import trafilatura
 from selenium import webdriver
-from selenium_stealth import stealth
-from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium_stealth import stealth
 
 # --- Configuration ---
-OUTPUT_DIR = 'outputs'
-URLS_FILE = 'urls.txt'
+SOURCES_FILE = 'sources.json'
+OUTPUT_DIR = 'IPFR-Webpages'
 
-def setup_directory():
-    """Ensures the output directory exists."""
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-def load_urls():
-    """Reads URLs from the external text file."""
-    if not os.path.exists(URLS_FILE):
-        print(f"Error: {URLS_FILE} not found.")
-        return []
-    
-    with open(URLS_FILE, 'r', encoding='utf-8') as f:
-        urls = [line.strip() for line in f if line.strip() and not line.startswith('#')]
-    return urls
-
-def slugify_filename(url):
-    """Converts a URL into a safe filename."""
-    clean_name = re.sub(r'^https?://(www\.)?', '', url)
-    return re.sub(r'[^a-zA-Z0-9]+', '_', clean_name).strip('_') + ".txt"
+# --- Logging ---
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stdout)]
+)
+logger = logging.getLogger("Scraper")
 
 def initialize_driver():
-    """Initializes a stealth-configured WebDriver."""
+    """Sets up a stealthy Headless Chrome driver."""
+    logger.info("  -> Initializing Selenium Driver...")
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless=new')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
-    chrome_options.add_argument('--disable-blink-features=AutomationControlled')
     chrome_options.add_argument('--window-size=1920,1080')
     chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36')
     
-    service = ChromeService(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-
-    stealth(driver,
-            languages=["en-US", "en"],
-            vendor="Google Inc.",
-            platform="Win32",
-            webgl_vendor="Intel Inc.",
-            renderer="Intel Iris OpenGL Engine",
-            fix_hairline=True,
-            )
-    return driver
-
-def get_last_updated_date(soup):
-    """
-    Attempts to find the Last Modified Date using multiple strategies.
-    Returns the date string or 'Not Found'.
-    """
-    
-    # Strategy 1: Schema.org JSON-LD (The Gold Standard)
-    scripts = soup.find_all('script', type='application/ld+json')
-    for script in scripts:
-        try:
-            if script.string:
-                data = json.loads(script.string)
-                if isinstance(data, dict):
-                    data = [data]
-                
-                for item in data:
-                    if 'dateModified' in item:
-                        return f"{item['dateModified']} (Source: JSON-LD)"
-                    if 'datePublished' in item:
-                        return f"{item['datePublished']} (Source: JSON-LD - Published)"
-        except (json.JSONDecodeError, TypeError):
-            continue
-
-    # Strategy 2: HTML Meta Tags
-    meta_targets = [
-        {'property': 'article:modified_time'},
-        {'property': 'og:updated_time'},
-        {'name': 'date'},
-        {'name': 'last-modified'},
-        {'name': 'revised'},
-        {'itemprop': 'dateModified'}
-    ]
-
-    for target in meta_targets:
-        meta = soup.find('meta', target)
-        if meta and meta.get('content'):
-            return f"{meta.get('content')} (Source: Meta Tag - {list(target.values())[0]})"
-
-    # Strategy 3: Visible Text Search
     try:
-        text_date = soup.find(string=re.compile(r'Last updated|Updated on|Amended on', re.IGNORECASE))
-        if text_date:
-            return f"{text_date.parent.get_text(strip=True)} (Source: Visible Text)"
-    except Exception:
-        pass
+        service = ChromeService(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        stealth(driver,
+                languages=["en-US", "en"],
+                vendor="Google Inc.",
+                platform="Win32",
+                webgl_vendor="Intel Inc.",
+                renderer="Intel Iris OpenGL Engine",
+                fix_hairline=True,
+        )
+        return driver
+    except Exception as e:
+        logger.error(f"  [x] Failed to initialize WebDriver: {e}")
+        return None
 
-    return "Not Detected"
-
-def scrape_url(driver, url):
-    print(f"Scraping: {url}")
+def fetch_and_convert(driver, url):
+    """Scrapes URL via Selenium and converts to Markdown via Trafilatura."""
     try:
+        logger.info(f"Processing: {url}")
         driver.get(url)
         
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        # Wait for body and scroll to trigger lazy loading
+        WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+        time.sleep(random.uniform(2.0, 4.0)) # Polite wait
 
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight / 2);")
-        time.sleep(random.uniform(1, 2))
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(random.uniform(1, 2))
-
-        html = driver.page_source
-        soup = BeautifulSoup(html, 'html.parser')
-
-        last_updated = get_last_updated_date(soup)
-        text_content = soup.get_text(separator='\n', strip=True)
+        html_content = driver.page_source
         
-        return text_content, last_updated
+        # Check for common block signatures
+        block_sigs = ["access denied", "verify you are human", "security check"]
+        if any(sig in html_content.lower() for sig in block_sigs):
+            logger.warning(f"  [!] Possible block detected for {url}")
+            return None
+
+        # Convert to Markdown
+        markdown_text = trafilatura.extract(
+            html_content,
+            output_format='markdown',
+            include_tables=True,
+            include_links=True,
+            include_images=True
+        )
+
+        if not markdown_text:
+            logger.warning(f"  [!] Trafilatura could not extract text from {url}")
+            return None
+            
+        # Cleanup dangling bold markers (from original script)
+        markdown_text = re.sub(r'(\*\*[^\n]+)\n\s*(\*\*)', r'\1\2', markdown_text)
+        return markdown_text
 
     except Exception as e:
-        print(f"Error scraping {url}: {e}")
-        return None, None
+        logger.error(f"  [x] Error scraping {url}: {e}")
+        return None
 
 def main():
-    setup_directory()
-    urls_to_scrape = load_urls()
+    if not os.path.exists(SOURCES_FILE):
+        logger.critical(f"Error: {SOURCES_FILE} not found.")
+        sys.exit(1)
 
-    if not urls_to_scrape:
-        print("No URLs found to scrape.")
-        return
+    # Ensure output directory exists
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+
+    with open(SOURCES_FILE, 'r') as f:
+        sources = json.load(f)
 
     driver = initialize_driver()
-    
-    try:
-        for url in urls_to_scrape:
-            content, last_updated = scrape_url(driver, url)
-            
-            if content:
-                filename = slugify_filename(url)
-                filepath = os.path.join(OUTPUT_DIR, filename)
-                
-                with open(filepath, 'w', encoding='utf-8') as f:
-                    f.write(f"Source URL: {url}\n")
-                    f.write(f"Scrape Date: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
-                    f.write(f"Last Updated Meta: {last_updated}\n")
-                    f.write("-" * 50 + "\n\n")
-                    f.write(content)
-                
-                print(f"Saved to {filepath}")
-            else:
-                print(f"Failed to retrieve content for {url}")
+    if not driver:
+        sys.exit(1)
 
-    finally:
-        driver.quit()
+    for item in sources:
+        url = item.get('url')
+        filename = item.get('filename', 'output.md')
+        
+        # Enforce .md extension
+        if not filename.endswith('.md'):
+            filename += '.md'
+
+        content = fetch_and_convert(driver, url)
+        
+        if content:
+            filepath = os.path.join(OUTPUT_DIR, filename)
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(content)
+            logger.info(f"  -> Saved to {filepath}")
+        else:
+            logger.warning(f"  -> Skipped saving {filename} (No content)")
+
+    driver.quit()
+    logger.info("--- Scrape Run Complete ---")
 
 if __name__ == "__main__":
     main()
