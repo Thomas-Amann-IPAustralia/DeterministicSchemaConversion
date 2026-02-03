@@ -52,33 +52,59 @@ def initialize_driver():
         logger.error(f"  [x] Failed to initialize WebDriver: {e}")
         return None
 
-def clean_markdown(text, url):
+def clean_markdown(text, url, title, overtitle):
     """Post-processing to match the 'Ideal' format."""
     
-    # 1. Remove excessive newlines (more than 2)
-    text = re.sub(r'\n{3,}', '\n\n', text)
+    # 1. Demote Headers (## -> ###)
+    # The user wants H2s (##) to be treated as H3s (###) in the body
+    text = re.sub(r'^## ', '### ', text, flags=re.MULTILINE)
 
-    # 2. Fix the Disclaimer formatting
-    # The ideal format wants the standard disclaimer text to be italicized.
-    # We look for the specific starting phrase and wrap the paragraph in asterisks.
+    # 2. Fix Link Spacing
+    # Solves: `[Link](url) .` -> `[Link](url).`
+    text = re.sub(r'(\]\([^\)]+\))\s+\.', r'\1.', text)
+    # Solves: `[Link](url) ,` -> `[Link](url),`
+    text = re.sub(r'(\]\([^\)]+\))\s+,', r'\1,', text)
+
+    # 3. Remove Footer Noise & Artifacts
+    noise_patterns = [
+        r'Was this information useful\?',
+        r'Thumbs UpThumbs Down',
+        r'\[Give feedback.*?\]\([^\)]+\)', # Removes the "Give feedback" button links
+        r'\(Opens in a new tab/window\)',
+        r'Opens in a new tab/window'
+    ]
+    for pattern in noise_patterns:
+        text = re.sub(pattern, '', text, flags=re.IGNORECASE | re.DOTALL)
+
+    # 4. Italicize Disclaimer
+    # Finds the standard disclaimer text and wraps it in *...*
     disclaimer_start = "This IP First Response website has been designed"
     if disclaimer_start in text:
-        # Regex to find the disclaimer paragraph and italicize it if not already
-        pattern = r'(' + re.escape(disclaimer_start) + r'.*?)(?=\n\n|\n$)'
-        # The re.DOTALL flag ensures . matches newlines inside the paragraph if needed
-        text = re.sub(pattern, r'*\1*', text, count=1, flags=re.DOTALL)
+        if f"*{disclaimer_start}" not in text: # Prevent double italicizing
+            pattern = r'(' + re.escape(disclaimer_start) + r'.*?)(\n\n|$)'
+            text = re.sub(pattern, r'*\1*\2', text, count=1, flags=re.DOTALL)
 
-    # 3. Clean up link spacing (run-on links)
-    # Solves: `(ASBFEO)](https://...)provides` -> `...](...) provides`
-    text = re.sub(r'(\]\([^\)]+\))([a-zA-Z0-9])', r'\1 \2', text)
+    # 5. Enforce Blank Lines Before Headers
+    # Ensures there is always a double newline before a ### header
+    text = re.sub(r'([^\n])\n(### )', r'\1\n\n\2', text)
     
-    # 4. Remove empty links or breadcrumb artifacts often found in scrapes
-    text = re.sub(r'\[\s*\]\([^\)]+\)', '', text)
+    # 6. Construct Top Metadata Block
+    # Adds PageURL, Overtitle (##), and Title (#)
+    header_block = f'PageURL: "[{url}]({url})"\n\n'
+    
+    if overtitle:
+        header_block += f"## {overtitle}\n\n"
+    
+    if title:
+        header_block += f"# {title}\n\n"
 
-    # 5. Append URL Source for reference (Optional, but good practice)
-    # text += f"\n\n\n*Source: {url}*"
-
-    return text.strip()
+    # Combine
+    final_text = header_block + text.strip()
+    
+    # Final cleanup of excessive newlines created by removals
+    final_text = re.sub(r'\n{3,}', '\n\n', final_text)
+    
+    return final_text
 
 def fetch_and_convert(driver, url):
     """Scrapes URL via Selenium and converts to Markdown via Markdownify."""
@@ -86,53 +112,62 @@ def fetch_and_convert(driver, url):
         logger.info(f"Processing: {url}")
         driver.get(url)
         
-        # Wait for body to ensure page load
+        # Wait for body
         WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
         
         # Lazy load scroll
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
         time.sleep(random.uniform(2.0, 4.0)) 
 
-        # --- STEP 1: Targeted Extraction ---
-        # Instead of grabbing the whole page (which includes nav/footer), 
-        # we target the main content container. 
-        # GovCMS/Drupal sites usually use <main>, <div id="content">, or <article>.
+        # --- STEP 1: Metadata Extraction ---
+        # We manually grab the Title (H1) and the Section Label (Overtitle)
+        page_title = ""
+        page_overtitle = ""
+        
+        try:
+            page_title = driver.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
+
+        try:
+            # GovCMS often uses these classes for the "Eyebrow" / Section text above H1
+            # We try a few likely candidates
+            candidates = driver.find_elements(By.CSS_SELECTOR, ".field--name-field-section, .field--name-field-parent-section, .eyebrow")
+            if candidates:
+                page_overtitle = candidates[0].text.strip()
+        except:
+            pass
+
+        # --- STEP 2: Main Content Extraction ---
         content_html = ""
         try:
-            # Try finding the specific main content wrapper to exclude site navigation
-            # Priority: <main> tag -> class="region-content" -> <body>
+            # Target <main> to exclude nav/footer
             try:
                 main_element = driver.find_element(By.TAG_NAME, "main")
                 content_html = main_element.get_attribute('innerHTML')
             except:
-                try:
-                    # Fallback for standard Drupal content regions
-                    main_element = driver.find_element(By.CLASS_NAME, "region-content")
-                    content_html = main_element.get_attribute('innerHTML')
-                except:
-                    # Last resort fallback
-                    logger.warning("  [!] Could not find <main> tag, using <body>")
-                    content_html = driver.find_element(By.TAG_NAME, "body").get_attribute('innerHTML')
-
+                # Fallback for GovCMS structure
+                main_element = driver.find_element(By.CLASS_NAME, "region-content")
+                content_html = main_element.get_attribute('innerHTML')
         except Exception as e:
-            logger.error(f"  [x] Error extracting HTML content: {e}")
-            return None
+            logger.warning(f"  [!] Could not isolate main content, using body. ({e})")
+            content_html = driver.find_element(By.TAG_NAME, "body").get_attribute('innerHTML')
 
-        # --- STEP 2: Convert with Markdownify ---
-        # heading_style="ATX" ensures we get ### Header instead of underlined headers
+        # --- STEP 3: Convert ---
+        # heading_style="ATX" gives us ## style headers
         markdown_text = md(
             content_html, 
             heading_style="ATX",
-            strip=['script', 'style', 'iframe', 'noscript'], # Remove code noise
-            newline_style="BACKSLASH" # Helps prevent run-on lines
+            strip=['script', 'style', 'iframe', 'noscript', 'button'],
+            newline_style="BACKSLASH"
         )
 
         if not markdown_text:
             logger.warning(f"  [!] Markdownify produced empty text for {url}")
             return None
 
-        # --- STEP 3: Clean and Polish ---
-        final_markdown = clean_markdown(markdown_text, url)
+        # --- STEP 4: Clean and Polish ---
+        final_markdown = clean_markdown(markdown_text, url, page_title, page_overtitle)
         
         return final_markdown
 
@@ -145,7 +180,6 @@ def main():
         logger.critical(f"Error: {SOURCES_FILE} not found.")
         sys.exit(1)
 
-    # Ensure output directory exists
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
 
@@ -160,7 +194,6 @@ def main():
         url = item.get('url')
         filename = item.get('filename', 'output.md')
         
-        # Enforce .md extension
         if not filename.endswith('.md'):
             filename += '.md'
 
