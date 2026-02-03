@@ -13,18 +13,22 @@ from selenium.webdriver.common.by import By
 
 # --- Configuration ---
 OUTPUT_DIR = 'output'
-URLS_TO_SCRAPE = [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-    "https://www.tomamann.com/about"
-]
+URLS_FILE = 'urls.txt'
 
 def setup_directory():
     """Ensures the output directory exists."""
-    if os.path.exists(OUTPUT_DIR):
-        # Optional: Clear directory before run
-        # shutil.rmtree(OUTPUT_DIR)
-        pass
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def load_urls():
+    """Reads URLs from the external text file."""
+    if not os.path.exists(URLS_FILE):
+        print(f"Error: {URLS_FILE} not found.")
+        return []
+    
+    with open(URLS_FILE, 'r', encoding='utf-8') as f:
+        # Read lines, strip whitespace, and ignore empty lines or comments
+        urls = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    return urls
 
 def slugify_filename(url):
     """Converts a URL into a safe filename."""
@@ -43,11 +47,9 @@ def initialize_driver():
     chrome_options.add_argument('--window-size=1920,1080')
     chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36')
     
-    # Use webdriver-manager to handle the chromedriver binary
     service = ChromeService(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    # Apply stealth measures
     stealth(driver,
             languages=["en-US", "en"],
             vendor="Google Inc.",
@@ -68,7 +70,7 @@ def scrape_url(driver, url):
             EC.presence_of_element_located((By.TAG_NAME, 'body'))
         )
 
-        # Human-like scrolling (helps trigger lazy loading)
+        # Human-like scrolling
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight / 2);")
         time.sleep(random.uniform(1, 2))
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -77,8 +79,7 @@ def scrape_url(driver, url):
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
 
-        # NOTE: Unlike the original script, we do NOT decompose headers/footers here.
-        # We extract all text visible on the page.
+        # Extract all text, including headers and footers
         text_content = soup.get_text(separator='\n', strip=True)
         
         return text_content
@@ -89,10 +90,16 @@ def scrape_url(driver, url):
 
 def main():
     setup_directory()
+    urls_to_scrape = load_urls()
+
+    if not urls_to_scrape:
+        print("No URLs found to scrape.")
+        return
+
     driver = initialize_driver()
     
     try:
-        for url in URLS_TO_SCRAPE:
+        for url in urls_to_scrape:
             content = scrape_url(driver, url)
             
             if content:
