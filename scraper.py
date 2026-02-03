@@ -63,6 +63,23 @@ def fetch_and_convert(driver, url):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
         time.sleep(random.uniform(2.0, 4.0)) # Polite wait
 
+        # --- FIX 1: Manual Header Extraction ---
+        # Trafilatura often views the top banner/H1 as "navigation boilerplate" and removes it.
+        # We manually grab the H1 and the lead paragraph to ensure they are present.
+        page_title = ""
+        page_subtitle = ""
+        try:
+            h1_elem = driver.find_element(By.TAG_NAME, "h1")
+            page_title = h1_elem.text.strip()
+            
+            # Attempt to find the immediate sub-text (often the next paragraph sibling)
+            # This XPath looks for the first <p> tag immediately following the <h1>
+            intro_elem = driver.find_element(By.XPATH, "//h1/following-sibling::p[1]")
+            page_subtitle = intro_elem.text.strip()
+        except Exception:
+            # Proceed even if specific elements aren't found
+            pass
+
         html_content = driver.page_source
         
         # Check for common block signatures
@@ -71,21 +88,41 @@ def fetch_and_convert(driver, url):
             logger.warning(f"  [!] Possible block detected for {url}")
             return None
 
-        # Convert to Markdown
+        # --- FIX 2: Enhanced Extraction Settings ---
+        # Added `include_formatting=True`. This preserves bolding and, crucially,
+        # helps maintain vertical lists (resolving the "Jumbled List" issue).
         markdown_text = trafilatura.extract(
             html_content,
             output_format='markdown',
             include_tables=True,
             include_links=True,
-            include_images=True
+            include_images=True,
+            include_formatting=True 
         )
 
         if not markdown_text:
             logger.warning(f"  [!] Trafilatura could not extract text from {url}")
             return None
-            
-        # Cleanup dangling bold markers (from original script)
+
+        # --- FIX 3: Post-Processing Cleanups ---
+        
+        # 3a. Prepend Title if missing
+        # We check if the manually extracted title appears in the first 500 characters.
+        # If not, we prepend it to the top of the file.
+        if page_title and page_title not in markdown_text[:500]:
+            header_block = f"# {page_title}\n"
+            if page_subtitle:
+                header_block += f"\n{page_subtitle}\n"
+            markdown_text = f"{header_block}\n{markdown_text}"
+
+        # 3b. Fix Run-on Link Spacing
+        # Solves: `(ASBFEO)](https://...)provides` -> `...](...) provides`
+        # Regex finds: A closing markdown link `](...)` immediately followed by a letter/number
+        markdown_text = re.sub(r'(\]\([^\)]+\))([a-zA-Z0-9])', r'\1 \2', markdown_text)
+
+        # 3c. Cleanup dangling bold markers (from original script)
         markdown_text = re.sub(r'(\*\*[^\n]+)\n\s*(\*\*)', r'\1\2', markdown_text)
+        
         return markdown_text
 
     except Exception as e:
