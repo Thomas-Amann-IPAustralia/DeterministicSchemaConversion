@@ -42,19 +42,20 @@ jobs:
           path: json_output/
           if-no-files-found: warn
 
-      # 4. Commit and push the report file back to the repo
-      - name: Commit and Push Report
+      # 4. Commit and push the report AND json files
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Stage the specific report file
+          # Stage the report AND the JSON output directory
           git add reports/after_action_report.txt
+          git add json_output/
           
           # Only commit if there are actual changes
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update processing report [skip ci]"
+            git commit -m "Update JSON-LD outputs and report [skip ci]"
             git push
           fi
