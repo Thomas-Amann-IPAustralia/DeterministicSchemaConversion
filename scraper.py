@@ -5,7 +5,6 @@ import time
 import random
 import logging
 import re
-import trafilatura
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium_stealth import stealth
+from markdownify import markdownify as md
 
 # --- Configuration ---
 SOURCES_FILE = 'sources.json'
@@ -52,78 +52,89 @@ def initialize_driver():
         logger.error(f"  [x] Failed to initialize WebDriver: {e}")
         return None
 
+def clean_markdown(text, url):
+    """Post-processing to match the 'Ideal' format."""
+    
+    # 1. Remove excessive newlines (more than 2)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+
+    # 2. Fix the Disclaimer formatting
+    # The ideal format wants the standard disclaimer text to be italicized.
+    # We look for the specific starting phrase and wrap the paragraph in asterisks.
+    disclaimer_start = "This IP First Response website has been designed"
+    if disclaimer_start in text:
+        # Regex to find the disclaimer paragraph and italicize it if not already
+        pattern = r'(' + re.escape(disclaimer_start) + r'.*?)(?=\n\n|\n$)'
+        # The re.DOTALL flag ensures . matches newlines inside the paragraph if needed
+        text = re.sub(pattern, r'*\1*', text, count=1, flags=re.DOTALL)
+
+    # 3. Clean up link spacing (run-on links)
+    # Solves: `(ASBFEO)](https://...)provides` -> `...](...) provides`
+    text = re.sub(r'(\]\([^\)]+\))([a-zA-Z0-9])', r'\1 \2', text)
+    
+    # 4. Remove empty links or breadcrumb artifacts often found in scrapes
+    text = re.sub(r'\[\s*\]\([^\)]+\)', '', text)
+
+    # 5. Append URL Source for reference (Optional, but good practice)
+    # text += f"\n\n\n*Source: {url}*"
+
+    return text.strip()
+
 def fetch_and_convert(driver, url):
-    """Scrapes URL via Selenium and converts to Markdown via Trafilatura."""
+    """Scrapes URL via Selenium and converts to Markdown via Markdownify."""
     try:
         logger.info(f"Processing: {url}")
         driver.get(url)
         
-        # Wait for body and scroll to trigger lazy loading
+        # Wait for body to ensure page load
         WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
-        time.sleep(random.uniform(2.0, 4.0)) # Polite wait
-
-        # --- FIX 1: Manual Header Extraction ---
-        # Trafilatura often views the top banner/H1 as "navigation boilerplate" and removes it.
-        # We manually grab the H1 and the lead paragraph to ensure they are present.
-        page_title = ""
-        page_subtitle = ""
-        try:
-            h1_elem = driver.find_element(By.TAG_NAME, "h1")
-            page_title = h1_elem.text.strip()
-            
-            # Attempt to find the immediate sub-text (often the next paragraph sibling)
-            # This XPath looks for the first <p> tag immediately following the <h1>
-            intro_elem = driver.find_element(By.XPATH, "//h1/following-sibling::p[1]")
-            page_subtitle = intro_elem.text.strip()
-        except Exception:
-            # Proceed even if specific elements aren't found
-            pass
-
-        html_content = driver.page_source
         
-        # Check for common block signatures
-        block_sigs = ["access denied", "verify you are human", "security check"]
-        if any(sig in html_content.lower() for sig in block_sigs):
-            logger.warning(f"  [!] Possible block detected for {url}")
+        # Lazy load scroll
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+        time.sleep(random.uniform(2.0, 4.0)) 
+
+        # --- STEP 1: Targeted Extraction ---
+        # Instead of grabbing the whole page (which includes nav/footer), 
+        # we target the main content container. 
+        # GovCMS/Drupal sites usually use <main>, <div id="content">, or <article>.
+        content_html = ""
+        try:
+            # Try finding the specific main content wrapper to exclude site navigation
+            # Priority: <main> tag -> class="region-content" -> <body>
+            try:
+                main_element = driver.find_element(By.TAG_NAME, "main")
+                content_html = main_element.get_attribute('innerHTML')
+            except:
+                try:
+                    # Fallback for standard Drupal content regions
+                    main_element = driver.find_element(By.CLASS_NAME, "region-content")
+                    content_html = main_element.get_attribute('innerHTML')
+                except:
+                    # Last resort fallback
+                    logger.warning("  [!] Could not find <main> tag, using <body>")
+                    content_html = driver.find_element(By.TAG_NAME, "body").get_attribute('innerHTML')
+
+        except Exception as e:
+            logger.error(f"  [x] Error extracting HTML content: {e}")
             return None
 
-        # --- FIX 2: Enhanced Extraction Settings ---
-        # Added `include_formatting=True`. This preserves bolding and, crucially,
-        # helps maintain vertical lists (resolving the "Jumbled List" issue).
-        markdown_text = trafilatura.extract(
-            html_content,
-            output_format='markdown',
-            include_tables=True,
-            include_links=True,
-            include_images=True,
-            include_formatting=True 
+        # --- STEP 2: Convert with Markdownify ---
+        # heading_style="ATX" ensures we get ### Header instead of underlined headers
+        markdown_text = md(
+            content_html, 
+            heading_style="ATX",
+            strip=['script', 'style', 'iframe', 'noscript'], # Remove code noise
+            newline_style="BACKSLASH" # Helps prevent run-on lines
         )
 
         if not markdown_text:
-            logger.warning(f"  [!] Trafilatura could not extract text from {url}")
+            logger.warning(f"  [!] Markdownify produced empty text for {url}")
             return None
 
-        # --- FIX 3: Post-Processing Cleanups ---
+        # --- STEP 3: Clean and Polish ---
+        final_markdown = clean_markdown(markdown_text, url)
         
-        # 3a. Prepend Title if missing
-        # We check if the manually extracted title appears in the first 500 characters.
-        # If not, we prepend it to the top of the file.
-        if page_title and page_title not in markdown_text[:500]:
-            header_block = f"# {page_title}\n"
-            if page_subtitle:
-                header_block += f"\n{page_subtitle}\n"
-            markdown_text = f"{header_block}\n{markdown_text}"
-
-        # 3b. Fix Run-on Link Spacing
-        # Solves: `(ASBFEO)](https://...)provides` -> `...](...) provides`
-        # Regex finds: A closing markdown link `](...)` immediately followed by a letter/number
-        markdown_text = re.sub(r'(\]\([^\)]+\))([a-zA-Z0-9])', r'\1 \2', markdown_text)
-
-        # 3c. Cleanup dangling bold markers (from original script)
-        markdown_text = re.sub(r'(\*\*[^\n]+)\n\s*(\*\*)', r'\1\2', markdown_text)
-        
-        return markdown_text
+        return final_markdown
 
     except Exception as e:
         logger.error(f"  [x] Error scraping {url}: {e}")
