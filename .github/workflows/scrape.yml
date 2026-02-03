@@ -1,41 +1,49 @@
-name: Manual Web Scraper
+name: IPFR Scraper
 
 on:
-  workflow_dispatch: # Allows manual trigger
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write # CRITICAL: Allows the Action to push changes to the repo
+  contents: write
 
 jobs:
-  scrape:
+  scrape-and-save:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.9'
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
 
       - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Run Scraper
         run: python scraper.py
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "IPFR Scraper Bot"
+          git config --global user.email "actions@github.com"
           
-          # Force add the outputs folder
-          git add outputs/
+          # Check if the IPFR-Webpages folder has changes
+          git add IPFR-Webpages/
           
-          # Commit changes (silently fail if no changes exist)
-          git commit -m "Auto-update scraped outputs" || echo "No changes to commit"
-          
-          # Push changes back to the repository
-          git push
+          # Only commit if there are staged changes
+          if ! git diff-index --quiet HEAD; then
+            echo "Changes detected. Committing..."
+            git commit -m "Scraper: Updated web content [skip ci]"
+            git push
+          else
+            echo "No changes detected."
+          fi
