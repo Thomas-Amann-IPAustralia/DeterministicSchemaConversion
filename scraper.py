@@ -11,7 +11,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from dateutil import parser  # Optional: For parsing messy dates if needed, but strict string extraction is safer for now.
 
 # --- Configuration ---
 OUTPUT_DIR = 'outputs'
@@ -66,18 +65,15 @@ def get_last_updated_date(soup):
     """
     
     # Strategy 1: Schema.org JSON-LD (The Gold Standard)
-    # This looks for hidden JSON data used by search engines.
     scripts = soup.find_all('script', type='application/ld+json')
     for script in scripts:
         try:
             if script.string:
                 data = json.loads(script.string)
-                # JSON-LD can be a dict or a list of dicts
                 if isinstance(data, dict):
                     data = [data]
                 
                 for item in data:
-                    # Check for standard schema date fields
                     if 'dateModified' in item:
                         return f"{item['dateModified']} (Source: JSON-LD)"
                     if 'datePublished' in item:
@@ -85,8 +81,7 @@ def get_last_updated_date(soup):
         except (json.JSONDecodeError, TypeError):
             continue
 
-    # Strategy 2: HTML Meta Tags (The Silver Standard)
-    # Common meta tags used by CMSs like WordPress, Drupal, etc.
+    # Strategy 2: HTML Meta Tags
     meta_targets = [
         {'property': 'article:modified_time'},
         {'property': 'og:updated_time'},
@@ -101,13 +96,10 @@ def get_last_updated_date(soup):
         if meta and meta.get('content'):
             return f"{meta.get('content')} (Source: Meta Tag - {list(target.values())[0]})"
 
-    # Strategy 3: Heuristic Text Search (The Bronze Standard)
-    # Looks for visible text on the page containing "Last updated"
-    # Note: This is a basic regex and might be hit-or-miss depending on formatting.
+    # Strategy 3: Visible Text Search
     try:
         text_date = soup.find(string=re.compile(r'Last updated|Updated on|Amended on', re.IGNORECASE))
         if text_date:
-            # Try to grab the parent text which likely contains the actual date
             return f"{text_date.parent.get_text(strip=True)} (Source: Visible Text)"
     except Exception:
         pass
@@ -129,10 +121,7 @@ def scrape_url(driver, url):
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
 
-        # Extract Date Metadata
         last_updated = get_last_updated_date(soup)
-        
-        # Extract Body Text
         text_content = soup.get_text(separator='\n', strip=True)
         
         return text_content, last_updated
@@ -166,7 +155,7 @@ def main():
                     f.write("-" * 50 + "\n\n")
                     f.write(content)
                 
-                print(f"Saved to {filepath} (Updated: {last_updated})")
+                print(f"Saved to {filepath}")
             else:
                 print(f"Failed to retrieve content for {url}")
 
