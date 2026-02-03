@@ -120,7 +120,6 @@ def fetch_and_convert(driver, url):
         time.sleep(random.uniform(2.0, 4.0)) 
 
         # --- STEP 1: Metadata Extraction ---
-        # We manually grab the Title (H1) and the Section Label (Overtitle)
         page_title = ""
         page_overtitle = ""
         
@@ -130,12 +129,11 @@ def fetch_and_convert(driver, url):
             pass
 
         try:
-            # GovCMS often uses these classes for the "Eyebrow" / Section text above H1
-            # We try a few likely candidates
-            candidates = driver.find_elements(By.CSS_SELECTOR, ".field--name-field-section, .field--name-field-parent-section, .eyebrow")
-            if candidates:
-                page_overtitle = candidates[0].text.strip()
+            # UPDATED: Specifically target the class found by the user
+            overtitle_elem = driver.find_element(By.CLASS_NAME, "option-detail-page-tag")
+            page_overtitle = overtitle_elem.text.strip()
         except:
+            # Fallback if the specific tag isn't found (optional)
             pass
 
         # --- STEP 2: Main Content Extraction ---
