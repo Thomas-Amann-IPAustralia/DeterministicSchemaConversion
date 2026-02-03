@@ -21,6 +21,11 @@ jobs:
       with:
         python-version: '3.9'
 
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
     - name: Run Processing Script
       run: |
         python scripts/process_md_to_json.py
@@ -35,4 +40,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: processing-report
-        path: reports/  # Updated path
+        path: reports/
