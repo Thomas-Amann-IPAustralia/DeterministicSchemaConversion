@@ -1,0 +1,38 @@
+name: Generate JSON-LD from Markdown
+
+on:
+  push:
+    paths:
+      - 'markdown_output/**' # Only trigger if markdown changes
+      - 'scripts/process_md_to_json.py'
+      - '260203_IPFRMetaTable.csv'
+  workflow_dispatch: # Allows manual click-to-run
+
+jobs:
+  build-and-process:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Run Processing Script
+      run: |
+        python scripts/process_md_to_json.py
+
+    - name: Upload JSON Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: json-ld-output
+        path: json_output/
+
+    - name: Upload After Action Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: processing-report
+        path: after_action_report.txt
