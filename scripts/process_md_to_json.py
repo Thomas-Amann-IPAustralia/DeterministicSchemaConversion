@@ -9,10 +9,11 @@ INPUT_DIR = 'IPFR-Webpages' if os.path.exists('IPFR-Webpages') else '.'
 OUTPUT_DIR = 'json_output'
 CSV_FILE = '260203_IPFRMetaTable.csv'
 
-# --- 1. ENRICHED KNOWLEDGE BASES ---
+# --- 1. KNOWLEDGE BASES ---
 
-# Mapped from Project_Instructions.md & validator.py
-TRIPWIRES = {
+# Legislation Database (TRIPWIRES)
+# Keys must match normalized values from the CSV "Relevant IP right" column
+LEGISLATION_MAP = {
     "trade mark": [
         {"name": "Trade Marks Act 1995", "url": "https://www.legislation.gov.au/C2004A04969/latest/versions", "type": "Act"},
         {"name": "Trade Marks Regulations 1995", "url": "https://www.legislation.gov.au/F1996B00084/latest/versions", "type": "Legislative Instrument"}
@@ -25,7 +26,11 @@ TRIPWIRES = {
         {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/versions", "type": "Act"},
         {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/versions", "type": "Legislative Instrument"}
     ],
-    "plant breeder": [
+    "pbr": [ # Mapped from CSV 'PBR'
+        {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
+        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Legislative Instrument"}
+    ],
+    "plant breeder": [ # Catch-all if full name used
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
         {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Legislative Instrument"}
     ],
@@ -36,13 +41,10 @@ TRIPWIRES = {
     "customs": [
         {"name": "Customs Act 1901", "url": "https://www.legislation.gov.au/C1901A00006/latest/text", "type": "Act"},
         {"name": "Customs Regulation 2015", "url": "https://www.legislation.gov.au/F2015L00373/latest/text", "type": "Legislative Instrument"}
-    ],
-    "privacy": [
-        {"name": "Privacy Act 1988", "url": "https://www.legislation.gov.au/C2004A03712/latest/text", "type": "Act"}
     ]
 }
 
-# Detailed Provider Objects for "Archetype B/C/D"
+# Detailed Provider Objects
 PROVIDER_MAP = {
     "ASBFEO": {
         "@type": "GovernmentOrganization",
@@ -101,7 +103,8 @@ IP_TOPIC_MAP = {
     "Trade Mark": "https://www.wikidata.org/wiki/Q165196",
     "Patent": "https://www.wikidata.org/wiki/Q253623",
     "Design": "https://www.wikidata.org/wiki/Q1240325",
-    "Copyright": "https://www.wikidata.org/wiki/Q12978"
+    "Copyright": "https://www.wikidata.org/wiki/Q12978",
+    "Plant Breeder's Rights": "https://www.wikidata.org/wiki/Q695112"
 }
 
 # --- 2. CORE LOGIC FUNCTIONS ---
@@ -119,10 +122,35 @@ def load_csv_metadata(csv_path):
         print(f"Error reading CSV: {e}")
     return rows
 
+def find_metadata_row(filename, csv_rows):
+    """
+    Finds the CSV row matching the filename using UDID or Fuzzy Title Match.
+    """
+    # 1. Try strict UDID match (e.g., D1003)
+    udid_match = re.search(r'([A-Z]\d{4})', filename)
+    if udid_match:
+        target_udid = udid_match.group(1)
+        row = next((r for r in csv_rows if r.get('UDID') == target_udid), None)
+        if row: return row
+
+    # 2. Try Fuzzy Title Match (Fallback)
+    # Clean filename: "1030_ASBFEO.json" -> "asbfeo"
+    clean_name = filename.lower().replace('.json', '').replace('.md', '').replace('ipfr_', '').replace('_', ' ')
+    clean_name = re.sub(r'\d+', '', clean_name).strip() # Remove numbers
+
+    for row in csv_rows:
+        # Check if filename is inside the CSV Title or Overtitle
+        csv_title = row.get('Main Title', '').lower()
+        csv_overtitle = row.get('Overtitle', '').lower()
+        
+        if clean_name and (clean_name in csv_title or clean_name in csv_overtitle):
+            return row
+            
+    return {} # Return empty if no match
+
 def parse_markdown_blocks(md_text):
     """
     Splits markdown into a dictionary keyed by lowercase headers.
-    e.g. {'what is it?': 'Text...', 'what are the benefits?': 'Text...'}
     """
     blocks = {}
     lines = md_text.split('\n')
@@ -131,36 +159,42 @@ def parse_markdown_blocks(md_text):
 
     for line in lines:
         if line.strip().startswith('#'):
-            # Save previous block
             if current_content:
                 blocks[current_header] = "\n".join(current_content).strip()
             
-            # Normalize header: remove hashes, lower case, strip whitespace
             clean_header = line.lstrip('#').strip().lower()
             current_header = clean_header
             current_content = []
         else:
             current_content.append(line)
     
-    # Save last block
     if current_content:
         blocks[current_header] = "\n".join(current_content).strip()
         
     return blocks
 
-def generate_citations(doc_text):
+def generate_citations_from_csv(metadata_row):
     """
-    Scans document text for keywords defined in TRIPWIRES and returns citation objects.
+    Generates citations based SOLELY on the 'Relevant IP right' column in the CSV.
     """
     citations = []
-    text_lower = doc_text.lower()
     
-    # Set to avoid duplicates
+    # Extract raw CSV value (e.g., """Trade mark"", ""Design""")
+    raw_ip_rights = metadata_row.get('Relevant IP right', '')
+    if not raw_ip_rights:
+        return citations
+
+    # Normalize: lowercase, remove quotes, split commas
+    # e.g. "trade mark, design"
+    cleaned_rights = raw_ip_rights.replace('"', '').lower()
+    rights_list = [r.strip() for r in cleaned_rights.split(',')]
+    
     added_urls = set()
 
-    for keyword, legs in TRIPWIRES.items():
-        if keyword in text_lower:
-            for leg in legs:
+    # Map rights to Legislation
+    for right in rights_list:
+        if right in LEGISLATION_MAP:
+            for leg in LEGISLATION_MAP[right]:
                 if leg['url'] not in added_urls:
                     citations.append({
                         "@type": "Legislation",
@@ -169,75 +203,66 @@ def generate_citations(doc_text):
                         "legislationType": leg['type']
                     })
                     added_urls.add(leg['url'])
+                    
     return citations
 
 def resolve_provider(provider_raw_string):
-    """
-    Matches a CSV provider string to a rich Schema object or returns a generic one.
-    """
     if not provider_raw_string:
         return {"@type": "Organization", "name": "Third-Party Provider"}
     
-    # Check our detailed map
     for key, obj in PROVIDER_MAP.items():
         if key.lower() in provider_raw_string.lower():
             return obj
             
-    # Generic fallback
     return {
         "@type": "Organization",
         "name": provider_raw_string.strip()
     }
 
+def clean_text_retain_formatting(text):
+    """
+    Trims excessive whitespace but PRESERVES Markdown structure (bullets, bold).
+    """
+    if not text: return ""
+    # Strip leading/trailing whitespace
+    text = text.strip()
+    # Collapse 3+ newlines into 2 (to separate paragraphs but not have huge gaps)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text
+
 def extract_faqs(blocks):
-    """
-    Extracts standard FAQ headers from the parsed blocks.
-    """
     faq_keys = [
-        "what are the benefits?", 
-        "what are the risks?", 
-        "what might the costs be?",
-        "what might the cost be?", # Handle variation
-        "how much time might be involved?",
-        "how often is this used?",
-        "what are the possible outcomes?",
-        "who can use this?",
-        "who's involved?",
-        "who is involved?"
+        "what are the benefits?", "what are the risks?", "what might the costs be?",
+        "what might the cost be?", "how much time might be involved?",
+        "how often is this used?", "what are the possible outcomes?",
+        "who can use this?", "who's involved?", "who is involved?"
     ]
     
     faqs = []
     for key, content in blocks.items():
-        # Fuzzy match key against known FAQ headers
         if any(k in key for k in faq_keys) and content:
-            # Clean header for display (Capitalize)
             display_name = key.capitalize().replace('?', '') + "?"
             faqs.append({
                 "@type": "Question",
                 "name": display_name,
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": content.replace('\n', ' ').strip()
+                    "text": clean_text_retain_formatting(content)
                 }
             })
     return faqs
 
 def extract_howto_steps(blocks):
-    """
-    Looks for 'proceed', 'steps', or 'process' blocks to build HowTo steps.
-    """
     steps = []
-    # Identify relevant block
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     
     if target_key:
         raw_text = blocks[target_key]
-        # Split by bullets or numbers
-        # Regex finds lines starting with * or 1.
+        # Regex to find lines starting with * or 1.
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         
         for step_text in matches:
-            clean_text = step_text.strip()
+            clean_text = clean_text_retain_formatting(step_text)
             if clean_text:
                 steps.append({
                     "@type": "HowToStep",
@@ -259,18 +284,18 @@ def process_file(filepath, filename, metadata_row):
     udid = metadata_row.get('UDID', 'Dxxxx')
     title = metadata_row.get('Main Title', filename.replace('.md', '').replace('_', ' '))
     archetype = metadata_row.get('Archetype', 'Government Service').strip()
-    date_val = datetime.now().strftime("%Y-%m-%d") # Or extract from file if avail
+    date_val = datetime.now().strftime("%Y-%m-%d")
     
-    # C. Description Extraction (Prioritize 'What is it?' block)
+    # C. Description Extraction
     desc_keys = ["what is it?", "description", "intro"]
-    description = next((blocks[k] for k in desc_keys if k in blocks), metadata_row.get('Description', ''))
+    description_raw = next((blocks[k] for k in desc_keys if k in blocks), metadata_row.get('Description', ''))
+    description = clean_text_retain_formatting(description_raw)
     
-    # D. Build Main Entity (Archetype Logic)
+    # D. Build Main Entity
     main_entities = []
-    
-    # Service / Strategy Object
     service_id = "#the-service"
     
+    # D1. Primary Entity (Service or HowTo)
     if "Self-Help" in archetype:
         # Archetype A: HowTo IS the service
         howto_obj = {
@@ -295,13 +320,22 @@ def process_file(filepath, filename, metadata_row):
             "areaServed": {"@type": "Country", "name": "Australia"},
             "provider": provider_obj
         }
-        # Swap provider key for GovernmentService
         if service_type == "GovernmentService":
              service_obj["serviceOperator"] = service_obj.pop("provider")
              
         main_entities.append(service_obj)
 
-    # E. FAQ Page (Linked to Service)
+        # D2. The Sidecar HowTo (If steps exist, add them regardless of Archetype)
+        steps = extract_howto_steps(blocks)
+        if steps:
+            main_entities.append({
+                "@type": "HowTo",
+                "name": f"How to proceed with {title}",
+                "about": {"@id": service_id},
+                "step": steps
+            })
+
+    # E. FAQ Page
     faqs = extract_faqs(blocks)
     if faqs:
         main_entities.append({
@@ -310,11 +344,11 @@ def process_file(filepath, filename, metadata_row):
             "mainEntity": faqs
         })
 
-    # F. Citations (Tripwire Logic)
-    citations = generate_citations(md_content)
+    # F. Citations (From CSV)
+    citations = generate_citations_from_csv(metadata_row)
     
     # G. Topics
-    topic_name = metadata_row.get('Relevant IP right', 'Intellectual Property Right')
+    topic_name = metadata_row.get('Relevant IP right', 'Intellectual Property Right').replace('"', '')
     about_obj = {"@type": "Thing", "name": topic_name}
     if topic_name in IP_TOPIC_MAP:
         about_obj["sameAs"] = IP_TOPIC_MAP[topic_name]
@@ -325,7 +359,7 @@ def process_file(filepath, filename, metadata_row):
         "@type": "WebPage",
         "headline": title,
         "alternativeHeadline": metadata_row.get('Overtitle', ''),
-        "description": description[:160], # Meta description length
+        "description": description[:160], 
         "url": metadata_row.get('canonical url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}"),
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
@@ -345,14 +379,12 @@ def process_file(filepath, filename, metadata_row):
         "mainEntity": main_entities
     }
     
-    # Handle "See Also" links if present in blocks (simple regex for URL extraction)
     see_also_block = next((v for k,v in blocks.items() if "see also" in k), None)
     if see_also_block:
         links = re.findall(r'\((https?://[^\)]+)\)', see_also_block)
         if links:
             json_ld["relatedLink"] = links
 
-    # Write Output
     out_path = os.path.join(OUTPUT_DIR, filename.replace('.md', '.json'))
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(json_ld, f, indent=2)
@@ -366,26 +398,12 @@ def main():
         os.makedirs(OUTPUT_DIR)
         
     csv_rows = load_csv_metadata(CSV_FILE)
-    
-    # Filter for MD files
     md_files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.md')]
     
     for filename in md_files:
-        # Match file to CSV row
-        # Simple heuristic: Check if UDID is in filename, or fuzzy match title
-        matched_row = {}
+        matched_row = find_metadata_row(filename, csv_rows)
         
-        # 1. Try UDID match
-        udid_match = re.search(r'(D\d{4}|B\d{4}|C\d{4}|E\d{4})', filename)
-        if udid_match:
-            target_udid = udid_match.group(1)
-            matched_row = next((row for row in csv_rows if row.get('UDID') == target_udid), {})
-        
-        # 2. Fallback: Filename match
-        if not matched_row:
-             matched_row = next((row for row in csv_rows if row.get('Main Title', '').lower() in filename.lower().replace('_', ' ')), {})
-
-        # Default fallback if CSV incomplete
+        # Fallback if no CSV match found
         if not matched_row:
             matched_row = {"Main Title": filename.replace('.md', '').replace('IPFR_', '').replace('_', ' ')}
 
