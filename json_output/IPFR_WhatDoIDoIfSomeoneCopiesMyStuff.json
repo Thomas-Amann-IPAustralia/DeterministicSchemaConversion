@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "What do I do if someone copies my stuff?",
+  "headline": "IP disputes – What do I do if someone copies my stuff?",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff",
   "identifier": {
@@ -14,27 +14,57 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "IP disputes – What do I do if someone copies my stuff?",
+      "description": "When you think someone has copied your product, logo, idea or brand, it is called ‘suspected infringement’. The word ‘suspected’ is used because only a court can decide if infringement has actually occurred – but that doesn't mean you cannot take action. \n\nDifferent types of IP are protected in different ways. You can only take action if your IP is protected by a specific right such as a registered trade mark, granted patent, certified design, or copyright. \n\nIf you don’t have formal IP rights, it may still be possible to take action, but it can be harder. Some legal protections may still apply under consumer law, contract law or common law—but these usually require help from a legal professional. \n\nStart by working out: \n\n* What exactly has been copied—your logo, invention, product, written work, name, style or something else.\n* Whether what’s been copied is actually protected by a registered or automatic IP right.\n* Whether the use is actually unauthorised or illegal - some uses may be allowed, or may not amount to infringement under the law.\n\nIt’s not always obvious whether infringement has happened. Even when someone copies your work, it may not be illegal. For example, your product might be copied legally if it isn’t covered by a registered design or patent. \n\nTo figure out what’s going on, many people start by: \n\n* Checking their own IP rights (such as trade mark, patent, design or copyright status).\n* Gathering evidence—like photos, screenshots, or product listings showing the suspected use.\n* Looking at how similar the two things are, and whether there’s confusion or copying.\n\nYou may wish to speak with a legal professional to assess whether the other person’s behaviour may legally amount to infringement. Qualified experts for IP enforcement include lawyers who specialise in IP, as well as registered trade mark and patent attorneys.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "When you think someone has copied your product, logo, idea or brand, it is called ‘suspected infringement’. The word ‘suspected’ is used because only a court can decide if infringement has actually occurred – but that doesn't mean you cannot take action. \n\nDifferent types of IP are protected in different ways. You can only take action if your IP is protected by a specific right such as a registered trade mark, granted patent, certified design, or copyright. \n\nIf you don’t have formal IP rights, it may still be possible to take action, but it can be harder. Some legal protections may still apply under consumer law, contract law or common law—but these usually require help from a legal professional. \n\nStart by working out: \n\n* What exactly has been copied—your logo, invention, product, written work, name, style or something else.\n* Whether what’s been copied is actually protected by a registered or automatic IP right.\n* Whether the use is actually unauthorised or illegal - some uses may be allowed, or may not amount to infringement under the law.\n\nIt’s not always obvious whether infringement has happened. Even when someone copies your work, it may not be illegal. For example, your product might be copied legally if it isn’t covered by a registered design or patent. \n\nTo figure out what’s going on, many people start by: \n\n* Checking their own IP rights (such as trade mark, patent, design or copyright status).\n* Gathering evidence—like photos, screenshots, or product listings showing the suspected use.\n* Looking at how similar the two things are, and whether there’s confusion or copying.\n\nYou may wish to speak with a legal professional to assess whether the other person’s behaviour may legally amount to infringement. Qualified experts for IP enforcement include lawyers who specialise in IP, as well as registered trade mark and patent attorneys.",
-      "serviceOutput": {}
+        "name": "IP disputes"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -43,34 +73,35 @@
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "What do I do if someone copies my stuff?",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with What do I do if someone copies my stuff?",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
     "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff",
     "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
     "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
-    "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
+  ]
 }

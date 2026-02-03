@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Use your trademark prominently to build recognition and protection",
+  "headline": "Reinforce your right – Use your trademark prominently to build recognition and protection",
   "description": "Make strong, visible use of your IP to increase consumer recognition and legal standing.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection",
   "identifier": {
@@ -14,34 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"Proactive\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Reinforce your right – Use your trademark prominently to build recognition and protection",
+      "description": "Using your trade mark in a uniform recognisable way helps customers link the trade mark with your goods or services and shows that you claim the brand as yours. On the other hand, not using your trade mark on the claimed goods or services following registration, or adopting a trade mark that is very different from the registered trade mark may render your trade mark vulnerable to removal from the register for non-use. \n\nFor consistent, strategic use of your trade mark, you would need to think about the key elements that constitute the trade mark and apply these elements coherently. Having the same spelling, layout, colours and positioning across public touch-points, such as packaging and marketing materials, can help your consumers and competitors to recognise your brand and link it to your goods or services.  \n\nAdding the ‘TM’ symbol for unregistered marks or the ‘®’ symbol once registered also signals your intent to use the mark as a trade mark and a badge of origin distinguishing your goods or services from those of competitors. \n\nYou may develop simple brand guidelines for consistent usage of your trade mark. You may provide training to your staff using these brand guidelines, and establish review processes for authorised users such as your suppliers, distributors and licensees to ensure your trade mark is being used in a manner that’s consistent with your branding strategy.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Using your trade mark in a uniform recognisable way helps customers link the trade mark with your goods or services and shows that you claim the brand as yours. On the other hand, not using your trade mark on the claimed goods or services following registration, or adopting a trade mark that is very different from the registered trade mark may render your trade mark vulnerable to removal from the register for non-use. \n\nFor consistent, strategic use of your trade mark, you would need to think about the key elements that constitute the trade mark and apply these elements coherently. Having the same spelling, layout, colours and positioning across public touch-points, such as packaging and marketing materials, can help your consumers and competitors to recognise your brand and link it to your goods or services.  \n\nAdding the ‘TM’ symbol for unregistered marks or the ‘®’ symbol once registered also signals your intent to use the mark as a trade mark and a badge of origin distinguishing your goods or services from those of competitors. \n\nYou may develop simple brand guidelines for consistent usage of your trade mark. You may provide training to your staff using these brand guidelines, and establish review processes for authorised users such as your suppliers, distributors and licensees to ensure your trade mark is being used in a manner that’s consistent with your branding strategy.",
-      "serviceOutput": {}
+        "name": "Reinforce your right"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Increases likelihood of building public recognition and goodwill for the brand. * Creates evidence of trade mark use that may support administration processes or enforcement later. * Helps prevent a mark becoming generic or losing distinctiveness. * Deters copycats by signalling that you value and monitor the trade mark."
+            "text": "* Increases likelihood of building public recognition and goodwill for the brand.\n* Creates evidence of trade mark use that may support administration processes or enforcement later.\n* Helps prevent a mark becoming generic or losing distinctiveness.\n* Deters copycats by signalling that you value and monitor the trade mark."
           }
         },
         {
@@ -49,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Misuse of the ‘®’ symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see: What are trade marks? | IP Australia. * Strict brand rules may limit creative marketing or re‑branding opportunities."
+            "text": "* Misuse of the ‘®’ symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see: What are trade marks? | IP Australia.\n* Strict brand rules may limit creative marketing or re‑branding opportunities."
           }
         },
         {
@@ -57,7 +87,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Using your trade mark in a consistent manner may result in: * Customers reliably associating the mark with your business alone * Easier proof of ownership and distinctiveness in a dispute or trade mark application * Fewer instances of accidental misuse by employees or third parties."
+            "text": "Using your trade mark in a consistent manner may result in:\n* Customers reliably associating the mark with your business alone\n* Easier proof of ownership and distinctiveness in a dispute or trade mark application\n* Fewer instances of accidental misuse by employees or third parties."
           }
         },
         {
@@ -65,7 +95,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The costs of setting up brand guidelines for consistent trade mark usage can vary heavily, depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists. Preparing simple brand guidelines and training materials may cost a few hours of staff time or modest design fees. However, optional legal review of the guidelines or close collaboration with marketing specialist may involve substantial professional fees."
+            "text": "The costs of setting up brand guidelines for consistent trade mark usage can vary heavily, depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists.\nPreparing simple brand guidelines and training materials may cost a few hours of staff time or modest design fees. However, optional legal review of the guidelines or close collaboration with marketing specialist may involve substantial professional fees."
           }
         },
         {
@@ -97,7 +127,7 @@
           "name": "Who’s involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Trade mark owner or authorised users such as employees and contractors who apply the branding. * Optional: IP professionals for review, consultation and advice."
+            "text": "* Trade mark owner or authorised users such as employees and contractors who apply the branding.\n* Optional: IP professionals for review, consultation and advice."
           }
         },
         {
@@ -105,55 +135,64 @@
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour. * Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark. * Routine checks of public use and finding inconsistencies. * Records of dated examples (screenshots, packaging, adverts) showing correct use."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "* A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour.\n* Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark.\n* Routine checks of public use and finding inconsistencies.\n* Records of dated examples (screenshots, packaging, adverts) showing correct use."
           }
         }
       ]
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Use your trademark prominently to build recognition and protection",
+      "name": "How to proceed with Reinforce your right – Use your trademark prominently to build recognition and protection",
+      "about": {
+        "@id": "#the-service"
+      },
       "step": [
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour",
           "text": "A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark",
           "text": "Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Routine checks of public use and finding inconsistencies",
           "text": "Routine checks of public use and finding inconsistencies."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Records of dated examples (screenshots, packaging, adverts) showing correct use",
           "text": "Records of dated examples (screenshots, packaging, adverts) showing correct use."
         }
       ]
     }
   ],
-  "relatedLink": [
-    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://business.gov.au/marketing-and-advertising",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection"
-  ],
-  "citation": {
-    "@type": "Legislation",
+  "alternativeHeadline": "Use your trademark prominently to build recognition and protection",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
     "name": "\"Trade mark\", \"Unregistered-tm\""
-  }
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "\"Trade mark\", \"Unregistered-tm\"",
+      "legislationType": "Legislation"
+    }
+  ],
+  "relatedLink": [
+    "https://business.gov.au/marketing-and-advertising",
+    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip"
+  ]
 }

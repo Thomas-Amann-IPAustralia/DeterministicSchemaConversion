@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Obtain legal advice on an accusation of infringment",
+  "headline": "IP attorney or lawyer – Obtain legal advice on an accusation of infringment",
   "description": "Seek expert advice on how to respond to allegations of IP infringement ",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement",
   "identifier": {
@@ -14,36 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      " \"Accused\" "
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "IP attorney or lawyer – Obtain legal advice on an accusation of infringment",
+      "description": "Being accused of IP infringement can be a distressing, and potentially confusing, experience. Having a qualified intellectual property (IP) lawyer or a trade marks or patent attorney on your side can help you make sense of an allegation that your product, branding or content is infringing someone else’s IP.\n\nSuch professionals can help:\n\n* explain the claim in plain language\n* assess whether, or to what extent, the accusation has merit\n* outline the full range of ways you may respond, from negotiating a quiet resolution through to defending the matter in court.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of IP professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which would require a lawyer).  \n\nIf you already have a trusted lawyer, trade marks or patent attorney, you might talk to them about finding the right IP professional for your circumstances. Alternatively, you could search the [Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)  register to find a trade marks or patent attorney or contact your local law society to find a specialist IP lawyer.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Being accused of IP infringement can be a distressing, and potentially confusing, experience. Having a qualified intellectual property (IP) lawyer or a trade marks or patent attorney on your side can help you make sense of an allegation that your product, branding or content is infringing someone else’s IP.\n\nSuch professionals can help:\n\n* explain the claim in plain language\n* assess whether, or to what extent, the accusation has merit\n* outline the full range of ways you may respond, from negotiating a quiet resolution through to defending the matter in court.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of IP professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which would require a lawyer).  \n\nIf you already have a trusted lawyer, trade marks or patent attorney, you might talk to them about finding the right IP professional for your circumstances. Alternatively, you could search the [Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)  register to find a trade marks or patent attorney or contact your local law society to find a specialist IP lawyer.",
-      "serviceOutput": {
-        "priceRange": "for IP lawyers vary widely depending on factors such as their level of expertise, the size of the firm they work for, and where they are based. If an IP lawyer needs to engage a barrister to represent you in court proceedings, this will add to the costs involved.  Some IP lawyers and IP attorneys offer a free initial consultation to assess what services you need and to provide you with an estimate of costs moving forward. The Institute of Patent and Trade Mark Attorneys of Australia provides a service for free consultations. That service can be found [here](https://ipta.org.au/community/get-free-consultation/). It can be a good idea to ask for an indication of how much the entire process may cost during your first meeting. IP lawyers have a professional obligation to provide you with an upfront estimate of their fees and costs."
+        "name": "IP attorney or lawyer"
       }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You receive clear, tailored guidance on the strength of the allegation and any defences. * Early advice may prevent costly missteps such as accidental admissions or missed deadlines. * They can handle stressful correspondence with the other side, letting you focus on the business. * They can negotiate outcomes that preserve commercial relationships and limit public attention. * They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct. * They are able to recognise common issues which come up and refer you to other professionals if and when needed."
+            "text": "You receive clear, tailored guidance on the strength of the allegation and any defences.\n* Early advice may prevent costly missteps such as accidental admissions or missed deadlines.\n* They can handle stressful correspondence with the other side, letting you focus on the business.\n* They can negotiate outcomes that preserve commercial relationships and limit public attention.\n* They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct.\n* They are able to recognise common issues which come up and refer you to other professionals if and when needed."
           }
         },
         {
@@ -51,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Most IP lawyers and IP attorneys have different specialties and may be more effective in their particular field of expertise. For instance, an IP lawyer may be highly experienced in dealing with trade marks, but not so much in patents, or vice versa. Only lawyers can conduct proceedings in a court so, if you engage an IP attorney rather than an IP lawyer, they would need to refer you to an IP lawyer if you find you need to go to court to enforce your IP rights. * Obtaining professional advice can be costly — see ‘What might the costs be?’ below."
+            "text": "* Most IP lawyers and IP attorneys have different specialties and may be more effective in their particular field of expertise. For instance, an IP lawyer may be highly experienced in dealing with trade marks, but not so much in patents, or vice versa. Only lawyers can conduct proceedings in a court so, if you engage an IP attorney rather than an IP lawyer, they would need to refer you to an IP lawyer if you find you need to go to court to enforce your IP rights.\n* Obtaining professional advice can be costly — see ‘What might the costs be?’ below."
           }
         },
         {
@@ -67,7 +95,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The total costs of engaging an IP lawyer or IP attorney will depend on factors such as their fees and other costs and the complexity of the matter. For trade marks and patent attorneys, you can expect an average fee of: * $500-1,000 per hour for a [patent attorney](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney). * $1,000-2,000 total for a [trade marks attorney](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney)  to file and register a single trade mark in one or two classes of goods and services. Fees for IP lawyers vary widely depending on factors such as their level of expertise, the size of the firm they work for, and where they are based. If an IP lawyer needs to engage a barrister to represent you in court proceedings, this will add to the costs involved. Some IP lawyers and IP attorneys offer a free initial consultation to assess what services you need and to provide you with an estimate of costs moving forward. The Institute of Patent and Trade Mark Attorneys of Australia provides a service for free consultations. That service can be found [here](https://ipta.org.au/community/get-free-consultation/). It can be a good idea to ask for an indication of how much the entire process may cost during your first meeting. IP lawyers have a professional obligation to provide you with an upfront estimate of their fees and costs."
+            "text": "The total costs of engaging an IP lawyer or IP attorney will depend on factors such as their fees and other costs and the complexity of the matter.\nFor trade marks and patent attorneys, you can expect an average fee of:\n* $500-1,000 per hour for a [patent attorney](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney).\n* $1,000-2,000 total for a [trade marks attorney](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney)  to file and register a single trade mark in one or two classes of goods and services.\nFees for IP lawyers vary widely depending on factors such as their level of expertise, the size of the firm they work for, and where they are based. If an IP lawyer needs to engage a barrister to represent you in court proceedings, this will add to the costs involved.\nSome IP lawyers and IP attorneys offer a free initial consultation to assess what services you need and to provide you with an estimate of costs moving forward. The Institute of Patent and Trade Mark Attorneys of Australia provides a service for free consultations. That service can be found [here](https://ipta.org.au/community/get-free-consultation/). It can be a good idea to ask for an indication of how much the entire process may cost during your first meeting. IP lawyers have a professional obligation to provide you with an upfront estimate of their fees and costs."
           }
         },
         {
@@ -99,7 +127,7 @@
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Alleged infringer (you or your business). * Your IP lawyer or IP attorney."
+            "text": "* Alleged infringer (you or your business).\n* Your IP lawyer or IP attorney."
           }
         },
         {
@@ -107,139 +135,148 @@
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "**Do your homework before you meet** Your time is important and an expert's time can be expensive, so it can be useful to prepare before you meet with an IP lawyer or IP attorney. Consider: [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208) * [Learning more about IP](https://www.ipaustralia.gov.au/understanding-ip/types-of-ip) and the specific IP type at the centre of the dispute. Having some basic knowledge will help you to better understand the professional's advice and recommendations. * Researching what the person accusing you of IP infringement is doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice. **Finding an IP lawyer or IP attorney** To find an IP lawyer, you can search on your State or Territory’s law society website: * [The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors) * [Law Institute Victoria](https://www.liv.asn.au/legalhelp) * [Queensland Law Society](https://www.youandthelaw.com.au/) * [The Law Society of Western Australia](https://lawsocietywa.asn.au/services/find-a-lawyer/) * [The Law Society of South Australia](https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx) * [The Law Society of Tasmania](https://www.lst.org.au/find-a-lawyer/) * [Law Society Northern Territory](https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/) * [The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer) To find a registered Australian trade marks or patent attorney, you can search the [Trans-Tasman IP Attorneys Board directory: Find an IP attorney or firm | Trans-Tasman IP Attorneys Board.](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0) **Tips for choosing an IP lawyer or IP attorney** Here are some suggestions for choosing an IP lawyer or IP attorney for your IP: * Ask for recommendations from other business owners or members of your industry association. * Ask how much you'll be charged and how long the service will take. * Don't assume that all IP lawyers or IP attorneys specialise in the type of IP that you have. * Try to determine if you can establish a trusting relationship. If you don't feel comfortable sharing relevant information, it could be difficult for an adviser to work in your best interests. * If you think you may need to go to court, speak to an IP lawyer rather than an IP attorney."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "**Do your homework before you meet**\nYour time is important and an expert's time can be expensive, so it can be useful to prepare before you meet with an IP lawyer or IP attorney. Consider:\n[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n* [Learning more about IP](https://www.ipaustralia.gov.au/understanding-ip/types-of-ip) and the specific IP type at the centre of the dispute. Having some basic knowledge will help you to better understand the professional's advice and recommendations.\n* Researching what the person accusing you of IP infringement is doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice.\n**Finding an IP lawyer or IP attorney**\nTo find an IP lawyer, you can search on your State or Territory’s law society website:\n* [The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors)\n* [Law Institute Victoria](https://www.liv.asn.au/legalhelp)\n* [Queensland Law Society](https://www.youandthelaw.com.au/)\n* [The Law Society of Western Australia](https://lawsocietywa.asn.au/services/find-a-lawyer/)\n* [The Law Society of South Australia](https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx)\n* [The Law Society of Tasmania](https://www.lst.org.au/find-a-lawyer/)\n* [Law Society Northern Territory](https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/)\n* [The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer)\nTo find a registered Australian trade marks or patent attorney, you can search the [Trans-Tasman IP Attorneys Board directory: Find an IP attorney or firm | Trans-Tasman IP Attorneys Board.](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0)\n**Tips for choosing an IP lawyer or IP attorney**\nHere are some suggestions for choosing an IP lawyer or IP attorney for your IP:\n* Ask for recommendations from other business owners or members of your industry association.\n* Ask how much you'll be charged and how long the service will take.\n* Don't assume that all IP lawyers or IP attorneys specialise in the type of IP that you have.\n* Try to determine if you can establish a trusting relationship. If you don't feel comfortable sharing relevant information, it could be difficult for an adviser to work in your best interests.\n* If you think you may need to go to court, speak to an IP lawyer rather than an IP attorney."
           }
         }
       ]
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Obtain legal advice on an accusation of infringment",
+      "name": "How to proceed with IP attorney or lawyer – Obtain legal advice on an accusation of infringment",
+      "about": {
+        "@id": "#the-service"
+      },
       "step": [
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
-          "text": "Do your homework before you meet**"
+          "name": "Do your homework before you meet**\n\nYour time is important and an expert's time can be expensive, so it can be useful to prepare before you meet with an IP lawyer or IP attorney",
+          "text": "Do your homework before you meet**\n\nYour time is important and an expert's time can be expensive, so it can be useful to prepare before you meet with an IP lawyer or IP attorney. Consider:\n\n[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[Learning more about IP](https://www",
           "text": "[Learning more about IP](https://www.ipaustralia.gov.au/understanding-ip/types-of-ip) and the specific IP type at the centre of the dispute. Having some basic knowledge will help you to better understand the professional's advice and recommendations."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Researching what the person accusing you of IP infringement is doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results",
           "text": "Researching what the person accusing you of IP infringement is doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
-          "text": "Finding an IP lawyer or IP attorney**"
+          "name": "Step",
+          "text": "Finding an IP lawyer or IP attorney**\n\nTo find an IP lawyer, you can search on your State or Territory’s law society website:"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[The Law Society of NSW](https://www",
           "text": "[The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[Law Institute Victoria](https://www",
           "text": "[Law Institute Victoria](https://www.liv.asn.au/legalhelp)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[Queensland Law Society](https://www",
           "text": "[Queensland Law Society](https://www.youandthelaw.com.au/)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[The Law Society of Western Australia](https://lawsocietywa",
           "text": "[The Law Society of Western Australia](https://lawsocietywa.asn.au/services/find-a-lawyer/)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[The Law Society of South Australia](https://www",
           "text": "[The Law Society of South Australia](https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[The Law Society of Tasmania](https://www",
           "text": "[The Law Society of Tasmania](https://www.lst.org.au/find-a-lawyer/)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "[Law Society Northern Territory](https://lawsocietynt",
           "text": "[Law Society Northern Territory](https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
-          "text": "[The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer)"
+          "name": "[The Law Society of the ACT](https://www",
+          "text": "[The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer)\n\nTo find a registered Australian trade marks or patent attorney, you can search the [Trans-Tasman IP Attorneys Board directory: Find an IP attorney or firm | Trans-Tasman IP Attorneys Board.](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0)"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
-          "text": "Tips for choosing an IP lawyer or IP attorney**"
+          "name": "Step",
+          "text": "Tips for choosing an IP lawyer or IP attorney**\n\nHere are some suggestions for choosing an IP lawyer or IP attorney for your IP:"
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Ask for recommendations from other business owners or members of your industry association",
           "text": "Ask for recommendations from other business owners or members of your industry association."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Ask how much you'll be charged and how long the service will take",
           "text": "Ask how much you'll be charged and how long the service will take."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Don't assume that all IP lawyers or IP attorneys specialise in the type of IP that you have",
           "text": "Don't assume that all IP lawyers or IP attorneys specialise in the type of IP that you have."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Try to determine if you can establish a trusting relationship",
           "text": "Try to determine if you can establish a trusting relationship. If you don't feel comfortable sharing relevant information, it could be difficult for an adviser to work in your best interests."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "If you think you may need to go to court, speak to an IP lawyer rather than an IP attorney",
           "text": "If you think you may need to go to court, speak to an IP lawyer rather than an IP attorney."
         }
       ]
     }
   ],
-  "relatedLink": [
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
-    "https://www.actlawsociety.asn.au/find-a-lawyer",
-    "https://www.lst.org.au/find-a-lawyer/",
-    "https://www.youandthelaw.com.au/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.lawsociety.com.au/register-of-solicitors",
-    "https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx",
-    "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
-    "https://www.liv.asn.au/legalhelp",
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://lawsocietywa.asn.au/services/find-a-lawyer/",
-    "https://www.ipaustralia.gov.au/understanding-ip/types-of-ip",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement",
-    "https://ipta.org.au/community/get-free-consultation/"
-  ],
-  "citation": {
-    "@type": "Legislation",
+  "alternativeHeadline": "Obtain legal advice on an accusation of infringment",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
     "name": "\"Any dispute\""
-  }
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
+    }
+  ],
+  "relatedLink": [
+    "https://ipta.org.au/community/get-free-consultation/",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement",
+    "https://www.ipaustralia.gov.au/understanding-ip/types-of-ip",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+    "https://www.lawsociety.com.au/register-of-solicitors",
+    "https://www.youandthelaw.com.au/",
+    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
+    "https://www.liv.asn.au/legalhelp",
+    "https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
+    "https://www.actlawsociety.asn.au/find-a-lawyer",
+    "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+    "https://lawsocietywa.asn.au/services/find-a-lawyer/",
+    "https://www.lst.org.au/find-a-lawyer/"
+  ]
 }

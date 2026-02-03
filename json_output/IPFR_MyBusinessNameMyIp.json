@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Is my business name my IP?",
+  "headline": "Business names – Is my business name my IP?",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip",
   "identifier": {
@@ -14,27 +14,57 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Business names – Is my business name my IP?",
+      "description": "A business may operate under several ‘names’, but only a registered trade mark is an intellectual property right that can give you exclusive control over your brand across Australia. IP Australia administers trade marks, while ASIC handles business and company name registration. \n\nBusiness name \n\n* Your trading name registered with the Australian Securities and Investments Commission (ASIC), so customers know who owns the business.\n* It identifies your business but does not give you exclusive rights to that name. Other people can register or use a similar business name. Business name registration does not provide intellectual property protection.\n\nCompany name \n\n* A separate legal entity created under the *Corporations Act* 2001 (Cth) when you register with ASIC.\n* It helps authorities and customers find the right business but does not create any brand-ownership or exclusive rights. Registering a company does not give you trade mark rights.\n\nRegistered trade mark \n\n* A sign such as words, logos, slogans or shapes, registered with IP Australia to distinguish your goods or services.\n* Grants you exclusive rights nationwide to use the ‘mark’ for goods and services for which it is registered.\n* Allows you to take legal action against suspected infringement and can deter others from copying your brand.\n\nBecause each register serves a different purpose, you can hold a business name, company name and trade mark at the same time. The registers do not cross-check, so an available business name on ASIC may conflict with an existing trade mark in IP Australia’s register, and vice versa. \n\nTrade mark registration involves application and renewal fees, while business name registration is comparatively inexpensive. Only a trade mark can give you enforceable, nationwide rights. \n\nKey point: Registering a business name or company name does not give you intellectual property rights. Only a registered trade mark can provide exclusive legal protection for your brand.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "A business may operate under several ‘names’, but only a registered trade mark is an intellectual property right that can give you exclusive control over your brand across Australia. IP Australia administers trade marks, while ASIC handles business and company name registration. \n\nBusiness name \n\n* Your trading name registered with the Australian Securities and Investments Commission (ASIC), so customers know who owns the business.\n* It identifies your business but does not give you exclusive rights to that name. Other people can register or use a similar business name. Business name registration does not provide intellectual property protection.\n\nCompany name \n\n* A separate legal entity created under the *Corporations Act* 2001 (Cth) when you register with ASIC.\n* It helps authorities and customers find the right business but does not create any brand-ownership or exclusive rights. Registering a company does not give you trade mark rights.\n\nRegistered trade mark \n\n* A sign such as words, logos, slogans or shapes, registered with IP Australia to distinguish your goods or services.\n* Grants you exclusive rights nationwide to use the ‘mark’ for goods and services for which it is registered.\n* Allows you to take legal action against suspected infringement and can deter others from copying your brand.\n\nBecause each register serves a different purpose, you can hold a business name, company name and trade mark at the same time. The registers do not cross-check, so an available business name on ASIC may conflict with an existing trade mark in IP Australia’s register, and vice versa. \n\nTrade mark registration involves application and renewal fees, while business name registration is comparatively inexpensive. Only a trade mark can give you enforceable, nationwide rights. \n\nKey point: Registering a business name or company name does not give you intellectual property rights. Only a registered trade mark can provide exclusive legal protection for your brand.",
-      "serviceOutput": {}
+        "name": "Business names"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -43,32 +73,33 @@
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "Is my business name my IP?",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with Is my business name my IP?",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
     "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
     "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
+    "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
     "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip",
-    "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/"
+  ]
 }

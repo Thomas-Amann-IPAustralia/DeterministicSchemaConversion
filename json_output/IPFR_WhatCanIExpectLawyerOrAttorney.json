@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "What can I expect from a lawyer or attorney?",
+  "headline": "Getting legal help – What can I expect from a lawyer or attorney?",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney",
   "identifier": {
@@ -14,27 +14,57 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Getting legal help – What can I expect from a lawyer or attorney?",
+      "description": "If you’re dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal professional. \n\nLegal professionals can help you understand your rights, the strength of your case, and the legal processes involved. This may include general lawyers, IP lawyers, or specialist attorneys (such as patent or trade mark attorneys). \n\nHiring a legal professional does not guarantee that you will win a dispute, but it may give you confidence that your rights are being taken seriously and your next steps are well considered. \n\nHere’s what you can generally expect: \n\n* They can help you understand if what’s happening may be a suspected infringement and what options are available.\n* They may draft or review documents such as letters of demand, agreements, or court submissions.\n* Some are also qualified to represent you in court or at hearings.\n* Attorneys (such as patent and trade mark attorneys) are specially trained in certain IP rights and may help with applications, oppositions, or enforcement; though not all attorneys are lawyers.\n\nYou should ask early about the costs, timing, and what’s included in their services. Some professionals charge a fixed fee, while others bill hourly. \n\nPlease note: Trade mark and patent attorneys are not technically lawyers, but they are qualified to give advice on specific IP rights under Australian law.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "If you’re dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal professional. \n\nLegal professionals can help you understand your rights, the strength of your case, and the legal processes involved. This may include general lawyers, IP lawyers, or specialist attorneys (such as patent or trade mark attorneys). \n\nHiring a legal professional does not guarantee that you will win a dispute, but it may give you confidence that your rights are being taken seriously and your next steps are well considered. \n\nHere’s what you can generally expect: \n\n* They can help you understand if what’s happening may be a suspected infringement and what options are available.\n* They may draft or review documents such as letters of demand, agreements, or court submissions.\n* Some are also qualified to represent you in court or at hearings.\n* Attorneys (such as patent and trade mark attorneys) are specially trained in certain IP rights and may help with applications, oppositions, or enforcement; though not all attorneys are lawyers.\n\nYou should ask early about the costs, timing, and what’s included in their services. Some professionals charge a fixed fee, while others bill hourly. \n\nPlease note: Trade mark and patent attorneys are not technically lawyers, but they are qualified to give advice on specific IP rights under Australian law.",
-      "serviceOutput": {}
+        "name": "Getting legal help"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -43,33 +73,34 @@
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "What can I expect from a lawyer or attorney?",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with What can I expect from a lawyer or attorney?",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney",
     "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+    "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
+  ]
 }

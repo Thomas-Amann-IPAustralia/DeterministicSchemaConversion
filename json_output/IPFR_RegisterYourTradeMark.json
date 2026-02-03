@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Register your trade mark",
+  "headline": "Apply for a trade mark – Register your trade mark",
   "description": "Apply to IP Australia for a registered trade mark to secure exclusive rights to your brand  to reinforce your defence.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark",
   "identifier": {
@@ -14,36 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"Accused\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Apply for a trade mark – Register your trade mark",
+      "description": "If you are accused of copying or infringing someone else’s trade mark, it might help to register your own rights in the trade mark which they have claimed is copying/infringing. This can be especially applicable when the other party’s claim seems baseless or the two trade marks are not sufficiently similar in your opinion. \n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these. \n\nRegistering a trade mark can give you an exclusive right to use your branding on specific goods or services in Australia. Your trade mark will appear on a public, searchable database. This may help you demonstrate your ownership if others allege you have copied their branding. \n\nYou might have some rights to protect your trade mark even if it’s not registered with IP Australia. However, trade mark registration makes defending your right to use your trade mark easier. It also increases your enforcement options.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "If you are accused of copying or infringing someone else’s trade mark, it might help to register your own rights in the trade mark which they have claimed is copying/infringing. This can be especially applicable when the other party’s claim seems baseless or the two trade marks are not sufficiently similar in your opinion. \n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these. \n\nRegistering a trade mark can give you an exclusive right to use your branding on specific goods or services in Australia. Your trade mark will appear on a public, searchable database. This may help you demonstrate your ownership if others allege you have copied their branding. \n\nYou might have some rights to protect your trade mark even if it’s not registered with IP Australia. However, trade mark registration makes defending your right to use your trade mark easier. It also increases your enforcement options.",
-      "serviceOutput": {
-        "priceRange": "(per class) | | Step 1 - TM Headstart request |  | $200 | | Step 2 – Amendments to an application (optional) | Change of trade mark representation (optional) | $150 | |  | Addition of new classes (optional) | $200 | | Step 3 - Conversion to a standard application (Part 2 fee) |  | $130 |  **Standard application fees**   A standard trade mark application costs a minimum of $250. \\  \\ Your fees will be lower if you use the [picklist](https://tmgns.search.ipaustralia.gov.au/). The picklist is a searchable list of 100,000+ goods and services categorised into 45 classes relevant to trade marks. This helps examiners to know exactly which goods and services you intend to use the trade mark in relation to.    |  |  |  | | --- | --- | --- | | **Action** | **Fees (per class) with picklist** | **Fees (per class) without picklist** | | Standard trade mark application, filed online | $250 | $400 |"
+        "name": "Apply for a trade mark"
       }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Registering a trade mark offers a range of benefits which can simplify the process of defending your IP rights. It provides: * Formal registered rights that may support your defence against alleged infringement (on the specific types of goods and services claimed in the application). * Robust and universally recognised registration (within Australia). * Clear evidence of ownership date to support your claims. * Strong negotiating position for future discussions to resolve the dispute."
+            "text": "Registering a trade mark offers a range of benefits which can simplify the process of defending your IP rights. It provides:\n* Formal registered rights that may support your defence against alleged infringement (on the specific types of goods and services claimed in the application).\n* Robust and universally recognised registration (within Australia).\n* Clear evidence of ownership date to support your claims.\n* Strong negotiating position for future discussions to resolve the dispute."
           }
         },
         {
@@ -51,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Applications to register a trade mark are generally public (an exception is the early stages of TM Headstart). Your competitors might become aware you are trying to register your trade mark. They may take actions like trying to register their own similar trade mark, or oppose your application. * Examiner objections may incur additional fees or require amendments which may compromise your branding in relation to the scope of goods and services the trade mark can claim or (in case of TM Headstart) its visual identity. * You might discover that there is a problem with your trade mark, or that someone else has already registered a similar trade mark. This could mean you need to reconsider whether your trade mark is right for you. * An Australian trade mark registration does not cover you in overseas markets. * Registration does not apply retroactively to past use, so it may not resolve allegations of infringement before you applied."
+            "text": "* Applications to register a trade mark are generally public (an exception is the early stages of TM Headstart). Your competitors might become aware you are trying to register your trade mark. They may take actions like trying to register their own similar trade mark, or oppose your application.\n* Examiner objections may incur additional fees or require amendments which may compromise your branding in relation to the scope of goods and services the trade mark can claim or (in case of TM Headstart) its visual identity.\n* You might discover that there is a problem with your trade mark, or that someone else has already registered a similar trade mark. This could mean you need to reconsider whether your trade mark is right for you.\n* An Australian trade mark registration does not cover you in overseas markets.\n* Registration does not apply retroactively to past use, so it may not resolve allegations of infringement before you applied."
           }
         },
         {
@@ -59,7 +87,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are two main ways to apply to register a trade mark in Australia: * Standard application * TM Headstart. These have different costs and timeframes. **TM Headstart fees** Registering a trade mark through [TM Headstart](https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart)  costs a minimum of $330. This covers submitting your pre-application (step 1), and finalising your application (step 3). If you need to make changes before finalising your application (step 2), this will add to your cost. |  |  |  | | --- | --- | --- | | Action |  | Fees (per class) | | Step 1 - TM Headstart request |  | $200 | | Step 2 – Amendments to an application (optional) | Change of trade mark representation (optional) | $150 | |  | Addition of new classes (optional) | $200 | | Step 3 - Conversion to a standard application (Part 2 fee) |  | $130 | **Standard application fees** A standard trade mark application costs a minimum of $250. \\ \\ Your fees will be lower if you use the [picklist](https://tmgns.search.ipaustralia.gov.au/). The picklist is a searchable list of 100,000+ goods and services categorised into 45 classes relevant to trade marks. This helps examiners to know exactly which goods and services you intend to use the trade mark in relation to. |  |  |  | | --- | --- | --- | | **Action** | **Fees (per class) with picklist** | **Fees (per class) without picklist** | | Standard trade mark application, filed online | $250 | $400 |"
+            "text": "There are two main ways to apply to register a trade mark in Australia:\n* Standard application\n* TM Headstart.\nThese have different costs and timeframes.\n**TM Headstart fees**\nRegistering a trade mark through [TM Headstart](https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart)  costs a minimum of $330. This covers submitting your pre-application (step 1), and finalising your application (step 3). If you need to make changes before finalising your application (step 2), this will add to your cost.\n|  |  |  |\n| --- | --- | --- |\n| Action |  | Fees (per class) |\n| Step 1 - TM Headstart request |  | $200 |\n| Step 2 – Amendments to an application (optional) | Change of trade mark representation (optional) | $150 |\n|  | Addition of new classes (optional) | $200 |\n| Step 3 - Conversion to a standard application (Part 2 fee) |  | $130 |\n**Standard application fees**\nA standard trade mark application costs a minimum of $250. \\\n\\\nYour fees will be lower if you use the [picklist](https://tmgns.search.ipaustralia.gov.au/). The picklist is a searchable list of 100,000+ goods and services categorised into 45 classes relevant to trade marks. This helps examiners to know exactly which goods and services you intend to use the trade mark in relation to.\n|  |  |  |\n| --- | --- | --- |\n| **Action** | **Fees (per class) with picklist** | **Fees (per class) without picklist** |\n| Standard trade mark application, filed online | $250 | $400 |"
           }
         },
         {
@@ -77,35 +105,36 @@
             "@type": "Answer",
             "text": "There are over 800,000 registered trade marks on the [Australia Trade Mark Register.](https://search.ipaustralia.gov.au/trademarks/search/quick)"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "Register your trade mark",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Trade mark\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with Register your trade mark",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Trade mark\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark",
-    "https://www.ipaustralia.gov.au/trade-marks",
-    "https://search.ipaustralia.gov.au/trademarks/search/quick",
-    "https://tmgns.search.ipaustralia.gov.au/",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
     "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
-    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Trade mark\""
-  }
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+    "https://www.ipaustralia.gov.au/trade-marks",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark",
+    "https://search.ipaustralia.gov.au/trademarks/search/quick",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+    "https://tmgns.search.ipaustralia.gov.au/"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "What are the ways to challenge a decision IP Australia has made?",
+  "headline": "Disagreements about registration – What are the ways to challenge a decision IP Australia has made?",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
   "identifier": {
@@ -14,27 +14,57 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Disagreements about registration – What are the ways to challenge a decision IP Australia has made?",
+      "description": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a ‘hearing’ to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder’s rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a ‘merits review’ by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard *de novo*, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a ‘hearing’ to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder’s rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a ‘merits review’ by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard *de novo*, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
-      "serviceOutput": {}
+        "name": "Disagreements about registration"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -43,35 +73,36 @@
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "What are the ways to challenge a decision IP Australia has made?",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with What are the ways to challenge a decision IP Australia has made?",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+    "https://www.art.gov.au/",
+    "https://www.fedcourt.gov.au/law-and-practice/national-practice-areas/ip",
     "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
     "https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994",
-    "https://www.art.gov.au/",
-    "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-a-hearing",
-    "https://www.fedcourt.gov.au/law-and-practice/national-practice-areas/ip",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
     "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+    "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-a-hearing",
     "https://peo.gov.au/understand-our-parliament/your-questions-on-notice/questions/what-is-judicial-review"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+  ]
 }

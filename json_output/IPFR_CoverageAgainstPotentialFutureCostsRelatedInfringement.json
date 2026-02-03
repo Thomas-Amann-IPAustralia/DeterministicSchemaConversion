@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Coverage against potential future costs related to infringement",
+  "headline": "IP insurance – Coverage against potential future costs related to infringement",
   "description": "Protect yourself from some costs involved in IP disputes  ",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement",
   "identifier": {
@@ -14,36 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"Proactive\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "IP insurance – Coverage against potential future costs related to infringement",
+      "description": "Intellectual Property (IP) insurance is a specific type of coverage designed to protect businesses and individuals against the financial risks associated with intellectual property disputes. It can help cover the legal costs and potential damages involved in defending against infringement allegations or enforcing one’s own IP rights. IP insurance can apply to various forms of registered intellectual property, such as patents and trademarks, or unregistered rights like copyrights and trade secrets. There are also other forms of insurance that may be relevant, such as litigation insurance.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Intellectual Property (IP) insurance is a specific type of coverage designed to protect businesses and individuals against the financial risks associated with intellectual property disputes. It can help cover the legal costs and potential damages involved in defending against infringement allegations or enforcing one’s own IP rights. IP insurance can apply to various forms of registered intellectual property, such as patents and trademarks, or unregistered rights like copyrights and trade secrets. There are also other forms of insurance that may be relevant, such as litigation insurance.",
-      "serviceOutput": {
-        "priceRange": "s:** While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for."
+        "name": "IP insurance"
       }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Financial Protection:** IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events. * **Legal Support:** IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively. * **Investor Confidence:** Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed. * **Predictable Costs:** While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for."
+            "text": "* **Financial Protection:** IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events.\n* **Legal Support:** IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively.\n* **Investor Confidence:** Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed.\n* **Predictable Costs:** While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for."
           }
         },
         {
@@ -51,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Coverage limitations and exclusions:** Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions – certain types of IP may not be fully covered. Additionally, insurers typically **do not cover disputes or infringements that are already known, in progress or on the horizon.** * **Insurer control over litigation strategy:** When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer’s cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer’s panel of approved attorneys – which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind)."
+            "text": "* **Coverage limitations and exclusions:** Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions – certain types of IP may not be fully covered. Additionally, insurers typically **do not cover disputes or infringements that are already known, in progress or on the horizon.**\n* **Insurer control over litigation strategy:** When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer’s cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer’s panel of approved attorneys – which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind)."
           }
         },
         {
@@ -59,7 +87,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There can be both positive and negative outcomes from IP insurance. **Positives:** * **Financial protection** in IP disputes, covering costly legal fees and potential damages or settlements. * **Improved enforcement** of your intellectual property, as insurance may help fund actions against infringers. * **Deterrent effect** — the knowledge that you’re insured may discourage potential infringers. * **Enforcement coverage** for both asserting your rights and defending against claims. * **Credibility boost**, offering reassurance to investors, partners, or stakeholders. * **Stronger negotiating position** when resolving disputes. **Negatives:** * **High deductibles (excess)** may apply before insurance kicks in. * **Premiums may increase** after making a claim. * **Coverage limitations** depending on the policy terms — not all types of disputes or jurisdictions may be included. * **Insurer influence** — the insurance company might want a say in your legal strategy. * **Risk of declined coverage** if the insurer determines the issue isn’t covered. * **False sense of security**, leading to overreliance and mistaken belief that “everything is covered.”"
+            "text": "There can be both positive and negative outcomes from IP insurance.\n**Positives:**\n* **Financial protection** in IP disputes, covering costly legal fees and potential damages or settlements.\n* **Improved enforcement** of your intellectual property, as insurance may help fund actions against infringers.\n* **Deterrent effect** — the knowledge that you’re insured may discourage potential infringers.\n* **Enforcement coverage** for both asserting your rights and defending against claims.\n* **Credibility boost**, offering reassurance to investors, partners, or stakeholders.\n* **Stronger negotiating position** when resolving disputes.\n**Negatives:**\n* **High deductibles (excess)** may apply before insurance kicks in.\n* **Premiums may increase** after making a claim.\n* **Coverage limitations** depending on the policy terms — not all types of disputes or jurisdictions may be included.\n* **Insurer influence** — the insurance company might want a say in your legal strategy.\n* **Risk of declined coverage** if the insurer determines the issue isn’t covered.\n* **False sense of security**, leading to overreliance and mistaken belief that “everything is covered.”"
           }
         },
         {
@@ -67,7 +95,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable. A premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate. A clear indication of the costs can be obtained by requesting a quote from insurers."
+            "text": "As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable.\nA premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate.\nA clear indication of the costs can be obtained by requesting a quote from insurers."
           }
         },
         {
@@ -83,7 +111,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past. Additionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it."
+            "text": "As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past.\nAdditionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it."
           }
         },
         {
@@ -99,7 +127,7 @@
           "name": "Who’s involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You (the IP holder) * The insurer * Your legal counsel (if any)"
+            "text": "* You (the IP holder)\n* The insurer\n* Your legal counsel (if any)"
           }
         },
         {
@@ -107,31 +135,46 @@
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings. It may be beneficial to have a preferred legal counsel. You will also need to research, identify and compare insurers before making a decision."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings.\nIt may be beneficial to have a preferred legal counsel.\nYou will also need to research, identify and compare insurers before making a decision."
           }
         }
       ]
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Coverage against potential future costs related to infringement",
-      "step": []
+      "name": "How to proceed with IP insurance – Coverage against potential future costs related to infringement",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings",
+          "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings. \n\nIt may be beneficial to have a preferred legal counsel. \n\nYou will also need to research, identify and compare insurers before making a decision."
+        }
+      ]
+    }
+  ],
+  "alternativeHeadline": "Coverage against potential future costs related to infringement",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\""
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "\"Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
     "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
     "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\""
-  }
+  ]
 }

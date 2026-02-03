@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Oppose an IP infringement notice from an online marketplace ",
+  "headline": "eCommerce platform – Oppose an IP infringement notice from an online marketplace ",
   "description": "Dispute an action that an eCommerce platform has taken against you",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace",
   "identifier": {
@@ -14,34 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"Accused\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "eCommerce platform – Oppose an IP infringement notice from an online marketplace ",
+      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nAn online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are: \n\n* Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy’s Intellectual Property report, receive the complainant’s contact details by email, and may need to resolve it directly or seek legal advice.\n* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form—Shein removes listings when notified and does not mediate between parties.\n\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing. \n\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises. \n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.   \n\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nAn online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are: \n\n* Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy’s Intellectual Property report, receive the complainant’s contact details by email, and may need to resolve it directly or seek legal advice.\n* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form—Shein removes listings when notified and does not mediate between parties.\n\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing. \n\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises. \n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.   \n\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.",
-      "serviceOutput": {}
+        "name": "eCommerce platform"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Usually little to no fees. Generally using built-in appeal or report tools is free. * Listings may be reinstated without going to court. * Platforms may reduce direct confrontation by contacting the complainant on your behalf."
+            "text": "* Usually little to no fees. Generally using built-in appeal or report tools is free.\n* Listings may be reinstated without going to court.\n* Platforms may reduce direct confrontation by contacting the complainant on your behalf."
           }
         },
         {
@@ -49,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Missing the platform’s deadline (e.g. 10 business days on Etsy and eBay) may result in permanent removal. * Giving incomplete or inaccurate details can lead to account penalties or suspension. * Either party could escalate the issue to a formal dispute."
+            "text": "* Missing the platform’s deadline (e.g. 10 business days on Etsy and eBay) may result in permanent removal.\n* Giving incomplete or inaccurate details can lead to account penalties or suspension.\n* Either party could escalate the issue to a formal dispute."
           }
         },
         {
@@ -57,7 +87,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Your listing is reinstated after a successful appeal or counter notice. * Your listing is reinstated after the complaint retracts or the parties resolve the dispute outside the platform. * Your account could receive warnings or temporary suspension if disputes recur."
+            "text": "* Your listing is reinstated after a successful appeal or counter notice.\n* Your listing is reinstated after the complaint retracts or the parties resolve the dispute outside the platform.\n* Your account could receive warnings or temporary suspension if disputes recur."
           }
         },
         {
@@ -65,7 +95,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The processes for reporting IP Infringement is free for many online marketplaces. * **Please note, some online marketplaces may have additional fees. Be aware that the exact requirements may vary depending on the marketplace you received the notice from.**"
+            "text": "* The processes for reporting IP Infringement is free for many online marketplaces.\n* **Please note, some online marketplaces may have additional fees. Be aware that the exact requirements may vary depending on the marketplace you received the notice from.**"
           }
         },
         {
@@ -89,7 +119,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Owners or authorised user of Intellectual Property whose IP is being used on an online marketplace. * People who have received notice that their listing has been taken off an online marketplace because of IP infringement."
+            "text": "* Owners or authorised user of Intellectual Property whose IP is being used on an online marketplace.\n* People who have received notice that their listing has been taken off an online marketplace because of IP infringement."
           }
         },
         {
@@ -97,7 +127,7 @@
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You (trade mark owner or authorised user). * The complainant (rights owner who filed the takedown). * The marketplace in question. * (Optional) Attorneys or trade mark agents for drafting appeals or negotiating retractions."
+            "text": "* You (trade mark owner or authorised user).\n* The complainant (rights owner who filed the takedown).\n* The marketplace in question.\n* (Optional) Attorneys or trade mark agents for drafting appeals or negotiating retractions."
           }
         },
         {
@@ -105,62 +135,71 @@
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* A copy of your IP registration or evidence of use. * The takedown notice or removal email with reference numbers. * Screenshots of the original listing and the allegedly infringing content. * Knowledge of each platform’s process, for example: + Amazon: Using the [Account Health Page](https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ)  to provide evidence against a notice or warning for infringement. + eBay: file a [VeRO](https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program)  counter notice via email or the provided form (NOCI). + Etsy: use “[What to Do if You Receive a Notice of Intellectual Property Infringement”](https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling)  page and contact the rights owner directly. + Shein: submit via “IP Notice” portal at Shein [IPP](https://ipp.shein.com/ipp). * A log of all communications, submissions and platform decisions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "* A copy of your IP registration or evidence of use.\n* The takedown notice or removal email with reference numbers.\n* Screenshots of the original listing and the allegedly infringing content.\n* Knowledge of each platform’s process, for example:\n+ Amazon: Using the [Account Health Page](https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ)  to provide evidence against a notice or warning for infringement.\n+ eBay: file a [VeRO](https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program)  counter notice via email or the provided form (NOCI).\n+ Etsy: use “[What to Do if You Receive a Notice of Intellectual Property Infringement”](https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling)  page and contact the rights owner directly.\n+ Shein: submit via “IP Notice” portal at Shein [IPP](https://ipp.shein.com/ipp).\n* A log of all communications, submissions and platform decisions."
           }
         }
       ]
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Oppose an IP infringement notice from an online marketplace ",
+      "name": "How to proceed with eCommerce platform – Oppose an IP infringement notice from an online marketplace ",
+      "about": {
+        "@id": "#the-service"
+      },
       "step": [
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "A copy of your IP registration or evidence of use",
           "text": "A copy of your IP registration or evidence of use."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "The takedown notice or removal email with reference numbers",
           "text": "The takedown notice or removal email with reference numbers."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Screenshots of the original listing and the allegedly infringing content",
           "text": "Screenshots of the original listing and the allegedly infringing content."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
-          "text": "Knowledge of each platform’s process, for example:"
+          "name": "Knowledge of each platform’s process, for example:\n  + Amazon: Using the [Account Health Page](https://sellercentral",
+          "text": "Knowledge of each platform’s process, for example:\n  + Amazon: Using the [Account Health Page](https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ)  to provide evidence against a notice or warning for infringement.\n  + eBay: file a [VeRO](https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program)  counter notice via email or the provided form (NOCI).\n  + Etsy: use “[What to Do if You Receive a Notice of Intellectual Property Infringement”](https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling)  page and contact the rights owner directly.\n  + Shein: submit via “IP Notice” portal at Shein [IPP](https://ipp.shein.com/ipp)."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "A log of all communications, submissions and platform decisions",
           "text": "A log of all communications, submissions and platform decisions."
         }
       ]
     }
   ],
-  "relatedLink": [
-    "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
-    "https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ",
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace",
-    "https://ipp.shein.com/ipp",
-    "https://www.ttipattorney.gov.au/"
-  ],
-  "citation": {
-    "@type": "Legislation",
+  "alternativeHeadline": "Oppose an IP infringement notice from an online marketplace ",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
     "name": "\"Any dispute\""
-  }
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
+    }
+  ],
+  "relatedLink": [
+    "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace",
+    "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
+    "https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ",
+    "https://www.ttipattorney.gov.au/",
+    "https://ipp.shein.com/ipp"
+  ]
 }

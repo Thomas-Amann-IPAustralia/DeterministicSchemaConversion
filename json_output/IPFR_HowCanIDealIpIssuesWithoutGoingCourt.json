@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "How can I deal with IP issues without going to court? ",
+  "headline": "IP disputes – How can I deal with IP issues without going to court? ",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court",
   "identifier": {
@@ -14,29 +14,57 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "IP disputes – How can I deal with IP issues without going to court? ",
+      "description": "There are many ways to address IP issues and resolve IP disputes without going to court. Before considering court, you may want to try one of these informal or administrative approaches: \n\n* Send a letter of demand or a Cease & Desist letter.\n* Use online platform takedown mechanisms – most marketplaces or social media sites may remove offers or posts that breach IP rules once you lodge a notice.\n* (For trade marks and copyright) Lodge an Australian Border Force Notice of Objection so customs officers can hold suspected infringing goods as they enter Australia.\n* Start [an administrative action at IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)  which can remove or narrow the other party's right.\n\nIf you would like to find out more information regarding cost, benefits, risks and possible outcomes on various enforcement pathways outside court, you can explore these options through IP First Response’s [Navigator tool](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement).   \n\nThere is also a group of alternative dispute resolution (ADR) processes that you can consider, in order to resolve IP disputes without a court hearing. Common forms of ADR include mediation, expert determination, arbitration. \n\nADR happens with the help of an independent third party and only goes ahead if everyone agrees to take part. Because ADR is private and tailored, it may suit situations where you want to keep a business relationship, control what information becomes public, or simply avoid the cost and stress of court proceedings. Outcomes may include negotiated undertakings, such as written promises to stop using the IP, or custom licence terms. \n\nYou can engage ADR through both public providers such as the Australian Small Business and Family Enterprise Ombudsman (ASBFEO), or private ADR specialists. Fees are set by the provider and are usually shared between the parties. \n\nADR is available for all IP rights in Australia and can be used at any stage before, during or after court action has begun, so long as both parties consent. If an agreement or arbitral award is reached, it can be recorded in writing and made enforceable.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "There are many ways to address IP issues and resolve IP disputes without going to court. Before considering court, you may want to try one of these informal or administrative approaches: \n\n* Send a letter of demand or a Cease & Desist letter.\n* Use online platform takedown mechanisms – most marketplaces or social media sites may remove offers or posts that breach IP rules once you lodge a notice.\n* (For trade marks and copyright) Lodge an Australian Border Force Notice of Objection so customs officers can hold suspected infringing goods as they enter Australia.\n* Start [an administrative action at IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)  which can remove or narrow the other party's right.\n\nIf you would like to find out more information regarding cost, benefits, risks and possible outcomes on various enforcement pathways outside court, you can explore these options through IP First Response’s [Navigator tool](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement).   \n\nThere is also a group of alternative dispute resolution (ADR) processes that you can consider, in order to resolve IP disputes without a court hearing. Common forms of ADR include mediation, expert determination, arbitration. \n\nADR happens with the help of an independent third party and only goes ahead if everyone agrees to take part. Because ADR is private and tailored, it may suit situations where you want to keep a business relationship, control what information becomes public, or simply avoid the cost and stress of court proceedings. Outcomes may include negotiated undertakings, such as written promises to stop using the IP, or custom licence terms. \n\nYou can engage ADR through both public providers such as the Australian Small Business and Family Enterprise Ombudsman (ASBFEO), or private ADR specialists. Fees are set by the provider and are usually shared between the parties. \n\nADR is available for all IP rights in Australia and can be used at any stage before, during or after court action has begun, so long as both parties consent. If an agreement or arbitral award is reached, it can be recorded in writing and made enforceable.",
-      "serviceOutput": {
-        "priceRange": "are set by the provider and are usually shared between the parties.   ADR is available for all IP rights in Australia and can be used at any stage before, during or after court action has begun, so long as both parties consent. If an agreement or arbitral award is reached, it can be recorded in writing and made enforceable."
+        "name": "IP disputes"
       }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -45,39 +73,40 @@
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "How can I deal with IP issues without going to court? ",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with How can I deal with IP issues without going to court? ",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
-    "https://www.asbfeo.gov.au/",
-    "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court",
     "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+    "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
+    "https://www.asbfeo.gov.au/",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
     "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/ADR"
+  ]
 }

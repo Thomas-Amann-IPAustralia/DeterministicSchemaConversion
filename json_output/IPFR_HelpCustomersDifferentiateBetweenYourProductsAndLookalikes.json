@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Help customers differentiate between your products and lookalikes  ",
+  "headline": "Educate your customers – Help customers differentiate between your products and lookalikes  ",
   "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine. ",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
   "identifier": {
@@ -14,36 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"Proactive\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Educate your customers – Help customers differentiate between your products and lookalikes  ",
+      "description": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied. \n\nWhile it’s a legal question as to whether something infringes your rights, it’s often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart — and how to identify a fake — can reduce that risk. \n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues. \n\nCustomer education can include: \n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools—such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the ® symbol to indicate a *trade mark* has been registered, or using a © symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied. \n\nWhile it’s a legal question as to whether something infringes your rights, it’s often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart — and how to identify a fake — can reduce that risk. \n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues. \n\nCustomer education can include: \n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools—such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the ® symbol to indicate a *trade mark* has been registered, or using a © symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product.",
-      "serviceOutput": {
-        "priceRange": "s depend on how much new work is required. Many businesses already spend on brand marketing, and customer education may be integrated into that. If you engage a marketing firm or IP commercialisation expert, additional fees apply."
+        "name": "Educate your customers"
       }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Helps customers choose your product over confusing or inferior copies. * Supports your brand positioning and long-term customer loyalty. * Makes suspected infringement easier to detect and explain. * Can reduce the incentive for others to copy your product if consumers avoid fakes. * May already align with your existing marketing and advertising spend. * Non-confrontational way to respond when you suspect copying. * Can diversify your business’ sources of value outside of reliance on registered IP alone."
+            "text": "* Helps customers choose your product over confusing or inferior copies.\n* Supports your brand positioning and long-term customer loyalty.\n* Makes suspected infringement easier to detect and explain.\n* Can reduce the incentive for others to copy your product if consumers avoid fakes.\n* May already align with your existing marketing and advertising spend.\n* Non-confrontational way to respond when you suspect copying.\n* Can diversify your business’ sources of value outside of reliance on registered IP alone."
           }
         },
         {
@@ -51,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Careless wording may be seen as an attack on a competitor. * Poorly designed campaigns might confuse or alienate customers. * May have limited impact if not paired with broader brand strategy."
+            "text": "* Careless wording may be seen as an attack on a competitor.\n* Poorly designed campaigns might confuse or alienate customers.\n* May have limited impact if not paired with broader brand strategy."
           }
         },
         {
@@ -59,7 +87,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are few easily-measurable outcomes from customer education. These may include: * Customers become better at identifying and choosing your genuine products. * Reduced sales of counterfeit or lookalike products. * For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
+            "text": "There are few easily-measurable outcomes from customer education. These may include:\n* Customers become better at identifying and choosing your genuine products.\n* Reduced sales of counterfeit or lookalike products.\n* For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
           }
         },
         {
@@ -75,7 +103,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Minor updates to packaging or website content: A few hours to a few weeks. * Developing a new customer education campaign: Several weeks to a few months."
+            "text": "* Minor updates to packaging or website content: A few hours to a few weeks.\n* Developing a new customer education campaign: Several weeks to a few months."
           }
         },
         {
@@ -91,7 +119,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* This approach is most applicable for business that offer products or services to the public. * Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
+            "text": "* This approach is most applicable for business that offer products or services to the public.\n* Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
           }
         },
         {
@@ -99,7 +127,7 @@
           "name": "Who’s involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The business owner or brand manager. * Marketing or communications professionals. * Optional: An IP commercialisation advisor or brand protection expert."
+            "text": "* The business owner or brand manager.\n* Marketing or communications professionals.\n* Optional: An IP commercialisation advisor or brand protection expert."
           }
         },
         {
@@ -107,60 +135,69 @@
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* A clear understanding of what makes your product or brand distinctive. * Knowledge of your IP rights and what aspects are protected. * Customer touchpoints where educational messages can be placed (for example, website, packaging, social media). * Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP. * Optional: Marketing or design support to build customer-friendly materials."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "* A clear understanding of what makes your product or brand distinctive.\n* Knowledge of your IP rights and what aspects are protected.\n* Customer touchpoints where educational messages can be placed (for example, website, packaging, social media).\n* Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP.\n* Optional: Marketing or design support to build customer-friendly materials."
           }
         }
       ]
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Help customers differentiate between your products and lookalikes  ",
+      "name": "How to proceed with Educate your customers – Help customers differentiate between your products and lookalikes  ",
+      "about": {
+        "@id": "#the-service"
+      },
       "step": [
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "A clear understanding of what makes your product or brand distinctive",
           "text": "A clear understanding of what makes your product or brand distinctive."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Knowledge of your IP rights and what aspects are protected",
           "text": "Knowledge of your IP rights and what aspects are protected."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Customer touchpoints where educational messages can be placed (for example, website, packaging, social media)",
           "text": "Customer touchpoints where educational messages can be placed (for example, website, packaging, social media)."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP",
           "text": "Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Optional: Marketing or design support to build customer-friendly materials",
           "text": "Optional: Marketing or design support to build customer-friendly materials."
         }
       ]
     }
   ],
+  "alternativeHeadline": "Help customers differentiate between your products and lookalikes  ",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
+    }
+  ],
   "relatedLink": [
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
     "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
     "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
-    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
+  ]
 }

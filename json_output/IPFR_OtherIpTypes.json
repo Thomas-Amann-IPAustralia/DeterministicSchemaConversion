@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Other IP Types",
+  "headline": "Sorry, this information is not available yet – Other IP Types",
   "description": "We cannot provide information on this right just yet",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
   "identifier": {
@@ -14,61 +14,93 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners"
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Sorry, this information is not available yet – Other IP Types",
+      "description": "We cannot provide information on this right just yet",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "serviceOutput": {}
+        "name": "Sorry, this information is not available yet"
+      }
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
-        }
-      ]
-    },
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": []
+    }
+  ],
+  "alternativeHeadline": "Other IP Types",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with Other IP Types",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://www.wipo.int/portal/en/index.html",
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.ipaustralia.gov.au/trade-marks/understanding-trade-marks/types-of-trade-marks/other-types-trade-marks#Trade-marks-for-wine",
-    "https://www.agriculture.gov.au/agriculture-land/farm-food-drought/wine-policy",
-    "http://www.foodstandards.gov.au/Pages/default.aspx",
-    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
-    "https://international.austrade.gov.au/en/do-business-with-australia/invest-in-australia/investor-guide/running-a-business/understanding-australian-business-regulations",
     "https://www.ipaustralia.gov.au/understanding-ip/indigenous-knowledge",
-    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks/geographical-indications-and-trade-marks",
+    "https://www.ag.gov.au/rights-and-protections/copyright",
+    "https://www.wipo.int/portal/en/index.html",
     "https://ipta.org.au/community/get-free-consultation/",
     "https://www.business.qld.gov.au/running-business/risk/ip/ip-kit/browse-ip-topics/trade-secrets",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
+    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks/geographical-indications-and-trade-marks",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
+    "https://www.ipaustralia.gov.au/trade-marks/understanding-trade-marks/types-of-trade-marks/other-types-trade-marks#Trade-marks-for-wine",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
     "https://www.dfat.gov.au/trade/organisations/wto/intellectual-property",
-    "https://www.ag.gov.au/rights-and-protections/copyright"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://international.austrade.gov.au/en/do-business-with-australia/invest-in-australia/investor-guide/running-a-business/understanding-australian-business-regulations",
+    "https://www.agriculture.gov.au/agriculture-land/farm-food-drought/wine-policy",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
+    "http://www.foodstandards.gov.au/Pages/default.aspx"
+  ]
 }

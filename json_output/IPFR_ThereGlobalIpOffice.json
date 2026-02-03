@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Is there a global IP office?",
+  "headline": "Global IP – Is there a global IP office?",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office",
   "identifier": {
@@ -14,27 +14,57 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Global IP – Is there a global IP office?",
+      "description": "Many people assume there is one IP office that grants rights everywhere in the world. In reality, each country has its own intellectual property (IP) office. For instance, IP Australia examines and registers patents, trade marks, designs and plant breeder’s rights (PBRs) for protection inside Australia.  \n\nThe World Intellectual Property Organization (WIPO) helps countries work together on IP and provides systems to simplify applying for rights overseas. However, it is not a global IP office that grants or enforces rights.  \n\nWIPO’s core role is to administer international treaties, maintain global IP databases and provide systems that streamline applications across borders. It helps countries adopt consistent rules and offers tools businesses can use when expanding overseas. Key examples include: \n\n* The Patent Cooperation Treaty (PCT). This allows you to file one application to seek patent protection in 158 Contracting States.\n* The Madrid System. This provides a single-application path for registering trade marks in over 130 territories.\n* The Hague System. This is an international route for protecting industrial designs in multiple countries.\n* The WIPO Arbitration and Mediation Center. These services may resolve cross-border IP disputes without going to court.\n\nBecause WIPO focuses on coordination and policy development, national IP offices keep control of day-to-day tasks such as filing applications, examining rights, registration and renewal. \n\nWhen your business grows beyond Australia, you may use WIPO’s ‘single-application’ process to streamline filing. However, the national IP office in each country still decides whether to grant protection in its jurisdiction under its own laws. \n\nIn short, WIPO is a hub for international treaty development and shared services, while national offices like IP Australia remain the home base for securing IP rights within their territories.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Many people assume there is one IP office that grants rights everywhere in the world. In reality, each country has its own intellectual property (IP) office. For instance, IP Australia examines and registers patents, trade marks, designs and plant breeder’s rights (PBRs) for protection inside Australia.  \n\nThe World Intellectual Property Organization (WIPO) helps countries work together on IP and provides systems to simplify applying for rights overseas. However, it is not a global IP office that grants or enforces rights.  \n\nWIPO’s core role is to administer international treaties, maintain global IP databases and provide systems that streamline applications across borders. It helps countries adopt consistent rules and offers tools businesses can use when expanding overseas. Key examples include: \n\n* The Patent Cooperation Treaty (PCT). This allows you to file one application to seek patent protection in 158 Contracting States.\n* The Madrid System. This provides a single-application path for registering trade marks in over 130 territories.\n* The Hague System. This is an international route for protecting industrial designs in multiple countries.\n* The WIPO Arbitration and Mediation Center. These services may resolve cross-border IP disputes without going to court.\n\nBecause WIPO focuses on coordination and policy development, national IP offices keep control of day-to-day tasks such as filing applications, examining rights, registration and renewal. \n\nWhen your business grows beyond Australia, you may use WIPO’s ‘single-application’ process to streamline filing. However, the national IP office in each country still decides whether to grant protection in its jurisdiction under its own laws. \n\nIn short, WIPO is a hub for international treaty development and shared services, while national offices like IP Australia remain the home base for securing IP rights within their territories.",
-      "serviceOutput": {}
+        "name": "Global IP"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -43,36 +73,37 @@
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
         }
       ]
-    },
+    }
+  ],
+  "alternativeHeadline": "Is there a global IP office?",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with Is there a global IP office?",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
-    "https://www.wipo.int/en/web/madrid-system",
-    "https://www.wipo.int/en/web/pct-system",
-    "https://www.wipo.int/en/web/hague-system",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office",
-    "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",
     "https://www.wipo.int/about-wipo/en/",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+    "https://www.wipo.int/en/web/hague-system",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.wipo.int/en/web/pct-system",
+    "https://www.wipo.int/en/web/madrid-system",
+    "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office",
+    "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase."
+  ]
 }

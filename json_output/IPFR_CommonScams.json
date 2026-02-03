@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Common scams",
+  "headline": "Protecting your business – Common scams",
   "description": "",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams",
   "identifier": {
@@ -14,61 +14,91 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"IP Basics\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "Protecting your business – Common scams",
+      "description": "Business owners have reported receiving messages from scammers that threaten others with claims of IP infringement or send unsolicited invoices pretending to be IP Australia. It helps you spot warning signs quickly so you can decide whether to look closer or ignore the message. \n\nCommon examples include fake renewal invoices or reminders, emails claiming to be from ‘IP Australia’, and ‘cease and desist’ threats from a pretend law firm. Scammers also send fake IP violation notices via social or marketplace platforms, or sell listing services that sound like official protection. Note that listings on non-official ‘registers’ don’t create legal rights or protection. \n\nThe goal is usually to rush you with claims of ‘suspected’ or ‘alleged’ infringement, to collect money or your login details. Lookalike email addresses or websites may be used, and payment requests can be unusual. \n\nTreat with caution any message demanding immediate payment or urging you to click a link to ‘keep your trade mark alive’ or ‘stop legal action’. \n\nLook for these red flags: \n\n* The sender’s email does not end with an official government domain. Official IP Australia will come from @ipaustralia.gov.au.\n* The message uses a generic greeting, has spelling mistakes, or your IP details are wrong or incomplete.\n* There is pressure to ‘pay now’ or threats of court action for ‘alleged infringement’ without clear case details.\n* Payment is requested to an overseas account, by gift cards, or in cryptocurrency.\n* Links point to a site that looks unusual or is not on a trusted government domain. Also, never click links in an unexpected email.\n* The claimed ‘IP attorney’ or ‘law firm’ cannot be found on [the Trans-Tasman IP Attorneys Board register](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)  or a relevant law society register (e.g. [Register of Solicitors | The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors) ) .\n\nYou can also confirm any official notice by logging into IP Australia’s [Online Services](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings).  \n\nIf you suspect a scam, you may wish to report it to [Scamwatch](https://www.scamwatch.gov.au/)  or [ReportCyber](https://www.cyber.gov.au/report-and-recover/report), and keep any evidence such as screenshots or email headers.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Business owners have reported receiving messages from scammers that threaten others with claims of IP infringement or send unsolicited invoices pretending to be IP Australia. It helps you spot warning signs quickly so you can decide whether to look closer or ignore the message. \n\nCommon examples include fake renewal invoices or reminders, emails claiming to be from ‘IP Australia’, and ‘cease and desist’ threats from a pretend law firm. Scammers also send fake IP violation notices via social or marketplace platforms, or sell listing services that sound like official protection. Note that listings on non-official ‘registers’ don’t create legal rights or protection. \n\nThe goal is usually to rush you with claims of ‘suspected’ or ‘alleged’ infringement, to collect money or your login details. Lookalike email addresses or websites may be used, and payment requests can be unusual. \n\nTreat with caution any message demanding immediate payment or urging you to click a link to ‘keep your trade mark alive’ or ‘stop legal action’. \n\nLook for these red flags: \n\n* The sender’s email does not end with an official government domain. Official IP Australia will come from @ipaustralia.gov.au.\n* The message uses a generic greeting, has spelling mistakes, or your IP details are wrong or incomplete.\n* There is pressure to ‘pay now’ or threats of court action for ‘alleged infringement’ without clear case details.\n* Payment is requested to an overseas account, by gift cards, or in cryptocurrency.\n* Links point to a site that looks unusual or is not on a trusted government domain. Also, never click links in an unexpected email.\n* The claimed ‘IP attorney’ or ‘law firm’ cannot be found on [the Trans-Tasman IP Attorneys Board register](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)  or a relevant law society register (e.g. [Register of Solicitors | The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors) ) .\n\nYou can also confirm any official notice by logging into IP Australia’s [Online Services](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings).  \n\nIf you suspect a scam, you may wish to report it to [Scamwatch](https://www.scamwatch.gov.au/)  or [ReportCyber](https://www.cyber.gov.au/report-and-recover/report), and keep any evidence such as screenshots or email headers.",
-      "serviceOutput": {}
+        "name": "Protecting your business"
+      }
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
-        }
-      ]
-    },
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": []
+    }
+  ],
+  "alternativeHeadline": "Common scams",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Any dispute\""
+  },
+  "citation": [
     {
-      "@type": "HowTo",
-      "name": "How to proceed with Common scams",
-      "step": []
+      "@type": "Legislation",
+      "name": "\"Any dispute\"",
+      "legislationType": "Legislation"
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption",
-    "https://www.cyber.gov.au/report-and-recover/report",
     "https://www.lawsociety.com.au/register-of-solicitors",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
-    "https://www.qls.com.au/register-of-solicitors",
-    "https://www.scamwatch.gov.au/",
-    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",
     "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+    "https://www.cyber.gov.au/report-and-recover/report",
+    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.scamwatch.gov.au/",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
+    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
+    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",
     "https://www.ipaustralia.gov.au/manage-my-ip",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Any dispute\""
-  }
+    "https://www.qls.com.au/register-of-solicitors",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
+  ]
 }

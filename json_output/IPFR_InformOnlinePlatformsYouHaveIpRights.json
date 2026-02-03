@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Inform online platforms that you have IP rights",
+  "headline": "eCommerce registries – Inform online platforms that you have IP rights",
   "description": "Register your IP with online platforms to access their enforcement tools.\n",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights",
   "identifier": {
@@ -14,34 +14,64 @@
   "dateModified": "2026-02-03",
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": [
-      "Australian Small Business Owners",
-      "\"Proactive\""
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
     ],
     "geographicArea": {
       "@type": "Country",
       "name": "Australia"
     }
   },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
   "mainEntity": [
     {
+      "@id": "#the-service",
       "@type": "Service",
+      "name": "eCommerce registries – Inform online platforms that you have IP rights",
+      "description": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \\\n \\\nSigning up to an online marketplace’s IP protection program or their brand registry involved recording your IP with the platform before issues arise.  \n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. \n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "provider": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
-      },
-      "description": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \\\n \\\nSigning up to an online marketplace’s IP protection program or their brand registry involved recording your IP with the platform before issues arise.  \n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. \n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
-      "serviceOutput": {}
+        "name": "eCommerce registries"
+      }
     },
     {
       "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* May gain access to tools such as bulk takedown forms, automated alerts, image search, and automated scanning tools to flag look-alike listings for review. * May allow faster removal of suspected infringing listings once you notify the platform. * There are no or very low enrolment fees, limiting upfront costs low. * Allows streamlined takedown requests across multiple markets. * Some IP platforms also offer powerful brand-building and selling tools."
+            "text": "* May gain access to tools such as bulk takedown forms, automated alerts, image search, and automated scanning tools to flag look-alike listings for review.\n* May allow faster removal of suspected infringing listings once you notify the platform.\n* There are no or very low enrolment fees, limiting upfront costs low.\n* Allows streamlined takedown requests across multiple markets.\n* Some IP platforms also offer powerful brand-building and selling tools."
           }
         },
         {
@@ -49,7 +79,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* False positives may require your time to review legitimate sellers. * Program rules may change, resulting in extra steps or temporary loss of access."
+            "text": "* False positives may require your time to review legitimate sellers.\n* Program rules may change, resulting in extra steps or temporary loss of access."
           }
         },
         {
@@ -57,7 +87,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Your enrolment may be accepted and your brand added to the program. * Your application may be rejected if your IP right details do not match or the status is ineligible. You may be able to appeal this. * You may need to re-apply or update registration if you add new IP rights (e.g. a new trade mark or a certified design) or change ownership. * While enrolment on a platform may deter infringement on that particular platform, it may result in simply shifting infringement to other platforms."
+            "text": "* Your enrolment may be accepted and your brand added to the program.\n* Your application may be rejected if your IP right details do not match or the status is ineligible. You may be able to appeal this.\n* You may need to re-apply or update registration if you add new IP rights (e.g. a new trade mark or a certified design) or change ownership.\n* While enrolment on a platform may deter infringement on that particular platform, it may result in simply shifting infringement to other platforms."
           }
         },
         {
@@ -73,7 +103,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Creating an account and submitting the online form would generally take no longer than a few hours. \\ Verification with individual platforms typically takes 24–72 hours, but may extend up to two weeks if additional documents are requested. Ongoing effort varies depending on what the platform offers and how proactive you wish to be. Checking alerts and confirming takedown requests generally takes a few minutes per week. Conducting further searches, investigating listings, and reporting listings may take more time."
+            "text": "Creating an account and submitting the online form would generally take no longer than a few hours. \\\nVerification with individual platforms typically takes 24–72 hours, but may extend up to two weeks if additional documents are requested.\nOngoing effort varies depending on what the platform offers and how proactive you wish to be. Checking alerts and confirming takedown requests generally takes a few minutes per week. Conducting further searches, investigating listings, and reporting listings may take more time."
           }
         },
         {
@@ -97,7 +127,7 @@
           "name": "Who’s involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The IP owner or authorised user * The online marketplace or platform * Optional: IP professionals such as an IP lawyer, attorney or brand protection specialist assisting with registration, monitoring or reporting."
+            "text": "* The IP owner or authorised user\n* The online marketplace or platform\n* Optional: IP professionals such as an IP lawyer, attorney or brand protection specialist assisting with registration, monitoring or reporting."
           }
         },
         {
@@ -105,65 +135,74 @@
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application. * A customer account on each marketplace and verified contact details. * Clear product images and descriptions that show how the IP is used. * A list of authorised sellers, if any, so the platform doesn’t accidentally remove legitimate listings. * Time allocated to review alerts and confirm or dispute flagged listings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\ Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "* For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application.\n* A customer account on each marketplace and verified contact details.\n* Clear product images and descriptions that show how the IP is used.\n* A list of authorised sellers, if any, so the platform doesn’t accidentally remove legitimate listings.\n* Time allocated to review alerts and confirm or dispute flagged listings."
           }
         }
       ]
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Inform online platforms that you have IP rights",
+      "name": "How to proceed with eCommerce registries – Inform online platforms that you have IP rights",
+      "about": {
+        "@id": "#the-service"
+      },
       "step": [
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application",
           "text": "For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "A customer account on each marketplace and verified contact details",
           "text": "A customer account on each marketplace and verified contact details."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Clear product images and descriptions that show how the IP is used",
           "text": "Clear product images and descriptions that show how the IP is used."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "A list of authorised sellers, if any, so the platform doesn’t accidentally remove legitimate listings",
           "text": "A list of authorised sellers, if any, so the platform doesn’t accidentally remove legitimate listings."
         },
         {
           "@type": "HowToStep",
-          "name": "[INSERT-STEP-NAME]",
+          "name": "Time allocated to review alerts and confirm or dispute flagged listings",
           "text": "Time allocated to review alerts and confirm or dispute flagged listings."
         }
       ]
     }
   ],
+  "alternativeHeadline": "Inform online platforms that you have IP rights",
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "\"Trade mark\", \"Design\", \"PBR\", \"Copyright\", \"Patent\""
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "\"Trade mark\", \"Design\", \"PBR\", \"Copyright\", \"Patent\"",
+      "legislationType": "Legislation"
+    }
+  ],
   "relatedLink": [
-    "https://www.etsy.com/au/ipreporting",
-    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-    "https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349",
-    "https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1",
     "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights",
     "https://www.sheingroup.com/our-business/operating-responsibly/#product-safety",
+    "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+    "https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349",
+    "https://sell.amazon.com/brand-registry",
+    "https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1",
     "https://www.temu.com/intellectual-property-complaint.html?refer_page_name=intellectual-property-policy&refer_page_id=19457_1753084754239_fedamubrim&refer_page_sn=19457&_x_sessn_id=6yq4j50u6o",
+    "https://www.etsy.com/au/ipreporting",
     "https://m.shein.com/au/copyright-noticeam-a-379.html",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
-    "https://sell.amazon.com/brand-registry"
-  ],
-  "citation": {
-    "@type": "Legislation",
-    "name": "\"Trade mark\", \"Design\", \"PBR\", \"Copyright\", \"Patent\""
-  }
+    "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online"
+  ]
 }
