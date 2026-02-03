@@ -3,10 +3,10 @@ name: Generate JSON-LD from Markdown
 on:
   push:
     paths:
-      - 'markdown_output/**' # Only trigger if markdown changes
+      - 'IPFR-Webpages/**'
       - 'scripts/process_md_to_json.py'
       - '260203_IPFRMetaTable.csv'
-  workflow_dispatch: # Allows manual click-to-run
+  workflow_dispatch:
 
 jobs:
   build-and-process:
@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: processing-report
-        path: after_action_report.txt
+        path: reports/  # Updated path
