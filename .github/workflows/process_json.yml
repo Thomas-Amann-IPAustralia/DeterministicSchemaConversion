@@ -37,7 +37,7 @@ jobs:
         path: json_output/
 
     - name: Upload After Action Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: processing-report
         path: reports/
