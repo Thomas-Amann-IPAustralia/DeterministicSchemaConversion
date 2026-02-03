@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -133,7 +84,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Can give you more certainty around whether the threat is genuine or a mere scam. * Alerts enforcement bodies so they can investigate and warn others. * May help prevent further contact from scammers. * Helps protect your business from financial loss or reputational harm. * Builds a formal record that could support future legal steps."
+            "text": "* Can give you more certainty around whether the threat is genuine or a mere scam.\n* Alerts enforcement bodies so they can investigate and warn others.\n* May help prevent further contact from scammers.\n* Helps protect your business from financial loss or reputational harm.\n* Builds a formal record that could support future legal steps."
           }
         },
         {
@@ -149,7 +100,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Your report may be logged to help identify scam patterns. * A public alert may be issued by the body you report to, with your report helping inform these warnings. * Police or regulators may investigate, potentially leading to charges against the scammer. * You may receive confirmation and reassurance that the claim appears to be a scam"
+            "text": "* Your report may be logged to help identify scam patterns.\n* A public alert may be issued by the body you report to, with your report helping inform these warnings.\n* Police or regulators may investigate, potentially leading to charges against the scammer.\n* You may receive confirmation and reassurance that the claim appears to be a scam"
           }
         },
         {
@@ -157,7 +108,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There is no cost to report to Scamwatch, ReportCyber, IP Australia or your local police.  However, you will need to pay the fees of any legal representative or IP professionals if you choose to seek their advice or assistance regarding the process."
+            "text": "There is no cost to report to Scamwatch, ReportCyber, IP Australia or your local police.\n\nHowever, you will need to pay the fees of any legal representative or IP professionals if you choose to seek their advice or assistance regarding the process."
           }
         },
         {
@@ -165,7 +116,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Reporting time depends on how much information you have. Some forms are short, but follow-up steps or investigations may take longer.  Response times vary depending on the agency and the nature of the report. Even if there\u2019s no follow-up, your report remains helpful."
+            "text": "Reporting time depends on how much information you have. Some forms are short, but follow-up steps or investigations may take longer.\n\nResponse times vary depending on the agency and the nature of the report. Even if there\u2019s no follow-up, your report remains helpful."
           }
         },
         {
@@ -181,7 +132,7 @@
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You \u2013 the person or business targeted by the threat. * The scammer or group making the false claim. * (Optional) Legal professionals such as IP lawyers, trade mark or patent attorneys. * A federal or state agency that you choose to engage."
+            "text": "* You \u2013 the person or business targeted by the threat.\n* The scammer or group making the false claim.\n* (Optional) Legal professionals such as IP lawyers, trade mark or patent attorneys.\n* A federal or state agency that you choose to engage."
           }
         }
       ]

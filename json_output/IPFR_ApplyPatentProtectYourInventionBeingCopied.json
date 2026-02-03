@@ -42,32 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -99,6 +74,45 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ApplyPatentProtectYourInventionBeingCopied",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "A clear description of your invention\u2014what it is, ...",
+          "text": "A clear description of your invention\u2014what it is, how it works, and how it\u2019s different."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "A decision on whether to file a provisional or sta...",
+          "text": "A decision on whether to file a provisional or standard application."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "An account with IP Australia\u2019s online services.",
+          "text": "An account with IP Australia\u2019s online services."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Budget to pay application and examination fees.",
+          "text": "Budget to pay application and examination fees."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Optional: get help from a registered patent attorn...",
+          "text": "Optional: get help from a registered patent attorney."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "A plan for international protection if you need ov...",
+          "text": "A plan for international protection if you need overseas rights."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -109,7 +123,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Gives you exclusive rights to your invention for up to 20 years. * Stops others from legally copying, using or profiting from your invention. * Builds your bargaining power with investors, licensees or competitors. * Can increase the commercial value of your product or business. * May deter others from trying to copy your idea once they see it\u2019s protected. * Positions you to take legal action if suspected infringement occurs."
+            "text": "* Gives you exclusive rights to your invention for up to 20 years.\n* Stops others from legally copying, using or profiting from your invention.\n* Builds your bargaining power with investors, licensees or competitors.\n* Can increase the commercial value of your product or business.\n* May deter others from trying to copy your idea once they see it\u2019s protected.\n* Positions you to take legal action if suspected infringement occurs."
           }
         },
         {
@@ -117,7 +131,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Filing a patent may result in details of your invention becoming public. * The process can take years and may not result in a granted patent. * Competitors may try to challenge your application or patent. * Costs may be significant, especially if you use a patent attorney or seek international protection. * A granted patent only protects you in the country where it was filed. * You may need to enforce the patent yourself if someone uses your invention without permission."
+            "text": "* Filing a patent may result in details of your invention becoming public.\n* The process can take years and may not result in a granted patent.\n* Competitors may try to challenge your application or patent.\n* Costs may be significant, especially if you use a patent attorney or seek international protection.\n* A granted patent only protects you in the country where it was filed.\n* You may need to enforce the patent yourself if someone uses your invention without permission."
           }
         },
         {
@@ -125,7 +139,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Your patent is granted, and you receive exclusive legal rights. * Your application is rejected due to lack of novelty, inventive step or other criteria (such as a lack of support for the claims, or other issues with the specification such as a lack of clarity). * Your patent is opposed by a third party, leading to a hearing or negotiation. * You withdraw the application or let it lapse due to cost, complexity or commercial decisions. * You license or sell the patent to another party."
+            "text": "* Your patent is granted, and you receive exclusive legal rights.\n* Your application is rejected due to lack of novelty, inventive step or other criteria (such as a lack of support for the claims, or other issues with the specification such as a lack of clarity).\n* Your patent is opposed by a third party, leading to a hearing or negotiation.\n* You withdraw the application or let it lapse due to cost, complexity or commercial decisions.\n* You license or sell the patent to another party."
           }
         },
         {
@@ -133,7 +147,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Patent costs vary depending on the type of application and whether you use professional support.\u00a0  * **Provisional patent application**: From around $110 if self-filed with IP Australia (as discussed above, a provisional application does not offer any patent protection, and simply acts as a placeholder while you consider your options). * **Standard patent application**: Filing starts at $400, with potential additional costs for examination, maintenance and legal advice. * **Patent attorney fees**: May range from $2,000 to over $10,000 depending on complexity. * **Ongoing fees**: Annual renewal fees start at $300 at the 4th anniversary and steadily increase to $2815 for the 19th anniversary (i.e. for the 20th year).  If you seek patent protection in other countries, additional international filing and translation fees will apply."
+            "text": "Patent costs vary depending on the type of application and whether you use professional support.\u00a0\n\n* **Provisional patent application**: From around $110 if self-filed with IP Australia (as discussed above, a provisional application does not offer any patent protection, and simply acts as a placeholder while you consider your options).\n* **Standard patent application**: Filing starts at $400, with potential additional costs for examination, maintenance and legal advice.\n* **Patent attorney fees**: May range from $2,000 to over $10,000 depending on complexity.\n* **Ongoing fees**: Annual renewal fees start at $300 at the 4th anniversary and steadily increase to $2815 for the 19th anniversary (i.e. for the 20th year).\n\nIf you seek patent protection in other countries, additional international filing and translation fees will apply."
           }
         },
         {
@@ -141,7 +155,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The patent process can take:\u00a0  * A few days for a provisional application. * 6 months to 2+ years for a standard patent (longer if examined late or challenged). * Up to 5 years or more in complex cases.  If you want quicker protection while exploring your options, filing a provisional application may give you breathing room for 12 months."
+            "text": "The patent process can take:\u00a0\n\n* A few days for a provisional application.\n* 6 months to 2+ years for a standard patent (longer if examined late or challenged).\n* Up to 5 years or more in complex cases.\n\nIf you want quicker protection while exploring your options, filing a provisional application may give you breathing room for 12 months."
           }
         },
         {
@@ -149,7 +163,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Anyone who has developed a new invention that is not yet publicly disclosed. * Individuals, businesses or researchers who want exclusive rights to their innovation."
+            "text": "* Anyone who has developed a new invention that is not yet publicly disclosed.\n* Individuals, businesses or researchers who want exclusive rights to their innovation."
           }
         }
       ]

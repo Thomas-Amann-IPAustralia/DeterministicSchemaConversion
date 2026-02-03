@@ -42,32 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -99,6 +74,35 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with UseYourTradeMarkProminentlyBuildRecognitionAndProtection",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "A clear, preferred presentation of your trade mark...",
+          "text": "A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Basic rules covering the use of colours, fonts, si...",
+          "text": "Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Routine checks of public use and finding inconsist...",
+          "text": "Routine checks of public use and finding inconsistencies."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Records of dated examples (screenshots, packaging,...",
+          "text": "Records of dated examples (screenshots, packaging, adverts) showing correct use."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -109,7 +113,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Increases likelihood of building public recognition and goodwill for the brand. * Creates evidence of trade mark use that may support administration processes or enforcement later. * Helps prevent a mark becoming generic or losing distinctiveness. * Deters copycats by signalling that you value and monitor the trade mark."
+            "text": "* Increases likelihood of building public recognition and goodwill for the brand.\n* Creates evidence of trade mark use that may support administration processes or enforcement later.\n* Helps prevent a mark becoming generic or losing distinctiveness.\n* Deters copycats by signalling that you value and monitor the trade mark."
           }
         },
         {
@@ -117,7 +121,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Misuse of the \u2018\u00ae\u2019 symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see: What are trade marks? | IP Australia. * Strict brand rules may limit creative marketing or re\u2011branding opportunities."
+            "text": "* Misuse of the \u2018\u00ae\u2019 symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see: What are trade marks? | IP Australia.\n* Strict brand rules may limit creative marketing or re\u2011branding opportunities."
           }
         },
         {
@@ -125,7 +129,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Using your trade mark in a consistent manner may result in:\u00a0  * Customers reliably associating the mark with your business alone * Easier proof of ownership and distinctiveness in a dispute or trade mark application * Fewer instances of accidental misuse by employees or third parties."
+            "text": "Using your trade mark in a consistent manner may result in:\u00a0\n\n* Customers reliably associating the mark with your business alone\n* Easier proof of ownership and distinctiveness in a dispute or trade mark application\n* Fewer instances of accidental misuse by employees or third parties."
           }
         },
         {
@@ -133,7 +137,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The costs of setting up brand guidelines for consistent trade mark usage can vary heavily, depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists.\u00a0\u00a0  Preparing simple brand guidelines and training materials may cost a few hours of staff time or modest design fees. However, optional legal review of the guidelines or close collaboration with marketing specialist may involve substantial professional fees."
+            "text": "The costs of setting up brand guidelines for consistent trade mark usage can vary heavily, depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists.\u00a0\u00a0\n\nPreparing simple brand guidelines and training materials may cost a few hours of staff time or modest design fees. However, optional legal review of the guidelines or close collaboration with marketing specialist may involve substantial professional fees."
           }
         },
         {

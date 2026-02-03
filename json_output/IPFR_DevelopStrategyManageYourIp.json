@@ -42,68 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -145,7 +84,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Help streamline decision-making if suspected infringement occurs. * May help you build clear evidence of ownership that deters copycats. * May help secure investment by demonstrating due diligence on IP. * May support expansion into new markets or product lines. * Assist your employees and partners in developing team awareness on how to handle ideas and branding."
+            "text": "* Help streamline decision-making if suspected infringement occurs.\n* May help you build clear evidence of ownership that deters copycats.\n* May help secure investment by demonstrating due diligence on IP.\n* May support expansion into new markets or product lines.\n* Assist your employees and partners in developing team awareness on how to handle ideas and branding."
           }
         },
         {
@@ -153,7 +92,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Plans can become outdated if not reviewed regularly, leaving blind spots. * Over-protection (for example, filing unnecessary patents) may waste resources. * Relying on internal resources rather than expert input may create false confidence."
+            "text": "* Plans can become outdated if not reviewed regularly, leaving blind spots.\n* Over-protection (for example, filing unnecessary patents) may waste resources.\n* Relying on internal resources rather than expert input may create false confidence."
           }
         },
         {
@@ -169,7 +108,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Creating an IP strategy in-house can be free apart from staff time. For example, it may take a few days to compile an inventory and action list. Engaging an IP professional such as IP lawyers, IP attorneys, or IP commercialisation experts for a tailored plan would involve professional fees, which may vary depending on the scale and complexity of the plan.\u00a0\u00a0  Ongoing costs, however, relate mainly to the protection steps you choose, such as renewal fees or monitoring services."
+            "text": "Creating an IP strategy in-house can be free apart from staff time. For example, it may take a few days to compile an inventory and action list. Engaging an IP professional such as IP lawyers, IP attorneys, or IP commercialisation experts for a tailored plan would involve professional fees, which may vary depending on the scale and complexity of the plan.\u00a0\u00a0\n\nOngoing costs, however, relate mainly to the protection steps you choose, such as renewal fees or monitoring services."
           }
         },
         {
@@ -177,7 +116,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Drafting a simple strategy may take around a day or two of focused work. More detailed plans that cover multiple IP types and overseas markets may take several weeks to months, especially if you seek professional advice.\u00a0  Also, consider reviewing the strategy at least annually, or whenever you launch new products or enter new markets."
+            "text": "Drafting a simple strategy may take around a day or two of focused work. More detailed plans that cover multiple IP types and overseas markets may take several weeks to months, especially if you seek professional advice.\u00a0\n\nAlso, consider reviewing the strategy at least annually, or whenever you launch new products or enter new markets."
           }
         },
         {
@@ -185,7 +124,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* IP rights holders or authorised users managing IP assets. * Anyone or businesses planning to use, develop or acquire IP assets."
+            "text": "* IP rights holders or authorised users managing IP assets.\n* Anyone or businesses planning to use, develop or acquire IP assets."
           }
         }
       ]

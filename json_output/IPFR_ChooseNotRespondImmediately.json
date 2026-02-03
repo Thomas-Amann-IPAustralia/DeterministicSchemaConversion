@@ -42,32 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -99,6 +74,40 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ChooseNotRespondImmediately",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "the allegations of infringement that have been mad...",
+          "text": "the allegations of infringement that have been made against you"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "whether the allegations of infringement have merit",
+          "text": "whether the allegations of infringement have merit"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "what relevant IP\u202frights you might have",
+          "text": "what relevant IP\u202frights you might have"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "what demands the other party has made and when the...",
+          "text": "what demands the other party has made and when they might expect a reply"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "whether to seek advice from an IP lawyer or IP att...",
+          "text": "whether to seek advice from an IP lawyer or IP attorney."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -117,7 +126,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and, for example, commence a legal action. * If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: see [Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand). * If you are actually infringing the other party\u2019s IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
+            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and, for example, commence a legal action.\n* If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: see [Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n* If you are actually infringing the other party\u2019s IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
           }
         },
         {
@@ -125,7 +134,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The other party may give up and decide not to escalate the issue. * The other party chooses to escalate the dispute. * You decide to take action \u2014 for example, by sending a reply, seeking legal advice, or starting legal action (including where the other party has made unjustified threats of infringement action against you (also referred to as \u2018groundless threats\u2019 in copyright law)."
+            "text": "* The other party may give up and decide not to escalate the issue.\n* The other party chooses to escalate the dispute.\n* You decide to take action \u2014 for example, by sending a reply, seeking legal advice, or starting legal action (including where the other party has made unjustified threats of infringement action against you (also referred to as \u2018groundless threats\u2019 in copyright law)."
           }
         },
         {
@@ -149,7 +158,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Anyone accused of infringing IP, particularly where the claim seems unfounded * People who want time to gather evidence and obtain legal advice before making a move."
+            "text": "* Anyone accused of infringing IP, particularly where the claim seems unfounded\n* People who want time to gather evidence and obtain legal advice before making a move."
           }
         }
       ]

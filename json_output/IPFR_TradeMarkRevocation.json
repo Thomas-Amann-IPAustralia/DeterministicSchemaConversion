@@ -42,44 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -111,6 +74,45 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with TradeMarkRevocation",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Check the relevant dates of the relevant trade mar...",
+          "text": "Check the relevant dates of the relevant trade mark."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "In order to understand what factors contribute to ...",
+          "text": "In order to understand what factors contribute to the registrability of trade mark applications, refer to IP Australia\u2019s webpage [What Can't Be A Trade Mark? | IP Australia](https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark)"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consider carefully [Part 62 of the Trade Marks Man...",
+          "text": "Consider carefully [Part 62 of the Trade Marks Manual of Practice and Procedure](https://manuals.ipaustralia.gov.au/trademark/1.-what-is-revocation-of-registration-)  and the relevant sections of the [Trade Marks Act 1995](https://www.legislation.gov.au/C2004A04969/latest/versions)"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "A detailed and documented case for the revocation.",
+          "text": "A detailed and documented case for the revocation."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Understand what's involved should you need to [Cha...",
+          "text": "Understand what's involved should you need to [Challenge the registration of a trade mark | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "To get in touch with IP Australia, refer to [Conta...",
+          "text": "To get in touch with IP Australia, refer to [Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)"
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -121,7 +123,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* There is no cost involved in giving this information to IP Australia. * Revocation procedures are generally run internally within IP Australia, meaning that you are less likely to confront other parties, compared to more adversarial ways of dispute resolution (i.e. court proceedings, administrative hearing procedures, etc.)."
+            "text": "* There is no cost involved in giving this information to IP Australia.\n* Revocation procedures are generally run internally within IP Australia, meaning that you are less likely to confront other parties, compared to more adversarial ways of dispute resolution (i.e. court proceedings, administrative hearing procedures, etc.)."
           }
         },
         {
@@ -129,7 +131,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* IP Australia does not have an obligation to consider a request to revoke a trade mark registration. As such, it might be risky to base your entire enforcement strategy on this procedure expecting IP Australia to make a revocation decision, instead of using other enforcement mechanisms such as challenging the trade mark registration through the court system. * While IP Australia does not publish the details of the party who requested revocation, it is possible for documents to be obtained under Freedom of Information Act 1982 so the owner of the trade mark can ascertain the identity of the party who requested revocation. * This procedure provides a much more limited opportunity to participate in the decision-making process, when compared to challenging a trade mark registration through the opposition and hearing procedures or courts. * Even if revocation of acceptance follows revocation of registration, the application will be returned to examination and the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance. * In some rare cases, the application may only be reverted to acceptance stage even though the registration has been revoked, meaning that opposition process would need to be initiated to block the application proceeding to registration once more. You might need to undertake an opposition in order to prevent registration occurring again."
+            "text": "* IP Australia does not have an obligation to consider a request to revoke a trade mark registration. As such, it might be risky to base your entire enforcement strategy on this procedure expecting IP Australia to make a revocation decision, instead of using other enforcement mechanisms such as challenging the trade mark registration through the court system.\n* While IP Australia does not publish the details of the party who requested revocation, it is possible for documents to be obtained under Freedom of Information Act 1982 so the owner of the trade mark can ascertain the identity of the party who requested revocation.\n* This procedure provides a much more limited opportunity to participate in the decision-making process, when compared to challenging a trade mark registration through the opposition and hearing procedures or courts.\n* Even if revocation of acceptance follows revocation of registration, the application will be returned to examination and the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* In some rare cases, the application may only be reverted to acceptance stage even though the registration has been revoked, meaning that opposition process would need to be initiated to block the application proceeding to registration once more. You might need to undertake an opposition in order to prevent registration occurring again."
           }
         },
         {
@@ -137,7 +139,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Upon receipt of information, IP Australia may initiate the procedure to revoke the registered trade mark. * Revocation procedure is not initiated despite the information provided. As noted above, IP Australia does not have an obligation to consider a request to revoke a trade mark registration. * Once the revocation procedure is initiated, IP Australia must give the owner of the registered trade mark the opportunity to be heard on the revocation (to put their case forward why it shouldn\u2019t be revoked). If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked. * If a decision is made to revoke registration, the owner of the registered trade mark is able to appeal this decision to the courts. If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked."
+            "text": "* Upon receipt of information, IP Australia may initiate the procedure to revoke the registered trade mark.\n* Revocation procedure is not initiated despite the information provided. As noted above, IP Australia does not have an obligation to consider a request to revoke a trade mark registration.\n* Once the revocation procedure is initiated, IP Australia must give the owner of the registered trade mark the opportunity to be heard on the revocation (to put their case forward why it shouldn\u2019t be revoked). If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked.\n* If a decision is made to revoke registration, the owner of the registered trade mark is able to appeal this decision to the courts. If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked."
           }
         },
         {
@@ -153,7 +155,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* 2-4 months, if revocation procedures are initiated and IP Australia\u2019s decision is not challenged by the trade mark owner. * If the application is returned to examination, the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance. * If the application is returned to the acceptance stage, you may need to challenge the registration of their trade mark in an opposition procedure, which will take additional time."
+            "text": "* 2-4 months, if revocation procedures are initiated and IP Australia\u2019s decision is not challenged by the trade mark owner.\n* If the application is returned to examination, the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* If the application is returned to the acceptance stage, you may need to challenge the registration of their trade mark in an opposition procedure, which will take additional time."
           }
         },
         {

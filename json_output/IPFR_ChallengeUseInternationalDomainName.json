@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,25 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ChallengeUseInternationalDomainName",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "If your complaint involves multiple domain names, ...",
+          "text": "If your complaint involves multiple domain names, you should learn about \u2018consolidation\u2019 of complaints and complete the WIPO UDRP consolidation worksheet. See\u00a0[WIPO Overview 3.0](https://www.wipo.int/amc/en/domains/search/overview3.0/),\u00a0[section 4.11](https://www.wipo.int/amc/en/domains/search/overview3.0/#item411)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Check the domain name status in case it\u2019s expiring...",
+          "text": "Check the domain name status in case it\u2019s expiring during the dispute. For more information see\u00a0[Q&A: domain name expiration and the UDRP](https://www.wipo.int/amc/en/domains/expiry.html)."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +103,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Benefits vary depending on the relevant dispute resolution policy. Some country code dispute resolution policies may have different requirements.\u00a0 For the UDRP, and country code policies closely based on it, benefits include:\u00a0  * The process can occur even without participation from the other party. * Fast and accessible process. * A focus on practical, non-punitive outcomes. * Fair opportunity for both parties to present their case in writing. * There is usually no compensation for loss (including lawyers\u2019 costs) or damages, meaning this process is less adversarial. * If using WIPO as a dispute resolution provider, the WIPO Arbitration and Mediation Center will provide free procedural/service support to help navigate the process."
+            "text": "Benefits vary depending on the relevant dispute resolution policy. Some country code dispute resolution policies may have different requirements.\u00a0 For the UDRP, and country code policies closely based on it, benefits include:\u00a0\n\n* The process can occur even without participation from the other party.\n* Fast and accessible process.\n* A focus on practical, non-punitive outcomes.\n* Fair opportunity for both parties to present their case in writing.\n* There is usually no compensation for loss (including lawyers\u2019 costs) or damages, meaning this process is less adversarial.\n* If using WIPO as a dispute resolution provider, the WIPO Arbitration and Mediation Center will provide free procedural/service support to help navigate the process."
           }
         },
         {
@@ -141,7 +111,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Decisions are usually made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage. * Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party. * If either party is unhappy with the decision of the panel, they can initiate legal proceedings. This can get complicated when dealing with international disputes, and will probably be in the registrar\u2019s or the registrant\u2019s location. This means you may not be able to choose which jurisdiction/country the court is in."
+            "text": "* Decisions are usually made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage.\n* Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party.\n* If either party is unhappy with the decision of the panel, they can initiate legal proceedings. This can get complicated when dealing with international disputes, and will probably be in the registrar\u2019s or the registrant\u2019s location. This means you may not be able to choose which jurisdiction/country the court is in."
           }
         },
         {
@@ -149,7 +119,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For the UDRP and country code policies based closely on the UDRP, these main outcomes are possible as a result of the panel\u2019s decision:\u00a0  * The disputed domain name licence(s) cancelled, in which case the domain name(s) will become available for registration by another eligible party. * The disputed domain name licence(s) is transferred to you. * The disputed domain name licence(s) remains with the current registrant. * If the Panel finds that the complaint was brought in bad faith they will note in their decision that the complaint constitutes an abuse of the proceeding called \u2018reverse domain name hijacking\u2019. * For more info\u00a0[WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)](https://www.wipo.int/amc/en/domains/guide/#What_is_a).  You and the other party are still able to reach a direct settlement during the proceedings. If this occurs before a panel is appointed, you are entitled to a partial refund of the filing fee. In most cases this is a refund of US $1,000."
+            "text": "For the UDRP and country code policies based closely on the UDRP, these main outcomes are possible as a result of the panel\u2019s decision:\u00a0\n\n* The disputed domain name licence(s) cancelled, in which case the domain name(s) will become available for registration by another eligible party.\n* The disputed domain name licence(s) is transferred to you.\n* The disputed domain name licence(s) remains with the current registrant.\n* If the Panel finds that the complaint was brought in bad faith they will note in their decision that the complaint constitutes an abuse of the proceeding called \u2018reverse domain name hijacking\u2019.\n* For more info\u00a0[WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)](https://www.wipo.int/amc/en/domains/guide/#What_is_a).\n\nYou and the other party are still able to reach a direct settlement during the proceedings. If this occurs before a panel is appointed, you are entitled to a partial refund of the filing fee. In most cases this is a refund of US $1,000."
           }
         },
         {
@@ -157,7 +127,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "**Please note:**Costs vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most dispute resolution providers (DRPs) when disputed at WIPO.\u00a0  You must pay a\u00a0[fee to lodge](https://www.wipo.int/amc/en/domains/fees/index.html) \u00a0the dispute. Fees start at US$1,500 for single member and US$4,000 for a 3-member panel.\u00a0  Fees increase based on how many domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 \u00a0panellists. If you choose a one-member panel, the domain owner can elect to have the dispute heard by a 3 -member panel (or vice versa), in which case you and the domain owner each pay half of the fee.\u00a0  The UDRP when used at WIPO does not award costs or charge additional fees.\u00a0  You will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute."
+            "text": "**Please note:**Costs vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most dispute resolution providers (DRPs) when disputed at WIPO.\u00a0\n\nYou must pay a\u00a0[fee to lodge](https://www.wipo.int/amc/en/domains/fees/index.html) \u00a0the dispute. Fees start at US$1,500 for single member and US$4,000 for a 3-member panel.\u00a0\n\nFees increase based on how many domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 \u00a0panellists. If you choose a one-member panel, the domain owner can elect to have the dispute heard by a 3 -member panel (or vice versa), in which case you and the domain owner each pay half of the fee.\u00a0\n\nThe UDRP when used at WIPO does not award costs or charge additional fees.\u00a0\n\nYou will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute."
           }
         },
         {
@@ -165,7 +135,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If there are no procedural issues, the case normally should be completed within 2 months from the date WIPO receives the complaint.\u00a0  Timelines vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most DRPs when disputed at WIPO.\u00a0\u00a0  WIPO will notify the domain name holder after registrar verification, and an administrative compliance check (up to 5 days). They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.\u202f\u00a0\u00a0  Once a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 14 days. This will be communicated to you, the other party and the registrar of the disputed domain.\u00a0  If the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings."
+            "text": "If there are no procedural issues, the case normally should be completed within 2 months from the date WIPO receives the complaint.\u00a0\n\nTimelines vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most DRPs when disputed at WIPO.\u00a0\u00a0\n\nWIPO will notify the domain name holder after registrar verification, and an administrative compliance check (up to 5 days). They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.\u202f\u00a0\u00a0\n\nOnce a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 14 days. This will be communicated to you, the other party and the registrar of the disputed domain.\u00a0\n\nIf the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings."
           }
         },
         {
@@ -173,7 +143,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Anyone with competing legal rights to a domain name licence (including the ownership of a relevant trade mark). Whether you have the right to the licence will depend on the dispute resolution policy.\u00a0  When using the UDRP your trade mark can be registered anywhere in the world, including Australia. Some specific country code domains might require that your trade mark is registered in that country."
+            "text": "Anyone with competing legal rights to a domain name licence (including the ownership of a relevant trade mark). Whether you have the right to the licence will depend on the dispute resolution policy.\u00a0\n\nWhen using the UDRP your trade mark can be registered anywhere in the world, including Australia. Some specific country code domains might require that your trade mark is registered in that country."
           }
         }
       ]

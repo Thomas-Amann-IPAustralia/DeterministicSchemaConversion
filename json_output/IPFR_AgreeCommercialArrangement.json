@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,50 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with AgreeCommercialArrangement",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The status and details of the relevant IP in the j...",
+          "text": "The status and details of the relevant IP in the jurisdiction where the alleged infringement/dispute occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Ensuring your claims do not amount to baseless acc...",
+          "text": "Ensuring your claims do not amount to baseless accusations which would be seen as unjustified threats."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "The identity and contact details of the other part...",
+          "text": "The identity and contact details of the other party \u2013 it\u2019s important to make sure you speak to the correct party.\n\nThroughout the negotiation with the other party, it can be helpful to remember to:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Make sure you stay calm and professional throughou...",
+          "text": "Make sure you stay calm and professional throughout the conversation, avoiding emotional, accusatory language."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Focus on the issues at hand, not the personalities...",
+          "text": "Focus on the issues at hand, not the personalities of the other parties involved."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Acknowledge that problems are often caused by misu...",
+          "text": "Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can often be reached."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Be clear on the terms of agreement you reached wit...",
+          "text": "Be clear on the terms of agreement you reached with the other party, writing down the agreement in detail at the end of the conversation and making sure you enter into a legally binding agreement that reflects the negotiated outcome.\u202fAn IP lawyer can assist you with negotiations or recording the outcomes in a legally binding agreement.\n\nIt can be difficult to determine whether negotiations are a suitable option. An IP professional can help you make this assessment and advise what steps would work best in your situation."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +128,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Often cost-effective. * Quick and easy to initiate, and can progress to an agreed outcome quickly where both parties are willing and able to do so. * The ability to agree to a creative, productive outcome that can benefit both parties commercially. * Much less adversarial than legal procedures, helping you preserve your relationship with the other parties involved. * Flexible and informal, as it is entirely up to the parties to shape the process * Parties can focus on the issues that matter to both sides. * Negotiation can be conducted across multiple jurisdictions. * Parties can agree to keep the negotiations confidential. * Other enforcement processes often expect you to take genuine steps to resolve a dispute before escalating."
+            "text": "* Often cost-effective.\n* Quick and easy to initiate, and can progress to an agreed outcome quickly where both parties are willing and able to do so.\n* The ability to agree to a creative, productive outcome that can benefit both parties commercially.\n* Much less adversarial than legal procedures, helping you preserve your relationship with the other parties involved.\n* Flexible and informal, as it is entirely up to the parties to shape the process\n* Parties can focus on the issues that matter to both sides.\n* Negotiation can be conducted across multiple jurisdictions.\n* Parties can agree to keep the negotiations confidential.\n* Other enforcement processes often expect you to take genuine steps to resolve a dispute before escalating."
           }
         },
         {
@@ -141,7 +136,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Relies on genuine engagement and willingness of parties to resolve issues. * If you do not agree to enter into a legally binding agreement that sets out the agreed outcomes from the negotiations, it may be difficult to enforce the outcomes. This risk can be avoided if you enter into a legally binding agreement. * If you do not negotiate in\u202fgood faith with the other parties, this may prompt them to escalate and resist, rather than comply. * Depending on what you say to the other parties, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other parties that any negotiations are on a \u2018without prejudice\u2019 basis and to include this in any written communications with them.**"
+            "text": "* Relies on genuine engagement and willingness of parties to resolve issues.\n* If you do not agree to enter into a legally binding agreement that sets out the agreed outcomes from the negotiations, it may be difficult to enforce the outcomes. This risk can be avoided if you enter into a legally binding agreement.\n* If you do not negotiate in\u202fgood faith with the other parties, this may prompt them to escalate and resist, rather than comply.\n* Depending on what you say to the other parties, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other parties that any negotiations are on a \u2018without prejudice\u2019 basis and to include this in any written communications with them.**"
           }
         },
         {
@@ -149,7 +144,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties\u2019 desires and specific circumstances. Some popular forms of commercial arrangements involving IP include:\u202f\u202f\u00a0  **Licensing**\u00a0  You can agree to a licensing agreement. Licensing involves the owner of the IP or someone else with a right to licence the IP (the licensor) giving someone else (the licensee) permission to use \u2013 but not own \u2013 their IP usually in exchange for payment. For detailed information on types of licences and licence conditions, see\u202f[How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.).\u202f\u00a0  **Assignment (selling or transferring your IP)**\u00a0  You may decide to sell your IP as part of your negotiation with the other party. This involves transferring the ownership of the IP to another entity (the assignee) through a process called \u2018assignment\u2019 so that you no longer have the rights to use the IP.\u202f\u00a0  Once assignment is completed, you won\u2019t have any control over the IP asset you have sold unless you have agreed that the assignee licence some rights back to you. The assignee will bear the risk of commercial development of the IP and be responsible for all costs, including renewal fees paid to IP Australia.\u202f\u202f\u00a0  Once the title of a registered IP right has been assigned through a contractual agreement, the transfer of the ownership can be recorded on the IP Australia register through IP Australia\u2019s[Online Services portal](https://portal.ipaustralia.gov.au/login?_gl=1%2an6kr9w%2a_ga%2aMTUwOTM4MDc5LjE3MzM3ODMxNTI.%2a_ga_GMT4KC15KS%2aMTczOTIyMTY0Ny41NS4xLjE3MzkyMjU5MTEuMC4wLjA.).\u202f\u00a0  **Franchising (trade marks)**\u00a0  In a franchise agreement, you can give one or more parties (the franchisees) the right to use your trade mark or trade name, your business systems and processes, and so on.\u202f\u00a0  The licensed rights are typically used by the franchisees to provide goods or services to agreed specifications. In return, they pay royalties and fees. Franchisees often contribute to marketing costs for the brand as well.\u202fFranchising is a highly regulated area of law and you should consult with a franchising expert such as a franchising lawyer before agreeing to a franchising agreement.\u00a0  **Letter of consent or co-existence agreement (trade marks)**\u00a0  Trade mark owners can negotiate to have their trade marks co-exist in the market. This can allow both parties to use potentially conflicting rights in ways that both agree to (such as in certain geographical areas).\u00a0\u00a0  Trade mark co-existence agreements may take the form a formal contract stipulating rights and obligations of both parties, or a letter of consent where a party gives the other party (often in the form of[a letter](https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent) ) consent to the registration of their right with IP Australia."
+            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties\u2019 desires and specific circumstances. Some popular forms of commercial arrangements involving IP include:\u202f\u202f\u00a0\n\n**Licensing**\u00a0\n\nYou can agree to a licensing agreement. Licensing involves the owner of the IP or someone else with a right to licence the IP (the licensor) giving someone else (the licensee) permission to use \u2013 but not own \u2013 their IP usually in exchange for payment. For detailed information on types of licences and licence conditions, see\u202f[How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.).\u202f\u00a0\n\n**Assignment (selling or transferring your IP)**\u00a0\n\nYou may decide to sell your IP as part of your negotiation with the other party. This involves transferring the ownership of the IP to another entity (the assignee) through a process called \u2018assignment\u2019 so that you no longer have the rights to use the IP.\u202f\u00a0\n\nOnce assignment is completed, you won\u2019t have any control over the IP asset you have sold unless you have agreed that the assignee licence some rights back to you. The assignee will bear the risk of commercial development of the IP and be responsible for all costs, including renewal fees paid to IP Australia.\u202f\u202f\u00a0\n\nOnce the title of a registered IP right has been assigned through a contractual agreement, the transfer of the ownership can be recorded on the IP Australia register through IP Australia\u2019s[Online Services portal](https://portal.ipaustralia.gov.au/login?_gl=1%2an6kr9w%2a_ga%2aMTUwOTM4MDc5LjE3MzM3ODMxNTI.%2a_ga_GMT4KC15KS%2aMTczOTIyMTY0Ny41NS4xLjE3MzkyMjU5MTEuMC4wLjA.).\u202f\u00a0\n\n**Franchising (trade marks)**\u00a0\n\nIn a franchise agreement, you can give one or more parties (the franchisees) the right to use your trade mark or trade name, your business systems and processes, and so on.\u202f\u00a0\n\nThe licensed rights are typically used by the franchisees to provide goods or services to agreed specifications. In return, they pay royalties and fees. Franchisees often contribute to marketing costs for the brand as well.\u202fFranchising is a highly regulated area of law and you should consult with a franchising expert such as a franchising lawyer before agreeing to a franchising agreement.\u00a0\n\n**Letter of consent or co-existence agreement (trade marks)**\u00a0\n\nTrade mark owners can negotiate to have their trade marks co-exist in the market. This can allow both parties to use potentially conflicting rights in ways that both agree to (such as in certain geographical areas).\u00a0\u00a0\n\nTrade mark co-existence agreements may take the form a formal contract stipulating rights and obligations of both parties, or a letter of consent where a party gives the other party (often in the form of[a letter](https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent) ) consent to the registration of their right with IP Australia."
           }
         },
         {
@@ -165,7 +160,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Commercial negotiation often serves as a cost-effective and non-adversarial way to resolve a dispute with the other party.\u202f\u202f\u00a0  However, the amount of time taken to reach an agreeable outcome with the other party will vary depending on the complexity of each case, individual circumstances surrounding each party, and whether the parties choose to engage an IP professional to act on your behalf."
+            "text": "Commercial negotiation often serves as a cost-effective and non-adversarial way to resolve a dispute with the other party.\u202f\u202f\u00a0\n\nHowever, the amount of time taken to reach an agreeable outcome with the other party will vary depending on the complexity of each case, individual circumstances surrounding each party, and whether the parties choose to engage an IP professional to act on your behalf."
           }
         },
         {

@@ -42,44 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -111,6 +74,30 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ChallengeNewOrAmendedPatent",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Details of the patent you want to oppose, includin...",
+          "text": "Details of the patent you want to oppose, including the patent number and patent holder."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Grounds for opposition, including (but not limited...",
+          "text": "Grounds for opposition, including (but not limited to), a lack of support or enablement *(sections 40(2)(a), 40(3)* of the *patents act),* novelty or inventive step *(section 7* of the *patents act).*"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "In cases where you are using evidence to *support ...",
+          "text": "In cases where you are using evidence to *support your opposition, that evidence must be collected and prepared. Refer to* [Evidence In Oppositions And PBR Objections | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections)  *for more information about evidence.*"
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -121,7 +108,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Patent oppositions provide a moderately cost-effective mechanism to challenge the validity of an Australian patent application. Additionally, the oppositions process is adversarial, meaning that you will have the opportunity to provide evidence and refute or reply to evidence provided by the opposition regarding the legal and/or factual arguments directed against the patent.\u00a0\u00a0  Additionally, the oppositions process takes place prior to the grant of the patent, potentially reducing the risk of commercial disputes arising from the grant of the patent."
+            "text": "Patent oppositions provide a moderately cost-effective mechanism to challenge the validity of an Australian patent application. Additionally, the oppositions process is adversarial, meaning that you will have the opportunity to provide evidence and refute or reply to evidence provided by the opposition regarding the legal and/or factual arguments directed against the patent.\u00a0\u00a0\n\nAdditionally, the oppositions process takes place prior to the grant of the patent, potentially reducing the risk of commercial disputes arising from the grant of the patent."
           }
         },
         {
@@ -129,7 +116,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If your opposition action is unsuccessful and the patent is granted, you may also be required to pay the other party's costs. * When opposing the acceptance of a patent, the applicant will be informed of your opposition, as well as any documents or evidence provided (unless you notify IP Australia of the confidentiality requirement for some or all of the documents). You should consider your overall strategy and if you are comfortable having the applicant be aware of you and access these materials. * It is possible that filing an opposition may alert the other party to your claims and can cause them to act more defensively or even contest your own rights. * Using this process improperly can be considered a bullying tactic and may expose you to costs. * If you are late in providing evidence which you promised, late fees may be owed to IP Australia."
+            "text": "* If your opposition action is unsuccessful and the patent is granted, you may also be required to pay the other party's costs.\n* When opposing the acceptance of a patent, the applicant will be informed of your opposition, as well as any documents or evidence provided (unless you notify IP Australia of the confidentiality requirement for some or all of the documents). You should consider your overall strategy and if you are comfortable having the applicant be aware of you and access these materials.\n* It is possible that filing an opposition may alert the other party to your claims and can cause them to act more defensively or even contest your own rights.\n* Using this process improperly can be considered a bullying tactic and may expose you to costs.\n* If you are late in providing evidence which you promised, late fees may be owed to IP Australia."
           }
         },
         {
@@ -137,7 +124,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are three possible outcomes from the patent oppositions process,\u00a0\u00a0  * The patent is upheld in its original form * The patent is upheld in an amended form * The opposition is successful and the patent is revoked.  In some cases, amendments made to the claims may provide opportunity for a further hearing (if the opposing party wishes to oppose the amendments)."
+            "text": "There are three possible outcomes from the patent oppositions process,\u00a0\u00a0\n\n* The patent is upheld in its original form\n* The patent is upheld in an amended form\n* The opposition is successful and the patent is revoked.\n\nIn some cases, amendments made to the claims may provide opportunity for a further hearing (if the opposing party wishes to oppose the amendments)."
           }
         },
         {
@@ -145,7 +132,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* A *notice of opposition* to start the processcosts $1,200 payable to IP Australia. * IP Australia charges fees for hearings:   + $1,200 for hearings evaluating written submissions only   + $2,000 per day for oral hearings in person (In most cases, hearings can take anywhere from a few days to a few weeks.) * If you have an attorney acting on your behalf, you may be liable for additional legal fees. * If your opposition is unsuccessful, you may also be required to pay the other party's costs."
+            "text": "* A *notice of opposition* to start the processcosts $1,200 payable to IP Australia.\n* IP Australia charges fees for hearings:\n  + $1,200 for hearings evaluating written submissions only\n  + $2,000 per day for oral hearings in person (In most cases, hearings can take anywhere from a few days to a few weeks.)\n* If you have an attorney acting on your behalf, you may be liable for additional legal fees.\n* If your opposition is unsuccessful, you may also be required to pay the other party's costs."
           }
         },
         {
@@ -153,7 +140,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oppositions can take up to 12 months depending on the various stages outlined below.\u00a0  * The *notice of intent* (NOI) to oppose a patent must be filed within 3 months of the publication of acceptance. The party opposing the patent must then file a *Statement of Grounds and Particulars* within a month from when the NOI is filed. Provided the opposition is not dismissed, the process will then enter the evidence stage. * The party opposing the patent must provide evidence which supports their opposition within 3 months of the Statement of Grounds and Particulars being filed. * The owner of the patent then has 3 months to provide evidence in response (defending or explaining why their patent should *not* be changed or revoked). * After this, the party opposing the patent has 3 months to provide evidence in reply. * The hearing follows, and the decision is provided within 3 months of the hearing date."
+            "text": "Oppositions can take up to 12 months depending on the various stages outlined below.\u00a0\n\n* The *notice of intent* (NOI) to oppose a patent must be filed within 3 months of the publication of acceptance. The party opposing the patent must then file a *Statement of Grounds and Particulars* within a month from when the NOI is filed. Provided the opposition is not dismissed, the process will then enter the evidence stage.\n* The party opposing the patent must provide evidence which supports their opposition within 3 months of the Statement of Grounds and Particulars being filed.\n* The owner of the patent then has 3 months to provide evidence in response (defending or explaining why their patent should *not* be changed or revoked).\n* After this, the party opposing the patent has 3 months to provide evidence in reply.\n* The hearing follows, and the decision is provided within 3 months of the hearing date."
           }
         },
         {

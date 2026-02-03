@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,35 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with PauseUseContestedIpUntilResolution",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Look for all the ways the IP might be used in your...",
+          "text": "Look for all the ways the IP might be used in your business and for what would be involved in ceasing use of the IP."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Decide what changes to make (remove, redesign or r...",
+          "text": "Decide what changes to make (remove, redesign or rebrand)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Write to the alleged IP owner to explain what you\u2019...",
+          "text": "Write to the alleged IP owner to explain what you\u2019ve done, what you will do and when but note that admitting any fault or liability in your communications would likely assist IP owner\u2019s legal position against you."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Keep clear records showing when you made changes (...",
+          "text": "Keep clear records showing when you made changes (screenshots, shipping logs, letters)."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +113,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Can potentially de-escalate the situation and reduce the likelihood of expensive legal action or compensation claims \u2013 but often the other party will demand you do more than just stop using their IP. Other parties may still insist on other demands like you compensating them for your use of their IP up to the point where you stopped. * Outcomes can be private where either the parties agree not to disclose the alleged infringement or they reach no formal agreement but neither party discloses it. * Can show you\u2019re acting in good faith, which may help in future discussions, business dealings and negotiation \u2013 although this will depend on the nature of the alleged infringement."
+            "text": "* Can potentially de-escalate the situation and reduce the likelihood of expensive legal action or compensation claims \u2013 but often the other party will demand you do more than just stop using their IP. Other parties may still insist on other demands like you compensating them for your use of their IP up to the point where you stopped.\n* Outcomes can be private where either the parties agree not to disclose the alleged infringement or they reach no formal agreement but neither party discloses it.\n* Can show you\u2019re acting in good faith, which may help in future discussions, business dealings and negotiation \u2013 although this will depend on the nature of the alleged infringement."
           }
         },
         {
@@ -141,7 +121,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Ceasing use of contested IP may cause you to lose business revenue or incur business costs. This risk should be considered against the risk of further action against you if you do not cease use of contested IP. * Ceasing use of contested IP may not prevent the IP owner seeking compensation for past use or otherwise taking further steps against you. * The other party might see this action as conceding that you were infringing. Clear communication may sometimes help mitigate (but not eliminate) this risk, and you should note that admitting any fault or liability may well assist the other party\u2019s legal position against you."
+            "text": "* Ceasing use of contested IP may cause you to lose business revenue or incur business costs. This risk should be considered against the risk of further action against you if you do not cease use of contested IP.\n* Ceasing use of contested IP may not prevent the IP owner seeking compensation for past use or otherwise taking further steps against you.\n* The other party might see this action as conceding that you were infringing. Clear communication may sometimes help mitigate (but not eliminate) this risk, and you should note that admitting any fault or liability may well assist the other party\u2019s legal position against you."
           }
         },
         {
@@ -149,7 +129,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The IP owner accepts your response and nothing further happens. * The IP owner may still not be satisfied with your actions and take further action. * You might not be satisfied with permanently ceasing use of the contested IP, and could choose to further explore whether you are infringing and consider resuming your previous activities or taking other action."
+            "text": "* The IP owner accepts your response and nothing further happens.\n* The IP owner may still not be satisfied with your actions and take further action.\n* You might not be satisfied with permanently ceasing use of the contested IP, and could choose to further explore whether you are infringing and consider resuming your previous activities or taking other action."
           }
         },
         {
@@ -157,7 +137,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Costs will vary significantly depending on the importance of the contested IP to your business, the extent of the IP usage and the specific requests made by the other party.\u00a0\u00a0  Business costs involved in ceasing use of certain IP could include:\u00a0  * **Audit costs** \u2013 Such as reviewing your products, packaging, marketing, website, and systems. * **Rebranding, redesign or replacement costs** \u2013Such as changing labels, packaging or tooling; reprinting and developing marketing material, and redeveloping goodwill in your business with alternate branding. * **Product changes or redesign** \u2013 If you need to make changes to your products to avoid using others\u2019 IP. * **Increased business expenses** \u2013 using the contested IP may have allowed you to run your business more efficiently. * **Disposal or loss \u2013** Such as writing off unsellable stock or packaging; cancelling marketing or contracts early. * **Loss of income or requirement to pay compensation** \u2013 If you\u2019ve entered into IP licences or other contracts involving material or products that are alleged to infringe someone else's IP, you may lose expected payments such as licensing fees if you're required to stop using the material or product as agreed. Depending on the terms of those contracts, you may also be liable to pay compensation.  If you seek assistance from an IP lawyer or IP attorney, you will also need to pay their fees."
+            "text": "Costs will vary significantly depending on the importance of the contested IP to your business, the extent of the IP usage and the specific requests made by the other party.\u00a0\u00a0\n\nBusiness costs involved in ceasing use of certain IP could include:\u00a0\n\n* **Audit costs** \u2013 Such as reviewing your products, packaging, marketing, website, and systems.\n* **Rebranding, redesign or replacement costs** \u2013Such as changing labels, packaging or tooling; reprinting and developing marketing material, and redeveloping goodwill in your business with alternate branding.\n* **Product changes or redesign** \u2013 If you need to make changes to your products to avoid using others\u2019 IP.\n* **Increased business expenses** \u2013 using the contested IP may have allowed you to run your business more efficiently.\n* **Disposal or loss \u2013** Such as writing off unsellable stock or packaging; cancelling marketing or contracts early.\n* **Loss of income or requirement to pay compensation** \u2013 If you\u2019ve entered into IP licences or other contracts involving material or products that are alleged to infringe someone else's IP, you may lose expected payments such as licensing fees if you're required to stop using the material or product as agreed. Depending on the terms of those contracts, you may also be liable to pay compensation.\n\nIf you seek assistance from an IP lawyer or IP attorney, you will also need to pay their fees."
           }
         },
         {
@@ -165,7 +145,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Time will vary depending on the circumstances and what you are changing. For instance, changing a website image could be done very quickly, where a full rebrand or product withdrawal could take weeks or months.\u00a0  Extra time might be needed to:\u00a0  * check where the IP is used in your business * inform suppliers and distributors * update packaging and marketing."
+            "text": "Time will vary depending on the circumstances and what you are changing. For instance, changing a website image could be done very quickly, where a full rebrand or product withdrawal could take weeks or months.\u00a0\n\nExtra time might be needed to:\u00a0\n\n* check where the IP is used in your business\n* inform suppliers and distributors\n* update packaging and marketing."
           }
         },
         {

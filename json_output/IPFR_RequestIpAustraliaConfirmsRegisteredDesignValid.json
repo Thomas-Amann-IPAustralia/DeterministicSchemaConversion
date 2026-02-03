@@ -42,44 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -111,6 +74,40 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with RequestIpAustraliaConfirmsRegisteredDesignValid",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Registered design number.",
+          "text": "Registered design number."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Ability to pay the examination fee.",
+          "text": "Ability to pay the examination fee."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Be prepared to respond to an examination report wh...",
+          "text": "Be prepared to respond to an examination report which may require providing additional evidence or submissions to address any issues raised."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consider whether to get help from an IP lawyer or ...",
+          "text": "Consider whether to get help from an IP lawyer or IP attorney."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Keep copies of all correspondence and the certific...",
+          "text": "Keep copies of all correspondence and the certificate of examination."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -121,7 +118,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Examination could lead to you needing to amend your registered design. * Examination could lead to your registered design being revoked. * Failing to pay your share of the examination fee (when examination is requested by a third party) will cause your registration to cease. * A certificate of examination related to a registered design does not guarantee success; enforcing a design may still be costly."
+            "text": "* Examination could lead to you needing to amend your registered design.\n* Examination could lead to your registered design being revoked.\n* Failing to pay your share of the examination fee (when examination is requested by a third party) will cause your registration to cease.\n* A certificate of examination related to a registered design does not guarantee success; enforcing a design may still be costly."
           }
         },
         {
@@ -129,7 +126,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Your registered design is certified and becomes enforceable. * You apply to amend your registered design so it can be certified, a list of allowable amendments can be found in the relevant section of the Designs Manual: [22.2.1. Amending an application: Amendments that are allowable | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amendments-that-are-allowable) * Your registered design is revoked because you were unable to overcome objections or other matters raised by the ~~E~~xaminer within the relevant time limit (whether through submissions, amendments to your registration, lodgement of evidence or other steps). * You do not pay your share of the fee for a third-party examination and your registered design ceases."
+            "text": "* Your registered design is certified and becomes enforceable.\n* You apply to amend your registered design so it can be certified, a list of allowable amendments can be found in the relevant section of the Designs Manual: [22.2.1. Amending an application: Amendments that are allowable | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amendments-that-are-allowable)\n* Your registered design is revoked because you were unable to overcome objections or other matters raised by the ~~E~~xaminer within the relevant time limit (whether through submissions, amendments to your registration, lodgement of evidence or other steps).\n* You do not pay your share of the fee for a third-party examination and your registered design ceases."
           }
         },
         {
@@ -153,7 +150,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The registered design owner or an exclusive licensee who wants to enforce the right. * Any other person (for example, a competitor) can request examination."
+            "text": "* The registered design owner or an exclusive licensee who wants to enforce the right.\n* Any other person (for example, a competitor) can request examination."
           }
         },
         {
@@ -161,7 +158,7 @@
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Design right owner. * IP Australia\u2019s design examiner makes the examination decision. * Optional: third\u2011party requester of examination. * Optional: IP lawyer or patent attorney."
+            "text": "* Design right owner.\n* IP Australia\u2019s design examiner makes the examination decision.\n* Optional: third\u2011party requester of examination.\n* Optional: IP lawyer or patent attorney."
           }
         }
       ]

@@ -42,32 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -99,6 +74,25 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with RespondUnjustifiedThreat",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "copies of the threat and any related emails or let...",
+          "text": "copies of the threat and any related emails or letters"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "evidence of how the threat has affected (or might ...",
+          "text": "evidence of how the threat has affected (or might affect) your business."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -109,7 +103,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Can help stop unjustified threats which may be negatively impacting your business. * A court may award compensation if the threat caused damages (for example, loss of sales or customers for your business)."
+            "text": "* Can help stop unjustified threats which may be negatively impacting your business.\n* A court may award compensation if the threat caused damages (for example, loss of sales or customers for your business)."
           }
         },
         {
@@ -117,7 +111,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Escalating the issue to court may prompt the other party to take further enforcement actions such as infringement proceedings or to make other counterclaims against you. * If the court finds the threat was justified, you may need to pay the other party\u2019s costs. * Court proceedings are generally public so you should consider any reputational impacts."
+            "text": "* Escalating the issue to court may prompt the other party to take further enforcement actions such as infringement proceedings or to make other counterclaims against you.\n* If the court finds the threat was justified, you may need to pay the other party\u2019s costs.\n* Court proceedings are generally public so you should consider any reputational impacts."
           }
         },
         {
@@ -125,7 +119,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The possible outcomes will depend on how you respond to the unjustified threat. For example, whether you try to resolve the matter by writing back to the party or decide to start legal action.\u00a0\u00a0  If you decide to start legal action, possible outcomes include:\u00a0  * The parties resolve their dispute outside of court through mediation, negotiation or another alternative dispute resolution (ADR) process and stop the legal action. * A court declares the threat unjustified and might also order the other party to stop making threats and/or pay you damages if you have suffered loss as a result of the threat. * A court finds the threat is justified. You may be required to pay the other party\u2019s costs and could face other liabilities if it is found that you were infringing their IP rights."
+            "text": "The possible outcomes will depend on how you respond to the unjustified threat. For example, whether you try to resolve the matter by writing back to the party or decide to start legal action.\u00a0\u00a0\n\nIf you decide to start legal action, possible outcomes include:\u00a0\n\n* The parties resolve their dispute outside of court through mediation, negotiation or another alternative dispute resolution (ADR) process and stop the legal action.\n* A court declares the threat unjustified and might also order the other party to stop making threats and/or pay you damages if you have suffered loss as a result of the threat.\n* A court finds the threat is justified. You may be required to pay the other party\u2019s costs and could face other liabilities if it is found that you were infringing their IP rights."
           }
         },
         {
@@ -141,7 +135,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Courts can take a long time to resolve disputes. It usually takes months, and sometimes years, to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court.\u00a0  If a party appeals the initial decision, this will add extra time before the matter is finalised.\u202f\u202f\u00a0  Where appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing."
+            "text": "Courts can take a long time to resolve disputes. It usually takes months, and sometimes years, to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court.\u00a0\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.\u202f\u202f\u00a0\n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing."
           }
         },
         {

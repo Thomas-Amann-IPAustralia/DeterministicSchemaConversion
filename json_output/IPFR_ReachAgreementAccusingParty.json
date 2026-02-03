@@ -42,20 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -87,6 +74,45 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ReachAgreementAccusingParty",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The status and details of the relevant IP in the j...",
+          "text": "The status and details of the relevant IP in the jurisdiction where the alleged infringement occurred. This includes checking the status of your IP registrations, and whether the accuser has registered IP rights with IP Australia or overseas IP offices."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "The identity and contact details of the other part...",
+          "text": "The identity and contact details of the other party \u2013 it\u2019s important to make sure you speak to the correct party.\n\nThroughout the negotiation with the other party, it can be helpful to remember to:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Stay calm and professional throughout the conversa...",
+          "text": "Stay calm and professional throughout the conversation, avoiding emotional, accusatory language."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Focus on the issues at hand, not the personalities...",
+          "text": "Focus on the issues at hand, not the personalities of the other parties involved."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Acknowledge that problems are often caused by misu...",
+          "text": "Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can be reached."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Be clear on the terms of agreement you may reach w...",
+          "text": "Be clear on the terms of agreement you may reach with the other party, writing down the agreement in detail at the end of the conversation.\n\nIt can be difficult to determine whether you will be able to leverage a commercially meaningful outcome from the IP dispute you are facing and if you can have a productive, amicable discussion with the other party. An IP professional can help you make this assessment and advise which steps might work best in your situation."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -97,7 +123,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "This option offers a lower cost, flexible and private way to resolve IP disputes. A negotiated commercial solution offers:\u00a0  * Potentially lower costs and a quicker\u00a0 process, especially compared to other dispute resolution processes where you must rely on third parties (such as courts and tribunals). * The ability to agree to a creative, productive outcome that can benefit both parties commercially. * A much less adversarial pathway than legal procedures, helping you preserve your relationship with the other party. * A flexible and informal approach, as it is entirely up to the parties to shape the process. * Negotiation can be conducted across multiple jurisdictions. * Confidentiality, as the details of negotiation and the resulting agreements reached are generally not publicly available, allowing parties to discuss commercially sensitive topics freely."
+            "text": "This option offers a lower cost, flexible and private way to resolve IP disputes. A negotiated commercial solution offers:\u00a0\n\n* Potentially lower costs and a quicker\u00a0 process, especially compared to other dispute resolution processes where you must rely on third parties (such as courts and tribunals).\n* The ability to agree to a creative, productive outcome that can benefit both parties commercially.\n* A much less adversarial pathway than legal procedures, helping you preserve your relationship with the other party.\n* A flexible and informal approach, as it is entirely up to the parties to shape the process.\n* Negotiation can be conducted across multiple jurisdictions.\n* Confidentiality, as the details of negotiation and the resulting agreements reached are generally not publicly available, allowing parties to discuss commercially sensitive topics freely."
           }
         },
         {
@@ -105,7 +131,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Relies on genuine engagement and willingness of parties to resolve issues. * If the discussion stalls or backfires, this could result in delays or lost opportunities. * Outcomes may not be as easily enforceable as court or tribunal decisions, especially when parties have not clearly indicated that the outcome of the negotiation is to be legally binding. * In some cases, direct contact may worsen tensions. If the other party considers that you are posing unreasonable aggressive or unprofessional terms for negotiation (not negotiating in good faith), it may prompt the other party to escalate and resist, rather than comply. Some commercial arrangements may result in your intellectual property being \u2018diluted\u2019 by sharing the same or similar IP with others, which may cause damage to the value of your IP and make it harder to enforce it in the future. * If not handled with caution, it is possible that you may say something that undermines your legal position, which could result in less favourable outcomes if formal action follows."
+            "text": "* Relies on genuine engagement and willingness of parties to resolve issues.\n* If the discussion stalls or backfires, this could result in delays or lost opportunities.\n* Outcomes may not be as easily enforceable as court or tribunal decisions, especially when parties have not clearly indicated that the outcome of the negotiation is to be legally binding.\n* In some cases, direct contact may worsen tensions. If the other party considers that you are posing unreasonable aggressive or unprofessional terms for negotiation (not negotiating in good faith), it may prompt the other party to escalate and resist, rather than comply. Some commercial arrangements may result in your intellectual property being \u2018diluted\u2019 by sharing the same or similar IP with others, which may cause damage to the value of your IP and make it harder to enforce it in the future.\n* If not handled with caution, it is possible that you may say something that undermines your legal position, which could result in less favourable outcomes if formal action follows."
           }
         },
         {
@@ -113,7 +139,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties\u2019 desires and specific circumstances. If you are able to reach an agreed outcome, this might result in:\u00a0  * A licence or co-existence arrangement, * Selling or transferring IP ownership (called *assignment*), * Compensation or goodwill payment, * Franchising options, or * Mutual agreement to stop or change the disputed conduct.  You can read more about these potential outcomes of negotiations here [Agree to a commercial arrangement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement)\u00a0\u00a0  If you cannot reach a resolution, the matter may escalate into further enforcement actions.\u00a0  If you cannot reach a resolution, the matter may escalate into further enforcement actions."
+            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties\u2019 desires and specific circumstances. If you are able to reach an agreed outcome, this might result in:\u00a0\n\n* A licence or co-existence arrangement,\n* Selling or transferring IP ownership (called *assignment*),\n* Compensation or goodwill payment,\n* Franchising options, or\n* Mutual agreement to stop or change the disputed conduct.\n\nYou can read more about these potential outcomes of negotiations here [Agree to a commercial arrangement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement)\u00a0\u00a0\n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions.\u00a0\n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions."
           }
         },
         {
@@ -129,7 +155,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues.\u00a0  Some agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth.\u00a0Factors that influence timing include:\u00a0  * urgency of the issue * clarity of the facts and evidence * willingness of the other party to engage * whether professionals are involved * whether an agreement must be documented or signed."
+            "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues.\u00a0\n\nSome agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth.\u00a0Factors that influence timing include:\u00a0\n\n* urgency of the issue\n* clarity of the facts and evidence\n* willingness of the other party to engage\n* whether professionals are involved\n* whether an agreement must be documented or signed."
           }
         },
         {

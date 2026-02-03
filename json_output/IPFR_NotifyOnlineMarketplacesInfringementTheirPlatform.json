@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,25 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with NotifyOnlineMarketplacesInfringementTheirPlatform",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Evidence such as screenshots, product listings, an...",
+          "text": "Evidence such as screenshots, product listings, and any other documentation that clearly demonstrates the infringement. Refer to\u00a0[Evidence you can collect about infringements](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Evidence that you are the legitimate owner of the ...",
+          "text": "Evidence that you are the legitimate owner of the IP. Some platforms require you to have a registered IP right for you to access their brand protection and complaint mechanisms. You may consider applying for a registered IP right to access these procedures and prevent future infringements and protect your ideas, products and branding.\n\nNote that if you do not provide sufficiently accurate information, your takedown application may be rejected and the whole process would be delayed.\u00a0\n\nFor matters involving copyright infringement online, before issuing a takedown notice, copyright owners should check that the user does not have a valid reason to use the material in question (for example a valid license or a \u2018fair dealing\u2019 use permitted as an exception to copyright under the Copyright Act). More information about when using copyright material is allowed is provided on the\u00a0[copyright\u00a0infringement page](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement)."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +103,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Cost-effective. * Often quick to action and obtain outcome. * Simple to prepare and initiate compared to other enforcement options. * Outcome-focused, as it targets infringing products/content directly and prevents customers making purchases/accessing the infringing content. * Some platforms are not limited by the country the infringer is located in, due to these platforms having an international reach \u2013 while others only action takedown requests within jurisdictions in which the rights apply. * You may not need to identify or track down the infringer yourself. * Being able to reduce infringement and prevent sales being diverted by addressing infringement on a major sales channel."
+            "text": "* Cost-effective.\n* Often quick to action and obtain outcome.\n* Simple to prepare and initiate compared to other enforcement options.\n* Outcome-focused, as it targets infringing products/content directly and prevents customers making purchases/accessing the infringing content.\n* Some platforms are not limited by the country the infringer is located in, due to these platforms having an international reach \u2013 while others only action takedown requests within jurisdictions in which the rights apply.\n* You may not need to identify or track down the infringer yourself.\n* Being able to reduce infringement and prevent sales being diverted by addressing infringement on a major sales channel."
           }
         },
         {
@@ -141,7 +111,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Due to the one-off nature of this process there is a risk that the counterfeiters/infringers can return in the future. You will usually need to continuously monitor for reoccurrence. * Online platforms can only take down infringing products or content from their platforms, and do not have power to stop the infringing behaviour itself. * The outcome of the action can be somewhat unpredictable, as platforms will have different set of rules and procedures in dealing with complaints."
+            "text": "* Due to the one-off nature of this process there is a risk that the counterfeiters/infringers can return in the future. You will usually need to continuously monitor for reoccurrence.\n* Online platforms can only take down infringing products or content from their platforms, and do not have power to stop the infringing behaviour itself.\n* The outcome of the action can be somewhat unpredictable, as platforms will have different set of rules and procedures in dealing with complaints."
           }
         },
         {
@@ -149,7 +119,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The outcomes of your complaints with online platforms can vary in accordance with policy, service offerings, and the terms and conditions of each platform. Some possible outcomes include:\u00a0  * Infringing products and content being removed from the platform. * Being required to provide further information, documentation or evidence. * Refusal to take an action, whether it is due to lack of evidence or their assessment that infringing behaviour did not take place."
+            "text": "The outcomes of your complaints with online platforms can vary in accordance with policy, service offerings, and the terms and conditions of each platform. Some possible outcomes include:\u00a0\n\n* Infringing products and content being removed from the platform.\n* Being required to provide further information, documentation or evidence.\n* Refusal to take an action, whether it is due to lack of evidence or their assessment that infringing behaviour did not take place."
           }
         },
         {
@@ -157,7 +127,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most online platforms will not charge you for making complaints or takedown requests.\u00a0\u00a0  However, if you engage an IP professional such as brand monitoring services or IP attorneys to act on your behalf, this will incur additional fees."
+            "text": "Most online platforms will not charge you for making complaints or takedown requests.\u00a0\u00a0\n\nHowever, if you engage an IP professional such as brand monitoring services or IP attorneys to act on your behalf, this will incur additional fees."
           }
         },
         {
@@ -165,7 +135,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Length of complaint processes with online platforms can vary anywhere between 1-2 days to a few months, depending on the volume of your requests, amount of supporting evidence, and terms and conditions of each platform.\u00a0\u00a0  Depending on how or if alleged infringer disputes the takedown request you submit, it may take considerably longer to resolve the issue."
+            "text": "Length of complaint processes with online platforms can vary anywhere between 1-2 days to a few months, depending on the volume of your requests, amount of supporting evidence, and terms and conditions of each platform.\u00a0\u00a0\n\nDepending on how or if alleged infringer disputes the takedown request you submit, it may take considerably longer to resolve the issue."
           }
         },
         {

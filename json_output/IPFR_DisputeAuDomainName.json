@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,50 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with DisputeAuDomainName",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The ability to pay the required fees.",
+          "text": "The ability to pay the required fees."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "To read and understand the Schedule A and B of the...",
+          "text": "To read and understand the Schedule A and B of the [auDRP](https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "To have your submission accepted by the resolution...",
+          "text": "To have your submission accepted by the resolution provider, it needs to include the information set out in Paragraph 3 of Schedule B in the auDRP as well as any requirements detailed in the Provider's Supplemental Rules (available from the provider's website).\n\nauDRP complaints must satisfy the following criteria for a successful outcome:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "You must own the rights to the trade mark or name.",
+          "text": "You must own the rights to the trade mark or name."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "The .au domain name being contested is identical t...",
+          "text": "The .au domain name being contested is identical to the trade mark or confusingly similar."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "The .au registrant/domain name holder does not own...",
+          "text": "The .au registrant/domain name holder does not own any rights or have a legitimate interest in the domain name."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "The .au registrant has registered and used the dom...",
+          "text": "The .au registrant has registered and used the domain name in bad faith.\n\nThe\u00a0[auDRP](https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01) \u00a0provides guidance on what information can be used to meet these criteria."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +128,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The process can occur even without participation from the other party. * Fast and accessible process. * A focus on practical, non-punitive outcomes. * Fair opportunity for both parties to present their case in writing. * There is no compensation for loss or damages, meaning this process is less adversarial."
+            "text": "* The process can occur even without participation from the other party.\n* Fast and accessible process.\n* A focus on practical, non-punitive outcomes.\n* Fair opportunity for both parties to present their case in writing.\n* There is no compensation for loss or damages, meaning this process is less adversarial."
           }
         },
         {
@@ -141,7 +136,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* auDA does not have an appeals process if you are unhappy with the decision of the panel. If you are unsatisfied with the outcome, either party can initiate legal proceedings against the other. * Decisions made by the auDRP panel are made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage. * Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party."
+            "text": "* auDA does not have an appeals process if you are unhappy with the decision of the panel. If you are unsatisfied with the outcome, either party can initiate legal proceedings against the other.\n* Decisions made by the auDRP panel are made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage.\n* Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party."
           }
         },
         {
@@ -149,7 +144,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Three outcomes are possible following the panel\u2019s decision:  * The disputed .au domain name licence/s cancelled, in which case the .au domain name/s will become available for registration by another eligible member of the public. * The disputed .au domain name licence/s is transferred to\u00a0the complainant. The complainant must be eligible to hold the .au domain name licence/s, otherwise the transfer cannot proceed. * The disputed .au domain name licence/s remains with the current domain holder (registrant)."
+            "text": "Three outcomes are possible following the panel\u2019s decision:\n\n* The disputed .au domain name licence/s cancelled, in which case the .au domain name/s will become available for registration by another eligible member of the public.\n* The disputed .au domain name licence/s is transferred to\u00a0the complainant. The complainant must be eligible to hold the .au domain name licence/s, otherwise the transfer cannot proceed.\n* The disputed .au domain name licence/s remains with the current domain holder (registrant)."
           }
         },
         {
@@ -157,7 +152,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You must pay a fee to lodge the dispute.\u00a0  Fees increase based on how many .au domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 panellists. If you choose a one-member panel, the registrant can elect to have the dispute heard by a 3-member panel (or vice versa), in which case you and the registrant each pay half of the fee.  Fees start at $2,000 for single member and $4,500 for a 3-member panel.  The auDRP does not award costs or charge additional fees.  You will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute."
+            "text": "You must pay a fee to lodge the dispute.\u00a0\n\nFees increase based on how many .au domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 panellists. If you choose a one-member panel, the registrant can elect to have the dispute heard by a 3-member panel (or vice versa), in which case you and the registrant each pay half of the fee.\n\nFees start at $2,000 for single member and $4,500 for a 3-member panel.\n\nThe auDRP does not award costs or charge additional fees.\n\nYou will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute."
           }
         },
         {
@@ -165,7 +160,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In the absence of exceptional circumstances, the time from the opposing party being notified of your dispute submission to a decision being put in place may take up to 54 days but can be shorter.  The resolution provider will notify the domain name holder within 3 days of receiving your compliant application and the required payment. They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.  Once a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 24 days which will be communicated to you, the other party and the provider of the disputed domain.  If the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings."
+            "text": "In the absence of exceptional circumstances, the time from the opposing party being notified of your dispute submission to a decision being put in place may take up to 54 days but can be shorter.\n\nThe resolution provider will notify the domain name holder within 3 days of receiving your compliant application and the required payment. They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.\n\nOnce a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 24 days which will be communicated to you, the other party and the provider of the disputed domain.\n\nIf the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings."
           }
         },
         {
@@ -181,7 +176,7 @@
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* A trade mark owner * A .au domain name licence holder (registrant) * A dispute panel of one or three members selected by one of the two independent resolution providers approved by auDA. * Legal representatives (if you choose to not self-represent). * The registrar (business which registers and licences the domain name) is not involved in the dispute, but will enact the decision."
+            "text": "* A trade mark owner\n* A .au domain name licence holder (registrant)\n* A dispute panel of one or three members selected by one of the two independent resolution providers approved by auDA.\n* Legal representatives (if you choose to not self-represent).\n* The registrar (business which registers and licences the domain name) is not involved in the dispute, but will enact the decision."
           }
         }
       ]

@@ -42,32 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -99,6 +74,35 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with RequestConformationSomeoneElsesRegisteredDesignValid",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Registered design number.",
+          "text": "Registered design number."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Ability to pay the examination fee.",
+          "text": "Ability to pay the examination fee."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consider whether to get help from an IP lawyer or ...",
+          "text": "Consider whether to get help from an IP lawyer or IP attorney."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Keep copies of all correspondence and the certific...",
+          "text": "Keep copies of all correspondence and the certificate of examination."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -109,7 +113,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Offers a cost-effective challenge to a competitor\u2019s design without starting court proceedings. * Accessible to any person via online or postal application. * May remove or narrow the owner\u2019s monopoly, opening market opportunities. * Quick administrative procedure handled online through IP Australia."
+            "text": "* Offers a cost-effective challenge to a competitor\u2019s design without starting court proceedings.\n* Accessible to any person via online or postal application.\n* May remove or narrow the owner\u2019s monopoly, opening market opportunities.\n* Quick administrative procedure handled online through IP Australia."
           }
         },
         {
@@ -117,7 +121,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Certification may strengthen the owner\u2019s exclusive rights and enforcement options. * Alerting the owner to your interest could prompt quicker or stronger enforcement action. * Optional hearings to dispute an adverse report may incur extra fees and delays."
+            "text": "* Certification may strengthen the owner\u2019s exclusive rights and enforcement options.\n* Alerting the owner to your interest could prompt quicker or stronger enforcement action.\n* Optional hearings to dispute an adverse report may incur extra fees and delays."
           }
         },
         {
@@ -125,7 +129,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The design is certified, confirming the owner\u2019s exclusive rights. * Note that the owner of the design may choose to make amendment to the design to address objections raised during the examination process. A list of allowable amendments can be found in the relevant section of the Designs Examiners\u2019 Manual: [22.3. Amendments: Amending a registration | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amending-a-registration). * The registration is revoked, removing design protection. * Parties settle the dispute commercially or by negotiation before the examination is completed\u00a0 - in these cases the requesting party withdraws their request for certification as part of the resolution."
+            "text": "* The design is certified, confirming the owner\u2019s exclusive rights.\n* Note that the owner of the design may choose to make amendment to the design to address objections raised during the examination process. A list of allowable amendments can be found in the relevant section of the Designs Examiners\u2019 Manual: [22.3. Amendments: Amending a registration | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amending-a-registration).\n* The registration is revoked, removing design protection.\n* Parties settle the dispute commercially or by negotiation before the examination is completed\u00a0 - in these cases the requesting party withdraws their request for certification as part of the resolution."
           }
         },
         {

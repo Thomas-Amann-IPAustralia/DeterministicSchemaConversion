@@ -42,44 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -111,6 +74,30 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ChooseRebrandAvoidPotentialIpConflicts2",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Review IP First Response resources to understand a...",
+          "text": "Review IP First Response resources to understand all your enforcement options. This helps you make an informed choice to weigh other options."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Calculate the potential costs and timeline for dif...",
+          "text": "Calculate the potential costs and timeline for different options actions."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Identify which type of IP professional you may cho...",
+          "text": "Identify which type of IP professional you may choose to consult and consider having initial conversations to understand their services and approach."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -121,7 +108,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Rebranding does not require the cooperation or even engagement with the other party, and is thus a very non-adversarial process. * You have the control to avoid conflict \u2013 unlike adversarial processes which have unpredictable outcomes. * It might be a more productive way to use your resources, compared to professional fees which may not add sufficient value to your business. * You will be able to better distinguish yourself in the marketplace and lower the risk of confusion in the marketplace. * The time, cost and labour required to take actions to avoid infringement on your IP may not be justified at this point in your business or IP journey. * Choosing to avoid enforcement actions shelters you from needing to establish or defend your rights, which you may not wish to draw attention to. * Additionally, clearly distinguishing yourself from competitors will help your customers avoid confusion, which may occur even if both parties have a registered right to use the trade mark."
+            "text": "* Rebranding does not require the cooperation or even engagement with the other party, and is thus a very non-adversarial process.\n* You have the control to avoid conflict \u2013 unlike adversarial processes which have unpredictable outcomes.\n* It might be a more productive way to use your resources, compared to professional fees which may not add sufficient value to your business.\n* You will be able to better distinguish yourself in the marketplace and lower the risk of confusion in the marketplace.\n* The time, cost and labour required to take actions to avoid infringement on your IP may not be justified at this point in your business or IP journey.\n* Choosing to avoid enforcement actions shelters you from needing to establish or defend your rights, which you may not wish to draw attention to.\n* Additionally, clearly distinguishing yourself from competitors will help your customers avoid confusion, which may occur even if both parties have a registered right to use the trade mark."
           }
         },
         {
@@ -129,7 +116,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Without professional advice, there is a risk that you will miss easy and effective enforcement options. * You may have a legal right to use the IP and will have given it up when you didn't have to; advice from an IP professional can help you determine this. * Rebranding may not resolve the fundamental IP issue (e.g. you may believe that the new brand is different enough, but someone else could still consider it *deceptively similar*,and thus grounds for challenging). * You may lose some reputation/goodwill you may have built under your previous brand. * Rebranding will not resolve any disputes about the design or the functional elements of your product(s). * While rebranding does not necessarily require engagement with the other party, without engagement or agreement, you can't be assured the other party will not pursue enforcement actions (which may have occurred while using the previous brand)."
+            "text": "* Without professional advice, there is a risk that you will miss easy and effective enforcement options.\n* You may have a legal right to use the IP and will have given it up when you didn't have to; advice from an IP professional can help you determine this.\n* Rebranding may not resolve the fundamental IP issue (e.g. you may believe that the new brand is different enough, but someone else could still consider it *deceptively similar*,and thus grounds for challenging).\n* You may lose some reputation/goodwill you may have built under your previous brand.\n* Rebranding will not resolve any disputes about the design or the functional elements of your product(s).\n* While rebranding does not necessarily require engagement with the other party, without engagement or agreement, you can't be assured the other party will not pursue enforcement actions (which may have occurred while using the previous brand)."
           }
         },
         {
@@ -137,7 +124,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The rebrand successfully avoids any potential conflicts and no further action is needed. * The rebrand does not avoid the issues and other forms of resolution are required."
+            "text": "* The rebrand successfully avoids any potential conflicts and no further action is needed.\n* The rebrand does not avoid the issues and other forms of resolution are required."
           }
         },
         {
@@ -145,7 +132,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "When evaluating rebranding costs, it may be helpful to consider what might be involved, such as:\u00a0  * Professional design services * Implementation (printing, websites, social media, signage, business registrations, new IP applications) * Customer communications and brand awareness campaigns.  These costs should be weighed against alternatives when making your decision."
+            "text": "When evaluating rebranding costs, it may be helpful to consider what might be involved, such as:\u00a0\n\n* Professional design services\n* Implementation (printing, websites, social media, signage, business registrations, new IP applications)\n* Customer communications and brand awareness campaigns.\n\nThese costs should be weighed against alternatives when making your decision."
           }
         },
         {

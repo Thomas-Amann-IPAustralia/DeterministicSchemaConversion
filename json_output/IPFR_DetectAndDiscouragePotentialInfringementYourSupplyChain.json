@@ -42,50 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Privacy Act 1988",
-      "url": "https://www.legislation.gov.au/C2004A03712/latest/text",
-      "legislationType": "Act"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -117,6 +74,50 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with DetectAndDiscouragePotentialInfringementYourSupplyChain",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "A clear inventory of your registered IP rights and...",
+          "text": "A clear inventory of your registered IP rights and key products."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Up\u2011to\u2011date supplier and shipment records.",
+          "text": "Up\u2011to\u2011date supplier and shipment records."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Up-to-date contact details for all supply chain pa...",
+          "text": "Up-to-date contact details for all supply chain partners."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Written supply agreements specifying IP use permis...",
+          "text": "Written supply agreements specifying IP use permissions and audit rights."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Procedures for staff to flag unusual orders or rou...",
+          "text": "Procedures for staff to flag unusual orders or routes."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Monitoring tools such as order checks, sampling pr...",
+          "text": "Monitoring tools such as order checks, sampling protocols, web alerts, tracking codes, barcodes, serial numbers or analytics dashboards."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Secure system for storing evidence (photos, screen...",
+          "text": "Secure system for storing evidence (photos, screenshots, audit reports)."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -127,7 +128,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Provides early warning so you can act before harm occurs to your business. * Reduces risk of unsafe or non\u2011compliant items entering the market. * Provides data and insight into infringement trends and behaviour. * Can uncover new markets or trends in consumer demands. * May allow you to build stronger evidence to support enforcement or negotiation actions."
+            "text": "* Provides early warning so you can act before harm occurs to your business.\n* Reduces risk of unsafe or non\u2011compliant items entering the market.\n* Provides data and insight into infringement trends and behaviour.\n* Can uncover new markets or trends in consumer demands.\n* May allow you to build stronger evidence to support enforcement or negotiation actions."
           }
         },
         {
@@ -135,7 +136,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Poor data quality may trigger false alarms and wasted resources, which may strain your relationship with suppliers. * Extensive monitoring could raise privacy or confidentiality concerns with business partners. * Business partners might view extra checks as a sign of distrust affecting goodwill and reputation of your business."
+            "text": "* Poor data quality may trigger false alarms and wasted resources, which may strain your relationship with suppliers.\n* Extensive monitoring could raise privacy or confidentiality concerns with business partners.\n* Business partners might view extra checks as a sign of distrust affecting goodwill and reputation of your business."
           }
         },
         {
@@ -151,7 +152,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The costs for supply chain monitoring depend heavily on the extent of monitoring activities and whether you choose to engage third-party services such as commercial monitoring software or brand protection specialists.\u00a0  Costs for basic software subscriptions vary but can start in the low hundreds of dollars per year. Custom analytics or forensic audits may cost several thousand dollars. For more information on engaging third-party services, see [Obtain advice to help manage your IP.](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip)  You can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product\u2019s life cycle, adjusting the effort as your risk profile or budget changes."
+            "text": "The costs for supply chain monitoring depend heavily on the extent of monitoring activities and whether you choose to engage third-party services such as commercial monitoring software or brand protection specialists.\u00a0\n\nCosts for basic software subscriptions vary but can start in the low hundreds of dollars per year. Custom analytics or forensic audits may cost several thousand dollars. For more information on engaging third-party services, see [Obtain advice to help manage your IP.](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip)\n\nYou can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product\u2019s life cycle, adjusting the effort as your risk profile or budget changes."
           }
         },
         {
@@ -159,7 +160,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Implementing basic checks can be done in a shorter amount of time (days to weeks), depending on vendor and scope. Comprehensive programs covering supplier vetting, data integrations and response protocols may take several months to embed.\u00a0\u00a0  Ongoing effort depends on shipment volume and review frequency, but it is common for businesses to implement some forms of supply chain monitoring. The exact length of time will be highly dependent on the strategies you employ and the size of your business."
+            "text": "Implementing basic checks can be done in a shorter amount of time (days to weeks), depending on vendor and scope. Comprehensive programs covering supplier vetting, data integrations and response protocols may take several months to embed.\u00a0\u00a0\n\nOngoing effort depends on shipment volume and review frequency, but it is common for businesses to implement some forms of supply chain monitoring. The exact length of time will be highly dependent on the strategies you employ and the size of your business."
           }
         },
         {

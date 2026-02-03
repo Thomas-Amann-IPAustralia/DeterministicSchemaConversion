@@ -42,32 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -99,6 +74,40 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with ChoosingQualifiedPersonQp",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Check the [Qualified Persons Directory](https://ww...",
+          "text": "Check the [Qualified Persons Directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory)  for consultant QPs."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Written agreement covering the QP\u2019s scope, fees an...",
+          "text": "Written agreement covering the QP\u2019s scope, fees and timelines."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Trial site, reference varieties and data-collectio...",
+          "text": "Trial site, reference varieties and data-collection plan that meets PBR guidelines."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "(optional) To become a QP: up-to-date r\u00e9sum\u00e9, thre...",
+          "text": "(optional) To become a QP: up-to-date r\u00e9sum\u00e9, three referees, completed online training and accreditation fee. More information can be found here: [How to become a Qualified Person](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/how-to-become-a-qualified-person)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Keep copies of all trial data, photographs and cor...",
+          "text": "Keep copies of all trial data, photographs and correspondence."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -109,7 +118,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Engaging a QP is a requirement to registering a PBR. * Relevant expert oversight helps set up robust trials and increases chances of a PBR being accepted. * Accredited status lends credibility when negotiating with investors or partners. * Choosing the right QP can shorten overall application time by getting the trial right the first time. **Please note:** You must engage a QP even if you do not need to do an Australian growing trial. * Outsourcing this work allows plant breeders to focus on commercial plans rather than technical paperwork."
+            "text": "* Engaging a QP is a requirement to registering a PBR.\n* Relevant expert oversight helps set up robust trials and increases chances of a PBR being accepted.\n* Accredited status lends credibility when negotiating with investors or partners.\n* Choosing the right QP can shorten overall application time by getting the trial right the first time. **Please note:** You must engage a QP even if you do not need to do an Australian growing trial.\n* Outsourcing this work allows plant breeders to focus on commercial plans rather than technical paperwork."
           }
         },
         {
@@ -117,7 +126,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Due to the limited availability of QPs in some plant groups, not engaging a QP early in the process may result in scheduling delays. * To become a QP yourself adds time and cost to the PBR application."
+            "text": "* Due to the limited availability of QPs in some plant groups, not engaging a QP early in the process may result in scheduling delays.\n* To become a QP yourself adds time and cost to the PBR application."
           }
         },
         {
@@ -125,7 +134,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* For breeders:   + Engaging a QP is a requirement to registering a PBR.   + Finding a QP who specialised in your area can help your PBR application proceeds smoothly with certified trial data. * To become a QP:   + Accreditation is granted and the new QP is added to the public register.   + Accreditation application is refused, requiring further evidence or experience.   + Accreditation lapses if renewal paperwork or fees are not lodged on time."
+            "text": "* For breeders:\n  + Engaging a QP is a requirement to registering a PBR.\n  + Finding a QP who specialised in your area can help your PBR application proceeds smoothly with certified trial data.\n* To become a QP:\n  + Accreditation is granted and the new QP is added to the public register.\n  + Accreditation application is refused, requiring further evidence or experience.\n  + Accreditation lapses if renewal paperwork or fees are not lodged on time."
           }
         },
         {
@@ -133,7 +142,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Applying to become a QP attracts an accreditation fee (currently $350, renewable every three years).\u00a0  For plant breeders, QP professional fees vary according to crop type, location and trial complexity - many experts charge a day rate or project fee. Engaging a QP early in the process can help you understand the additional costs outside of IP Australia fees.\u00a0\u00a0  Other potential costs include travel to trial sites, sample analysis and any repeat trials if data is insufficient."
+            "text": "Applying to become a QP attracts an accreditation fee (currently $350, renewable every three years).\u00a0\n\nFor plant breeders, QP professional fees vary according to crop type, location and trial complexity - many experts charge a day rate or project fee. Engaging a QP early in the process can help you understand the additional costs outside of IP Australia fees.\u00a0\u00a0\n\nOther potential costs include travel to trial sites, sample analysis and any repeat trials if data is insufficient."
           }
         },
         {
@@ -141,7 +150,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "QP accreditation assessments usually take a few weeks once all documentation is lodged, though this can vary.\u00a0  For breeders, the QP\u2019s involvement spans the life of the growing trial - typically one to two growing seasons depending on plant type and environment - plus time to finalise the technical description.\u00a0  To become a QP, the accreditation training can take up to several months to complete and must be renewed every three years."
+            "text": "QP accreditation assessments usually take a few weeks once all documentation is lodged, though this can vary.\u00a0\n\nFor breeders, the QP\u2019s involvement spans the life of the growing trial - typically one to two growing seasons depending on plant type and environment - plus time to finalise the technical description.\u00a0\n\nTo become a QP, the accreditation training can take up to several months to complete and must be renewed every three years."
           }
         },
         {
@@ -149,7 +158,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Plant breeders or PBR applicants who need an accredited expert for their trial. * Experienced plant scientists seeking accreditation to act as a consultant QP. * Breeders with the relevant experience seeking to become a non-consultant QP for their own plant breed."
+            "text": "* Plant breeders or PBR applicants who need an accredited expert for their trial.\n* Experienced plant scientists seeking accreditation to act as a consultant QP.\n* Breeders with the relevant experience seeking to become a non-consultant QP for their own plant breed."
           }
         }
       ]

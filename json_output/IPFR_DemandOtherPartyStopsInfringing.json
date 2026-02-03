@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,40 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with DemandOtherPartyStopsInfringing",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The status and details of the relevant IP in the j...",
+          "text": "The status and details of the relevant IP in the jurisdiction where infringement occurred. For registered rights, this includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices. For copyright, this might include checking any rules around registration in that other jurisdiction \u2013 while there is no copyright registration requirement or system in Australia, this is not the case everywhere."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Whether the other party\u2019s conduct amounts to infri...",
+          "text": "Whether the other party\u2019s conduct amounts to infringement, having regard to\u00a0[what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/infringement-101 \"Infringement 101 \"), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim.\u00a0For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services. For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent. For copyright, you could consider whether any exceptions or statutory licence under copyright law may apply that could have enabled the use of the material in question without your permission. For more information about copyright exceptions, see [Copyright infringement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement).\n\nThe identity and contact details of the suspected infringer. It\u2019s important to send the letter to the correct party. You might wish to consider sending correspondence by registered mail,and keeping records to show that a letter was sent to a specific address on a particular date.\u00a0\u00a0If you are not sure about any of the above, then you should speak to an IP professional for help.\n\nBefore taking this action, it might also be helpful to consider your goals and potential outcomes, including:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Whether there any other less confrontational and m...",
+          "text": "Whether there any other less confrontational and more informal ways to contact the other party before sending out the letter."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Options for outcomes that would benefit or be agre...",
+          "text": "Options for outcomes that would benefit or be agreeable to everyone involved."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Whether you will be prepared to be engaged in furt...",
+          "text": "Whether you will be prepared to be engaged in further correspondence, negotiation or even disputes with the other party. If you threaten to do something and do not follow through, it could be found to be an unjustified threat."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +118,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Often cost-effective. * Can be quick to action but needs to be drafted very carefully. * Reasonable likelihood of stopping infringing behaviour without the need for additional steps \u2013 43.7% of respondents, who are patent holders, found it effective at stopping copying behaviour ([Weatherall K and Webster E (2010) \u2018Patent infringement in Australia: Results from a survey\u2019,\u00a0*Federal Law Review*, 38, 21-70, 40](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303) ). * Allows you to consider many options to escalate, if suspected infringement continues."
+            "text": "* Often cost-effective.\n* Can be quick to action but needs to be drafted very carefully.\n* Reasonable likelihood of stopping infringing behaviour without the need for additional steps \u2013 43.7% of respondents, who are patent holders, found it effective at stopping copying behaviour ([Weatherall K and Webster E (2010) \u2018Patent infringement in Australia: Results from a survey\u2019,\u00a0*Federal Law Review*, 38, 21-70, 40](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303) ).\n* Allows you to consider many options to escalate, if suspected infringement continues."
           }
         },
         {
@@ -141,7 +126,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation, damages or costs and in you being ordered to stop making the threat.** * Including unreasonably onerous and aggressive terms in your letter (for example, short time frames, demands that do not relate to the IP in question) may prompt the other party to escalate and resist, rather than comply. * Exposing yourself to the other party by contacting them might prompt the other party to take actions against you, escalating the conflict in an unwanted way. This could potentially jeopardise your own IP rights. * For trade marks, it might also prompt the other party to apply for their own trade mark, which may then need to be opposed. * Sending a letter of demand might give the suspected infringer time to hide or destroy evidence. This could harm your case in future legal actions. If you are worried about this possibility, speak to an IP lawyer before you take any further action."
+            "text": "* **Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation, damages or costs and in you being ordered to stop making the threat.**\n* Including unreasonably onerous and aggressive terms in your letter (for example, short time frames, demands that do not relate to the IP in question) may prompt the other party to escalate and resist, rather than comply.\n* Exposing yourself to the other party by contacting them might prompt the other party to take actions against you, escalating the conflict in an unwanted way. This could potentially jeopardise your own IP rights.\n* For trade marks, it might also prompt the other party to apply for their own trade mark, which may then need to be opposed.\n* Sending a letter of demand might give the suspected infringer time to hide or destroy evidence. This could harm your case in future legal actions. If you are worried about this possibility, speak to an IP lawyer before you take any further action."
           }
         },
         {
@@ -149,7 +134,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sending a letter of demand can result in a wide range of different outcomes depending on the specific circumstances.\u00a0\u00a0  Some possible outcomes are:\u00a0  * The alleged infringing behaviour stops upon receipt of the letter, especially if the recipient was simply unaware of existing IP rights. * The alleged infringer does not change their behaviour, in which case you may have to consider other enforcement options. * Parties can engage in further correspondence disputing part or all of your claims. * The conflict can further escalate into more serious, formal dispute settlement procedures (that is, litigation, arbitration, administrative hearings). * The other party may not fulfil all the requirements but may be willing to participate in some form of negotiation. * **The other party may commence proceedings challenging the validity of the IP right, or be prompted to take legal action against you (for instance if they are of the opinion that you are infringing on their rights). This could include seeking damages or compensation for unjustified threatsor an order that you stop making the threat.**"
+            "text": "Sending a letter of demand can result in a wide range of different outcomes depending on the specific circumstances.\u00a0\u00a0\n\nSome possible outcomes are:\u00a0\n\n* The alleged infringing behaviour stops upon receipt of the letter, especially if the recipient was simply unaware of existing IP rights.\n* The alleged infringer does not change their behaviour, in which case you may have to consider other enforcement options.\n* Parties can engage in further correspondence disputing part or all of your claims.\n* The conflict can further escalate into more serious, formal dispute settlement procedures (that is, litigation, arbitration, administrative hearings).\n* The other party may not fulfil all the requirements but may be willing to participate in some form of negotiation.\n* **The other party may commence proceedings challenging the validity of the IP right, or be prompted to take legal action against you (for instance if they are of the opinion that you are infringing on their rights). This could include seeking damages or compensation for unjustified threatsor an order that you stop making the threat.**"
           }
         },
         {
@@ -157,7 +142,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If you engage an IP professional to give you legal advice or draft a letter for you, you will have to pay their fees.  Fees for IP professionals vary depending on the complexity of the issues at hand and which type of IP professional you engage. Fees to draft a letter of demand generally sit between:\u00a0  * For trade marks: $1,500 to $5,000 * For patents: $1,500 to $10,000  However, you should keep in mind that before drafting a letter of demand, it would be necessary to review relevant materials to confirm whether there is a proper basis for sending the letter of demand, because sending an unjustified threat could expose you to legal action. This means that the fees will also depend on how much work may be required to establish your IP rights and to confirm that there is a proper basis for your suspicion that your IP rights are being infringed by the other party.\u00a0\u00a0  Some copyright owners could explore avenues for accessing low- or no-cost legal advice. For example:\u00a0  * the Arts Law Centre of Australia (a not-for-profit independent national community legal centre for the arts) can provide advice to artists and arts organisations on queries related to their arts practice, including in relation to copyright ([www.artslaw.com.au/services/legal-query-form/](http://www.artslaw.com.au/services/legal-query-form/) ). Arts Law also offers a\u00a0[template letter of demand](https://www.artslaw.com.au/product/copyright-infringement-letter-of-demand/)  for copyright infringement, which is free for subscribers and low cost (around $30) for non-subscribers. Arts Law can also provide advice on draft letters that use their template, or otherwise provide a referral to other lawyers who can assist in drafting a letter (though lawyer fees would apply). * The Australian Copyright Council (an independent, not-for-profit Community Legal Service (CLS) whose affiliate members include the peak bodies for Australian writers, musicians, designers, photographers, visual artists, journalists, film makers and architects) offers eligible persons (predominantly those working in the creative industries) free written advice ([www.copyright.org.au/legal-advice/](http://www.copyright.org.au/legal-advice/) )."
+            "text": "If you engage an IP professional to give you legal advice or draft a letter for you, you will have to pay their fees.\n\nFees for IP professionals vary depending on the complexity of the issues at hand and which type of IP professional you engage. Fees to draft a letter of demand generally sit between:\u00a0\n\n* For trade marks: $1,500 to $5,000\n* For patents: $1,500 to $10,000\n\nHowever, you should keep in mind that before drafting a letter of demand, it would be necessary to review relevant materials to confirm whether there is a proper basis for sending the letter of demand, because sending an unjustified threat could expose you to legal action. This means that the fees will also depend on how much work may be required to establish your IP rights and to confirm that there is a proper basis for your suspicion that your IP rights are being infringed by the other party.\u00a0\u00a0\n\nSome copyright owners could explore avenues for accessing low- or no-cost legal advice. For example:\u00a0\n\n* the Arts Law Centre of Australia (a not-for-profit independent national community legal centre for the arts) can provide advice to artists and arts organisations on queries related to their arts practice, including in relation to copyright ([www.artslaw.com.au/services/legal-query-form/](http://www.artslaw.com.au/services/legal-query-form/) ). Arts Law also offers a\u00a0[template letter of demand](https://www.artslaw.com.au/product/copyright-infringement-letter-of-demand/)  for copyright infringement, which is free for subscribers and low cost (around $30) for non-subscribers. Arts Law can also provide advice on draft letters that use their template, or otherwise provide a referral to other lawyers who can assist in drafting a letter (though lawyer fees would apply).\n* The Australian Copyright Council (an independent, not-for-profit Community Legal Service (CLS) whose affiliate members include the peak bodies for Australian writers, musicians, designers, photographers, visual artists, journalists, film makers and architects) offers eligible persons (predominantly those working in the creative industries) free written advice ([www.copyright.org.au/legal-advice/](http://www.copyright.org.au/legal-advice/) )."
           }
         },
         {
@@ -165,7 +150,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sending a letter of demand is generally considered to be a quick and simple enforcement option.\u202f\u202f\u00a0  The amount of time required for sending a letter of demand will vary depending on the complexity of the infringement and whether you choose to engage an IP professional to act on your behalf.\u202f\u00a0  It is up to you to determine how much time the other party can take to comply with your demands laid out in the letter. It's common to request action is taken within a short period such as '10 business days'."
+            "text": "Sending a letter of demand is generally considered to be a quick and simple enforcement option.\u202f\u202f\u00a0\n\nThe amount of time required for sending a letter of demand will vary depending on the complexity of the infringement and whether you choose to engage an IP professional to act on your behalf.\u202f\u00a0\n\nIt is up to you to determine how much time the other party can take to comply with your demands laid out in the letter. It's common to request action is taken within a short period such as '10 business days'."
           }
         },
         {

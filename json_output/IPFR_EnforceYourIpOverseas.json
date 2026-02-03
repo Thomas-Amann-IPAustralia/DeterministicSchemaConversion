@@ -42,56 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -123,6 +74,30 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with EnforceYourIpOverseas",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Australian IP professionals with relevant internat...",
+          "text": "Australian IP professionals with relevant international experience may be able to refer you to an overseas representative."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Australian law firms often have offices operating ...",
+          "text": "Australian law firms often have offices operating internationally which can coordinate actions for you across each country."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Government resources or reputable industry associa...",
+          "text": "Government resources or reputable industry associations in the relevant country may provide a list of IP professionals you can contact.\n\nWhile it may be useful to seek the advice of an\u00a0**IP legal professional**(who can start legal actions such as court in the jurisdiction), you might also wish to consult an\u00a0**IP strategic or commercialisation professional**about your general IP strategy including ways to protect and commercialise your IP overseas.\u00a0\u00a0\n\nPart of enforcing your rights in other countries, even in response to current suspected infringement, may involve registering your IP in another country. This consideration can be discussed with an IP professional familiar with the IP system in that country."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -133,7 +108,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* In most cases, engaging a legal professional is likely to reduce the risks you may encounter in enforcing your IP rights in another country. * Legal professionals can provide a wide range of legal services and develop a holistic IP enforcement strategy suited to your IP and business goals. * They have the knowledge, training and experience in their country to guide you through a dispute or a conflict which can be highly stressful and draining. * They have an in-depth knowledge of relevant international legislation and industry practices, with the ability to leverage both appropriately and proportionately. * They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct. * They can recognise common issues which come up and refer you to other professionals and services you may not be aware of."
+            "text": "* In most cases, engaging a legal professional is likely to reduce the risks you may encounter in enforcing your IP rights in another country.\n* Legal professionals can provide a wide range of legal services and develop a holistic IP enforcement strategy suited to your IP and business goals.\n* They have the knowledge, training and experience in their country to guide you through a dispute or a conflict which can be highly stressful and draining.\n* They have an in-depth knowledge of relevant international legislation and industry practices, with the ability to leverage both appropriately and proportionately.\n* They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct.\n* They can recognise common issues which come up and refer you to other professionals and services you may not be aware of."
           }
         },
         {
@@ -141,7 +116,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* It can be complicated to enforce your IP overseas, which can cause pressure on you and your business. * Outcomes and costs can be less predictable in some jurisdictions than they would be in Australia. * Some legal professionals have different specialties and may be more effective in their particular field of expertise. For instance, one lawyer may be highly experienced in dealing with multi-national trade marks, but not so experienced with patent licencing deals, or vice versa. * Once you engage a legal professional for their service, they are obliged to follow your instructions. While they can advise you on certain courses of action, you have the ultimate decision. Using a legal professional can lead to a false sense of security if you do not understand and pay heed to their advice."
+            "text": "* It can be complicated to enforce your IP overseas, which can cause pressure on you and your business.\n* Outcomes and costs can be less predictable in some jurisdictions than they would be in Australia.\n* Some legal professionals have different specialties and may be more effective in their particular field of expertise. For instance, one lawyer may be highly experienced in dealing with multi-national trade marks, but not so experienced with patent licencing deals, or vice versa.\n* Once you engage a legal professional for their service, they are obliged to follow your instructions. While they can advise you on certain courses of action, you have the ultimate decision. Using a legal professional can lead to a false sense of security if you do not understand and pay heed to their advice."
           }
         }
       ]

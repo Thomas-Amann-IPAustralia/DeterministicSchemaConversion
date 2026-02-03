@@ -42,44 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -111,6 +74,50 @@
       }
     },
     {
+      "@type": "HowTo",
+      "name": "How to proceed with IdentifyAndTrackYourCompetitorsPatentsAndActivity",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "**Confirm your IP and market**: Know what product ...",
+          "text": "**Confirm your IP and market**: Know what product or service you want to launch or protect and in which regions (particularly given the domestic nature of IP registrations), this is particularly of relevance if you hold multiple patents or hold patents across multiple jurisdictions (as you may also want to monitor overseas registrations)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Gather product or brand details**: Describe your...",
+          "text": "**Gather product or brand details**: Describe your offering clearly to guide the search, particularly essential features that may differentiate your offering from the competitors. For example, you may benefit if you are able to identify the most relevant classification marks, or descriptions of your differentiating or inventive features, as it will streamline the searching process."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Decide on search scope**: Domestic only, or inte...",
+          "text": "**Decide on search scope**: Domestic only, or international? Patent or trade mark focused?"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Select tools or professionals**: Choose between ...",
+          "text": "**Select tools or professionals**: Choose between do it yourself search tools or paid services."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Understand search limitations**: Results may not...",
+          "text": "**Understand search limitations**: Results may not be legally definitive; freedom to operate is not a guarantee that competitors and patents don\u2019t exist in that market, it is possible for patents to be missed in the search process."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Consider advice**: You may wish to seek an FTO o...",
+          "text": "**Consider advice**: You may wish to seek an FTO opinion from a qualified IP professional."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Keep records**: Retain copies of search results,...",
+          "text": "**Keep records**: Retain copies of search results, interpretations, and advice received."
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "about": {
         "@id": "#the-service"
@@ -121,7 +128,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "This process helps you make informed decisions about your products and branding:\u00a0  * Avoid costly infringement by identifying conflicting rights early * Spot competitor activity and emerging risks in your industry * Plan around potential legal or commercial barriers * Identify gaps in the market or opportunities for your own IP * Build confidence for launching or expanding a product."
+            "text": "This process helps you make informed decisions about your products and branding:\u00a0\n\n* Avoid costly infringement by identifying conflicting rights early\n* Spot competitor activity and emerging risks in your industry\n* Plan around potential legal or commercial barriers\n* Identify gaps in the market or opportunities for your own IP\n* Build confidence for launching or expanding a product."
           }
         },
         {
@@ -129,7 +136,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Incomplete information:**\u00a0There is a risk that not all relevant IP is detected, which could result in missed threats and exposure to future claims. * **Incorrect interpretation:**\u00a0There is a risk that search results are misunderstood, which could result in false assumptions about your rights or risks. * **Outdated monitoring:**\u00a0There is a risk your monitoring is not frequent or detailed enough, which could result in late responses to new filings or changes in competitor IP. * **Cost and time burdens:**\u00a0There is a risk that complex or wide-ranging searches become expensive or require specialist support, particularly in international markets."
+            "text": "* **Incomplete information:**\u00a0There is a risk that not all relevant IP is detected, which could result in missed threats and exposure to future claims.\n* **Incorrect interpretation:**\u00a0There is a risk that search results are misunderstood, which could result in false assumptions about your rights or risks.\n* **Outdated monitoring:**\u00a0There is a risk your monitoring is not frequent or detailed enough, which could result in late responses to new filings or changes in competitor IP.\n* **Cost and time burdens:**\u00a0There is a risk that complex or wide-ranging searches become expensive or require specialist support, particularly in international markets."
           }
         },
         {
@@ -137,7 +144,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You identify no major risks and proceed with confidence. * You find IP that blocks your current plans and decide to redesign or rebrand. * You spot competitor activity early and take action to oppose or challenge it. * You choose to license existing rights rather than risk infringement. * You build your own IP strategy around gaps in the competitive landscape."
+            "text": "* You identify no major risks and proceed with confidence.\n* You find IP that blocks your current plans and decide to redesign or rebrand.\n* You spot competitor activity early and take action to oppose or challenge it.\n* You choose to license existing rights rather than risk infringement.\n* You build your own IP strategy around gaps in the competitive landscape."
           }
         },
         {
@@ -145,7 +152,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Official fees**: Free for most public registers; some platforms charge for advanced tools or international data. * **Professional fees**: $150\u2013$600/hr for an IP attorney or search firm. * **Monitoring costs**: Ongoing monitoring subscriptions vary widely, but can be more than $100/month. * Actual costs may vary depending on your industry, scope, and the markets in which you operate."
+            "text": "* **Official fees**: Free for most public registers; some platforms charge for advanced tools or international data.\n* **Professional fees**: $150\u2013$600/hr for an IP attorney or search firm.\n* **Monitoring costs**: Ongoing monitoring subscriptions vary widely, but can be more than $100/month.\n* Actual costs may vary depending on your industry, scope, and the markets in which you operate."
           }
         },
         {
@@ -153,7 +160,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Timeframes vary depending on the type of search and how broad it is:\u00a0  * An initial FTO search can take\u00a0**1\u20133 weeks**\u00a0with professional help * Setting up monitoring tools may take a few hours, but ongoing effort is minimal * Analysing competitor filings or assessing risks can take longer, especially if international rights are involved.  Influencing factors include:\u00a0  * Scope and complexity of the product or IP * Markets covered (Australia only vs. global) * Use of professionals vs. in-house review * Frequency and urgency of your monitoring needs."
+            "text": "Timeframes vary depending on the type of search and how broad it is:\u00a0\n\n* An initial FTO search can take\u00a0**1\u20133 weeks**\u00a0with professional help\n* Setting up monitoring tools may take a few hours, but ongoing effort is minimal\n* Analysing competitor filings or assessing risks can take longer, especially if international rights are involved.\n\nInfluencing factors include:\u00a0\n\n* Scope and complexity of the product or IP\n* Markets covered (Australia only vs. global)\n* Use of professionals vs. in-house review\n* Frequency and urgency of your monitoring needs."
           }
         },
         {
@@ -161,7 +168,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "This option is available to:\u00a0  * Anyone planning to launch a new product or brand * Businesses entering new markets or industries * Existing IP owners checking for similar or competing filings * Investors or partners conducting due diligence before commercialisation."
+            "text": "This option is available to:\u00a0\n\n* Anyone planning to launch a new product or brand\n* Businesses entering new markets or industries\n* Existing IP owners checking for similar or competing filings\n* Investors or partners conducting due diligence before commercialisation."
           }
         }
       ]

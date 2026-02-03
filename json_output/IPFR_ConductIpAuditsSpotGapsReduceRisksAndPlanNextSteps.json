@@ -42,44 +42,7 @@
     "name": "Intellectual Property Right",
     "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -121,7 +84,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* May help identify and address legal or infringement risks early. * Can support compliance with IP laws and regulations. * Can demonstrate to investors and partners that you have a clear understanding and control over your IP. * Can provide strategic insights to maximise commercial use of your IP."
+            "text": "* May help identify and address legal or infringement risks early.\n* Can support compliance with IP laws and regulations.\n* Can demonstrate to investors and partners that you have a clear understanding and control over your IP.\n* Can provide strategic insights to maximise commercial use of your IP."
           }
         },
         {
@@ -129,7 +92,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* May require specialised expertise, which can add complexity or cost. * Confidential information might be exposed if not handled securely. * One-off audits can become outdated \u2014 regular reviews are usually needed."
+            "text": "* May require specialised expertise, which can add complexity or cost.\n* Confidential information might be exposed if not handled securely.\n* One-off audits can become outdated \u2014 regular reviews are usually needed."
           }
         },
         {
@@ -137,7 +100,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Possible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.\u00a0\u00a0  Noting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to:\u00a0  * A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates * Clear list of possible infringement risks and how to handle them * Decision to get ongoing help from an IP professional."
+            "text": "Possible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.\u00a0\u00a0\n\nNoting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to:\u00a0\n\n* A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates\n* Clear list of possible infringement risks and how to handle them\n* Decision to get ongoing help from an IP professional."
           }
         },
         {
@@ -145,7 +108,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Costs would vary depending on your portfolio and whether you choose to engage professional service:\u00a0  * In-house audits mainly cost staff time and may take several days to several weeks * Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets."
+            "text": "Costs would vary depending on your portfolio and whether you choose to engage professional service:\u00a0\n\n* In-house audits mainly cost staff time and may take several days to several weeks\n* Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets."
           }
         },
         {
@@ -153,7 +116,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review:\u00a0  * A focused audit of one IP type may take several days * Full audits across multiple IP types may run over several weeks * Once your IP register is set up, annual updates may take less time than the initial set-up process."
+            "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review:\u00a0\n\n* A focused audit of one IP type may take several days\n* Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process."
           }
         },
         {
