@@ -1,6 +1,4 @@
-# Coverage against potential future costs related to infringement
-
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our **IP First Response feedback form* * and by **emailing us**.*
+**This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.**
 
 ## What is it?
 
@@ -8,55 +6,83 @@ Intellectual Property (IP) insurance is a specific type of coverage designed to 
 
 ## What are the benefits?
 
-**Financial Protection:**IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events.**Legal Support:**IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively.**Investor Confidence:**Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed.**Predictable Costs:**While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for.
+* **Financial Protection:** IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events.
+* **Legal Support:** IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively.
+* **Investor Confidence:** Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed.
+* **Predictable Costs:** While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for.
 
 ## What are the risks?
 
-**Coverage limitations and exclusions:**Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions – certain types of IP may not be fully covered. Additionally, insurers typically**do not cover disputes or infringements that are already known, in progress or on the horizon.****Insurer control over litigation strategy:**When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer’s cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer’s panel of approved attorneys – which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind).
+* **Coverage limitations and exclusions:** Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions – certain types of IP may not be fully covered. Additionally, insurers typically **do not cover disputes or infringements that are already known, in progress or on the horizon.**
+* **Insurer control over litigation strategy:** When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer’s cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer’s panel of approved attorneys – which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind).
 
 ## What are the possible outcomes?
 
-There can be both positive and negative outcomes from IP insurance.
+There can be both positive and negative outcomes from IP insurance.  
 
 **Positives:**
 
--
-**Financial protection**in IP disputes, covering costly legal fees and potential damages or settlements. **Improved enforcement**of your intellectual property, as insurance may help fund actions against infringers.**Deterrent effect**— the knowledge that you’re insured may discourage potential infringers.**Enforcement coverage**for both asserting your rights and defending against claims.**Credibility boost**, offering reassurance to investors, partners, or stakeholders.**Stronger negotiating position**when resolving disputes.**Negatives:**
+* **Financial protection** in IP disputes, covering costly legal fees and potential damages or settlements.
+* **Improved enforcement** of your intellectual property, as insurance may help fund actions against infringers.
+* **Deterrent effect** — the knowledge that you’re insured may discourage potential infringers.
+* **Enforcement coverage** for both asserting your rights and defending against claims.
+* **Credibility boost**, offering reassurance to investors, partners, or stakeholders.
+* **Stronger negotiating position** when resolving disputes.
 
-**High deductibles (excess)**may apply before insurance kicks in.**Premiums may increase**after making a claim.**Coverage limitations**depending on the policy terms — not all types of disputes or jurisdictions may be included.**Insurer influence**— the insurance company might want a say in your legal strategy.**Risk of declined coverage**if the insurer determines the issue isn’t covered.**False sense of security**, leading to overreliance and mistaken belief that “everything is covered.”
+**Negatives:**
+
+* **High deductibles (excess)** may apply before insurance kicks in.
+* **Premiums may increase** after making a claim.
+* **Coverage limitations** depending on the policy terms — not all types of disputes or jurisdictions may be included.
+* **Insurer influence** — the insurance company might want a say in your legal strategy.
+* **Risk of declined coverage** if the insurer determines the issue isn’t covered.
+* **False sense of security**, leading to overreliance and mistaken belief that “everything is covered.”
 
 ## What might the costs be?
 
-As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable.
+As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable. 
 
-A premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate.
+A premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate. 
 
-A clear indication of the costs can be obtained by requesting a quote from insurers.
+A clear indication of the costs can be obtained by requesting a quote from insurers.  
 
 ## How much time might be involved?
 
-While there may be a waiting period accessing the premium – owing to the time taken for risk assessment and valuation – once the contract has been confirmed, there is generally little waiting time to make claims.
+While there may be a waiting period accessing the premium – owing to the time taken for risk assessment and valuation – once the contract has been confirmed, there is generally little waiting time to make claims. 
 
 ## How much is this used?
 
-As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past.
+As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past. 
 
-Additionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it.
+Additionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it.  
 
 ## Who can use this?
 
-Given that IP insurance is marketed towards IP holders, any party holding or in the process of attaining IP can make use of IP insurance, although most commercial insurance products are directed towards trade marks or patents.
+Given that IP insurance is marketed towards IP holders, any party holding or in the process of attaining IP can make use of IP insurance, although most commercial insurance products are directed towards trade marks or patents. 
 
 ## Who’s involved?
 
-- You (the IP holder)
-- The insurer
-- Your legal counsel (if any)
+* You (the IP holder)
+* The insurer
+* Your legal counsel (if any)
 
 ## What do you need to proceed?
 
-Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings.
+Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings. 
 
-It may be beneficial to have a preferred legal counsel.
+It may be beneficial to have a preferred legal counsel. 
 
 You will also need to research, identify and compare insurers before making a decision.
+
+Was this information useful?
+
+Thumbs UpThumbs Down
+
+## Want to give us feedback?
+
+Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
+Fill out our [feedback form(Opens in a new tab/window)](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
+
+[Give feedback
+
+(Opens in a new tab/window)](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)

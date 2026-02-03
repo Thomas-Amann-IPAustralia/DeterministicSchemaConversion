@@ -1,87 +1,103 @@
-# Respond to an opposition filed against your patent
-
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our **IP First Response feedback form* * and by **emailing us**.*
+**This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.**
 
 ## What is it?
 
-A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you’ll have a chance to respond through IP Australia’s formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights.
+A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you’ll have a chance to respond through IP Australia’s formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights. 
 
-The oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn’t resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision.
+The oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn’t resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision. 
 
-You can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted.
+You can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted. 
 
 ## What are the benefits?
 
-- Gives you a formal chance to defend your patent.
-- You can make changes to your claims to overcome objections.
-- If successful, your patent is more likely to stand up to future challenges.
-*A Delegate*with significant experience in both IP law and the specific technical area, not a judge, makes the decision—this may be less intimidating while still providing a confident decision.- The process helps clarify the strength of your patent early on.
-- You can withdraw from the opposition process at any time before the hearing officer has made a decision. This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.
+* Gives you a formal chance to defend your patent.
+* You can make changes to your claims to overcome objections.
+* If successful, your patent is more likely to stand up to future challenges.
+* *A Delegate* with significant experience in both IP law and the specific technical area, not a judge, makes the decision—this may be less intimidating while still providing a confident decision.
+* The process helps clarify the strength of your patent early on.
+* You can withdraw from the opposition process at any time before the hearing officer has made a decision. This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.
 
 ## What are the risks?
 
-- If you do not engage or are unsuccessful in defending the opposition, you may lose some or all of your patent rights.
-- Preparing evidence and submissions takes time and money.
-- The opponent may raise issues that prompt a re-consideration of your whole patent.
-- The process may reveal technical or commercial weaknesses in your application.
-- You may need professional help to effectively respond.
+* If you do not engage or are unsuccessful in defending the opposition, you may lose some or all of your patent rights.
+* Preparing evidence and submissions takes time and money.
+* The opponent may raise issues that prompt a re-consideration of your whole patent.
+* The process may reveal technical or commercial weaknesses in your application.
+* You may need professional help to effectively respond.
 
 ## What are the possible outcomes?
 
-There are four possible outcomes to your patent being opposed__:__
+There are four possible outcomes to your patent being opposed: 
 
-- The opposition is dismissed and your patent is granted, unchanged.
-- The opposition is successful, the Delegate revokes your patent altogether.
-- The opposition is successful, and the Delegate decides that it is possible to modify your patent (e.g. narrowing the claims).
-- The opposition is withdrawn by the other party (generally a result of negotiations and agreements taking place between the parties) and the Delegate does not decide anything.
+* The opposition is dismissed and your patent is granted, unchanged.
+* The opposition is successful, the Delegate revokes your patent altogether.
+* The opposition is successful, and the Delegate decides that it is possible to modify your patent (e.g. narrowing the claims).
+* The opposition is withdrawn by the other party (generally a result of negotiations and agreements taking place between the parties) and the Delegate does not decide anything.
 
-Note that the following are also possible outcomes;
+Note that the following are also possible outcomes; 
 
-- Costs may be awarded to one side depending on the outcome.
-- You or the opponent may appeal the Delegate’s decision to the Federal Court.
+* Costs may be awarded to one side depending on the outcome.
+* You or the opponent may appeal the Delegate’s decision to the Federal Court.
 
 ## What might the costs be?
 
-- The fee for an oral hearing in person is $2000 per day
-__.__ - The fee for hearing by written submissions is $1200
-__.__ - There are also other administrative fees associated with submitting evidence and written submissions, which can be costly and time-consuming to prepare. For more detailed information, see
-.__Schedule 8 of Patents Regulation 1991__ - Patent attorneys may charge $400 to $700 per hour.
-- There may be fees paid to IP Australia if you seek an extension of time to file evidence.
+* The fee for an oral hearing in person is $2000 per day.
+* The fee for hearing by written submissions is $1200.
+* There are also other administrative fees associated with submitting evidence and written  submissions, which can be costly and time-consuming to prepare. For more detailed information, see [Schedule 8 of Patents Regulation 1991](https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html) .
+* Patent attorneys may charge $400 to $700 per hour.
+* There may be fees paid to IP Australia if you seek an extension of time to file evidence.
 
 ## How much time might be involved?
 
-The process can take several months to over a year.
+The process can take several months to over a year. 
 
-- You must respond within set timeframes - usually within 2 to 3 months at each stage.
-- The evidence phase alone can take up to 6 - 9 months.
-- A hearing (if needed) may take place months later, with a decision issued
-about 3 months after that.
+* You must respond within set timeframes - usually within 2 to 3 months at each stage.
+* The evidence phase alone can take up to 6 - 9 months.
+* A hearing (if needed) may take place months later, with a decision issuedabout 3 months after that.
 
 ## How much is this used?
 
-Oppositions to patent applications are rare — fewer than two per cent of accepted standard applications are opposed. IP Australia’s Patent Opposition and Hearing Section published 54 decisions in 2024 and 66 decisions in 2023.
+Oppositions to patent applications are rare — fewer than two per cent of accepted standard applications are opposed. IP Australia’s Patent Opposition and Hearing Section published 54 decisions in 2024 and 66 decisions in 2023.  
 
 ## Who can use this?
 
-- Patent applicants or holders whose patent application
-has been opposed through IP Australia. - You must be the
-*official applicant*or the*authorised agent*listed with IP Australia to engage in this process.
+* Patent applicants or holders whose patent applicationhas been opposed through IP Australia.
+* You must be the *official applicant* or the *authorised agent* listed with IP Australia to engage in this process.
 
 ## Who’s involved?
 
-- You, as the patent applicant.
-- The party who lodged the opposition.
-- IP Australia’s Delegate (hearing officer).
-- Optional: a patent attorney or legal adviser.
+* You, as the patent applicant.
+* The party who lodged the opposition.
+* IP Australia’s Delegate (hearing officer).
+* Optional: a patent attorney or legal adviser.
 
 ## What do you need to proceed?
 
-- Carefully read the notice of opposition and the grounds raised against your patent.
-- Consider the assistance of an IP professional - especially if the case is technical or the risk of the patent being revoked is serious.
-- Understand the legal criteria for patentability (e.g. novelty, inventiveness) which is being contested in the opposition.
-- Gather evidence and examples that support your case.
-- Keep detailed records of all communication and submissions.
+* Carefully read the notice of opposition and the grounds raised against your patent.
+* Consider the assistance of an IP professional - especially if the case is technical or the risk of the patent being revoked is serious.
+* Understand the legal criteria for patentability (e.g. novelty, inventiveness) which is being contested in the opposition.
+* Gather evidence and examples that support your case.
+* Keep detailed records of all communication and submissions.
 
 ## See also
 
-__Challenge new or amended patents | IP First Response____How to respond to an opposition | IP Australia____Evidence in oppositions and PBR objections | IP Australia____Opposition and objection fees | IP Australia____Schedule 8 of Patents Regulation 1991____Get professional assistance with your IP | IP Australia____Find an IP attorney or firm | Trans-Tasman IP Attorneys Board__
+* [Challenge new or amended patents | IP First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent)
+* [How to respond to an opposition | IP Australia](https://www.ipaustralia.gov.au/patents/how-to-respond-to-an-opposition)
+* [Evidence in oppositions and PBR objections | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections)
+* [Opposition and objection fees | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)
+* [Schedule 8 of Patents Regulation 1991](https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html)
+* [Get professional assistance with your IP | IP Australia](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)
+* [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)
+
+Was this information useful?
+
+Thumbs UpThumbs Down
+
+## Want to give us feedback?
+
+Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
+Fill out our [feedback form(Opens in a new tab/window)](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
+
+[Give feedback
+
+(Opens in a new tab/window)](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)
