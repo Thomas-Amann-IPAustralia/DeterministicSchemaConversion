@@ -1,0 +1,165 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "AllEnforcementOptions",
+  "alternativeHeadline": "",
+  "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options)\"",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "Dxxxx"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Intellectual Property Right"
+  },
+  "citation": [],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "AllEnforcementOptions",
+      "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options)\"",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "name": "xXx_PLACEHOLDER_xXx"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "See unfiltered list of ip first response information?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Displaying 1 - 9 of 103\n\n[Designs search"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Check your product against existing designs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conduct a thorough search of existing registered designs to determine whether you are free to launch your product into a market - also known as Freedom to Operate (FTO) search. \\\n**Estimated cost:**\\\nFree, plus optional professional fees\\\n**Estimated effort:**\\\nHours\\\n**Rate of resolution:**\\\nNot applicable](/options/check-your-product-against-existing-designs)\n\n[Hiring a professional"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Choosing the right ip professional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.](/options/choosing-right-ip-professional)\n\n[Court - PBR"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Seek binding, authoritative decisions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Escalate a wide range of design rights matters to court.\\\n**Estimated cost:**\\\n$100k+ in legal fees\\\n**Estimated effort:**\\\nYears\\\n**Rate of resolution:**\\\nCourt decisions are binding although appeal is possible](/options/court-designs)\n\n[Protecting your business"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Common scams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Business owners have reported receiving messages from scammers that threaten others with claims of...](/options/common-scams)\n\n[Protecting your business"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does ip australia compare to other government services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you're starting or growing a business in Australia we know that there\u2019s a lot to keep track of...](/options/how-does-ip-australia-compare-other-government-services)\n\n[Free tools"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Free ip tools you can use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Free IP tools are no-cost online services that let you look up, track and learn about...](/options/free-ip-tools-you-can-use)\n\n[Global IP"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a global ip office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many people assume there is one IP office that grants rights everywhere...](/options/there-global-ip-office)\n\n[IP in other countries"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can i protect my ideas with a worldwide ip right?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP rights only apply in the countries or regions where they are granted...](/options/can-i-protect-my-ideas-worldwide-ip-right)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pagination?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* \u2039 Previous\n* [1](?page=0 \"Current page\")\n* [2](?page=1 \"Go to page 2 of 9\")\n* [3](?page=2 \"Go to page 3 of 9\")\n* [4](?page=3 \"Go to page 4 of 9\")\n* [5](?page=4 \"Go to page 5 of 9\")\n* [6](?page=5 \"Go to page 6 of 9\")\n* [7](?page=6 \"Go to page 7 of 9\")\n* [8](?page=7 \"Go to page 8 of 9\")\n* [9](?page=8 \"Go to page 9 of 9\")\n* [Next \u203a](?page=1 \"Go to next page - page 2\")\n* [Last \u00bb](?page=11 \"Go to last page\")"
+          }
+        }
+      ]
+    }
+  ]
+}
