@@ -44,29 +44,29 @@ LEGISLATION_MAP = {
 PROVIDER_MAP = {
     "ASBFEO": {
         "@type": "GovernmentOrganization",
-        "name": "Australian Small Business and Family Enterprise Ombudsman",
+        # Name will be overwritten by placeholder logic
         "alternateName": "ASBFEO",
         "url": "https://www.asbfeo.gov.au"
     },
     "IP Australia": {
         "@type": "GovernmentOrganization",
-        "name": "IP Australia",
+        # Name will be overwritten by placeholder logic
         "alternateName": "Intellectual Property Australia",
         "url": "https://www.ipaustralia.gov.au"
     },
     "Australian Border Force": {
         "@type": "GovernmentOrganization",
-        "name": "Australian Border Force",
+        # Name will be overwritten by placeholder logic
         "alternateName": "ABF"
     },
     "WIPO": {
         "@type": "Organization",
-        "name": "World Intellectual Property Organization",
+        # Name will be overwritten by placeholder logic
         "alternateName": "WIPO"
     },
     "Federal Circuit Court": {
         "@type": "Organization",
-        "name": "Federal Circuit and Family Court of Australia"
+        # Name will be overwritten by placeholder logic
     }
 }
 
@@ -199,8 +199,9 @@ def generate_citations_from_csv(metadata_row):
 def resolve_provider(provider_raw_string, archetype_hint=""):
     """
     Resolves provider and enforces types based on Archetype hint.
+    **UPDATED**: Enforces name placeholder.
     """
-    base_obj = {"@type": "Organization", "name": "Third-Party Provider"}
+    base_obj = {"@type": "Organization"}
 
     # 1. Try to find detailed map match
     if provider_raw_string:
@@ -208,28 +209,47 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
             if key.lower() in provider_raw_string.lower():
                 base_obj = obj.copy()
                 break
-        else:
-            # If no detailed match, use the raw string
-            base_obj["name"] = provider_raw_string.strip()
 
     # 2. Enforce Type based on Archetype
     if "Government Service" in archetype_hint:
         base_obj["@type"] = "GovernmentOrganization"
     elif "Non-Government" in archetype_hint:
-        base_obj["@type"] = "NGO" # User requested NGO for Non-Gov
+        base_obj["@type"] = "NGO"
     elif "Commercial" in archetype_hint:
         base_obj["@type"] = "Organization"
+
+    # CHANGE #4: Force placeholder name
+    base_obj["name"] = "xXx_PLACEHOLDER_xXx"
 
     return base_obj
 
 def clean_text_retain_formatting(text, strip_images=False):
+    """
+    **UPDATED**: Strict removal of formatting artifacts.
+    """
     if not text: return ""
     text = text.strip()
+    
+    # 1. Strip Markdown Images
     if strip_images:
         text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
         text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
         text = re.sub(r'\[\s*\]\(.*?\)', '', text)
+    
+    # CHANGE #3: Formatting artefact removal
+    # Replace non-breaking spaces (\u00a0) and other weird spaces with standard space
+    text = text.replace(u'\u00a0', ' ')
+    
+    # Normalize newlines: Remove \r, ensure standardized \n
+    text = text.replace('\r', '')
+    
+    # Collapse multiple spaces into one
+    text = re.sub(r'[ \t]+', ' ', text)
+    
+    # Fix multiple newlines (3+ becomes 2)
     text = re.sub(r'\n{3,}', '\n\n', text)
+    
+    # Trim again just in case
     return text.strip()
 
 def extract_faqs(blocks):
@@ -268,18 +288,20 @@ def extract_howto_steps(blocks):
                 if clean_text:
                     steps.append({
                         "@type": "HowToStep",
-                        "name": clean_text[:50] + "..." if len(clean_text) > 50 else clean_text,
+                        "name": "xXx_PLACEHOLDER_xXx", # CHANGE #2
                         "text": clean_text
                     })
         else:
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
-                steps.append({
-                    "@type": "HowToStep",
-                    "name": p[:50] + "..." if len(p) > 50 else p,
-                    "text": p
-                })
+                clean_p = clean_text_retain_formatting(p)
+                if clean_p:
+                    steps.append({
+                        "@type": "HowToStep",
+                        "name": "xXx_PLACEHOLDER_xXx", # CHANGE #2
+                        "text": clean_p
+                    })
     return steps
 
 def resolve_about_topics(metadata_row):
@@ -292,9 +314,6 @@ def resolve_about_topics(metadata_row):
     rights_list = [r.strip() for r in cleaned_rights.split(',')]
     
     about_entities = []
-    
-    # Dedup names if they map to the same Thing concept? 
-    # User asked for "every IP right included".
     
     for right in rights_list:
         if not right: continue
@@ -316,9 +335,6 @@ def resolve_about_topics(metadata_row):
             
         about_entities.append(entity)
         
-    # If single entity, return object. If multiple, return array (Schema standard).
-    # However, user's ideal json showed a single object. 
-    # If multiple exist, we usually return an array.
     if len(about_entities) == 1:
         return about_entities[0]
     elif len(about_entities) > 1:
@@ -343,63 +359,61 @@ def process_file(filepath, filename, metadata_row):
     date_val = datetime.now().strftime("%Y-%m-%d")
     
     # C. Description Extraction
-    desc_keys = ["what is it?", "description", "intro"]
-    description_raw = next((blocks[k] for k in desc_keys if k in blocks), metadata_row.get('Description', ''))
-    description = clean_text_retain_formatting(description_raw, strip_images=True)
-    
+    # CHANGE #5: Always pull description from CSV
+    description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
+    if not description:
+        # Fallback if CSV is empty, though instruction says "Always pull"
+        desc_keys = ["what is it?", "description", "intro"]
+        description_raw = next((blocks[k] for k in desc_keys if k in blocks), '')
+        description = clean_text_retain_formatting(description_raw, strip_images=True)
+
     # D. Build Main Entity
     main_entities = []
     service_id = "#the-service"
     
-    # ARCHETYPE LOGIC TREE
+    # CHANGE #1: @type strictly assigned based on Archetype
     if "Self-Help" in archetype:
-        # a) Self-Help Strategy -> HowTo (No Provider)
-        howto_obj = {
-            "@id": service_id,
-            "@type": "HowTo",
-            "name": title,
-            "description": description,
-            "areaServed": {"@type": "Country", "name": "Australia"},
-            "step": extract_howto_steps(blocks)
-        }
-        main_entities.append(howto_obj)
-        
+        service_type = "HowTo"
+        has_provider = False
+    elif "Government Service" in archetype:
+        service_type = "GovernmentService"
+        has_provider = True
+    elif "Non-Government" in archetype: # For "Non-Government Third-Party Authority"
+        service_type = "Service" 
+        # Note: User request implied standard mapping, but if you need specific NGO type here, adjust.
+        # Based on example, Service is fine, but provider type changes.
+        has_provider = True
     else:
-        # Determine Service Type and Provider based on Archetype
-        service_type = "Service" # Default
+        service_type = "Service"
+        has_provider = True
+
+    # Build the Object
+    main_obj = {
+        "@id": service_id,
+        "@type": service_type,
+        "name": title,
+        "description": description,
+        "areaServed": {"@type": "Country", "name": "Australia"}
+    }
+
+    # Add steps if HowTo
+    if service_type == "HowTo":
+        main_obj["step"] = extract_howto_steps(blocks)
+    
+    # Add Provider if Service
+    if has_provider:
         provider_name_raw = metadata_row.get('Provider') or metadata_row.get('Overtitle')
-        
-        # c) Government Service
-        if "Government Service" in archetype:
-            service_type = "GovernmentService"
-            
-        # b) Non-Government Third-Party Authority
-        elif "Non-Government" in archetype:
-            service_type = "Service"
-            
-        # d) Commercial Third Party Service
-        elif "Commercial" in archetype:
-            service_type = "Service"
-            
-        # Resolve Provider with Archetype Hint
         provider_obj = resolve_provider(provider_name_raw, archetype_hint=archetype)
         
-        service_obj = {
-            "@id": service_id,
-            "@type": service_type,
-            "name": title,
-            "description": description,
-            "areaServed": {"@type": "Country", "name": "Australia"},
-            "provider": provider_obj
-        }
-        
-        # Swap provider key for GovernmentService schema compliance
         if service_type == "GovernmentService":
-             service_obj["serviceOperator"] = service_obj.pop("provider")
-             
-        main_entities.append(service_obj)
+             main_obj["serviceOperator"] = provider_obj
+        else:
+             main_obj["provider"] = provider_obj
 
-        # D2. Sidecar HowTo
+    main_entities.append(main_obj)
+
+    # D2. Sidecar HowTo (If service has steps, but main entity is not HowTo)
+    if service_type != "HowTo":
         steps = extract_howto_steps(blocks)
         if steps:
             main_entities.append({
@@ -430,7 +444,7 @@ def process_file(filepath, filename, metadata_row):
         "@type": "WebPage",
         "headline": title,
         "alternativeHeadline": metadata_row.get('Overtitle', ''),
-        "description": description[:160], 
+        "description": description[:160] if description else "", 
         "url": metadata_row.get('canonical url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}"),
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
