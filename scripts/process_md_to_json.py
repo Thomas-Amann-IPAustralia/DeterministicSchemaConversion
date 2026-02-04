@@ -41,6 +41,7 @@ LEGISLATION_MAP = {
     ]
 }
 
+# UPDATED: Added sameAs links to help machines resolve the entity despite the placeholder name
 PROVIDER_MAP = {
     "ASBFEO": {
         "@type": "GovernmentOrganization",
@@ -50,15 +51,21 @@ PROVIDER_MAP = {
     "IP Australia": {
         "@type": "GovernmentOrganization",
         "alternateName": "Intellectual Property Australia",
-        "url": "https://www.ipaustralia.gov.au"
+        "url": "https://www.ipaustralia.gov.au",
+        "sameAs": [
+            "https://en.wikipedia.org/wiki/IP_Australia",
+            "https://www.wikidata.org/wiki/Q5973650"
+        ]
     },
     "Australian Border Force": {
         "@type": "GovernmentOrganization",
-        "alternateName": "ABF"
+        "alternateName": "ABF",
+        "url": "https://www.abf.gov.au/"
     },
     "WIPO": {
         "@type": "Organization",
-        "alternateName": "WIPO"
+        "alternateName": "WIPO",
+        "sameAs": "https://www.wikidata.org/wiki/Q178332"
     },
     "Federal Circuit Court": {
         "@type": "Organization"
@@ -79,8 +86,11 @@ PUBLISHER_BLOCK = {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
-    "parentOrganization": {"@type": "GovernmentOrganization", "name": "Australian Government"
-    }
+    "parentOrganization": {
+        "@type": "GovernmentOrganization", 
+        "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
 }
 
 USAGE_INFO_BLOCK = {
@@ -212,14 +222,14 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     elif "Commercial" in archetype_hint:
         base_obj["@type"] = "Organization"
 
-    # CHANGE #4: Force placeholder name
+    # RESTORED: Explicitly force the placeholder name as requested
     base_obj["name"] = "xXx_PLACEHOLDER_xXx"
 
     return base_obj
 
 def clean_text_retain_formatting(text, strip_images=False):
     """
-    UPDATED: Aggressive cleanup of artifacts, particularly non-breaking spaces (\u00a0)
+    Aggressive cleanup of artifacts, particularly non-breaking spaces (\u00a0)
     and ensuring normalized spacing while preserving double newlines for paragraphs.
     """
     if not text: return ""
@@ -231,54 +241,93 @@ def clean_text_retain_formatting(text, strip_images=False):
         text = re.sub(r'\[\s*\]\(.*?\)', '', text)
     
     # 2. Aggressive Character Replacement
-    # Replace unicode non-breaking space (0xA0) with standard space (0x20)
     text = text.replace(u'\u00a0', ' ')
-    
-    # Remove carriage returns
     text = text.replace('\r', '')
     
     # 3. Whitespace Normalization
-    # Split by lines first to preserve paragraph structure
     lines = text.split('\n')
     cleaned_lines = []
     
     for line in lines:
-        # Collapse multiple spaces/tabs within a single line into one space
         clean_line = re.sub(r'[ \t]+', ' ', line).strip()
         cleaned_lines.append(clean_line)
         
     text = "\n".join(cleaned_lines)
     
     # 4. Paragraph Normalization
-    # Collapse 3+ newlines into 2 (standard paragraph break)
     text = re.sub(r'\n{3,}', '\n\n', text)
     
-    # 5. Final Trim
     return text.strip()
 
-def extract_faqs(blocks):
-    faq_keys = [
-        "what are the benefits?", "what are the risks?", "what might the costs be?",
-        "what might the cost be?", "how much time might be involved?",
-        "how often is this used?", "what are the possible outcomes?",
-        "who can use this?", "who's involved?", "who is involved?"
-    ]
+def extract_dynamic_content(blocks, main_description_key=None):
+    """
+    UPDATED: "The 2/3 Rule" Logic.
+    Captures ALL content blocks as Question/Answer pairs unless they are 
+    explicitly ignored (e.g. navigation, footers).
+    """
     
-    faqs = []
-    for key, content in blocks.items():
-        if any(k in key for k in faq_keys) and content:
-            display_name = key.capitalize().replace('?', '') + "?"
-            faqs.append({
-                "@type": "Question",
-                "name": display_name,
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": clean_text_retain_formatting(content)
-                }
-            })
-    return faqs
+    # RULE 1: The "Ignore" List (System blocks to exclude)
+    IGNORED_HEADERS = {
+        "intro", 
+        "description", 
+        "see also", 
+        "want to give us feedback?", 
+        "references", 
+        "external links",
+        "table of contents",
+        "feedback"
+    }
+    
+    # Add the key used for the main description to the ignore list
+    if main_description_key:
+        IGNORED_HEADERS.add(main_description_key.lower())
+
+    content_items = []
+
+    for header, content in blocks.items():
+        clean_header_key = header.lower().strip()
+        
+        # RULE 2: Content Validation (Skip empty)
+        if not content: 
+            continue
+            
+        # RULE 3: The Filter (If it's in the ignore list, skip it)
+        if clean_header_key in IGNORED_HEADERS:
+            continue
+            
+        # RULE 4: HowTo Separation
+        # If block was likely used for HowTo steps, skip to avoid duplication.
+        if "step" in clean_header_key or "proceed" in clean_header_key:
+            continue
+
+        # --- SUCCESS: It passed the rules. It is valid content. ---
+        
+        display_name = header.capitalize()
+        
+        # Heuristic: Ensure it looks like a question if it isn't one
+        if not display_name.endswith('?') and not display_name.endswith(':'):
+             if "features" in clean_header_key:
+                 display_name = f"What are the {header.lower()}?"
+             elif "watch out" in clean_header_key:
+                 display_name = f"What should I watch out for?"
+             else:
+                 display_name = f"{display_name}?"
+
+        content_items.append({
+            "@type": "Question",
+            "name": display_name,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": clean_text_retain_formatting(content)
+            }
+        })
+
+    return content_items
 
 def extract_howto_steps(blocks):
+    """
+    RESTORED: Use placeholder for step names as requested.
+    """
     steps = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     
@@ -293,11 +342,12 @@ def extract_howto_steps(blocks):
                 if clean_text:
                     steps.append({
                         "@type": "HowToStep",
-                        "name": "xXx_PLACEHOLDER_xXx", # CHANGE #2
+                        # RESTORED: Placeholder
+                        "name": "xXx_PLACEHOLDER_xXx", 
                         "text": clean_text
                     })
         else:
-            # Fallback to paragraphs if no list format found
+            # Fallback to paragraphs
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
@@ -305,7 +355,8 @@ def extract_howto_steps(blocks):
                 if clean_p:
                     steps.append({
                         "@type": "HowToStep",
-                        "name": "xXx_PLACEHOLDER_xXx", # CHANGE #2
+                        # RESTORED: Placeholder
+                        "name": "xXx_PLACEHOLDER_xXx", 
                         "text": clean_p
                     })
     return steps
@@ -324,15 +375,13 @@ def resolve_about_topics(metadata_row):
     for right in rights_list:
         if not right: continue
         
-        # Determine Name and URL
         name = right.title()
         url = None
         
-        # Direct Key Lookup
         for map_key in IP_TOPIC_MAP:
             if map_key.lower() == right:
                 url = IP_TOPIC_MAP[map_key]
-                name = map_key # Use official capitalization
+                name = map_key 
                 break
         
         entity = {"@type": "Thing", "name": name}
@@ -365,19 +414,23 @@ def process_file(filepath, filename, metadata_row):
     date_val = datetime.now().strftime("%Y-%m-%d")
     
     # C. Description Extraction
-    # CHANGE #5: Always pull description from CSV
     description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
+    used_desc_key = None # Track which block was used to avoid dupes
+
     if not description:
-        # Fallback if CSV is empty
+        # Heuristic to find description block
         desc_keys = ["what is it?", "description", "intro"]
-        description_raw = next((blocks[k] for k in desc_keys if k in blocks), '')
-        description = clean_text_retain_formatting(description_raw, strip_images=True)
+        for k in desc_keys:
+            if k in blocks:
+                description_raw = blocks[k]
+                description = clean_text_retain_formatting(description_raw, strip_images=True)
+                used_desc_key = k # Remember this key!
+                break
 
     # D. Build Main Entity
     main_entities = []
     service_id = "#the-service"
     
-    # CHANGE #1: @type strictly assigned based on Archetype
     if "Self-Help" in archetype:
         service_type = "HowTo"
         has_provider = False
@@ -427,8 +480,9 @@ def process_file(filepath, filename, metadata_row):
                 "step": steps
             })
 
-    # E. FAQ Page
-    faqs = extract_faqs(blocks)
+    # E. Dynamic Content Extraction (The new, smarter extraction)
+    # Pass the used_desc_key so we don't include the description as an FAQ
+    faqs = extract_dynamic_content(blocks, main_description_key=used_desc_key)
     if faqs:
         main_entities.append({
             "@type": "FAQPage",
