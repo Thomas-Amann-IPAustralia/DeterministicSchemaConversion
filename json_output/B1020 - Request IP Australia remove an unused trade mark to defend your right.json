@@ -1,0 +1,189 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "Request IP Australia remove an unused trade mark to defend your right",
+  "alternativeHeadline": "Trade mark non-use action",
+  "description": "If someone has accused you of infringing their registered trade mark,and you believe their trade mark has not been used in the market on the goods and/or servic",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "B1020"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    },
+    {
+      "@type": "Thing",
+      "name": "Unregistered-tm",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "Request IP Australia remove an unused trade mark to defend your right",
+      "description": "If someone has accused you of infringing their registered trade mark,and you believe their trade mark has not been used in the market on the goods and/or services specified in their registration for more than 3 years, you may consider submitting a request to remove the trade mark on the basis of non-use.\n\nYou can request removal of a trade mark if you believe the owner:\n\n* hasn't used the trade mark in relation to all or some of their goods and/or services for 3 years\n* never intended to use the trade mark\n* hasn't used the trade mark in good faith.\n\n**When can you file an application for removal for non-use?**\n\nIf you are filing an application for removal on the ground that the owner never intended to use the trade mark, then the application may be made at any time after the subject trade mark has been filed.\n\nIf you are filing an application for removal on the ground that the trade mark has not been used, the following timeframes would apply:\n\n| **For trade marks with a filing date 23 February 2019 or earlier;** | **For trade marks with a filing date 24 February 2019 or later;** |\n| --- | --- |\n| You can file after **5 years** or more have passed since the *filing date* of the application (and if you believe that a trade mark hasn't been used in three years.)  An image of the trade mark register highlighting the date of filing. | You can file after **3 years** have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.)\u00a0 \u00a0  Image of the trade mark register highlighting the Entered on Register date |",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "name": "Trade mark non-use action"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Request IP Australia remove an unused trade mark to defend your right",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The application for removal/cessation of protectio...",
+          "text": "The application for removal/cessation of protection for non-use must be filed in an approved form. Complete [this form](https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use)  when applying to have a registered trade mark removed from the register for non-use. This form is also used when applying for the cessation of protection of a protected international trade mark for non-use."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "You can submit the completed form on the [Manage m...",
+          "text": "You can submit the completed form on the [Manage my IP page](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings)  of the IP Australia website."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A successful application to remove a trade mark from the register removes the other party\u2019s rights to the trade mark that is allegedly being infringed.\n* It can a simple, fast and low-cost option when a registered trade mark in question. If your application to remove a trade mark on the basis of non-use is unopposed, your request will be actioned following the two-month opposition period.\n* In about 60% of cases, removal applications will not lead to an adversarial process, as those who are genuinely not using their trade marks typically do not oppose the application for removal.\n* This process is also accessible without professional assistance required, though IP professionals are commonly used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* When applying to remove the other party's trade mark from the register on the basis of non-use, the owner of the trade mark will be notified of your application and details within one month of filing. You should consider your overall strategy and if you are comfortable having the other party be aware of your identity and actions.\n* Due to the public nature of these procedures there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to submit an application to remove the other party\u2019s trade mark should be considered as part of your IP or brand protection strategy.\n* Any person can oppose your request for removal within 2 months of the publishing date and tell IP Australia that they disagree that the trade mark has not been used. If you wish to respond to the opposition and establish that there is a case for removal based on non-use, this will lengthen the removal process and take up further cost, time and efforts.\n* A party who is dissatisfied with IP Australia\u2019s decision can also appeal it to the Administrative Review Tribunal (ART), or Federal Court or\u00a0the Federal Circuit and Family Court, which could be highly time-consuming and costly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If the application for removal is advertised and no one opposes it within the required time:\n\n* The trade mark will be completely removed from the Register, or\n* The trade mark will partially be removed from the Register, namely in relation to the goods and services as specified in your application for removal.\n\nIf the other party opposes your request to remove their trade mark within the two-month opposition period, you will be given one month to indicate that you will defend your application for removal from opposition.\n\nThe person opposing the removal of the trade mark is required to establish, by filing evidence, that they have used the trade mark for the goods and services which are the subject of the removal application or that there are other circumstances justifying the non-use of the mark.\n\nIP Australia will follow the processes prescribed in the law to decide the outcome, which could be any of the following:\n\n* The trade mark will be completely, or partially, removed from the Register (as above).\n* The Registrar decides the trade mark should remain registered.\n* In rare cases, the scope of the registered mark is limited in some way (e.g. to a specific territory)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is a fee of $350 for filing the removal application. The process can, however, incur further costs when your application is opposed. For instance, IP Australia may decide in favour of the opposition and require you to pay the other party's costs.\n\nIf you are engaging a legal professional to act on your behalf, you will likely incur additional legal fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The length of this process largely depends on whether someone opposes your application to remove for non-use.\n\nIf nobody opposes the application for removal within two months, the registration will be removed.\n\nIf the application to remove is opposed, the timing is similar to other [opposition processes](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark) involving trade mark matters. The process typically takes at least 6-12 months, but can be much longer when hearings or subsequent appeals are involved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any person can file an application for removal or cessation of protection of a trade mark for non-use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The other party (trade mark owner).\n* You (the applicant).\n* IP Australia\u2019s Oppositions & Hearings Section.\n* Your legal representatives, if you choose to engage a legal professional (such as an IP lawyer or trade marks attorney)."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
+    "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://ipta.org.au/community/get-free-consultation/"
+  ]
+}

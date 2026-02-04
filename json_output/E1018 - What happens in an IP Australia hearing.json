@@ -1,0 +1,84 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "What happens in an IP Australia hearing?",
+  "alternativeHeadline": "IP Australia process",
+  "description": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It\u2019s handled by a he",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "E1018"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Any Dispute"
+  },
+  "citation": [],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "What happens in an IP Australia hearing?",
+      "description": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It\u2019s handled by a hearing officer from IP Australia who specialises in the relevant field of IP law.\u00a0\n\nThese hearings can deal with both *inter partes* (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and *ex partes* matters such as an IP applicant challenging an examination decision made by IP Australia.\u00a0\n\nThe hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.\u00a0\u00a0\n\n**Process steps:**\u00a0\n\n* **(*****For inter partes matters*****) File an opposition:** You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.\n* **Request a hearing:** You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.\n* **Hearing**: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.\n* **Decision:** The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.\n\n**Outcomes and next steps:**\u00a0\n\n* The decision may uphold, refuse, or change the scope of the IP right/s in question.\n* **Appeals:** If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "name": "IP Australia",
+        "alternateName": "Intellectual Property Australia",
+        "url": "https://www.ipaustralia.gov.au"
+      }
+    }
+  ],
+  "relatedLink": [
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "Pause use of contested IP until resolution",
+  "alternativeHeadline": "De-escalate",
+  "description": "You may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease a",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "B1003"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Any Dispute"
+  },
+  "citation": [],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    }
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "Pause use of contested IP until resolution",
+      "description": "You may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease and desist request from someone claiming you were using their IP without permission, and you stop using their IP. In some cases, this might resolve a dispute and avoid the issue escalating further.\u00a0\n\nFor information about evaluating a cease and desist letter or a letter of demand, see:\u00a0[Receiving a letter of demand | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nEven if you\u2019re unsure whether there is actual infringement happening, you may still elect to stop using the IP (at least temporarily) while you get advice from an IP lawyer or IP attorney. This can sometimes:\u00a0\u00a0\n\n* help to avoid escalating the conflict prematurely\n* help to demonstrate that you are acting in good faith\n* keep open the possibility of resolving the issue informally\n* help to reduce your legal risks.\n\nThere is no formal process to comply with a request to stop using contested IP. It might include taking down products or copyrighted content, re-branding, stopping sales, changing your website, or returning stock. A business can decide to stop using the IP completely, or in part. If you are making this change in response to a request or demand from another party, it is important to inform the other party in writing, communicating the actions you have taken or are willing to take in response to their request, to prevent further escalation. You should note that in communicating with the other party, if you admit any fault or liability it will likely assist the other party\u2019s legal position against you.\u00a0\u00a0\n\n**Please note: Ceasing use of the contested IP alone may not be sufficient to prevent further escalation. It can also have negative consequences on your ability to respond to allegations of infringement or be seen as an admission of liability. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. An IP lawyer or IP attorney can help you assess the strength of the allegations made against you and whether ceasing use of the contested IP is in your best interests.**",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "name": "De-escalate"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Pause use of contested IP until resolution",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Look for all the ways the IP might be used in your...",
+          "text": "Look for all the ways the IP might be used in your business and for what would be involved in ceasing use of the IP."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Decide what changes to make (remove, redesign or r...",
+          "text": "Decide what changes to make (remove, redesign or rebrand)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Write to the alleged IP owner to explain what you\u2019...",
+          "text": "Write to the alleged IP owner to explain what you\u2019ve done, what you will do and when but note that admitting any fault or liability in your communications would likely assist IP owner\u2019s legal position against you."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Keep clear records showing when you made changes (...",
+          "text": "Keep clear records showing when you made changes (screenshots, shipping logs, letters)."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Can potentially de-escalate the situation and reduce the likelihood of expensive legal action or compensation claims \u2013 but often the other party will demand you do more than just stop using their IP. Other parties may still insist on other demands like you compensating them for your use of their IP up to the point where you stopped.\n* Outcomes can be private where either the parties agree not to disclose the alleged infringement or they reach no formal agreement but neither party discloses it.\n* Can show you\u2019re acting in good faith, which may help in future discussions, business dealings and negotiation \u2013 although this will depend on the nature of the alleged infringement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Ceasing use of contested IP may cause you to lose business revenue or incur business costs. This risk should be considered against the risk of further action against you if you do not cease use of contested IP.\n* Ceasing use of contested IP may not prevent the IP owner seeking compensation for past use or otherwise taking further steps against you.\n* The other party might see this action as conceding that you were infringing. Clear communication may sometimes help mitigate (but not eliminate) this risk, and you should note that admitting any fault or liability may well assist the other party\u2019s legal position against you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The IP owner accepts your response and nothing further happens.\n* The IP owner may still not be satisfied with your actions and take further action.\n* You might not be satisfied with permanently ceasing use of the contested IP, and could choose to further explore whether you are infringing and consider resuming your previous activities or taking other action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs will vary significantly depending on the importance of the contested IP to your business, the extent of the IP usage and the specific requests made by the other party.\u00a0\u00a0\n\nBusiness costs involved in ceasing use of certain IP could include:\u00a0\n\n* **Audit costs** \u2013 Such as reviewing your products, packaging, marketing, website, and systems.\n* **Rebranding, redesign or replacement costs** \u2013Such as changing labels, packaging or tooling; reprinting and developing marketing material, and redeveloping goodwill in your business with alternate branding.\n* **Product changes or redesign** \u2013 If you need to make changes to your products to avoid using others\u2019 IP.\n* **Increased business expenses** \u2013 using the contested IP may have allowed you to run your business more efficiently.\n* **Disposal or loss \u2013** Such as writing off unsellable stock or packaging; cancelling marketing or contracts early.\n* **Loss of income or requirement to pay compensation** \u2013 If you\u2019ve entered into IP licences or other contracts involving material or products that are alleged to infringe someone else's IP, you may lose expected payments such as licensing fees if you're required to stop using the material or product as agreed. Depending on the terms of those contracts, you may also be liable to pay compensation.\n\nIf you seek assistance from an IP lawyer or IP attorney, you will also need to pay their fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Time will vary depending on the circumstances and what you are changing. For instance, changing a website image could be done very quickly, where a full rebrand or product withdrawal could take weeks or months.\u00a0\n\nExtra time might be needed to:\u00a0\n\n* check where the IP is used in your business\n* inform suppliers and distributors\n* update packaging and marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone who has been accused of using someone else\u2019s IP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You or your team.\n* The party accusing you of using their IP, usually an IP owner or their representative.\n* (Optional) Your business partners such as suppliers, staff or online platforms if they need to help remove or change things.\n* (Optional) Legal professionals such as an IP lawyer, patent attorney or trade mark attorney."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts",
+    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA."
+  ]
+}
