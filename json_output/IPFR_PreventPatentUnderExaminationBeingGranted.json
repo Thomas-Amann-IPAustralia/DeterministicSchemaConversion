@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "PreventPatentUnderExaminationBeingGranted",
-  "alternativeHeadline": "",
+  "headline": "Prevent a patent under examination from being granted",
+  "alternativeHeadline": "Notification of prior art",
   "description": "Third Party Notification of Prior Art lets you raise concerns about someone else\u2019s patent application directly with IP Australia *before* it\u2019s accepted or grant",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1067"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +75,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "PreventPatentUnderExaminationBeingGranted",
+      "name": "Prevent a patent under examination from being granted",
       "description": "Third Party Notification of Prior Art lets you raise concerns about someone else\u2019s patent application directly with IP Australia *before* it\u2019s accepted or granted. You do this by lodging a 'section 27 notice', which alerts the examiner to earlier work - known as 'prior art' - that may show the application lacks novelty or inventiveness.\u00a0\n\n*Section 27 notices* are allowed up to three months after the *notice of* acceptance of an application. Formal opposition becomes available after the patent is *accepted*, and court or administrative action may be possible after the grant of the patent.\u00a0\n\nYou can raise the same kinds of concerns about a patent at different points in its life - but the mechanism you use depends on the patent\u2019s current status.\u00a0\n\nRaising concerns during examination can be quicker, simpler and less costly. It gives the examiner a chance to consider your evidence before a decision is made. If successful, this could prevent a patent from being granted at all\u2014avoiding future disputes.\u00a0\n\nYou don\u2019t need to own a patent or be directly affected to file a notice. Anyone can use this option if they have access to useful prior art and act within the time window.\u00a0\n\nThis is a one-way process: the examiner considers your materials, but you won\u2019t be told the outcome, and you can\u2019t argue your case. There are still other channels in which you can pursue the matter if the patent is accepted despite the S27 submissions.\u00a0\n\nIt is also important to consider that the document(s) raised under the s27(1) notice were published prior to the relevant priority date of the patent application.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +83,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Notification of prior art"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with PreventPatentUnderExaminationBeingGranted",
+      "name": "How to proceed with Prevent a patent under examination from being granted",
       "about": {
         "@id": "#the-service"
       },

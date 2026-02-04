@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "MonitorTradeMarkRegisterAndMarketCompetitorActivity",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nMonitoring com",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Monitor the trade mark register and market for competitor activity",
+  "alternativeHeadline": "Monitor Competitors ' IP",
+  "description": "Monitoring competitors' trade marks involves regularly checking the Australian Trade Marks Register, your market and other sources to spot new or changing brand",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1013"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,20 +74,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "MonitorTradeMarkRegisterAndMarketCompetitorActivity",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nMonitoring competitors' trade marks involves regularly checking the Australian Trade Marks Register, your market and other sources to spot new or changing brands that may be too similar to yours.\u00a0\n\nEarly detection can give you time to oppose an application, contact the other business, or adjust your own plans before investing further.\u00a0\u00a0\n\nYou can do this yourself using search engines and free tools such as [IP Australia's Australian Trade mark Search (ATMS)](https://search.ipaustralia.gov.au/trademarks/search/quick)  and its \u2018saved search\u2019 features, or pay a commercial service to send you regular reports.\u00a0\u00a0\n\nYou can also be flexible with the scope of your monitoring activity \u2013 you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers.",
+      "name": "Monitor the trade mark register and market for competitor activity",
+      "description": "Monitoring competitors' trade marks involves regularly checking the Australian Trade Marks Register, your market and other sources to spot new or changing brands that may be too similar to yours.\u00a0\n\nEarly detection can give you time to oppose an application, contact the other business, or adjust your own plans before investing further.\u00a0\u00a0\n\nYou can do this yourself using search engines and free tools such as [IP Australia's Australian Trade mark Search (ATMS)](https://search.ipaustralia.gov.au/trademarks/search/quick)  and its \u2018saved search\u2019 features, or pay a commercial service to send you regular reports.\u00a0\u00a0\n\nYou can also be flexible with the scope of your monitoring activity \u2013 you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Monitor Competitors ' IP"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with MonitorTradeMarkRegisterAndMarketCompetitorActivity",
+      "name": "How to proceed with Monitor the trade mark register and market for competitor activity",
       "about": {
         "@id": "#the-service"
       },

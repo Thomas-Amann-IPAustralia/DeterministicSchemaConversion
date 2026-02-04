@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "PauseUseContestedIpUntilResolution",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nYou may choose",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Pause use of contested IP until resolution",
+  "alternativeHeadline": "De-escalate",
+  "description": "You may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease a",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1003"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,20 +61,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "PauseUseContestedIpUntilResolution",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nYou may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease and desist request from someone claiming you were using their IP without permission, and you stop using their IP. In some cases, this might resolve a dispute and avoid the issue escalating further.\u00a0\n\nFor information about evaluating a cease and desist letter or a letter of demand, see:\u00a0[Receiving a letter of demand | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nEven if you\u2019re unsure whether there is actual infringement happening, you may still elect to stop using the IP (at least temporarily) while you get advice from an IP lawyer or IP attorney. This can sometimes:\u00a0\u00a0\n\n* help to avoid escalating the conflict prematurely\n* help to demonstrate that you are acting in good faith\n* keep open the possibility of resolving the issue informally\n* help to reduce your legal risks.\n\nThere is no formal process to comply with a request to stop using contested IP. It might include taking down products or copyrighted content, re-branding, stopping sales, changing your website, or returning stock. A business can decide to stop using the IP completely, or in part. If you are making this change in response to a request or demand from another party, it is important to inform the other party in writing, communicating the actions you have taken or are willing to take in response to their request, to prevent further escalation. You should note that in communicating with the other party, if you admit any fault or liability it will likely assist the other party\u2019s legal position against you.\u00a0\u00a0\n\n**Please note: Ceasing use of the contested IP alone may not be sufficient to prevent further escalation. It can also have negative consequences on your ability to respond to allegations of infringement or be seen as an admission of liability. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. An IP lawyer or IP attorney can help you assess the strength of the allegations made against you and whether ceasing use of the contested IP is in your best interests.**",
+      "name": "Pause use of contested IP until resolution",
+      "description": "You may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease and desist request from someone claiming you were using their IP without permission, and you stop using their IP. In some cases, this might resolve a dispute and avoid the issue escalating further.\u00a0\n\nFor information about evaluating a cease and desist letter or a letter of demand, see:\u00a0[Receiving a letter of demand | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nEven if you\u2019re unsure whether there is actual infringement happening, you may still elect to stop using the IP (at least temporarily) while you get advice from an IP lawyer or IP attorney. This can sometimes:\u00a0\u00a0\n\n* help to avoid escalating the conflict prematurely\n* help to demonstrate that you are acting in good faith\n* keep open the possibility of resolving the issue informally\n* help to reduce your legal risks.\n\nThere is no formal process to comply with a request to stop using contested IP. It might include taking down products or copyrighted content, re-branding, stopping sales, changing your website, or returning stock. A business can decide to stop using the IP completely, or in part. If you are making this change in response to a request or demand from another party, it is important to inform the other party in writing, communicating the actions you have taken or are willing to take in response to their request, to prevent further escalation. You should note that in communicating with the other party, if you admit any fault or liability it will likely assist the other party\u2019s legal position against you.\u00a0\u00a0\n\n**Please note: Ceasing use of the contested IP alone may not be sufficient to prevent further escalation. It can also have negative consequences on your ability to respond to allegations of infringement or be seen as an admission of liability. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. An IP lawyer or IP attorney can help you assess the strength of the allegations made against you and whether ceasing use of the contested IP is in your best interests.**",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "De-escalate"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with PauseUseContestedIpUntilResolution",
+      "name": "How to proceed with Pause use of contested IP until resolution",
       "about": {
         "@id": "#the-service"
       },

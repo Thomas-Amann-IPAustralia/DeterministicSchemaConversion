@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Access international arbitration and mediation services",
-  "alternativeHeadline": "World IP Organisation (WIPO) ",
+  "headline": "Resolve IP issues with the help of a third party",
+  "alternativeHeadline": "Arbitration\u00a0",
   "description": "Arbitration is a type of alternative dispute resolution (ADR) in which a dispute is submitted, by agreement of the parties, to one or more arbitrators who make ",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "D1022"
+    "value": "D1029"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,70 +39,9 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Trade mark, Patent, Design, PBR, Copyright,  Unregistered-tm"
+    "name": "Any dispute"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -122,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "Access international arbitration and mediation services",
+      "name": "Resolve IP issues with the help of a third party",
       "description": "Arbitration is a type of alternative dispute resolution (ADR) in which a dispute is submitted, by agreement of the parties, to one or more arbitrators who make a binding decision on the dispute (known as an \u2018arbitral award\u2019). The arbitrator is often someone with a high level of expertise in the specific field of law relevant to the industry or subject matter of the dispute.\u00a0\u00a0\n\nArbitration can be somewhat similar to a court or tribunal hearing, but often are a shorter and more flexible version:\u00a0\n\n* Parties are typically expected to produce evidence and submissions before the arbitrator to make a decision.\n* Usually, the parties to the dispute must agree before the process that the arbitrator\u2019s decision will be binding and enforceable.\n* Arbitration is generally seen as an efficient, impartial, and enforceable process to resolve both domestic and international commercial disputes, including IP matters.\n\nArbitration may be voluntary, required under a court order, or as part of a contract \u2013 arbitration clauses are often added to contracts, stipulating that the parties resolve future disputes using this method.\u00a0\u00a0\n\nArbitration requires agreement from both parties, which can be challenging to obtain after a dispute arises, especially in cases involving no prior contractual relationship.\u00a0For this reason, where there are contractual negotiations, it is often advantageous for parties to consider including an arbitration clause in their initial contract.",
       "areaServed": {
         "@type": "Country",
@@ -130,13 +69,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "World Intellectual Property Organization",
-        "alternateName": "WIPO"
+        "name": "Arbitration"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with Access international arbitration and mediation services",
+      "name": "How to proceed with Resolve IP issues with the help of a third party",
       "about": {
         "@id": "#the-service"
       },

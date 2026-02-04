@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ChallengeRegistrationNewTradeMark2",
-  "alternativeHeadline": "",
+  "headline": "Challenge the registration of a new trade mark",
+  "alternativeHeadline": "Opposition process",
   "description": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an a",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-0",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1016"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ChallengeRegistrationNewTradeMark2",
+      "name": "Challenge the registration of a new trade mark",
       "description": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia.\u00a0\n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):\u00a0\u00a0\n\n* similarity to an existing trade mark\n* being too generic or descriptive\n* containing a connotation that is misleading and confusing.\n\nOpposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia.\u00a0\n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.",
       "areaServed": {
         "@type": "Country",
@@ -70,8 +82,42 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Opposition process"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Challenge the registration of a new trade mark",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "IP professionals are commonly used\u00a0to help navigat...",
+          "text": "IP professionals are commonly used\u00a0to help navigate the process and assist parties to present their cases, though it is not a requirement of IP Australia."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "You can initiate an opposition process by submitti...",
+          "text": "You can initiate an opposition process by submitting *a notice of opposition.* Doing so informs IP Australia of the potential conflict or grounds as to why the trade mark is not registrable, and gives all parties involved opportunities to present their cases and evidence, which will then enable IP Australia to decide whether or not to register the trade mark. If the opposition to registration is successful, the trade mark will not be registered."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Depending on the grounds on which you are opposing...",
+          "text": "Depending on the grounds on which you are opposing, you may need to provide documents, details or other types of supporting evidence to support your argument. More information can be found on the IP Australia website regarding the types of evidence that would help your case and formal requirements for evidence: [Evidence In Oppositions And PBR Objections | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "To begin the process, log into\u00a0[online services.](...",
+          "text": "To begin the process, log into\u00a0[online services.](https://www.ipaustralia.gov.au/manage-my-ip)  and select \u2018File an opposition\u2019"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "![Screenshot of IP Australia's trade mark oppositi...",
+          "text": "![Screenshot of IP Australia's trade mark opposition webpage. The page shows three main sections: 'File an opposition' (showing options to file a new opposition or statement of grounds), 'Manage an opposition matter' (showing options for submission management, extensions, and withdrawal), and 'Request or attend a hearing' (showing hearing request options and cooling-off period requests). The Australian Government logo appears in the top left, with navigation menu options visible across the top of the page.](/sites/default/files/images/2025-03/How%20to%20file%20a%20TM%20opposition.png)"
+        }
+      ]
     },
     {
       "@type": "FAQPage",

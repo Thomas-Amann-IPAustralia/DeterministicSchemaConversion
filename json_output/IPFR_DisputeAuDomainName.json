@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "DisputeAuDomainName",
-  "alternativeHeadline": "",
+  "headline": "Dispute a domain name that infringes your trade mark",
+  "alternativeHeadline": "Domain Name Dispute (auDRP)",
   "description": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone\u2019s .au domain name",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1004"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,34 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Copyright"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +86,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "DisputeAuDomainName",
+      "name": "Dispute a domain name that infringes your trade mark",
       "description": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone\u2019s .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA\u2019s .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.\u00a0\u00a0\u00a0\n\nA panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel\u2019s decisions are binding on both parties.\u00a0\n\n**Please Note:**\u00a0If the infringing domain name does not end in \u2018.au\u2019 then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP).",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +94,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Domain Name Dispute (auDRP)"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with DisputeAuDomainName",
+      "name": "How to proceed with Dispute a domain name that infringes your trade mark",
       "about": {
         "@id": "#the-service"
       },

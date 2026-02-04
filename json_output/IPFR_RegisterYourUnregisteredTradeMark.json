@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "RegisterYourUnregisteredTradeMark",
-  "alternativeHeadline": "",
+  "headline": "Register your unregistered trade mark",
+  "alternativeHeadline": "Apply for a trade mark",
   "description": "If you haven\u2019t already done so, registering your trade mark with IP Australia can help you respond to suspected copying or infringement.\u00a0\n\nRegistration establis",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1039"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "RegisterYourUnregisteredTradeMark",
+      "name": "Register your unregistered trade mark",
       "description": "If you haven\u2019t already done so, registering your trade mark with IP Australia can help you respond to suspected copying or infringement.\u00a0\n\nRegistration establishes ownership and exclusive rights, giving you stronger legal grounds to take action against current and future infringers.\u00a0\n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these.\u00a0\n\nYou might have some rights to protect your trade mark even if it\u2019s not registered with IP Australia. However, trade mark registration makes enforcing your trade mark easier and increases your enforcement options.",
       "areaServed": {
         "@type": "Country",
@@ -70,8 +82,37 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Apply for a trade mark"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Register your unregistered trade mark",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "You will need to set up an account with IP Austral...",
+          "text": "You will need to set up an account with IP Australia\u2019s Online Services. There is a [step-by-step guide](https://www.ipaustralia.gov.au/trade-marks)  to applying for an Australian trade mark on our website."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "You don\u2019t need a lawyer to apply. However, if you ...",
+          "text": "You don\u2019t need a lawyer to apply. However, if you would like support in making your application, you can contact an IP professional such as a registered trade mark attorney via \u00a0[Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "You will need an address for service in Australia....",
+          "text": "You will need an address for service in Australia. This just means a postal address where you can be reached."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Before applying, consider using TM Checker, a free...",
+          "text": "Before applying, consider using TM Checker, a free online trade mark checking tool to check the registrability of your potential trade mark. TM Checker can be accessed here: [TM Checker](https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker)"
+        }
+      ]
     },
     {
       "@type": "FAQPage",

@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "MyBusinessNameMyIp",
-  "alternativeHeadline": "",
+  "headline": "Is my business name my IP?",
+  "alternativeHeadline": "Business names",
   "description": "A business may operate under several \u2018names\u2019, but only a registered trade mark is an intellectual property right that can give you exclusive control over your b",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "E1001"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "MyBusinessNameMyIp",
+      "name": "Is my business name my IP?",
       "description": "A business may operate under several \u2018names\u2019, but only a registered trade mark is an intellectual property right that can give you exclusive control over your brand across Australia. IP Australia administers trade marks, while ASIC handles business and company name registration.\u00a0\n\n**Business name**\u00a0\n\n* Your trading name registered with the Australian Securities and Investments Commission (ASIC), so customers know who owns the business.\n* It identifies your business but does not give you exclusive rights to that name. Other people can register or use a similar business name. Business name registration does not provide intellectual property protection.\n\n**Company name**\u00a0\n\n* A separate legal entity created under the *Corporations Act* 2001 (Cth) when you register with ASIC.\n* It helps authorities and customers find the right business but does not create any brand-ownership or exclusive rights. Registering a company does not give you trade mark rights.\n\n**Registered trade mark**\u00a0\n\n* A sign such as words, logos, slogans or shapes, registered with IP Australia to distinguish your goods or services.\n* Grants you exclusive rights nationwide to use the \u2018mark\u2019 for goods and services for which it is registered.\n* Allows you to take legal action against suspected infringement and can deter others from copying your brand.\n\nBecause each register serves a different purpose, you can hold a business name, company name and trade mark at the same time. The registers do not cross-check, so an available business name on ASIC may conflict with an existing trade mark in IP Australia\u2019s register, and vice versa.\u00a0\n\nTrade mark registration involves application and renewal fees, while business name registration is comparatively inexpensive. Only a trade mark can give you enforceable, nationwide rights.\u00a0\n\n**Key point:** Registering a business name or company name does not give you intellectual property rights. Only a registered trade mark can provide exclusive legal protection for your brand.",
       "areaServed": {
         "@type": "Country",
@@ -70,7 +69,7 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Business names"
       }
     }
   ],

@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "TradeMarkRevocation",
-  "alternativeHeadline": "",
+  "headline": "Remove a trade mark\u00a0from the register",
+  "alternativeHeadline": "Trade mark registration revocation",
   "description": "Registration of a trade mark can be \u2018revoked\u2019 in certain circumstances where it should not have been registered in the first place. This is only possible within",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1021"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "TradeMarkRevocation",
+      "name": "Remove a trade mark\u00a0from the register",
       "description": "Registration of a trade mark can be \u2018revoked\u2019 in certain circumstances where it should not have been registered in the first place. This is only possible within the first 12 months of registration.\u00a0\n\nGenerally, revocation of registration is followed immediately by revocation of acceptance, resulting in the subject trade mark application returning to the examiner for a re-examination. Only in very rare cases would a revocation of registration return to the 'Accepted' status, allowing an opposition to proceed instead of a re-examination by a trade mark examiner.\u00a0\u00a0\n\nRevocation of registration is rare. It is not a substitute for court action to challenge someone else\u2019s entitlement to a trade mark, rather, it is about identifying information showing that the registration should not have occurred in the first place. The power to revoke will usually only be used where there is a clear case:\u00a0\n\n* of error by IP Australia, or\n* new circumstances become known.\n\nThe Registrar of Trade Marks (the Registrar) is not required to consider a request for revocation, but if they do, they must consider all the circumstances and whether it is reasonable to revoke the registration, including whether there is a more appropriate remedy (such as court challenge).\u00a0\n\nIn making a revocation decision, IP Australia can take account of a range of circumstances that could have prevented registration. This includes reasons which go to the heart of whether the application should have been accepted, such as whether it\u2019s:\u00a0\u00a0\n\n* scandalous\n* likely to cause confusion\n* not sufficiently distinctive\n* too similar to another registered trade mark.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +82,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Trade mark registration revocation"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with TradeMarkRevocation",
+      "name": "How to proceed with Remove a trade mark\u00a0from the register",
       "about": {
         "@id": "#the-service"
       },

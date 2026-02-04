@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ObtainLegalAdviceEnforcementOptions",
-  "alternativeHeadline": "",
+  "headline": "Obtain legal advice on your enforcement options",
+  "alternativeHeadline": "IP attorney or lawyer",
   "description": "**What is it?**\n\nHaving a qualified expert can help you navigate the complex system of IP enforcement. Qualified experts for IP enforcement include lawyers spec",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1012"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ObtainLegalAdviceEnforcementOptions",
+      "name": "Obtain legal advice on your enforcement options",
       "description": "**What is it?**\n\nHaving a qualified expert can help you navigate the complex system of IP enforcement. Qualified experts for IP enforcement include lawyers specialising in IP, and trade mark and patent attorneys.\u00a0We refer to these experts as 'legal professionals', although trade mark and patent attorneys are not necessarily lawyers and may not be qualified to engage in legal practice.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of legal professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which may require a lawyer or barrister with litigation experience in IP).\u00a0\n\nIf you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the\u00a0[Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm) register as a starting point.\u00a0\n\n**How about other types of IP professionals?**\u00a0\n\nThe term IP professionals refers to a range of experts who can help you plan and manage your business in relation to IP, including legal professionals. If you are seeking advice on how to enforce your IP rights, and what might be most appropriate to your situation, you should seek it from an IP lawyer or other relevant legal professional.\u00a0\u00a0\n\nIf you wish to obtain support for other IP-related aspects of your business, you may wish to engage services provided by non-legal IP professionals such as:\u00a0\n\n* an accountant who specialises in IP marketing or commercialisation\n* a brand consultant\n* a franchise and export consultant\n* a management consultant\n* IP search firms\n* IP monitoring service providers\n* Government business support.\n\nIf you are a copyright owner who is a member of a copyright collecting society or a professional organisation representing certain kinds of creator or creative business, you could explore whether that organisation is able to provide information or another form of assistance in your particular circumstances.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +69,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "IP attorney or lawyer"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ObtainLegalAdviceEnforcementOptions",
+      "name": "How to proceed with Obtain legal advice on your enforcement options",
       "about": {
         "@id": "#the-service"
       },

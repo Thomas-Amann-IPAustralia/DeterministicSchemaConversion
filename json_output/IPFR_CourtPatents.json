@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "CourtPatents",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf other effor",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Seek binding, authoritative decisions",
+  "alternativeHeadline": "Court - Patent",
+  "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court i",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1018"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,16 +75,50 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "CourtPatents",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed.\u00a0\n\n**It is prudent to seek legal advice before deciding whether to start a legal action in court.** You will likely also need assistance from an IP lawyer if you decide to start a legal action.\u00a0\n\nPatent proceedings usually involve:\u00a0\u00a0\n\n* a validity challenge intended to revoke a patent in whole or in part\n* allegations of infringement of a patent.\n\nPatent proceedings in Australia are typically started in the Federal Court of Australia.",
+      "name": "Seek binding, authoritative decisions",
+      "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed.\u00a0\n\n**It is prudent to seek legal advice before deciding whether to start a legal action in court.** You will likely also need assistance from an IP lawyer if you decide to start a legal action.\u00a0\n\nPatent proceedings usually involve:\u00a0\u00a0\n\n* a validity challenge intended to revoke a patent in whole or in part\n* allegations of infringement of a patent.\n\nPatent proceedings in Australia are typically started in the Federal Court of Australia.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Court - Patent"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Seek binding, authoritative decisions",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Here are some things you might consider before you...",
+          "text": "Here are some things you might consider before you proceed with legal action in a patent\u00a0 matter."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Find an IP lawyer for advice and representation*...",
+          "text": "**Find an IP lawyer for advice and representation**\\\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Consider your goals before deciding to start a l...",
+          "text": "**Consider your goals before deciding to start a legal claim**\\\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Consider the impact of publicity**\\\nCourt procee...",
+          "text": "**Consider the impact of publicity**\\\nCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Gather all your documents**\\\nBefore seeking lega...",
+          "text": "**Gather all your documents**\\\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that you think might be relevant to your claim. You can give these to your lawyer to review."
+        }
+      ]
     },
     {
       "@type": "FAQPage",

@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "RespondUnjustifiedThreat",
-  "alternativeHeadline": "",
+  "headline": "Respond to an unjustified threat ",
+  "alternativeHeadline": "Court",
   "description": "Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threa",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1013"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "RespondUnjustifiedThreat",
+      "name": "Respond to an unjustified threat ",
       "description": "Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threatens to take legal action against you for infringing their Australian registered IP rights, and these threats are unjustified and received by you in Australia, you may be able to take action under Australia\u2019s \u2018unjustified threats\u2019 laws.\u00a0Similarly, if someone threatens to take action against you in Australia for infringing copyright and these threats are unjustified, you may be able to take action under the \u2018groundless threats\u2019 provisions of Australian copyright law.\u00a0\n\n\u00a0If you receive or are affected by an unjustified threat, you can start legal action and ask a court to:\u00a0\n\n* declare the threat unjustified\n* order the sender to stop making threats\n* award compensation for any losses.\n\n\u00a0Some reasons a threat might be unjustified are:\u00a0\u00a0\n\n* for registered IP rights \u2013 the accuser does not actually own a current, valid Australian IP right, and therefore is not entitled to take IP infringement action\n* the alleged infringement isn't occurring because, for example: the actions you\u2019ve been accused of taking would not actually infringe IP rights under Australian law.\n\nIf someone makes a threat against you, they need to be able to show that the threat was justified if you decide to start legal action against them. However, is important to note that Australian IP laws make it clear that mere notification of registration or protection of IP rights, or the mere notification of the existence of a copyright, is not by itself a threat.\u00a0\u00a0\n\nIt can be difficult to know whether a notice or correspondence amounts to an unjustified threat. An IP lawyer or IP attorney may be able to advise you on whether you have received an unjustified threat.\u00a0\u00a0\n\n**It is always prudent to seek legal advice before deciding whether to start legal action.**There are often options other than court for responding to an unjustified threat \u2014 like writing back to the other party to clarify your position \u2014 before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +69,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Court"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with RespondUnjustifiedThreat",
+      "name": "How to proceed with Respond to an unjustified threat ",
       "about": {
         "@id": "#the-service"
       },

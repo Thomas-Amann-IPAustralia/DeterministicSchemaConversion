@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "AssertYourRightsResponseAccusation",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nSometimes bein",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Assert your rights, as a response to an accusation  ",
+  "alternativeHeadline": "Enforcing to defend ",
+  "description": "Sometimes being accused of infringing someone else\u2019s intellectual property (IP) makes you aware of the other party\u2019s use of the contested IP for the first time.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1015"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,20 +61,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "AssertYourRightsResponseAccusation",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nSometimes being accused of infringing someone else\u2019s intellectual property (IP) makes you aware of the other party\u2019s use of the contested IP for the first time. Looking into their allegations might lead you to suspect that it is actually you that has a stronger claim, and that it is your IP \u2013 not theirs \u2013 that is at risk of being infringed.\u00a0\u00a0\n\nIt is quite common for both parties involved in an IP dispute to believe that their IP has been copied or misappropriated by the other side. Some common situations include:\u00a0\n\n* The owner of a registered trade mark being accused of copying someone\u2019s unregistered trade mark or branding.\n* Both parties believing that they are the rightful owner of contested IP. For instance, parties may have developed IP together but may have differing views as to who can own and use this IP, leading them to accuse each other of infringing the disputed IP.\n\nIf you think that someone accusing you of infringement is actually infringing\u00a0*your*IP, you can consider whether to take enforcement action against them.\u00a0\n\nThere are a wide variety of enforcement actions with varying levels of formality, costs, benefits and risks, ranging from commercial, private pathways such as negotiation to something more formal, like court proceedings. Find out more about how to enforce your IP rights and compare different enforcement pathways by following the \u2018[**I believe my IP has been infringed\u2019**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)option**.**\u00a0\u00a0\n\nBefore taking any of these actions, it can be a good idea to consider whether the other party\u2019s actions amount to infringement \u2014 see our information on\u00a0[what infringement can look like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement). A legal professional can help you make this assessment and give advice on your next steps.",
+      "name": "Assert your rights, as a response to an accusation  ",
+      "description": "Sometimes being accused of infringing someone else\u2019s intellectual property (IP) makes you aware of the other party\u2019s use of the contested IP for the first time. Looking into their allegations might lead you to suspect that it is actually you that has a stronger claim, and that it is your IP \u2013 not theirs \u2013 that is at risk of being infringed.\u00a0\u00a0\n\nIt is quite common for both parties involved in an IP dispute to believe that their IP has been copied or misappropriated by the other side. Some common situations include:\u00a0\n\n* The owner of a registered trade mark being accused of copying someone\u2019s unregistered trade mark or branding.\n* Both parties believing that they are the rightful owner of contested IP. For instance, parties may have developed IP together but may have differing views as to who can own and use this IP, leading them to accuse each other of infringing the disputed IP.\n\nIf you think that someone accusing you of infringement is actually infringing\u00a0*your*IP, you can consider whether to take enforcement action against them.\u00a0\n\nThere are a wide variety of enforcement actions with varying levels of formality, costs, benefits and risks, ranging from commercial, private pathways such as negotiation to something more formal, like court proceedings. Find out more about how to enforce your IP rights and compare different enforcement pathways by following the \u2018[**I believe my IP has been infringed\u2019**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)option**.**\u00a0\u00a0\n\nBefore taking any of these actions, it can be a good idea to consider whether the other party\u2019s actions amount to infringement \u2014 see our information on\u00a0[what infringement can look like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement). A legal professional can help you make this assessment and give advice on your next steps.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Enforcing to defend"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with AssertYourRightsResponseAccusation",
+      "name": "How to proceed with Assert your rights, as a response to an accusation  ",
       "about": {
         "@id": "#the-service"
       },

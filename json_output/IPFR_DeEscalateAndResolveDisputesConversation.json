@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "DeEscalateAndResolveDisputesConversation",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf you have be",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "De-escalate and resolve disputes via conversation",
+  "alternativeHeadline": "Informal contact",
+  "description": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a ",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1012"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,20 +61,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "DeEscalateAndResolveDisputesConversation",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\u00a0\n\nOften this contact comes in the form of a cease-and-desist or a letter of demand**.**\u00a0They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page:\u00a0[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\n\nFor more information on possible commercial solutions, see IP First Response's page:\u00a0[Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement).",
+      "name": "De-escalate and resolve disputes via conversation",
+      "description": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\u00a0\n\nOften this contact comes in the form of a cease-and-desist or a letter of demand**.**\u00a0They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page:\u00a0[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\n\nFor more information on possible commercial solutions, see IP First Response's page:\u00a0[Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement).",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Informal contact"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with DeEscalateAndResolveDisputesConversation",
+      "name": "How to proceed with De-escalate and resolve disputes via conversation",
       "about": {
         "@id": "#the-service"
       },

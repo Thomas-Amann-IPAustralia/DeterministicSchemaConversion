@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "OtherIpTypes",
-  "alternativeHeadline": "",
+  "headline": "Other IP Types",
+  "alternativeHeadline": "Sorry, This information isn't available yet",
   "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types](https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types)\"",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1020"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "OtherIpTypes",
+      "name": "Other IP Types",
       "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types](https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types)\"",
       "areaServed": {
         "@type": "Country",
@@ -70,7 +69,7 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Sorry, This information isn't available yet"
       }
     }
   ],

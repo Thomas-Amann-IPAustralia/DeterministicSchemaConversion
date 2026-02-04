@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "DetectAndDiscouragePotentialInfringementYourSupplyChain",
-  "alternativeHeadline": "",
+  "headline": "Detect and discourage potential infringement in your supply chain",
+  "alternativeHeadline": "Monitor supply chain",
   "description": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include:\u00a0\n\n* Vetting supplier",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1002"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +75,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "DetectAndDiscouragePotentialInfringementYourSupplyChain",
+      "name": "Detect and discourage potential infringement in your supply chain",
       "description": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include:\u00a0\n\n* Vetting suppliers\n* Implementing track\u2011and\u2011trace systems\n* Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n* Regular inspections of incoming orders\n* Sampling finished products for quality and authenticity\n* Scanning online marketplace listings for unauthorised items\n* Conducting basic factory or warehouse audits.\n\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low\u2011cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.\u00a0\u00a0\n\nSome businesses may also engage third\u2011party brand\u2011protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the\u00a0 [Notice of Objection](https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country) scheme.\u00a0\u00a0\n\nMonitoring can be continuous or ad\u2011hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +83,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Monitor supply chain"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with DetectAndDiscouragePotentialInfringementYourSupplyChain",
+      "name": "How to proceed with Detect and discourage potential infringement in your supply chain",
       "about": {
         "@id": "#the-service"
       },

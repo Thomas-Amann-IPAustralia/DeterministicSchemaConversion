@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "InterimInjunction",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf you need\u00a0*i",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Seek a court order to prevent further damage while preparing for court.",
+  "alternativeHeadline": "Interim court injuction order",
+  "description": "If you need\u00a0*immediate*\u00a0action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to thei",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1030"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,20 +61,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "InterimInjunction",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf you need\u00a0*immediate*\u00a0action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond.\u00a0\n\nUrgent action can include:\u00a0\n\n* interim injunction\n* search order (*Anton Piller order*).\n\n**Interim injunction**\u00a0\\\nAn injunction**,**in the context of an Australian IP dispute, is a court order that can:\u00a0\n\n* Stop someone from infringing your IP rights.\n* Compel them to take specific actions to prevent further infringement.\n* Freeze a party\u2019s assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a\u00a0*Mareva injunction*).\n\nAn\u00a0**interim injunction**\u00a0is a type of injunction which can be granted without a full hearing. It\u2019s a temporary, short-term tool to protect your IP until hearings take place.\u00a0\u00a0\n\n* Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n* Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn\u2019t yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional\u2019s advice may be vital before deciding to take any court action.\n\n**Search order**\u00a0\\\nA search order (sometimes called an\u00a0*Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\u00a0\u00a0\n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
+      "name": "Seek a court order to prevent further damage while preparing for court.",
+      "description": "If you need\u00a0*immediate*\u00a0action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond.\u00a0\n\nUrgent action can include:\u00a0\n\n* interim injunction\n* search order (*Anton Piller order*).\n\n**Interim injunction**\u00a0\\\nAn injunction**,**in the context of an Australian IP dispute, is a court order that can:\u00a0\n\n* Stop someone from infringing your IP rights.\n* Compel them to take specific actions to prevent further infringement.\n* Freeze a party\u2019s assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a\u00a0*Mareva injunction*).\n\nAn\u00a0**interim injunction**\u00a0is a type of injunction which can be granted without a full hearing. It\u2019s a temporary, short-term tool to protect your IP until hearings take place.\u00a0\u00a0\n\n* Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n* Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn\u2019t yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional\u2019s advice may be vital before deciding to take any court action.\n\n**Search order**\u00a0\\\nA search order (sometimes called an\u00a0*Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\u00a0\u00a0\n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Interim court injuction order"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with InterimInjunction",
+      "name": "How to proceed with Seek a court order to prevent further damage while preparing for court.",
       "about": {
         "@id": "#the-service"
       },

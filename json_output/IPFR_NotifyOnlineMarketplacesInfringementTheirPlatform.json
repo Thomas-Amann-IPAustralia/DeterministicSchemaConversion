@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "NotifyOnlineMarketplacesInfringementTheirPlatform",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nOnline platfor",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Notify online marketplaces of infringement on their platform",
+  "alternativeHeadline": "eCommerce platform",
+  "description": "Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your prod",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-marketplaces-infringement-their-platform",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1038"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,70 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Design, PBR, Copyright, Patent"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,20 +122,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "NotifyOnlineMarketplacesInfringementTheirPlatform",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nOnline platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The \u2018intermediaries\u2019 have a responsibility not to facilitate infringement.\u00a0\u00a0 \u00a0\n\nIf you notice infringement on a website or online platform, you can approach the owners of the site to request that they take down infringing content. To find out who owns a website, you can check their domain name's registration in the\u202f[Australian](https://www.auda.org.au/au-domain-names/domain-name-help/using-whois) \u202fand\u202f[international WHOIS databases](https://lookup.icann.org/en).\u00a0\n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods and material that infringes copyright.\u00a0\n\nYou can be proactive by listing your IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon and Alibaba, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.\u00a0\n\n**Note:**\u00a0It can be time-consuming for rights owners to monitor e-commerce platforms and submit IP complaints themselves. A time and cost-effective way to manage this process is often to engage IP professionals such as IP monitoring services. These IP professionals can use their experience and knowledge to identify and remove counterfeit goods across multiple online platforms. **Note:**Beyond online marketplaces, many other digital platforms available to Australian users (including social media platforms to which users can upload content) also offer mechanisms that copyright owners can use to address or prevent infringement. These often include complaint forms and notice and takedown processes that copyright owners can use if they believe their rights have been infringed. They may also include bespoke tools copyright owners can choose use to proactively manage and enforce their rights on those platforms. For example,\u00a0 automated content recognition/identification or screening tools (like YouTube Content ID or Meta Rights Manager) allow copyright owners to upload their content and find matches to content uploaded on platforms by third parties. Where matches are found, copyright owners may be able to seek to pre-emptively block or otherwise monetise the content (for example, through share of advertising revenue in some cases).",
+      "name": "Notify online marketplaces of infringement on their platform",
+      "description": "Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The \u2018intermediaries\u2019 have a responsibility not to facilitate infringement.\u00a0\u00a0 \u00a0\n\nIf you notice infringement on a website or online platform, you can approach the owners of the site to request that they take down infringing content. To find out who owns a website, you can check their domain name's registration in the\u202f[Australian](https://www.auda.org.au/au-domain-names/domain-name-help/using-whois) \u202fand\u202f[international WHOIS databases](https://lookup.icann.org/en).\u00a0\n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods and material that infringes copyright.\u00a0\n\nYou can be proactive by listing your IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon and Alibaba, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.\u00a0\n\n**Note:**\u00a0It can be time-consuming for rights owners to monitor e-commerce platforms and submit IP complaints themselves. A time and cost-effective way to manage this process is often to engage IP professionals such as IP monitoring services. These IP professionals can use their experience and knowledge to identify and remove counterfeit goods across multiple online platforms. **Note:**Beyond online marketplaces, many other digital platforms available to Australian users (including social media platforms to which users can upload content) also offer mechanisms that copyright owners can use to address or prevent infringement. These often include complaint forms and notice and takedown processes that copyright owners can use if they believe their rights have been infringed. They may also include bespoke tools copyright owners can choose use to proactively manage and enforce their rights on those platforms. For example,\u00a0 automated content recognition/identification or screening tools (like YouTube Content ID or Meta Rights Manager) allow copyright owners to upload their content and find matches to content uploaded on platforms by third parties. Where matches are found, copyright owners may be able to seek to pre-emptively block or otherwise monetise the content (for example, through share of advertising revenue in some cases).",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "eCommerce platform"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with NotifyOnlineMarketplacesInfringementTheirPlatform",
+      "name": "How to proceed with Notify online marketplaces of infringement on their platform",
       "about": {
         "@id": "#the-service"
       },

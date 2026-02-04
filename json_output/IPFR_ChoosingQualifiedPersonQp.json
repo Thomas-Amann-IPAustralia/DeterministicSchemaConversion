@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ChoosingQualifiedPersonQp",
-  "alternativeHeadline": "",
+  "headline": "CHOOSING A \u2018QUALIFIED PERSON\u2019 (QP) to conduct growing trials\u00a0\u00a0",
+  "alternativeHeadline": "Hiring a professional",
   "description": "A **Qualified Person (QP)** is a plant-science expert accredited by IP Australia to design, oversee and certify the growing trials used to prove a new variety m",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-qualified-person-qp",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1012"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "PBR"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ChoosingQualifiedPersonQp",
+      "name": "CHOOSING A \u2018QUALIFIED PERSON\u2019 (QP) to conduct growing trials\u00a0\u00a0",
       "description": "A **Qualified Person (QP)** is a plant-science expert accredited by IP Australia to design, oversee and certify the growing trials used to prove a new variety meets the distinct, uniform and stable (DUS) criteria.\u00a0\u00a0\n\nEvery Plant Breeder\u2019s Right (PBR) application must name an accredited QP for the plant group in question. You must engage a QP even if you do not need to do an Australian growing trial.Finding the right QP can be essential for running a successful growing trial. Potential plant breeders should consider early if there is a relevant QP from the [Qualified Persons Directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0)  or consider if the best option for them is to become a QP themselves.\u00a0\u00a0\n\nQP accreditation lasts three years and is tied to specific plant species or groups. QPs may work in consultant or non-consultant status to support breeders and liaise with IP Australia examiners. QPs support breeders and liaise with IP Australia examiners and can be registered to work as consultant QP\u2019s for multiple applicants. They can also be non-consultant QP\u2019s, overseeing growing trials for their own (or employer\u2019s) plant varieties.\u00a0\n\nIf you have the necessary experience, you can **become** a QP by completing online training, submitting evidence of expertise and paying an accreditation fee. Processing times vary by application volume. Plant breeders have the option of becoming a QP to oversee their own PBR application.\u00a0\u00a0\n\nFor breeders, engaging a QP usually involves searching the public\u00a0 [Qualified Persons Directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0)  and agreeing to the terms of a contract of work directly with an expert.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +82,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Hiring a professional"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ChoosingQualifiedPersonQp",
+      "name": "How to proceed with CHOOSING A \u2018QUALIFIED PERSON\u2019 (QP) to conduct growing trials\u00a0\u00a0",
       "about": {
         "@id": "#the-service"
       },

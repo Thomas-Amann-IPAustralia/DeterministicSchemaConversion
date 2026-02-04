@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "CheckYourIdeaAgainstExistingPatents",
-  "alternativeHeadline": "",
+  "headline": "Check your idea against existing patents.",
+  "alternativeHeadline": "Patent search",
   "description": "A \u2018freedom to operate\u2019 search helps you check whether your product or process might infringe on someone else\u2019s patent. It\u2019s sometimes called a \u2018clearance search",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1011"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": " Patent"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "CheckYourIdeaAgainstExistingPatents",
+      "name": "Check your idea against existing patents.",
       "description": "A \u2018freedom to operate\u2019 search helps you check whether your product or process might infringe on someone else\u2019s patent. It\u2019s sometimes called a \u2018clearance search\u2019.\u00a0\n\nThis kind of search can help identify if there are any existing patent rights that could block you from making, using, or selling your product or invention \u2013 particularly in the countries where you plan to operate.\u00a0\n\nIf products or inventions are found that might be relevant, you may wish to explore options such as changing your design, negotiating a licence, or asking a legal professional to investigate further.\u00a0\n\nYou can do a basic search yourself using free tools like the Australian patent search Australian Patent Search, or global databases like [Espacenet \u2013 patent search](https://worldwide.espacenet.com/). However, a freedom to operate search is more detailed than just checking if something is new - it often requires specialist help to interpret results properly.\u00a0\n\nA freedom to operate search typically only searches patents, and does not include other sources such as published research papers or other businesses selling similar products: the search only focuses on patents on which your idea or product would potentially infringe. \u00a0\n\n**A freedom to operate search does not give you a legal guarantee - but it may help you avoid costly surprises later.**",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +82,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Patent search"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with CheckYourIdeaAgainstExistingPatents",
+      "name": "How to proceed with Check your idea against existing patents.",
       "about": {
         "@id": "#the-service"
       },

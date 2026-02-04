@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "RequestIpAustraliaRemoveUnusedTradeMark2",
-  "alternativeHeadline": "",
+  "headline": "Request IP Australia remove an unused trade mark to defend your right",
+  "alternativeHeadline": "Trade mark non-use action",
   "description": "If someone has accused you of infringing their registered trade mark,and you believe their trade mark has not been used in the market on the goods and/or servic",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1020"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "RequestIpAustraliaRemoveUnusedTradeMark2",
+      "name": "Request IP Australia remove an unused trade mark to defend your right",
       "description": "If someone has accused you of infringing their registered trade mark,and you believe their trade mark has not been used in the market on the goods and/or services specified in their registration for more than 3 years, you may consider submitting a request to remove the trade mark on the basis of non-use.\n\nYou can request removal of a trade mark if you believe the owner:\n\n* hasn't used the trade mark in relation to all or some of their goods and/or services for 3 years\n* never intended to use the trade mark\n* hasn't used the trade mark in good faith.\n\n**When can you file an application for removal for non-use?**\n\nIf you are filing an application for removal on the ground that the owner never intended to use the trade mark, then the application may be made at any time after the subject trade mark has been filed.\n\nIf you are filing an application for removal on the ground that the trade mark has not been used, the following timeframes would apply:\n\n| **For trade marks with a filing date 23 February 2019 or earlier;** | **For trade marks with a filing date 24 February 2019 or later;** |\n| --- | --- |\n| You can file after **5 years** or more have passed since the *filing date* of the application (and if you believe that a trade mark hasn't been used in three years.)  An image of the trade mark register highlighting the date of filing. | You can file after **3 years** have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.)\u00a0 \u00a0  Image of the trade mark register highlighting the Entered on Register date |",
       "areaServed": {
         "@type": "Country",
@@ -70,8 +82,27 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Trade mark non-use action"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Request IP Australia remove an unused trade mark to defend your right",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The application for removal/cessation of protectio...",
+          "text": "The application for removal/cessation of protection for non-use must be filed in an approved form. Complete [this form](https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use)  when applying to have a registered trade mark removed from the register for non-use. This form is also used when applying for the cessation of protection of a protected international trade mark for non-use."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "You can submit the completed form on the [Manage m...",
+          "text": "You can submit the completed form on the [Manage my IP page](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings)  of the IP Australia website."
+        }
+      ]
     },
     {
       "@type": "FAQPage",

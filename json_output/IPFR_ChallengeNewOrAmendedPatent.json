@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ChallengeNewOrAmendedPatent",
-  "alternativeHeadline": "",
+  "headline": "Challenge a new or amended patent",
+  "alternativeHeadline": "Patent opposition",
   "description": "After the publication of acceptance in the Australian Journal of Patents, there is a 3-month window before the patent is \u2018granted\u2019. In this intervening period, ",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1017"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +75,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ChallengeNewOrAmendedPatent",
+      "name": "Challenge a new or amended patent",
       "description": "After the publication of acceptance in the Australian Journal of Patents, there is a 3-month window before the patent is \u2018granted\u2019. In this intervening period, anyone can challenge the decision to grant the patent by making a formal objection, known as an *opposition*, to IP Australia.\u00a0\n\nThere are a variety of reasons for an opposition, however the most common are when someone else believes that your invention is identical or very similar to another patent (and therefore isn\u2019t new and inventive), or that the patentee isn\u2019t the true owner of the invention.\u00a0\n\nHearings can be heard either by written submissions, or as an oral hearing. Although the hearings are relatively informal (compared to court proceedings), and oral and written hearings vary slightly, in both cases you and the other party will both have an opportunity to argue your cases by reference to the law and evidence. You may also elect to be represented by a patent attorney or other legal professional.\u00a0\n\nNotably, hearings are the final step in the opposition process, and they do not always occur. Parties can negotiate and come to a settlement prior to the hearing (thus ending the opposition).",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +83,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Patent opposition"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ChallengeNewOrAmendedPatent",
+      "name": "How to proceed with Challenge a new or amended patent",
       "about": {
         "@id": "#the-service"
       },

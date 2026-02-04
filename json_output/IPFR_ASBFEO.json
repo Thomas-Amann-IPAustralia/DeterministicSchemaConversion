@@ -11,8 +11,8 @@
     "value": "D1003"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -73,6 +73,20 @@
         "alternateName": "ASBFEO",
         "url": "https://www.asbfeo.gov.au"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Access help tailored to resolve business disputes",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "An understanding of what you can expect when deali...",
+          "text": "An understanding of what you can expect when dealing with ASBFEO by reading their [Assistance Charter.](https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf)"
+        }
+      ]
     },
     {
       "@type": "FAQPage",

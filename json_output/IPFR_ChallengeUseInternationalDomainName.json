@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ChallengeUseInternationalDomainName",
-  "alternativeHeadline": "",
+  "headline": "Challenge the use of international domain name",
+  "alternativeHeadline": "Domain Name Dispute (UDRP)",
   "description": "If you believe someone is infringing your trade mark in their website\u2019s domain name, you might be able to dispute this with the relevant dispute provider. This ",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1024"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,34 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Copyright"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +86,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ChallengeUseInternationalDomainName",
+      "name": "Challenge the use of international domain name",
       "description": "If you believe someone is infringing your trade mark in their website\u2019s domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.\u00a0\u00a0\u00a0\n\nThe relevant dispute provider will vary depending on the domain name extension:\u00a0\n\n* If the domain name extension ends in .au, then the relevant dispute policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.\n* If the domain name ends in a generic term like .com, .net or .org, then the relevant policy is the\u00a0[Uniform Dispute Resolution Policy (UDRP)](https://www.icann.org/resources/pages/help/dndr/udrp-en). A full list of approved UDRP providers is available here:\u00a0[List of Approved Dispute Resolution Service Providers - ICANN](https://www.icann.org/resources/pages/providers-6d-2012-02-25-en) \u00a0 The World Intellectual Property Organization (WIPO) is a leading provider.\n* If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country\u2019s Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO.\u00a0[Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)](https://www.wipo.int/amc/en/domains/cctld)\n\nThe World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel\u2019s decisions are put into effect by the registrar (the host of the domain name).\u00a0\u00a0\n\n**Please Note:**\u00a0If the infringing domain name ends in \u2018.au\u2019 then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +94,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Domain Name Dispute (UDRP)"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ChallengeUseInternationalDomainName",
+      "name": "How to proceed with Challenge the use of international domain name",
       "about": {
         "@id": "#the-service"
       },

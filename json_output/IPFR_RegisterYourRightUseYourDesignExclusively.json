@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "RegisterYourRightUseYourDesignExclusively",
-  "alternativeHeadline": "",
+  "headline": "Register your right to use your design exclusively",
+  "alternativeHeadline": "Apply for a design right",
   "description": "If you create a new look for a product, registering the design with IP Australia may grant you exclusive commercial rights. The registration protects the overal",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-right-use-your-design-exclusively",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1014"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Design",
+    "sameAs": "https://www.wikidata.org/wiki/Q1240325"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +75,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "RegisterYourRightUseYourDesignExclusively",
+      "name": "Register your right to use your design exclusively",
       "description": "If you create a new look for a product, registering the design with IP Australia may grant you exclusive commercial rights. The registration protects the overall appearance that results from visual features such as shape, configuration, pattern or ornamentation applied to a product.\u00a0\n\nThe process begins with an online application through [IP Australia\u2019s Online Services](https://portal.ipaustralia.gov.au/login). You upload clear drawings (or photographs) of the design, identify the product it is applied to, choose whether to seek registration immediately or defer registration, and pay the application fee. Australia works on a first-to-file basis under the Designs Act 2003, so applying before you disclose the design publicly can be critical. Once the formalities check is complete, the design is registered and published, and a public record is created\u00a0\n\nRegistration alone does not give you enforceable rights against suspected infringers. You, or any third party, may later request certification to test whether the design is new and distinctive over earlier designs. Only certified designs can be enforced in court; uncertified registrations provide deterrence but not immediate enforceability. For more information about design certification, please see [Request Certification for a Registered Design](https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design)\u00a0\u00a0\n\nA registered design lasts up to ten years: an initial five-year term that can be renewed once for a further five years. A six\u2011month grace period applies for late renewal after the initial term.\u00a0\n\nIf your design has been disclosed to the public before you apply to protect it, you may still be able to secure a design right if you meet the requirements of the grace period. The grace period allows a design to be shared publicly (under certain conditions) without impacting the ability to secure a design right in Australia. It can benefit those who:\u00a0\n\n* Accidentally publish their design\n* Were unaware they needed to file for protection before disclosure.\n\nYou'll need to **submit your application for a design right within 12 months of disclosing your design** if you want to claim the grace period.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +83,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Apply for a design right"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with RegisterYourRightUseYourDesignExclusively",
+      "name": "How to proceed with Register your right to use your design exclusively",
       "about": {
         "@id": "#the-service"
       },

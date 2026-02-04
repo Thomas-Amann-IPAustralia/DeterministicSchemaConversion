@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "RespondOppositionFiledAgainstYourPatent",
-  "alternativeHeadline": "",
+  "headline": "Respond to an opposition filed against your patent",
+  "alternativeHeadline": "Opposition process",
   "description": "A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone oppos",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1007"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +75,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "RespondOppositionFiledAgainstYourPatent",
+      "name": "Respond to an opposition filed against your patent",
       "description": "A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you\u2019ll have a chance to respond through IP Australia\u2019s formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights.\u00a0\n\nThe oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn\u2019t resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision.\u00a0\n\nYou can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +83,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Opposition process"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with RespondOppositionFiledAgainstYourPatent",
+      "name": "How to proceed with Respond to an opposition filed against your patent",
       "about": {
         "@id": "#the-service"
       },

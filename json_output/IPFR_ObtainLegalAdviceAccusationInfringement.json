@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ObtainLegalAdviceAccusationInfringement",
-  "alternativeHeadline": "",
+  "headline": "Obtain legal advice on an accusation of infringment",
+  "alternativeHeadline": "IP attorney or lawyer\u00a0\u00a0",
   "description": "Being accused of IP infringement can be a distressing, and potentially confusing, experience. Having a qualified intellectual property (IP) lawyer or a trade ma",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1004"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ObtainLegalAdviceAccusationInfringement",
+      "name": "Obtain legal advice on an accusation of infringment",
       "description": "Being accused of IP infringement can be a distressing, and potentially confusing, experience. Having a qualified intellectual property (IP) lawyer or a trade marks or patent attorney on your side can help you make sense of an allegation that your product, branding or content is infringing someone else\u2019s IP.\n\nSuch professionals can help:\n\n* explain the claim in plain language\n* assess whether, or to what extent, the accusation has merit\n* outline the full range of ways you may respond, from negotiating a quiet resolution through to defending the matter in court.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of IP professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which would require a lawyer).\u00a0\u00a0\n\nIf you already have a trusted lawyer, trade marks or patent attorney, you might talk to them about finding the right IP professional for your circumstances. Alternatively, you could search the\u00a0[Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm) \u00a0register to find a trade marks or patent attorney or contact your local law society to find a specialist IP lawyer.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +69,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "IP attorney or lawyer"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ObtainLegalAdviceAccusationInfringement",
+      "name": "How to proceed with Obtain legal advice on an accusation of infringment",
       "about": {
         "@id": "#the-service"
       },

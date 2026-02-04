@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "DevelopStrategyManageYourIp",
-  "alternativeHeadline": "",
+  "headline": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
+  "alternativeHeadline": "IP STRATEGY ",
   "description": "You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and ",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1019"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,70 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Patent, Design, PBR, Copyright,  Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
+      "legislationType": "Legislative Instrument"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +122,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "DevelopStrategyManageYourIp",
+      "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
       "description": "You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors\u2019 IP, and planning responses should you experience suspected copying in the future.\u00a0\n\nBy mapping this out early, you may avoid making important decisions under pressure, reduce legal risks and place your business in a stronger position to grow or defend your IP assets.\u00a0\n\nAn IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders\u2019 right and copyright.\u00a0\n\nKey elements often include:\u00a0\n\n* Identifying what IP assets you already have or intend to create.\n* Choosing the best protection tools (e.g. trade mark registration or using non-disclosure agreements and contracts to protect your IP assets).\n* Setting reminders for renewals and annual reviews.\n* Deciding how you will monitor the market for suspected infringement.\n* Outlining who will act and what budget is available if enforcement is needed.",
       "areaServed": {
         "@type": "Country",
@@ -70,8 +130,22 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "IP STRATEGY"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with DEVELOP A STRATEGY TO MANAGE YOUR IP",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "IP strategies can vary in its scope and complexity...",
+          "text": "IP strategies can vary in its scope and complexity depending on a wide range of factors such as the number of IP assets involved, the size of your business and the composition of your IP portfolio. While businesses can take many different approaches in designing their IP strategies, a common starting point is conducting an [IP audit](https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps) to create a clear register of IP assets owned and used by your business."
+        }
+      ]
     },
     {
       "@type": "FAQPage",

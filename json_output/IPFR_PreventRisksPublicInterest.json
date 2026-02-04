@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "PreventRisksPublicInterest",
-  "alternativeHeadline": "",
+  "headline": "Prevent risks to public interest",
+  "alternativeHeadline": "Report IP crime or safety concerns",
   "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.\u00a0\u00a0\u00a0\n\nHowever, sometimes IP infringement is accompanied by other serious issues, such ",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1057"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "PreventRisksPublicInterest",
+      "name": "Prevent risks to public interest",
       "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.\u00a0\u00a0\u00a0\n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.\u00a0\u00a0\u00a0\n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement.",
       "areaServed": {
         "@type": "Country",
@@ -70,7 +69,7 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Report IP crime or safety concerns"
       }
     }
   ],

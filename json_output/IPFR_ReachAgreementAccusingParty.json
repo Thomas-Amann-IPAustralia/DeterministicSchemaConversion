@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ReachAgreementAccusingParty",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nParties involv",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Reach an agreement with the accusing party",
+  "alternativeHeadline": "Negotiation",
+  "description": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between part",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1014"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,20 +61,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ReachAgreementAccusingParty",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nParties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.\u00a0\n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other party involved or find it challenging to communicate with them. In these cases, representatives such as lawyers are commonly sought to provide legal advice and assistance.\u00a0\u00a0\n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their legal representatives to do so on their behalf.",
+      "name": "Reach an agreement with the accusing party",
+      "description": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.\u00a0\n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other party involved or find it challenging to communicate with them. In these cases, representatives such as lawyers are commonly sought to provide legal advice and assistance.\u00a0\u00a0\n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their legal representatives to do so on their behalf.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Negotiation"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ReachAgreementAccusingParty",
+      "name": "How to proceed with Reach an agreement with the accusing party",
       "about": {
         "@id": "#the-service"
       },

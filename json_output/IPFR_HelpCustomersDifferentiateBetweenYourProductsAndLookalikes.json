@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "HelpCustomersDifferentiateBetweenYourProductsAndLookalikes",
-  "alternativeHeadline": "",
+  "headline": "Help customers differentiate between your products and lookalikes  ",
+  "alternativeHeadline": "Educate your customers ",
   "description": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of bein",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1006"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "HelpCustomersDifferentiateBetweenYourProductsAndLookalikes",
+      "name": "Help customers differentiate between your products and lookalikes  ",
       "description": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied.\u00a0\n\nWhile it\u2019s a legal question as to whether something infringes your rights, it\u2019s often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart \u2014 and how to identify a fake \u2014 can reduce that risk.\u00a0\n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues.\u00a0\n\nCustomer education can include:\u00a0\n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools\u2014such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the \u00ae symbol to indicate a\u00a0*trade mark*\u00a0has been registered, or using a \u00a9 symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +69,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Educate your customers"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with HelpCustomersDifferentiateBetweenYourProductsAndLookalikes",
+      "name": "How to proceed with Help customers differentiate between your products and lookalikes  ",
       "about": {
         "@id": "#the-service"
       },

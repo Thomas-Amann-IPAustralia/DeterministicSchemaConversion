@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "RequestIpAustraliaConfirmsRegisteredDesignValid",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nYou can reques",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Request IP Australia confirms a registered design is valid",
+  "alternativeHeadline": "Design certification\u00a0",
+  "description": "You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1017"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Design",
+    "sameAs": "https://www.wikidata.org/wiki/Q1240325"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,20 +75,20 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "RequestIpAustraliaConfirmsRegisteredDesignValid",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nYou can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia\u2019s examiner~~\u2019~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be \u2018certified\u2019.\u00a0\n\nExamination is often requested by the design\u2019s owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design.\u00a0\n\nIf an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.\u00a0\u00a0\n\n**You can only take formal action to protect your design right \u2014 like sending a letter of demand (or cease-and-desist letter) \u2014 after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see** [**Unjustified Threats**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat).",
+      "name": "Request IP Australia confirms a registered design is valid",
+      "description": "You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia\u2019s examiner~~\u2019~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be \u2018certified\u2019.\u00a0\n\nExamination is often requested by the design\u2019s owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design.\u00a0\n\nIf an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.\u00a0\u00a0\n\n**You can only take formal action to protect your design right \u2014 like sending a letter of demand (or cease-and-desist letter) \u2014 after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see** [**Unjustified Threats**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat).",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Design certification"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with RequestIpAustraliaConfirmsRegisteredDesignValid",
+      "name": "How to proceed with Request IP Australia confirms a registered design is valid",
       "about": {
         "@id": "#the-service"
       },

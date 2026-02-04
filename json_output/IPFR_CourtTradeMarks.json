@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "CourtTradeMarks",
-  "alternativeHeadline": "",
-  "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf other effor",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "Seek binding, authoritative decisions",
+  "alternativeHeadline": "Court - Trade mark",
+  "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court i",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "D1005"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,16 +74,55 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "CourtTradeMarks",
-      "description": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful, and obtaining the outcome you seek is never guaranteed.\u00a0\n\n**It is prudent to seek legal advice before deciding whether to start a court action.** You will likely also need assistance from an IP lawyer should you decide to start a court action.\u00a0\u00a0\u00a0\n\nCourts can hear many types of trade mark disputes including:\u00a0\u00a0\n\n* actions against someone for infringing your trade mark\n* matters relating to someone else\u2019s trade mark registration\n* appeals from decisions made by IP Australia.\n\nTrade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.",
+      "name": "Seek binding, authoritative decisions",
+      "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful, and obtaining the outcome you seek is never guaranteed.\u00a0\n\n**It is prudent to seek legal advice before deciding whether to start a court action.** You will likely also need assistance from an IP lawyer should you decide to start a court action.\u00a0\u00a0\u00a0\n\nCourts can hear many types of trade mark disputes including:\u00a0\u00a0\n\n* actions against someone for infringing your trade mark\n* matters relating to someone else\u2019s trade mark registration\n* appeals from decisions made by IP Australia.\n\nTrade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Court - Trade mark"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Seek binding, authoritative decisions",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Here are some things you might consider before you...",
+          "text": "Here are some things you might consider before you proceed with legal action in a trade mark matter."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Finding an IP lawyer for advice and representati...",
+          "text": "**Finding an IP lawyer for advice and representation**\\\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have serious impacts on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Consider your goals before deciding to start a l...",
+          "text": "**Consider your goals before deciding to start a legal claim**\\\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Decide who you intend to commence proceedings ag...",
+          "text": "**Decide who you intend to commence proceedings against**\\\nMore than one person can be liable for IP infringement. A legal representative can help you decide who should be a party to a dispute."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Consider the impact of publicity**\\\nUnless cover...",
+          "text": "**Consider the impact of publicity**\\\nUnless covered by a confidentiality order, evidence and documents read in open court will become available to the public."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "**Gather all your documents**\\\nBefore seeking lega...",
+          "text": "**Gather all your documents**\\\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences and correspondence that you think might be relevant to your case. You can give these to your lawyer to review."
+        }
+      ]
     },
     {
       "@type": "FAQPage",

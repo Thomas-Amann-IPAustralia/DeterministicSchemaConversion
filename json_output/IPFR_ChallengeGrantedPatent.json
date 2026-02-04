@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ChallengeGrantedPatent",
-  "alternativeHeadline": "",
+  "headline": "Challenge a granted patent ",
+  "alternativeHeadline": "Patent Re-Examination ",
   "description": "Requesting a patent re-examination is a way to challenge a granted Australian patent by asking IP Australia to reassess whether the invention meets the legal re",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1009"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,23 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +75,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ChallengeGrantedPatent",
+      "name": "Challenge a granted patent ",
       "description": "Requesting a patent re-examination is a way to challenge a granted Australian patent by asking IP Australia to reassess whether the invention meets the legal requirements \u2013 like being new or inventive \u2013 for being patented.\u00a0\n\nIf someone accuses you of infringing their patent, and you believe the patent may not be valid, re-examination may help overturn it or limit its scope. This can be a cheaper, faster alternative than going to court.\u00a0\n\nYou don\u2019t have to be in a formal dispute with a patent holder to use this option. Anyone (with a reasonable justification) can request a patent re-examination at any time after it has been granted.\u00a0\n\nThe request must explain why the patent may be invalid and refer to relevant evidence, such as published documents that show the invention was already known. IP Australia will re-examine the patent and, decide whether to revoke or amend it.\u00a0\n\nIf the patent hasn\u2019t been granted yet, it may be possible to challenge it through IP Australia\u2019s opposition and hearing process instead ([Challenge a new or amended patent | IP Australia First Response)](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent).\u00a0\n\nIn the case you wish to dispute the ownership of the patent, it may also be able to challenge the ownership of the patent through IP Australia\u2019s opposition and hearing process.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +83,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Patent Re-Examination"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with ChallengeGrantedPatent",
+      "name": "How to proceed with Challenge a granted patent ",
       "about": {
         "@id": "#the-service"
       },

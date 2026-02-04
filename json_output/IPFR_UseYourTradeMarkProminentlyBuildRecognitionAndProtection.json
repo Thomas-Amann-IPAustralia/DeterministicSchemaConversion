@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "UseYourTradeMarkProminentlyBuildRecognitionAndProtection",
-  "alternativeHeadline": "",
+  "headline": "Use your trademark prominently to build recognition and protection",
+  "alternativeHeadline": "Reinforce your right",
   "description": "Using your trade mark in a uniform recognisable way helps customers link the trade mark with your goods or services and shows that you claim the brand as yours.",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "C1004"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,10 +39,22 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Trade mark, Unregistered-tm"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "legislationType": "Legislative Instrument"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -62,7 +74,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "UseYourTradeMarkProminentlyBuildRecognitionAndProtection",
+      "name": "Use your trademark prominently to build recognition and protection",
       "description": "Using your trade mark in a uniform recognisable way helps customers link the trade mark with your goods or services and shows that you claim the brand as yours. On the other hand, not using your trade mark on the claimed goods or services following registration, or adopting a trade mark that is very different from the registered trade mark may render your trade mark vulnerable to removal from the register for non-use.\u00a0\n\nFor consistent, strategic use of your trade mark, you would need to think about the key elements that constitute the trade mark and apply these elements coherently. Having the same spelling, layout, colours and positioning across public touch-points, such as packaging and marketing materials, can help your consumers and competitors to recognise your brand and link it to your goods or services.\u00a0\u00a0\n\nAdding the \u2018TM\u2019 symbol for unregistered marks or the \u2018\u00ae\u2019 symbol once registered also signals your intent to use the mark as a trade mark and a badge of origin distinguishing your goods or services from those of competitors.\u00a0\n\nYou may develop simple brand guidelines for consistent usage of your trade mark. You may provide training to your staff using these brand guidelines, and establish review processes for authorised users such as your suppliers, distributors and licensees to ensure your trade mark is being used in a manner that\u2019s consistent with your branding strategy.",
       "areaServed": {
         "@type": "Country",
@@ -70,12 +82,12 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "Reinforce your right"
       }
     },
     {
       "@type": "HowTo",
-      "name": "How to proceed with UseYourTradeMarkProminentlyBuildRecognitionAndProtection",
+      "name": "How to proceed with Use your trademark prominently to build recognition and protection",
       "about": {
         "@id": "#the-service"
       },

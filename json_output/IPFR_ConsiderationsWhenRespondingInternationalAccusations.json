@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "ConsiderationsWhenRespondingInternationalAccusations",
-  "alternativeHeadline": "",
+  "headline": "Considerations when responding to international accusations",
+  "alternativeHeadline": "International disputes",
   "description": "If you are being accused of infringing someone\u2019s IP\u00a0*outside*Australia, there may be some specific considerations to bear in mind \u2013 beyond those when dealing wi",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "B1016"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-03",
-  "dateModified": "2026-02-03",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Any dispute"
   },
   "citation": [],
   "publisher": {
@@ -62,7 +61,7 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "ConsiderationsWhenRespondingInternationalAccusations",
+      "name": "Considerations when responding to international accusations",
       "description": "If you are being accused of infringing someone\u2019s IP\u00a0*outside*Australia, there may be some specific considerations to bear in mind \u2013 beyond those when dealing with Australian infringement issues. The location of the alleged offending might affect how you choose to respond.\u00a0\u00a0\n\n**This page provides an overview of considerations when being accused of infringing overseas.**\u00a0\u00a0\u00a0\n\nDifferent countries have different IP laws. For registered rights, Australian IP registration does not specifically provide protection in overseas markets. It may be possible to infringe someone\u2019s IP in an overseas market even if you hold an Australian IP registration or are not infringing anyone else\u2019s IP rights in Australia.\u00a0\n\nAt a general level, IP infringement considerations can in many jurisdictions be quite similar to those which apply in Australia, and in considering your options may explore matters such as:\u00a0\n\n* whether you have engaged in any activities within the relevant overseas market\n* whether you have otherwise done any of the things that have been alleged against you\n* whether the person making the allegations against you holds the IP rights they say they hold\n* whether the things you have done involve infringement of IP rights held by that person (applying the laws of the relevant jurisdiction)\n* what would be a good commercial outcome for you in resolving or addressing the allegations made against you\n* whether you may be entitled to register your own IP in the relevant country to bolster you position against the other person\n* whether you are open to engaging in negotiations, or alternative dispute resolution processes such as mediation, to reach an agreement with the person making allegations against you\n* whether you may be prepared to go to court or similar to protect your commercial position regarding the allegations against you\n* what the cost implications for any option available to you may be.\n\nIt is important to understand that the law and legal processes in each jurisdiction will vary around the world. What may not be considered IP infringement in one country, may potentially be in another. Similarly, what makes for a good strategy to address infringement allegations in one country, may not operate in exactly the same way in another.\u00a0\n\nThe IP First Response tool provides information about Australian IP law. If you are accused of infringing IP outside of Australia, you may wish to speak to a lawyer who is qualified to advise on the law of that country in which you are being accused of IP infringement. Australian IP lawyers and IP attorneys may be able to help you with referrals for foreign lawyers and otherwise assist you to communicate and engage with foreign lawyers.",
       "areaServed": {
         "@type": "Country",
@@ -70,8 +69,27 @@
       },
       "serviceOperator": {
         "@type": "Organization",
-        "name": "Third-Party Provider"
+        "name": "International disputes"
       }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Considerations when responding to international accusations",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "The steps and procedures involved in how to respon...",
+          "text": "The steps and procedures involved in how to respond to accusations of IP infringement from overseas would vary heavily depending on individual circumstances, laws and industry practices in the relevant overseas jurisdiction."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Some international IP offices provide information ...",
+          "text": "Some international IP offices provide information on enforcement in their jurisdictions and may have services to help you with dispute resolution or enforcement. You can find out the relevant IP office and what services they provide using the [Directory of Intellectual Property Offices](https://www.wipo.int/directory/en/urls.jsp)."
+        }
+      ]
     },
     {
       "@type": "FAQPage",
