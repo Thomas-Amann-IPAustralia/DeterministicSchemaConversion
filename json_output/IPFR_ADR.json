@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Alternative dispute resolution (ADR)"
       }
     },
@@ -163,6 +163,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anybody who is a party to a dispute, although some ADR processes will have additional requirements.\u00a0\n\nADR generally requires engagement from both parties to the dispute. It can be easier to use ADR if:\u00a0\u00a0\n\n* Parties agree to resolve their dispute through ADR. However, some ADR providers allow one party to initiate an ADR process even without agreement from the other party.\n* There is a contract in place whereby parties agree to resolve disputes through ADR. You might wish to consider including ADR clauses in your contracts in case you would like to resolve any future IP disputes with your business partners through ADR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute(s).\n* Facilitator/s (Mediator, arbitrator, neutral evaluator, etc.).\n* (Optional) Legal representation for one or more of the participants, noting that some ADR service providers limit the participation of legal representation in dispute resolution processes."
           }
         }
       ]

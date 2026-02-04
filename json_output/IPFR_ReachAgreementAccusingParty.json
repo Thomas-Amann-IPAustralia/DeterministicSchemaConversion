@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Negotiation"
       }
     },
@@ -163,6 +163,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Any party to an IP dispute willing to engage in good faith dialogue. Some businesses choose to use commercial negotiation even when they are unsure whether infringement has occurred."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You, an individual or business accused of IP infringement.\n* The party who has accused you of IP infringement, often the owner or authorised user of an IP right.\n* Legal representatives (lawyers or in some cases IP attorneys) may assist with drafting, advising, or attending discussions.\n* Business advisors, franchise consultants or other IP professionals may help facilitate talks or propose terms."
           }
         }
       ]

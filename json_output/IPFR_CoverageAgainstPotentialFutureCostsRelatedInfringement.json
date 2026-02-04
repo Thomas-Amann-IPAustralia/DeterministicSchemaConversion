@@ -37,10 +37,32 @@
     "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
     "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
   },
-  "about": {
-    "@type": "Thing",
-    "name": "Trade mark, Patent, Design, PBR, Copyright"
-  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    },
+    {
+      "@type": "Thing",
+      "name": "Patent",
+      "sameAs": "https://www.wikidata.org/wiki/Q253623"
+    },
+    {
+      "@type": "Thing",
+      "name": "Design",
+      "sameAs": "https://www.wikidata.org/wiki/Q1240325"
+    },
+    {
+      "@type": "Thing",
+      "name": "Pbr"
+    },
+    {
+      "@type": "Thing",
+      "name": "Copyright",
+      "sameAs": "https://www.wikidata.org/wiki/Q12978"
+    }
+  ],
   "citation": [
     {
       "@type": "Legislation",
@@ -52,7 +74,7 @@
       "@type": "Legislation",
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -64,7 +86,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -76,7 +98,7 @@
       "@type": "Legislation",
       "name": "Designs Regulations 2004",
       "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -88,7 +110,7 @@
       "@type": "Legislation",
       "name": "Plant Breeder\u2019s Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -100,7 +122,7 @@
       "@type": "Legislation",
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -129,7 +151,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "IP insurance"
       }
     },
@@ -209,6 +231,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Given that IP insurance is marketed towards IP holders, any party holding or in the process of attaining IP can make use of IP insurance, although most commercial insurance products are directed towards trade marks or patents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You (the IP holder)\n* The insurer\n* Your legal counsel (if any)"
           }
         }
       ]

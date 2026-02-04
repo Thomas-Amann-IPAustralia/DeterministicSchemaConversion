@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Negotiation"
       }
     },
@@ -168,6 +168,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anyone whose IP is being infringed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP right owner/s or authorised users of IP.\n* Alleged infringer(s).\n* (Optional) IP professionals acting on parties\u2019 behalf."
           }
         }
       ]

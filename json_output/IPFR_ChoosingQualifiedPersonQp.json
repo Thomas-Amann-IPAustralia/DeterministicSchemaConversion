@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "PBR"
+    "name": "Pbr"
   },
   "citation": [
     {
@@ -52,7 +52,7 @@
       "@type": "Legislation",
       "name": "Plant Breeder\u2019s Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -81,7 +81,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Hiring a professional"
       }
     },
@@ -171,6 +171,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Plant breeders or PBR applicants who need an accredited expert for their trial.\n* Experienced plant scientists seeking accreditation to act as a consultant QP.\n* Breeders with the relevant experience seeking to become a non-consultant QP for their own plant breed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The plant breeder or applicant.\n* An accredited Qualified Person (QP).\n* IP Australia PBR examiners."
           }
         }
       ]

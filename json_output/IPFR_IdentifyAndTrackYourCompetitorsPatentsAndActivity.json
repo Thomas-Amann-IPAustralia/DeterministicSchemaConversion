@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Intellectual Property Right"
   },
   "citation": [],
   "publisher": {
@@ -69,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Third-Party Provider"
       }
     },
@@ -169,6 +168,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "This option is available to:\u00a0\n\n* Anyone planning to launch a new product or brand\n* Businesses entering new markets or industries\n* Existing IP owners checking for similar or competing filings\n* Investors or partners conducting due diligence before commercialisation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* **You**\u00a0(as the business or IP rights holder).\n* **IP professionals**\u00a0such as patent attorneys or trademark attorneys.\n* **Search service providers**\u00a0(for example, commercial IP databases, analytics tools).\n* **Registry bodies**\u00a0like IP Australia or international equivalents (in some cases due to the provision of IP databases and search tools).\n* **Legal advisors**\u00a0(optional) to provide opinions or manage enforcement follow-up."
           }
         }
       ]

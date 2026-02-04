@@ -37,10 +37,18 @@
     "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
     "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
   },
-  "about": {
-    "@type": "Thing",
-    "name": "Trade mark, Copyright"
-  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    },
+    {
+      "@type": "Thing",
+      "name": "Copyright",
+      "sameAs": "https://www.wikidata.org/wiki/Q12978"
+    }
+  ],
   "citation": [
     {
       "@type": "Legislation",
@@ -52,7 +60,7 @@
       "@type": "Legislation",
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -64,7 +72,7 @@
       "@type": "Legislation",
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -93,7 +101,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Domain Name Dispute (UDRP)"
       }
     },
@@ -168,6 +176,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anyone with competing legal rights to a domain name licence (including the ownership of a relevant trade mark). Whether you have the right to the licence will depend on the dispute resolution policy.\u00a0\n\nWhen using the UDRP your trade mark can be registered anywhere in the world, including Australia. Some specific country code domains might require that your trade mark is registered in that country."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A trade mark owner.\n* A domain name licence holder (registrant).\n* A dispute panel of one or 3 members selected by WIPO (in the case of 3 panel members, the complainant and respondent each select one).\n* Legal representatives (if you choose to not self-represent).\n* The registrar (business which registers and licences the domain name) is not involved in the dispute (beyond confirming certain administrative details), but will enact the decision."
           }
         }
       ]

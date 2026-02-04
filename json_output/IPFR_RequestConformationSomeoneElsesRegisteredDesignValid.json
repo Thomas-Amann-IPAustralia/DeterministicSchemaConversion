@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Intellectual Property Right"
   },
   "citation": [],
   "publisher": {
@@ -69,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Third-Party Provider"
       }
     },
@@ -154,6 +153,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Any person or business, even if they are **not** the owner of the design, may request certification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Design right owner, who will be notified.\n* IP Australia\u2019s design examiner makes the examination decision.\n* The person or business who requests the examination.\n* Optional: IP lawyer or patent attorney."
           }
         }
       ]

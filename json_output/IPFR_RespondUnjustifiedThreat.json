@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Court"
       }
     },
@@ -143,6 +143,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anyone aggrieved by an unjustified threat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You (the person receiving or aggrieved by the threat).\n* The person or business making the threat.\n* Any legal professionals engaged by you or the other parties involved.\n* A court (Federal Court of Australia or Federal Circuit and Family Court of Australia, or (for copyright matters) the Supreme Court of a State or Territory)."
           }
         }
       ]

@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Designs Regulations 2004",
       "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Design certification"
       }
     },

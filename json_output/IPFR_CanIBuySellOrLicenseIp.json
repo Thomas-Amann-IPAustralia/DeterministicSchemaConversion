@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Selling or licensing"
       }
     }

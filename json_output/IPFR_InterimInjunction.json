@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Interim court injuction order"
       }
     },
@@ -148,6 +148,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Interim injunctions are available for many matters. For IP infringement actions, you'll usually need to clearly own an IP right."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP owner\n* Infringing (allegedly) parties\n* Court (typically a single judge)\n* Legal representatives (if engaged)"
           }
         }
       ]

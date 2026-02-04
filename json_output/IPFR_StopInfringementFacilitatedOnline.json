@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Intellectual Property Right"
   },
   "citation": [],
   "publisher": {
@@ -69,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Third-Party Provider"
       }
     },
@@ -144,6 +143,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Some mechanisms offered by platforms may require you to be a seller or user with a valid account. However, access to specific services and complaint mechanisms can vary in accordance with each platform\u2019s terms and conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP rights owner(s).\n* Websites or online platforms including e-commerce or advertising platform(s).\n* Legal professionals (optional).\n* IP Monitoring services (optional)."
           }
         }
       ]

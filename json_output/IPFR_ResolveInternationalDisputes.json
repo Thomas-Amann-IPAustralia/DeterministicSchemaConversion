@@ -37,10 +37,37 @@
     "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
     "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
   },
-  "about": {
-    "@type": "Thing",
-    "name": "Trade mark, Patent, Design, PBR, Copyright,  Unregistered-tm"
-  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    },
+    {
+      "@type": "Thing",
+      "name": "Patent",
+      "sameAs": "https://www.wikidata.org/wiki/Q253623"
+    },
+    {
+      "@type": "Thing",
+      "name": "Design",
+      "sameAs": "https://www.wikidata.org/wiki/Q1240325"
+    },
+    {
+      "@type": "Thing",
+      "name": "Pbr"
+    },
+    {
+      "@type": "Thing",
+      "name": "Copyright",
+      "sameAs": "https://www.wikidata.org/wiki/Q12978"
+    },
+    {
+      "@type": "Thing",
+      "name": "Unregistered-tm",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    }
+  ],
   "citation": [
     {
       "@type": "Legislation",
@@ -52,7 +79,7 @@
       "@type": "Legislation",
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -64,7 +91,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -76,7 +103,7 @@
       "@type": "Legislation",
       "name": "Designs Regulations 2004",
       "url": "https://www.legislation.gov.au/F2004B00136/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -88,7 +115,7 @@
       "@type": "Legislation",
       "name": "Plant Breeder\u2019s Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     },
     {
       "@type": "Legislation",
@@ -100,7 +127,7 @@
       "@type": "Legislation",
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -129,7 +156,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "World Intellectual Property Organization",
         "alternateName": "WIPO"
       }
@@ -225,6 +252,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anybody who is a party to a dispute. However, ADR options, including those provided by the WIPO Center, generally require engagement from both parties to the dispute. It can be easier to use their services if:\u00a0\n\n* Parties agree to resolve their dispute through the WIPO Center \u2014 However, the WIPO Center allows one party to initiate mediation by submitting\u00a0[a unilateral request for mediation](https://www3.wipo.int/amc-forms/en/adr/unilateral-mediation).\n* There is a contract in place whereby parties agree to resolve disputes through the WIPO Center. You might wish to consider including [ADR clauses in your contracts](https://www.wipo.int/amc/en/clauses/index.html)  in case you would like to resolve your future IP disputes with your business partners through ADR at the WIPO Center."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute\n* WIPO Center/case manager\n* Facilitator/s (mediator, arbitrator, and/or expert)\n* (Optional) Legal representation for one or more of the participants"
           }
         }
       ]

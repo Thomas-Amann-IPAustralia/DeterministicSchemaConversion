@@ -39,7 +39,8 @@
   },
   "about": {
     "@type": "Thing",
-    "name": " Patent"
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
   },
   "citation": [
     {
@@ -52,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -81,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Patent search"
       }
     },
@@ -171,6 +172,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Any individual or business planning to launch a new product or process.\n* Anyone concerned their innovation may overlap with existing patent rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The business or person planning to launch a product or service.\n* Optional: A patent attorney to conduct the search and provide analysis.\n* Optional: Business advisors or investors who want to understand commercial risks."
           }
         }
       ]

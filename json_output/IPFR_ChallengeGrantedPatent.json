@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Patent Re-Examination"
       }
     },
@@ -169,6 +169,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Anyone who believes a granted Australian patent is invalid.\n* You don\u2019t need to be accused of infringement or have any formal relationship with the patent owner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The person or business requesting the re-examination.\n* The patent holder.\n* IP Australia, who reviews the request and makes the decision.\n* Optional: Legal professionals such as patent attorneys."
           }
         }
       ]

@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Intellectual Property Right"
   },
   "citation": [],
   "publisher": {
@@ -69,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Third-Party Provider"
       }
     },
@@ -159,6 +158,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "An IP rights owner and any other person with a right to sublicense IP rights (as long as that person complies with any restrictions that may apply to their right to sublicense those IP rights)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP rights owner \u2013 You or any other person with a right to sublicense.\n* Licensee \u2013 The party interested in using your IP.\n\nOften used:\u00a0\n\n* Legal professionals \u2013 Often involved to draft and negotiate terms, able to confirm extent and details of various IP rights in multiple jurisdictions, sometimes able to assist with determining the value/price the IP being licensed.\n* Business advisers \u2013 For commercialisation or partnership strategy advice that falls outside of legal and IP domains."
           }
         }
       ]

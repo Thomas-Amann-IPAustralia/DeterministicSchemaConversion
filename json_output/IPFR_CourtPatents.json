@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Court - Patent"
       }
     },
@@ -172,6 +172,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "For infringement actions, the owner of the patent usually starts the infringement action. In Australia, an exclusive licensee also has the right to start infringement proceedings.\u00a0\u00a0\n\nAny party can challenge the validity of a patent and apply for it to be revoked in whole or in part."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute\n* Lawyers\n* Witnesses\n* A judge"
           }
         }
       ]

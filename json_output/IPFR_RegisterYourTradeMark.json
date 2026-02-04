@@ -39,7 +39,8 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Trade mark"
+    "name": "Trade Mark",
+    "sameAs": "https://www.wikidata.org/wiki/Q165196"
   },
   "citation": [
     {
@@ -52,7 +53,7 @@
       "@type": "Legislation",
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -81,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Apply for a trade mark"
       }
     },

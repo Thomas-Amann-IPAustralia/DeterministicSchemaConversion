@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Gauge the situation"
       }
     },
@@ -158,6 +158,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Anyone accused of infringing IP, particularly where the claim seems unfounded\n* People who want time to gather evidence and obtain legal advice before making a move."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The person or business alleging infringement\n* You\n* (Optional) An IP lawyer or IP attorney who can help you with assessing the situation and advise you on your options."
           }
         }
       ]

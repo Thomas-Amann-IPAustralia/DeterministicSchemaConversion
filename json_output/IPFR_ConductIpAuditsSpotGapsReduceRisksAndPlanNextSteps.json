@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "IP Audit"
       }
     },
@@ -138,6 +138,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Any IP rights holder or authorised user managing IP assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Business owner or employee/s leading the audit.\n* Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers."
           }
         }
       ]

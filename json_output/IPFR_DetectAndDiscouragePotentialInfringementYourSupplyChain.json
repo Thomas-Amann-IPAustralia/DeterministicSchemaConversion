@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Monitor supply chain"
       }
     },
@@ -182,6 +182,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Any IP rights holders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The IP right owner or authorised user.\n* Suppliers, manufacturers and logistics partners.\n* Private monitoring or brand\u2011protection service providers (optional).\n* Australian Border Force officers (when the Notice of Objection scheme is used).\n* IP lawyers or attorneys for legal and strategic advice (optional)."
           }
         }
       ]

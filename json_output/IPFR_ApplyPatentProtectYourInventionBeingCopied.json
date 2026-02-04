@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Apply for a patent"
       }
     },
@@ -177,6 +177,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Anyone who has developed a new invention that is not yet publicly disclosed.\n* Individuals, businesses or researchers who want exclusive rights to their innovation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The applicant (you or your business).\n* IP Australia, who examines and grants patents.\n* Optional: a registered patent attorney who can draft and file your application.\n* Optional: competitors or third parties who may oppose the patent."
           }
         }
       ]

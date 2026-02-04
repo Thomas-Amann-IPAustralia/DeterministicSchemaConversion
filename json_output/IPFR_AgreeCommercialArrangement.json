@@ -39,8 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+    "name": "Intellectual Property Right"
   },
   "citation": [],
   "publisher": {
@@ -69,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Third-Party Provider"
       }
     },
@@ -169,6 +168,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anyone whose IP is being infringed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP right owner/s or authorised users of IP.\n* Alleged infringer(s).\n* (Optional) IP professionals acting on parties\u2019 behalf."
           }
         }
       ]

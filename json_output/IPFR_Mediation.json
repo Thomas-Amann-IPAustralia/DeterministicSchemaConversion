@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Mediation"
       }
     },
@@ -231,6 +231,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anybody who is a party to a dispute.\u00a0\u00a0\n\nMediation generally requires engagement from both parties to the dispute, though some mediation providers will allow a single party to submit a unilateral request for mediation and then encourage the other party to participate in mediation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute(s).\n* Mediator, whose\u00a0[role](https://www.disputes.vic.gov.au/about-us/mediation/mediation-faqs) is to:\n  + control the process\n  + create an environment where parties have a chance to hear and listen to each other in a respectful manner\n  + help keep emotions in check\n  + guide parties through discussions about the issues\n  + make sure all relevant issues are covered\n  + help parties explore a variety of options.\n* (Optional) Legal representation for one or more of the participants, noting that some mediation providers limit the participation of legal representation in dispute resolution processes."
           }
         }
       ]

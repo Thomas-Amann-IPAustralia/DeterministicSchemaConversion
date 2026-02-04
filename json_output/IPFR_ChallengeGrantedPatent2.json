@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Patent re-examination"
       }
     },
@@ -159,6 +159,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Any person (in their capacity of natural or legal persons) may request re-examination of a patent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The challenging party (you).\n* The patent holder.\n* IP Australia (patent examiner and supervising examiner).\n\nNotably, after the initial request filed by the challenging party, all subsequent proceedings are between IP Australia (a patent examiner and a supervising examiner) and the patent holder."
           }
         }
       ]

@@ -37,10 +37,18 @@
     "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
     "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
   },
-  "about": {
-    "@type": "Thing",
-    "name": "Trade mark, Unregistered-tm"
-  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    },
+    {
+      "@type": "Thing",
+      "name": "Unregistered-tm",
+      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+    }
+  ],
   "citation": [
     {
       "@type": "Legislation",
@@ -52,7 +60,7 @@
       "@type": "Legislation",
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -81,7 +89,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Monitor Competitors ' IP"
       }
     },
@@ -166,6 +174,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anyone who owns or is authorised to use a registered or unregistered trade mark and wants to stay alerted to possible conflicts.\u00a0\n\nAnyone planning to register a trade mark or launch a brand can also monitor filings to observe trends in trade mark filings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The trade mark owner or authorised user\n* Optional: commercial watch service provider\n* Optional: IP professionals such as trade mark attorneys or IP lawyers for advice, enforcement action or monitoring services."
           }
         }
       ]

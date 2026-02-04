@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "De-escalate"
       }
     },
@@ -153,6 +153,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Anyone who has been accused of using someone else\u2019s IP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You or your team.\n* The party accusing you of using their IP, usually an IP owner or their representative.\n* (Optional) Your business partners such as suppliers, staff or online platforms if they need to help remove or change things.\n* (Optional) Legal professionals such as an IP lawyer, patent attorney or trade mark attorney."
           }
         }
       ]

@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any dispute"
+    "name": "Any Dispute"
   },
   "citation": [],
   "publisher": {
@@ -68,7 +68,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Guage the situation"
       }
     },
@@ -158,6 +158,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Both large and small businesses use this strategy frequently \u2013 only pursuing enforcement when it is necessary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You\n* an IP professional \u2013 professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement."
           }
         },
         {

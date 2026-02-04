@@ -53,7 +53,7 @@
       "@type": "Legislation",
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Legislative Instrument"
+      "legislationType": "Regulations"
     }
   ],
   "publisher": {
@@ -82,7 +82,7 @@
         "name": "Australia"
       },
       "serviceOperator": {
-        "@type": "Organization",
+        "@type": "GovernmentOrganization",
         "name": "Notification of prior art"
       }
     },
@@ -177,6 +177,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Any individual or business; there is no need to own a patent or be directly affected.\n* This can only be submitted within the allowed time window."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You (or your representative) lodging the section 27 notice.\n* The patent applicant (who will be notified of your submission).\n* The IP Australia examiner handling the patent application.\n* Optional: Patent attorney or IP professional assisting with your notice."
           }
         }
       ]
