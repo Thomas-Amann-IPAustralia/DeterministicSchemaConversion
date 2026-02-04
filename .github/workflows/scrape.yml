@@ -36,8 +36,11 @@ jobs:
           git config --global user.name "IPFR Scraper Bot"
           git config --global user.email "actions@github.com"
           
-          # Check if the IPFR-Webpages folder has changes
+          # Add the Markdown folder
           git add IPFR-Webpages/
+          
+          # Add the NEW HTML folder
+          git add IPFR-Webpages-html/
           
           # Only commit if there are staged changes
           if ! git diff-index --quiet HEAD; then
