@@ -41,7 +41,6 @@ LEGISLATION_MAP = {
     ]
 }
 
-# UPDATED: Added sameAs links to help machines resolve the entity despite the placeholder name
 PROVIDER_MAP = {
     "ASBFEO": {
         "@type": "GovernmentOrganization",
@@ -121,33 +120,44 @@ def load_csv_metadata(csv_path):
         with open(csv_path, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
             rows = list(reader)
+            print(f"DEBUG: Loaded {len(rows)} rows from CSV.")
     except Exception as e:
         print(f"Error reading CSV: {e}")
     return rows
 
 def find_metadata_row(md_content, filename, csv_rows):
-    # 1. PageURL Match (Most Accurate)
+    """
+    UPDATED: More robust matching logic to ensure CSV rows are found.
+    """
+    # 1. PageURL Match (Exact or approximate)
     url_match = re.search(r'PageURL:\s*\"\[(.*?)\]', md_content)
     if url_match:
         page_url = url_match.group(1).strip()
         for row in csv_rows:
             csv_url = row.get('canonical url', '').strip()
+            # Check for exact match OR if the CSV URL endswith the page slug
             if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
                 return row
 
-    # 2. UDID Match
+    # 2. UDID Match (Filename contains B1000, CSV has B1000)
     udid_match = re.search(r'([A-Z]\d{4})', filename)
     if udid_match:
         target_udid = udid_match.group(1)
-        row = next((r for r in csv_rows if r.get('UDID') == target_udid), None)
-        if row: return row
+        for row in csv_rows:
+            if row.get('UDID') == target_udid:
+                return row
 
     # 3. Fuzzy Title Match
+    # Clean up filename: "B1000 - Receiving a letter of demand.md" -> "receiving a letter of demand"
     clean_name = filename.lower().replace('.json', '').replace('.md', '').replace('ipfr_', '').replace('_', ' ')
-    clean_name = re.sub(r'\d+', '', clean_name).strip()
-
+    # Remove leading UDID (e.g. "b1000 - ")
+    clean_name = re.sub(r'^[a-z]\d{4}\s*-\s*', '', clean_name).strip()
+    
     for row in csv_rows:
-        csv_title = row.get('Main Title', '').lower()
+        csv_title = row.get('Main Title', '').lower().strip()
+        if clean_name == csv_title:
+             return row
+        # Partial match fallback
         if clean_name and clean_name in csv_title:
             return row
             
@@ -202,19 +212,14 @@ def generate_citations_from_csv(metadata_row):
     return citations
 
 def resolve_provider(provider_raw_string, archetype_hint=""):
-    """
-    Resolves provider and enforces types based on Archetype hint.
-    """
     base_obj = {"@type": "Organization"}
 
-    # 1. Try to find detailed map match
     if provider_raw_string:
         for key, obj in PROVIDER_MAP.items():
             if key.lower() in provider_raw_string.lower():
                 base_obj = obj.copy()
                 break
 
-    # 2. Enforce Type based on Archetype
     if "Government Service" in archetype_hint:
         base_obj["@type"] = "GovernmentOrganization"
     elif "Non-Government" in archetype_hint:
@@ -222,29 +227,20 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     elif "Commercial" in archetype_hint:
         base_obj["@type"] = "Organization"
 
-    # RESTORED: Explicitly force the placeholder name as requested
     base_obj["name"] = "xXx_PLACEHOLDER_xXx"
-
     return base_obj
 
 def clean_text_retain_formatting(text, strip_images=False):
-    """
-    Aggressive cleanup of artifacts, particularly non-breaking spaces (\u00a0)
-    and ensuring normalized spacing while preserving double newlines for paragraphs.
-    """
     if not text: return ""
     
-    # 1. Strip Markdown Images
     if strip_images:
         text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
         text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
         text = re.sub(r'\[\s*\]\(.*?\)', '', text)
     
-    # 2. Aggressive Character Replacement
     text = text.replace(u'\u00a0', ' ')
     text = text.replace('\r', '')
     
-    # 3. Whitespace Normalization
     lines = text.split('\n')
     cleaned_lines = []
     
@@ -253,20 +249,13 @@ def clean_text_retain_formatting(text, strip_images=False):
         cleaned_lines.append(clean_line)
         
     text = "\n".join(cleaned_lines)
-    
-    # 4. Paragraph Normalization
     text = re.sub(r'\n{3,}', '\n\n', text)
-    
     return text.strip()
 
 def extract_dynamic_content(blocks, main_description_key=None):
     """
-    UPDATED: "The 2/3 Rule" Logic.
-    Captures ALL content blocks as Question/Answer pairs unless they are 
-    explicitly ignored (e.g. navigation, footers).
+    Captures content as FAQs, excluding the block used for the main description.
     """
-    
-    # RULE 1: The "Ignore" List (System blocks to exclude)
     IGNORED_HEADERS = {
         "intro", 
         "description", 
@@ -278,7 +267,6 @@ def extract_dynamic_content(blocks, main_description_key=None):
         "feedback"
     }
     
-    # Add the key used for the main description to the ignore list
     if main_description_key:
         IGNORED_HEADERS.add(main_description_key.lower())
 
@@ -287,24 +275,11 @@ def extract_dynamic_content(blocks, main_description_key=None):
     for header, content in blocks.items():
         clean_header_key = header.lower().strip()
         
-        # RULE 2: Content Validation (Skip empty)
-        if not content: 
-            continue
-            
-        # RULE 3: The Filter (If it's in the ignore list, skip it)
-        if clean_header_key in IGNORED_HEADERS:
-            continue
-            
-        # RULE 4: HowTo Separation
-        # If block was likely used for HowTo steps, skip to avoid duplication.
-        if "step" in clean_header_key or "proceed" in clean_header_key:
-            continue
+        if not content: continue
+        if clean_header_key in IGNORED_HEADERS: continue
+        if "step" in clean_header_key or "proceed" in clean_header_key: continue
 
-        # --- SUCCESS: It passed the rules. It is valid content. ---
-        
         display_name = header.capitalize()
-        
-        # Heuristic: Ensure it looks like a question if it isn't one
         if not display_name.endswith('?') and not display_name.endswith(':'):
              if "features" in clean_header_key:
                  display_name = f"What are the {header.lower()}?"
@@ -325,15 +300,11 @@ def extract_dynamic_content(blocks, main_description_key=None):
     return content_items
 
 def extract_howto_steps(blocks):
-    """
-    RESTORED: Use placeholder for step names as requested.
-    """
     steps = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     
     if target_key:
         raw_text = blocks[target_key]
-        # Regex to find bullet points or numbered lists
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         
         if matches:
@@ -342,12 +313,10 @@ def extract_howto_steps(blocks):
                 if clean_text:
                     steps.append({
                         "@type": "HowToStep",
-                        # RESTORED: Placeholder
                         "name": "xXx_PLACEHOLDER_xXx", 
                         "text": clean_text
                     })
         else:
-            # Fallback to paragraphs
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
@@ -355,17 +324,12 @@ def extract_howto_steps(blocks):
                 if clean_p:
                     steps.append({
                         "@type": "HowToStep",
-                        # RESTORED: Placeholder
                         "name": "xXx_PLACEHOLDER_xXx", 
                         "text": clean_p
                     })
     return steps
 
 def resolve_about_topics(metadata_row):
-    """
-    Returns a list of Thing objects for the 'about' property.
-    Maps Unregistered-tm to Trade Mark QID.
-    """
     raw_ip_rights = metadata_row.get('Relevant IP right', '')
     cleaned_rights = raw_ip_rights.replace('"', '').lower()
     rights_list = [r.strip() for r in cleaned_rights.split(',')]
@@ -403,37 +367,38 @@ def process_file(filepath, filename, metadata_row):
     with open(filepath, 'r', encoding='utf-8') as f:
         md_content = f.read()
 
-    # A. Parse Content
     blocks = parse_markdown_blocks(md_content)
     
-    # B. Metadata Extraction
     udid = metadata_row.get('UDID', 'Dxxxx')
     title = metadata_row.get('Main Title', filename.replace('.md', '').replace('_', ' '))
     archetype = metadata_row.get('Archectype') or metadata_row.get('Archetype', 'Government Service')
     archetype = archetype.strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
     
-    # C. Description Extraction
+    # --- UPDATED DESCRIPTION LOGIC ---
+    # Prioritize "What is it?" block for description if CSV description is missing
     description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
-    used_desc_key = None # Track which block was used to avoid dupes
+    used_desc_key = None 
 
+    # If CSV description is empty, check MD blocks
     if not description:
-        # Heuristic to find description block
+        # Check specific keys that act as descriptions
         desc_keys = ["what is it?", "description", "intro"]
         for k in desc_keys:
             if k in blocks:
                 description_raw = blocks[k]
                 description = clean_text_retain_formatting(description_raw, strip_images=True)
-                used_desc_key = k # Remember this key!
+                used_desc_key = k # Mark this key as used so it doesn't become an FAQ
                 break
 
-    # D. Build Main Entity
+    # --- ARCHETYPE HANDLING ---
     main_entities = []
     service_id = "#the-service"
     
+    # Correct mapping for "Self-Help"
     if "Self-Help" in archetype:
         service_type = "HowTo"
-        has_provider = False
+        has_provider = False 
     elif "Government Service" in archetype:
         service_type = "GovernmentService"
         has_provider = True
@@ -441,10 +406,11 @@ def process_file(filepath, filename, metadata_row):
         service_type = "Service" 
         has_provider = True
     else:
-        service_type = "Service"
+        # Default fallback
+        service_type = "GovernmentService"
         has_provider = True
 
-    # Build the Object
+    # Build the Main Object
     main_obj = {
         "@id": service_id,
         "@type": service_type,
@@ -453,15 +419,13 @@ def process_file(filepath, filename, metadata_row):
         "areaServed": {"@type": "Country", "name": "Australia"}
     }
 
-    # Add steps if HowTo
+    # Add steps directly if it is a HowTo (Self-Help)
     if service_type == "HowTo":
         main_obj["step"] = extract_howto_steps(blocks)
     
-    # Add Provider if Service
     if has_provider:
         provider_name_raw = metadata_row.get('Provider') or metadata_row.get('Overtitle')
         provider_obj = resolve_provider(provider_name_raw, archetype_hint=archetype)
-        
         if service_type == "GovernmentService":
              main_obj["serviceOperator"] = provider_obj
         else:
@@ -469,7 +433,7 @@ def process_file(filepath, filename, metadata_row):
 
     main_entities.append(main_obj)
 
-    # D2. Sidecar HowTo (If service has steps, but main entity is not HowTo)
+    # Sidecar HowTo (If service has steps, but main entity is not HowTo)
     if service_type != "HowTo":
         steps = extract_howto_steps(blocks)
         if steps:
@@ -480,8 +444,7 @@ def process_file(filepath, filename, metadata_row):
                 "step": steps
             })
 
-    # E. Dynamic Content Extraction (The new, smarter extraction)
-    # Pass the used_desc_key so we don't include the description as an FAQ
+    # FAQ Extraction
     faqs = extract_dynamic_content(blocks, main_description_key=used_desc_key)
     if faqs:
         main_entities.append({
@@ -490,13 +453,9 @@ def process_file(filepath, filename, metadata_row):
             "mainEntity": faqs
         })
 
-    # F. Citations
     citations = generate_citations_from_csv(metadata_row)
-    
-    # G. Topics
     about_obj = resolve_about_topics(metadata_row)
 
-    # --- H. FINAL ASSEMBLY ---
     json_ld = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -531,7 +490,7 @@ def process_file(filepath, filename, metadata_row):
     out_path = os.path.join(OUTPUT_DIR, filename.replace('.md', '.json'))
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(json_ld, f, indent=2)
-    print(f"Generated: {out_path}")
+    print(f"Generated: {out_path} (Detected Archetype: {archetype})")
 
 
 # --- 4. EXECUTION LOOP ---
@@ -551,6 +510,7 @@ def main():
         matched_row = find_metadata_row(content_sample, filename, csv_rows)
         
         if not matched_row:
+            print(f"WARNING: No CSV match for {filename}. Using default fallback.")
             matched_row = {"Main Title": filename.replace('.md', '').replace('IPFR_', '').replace('_', ' ')}
 
         process_file(filepath, filename, matched_row)
