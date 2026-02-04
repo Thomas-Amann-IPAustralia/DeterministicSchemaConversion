@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Seek a court order to prevent further damage while preparing for court.",
   "alternativeHeadline": "Interim court injuction order",
-  "description": "If you need\u00a0*immediate*\u00a0action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to thei",
+  "description": "Lodge an interim injunction order through court",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
   "identifier": {
     "@type": "PropertyValue",
@@ -62,14 +62,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Seek a court order to prevent further damage while preparing for court.",
-      "description": "If you need\u00a0*immediate*\u00a0action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond.\u00a0\n\nUrgent action can include:\u00a0\n\n* interim injunction\n* search order (*Anton Piller order*).\n\n**Interim injunction**\u00a0\\\nAn injunction**,**in the context of an Australian IP dispute, is a court order that can:\u00a0\n\n* Stop someone from infringing your IP rights.\n* Compel them to take specific actions to prevent further infringement.\n* Freeze a party\u2019s assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a\u00a0*Mareva injunction*).\n\nAn\u00a0**interim injunction**\u00a0is a type of injunction which can be granted without a full hearing. It\u2019s a temporary, short-term tool to protect your IP until hearings take place.\u00a0\u00a0\n\n* Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n* Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn\u2019t yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional\u2019s advice may be vital before deciding to take any court action.\n\n**Search order**\u00a0\\\nA search order (sometimes called an\u00a0*Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\u00a0\u00a0\n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
+      "description": "Lodge an interim injunction order through court",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Interim court injuction order"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -81,18 +81,18 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "**Evidence of infringement.**While the threshold f...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "**Evidence of infringement.**While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter."
         },
         {
           "@type": "HowToStep",
-          "name": "**Evidence of urgency**\u00a0of the matter and the reas...",
-          "text": "**Evidence of urgency**\u00a0of the matter and the reason you need the other party to stop their activity immediately."
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "**Evidence of urgency** of the matter and the reason you need the other party to stop their activity immediately."
         },
         {
           "@type": "HowToStep",
-          "name": "**Find a legal practitioner for advice and represe...",
-          "text": "**Find a legal practitioner for advice and representation**. Court proceedings can be a stressful, complicated process that can have serious impacts on you and your business. The vast majority of cases will utilise legal professionals/practitioners to help navigate the serious and complex matters and processes associated with court proceedings.\u202fAdditionally, corporations\u00a0*must*\u00a0be represented by a lawyer in civil proceedings in the courts."
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "**Find a legal practitioner for advice and representation**. Court proceedings can be a stressful, complicated process that can have serious impacts on you and your business. The vast majority of cases will utilise legal professionals/practitioners to help navigate the serious and complex matters and processes associated with court proceedings.\u202fAdditionally, corporations *must* be represented by a lawyer in civil proceedings in the courts."
         }
       ]
     },
@@ -131,7 +131,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "An interim injunction is often the first step in an infringement action/court process/lawsuit.\u00a0\n\nWhile it is difficult to specify exact costs, the total cost of the lawsuit will likely be in the hundreds of thousands of dollars. A large proportion of these costs will be legal fees for your legal counsel."
+            "text": "An interim injunction is often the first step in an infringement action/court process/lawsuit. \n\nWhile it is difficult to specify exact costs, the total cost of the lawsuit will likely be in the hundreds of thousands of dollars. A large proportion of these costs will be legal fees for your legal counsel."
           }
         },
         {
@@ -139,7 +139,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The granting of an interim injunction is an urgent process, typically taking days to weeks, depending on the nature of the case.\u00a0\u00a0\n\nThe interim injunction will typically only be granted for a few days, or until the parties are able to present preliminary arguments."
+            "text": "The granting of an interim injunction is an urgent process, typically taking days to weeks, depending on the nature of the case. \n\nThe interim injunction will typically only be granted for a few days, or until the parties are able to present preliminary arguments."
           }
         },
         {

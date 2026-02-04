@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Other IP Types",
   "alternativeHeadline": "Sorry, This information isn't available yet",
-  "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types](https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types)\"",
+  "description": "We cannot provide information on this right just yet",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
   "identifier": {
     "@type": "PropertyValue",
@@ -62,14 +62,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Other IP Types",
-      "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types](https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types)\"",
+      "description": "We cannot provide information on this right just yet",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Sorry, This information isn't available yet"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     }
   ],

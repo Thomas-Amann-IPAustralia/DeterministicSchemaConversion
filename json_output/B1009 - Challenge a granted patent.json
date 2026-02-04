@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Challenge a granted patent ",
   "alternativeHeadline": "Patent Re-Examination ",
-  "description": "Requesting a patent re-examination is a way to challenge a granted Australian patent by asking IP Australia to reassess whether the invention meets the legal re",
+  "description": "Challenge the validity of a patent that you are accused of infringing.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
   "identifier": {
     "@type": "PropertyValue",
@@ -76,14 +76,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Challenge a granted patent ",
-      "description": "Requesting a patent re-examination is a way to challenge a granted Australian patent by asking IP Australia to reassess whether the invention meets the legal requirements \u2013 like being new or inventive \u2013 for being patented.\u00a0\n\nIf someone accuses you of infringing their patent, and you believe the patent may not be valid, re-examination may help overturn it or limit its scope. This can be a cheaper, faster alternative than going to court.\u00a0\n\nYou don\u2019t have to be in a formal dispute with a patent holder to use this option. Anyone (with a reasonable justification) can request a patent re-examination at any time after it has been granted.\u00a0\n\nThe request must explain why the patent may be invalid and refer to relevant evidence, such as published documents that show the invention was already known. IP Australia will re-examine the patent and, decide whether to revoke or amend it.\u00a0\n\nIf the patent hasn\u2019t been granted yet, it may be possible to challenge it through IP Australia\u2019s opposition and hearing process instead ([Challenge a new or amended patent | IP Australia First Response)](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent).\u00a0\n\nIn the case you wish to dispute the ownership of the patent, it may also be able to challenge the ownership of the patent through IP Australia\u2019s opposition and hearing process.",
+      "description": "Challenge the validity of a patent that you are accused of infringing.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Patent Re-Examination"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -95,32 +95,32 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "The patent number of the granted patent you want r...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "The patent number of the granted patent you want reviewed."
         },
         {
           "@type": "HowToStep",
-          "name": "Evidence showing why the patent may not be valid (...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Evidence showing why the patent may not be valid (e.g. earlier documents)."
         },
         {
           "@type": "HowToStep",
-          "name": "A clear, written explanation of how the evidence r...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A clear, written explanation of how the evidence relates to the claims."
         },
         {
           "@type": "HowToStep",
-          "name": "A completed re-examination request form (available...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A completed re-examination request form (available from IP Australia)."
         },
         {
           "@type": "HowToStep",
-          "name": "Consider speaking with a patent attorney or lawyer...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Consider speaking with a patent attorney or lawyer."
         },
         {
           "@type": "HowToStep",
-          "name": "Keep copies of all evidence and communication.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Keep copies of all evidence and communication."
         }
       ]
@@ -144,7 +144,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If the patent is upheld, the owner may continue to enforce their right.\n* Requesting a re-examination will inform the other party of your request, potentially harming professional relationships and increasing the possibility that the other party may escalate their existing actions against you.\n* You may expose your own activities or interests in the technology.\n* If the request for re-examination is not well-supported, the patent may be affirmed as valid \u2013 and still incur the outcomes listed above.\n* The re-examination process is \u2018ex parte\u2019, meaning that after the initial submissions, the challenging party is not involved in the proceedings . As such, if the outcome of the re-examination is not in your favour, there are few options to refute the outcome.\n* What are the possible outcomes?\n\nThere are 4 possible outcomes from the patent re-examination process:\u00a0\u00a0\n\n* The patent is upheld in its original form\n* The patent is upheld in an amended form\n* The patent is revoked.\n\nIf the challenging party remains unsatisfied, they are able escalate the dispute by initiating invalidity proceedings in court (at significantly higher cost)."
+            "text": "* If the patent is upheld, the owner may continue to enforce their right.\n* Requesting a re-examination will inform the other party of your request, potentially harming professional relationships and increasing the possibility that the other party may escalate their existing actions against you.\n* You may expose your own activities or interests in the technology.\n* If the request for re-examination is not well-supported, the patent may be affirmed as valid \u2013 and still incur the outcomes listed above.\n* The re-examination process is \u2018ex parte\u2019, meaning that after the initial submissions, the challenging party is not involved in the proceedings . As such, if the outcome of the re-examination is not in your favour, there are few options to refute the outcome.\n* What are the possible outcomes?\n\nThere are 4 possible outcomes from the patent re-examination process: \n\n* The patent is upheld in its original form\n* The patent is upheld in an amended form\n* The patent is revoked.\n\nIf the challenging party remains unsatisfied, they are able escalate the dispute by initiating invalidity proceedings in court (at significantly higher cost)."
           }
         },
         {
@@ -152,7 +152,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A patent re-examination request costs $800 paid to IP Australia.\u00a0\n\nHowever, you may need to pay for professional help to prepare the request. This could include:\u00a0\n\n* Reviewing relevant prior art.\n* Drafting a submission that clearly explains why the patent should be re-examined.\n\nProfessional fees may range from $2,000 to $10,000 depending on complexity."
+            "text": "A patent re-examination request costs $800 paid to IP Australia. \n\nHowever, you may need to pay for professional help to prepare the request. This could include: \n\n* Reviewing relevant prior art.\n* Drafting a submission that clearly explains why the patent should be re-examined.\n\nProfessional fees may range from $2,000 to $10,000 depending on complexity."
           }
         },
         {

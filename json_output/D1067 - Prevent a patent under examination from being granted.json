@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Prevent a patent under examination from being granted",
   "alternativeHeadline": "Notification of prior art",
-  "description": "Third Party Notification of Prior Art lets you raise concerns about someone else\u2019s patent application directly with IP Australia *before* it\u2019s accepted or grant",
+  "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted",
   "identifier": {
     "@type": "PropertyValue",
@@ -76,14 +76,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Prevent a patent under examination from being granted",
-      "description": "Third Party Notification of Prior Art lets you raise concerns about someone else\u2019s patent application directly with IP Australia *before* it\u2019s accepted or granted. You do this by lodging a 'section 27 notice', which alerts the examiner to earlier work - known as 'prior art' - that may show the application lacks novelty or inventiveness.\u00a0\n\n*Section 27 notices* are allowed up to three months after the *notice of* acceptance of an application. Formal opposition becomes available after the patent is *accepted*, and court or administrative action may be possible after the grant of the patent.\u00a0\n\nYou can raise the same kinds of concerns about a patent at different points in its life - but the mechanism you use depends on the patent\u2019s current status.\u00a0\n\nRaising concerns during examination can be quicker, simpler and less costly. It gives the examiner a chance to consider your evidence before a decision is made. If successful, this could prevent a patent from being granted at all\u2014avoiding future disputes.\u00a0\n\nYou don\u2019t need to own a patent or be directly affected to file a notice. Anyone can use this option if they have access to useful prior art and act within the time window.\u00a0\n\nThis is a one-way process: the examiner considers your materials, but you won\u2019t be told the outcome, and you can\u2019t argue your case. There are still other channels in which you can pursue the matter if the patent is accepted despite the S27 submissions.\u00a0\n\nIt is also important to consider that the document(s) raised under the s27(1) notice were published prior to the relevant priority date of the patent application.",
+      "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and thus cannot be granted.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Notification of prior art"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -95,32 +95,32 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Identify the patent application number and title.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Identify the patent application number and title."
         },
         {
           "@type": "HowToStep",
-          "name": "Find examples of prior art that may affect novelty...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Find examples of prior art that may affect novelty or inventiveness."
         },
         {
           "@type": "HowToStep",
-          "name": "Ensure the prior art meets the criteria of 'public...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Ensure the prior art meets the criteria of 'publicly available' before the patent\u2019s 'priority date'."
         },
         {
           "@type": "HowToStep",
-          "name": "Provide documents or reliable links (and translati...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Provide documents or reliable links (and translations if not in English)."
         },
         {
           "@type": "HowToStep",
-          "name": "Submit via [IP Australia\u2019s eServices](https://port...",
-          "text": "Submit via [IP Australia\u2019s eServices](https://portal.ipaustralia.gov.au/login)  portal (use the general eService request or the specific link in AusPat)."
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Submit via [IP Australia\u2019s eServices](https://portal.ipaustralia.gov.au/login) portal (use the general eService request or the specific link in AusPat)."
         },
         {
           "@type": "HowToStep",
-          "name": "Keep records of your submission.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Keep records of your submission."
         }
       ]
@@ -152,7 +152,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The examiner will review the submission and decide what to do.\u00a0\n\n* The examiner raises objections based on your notice, and the application may be rejected if the objections are not overcome.\n* Objections raised due to the S27 submissions may lead to the applicant amending their claims, potentially reducing the scope of protection.\n* The examiner decides your notice doesn\u2019t change their view.\n\nIf the examination proceeds and no other issues are found, the application will be accepted, and you may need to consider alternate avenues of opposition if you still believe the patent should not proceed to grant."
+            "text": "The examiner will review the submission and decide what to do. \n\n* The examiner raises objections based on your notice, and the application may be rejected if the objections are not overcome.\n* Objections raised due to the S27 submissions may lead to the applicant amending their claims, potentially reducing the scope of protection.\n* The examiner decides your notice doesn\u2019t change their view.\n\nIf the examination proceeds and no other issues are found, the application will be accepted, and you may need to consider alternate avenues of opposition if you still believe the patent should not proceed to grant."
           }
         },
         {
@@ -160,7 +160,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There\u2019s no fee paid to IP Australia to lodge a section 27 notice.\u00a0\n\nIf you chose engage an IP professional, such as a patent attorney, to assist making your case you may incur fees. Actual costs depend on the complexity and level of professional help used."
+            "text": "There\u2019s no fee paid to IP Australia to lodge a section 27 notice. \n\nIf you chose engage an IP professional, such as a patent attorney, to assist making your case you may incur fees. Actual costs depend on the complexity and level of professional help used."
           }
         },
         {
@@ -168,7 +168,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The notice itself can be prepared and lodged quickly, often in a day or two.\u00a0\n\nHowever, identifying good-quality prior art may take more time. Translating and verifying documents may also cause delays. Notices must be lodged after the application is *published,* and up to three months after notice *acceptance*."
+            "text": "The notice itself can be prepared and lodged quickly, often in a day or two. \n\nHowever, identifying good-quality prior art may take more time. Translating and verifying documents may also cause delays. Notices must be lodged after the application is *published,* and up to three months after notice *acceptance*."
           }
         },
         {

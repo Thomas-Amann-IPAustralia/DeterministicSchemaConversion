@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Reach an agreement with the accusing party",
   "alternativeHeadline": "Negotiation",
-  "description": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between part",
+  "description": "Negotiate a mutually acceptable commercial or financial resolution.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party",
   "identifier": {
     "@type": "PropertyValue",
@@ -62,14 +62,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Reach an agreement with the accusing party",
-      "description": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.\u00a0\n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other party involved or find it challenging to communicate with them. In these cases, representatives such as lawyers are commonly sought to provide legal advice and assistance.\u00a0\u00a0\n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their legal representatives to do so on their behalf.",
+      "description": "Negotiate a mutually acceptable commercial or financial resolution.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Negotiation"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -81,32 +81,32 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "The status and details of the relevant IP in the j...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "The status and details of the relevant IP in the jurisdiction where the alleged infringement occurred. This includes checking the status of your IP registrations, and whether the accuser has registered IP rights with IP Australia or overseas IP offices."
         },
         {
           "@type": "HowToStep",
-          "name": "The identity and contact details of the other part...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "The identity and contact details of the other party \u2013 it\u2019s important to make sure you speak to the correct party.\n\nThroughout the negotiation with the other party, it can be helpful to remember to:"
         },
         {
           "@type": "HowToStep",
-          "name": "Stay calm and professional throughout the conversa...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Stay calm and professional throughout the conversation, avoiding emotional, accusatory language."
         },
         {
           "@type": "HowToStep",
-          "name": "Focus on the issues at hand, not the personalities...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Focus on the issues at hand, not the personalities of the other parties involved."
         },
         {
           "@type": "HowToStep",
-          "name": "Acknowledge that problems are often caused by misu...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can be reached."
         },
         {
           "@type": "HowToStep",
-          "name": "Be clear on the terms of agreement you may reach w...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Be clear on the terms of agreement you may reach with the other party, writing down the agreement in detail at the end of the conversation.\n\nIt can be difficult to determine whether you will be able to leverage a commercially meaningful outcome from the IP dispute you are facing and if you can have a productive, amicable discussion with the other party. An IP professional can help you make this assessment and advise which steps might work best in your situation."
         }
       ]
@@ -122,7 +122,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "This option offers a lower cost, flexible and private way to resolve IP disputes. A negotiated commercial solution offers:\u00a0\n\n* Potentially lower costs and a quicker\u00a0 process, especially compared to other dispute resolution processes where you must rely on third parties (such as courts and tribunals).\n* The ability to agree to a creative, productive outcome that can benefit both parties commercially.\n* A much less adversarial pathway than legal procedures, helping you preserve your relationship with the other party.\n* A flexible and informal approach, as it is entirely up to the parties to shape the process.\n* Negotiation can be conducted across multiple jurisdictions.\n* Confidentiality, as the details of negotiation and the resulting agreements reached are generally not publicly available, allowing parties to discuss commercially sensitive topics freely."
+            "text": "This option offers a lower cost, flexible and private way to resolve IP disputes. A negotiated commercial solution offers: \n\n* Potentially lower costs and a quicker process, especially compared to other dispute resolution processes where you must rely on third parties (such as courts and tribunals).\n* The ability to agree to a creative, productive outcome that can benefit both parties commercially.\n* A much less adversarial pathway than legal procedures, helping you preserve your relationship with the other party.\n* A flexible and informal approach, as it is entirely up to the parties to shape the process.\n* Negotiation can be conducted across multiple jurisdictions.\n* Confidentiality, as the details of negotiation and the resulting agreements reached are generally not publicly available, allowing parties to discuss commercially sensitive topics freely."
           }
         },
         {
@@ -138,7 +138,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties\u2019 desires and specific circumstances. If you are able to reach an agreed outcome, this might result in:\u00a0\n\n* A licence or co-existence arrangement,\n* Selling or transferring IP ownership (called *assignment*),\n* Compensation or goodwill payment,\n* Franchising options, or\n* Mutual agreement to stop or change the disputed conduct.\n\nYou can read more about these potential outcomes of negotiations here [Agree to a commercial arrangement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement)\u00a0\u00a0\n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions.\u00a0\n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions."
+            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties\u2019 desires and specific circumstances. If you are able to reach an agreed outcome, this might result in: \n\n* A licence or co-existence arrangement,\n* Selling or transferring IP ownership (called *assignment*),\n* Compensation or goodwill payment,\n* Franchising options, or\n* Mutual agreement to stop or change the disputed conduct.\n\nYou can read more about these potential outcomes of negotiations here [Agree to a commercial arrangement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement) \n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions. \n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions."
           }
         },
         {
@@ -154,7 +154,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues.\u00a0\n\nSome agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth.\u00a0Factors that influence timing include:\u00a0\n\n* urgency of the issue\n* clarity of the facts and evidence\n* willingness of the other party to engage\n* whether professionals are involved\n* whether an agreement must be documented or signed."
+            "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues. \n\nSome agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth. Factors that influence timing include: \n\n* urgency of the issue\n* clarity of the facts and evidence\n* willingness of the other party to engage\n* whether professionals are involved\n* whether an agreement must be documented or signed."
           }
         },
         {

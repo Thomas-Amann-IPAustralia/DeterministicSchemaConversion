@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "De-escalate and resolve disputes via conversation",
   "alternativeHeadline": "Informal contact",
-  "description": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a ",
+  "description": "Engage in an informal conversation to resolve IP disputes",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation",
   "identifier": {
     "@type": "PropertyValue",
@@ -62,14 +62,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "De-escalate and resolve disputes via conversation",
-      "description": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\u00a0\n\nOften this contact comes in the form of a cease-and-desist or a letter of demand**.**\u00a0They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page:\u00a0[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\n\nFor more information on possible commercial solutions, see IP First Response's page:\u00a0[Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement).",
+      "description": "Engage in an informal conversation to resolve IP disputes",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Informal contact"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -81,28 +81,28 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "A copy of the cease-and-desist letter or the reque...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A copy of the cease-and-desist letter or the request, including deadlines and requested actions."
         },
         {
           "@type": "HowToStep",
-          "name": "Evidence of your product, branding or content deve...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Evidence of your product, branding or content development timeline and any prior rights you may hold."
         },
         {
           "@type": "HowToStep",
-          "name": "Documents relating to the relevant IP right\u2019s scop...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Documents relating to the relevant IP right\u2019s scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party\u2019s claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed."
         },
         {
           "@type": "HowToStep",
-          "name": "Contact details for the rights holder or their rep...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Contact details for the rights holder or their representative to open dialogue."
         },
         {
           "@type": "HowToStep",
-          "name": "A confidentiality agreement template to protect co...",
-          "text": "A confidentiality agreement template to protect commercial information during negotiations.\n\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute:\u00a0[Learn more about alternative dispute resolution](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)."
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "A confidentiality agreement template to protect commercial information during negotiations.\n\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: [Learn more about alternative dispute resolution](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)."
         }
       ]
     },

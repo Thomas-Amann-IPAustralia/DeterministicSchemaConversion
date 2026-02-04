@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Stop infringing goods entering the country",
   "alternativeHeadline": "Notice of Objection",
-  "description": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe ",
+  "description": "Lodge a notice of objection with the Australian Border Force.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
   "identifier": {
     "@type": "PropertyValue",
@@ -95,14 +95,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Stop infringing goods entering the country",
-      "description": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.\u00a0\u00a0\u00a0\n\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer.\u00a0\n\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF\u2019s registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.\u00a0\u00a0\u00a0\n\n**Please Note:**\u00a0A Notice of Objection\u00a0[cannot act retrospectively](https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf) \u00a0for goods/copies that have already been imported.",
+      "description": "Lodge a notice of objection with the Australian Border Force.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Notice of Objection"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -114,38 +114,38 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "A completed Notice of Objection form (B1025).",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A completed Notice of Objection form (B1025)."
         },
         {
           "@type": "HowToStep",
-          "name": "Evidence of trade mark registration from IP Austra...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Evidence of trade mark registration from IP Australia (for example, a copy of the registration certificate or a copy of an Australian Trade Mark Search report)."
         },
         {
           "@type": "HowToStep",
-          "name": "A completed Trade Marks Act 1995 Security Under Se...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A completed Trade Marks Act 1995 Security Under Section 133 \u2013 Deed of Undertaking form."
         },
         {
           "@type": "HowToStep",
-          "name": "If you are an authorised user or importer \u2013 an aut...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "If you are an authorised user or importer \u2013 an authorisation letter from the registered trade mark\u2019s owner.\n\nTo lodge a Notice of Objection under the *Copyright Act 1968*, you will require:"
         },
         {
           "@type": "HowToStep",
-          "name": "A completed Notice of Objection form (B470).",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A completed Notice of Objection form (B470)."
         },
         {
           "@type": "HowToStep",
-          "name": "If you are a company authorised by the copyright o...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "If you are a company authorised by the copyright owner to file the Notice on their behalf \u2013 a letter (or multiple \u2013 if more than one copyright owner) of authorisation from the copyright owner/s (for any copyright material covered that is not owned by the company lodging the Notice)."
         },
         {
           "@type": "HowToStep",
-          "name": "A completed Copyright Act 1968 Security Under Sect...",
-          "text": "A completed Copyright Act 1968 Security Under Section 135 \u2013 Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.\n\nYou can find more information in the ABF Guide to lodging a\u00a0[Notice of Objection.](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)"
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "A completed Copyright Act 1968 Security Under Section 135 \u2013 Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.\n\nYou can find more information in the ABF Guide to lodging a [Notice of Objection.](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)"
         }
       ]
     },
@@ -176,7 +176,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The goods/copies are not detected entering Australia, or goods are detected but cannot be verified as potentially infringing; you are not notified.\n* The goods/copies are seized entering Australia. You and the importer are informed.\n\nThe importer may then:\u00a0\n\n* choose to abandon the goods/copies, which are then disposed of by the ABF, or\n* file a Claim for Release of Seized goods/copies form.\n\nIf they submit this form, one of two things can happen:\u00a0\n\n* you\u00a0do not\u00a0begin legal proceedings within 10 days and the goods are released to the importer, or\n* you begin legal proceedings within 10 days.\n\nThe court\u2019s decision will likely result in either:\u00a0\n\n* the ABF disposing of the goods, or\n* the goods being released back to the importer."
+            "text": "* The goods/copies are not detected entering Australia, or goods are detected but cannot be verified as potentially infringing; you are not notified.\n* The goods/copies are seized entering Australia. You and the importer are informed.\n\nThe importer may then: \n\n* choose to abandon the goods/copies, which are then disposed of by the ABF, or\n* file a Claim for Release of Seized goods/copies form.\n\nIf they submit this form, one of two things can happen: \n\n* you do not begin legal proceedings within 10 days and the goods are released to the importer, or\n* you begin legal proceedings within 10 days.\n\nThe court\u2019s decision will likely result in either: \n\n* the ABF disposing of the goods, or\n* the goods being released back to the importer."
           }
         },
         {
@@ -184,7 +184,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "While there are no fees to lodge a Notice of Objection, you will also need to lodge a Deed of Undertaking. This is a formal agreement to repay the ABF\u2019s costs resulting from any seizures made (e.g. transportation, storage and destruction costs).\u00a0\u00a0\n\nIf you choose to take legal action against the importer, you will need to cover the costs of the legal action.\u00a0Depending on the court\u2019s determination you may need to pay other party\u2019s costs, possibly damages, etc."
+            "text": "While there are no fees to lodge a Notice of Objection, you will also need to lodge a Deed of Undertaking. This is a formal agreement to repay the ABF\u2019s costs resulting from any seizures made (e.g. transportation, storage and destruction costs). \n\nIf you choose to take legal action against the importer, you will need to cover the costs of the legal action. Depending on the court\u2019s determination you may need to pay other party\u2019s costs, possibly damages, etc."
           }
         },
         {
@@ -192,7 +192,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A Notice of Objection is valid for 4 years and ABF may seize imports at any point during this time. It can be re-lodged, or withdrawn if it is no longer required.\u00a0\n\nIf a seizure has occurred:\u00a0\n\n1. The ABF will notify you and the importer. The importer has 10 working days from the date of notification to ask for the goods to be released.\n2. If no response is received, the goods are deemed to be forfeited and can be disposed of 30 days later.\n3. If the importer seeks to have the goods released, you will be notified and have 10 working days to start legal action against the importer.\n4. If the ABF does not receive a court order maintaining seizure of the goods/copies within 20 days of legal action commencing then they are still required to release the goods to the importer.\n\n[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)"
+            "text": "A Notice of Objection is valid for 4 years and ABF may seize imports at any point during this time. It can be re-lodged, or withdrawn if it is no longer required. \n\nIf a seizure has occurred: \n\n1. The ABF will notify you and the importer. The importer has 10 working days from the date of notification to ask for the goods to be released.\n2. If no response is received, the goods are deemed to be forfeited and can be disposed of 30 days later.\n3. If the importer seeks to have the goods released, you will be notified and have 10 working days to start legal action against the importer.\n4. If the ABF does not receive a court order maintaining seizure of the goods/copies within 20 days of legal action commencing then they are still required to release the goods to the importer.\n\n[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)"
           }
         },
         {

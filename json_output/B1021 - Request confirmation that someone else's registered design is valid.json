@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Request confirmation that someone else's registered design is valid",
   "alternativeHeadline": "Design certification\u00a0",
-  "description": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design. The examiner assesses newness, d",
+  "description": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid",
   "identifier": {
     "@type": "PropertyValue",
@@ -76,14 +76,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Request confirmation that someone else's registered design is valid",
-      "description": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design. The examiner assesses newness, distinctiveness and compliance with formal requirements at the design\u2019s filing date.\u00a0\n\nRequests may be lodged through IP Australia\u2019s Online Services or by post using the approved form, providing the design registration number, owner details and payment of the examination fee. A third party examination can be requested at any time, by any person who has an interest in the validity of design right. This makes it a versatile tool to:\u00a0\n\n* respond to allegations that you have infringed against a registered design, or\n* to question the validity of a competitors registered design pre-emptively.\n\nOnce filed, IP Australia notifies the owner of the design right and provide information about possible options.\u00a0\u00a0\n\nThe design is examined by a designs examiner If the design does not meet the requirements, the registration may be revoked or reduced in scope; if it passes, the design becomes certified and fully enforceable in court proceedings.\u00a0\u00a0\n\nWhen submitting a request for third party examination, you can include documentation to support your argument. Documentation can include business documents, circumstances, general knowledge and evidence to support your argument.\u00a0\u00a0\n\nExamination can be requested any time after registration and before the design expires at the end of its maximum 10-year term (initial five years plus one 5-year renewal).\u00a0\u00a0\n\n**Formal action to protect design rights \u2014 like sending a letter of demand (or cease-and-desist letter) \u2014 can only be initiated after a design right is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat: see** [**Respond to an unjustified threat | IP Australia First Response**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)**.**",
+      "description": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Design certification"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -95,22 +95,22 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Registered design number.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Registered design number."
         },
         {
           "@type": "HowToStep",
-          "name": "Ability to pay the examination fee.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Ability to pay the examination fee."
         },
         {
           "@type": "HowToStep",
-          "name": "Consider whether to get help from an IP lawyer or ...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Consider whether to get help from an IP lawyer or IP attorney."
         },
         {
           "@type": "HowToStep",
-          "name": "Keep copies of all correspondence and the certific...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Keep copies of all correspondence and the certificate of examination."
         }
       ]
@@ -142,7 +142,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The design is certified, confirming the owner\u2019s exclusive rights.\n* Note that the owner of the design may choose to make amendment to the design to address objections raised during the examination process. A list of allowable amendments can be found in the relevant section of the Designs Examiners\u2019 Manual: [22.3. Amendments: Amending a registration | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amending-a-registration).\n* The registration is revoked, removing design protection.\n* Parties settle the dispute commercially or by negotiation before the examination is completed\u00a0 - in these cases the requesting party withdraws their request for certification as part of the resolution."
+            "text": "* The design is certified, confirming the owner\u2019s exclusive rights.\n* Note that the owner of the design may choose to make amendment to the design to address objections raised during the examination process. A list of allowable amendments can be found in the relevant section of the Designs Examiners\u2019 Manual: [22.3. Amendments: Amending a registration | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amending-a-registration).\n* The registration is revoked, removing design protection.\n* Parties settle the dispute commercially or by negotiation before the examination is completed - in these cases the requesting party withdraws their request for certification as part of the resolution."
           }
         },
         {
@@ -150,7 +150,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "[IP Australia\u2019s fee schedule](https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1)  lists the examination fee at $500 (effective from 1\u202fOctober\u202f2024). If a third party requests examination, both parties split the fee."
+            "text": "[IP Australia\u2019s fee schedule](https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1) lists the examination fee at $500 (effective from 1\u202fOctober\u202f2024). If a third party requests examination, both parties split the fee."
           }
         },
         {

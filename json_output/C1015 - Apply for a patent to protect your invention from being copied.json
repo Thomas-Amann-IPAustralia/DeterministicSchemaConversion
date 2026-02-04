@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Apply for a patent to protect your invention from being copied ",
   "alternativeHeadline": "Apply for a patent",
-  "description": "Applying for a patent is one way to protect a new product, process or method that you\u2019ve developed.\u00a0\n\nA patent application is a formal request to IP Australia t",
+  "description": "Prepare and submit formal patent applications to IP Australia to secure exclusive rights for your invention.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied",
   "identifier": {
     "@type": "PropertyValue",
@@ -76,14 +76,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Apply for a patent to protect your invention from being copied ",
-      "description": "Applying for a patent is one way to protect a new product, process or method that you\u2019ve developed.\u00a0\n\nA patent application is a formal request to IP Australia to be granted exclusive rights over your invention. If granted, a patent can stop others from making, using, or selling your invention in Australia without your permission.\u00a0\n\nPatents are typically used for inventions that are new, useful and involve an inventive step. This could include anything from a physical product to a chemical process, mechanical tool or software-enabled system.\u00a0\n\nYou don\u2019t need a granted patent to start selling your product, but a patent can strengthen your legal position and give you more control over how your invention is used by others.\u00a0\n\nIt is important to note that disclosing your invention can create issues later on for your patent application \u2013 if you are considering applying for a patent, it is important to avoid publicly disclosing your invention.\u00a0\n\nYou can apply for a standard patent or a provisional application first\u2014each has different costs, benefits and timeframes. Provisional applications are often used as a first step to secure a priority date while you refine your invention or seek investors.\u00a0\n\nA provisional application does not offer any patent protection, and simply acts as a placeholder while you decide whether to continue with the patenting process. A provisional application gives you 12 months to consider your options, and most importantly, it establishes your priority date.\u00a0\u00a0\n\nIf you wish to proceed with the application process (and enter the examination stage), you will need to file a standard application. Importantly, you can use the priority date from your provisional application in your standard application. This is of particular value if there is a competitor who has filed a patent application \u2013 if they are both directed towards a similar process, you would have a greater chance of being granted the patent owing to your earlier priority date.\u00a0\u00a0\n\nIt is important to note that any features claimed in your standard application must have also been disclosed in your provisional application if you wish to claim the earlier priority date.",
+      "description": "Prepare and submit formal patent applications to IP Australia to secure exclusive rights for your invention.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Apply for a patent"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -95,32 +95,32 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "A clear description of your invention\u2014what it is, ...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A clear description of your invention\u2014what it is, how it works, and how it\u2019s different."
         },
         {
           "@type": "HowToStep",
-          "name": "A decision on whether to file a provisional or sta...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A decision on whether to file a provisional or standard application."
         },
         {
           "@type": "HowToStep",
-          "name": "An account with IP Australia\u2019s online services.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "An account with IP Australia\u2019s online services."
         },
         {
           "@type": "HowToStep",
-          "name": "Budget to pay application and examination fees.",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Budget to pay application and examination fees."
         },
         {
           "@type": "HowToStep",
-          "name": "Optional: get help from a registered patent attorn...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Optional: get help from a registered patent attorney."
         },
         {
           "@type": "HowToStep",
-          "name": "A plan for international protection if you need ov...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "A plan for international protection if you need overseas rights."
         }
       ]
@@ -160,7 +160,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Patent costs vary depending on the type of application and whether you use professional support.\u00a0\n\n* **Provisional patent application**: From around $110 if self-filed with IP Australia (as discussed above, a provisional application does not offer any patent protection, and simply acts as a placeholder while you consider your options).\n* **Standard patent application**: Filing starts at $400, with potential additional costs for examination, maintenance and legal advice.\n* **Patent attorney fees**: May range from $2,000 to over $10,000 depending on complexity.\n* **Ongoing fees**: Annual renewal fees start at $300 at the 4th anniversary and steadily increase to $2815 for the 19th anniversary (i.e. for the 20th year).\n\nIf you seek patent protection in other countries, additional international filing and translation fees will apply."
+            "text": "Patent costs vary depending on the type of application and whether you use professional support. \n\n* **Provisional patent application**: From around $110 if self-filed with IP Australia (as discussed above, a provisional application does not offer any patent protection, and simply acts as a placeholder while you consider your options).\n* **Standard patent application**: Filing starts at $400, with potential additional costs for examination, maintenance and legal advice.\n* **Patent attorney fees**: May range from $2,000 to over $10,000 depending on complexity.\n* **Ongoing fees**: Annual renewal fees start at $300 at the 4th anniversary and steadily increase to $2815 for the 19th anniversary (i.e. for the 20th year).\n\nIf you seek patent protection in other countries, additional international filing and translation fees will apply."
           }
         },
         {
@@ -168,7 +168,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The patent process can take:\u00a0\n\n* A few days for a provisional application.\n* 6 months to 2+ years for a standard patent (longer if examined late or challenged).\n* Up to 5 years or more in complex cases.\n\nIf you want quicker protection while exploring your options, filing a provisional application may give you breathing room for 12 months."
+            "text": "The patent process can take: \n\n* A few days for a provisional application.\n* 6 months to 2+ years for a standard patent (longer if examined late or challenged).\n* Up to 5 years or more in complex cases.\n\nIf you want quicker protection while exploring your options, filing a provisional application may give you breathing room for 12 months."
           }
         },
         {

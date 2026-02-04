@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Respond to an opposition filed against your patent",
   "alternativeHeadline": "Opposition process",
-  "description": "A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone oppos",
+  "description": "How to respond when someone has opposed your patent application",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent",
   "identifier": {
     "@type": "PropertyValue",
@@ -76,14 +76,14 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Respond to an opposition filed against your patent",
-      "description": "A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you\u2019ll have a chance to respond through IP Australia\u2019s formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights.\u00a0\n\nThe oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn\u2019t resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision.\u00a0\n\nYou can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted.",
+      "description": "How to respond when someone has opposed your patent application",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "Opposition process"
+        "name": "xXx_PLACEHOLDER_xXx"
       }
     },
     {
@@ -95,27 +95,27 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Carefully read the notice of opposition and the gr...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Carefully read the notice of opposition and the grounds raised against your patent."
         },
         {
           "@type": "HowToStep",
-          "name": "Consider the assistance of an IP professional - es...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Consider the assistance of an IP professional - especially if the case is technical or the risk of the patent being revoked is serious."
         },
         {
           "@type": "HowToStep",
-          "name": "Understand the legal criteria for patentability (e...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Understand the legal criteria for patentability (e.g. novelty, inventiveness) which is being contested in the opposition."
         },
         {
           "@type": "HowToStep",
-          "name": "Gather evidence and examples that support your cas...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Gather evidence and examples that support your case."
         },
         {
           "@type": "HowToStep",
-          "name": "Keep detailed records of all communication and sub...",
+          "name": "xXx_PLACEHOLDER_xXx",
           "text": "Keep detailed records of all communication and submissions."
         }
       ]
@@ -147,7 +147,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are four possible outcomes to your patent being opposed:\u00a0\n\n* The opposition is dismissed and your patent is granted, unchanged.\n* The opposition is successful, the Delegate revokes your patent altogether.\n* The opposition is successful, and the Delegate decides that it is possible to modify your patent (e.g. narrowing the claims).\n* The opposition is withdrawn by the other party (generally a result of negotiations and agreements taking place between the parties) and the Delegate does not decide anything.\n\nNote that the following are also possible outcomes;\u00a0\n\n* Costs may be awarded to one side depending on the outcome.\n* You or the opponent may appeal the Delegate\u2019s decision to the Federal Court."
+            "text": "There are four possible outcomes to your patent being opposed: \n\n* The opposition is dismissed and your patent is granted, unchanged.\n* The opposition is successful, the Delegate revokes your patent altogether.\n* The opposition is successful, and the Delegate decides that it is possible to modify your patent (e.g. narrowing the claims).\n* The opposition is withdrawn by the other party (generally a result of negotiations and agreements taking place between the parties) and the Delegate does not decide anything.\n\nNote that the following are also possible outcomes; \n\n* Costs may be awarded to one side depending on the outcome.\n* You or the opponent may appeal the Delegate\u2019s decision to the Federal Court."
           }
         },
         {
@@ -155,7 +155,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The fee for an oral hearing in person is $2000 per day.\n* The fee for hearing by written submissions is $1200.\n* There are also other administrative fees associated with submitting evidence and written\u00a0 submissions, which can be costly and time-consuming to prepare. For more detailed information, see [Schedule 8 of Patents Regulation 1991](https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html).\n* Patent attorneys may charge $400 to $700 per hour.\n* There may be fees paid to IP Australia if you seek an extension of time to file evidence."
+            "text": "* The fee for an oral hearing in person is $2000 per day.\n* The fee for hearing by written submissions is $1200.\n* There are also other administrative fees associated with submitting evidence and written submissions, which can be costly and time-consuming to prepare. For more detailed information, see [Schedule 8 of Patents Regulation 1991](https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html).\n* Patent attorneys may charge $400 to $700 per hour.\n* There may be fees paid to IP Australia if you seek an extension of time to file evidence."
           }
         },
         {
@@ -163,7 +163,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The process can take several months to over a year.\u00a0\n\n* You must respond within set timeframes - usually within 2 to 3 months at each stage.\n* The evidence phase alone can take up to 6 - 9 months.\n* A hearing (if needed) may take place months later, with a decision issuedabout 3 months after that."
+            "text": "The process can take several months to over a year. \n\n* You must respond within set timeframes - usually within 2 to 3 months at each stage.\n* The evidence phase alone can take up to 6 - 9 months.\n* A hearing (if needed) may take place months later, with a decision issuedabout 3 months after that."
           }
         },
         {
