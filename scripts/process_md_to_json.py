@@ -13,31 +13,31 @@ CSV_FILE = '260203_IPFRMetaTable.csv'
 LEGISLATION_MAP = {
     "trade mark": [
         {"name": "Trade Marks Act 1995", "url": "https://www.legislation.gov.au/C2004A04969/latest/versions", "type": "Act"},
-        {"name": "Trade Marks Regulations 1995", "url": "https://www.legislation.gov.au/F1996B00084/latest/versions", "type": "Legislative Instrument"}
+        {"name": "Trade Marks Regulations 1995", "url": "https://www.legislation.gov.au/F1996B00084/latest/versions", "type": "Regulations"}
     ],
     "patent": [
         {"name": "Patents Act 1990", "url": "https://www.legislation.gov.au/C2004A04014/latest/versions", "type": "Act"},
-        {"name": "Patents Regulations 1991", "url": "https://www.legislation.gov.au/F1996B02697/latest/versions", "type": "Legislative Instrument"}
+        {"name": "Patents Regulations 1991", "url": "https://www.legislation.gov.au/F1996B02697/latest/versions", "type": "Regulations"}
     ],
     "design": [
         {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/versions", "type": "Act"},
-        {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/versions", "type": "Legislative Instrument"}
+        {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/versions", "type": "Regulations"}
     ],
     "pbr": [ 
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
-        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Legislative Instrument"}
+        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Regulations"}
     ],
     "plant breeder": [ 
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
-        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Legislative Instrument"}
+        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Regulations"}
     ],
     "copyright": [
         {"name": "Copyright Act 1968", "url": "https://www.legislation.gov.au/C1968A00063/latest/text", "type": "Act"},
-        {"name": "Copyright Regulations 2017", "url": "https://www.legislation.gov.au/F2017L01649/latest/text", "type": "Legislative Instrument"}
+        {"name": "Copyright Regulations 2017", "url": "https://www.legislation.gov.au/F2017L01649/latest/text", "type": "Regulations"}
     ],
     "customs": [
         {"name": "Customs Act 1901", "url": "https://www.legislation.gov.au/C1901A00006/latest/text", "type": "Act"},
-        {"name": "Customs Regulation 2015", "url": "https://www.legislation.gov.au/F2015L00373/latest/text", "type": "Legislative Instrument"}
+        {"name": "Customs Regulation 2015", "url": "https://www.legislation.gov.au/F2015L00373/latest/text", "type": "Regulations"}
     ]
 }
 
@@ -98,6 +98,7 @@ USAGE_INFO_BLOCK = {
 IP_TOPIC_MAP = {
     "Intellectual Property Right": "https://www.wikidata.org/wiki/Q108855835",
     "Trade Mark": "https://www.wikidata.org/wiki/Q165196",
+    "Unregistered-tm": "https://www.wikidata.org/wiki/Q165196", # Mapped to Trade Mark
     "Patent": "https://www.wikidata.org/wiki/Q253623",
     "Design": "https://www.wikidata.org/wiki/Q1240325",
     "Copyright": "https://www.wikidata.org/wiki/Q12978",
@@ -120,15 +121,10 @@ def load_csv_metadata(csv_path):
     return rows
 
 def find_metadata_row(md_content, filename, csv_rows):
-    """
-    1. Golden Key: Extract 'PageURL: [url]' from MD header and match CSV 'canonical url'.
-    2. Fallback: Fuzzy filename matching.
-    """
     # 1. PageURL Match (Most Accurate)
     url_match = re.search(r'PageURL:\s*\"\[(.*?)\]', md_content)
     if url_match:
         page_url = url_match.group(1).strip()
-        # Find row where 'canonical url' ends with the same path (handling potential protocol diffs)
         for row in csv_rows:
             csv_url = row.get('canonical url', '').strip()
             if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
@@ -164,6 +160,7 @@ def parse_markdown_blocks(md_text):
                 blocks[current_header] = "\n".join(current_content).strip()
             
             clean_header = line.lstrip('#').strip().lower()
+            clean_header = clean_header.replace('’', "'").replace('“', '"').replace('”', '"')
             current_header = clean_header
             current_content = []
         else:
@@ -199,35 +196,39 @@ def generate_citations_from_csv(metadata_row):
                     
     return citations
 
-def resolve_provider(provider_raw_string):
-    if not provider_raw_string:
-        return {"@type": "Organization", "name": "Third-Party Provider"}
-    
-    for key, obj in PROVIDER_MAP.items():
-        if key.lower() in provider_raw_string.lower():
-            return obj
-            
-    return {
-        "@type": "Organization",
-        "name": provider_raw_string.strip()
-    }
+def resolve_provider(provider_raw_string, archetype_hint=""):
+    """
+    Resolves provider and enforces types based on Archetype hint.
+    """
+    base_obj = {"@type": "Organization", "name": "Third-Party Provider"}
+
+    # 1. Try to find detailed map match
+    if provider_raw_string:
+        for key, obj in PROVIDER_MAP.items():
+            if key.lower() in provider_raw_string.lower():
+                base_obj = obj.copy()
+                break
+        else:
+            # If no detailed match, use the raw string
+            base_obj["name"] = provider_raw_string.strip()
+
+    # 2. Enforce Type based on Archetype
+    if "Government Service" in archetype_hint:
+        base_obj["@type"] = "GovernmentOrganization"
+    elif "Non-Government" in archetype_hint:
+        base_obj["@type"] = "NGO" # User requested NGO for Non-Gov
+    elif "Commercial" in archetype_hint:
+        base_obj["@type"] = "Organization"
+
+    return base_obj
 
 def clean_text_retain_formatting(text, strip_images=False):
-    """
-    PRESERVES Markdown structure (bullets, bold).
-    Optionally strips markdown images for Description fields.
-    """
     if not text: return ""
-    
     text = text.strip()
-    
-    # Remove images: [![alt](src)](href) or ![alt](src)
     if strip_images:
+        text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
         text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
-        # Clean up any leftover empty links from linked images like [ ](/node/208)
         text = re.sub(r'\[\s*\]\(.*?\)', '', text)
-
-    # Collapse 3+ newlines into 2
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip()
 
@@ -259,8 +260,6 @@ def extract_howto_steps(blocks):
     
     if target_key:
         raw_text = blocks[target_key]
-        
-        # 1. Try finding lists
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         
         if matches:
@@ -273,19 +272,59 @@ def extract_howto_steps(blocks):
                         "text": clean_text
                     })
         else:
-            # 2. Fallback: Treat paragraphs as steps (Fix for ASBFEO)
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
-                # Ignore "See also" or footer links if they accidentally got included
                 if "see also" in p.lower(): continue
-                
                 steps.append({
                     "@type": "HowToStep",
                     "name": p[:50] + "..." if len(p) > 50 else p,
                     "text": p
                 })
-                
     return steps
+
+def resolve_about_topics(metadata_row):
+    """
+    Returns a list of Thing objects for the 'about' property.
+    Maps Unregistered-tm to Trade Mark QID.
+    """
+    raw_ip_rights = metadata_row.get('Relevant IP right', '')
+    cleaned_rights = raw_ip_rights.replace('"', '').lower()
+    rights_list = [r.strip() for r in cleaned_rights.split(',')]
+    
+    about_entities = []
+    
+    # Dedup names if they map to the same Thing concept? 
+    # User asked for "every IP right included".
+    
+    for right in rights_list:
+        if not right: continue
+        
+        # Determine Name and URL
+        name = right.title()
+        url = None
+        
+        # Direct Key Lookup
+        for map_key in IP_TOPIC_MAP:
+            if map_key.lower() == right:
+                url = IP_TOPIC_MAP[map_key]
+                name = map_key # Use official capitalization
+                break
+        
+        entity = {"@type": "Thing", "name": name}
+        if url:
+            entity["sameAs"] = url
+            
+        about_entities.append(entity)
+        
+    # If single entity, return object. If multiple, return array (Schema standard).
+    # However, user's ideal json showed a single object. 
+    # If multiple exist, we usually return an array.
+    if len(about_entities) == 1:
+        return about_entities[0]
+    elif len(about_entities) > 1:
+        return about_entities
+    else:
+        return {"@type": "Thing", "name": "Intellectual Property Right"}
 
 # --- 3. MAIN BUILDER FUNCTION ---
 
@@ -299,33 +338,51 @@ def process_file(filepath, filename, metadata_row):
     # B. Metadata Extraction
     udid = metadata_row.get('UDID', 'Dxxxx')
     title = metadata_row.get('Main Title', filename.replace('.md', '').replace('_', ' '))
-    archetype = metadata_row.get('Archetype', 'Government Service').strip()
+    archetype = metadata_row.get('Archectype') or metadata_row.get('Archetype', 'Government Service')
+    archetype = archetype.strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
     
     # C. Description Extraction
     desc_keys = ["what is it?", "description", "intro"]
     description_raw = next((blocks[k] for k in desc_keys if k in blocks), metadata_row.get('Description', ''))
-    # Strip images from description to keep it clean
     description = clean_text_retain_formatting(description_raw, strip_images=True)
     
     # D. Build Main Entity
     main_entities = []
     service_id = "#the-service"
     
-    # D1. Primary Entity
+    # ARCHETYPE LOGIC TREE
     if "Self-Help" in archetype:
+        # a) Self-Help Strategy -> HowTo (No Provider)
         howto_obj = {
             "@id": service_id,
             "@type": "HowTo",
-            "name": f"How to {title}",
+            "name": title,
             "description": description,
+            "areaServed": {"@type": "Country", "name": "Australia"},
             "step": extract_howto_steps(blocks)
         }
         main_entities.append(howto_obj)
         
     else:
-        service_type = "GovernmentService" if "Government" in archetype else "Service"
-        provider_obj = resolve_provider(metadata_row.get('Provider') or metadata_row.get('Overtitle'))
+        # Determine Service Type and Provider based on Archetype
+        service_type = "Service" # Default
+        provider_name_raw = metadata_row.get('Provider') or metadata_row.get('Overtitle')
+        
+        # c) Government Service
+        if "Government Service" in archetype:
+            service_type = "GovernmentService"
+            
+        # b) Non-Government Third-Party Authority
+        elif "Non-Government" in archetype:
+            service_type = "Service"
+            
+        # d) Commercial Third Party Service
+        elif "Commercial" in archetype:
+            service_type = "Service"
+            
+        # Resolve Provider with Archetype Hint
+        provider_obj = resolve_provider(provider_name_raw, archetype_hint=archetype)
         
         service_obj = {
             "@id": service_id,
@@ -335,12 +392,14 @@ def process_file(filepath, filename, metadata_row):
             "areaServed": {"@type": "Country", "name": "Australia"},
             "provider": provider_obj
         }
+        
+        # Swap provider key for GovernmentService schema compliance
         if service_type == "GovernmentService":
              service_obj["serviceOperator"] = service_obj.pop("provider")
              
         main_entities.append(service_obj)
 
-        # D2. Sidecar HowTo (Now catches Paragraphs too!)
+        # D2. Sidecar HowTo
         steps = extract_howto_steps(blocks)
         if steps:
             main_entities.append({
@@ -363,10 +422,7 @@ def process_file(filepath, filename, metadata_row):
     citations = generate_citations_from_csv(metadata_row)
     
     # G. Topics
-    topic_name = metadata_row.get('Relevant IP right', 'Intellectual Property Right').replace('"', '')
-    about_obj = {"@type": "Thing", "name": topic_name}
-    if topic_name in IP_TOPIC_MAP:
-        about_obj["sameAs"] = IP_TOPIC_MAP[topic_name]
+    about_obj = resolve_about_topics(metadata_row)
 
     # --- H. FINAL ASSEMBLY ---
     json_ld = {
@@ -420,7 +476,6 @@ def main():
         with open(filepath, 'r', encoding='utf-8') as f:
             content_sample = f.read()
             
-        # Pass content to finder to get Golden Key match
         matched_row = find_metadata_row(content_sample, filename, csv_rows)
         
         if not matched_row:
