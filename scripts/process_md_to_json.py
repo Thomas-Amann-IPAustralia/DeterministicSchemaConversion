@@ -10,9 +10,6 @@ OUTPUT_DIR = 'json_output'
 CSV_FILE = '260203_IPFRMetaTable.csv'
 
 # --- 1. KNOWLEDGE BASES ---
-
-# Legislation Database (TRIPWIRES)
-# Keys must match normalized values from the CSV "Relevant IP right" column
 LEGISLATION_MAP = {
     "trade mark": [
         {"name": "Trade Marks Act 1995", "url": "https://www.legislation.gov.au/C2004A04969/latest/versions", "type": "Act"},
@@ -26,11 +23,11 @@ LEGISLATION_MAP = {
         {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/versions", "type": "Act"},
         {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/versions", "type": "Legislative Instrument"}
     ],
-    "pbr": [ # Mapped from CSV 'PBR'
+    "pbr": [ 
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
         {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Legislative Instrument"}
     ],
-    "plant breeder": [ # Catch-all if full name used
+    "plant breeder": [ 
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
         {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Legislative Instrument"}
     ],
@@ -44,7 +41,6 @@ LEGISLATION_MAP = {
     ]
 }
 
-# Detailed Provider Objects
 PROVIDER_MAP = {
     "ASBFEO": {
         "@type": "GovernmentOrganization",
@@ -88,7 +84,8 @@ PUBLISHER_BLOCK = {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
-    "parentOrganization": {"@type": "GovernmentOrganization", "name": "Australian Government"}
+    "parentOrganization": {"@type": "GovernmentOrganization", "name": "Australian Government"
+    }
 }
 
 USAGE_INFO_BLOCK = {
@@ -122,36 +119,40 @@ def load_csv_metadata(csv_path):
         print(f"Error reading CSV: {e}")
     return rows
 
-def find_metadata_row(filename, csv_rows):
+def find_metadata_row(md_content, filename, csv_rows):
     """
-    Finds the CSV row matching the filename using UDID or Fuzzy Title Match.
+    1. Golden Key: Extract 'PageURL: [url]' from MD header and match CSV 'canonical url'.
+    2. Fallback: Fuzzy filename matching.
     """
-    # 1. Try strict UDID match (e.g., D1003)
+    # 1. PageURL Match (Most Accurate)
+    url_match = re.search(r'PageURL:\s*\"\[(.*?)\]', md_content)
+    if url_match:
+        page_url = url_match.group(1).strip()
+        # Find row where 'canonical url' ends with the same path (handling potential protocol diffs)
+        for row in csv_rows:
+            csv_url = row.get('canonical url', '').strip()
+            if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
+                return row
+
+    # 2. UDID Match
     udid_match = re.search(r'([A-Z]\d{4})', filename)
     if udid_match:
         target_udid = udid_match.group(1)
         row = next((r for r in csv_rows if r.get('UDID') == target_udid), None)
         if row: return row
 
-    # 2. Try Fuzzy Title Match (Fallback)
-    # Clean filename: "1030_ASBFEO.json" -> "asbfeo"
+    # 3. Fuzzy Title Match
     clean_name = filename.lower().replace('.json', '').replace('.md', '').replace('ipfr_', '').replace('_', ' ')
-    clean_name = re.sub(r'\d+', '', clean_name).strip() # Remove numbers
+    clean_name = re.sub(r'\d+', '', clean_name).strip()
 
     for row in csv_rows:
-        # Check if filename is inside the CSV Title or Overtitle
         csv_title = row.get('Main Title', '').lower()
-        csv_overtitle = row.get('Overtitle', '').lower()
-        
-        if clean_name and (clean_name in csv_title or clean_name in csv_overtitle):
+        if clean_name and clean_name in csv_title:
             return row
             
-    return {} # Return empty if no match
+    return {}
 
 def parse_markdown_blocks(md_text):
-    """
-    Splits markdown into a dictionary keyed by lowercase headers.
-    """
     blocks = {}
     lines = md_text.split('\n')
     current_header = "intro"
@@ -174,24 +175,16 @@ def parse_markdown_blocks(md_text):
     return blocks
 
 def generate_citations_from_csv(metadata_row):
-    """
-    Generates citations based SOLELY on the 'Relevant IP right' column in the CSV.
-    """
     citations = []
-    
-    # Extract raw CSV value (e.g., """Trade mark"", ""Design""")
     raw_ip_rights = metadata_row.get('Relevant IP right', '')
     if not raw_ip_rights:
         return citations
 
-    # Normalize: lowercase, remove quotes, split commas
-    # e.g. "trade mark, design"
     cleaned_rights = raw_ip_rights.replace('"', '').lower()
     rights_list = [r.strip() for r in cleaned_rights.split(',')]
     
     added_urls = set()
 
-    # Map rights to Legislation
     for right in rights_list:
         if right in LEGISLATION_MAP:
             for leg in LEGISLATION_MAP[right]:
@@ -219,16 +212,24 @@ def resolve_provider(provider_raw_string):
         "name": provider_raw_string.strip()
     }
 
-def clean_text_retain_formatting(text):
+def clean_text_retain_formatting(text, strip_images=False):
     """
-    Trims excessive whitespace but PRESERVES Markdown structure (bullets, bold).
+    PRESERVES Markdown structure (bullets, bold).
+    Optionally strips markdown images for Description fields.
     """
     if not text: return ""
-    # Strip leading/trailing whitespace
+    
     text = text.strip()
-    # Collapse 3+ newlines into 2 (to separate paragraphs but not have huge gaps)
+    
+    # Remove images: [![alt](src)](href) or ![alt](src)
+    if strip_images:
+        text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
+        # Clean up any leftover empty links from linked images like [ ](/node/208)
+        text = re.sub(r'\[\s*\]\(.*?\)', '', text)
+
+    # Collapse 3+ newlines into 2
     text = re.sub(r'\n{3,}', '\n\n', text)
-    return text
+    return text.strip()
 
 def extract_faqs(blocks):
     faq_keys = [
@@ -258,17 +259,32 @@ def extract_howto_steps(blocks):
     
     if target_key:
         raw_text = blocks[target_key]
-        # Regex to find lines starting with * or 1.
+        
+        # 1. Try finding lists
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         
-        for step_text in matches:
-            clean_text = clean_text_retain_formatting(step_text)
-            if clean_text:
+        if matches:
+            for step_text in matches:
+                clean_text = clean_text_retain_formatting(step_text)
+                if clean_text:
+                    steps.append({
+                        "@type": "HowToStep",
+                        "name": clean_text[:50] + "..." if len(clean_text) > 50 else clean_text,
+                        "text": clean_text
+                    })
+        else:
+            # 2. Fallback: Treat paragraphs as steps (Fix for ASBFEO)
+            paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
+            for p in paragraphs:
+                # Ignore "See also" or footer links if they accidentally got included
+                if "see also" in p.lower(): continue
+                
                 steps.append({
                     "@type": "HowToStep",
-                    "name": clean_text[:50] + "..." if len(clean_text) > 50 else clean_text,
-                    "text": clean_text
+                    "name": p[:50] + "..." if len(p) > 50 else p,
+                    "text": p
                 })
+                
     return steps
 
 # --- 3. MAIN BUILDER FUNCTION ---
@@ -289,15 +305,15 @@ def process_file(filepath, filename, metadata_row):
     # C. Description Extraction
     desc_keys = ["what is it?", "description", "intro"]
     description_raw = next((blocks[k] for k in desc_keys if k in blocks), metadata_row.get('Description', ''))
-    description = clean_text_retain_formatting(description_raw)
+    # Strip images from description to keep it clean
+    description = clean_text_retain_formatting(description_raw, strip_images=True)
     
     # D. Build Main Entity
     main_entities = []
     service_id = "#the-service"
     
-    # D1. Primary Entity (Service or HowTo)
+    # D1. Primary Entity
     if "Self-Help" in archetype:
-        # Archetype A: HowTo IS the service
         howto_obj = {
             "@id": service_id,
             "@type": "HowTo",
@@ -308,7 +324,6 @@ def process_file(filepath, filename, metadata_row):
         main_entities.append(howto_obj)
         
     else:
-        # Archetype B/C/D: Service Object
         service_type = "GovernmentService" if "Government" in archetype else "Service"
         provider_obj = resolve_provider(metadata_row.get('Provider') or metadata_row.get('Overtitle'))
         
@@ -325,7 +340,7 @@ def process_file(filepath, filename, metadata_row):
              
         main_entities.append(service_obj)
 
-        # D2. The Sidecar HowTo (If steps exist, add them regardless of Archetype)
+        # D2. Sidecar HowTo (Now catches Paragraphs too!)
         steps = extract_howto_steps(blocks)
         if steps:
             main_entities.append({
@@ -344,7 +359,7 @@ def process_file(filepath, filename, metadata_row):
             "mainEntity": faqs
         })
 
-    # F. Citations (From CSV)
+    # F. Citations
     citations = generate_citations_from_csv(metadata_row)
     
     # G. Topics
@@ -401,13 +416,17 @@ def main():
     md_files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.md')]
     
     for filename in md_files:
-        matched_row = find_metadata_row(filename, csv_rows)
+        filepath = os.path.join(INPUT_DIR, filename)
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content_sample = f.read()
+            
+        # Pass content to finder to get Golden Key match
+        matched_row = find_metadata_row(content_sample, filename, csv_rows)
         
-        # Fallback if no CSV match found
         if not matched_row:
             matched_row = {"Main Title": filename.replace('.md', '').replace('IPFR_', '').replace('_', ' ')}
 
-        process_file(os.path.join(INPUT_DIR, filename), filename, matched_row)
+        process_file(filepath, filename, matched_row)
 
 if __name__ == "__main__":
     main()
