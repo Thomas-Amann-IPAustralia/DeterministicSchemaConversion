@@ -44,29 +44,24 @@ LEGISLATION_MAP = {
 PROVIDER_MAP = {
     "ASBFEO": {
         "@type": "GovernmentOrganization",
-        # Name will be overwritten by placeholder logic
         "alternateName": "ASBFEO",
         "url": "https://www.asbfeo.gov.au"
     },
     "IP Australia": {
         "@type": "GovernmentOrganization",
-        # Name will be overwritten by placeholder logic
         "alternateName": "Intellectual Property Australia",
         "url": "https://www.ipaustralia.gov.au"
     },
     "Australian Border Force": {
         "@type": "GovernmentOrganization",
-        # Name will be overwritten by placeholder logic
         "alternateName": "ABF"
     },
     "WIPO": {
         "@type": "Organization",
-        # Name will be overwritten by placeholder logic
         "alternateName": "WIPO"
     },
     "Federal Circuit Court": {
-        "@type": "Organization",
-        # Name will be overwritten by placeholder logic
+        "@type": "Organization"
     }
 }
 
@@ -199,7 +194,6 @@ def generate_citations_from_csv(metadata_row):
 def resolve_provider(provider_raw_string, archetype_hint=""):
     """
     Resolves provider and enforces types based on Archetype hint.
-    **UPDATED**: Enforces name placeholder.
     """
     base_obj = {"@type": "Organization"}
 
@@ -225,10 +219,10 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
 
 def clean_text_retain_formatting(text, strip_images=False):
     """
-    **UPDATED**: Strict removal of formatting artifacts.
+    UPDATED: Aggressive cleanup of artifacts, particularly non-breaking spaces (\u00a0)
+    and ensuring normalized spacing while preserving double newlines for paragraphs.
     """
     if not text: return ""
-    text = text.strip()
     
     # 1. Strip Markdown Images
     if strip_images:
@@ -236,20 +230,30 @@ def clean_text_retain_formatting(text, strip_images=False):
         text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
         text = re.sub(r'\[\s*\]\(.*?\)', '', text)
     
-    # CHANGE #3: Formatting artefact removal
-    # Replace non-breaking spaces (\u00a0) and other weird spaces with standard space
+    # 2. Aggressive Character Replacement
+    # Replace unicode non-breaking space (0xA0) with standard space (0x20)
     text = text.replace(u'\u00a0', ' ')
     
-    # Normalize newlines: Remove \r, ensure standardized \n
+    # Remove carriage returns
     text = text.replace('\r', '')
     
-    # Collapse multiple spaces into one
-    text = re.sub(r'[ \t]+', ' ', text)
+    # 3. Whitespace Normalization
+    # Split by lines first to preserve paragraph structure
+    lines = text.split('\n')
+    cleaned_lines = []
     
-    # Fix multiple newlines (3+ becomes 2)
+    for line in lines:
+        # Collapse multiple spaces/tabs within a single line into one space
+        clean_line = re.sub(r'[ \t]+', ' ', line).strip()
+        cleaned_lines.append(clean_line)
+        
+    text = "\n".join(cleaned_lines)
+    
+    # 4. Paragraph Normalization
+    # Collapse 3+ newlines into 2 (standard paragraph break)
     text = re.sub(r'\n{3,}', '\n\n', text)
     
-    # Trim again just in case
+    # 5. Final Trim
     return text.strip()
 
 def extract_faqs(blocks):
@@ -280,6 +284,7 @@ def extract_howto_steps(blocks):
     
     if target_key:
         raw_text = blocks[target_key]
+        # Regex to find bullet points or numbered lists
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         
         if matches:
@@ -292,6 +297,7 @@ def extract_howto_steps(blocks):
                         "text": clean_text
                     })
         else:
+            # Fallback to paragraphs if no list format found
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
@@ -362,7 +368,7 @@ def process_file(filepath, filename, metadata_row):
     # CHANGE #5: Always pull description from CSV
     description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
     if not description:
-        # Fallback if CSV is empty, though instruction says "Always pull"
+        # Fallback if CSV is empty
         desc_keys = ["what is it?", "description", "intro"]
         description_raw = next((blocks[k] for k in desc_keys if k in blocks), '')
         description = clean_text_retain_formatting(description_raw, strip_images=True)
@@ -378,10 +384,8 @@ def process_file(filepath, filename, metadata_row):
     elif "Government Service" in archetype:
         service_type = "GovernmentService"
         has_provider = True
-    elif "Non-Government" in archetype: # For "Non-Government Third-Party Authority"
+    elif "Non-Government" in archetype:
         service_type = "Service" 
-        # Note: User request implied standard mapping, but if you need specific NGO type here, adjust.
-        # Based on example, Service is fine, but provider type changes.
         has_provider = True
     else:
         service_type = "Service"
