@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -133,6 +134,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Challenge a granted patent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Requesting a patent re-examination is a way to challenge a granted Australian patent by asking IP Australia to reassess whether the invention meets the legal requirements \u2013 like being new or inventive \u2013 for being patented.\n\nIf someone accuses you of infringing their patent, and you believe the patent may not be valid, re-examination may help overturn it or limit its scope. This can be a cheaper, faster alternative than going to court.\n\nYou don\u2019t have to be in a formal dispute with a patent holder to use this option. Anyone (with a reasonable justification) can request a patent re-examination at any time after it has been granted.\n\nThe request must explain why the patent may be invalid and refer to relevant evidence, such as published documents that show the invention was already known. IP Australia will re-examine the patent and, decide whether to revoke or amend it.\n\nIf the patent hasn\u2019t been granted yet, it may be possible to challenge it through IP Australia\u2019s opposition and hearing process instead ([Challenge a new or amended patent | IP Australia First Response)](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent).\n\nIn the case you wish to dispute the ownership of the patent, it may also be able to challenge the ownership of the patent through IP Australia\u2019s opposition and hearing process."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -161,6 +178,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Preparing a good-quality request may take several days to weeks.\n* Once submitted, IP Australia\u2019s examination and decision can take several months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The rate of re-examination varies widely, but it is generally quite rare. Third party initiated patent re-examination is typically used 10-20 times per year."
           }
         },
         {

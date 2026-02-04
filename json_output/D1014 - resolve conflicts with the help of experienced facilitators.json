@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -117,6 +118,22 @@
         "@id": "#the-service"
       },
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Resolve conflicts with the help of experienced facilitators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*\n\n![Overview of ADR options ](/sites/default/files/images/2026-01/GD2526_079%20-%20IP%20First%20Response%20Infographic-2.png)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alternative Dispute Resolution (ADR) allows you to settle disputes without going to court. There are various types of ADR, most notably procedures such as mediation, arbitration and expert determination. These processes typically help resolve disputes through an experienced, impartial person providing opinions, facilitating an agreement between parties and/or providing a binding or non-binding decision.\n\nYou can also use ADR at any stage of your IP dispute. ADR procedures and services are offered by a wide range of public and private bodies such as courts, tribunals and legal practitioners. Below are most common forms of ADR you may like to consider in resolving your IP dispute.\n\n**Mediation**\n\nMediation is a structured negotiation process where the parties, with the assistance of an independent person as mediator:\n\n* listen to each other and are heard by each other\n* identify the disputed issues\n* work out what everyone agrees on\n* develop options to address the disputed issues\n* aim to reach a workable agreement.\n\nThe mediator has no determinative power to decide the outcome of the dispute \u2013 instead, the mediator will assist and advise both parties in shaping the mediation process and facilitating an agreement. Find more information about [mediation](https://ipfirstresponse.ipaustralia.gov.au/options/mediation).\n\n**Arbitration**\n\nArbitration is a process where you and the other parties present the points being contended and facts to an independent person (the arbitrator). The arbitrator, who is often someone with a high level of expertise in the relevant field of law, then makes a decision based on the information received (an arbitral award). Notable features of arbitration include:\n\n* A more formal and structured process than other types of ADR, akin to a shorter and more flexible version of a court or tribunal hearing\n* The parties are typically expected to produce evidence and submissions before the arbitrator. Both parties must agree before the process commences that the arbitrator\u2019s decision will be binding and enforceable\n* Parties are in most cases required to renounce all other related legal claims to avoid going to court after arbitral decisions.\n\nMany contracts stipulate that parties must resolve disputes through arbitration. Arbitration can also be voluntary or required under a court order.\n\nFind more information about [arbitration](https://ipfirstresponse.ipaustralia.gov.au/options/arbitration).\n\n**Expert determination**\n\nExpert determination is a process where one or more independent experts in the specialist area make a determination on matters referred to them. Expert determination is a highly flexible and collaborative procedure, and its notable features include:\n\n* The process is initiated by agreement between the parties\n* The parties decide the issues that are to be referred to the expert to make a determination on\n* The parties need to agree as to whether they want the expert decision to be binding or not\n* The parties can select and nominate an expert together\n* It is suitable for highly technical issues in a specialist area as the expert would often have a high level of expertise and experience in the relevant industry."
+          }
+        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

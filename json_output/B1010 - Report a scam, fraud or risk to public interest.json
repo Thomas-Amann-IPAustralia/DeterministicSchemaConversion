@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -149,6 +150,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Report a scam, fraud or risk to public interest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scammers may pretend to be rights holders, lawyers or even government agencies to demand money, personal details, or business changes from innocent parties, or to deceive them into downloading malware onto your computer or other device.\n\nIf you believe that the allegation of infringement from the other party is a scam or of a fraudulent nature, you could consider reporting scams or criminal behaviour to an appropriate authority. You can also consider consulting a legal professional such as a trade mark attorney, patent attorney or IP lawyer to assess the claims made by the other party and obtain legal advice.\n\nCommon tactics used by scammers include emails or letters claiming your trade mark, business name, domain name, content or product is infringing a registered trade mark, copyright or other IP rights. They might threaten to sue unless you pay a fee, or demand that you register your IP right using their services, often at an inflated cost. Note that there is no formal system of copyright registration in Australia \u2013 copyright automatically arises in original works and other subject-matter by virtue of the Copyright Act 1968, free of charge, as soon as you write down or otherwise record a work. \u2018Registering\u2019 your work with a private organisation would not give your material any greater copyright protection in Australia.\n\nScammers might also try to convince you to click on a link to a fake website to get access to your personal information or log-in credentials for a real platform you use, or to download malware by opening a file or link (for example, by saying this will let you see details of or dispute the alleged infringement, or dispute the supposed suspension of your account). You might also receive phone calls impersonating legal professionals or IP Australia officers. For more information on scams relating to IP rights, see IP Australia's page: [Scams related to managing IP rights](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights).\n\nSeveral Australian federal and state bodies can help, depending on the situation:\n\n* The Australian Competition and Consumer Commission (ACCC), through its Scamwatch service.\n* The Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC).\n* The Australian Federal Police (AFP) and state or territory police investigate fraud, impersonation, and criminal extortion.\n* IP Australia.\n\nReporting fraudulent activity promptly can help protect others and build evidence for enforcement."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -185,6 +202,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Reporting time depends on how much information you have. Some forms are short, but follow-up steps or investigations may take longer.\n\nResponse times vary depending on the agency and the nature of the report. Even if there\u2019s no follow-up, your report remains helpful."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Data specific to IP scams is unavailable, however the ACCC\u2019s Scamwatch service noted that in 2024 [they had 249,448 scams reported to them, with reported losses estimated at $318,762.688.](https://www.scamwatch.gov.au/research-and-resources/scam-statistics)\n\n[The Annual Cyber Threat Report 2023-2024](https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024) published by the Australian Cyber Security Centre states that they received over 87,400 cybercrime reports were received in FY2023-2024."
           }
         },
         {

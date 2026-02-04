@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -71,6 +72,22 @@
         "@type": "GovernmentOrganization",
         "name": "xXx_PLACEHOLDER_xXx"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Access denied?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You are not authorized to access this page."
+          }
+        }
+      ]
     }
   ]
 }

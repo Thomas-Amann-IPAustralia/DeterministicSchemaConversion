@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -109,6 +110,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Pause use of contested ip until resolution?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nYou may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease and desist request from someone claiming you were using their IP without permission, and you stop using their IP. In some cases, this might resolve a dispute and avoid the issue escalating further.\n\nFor information about evaluating a cease and desist letter or a letter of demand, see: [Receiving a letter of demand | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\nEven if you\u2019re unsure whether there is actual infringement happening, you may still elect to stop using the IP (at least temporarily) while you get advice from an IP lawyer or IP attorney. This can sometimes:\n\n* help to avoid escalating the conflict prematurely\n* help to demonstrate that you are acting in good faith\n* keep open the possibility of resolving the issue informally\n* help to reduce your legal risks.\n\nThere is no formal process to comply with a request to stop using contested IP. It might include taking down products or copyrighted content, re-branding, stopping sales, changing your website, or returning stock. A business can decide to stop using the IP completely, or in part. If you are making this change in response to a request or demand from another party, it is important to inform the other party in writing, communicating the actions you have taken or are willing to take in response to their request, to prevent further escalation. You should note that in communicating with the other party, if you admit any fault or liability it will likely assist the other party\u2019s legal position against you.\n\n**Please note: Ceasing use of the contested IP alone may not be sufficient to prevent further escalation. It can also have negative consequences on your ability to respond to allegations of infringement or be seen as an admission of liability. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. An IP lawyer or IP attorney can help you assess the strength of the allegations made against you and whether ceasing use of the contested IP is in your best interests.**"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -145,6 +162,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Time will vary depending on the circumstances and what you are changing. For instance, changing a website image could be done very quickly, where a full rebrand or product withdrawal could take weeks or months.\n\nExtra time might be needed to:\n\n* check where the IP is used in your business\n* inform suppliers and distributors\n* update packaging and marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stopping the use of contested IP is a commonly used approach."
           }
         },
         {

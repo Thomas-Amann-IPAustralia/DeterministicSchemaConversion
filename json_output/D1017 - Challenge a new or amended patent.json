@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -118,6 +119,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Challenge a new or amended patent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After the publication of acceptance in the Australian Journal of Patents, there is a 3-month window before the patent is \u2018granted\u2019. In this intervening period, anyone can challenge the decision to grant the patent by making a formal objection, known as an *opposition*, to IP Australia.\n\nThere are a variety of reasons for an opposition, however the most common are when someone else believes that your invention is identical or very similar to another patent (and therefore isn\u2019t new and inventive), or that the patentee isn\u2019t the true owner of the invention.\n\nHearings can be heard either by written submissions, or as an oral hearing. Although the hearings are relatively informal (compared to court proceedings), and oral and written hearings vary slightly, in both cases you and the other party will both have an opportunity to argue your cases by reference to the law and evidence. You may also elect to be represented by a patent attorney or other legal professional.\n\nNotably, hearings are the final step in the opposition process, and they do not always occur. Parties can negotiate and come to a settlement prior to the hearing (thus ending the opposition)."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -154,6 +171,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Oppositions can take up to 12 months depending on the various stages outlined below.\n\n* The *notice of intent* (NOI) to oppose a patent must be filed within 3 months of the publication of acceptance. The party opposing the patent must then file a *Statement of Grounds and Particulars* within a month from when the NOI is filed. Provided the opposition is not dismissed, the process will then enter the evidence stage.\n* The party opposing the patent must provide evidence which supports their opposition within 3 months of the Statement of Grounds and Particulars being filed.\n* The owner of the patent then has 3 months to provide evidence in response (defending or explaining why their patent should *not* be changed or revoked).\n* After this, the party opposing the patent has 3 months to provide evidence in reply.\n* The hearing follows, and the decision is provided within 3 months of the hearing date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fewer than 300 per year (out of 30,000 patents filed each year)"
           }
         },
         {

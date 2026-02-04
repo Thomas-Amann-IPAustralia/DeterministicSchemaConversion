@@ -132,7 +132,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -197,6 +198,30 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Inform online platforms that you have ip rights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \\\n\\\nSigning up to an online marketplace\u2019s IP protection program or their brand registry involved recording your IP with the platform before issues arise.\n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process.\n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Please note that ip rights covered vary by platform:",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n* eBay VeRO Program allows rights owners to report suspected infringement of [trade marks, copyrights, designs and patents.](https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349)\n* [Etsy Intellectual Property Portal](https://www.etsy.com/au/ipreporting) lets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n* Shein IP Protection Platform accepts notices for [all types of IP infringement](https://www.sheingroup.com/our-business/operating-responsibly/#product-safety) (trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n* [Temu IP Portal](https://www.temu.com/intellectual-property-complaint.html?refer_page_name=intellectual-property-policy&refer_page_id=19457_1753084754239_fedamubrim&refer_page_sn=19457&_x_sessn_id=6yq4j50u6o) accepts notices for all types of IP infringement."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -233,6 +258,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Creating an account and submitting the online form would generally take no longer than a few hours. \\\nVerification with individual platforms typically takes 24\u201372 hours, but may extend up to two weeks if additional documents are requested.\n\nOngoing effort varies depending on what the platform offers and how proactive you wish to be. Checking alerts and confirming takedown requests generally takes a few minutes per week. Conducting further searches, investigating listings, and reporting listings may take more time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Signing up to registries or IP protection program provided by online platforms is a practice commonly used by small to medium businesses that own IP rights."
           }
         },
         {

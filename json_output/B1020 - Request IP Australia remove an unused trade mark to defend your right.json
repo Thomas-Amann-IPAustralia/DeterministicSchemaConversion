@@ -70,7 +70,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -120,6 +121,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Request ip australia remove an unused trade mark to defend your right?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If someone has accused you of infringing their registered trade mark,and you believe their trade mark has not been used in the market on the goods and/or services specified in their registration for more than 3 years, you may consider submitting a request to remove the trade mark on the basis of non-use.\n\nYou can request removal of a trade mark if you believe the owner:\n\n* hasn't used the trade mark in relation to all or some of their goods and/or services for 3 years\n* never intended to use the trade mark\n* hasn't used the trade mark in good faith.\n\n**When can you file an application for removal for non-use?**\n\nIf you are filing an application for removal on the ground that the owner never intended to use the trade mark, then the application may be made at any time after the subject trade mark has been filed.\n\nIf you are filing an application for removal on the ground that the trade mark has not been used, the following timeframes would apply:\n\n| **For trade marks with a filing date 23 February 2019 or earlier;** | **For trade marks with a filing date 24 February 2019 or later;** |\n| --- | --- |\n| You can file after **5 years** or more have passed since the *filing date* of the application (and if you believe that a trade mark hasn't been used in three years.) An image of the trade mark register highlighting the date of filing. | You can file after **3 years** have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.) Image of the trade mark register highlighting the Entered on Register date |"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -156,6 +173,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The length of this process largely depends on whether someone opposes your application to remove for non-use.\n\nIf nobody opposes the application for removal within two months, the registration will be removed.\n\nIf the application to remove is opposed, the timing is similar to other [opposition processes](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark) involving trade mark matters. The process typically takes at least 6-12 months, but can be much longer when hearings or subsequent appeals are involved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP Australia received approximately 1,000-1,500 applications annually for removal for non-use over the 5-year period of 2019-2024."
           }
         },
         {

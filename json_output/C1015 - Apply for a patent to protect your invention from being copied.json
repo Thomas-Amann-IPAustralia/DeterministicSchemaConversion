@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -133,6 +134,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Apply for a patent to protect your invention from being copied?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Applying for a patent is one way to protect a new product, process or method that you\u2019ve developed.\n\nA patent application is a formal request to IP Australia to be granted exclusive rights over your invention. If granted, a patent can stop others from making, using, or selling your invention in Australia without your permission.\n\nPatents are typically used for inventions that are new, useful and involve an inventive step. This could include anything from a physical product to a chemical process, mechanical tool or software-enabled system.\n\nYou don\u2019t need a granted patent to start selling your product, but a patent can strengthen your legal position and give you more control over how your invention is used by others.\n\nIt is important to note that disclosing your invention can create issues later on for your patent application \u2013 if you are considering applying for a patent, it is important to avoid publicly disclosing your invention.\n\nYou can apply for a standard patent or a provisional application first\u2014each has different costs, benefits and timeframes. Provisional applications are often used as a first step to secure a priority date while you refine your invention or seek investors.\n\nA provisional application does not offer any patent protection, and simply acts as a placeholder while you decide whether to continue with the patenting process. A provisional application gives you 12 months to consider your options, and most importantly, it establishes your priority date.\n\nIf you wish to proceed with the application process (and enter the examination stage), you will need to file a standard application. Importantly, you can use the priority date from your provisional application in your standard application. This is of particular value if there is a competitor who has filed a patent application \u2013 if they are both directed towards a similar process, you would have a greater chance of being granted the patent owing to your earlier priority date.\n\nIt is important to note that any features claimed in your standard application must have also been disclosed in your provisional application if you wish to claim the earlier priority date."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -169,6 +186,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The patent process can take:\n\n* A few days for a provisional application.\n* 6 months to 2+ years for a standard patent (longer if examined late or challenged).\n* Up to 5 years or more in complex cases.\n\nIf you want quicker protection while exploring your options, filing a provisional application may give you breathing room for 12 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Over 30,000 patents are filed annually in Australia."
           }
         },
         {

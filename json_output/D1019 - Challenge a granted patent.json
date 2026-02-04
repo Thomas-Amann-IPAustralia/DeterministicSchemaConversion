@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -123,6 +124,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Challenge a granted patent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A patent re-examination is a means for challenging the *validity*\\* of a granted patent. In certain situations, such as being accused of infringement, the validity of the patent may come under heavy scrutiny. This can be requested at any time after a patent is granted by filing a request with IP Australia. Patent re-examination can be requested if you believe the patent should not have been granted for a variety of reasons, including;\n\n* The invention claimed in the patent isn't novel, innovative or inventive (this is the most common reason)\n* The invention isn't something that can be patented\n* The invention was used in public before the patent was filed\n* The patent specification doesn't provide enough detail to build or perform the invention\n* The invention isn't consistent with the description\n* The claims are so unclear that it's impossible for a skilled person to understand them\n* The invention is a biological process for generation of human beings (such as human cloning).\n\n*\\*the validity of a patent regards its compliance with the Patents Act, i.e. if it should have been granted in the first place (or has new evidence come to light that indicates it should not have been granted).*"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -151,6 +168,22 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Each patent re-examination request costs $800, paid to IP Australia.\n\nAdditionally, if you have an attorney acting on your behalf, you may be liable for additional legal fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How might time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A re-examination report will be provided within 8 weeks from receiving the first response. In cases where the initial re-examination report is adverse (i.e. that the patent should not have been granted), the patentee may amend the claims, and subsequent reports may be issued, this may take significantly longer (typically 4-6 months)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The rate of re-examination varies widely, but it is generally quite rare. Third party initiated patent re-examination is typically used 10-20 times per year."
           }
         },
         {

@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -114,6 +115,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Help customers differentiate between your products and lookalikes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied.\n\nWhile it\u2019s a legal question as to whether something infringes your rights, it\u2019s often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart \u2014 and how to identify a fake \u2014 can reduce that risk.\n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues.\n\nCustomer education can include:\n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools\u2014such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the \u00ae symbol to indicate a *trade mark* has been registered, or using a \u00a9 symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -150,6 +167,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Minor updates to packaging or website content: A few hours to a few weeks.\n* Developing a new customer education campaign: Several weeks to a few months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most businesses try to educate customers about their brand through advertising, customer outreach, blogs, social media content and more. Helping customers recognise and value registered IP can be one aim of this education but is rarely the main focus."
           }
         },
         {

@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -133,6 +134,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Prevent a patent under examination from being granted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Third Party Notification of Prior Art lets you raise concerns about someone else\u2019s patent application directly with IP Australia *before* it\u2019s accepted or granted. You do this by lodging a 'section 27 notice', which alerts the examiner to earlier work - known as 'prior art' - that may show the application lacks novelty or inventiveness.\n\n*Section 27 notices* are allowed up to three months after the *notice of* acceptance of an application. Formal opposition becomes available after the patent is *accepted*, and court or administrative action may be possible after the grant of the patent.\n\nYou can raise the same kinds of concerns about a patent at different points in its life - but the mechanism you use depends on the patent\u2019s current status.\n\nRaising concerns during examination can be quicker, simpler and less costly. It gives the examiner a chance to consider your evidence before a decision is made. If successful, this could prevent a patent from being granted at all\u2014avoiding future disputes.\n\nYou don\u2019t need to own a patent or be directly affected to file a notice. Anyone can use this option if they have access to useful prior art and act within the time window.\n\nThis is a one-way process: the examiner considers your materials, but you won\u2019t be told the outcome, and you can\u2019t argue your case. There are still other channels in which you can pursue the matter if the patent is accepted despite the S27 submissions.\n\nIt is also important to consider that the document(s) raised under the s27(1) notice were published prior to the relevant priority date of the patent application."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -169,6 +186,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The notice itself can be prepared and lodged quickly, often in a day or two.\n\nHowever, identifying good-quality prior art may take more time. Translating and verifying documents may also cause delays. Notices must be lodged after the application is *published,* and up to three months after notice *acceptance*."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S27 notices are rarely submitted to IP Australia."
           }
         },
         {

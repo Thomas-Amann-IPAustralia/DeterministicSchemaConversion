@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -128,6 +129,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Respond to an opposition filed against your patent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A *patent opposition* is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you\u2019ll have a chance to respond through IP Australia\u2019s formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights.\n\nThe oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn\u2019t resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision.\n\nYou can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -164,6 +181,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The process can take several months to over a year.\n\n* You must respond within set timeframes - usually within 2 to 3 months at each stage.\n* The evidence phase alone can take up to 6 - 9 months.\n* A hearing (if needed) may take place months later, with a decision issuedabout 3 months after that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oppositions to patent applications are rare \u2014 fewer than two per cent of accepted standard applications are opposed. IP Australia\u2019s Patent Opposition and Hearing Section published 54 decisions in 2024 and 66 decisions in 2023."
           }
         },
         {

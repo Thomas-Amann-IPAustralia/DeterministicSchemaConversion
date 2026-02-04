@@ -137,7 +137,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -182,6 +183,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Develop a strategy to manage your ip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors\u2019 IP, and planning responses should you experience suspected copying in the future.\n\nBy mapping this out early, you may avoid making important decisions under pressure, reduce legal risks and place your business in a stronger position to grow or defend your IP assets.\n\nAn IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders\u2019 right and copyright.\n\nKey elements often include:\n\n* Identifying what IP assets you already have or intend to create.\n* Choosing the best protection tools (e.g. trade mark registration or using non-disclosure agreements and contracts to protect your IP assets).\n* Setting reminders for renewals and annual reviews.\n* Deciding how you will monitor the market for suspected infringement.\n* Outlining who will act and what budget is available if enforcement is needed."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -218,6 +235,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Drafting a simple strategy may take around a day or two of focused work. More detailed plans that cover multiple IP types and overseas markets may take several weeks to months, especially if you seek professional advice.\n\nAlso, consider reviewing the strategy at least annually, or whenever you launch new products or enter new markets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Developing and implementing a comprehensive IP strategy a common practice used by businesses that own or use multiple IP assets."
           }
         },
         {

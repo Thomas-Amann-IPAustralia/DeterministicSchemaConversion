@@ -70,7 +70,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -125,6 +126,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Choose to rebrand to avoid potential ip conflicts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nRebranding your business can be an effective strategy to make sure you\u2019re not infringing existing trade marks, to avoid disputes with other parties, or to apply for a new trade mark after your application to register a trade mark hasn\u2019t been successful.\n\nWhile contemplating rebranding your business can feel very personal \u2013 and it is important to acknowledge any emotional response you have to the situation \u2013 choosing to take this action (as part of a thought-out IP strategy) can be a valid and rational choice.\n\nMany successful businesses have rebranded throughout their history as strategic moves. Rather than being an act of admitting defeat or suggesting that one party was 'right', rebranding can be a savvy forward-looking choice that can help you avoid costly IP disputes and focus on your core business.\n\nRegardless of whether you have a strong claim to the use of a trade marked brand or are accused of infringing, some reasons for choosing to rebrand to avoid any potential conflict might include:\n\n* There may be commercial relationships you wish to preserve\n* The other party is more willing and able to argue the conflict than yourself\n* You cannot be sure of the merits or ownership status of your right (for example, the matter is not black and white, or it would be costly to determine the relative merits of your position)\n* The new brand would be a relatively simple change for you, with little loss of business advantage\n* The cost or effort of other actions (enforcing or defending your right) far outweighs the value of the right and cost of rebranding."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -161,6 +178,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The time taken to complete a rebrand will depend on your business. If the other party has asked you to make changes within a certain deadline, you may need to move quickly if you want to avoid further discussions with them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One survey of 91 Australian small businesses found that 48% had to rebrand their business due to the inability to secure a trade mark."
           }
         },
         {

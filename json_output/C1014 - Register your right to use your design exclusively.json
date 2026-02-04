@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -138,6 +139,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Register your right to use your design exclusively?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you create a new look for a product, registering the design with IP Australia may grant you exclusive commercial rights. The registration protects the overall appearance that results from visual features such as shape, configuration, pattern or ornamentation applied to a product.\n\nThe process begins with an online application through [IP Australia\u2019s Online Services](https://portal.ipaustralia.gov.au/login). You upload clear drawings (or photographs) of the design, identify the product it is applied to, choose whether to seek registration immediately or defer registration, and pay the application fee. Australia works on a first-to-file basis under the Designs Act 2003, so applying before you disclose the design publicly can be critical. Once the formalities check is complete, the design is registered and published, and a public record is created\n\nRegistration alone does not give you enforceable rights against suspected infringers. You, or any third party, may later request certification to test whether the design is new and distinctive over earlier designs. Only certified designs can be enforced in court; uncertified registrations provide deterrence but not immediate enforceability. For more information about design certification, please see [Request Certification for a Registered Design](https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design)\n\nA registered design lasts up to ten years: an initial five-year term that can be renewed once for a further five years. A six\u2011month grace period applies for late renewal after the initial term.\n\nIf your design has been disclosed to the public before you apply to protect it, you may still be able to secure a design right if you meet the requirements of the grace period. The grace period allows a design to be shared publicly (under certain conditions) without impacting the ability to secure a design right in Australia. It can benefit those who:\n\n* Accidentally publish their design\n* Were unaware they needed to file for protection before disclosure.\n\nYou'll need to **submit your application for a design right within 12 months of disclosing your design** if you want to claim the grace period."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -174,6 +191,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Registering a design in Australia takes at least 2 months. Certifying a design is discretionary and, when requested, will take approximately 13 weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In 2023/2024 financial year, 8,776 designs were registered, and 1,540 designs were certified."
           }
         },
         {

@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -119,6 +120,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Reach an agreement with the accusing party?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nParties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.\n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other party involved or find it challenging to communicate with them. In these cases, representatives such as lawyers are commonly sought to provide legal advice and assistance.\n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their legal representatives to do so on their behalf."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -155,6 +172,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues.\n\nSome agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth. Factors that influence timing include:\n\n* urgency of the issue\n* clarity of the facts and evidence\n* willingness of the other party to engage\n* whether professionals are involved\n* whether an agreement must be documented or signed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Commercial negotiation is a routine strategy used by businesses in a range of situations."
           }
         },
         {

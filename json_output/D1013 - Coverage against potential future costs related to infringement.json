@@ -132,7 +132,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -187,6 +188,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Coverage against potential future costs related to infringement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Intellectual Property (IP) insurance is a specific type of coverage designed to protect businesses and individuals against the financial risks associated with intellectual property disputes. It can help cover the legal costs and potential damages involved in defending against infringement allegations or enforcing one\u2019s own IP rights. IP insurance can apply to various forms of registered intellectual property, such as patents and trademarks, or unregistered rights like copyrights and trade secrets. There are also other forms of insurance that may be relevant, such as litigation insurance."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -223,6 +240,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "While there may be a waiting period accessing the premium \u2013 owing to the time taken for risk assessment and valuation \u2013 once the contract has been confirmed, there is generally little waiting time to make claims."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past.\n\nAdditionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it."
           }
         },
         {

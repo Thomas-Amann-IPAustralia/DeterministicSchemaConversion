@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -94,6 +95,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it\u2019s worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a [comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip).\n\nAudits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals.\n\nCommon triggers for an IP audit include:\n\n* Significant corporate change, such as a merger or acquisition\n* Entering a joint venture or strategic alliance\n* Transfer or assignment of IP rights\n* Launch of a new product line or market expansion\n* Initiation of enforcement or defence actions.\n\nHowever, many businesses also conduct regular audits to systematically review their IP portfolio to evaluate their IP assets, renew their IP rights and minimise risks."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -130,6 +139,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review:\n\n* A focused audit of one IP type may take several days\n* Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conducting a one-off or regular IP audit is a practice commonly used by businesses that own or use multiple IP assets."
           }
         },
         {

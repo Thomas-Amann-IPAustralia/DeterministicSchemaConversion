@@ -70,7 +70,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -128,6 +129,22 @@
         "@id": "#the-service"
       },
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Register your unregistered trade mark?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you haven\u2019t already done so, registering your trade mark with IP Australia can help you respond to suspected copying or infringement.\n\nRegistration establishes ownership and exclusive rights, giving you stronger legal grounds to take action against current and future infringers.\n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these.\n\nYou might have some rights to protect your trade mark even if it\u2019s not registered with IP Australia. However, trade mark registration makes enforcing your trade mark easier and increases your enforcement options."
+          }
+        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -71,6 +72,46 @@
         "@type": "GovernmentOrganization",
         "name": "xXx_PLACEHOLDER_xXx"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What to do if someone infringes your ip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Consider your options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Next, consider your options with IP Australia\u2019s [IP First Response](https://ipfirstresponse.ipaustralia.gov.au/). The website provides information designed to help IP rights holders navigate IP infringement and the factors involved in pursuing various options.\n\nThere are a variety of options available across a spectrum.\n\n![[image, spectrum of options]](/sites/default/files/images/2025-07/Picture1.png)\n\n[**Take no immediate action**](https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action)\n\nSometimes, the infringement might be minor, unintentional, or not worth pursuing. Reflect on whether the infringement has a negative impact on your business and whether taking action could involve reputational risk.\n\n[**Direct contact**](https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement)\n\nA polite letter or email explaining your intellectual property rights and requesting that the infringement stop can sometimes resolve matters quickly. The infringement may be unintentional, and the other party might be willing to stop once informed.\n\n[**Sending a formal letter**](https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing)\n\nA lawyer can draft a more formal letter outlining your rights, the nature of the infringement, and demanding that specific actions be taken to stop the infringement.\n\n[**Alternative dispute resolution**](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)\n\nAlternative Dispute Resolution (ADR) enables you to settle disputes with the assistance of skilled facilitators. Mediation or arbitration can resolve disputes more quickly and cheaply than court proceedings. They offer opinions, facilitate agreements between the parties, or provide binding or non-binding decisions.\n\n[**Legal proceedings**](https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks)\n\nCourts can address many types of intellectual property matters, and their decisions are binding and enforceable. Proceedings tend to be expensive and time-consuming, with the outcome never assured. However, it may be necessary for serious infringements or when other methods fail. Court action is generally seen as a last resort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Getting professional advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP infringement can be legally complex. What may seem like a clear-cut infringement to you may not be as straightforward under the law. Before taking significant action, consider consulting an IP professional, such as a lawyer specialising in intellectual property. They can help assess the situation and provide guidance on available options.\n\nProfessional advice is crucial because:\n\n* Incorrectly accusing someone of infringement can lead to legal consequences\n* The strength of your case affects which response options are most appropriate\n* Some actions have strict time limits\n* The costs of getting it wrong can be significant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Moving forward?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep in mind that determining whether infringement has occurred often requires a legal analysis. What seems obvious to you may be less straightforward under the law.\n\nPrioritise protecting your business interests instead of pursuing infringement claims solely on principle. At times, the wisest business decision is not necessarily to pursue every potential infringement."
+          }
+        }
+      ]
     }
   ]
 }

@@ -70,7 +70,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -140,6 +141,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Remove a trade mark from the register?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registration of a trade mark can be \u2018revoked\u2019 in certain circumstances where it should not have been registered in the first place. This is only possible within the first 12 months of registration.\n\nGenerally, revocation of registration is followed immediately by revocation of acceptance, resulting in the subject trade mark application returning to the examiner for a re-examination. Only in very rare cases would a revocation of registration return to the 'Accepted' status, allowing an opposition to proceed instead of a re-examination by a trade mark examiner.\n\nRevocation of registration is rare. It is not a substitute for court action to challenge someone else\u2019s entitlement to a trade mark, rather, it is about identifying information showing that the registration should not have occurred in the first place. The power to revoke will usually only be used where there is a clear case:\n\n* of error by IP Australia, or\n* new circumstances become known.\n\nThe Registrar of Trade Marks (the Registrar) is not required to consider a request for revocation, but if they do, they must consider all the circumstances and whether it is reasonable to revoke the registration, including whether there is a more appropriate remedy (such as court challenge).\n\nIn making a revocation decision, IP Australia can take account of a range of circumstances that could have prevented registration. This includes reasons which go to the heart of whether the application should have been accepted, such as whether it\u2019s:\n\n* scandalous\n* likely to cause confusion\n* not sufficiently distinctive\n* too similar to another registered trade mark."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -176,6 +193,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* 2-4 months, if revocation procedures are initiated and IP Australia\u2019s decision is not challenged by the trade mark owner.\n* If the application is returned to examination, the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* If the application is returned to the acceptance stage, you may need to challenge the registration of their trade mark in an opposition procedure, which will take additional time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Out of more than 900,000 trade marks registered with IP Australia, only a handful of trade marks are revoked each year."
           }
         },
         {

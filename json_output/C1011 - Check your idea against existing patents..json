@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -128,6 +129,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Check your idea against existing patents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A \u2018freedom to operate\u2019 search helps you check whether your product or process might infringe on someone else\u2019s patent. It\u2019s sometimes called a \u2018clearance search\u2019.\n\nThis kind of search can help identify if there are any existing patent rights that could block you from making, using, or selling your product or invention \u2013 particularly in the countries where you plan to operate.\n\nIf products or inventions are found that might be relevant, you may wish to explore options such as changing your design, negotiating a licence, or asking a legal professional to investigate further.\n\nYou can do a basic search yourself using free tools like the Australian patent search Australian Patent Search, or global databases like [Espacenet \u2013 patent search](https://worldwide.espacenet.com/). However, a freedom to operate search is more detailed than just checking if something is new - it often requires specialist help to interpret results properly.\n\nA freedom to operate search typically only searches patents, and does not include other sources such as published research papers or other businesses selling similar products: the search only focuses on patents on which your idea or product would potentially infringe.\n\n**A freedom to operate search does not give you a legal guarantee - but it may help you avoid costly surprises later.**"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -164,6 +181,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* A simple self-directed search may take a few hours to several days.\n* A professional search and legal opinion may take 2 to 4 weeks depending on complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Freedom to operate searches are fairly common practice, particularly in new or emerging sectors. It forms a significant part of an IP monitoring strategy.\n\nIn smaller enterprises, this is more likely to be handled in-house, although professional IP monitoring and searching services are also widely used."
           }
         },
         {

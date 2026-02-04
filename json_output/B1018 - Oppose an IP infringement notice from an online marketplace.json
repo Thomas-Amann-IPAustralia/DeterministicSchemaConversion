@@ -49,7 +49,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -114,6 +115,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Oppose an ip infringement notice from an online marketplace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nAn online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are:\n\n* Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy\u2019s Intellectual Property report, receive the complainant\u2019s contact details by email, and may need to resolve it directly or seek legal advice.\n* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form\u2014Shein removes listings when notified and does not mediate between parties.\n\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing.\n\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises.\n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.\n\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -150,6 +167,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The exact amount of time required will vary depending on the marketplace in question. In general, most marketplaces will provide some information back within 28 business days. For more information, please consult the processes of the marketplace in question."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most online marketplaces do not publish this information, however IP infringement notices occur regularly."
           }
         },
         {

@@ -62,7 +62,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -127,6 +128,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Choosing a qualified person (qp) to conduct growing trials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A **Qualified Person (QP)** is a plant-science expert accredited by IP Australia to design, oversee and certify the growing trials used to prove a new variety meets the distinct, uniform and stable (DUS) criteria.\n\nEvery Plant Breeder\u2019s Right (PBR) application must name an accredited QP for the plant group in question. You must engage a QP even if you do not need to do an Australian growing trial.Finding the right QP can be essential for running a successful growing trial. Potential plant breeders should consider early if there is a relevant QP from the [Qualified Persons Directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0) or consider if the best option for them is to become a QP themselves.\n\nQP accreditation lasts three years and is tied to specific plant species or groups. QPs may work in consultant or non-consultant status to support breeders and liaise with IP Australia examiners. QPs support breeders and liaise with IP Australia examiners and can be registered to work as consultant QP\u2019s for multiple applicants. They can also be non-consultant QP\u2019s, overseeing growing trials for their own (or employer\u2019s) plant varieties.\n\nIf you have the necessary experience, you can **become** a QP by completing online training, submitting evidence of expertise and paying an accreditation fee. Processing times vary by application volume. Plant breeders have the option of becoming a QP to oversee their own PBR application.\n\nFor breeders, engaging a QP usually involves searching the public [Qualified Persons Directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0) and agreeing to the terms of a contract of work directly with an expert."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -163,6 +180,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "QP accreditation assessments usually take a few weeks once all documentation is lodged, though this can vary.\n\nFor breeders, the QP\u2019s involvement spans the life of the growing trial - typically one to two growing seasons depending on plant type and environment - plus time to finalise the technical description.\n\nTo become a QP, the accreditation training can take up to several months to complete and must be renewed every three years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are a small number of accredited consultant QPs in Australia. To find a detailed list please visit the [Qualified Persons Directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0)."
           }
         },
         {

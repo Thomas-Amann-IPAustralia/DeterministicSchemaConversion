@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -138,6 +139,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Detect and discourage potential infringement in your supply chain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include:\n\n* Vetting suppliers\n* Implementing track\u2011and\u2011trace systems\n* Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n* Regular inspections of incoming orders\n* Sampling finished products for quality and authenticity\n* Scanning online marketplace listings for unauthorised items\n* Conducting basic factory or warehouse audits.\n\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low\u2011cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.\n\nSome businesses may also engage third\u2011party brand\u2011protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the [Notice of Objection](https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country) scheme.\n\nMonitoring can be continuous or ad\u2011hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -174,6 +191,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Implementing basic checks can be done in a shorter amount of time (days to weeks), depending on vendor and scope. Comprehensive programs covering supplier vetting, data integrations and response protocols may take several months to embed.\n\nOngoing effort depends on shipment volume and review frequency, but it is common for businesses to implement some forms of supply chain monitoring. The exact length of time will be highly dependent on the strategies you employ and the size of your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Supply chain monitoring for mitigating risks associated with IP is commonly used. Conducting regular audits and having visibility over supply chain are often seen as part of best practices to protect one\u2019s IP."
           }
         },
         {

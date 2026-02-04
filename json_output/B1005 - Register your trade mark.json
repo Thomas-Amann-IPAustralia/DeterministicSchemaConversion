@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -123,6 +124,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Register your trade mark?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you are accused of copying or infringing someone else\u2019s trade mark, it might help to register your own rights in the trade mark which they have claimed is copying/infringing. This can be especially applicable when the other party\u2019s claim seems baseless or the two trade marks are not sufficiently similar in your opinion.\n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these.\n\nRegistering a trade mark can give you an exclusive right to use your branding on specific goods or services in Australia. Your trade mark will appear on a public, searchable database.\u202fThis may help you demonstrate your ownership if others allege you have copied their branding.\n\nYou might have some rights to protect your trade mark even if it\u2019s not registered with IP Australia. However, trade mark registration makes defending your right to use your trade mark easier. It also increases your enforcement options."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -151,6 +168,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "While TM Headstart and standard applications have different ~~`~~ timeframes, registration of a trade mark takes **at least 7 months** to finalise. This is because a trade mark cannot be registered until at least 7.5 months after its *priority date* (usually the application date). However, you will usually have an examination outcome and indication of the acceptability of your trade mark prior to registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are over 800,000 registered trade marks on the [Australia Trade Mark Register.](https://search.ipaustralia.gov.au/trademarks/search/quick)"
           }
         }
       ]

@@ -63,7 +63,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -123,6 +124,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Request confirmation that someone else's registered design is valid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design. The examiner assesses newness, distinctiveness and compliance with formal requirements at the design\u2019s filing date.\n\nRequests may be lodged through IP Australia\u2019s Online Services or by post using the approved form, providing the design registration number, owner details and payment of the examination fee. A third party examination can be requested at any time, by any person who has an interest in the validity of design right. This makes it a versatile tool to:\n\n* respond to allegations that you have infringed against a registered design, or\n* to question the validity of a competitors registered design pre-emptively.\n\nOnce filed, IP Australia notifies the owner of the design right and provide information about possible options.\n\nThe design is examined by a designs examiner If the design does not meet the requirements, the registration may be revoked or reduced in scope; if it passes, the design becomes certified and fully enforceable in court proceedings.\n\nWhen submitting a request for third party examination, you can include documentation to support your argument. Documentation can include business documents, circumstances, general knowledge and evidence to support your argument.\n\nExamination can be requested any time after registration and before the design expires at the end of its maximum 10-year term (initial five years plus one 5-year renewal).\n\n**Formal action to protect design rights \u2014 like sending a letter of demand (or cease-and-desist letter) \u2014 can only be initiated after a design right is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat: see** [**Respond to an unjustified threat | IP Australia First Response**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)**.**"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -159,6 +176,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "IP Australia aims to issue the first examination report to the requester within 13\u202fweeks in 85% of cases and within 16\u202fweeks in 95% of cases. If a first adverse report is issued, the owner will then have 6 months to overcome any objections raised by the examiner. Total process duration can extend to 12\u202fmonths or more if extensions of time and hearings occur. After lodging, the requester\u2019s involvement is minimal unless the owner contests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of 2024, approximately 20% of designs registered with IP Australia were also certified."
           }
         },
         {

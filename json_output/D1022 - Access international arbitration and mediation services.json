@@ -137,7 +137,8 @@
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
-    }
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -158,6 +159,7 @@
       "serviceOperator": {
         "@type": "GovernmentOrganization",
         "alternateName": "WIPO",
+        "sameAs": "https://www.wikidata.org/wiki/Q178332",
         "name": "xXx_PLACEHOLDER_xXx"
       }
     },
@@ -206,6 +208,22 @@
         "@id": "#the-service"
       },
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Access international arbitration and mediation services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)\n\nIf you need to resolve an international dispute, one option is to use the [World Intellectual Property Organization (WIPO) Arbitration and Mediation Center](https://www.wipo.int/amc/en/center/background.html) (\u2018the WIPO Center\u2019).\n\nThe WIPO Center offers a range of alternative dispute resolution (ADR) services designed to resolve international and domestic disputes without going to court.\n\nThey can help parties access and navigate ADR processes. For more information about what ADR is, see IP First Response\u2019s webpage available at: [General ADR Card](https://ipfirstresponse.ipaustralia.gov.au/options/ADR).\n\nThe WIPO Center\u2019s tools and services include:\n\n* Free information and procedural assistance services (sometimes called \u2018[Good Offices](https://www.wipo.int/amc/en/goodoffices/) \u2018) to facilitate or submit a dispute to WIPO\u2019s ADR processes. This includes providing support throughout the parties\u2019 engagement with the ADR options.\n* An [extensive global database](https://www.wipo.int/amc/en/neutrals/index.html) of mediators, arbitrators and experts, including from Australia. This includes experts from specific fields/specialties: [WIPO Alternative Dispute Resolution (ADR) Services for Specific Sectors](https://www.wipo.int/amc/en/center/specific-sectors/).\n* Free [online case administration tools](https://www.wipo.int/amc/en/eadr/) that allow parties to manage and resolve disputes remotely.\n\nADR processes offered by the WIPO Centre include:\n\n* [Mediation](https://www.wipo.int/amc/en/mediation/index.html)\n* [Arbitration](https://www.wipo.int/amc/en/arbitration/)\n* [Expedited Arbitration](https://www.wipo.int/amc/en/arbitration/what-is-exp-arb.html)\n* [Expert determination](https://www.wipo.int/amc/en/expert-determination/)\n\nYour dispute doesn\u2019t need to be international to use the WIPO Center, and other international dispute resolution services are available in some countries. For more information, see [IP First Response webpage on enforcing your IP overseas](https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas)."
+          }
+        },
         {
           "@type": "Question",
           "name": "What are the benefits?",
@@ -260,6 +278,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Parties to the dispute\n* WIPO Center/case manager\n* Facilitator/s (mediator, arbitrator, and/or expert)\n* (Optional) Legal representation for one or more of the participants"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "**getting advice**?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can also seek help from IP professionals to seek advice on whether the WIPO Center would be suitable for your situation and represent you throughout their ADR processes. You can find a qualified IP attorney to assist you at: [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0)."
           }
         }
       ]
