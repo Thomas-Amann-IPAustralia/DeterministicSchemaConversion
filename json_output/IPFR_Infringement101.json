@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "Detect and discourage potential infringement in your supply chain",
-  "alternativeHeadline": "Monitor supply chain",
-  "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain",
+  "headline": "Infringement101",
+  "alternativeHeadline": "",
+  "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/infringement-101](https://ipfirstresponse.ipaustralia.gov.au/infringement-101)\"",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "C1002"
+    "value": "Dxxxx"
   },
   "inLanguage": "en-AU",
   "datePublished": "2026-02-04",
@@ -39,23 +39,9 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Patent",
-    "sameAs": "https://www.wikidata.org/wiki/Q253623"
+    "name": "Intellectual Property Right"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/versions",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/versions",
-      "legislationType": "Regulations"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -76,8 +62,8 @@
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "Detect and discourage potential infringement in your supply chain",
-      "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
+      "name": "Infringement101",
+      "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/infringement-101](https://ipfirstresponse.ipaustralia.gov.au/infringement-101)\"",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
