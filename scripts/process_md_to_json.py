@@ -118,35 +118,41 @@ IP_TOPIC_MAP = {
 # --- 2. HTML CLEANING & EXTRACTION FUNCTIONS ---
 
 def clean_html_fragment(soup_element):
+    """
+    Converts an HTML soup element into plain text for the JSON fields.
+    Crucially, it preserves [Link Name](URL) format temporarily so extracting functions
+    can find the URL, but strips all other formatting (bold, italic) down to plain text.
+    """
     if not soup_element:
         return ""
     
+    # Create a fresh soup to manipulate
     fragment = BeautifulSoup(str(soup_element), 'html.parser')
 
+    # Remove non-content tags
     for tag in fragment(['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe']):
         tag.decompose()
 
+    # Convert links to Markdown format for extraction later
     for a in fragment.find_all('a', href=True):
         text = a.get_text(strip=True)
         url = a['href']
         if text and url:
             a.replace_with(f"[{text}]({url})")
 
-    for b in fragment.find_all(['strong', 'b']):
+    # Flatten bold/strong/em/i to PLAIN TEXT (No Markdown artifacts)
+    for b in fragment.find_all(['strong', 'b', 'em', 'i']):
         text = b.get_text(strip=True)
         if text:
-            b.replace_with(f"**{text}**")
+            b.replace_with(text)
 
-    for i in fragment.find_all(['em', 'i']):
-        text = i.get_text(strip=True)
-        if text:
-            i.replace_with(f"*{text}*")
-
+    # Convert list items to bulleted text
     for li in fragment.find_all('li'):
         text = li.get_text(strip=True)
         if text:
             li.replace_with(f"\n* {text}")
 
+    # Get text and clean up whitespace
     text = fragment.get_text(separator="\n\n")
 
     replacements = {
@@ -266,6 +272,35 @@ def parse_markdown_blocks(md_text):
         blocks[current_header] = "\n".join(current_content).strip()
     return blocks
 
+def clean_markdown_artifacts(text):
+    """
+    Aggressively removes Markdown syntax (*, **, _) to ensure plain text.
+    Preserves list bullets if they are likely list indicators.
+    """
+    if not text: return ""
+    
+    # Remove bold/italic markers (**, __, *)
+    # But be careful not to remove single * at start of line which indicates a bullet
+    
+    # 1. Remove ** and __
+    text = re.sub(r'\*\*|__', '', text)
+    
+    # 2. Remove * or _ ONLY if they are wrapping text (pairs) or inside text.
+    #    We avoid replacing * at the literal start of a line to keep bullets.
+    
+    # Simple approach: remove all * that are NOT followed by a space at the start of a line
+    # Actually, simpler: The blocks usually have formatted lists like "* Item".
+    # We want to keep "* Item" but remove "word *bold* word".
+    
+    # Remove * inside words or wrapping words
+    text = re.sub(r'(?<!^)(?<!\n)\*(?!\s)', '', text) # * not at start, not followed by space
+    text = re.sub(r'(?<!\s)\*(?!\s)', '', text) # * inside text
+    
+    # Clean up leftovers (pairs of *)
+    text = text.replace('*', '') if '*' in text and not re.search(r'(^|\n)\*\s', text) else text
+    
+    return text
+
 def clean_text_retain_formatting(text, strip_images=False):
     if not text: return ""
     
@@ -287,9 +322,15 @@ def clean_text_retain_formatting(text, strip_images=False):
     lines = [re.sub(r'[ \t]+', ' ', l).strip() for l in text.split('\n')]
     text = "\n".join(lines)
     text = re.sub(r'\n{3,}', '\n\n', text)
+    
     return text.strip()
 
 def extract_links_and_clean(text):
+    """
+    Extracts Markdown links [text](url), returns the plain text 'text', 
+    and returns a list of link objects.
+    Then, it cleans any remaining Markdown artifacts from the text.
+    """
     if not text:
         return text, []
 
@@ -308,7 +349,12 @@ def extract_links_and_clean(text):
         
         return name 
 
-    cleaned_text = re.sub(r'\[(.*?)\]\((https?://[^\)]+)\)', replace_fn, text)
+    # More permissive regex for links (handles loose whitespace)
+    cleaned_text = re.sub(r'\[\s*(.*?)\s*\]\s*\(\s*(https?://[^\)]+)\s*\)', replace_fn, text, flags=re.DOTALL)
+    
+    # Final pass to strip bold/italic markdown artifacts from the text
+    cleaned_text = clean_markdown_artifacts(cleaned_text)
+    
     return cleaned_text, found_links
 
 def convert_csv_date(date_str):
@@ -542,8 +588,11 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     if not csv_desc_raw or csv_desc_raw.lower() == 'null':
         webpage_description = "xXx_Err-PLACEHOLDER_xXx"
     else:
-        webpage_description = clean_text_retain_formatting(csv_desc_raw, strip_images=True)
-        # Ensure it's not empty after cleaning
+        # Clean the CSV description too
+        webpage_description, d_links = extract_links_and_clean(
+            clean_text_retain_formatting(csv_desc_raw, strip_images=True)
+        )
+        master_links.extend(d_links)
         if not webpage_description:
             webpage_description = "xXx_Err-PLACEHOLDER_xXx"
 
@@ -559,7 +608,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         master_links.extend(desc_links)
         service_description = clean_service_desc
     else:
-        # Fallback if section missing? (Prompt says "must contain..."). Leaving empty if not found.
         service_description = ""
 
     # --- ENTITY CONSTRUCTION ---
@@ -587,7 +635,7 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "@id": service_id,
         "@type": service_type,
         "name": title,
-        "description": service_description, # UPDATED: Uses content from "What is it?"
+        "description": service_description, 
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": page_url
@@ -626,14 +674,12 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         })
 
     # FAQs (Dynamic Content)
-    # Ensure "What is it?" is excluded from FAQs by passing what_is_it_key
     faqs = []
     if use_html:
         faqs, f_links = extract_dynamic_content_html(blocks, main_description_key=what_is_it_key)
         master_links.extend(f_links)
     else:
         for h, c in blocks.items():
-            # Exclude intro, description, steps, and the "What is it?" key we used for service desc
             if h in ["intro", "description", "see also", "step"]: continue
             if what_is_it_key and h == what_is_it_key: continue
 
@@ -660,7 +706,7 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "@type": "WebPage",
         "headline": title,
         "alternativeHeadline": metadata_row.get('Overtitle', ''),
-        "description": webpage_description, # UPDATED: Uses content from CSV
+        "description": webpage_description,
         "url": page_url,
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
