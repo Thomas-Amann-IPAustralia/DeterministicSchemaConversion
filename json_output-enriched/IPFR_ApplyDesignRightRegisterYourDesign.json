@@ -1,9 +1,10 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx#webpage",
   "headline": "ApplyDesignRightRegisterYourDesign",
   "alternativeHeadline": "",
-  "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design](https://ipfirstresponse.ipaustralia.gov.au/options/apply-",
+  "description": "Register your design to secure exclusive rights and protect your creative work. Learn the process and benefits of applying for a design right today.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
   "identifier": {
     "@type": "PropertyValue",
@@ -39,7 +40,8 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right"
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
   "citation": [],
   "publisher": {
@@ -50,7 +52,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -63,14 +65,18 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "ApplyDesignRightRegisterYourDesign",
-      "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design](https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design)\"",
+      "description": "",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
+      "provider": {
+        "@type": "Organization",
+        "name": "Unnamed Organization"
       }
     },
     {

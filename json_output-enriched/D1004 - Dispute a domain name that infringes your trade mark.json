@@ -1,6 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#webpage",
   "headline": "Dispute a domain name that infringes your trade mark",
   "alternativeHeadline": "Domain Name Dispute (auDRP)",
   "description": "Dispute a .au domain name that may infringe an IP right",
@@ -11,8 +12,8 @@
     "value": "D1004"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-05",
-  "dateModified": "2026-02-05",
+  "datePublished": "2025-03-01",
+  "dateModified": "2025-12-02",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -41,25 +42,25 @@
     {
       "@type": "Thing",
       "name": "Trade Mark",
-      "sameAs": "https://www.wikidata.org/wiki/Q165196"
+      "sameAs": "https://www.wikidata.org/wiki/Q167270"
     },
     {
       "@type": "Thing",
       "name": "Copyright",
-      "sameAs": "https://www.wikidata.org/wiki/Q12978"
+      "sameAs": "https://www.wikidata.org/wiki/Q1297822"
     }
   ],
   "citation": [
     {
       "@type": "Legislation",
       "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/versions",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
       "legislationType": "Regulations"
     },
     {
@@ -83,7 +84,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -94,16 +95,20 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "Service",
       "name": "Dispute a domain name that infringes your trade mark",
-      "description": "Dispute a .au domain name that may infringe an IP right",
+      "description": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.\nA panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties.\nPlease Note:\n\n If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP).",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
+      "provider": {
+        "@type": "NGO",
+        "name": "auDA"
       }
     },
     {
@@ -115,38 +120,93 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Payment Capability",
-          "text": "<li>The ability to pay the required fees.</li>"
+          "name": "Pay the fees",
+          "text": "The ability to pay the required fees."
         },
         {
           "@type": "HowToStep",
-          "name": "Review Schedule A and B of auDRP",
-          "text": "<li>To read and understand the Schedule A and B of the <a href=\"https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties\">auDRP </a>.</li>"
+          "name": "Review Schedule A and B",
+          "text": "To read and understand the Schedule A and B of theauDRP."
         },
         {
           "@type": "HowToStep",
           "name": "Include Required Information for Submission",
-          "text": "<li>To have your submission accepted by the resolution provider, it needs to include the information set out in Paragraph 3 of Schedule B in the auDRP as well as any requirements detailed in the Provider's Supplemental Rules (available from the provider's website). </li>"
+          "text": "To have your submission accepted by the resolution provider, it needs to include the information set out in Paragraph 3 of Schedule B in the auDRP as well as any requirements detailed in the Provider's Supplemental Rules (available from the provider's website).\nauDRP complaints must satisfy the following criteria for a successful outcome:"
         },
         {
           "@type": "HowToStep",
-          "name": "Trademark Ownership Requirement",
-          "text": "<li>You must own the rights to the trade mark or name.</li>"
+          "name": "Verify Trademark Ownership",
+          "text": "You must own the rights to the trade mark or name."
         },
         {
           "@type": "HowToStep",
-          "name": "Domain Name Similarity to Trademark",
-          "text": "<li>The .au domain name being contested is identical to the trade mark or confusingly similar.</li>"
+          "name": "Verify Domain Name Similarity",
+          "text": "The .au domain name being contested is identical to the trade mark or confusingly similar."
         },
         {
           "@type": "HowToStep",
-          "name": "Registrant's Lack of Rights or Legitimate Interest",
-          "text": "<li>The .au registrant/domain name holder does not own any rights or have a legitimate interest in the domain name.</li>"
+          "name": "Verify Domain Name Rights",
+          "text": "The .au registrant/domain name holder does not own any rights or have a legitimate interest in the domain name."
         },
         {
           "@type": "HowToStep",
-          "name": "Registrant Bad Faith",
-          "text": "<li>The .au registrant has registered and used the domain name in bad faith. </li>"
+          "name": "Identify Bad Faith Registration",
+          "text": "The .au registrant has registered and used the domain name in bad faith.\nThe"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Initiate auDRP Process",
+          "text": "auDRP"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Seek Legal or Professional Advice",
+          "text": "provides guidance on what information can be used to meet these criteria.\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Seek IP Assistance",
+          "text": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consult IPTA Resources",
+          "text": ". In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Schedule Consultation",
+          "text": "30 minute consultations with an attorney"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "End the sentence",
+          "text": "."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Seek Legal Advice",
+          "text": "Copyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consult Arts Law Centre",
+          "text": "Arts Law Centre of Australia"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Seek Free Advice",
+          "text": "or no-cost advice from the"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consult the Australian Copyright Council",
+          "text": "Australian Copyright Council"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "End the sentence",
+          "text": "."
         }
       ]
     },
@@ -158,18 +218,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "<p>.au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence. </p><p>A panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties. </p><p><strong>Please Note:</strong> If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP). </p>"
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>The process can occur even without participation from the other party.</li><li>Fast and accessible process.</li><li>A focus on practical, non-punitive outcomes.</li><li>Fair opportunity for both parties to present their case in writing.</li><li>There is no compensation for loss or damages, meaning this process is less adversarial.</li></ul>"
+            "text": "* The process can occur even without participation from the other party.\n\n* Fast and accessible process.\n\n* A focus on practical, non-punitive outcomes.\n\n* Fair opportunity for both parties to present their case in writing.\n\n* There is no compensation for loss or damages, meaning this process is less adversarial."
           }
         },
         {
@@ -177,7 +229,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>auDA does not have an appeals process if you are unhappy with the decision of the panel. If you are unsatisfied with the outcome, either party can initiate legal proceedings against the other.</li><li>Decisions made by the auDRP panel are made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage.</li><li>Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party.</li></ul>"
+            "text": "* auDA does not have an appeals process if you are unhappy with the decision of the panel. If you are unsatisfied with the outcome, either party can initiate legal proceedings against the other.\n\n* Decisions made by the auDRP panel are made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage.\n\n* Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party."
           }
         },
         {
@@ -185,7 +237,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Three outcomes are possible following the panel's decision:</p><ul><li>The disputed .au domain name licence/s cancelled, in which case the .au domain name/s will become available for registration by another eligible member of the public.</li><li>The disputed .au domain name licence/s is transferred to the complainant. The complainant must be eligible to hold the .au domain name licence/s, otherwise the transfer cannot proceed.</li><li>The disputed .au domain name licence/s remains with the current domain holder (registrant).</li></ul>"
+            "text": "Three outcomes are possible following the panel's decision:\n* The disputed .au domain name licence/s cancelled, in which case the .au domain name/s will become available for registration by another eligible member of the public.\n\n* The disputed .au domain name licence/s is transferred to the complainant. The complainant must be eligible to hold the .au domain name licence/s, otherwise the transfer cannot proceed.\n\n* The disputed .au domain name licence/s remains with the current domain holder (registrant)."
           }
         },
         {
@@ -193,7 +245,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>You must pay a fee to lodge the dispute. </p><p>Fees increase based on how many .au domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 panellists. If you choose a one-member panel, the registrant can elect to have the dispute heard by a 3-member panel (or vice versa), in which case you and the registrant each pay half of the fee.</p><p>Fees start at $2,000 for single member and $4,500 for a 3-member panel.</p><p>The auDRP does not award costs or charge additional fees.</p><p>You will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute.</p>"
+            "text": "You must pay a fee to lodge the dispute.\nFees increase based on how many .au domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 panellists. If you choose a one-member panel, the registrant can elect to have the dispute heard by a 3-member panel (or vice versa), in which case you and the registrant each pay half of the fee.\nFees start at $2,000 for single member and $4,500 for a 3-member panel.\nThe auDRP does not award costs or charge additional fees.\nYou will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute."
           }
         },
         {
@@ -201,7 +253,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>In the absence of exceptional circumstances, the time from the opposing party being notified of your dispute submission to a decision being put in place may take up to 54 days but can be shorter.</p><p>The resolution provider will notify the domain name holder within 3 days of receiving your compliant application and the required payment. They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.</p><p>Once a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 24 days which will be communicated to you, the other party and the provider of the disputed domain.</p><p>If the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings.</p>"
+            "text": "In the absence of exceptional circumstances, the time from the opposing party being notified of your dispute submission to a decision being put in place may take up to 54 days but can be shorter.\nThe resolution provider will notify the domain name holder within 3 days of receiving your compliant application and the required payment. They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.\nOnce a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 24 days which will be communicated to you, the other party and the provider of the disputed domain.\nIf the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings."
           }
         },
         {
@@ -209,7 +261,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Of the 48 auDRP cases reviewed in financial year 2023-24, 22 resulted in the transfer of the .au domain name licence to the entity that initiated the review. </p>"
+            "text": "Of the 48 auDRP cases reviewed in financial year 2023-24, 22 resulted in the transfer of the .au domain name licence to the entity that initiated the review."
           }
         },
         {
@@ -217,18 +269,50 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Anyone with competing legal rights to a .au domain name licence (including the ownership of a relevant trade mark).</p>"
+            "text": "Anyone with competing legal rights to a .au domain name licence (including the ownership of a relevant trade mark)."
           }
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>A trade mark owner</li><li>A .au domain name licence holder (registrant)</li><li>A dispute panel of one or three members selected by one of the two independent resolution providers approved by auDA.</li><li>Legal representatives (if you choose to not self-represent).</li><li>The registrar (business which registers and licences the domain name) is not involved in the dispute, but will enact the decision.</li></ul>"
+            "text": "* A trade mark owner\n\n* A .au domain name licence holder (registrant)\n\n* A dispute panel of one or three members selected by one of the two independent resolution providers approved by auDA.\n\n* Legal representatives (if you choose to not self-represent).\n\n* The registrar (business which registers and licences the domain name) is not involved in the dispute, but will enact the decision."
           }
         }
       ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
+      "name": "auDRP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
+      "name": "auDRP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.artslaw.com.au/services/legal-query-form/",
+      "name": "Arts Law Centre of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.copyright.org.au/legal-advice/",
+      "name": "Australian Copyright Council"
     }
   ]
 }

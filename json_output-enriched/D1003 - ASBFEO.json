@@ -1,6 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage",
   "headline": "Access help tailored to resolve business disputes",
   "alternativeHeadline": "ASBFEO",
   "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
@@ -11,8 +12,8 @@
     "value": "D1003"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-05",
-  "dateModified": "2026-02-05",
+  "datePublished": "2025-02-28",
+  "dateModified": "2025-10-02",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -39,9 +40,71 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
-  "citation": [],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -50,7 +113,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -63,7 +126,11 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Access help tailored to resolve business disputes",
-      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "description": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency.\nYou can access ASBFEO's \n\nDispute Support Tool\n\nto identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers.\nASBFEO can guide you through dispute resolution by:\n* Providing information to resolve your dispute in a timely and low-cost way\n\n* Engaging with the parties to encourage resolution\n\n* When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -72,7 +139,7 @@
         "@type": "GovernmentOrganization",
         "alternateName": "ASBFEO",
         "url": "https://www.asbfeo.gov.au",
-        "name": "xXx_PLACEHOLDER_xXx"
+        "name": "ASBFEO"
       }
     },
     {
@@ -84,8 +151,8 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Understanding ASBFEO's Assistance Charter",
-          "text": "<p>An understanding of what you can expect when dealing with ASBFEO by reading their <a href=\"https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf\"><u>Assistance Charter.</u> </a> </p>"
+          "name": "Read the Assistance Charter",
+          "text": "An understanding of what you can expect when dealing with ASBFEO by reading their \n\nAssistance Charter."
         }
       ]
     },
@@ -97,18 +164,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "<p>The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency. </p><p>You can access ASBFEO's <a href=\"https://www.asbfeo.gov.au/disputes-assistance/dispute-support\">Dispute Support Tool </a>to identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers. </p><p>ASBFEO can guide you through dispute resolution by: </p><ul><li>Providing information to resolve your dispute in a timely and low-cost way</li><li>Engaging with the parties to encourage resolution</li><li>When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal.</li></ul>"
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Guides you through resolving disputes in a way that's designed to suit the needs of small businesses.</li><li>Can address disputes over a wider range of business issues, rather than intellectual property rights in isolation.</li><li>Can help you find a mutually acceptable solution while preserving business relationships.</li><li>Can encourage parties to engage in alternative dispute resolution such as mediation and arbitration which can help resolve disputes in a structured and confidential context while providing more control on the agreed outcomes (as opposed to being mandated by a tribunal or court). </li></ul>"
+            "text": "* Guides you through resolving disputes in a way that's designed to suit the needs of small businesses.\n\n* Can address disputes over a wider range of business issues, rather than intellectual property rights in isolation.\n\n* Can help you find a mutually acceptable solution while preserving business relationships.\n\n* Can encourage parties to engage in alternative dispute resolution such as mediation and arbitration which can help resolve disputes in a structured and confidential context while providing more control on the agreed outcomes (as opposed to being mandated by a tribunal or court)."
           }
         },
         {
@@ -116,7 +175,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>ASBFEO cannot make a determinative decision. If the parties do not reach a resolution, either party may consider other options, including formal legal options.</li><li>Due to the potential complexities and unpredictability of this process, costs might increase beyond initial estimates.</li><li>Escalation of the dispute could require you to defend your claim to your IP rights. </li></ul>"
+            "text": "* ASBFEO cannot make a determinative decision. If the parties do not reach a resolution, either party may consider other options, including formal legal options.\n\n* Due to the potential complexities and unpredictability of this process, costs might increase beyond initial estimates.\n\n* Escalation of the dispute could require you to defend your claim to your IP rights."
           }
         },
         {
@@ -124,7 +183,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>ASBFEO provides information to help you decide on what to do next.</li><li>You proceed with an informal solution like a letter of demand.</li><li>ASBFEO contacts the other party to encourage disputing parties to resolve their dispute, with a focus on maintaining relationships.</li><li>ASBFEO refers you other services that can better assist with your particular situation.</li><li>You proceed with alternative dispute resolution services such as conferencing, mediation, or conciliation.</li><li>You decide not to pursue resolution of the dispute. </li></ul><p>Resolution of cases through engagement and alternative dispute resolution is around 80% - in whole or part through these methods. In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as: </p><ul><li>The goodwill between the parties</li><li>Whether the parties would benefit from continuing their relationship</li><li>The potential to bring a legal action should informal methods fail</li><li>The freedom and ability to negotiate an outcome. </li></ul>"
+            "text": "* ASBFEO provides information to help you decide on what to do next.\n\n* You proceed with an informal solution like a letter of demand.\n\n* ASBFEO contacts the other party to encourage disputing parties to resolve their dispute, with a focus on maintaining relationships.\n\n* ASBFEO refers you other services that can better assist with your particular situation.\n\n* You proceed with alternative dispute resolution services such as conferencing, mediation, or conciliation.\n\n* You decide not to pursue resolution of the dispute.\n\nResolution of cases through engagement and alternative dispute resolution is around 80% \n\n-\n\n in whole or part through these methods. In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as:\n* The goodwill between the parties\n\n* Whether the parties would benefit from continuing their relationship\n\n* The potential to bring a legal action should informal methods fail\n\n* The freedom and ability to negotiate an outcome."
           }
         },
         {
@@ -132,7 +191,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Engaging with ASBFEO is free.</li><li>Alternative dispute resolution options may involve a cost (generally up to about $4,000 shared between the parties). </li></ul>"
+            "text": "* Engaging with ASBFEO is free.\n\n* Alternative dispute resolution options may involve a cost (generally up to about $4,000 shared between the parties)."
           }
         },
         {
@@ -140,7 +199,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>ASBFEO offers a variety of ways to resolve issues so it is difficult to provide a single timeframe. </p><p>In 2024, ASBFEO reports that: </p><ul><li>90% of calls to the ASBFEO contact centre are answered within 30 seconds.</li><li>Nearly two thirds of enquiries are resolved at point of contact, for example by providing information. </li></ul>"
+            "text": "ASBFEO offers a variety of ways to resolve issues so it is difficult to provide a single timeframe.\nIn 2024, ASBFEO reports that:\n* 90% of calls to the ASBFEO contact centre are answered within 30 seconds.\n\n* Nearly two thirds of enquiries are resolved at point of contact, for example by providing information."
           }
         },
         {
@@ -148,7 +207,7 @@
           "name": "How often is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>ASBFEO helps approximately 5,000 small businesses per year - over 50,000 small businesses since 2016 </p>"
+            "text": "ASBFEO helps approximately 5,000 small businesses per year - over 50,000 small businesses since 2016"
           }
         },
         {
@@ -156,24 +215,45 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Small businesses and family enterprise operators that are in dispute with other businesses or Australian Government agencies.</li><li>ASBFEO can provide assistance to parties who are businesses with fewer than 100 employees <strong><u>or</u></strong> are businesses with revenue of less than $5 million per year. </li></ul>"
+            "text": "* Small businesses and family enterprise operators that are in dispute with other businesses or Australian Government agencies.\n\n* ASBFEO can provide assistance to parties who are businesses with fewer than 100 employeesorare businesses with revenue of less than $5 million per year."
           }
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Yourself</li><li>The other party</li><li>ASBFEO case managers</li><li>If selected, an alternative dispute resolution service provider</li></ul>"
+            "text": "* Yourself\n\n* The other party\n\n* ASBFEO case managers\n\n* If selected, an alternative dispute resolution service provider"
           }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators"
+    {
+      "@type": "WebPage",
+      "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+      "name": "Dispute Support Tool"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf",
+      "name": "Assistance Charter."
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+      "name": "Alternative dispute resolution (ADR)   | IP First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
   ]
 }

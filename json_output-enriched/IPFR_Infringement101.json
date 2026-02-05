@@ -1,9 +1,10 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx#webpage",
   "headline": "Infringement101",
   "alternativeHeadline": "",
-  "description": "",
+  "description": "Explore Infringement101 for essential insights on copyright laws, infringement cases, and legal strategies to protect your intellectual property effectively.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
   "identifier": {
     "@type": "PropertyValue",
@@ -39,7 +40,8 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right"
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
   },
   "citation": [],
   "publisher": {
@@ -50,7 +52,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -61,16 +63,20 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "Service",
       "name": "Infringement101",
       "description": "",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
+      "provider": {
+        "@type": "Organization",
+        "name": "Unnamed Organization"
       }
     },
     {
@@ -84,10 +90,17 @@
           "name": "Give feedback about ip first response?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Send us an <a href=\"Mailto:IPFirstResponse@ipaustralia.gov.au\">email </a><br/>Fill out a feedback form by following the button</p>"
+            "text": "Send us an \n\nemail\n\nFill out a feedback form by following the button"
           }
         }
       ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "Mailto:IPFirstResponse@ipaustralia.gov.au",
+      "name": "email"
     }
   ]
 }
