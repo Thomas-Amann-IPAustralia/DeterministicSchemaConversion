@@ -102,14 +102,20 @@ USAGE_INFO_BLOCK = {
     "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
 }
 
+# --- UPDATED: IP TOPIC MAP ---
+# Keys are lowercased strings expected from CSV 'Relevant-ip-right'
+# Values are tuples: (Display Name, Wikidata URL)
 IP_TOPIC_MAP = {
-    "Intellectual Property Right": "https://www.wikidata.org/wiki/Q108855835",
-    "Trade Mark": "https://www.wikidata.org/wiki/Q165196",
-    "Unregistered-tm": "https://www.wikidata.org/wiki/Q165196", # Mapped to Trade Mark
-    "Patent": "https://www.wikidata.org/wiki/Q253623",
-    "Design": "https://www.wikidata.org/wiki/Q1240325",
-    "Copyright": "https://www.wikidata.org/wiki/Q12978",
-    "Plant Breeder's Rights": "https://www.wikidata.org/wiki/Q695112"
+    "trade mark": ("Trade Mark", "https://www.wikidata.org/wiki/Q167270"),
+    "unregistered-tm": ("Trade Mark", "https://www.wikidata.org/wiki/Q167270"),
+    "patent": ("Patent", "https://www.wikidata.org/wiki/Q253623"),
+    "design": ("Design Right", "https://www.wikidata.org/wiki/Q252799"),
+    "copyright": ("Copyright", "https://www.wikidata.org/wiki/Q1297822"),
+    "pbr": ("Plant Breeders' Right", "https://www.wikidata.org/wiki/Q695112"),
+    "plant breeder": ("Plant Breeders' Right", "https://www.wikidata.org/wiki/Q695112"),
+    "plant breeder's rights": ("Plant Breeders' Right", "https://www.wikidata.org/wiki/Q695112"),
+    "all intellectual property rights": ("All Intellectual Property Rights", "https://www.wikidata.org/wiki/Q108855835"),
+    "any dispute related to intellectual property": ("All Intellectual Property Rights", "https://www.wikidata.org/wiki/Q108855835")
 }
 
 # --- 2. HTML CLEANING & EXTRACTION FUNCTIONS ---
@@ -360,8 +366,8 @@ def generate_citations_from_csv(metadata_row):
     
     rights_to_process = []
     
-    # --- UPDATED LOGIC: Handle "Any Dispute" Wildcard ---
-    if "any dispute related to intellectual property" in cleaned_rights_str:
+    # --- Handle "Any Dispute" or "All Rights" Wildcards ---
+    if "any dispute related to intellectual property" in cleaned_rights_str or "all intellectual property rights" in cleaned_rights_str:
         # If "Any dispute" is found, we must include all 5 major IP types
         rights_to_process = ["trade mark", "patent", "design", "pbr", "copyright"]
     else:
@@ -404,26 +410,60 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     return base_obj
 
 def resolve_about_topics(metadata_row):
+    """
+    Parses 'Relevant-ip-right' column and maps to standard names and Wikidata URLs.
+    Handles 'All Intellectual Property Rights' logic and normalization.
+    """
     raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
+    # Clean quotes and lowercase
     cleaned_rights = raw_ip_rights.replace('"', '').replace("'", "").lower()
+    
+    # Split by comma
     rights_list = [r.strip() for r in cleaned_rights.split(',') if r.strip()]
     
     about_entities = []
+    seen_urls = set()
+    
     for right in rights_list:
-        if not right: continue
-        name = right.title()
-        url = None
-        for map_key in IP_TOPIC_MAP:
-            if map_key.lower() == right:
-                url = IP_TOPIC_MAP[map_key]
-                name = map_key 
-                break
-        entity = {"@type": "Thing", "name": name}
-        if url: entity["sameAs"] = url
-        about_entities.append(entity)
-    if len(about_entities) == 1: return about_entities[0]
-    elif len(about_entities) > 1: return about_entities
-    else: return {"@type": "Thing", "name": "Intellectual Property Right"}
+        match_data = None
+        
+        # 1. Exact or Key Match in Map
+        if right in IP_TOPIC_MAP:
+            match_data = IP_TOPIC_MAP[right]
+        else:
+            # 2. Fuzzy / Partial Match Fallback (e.g. "designs" -> "design")
+            if "design" in right:
+                match_data = IP_TOPIC_MAP["design"]
+            elif "plant breeder" in right or "pbr" in right:
+                match_data = IP_TOPIC_MAP["pbr"]
+        
+        if match_data:
+            name, url = match_data
+            if url not in seen_urls:
+                about_entities.append({
+                    "@type": "Thing",
+                    "name": name,
+                    "sameAs": url
+                })
+                seen_urls.add(url)
+    
+    # If no specific rights found, or explicitly empty, fallback? 
+    # Current requirement implies if list is empty or unmappable, we might fallback to General
+    if not about_entities and rights_list:
+        # Optional: Log warning here if needed
+        pass
+
+    if len(about_entities) == 1: 
+        return about_entities[0]
+    elif len(about_entities) > 1: 
+        return about_entities
+    else: 
+        # Default fallback if nothing matches
+        return {
+            "@type": "Thing", 
+            "name": "All Intellectual Property Rights",
+            "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+        }
 
 # --- 4. EXTRACTORS ---
 
