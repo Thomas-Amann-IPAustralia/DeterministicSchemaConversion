@@ -55,7 +55,7 @@ PROVIDER_MAP = {
         "url": "https://www.ipaustralia.gov.au",
         "sameAs": [
             "https://en.wikipedia.org/wiki/IP_Australia",
-            "https://www.wikidata.org/wiki/Q5973154"
+            "https://www.wikidata.org/wiki/Q5973650"
         ]
     },
     "Australian Border Force": {
@@ -91,7 +91,7 @@ PUBLISHER_BLOCK = {
         "@type": "GovernmentOrganization", 
         "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
 }
 
 USAGE_INFO_BLOCK = {
@@ -115,42 +115,49 @@ IP_TOPIC_MAP = {
 
 def clean_html_fragment(soup_element):
     """
-    Cleans a BeautifulSoup element to be valid HTML string for JSON-LD.
-    Removes unnecessary classes, IDs, and empty tags.
-    Preserves semantic structure (p, ul, li, strong, a, etc.).
+    Cleans a BeautifulSoup element and converts it to Markdown.
+    Removes HTML tags but preserves semantic structure via Markdown syntax.
     """
     if not soup_element:
         return ""
     
-    # List of tags to unwrap (remove tag but keep content)
-    unwrap_tags = ['span', 'div', 'section', 'article']
-    # List of tags to remove completely (tag and content)
-    remove_tags = ['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe'] 
-    
     # Create a new soup fragment to process
     fragment = BeautifulSoup(str(soup_element), 'html.parser')
-    
-    for tag in fragment.find_all(True):
-        # Remove all attributes except href
-        allowed_attrs = ['href']
-        
-        # FIX: Handle cases where tag.attrs is None using "or {}"
-        attrs = dict(tag.attrs or {}) 
-        
-        for attr in attrs:
-            if attr not in allowed_attrs:
-                del tag[attr]
-        
-        if tag.name in remove_tags:
-            tag.decompose()
-        elif tag.name in unwrap_tags:
-            tag.unwrap()
-    
-    # Convert to string
-    html_str = str(fragment)
 
-    # --- NEW: Unicode Normalization for HTML ---
-    # Apply the same cleaning to HTML content
+    # 1. Remove noise tags completely
+    for tag in fragment(['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe']):
+        tag.decompose()
+
+    # 2. Convert Links to Markdown: [text](href)
+    for a in fragment.find_all('a', href=True):
+        text = a.get_text(strip=True)
+        url = a['href']
+        if text and url:
+            a.replace_with(f"[{text}]({url})")
+
+    # 3. Convert Bold/Strong to **text**
+    for b in fragment.find_all(['strong', 'b']):
+        text = b.get_text(strip=True)
+        if text:
+            b.replace_with(f"**{text}**")
+
+    # 4. Convert Italic/Em to *text*
+    for i in fragment.find_all(['em', 'i']):
+        text = i.get_text(strip=True)
+        if text:
+            i.replace_with(f"*{text}*")
+
+    # 5. Handle Lists (Simple Bullet Conversion)
+    for li in fragment.find_all('li'):
+        text = li.get_text(strip=True)
+        if text:
+            li.replace_with(f"\n* {text}")
+
+    # 6. Extract Text (handling paragraphs via newlines)
+    # The separator ensures that <p> content doesn't mash together
+    text = fragment.get_text(separator="\n\n")
+
+    # --- Unicode Normalization ---
     replacements = {
         "\u2018": "'", "\u2019": "'",
         "\u201c": '"', "\u201d": '"',
@@ -158,21 +165,16 @@ def clean_html_fragment(soup_element):
         "\u00a0": " "
     }
     for k, v in replacements.items():
-        html_str = html_str.replace(k, v)
-    # -------------------------------------------
+        text = text.replace(k, v)
     
     # Clean up whitespace
-    html_str = re.sub(r'\s+', ' ', html_str).strip()
-    
-    # Remove empty tags like <p> </p> or <a></a>
-    html_str = re.sub(r'<(\w+)[^>]*>\s*</\1>', '', html_str)
-    
-    return html_str.strip()
+    text = re.sub(r'\n{3,}', '\n\n', text) # Collapse multiple newlines to max 2
+    return text.strip()
 
 def parse_html_to_blocks(html_content):
     """
     Parses HTML content into logical blocks based on H2/H3 headers.
-    Returns a dictionary: {header_text: html_content_string}
+    Returns a dictionary: {header_text: text_content}
     """
     soup = BeautifulSoup(html_content, 'html.parser')
     blocks = {}
@@ -184,40 +186,32 @@ def parse_html_to_blocks(html_content):
     current_elements = []
     
     # Locate all relevant tags in flattened order
-    # Note: This strategy assumes content flows sequentially in the DOM
     
     # Find the container holding the content
-    # If a specific layout div exists, use its children, otherwise use main body
     container = main_content
     if main_content.find('article'):
         container = main_content.find('article')
         
-    # Collect all elements
-    all_elements = container.find_all(recursive=True)
-    
-    # We need a linear iteration. find_all returns nested ones too.
-    # Better approach: iterate over top-level children of the content container
-    
-    # Locate the start of content (e.g., the first h1/h2)
     start_node = container.find(['h1', 'h2'])
     
     if start_node:
-        # Iterate siblings of the header (or parent's children if header is nested)
+        # Iterate siblings of the header
         iterator_parent = start_node.parent
         
         for child in iterator_parent.children:
             if child.name in ['h1', 'h2', 'h3']:
                 # Save previous block
                 if current_elements:
-                    clean_html = ""
+                    clean_text = ""
                     for el in current_elements:
-                        clean_html += clean_html_fragment(el)
-                    if clean_html:
-                        blocks[current_header] = clean_html
+                        clean_text += clean_html_fragment(el) + "\n"
+                    if clean_text.strip():
+                        blocks[current_header] = clean_text.strip()
                 
                 # Start new block
                 current_header = child.get_text(strip=True).lower()
-                current_header = re.sub(r'[^\w\s\?]', '', current_header).strip()
+                # --- AMENDED REGEX: Added \' to the allowed list to preserve apostrophes ---
+                current_header = re.sub(r'[^\w\s\?\']', '', current_header).strip()
                 current_elements = []
             
             elif child.name and child.name not in ['script', 'style', 'button', 'svg', 'form']:
@@ -225,11 +219,11 @@ def parse_html_to_blocks(html_content):
         
         # Flush last block
         if current_elements:
-            clean_html = ""
+            clean_text = ""
             for el in current_elements:
-                 clean_html += clean_html_fragment(el)
-            if clean_html:
-                blocks[current_header] = clean_html
+                 clean_text += clean_html_fragment(el) + "\n"
+            if clean_text.strip():
+                blocks[current_header] = clean_text.strip()
     
     return blocks
 
@@ -384,7 +378,7 @@ def resolve_about_topics(metadata_row):
 # --- 4. EXTRACTORS (Updated for HTML) ---
 
 def extract_dynamic_content_html(blocks, main_description_key=None):
-    """ Extracts FAQs using HTML blocks, allowing semantic HTML in answers. """
+    """ Extracts FAQs using blocks, now returning Markdown text. """
     IGNORED_HEADERS = {
         "intro", "description", "see also", "want to give us feedback?", 
         "references", "external links", "table of contents", "feedback", 
@@ -394,10 +388,10 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
         IGNORED_HEADERS.add(main_description_key.lower())
 
     content_items = []
-    for header, html_content in blocks.items():
+    for header, text_content in blocks.items():
         clean_header_key = header.lower().strip()
         
-        if not html_content: continue
+        if not text_content: continue
         if clean_header_key in IGNORED_HEADERS: continue
         if "step" in clean_header_key or "proceed" in clean_header_key: continue
 
@@ -418,36 +412,45 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
             "name": display_name,
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": html_content # Embeds HTML string
+                "text": text_content # Now clean Markdown
             }
         })
     return content_items
 
 def extract_howto_steps_html(blocks):
-    """ Extracts steps as HTML fragments. """
+    """ Extracts steps. If using HTML source, converts to Markdown. """
     steps = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     
     if target_key:
-        html_content = blocks[target_key]
-        soup = BeautifulSoup(html_content, 'html.parser')
+        # blocks[target_key] is already cleaned Markdown text from parse_html_to_blocks
+        # However, to be safe regarding list parsing, we re-parse if needed, 
+        # BUT current logic cleans it early. 
+        # If we need list separation, we rely on the newlines added by clean_html_fragment
         
-        list_items = soup.find_all('li')
-        if list_items:
-            for li in list_items:
-                steps.append({
-                    "@type": "HowToStep",
-                    "name": "xXx_PLACEHOLDER_xXx", 
-                    "text": clean_html_fragment(li)
-                })
-        else:
-            paragraphs = soup.find_all('p')
-            for p in paragraphs:
+        raw_text = blocks[target_key]
+        
+        # Split by bullet points if they exist
+        if "\n* " in raw_text:
+             matches = raw_text.split("\n* ")
+             for m in matches:
+                 if not m.strip(): continue
                  steps.append({
                     "@type": "HowToStep",
                     "name": "xXx_PLACEHOLDER_xXx", 
-                    "text": clean_html_fragment(p)
+                    "text": m.strip()
                 })
+        else:
+             # Fallback to paragraphs
+             paragraphs = raw_text.split('\n\n')
+             for p in paragraphs:
+                 if not p.strip(): continue
+                 steps.append({
+                    "@type": "HowToStep",
+                    "name": "xXx_PLACEHOLDER_xXx", 
+                    "text": p.strip()
+                })
+
     return steps
 
 def extract_howto_steps_md(blocks):
@@ -505,11 +508,8 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
             found_key = next((bk for bk in blocks.keys() if k in bk), None)
             if found_key:
                 raw_desc = blocks[found_key]
-                if use_html:
-                    # Strip tags for schema 'description' property, keep raw for internal logic if needed
-                    description = BeautifulSoup(raw_desc, 'html.parser').get_text(separator=' ').strip()[:300] + "..."
-                else:
-                    description = clean_text_retain_formatting(raw_desc, strip_images=True)
+                # blocks[found_key] is now already clean Markdown text
+                description = raw_desc[:300] + "..."
                 used_desc_key = found_key
                 break
 
@@ -611,7 +611,8 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     see_also = next((k for k in blocks.keys() if "see also" in k), None)
     if see_also:
         content = blocks[see_also]
-        links = re.findall(r'href=[\'"]?(https?://[^\'" >]+)', content) if use_html else re.findall(r'\((https?://[^\)]+)\)', content)
+        # Since content is now Markdown, look for markdown links
+        links = re.findall(r'\[.*?\]\((https?://[^\)]+)\)', content)
         if links: json_ld["relatedLink"] = list(set(links))
 
     out_path = os.path.join(OUTPUT_DIR, filename.replace('.md', '.json'))
