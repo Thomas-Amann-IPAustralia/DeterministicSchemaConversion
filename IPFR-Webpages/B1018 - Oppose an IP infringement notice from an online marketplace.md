@@ -13,8 +13,8 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringe
 An online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are: 
 
 * Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.
-* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy’s Intellectual Property report, receive the complainant’s contact details by email, and may need to resolve it directly or seek legal advice.
-* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form—Shein removes listings when notified and does not mediate between parties.
+* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy's Intellectual Property report, receive the complainant's contact details by email, and may need to resolve it directly or seek legal advice.
+* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form--Shein removes listings when notified and does not mediate between parties.
 
 Each platform then reviews the submission and decides whether to restore or permanently disable the listing. 
 
@@ -32,7 +32,7 @@ Companies can list their IP rights with different e-commerce platforms before an
 
 ### What are the risks?
 
-* Missing the platform’s deadline (e.g. 10 business days on Etsy and eBay) may result in permanent removal.
+* Missing the platform's deadline (e.g. 10 business days on Etsy and eBay) may result in permanent removal.
 * Giving incomplete or inaccurate details can lead to account penalties or suspension.
 * Either party could escalate the issue to a formal dispute.
 
@@ -72,11 +72,11 @@ Most online marketplaces do not publish this information, however IP infringemen
 * A copy of your IP registration or evidence of use.
 * The takedown notice or removal email with reference numbers.
 * Screenshots of the original listing and the allegedly infringing content.
-* Knowledge of each platform’s process, for example:
+* Knowledge of each platform's process, for example:
   + Amazon: Using the [Account Health Page](https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ)  to provide evidence against a notice or warning for infringement.
   + eBay: file a [VeRO](https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program)  counter notice via email or the provided form (NOCI).
-  + Etsy: use “[What to Do if You Receive a Notice of Intellectual Property Infringement”](https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling)  page and contact the rights owner directly.
-  + Shein: submit via “IP Notice” portal at Shein [IPP](https://ipp.shein.com/ipp).
+  + Etsy: use "[What to Do if You Receive a Notice of Intellectual Property Infringement"](https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling)  page and contact the rights owner directly.
+  + Shein: submit via "IP Notice" portal at Shein [IPP](https://ipp.shein.com/ipp).
 * A log of all communications, submissions and platform decisions.
 
 ### See also

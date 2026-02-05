@@ -28,7 +28,7 @@ For more information on possible commercial solutions, see IP First Response's p
 
 ### What are the risks?
 
-* Relies on the other party’s willingness to engage or negotiate with you.
+* Relies on the other party's willingness to engage or negotiate with you.
 * Either party can withdraw from the conversation at any point in time, resulting in wasted time, money and effort.
 * If you share sensitive business information without a confidentiality agreement, it may be used against you later.
 * A mere verbal agreement, without a signed or executed deed of settlement, may not be easily enforceable.
@@ -36,7 +36,7 @@ For more information on possible commercial solutions, see IP First Response's p
 ### What are the possible outcomes?
 
 * You both agree that no infringement has occurred, and no further action is taken.
-* You and the other party ‘agree to disagree’, but no further action is taken.
+* You and the other party 'agree to disagree', but no further action is taken.
 * You reach a financial settlement or pay a one-off fee for past use.
 * You enter a licence or co-existence agreement that allows continued use under agreed conditions and undertake not to infringe in the future.
 * You can also agree to purchase the IP.
@@ -66,9 +66,9 @@ Many businesses choose to engage in a dialogue with the other party, with or wit
 
 ### Who can use this?
 
-Anyone that has been contacted about allegedly infringing on someone else’s IP and wishes to explore co-operative solutions rather than escalating the dispute.
+Anyone that has been contacted about allegedly infringing on someone else's IP and wishes to explore co-operative solutions rather than escalating the dispute.
 
-### Who’s involved?
+### Who's involved?
 
 * Alleged infringer (you or your business).
 * The party alleging you have infringed their IP (often an IP right owner or authorised user).
@@ -80,7 +80,7 @@ Before you engage in a conversation with the other party, consider gathering:
 
 * A copy of the cease-and-desist letter or the request, including deadlines and requested actions.
 * Evidence of your product, branding or content development timeline and any prior rights you may hold.
-* Documents relating to the relevant IP right’s scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party’s claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed.
+* Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed.
 * Contact details for the rights holder or their representative to open dialogue.
 * A confidentiality agreement template to protect commercial information during negotiations.
 

@@ -8,17 +8,17 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-inte
 
 ### What is it?
 
-If you believe someone is infringing your trade mark in their website’s domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.   
+If you believe someone is infringing your trade mark in their website's domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.   
 
 The relevant dispute provider will vary depending on the domain name extension: 
 
 * If the domain name extension ends in .au, then the relevant dispute policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.
 * If the domain name ends in a generic term like .com, .net or .org, then the relevant policy is the [Uniform Dispute Resolution Policy (UDRP)](https://www.icann.org/resources/pages/help/dndr/udrp-en). A full list of approved UDRP providers is available here: [List of Approved Dispute Resolution Service Providers - ICANN](https://www.icann.org/resources/pages/providers-6d-2012-02-25-en)   The World Intellectual Property Organization (WIPO) is a leading provider.
-* If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country’s Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO. [Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)](https://www.wipo.int/amc/en/domains/cctld)
+* If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country's Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO. [Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)](https://www.wipo.int/amc/en/domains/cctld)
 
-The World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel’s decisions are put into effect by the registrar (the host of the domain name).  
+The World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are put into effect by the registrar (the host of the domain name).  
 
-**Please Note:** If the infringing domain name ends in ‘.au’ then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA. 
+**Please Note:** If the infringing domain name ends in '.au' then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA. 
 
 ### What are the benefits?
 
@@ -28,23 +28,23 @@ Benefits vary depending on the relevant dispute resolution policy. Some country 
 * Fast and accessible process.
 * A focus on practical, non-punitive outcomes.
 * Fair opportunity for both parties to present their case in writing.
-* There is usually no compensation for loss (including lawyers’ costs) or damages, meaning this process is less adversarial.
+* There is usually no compensation for loss (including lawyers' costs) or damages, meaning this process is less adversarial.
 * If using WIPO as a dispute resolution provider, the WIPO Arbitration and Mediation Center will provide free procedural/service support to help navigate the process.
 
 ### What are the risks?
 
 * Decisions are usually made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage.
 * Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party.
-* If either party is unhappy with the decision of the panel, they can initiate legal proceedings. This can get complicated when dealing with international disputes, and will probably be in the registrar’s or the registrant’s location. This means you may not be able to choose which jurisdiction/country the court is in.
+* If either party is unhappy with the decision of the panel, they can initiate legal proceedings. This can get complicated when dealing with international disputes, and will probably be in the registrar's or the registrant's location. This means you may not be able to choose which jurisdiction/country the court is in.
 
 ### What are the possible outcomes?
 
-For the UDRP and country code policies based closely on the UDRP, these main outcomes are possible as a result of the panel’s decision: 
+For the UDRP and country code policies based closely on the UDRP, these main outcomes are possible as a result of the panel's decision: 
 
 * The disputed domain name licence(s) cancelled, in which case the domain name(s) will become available for registration by another eligible party.
 * The disputed domain name licence(s) is transferred to you.
 * The disputed domain name licence(s) remains with the current registrant.
-* If the Panel finds that the complaint was brought in bad faith they will note in their decision that the complaint constitutes an abuse of the proceeding called ‘reverse domain name hijacking’.
+* If the Panel finds that the complaint was brought in bad faith they will note in their decision that the complaint constitutes an abuse of the proceeding called 'reverse domain name hijacking'.
 * For more info [WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)](https://www.wipo.int/amc/en/domains/guide/#What_is_a).
 
 You and the other party are still able to reach a direct settlement during the proceedings. If this occurs before a panel is appointed, you are entitled to a partial refund of the filing fee. In most cases this is a refund of US $1,000. 
@@ -79,7 +79,7 @@ Anyone with competing legal rights to a domain name licence (including the owner
 
 When using the UDRP your trade mark can be registered anywhere in the world, including Australia. Some specific country code domains might require that your trade mark is registered in that country. 
 
-### Who’s involved?
+### Who's involved?
 
 * A trade mark owner.
 * A domain name licence holder (registrant).
@@ -93,7 +93,7 @@ This will vary based on the relevant dispute resolution policy and the provider 
 
 To read and understand the steps to file a complaint as described on the WIPO website at [Domain Name Disputes](https://www.wipo.int/amc/en/domains/), and of the relevant [UDRP](https://www.icann.org/resources/pages/policy-2012-02-25-en), [UDRP Rules](https://www.icann.org/resources/pages/udrp-rules-2015-03-11-en), and [WIPO Supplemental Rules](https://www.wipo.int/amc/en/domains/supplemental/eudrp/newrules.html). 
 
-A written complaint. You can download WIPO’s [Model Complaint](https://www.wipo.int/amc/en/docs/complaint-lock-eudrp.docx)  form or write your own based on Paragraph 3 of the [UDRP Rules](https://www.icann.org/resources/pages/udrp-rules-2015-03-11-en).  \
+A written complaint. You can download WIPO's [Model Complaint](https://www.wipo.int/amc/en/docs/complaint-lock-eudrp.docx)  form or write your own based on Paragraph 3 of the [UDRP Rules](https://www.icann.org/resources/pages/udrp-rules-2015-03-11-en).  \
  \
 The [WIPO website](https://www.wipo.int/amc/en/domains/)  and the UDRP [provide guidance](https://www.wipo.int/amc/en/domains/guide)  on what evidence can be used to meet/prove these criteria. This should be attached with your complaint. 
 
@@ -101,8 +101,8 @@ To check whether the registrant has a valid trade mark registration overseas (wh
 
 Also note: 
 
-* If your complaint involves multiple domain names, you should learn about ‘consolidation’ of complaints and complete the WIPO UDRP consolidation worksheet. See [WIPO Overview 3.0](https://www.wipo.int/amc/en/domains/search/overview3.0/), [section 4.11](https://www.wipo.int/amc/en/domains/search/overview3.0/#item411).
-* Check the domain name status in case it’s expiring during the dispute. For more information see [Q&A: domain name expiration and the UDRP](https://www.wipo.int/amc/en/domains/expiry.html).
+* If your complaint involves multiple domain names, you should learn about 'consolidation' of complaints and complete the WIPO UDRP consolidation worksheet. See [WIPO Overview 3.0](https://www.wipo.int/amc/en/domains/search/overview3.0/), [section 4.11](https://www.wipo.int/amc/en/domains/search/overview3.0/#item411).
+* Check the domain name status in case it's expiring during the dispute. For more information see [Q&A: domain name expiration and the UDRP](https://www.wipo.int/amc/en/domains/expiry.html).
 
 ### See also
 

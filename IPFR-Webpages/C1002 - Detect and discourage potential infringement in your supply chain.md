@@ -48,7 +48,7 @@ The costs for supply chain monitoring depend heavily on the extent of monitoring
 
 Costs for basic software subscriptions vary but can start in the low hundreds of dollars per year. Custom analytics or forensic audits may cost several thousand dollars. For more information on engaging third-party services, see [Obtain advice to help manage your IP.](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip)
 
-You can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product’s life cycle, adjusting the effort as your risk profile or budget changes. 
+You can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product's life cycle, adjusting the effort as your risk profile or budget changes. 
 
 ### How much time might be involved?
 
@@ -58,13 +58,13 @@ Ongoing effort depends on shipment volume and review frequency, but it is common
 
 ### How much is this used?
 
-Supply chain monitoring for mitigating risks associated with IP is commonly used. Conducting regular audits and having visibility over supply chain are often seen as part of best practices to protect one’s IP. 
+Supply chain monitoring for mitigating risks associated with IP is commonly used. Conducting regular audits and having visibility over supply chain are often seen as part of best practices to protect one's IP. 
 
 ### Who can use this?
 
 Any IP rights holders. 
 
-### Who’s involved?
+### Who's involved?
 
 * The IP right owner or authorised user.
 * Suppliers, manufacturers and logistics partners.

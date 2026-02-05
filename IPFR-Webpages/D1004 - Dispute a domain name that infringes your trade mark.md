@@ -8,11 +8,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-
 
 ### What is it?
 
-.au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone’s .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA’s .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.   
+.au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.   
 
-A panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel’s decisions are binding on both parties. 
+A panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties. 
 
-**Please Note:** If the infringing domain name does not end in ‘.au’ then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP). 
+**Please Note:** If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP). 
 
 ### What are the benefits?
 
@@ -30,7 +30,7 @@ A panel of independent arbitrators and legal practitioners will consider submiss
 
 ### What are the possible outcomes?
 
-Three outcomes are possible following the panel’s decision:
+Three outcomes are possible following the panel's decision:
 
 * The disputed .au domain name licence/s cancelled, in which case the .au domain name/s will become available for registration by another eligible member of the public.
 * The disputed .au domain name licence/s is transferred to the complainant. The complainant must be eligible to hold the .au domain name licence/s, otherwise the transfer cannot proceed.

@@ -10,7 +10,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO](https://ip
 
 The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency. 
 
-You can access ASBFEO’s [Dispute Support Tool](https://www.asbfeo.gov.au/disputes-assistance/dispute-support) to identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers. 
+You can access ASBFEO's [Dispute Support Tool](https://www.asbfeo.gov.au/disputes-assistance/dispute-support) to identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers. 
 
 ASBFEO can guide you through dispute resolution by: 
 
@@ -20,7 +20,7 @@ ASBFEO can guide you through dispute resolution by: 
 
 ### What are the benefits?
 
-* Guides you through resolving disputes in a way that’s designed to suit the needs of small businesses.
+* Guides you through resolving disputes in a way that's designed to suit the needs of small businesses.
 * Can address disputes over a wider range of business issues, rather than intellectual property rights in isolation.
 * Can help you find a mutually acceptable solution while preserving business relationships.
 * Can encourage parties to engage in alternative dispute resolution such as mediation and arbitration which can help resolve disputes in a structured and confidential context while providing more control on the agreed outcomes (as opposed to being mandated by a tribunal or court).
@@ -40,7 +40,7 @@ ASBFEO can guide you through dispute resolution by: 
 * You proceed with alternative dispute resolution services such as conferencing, mediation, or conciliation.
 * You decide not to pursue resolution of the dispute.
 
-Resolution of cases through engagement and alternative dispute resolution is around 80% — in whole or part through these methods. In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as: 
+Resolution of cases through engagement and alternative dispute resolution is around 80% -- in whole or part through these methods. In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as: 
 
 * The goodwill between the parties
 * Whether the parties would benefit from continuing their relationship

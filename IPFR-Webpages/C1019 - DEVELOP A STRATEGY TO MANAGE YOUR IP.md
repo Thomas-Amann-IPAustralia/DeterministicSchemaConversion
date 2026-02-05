@@ -8,11 +8,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-m
 
 ### What is it?
 
-You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors’ IP, and planning responses should you experience suspected copying in the future. 
+You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors' IP, and planning responses should you experience suspected copying in the future. 
 
 By mapping this out early, you may avoid making important decisions under pressure, reduce legal risks and place your business in a stronger position to grow or defend your IP assets. 
 
-An IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders’ right and copyright. 
+An IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders' right and copyright. 
 
 Key elements often include: 
 
@@ -61,7 +61,7 @@ Developing and implementing a comprehensive IP strategy a common practice used b
 * IP rights holders or authorised users managing IP assets.
 * Anyone or businesses planning to use, develop or acquire IP assets.
 
-### Who’s involved?
+### Who's involved?
 
 * The business owner or employee/s.
 * Optional: IP professionals such as trade mark or patent attorneys.

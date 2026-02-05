@@ -8,22 +8,22 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/check-if-someone-e
 
 ### What is it?
 
-Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an ‘IP search’. 
+Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an 'IP search'. 
 
 An IP search means looking in free online tools called registers. These show who owns trade marks (names, logos), patents (inventions), designs (product looks) and domain names (website addresses). 
 
 For: 
 
-* **Names and logos** – Use Australian Trade Mark Search. If you already have a logo and want to check if something like it is registered, you can also use TM Checker.
-* **Inventions** – Use Australian Patent Search.
-* **Product designs** – Use Australian Design Search.
-* **Plant breeders’ rights (PBRs)** – Use Australian Plant breeder's rights search.
-* **Copyright** – There’s no register in Australia. Search online, in image tools, or in industry databases.
-* **Website addresses** – Search the .au domain name register.
+* **Names and logos** - Use Australian Trade Mark Search. If you already have a logo and want to check if something like it is registered, you can also use TM Checker.
+* **Inventions** - Use Australian Patent Search.
+* **Product designs** - Use Australian Design Search.
+* **Plant breeders' rights (PBRs)** - Use Australian Plant breeder's rights search.
+* **Copyright** - There's no register in Australia. Search online, in image tools, or in industry databases.
+* **Website addresses** - Search the .au domain name register.
 
 You can do a quick search yourself, but a lawyer or IP professional can do a deeper search and explain tricky results. 
 
-**Please note:** No results doesn’t mean you’re safe. New rights appear often, and some rights (like unregistered trade marks) don’t show in registers. 
+**Please note:** No results doesn't mean you're safe. New rights appear often, and some rights (like unregistered trade marks) don't show in registers. 
 
 ### See also
 

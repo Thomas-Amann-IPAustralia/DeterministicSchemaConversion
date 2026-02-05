@@ -22,14 +22,14 @@ An injunction**,**in the context of an Australian IP dispute, is a court order t
 
 * Stop someone from infringing your IP rights.
 * Compel them to take specific actions to prevent further infringement.
-* Freeze a party’s assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a *Mareva injunction*).
+* Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a *Mareva injunction*).
 
-An **interim injunction** is a type of injunction which can be granted without a full hearing. It’s a temporary, short-term tool to protect your IP until hearings take place.  
+An **interim injunction** is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.  
 
 * Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.
 * Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.
-* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn’t yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.
-* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional’s advice may be vital before deciding to take any court action.
+* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.
+* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.
 
 **Search order** \
 A search order (sometimes called an *Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.  
@@ -39,7 +39,7 @@ These are only granted in narrow circumstances, including that you have a strong
 ### What are the benefits?
 
 * **Rapid cessation of infringement.**By halting any infringement immediately, you prevent further damage to your IP, such as erosion of market share or brand reputation.
-* **Increased leverage in negotiations.**The court’s willingness to grant an urgent injunction sends a powerful signal to the defendant, which may affect future negotiations.
+* **Increased leverage in negotiations.**The court's willingness to grant an urgent injunction sends a powerful signal to the defendant, which may affect future negotiations.
 * **Preservation of evidence.**An urgent injunction often comes with additional orders that can include the preservation of documents, files or infringing stock.
 * **Enforceability.**There are existing mechanisms in place to ensure people comply with court orders.
 
@@ -52,7 +52,7 @@ These are only granted in narrow circumstances, including that you have a strong
 ### What are the possible outcomes?
 
 * If the interim injunction is granted, the defending party must cease all activity suspected of infringing.
-* This can be extended throughout the trial as an ‘interlocutory injunction’. If the subsequent lawsuit is ruled in your favour, the defendant might then face a final, permanent injunction.
+* This can be extended throughout the trial as an 'interlocutory injunction'. If the subsequent lawsuit is ruled in your favour, the defendant might then face a final, permanent injunction.
 * If the subsequent lawsuit is ruled in favour of the defendant, you may be required to compensate the defendant for lost revenue due to the interim injunction. Additionally, you may be liable for subsequent legal costs, and the defendant is free to continue their previous activities.
 * If the interim injunction is not granted, the defendant can continue their activities.
 * If you continue taking court action for infringement/with the subsequent lawsuit, an injunction or damages may be granted at a later stage.
@@ -77,7 +77,7 @@ In 2024 the Federal Court heard 5 applications for interlocutory injunctions in 
 
 Interim injunctions are available for many matters. For IP infringement actions, you'll usually need to clearly own an IP right. 
 
-### Who’s involved?
+### Who's involved?
 
 * IP owner
 * Infringing (allegedly) parties

@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustifie
 
 ### What is it?
 
-Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threatens to take legal action against you for infringing their Australian registered IP rights, and these threats are unjustified and received by you in Australia, you may be able to take action under Australia’s ‘unjustified threats’ laws. Similarly, if someone threatens to take action against you in Australia for infringing copyright and these threats are unjustified, you may be able to take action under the ‘groundless threats’ provisions of Australian copyright law. 
+Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threatens to take legal action against you for infringing their Australian registered IP rights, and these threats are unjustified and received by you in Australia, you may be able to take action under Australia's 'unjustified threats' laws. Similarly, if someone threatens to take action against you in Australia for infringing copyright and these threats are unjustified, you may be able to take action under the 'groundless threats' provisions of Australian copyright law. 
 
  If you receive or are affected by an unjustified threat, you can start legal action and ask a court to: 
 
@@ -18,14 +18,14 @@ Unjustified threats of IP infringement can disrupt your business, for example wh
 
  Some reasons a threat might be unjustified are:  
 
-* for registered IP rights – the accuser does not actually own a current, valid Australian IP right, and therefore is not entitled to take IP infringement action
-* the alleged infringement isn't occurring because, for example: the actions you’ve been accused of taking would not actually infringe IP rights under Australian law.
+* for registered IP rights - the accuser does not actually own a current, valid Australian IP right, and therefore is not entitled to take IP infringement action
+* the alleged infringement isn't occurring because, for example: the actions you've been accused of taking would not actually infringe IP rights under Australian law.
 
 If someone makes a threat against you, they need to be able to show that the threat was justified if you decide to start legal action against them. However, is important to note that Australian IP laws make it clear that mere notification of registration or protection of IP rights, or the mere notification of the existence of a copyright, is not by itself a threat.  
 
 It can be difficult to know whether a notice or correspondence amounts to an unjustified threat. An IP lawyer or IP attorney may be able to advise you on whether you have received an unjustified threat.  
 
-**It is always prudent to seek legal advice before deciding whether to start legal action.**There are often options other than court for responding to an unjustified threat — like writing back to the other party to clarify your position — before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond. 
+**It is always prudent to seek legal advice before deciding whether to start legal action.**There are often options other than court for responding to an unjustified threat -- like writing back to the other party to clarify your position -- before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond. 
 
 ### What are the benefits?
 
@@ -35,7 +35,7 @@ It can be difficult to know whether a notice or correspondence amounts to an unj
 ### What are the risks?
 
 * Escalating the issue to court may prompt the other party to take further enforcement actions such as infringement proceedings or to make other counterclaims against you.
-* If the court finds the threat was justified, you may need to pay the other party’s costs.
+* If the court finds the threat was justified, you may need to pay the other party's costs.
 * Court proceedings are generally public so you should consider any reputational impacts.
 
 ### What are the possible outcomes?
@@ -46,7 +46,7 @@ If you decide to start legal action, possible outcomes include: 
 
 * The parties resolve their dispute outside of court through mediation, negotiation or another alternative dispute resolution (ADR) process and stop the legal action.
 * A court declares the threat unjustified and might also order the other party to stop making threats and/or pay you damages if you have suffered loss as a result of the threat.
-* A court finds the threat is justified. You may be required to pay the other party’s costs and could face other liabilities if it is found that you were infringing their IP rights.
+* A court finds the threat is justified. You may be required to pay the other party's costs and could face other liabilities if it is found that you were infringing their IP rights.
 
 ### What might the costs be?
 
@@ -68,7 +68,7 @@ It is common for parties to respond to letters of demand (or cease and desist le
 
 Anyone aggrieved by an unjustified threat. 
 
-### Who’s involved?
+### Who's involved?
 
 * You (the person receiving or aggrieved by the threat).
 * The person or business making the threat.
@@ -79,7 +79,7 @@ Anyone aggrieved by an unjustified threat. 
 
 **Consider whether the threat is unjustified** 
 
-A key starting point can be to check the IP right registration status of the accuser (except for copyright, which in Australia does not have a formal registration system). You can search the Australian IP registers to check whether they have a current (not pending or expired) registered IP right. For design rights, the status must be listed as ‘certified’ (not simply registered) before they can enforce their design. 
+A key starting point can be to check the IP right registration status of the accuser (except for copyright, which in Australia does not have a formal registration system). You can search the Australian IP registers to check whether they have a current (not pending or expired) registered IP right. For design rights, the status must be listed as 'certified' (not simply registered) before they can enforce their design. 
 
 Review your own use of the contested IP and consider whether this might amount to infringement. 
 

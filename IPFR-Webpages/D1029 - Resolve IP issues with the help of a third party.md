@@ -8,26 +8,26 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/arbitration](https
 
 ### What is it?
 
-Arbitration is a type of alternative dispute resolution (ADR) in which a dispute is submitted, by agreement of the parties, to one or more arbitrators who make a binding decision on the dispute (known as an ‘arbitral award’). The arbitrator is often someone with a high level of expertise in the specific field of law relevant to the industry or subject matter of the dispute.  
+Arbitration is a type of alternative dispute resolution (ADR) in which a dispute is submitted, by agreement of the parties, to one or more arbitrators who make a binding decision on the dispute (known as an 'arbitral award'). The arbitrator is often someone with a high level of expertise in the specific field of law relevant to the industry or subject matter of the dispute.  
 
 Arbitration can be somewhat similar to a court or tribunal hearing, but often are a shorter and more flexible version: 
 
 * Parties are typically expected to produce evidence and submissions before the arbitrator to make a decision.
-* Usually, the parties to the dispute must agree before the process that the arbitrator’s decision will be binding and enforceable.
+* Usually, the parties to the dispute must agree before the process that the arbitrator's decision will be binding and enforceable.
 * Arbitration is generally seen as an efficient, impartial, and enforceable process to resolve both domestic and international commercial disputes, including IP matters.
 
-Arbitration may be voluntary, required under a court order, or as part of a contract – arbitration clauses are often added to contracts, stipulating that the parties resolve future disputes using this method.  
+Arbitration may be voluntary, required under a court order, or as part of a contract - arbitration clauses are often added to contracts, stipulating that the parties resolve future disputes using this method.  
 
 Arbitration requires agreement from both parties, which can be challenging to obtain after a dispute arises, especially in cases involving no prior contractual relationship. For this reason, where there are contractual negotiations, it is often advantageous for parties to consider including an arbitration clause in their initial contract.
 
 ### What are the benefits?
 
-* The potential outcome(s) of arbitration are highly enforceable, as Australia is a signatory to United Nations Convention on the Recognition and Enforcement of Foreign Arbitral Awards (‘the New York Convention’). Australia has implemented the New York Convention through *International Arbitration Act 1974* (Cth) and through uniform State and Territory statutes governing domestic arbitration.
+* The potential outcome(s) of arbitration are highly enforceable, as Australia is a signatory to United Nations Convention on the Recognition and Enforcement of Foreign Arbitral Awards ('the New York Convention'). Australia has implemented the New York Convention through *International Arbitration Act 1974* (Cth) and through uniform State and Territory statutes governing domestic arbitration.
 * Arbitration can be conducted across different jurisdictions and arbitral awards are often comparatively easier to enforce in foreign jurisdictions under the New York Convention, which is an advantage over court proceedings for cross-border disputes.
 * Parties can choose their arbitrator/s and have some flexibility and control over shaping the process (for example, through scheduling, rules of evidence and procedures).
 * Parties can narrow the scope of a dispute to the issues that matter to both sides.
 * Parties can also choose arbitrators with sector-specific expertise in relation to the subject matter of the IP dispute, which may be preferable when the dispute concerns highly technical issues.
-* The details and outcome of arbitration can be kept confidential, subject to the parties’ agreement, allowing parties to discuss commercially sensitive topics freely.
+* The details and outcome of arbitration can be kept confidential, subject to the parties' agreement, allowing parties to discuss commercially sensitive topics freely.
 * Arbitration may offer a faster and more cost-effective alternative to court proceedings.
 
 ### What are the risks?
@@ -49,11 +49,11 @@ There are a wide range of possible outcomes, including but not limited to: 
 
 The costs of arbitration will typically include: 
 
-* Arbitrator’s fee
+* Arbitrator's fee
 * Administrative fees (i.e. filing fee) payable to the arbitral institution
 * (Optional) Legal fees for engaging an IP professional to act on your behalf.
 
-A considerable portion in the costs of arbitration process is the arbitrator’s fee. The hourly rate of an arbitrator would differ significantly depending on the amount in dispute and which arbitration/arbitral institution the parties choose. Due to the high legal and subject-matter expertise required of an arbitrator, the cost of engaging them can be extremely expensive.   
+A considerable portion in the costs of arbitration process is the arbitrator's fee. The hourly rate of an arbitrator would differ significantly depending on the amount in dispute and which arbitration/arbitral institution the parties choose. Due to the high legal and subject-matter expertise required of an arbitrator, the cost of engaging them can be extremely expensive.   
 
 The World Intellectual Property Organization (WIPO) Arbitration and Mediation Center provides that cases under the WIPO Expedited Arbitration Rules cost around [US$48,000 and cases under the WIPO Arbitration Rules cost some US$165,000](https://www.wipo.int/web/wipo-magazine/articles/what-does-it-cost-to-defend-your-ip-rights-38493)  (48% of such cases involving a three member tribunal and 52% a sole arbitrator). 
 
@@ -61,13 +61,13 @@ While legal representation is optional, very often parties to the dispute would 
 
 ### How much time might be involved?
 
-Length of arbitration process can vary drastically depending on the complexity of the subject matter and the procedural rules agreed by respective parties. The International Chamber of Commerce (ICC)’s Dispute Resolution 2023 Statistics show the average duration of arbitrations was [27 months](https://iccwbo.org/wp-content/uploads/sites/3/2024/06/2023-Statistics_ICC_Dispute-Resolution_991.pdf). Some arbitration providers also provide expedited arbitration processes designed to resolve the dispute in a shortened timeframe. 
+Length of arbitration process can vary drastically depending on the complexity of the subject matter and the procedural rules agreed by respective parties. The International Chamber of Commerce (ICC)'s Dispute Resolution 2023 Statistics show the average duration of arbitrations was [27 months](https://iccwbo.org/wp-content/uploads/sites/3/2024/06/2023-Statistics_ICC_Dispute-Resolution_991.pdf). Some arbitration providers also provide expedited arbitration processes designed to resolve the dispute in a shortened timeframe. 
 
 ### Who can use this?
 
 Anybody who is a party to a dispute.  
 
-Who’s involved? 
+Who's involved? 
 
 * Parties to the disputes.
 * Arbitrator(s), whose role is to hear both parties and make a ruling.
@@ -91,7 +91,7 @@ Some questions to consider before you take your dispute to arbitration:   
 5. Is there a clear benefit that can be achieved from having the matter heard under procedural and evidence rules different from those of court proceedings?
 6. Is more than one arbitrator required? For example, do the parties come from different cultural and linguistic backgrounds? Or would it be beneficial to have both a technical expert and a legal practitioner as co-arbitrators?
 
-There is a wide range of arbitrators and arbitral institutions, ranging from public-funded bodies to private practitioners. Here’s a list of directories and arbitral institutions that may assist you in finding an arbitrator/s you would like to engage:  
+There is a wide range of arbitrators and arbitral institutions, ranging from public-funded bodies to private practitioners. Here's a list of directories and arbitral institutions that may assist you in finding an arbitrator/s you would like to engage:  
 
 * [The Resolution Institute's Dispute Resolver Directory list.](https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx)
 * [The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)](https://www.asbfeo.gov.au/)  provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes including arbitration.
@@ -105,9 +105,9 @@ You can also seek help from legal professionals to seek advice on whether arbitr
 
 For more information on arbitration and other types of ADR, see:  
 
-* IP First Response’s page on Alternative Dispute Resolution
+* IP First Response's page on Alternative Dispute Resolution
 * [Arbitration & International](https://www.fedcourt.gov.au/services/ADR/arbitration)  Arbitration at the Federal Court of Australia website
-* [Your guide to dispute resolution](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)  at the Attorney General’s Department website
+* [Your guide to dispute resolution](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)  at the Attorney General's Department website
 * [Resolve disputes | business.gov.au](https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR)
 * [Higher Education Research Commercialisation Intellectual Property Framework - Department of Education, Australian Government](https://www.education.gov.au/hercip)
 * [Recommended WIPO Contract Clauses and Submission Agreements](https://www.wipo.int/amc/en/clauses/)

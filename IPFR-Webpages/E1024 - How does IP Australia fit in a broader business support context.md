@@ -8,14 +8,14 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/how-does-ip-austra
 
 ### What is it?
 
-If you're starting or growing a business in Australia we know that there’s a lot to keep track of. If you’ve got a logo, there’s a chance you’ve come across us, a government agency called **IP Australia.** 
+If you're starting or growing a business in Australia we know that there's a lot to keep track of. If you've got a logo, there's a chance you've come across us, a government agency called **IP Australia.** 
 
 But how are we different from all the other government services out there? 
 
 |  |  |  |
 | --- | --- | --- |
 | **Agency** | **Main Focus** | **How It Helps You** |
-| **IP Australia** | Intellectual property rights that can be registered (patents, trade marks, designs and plant breeders’ rights) | Helps you protect many of the things that make your business unique. |
+| **IP Australia** | Intellectual property rights that can be registered (patents, trade marks, designs and plant breeders' rights) | Helps you protect many of the things that make your business unique. |
 | **ATO (Australian Tax Office)** | Tax & Super | Helps with tax returns, superannuation, and small business deductions. |
 | **ASBFEO (Small Business Ombudsman)** | Advocacy & Disputes | Helps if you're in a dispute with another business or the government. |
 | **Austrade** | Exporting | Supports businesses trying to sell overseas. |
@@ -29,7 +29,7 @@ But how are we different from all the other government services out there? 
 
 **Protect your uniqueness** 
 
-Your name, logo, invention, or product design can be *some of your most valuable assets*. But they don’t automatically get legal protection — you often need to **register** them. While some forms of IP rights are automatically created (e.g. copyright), many other forms of IP rights require registration for legal protection and enforcement.  
+Your name, logo, invention, or product design can be *some of your most valuable assets*. But they don't automatically get legal protection -- you often need to **register** them. While some forms of IP rights are automatically created (e.g. copyright), many other forms of IP rights require registration for legal protection and enforcement.  
 
 We make it easier to: 
 
@@ -39,7 +39,7 @@ We make it easier to: 
 
 **Use the right service at the right time** 
 
-You don’t have to know everything all at once. But knowing that **IP Australia** helps you protect your ideas — and that other agencies support your growth, staff, taxes, exports and more — is a great starting point. 
+You don't have to know everything all at once. But knowing that **IP Australia** helps you protect your ideas -- and that other agencies support your growth, staff, taxes, exports and more -- is a great starting point. 
 
 ### See also
 

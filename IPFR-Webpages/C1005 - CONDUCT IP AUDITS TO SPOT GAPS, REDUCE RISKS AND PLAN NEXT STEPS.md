@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-
 
 ### What is it?
 
-An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it’s worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a [comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip). 
+An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it's worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a [comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip). 
 
 Audits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals. 
 
@@ -33,7 +33,7 @@ However, many businesses also conduct regular audits to systematically review th
 
 * May require specialised expertise, which can add complexity or cost.
 * Confidential information might be exposed if not handled securely.
-* One-off audits can become outdated — regular reviews are usually needed.
+* One-off audits can become outdated -- regular reviews are usually needed.
 
 ### What are the possible outcomes?
 
@@ -68,7 +68,7 @@ Conducting a one-off or regular IP audit is a practice commonly used by business
 
 Any IP rights holder or authorised user managing IP assets. 
 
-### Who’s involved?
+### Who's involved?
 
 * Business owner or employee/s leading the audit.
 * Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers.

@@ -71,7 +71,7 @@ For trade mark and patent attorneys, you can expect an average fee of: 
 
 Some legal professionals offer a free consultation to assess what services you need and an estimate of costs.  
 
-It’s a good idea to ask your legal professional for an indication of how much the entire process may cost for the service you would like to use during your first meeting. 
+It's a good idea to ask your legal professional for an indication of how much the entire process may cost for the service you would like to use during your first meeting. 
 
 Some copyright owners could also explore avenues for accessing low- or no-cost legal advice. For example: 
 
@@ -88,7 +88,7 @@ IP Australia does not have access to information about how many, nor for which r
 
 ### Who can use this?
 
-Anyone — You do not have to be an IP rights owner to engage a legal professional.   
+Anyone -- You do not have to be an IP rights owner to engage a legal professional.   
 
 ### What do you need to proceed?
 
@@ -114,7 +114,7 @@ To find an IP lawyer, you can contact the Law Society in your state or territory
 * [The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer)
 * [Law Society Northern Territory](https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/)
 
-[The Arts Law Centre of Australia’s website](https://www.artslaw.com.au/services/common-questions/)  indicates that it maintains a national referral panel of arts and entertainment lawyers to which it may refer eligible copyright owners where appropriate.
+[The Arts Law Centre of Australia's website](https://www.artslaw.com.au/services/common-questions/)  indicates that it maintains a national referral panel of arts and entertainment lawyers to which it may refer eligible copyright owners where appropriate.
 
 **Tips for choosing an IP lawyer or IP attorney**\
 Here are some suggestions for choosing an IP lawyer or IP attorney for your IP:  

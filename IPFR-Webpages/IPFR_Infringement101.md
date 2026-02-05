@@ -4,7 +4,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/infringement-101](https://
 
 * What does IP infringement look like?
 
-  Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights. Understanding the basics of IP infringement is essential for anyone who creates, innovates, or operates a business in Australia.
+  Intellectual property infringement occurs when someone uses, reproduces, or exploits another person's or business's creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders' rights. Understanding the basics of IP infringement is essential for anyone who creates, innovates, or operates a business in Australia.
 
   For more information, please see:
 
@@ -55,7 +55,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/infringement-101](https://
 
   + **A trade mark is non-distinctive and is something other traders may legitimately want to use.** This could include common surnames, pictures of the goods, descriptive words or images, ordinary colours and shapes of the goods, sounds and scents commonly associated with the goods, and names of geographical locations where goods or services may originate.
   + **Earlier, confusingly similar trade marks** for the same or similar goods or services exist.
-  + **A trade mark is inherently confusing**, likely to deceive or confuse the public because of some inherent connotation. For example, a trade mark contains the words ‘vegan friendly’ but the goods claimed are beef products. This has the potential to mislead consumers as to the suitability of the product for vegan consumption.
+  + **A trade mark is inherently confusing**, likely to deceive or confuse the public because of some inherent connotation. For example, a trade mark contains the words 'vegan friendly' but the goods claimed are beef products. This has the potential to mislead consumers as to the suitability of the product for vegan consumption.
   + **A trade mark is scandalous**, likely to cause offence to a significant number of Australians.
   + **A trade mark is prohibited by legislation.** Other Australian laws may prohibit the use or registration of various words or images as trade marks (e.g. Defence force words or symbols or the word ANZAC). In addition, as a member state to the [Paris Convention for the Protection of Industrial Property](https://www.wipo.int/treaties/en/ip/paris/), Australia may refuse to register trade marks that consist of various words and images of foreign countries and intergovernmental organisations (e.g. UNICEF).
 
@@ -67,11 +67,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/infringement-101](https://
 
   While all valid trade marks are enforceable, generally speaking, some trade marks can be easier to enforce than others. These trade marks are sometimes called 'strong' trade marks. Strong trade marks might be creative, arbitrary, fanciful or unusual, allowing you to easily distinguish your products or services apart from your competitors. The more unique or fanciful your trade mark is in relation to your goods or services, other traders are less likely to have legitimate reasons to use something that are the same or similar to your trade mark.    
 
-  On the other hand, 'weak' trade marks may contain descriptive matter, or be very similar to trade marks being used by competitors for the same goods or services. Changes in market conditions or consumer behaviour may make a mark weaker over time too. In the case of ‘weak’ trade marks, it may be more difficult to show that other traders are using that trade mark (or something similar) in a way that the law considers an infringement, as opposed to purely descriptive use.  
+  On the other hand, 'weak' trade marks may contain descriptive matter, or be very similar to trade marks being used by competitors for the same goods or services. Changes in market conditions or consumer behaviour may make a mark weaker over time too. In the case of 'weak' trade marks, it may be more difficult to show that other traders are using that trade mark (or something similar) in a way that the law considers an infringement, as opposed to purely descriptive use.  
 
   #### Tools and resources
 
-  IP Australia provides tools and resources to help you check whether your trade mark would meet requirements for registration. Checking your trade mark’s registrability can also give you some indication on the strength of your trade mark when you wish to enforce it in the future.  
+  IP Australia provides tools and resources to help you check whether your trade mark would meet requirements for registration. Checking your trade mark's registrability can also give you some indication on the strength of your trade mark when you wish to enforce it in the future.  
 
   ##### **TM Checker**
 

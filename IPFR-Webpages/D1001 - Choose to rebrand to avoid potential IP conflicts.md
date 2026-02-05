@@ -10,9 +10,9 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avo
 
 [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-Rebranding your business can be an effective strategy to make sure you’re not infringing existing trade marks, to avoid disputes with other parties, or to apply for a new trade mark after your application to register a trade mark hasn’t been successful.  
+Rebranding your business can be an effective strategy to make sure you're not infringing existing trade marks, to avoid disputes with other parties, or to apply for a new trade mark after your application to register a trade mark hasn't been successful.  
 
-While contemplating rebranding your business can feel very personal – and it is important to acknowledge any emotional response you have to the situation – choosing to take this action (as part of a thought-out IP strategy) can be a valid and rational choice.  
+While contemplating rebranding your business can feel very personal - and it is important to acknowledge any emotional response you have to the situation - choosing to take this action (as part of a thought-out IP strategy) can be a valid and rational choice.  
 
 Many successful businesses have rebranded throughout their history as strategic moves. Rather than being an act of admitting defeat or suggesting that one party was 'right', rebranding can be a savvy forward-looking choice that can help you avoid costly IP disputes and focus on your core business.  
 
@@ -27,7 +27,7 @@ Regardless of whether you have a strong claim to the use of a trade marked brand
 ### What are the benefits?
 
 * Rebranding does not require the cooperation or even engagement with the other party, and is thus a very non-adversarial process.
-* You have the control to avoid conflict – unlike adversarial processes which have unpredictable outcomes.
+* You have the control to avoid conflict - unlike adversarial processes which have unpredictable outcomes.
 * It might be a more productive way to use your resources, compared to professional fees which may not add sufficient value to your business.
 * You will be able to better distinguish yourself in the marketplace and lower the risk of confusion in the marketplace.
 * The time, cost and labour required to take actions to avoid infringement on your IP may not be justified at this point in your business or IP journey.
@@ -70,10 +70,10 @@ One survey of 91 Australian small businesses found that 48% had to rebrand their
 
  Both large and small businesses use this strategy. 
 
-### Who’s involved?
+### Who's involved?
 
 * Yourself.
-* IP Professional – professional advice can help provide you with expertise to ensure you have considered the issue comprehensively, and additionally that the new designs adequately avoid any current and future IP conflicts.  These professionals can also help you protect the new brand with registered IP if desired.
+* IP Professional - professional advice can help provide you with expertise to ensure you have considered the issue comprehensively, and additionally that the new designs adequately avoid any current and future IP conflicts.  These professionals can also help you protect the new brand with registered IP if desired.
 * Design professionals (optional).
 
 ### What do you need to proceed?

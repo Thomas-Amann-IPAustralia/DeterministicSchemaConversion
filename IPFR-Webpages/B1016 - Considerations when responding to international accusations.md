@@ -8,11 +8,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/considerations-whe
 
 ### What is it?
 
-If you are being accused of infringing someone’s IP *outside*Australia, there may be some specific considerations to bear in mind – beyond those when dealing with Australian infringement issues. The location of the alleged offending might affect how you choose to respond.  
+If you are being accused of infringing someone's IP *outside*Australia, there may be some specific considerations to bear in mind - beyond those when dealing with Australian infringement issues. The location of the alleged offending might affect how you choose to respond.  
 
 **This page provides an overview of considerations when being accused of infringing overseas.**   
 
-Different countries have different IP laws. For registered rights, Australian IP registration does not specifically provide protection in overseas markets. It may be possible to infringe someone’s IP in an overseas market even if you hold an Australian IP registration or are not infringing anyone else’s IP rights in Australia. 
+Different countries have different IP laws. For registered rights, Australian IP registration does not specifically provide protection in overseas markets. It may be possible to infringe someone's IP in an overseas market even if you hold an Australian IP registration or are not infringing anyone else's IP rights in Australia. 
 
 At a general level, IP infringement considerations can in many jurisdictions be quite similar to those which apply in Australia, and in considering your options may explore matters such as: 
 
@@ -70,7 +70,7 @@ Anyone. 
 
 ### Who's involved?
 
-We have not provided an indication of who’s involved in this guide because it encompasses a variety of situations. In general, yourself and an accuser will usually be involved. You may wish to discuss this with an IP Lawyer or IP Attorney.
+We have not provided an indication of who's involved in this guide because it encompasses a variety of situations. In general, yourself and an accuser will usually be involved. You may wish to discuss this with an IP Lawyer or IP Attorney.
 
 ### What do you need to proceed?
 

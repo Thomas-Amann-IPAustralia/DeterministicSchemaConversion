@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-m
 
 ### What is it?
 
-A business may operate under several ‘names’, but only a registered trade mark is an intellectual property right that can give you exclusive control over your brand across Australia. IP Australia administers trade marks, while ASIC handles business and company name registration. 
+A business may operate under several 'names', but only a registered trade mark is an intellectual property right that can give you exclusive control over your brand across Australia. IP Australia administers trade marks, while ASIC handles business and company name registration. 
 
 **Business name** 
 
@@ -23,10 +23,10 @@ A business may operate under several ‘names’, but only a registered trade ma
 **Registered trade mark** 
 
 * A sign such as words, logos, slogans or shapes, registered with IP Australia to distinguish your goods or services.
-* Grants you exclusive rights nationwide to use the ‘mark’ for goods and services for which it is registered.
+* Grants you exclusive rights nationwide to use the 'mark' for goods and services for which it is registered.
 * Allows you to take legal action against suspected infringement and can deter others from copying your brand.
 
-Because each register serves a different purpose, you can hold a business name, company name and trade mark at the same time. The registers do not cross-check, so an available business name on ASIC may conflict with an existing trade mark in IP Australia’s register, and vice versa. 
+Because each register serves a different purpose, you can hold a business name, company name and trade mark at the same time. The registers do not cross-check, so an available business name on ASIC may conflict with an existing trade mark in IP Australia's register, and vice versa. 
 
 Trade mark registration involves application and renewal fees, while business name registration is comparatively inexpensive. Only a trade mark can give you enforceable, nationwide rights. 
 

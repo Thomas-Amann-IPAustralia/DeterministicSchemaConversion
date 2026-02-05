@@ -17,7 +17,7 @@ If other efforts to resolve a dispute are unsuccessful or not appropriate in you
 Courts can hear many types of trade mark disputes including:  
 
 * actions against someone for infringing your trade mark
-* matters relating to someone else’s trade mark registration
+* matters relating to someone else's trade mark registration
 * appeals from decisions made by IP Australia.
 
 Trade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.   
@@ -28,7 +28,7 @@ Trade mark proceedings in Australia are typically started in the Federal Circuit
 * Court decisions are binding and enforceable.
 * The other party cannot simply ignore your legal claim without consequences.
 * You can often resolve several related matters in one case.
-* Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia’s Opposition and Hearing processes.
+* Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia's Opposition and Hearing processes.
 * Court proceedings allow cross-examination of evidence and expert witnesses, which could be helpful for prosecuting your argument if you have a highly technical case.
 * The gravity, expense, publicity and protracted nature of court proceedings can encourage the other party to negotiate or engage in other forms of dispute resolution to settle legal claims and avoid the court proceedings continuing.
 * For infringement claims, a court can, in appropriate situations, make orders to prevent the other party from continuing to infringe your IP rights.
@@ -43,8 +43,8 @@ Trade mark proceedings in Australia are typically started in the Federal Circuit
 * If you or your staff are required to provide evidence in court, this can be very stressful and time-consuming and distract from the operation of your business
 * Court proceedings are usually public, so this option may not be suitable if confidentiality is important.
 * You may be required to disclose information in the proceedings to the other party or parties that you may prefer to keep confidential.
-* Court proceedings may attract unwanted publicity and potentially damage your reputation – particularly if you are unsuccessful or if your case is seen as unduly litigious.
-* It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see ‘How much time might be involved?’ below).
+* Court proceedings may attract unwanted publicity and potentially damage your reputation - particularly if you are unsuccessful or if your case is seen as unduly litigious.
+* It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see 'How much time might be involved?' below).
 * You may not be able to bring a legal claim if you have agreed in a contract that you will use, or that you will first try, an alternative form of dispute resolution.
 
 ### What are the possible outcomes?
@@ -53,10 +53,10 @@ here are a wide range of possible outcomes, and these will also depend on the ty
 
 * You might reach a negotiated settlement with the other party.
 * The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.
-* The other party’s trade mark registration might be cancelled, removed or amended.
-* The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party’s legal costs.
+* The other party's trade mark registration might be cancelled, removed or amended.
+* The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party's legal costs.
 * You could be awarded damages or compensation.
-* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights – including on a temporary basis while you are waiting for the court to hear your matter (see [Seek an urgent injunction](https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction)).
+* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights - including on a temporary basis while you are waiting for the court to hear your matter (see [Seek an urgent injunction](https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction)).
 * A decision made by IP Australia can be affirmed, reversed or varied.
 * Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims for *passing off* or under the Australian Consumer Law).
 
@@ -99,7 +99,7 @@ Due to these complexities, it may be helpful to speak to an IP lawyer about time
 
 Trade mark proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. However, they are more common than some other types of intellectual property disputes like patent proceedings. 
 
-In the 2023–24 financial year, there were 77 trade mark filings in the Federal Court of Australia2
+In the 2023-24 financial year, there were 77 trade mark filings in the Federal Court of Australia2
 
 Some trade mark proceedings are also started in State/Territory courts. 
 
@@ -109,7 +109,7 @@ For infringement actions, the owner of the registered trade mark usually starts 
 
 Other court actions can generally be taken by any aggrieved party with a relevant interest in the matter. 
 
-### Who’s involved?
+### Who's involved?
 
 * Parties to the dispute
 * Lawyers
@@ -143,8 +143,8 @@ Before seeking legal advice, it can be helpful to collect any documents like rep
 
 *Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
 
-1. Federal Court of Australia, [*Annual Report 2022–2023*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23), p 24
-2. Federal Court of Australia, [*Annual Report 2023–2024*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024), p 61
+1. Federal Court of Australia, [*Annual Report 2022-2023*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23), p 24
+2. Federal Court of Australia, [*Annual Report 2023-2024*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024), p 61
 
 ### Want to give us feedback?
 

@@ -14,7 +14,7 @@ A Notice of Objection gives the Australian Border Force (ABF) permission to seiz
 
 If the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer. 
 
-The scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF’s registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.   
+The scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.   
 
 **Please Note:** A Notice of Objection [cannot act retrospectively](https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf)  for goods/copies that have already been imported. 
 
@@ -30,7 +30,7 @@ The scheme works better if you keep ABF informed about potential unapproved impo
 * You must agree to pay for costs incurred by the ABF which might result from the seizure of potentially infringing goods. Generally, costs are minimal.
 * Failure to identify importers within your own supply chain may result in the seizure of your own imported goods.
 * This action does not permanently resolve the issue of your goods being counterfeited.
-* It doesn’t take much for matters to escalate to court, potentially introducing higher risks and costs.
+* It doesn't take much for matters to escalate to court, potentially introducing higher risks and costs.
 * Escalation of the dispute could require you to defend/reaffirm your claim to your IP rights.
 
 ### What are the possible outcomes?
@@ -48,16 +48,16 @@ If they submit this form, one of two things can happen: 
 * you do not begin legal proceedings within 10 days and the goods are released to the importer, or
 * you begin legal proceedings within 10 days.
 
-The court’s decision will likely result in either: 
+The court's decision will likely result in either: 
 
 * the ABF disposing of the goods, or
 * the goods being released back to the importer.
 
 ### What might the costs be?
 
-While there are no fees to lodge a Notice of Objection, you will also need to lodge a Deed of Undertaking. This is a formal agreement to repay the ABF’s costs resulting from any seizures made (e.g. transportation, storage and destruction costs).  
+While there are no fees to lodge a Notice of Objection, you will also need to lodge a Deed of Undertaking. This is a formal agreement to repay the ABF's costs resulting from any seizures made (e.g. transportation, storage and destruction costs).  
 
-If you choose to take legal action against the importer, you will need to cover the costs of the legal action. Depending on the court’s determination you may need to pay other party’s costs, possibly damages, etc. 
+If you choose to take legal action against the importer, you will need to cover the costs of the legal action. Depending on the court's determination you may need to pay other party's costs, possibly damages, etc. 
 
 ### How much time might be involved?
 
@@ -79,10 +79,10 @@ More than 500 trade mark notices and 41 copyright notices are currently in force
 ### Who can use this?
 
 * Owners of registered trade marks which claim goods (services are not eligible for the scheme).
-* Authorised users or importers of a trade mark, with the registered trade mark owner’s permission.
+* Authorised users or importers of a trade mark, with the registered trade mark owner's permission.
 * Copyright owners of copyright material.
 
-### Who’s involved?
+### Who's involved?
 
 * Australian Border Force.
 * The trade mark owner, copyright owner or authorised user.
@@ -95,20 +95,20 @@ To lodge a Notice of Objection under the *Trade Marks Act 1995*, you will requir
 
 * A completed Notice of Objection form (B1025).
 * Evidence of trade mark registration from IP Australia (for example, a copy of the registration certificate or a copy of an Australian Trade Mark Search report).
-* A completed Trade Marks Act 1995 Security Under Section 133 – Deed of Undertaking form.
-* If you are an authorised user or importer – an authorisation letter from the registered trade mark’s owner.
+* A completed Trade Marks Act 1995 Security Under Section 133 - Deed of Undertaking form.
+* If you are an authorised user or importer - an authorisation letter from the registered trade mark's owner.
 
 To lodge a Notice of Objection under the *Copyright Act 1968*, you will require:
 
 * A completed Notice of Objection form (B470).
-* If you are a company authorised by the copyright owner to file the Notice on their behalf – a letter (or multiple – if more than one copyright owner) of authorisation from the copyright owner/s (for any copyright material covered that is not owned by the company lodging the Notice).
-* A completed Copyright Act 1968 Security Under Section 135 – Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.
+* If you are a company authorised by the copyright owner to file the Notice on their behalf - a letter (or multiple - if more than one copyright owner) of authorisation from the copyright owner/s (for any copyright material covered that is not owned by the company lodging the Notice).
+* A completed Copyright Act 1968 Security Under Section 135 - Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.
 
 You can find more information in the ABF Guide to lodging a [Notice of Objection.](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)  
 
 ### See also
 
-* [The Toyota story: What can SMEs learn from Toyota’s approach to counterfeit products? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products)
+* [The Toyota story: What can SMEs learn from Toyota's approach to counterfeit products? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products)
 * [IPObjections | The Australian Border Force](https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx)
 * [How to import intellectual property | The Australian Border Force](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property)
 * [Guide to lodging a Notice of Objection under the Trade Marks Act 1995 | The Australian Border Force](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)

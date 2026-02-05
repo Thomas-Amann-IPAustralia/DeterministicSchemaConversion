@@ -10,13 +10,13 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-austral
 
 [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia’s examiner~~’~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be ‘certified’. 
+You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia's examiner~~'~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be 'certified'. 
 
-Examination is often requested by the design’s owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design. 
+Examination is often requested by the design's owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design. 
 
 If an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.  
 
-**You can only take formal action to protect your design right — like sending a letter of demand (or cease-and-desist letter) — after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see** [**Unjustified Threats**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat).
+**You can only take formal action to protect your design right -- like sending a letter of demand (or cease-and-desist letter) -- after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see** [**Unjustified Threats**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat).
 
 ### What are the benefits
 
@@ -40,11 +40,11 @@ If an issue is raised during the examination process, you will have the chance t
 
 ### What might the costs be?
 
-IP Australia’s fee schedule lists the owner’s examination fee at $500 (effective 1 October 2024). If a third party requests examination, you and the requester split the fee.  
+IP Australia's fee schedule lists the owner's examination fee at $500 (effective 1 October 2024). If a third party requests examination, you and the requester split the fee.  
 
 ### How much time might be involved?
 
-IP Australia reports an average wait of up to 12  weeks from request to decision. If you have urgent reasons (for example, pending litigation), you may request expedited examination. IP Australia offers this as a business process and timelines can vary, but reports are often issued within 4–8 weeks. Preparing evidence or amendments may add extra work hours. 
+IP Australia reports an average wait of up to 12  weeks from request to decision. If you have urgent reasons (for example, pending litigation), you may request expedited examination. IP Australia offers this as a business process and timelines can vary, but reports are often issued within 4-8 weeks. Preparing evidence or amendments may add extra work hours. 
 
 ### How much is this used?
 
@@ -58,7 +58,7 @@ As of 2024, approximately 20% of designs registered with IP Australia were also 
 ### Who's involved?
 
 * Design right owner.
-* IP Australia’s design examiner makes the examination decision.
+* IP Australia's design examiner makes the examination decision.
 * Optional: third‑party requester of examination.
 * Optional: IP lawyer or patent attorney.
 

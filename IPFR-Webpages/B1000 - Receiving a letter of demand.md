@@ -14,11 +14,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-d
 
 [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It’s often the first formal step used in notifying someone of an IP issue. 
+In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It's often the first formal step used in notifying someone of an IP issue. 
 
-It can be shocking to receive a legal letter like this, and the emotional impact should not be underestimated. Take time to carefully read the information to ensure you understand the other business’ or IP right owner’s concerns. Some important things to identify are: 
+It can be shocking to receive a legal letter like this, and the emotional impact should not be underestimated. Take time to carefully read the information to ensure you understand the other business' or IP right owner's concerns. Some important things to identify are: 
 
-* which IP right the sender claims has been used without permission (‘infringed’)
+* which IP right the sender claims has been used without permission ('infringed')
 * what the sender wants you to do (for example, halting sales or removing content)
 * what evidence the sender has given in support of their claim.
 
@@ -30,14 +30,14 @@ It is usually not a good idea to ignore a letter of demand without first seeking
 
 Here are common features of these letters: 
 
-* **Heading and sender details** — The letter should identify who sent the letter (whether the rights holder or their representative). You may want to verify their authority and ensure the letter was addressed to the right person or business. Some useful starting points include the [Trans-Tasman IP Attorney registry](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)  and the [ABN lookup tool](https://abr.business.gov.au/).
-* **Description of the alleged infringement** — Explains which IP rights are involved (for example trade mark number, patent number, specific item of copyright material and so on), identifies the sender’s ownership of the right (or if they do not own the right themselves, it identifies the other basis on which they make the claim – for example if they have an exclusive license) and what actions you took that the sender claims infringe their IP rights.
-* **Demand to stop the activity** — Usually includes a list of things that the sender wants you to do in response to their letter, such as taking something down from a website, stopping selling a product, changing branding or marketing, or paying them compensation.
-* **Deadline for compliance** — Often includes a time limit for responding to their demands (for example, from 7 to 30 days) after which they may decide to start legal action against you.
-* **Evidence or exhibits** — May include screenshots, photos, links or documents.
-* **Consequences of non-compliance** — Often warns of possible court action, damages or injunctions. This is a common inclusion but doesn’t mean legal action will immediately or definitely follow.
-* **Reservation of rights** — A general phrase keeping the sender’s legal options open.
-* **Contact details for discussion** — Gives you a way to reply or negotiate.
+* **Heading and sender details** -- The letter should identify who sent the letter (whether the rights holder or their representative). You may want to verify their authority and ensure the letter was addressed to the right person or business. Some useful starting points include the [Trans-Tasman IP Attorney registry](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm)  and the [ABN lookup tool](https://abr.business.gov.au/).
+* **Description of the alleged infringement** -- Explains which IP rights are involved (for example trade mark number, patent number, specific item of copyright material and so on), identifies the sender's ownership of the right (or if they do not own the right themselves, it identifies the other basis on which they make the claim - for example if they have an exclusive license) and what actions you took that the sender claims infringe their IP rights.
+* **Demand to stop the activity** -- Usually includes a list of things that the sender wants you to do in response to their letter, such as taking something down from a website, stopping selling a product, changing branding or marketing, or paying them compensation.
+* **Deadline for compliance** -- Often includes a time limit for responding to their demands (for example, from 7 to 30 days) after which they may decide to start legal action against you.
+* **Evidence or exhibits** -- May include screenshots, photos, links or documents.
+* **Consequences of non-compliance** -- Often warns of possible court action, damages or injunctions. This is a common inclusion but doesn't mean legal action will immediately or definitely follow.
+* **Reservation of rights** -- A general phrase keeping the sender's legal options open.
+* **Contact details for discussion** -- Gives you a way to reply or negotiate.
 
 **Note:** While you should not ignore a letter of demand, you may not need to respond to the demand immediately ([Choose not to respond immediately](/options/choose-not-respond-immediately "Choose not to respond immediately")), nor do you need to [personally respond](/options/de-escalate-and-resolve-disputes-informally) or simply comply to their demands . It may be advisable to [speak to an IP lawyer or IP attorney](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation) about the letter of demand. They can advise you on next steps and also communicate on your behalf.
 
@@ -45,14 +45,14 @@ Here are common features of these letters: 
 
 Some cease and desist letters may be [misleading or sent in bad faith](https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine). Signs that the letter may not be genuine include: 
 
-* **No clear sender** — The letter lacks the sender’s name, firm or contact details.
-* **No specific IP right mentioned** — There is no trade mark, patent or design number, or information or evidence to support their claim of copyright.
-* **Fake IP right number (for registered rights)** — The IP right number provided is not published on the IP register (but you need to be careful to make sure you are checking the correct register).
-* **Poor grammar or formatting** — Scam letters often contain multiple typos or formatting issues.
-* **Overly aggressive or urgent tone** — Extreme threats or unrealistically short deadlines can be intimidation tactics.
-* **Demands for payment to unknown accounts** — You are asked to pay quickly to unfamiliar or overseas bank details.
-* **No evidence provided** — Genuine letters usually attach screenshots, product photos or other proof of the alleged infringement.
-* **Threats about confidentiality**— While there are often reasonable requests to keep the letter confidential, this can also be used as an intimidation tactic.
+* **No clear sender** -- The letter lacks the sender's name, firm or contact details.
+* **No specific IP right mentioned** -- There is no trade mark, patent or design number, or information or evidence to support their claim of copyright.
+* **Fake IP right number (for registered rights)** -- The IP right number provided is not published on the IP register (but you need to be careful to make sure you are checking the correct register).
+* **Poor grammar or formatting** -- Scam letters often contain multiple typos or formatting issues.
+* **Overly aggressive or urgent tone** -- Extreme threats or unrealistically short deadlines can be intimidation tactics.
+* **Demands for payment to unknown accounts** -- You are asked to pay quickly to unfamiliar or overseas bank details.
+* **No evidence provided** -- Genuine letters usually attach screenshots, product photos or other proof of the alleged infringement.
+* **Threats about confidentiality**-- While there are often reasonable requests to keep the letter confidential, this can also be used as an intimidation tactic.
 
 However, a letter of demand may not be a scam even if it has some of the features listed above. If you are not sure, it may be advisable to speak to an IP lawyer or IP attorney about the letter you received.  
 
@@ -61,7 +61,7 @@ However, a letter of demand may not be a scam even if it has some of the feature
 * Gives the receiver a clear and early warning of a potential dispute, allowing time to gather information.
 * Offers a chance to resolve matters quickly [without going to court.](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action)
 * Clarifies the specific IP right and scope of goods or services in question so that it can be verified.
-* Provides a written record of the sender’s position, which can inform negotiations and clarifies what is being asked and why.
+* Provides a written record of the sender's position, which can inform negotiations and clarifies what is being asked and why.
 * Can open dialogue that preserves business relationships, if handled constructively.
 
 ### What are the risks?
@@ -69,7 +69,7 @@ However, a letter of demand may not be a scam even if it has some of the feature
 When you receive a letter of demand, there are risks which should be managed carefully: 
 
 * Ignoring the letter, missing the response deadline or responding inadequately may result in the sender starting legal action against you.
-* Admitting liability may strengthen the sender’s claims or lead to further demands.
+* Admitting liability may strengthen the sender's claims or lead to further demands.
 * Sharing the letter publicly may result in reputational harm.
 
 ### What are the possible outcomes?
@@ -80,7 +80,7 @@ There are a range of possible outcomes depending on how you respond, and whether
 * You respond directly and explain why you disagree with claims made by the sender.
 * You respond and [agree to stop the alleged conduct](https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip) and to comply with none, some or all other demands (potentially without admitting liability).
 * You ask them to negotiate or you suggest to resolve the dispute through an[alternative dispute resolution process, such as mediation](https://ipfirstresponse.ipaustralia.gov.au/options/ADR).
-* You ignore the letter — which may lead to the other party escalating the matter, such as starting legal action against you. It may not be advisable to ignore a letter of demand without first speaking to an IP lawyer or IP attorney.
+* You ignore the letter -- which may lead to the other party escalating the matter, such as starting legal action against you. It may not be advisable to ignore a letter of demand without first speaking to an IP lawyer or IP attorney.
 
 ### What might the costs be?
 
@@ -98,13 +98,13 @@ Letters of demand are a commonly used tool in IP disputes.
 
 An owner or, in some cases, an authorised user or licensee of IP rights can send a letter of demand to someone if they have a proper basis for alleging that the other person is infringing their IP rights. The recipient of a letter of demand could be almost anyone, from a large business to a small business, to a private individual. 
 
-### Who’s involved?
+### Who's involved?
 
 * IP right owner or authorised user sending the letter
 * Recipient of the letter (you)
 * (Optional) legal professionals acting for either party
 * (Optional) mediators or other dispute resolution providers
-* Court officers – if the matter proceeds to legal action.
+* Court officers - if the matter proceeds to legal action.
 
 ### What do you need to proceed?
 

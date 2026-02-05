@@ -10,18 +10,18 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party
 
 [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-A letter of demand, or a cease and desist letter, can be an effective way of stopping infringing behaviour and avoiding the need for legal action. You can use this letter to communicate your concerns and demands. It’s often one of the first actions taken if you are satisfied that an infringement is occurring. 
+A letter of demand, or a cease and desist letter, can be an effective way of stopping infringing behaviour and avoiding the need for legal action. You can use this letter to communicate your concerns and demands. It's often one of the first actions taken if you are satisfied that an infringement is occurring. 
 
 An effective letter of demand will:  
 
-* Identify your ownership of the IP right (or the other basis on which you can make a claim if you do not own the right yourself – for example, if you have an exclusive licence) and whether you are entitled to make requests to cease infringement.
+* Identify your ownership of the IP right (or the other basis on which you can make a claim if you do not own the right yourself - for example, if you have an exclusive licence) and whether you are entitled to make requests to cease infringement.
 * Document the infringing conduct, with written examples, if possible.
 * Specify the legislation under which your IP is being protected.
-* Clearly specify your demands – for example, that the party stop infringing your IP rights, return or destroy all infringing property, pay you compensation, or obtain a licence from you.
+* Clearly specify your demands - for example, that the party stop infringing your IP rights, return or destroy all infringing property, pay you compensation, or obtain a licence from you.
 * Give a specific timeframe for the infringer to stop infringing, return all infringing property to you, or pay the requested sum.
 * State that if the demands aren't met, you may take further actions to stop the infringing behaviour.
 
-**Before sending a letter of demand, you will need to be satisfied that the other party’s actions amount to infringement and it is recommended that you speak to an IP lawyer or an IP attorney. There can be serious consequences if you send a letter of demand with no basis including a risk that the party you sent the letter of demand to may sue you. IP laws include ‘unjustified threat’ provisions (also referred to as ‘groundless threats’ in copyright law) under which you might be liable to pay damages/compensation or you may be ordered to stop making the threat.**
+**Before sending a letter of demand, you will need to be satisfied that the other party's actions amount to infringement and it is recommended that you speak to an IP lawyer or an IP attorney. There can be serious consequences if you send a letter of demand with no basis including a risk that the party you sent the letter of demand to may sue you. IP laws include 'unjustified threat' provisions (also referred to as 'groundless threats' in copyright law) under which you might be liable to pay damages/compensation or you may be ordered to stop making the threat.**
 
 **For more information about what constitutes an infringement, see our information on**[**what infringement can look like**](https://ipfirstresponse.ipaustralia.gov.au/infringement-101 "Infringement 101 ")**.****An IP professional can help you make this assessment and draft the letter.**
 
@@ -33,7 +33,7 @@ An effective letter of demand will:  
 
 * Often cost-effective.
 * Can be quick to action but needs to be drafted very carefully.
-* Reasonable likelihood of stopping infringing behaviour without the need for additional steps – 43.7% of respondents, who are patent holders, found it effective at stopping copying behaviour ([Weatherall K and Webster E (2010) ‘Patent infringement in Australia: Results from a survey’, *Federal Law Review*, 38, 21-70, 40](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303) ).
+* Reasonable likelihood of stopping infringing behaviour without the need for additional steps - 43.7% of respondents, who are patent holders, found it effective at stopping copying behaviour ([Weatherall K and Webster E (2010) 'Patent infringement in Australia: Results from a survey', *Federal Law Review*, 38, 21-70, 40](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303) ).
 * Allows you to consider many options to escalate, if suspected infringement continues.
 
 ### What are the risks?
@@ -85,11 +85,11 @@ It is up to you to determine how much time the other party can take to comply wi
 
 Someone who owns IP or is an authorised user, and can provide evidence of their rights.   
 
-### Who’s involved?
+### Who's involved?
 
 * IP right owner/s or authorised users of IP.
 * Alleged infringer(s).
-* (Optional) IP professionals acting on parties’ behalf.
+* (Optional) IP professionals acting on parties' behalf.
 
 ### What do you need to proceed?
 
@@ -99,10 +99,10 @@ It's important to get all the factual details right and evaluate the merits of y
 
 Here are some things you might wish to check and consider before sending a letter of demand and you should consider engaging an IP lawyer or IP attorney to work through these issues with you:  
 
-* The status and details of the relevant IP in the jurisdiction where infringement occurred. For registered rights, this includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices. For copyright, this might include checking any rules around registration in that other jurisdiction – while there is no copyright registration requirement or system in Australia, this is not the case everywhere.
-* Whether the other party’s conduct amounts to infringement, having regard to [what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/infringement-101 "Infringement 101 "), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services. For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent. For copyright, you could consider whether any exceptions or statutory licence under copyright law may apply that could have enabled the use of the material in question without your permission. For more information about copyright exceptions, see [Copyright infringement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement).
+* The status and details of the relevant IP in the jurisdiction where infringement occurred. For registered rights, this includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices. For copyright, this might include checking any rules around registration in that other jurisdiction - while there is no copyright registration requirement or system in Australia, this is not the case everywhere.
+* Whether the other party's conduct amounts to infringement, having regard to [what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/infringement-101 "Infringement 101 "), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services. For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent. For copyright, you could consider whether any exceptions or statutory licence under copyright law may apply that could have enabled the use of the material in question without your permission. For more information about copyright exceptions, see [Copyright infringement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement).
 
-The identity and contact details of the suspected infringer. It’s important to send the letter to the correct party. You might wish to consider sending correspondence by registered mail,and keeping records to show that a letter was sent to a specific address on a particular date.  If you are not sure about any of the above, then you should speak to an IP professional for help.
+The identity and contact details of the suspected infringer. It's important to send the letter to the correct party. You might wish to consider sending correspondence by registered mail,and keeping records to show that a letter was sent to a specific address on a particular date.  If you are not sure about any of the above, then you should speak to an IP professional for help.
 
 Before taking this action, it might also be helpful to consider your goals and potential outcomes, including: 
 
@@ -112,7 +112,7 @@ Before taking this action, it might also be helpful to consider your goals and p
 
 ### **Consider contacting an IP professional for advice and assistance**
 
-It can be difficult to determine whether the other party’s behaviour amounts to infringement. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.  
+It can be difficult to determine whether the other party's behaviour amounts to infringement. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.  
 
 **Please note:** Making [informal contact](/options/provide-opportunity-other-party-stop-infringing "Provide an opportunity for the other party to stop infringing") before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, please consult an IP professional.    
 
@@ -129,7 +129,7 @@ It can be difficult to determine whether the other party’s behaviour amounts t
 
 *Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
 
-1. [Weatherall K and Webster E (2010) ‘Patent infringement in Australia: Results from a survey’, *Federal Law Review*, 38, 21-70, 40](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303)
+1. [Weatherall K and Webster E (2010) 'Patent infringement in Australia: Results from a survey', *Federal Law Review*, 38, 21-70, 40](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303)
 
 ### Want to give us feedback?
 

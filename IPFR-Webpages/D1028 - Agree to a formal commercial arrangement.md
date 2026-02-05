@@ -25,17 +25,17 @@ Negotiation for a commercial outcome is particularly suitable if you and the oth
 In deciding whether negotiation is a suitable pathway, you can consider:  
 
 * whether you can identify and contact the other parties involved
-* the other parties’ willingness to participate in negotiations
+* the other parties' willingness to participate in negotiations
 * when and where negotiation will take place
 * how decisions will be made and observed
-* each party’s desires, needs and priorities in relation to the disputed issues
+* each party's desires, needs and priorities in relation to the disputed issues
 * whether you will negotiate directly with the other party or whether you will be assisted by representatives or support people
 * what outcomes would benefit each of the parties involved
 * your next steps if the negotiation does not yield an agreement.
 
 Sometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other parties involved or find it challenging to communicate with the other parties. For this reason, representatives such as lawyers are commonly used.  
 
-In some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see – [Resolve IP issues with the help of a third party | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/mediation)).   
+In some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see - [Resolve IP issues with the help of a third party | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/mediation)).   
 
 ### What are the benefits?
 
@@ -54,23 +54,23 @@ In some cases, having a neutral third party such as a mediator may help you over
 * Relies on genuine engagement and willingness of parties to resolve issues.
 * If you do not agree to enter into a legally binding agreement that sets out the agreed outcomes from the negotiations, it may be difficult to enforce the outcomes. This risk can be avoided if you enter into a legally binding agreement.
 * If you do not negotiate in good faith with the other parties, this may prompt them to escalate and resist, rather than comply.
-* Depending on what you say to the other parties, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other parties that any negotiations are on a ‘without prejudice’ basis and to include this in any written communications with them.**
+* Depending on what you say to the other parties, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other parties that any negotiations are on a 'without prejudice' basis and to include this in any written communications with them.**
 
 ### What are the possible outcomes?
 
-Commercial negotiations can result in a wide range of different outcomes depending on the parties’ desires and specific circumstances. Some popular forms of commercial arrangements involving IP include:   
+Commercial negotiations can result in a wide range of different outcomes depending on the parties' desires and specific circumstances. Some popular forms of commercial arrangements involving IP include:   
 
 **Licensing** 
 
-You can agree to a licensing agreement. Licensing involves the owner of the IP or someone else with a right to licence the IP (the licensor) giving someone else (the licensee) permission to use – but not own – their IP usually in exchange for payment. For detailed information on types of licences and licence conditions, see [How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.).  
+You can agree to a licensing agreement. Licensing involves the owner of the IP or someone else with a right to licence the IP (the licensor) giving someone else (the licensee) permission to use - but not own - their IP usually in exchange for payment. For detailed information on types of licences and licence conditions, see [How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.).  
 
 **Assignment (selling or transferring your IP)** 
 
-You may decide to sell your IP as part of your negotiation with the other party. This involves transferring the ownership of the IP to another entity (the assignee) through a process called ‘assignment’ so that you no longer have the rights to use the IP.  
+You may decide to sell your IP as part of your negotiation with the other party. This involves transferring the ownership of the IP to another entity (the assignee) through a process called 'assignment' so that you no longer have the rights to use the IP.  
 
-Once assignment is completed, you won’t have any control over the IP asset you have sold unless you have agreed that the assignee licence some rights back to you. The assignee will bear the risk of commercial development of the IP and be responsible for all costs, including renewal fees paid to IP Australia.   
+Once assignment is completed, you won't have any control over the IP asset you have sold unless you have agreed that the assignee licence some rights back to you. The assignee will bear the risk of commercial development of the IP and be responsible for all costs, including renewal fees paid to IP Australia.   
 
-Once the title of a registered IP right has been assigned through a contractual agreement, the transfer of the ownership can be recorded on the IP Australia register through IP Australia’s[Online Services portal](https://portal.ipaustralia.gov.au/login?_gl=1%2an6kr9w%2a_ga%2aMTUwOTM4MDc5LjE3MzM3ODMxNTI.%2a_ga_GMT4KC15KS%2aMTczOTIyMTY0Ny41NS4xLjE3MzkyMjU5MTEuMC4wLjA.).  
+Once the title of a registered IP right has been assigned through a contractual agreement, the transfer of the ownership can be recorded on the IP Australia register through IP Australia's[Online Services portal](https://portal.ipaustralia.gov.au/login?_gl=1%2an6kr9w%2a_ga%2aMTUwOTM4MDc5LjE3MzM3ODMxNTI.%2a_ga_GMT4KC15KS%2aMTczOTIyMTY0Ny41NS4xLjE3MzkyMjU5MTEuMC4wLjA.).  
 
 **Franchising (trade marks)** 
 
@@ -102,11 +102,11 @@ Commercial negotiations are a very common strategy to resolve IP disputes. Even 
 
 Anyone whose IP is being infringed.  
 
-### Who’s involved?
+### Who's involved?
 
 * IP right owner/s or authorised users of IP.
 * Alleged infringer(s).
-* (Optional) IP professionals acting on parties’ behalf.
+* (Optional) IP professionals acting on parties' behalf.
 
 ### What do you need to proceed?
 
@@ -114,7 +114,7 @@ It's important to get all the factual details right and evaluate the merits of y
 
 * The status and details of the relevant IP in the jurisdiction where the alleged infringement/dispute occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices.
 * Ensuring your claims do not amount to baseless accusations which would be seen as unjustified threats.
-* The identity and contact details of the other party – it’s important to make sure you speak to the correct party.
+* The identity and contact details of the other party - it's important to make sure you speak to the correct party.
 
 Throughout the negotiation with the other party, it can be helpful to remember to:  
 
@@ -132,7 +132,7 @@ Information about commercialisation:  
 * [How To Commercialise My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip)
 * [How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.)
 * [Licence royalties | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip/licence-royalties)
-* [An example of a letter of consent | IPA Manuals](https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent)  ([Example for plant breeder’s right](https://manuals.ipaustralia.gov.au/trademark/annex-4---an-example-of-a-pbr-letter-of-consent) )
+* [An example of a letter of consent | IPA Manuals](https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent)  ([Example for plant breeder's right](https://manuals.ipaustralia.gov.au/trademark/annex-4---an-example-of-a-pbr-letter-of-consent) )
 
 Information about resolving disputes:  
 

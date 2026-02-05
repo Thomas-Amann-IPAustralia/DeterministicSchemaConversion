@@ -10,18 +10,18 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights
 
 [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-Sometimes being accused of infringing someone else’s intellectual property (IP) makes you aware of the other party’s use of the contested IP for the first time. Looking into their allegations might lead you to suspect that it is actually you that has a stronger claim, and that it is your IP – not theirs – that is at risk of being infringed.  
+Sometimes being accused of infringing someone else's intellectual property (IP) makes you aware of the other party's use of the contested IP for the first time. Looking into their allegations might lead you to suspect that it is actually you that has a stronger claim, and that it is your IP - not theirs - that is at risk of being infringed.  
 
 It is quite common for both parties involved in an IP dispute to believe that their IP has been copied or misappropriated by the other side. Some common situations include: 
 
-* The owner of a registered trade mark being accused of copying someone’s unregistered trade mark or branding.
+* The owner of a registered trade mark being accused of copying someone's unregistered trade mark or branding.
 * Both parties believing that they are the rightful owner of contested IP. For instance, parties may have developed IP together but may have differing views as to who can own and use this IP, leading them to accuse each other of infringing the disputed IP.
 
 If you think that someone accusing you of infringement is actually infringing *your*IP, you can consider whether to take enforcement action against them. 
 
-There are a wide variety of enforcement actions with varying levels of formality, costs, benefits and risks, ranging from commercial, private pathways such as negotiation to something more formal, like court proceedings. Find out more about how to enforce your IP rights and compare different enforcement pathways by following the ‘[**I believe my IP has been infringed’**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)option**.**  
+There are a wide variety of enforcement actions with varying levels of formality, costs, benefits and risks, ranging from commercial, private pathways such as negotiation to something more formal, like court proceedings. Find out more about how to enforce your IP rights and compare different enforcement pathways by following the '[**I believe my IP has been infringed'**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)option**.**  
 
-Before taking any of these actions, it can be a good idea to consider whether the other party’s actions amount to infringement — see our information on [what infringement can look like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement). A legal professional can help you make this assessment and give advice on your next steps. 
+Before taking any of these actions, it can be a good idea to consider whether the other party's actions amount to infringement -- see our information on [what infringement can look like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement). A legal professional can help you make this assessment and give advice on your next steps. 
 
 ### What are the benefits?
 
@@ -43,15 +43,15 @@ Attempting to enforce your IP in response to an enforcement action can be a stra
 
 ### What are the possible outcomes?
 
-The outcomes of enforcing your IP depend heavily on your individual circumstances, the type of IP rights involved and the enforcement pathway you take. You can find out more about possible outcomes relating to a specific enforcement option via using the ‘[**I believe my IP has been infringed’**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)pathway. Otherwise, you can simply use [All enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options) page to view information on different enforcement options.  
+The outcomes of enforcing your IP depend heavily on your individual circumstances, the type of IP rights involved and the enforcement pathway you take. You can find out more about possible outcomes relating to a specific enforcement option via using the '[**I believe my IP has been infringed'**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)pathway. Otherwise, you can simply use [All enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options) page to view information on different enforcement options.  
 
 ### What might the costs be?
 
-The estimated costs of enforcing your IP would vary heavily depending on your individual circumstances, the type of IP rights involved and the enforcement pathway you pursue. You can find out more about costs relating to a specific enforcement option via using the ‘[**I believe my IP has been infringed’**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)tool. Otherwise, you can simply use [All enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options) page to view information on different enforcement options.   
+The estimated costs of enforcing your IP would vary heavily depending on your individual circumstances, the type of IP rights involved and the enforcement pathway you pursue. You can find out more about costs relating to a specific enforcement option via using the '[**I believe my IP has been infringed'**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)tool. Otherwise, you can simply use [All enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options) page to view information on different enforcement options.   
 
 ### How much time might be involved?
 
-The estimated timeframe of enforcing your IP would vary heavily depending on your individual circumstances, the type of IP rights involved and the enforcement pathway you pursue. You can find out more about timeframes relating to a specific enforcement option via using the ‘[**I believe my IP has been infringed’**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)tool. Otherwise, you can simply use [All enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options) page to view information on different enforcement options.   
+The estimated timeframe of enforcing your IP would vary heavily depending on your individual circumstances, the type of IP rights involved and the enforcement pathway you pursue. You can find out more about timeframes relating to a specific enforcement option via using the '[**I believe my IP has been infringed'**](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)tool. Otherwise, you can simply use [All enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options) page to view information on different enforcement options.   
 
 ### How much is this used?
 

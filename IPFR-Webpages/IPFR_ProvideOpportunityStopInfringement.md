@@ -14,11 +14,11 @@ You can consider reaching out informally to the party who you suspect to be infr
 
 In some cases, infringement can be unintentional or a suspected infringer might be open to reaching an amicable solution. 
 
-Informal contact with another party can be effective at resolving IP disputes — however, it can also open you up to a range of unexpected or detrimental results. Any consideration for informal contact should be weighed against the possible negative outcomes. An IP professional can help inform this decision.  
+Informal contact with another party can be effective at resolving IP disputes -- however, it can also open you up to a range of unexpected or detrimental results. Any consideration for informal contact should be weighed against the possible negative outcomes. An IP professional can help inform this decision.  
 
-Before talking to the other party, you should be satisfied that the other party’s actions would amount to infringement of your IP. This is something that an IP lawyer or an IP attorney can assist with. 
+Before talking to the other party, you should be satisfied that the other party's actions would amount to infringement of your IP. This is something that an IP lawyer or an IP attorney can assist with. 
 
-**There can be serious consequences if you threaten a person with infringement proceedings on an incorrect basis, including a risk that the party may sue you. You might be liable to pay compensation or damages or you may be ordered to stop making the threat under ‘**[**unjustified threat**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)**’ provisions (also referred to as ‘groundless threats’ in copyright law).**  
+**There can be serious consequences if you threaten a person with infringement proceedings on an incorrect basis, including a risk that the party may sue you. You might be liable to pay compensation or damages or you may be ordered to stop making the threat under '**[**unjustified threat**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)**' provisions (also referred to as 'groundless threats' in copyright law).**  
 
 For more information about what constitutes an infringement, see our information on [what infringement can look like](https://ipfirstresponse.ipaustralia.gov.au/infringement-101 "Infringement 101 ").An IP professional can help you make this assessment. 
 
@@ -40,7 +40,7 @@ For more information about what constitutes an infringement, see our information
 * For registered rights, it might prompt the other party to challenge the validity or registrability of your IP right in an attempt to undermine your claims.
 * In the case of trade marks, the other party may apply for a trade mark as a defensive strategy against your claims, and you may then need to decide if you wish to oppose their application.
 * Contacting the suspected infringer might give them time to hide or destroy evidence. This could harm your case in future legal actions. If you are worried about this possibility, you should seek legal advice before communicating with the other party.
-* Depending on what you say to the other party, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other party that any informal communications are on a ‘without prejudice’ basis and to include this in any written communications with them.**
+* Depending on what you say to the other party, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other party that any informal communications are on a 'without prejudice' basis and to include this in any written communications with them.**
 
 ### What are the possible outcomes?
 
@@ -70,11 +70,11 @@ Informal communication can be a quick and simple enforcement option. However, th
 
 Someone who owns IP (or in limited cases authorised user) and can provide evidence of their rights.  
 
-### Who’s involved?
+### Who's involved?
 
 * IP right owner/s or authorised users or exclusive licensees of IP.
 * Alleged infringer(s).
-* (Optional) IP professionals acting on parties’ behalf.
+* (Optional) IP professionals acting on parties' behalf.
 
 ### What do you need to proceed?
 
@@ -87,12 +87,12 @@ For more information about how someone can take action against unjustified threa
 Here are some things you might wish to check and consider before talking to the other party you should consider engaging an IP lawyer or IP attorney to work through these issues with you:  
 
 * The status and details of the relevant IP in the jurisdiction where suspected infringement occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices.
-* Whether the other party’s conduct amounts to infringement, having regard to [what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. 
+* Whether the other party's conduct amounts to infringement, having regard to [what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. 
   + For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services.
   + For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent.
   + For designs, the scope of protection would require consideration of not only the visual appearance of the product but the tangible physical product (e.g. a chair, a bottle, etc.) that the design is applied to.  \
     **Please note:** a design right can only be enforced if the right is also certified. For more information please see [Request certification for your registered design | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design)
-* The identity and contact details of the suspected infringer. It’s important to make sure you speak to the correct party.
+* The identity and contact details of the suspected infringer. It's important to make sure you speak to the correct party.
 
 If you are not sure about any of the above, then you might want to speak to an IP professional for help. 
 
@@ -105,7 +105,7 @@ Before taking this action, it might also be helpful to consider your goals and p
 
 ### Consider contacting an IP professional for advice and assistance
 
-It can be difficult to determine whether the other party’s behaviour amounts to infringement and facilitate a productive, amicable discussion with the other party. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.   
+It can be difficult to determine whether the other party's behaviour amounts to infringement and facilitate a productive, amicable discussion with the other party. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.   
 
 **Please note:** Making informal contact before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, you might want to consult an IP professional.   
 

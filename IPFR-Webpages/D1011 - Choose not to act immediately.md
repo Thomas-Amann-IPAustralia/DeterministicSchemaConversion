@@ -25,7 +25,7 @@ It is important to take a holistic approach to addressing infringement which con
 * your personal circumstances
 * the nature and potential consequences of the infringement.
 
-It can feel very personal when someone is infringing on your intellectual property – and it is important to acknowledge any emotional response you have to the situation – but choosing to take no action (as part of a thought-out IP strategy) can be a valid and rational choice. 
+It can feel very personal when someone is infringing on your intellectual property - and it is important to acknowledge any emotional response you have to the situation - but choosing to take no action (as part of a thought-out IP strategy) can be a valid and rational choice. 
 
 It can be helpful to speak to an IP professional to help you develop an overall IP strategy, which makes it easier to decide when and how to respond to different types of infringement, as well as taking pro-active steps to prevent future infringement. 
 
@@ -33,7 +33,7 @@ It can be helpful to speak to an IP professional to help you develop an overall 
 
 * The time, cost and labour required to take actions to prevent infringement on your IP may not be justified at this point in your business or IP journey.
 * Taking no immediate action can allow you to gather evidence and time to evaluate the true risk and possible damage to your business, so you can act when the time is right.
-* You can usually change your mind and pursue an action in future – you are not required to act as soon as you became aware of infringement, although delays could pose risks.
+* You can usually change your mind and pursue an action in future - you are not required to act as soon as you became aware of infringement, although delays could pose risks.
 * Infringing businesses may fail or leave the market with no intervention from you.
 * Choosing to avoid enforcement actions shelters you from needing to establish or defend your rights, which you may not wish to draw attention to.
 * You can choose more opportune timing to take action, for example: when your business is impacted enough to warrant action, when you have gathered enough evidence to take effective action, or other practical timing issues relating to your business (like avoiding the busy season).
@@ -44,7 +44,7 @@ It can be helpful to speak to an IP professional to help you develop an overall 
 * Delaying taking enforcement actions may make them more difficult to pursue in the future.
 * The cost and energy of monitoring the infringement in an ongoing way may exceed the effort of dealing with it immediately.
 * If infringement has happened and you do not take action, the infringement may be repeated by the current infringer or others also infringing.
-* Allowing infringement – even that which doesn’t directly damage your business – may:
+* Allowing infringement - even that which doesn't directly damage your business - may:
   + affect public perception of your rights
   + undermine your entitlement to these rights
   + in extreme cases, leave you open to legal actions (such as cases where fake versions of a product pose a risk to customers).
@@ -66,16 +66,16 @@ While taking no action is not a significant time commitment, it may take some ti
 
 ### Who can use this?
 
-Both large and small businesses use this strategy frequently – only pursuing enforcement when it is necessary.  
+Both large and small businesses use this strategy frequently - only pursuing enforcement when it is necessary.  
 
-### Who’s involved?
+### Who's involved?
 
 * You
-* an IP professional – professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement.
+* an IP professional - professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement.
 
 ### How often is this used?
 
-Variable. Many businesses may suspect infringement and have not, or will not, take action – ultimately it is a business decision that will depend on the specific circumstances of a business. Additionally, many possible actions may be resolved between two parties directly.  
+Variable. Many businesses may suspect infringement and have not, or will not, take action - ultimately it is a business decision that will depend on the specific circumstances of a business. Additionally, many possible actions may be resolved between two parties directly.  
 
 ### What do you need to proceed?
 

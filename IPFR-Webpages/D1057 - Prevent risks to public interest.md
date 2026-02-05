@@ -19,8 +19,8 @@ This option is most relevant to counterfeit goods (where a trade mark is used on
 Most IP infringement is not a criminal matter. However, under Australian law it can be a criminal offence to engage in:
 
 * trade mark counterfeiting
-* certain copyright infringements — generally involving commercial dealings or done on a commercial scale
-* plant breeder’s rights infringement.
+* certain copyright infringements -- generally involving commercial dealings or done on a commercial scale
+* plant breeder's rights infringement.
 
 These usually become a police matter when activity is serious, for example if it poses imminent risk of public harm or is highly organised or widespread. The Australian Federal Police (AFP) focuses on taking action against organisers, major importers and wholesalers of counterfeit goods. These goods pose public safety risks and can be used to support organised crime, money laundering and cybercrime. 
 
@@ -40,7 +40,7 @@ Consumer harm/issues/concerns can be reported to the Australian Consumer and Com
 
 If your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to your IP rights, you can report this activity to [Product and service scams | Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams). 
 
-There are a number of scams relating to managing IP rights, which is unfortunately a problem around the world. You can read more about these on IP Australia’s website at [Scams related to managing IP Rights | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights)  and learn how to report these at [How to report fraud and corruption | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption). Sometimes this will also mean reporting to [Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams). 
+There are a number of scams relating to managing IP rights, which is unfortunately a problem around the world. You can read more about these on IP Australia's website at [Scams related to managing IP Rights | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights)  and learn how to report these at [How to report fraud and corruption | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption). Sometimes this will also mean reporting to [Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams). 
 
 ### See also
 
@@ -52,7 +52,7 @@ There are a number of scams relating to managing IP rights, which is unfortunate
 
 [Man charged with selling counterfeit electronics on the Gold Coast | Australian Federal Police](https://www.afp.gov.au/news-centre/media-release/man-charged-selling-counterfeit-electronics-gold-coast)  
 
-[Aussie hacker ordered to give up $1.7M after international investigation – ARN](https://www.arnnet.com.au/article/1256866/aussie-hacker-ordered-to-give-up-1-7m-after-international-investigation.html)  
+[Aussie hacker ordered to give up $1.7M after international investigation - ARN](https://www.arnnet.com.au/article/1256866/aussie-hacker-ordered-to-give-up-1-7m-after-international-investigation.html)  
 
 *Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*\
 *Copyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the* [*Arts Law Centre of Australia*](https://www.artslaw.com.au/services/legal-query-form/)  *or no-cost advice from the* [*Australian Copyright Council*](https://www.copyright.org.au/legal-advice/) *.*

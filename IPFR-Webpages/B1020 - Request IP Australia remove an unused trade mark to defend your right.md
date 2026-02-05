@@ -28,7 +28,7 @@ If you are filing an application for removal on the ground that the trade mark h
 
 ### What are the benefits?
 
-* A successful application to remove a trade mark from the register removes the other party’s rights to the trade mark that is allegedly being infringed.
+* A successful application to remove a trade mark from the register removes the other party's rights to the trade mark that is allegedly being infringed.
 * It can a simple, fast and low-cost option when a registered trade mark in question. If your application to remove a trade mark on the basis of non-use is unopposed, your request will be actioned following the two-month opposition period.
 * In about 60% of cases, removal applications will not lead to an adversarial process, as those who are genuinely not using their trade marks typically do not oppose the application for removal.
 * This process is also accessible without professional assistance required, though IP professionals are commonly used.
@@ -36,9 +36,9 @@ If you are filing an application for removal on the ground that the trade mark h
 ### What are the risks?
 
 * When applying to remove the other party's trade mark from the register on the basis of non-use, the owner of the trade mark will be notified of your application and details within one month of filing. You should consider your overall strategy and if you are comfortable having the other party be aware of your identity and actions.
-* Due to the public nature of these procedures there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to submit an application to remove the other party’s trade mark should be considered as part of your IP or brand protection strategy.
+* Due to the public nature of these procedures there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to submit an application to remove the other party's trade mark should be considered as part of your IP or brand protection strategy.
 * Any person can oppose your request for removal within 2 months of the publishing date and tell IP Australia that they disagree that the trade mark has not been used. If you wish to respond to the opposition and establish that there is a case for removal based on non-use, this will lengthen the removal process and take up further cost, time and efforts.
-* A party who is dissatisfied with IP Australia’s decision can also appeal it to the Administrative Review Tribunal (ART), or Federal Court or the Federal Circuit and Family Court, which could be highly time-consuming and costly.
+* A party who is dissatisfied with IP Australia's decision can also appeal it to the Administrative Review Tribunal (ART), or Federal Court or the Federal Circuit and Family Court, which could be highly time-consuming and costly.
 
 ### What are the possible outcomes?
 
@@ -79,11 +79,11 @@ IP Australia received approximately 1,000-1,500 applications annually for remova
 
 Any person can file an application for removal or cessation of protection of a trade mark for non-use. 
 
-### Who’s involved?
+### Who's involved?
 
 * The other party (trade mark owner).
 * You (the applicant).
-* IP Australia’s Oppositions & Hearings Section.
+* IP Australia's Oppositions & Hearings Section.
 * Your legal representatives, if you choose to engage a legal professional (such as an IP lawyer or trade marks attorney).
 
 ### What do you need to proceed?

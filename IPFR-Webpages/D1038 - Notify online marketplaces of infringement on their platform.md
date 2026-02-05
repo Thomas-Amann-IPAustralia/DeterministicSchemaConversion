@@ -10,7 +10,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-mark
 
 [![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The ‘intermediaries’ have a responsibility not to facilitate infringement.    
+Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The 'intermediaries' have a responsibility not to facilitate infringement.    
 
 If you notice infringement on a website or online platform, you can approach the owners of the site to request that they take down infringing content. To find out who owns a website, you can check their domain name's registration in the [Australian](https://www.auda.org.au/au-domain-names/domain-name-help/using-whois)  and [international WHOIS databases](https://lookup.icann.org/en). 
 
@@ -26,7 +26,7 @@ You can be proactive by listing your IP rights with different e-commerce platfor
 * Often quick to action and obtain outcome.
 * Simple to prepare and initiate compared to other enforcement options.
 * Outcome-focused, as it targets infringing products/content directly and prevents customers making purchases/accessing the infringing content.
-* Some platforms are not limited by the country the infringer is located in, due to these platforms having an international reach – while others only action takedown requests within jurisdictions in which the rights apply.
+* Some platforms are not limited by the country the infringer is located in, due to these platforms having an international reach - while others only action takedown requests within jurisdictions in which the rights apply.
 * You may not need to identify or track down the infringer yourself.
 * Being able to reduce infringement and prevent sales being diverted by addressing infringement on a major sales channel.
 
@@ -58,13 +58,13 @@ Depending on how or if alleged infringer disputes the takedown request you submi
 
 ### Who can use this?
 
-Some mechanisms offered by platforms may require you to be a seller or user with a valid account. However, access to specific services and complaint mechanisms can vary in accordance with each platform’s terms and conditions. 
+Some mechanisms offered by platforms may require you to be a seller or user with a valid account. However, access to specific services and complaint mechanisms can vary in accordance with each platform's terms and conditions. 
 
 ### How much is this used?
 
 IP-related takedown notices submitted to platforms is likely in the **millions annually.**
 
-### Who’s involved?
+### Who's involved?
 
 * IP rights owner(s).
 * Websites or online platforms including e-commerce or advertising platform(s).
@@ -84,7 +84,7 @@ You will usually need: 
 
 Note that if you do not provide sufficiently accurate information, your takedown application may be rejected and the whole process would be delayed. 
 
-For matters involving copyright infringement online, before issuing a takedown notice, copyright owners should check that the user does not have a valid reason to use the material in question (for example a valid license or a ‘fair dealing’ use permitted as an exception to copyright under the Copyright Act). More information about when using copyright material is allowed is provided on the [copyright infringement page](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement). 
+For matters involving copyright infringement online, before issuing a takedown notice, copyright owners should check that the user does not have a valid reason to use the material in question (for example a valid license or a 'fair dealing' use permitted as an exception to copyright under the Copyright Act). More information about when using copyright material is allowed is provided on the [copyright infringement page](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement). 
 
 ### See also
 

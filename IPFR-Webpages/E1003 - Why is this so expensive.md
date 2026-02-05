@@ -10,7 +10,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/why-so-expensive](
 
 Enforcing your intellectual property (IP) is about stopping suspected or alleged infringement and, in some cases, seeking damages. Costs usually rise with urgency, complexity and the number of parties involved. 
 
-You need to show that you own the right and that the other party’s conduct likely infringes it. That can mean searches, collecting screenshots or records, and getting expert views. Each step takes time and money. 
+You need to show that you own the right and that the other party's conduct likely infringes it. That can mean searches, collecting screenshots or records, and getting expert views. Each step takes time and money. 
 
 Legal help adds cost. Many steps use specialist lawyers or IP attorneys to provide opinions, draft letters, negotiate, prepare evidence and, if needed, file hearing or court documents. Professional time is charged, and costs can rise with the number of issues, documents and parties involved. 
 
@@ -18,13 +18,13 @@ Formal dispute resolution processes such as court proceedings or administrative 
 
 Urgency can increase cost. If you need quick orders (for example, an interlocutory injunction), the team may need to work fast and at short notice. Compressing months of tasks into days can be costly. 
 
-Technical or cross-border issues add to the bill. Patent and design disputes can need technical experts. If the problem spans other countries, you may need local advisers, as Australian rights mainly apply in Australia. IP rights are territorial, so enforcement depends on each country’s system. 
+Technical or cross-border issues add to the bill. Patent and design disputes can need technical experts. If the problem spans other countries, you may need local advisers, as Australian rights mainly apply in Australia. IP rights are territorial, so enforcement depends on each country's system. 
 
 Multiple sellers and platforms multiply effort. Stopping many small sellers, listings or shipments can mean repeating steps across marketplaces and channels. That repeat work adds up because each marketplace has its own process. 
 
-**Court cases can lead to an order that you pay some of the other side’s legal costs if you lose.** This usual rule, called ‘costs follow the event’, is a normal feature of Australian court proceedings, and it is one reason parties seek to settle earlier. 
+**Court cases can lead to an order that you pay some of the other side's legal costs if you lose.** This usual rule, called 'costs follow the event', is a normal feature of Australian court proceedings, and it is one reason parties seek to settle earlier. 
 
-**Lower-cost paths exist.** Many disputes resolve through negotiation or mediation (which is a form of alternative dispute resolution, ‘ADR’), including with the World Intellectual Property Organization (WIPO) Arbitration and Mediation Center or accredited mediators within Australia. These still need preparation but can be faster and less costly than going to court. The Federal Court of Australia can also order mediation that may reduce time and cost. 
+**Lower-cost paths exist.** Many disputes resolve through negotiation or mediation (which is a form of alternative dispute resolution, 'ADR'), including with the World Intellectual Property Organization (WIPO) Arbitration and Mediation Center or accredited mediators within Australia. These still need preparation but can be faster and less costly than going to court. The Federal Court of Australia can also order mediation that may reduce time and cost. 
 
 Several things can influence your spend. Clear records, sensible contracts and early, calm contact can sometimes reduce effort. Having registered rights can make proof quicker and provide a stronger negotiating position.  
 

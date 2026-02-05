@@ -10,7 +10,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-plat
 
 Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \
  \
-Signing up to an online marketplace’s IP protection program or their brand registry involved recording your IP with the platform before issues arise.  
+Signing up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.  
 
 Each marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. 
 
@@ -51,7 +51,7 @@ Enrolling in an IP protection program run by an online marketplace is generally 
 ### How much time might be involved?
 
 Creating an account and submitting the online form would generally take no longer than a few hours. \
-Verification with individual platforms typically takes 24–72 hours, but may extend up to two weeks if additional documents are requested. 
+Verification with individual platforms typically takes 24-72 hours, but may extend up to two weeks if additional documents are requested. 
 
 Ongoing effort varies depending on what the platform offers and how proactive you wish to be. Checking alerts and confirming takedown requests generally takes a few minutes per week. Conducting further searches, investigating listings, and reporting listings may take more time. 
 
@@ -63,7 +63,7 @@ Signing up to registries or IP protection program provided by online platforms i
 
 The IP right holder or an authorised user, or their representative. 
 
-### Who’s involved?
+### Who's involved?
 
 * The IP owner or authorised user
 * The online marketplace or platform
@@ -74,14 +74,14 @@ The IP right holder or an authorised user, or their representative. 
 * For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application.
 * A customer account on each marketplace and verified contact details.
 * Clear product images and descriptions that show how the IP is used.
-* A list of authorised sellers, if any, so the platform doesn’t accidentally remove legitimate listings.
+* A list of authorised sellers, if any, so the platform doesn't accidentally remove legitimate listings.
 * Time allocated to review alerts and confirm or dispute flagged listings.
 
 ### See also
 
 * [Stop infringement facilitated online | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online)
 * [Amazon Brand Registry](https://sell.amazon.com/brand-registry)
-* [VeRO Program – eBay](https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1)
+* [VeRO Program - eBay](https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1)
 * [Etsy Intellectual Property Portal](https://www.etsy.com/au/ipreporting)
 * [Shein IP Protection Platform](https://m.shein.com/au/copyright-noticeam-a-379.html)
 

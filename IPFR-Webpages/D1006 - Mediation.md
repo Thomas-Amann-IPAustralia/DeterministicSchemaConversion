@@ -24,7 +24,7 @@ want to reach a speedy settlement without damage to their reputations.  
 
 **When is mediation not appropriate?** 
 
-Mediation isn’t for everyone. Mediation may not be suitable when:  
+Mediation isn't for everyone. Mediation may not be suitable when:  
 
 * one or both parties need an impartial opinion on a matter of difference, perhaps to set a precedent or to be vindicated publicly on an issue in dispute
 * a party is certain that it has a straightforward case to the extent that there is no room for settlement or negotiation
@@ -64,9 +64,9 @@ The costs of mediation will typically include: 
 * Travel expenses and venue costs (if in person, though online mediation is increasingly common)
 * Administrative expenses (that is, document preparation, correspondence, etc.).
 
-The primary cost in mediation process is the mediator’s fee. The hourly rate of a mediator would differ significantly depending on the subject matter of the dispute and whether you engage a private mediator or mediation services provided by court or other public bodies.  
+The primary cost in mediation process is the mediator's fee. The hourly rate of a mediator would differ significantly depending on the subject matter of the dispute and whether you engage a private mediator or mediation services provided by court or other public bodies.  
 
-While the fee for [mediation by a court officer](https://www.fcfcoa.gov.au/gfl/gfl-fees)  is $650 for each attendance, a [private mediator](https://mediationsaustralia.com.au/our-fees/)  typically charges $3,500 – $4,500 or more for a day of mediation.
+While the fee for [mediation by a court officer](https://www.fcfcoa.gov.au/gfl/gfl-fees)  is $650 for each attendance, a [private mediator](https://mediationsaustralia.com.au/our-fees/)  typically charges $3,500 - $4,500 or more for a day of mediation.
 
 Additionally, engaging an IP professional to act on your behalf will incur additional legal fees.   
 
@@ -74,7 +74,7 @@ Additionally, engaging an IP professional to act on your behalf will incur addit
 
 Length of mediation processes can vary. 
 
-It can be anywhere between hours to multiple sessions over a few months depending on factors such as number and complexity of issues at hand. While some commercial mediation would take no longer than a few hours or a full day only, mediation with [World Intellectual Property Organisation (WIPO)’s Arbitration and Mediation Center](https://www.wipo.int/amc/en/)  would typically [take 3-4 months](https://www.wipo.int/export/sites/www/amc/en/docs/wipoadr_patents-frand.pdf).    
+It can be anywhere between hours to multiple sessions over a few months depending on factors such as number and complexity of issues at hand. While some commercial mediation would take no longer than a few hours or a full day only, mediation with [World Intellectual Property Organisation (WIPO)'s Arbitration and Mediation Center](https://www.wipo.int/amc/en/)  would typically [take 3-4 months](https://www.wipo.int/export/sites/www/amc/en/docs/wipoadr_patents-frand.pdf).    
 
 Please note that the organisation, consultation and preparation of mediation can take a few weeks or months prior to the mediation session taking place. 
 
@@ -82,7 +82,7 @@ Please note that the organisation, consultation and preparation of mediation can
 
 Mediation is commonly used to resolve intellectual property disputes both before and after bringing legal claims in court.  
 
-In the 2023–24 financial year, intellectual property disputes were the type of dispute most commonly referred for mediation by the Federal Circuit and Family Court of Australia (Division 2) being referred for mediation in 65% of cases.1
+In the 2023-24 financial year, intellectual property disputes were the type of dispute most commonly referred for mediation by the Federal Circuit and Family Court of Australia (Division 2) being referred for mediation in 65% of cases.1
 
 ### Who can use this?
 
@@ -90,7 +90,7 @@ Anybody who is a party to a dispute.  
 
 Mediation generally requires engagement from both parties to the dispute, though some mediation providers will allow a single party to submit a unilateral request for mediation and then encourage the other party to participate in mediation.  
 
-### Who’s involved?
+### Who's involved?
 
 * Parties to the dispute(s).
 * Mediator, whose [role](https://www.disputes.vic.gov.au/about-us/mediation/mediation-faqs) is to:
@@ -116,7 +116,7 @@ It can be helpful to consider these questions when selecting a mediator to help 
 4. Is more than one mediator required? For example, do the parties come from different cultural and linguistic backgrounds? Or would it be beneficial to have both a technical expert and a mediation specialist as co-mediators?
 5. Does a conflict of interest exist?
 
-There is a wide range of mediation providers, ranging from government and public-funded bodies to private practitioners. Here’s a list of directories and mediation providers that may assist you in finding a mediator you would like to engage:  
+There is a wide range of mediation providers, ranging from government and public-funded bodies to private practitioners. Here's a list of directories and mediation providers that may assist you in finding a mediator you would like to engage:  
 
 * [The Resolution Institute's Dispute Resolver Directory list](https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx)
 * [The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)](https://www.asbfeo.gov.au/)  provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes.
@@ -146,13 +146,13 @@ For more information on mediation and other types of ADR, see:  
 
 * IP First Response: [Understanding alternative dispute resolution](https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators)
 * [Mediation](https://www.fedcourt.gov.au/services/ADR/mediation)  at the Federal Court of Australia website
-* [Your guide to dispute resolution](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)  at the Attorney General’s Department website
+* [Your guide to dispute resolution](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)  at the Attorney General's Department website
 * [Resolve disputes | business.gov.au](https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR)
 * [Higher Education Research Commercialisation Intellectual Property Framework - Department of Education, Australian Government](https://www.education.gov.au/hercip)
 
 *Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
 
-1. Federal Circuit and Family Court of Australia (Division 1) and (Division 2), [*Annual Reports 2023–24*](https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24), p 123
+1. Federal Circuit and Family Court of Australia (Division 1) and (Division 2), [*Annual Reports 2023-24*](https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24), p 123
 
 ### Want to give us feedback?
 

@@ -14,9 +14,9 @@ Monitoring competitors' trade marks involves regularly checking the Australian T
 
 Early detection can give you time to oppose an application, contact the other business, or adjust your own plans before investing further.  
 
-You can do this yourself using search engines and free tools such as [IP Australia's Australian Trade mark Search (ATMS)](https://search.ipaustralia.gov.au/trademarks/search/quick)  and its ‘saved search’ features, or pay a commercial service to send you regular reports.  
+You can do this yourself using search engines and free tools such as [IP Australia's Australian Trade mark Search (ATMS)](https://search.ipaustralia.gov.au/trademarks/search/quick)  and its 'saved search' features, or pay a commercial service to send you regular reports.  
 
-You can also be flexible with the scope of your monitoring activity – you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers. 
+You can also be flexible with the scope of your monitoring activity - you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers. 
 
 ### What are the benefits?
 
@@ -54,7 +54,7 @@ Acting on a match, such as lodging [an opposition](https://ipfirstresponse.ipaus
 
 ### How much is this used?
 
-Monitoring competitors’ trade marks is widely recognised as best practice for trade mark holders. Businesses also commonly use IP monitoring services or software to help them detect potential conflicts early.  
+Monitoring competitors' trade marks is widely recognised as best practice for trade mark holders. Businesses also commonly use IP monitoring services or software to help them detect potential conflicts early.  
 
 ### Who can use this?
 
@@ -62,7 +62,7 @@ Anyone who owns or is authorised to use a registered or unregistered trade mark 
 
 Anyone planning to register a trade mark or launch a brand can also monitor filings to observe trends in trade mark filings.  
 
-### Who’s involved?
+### Who's involved?
 
 * The trade mark owner or authorised user
 * Optional: commercial watch service provider
@@ -73,7 +73,7 @@ Anyone planning to register a trade mark or launch a brand can also monitor fili
 * [Australian Trade Mark Search](https://search.ipaustralia.gov.au/trademarks/search/quick)  (ATMS) and [HELP](https://search.ipaustralia.gov.au/trademarks/help)  page to familiarise yourself with how the ATMS search works and various features of the search tool.
 * Current trade mark details (e.g. registration number, priority date and its registration status).
 * Criteria for what you will consider as 'too close' to your brand. Check out [Infringement 101 | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/infringement-101) and [Trade mark infringement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement) to understand the factors that determine trade mark infringement.
-* Plan for next steps if you find a conflict [Develop a strategy to manage your IP | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip). You can use IP First Response’s [navigator tool for IP rights holders faced with IP infringement](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement) for more information regarding various pathways to address an IP dispute or an infringement.
+* Plan for next steps if you find a conflict [Develop a strategy to manage your IP | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip). You can use IP First Response's [navigator tool for IP rights holders faced with IP infringement](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement) for more information regarding various pathways to address an IP dispute or an infringement.
 
 ### See also
 
