@@ -1,0 +1,54 @@
+name: Enrich JSON with LLM
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enrich_and_report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai
+
+      - name: Run Enrichment Script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/enrich_howto_steps.py
+
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: after-action-report
+          path: after_action_report.csv
+
+      - name: Upload Enriched JSON Files
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-output-enriched
+          path: json_output-enriched/
+
+      # Optional: Commit the new files back to the repo
+      # Uncomment the lines below if you want the changes committed automatically
+      - name: Commit and Push changes
+        run: |
+           git config --global user.name "github-actions[bot]"
+           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+           git add json_output-enriched/
+           git add after_action_report.csv
+           git commit -m "Enriched JSON files with HowToStep names"
+           git push
