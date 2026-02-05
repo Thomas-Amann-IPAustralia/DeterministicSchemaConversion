@@ -1,50 +1,58 @@
 # DeterministicSchemaConversion
 
-**A pipeline for scraping government content and converting it into structured Schema.org JSON-LD.**
+**A robust pipeline for scraping government content and converting it into high-fidelity, structured Schema.org JSON-LD.**
 
 ## Overview
 
-This repository contains a Python-based toolset designed to scrape web pages from the **IP First Response** website, convert the content into clean Markdown, and deterministically map that content into structured JSON-LD (Schema.org) files.
+This repository hosts a Python-based toolchain designed to digitize and structure content from the **IP First Response** website. It transforms unstructured web HTML into machine-readable data structures—specifically `GovernmentService`, `HowTo`, and `FAQPage`—optimized for Large Language Models (LLMs), search engine discovery, and voice assistants.
 
-The primary goal is to transform unstructured web HTML into machine-readable data structures (such as `GovernmentService`, `HowTo`, and `FAQPage`) suitable for Large Language Models (LLMs), search engine optimization, and structured data indexing.
+Unlike standard scrapers, this pipeline employs a **hybrid parsing approach**: it captures both raw HTML (for precise DOM structure analysis) and converts content to clean Markdown (for semantic clarity). It then optionally uses **AI enrichment** to refine the data.
 
-## Features
+## Key Features
 
-* **Stealth Scraping:** Uses `selenium-stealth` with Headless Chrome to bypass bot detection and scrape content effectively.
-* **Markdown Conversion:** Converts HTML to "ATX" style Markdown, stripping unnecessary noise (navigation, footers, scripts) while preserving semantic structure.
-* **GovCMS Compatibility:** Specifically targeted to handle `region-content` classes and GovCMS DOM structures.
-* **Deterministic Schema Generation:** Parses Markdown headers and lists to generate valid JSON-LD for:
-* `GovernmentService` (or `Service` / `HowTo` based on archetype).
-* `HowTo` steps derived from content bodies.
-* `FAQPage` generated from specific question-phrased headers.
+* **🕵️ Stealth Scraping:** Utilizes `selenium-stealth` with Headless Chrome to bypass bot detection, ensuring reliable access to GovCMS-hosted content.
+* **📄 Hybrid Content Extraction:**
+* **HTML Capture:** Preserves raw DOM structures (specifically `region-content`) to accurately identify nested lists and complex formatting.
+* **Markdown Conversion:** Simultaneously converts content to "ATX" style Markdown, stripping noise (navigation, footers) while keeping semantic headers.
 
 
-* **Metadata Enrichment:** Merges scraped content with a static CSV metadata table to inject high-quality properties like `audience`, `legislation` links, and `provider` details.
+* **🧩 Deterministic Schema Generation:**
+* Maps content to `GovernmentService`, `HowTo`, or `Organization` based on archetypes.
+* Extracts `FAQPage` items from headers phrased as questions.
+* Generates `HowToStep`s from ordered lists and process-oriented headers.
+
+
+* **🤖 AI Metadata Enrichment:** An optional post-processing step uses **OpenAI (GPT-4o)** to intelligently name logical steps in "How-to" guides that lack explicit headers, ensuring high-quality `name` properties for Schema.org compliance.
+* **🛡️ Safety & Diffing:** The enrichment process includes a strict "semantic diff" check to ensure the AI *only* modifies placeholder fields and does not hallucinate or alter factual content.
 
 ## Project Structure
 
 ```text
 DeterministicSchemaConversion/
-├── IPFR-Webpages/           # Output directory for scraped Markdown files
-├── json_output/             # Output directory for final JSON-LD files
+├── IPFR-Webpages/              # Output: Cleaned Markdown files
+├── IPFR-Webpages-html/         # Output: Raw HTML content files
+├── json_output/                # Output: Initial Schema.org JSON-LD
+├── json_output-enriched/       # Output: Final AI-enriched JSON-LD
 ├── scripts/
-│   └── process_md_to_json.py # Logic to convert Markdown + CSV to JSON-LD
-├── 260203_IPFRMetaTable.csv  # (Required) Metadata mapping table
-├── scraper.py               # Selenium script to scrape URLs to Markdown
-├── sources.json             # List of URLs to scrape
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+│   ├── process_md_to_json.py   # Logic: Converts MD/HTML + CSV to JSON-LD
+│   └── enrich_howto_steps.py   # Logic: AI enrichment for step naming
+├── 260203_IPFRMetaTable.csv    # (Required) Metadata mapping table
+├── scraper.py                  # Logic: Selenium scraper (HTML + MD)
+├── sources.json                # Configuration: List of URLs to scrape
+├── requirements.txt            # Python dependencies
+└── README.md                   # Documentation
 
 ```
 
 ## Prerequisites
 
 * **Python 3.8+**
-* **Google Chrome** (The script uses `webdriver_manager` to handle the driver, but the browser must be installed).
+* **Google Chrome** (Installed on the host machine).
+* **OpenAI API Key** (Required only for the optional enrichment step).
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
 git clone https://github.com/your-username/DeterministicSchemaConversion.git
 cd DeterministicSchemaConversion
@@ -52,21 +60,26 @@ cd DeterministicSchemaConversion
 ```
 
 
-2. Install the required Python packages:
+2. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 
 ```
 
 
+*Note: If you plan to use the enrichment script, ensure `openai` is installed:*
+```bash
+pip install openai
 
-## Usage
+```
 
-### Step 1: Define Sources
 
-Ensure `sources.json` contains the list of URLs you wish to process. The format is a JSON array of objects containing the target `url` and the desired output `filename`.
 
-**Example `sources.json`:**
+## Configuration
+
+### 1. Source Definition (`sources.json`)
+
+Define the pages to scrape in `sources.json`. This file expects a JSON array of objects:
 
 ```json
 [
@@ -78,60 +91,95 @@ Ensure `sources.json` contains the list of URLs you wish to process. The format 
 
 ```
 
-**
+### 2. Metadata Table (`260203_IPFRMetaTable.csv`)
 
-### Step 2: Scrape Content
+This CSV acts as the "control plane" for the schema generation. It must contain:
 
-Run the scraper to fetch the pages and convert them to Markdown. This will populate the `IPFR-Webpages/` directory.
+* `UDID`: Unique Identifier for the service.
+* `Main Title`: Canonical title.
+* `Archetype`: `Government Service`, `Self-Help`, or `Organization`.
+* `Relevant IP right`: Triggers automatic `Legislation` citations (e.g., "Trade Mark" maps to *Trade Marks Act 1995*).
+
+---
+
+## Usage Workflow
+
+### Step 1: Scrape Content
+
+Run the scraper to fetch pages. It will generate matched pairs of Markdown and HTML files in `IPFR-Webpages/` and `IPFR-Webpages-html/`.
 
 ```bash
 python scraper.py
 
 ```
 
-*Note: The scraper runs in headless mode but mimics a real user agent to ensure content loads correctly.*
+* **Output:** `IPFR-Webpages/*.md`, `IPFR-Webpages-html/*.html`
+* *Note: The scraper runs in headless mode but mimics a real user agent.*
 
-### Step 3: Generate JSON-LD
+### Step 2: Generate Base JSON-LD
 
-Run the processing script to convert the Markdown files into structured JSON.
+Convert the scraped content into structured data. This script prioritizes the HTML files for structure (finding steps/lists) but uses Markdown for clean text text extraction.
 
 ```bash
 python scripts/process_md_to_json.py
 
 ```
 
-This script will:
+* **Output:** `json_output/*.json`
+* *Details: Steps without clear headers are assigned the placeholder name `xXx_PLACEHOLDER_xXx`.*
 
-1. Read the Markdown files from `IPFR-Webpages/`.
-2. Match the file against metadata in `260203_IPFRMetaTable.csv` (using URL, UDID, or Title matching).
-3. Output the final JSON files into the `json_output/` directory.
+### Step 3: AI Enrichment (Optional but Recommended)
 
-## Configuration & Logic
+Use GPT-4o to read the content of steps named `xXx_PLACEHOLDER_xXx` and generate concise, descriptive names.
 
-### Metadata CSV
+1. Set your OpenAI API key:
+```bash
+# Linux/Mac
+export OPENAI_API_KEY="sk-..."
+# Windows (Powershell)
+$env:OPENAI_API_KEY="sk-..."
 
-The script `process_md_to_json.py` relies on a CSV file (referenced internally as `260203_IPFRMetaTable.csv`) to enrich the structured data. This CSV should contain columns for:
+```
 
-* `UDID`: Unique Identifier.
-* `Main Title`: The canonical title of the service.
-* `Archetype`: Determines if the output is a `GovernmentService`, `HowTo` (Self-Help), or `Organization`.
-* `Relevant IP right`: Used to generate `Legislation` citations and `about` topics.
 
-### Schema Mapping
+2. Run the enrichment script:
+```bash
+python scripts/enrich_howto_steps.py
 
-The generator uses specific heuristics to map Markdown content to Schema.org types:
+```
 
-* **Headers containing "steps" or "proceed":** Converted to `HowToStep`.
-* **Headers starting with "What", "How", "Who":** Converted to `Question` / `Answer` pairs for `FAQPage`.
-* **Legislation Keywords:** Automatically maps terms like "Trade Mark Act" or "Copyright Act" to their specific legislation URLs.
 
-## Dependencies
 
-* `selenium`: Browser automation.
-* `selenium-stealth`: Anti-detection for Selenium.
-* `webdriver-manager`: Automatic Chrome driver management.
-* `markdownify`: HTML to Markdown conversion.
-* `requests`: HTTP library (backup/utility).
+* **Output:** `json_output-enriched/*.json`
+* **Report:** Generates `after_action_report.csv` detailed all changes made.
+* *Safety:* The script performs a JSON diff. If any value matches a non-placeholder change, the file is flagged as **FAIL** and changes are discarded to prevent data corruption.
+
+## Script Details
+
+### `scraper.py`
+
+* Initializes a stealthy Chrome driver.
+* Extracts metadata (Title, Overtitle) from the DOM.
+* Saves a "cleaned" Markdown version (using `markdownify` with ATX headers).
+* Saves the raw `innerHTML` of the main content region for precise parsing later.
+
+### `scripts/process_md_to_json.py`
+
+* **Hybrid Parser:** Tries to parse the HTML file first to find complex lists (`<ol>`, `<ul>`) which are often lost in Markdown conversion.
+* **Schema Mapping:**
+* Headers ending in `?` -> `FAQPage` > `Question`.
+* Headers containing "Steps" or "Proceed" -> `HowTo` > `HowToStep`.
+* Keywords in CSV -> `Legislation` citations.
+
+
+* **Enrichment:** Injects `Audience`, `ServiceOperator`, and `UsageInfo` blocks defined in constants.
+
+### `scripts/enrich_howto_steps.py`
+
+* Iterates through `json_output/`.
+* Identifies `HowToStep` items with the specific placeholder name.
+* Sends the `text` of the step to OpenAI API with a system prompt designed to generate a short 3-5 word summary name.
+* Validates the result using a recursive JSON comparison function.
 
 ## License
 
