@@ -10,6 +10,7 @@ from difflib import SequenceMatcher
 JSON_DIR = 'json_output-enriched'
 HTML_DIR = 'IPFR-Webpages-html'
 OUTPUT_DIR = os.path.join('reports', 'validation_reports')
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'Validation_Report.csv')
 SIMILARITY_THRESHOLD = 0.85
 
 def normalize_text(text):
@@ -79,9 +80,7 @@ def main():
     # Pre-flight check: Ensure input directories exist
     if not os.path.exists(JSON_DIR):
         print(f"CRITICAL ERROR: The directory '{JSON_DIR}' was not found.")
-        print(f"Current working directory: {os.getcwd()}")
-        print("Contents:", os.listdir('.'))
-        sys.exit(1) # Exit with error code 1 to fail the Action properly
+        sys.exit(1)
 
     # Ensure the output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -93,23 +92,34 @@ def main():
         
     print(f"Starting validation for {len(json_files)} files...")
     
+    # Master list to hold all rows from all files
+    aggregated_results = []
+    
     for json_file in json_files:
         filename = os.path.basename(json_file)
         name_root = os.path.splitext(filename)[0]
         html_filename = f"{name_root}-html.html"
         html_path = os.path.join(HTML_DIR, html_filename)
         
-        results = validate_file(json_file, html_path)
+        # Run validation
+        file_results = validate_file(json_file, html_path)
         
-        csv_name = f"Report_{name_root}.csv"
-        csv_path = os.path.join(OUTPUT_DIR, csv_name)
-        
-        with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerow(["Category", "Check", "Details", "Score", "Status"])
-            writer.writerows(results)
+        # Prepend the filename to every row so we know which file it belongs to
+        for row in file_results:
+            row.insert(0, filename)
+            aggregated_results.append(row)
             
-    print(f"Validation complete. Reports saved to {OUTPUT_DIR}")
+    # Write single CSV report
+    try:
+        with open(OUTPUT_FILE, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            # Added "File" column header
+            writer.writerow(["File", "Category", "Check", "Details", "Score", "Status"])
+            writer.writerows(aggregated_results)
+        print(f"Validation complete. Aggregated report saved to {OUTPUT_FILE}")
+    except PermissionError:
+        print(f"ERROR: Could not write to {OUTPUT_FILE}. Is it open in another program?")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
