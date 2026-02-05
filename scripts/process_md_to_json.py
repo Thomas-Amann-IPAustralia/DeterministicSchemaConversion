@@ -642,9 +642,9 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         has_provider = True 
     else:
         if "Self-Help" in archetype:
-        # OLD: service_type, has_provider = "HowTo", False 
-        # NEW: Change to Article, but keep provider False
-        service_type, has_provider = "Article", False 
+            # OLD: service_type, has_provider = "HowTo", False 
+            # NEW: Change to Article, but keep provider False
+            service_type, has_provider = "Article", False 
         elif "Government Service" in archetype:
             service_type = "GovernmentService"
         elif "Commercial" in archetype:
