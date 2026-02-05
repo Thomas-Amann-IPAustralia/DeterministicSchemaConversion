@@ -1,4 +1,31 @@
 File,Category,Check,Details,Score,Status
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Schema,Key: @context,Present,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Schema,Key: @type,Present,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Schema,Key: headline,Present,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Schema,Key: description,Present,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Data Integrity,ID Match,E1017 == E1017,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Semantic,Headline Match,Score: 0.14,0.136986301369863,WARN
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-a-hearing,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Related Link Exists,https://www.fedcourt.gov.au/law-and-practice/national-practice-areas/ip,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Related Link Exists,"https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994",0.0,WARN
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Related Link Exists,https://www.art.gov.au/,1.0,PASS
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Related Link Exists,https://peo.gov.au/understand-our-parliament/your-questions-on-notice/questions/what-is-judicial-review,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Structure,JSON Syntax,Valid,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: @context,Present,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: @type,Present,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: headline,Present,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: description,Present,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,"https://www.abf.gov.au/help-and-support-subsite/Pages/notices/intellectual-property.aspx#:~:text=A%20Notice%20of%20Objection%20is,a%20valid%20Notice%20of%20Objection.",1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,https://www.drive.com.au/news/toyota-annual-sales-record-2024-australia/,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,https://www.interpol.int/en/Crimes/Illicit-goods/Illicit-goods-the-issues,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,mailto:ipfirstresponse@ipaustralia.gov.au,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Structure,JSON Syntax,Valid,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Schema,Key: @context,Present,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Schema,Key: @type,Present,1.0,PASS
@@ -12,7 +39,31 @@ C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,http
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+101-2 - Design infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-2 - Design infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-2 - Design infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-2 - Design infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-2 - Design infringement.json,Schema,Key: description,Present,1.0,PASS
+101-2 - Design infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-2 - Design infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+101-2 - Design infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right,1.0,PASS
+101-2 - Design infringement.json,Links,Related Link Exists,Emmett J,0.0,WARN
 README.json,Structure,HTML Source,File not found,0.0,CRITICAL FAIL
+D1039 - Register your unregistered trade mark.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Schema,Key: @context,Present,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Schema,Key: @type,Present,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Schema,Key: headline,Present,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Schema,Key: description,Present,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Data Integrity,ID Match,D1039 == D1039,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Semantic,Headline Match,Score: 0.13,0.13043478260869565,WARN
+D1039 - Register your unregistered trade mark.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://tmgns.search.ipaustralia.gov.au/,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 "E1009 - Can I buy, sell or license IP.json",Structure,JSON Syntax,Valid,1.0,PASS
 "E1009 - Can I buy, sell or license IP.json",Schema,Key: @context,Present,1.0,PASS
 "E1009 - Can I buy, sell or license IP.json",Schema,Key: @type,Present,1.0,PASS
@@ -36,6 +87,24 @@ D1030 - Seek a court order to prevent further damage while preparing for court.j
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Schema,Key: @context,Present,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Schema,Key: @type,Present,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Schema,Key: headline,Present,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Schema,Key: description,Present,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Data Integrity,ID Match,E1016 == E1016,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Semantic,Headline Match,Score: 0.19,0.1935483870967742,WARN
+E1016 - How can I deal with IP issues without going to court.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ADR,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/mediation,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx,1.0,PASS
+E1016 - How can I deal with IP issues without going to court.json,Links,Related Link Exists,https://www.asbfeo.gov.au/,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Schema,Key: @context,Present,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Schema,Key: @type,Present,1.0,PASS
@@ -63,6 +132,40 @@ C1010 - Inform online platforms that you have IP rights.json,Links,Related Link 
 C1010 - Inform online platforms that you have IP rights.json,Links,Related Link Exists,https://sell.amazon.com/brand-registry,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Links,Related Link Exists,https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Links,Related Link Exists,https://m.shein.com/au/copyright-noticeam-a-379.html,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Schema,Key: @context,Present,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Schema,Key: @type,Present,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Schema,Key: headline,Present,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Schema,Key: description,Present,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Data Integrity,ID Match,C1003 == C1003,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Semantic,Headline Match,Score: 0.15,0.15151515151515152,WARN
+C1003 - Identify and track your competitors' patents and activity.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://ipsearch.ipaustralia.gov.au/patents/,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956,1.0,PASS
+C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Schema,Key: @context,Present,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Schema,Key: @type,Present,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Schema,Key: headline,Present,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Schema,Key: description,Present,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Data Integrity,ID Match,D1010 == D1010,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Semantic,Headline Match,Score: 0.14,0.13559322033898305,WARN
+D1010 - Demand the other party stops infringing in writing.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/infringement-101,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,http://www.artslaw.com.au/services/legal-query-form/,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://www.artslaw.com.au/product/copyright-infringement-letter-of-demand/,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,http://www.copyright.org.au/legal-advice/,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,/options/provide-opportunity-other-party-stop-infringing,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
 E1024 - How does IP Australia fit in a broader business support context.json,Structure,JSON Syntax,Valid,1.0,PASS
 E1024 - How does IP Australia fit in a broader business support context.json,Schema,Key: @context,Present,1.0,PASS
 E1024 - How does IP Australia fit in a broader business support context.json,Schema,Key: @type,Present,1.0,PASS
@@ -86,6 +189,42 @@ B1012 - De-escalate and resolve disputes via conversation.json,Links,Related Lin
 B1012 - De-escalate and resolve disputes via conversation.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement,1.0,PASS
 B1012 - De-escalate and resolve disputes via conversation.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options,1.0,PASS
 B1012 - De-escalate and resolve disputes via conversation.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*lf25uu*_ga*OTM2NTQ2NDI2LjE3NDI5NjA5OTg.*_ga_GMT4KC15KS*czE3NDc3MDM4ODgkbzI1JGcxJHQxNzQ3NzAzOTExJGowJGwwJGgw,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Schema,Key: @context,Present,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Schema,Key: @type,Present,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Schema,Key: headline,Present,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Schema,Key: description,Present,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Data Integrity,ID Match,D1006 == D1006,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Semantic,Headline Match,Score: 0.14,0.14035087719298245,WARN
+D1006 - Resolve IP issues with the help of a third party.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.asbfeo.gov.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://acica.org.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://msb.org.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://disputescentre.com.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.vsbc.vic.gov.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.smallbusiness.nsw.gov.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.sasbc.sa.gov.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.smallbusiness.wa.gov.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.business.qld.gov.au/running-business/support-assistance/qsbc,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,"https://www.artslaw.com.au/information-sheet/alternative-dispute-resolution-binding-expert-dermination-and-non-binding-e/#:~:text=How%20does%20the%20Arts%20Law,of%20the%20Centre&apos;s%20panel%20lawyers.",1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://resolutionpathways.com.au/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.fcfcoa.gov.au/gfl/gfl-fees,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://mediationsaustralia.com.au/our-fees/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.wipo.int/export/sites/www/amc/en/docs/wipoadr_patents-frand.pdf,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.disputes.vic.gov.au/about-us/mediation/mediation-faqs,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.fedcourt.gov.au/services/ADR/mediation,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.education.gov.au/hercip,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24,1.0,PASS
 IPFR_Infringement101.json,Structure,JSON Syntax,Valid,1.0,PASS
 IPFR_Infringement101.json,Schema,Key: @context,Present,1.0,PASS
 IPFR_Infringement101.json,Schema,Key: @type,Present,1.0,PASS
@@ -94,6 +233,45 @@ IPFR_Infringement101.json,Schema,Key: description,Present,1.0,PASS
 IPFR_Infringement101.json,Semantic,Headline Match,Score: 0.08,0.08333333333333333,WARN
 IPFR_Infringement101.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 IPFR_Infringement101.json,Links,Related Link Exists,Mailto:IPFirstResponse@ipaustralia.gov.au,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Schema,Key: @context,Present,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Schema,Key: @type,Present,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Schema,Key: headline,Present,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Schema,Key: description,Present,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Data Integrity,ID Match,D1022 == D1022,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Semantic,Headline Match,Score: 0.06,0.0625,WARN
+D1022 - Access international arbitration and mediation services.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/center/background.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ADR,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/goodoffices/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/neutrals/index.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/center/specific-sectors/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/eadr/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/mediation/index.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/arbitration/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/arbitration/what-is-exp-arb.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/expert-determination/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,mailto:arbiter.mail@wipo.int,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc-forms/adr/good-offices-services,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/index.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/center/adr-assistance.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www3.wipo.int/amc-forms/en/adr/mediation,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/center/specific-sectors/smes/index.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://amc.wipo.int/adr-fee-calculator/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www3.wipo.int/amc-forms/en/adr/unilateral-mediation,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/clauses/index.html,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/mediation,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/arbitration,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.education.gov.au/hercip,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/clauses/,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1057 - Prevent risks to public interest.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1057 - Prevent risks to public interest.json,Schema,Key: @context,Present,1.0,PASS
 D1057 - Prevent risks to public interest.json,Schema,Key: @type,Present,1.0,PASS
@@ -134,6 +312,13 @@ E1003 - Why is this so expensive.json,Links,Related Link Exists,https://ipfirstr
 E1003 - Why is this so expensive.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
 E1003 - Why is this so expensive.json,Links,Related Link Exists,https://www.fedcourt.gov.au/services/ADR/mediation,1.0,PASS
 E1003 - Why is this so expensive.json,Links,Related Link Exists,https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs,1.0,PASS
+101-3 - Patent infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-3 - Patent infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-3 - Patent infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-3 - Patent infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-3 - Patent infringement.json,Schema,Key: description,Present,1.0,PASS
+101-3 - Patent infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-3 - Patent infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 B1001 - Choose not to respond immediately.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1001 - Choose not to respond immediately.json,Schema,Key: @context,Present,1.0,PASS
 B1001 - Choose not to respond immediately.json,Schema,Key: @type,Present,1.0,PASS
@@ -145,6 +330,19 @@ B1001 - Choose not to respond immediately.json,Semantic,Description Match,Score:
 B1001 - Choose not to respond immediately.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand,1.0,PASS
 B1001 - Choose not to respond immediately.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
 B1001 - Choose not to respond immediately.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip,1.0,PASS
+E1004 - What to check before getting registered IP.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1004 - What to check before getting registered IP.json,Schema,Key: @context,Present,1.0,PASS
+E1004 - What to check before getting registered IP.json,Schema,Key: @type,Present,1.0,PASS
+E1004 - What to check before getting registered IP.json,Schema,Key: headline,Present,1.0,PASS
+E1004 - What to check before getting registered IP.json,Schema,Key: description,Present,1.0,PASS
+E1004 - What to check before getting registered IP.json,Data Integrity,ID Match,E1004 == E1004,1.0,PASS
+E1004 - What to check before getting registered IP.json,Semantic,Headline Match,Score: 0.12,0.11764705882352941,WARN
+E1004 - What to check before getting registered IP.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1004 - What to check before getting registered IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool,1.0,PASS
+E1004 - What to check before getting registered IP.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
+E1004 - What to check before getting registered IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker,1.0,PASS
+E1004 - What to check before getting registered IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks,1.0,PASS
+E1004 - What to check before getting registered IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents,1.0,PASS
 D1011 - Choose not to act immediately.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1011 - Choose not to act immediately.json,Schema,Key: @context,Present,1.0,PASS
 D1011 - Choose not to act immediately.json,Schema,Key: @type,Present,1.0,PASS
@@ -171,6 +369,16 @@ D1011 - Choose not to act immediately.json,Links,Related Link Exists,https://www
 "E1007 - check if someone else already owns a word, logo OR IDEA You WANT.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs,1.0,PASS
 "E1007 - check if someone else already owns a word, logo OR IDEA You WANT.json",Links,Related Link Exists,https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010,1.0,PASS
 "E1007 - check if someone else already owns a word, logo OR IDEA You WANT.json",Links,Related Link Exists,https://www.auda.org.au/au-domain-names/au-tools/,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Schema,Key: @context,Present,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Schema,Key: @type,Present,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Schema,Key: headline,Present,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Schema,Key: description,Present,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Data Integrity,ID Match,B1014 == B1014,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Semantic,Headline Match,Score: 0.20,0.19607843137254902,WARN
+B1014 - Reach an agreement with the accusing party.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1014 - Reach an agreement with the accusing party.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO,1.0,PASS
 E1006 - Discover where you are in your IP journey.json,Structure,JSON Syntax,Valid,1.0,PASS
 E1006 - Discover where you are in your IP journey.json,Schema,Key: @context,Present,1.0,PASS
 E1006 - Discover where you are in your IP journey.json,Schema,Key: @type,Present,1.0,PASS
@@ -186,6 +394,22 @@ E1006 - Discover where you are in your IP journey.json,Links,Related Link Exists
 E1006 - Discover where you are in your IP journey.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity,1.0,PASS
 E1006 - Discover where you are in your IP journey.json,Links,Related Link Exists,https://www.wipo.int/en/web/business/checklist,1.0,PASS
 E1006 - Discover where you are in your IP journey.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Schema,Key: @context,Present,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Schema,Key: @type,Present,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Schema,Key: headline,Present,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Schema,Key: description,Present,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Data Integrity,ID Match,D1016 == D1016,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Semantic,Headline Match,Score: 0.11,0.10909090909090909,WARN
+D1016 - Challenge the registration of a new trade mark.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/notice-of-intention-to-oppose,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/trademark,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms,1.0,PASS
+D1016 - Challenge the registration of a new trade mark.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Structure,JSON Syntax,Valid,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Schema,Key: @context,Present,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Schema,Key: @type,Present,1.0,PASS
@@ -206,6 +430,35 @@ IPFR_DemandOtherPartyStopsInfringing.json,Links,Related Link Exists,https://www.
 IPFR_DemandOtherPartyStopsInfringing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+E1022 - Free IP tools you can use.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1022 - Free IP tools you can use.json,Schema,Key: @context,Present,1.0,PASS
+E1022 - Free IP tools you can use.json,Schema,Key: @type,Present,1.0,PASS
+E1022 - Free IP tools you can use.json,Schema,Key: headline,Present,1.0,PASS
+E1022 - Free IP tools you can use.json,Schema,Key: description,Present,1.0,PASS
+E1022 - Free IP tools you can use.json,Data Integrity,ID Match,E1022 == E1022,1.0,PASS
+E1022 - Free IP tools you can use.json,Semantic,Headline Match,Score: 0.24,0.23529411764705882,WARN
+E1022 - Free IP tools you can use.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-resources/trade-mark-check,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents/search-patents,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/designs/search/quick,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/search-plant-breeders-rights,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://www.wipo.int/branddb/en/,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://patentscope.wipo.int/,1.0,PASS
+E1022 - Free IP tools you can use.json,Links,Related Link Exists,https://www.lens.org/,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Schema,Key: @context,Present,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Schema,Key: @type,Present,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Schema,Key: headline,Present,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Schema,Key: description,Present,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Data Integrity,ID Match,C1004 == C1004,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Semantic,Headline Match,Score: 0.13,0.13333333333333333,WARN
+C1004 - Use your trademark prominently to build recognition and protection.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1004 - Use your trademark prominently to build recognition and protection.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Links,Related Link Exists,https://business.gov.au/marketing-and-advertising,1.0,PASS
 B1000 - Receiving a letter of demand.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1000 - Receiving a letter of demand.json,Schema,Key: @context,Present,1.0,PASS
 B1000 - Receiving a letter of demand.json,Schema,Key: @type,Present,1.0,PASS
@@ -226,6 +479,38 @@ B1000 - Receiving a letter of demand.json,Links,Related Link Exists,https://ipfi
 B1000 - Receiving a letter of demand.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ADR,1.0,PASS
 B1000 - Receiving a letter of demand.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do,1.0,PASS
 B1000 - Receiving a letter of demand.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Schema,Key: @context,Present,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Schema,Key: @type,Present,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Schema,Key: headline,Present,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Schema,Key: description,Present,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Data Integrity,ID Match,E1012 == E1012,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Semantic,Headline Match,Score: 0.14,0.14035087719298245,WARN
+E1012 - I'm not happy with IP Australia - what can I do.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1012 - I'm not happy with IP Australia - what can I do.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/contact-us,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Links,Related Link Exists,https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/feedback-form,1.0,PASS
+E1012 - I'm not happy with IP Australia - what can I do.json,Links,Related Link Exists,https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct,1.0,PASS
+E1025 - Common scams.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1025 - Common scams.json,Schema,Key: @context,Present,1.0,PASS
+E1025 - Common scams.json,Schema,Key: @type,Present,1.0,PASS
+E1025 - Common scams.json,Schema,Key: headline,Present,1.0,PASS
+E1025 - Common scams.json,Schema,Key: description,Present,1.0,PASS
+E1025 - Common scams.json,Data Integrity,ID Match,E1025 == E1025,1.0,PASS
+E1025 - Common scams.json,Semantic,Headline Match,Score: 0.19,0.19047619047619047,WARN
+E1025 - Common scams.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1025 - Common scams.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.lawsociety.com.au/register-of-solicitors,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.scamwatch.gov.au/,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.cyber.gov.au/report-and-recover/report,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",0.0,WARN
+E1025 - Common scams.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip,1.0,PASS
+E1025 - Common scams.json,Links,Related Link Exists,https://www.qls.com.au/register-of-solicitors,1.0,PASS
 E1001 - Is my business name my IP.json,Structure,JSON Syntax,Valid,1.0,PASS
 E1001 - Is my business name my IP.json,Schema,Key: @context,Present,1.0,PASS
 E1001 - Is my business name my IP.json,Schema,Key: @type,Present,1.0,PASS
@@ -272,6 +557,18 @@ D1012 - Obtain legal advice on your enforcement options.json,Links,Related Link 
 D1012 - Obtain legal advice on your enforcement options.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1012 - Obtain legal advice on your enforcement options.json,Links,Related Link Exists,https://www.artslaw.com.au/services/legal-query-form/,1.0,PASS
 D1012 - Obtain legal advice on your enforcement options.json,Links,Related Link Exists,https://www.copyright.org.au/legal-advice/,1.0,PASS
+E1005 - Is it worth registering my IP.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1005 - Is it worth registering my IP.json,Schema,Key: @context,Present,1.0,PASS
+E1005 - Is it worth registering my IP.json,Schema,Key: @type,Present,1.0,PASS
+E1005 - Is it worth registering my IP.json,Schema,Key: headline,Present,1.0,PASS
+E1005 - Is it worth registering my IP.json,Schema,Key: description,Present,1.0,PASS
+E1005 - Is it worth registering my IP.json,Data Integrity,ID Match,E1005 == E1005,1.0,PASS
+E1005 - Is it worth registering my IP.json,Semantic,Headline Match,Score: 0.15,0.15384615384615385,WARN
+E1005 - Is it worth registering my IP.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1005 - Is it worth registering my IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool,1.0,PASS
+E1005 - Is it worth registering my IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1005 - Is it worth registering my IP.json,Links,Related Link Exists,"https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",1.0,PASS
+E1005 - Is it worth registering my IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip,1.0,PASS
 E1008 - Does IP help me to make or save money.json,Structure,JSON Syntax,Valid,1.0,PASS
 E1008 - Does IP help me to make or save money.json,Schema,Key: @context,Present,1.0,PASS
 E1008 - Does IP help me to make or save money.json,Schema,Key: @type,Present,1.0,PASS
@@ -312,6 +609,20 @@ D1024 - Challenge the use of international domain name.json,Links,Related Link E
 D1024 - Challenge the use of international domain name.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Links,Related Link Exists,https://www.artslaw.com.au/services/legal-query-form/,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Links,Related Link Exists,https://www.copyright.org.au/legal-advice/,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Schema,Key: @context,Present,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Schema,Key: @type,Present,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Schema,Key: headline,Present,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Schema,Key: description,Present,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Data Integrity,ID Match,C1012 == C1012,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Semantic,Headline Match,Score: 0.14,0.14492753623188406,WARN
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/how-to-become-a-qualified-person,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/public-consultations/intellectual-property-policy/policy-register/section-8-of-the-pbr-act-approved-persons,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/public-consultations/intellectual-property-policy/policy-register/accreditation-and-revocation-of-qualified-persons-approved-persons-under-the-pbr-act,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person,1.0,PASS
 IPFR_TradeMarkInfringement.json,Structure,JSON Syntax,Valid,1.0,PASS
 IPFR_TradeMarkInfringement.json,Schema,Key: @context,Present,1.0,PASS
 IPFR_TradeMarkInfringement.json,Schema,Key: @type,Present,1.0,PASS
@@ -321,6 +632,99 @@ IPFR_TradeMarkInfringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 IPFR_TradeMarkInfringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 IPFR_TradeMarkInfringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks,1.0,PASS
 IPFR_TradeMarkInfringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Schema,Key: @context,Present,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Schema,Key: @type,Present,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Schema,Key: headline,Present,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Schema,Key: description,Present,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Data Integrity,ID Match,E1010 == E1010,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Semantic,Headline Match,Score: 0.20,0.20408163265306123,WARN
+E1010 - What do I do if someone copies my stuff.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1010 - What do I do if someone copies my stuff.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources,1.0,PASS
+E1010 - What do I do if someone copies my stuff.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1021 - Is there a global IP office.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1021 - Is there a global IP office.json,Schema,Key: @context,Present,1.0,PASS
+E1021 - Is there a global IP office.json,Schema,Key: @type,Present,1.0,PASS
+E1021 - Is there a global IP office.json,Schema,Key: headline,Present,1.0,PASS
+E1021 - Is there a global IP office.json,Schema,Key: description,Present,1.0,PASS
+E1021 - Is there a global IP office.json,Data Integrity,ID Match,E1021 == E1021,1.0,PASS
+E1021 - Is there a global IP office.json,Semantic,Headline Match,Score: 0.16,0.16216216216216217,WARN
+E1021 - Is there a global IP office.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1021 - Is there a global IP office.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1021 - Is there a global IP office.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",1.0,PASS
+E1021 - Is there a global IP office.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement,1.0,PASS
+E1021 - Is there a global IP office.json,Links,Related Link Exists,https://www.wipo.int/about-wipo/en/,1.0,PASS
+E1021 - Is there a global IP office.json,Links,Related Link Exists,https://www.wipo.int/en/web/pct-system,1.0,PASS
+E1021 - Is there a global IP office.json,Links,Related Link Exists,https://www.wipo.int/en/web/madrid-system,1.0,PASS
+E1021 - Is there a global IP office.json,Links,Related Link Exists,https://www.wipo.int/en/web/hague-system,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Schema,Key: @context,Present,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Schema,Key: @type,Present,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Schema,Key: headline,Present,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Schema,Key: description,Present,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Data Integrity,ID Match,D1040 == D1040,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Semantic,Headline Match,Score: 0.13,0.12698412698412698,WARN
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://www.productsafety.gov.au/business/recall-an-unsafe-product,1.0,PASS
+C1011 - Check your idea against existing patents..json,Structure,JSON Syntax,Valid,1.0,PASS
+C1011 - Check your idea against existing patents..json,Schema,Key: @context,Present,1.0,PASS
+C1011 - Check your idea against existing patents..json,Schema,Key: @type,Present,1.0,PASS
+C1011 - Check your idea against existing patents..json,Schema,Key: headline,Present,1.0,PASS
+C1011 - Check your idea against existing patents..json,Schema,Key: description,Present,1.0,PASS
+C1011 - Check your idea against existing patents..json,Data Integrity,ID Match,C1011 == C1011,1.0,PASS
+C1011 - Check your idea against existing patents..json,Semantic,Headline Match,Score: 0.16,0.16,WARN
+C1011 - Check your idea against existing patents..json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://worldwide.espacenet.com/,1.0,PASS
+C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://ipsearch.ipaustralia.gov.au/patents/,1.0,PASS
+C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://www.lens.org/,1.0,PASS
+C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents/search-existing-patents,1.0,PASS
+C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Structure,JSON Syntax,Valid,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Schema,Key: @context,Present,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Schema,Key: @type,Present,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Schema,Key: headline,Present,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Schema,Key: description,Present,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Data Integrity,ID Match,D1018 == D1018,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Semantic,Headline Match,Score: 0.13,0.13043478260869565,WARN
+"D1018 - Seek binding, authoritative decisions.json",Semantic,Description Match,Score: 0.00,0.0,WARN
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,"https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Schema,Key: @context,Present,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Schema,Key: @type,Present,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Schema,Key: headline,Present,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Schema,Key: description,Present,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Semantic,Headline Match,Score: 0.19,0.1935483870967742,WARN
+101-1 - How to avoid infringing others' intellectual property.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+101-1 - How to avoid infringing others' intellectual property.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/designs/search/quick,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Links,Related Link Exists,https://ipsearch.ipaustralia.gov.au/pbr/,1.0,PASS
+101-1 - How to avoid infringing others' intellectual property.json,Links,Related Link Exists,https://ipsearch.ipaustralia.gov.au/patents/,1.0,PASS
+B1009 - Challenge a granted patent.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1009 - Challenge a granted patent.json,Schema,Key: @context,Present,1.0,PASS
+B1009 - Challenge a granted patent.json,Schema,Key: @type,Present,1.0,PASS
+B1009 - Challenge a granted patent.json,Schema,Key: headline,Present,1.0,PASS
+B1009 - Challenge a granted patent.json,Schema,Key: description,Present,1.0,PASS
+B1009 - Challenge a granted patent.json,Data Integrity,ID Match,B1009 == B1009,1.0,PASS
+B1009 - Challenge a granted patent.json,Semantic,Headline Match,Score: 0.17,0.17142857142857143,WARN
+B1009 - Challenge a granted patent.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1009 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent,1.0,PASS
+B1009 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+B1009 - Challenge a granted patent.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 E1000 - What is IP and how does it protect me.json,Structure,JSON Syntax,Valid,1.0,PASS
 E1000 - What is IP and how does it protect me.json,Schema,Key: @context,Present,1.0,PASS
 E1000 - What is IP and how does it protect me.json,Schema,Key: @type,Present,1.0,PASS
@@ -347,6 +751,43 @@ D1018 - Court - Patent.json,Links,Related Link Exists,https://www.ipaustralia.go
 D1018 - Court - Patent.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1018 - Court - Patent.json,Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23,1.0,PASS
 D1018 - Court - Patent.json,Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Schema,Key: @context,Present,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Schema,Key: @type,Present,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Schema,Key: headline,Present,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Schema,Key: description,Present,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Data Integrity,ID Match,D1017 == D1017,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Semantic,Headline Match,Score: 0.14,0.14285714285714285,WARN
+D1017 - Challenge a new or amended patent.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1017 - Challenge a new or amended patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1017 - Challenge a new or amended patent.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Schema,Key: @context,Present,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Schema,Key: @type,Present,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Schema,Key: headline,Present,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Schema,Key: description,Present,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Data Integrity,ID Match,C1007 == C1007,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Semantic,Headline Match,Score: 0.24,0.23529411764705882,WARN
+C1007 - Explore opportunities by licensing  your IP.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://www.wipo.int/en/web/business/assignment-licensing,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/commercialisation-and-collaboration,1.0,PASS
+C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Schema,Key: @context,Present,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Schema,Key: @type,Present,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Schema,Key: headline,Present,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Schema,Key: description,Present,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Data Integrity,ID Match,E1014 == E1014,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Semantic,Headline Match,Score: 0.11,0.11320754716981132,WARN
+E1014 - What can I expect from a lawyer or attorney.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1014 - What can I expect from a lawyer or attorney.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
+E1014 - What can I expect from a lawyer or attorney.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement,1.0,PASS
 IPFR_ApplyDesignRightRegisterYourDesign.json,Structure,JSON Syntax,Valid,1.0,PASS
 IPFR_ApplyDesignRightRegisterYourDesign.json,Schema,Key: @context,Present,1.0,PASS
 IPFR_ApplyDesignRightRegisterYourDesign.json,Schema,Key: @type,Present,1.0,PASS
@@ -367,6 +808,78 @@ D1001 - Choose to rebrand to avoid potential IP conflicts.json,Links,Related Lin
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick?_gl=1*15n3dc*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjMwNzQ0NC42LjEuMTczNjMwOTQwOC4wLjAuMA..,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+D1019 - Challenge a granted patent.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1019 - Challenge a granted patent.json,Schema,Key: @context,Present,1.0,PASS
+D1019 - Challenge a granted patent.json,Schema,Key: @type,Present,1.0,PASS
+D1019 - Challenge a granted patent.json,Schema,Key: headline,Present,1.0,PASS
+D1019 - Challenge a granted patent.json,Schema,Key: description,Present,1.0,PASS
+D1019 - Challenge a granted patent.json,Data Integrity,ID Match,JSON: B1009 vs File: D1019,0.0,FAIL
+D1019 - Challenge a granted patent.json,Semantic,Headline Match,Score: 0.17,0.17142857142857143,WARN
+D1019 - Challenge a granted patent.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1019 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent,1.0,PASS
+D1019 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1019 - Challenge a granted patent.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Structure,JSON Syntax,Valid,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Schema,Key: @context,Present,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Schema,Key: @type,Present,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Schema,Key: headline,Present,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Schema,Key: description,Present,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Data Integrity,ID Match,D1084 == D1084,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Semantic,Headline Match,Score: 0.00,0.0,WARN
+"D1084 - Seek binding, authoritative decisions.json",Semantic,Description Match,Score: 0.00,0.0,WARN
+"D1084 - Seek binding, authoritative decisions.json",Links,Related Link Exists,"https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+D1080 - Choosing the right IP professional.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1080 - Choosing the right IP professional.json,Schema,Key: @context,Present,1.0,PASS
+D1080 - Choosing the right IP professional.json,Schema,Key: @type,Present,1.0,PASS
+D1080 - Choosing the right IP professional.json,Schema,Key: headline,Present,1.0,PASS
+D1080 - Choosing the right IP professional.json,Schema,Key: description,Present,1.0,PASS
+D1080 - Choosing the right IP professional.json,Data Integrity,ID Match,D1080 == D1080,1.0,PASS
+D1080 - Choosing the right IP professional.json,Semantic,Headline Match,Score: 0.19,0.18604651162790697,WARN
+D1080 - Choosing the right IP professional.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.liv.asn.au/legalhelp,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.youandthelaw.com.au/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.lawsociety.com.au/register-of-solicitors,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.lst.org.au/find-a-lawyer/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.actlawsociety.asn.au/find-a-lawyer,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://lawsocietywa.asn.au/services/find-a-lawyer/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ami.org.au/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.franchise.org.au/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/,1.0,PASS
+D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.business.gov.au/,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Schema,Key: @context,Present,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Schema,Key: @type,Present,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Schema,Key: headline,Present,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Schema,Key: description,Present,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Data Integrity,ID Match,E1020 == E1020,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Semantic,Headline Match,Score: 0.20,0.19607843137254902,WARN
+E1020 - Can I protect my ideas in other countries.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/international-cooperation/the-hague-system,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.wipo.int/en/web/madrid-system,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.wipo.int/en/web/pct-system,1.0,PASS
+E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Schema,Key: description,Present,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Semantic,Description Match,Score: 1.00,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Schema,Key: @context,Present,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Schema,Key: @type,Present,1.0,PASS
@@ -401,6 +914,30 @@ B1016 - Considerations when responding to international accusations.json,Links,R
 B1016 - Considerations when responding to international accusations.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources/~/-/media/Project/IPA/IPAustralia/PDF/Business-advisory-guide/About-Exporting-Fact-sheet.pdf?rev=06438fd5dbc847298783cbb2695fcbb2%E2%80%AF%E2%80%AF,1.0,PASS
 B1016 - Considerations when responding to international accusations.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
 B1016 - Considerations when responding to international accusations.json,Links,Related Link Exists,https://www.exportfinance.gov.au/media/dfqlxv3g/protecting-your-intellectual-property-internationally-ebook.pdf,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Schema,Key: @context,Present,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Schema,Key: @type,Present,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Schema,Key: headline,Present,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Schema,Key: description,Present,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Data Integrity,ID Match,D1014 == D1014,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Semantic,Headline Match,Score: 0.12,0.11764705882352941,WARN
+D1014 - resolve conflicts with the help of experienced facilitators.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/mediation,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/arbitration,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.asbfeo.gov.au/,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://acica.org.au/,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://disputescentre.com.au/,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.copyright.org.au/legal-advice/,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.education.gov.au/hercip,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1005 - Court - Trade mark.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1005 - Court - Trade mark.json,Schema,Key: @context,Present,1.0,PASS
 D1005 - Court - Trade mark.json,Schema,Key: @type,Present,1.0,PASS
@@ -417,6 +954,28 @@ D1005 - Court - Trade mark.json,Links,Related Link Exists,https://www.ipaustrali
 D1005 - Court - Trade mark.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1005 - Court - Trade mark.json,Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23,1.0,PASS
 D1005 - Court - Trade mark.json,Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Schema,Key: @context,Present,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Schema,Key: @type,Present,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Schema,Key: headline,Present,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Schema,Key: description,Present,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Data Integrity,ID Match,D1036 == D1036,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Semantic,Headline Match,Score: 0.18,0.17543859649122806,WARN
+D1036 - Considerations before enforcing your IP overseas.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.ag.gov.au/rights-and-protections/copyright/copyright-basics,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/helpful-info-page,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.wipo.int/directory/en/urls.jsp,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/what-is-international-ip,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources/ip-basics,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/business-resources/~/-/media/Project/IPA/IPAustralia/PDF/Business-advisory-guide/About-Exporting-Fact-sheet.pdf?rev=06438fd5dbc847298783cbb2695fcbb2%E2%80%AF%E2%80%AF,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.exportfinance.gov.au/media/dfqlxv3g/protecting-your-intellectual-property-internationally-ebook.pdf,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.artslaw.com.au/services/legal-query-form/,1.0,PASS
+D1036 - Considerations before enforcing your IP overseas.json,Links,Related Link Exists,https://www.copyright.org.au/legal-advice/,1.0,PASS
 D1006 - Mediation.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1006 - Mediation.json,Schema,Key: @context,Present,1.0,PASS
 D1006 - Mediation.json,Schema,Key: @type,Present,1.0,PASS
@@ -471,6 +1030,20 @@ D1002 - Stop infringing goods entering the country.json,Links,Related Link Exist
 D1002 - Stop infringing goods entering the country.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Links,Related Link Exists,https://www.artslaw.com.au/services/legal-query-form/,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Links,Related Link Exists,https://www.copyright.org.au/legal-advice/,1.0,PASS
+B1005 - Register your trade mark.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1005 - Register your trade mark.json,Schema,Key: @context,Present,1.0,PASS
+B1005 - Register your trade mark.json,Schema,Key: @type,Present,1.0,PASS
+B1005 - Register your trade mark.json,Schema,Key: headline,Present,1.0,PASS
+B1005 - Register your trade mark.json,Schema,Key: description,Present,1.0,PASS
+B1005 - Register your trade mark.json,Data Integrity,ID Match,B1005 == B1005,1.0,PASS
+B1005 - Register your trade mark.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+B1005 - Register your trade mark.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1005 - Register your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks,1.0,PASS
+B1005 - Register your trade mark.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+B1005 - Register your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker,1.0,PASS
+B1005 - Register your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart,1.0,PASS
+B1005 - Register your trade mark.json,Links,Related Link Exists,https://tmgns.search.ipaustralia.gov.au/,1.0,PASS
+B1005 - Register your trade mark.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Schema,Key: @context,Present,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Schema,Key: @type,Present,1.0,PASS
@@ -496,6 +1069,57 @@ D1029 - Resolve IP issues with the help of a third party.json,Links,Related Link
 D1029 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.wipo.int/amc/en/arbitration/fees/,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Structure,JSON Syntax,Valid,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Schema,Key: @context,Present,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Schema,Key: @type,Present,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Schema,Key: headline,Present,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Schema,Key: description,Present,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Data Integrity,ID Match,D1030 == D1030,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Semantic,Headline Match,Score: 0.10,0.1,WARN
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Schema,Key: @context,Present,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Schema,Key: @type,Present,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Schema,Key: headline,Present,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Schema,Key: description,Present,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Data Integrity,ID Match,C1006 == C1006,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Semantic,Headline Match,Score: 0.19,0.1891891891891892,WARN
+C1006 - Help customers differentiate between your products and lookalikes.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1006 - Help customers differentiate between your products and lookalikes.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip,1.0,PASS
+C1006 - Help customers differentiate between your products and lookalikes.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Schema,Key: @context,Present,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Schema,Key: @type,Present,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Schema,Key: headline,Present,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Schema,Key: description,Present,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Semantic,Description Match,Score: 1.00,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ADR,1.0,PASS
+101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Schema,Key: @context,Present,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Schema,Key: @type,Present,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Schema,Key: headline,Present,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Schema,Key: description,Present,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Data Integrity,ID Match,B1006 == B1006,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Semantic,Headline Match,Score: 0.06,0.06349206349206349,WARN
+B1006 - Respond to an opposition filed against your trade mark.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://portal.ipaustralia.gov.au/,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-opposition,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip,1.0,PASS
 E1002 - What IP protection means for my business.json,Structure,JSON Syntax,Valid,1.0,PASS
 E1002 - What IP protection means for my business.json,Schema,Key: @context,Present,1.0,PASS
 E1002 - What IP protection means for my business.json,Schema,Key: @type,Present,1.0,PASS
@@ -529,6 +1153,69 @@ IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://ww
 IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip,1.0,PASS
 IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/,1.0,PASS
 IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces,1.0,PASS
+101-10 - What is IP Infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-10 - What is IP Infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-10 - What is IP Infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-10 - What is IP Infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-10 - What is IP Infringement.json,Schema,Key: description,Present,1.0,PASS
+101-10 - What is IP Infringement.json,Semantic,Headline Match,Score: 0.25,0.25,WARN
+101-10 - What is IP Infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement,1.0,PASS
+101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement,1.0,PASS
+101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement,1.0,PASS
+101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement,1.0,PASS
+101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,1.0,PASS
+101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Schema,Key: @context,Present,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Schema,Key: @type,Present,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Schema,Key: headline,Present,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Schema,Key: description,Present,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Data Integrity,ID Match,E1015 == E1015,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Semantic,Headline Match,Score: 0.12,0.11764705882352941,WARN
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement,1.0,PASS
+E1015 - When do I need a lawyer or attorney to deal with IP issues.json,Links,Related Link Exists,https://www.artslaw.com.au/legal/raw-law/legal-help-who-can-you-go-to/,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Schema,Key: @context,Present,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Schema,Key: @type,Present,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Schema,Key: headline,Present,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Schema,Key: description,Present,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Data Integrity,ID Match,E1018 == E1018,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Semantic,Headline Match,Score: 0.16,0.16326530612244897,WARN
+E1018 - What happens in an IP Australia hearing.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1018 - What happens in an IP Australia hearing.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0,1.0,PASS
+E1018 - What happens in an IP Australia hearing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Structure,JSON Syntax,Valid,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Schema,Key: @context,Present,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Schema,Key: @type,Present,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Schema,Key: headline,Present,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Schema,Key: description,Present,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Data Integrity,ID Match,D1005 == D1005,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Semantic,Headline Match,Score: 0.13,0.13043478260869565,WARN
+"D1005 - Seek binding, authoritative decisions.json",Semantic,Description Match,Score: 0.00,0.0,WARN
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Schema,Key: @context,Present,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Schema,Key: @type,Present,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Schema,Key: headline,Present,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Schema,Key: description,Present,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Data Integrity,ID Match,D1013 == D1013,1.0,PASS
+D1013 - Coverage against potential future costs related to infringement.json,Semantic,Headline Match,Score: 0.11,0.1111111111111111,WARN
+D1013 - Coverage against potential future costs related to infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 IPFR_WhatIpInfringement.json,Structure,JSON Syntax,Valid,1.0,PASS
 IPFR_WhatIpInfringement.json,Schema,Key: @context,Present,1.0,PASS
 IPFR_WhatIpInfringement.json,Schema,Key: @type,Present,1.0,PASS
@@ -542,6 +1229,48 @@ IPFR_WhatIpInfringement.json,Links,Related Link Exists,https://ipfirstresponse.i
 IPFR_WhatIpInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement,1.0,PASS
 IPFR_WhatIpInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,1.0,PASS
 IPFR_WhatIpInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Schema,Key: @context,Present,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Schema,Key: @type,Present,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Schema,Key: headline,Present,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Schema,Key: description,Present,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Data Integrity,ID Match,C1014 == C1014,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Semantic,Headline Match,Score: 0.10,0.1016949152542373,WARN
+C1014 - Register your right to use your design exclusively.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://portal.ipaustralia.gov.au/login,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs,1.0,PASS
+C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Schema,Key: @context,Present,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Schema,Key: @type,Present,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Schema,Key: headline,Present,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Schema,Key: description,Present,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Data Integrity,ID Match,D1003 == D1003,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Semantic,Headline Match,Score: 0.10,0.10344827586206896,WARN
+D1003 - Access help tailored to resolve business disputes.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1003 - Access help tailored to resolve business disputes.json,Links,Related Link Exists,https://www.asbfeo.gov.au/disputes-assistance/dispute-support,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Links,Related Link Exists,https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1003 - Access help tailored to resolve business disputes.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Schema,Key: @context,Present,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Schema,Key: @type,Present,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Schema,Key: headline,Present,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Schema,Key: description,Present,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Data Integrity,ID Match,B1021 == B1021,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Semantic,Headline Match,Score: 0.13,0.13157894736842105,WARN
+B1021 - Request confirmation that someone else's registered design is valid.json,Semantic,Description Match,Score: 1.00,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/design/amending-a-registration,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/what-are-design-rights,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
 B1018 - Oppose an IP infringement notice from an online marketplace.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1018 - Oppose an IP infringement notice from an online marketplace.json,Schema,Key: @context,Present,1.0,PASS
 B1018 - Oppose an IP infringement notice from an online marketplace.json,Schema,Key: @type,Present,1.0,PASS
@@ -558,6 +1287,44 @@ B1018 - Oppose an IP infringement notice from an online marketplace.json,Links,R
 B1018 - Oppose an IP infringement notice from an online marketplace.json,Links,Related Link Exists,https://www.etsy.com/legal/ip/,1.0,PASS
 B1018 - Oppose an IP infringement notice from an online marketplace.json,Links,Related Link Exists,https://ipp.shein.com/ipp?language=en,1.0,PASS
 B1018 - Oppose an IP infringement notice from an online marketplace.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Structure,JSON Syntax,Valid,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Schema,Key: @context,Present,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Schema,Key: @type,Present,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Schema,Key: headline,Present,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Schema,Key: description,Present,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Data Integrity,ID Match,D1033 == D1033,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Semantic,Headline Match,Score: 0.11,0.11267605633802817,WARN
+D1033 - Provide an opportunity for the other party to stop infringing..json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/infringement-101,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+101-6 - Unregistered trade marks.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-6 - Unregistered trade marks.json,Schema,Key: @context,Present,1.0,PASS
+101-6 - Unregistered trade marks.json,Schema,Key: @type,Present,1.0,PASS
+101-6 - Unregistered trade marks.json,Schema,Key: headline,Present,1.0,PASS
+101-6 - Unregistered trade marks.json,Schema,Key: description,Present,1.0,PASS
+101-6 - Unregistered trade marks.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-6 - Unregistered trade marks.json,Semantic,Description Match,Score: 0.50,0.5,WARN
+"D1087 - Seek binding, authoritative decisions.json",Structure,JSON Syntax,Valid,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Schema,Key: @context,Present,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Schema,Key: @type,Present,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Schema,Key: headline,Present,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Schema,Key: description,Present,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Data Integrity,ID Match,D1087 == D1087,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Semantic,Headline Match,Score: 0.13,0.13043478260869565,WARN
+"D1087 - Seek binding, authoritative decisions.json",Semantic,Description Match,Score: 0.00,0.0,WARN
+"D1087 - Seek binding, authoritative decisions.json",Links,Related Link Exists,"https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
 D1003 - ASBFEO.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1003 - ASBFEO.json,Schema,Key: @context,Present,1.0,PASS
 D1003 - ASBFEO.json,Schema,Key: @type,Present,1.0,PASS
@@ -597,6 +1364,55 @@ C1002 - Detect and discourage potential infringement in your supply chain.json,L
 C1002 - Detect and discourage potential infringement in your supply chain.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Links,Related Link Exists,https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Schema,Key: @context,Present,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Schema,Key: @type,Present,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Schema,Key: headline,Present,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Schema,Key: description,Present,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Data Integrity,ID Match,E1011 == E1011,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Semantic,Headline Match,Score: 0.20,0.2,WARN
+E1011 - Can I get in trouble for using IP that is not mine.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents/search-existing-patents,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://www.ag.gov.au/rights-and-protections/copyright/copyright-basics,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Structure,JSON Syntax,Valid,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Schema,Key: @context,Present,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Schema,Key: @type,Present,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Schema,Key: headline,Present,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Schema,Key: description,Present,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Data Integrity,ID Match,B1010 == B1010,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Semantic,Headline Match,Score: 0.04,0.03571428571428571,WARN
+"B1010 - Report a scam, fraud or risk to public interest.json",Semantic,Description Match,Score: 0.00,0.0,WARN
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.scamwatch.gov.au/report-a-scam,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.cyber.gov.au/report-and-recover/where-get-help,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.cyber.gov.au/report-and-recover/report,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.scamwatch.gov.au/research-and-resources/scam-statistics,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.scamwatch.gov.au/,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.afp.gov.au/crimes/cybercrime,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Links,Related Link Exists,https://www.afp.gov.au/crimes/fraud-and-corruption,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Schema,Key: @context,Present,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Schema,Key: @type,Present,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Schema,Key: headline,Present,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Schema,Key: description,Present,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Data Integrity,ID Match,E1019 == E1019,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Semantic,Headline Match,Score: 0.18,0.17777777777777778,WARN
+E1019 - Does my Australian ip work overseas.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https://www.wipo.int/en/web/madrid-system,1.0,PASS
+E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https://www.wipo.int/en/web/pct-system,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Structure,JSON Syntax,Valid,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Schema,Key: @context,Present,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Schema,Key: @type,Present,1.0,PASS
@@ -613,6 +1429,15 @@ C1002 - Detect and discourage potential infringement in your supply chain.json,L
 "B1015 - Assert your rights, as a response to an accusation.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options,1.0,PASS
+101-8 - Trade mark infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-8 - Trade mark infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-8 - Trade mark infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-8 - Trade mark infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-8 - Trade mark infringement.json,Schema,Key: description,Present,1.0,PASS
+101-8 - Trade mark infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-8 - Trade mark infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+101-8 - Trade mark infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks,1.0,PASS
+101-8 - Trade mark infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Schema,Key: @context,Present,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Schema,Key: @type,Present,1.0,PASS
@@ -667,6 +1492,48 @@ IPFR_ProvideOpportunityStopInfringement.json,Links,Related Link Exists,https://w
 IPFR_ProvideOpportunityStopInfringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Structure,JSON Syntax,Valid,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Schema,Key: @context,Present,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Schema,Key: @type,Present,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Schema,Key: headline,Present,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Schema,Key: description,Present,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Data Integrity,ID Match,E1013 == E1013,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Semantic,Headline Match,Score: 0.10,0.09523809523809523,WARN
+E1013 - How can I make a complaint about a lawyer or attorney.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,https://www.actlawsociety.asn.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,http://www.olsc.nsw.gov.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,http://lawsocietynt.asn.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,http://www.lsc.qld.gov.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,https://lpcc.sa.gov.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,https://www.lst.org.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,http://www.lsbc.vic.gov.au/,1.0,PASS
+E1013 - How can I make a complaint about a lawyer or attorney.json,Links,Related Link Exists,http://www.lpbwa.org.au/,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Schema,Key: @context,Present,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Schema,Key: @type,Present,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Schema,Key: headline,Present,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Schema,Key: description,Present,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Data Integrity,ID Match,D1067 == D1067,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Semantic,Headline Match,Score: 0.10,0.0967741935483871,WARN
+D1067 - Prevent a patent under examination from being granted.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://portal.ipaustralia.gov.au/login,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0,1.0,PASS
+D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/court-patents,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Schema,Key: @context,Present,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Schema,Key: @type,Present,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Schema,Key: headline,Present,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Schema,Key: description,Present,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Data Integrity,ID Match,C1015 == C1015,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Semantic,Headline Match,Score: 0.03,0.028169014084507043,WARN
+C1015 - Apply for a patent to protect your invention from being copied.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1015 - Apply for a patent to protect your invention from being copied.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents/how-to-apply-for-a-standard-patent,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+C1015 - Apply for a patent to protect your invention from being copied.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Schema,Key: @context,Present,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Schema,Key: @type,Present,1.0,PASS
@@ -688,6 +1555,49 @@ D1038 - Notify online marketplaces of infringement on their platform.json,Links,
 D1038 - Notify online marketplaces of infringement on their platform.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Links,Related Link Exists,https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Links,Related Link Exists,https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Schema,Key: @context,Present,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Schema,Key: @type,Present,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Schema,Key: headline,Present,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Schema,Key: description,Present,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Data Integrity,ID Match,C1009 == C1009,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Semantic,Headline Match,Score: 0.14,0.13559322033898305,WARN
+C1009 - Plan how IP disputes will be handled via contracts.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://amc.wipo.int/clause-generator/,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://www.wipo.int/portal/en/index.html,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ADR,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,mailto:arbiter.mail@wipo.int,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://www.wipo.int/amc/en/film/fees/index.html,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://www.wipo.int/amc/en/clauses/index.html,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/mediation,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/arbitration,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+C1020 - Check your design against existing designs.json,Structure,JSON Syntax,Valid,1.0,PASS
+C1020 - Check your design against existing designs.json,Schema,Key: @context,Present,1.0,PASS
+C1020 - Check your design against existing designs.json,Schema,Key: @type,Present,1.0,PASS
+C1020 - Check your design against existing designs.json,Schema,Key: headline,Present,1.0,PASS
+C1020 - Check your design against existing designs.json,Schema,Key: description,Present,1.0,PASS
+C1020 - Check your design against existing designs.json,Data Integrity,ID Match,C1020 == C1020,1.0,PASS
+C1020 - Check your design against existing designs.json,Semantic,Headline Match,Score: 0.12,0.11764705882352941,WARN
+C1020 - Check your design against existing designs.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/designs/search/quick,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://designdb.wipo.int/designdb/en/,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://www.tmdn.org/tmdsview-web/#/dsview,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid,1.0,PASS
+C1020 - Check your design against existing designs.json,Links,Related Link Exists,https://www.tmdn.org/tmdsview-web/,1.0,PASS
+101-5 - Copyright infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-5 - Copyright infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-5 - Copyright infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-5 - Copyright infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-5 - Copyright infringement.json,Schema,Key: description,Present,1.0,PASS
+101-5 - Copyright infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
+101-5 - Copyright infringement.json,Semantic,Description Match,Score: 1.00,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Schema,Key: @context,Present,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Schema,Key: @type,Present,1.0,PASS
@@ -703,6 +1613,22 @@ D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,ht
 D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/contact-us,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Schema,Key: @context,Present,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Schema,Key: @type,Present,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Schema,Key: headline,Present,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Schema,Key: description,Present,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Data Integrity,ID Match,B1019 == B1019,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Semantic,Headline Match,Score: 0.11,0.10526315789473684,WARN
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/notice-of-intention-to-oppose,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/trademark,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms,1.0,PASS
+B1019 - Challenge the registration of a new trade mark to defend your right.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Structure,JSON Syntax,Valid,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Schema,Key: @context,Present,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Schema,Key: @type,Present,1.0,PASS
@@ -714,6 +1640,21 @@ D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,ht
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Links,Related Link Exists,https://www.wipo.int/en/web/business/ip-audit,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Links,Related Link Exists,https://www.wipo.int/en/web/wipo-ip-diagnostics,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Schema,Key: @context,Present,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Schema,Key: @type,Present,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Schema,Key: headline,Present,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Schema,Key: description,Present,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Data Integrity,ID Match,B1007 == B1007,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Semantic,Headline Match,Score: 0.07,0.06779661016949153,WARN
+B1007 - Respond to an opposition filed against your patent.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents/how-to-respond-to-an-opposition,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Structure,JSON Syntax,Valid,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Schema,Key: @context,Present,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Schema,Key: @type,Present,1.0,PASS
@@ -736,3 +1677,85 @@ C1013 - Monitor the trade mark register and market for competitor activity.json,
 C1013 - Monitor the trade mark register and market for competitor activity.json,Links,Related Link Exists,https://ipaustralia.gov.au/tm-checker,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Links,Related Link Exists,https://business.gov.au/planning/protect-your-brand-idea-or-creation/trade-mark,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Links,Related Link Exists,https://www.wipo.int/en/web/global-brand-database,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Structure,JSON Syntax,Valid,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Schema,Key: @context,Present,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Schema,Key: @type,Present,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Schema,Key: headline,Present,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Schema,Key: description,Present,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Semantic,Headline Match,Score: 0.20,0.2,WARN
+101-4 - Plant breeder's rights (PBR) infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+101-4 - Plant breeder's rights (PBR) infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety,1.0,PASS
+101-4 - Plant breeder's rights (PBR) infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Schema,Key: @context,Present,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Schema,Key: @type,Present,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Schema,Key: headline,Present,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Schema,Key: description,Present,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Data Integrity,ID Match,D1015 == D1015,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Semantic,Headline Match,Score: 0.13,0.13043478260869565,WARN
+D1015 - Remove a trade mark from the register.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1015 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Schema,Key: @context,Present,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Schema,Key: @type,Present,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Schema,Key: headline,Present,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Schema,Key: description,Present,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Data Integrity,ID Match,B1004 == B1004,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Semantic,Headline Match,Score: 0.10,0.1,WARN
+B1004 - Obtain legal advice on an accusation of infringment.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/types-of-ip,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.lawsociety.com.au/register-of-solicitors,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.liv.asn.au/legalhelp,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.youandthelaw.com.au/,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://lawsocietywa.asn.au/services/find-a-lawyer/,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.lst.org.au/find-a-lawyer/,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.actlawsociety.asn.au/find-a-lawyer,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Structure,JSON Syntax,Valid,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Schema,Key: @context,Present,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Schema,Key: @type,Present,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Schema,Key: headline,Present,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Schema,Key: description,Present,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Data Integrity,ID Match,B1003 == B1003,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Semantic,Headline Match,Score: 0.20,0.19607843137254902,WARN
+B1003 - Pause use of contested IP until resolution.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+B1003 - Pause use of contested IP until resolution.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement,1.0,PASS
+B1003 - Pause use of contested IP until resolution.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.,1.0,PASS
+D1020 - Other IP Types.json,Structure,JSON Syntax,Valid,1.0,PASS
+D1020 - Other IP Types.json,Schema,Key: @context,Present,1.0,PASS
+D1020 - Other IP Types.json,Schema,Key: @type,Present,1.0,PASS
+D1020 - Other IP Types.json,Schema,Key: headline,Present,1.0,PASS
+D1020 - Other IP Types.json,Schema,Key: description,Present,1.0,PASS
+D1020 - Other IP Types.json,Data Integrity,ID Match,D1020 == D1020,1.0,PASS
+D1020 - Other IP Types.json,Semantic,Headline Match,Score: 0.35,0.34782608695652173,WARN
+D1020 - Other IP Types.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1020 - Other IP Types.json,Links,Related Link Exists,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,mailto:ipfirstresponse@ipaustralia.gov.au,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks/geographical-indications-and-trade-marks,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.agriculture.gov.au/agriculture-land/farm-food-drought/wine-policy,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/understanding-trade-marks/types-of-trade-marks/other-types-trade-marks#Trade-marks-for-wine,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,http://www.foodstandards.gov.au/Pages/default.aspx,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/indigenous-knowledge,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.ag.gov.au/rights-and-protections/copyright,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.business.qld.gov.au/running-business/risk/ip/ip-kit/browse-ip-topics/trade-secrets,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.wipo.int/portal/en/index.html,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.dfat.gov.au/trade/organisations/wto/intellectual-property,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://international.austrade.gov.au/en/do-business-with-australia/invest-in-australia/investor-guide/running-a-business/understanding-australian-business-regulations,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
+D1020 - Other IP Types.json,Links,Related Link Exists,https://ipta.org.au/community/get-free-consultation/,1.0,PASS
