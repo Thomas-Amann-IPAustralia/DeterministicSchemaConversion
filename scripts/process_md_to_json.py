@@ -727,6 +727,7 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     json_ld = {
         "@context": "https://schema.org",
         "@type": "WebPage",
+        "@id": f"{page_url}#webpage",
         "headline": title,
         "alternativeHeadline": metadata_row.get('Overtitle', ''),
         "description": webpage_description,
