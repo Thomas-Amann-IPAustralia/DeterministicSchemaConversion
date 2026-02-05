@@ -2,14 +2,13 @@ import json
 import csv
 import os
 import glob
+import sys
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 
 # Configuration
-# Assumes script is run from the repository root
 JSON_DIR = 'json_output-enriched'
 HTML_DIR = 'IPFR-Webpages-html'
-# Updated output directory based on your request
 OUTPUT_DIR = os.path.join('reports', 'validation_reports')
 SIMILARITY_THRESHOLD = 0.85
 
@@ -77,11 +76,21 @@ def validate_file(json_path, html_path):
     return report_rows
 
 def main():
+    # Pre-flight check: Ensure input directories exist
+    if not os.path.exists(JSON_DIR):
+        print(f"CRITICAL ERROR: The directory '{JSON_DIR}' was not found.")
+        print(f"Current working directory: {os.getcwd()}")
+        print("Contents:", os.listdir('.'))
+        sys.exit(1) # Exit with error code 1 to fail the Action properly
+
     # Ensure the output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
     json_files = glob.glob(os.path.join(JSON_DIR, '*.json'))
     
+    if not json_files:
+        print(f"WARNING: No JSON files found in {JSON_DIR}. Check your paths.")
+        
     print(f"Starting validation for {len(json_files)} files...")
     
     for json_file in json_files:
