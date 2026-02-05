@@ -82,7 +82,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Provide IP Registration or Evidence of Use",
+          "name": "Provide IP Registration or Usage Evidence",
           "text": "<li>A copy of your IP registration or evidence of use.</li>"
         },
         {
@@ -107,7 +107,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "File a VeRO Counter Notice on eBay",
+          "name": "Filing a VeRO Counter Notice on eBay",
           "text": "<li>eBay: file a <a href=\"https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program\"><u>VeRO</u> </a> counter notice via email or the provided form (NOCI).</li>"
         },
         {
@@ -117,7 +117,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Submit IP Notice via Shein Portal",
+          "name": "Submit IP Notice to Shein",
           "text": "<li>Shein: submit via \"IP Notice\" portal at Shein <a href=\"https://ipp.shein.com/ipp\"><u>IPP</u> </a>.</li>"
         },
         {
@@ -209,8 +209,8 @@
     }
   ],
   "relatedLink": [
-    "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
     "https://sellercentral.amazon.com/help/hub/reference/external/201361070?locale=en-US",
+    "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
     "https://www.etsy.com/legal/ip/",
     "https://www.ttipattorney.gov.au/",
     "https://ipp.shein.com/ipp?language=en"

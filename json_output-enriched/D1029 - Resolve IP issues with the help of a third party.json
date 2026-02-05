@@ -87,17 +87,17 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Assess Willingness for Arbitration",
+          "name": "Determine Likelihood of Arbitration Agreement",
           "text": "<li>If not, is the other party likely to agree to take the dispute to an arbitrator or an arbitral institution?</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Assess Need for Expert Decision-Maker",
+          "name": "Determine if the Dispute Requires Technical Expertise",
           "text": "<li>Does the dispute concern a highly technical matter which would benefit from having a decision-maker with a high level of expertise in the specific sector or technology?</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Determine Arbitrability of Dispute",
+          "name": "Determine Arbitrability of Dispute in Relevant Jurisdictions",
           "text": "<li>Is the subject matter of the dispute considered arbitrable in relevant jurisdictions? Though most areas of IP are considered arbitrable in many jurisdictions, questions relating to validity or registrability of intellectual property are deemed as non-arbitrable in some jurisdictions.</li>"
         },
         {
@@ -107,7 +107,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Determine the Number and Expertise of Arbitrators",
+          "name": "Determine the Need for Multiple Arbitrators",
           "text": "<li>Is more than one arbitrator required? For example, do the parties come from different cultural and linguistic backgrounds? Or would it be beneficial to have both a technical expert and a legal practitioner as co-arbitrators? </li>"
         },
         {
@@ -122,7 +122,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "WIPO Arbitration and Mediation Center Information",
+          "name": "WIPO Arbitration and Mediation Center",
           "text": "<li><a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&amp;url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&amp;usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&amp;opi=89978449\">The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Center </a> offers mediation, arbitration and expert determination to enable private parties to settle their international commercial disputes. For more information, see <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes\">WIPO ADR options</a>.</li>"
         },
         {
@@ -211,14 +211,14 @@
     }
   ],
   "relatedLink": [
-    "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
-    "https://www.wipo.int/amc/en/clauses/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.wipo.int/amc/en/arbitration/fees/",
-    "https://www.fedcourt.gov.au/services/ADR/arbitration",
     "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+    "https://www.wipo.int/amc/en/arbitration/fees/",
     "https://www.education.gov.au/hercip",
-    "https://acica.org.au/"
+    "https://acica.org.au/",
+    "https://www.fedcourt.gov.au/services/ADR/arbitration",
+    "https://ipta.org.au/community/get-free-consultation/",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://www.wipo.int/amc/en/clauses/",
+    "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR"
   ]
 }

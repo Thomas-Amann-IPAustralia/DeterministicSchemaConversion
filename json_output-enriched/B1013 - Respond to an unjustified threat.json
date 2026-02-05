@@ -82,7 +82,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Gather Threat Documentation",
+          "name": "Collect Evidence",
           "text": "<li>copies of the threat and any related emails or letters</li>"
         },
         {
@@ -174,8 +174,8 @@
     }
   ],
   "relatedLink": [
-    "https://ipta.org.au/community/find-an-attorney/",
     "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
-    "https://www.fcfcoa.gov.au/gfl/gfl-fees"
+    "https://www.fcfcoa.gov.au/gfl/gfl-fees",
+    "https://ipta.org.au/community/find-an-attorney/"
   ]
 }

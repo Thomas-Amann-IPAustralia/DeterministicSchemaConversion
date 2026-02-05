@@ -108,7 +108,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Trademark Information",
+          "name": "Trade Mark Details",
           "text": "<li>Current trade mark details (e.g. registration number, priority date and its registration status).</li>"
         },
         {
@@ -118,7 +118,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Plan for Managing IP Conflicts",
+          "name": "Plan for Next Steps if You Find a Conflict",
           "text": "<li>Plan for next steps if you find a conflict <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip\"><u>Develop a strategy to manage your IP | IP Australia First Response</u></a> . You can use IP First Response's <a href=\"https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement\"><u>navigator tool for IP rights holders faced with IP infringement</u></a> for more information regarding various pathways to address an IP dispute or an infringement. </li>"
         }
       ]
@@ -205,12 +205,12 @@
     }
   ],
   "relatedLink": [
-    "https://ipaustralia.gov.au/tm-checker",
+    "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right",
     "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+    "https://ipaustralia.gov.au/tm-checker",
     "https://search.ipaustralia.gov.au/trademarks/search/quick",
     "https://www.wipo.int/en/web/global-brand-database",
     "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
-    "https://business.gov.au/planning/protect-your-brand-idea-or-creation/trade-mark",
-    "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right"
+    "https://business.gov.au/planning/protect-your-brand-idea-or-creation/trade-mark"
   ]
 }

@@ -82,7 +82,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Learn About Intellectual Property (IP) Types",
+          "name": "Learn About Intellectual Property (IP)",
           "text": "<li><a href=\"https://www.ipaustralia.gov.au/understanding-ip/types-of-ip\"><u>Learning more about IP </u> </a> and your specific IP type. Having some basic knowledge will help you to better understand the professional's advice and recommendations.</li>"
         },
         {
@@ -92,7 +92,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Access the Law Society of NSW Solicitor Register",
+          "name": "Locate a Solicitor in NSW",
           "text": "<li><a href=\"https://www.lawsociety.com.au/register-of-solicitors\">The Law Society of NSW </a></li>"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Link to Queensland Law Society",
+          "name": "Queensland Law Society Website",
           "text": "<li><a href=\"https://www.youandthelaw.com.au/\">Queensland Law Society </a></li>"
         },
         {
@@ -226,15 +226,15 @@
     }
   ],
   "relatedLink": [
+    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
+    "https://www.copyright.org.au/legal-advice/",
     "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
-    "https://www.artslaw.com.au/services/legal-query-form/",
+    "https://ipta.org.au/community/get-free-consultation/",
     "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
     "https://www.copyright.org.au/",
-    "https://www.copyright.org.au/legal-advice/",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "http://www.artslaw.com.au/",
+    "https://www.artslaw.com.au/services/legal-query-form/",
     "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
-    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney"
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+    "http://www.artslaw.com.au/"
   ]
 }
