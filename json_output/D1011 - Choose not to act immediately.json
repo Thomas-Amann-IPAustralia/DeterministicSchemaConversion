@@ -150,7 +150,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are no upfront or direct costs if you take no immediate action. However, it could be prudent to consult with an \n\n[IP  lawyer or IP attorney](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)\n\n to help you consider the situation.\nNote that there may be an indirect cost, in that allowing continued infringement may damage your business or the value of your intellectual property rights."
+            "text": "There are no upfront or direct costs if you take no immediate action. However, it could be prudent to consult with an \n\nIP  lawyer or IP attorney\n\n to help you consider the situation.\nNote that there may be an indirect cost, in that allowing continued infringement may damage your business or the value of your intellectual property rights."
           }
         },
         {
@@ -189,10 +189,30 @@
     }
   ],
   "relatedLink": [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.artslaw.com.au/services/legal-query-form/",
-    "https://www.copyright.org.au/legal-advice/"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "IP  lawyer or IP attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on enforcement options | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.artslaw.com.au/services/legal-query-form/",
+      "name": "Arts Law Centre of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.copyright.org.au/legal-advice/",
+      "name": "Australian Copyright Council"
+    }
   ]
 }

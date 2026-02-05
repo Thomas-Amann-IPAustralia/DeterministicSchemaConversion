@@ -179,9 +179,25 @@
     }
   ],
   "relatedLink": [
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+      "name": "What To Consider Before Taking Legal Action | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+      "name": "Escalate To Court | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
   ]
 }

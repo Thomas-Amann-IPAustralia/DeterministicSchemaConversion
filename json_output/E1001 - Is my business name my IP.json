@@ -92,7 +92,7 @@
           "name": "Is my business name my ip?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* *IP First Response feedback form* *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
           }
         },
         {
@@ -100,7 +100,7 @@
           "name": "**see also**?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "[Register a business name | ASIC](https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/)\n\n[Register a company | ASIC](https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/)\n\n[What are trade marks? | IP Australia](https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks)"
+            "text": "Register a business name | ASIC\n\nRegister a company | ASIC\n\nWhat are trade marks? | IP Australia"
           }
         },
         {
@@ -108,15 +108,32 @@
           "name": "Want to give us feedback?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our feedback form."
           }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
-    "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
-    "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/"
+    {
+      "@type": "WebPage",
+      "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+      "name": "*IP First Response feedback form*"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
+      "name": "Register a business name | ASIC"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
+      "name": "Register a company | ASIC"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+      "name": "What are trade marks? | IP Australia"
+    }
   ]
 }

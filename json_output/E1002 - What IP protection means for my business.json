@@ -91,10 +91,30 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/understanding-ip/types-of-ip",
-    "https://www.asbfeo.gov.au/about-us",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney#find-an-attorney",
-    "https://www.ipaustralia.gov.au/understanding-ip"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip",
+      "name": "Understanding intellectual property (IP) | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/types-of-ip",
+      "name": "Types of IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+      "name": "Someone is using my IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney#find-an-attorney",
+      "name": "How to engage an IP attorney |Trans-Tasman IP Attorneys Regulation"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.asbfeo.gov.au/about-us",
+      "name": "About us | ASBFEO"
+    }
   ]
 }

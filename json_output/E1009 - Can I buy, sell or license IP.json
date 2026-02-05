@@ -75,8 +75,20 @@
     }
   ],
   "relatedLink": [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
-    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
+      "name": "How to commercialise my IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement",
+      "name": "Agree to a formal commercial arrangement | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on enforcement options | IP Australia First Response"
+    }
   ]
 }

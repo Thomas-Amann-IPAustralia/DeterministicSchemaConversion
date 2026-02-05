@@ -108,7 +108,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "A confidentiality agreement template to protect commercial information during negotiations.\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: \n\n[Learn more about alternative dispute resolution](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)\n\n."
+          "text": "A confidentiality agreement template to protect commercial information during negotiations.\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: \n\nLearn more about alternative dispute resolution\n\n."
         }
       ]
     },
@@ -123,7 +123,7 @@
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\nOften this contact comes in the form of a cease-and-desist or a letter of demand\n\n**.**\n\n They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: \n\n[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand)\n\n.\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\nFor more information on possible commercial solutions, see IP First Response's page: \n\n[Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement)\n\n."
+            "text": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\nOften this contact comes in the form of a cease-and-desist or a letter of demand\n\n**.**\n\n They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: \n\nReceiving a letter of demand\n\n.\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\nFor more information on possible commercial solutions, see IP First Response's page: \n\nAgree to a commercial arrangement\n\n."
           }
         },
         {
@@ -194,11 +194,35 @@
     }
   ],
   "relatedLink": [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*lf25uu*_ga*OTM2NTQ2NDI2LjE3NDI5NjA5OTg.*_ga_GMT4KC15KS*czE3NDc3MDM4ODgkbzI1JGcxJHQxNzQ3NzAzOTExJGowJGwwJGgw",
-    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement"
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "Learn more about alternative dispute resolution"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+      "name": "Agree to a commercial arrangement"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
+      "name": "How to respond to accusations of IP infringement | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "IP First Response | Obtain legal advice on enforcement options"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*lf25uu*_ga*OTM2NTQ2NDI2LjE3NDI5NjA5OTg.*_ga_GMT4KC15KS*czE3NDc3MDM4ODgkbzI1JGcxJHQxNzQ3NzAzOTExJGowJGwwJGgw",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    }
   ]
 }

@@ -123,7 +123,7 @@
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It can be very stressful when someone accuses you of IP infringement. This can be even more confusing if the allegation that you are infringing someone's intellectual property (IP) appears weak or unfounded. It is a good idea to evaluate the situation and consider your options before deciding how you might deal with the infringement allegation.\n**Not taking an immediate action does not mean that you should ignore the issue. You may require some time to:**\n* Assess the other party's claims and demands relating to the alleged infringement.\n\n* Verify their identity and the validity of the rights they claim ownership of.\n\n* Consider any evidence you may have to refute their claims.\n\n* Consult with legal professionals, or to decide on your next steps.\n\n* Determine whether the letter is genuine or is fraudulent.\nFor more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on \n\n[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand)\n\n."
+            "text": "It can be very stressful when someone accuses you of IP infringement. This can be even more confusing if the allegation that you are infringing someone's intellectual property (IP) appears weak or unfounded. It is a good idea to evaluate the situation and consider your options before deciding how you might deal with the infringement allegation.\n**Not taking an immediate action does not mean that you should ignore the issue. You may require some time to:**\n* Assess the other party's claims and demands relating to the alleged infringement.\n\n* Verify their identity and the validity of the rights they claim ownership of.\n\n* Consider any evidence you may have to refute their claims.\n\n* Consult with legal professionals, or to decide on your next steps.\n\n* Determine whether the letter is genuine or is fraudulent.\nFor more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on \n\nReceiving a letter of demand\n\n."
           }
         },
         {
@@ -139,7 +139,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and,for example,commence a legal action.\n\n* If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: see[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand).\n\n* If you are actually infringing the other party's IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
+            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and,for example,commence a legal action.\n\n* If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: seeReceiving a letter of demand.\n\n* If you are actually infringing the other party's IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
           }
         },
         {
@@ -194,8 +194,20 @@
     }
   ],
   "relatedLink": [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip"
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+      "name": "IP First Response | Ceasing use of contested IP"
+    }
   ]
 }

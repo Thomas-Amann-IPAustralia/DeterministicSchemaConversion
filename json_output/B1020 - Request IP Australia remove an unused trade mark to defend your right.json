@@ -109,7 +109,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "[this form](https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use)"
+          "text": "this form"
         },
         {
           "@type": "HowToStep",
@@ -119,7 +119,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "[Manage my IP page](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings)"
+          "text": "Manage my IP page"
         },
         {
           "@type": "HowToStep",
@@ -179,7 +179,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The length of this process largely depends on whether someone opposes your application to remove for non-use.\nIf nobody opposes the application for removal within two months, the registration will be removed.\nIf the application to remove is opposed, the timing is similar to other \n\n[opposition processes](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)\n\n involving trade mark matters. The process typically takes at least 6-12 months, but can be much longer when hearings or subsequent appeals are involved."
+            "text": "The length of this process largely depends on whether someone opposes your application to remove for non-use.\nIf nobody opposes the application for removal within two months, the registration will be removed.\nIf the application to remove is opposed, the timing is similar to other \n\nopposition processes\n\n involving trade mark matters. The process typically takes at least 6-12 months, but can be much longer when hearings or subsequent appeals are involved."
           }
         },
         {
@@ -210,12 +210,50 @@
     }
   ],
   "relatedLink": [
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
-    "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use",
+      "name": "this form"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+      "name": "Manage my IP page"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+      "name": "opposition processes"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
+      "name": "Remove a trade mark from the register (non-use) | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+      "name": "Opposition and objection fees | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
+      "name": "How to challenge someone else's IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
   ]
 }

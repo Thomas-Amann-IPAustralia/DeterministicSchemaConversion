@@ -209,7 +209,7 @@
           "name": "Please note that ip rights covered vary by platform?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n\n* eBay VeRO Program allows rights owners to report suspected infringement of[trade marks, copyrights, designs and patents.](https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349)\n\n* [Etsy Intellectual Property Portal](https://www.etsy.com/au/ipreporting)lets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n\n* Shein IP Protection Platform accepts notices for[all types of IP infringement](https://www.sheingroup.com/our-business/operating-responsibly/#product-safety)(trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n\n* [Temu IP Portal](https://www.temu.com/intellectual-property-complaint.html?refer_page_name=intellectual-property-policy&refer_page_id=19457_1753084754239_fedamubrim&refer_page_sn=19457&_x_sessn_id=6yq4j50u6o)accepts notices for all types of IP infringement."
+            "text": "* Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n\n* eBay VeRO Program allows rights owners to report suspected infringement oftrade marks, copyrights, designs and patents.\n\n* Etsy Intellectual Property Portallets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n\n* Shein IP Protection Platform accepts notices forall types of IP infringement(trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n\n* Temu IP Portalaccepts notices for all types of IP infringement."
           }
         },
         {
@@ -280,10 +280,45 @@
     }
   ],
   "relatedLink": [
-    "https://sell.amazon.com/brand-registry",
-    "https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
-    "https://m.shein.com/au/copyright-noticeam-a-379.html",
-    "https://www.etsy.com/au/ipreporting"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349",
+      "name": "trade marks, copyrights, designs and patents."
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.etsy.com/au/ipreporting",
+      "name": "Etsy Intellectual Property Portal"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.sheingroup.com/our-business/operating-responsibly/#product-safety",
+      "name": "all types of IP infringement"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.temu.com/intellectual-property-complaint.html?refer_page_name=intellectual-property-policy&refer_page_id=19457_1753084754239_fedamubrim&refer_page_sn=19457&_x_sessn_id=6yq4j50u6o",
+      "name": "Temu IP Portal"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+      "name": "Stop infringement facilitated online | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://sell.amazon.com/brand-registry",
+      "name": "Amazon Brand Registry"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1",
+      "name": "VeRO Program - eBay"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://m.shein.com/au/copyright-noticeam-a-379.html",
+      "name": "Shein IP Protection Platform"
+    }
   ]
 }

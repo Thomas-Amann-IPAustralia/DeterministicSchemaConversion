@@ -98,7 +98,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "Knowledge of each platform's process, for example:Amazon: Using the[Account Health Page](https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ)to provide evidence against a notice or warning for infringement.eBay: file a[VeRO](https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program)counter notice via email or the provided form (NOCI).Etsy: use \"[What to Do if You Receive a Notice of Intellectual Property Infringement\"](https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling)page and contact the rights owner directly.Shein: submit via \"IP Notice\" portal at Shein[IPP](https://ipp.shein.com/ipp)."
+          "text": "Knowledge of each platform's process, for example:Amazon: Using theAccount Health Pageto provide evidence against a notice or warning for infringement.eBay: file aVeROcounter notice via email or the provided form (NOCI).Etsy: use \"What to Do if You Receive a Notice of Intellectual Property Infringement\"page and contact the rights owner directly.Shein: submit via \"IP Notice\" portal at SheinIPP."
         },
         {
           "@type": "HowToStep",
@@ -189,10 +189,45 @@
     }
   ],
   "relatedLink": [
-    "https://www.etsy.com/legal/ip/",
-    "https://sellercentral.amazon.com/help/hub/reference/external/201361070?locale=en-US",
-    "https://ipp.shein.com/ipp?language=en",
-    "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
-    "https://www.ttipattorney.gov.au/"
+    {
+      "@type": "WebPage",
+      "url": "https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ",
+      "name": "Account Health Page"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
+      "name": "VeRO"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling",
+      "name": "What to Do if You Receive a Notice of Intellectual Property Infringement\""
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipp.shein.com/ipp",
+      "name": "IPP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://sellercentral.amazon.com/help/hub/reference/external/201361070?locale=en-US",
+      "name": "https://sellercentral.amazon.com/help/hub/reference/external/201361070?locale=en-US"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.etsy.com/legal/ip/",
+      "name": "https://www.etsy.com/legal/ip/"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipp.shein.com/ipp?language=en",
+      "name": "https://ipp.shein.com/ipp?language=en"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/",
+      "name": "https://www"
+    }
   ]
 }

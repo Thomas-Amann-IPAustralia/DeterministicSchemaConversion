@@ -151,7 +151,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "A completed Copyright Act 1968 Security Under Section 135 - Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.\nYou can find more information in the ABF Guide to lodging a \n\n[Notice of Objection.](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)"
+          "text": "A completed Copyright Act 1968 Security Under Section 135 - Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.\nYou can find more information in the ABF Guide to lodging a \n\nNotice of Objection."
         }
       ]
     },
@@ -166,7 +166,7 @@
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer.\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.\n**Please Note:**\n\n A Notice of Objection \n\n[cannot act retrospectively](https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf)\n\n for goods/copies that have already been imported."
+            "text": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer.\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.\n**Please Note:**\n\n A Notice of Objection \n\ncannot act retrospectively\n\n for goods/copies that have already been imported."
           }
         },
         {
@@ -237,14 +237,55 @@
     }
   ],
   "relatedLink": [
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx",
-    "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
-    "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
-    "https://www.artslaw.com.au/services/legal-query-form/",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
-    "https://www.copyright.org.au/legal-advice/",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0"
+    {
+      "@type": "WebPage",
+      "url": "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
+      "name": "Notice of Objection."
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
+      "name": "cannot act retrospectively"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+      "name": "The Toyota story: What can SMEs learn from Toyota's approach to counterfeit products? | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx",
+      "name": "IPObjections | The Australian Border Force"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+      "name": "How to import intellectual property | The Australian Border Force"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.artslaw.com.au/services/legal-query-form/",
+      "name": "Arts Law Centre of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.copyright.org.au/legal-advice/",
+      "name": "Australian Copyright Council"
+    }
   ]
 }

@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "ApplyDesignRightRegisterYourDesign",
   "alternativeHeadline": "",
-  "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design](https://ipfirstresponse.ipaustralia.gov.au/options/apply-",
+  "description": "PageURL: \"https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design\"...",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
   "identifier": {
     "@type": "PropertyValue",
@@ -63,7 +63,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "ApplyDesignRightRegisterYourDesign",
-      "description": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design](https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design)\"...",
+      "description": "PageURL: \"https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design\"...",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -88,6 +88,13 @@
           }
         }
       ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design",
+      "name": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design"
     }
   ]
 }

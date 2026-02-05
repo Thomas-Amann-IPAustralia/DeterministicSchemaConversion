@@ -168,7 +168,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "here are a wide range of possible outcomes, and these will also depend on the type of court action you might take. Some possible outcomes are:\n* You might reach a negotiated settlement with the other party.\n\n* The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.\n\n* The other party's trade mark registration might be cancelled, removed or amended.\n\n* The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party's legal costs.\n\n* You could be awarded damages or compensation.\n\n* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights - including on a temporary basis while you are waiting for the court to hear your matter (see[Seek an urgent injunction](https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction)).\n\n* A decision made by IP Australia can be affirmed, reversed or varied.\n\n* Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims for*passing off*or under the Australian Consumer Law).\nIn most cases, the outcome can be appealed to a higher court."
+            "text": "here are a wide range of possible outcomes, and these will also depend on the type of court action you might take. Some possible outcomes are:\n* You might reach a negotiated settlement with the other party.\n\n* The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.\n\n* The other party's trade mark registration might be cancelled, removed or amended.\n\n* The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party's legal costs.\n\n* You could be awarded damages or compensation.\n\n* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights - including on a temporary basis while you are waiting for the court to hear your matter (seeSeek an urgent injunction).\n\n* A decision made by IP Australia can be affirmed, reversed or varied.\n\n* Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims for*passing off*or under the Australian Consumer Law).\nIn most cases, the outcome can be appealed to a higher court."
           }
         },
         {
@@ -215,12 +215,45 @@
     }
   ],
   "relatedLink": [
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23",
-    "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024",
-    "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court"
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
+      "name": "Seek an urgent injunction"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+      "name": "Escalate To Court | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
+      "name": "Rights of appeal from decisions of the Registrar | IPA Manuals"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23",
+      "name": "Annual Report 2022-2023"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024",
+      "name": "Annual Report 2023-2024"
+    }
   ]
 }

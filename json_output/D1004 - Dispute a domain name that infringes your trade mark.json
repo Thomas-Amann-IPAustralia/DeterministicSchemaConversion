@@ -121,7 +121,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "To read and understand the Schedule A and B of the[auDRP](https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties)."
+          "text": "To read and understand the Schedule A and B of theauDRP."
         },
         {
           "@type": "HowToStep",
@@ -146,7 +146,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "The .au registrant has registered and used the domain name in bad faith.\nThe \n\n[auDRP](https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01)\n\n \n\nprovides guidance on what information can be used to meet these criteria.\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*\n\n[getting professional assistance with your IP](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)\n\n*. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*\n\n[30 minute consultations with an attorney](https://ipta.org.au/community/get-free-consultation/)\n\n*.*\n\n*Copyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the*\n\n[Arts Law Centre of Australia](https://www.artslaw.com.au/services/legal-query-form/)\n\n*or no-cost advice from the*\n\n[Australian Copyright Council](https://www.copyright.org.au/legal-advice/)\n\n*.*"
+          "text": "The .au registrant has registered and used the domain name in bad faith.\nThe \n\nauDRP\n\n \n\nprovides guidance on what information can be used to meet these criteria.\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*\n\ngetting professional assistance with your IP\n\n*. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*\n\n30 minute consultations with an attorney\n\n*.*\n\n*Copyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the*\n\nArts Law Centre of Australia\n\n*or no-cost advice from the*\n\nAustralian Copyright Council\n\n*.*"
         }
       ]
     },
@@ -229,6 +229,38 @@
           }
         }
       ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
+      "name": "auDRP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
+      "name": "auDRP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.artslaw.com.au/services/legal-query-form/",
+      "name": "Arts Law Centre of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.copyright.org.au/legal-advice/",
+      "name": "Australian Copyright Council"
     }
   ]
 }

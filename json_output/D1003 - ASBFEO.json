@@ -90,7 +90,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "[Assistance Charter.](https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf)"
+          "text": "Assistance Charter."
         }
       ]
     },
@@ -105,7 +105,7 @@
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency.\nYou can access ASBFEO's \n\n[Dispute Support Tool](https://www.asbfeo.gov.au/disputes-assistance/dispute-support)\n\nto identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers.\nASBFEO can guide you through dispute resolution by:\n* Providing information to resolve your dispute in a timely and low-cost way\n\n* Engaging with the parties to encourage resolution\n\n* When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal."
+            "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency.\nYou can access ASBFEO's \n\nDispute Support Tool\n\nto identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers.\nASBFEO can guide you through dispute resolution by:\n* Providing information to resolve your dispute in a timely and low-cost way\n\n* Engaging with the parties to encourage resolution\n\n* When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal."
           }
         },
         {
@@ -176,9 +176,30 @@
     }
   ],
   "relatedLink": [
-    "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators"
+    {
+      "@type": "WebPage",
+      "url": "https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf",
+      "name": "Assistance Charter."
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+      "name": "Dispute Support Tool"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+      "name": "Alternative dispute resolution (ADR)   | IP First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
   ]
 }

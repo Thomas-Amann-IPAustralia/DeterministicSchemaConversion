@@ -176,7 +176,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "[IP audit](https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps)"
+          "text": "IP audit"
         },
         {
           "@type": "HowToStep",
@@ -267,10 +267,30 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
-    "https://www.wipo.int/en/web/business/checklist",
-    "https://www.ipaustralia.gov.au/understanding-ip"
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+      "name": "IP audit"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/en/web/business/checklist",
+      "name": "A step-by-step IP Strategy Checklist for SMEs"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip",
+      "name": "Understanding intellectual property (IP) | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+      "name": "Choosing the right IP tool | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "Get professional assistance with your IP | IP Australia"
+    }
   ]
 }

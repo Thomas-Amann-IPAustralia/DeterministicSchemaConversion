@@ -83,7 +83,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "Understanding what constitutes IP infringement, and possible consequences of contacting a suspected infringer, can help you decide if this is the right option for you.\nIt's important to get all the factual details correct and evaluate the merits of your claims before you reach out to the other party. \n\n**Making unjustified claims of IP infringement can have serious consequences. If you are found to have made an unjustified threat, you might be liable to pay damages or compensate the other party or you may be ordered to stop making the threat.**\nFor more information about how someone can take action against unjustified threats through the courts, please review \n\n[Respond to an unjustified threat | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)\nHere are some things you might wish to check and consider before talking to the other party you should consider engaging an IP lawyer or IP attorney to work through these issues with you:"
+          "text": "Understanding what constitutes IP infringement, and possible consequences of contacting a suspected infringer, can help you decide if this is the right option for you.\nIt's important to get all the factual details correct and evaluate the merits of your claims before you reach out to the other party. \n\n**Making unjustified claims of IP infringement can have serious consequences. If you are found to have made an unjustified threat, you might be liable to pay damages or compensate the other party or you may be ordered to stop making the threat.**\nFor more information about how someone can take action against unjustified threats through the courts, please review \n\nRespond to an unjustified threat | IP Australia First Response\nHere are some things you might wish to check and consider before talking to the other party you should consider engaging an IP lawyer or IP attorney to work through these issues with you:"
         },
         {
           "@type": "HowToStep",
@@ -93,7 +93,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "Whether the other party's conduct amounts to infringement, having regard to[what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim.For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services.For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent.For designs, the scope of protection would require consideration of not only the visual appearance of the product but the tangible physical product (e.g. a chair, a bottle, etc.) that the design is applied to.**Please note:**a design right can only be enforced if the right is also certified. For more information please see[Request certification for your registered design | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design)"
+          "text": "Whether the other party's conduct amounts to infringement, having regard towhat infringement looks like, to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim.For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services.For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent.For designs, the scope of protection would require consideration of not only the visual appearance of the product but the tangible physical product (e.g. a chair, a bottle, etc.) that the design is applied to.**Please note:**a design right can only be enforced if the right is also certified. For more information please seeRequest certification for your registered design | IP Australia First Response"
         },
         {
           "@type": "HowToStep",
@@ -197,18 +197,67 @@
           "name": "Exercise caution before making accusations of infringement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation or damages or an order that you stop making the threat. Proving infringement is an\u202fimportant issue that should be considered before you informally contact another party.\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*\n\n[getting professional assistance with your IP](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)\n\n*. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*\n\n[30 minute consultations with an attorney](https://ipta.org.au/community/get-free-consultation/)\n\n*.*"
+            "text": "Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation or damages or an order that you stop making the threat. Proving infringement is an\u202fimportant issue that should be considered before you informally contact another party.\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*\n\ngetting professional assistance with your IP\n\n*. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*\n\n30 minute consultations with an attorney\n\n*.*"
           }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
-    "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution"
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+      "name": "unjustified threat"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+      "name": "what infringement can look like"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+      "name": "what infringement looks like"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
+      "name": "Request certification for your registered design | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
+      "name": "Five steps to resolve your dispute | ASBFEO"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+      "name": "Your Guide to Dispute Resolution | Attorney-General's Department"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+      "name": "What To Consider Before Taking Legal Action | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+      "name": "Someone Is Using My IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    }
   ]
 }

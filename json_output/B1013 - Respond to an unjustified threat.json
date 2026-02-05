@@ -179,8 +179,20 @@
     }
   ],
   "relatedLink": [
-    "https://www.fcfcoa.gov.au/gfl/gfl-fees",
-    "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
-    "https://ipta.org.au/community/find-an-attorney/"
+    {
+      "@type": "WebPage",
+      "url": "https://www.fcfcoa.gov.au/gfl/gfl-fees",
+      "name": "Federal Court and Family Court of Australia | Fees"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
+      "name": "Federal Court of Australia | Fees"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/find-an-attorney/",
+      "name": "See an IP Professional"
+    }
   ]
 }

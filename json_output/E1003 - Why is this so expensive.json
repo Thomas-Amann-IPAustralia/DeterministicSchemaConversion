@@ -75,12 +75,40 @@
     }
   ],
   "relatedLink": [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-    "https://www.fedcourt.gov.au/services/ADR/mediation",
-    "https://www.wipo.int/amc/en/",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-    "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
-    "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options"
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+      "name": "All enforcement options | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "Resolve conflicts with the help of experienced facilitators   | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+      "name": "Someone is using my IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+      "name": "Access help tailored to resolve business disputes  | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/",
+      "name": "Alternative Dispute Resolution | WIPO AMC"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/services/ADR/mediation",
+      "name": "Mediation | Federal Court of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
+      "name": "Costs Practice Note (GPN-COSTS) | Federal Court of Australia"
+    }
   ]
 }

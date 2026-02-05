@@ -75,10 +75,30 @@
     }
   ],
   "relatedLink": [
-    "https://www.auda.org.au/au-domain-names/au-tools/",
-    "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
-    "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-    "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
+      "name": "How to search existing trade marks | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+      "name": "How to search existing patents | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+      "name": "How to search existing designs | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
+      "name": "An Introduction to Copyright in Australia - ACC - INFO010 - Australian Copyright Council"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.auda.org.au/au-domain-names/au-tools/",
+      "name": ".au tools"
+    }
   ]
 }

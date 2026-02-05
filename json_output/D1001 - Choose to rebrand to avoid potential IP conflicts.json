@@ -200,10 +200,30 @@
     }
   ],
   "relatedLink": [
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://search.ipaustralia.gov.au/trademarks/search/quick?_gl=1*15n3dc*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjMwNzQ0NC42LjEuMTczNjMwOTQwOC4wLjAuMA..",
-    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
-    "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+      "name": "TM Checker: Free trade mark availability check | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
+      "name": "Pre-Application Service (TM Headstart) | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://search.ipaustralia.gov.au/trademarks/search/quick?_gl=1*15n3dc*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjMwNzQ0NC42LjEuMTczNjMwOTQwOC4wLjAuMA..",
+      "name": "IP Australia | Trade Mark Search"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
   ]
 }

@@ -75,8 +75,40 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
-    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
-    "https://www.wipo.int/en/web/business/checklist"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+      "name": "trade marks"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+      "name": "patents"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA",
+      "name": "designs"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipsearch.ipaustralia.gov.au/pbr/",
+      "name": "plant breeders' rights"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
+      "name": "monitoring competitors"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/en/web/business/checklist",
+      "name": "A step-by-step IP Strategy Checklist for SMEs"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
+      "name": "Business Resources | IP Australia"
+    }
   ]
 }

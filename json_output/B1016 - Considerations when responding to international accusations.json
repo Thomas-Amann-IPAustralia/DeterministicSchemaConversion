@@ -88,7 +88,7 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "[Directory of Intellectual Property Offices](https://www.wipo.int/directory/en/urls.jsp)"
+          "text": "Directory of Intellectual Property Offices"
         },
         {
           "@type": "HowToStep",
@@ -156,7 +156,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As the IP system is international, it is not uncommon to be contacted by other parties who are based overseas. However, international scams are also common. For more information on assessing letters of demand and scamming, fraudulent activities concerning IP, see: \n\n[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand)\n\n, \n\n[Reporting a threat or a scam that you received](https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest)\n\n."
+            "text": "As the IP system is international, it is not uncommon to be contacted by other parties who are based overseas. However, international scams are also common. For more information on assessing letters of demand and scamming, fraudulent activities concerning IP, see: \n\nReceiving a letter of demand\n\n, \n\nReporting a threat or a scam that you received\n\n."
           }
         },
         {
@@ -179,12 +179,50 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/international-ip/what-is-international-ip",
-    "https://www.wipo.int/amc/en/",
-    "https://www.exportfinance.gov.au/media/dfqlxv3g/protecting-your-intellectual-property-internationally-ebook.pdf",
-    "https://www.ipaustralia.gov.au/tools-and-research/business-resources/ip-basics",
-    "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
-    "https://www.ipaustralia.gov.au/tools-and-research/business-resources/~/-/media/Project/IPA/IPAustralia/PDF/Business-advisory-guide/About-Exporting-Fact-sheet.pdf?rev=06438fd5dbc847298783cbb2695fcbb2%E2%80%AF%E2%80%AF",
-    "https://www.wipo.int/directory/en/urls.jsp"
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/directory/en/urls.jsp",
+      "name": "Directory of Intellectual Property Offices"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest",
+      "name": "Reporting a threat or a scam that you received"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
+      "name": "How To Apply For IP Overseas | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/international-ip/what-is-international-ip",
+      "name": "What Is International IP? | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/ip-basics",
+      "name": "IP Basics | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/~/-/media/Project/IPA/IPAustralia/PDF/Business-advisory-guide/About-Exporting-Fact-sheet.pdf?rev=06438fd5dbc847298783cbb2695fcbb2%E2%80%AF%E2%80%AF",
+      "name": "About Exporting Fact Sheet"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/",
+      "name": "WIPO Alternative Dispute Resolution Services"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.exportfinance.gov.au/media/dfqlxv3g/protecting-your-intellectual-property-internationally-ebook.pdf",
+      "name": "Protecting Your IP Internationally"
+    }
   ]
 }

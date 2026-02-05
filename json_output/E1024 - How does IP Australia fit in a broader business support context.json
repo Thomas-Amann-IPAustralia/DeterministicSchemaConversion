@@ -75,6 +75,10 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/about-us"
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/about-us",
+      "name": "About us | IP Australia"
+    }
   ]
 }
