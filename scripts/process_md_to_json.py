@@ -321,6 +321,36 @@ def clean_text_retain_formatting(text, strip_images=False):
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip()
 
+def extract_links_and_clean(text):
+    """
+    Extracts Markdown links [text](url) from text.
+    Returns: (cleaned_text, list_of_link_objects)
+    cleaned_text: string with links replaced by just their text.
+    list_of_link_objects: [{"@type": "WebPage", "url": url, "name": text}, ...]
+    """
+    if not text:
+        return text, []
+
+    found_links = []
+
+    def replace_fn(match):
+        name = match.group(1).strip()
+        url = match.group(2).strip()
+        
+        # Don't add empty links
+        if url:
+            found_links.append({
+                "@type": "WebPage",
+                "url": url,
+                "name": name if name else "Link"
+            })
+        
+        return name # Replace [name](url) with just name
+
+    # Regex matches [text](url)
+    cleaned_text = re.sub(r'\[(.*?)\]\((https?://[^\)]+)\)', replace_fn, text)
+    return cleaned_text, found_links
+
 def generate_citations_from_csv(metadata_row):
     citations = []
     raw_ip_rights = metadata_row.get('Relevant IP right', '')
@@ -375,10 +405,10 @@ def resolve_about_topics(metadata_row):
     elif len(about_entities) > 1: return about_entities
     else: return {"@type": "Thing", "name": "Intellectual Property Right"}
 
-# --- 4. EXTRACTORS (Updated for HTML) ---
+# --- 4. EXTRACTORS (Updated for HTML & Links) ---
 
 def extract_dynamic_content_html(blocks, main_description_key=None):
-    """ Extracts FAQs using blocks, now returning Markdown text. """
+    """ Extracts FAQs using blocks. Returns (content_items, collected_links). """
     IGNORED_HEADERS = {
         "intro", "description", "see also", "want to give us feedback?", 
         "references", "external links", "table of contents", "feedback", 
@@ -388,6 +418,8 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
         IGNORED_HEADERS.add(main_description_key.lower())
 
     content_items = []
+    collected_links = []
+
     for header, text_content in blocks.items():
         clean_header_key = header.lower().strip()
         
@@ -407,27 +439,27 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
              elif "risks" in clean_header_key: display_name = f"What are the risks?"
              else: display_name = f"{display_name}?"
 
+        # Extract links and strip them from the answer text
+        clean_md, links = extract_links_and_clean(text_content)
+        collected_links.extend(links)
+
         content_items.append({
             "@type": "Question",
             "name": display_name,
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": text_content # Now clean Markdown
+                "text": clean_md
             }
         })
-    return content_items
+    return content_items, collected_links
 
 def extract_howto_steps_html(blocks):
-    """ Extracts steps. If using HTML source, converts to Markdown. """
+    """ Extracts steps. Returns (steps, collected_links). """
     steps = []
+    collected_links = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     
     if target_key:
-        # blocks[target_key] is already cleaned Markdown text from parse_html_to_blocks
-        # However, to be safe regarding list parsing, we re-parse if needed, 
-        # BUT current logic cleans it early. 
-        # If we need list separation, we rely on the newlines added by clean_html_fragment
-        
         raw_text = blocks[target_key]
         
         # Split by bullet points if they exist
@@ -435,40 +467,51 @@ def extract_howto_steps_html(blocks):
              matches = raw_text.split("\n* ")
              for m in matches:
                  if not m.strip(): continue
+                 clean_step, links = extract_links_and_clean(m.strip())
+                 collected_links.extend(links)
                  steps.append({
                     "@type": "HowToStep",
                     "name": "xXx_PLACEHOLDER_xXx", 
-                    "text": m.strip()
+                    "text": clean_step
                 })
         else:
              # Fallback to paragraphs
              paragraphs = raw_text.split('\n\n')
              for p in paragraphs:
                  if not p.strip(): continue
+                 clean_step, links = extract_links_and_clean(p.strip())
+                 collected_links.extend(links)
                  steps.append({
                     "@type": "HowToStep",
                     "name": "xXx_PLACEHOLDER_xXx", 
-                    "text": p.strip()
+                    "text": clean_step
                 })
 
-    return steps
+    return steps, collected_links
 
 def extract_howto_steps_md(blocks):
-    """ Fallback MD extractor. """
+    """ Fallback MD extractor. Returns (steps, collected_links). """
     steps = []
+    collected_links = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     if target_key:
         raw_text = blocks[target_key]
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         if matches:
             for step_text in matches:
-                steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_text_retain_formatting(step_text)})
+                formatted_text = clean_text_retain_formatting(step_text)
+                clean_step, links = extract_links_and_clean(formatted_text)
+                collected_links.extend(links)
+                steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_step})
         else:
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
-                steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_text_retain_formatting(p)})
-    return steps
+                formatted_text = clean_text_retain_formatting(p)
+                clean_step, links = extract_links_and_clean(formatted_text)
+                collected_links.extend(links)
+                steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_step})
+    return steps, collected_links
 
 # --- 5. MAIN PROCESSOR ---
 
@@ -499,6 +542,8 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     archetype = archetype.strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
 
+    master_links = [] # Collector for all links
+
     # --- DESCRIPTION ---
     description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
     used_desc_key = None 
@@ -508,8 +553,11 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
             found_key = next((bk for bk in blocks.keys() if k in bk), None)
             if found_key:
                 raw_desc = blocks[found_key]
-                # blocks[found_key] is now already clean Markdown text
-                description = raw_desc[:300] + "..."
+                # Extract links and strip them from description
+                clean_desc, links = extract_links_and_clean(raw_desc)
+                master_links.extend(links)
+                
+                description = clean_desc[:300] + "..."
                 used_desc_key = found_key
                 break
 
@@ -536,9 +584,10 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
 
     # Extract Steps
     if use_html:
-        steps = extract_howto_steps_html(blocks)
+        steps, s_links = extract_howto_steps_html(blocks)
     else:
-        steps = extract_howto_steps_md(blocks)
+        steps, s_links = extract_howto_steps_md(blocks)
+    master_links.extend(s_links)
 
     if service_type == "HowTo":
         main_obj["step"] = steps
@@ -563,13 +612,18 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     # FAQs (Dynamic Content)
     faqs = []
     if use_html:
-        faqs = extract_dynamic_content_html(blocks, main_description_key=used_desc_key)
+        faqs, f_links = extract_dynamic_content_html(blocks, main_description_key=used_desc_key)
+        master_links.extend(f_links)
     else:
-        # Re-use extract logic for MD (simplified for brevity here, assuming previous logic)
+        # Re-use extract logic for MD (simplified manually here to include link extraction)
         for h, c in blocks.items():
             if h in ["intro", "description", "see also", "step"] or (used_desc_key and h == used_desc_key): continue
             q_name = h.capitalize() + ("?" if not h.endswith('?') else "")
-            faqs.append({"@type": "Question", "name": q_name, "acceptedAnswer": {"@type": "Answer", "text": clean_text_retain_formatting(c)}})
+            
+            clean_ans, links = extract_links_and_clean(clean_text_retain_formatting(c))
+            master_links.extend(links)
+            
+            faqs.append({"@type": "Question", "name": q_name, "acceptedAnswer": {"@type": "Answer", "text": clean_ans}})
 
     if faqs:
         main_entities.append({
@@ -607,13 +661,28 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "mainEntity": main_entities
     }
     
-    # Related Links extraction
+    # Related Links extraction (See Also + Captured Links)
     see_also = next((k for k in blocks.keys() if "see also" in k), None)
     if see_also:
         content = blocks[see_also]
-        # Since content is now Markdown, look for markdown links
-        links = re.findall(r'\[.*?\]\((https?://[^\)]+)\)', content)
-        if links: json_ld["relatedLink"] = list(set(links))
+        # Extract links from See Also block using the same helper to get objects
+        _, sa_links = extract_links_and_clean(content)
+        master_links.extend(sa_links)
+
+    # Deduplicate Links (by URL)
+    unique_links_map = {}
+    for lnk in master_links:
+        u = lnk['url']
+        # If url already exists, we might want to keep the one with a better name
+        if u not in unique_links_map:
+            unique_links_map[u] = lnk
+        else:
+            # If the stored name is generic "Link" but new one is specific, update it
+            if unique_links_map[u]['name'] == "Link" and lnk['name'] != "Link":
+                unique_links_map[u] = lnk
+
+    if unique_links_map:
+        json_ld["relatedLink"] = list(unique_links_map.values())
 
     out_path = os.path.join(OUTPUT_DIR, filename.replace('.md', '.json'))
     with open(out_path, 'w', encoding='utf-8') as f:
