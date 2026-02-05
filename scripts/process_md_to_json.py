@@ -25,7 +25,6 @@ LEGISLATION_MAP = {
         {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/text", "type": "Act"},
         {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/text", "type": "Regulations"}
     ],
-    # PBR mapped explicitly to Plant Breeder's Rights Act as requested
     "pbr": [ 
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/text", "type": "Act"},
         {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/text", "type": "Regulations"}
@@ -102,9 +101,7 @@ USAGE_INFO_BLOCK = {
     "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
 }
 
-# --- UPDATED: IP TOPIC MAP ---
-# Keys are lowercased strings expected from CSV 'Relevant-ip-right'
-# Values are tuples: (Display Name, Wikidata URL)
+# --- IP TOPIC MAP ---
 IP_TOPIC_MAP = {
     "trade mark": ("Trade Mark", "https://www.wikidata.org/wiki/Q167270"),
     "unregistered-tm": ("Trade Mark", "https://www.wikidata.org/wiki/Q167270"),
@@ -121,49 +118,37 @@ IP_TOPIC_MAP = {
 # --- 2. HTML CLEANING & EXTRACTION FUNCTIONS ---
 
 def clean_html_fragment(soup_element):
-    """
-    Cleans a BeautifulSoup element and converts it to Markdown.
-    Removes HTML tags but preserves semantic structure via Markdown syntax.
-    """
     if not soup_element:
         return ""
     
-    # Create a new soup fragment to process
     fragment = BeautifulSoup(str(soup_element), 'html.parser')
 
-    # 1. Remove noise tags completely
     for tag in fragment(['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe']):
         tag.decompose()
 
-    # 2. Convert Links to Markdown: [text](href)
     for a in fragment.find_all('a', href=True):
         text = a.get_text(strip=True)
         url = a['href']
         if text and url:
             a.replace_with(f"[{text}]({url})")
 
-    # 3. Convert Bold/Strong to **text**
     for b in fragment.find_all(['strong', 'b']):
         text = b.get_text(strip=True)
         if text:
             b.replace_with(f"**{text}**")
 
-    # 4. Convert Italic/Em to *text*
     for i in fragment.find_all(['em', 'i']):
         text = i.get_text(strip=True)
         if text:
             i.replace_with(f"*{text}*")
 
-    # 5. Handle Lists (Simple Bullet Conversion)
     for li in fragment.find_all('li'):
         text = li.get_text(strip=True)
         if text:
             li.replace_with(f"\n* {text}")
 
-    # 6. Extract Text (handling paragraphs via newlines)
     text = fragment.get_text(separator="\n\n")
 
-    # --- Unicode Normalization ---
     replacements = {
         "\u2018": "'", "\u2019": "'",
         "\u201c": '"', "\u201d": '"',
@@ -173,15 +158,10 @@ def clean_html_fragment(soup_element):
     for k, v in replacements.items():
         text = text.replace(k, v)
     
-    # Clean up whitespace
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip()
 
 def parse_html_to_blocks(html_content):
-    """
-    Parses HTML content into logical blocks based on H2/H3 headers.
-    Returns a dictionary: {header_text: text_content}
-    """
     soup = BeautifulSoup(html_content, 'html.parser')
     blocks = {}
     
@@ -201,7 +181,6 @@ def parse_html_to_blocks(html_content):
         
         for child in iterator_parent.children:
             if child.name in ['h1', 'h2', 'h3']:
-                # Save previous block
                 if current_elements:
                     clean_text = ""
                     for el in current_elements:
@@ -209,7 +188,6 @@ def parse_html_to_blocks(html_content):
                     if clean_text.strip():
                         blocks[current_header] = clean_text.strip()
                 
-                # Start new block
                 current_header = child.get_text(strip=True).lower()
                 current_header = re.sub(r'[^\w\s\?\']', '', current_header).strip()
                 current_elements = []
@@ -217,7 +195,6 @@ def parse_html_to_blocks(html_content):
             elif child.name and child.name not in ['script', 'style', 'button', 'svg', 'form']:
                  current_elements.append(child)
         
-        # Flush last block
         if current_elements:
             clean_text = ""
             for el in current_elements:
@@ -244,7 +221,6 @@ def load_csv_metadata(csv_path):
     return rows
 
 def find_metadata_row(md_content, filename, csv_rows):
-    # 1. PageURL Match
     url_match = re.search(r'PageURL:\s*\"\[(.*?)\]', md_content)
     if url_match:
         page_url = url_match.group(1).strip()
@@ -253,7 +229,6 @@ def find_metadata_row(md_content, filename, csv_rows):
             if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
                 return row
 
-    # 2. UDID Match
     udid_match = re.search(r'([A-Z]\d{4})', filename)
     if udid_match:
         target_udid = udid_match.group(1)
@@ -261,7 +236,6 @@ def find_metadata_row(md_content, filename, csv_rows):
             if row.get('UDID') == target_udid:
                 return row
 
-    # 3. Fuzzy Title Match
     clean_name = filename.lower().replace('.json', '').replace('.md', '').replace('ipfr_', '').replace('_', ' ')
     clean_name = re.sub(r'^[a-z]\d{4}\s*-\s*', '', clean_name).strip()
     
@@ -338,10 +312,6 @@ def extract_links_and_clean(text):
     return cleaned_text, found_links
 
 def convert_csv_date(date_str):
-    """
-    Parses a date string in d/m/Y format and returns Y-m-d.
-    Returns current date if parsing fails or input is empty.
-    """
     if not date_str:
         return datetime.now().strftime("%Y-%m-%d")
     try:
@@ -350,34 +320,20 @@ def convert_csv_date(date_str):
         return datetime.now().strftime("%Y-%m-%d")
 
 def generate_citations_from_csv(metadata_row):
-    """
-    Generates citations based on the 'Relevant-ip-right' field in the CSV.
-    Logic:
-    1. If text implies 'Any dispute related to intellectual property', it generates
-       citations for ALL major IP rights (Trade Mark, Patent, Design, PBR, Copyright).
-    2. 'pbr' is explicitly treated as 'Plant Breeder's Rights'.
-    """
     citations = []
     raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
     if not raw_ip_rights: return citations
     
-    # Cleaning: Remove extra quotes and normalize to lower case
     cleaned_rights_str = raw_ip_rights.replace('"', '').replace("'", "").lower().strip()
-    
     rights_to_process = []
     
-    # --- Handle "Any Dispute" or "All Rights" Wildcards ---
     if "any dispute related to intellectual property" in cleaned_rights_str or "all intellectual property rights" in cleaned_rights_str:
-        # If "Any dispute" is found, we must include all 5 major IP types
         rights_to_process = ["trade mark", "patent", "design", "pbr", "copyright"]
     else:
-        # Standard processing: split by comma
         rights_to_process = [r.strip() for r in cleaned_rights_str.split(',') if r.strip()]
     
     added_urls = set()
     for right in rights_to_process:
-        # Look up legilsation. Note: 'pbr' is a key in LEGISLATION_MAP 
-        # that points to Plant Breeder's Rights Act/Regs.
         if right in LEGISLATION_MAP:
             for leg in LEGISLATION_MAP[right]:
                 if leg['url'] not in added_urls:
@@ -395,12 +351,10 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     base_obj = {"@type": "Organization"}
     if provider_raw_string:
         for key, obj in PROVIDER_MAP.items():
-            # Check if map key is inside the raw string (e.g. "IP Australia" in "IP Australia")
             if key.lower() in provider_raw_string.lower():
                 base_obj = obj.copy()
                 break
     
-    # Fallback types based on Archetype if map didn't provide specific type
     if base_obj.get("@type") == "Organization":
         if "Government Service" in archetype_hint: base_obj["@type"] = "GovernmentOrganization"
         elif "Non-Government" in archetype_hint: base_obj["@type"] = "NGO"
@@ -410,15 +364,8 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     return base_obj
 
 def resolve_about_topics(metadata_row):
-    """
-    Parses 'Relevant-ip-right' column and maps to standard names and Wikidata URLs.
-    Handles 'All Intellectual Property Rights' logic and normalization.
-    """
     raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
-    # Clean quotes and lowercase
     cleaned_rights = raw_ip_rights.replace('"', '').replace("'", "").lower()
-    
-    # Split by comma
     rights_list = [r.strip() for r in cleaned_rights.split(',') if r.strip()]
     
     about_entities = []
@@ -426,12 +373,9 @@ def resolve_about_topics(metadata_row):
     
     for right in rights_list:
         match_data = None
-        
-        # 1. Exact or Key Match in Map
         if right in IP_TOPIC_MAP:
             match_data = IP_TOPIC_MAP[right]
         else:
-            # 2. Fuzzy / Partial Match Fallback (e.g. "designs" -> "design")
             if "design" in right:
                 match_data = IP_TOPIC_MAP["design"]
             elif "plant breeder" in right or "pbr" in right:
@@ -447,18 +391,11 @@ def resolve_about_topics(metadata_row):
                 })
                 seen_urls.add(url)
     
-    # If no specific rights found, or explicitly empty, fallback? 
-    # Current requirement implies if list is empty or unmappable, we might fallback to General
-    if not about_entities and rights_list:
-        # Optional: Log warning here if needed
-        pass
-
     if len(about_entities) == 1: 
         return about_entities[0]
     elif len(about_entities) > 1: 
         return about_entities
     else: 
-        # Default fallback if nothing matches
         return {
             "@type": "Thing", 
             "name": "All Intellectual Property Rights",
@@ -513,18 +450,12 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
 def extract_howto_steps_html(blocks):
     steps = []
     collected_links = []
-    # Locate the key for the "How To" section (e.g., "What do you need to proceed?")
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
 
     if target_key:
         raw_text = blocks[target_key].strip()
-        
-        # 1. Split the text by bullet points (*), utilizing regex to capture start-of-line bullets.
-        # This creates a list where parts[0] is text BEFORE the first bullet, 
-        # and parts[1:] are the bullets (potentially with trailing text attached).
         parts = re.split(r'(?:^|\n)\* ', raw_text)
         
-        # 2. Process the "Intro" text (everything before the first bullet point)
         if parts[0].strip():
             clean_step, links = extract_links_and_clean(parts[0].strip())
             collected_links.extend(links)
@@ -534,18 +465,11 @@ def extract_howto_steps_html(blocks):
                  "text": clean_step
             })
         
-        # 3. Process the bullet points and any trailing paragraphs
         for part in parts[1:]:
             if not part.strip(): continue
-            
-            # Split the bullet segment by double newlines.
-            # This separates the actual list item from any subsequent paragraphs 
-            # (like the "Consider getting help..." section) that followed the list.
             sub_segments = re.split(r'\n{2,}', part)
-            
             for segment in sub_segments:
                 if not segment.strip(): continue
-                
                 clean_step, links = extract_links_and_clean(segment.strip())
                 collected_links.extend(links)
                 steps.append({
@@ -605,7 +529,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     udid = metadata_row.get('UDID', 'Dxxxx')
     title = metadata_row.get('Main-title', filename.replace('.md', '').replace('_', ' '))
     
-    # --- UPDATED: Date Handling ---
     pub_date_val = convert_csv_date(metadata_row.get('Publication-date'))
     last_updated_val = convert_csv_date(metadata_row.get('Last-updated'))
 
@@ -613,35 +536,42 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
 
     master_links = [] 
 
-    # --- DESCRIPTION ---
-    description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
-    used_desc_key = None 
-    if not description:
-        desc_keys = ["what is it", "description", "intro"]
-        for k in desc_keys:
-            found_key = next((bk for bk in blocks.keys() if k in bk), None)
-            if found_key:
-                raw_desc = blocks[found_key]
-                clean_desc, links = extract_links_and_clean(raw_desc)
-                master_links.extend(links)
-                
-                description = clean_desc[:300] + "..."
-                used_desc_key = found_key
-                break
+    # --- UPDATED: WEBPAGE DESCRIPTION (STRICTLY FROM CSV) ---
+    csv_desc_raw = metadata_row.get('Description', '').strip()
+    
+    if not csv_desc_raw or csv_desc_raw.lower() == 'null':
+        webpage_description = "xXx_Err-PLACEHOLDER_xXx"
+    else:
+        webpage_description = clean_text_retain_formatting(csv_desc_raw, strip_images=True)
+        # Ensure it's not empty after cleaning
+        if not webpage_description:
+            webpage_description = "xXx_Err-PLACEHOLDER_xXx"
 
-    # --- UPDATED: ENTITY CONSTRUCTION ---
+    # --- UPDATED: SERVICE DESCRIPTION (STRICTLY FROM "WHAT IS IT?") ---
+    service_description = ""
+    # Find key containing "what is it"
+    what_is_it_key = next((k for k in blocks.keys() if "what is it" in k.lower()), None)
+    
+    if what_is_it_key:
+        raw_service_desc = blocks[what_is_it_key]
+        # Extract content and links
+        clean_service_desc, desc_links = extract_links_and_clean(raw_service_desc)
+        master_links.extend(desc_links)
+        service_description = clean_service_desc
+    else:
+        # Fallback if section missing? (Prompt says "must contain..."). Leaving empty if not found.
+        service_description = ""
+
+    # --- ENTITY CONSTRUCTION ---
     service_id = "#the-service"
     has_provider = True
     
-    # Fallback default
-    archetype = metadata_row.get('Archectype') # Matches CSV header "Archectype" (ignoring trailing space if stripped)
+    archetype = metadata_row.get('Archectype') 
     
     if not archetype:
         service_type = "xXx_Err-PLACEHOLDER_xXx"
-        # Determine provider status roughly or default to True so we can put the error placeholder
         has_provider = True 
     else:
-        # Map known types
         if "Self-Help" in archetype:
             service_type, has_provider = "HowTo", False 
         elif "Government Service" in archetype:
@@ -651,16 +581,13 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         elif "Non-Government" in archetype:
             service_type = "Service" 
         else:
-            # If archetype exists but not mapped, fallback to GovernmentService or placeholder?
-            # User instruction: "derived from... fallback to hardcoding xXx_Err-PLACEHOLDER_xXx"
-            # It implies if we can't derive a valid type. Let's fallback to placeholder if unknown.
             service_type = "xXx_Err-PLACEHOLDER_xXx"
 
     main_obj = {
         "@id": service_id,
         "@type": service_type,
         "name": title,
-        "description": description,
+        "description": service_description, # UPDATED: Uses content from "What is it?"
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": page_url
@@ -677,14 +604,11 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     if service_type == "HowTo":
         main_obj["step"] = steps
     
-    # --- UPDATED: PROVIDER LOGIC ---
     if has_provider:
-        # Strict fallback for name
         provider_name_csv = metadata_row.get('Provider')
         if not provider_name_csv:
             provider_name_csv = "xXx_Err-PLACEHOLDER_xXx"
             
-        # Resolve other details (like URL) using the map, but force the name from CSV
         provider_obj = resolve_provider(provider_name_csv, archetype_hint=(archetype if archetype else ""))
         provider_obj["name"] = provider_name_csv
 
@@ -702,13 +626,17 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         })
 
     # FAQs (Dynamic Content)
+    # Ensure "What is it?" is excluded from FAQs by passing what_is_it_key
     faqs = []
     if use_html:
-        faqs, f_links = extract_dynamic_content_html(blocks, main_description_key=used_desc_key)
+        faqs, f_links = extract_dynamic_content_html(blocks, main_description_key=what_is_it_key)
         master_links.extend(f_links)
     else:
         for h, c in blocks.items():
-            if h in ["intro", "description", "see also", "step"] or (used_desc_key and h == used_desc_key): continue
+            # Exclude intro, description, steps, and the "What is it?" key we used for service desc
+            if h in ["intro", "description", "see also", "step"]: continue
+            if what_is_it_key and h == what_is_it_key: continue
+
             q_name = h.capitalize() + ("?" if not h.endswith('?') else "")
             
             clean_ans, links = extract_links_and_clean(clean_text_retain_formatting(c))
@@ -732,12 +660,12 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "@type": "WebPage",
         "headline": title,
         "alternativeHeadline": metadata_row.get('Overtitle', ''),
-        "description": description[:160] if description else "", 
+        "description": webpage_description, # UPDATED: Uses content from CSV
         "url": page_url,
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
-        "datePublished": pub_date_val,  # Source: CSV Publication-date
-        "dateModified": last_updated_val, # Source: CSV Last-updated
+        "datePublished": pub_date_val,
+        "dateModified": last_updated_val,
         "audience": AUDIENCE_BLOCK,
         "usageInfo": USAGE_INFO_BLOCK,
         "about": about_obj,
