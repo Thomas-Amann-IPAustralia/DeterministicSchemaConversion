@@ -3,9 +3,11 @@ import csv
 import json
 import re
 from datetime import datetime
+from bs4 import BeautifulSoup  # Requires: pip install beautifulsoup4
 
 # --- CONFIGURATION ---
 INPUT_DIR = 'IPFR-Webpages' if os.path.exists('IPFR-Webpages') else '.'
+HTML_DIR = 'IPFR-Webpages-html'  # <--- NEW CONFIGURATION
 OUTPUT_DIR = 'json_output'
 CSV_FILE = '260203_IPFRMetaTable.csv'
 
@@ -109,7 +111,112 @@ IP_TOPIC_MAP = {
     "Plant Breeder's Rights": "https://www.wikidata.org/wiki/Q695112"
 }
 
-# --- 2. CORE LOGIC FUNCTIONS ---
+# --- 2. HTML CLEANING & EXTRACTION FUNCTIONS ---
+
+def clean_html_fragment(soup_element):
+    """
+    Cleans a BeautifulSoup element to be valid HTML string for JSON-LD.
+    Removes unnecessary classes, IDs, and empty tags.
+    Preserves semantic structure (p, ul, li, strong, a, etc.).
+    """
+    if not soup_element:
+        return ""
+    
+    # List of tags to unwrap (remove tag but keep content)
+    unwrap_tags = ['span', 'div', 'section', 'article']
+    # List of tags to remove completely (tag and content)
+    remove_tags = ['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe'] 
+    
+    # Create a new soup fragment to process
+    fragment = BeautifulSoup(str(soup_element), 'html.parser')
+    
+    for tag in fragment.find_all(True):
+        # Remove all attributes except href
+        allowed_attrs = ['href']
+        attrs = dict(tag.attrs)
+        for attr in attrs:
+            if attr not in allowed_attrs:
+                del tag[attr]
+        
+        if tag.name in remove_tags:
+            tag.decompose()
+        elif tag.name in unwrap_tags:
+            tag.unwrap()
+    
+    # Convert to string and clean up whitespace
+    html_str = str(fragment)
+    html_str = re.sub(r'\s+', ' ', html_str).strip()
+    
+    # Remove empty tags like <p> </p> or <a></a>
+    html_str = re.sub(r'<(\w+)[^>]*>\s*</\1>', '', html_str)
+    
+    return html_str.strip()
+
+def parse_html_to_blocks(html_content):
+    """
+    Parses HTML content into logical blocks based on H2/H3 headers.
+    Returns a dictionary: {header_text: html_content_string}
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    blocks = {}
+    
+    # Target main content area to avoid nav/footer noise if possible
+    main_content = soup.find('div', class_='ct-layout__inner') or soup
+    
+    current_header = "intro"
+    current_elements = []
+    
+    # Locate all relevant tags in flattened order
+    # Note: This strategy assumes content flows sequentially in the DOM
+    
+    # Find the container holding the content
+    # If a specific layout div exists, use its children, otherwise use main body
+    container = main_content
+    if main_content.find('article'):
+        container = main_content.find('article')
+        
+    # Collect all elements
+    all_elements = container.find_all(recursive=True)
+    
+    # We need a linear iteration. find_all returns nested ones too.
+    # Better approach: iterate over top-level children of the content container
+    
+    # Locate the start of content (e.g., the first h1/h2)
+    start_node = container.find(['h1', 'h2'])
+    
+    if start_node:
+        # Iterate siblings of the header (or parent's children if header is nested)
+        iterator_parent = start_node.parent
+        
+        for child in iterator_parent.children:
+            if child.name in ['h1', 'h2', 'h3']:
+                # Save previous block
+                if current_elements:
+                    clean_html = ""
+                    for el in current_elements:
+                        clean_html += clean_html_fragment(el)
+                    if clean_html:
+                        blocks[current_header] = clean_html
+                
+                # Start new block
+                current_header = child.get_text(strip=True).lower()
+                current_header = re.sub(r'[^\w\s\?]', '', current_header).strip()
+                current_elements = []
+            
+            elif child.name and child.name not in ['script', 'style', 'button', 'svg', 'form']:
+                 current_elements.append(child)
+        
+        # Flush last block
+        if current_elements:
+            clean_html = ""
+            for el in current_elements:
+                 clean_html += clean_html_fragment(el)
+            if clean_html:
+                blocks[current_header] = clean_html
+    
+    return blocks
+
+# --- 3. CSV & UTIL FUNCTIONS ---
 
 def load_csv_metadata(csv_path):
     rows = []
@@ -120,26 +227,21 @@ def load_csv_metadata(csv_path):
         with open(csv_path, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
             rows = list(reader)
-            print(f"DEBUG: Loaded {len(rows)} rows from CSV.")
     except Exception as e:
         print(f"Error reading CSV: {e}")
     return rows
 
 def find_metadata_row(md_content, filename, csv_rows):
-    """
-    UPDATED: More robust matching logic to ensure CSV rows are found.
-    """
-    # 1. PageURL Match (Exact or approximate)
+    # 1. PageURL Match
     url_match = re.search(r'PageURL:\s*\"\[(.*?)\]', md_content)
     if url_match:
         page_url = url_match.group(1).strip()
         for row in csv_rows:
             csv_url = row.get('canonical url', '').strip()
-            # Check for exact match OR if the CSV URL endswith the page slug
             if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
                 return row
 
-    # 2. UDID Match (Filename contains B1000, CSV has B1000)
+    # 2. UDID Match
     udid_match = re.search(r'([A-Z]\d{4})', filename)
     if udid_match:
         target_udid = udid_match.group(1)
@@ -148,19 +250,13 @@ def find_metadata_row(md_content, filename, csv_rows):
                 return row
 
     # 3. Fuzzy Title Match
-    # Clean up filename: "B1000 - Receiving a letter of demand.md" -> "receiving a letter of demand"
     clean_name = filename.lower().replace('.json', '').replace('.md', '').replace('ipfr_', '').replace('_', ' ')
-    # Remove leading UDID (e.g. "b1000 - ")
     clean_name = re.sub(r'^[a-z]\d{4}\s*-\s*', '', clean_name).strip()
     
     for row in csv_rows:
         csv_title = row.get('Main Title', '').lower().strip()
-        if clean_name == csv_title:
-             return row
-        # Partial match fallback
-        if clean_name and clean_name in csv_title:
-            return row
-            
+        if clean_name == csv_title: return row
+        if clean_name and clean_name in csv_title: return row
     return {}
 
 def parse_markdown_blocks(md_text):
@@ -173,7 +269,6 @@ def parse_markdown_blocks(md_text):
         if line.strip().startswith('#'):
             if current_content:
                 blocks[current_header] = "\n".join(current_content).strip()
-            
             clean_header = line.lstrip('#').strip().lower()
             clean_header = clean_header.replace('’', "'").replace('“', '"').replace('”', '"')
             current_header = clean_header
@@ -183,20 +278,27 @@ def parse_markdown_blocks(md_text):
     
     if current_content:
         blocks[current_header] = "\n".join(current_content).strip()
-        
     return blocks
+
+def clean_text_retain_formatting(text, strip_images=False):
+    if not text: return ""
+    if strip_images:
+        text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
+        text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
+        text = re.sub(r'\[\s*\]\(.*?\)', '', text)
+    text = text.replace(u'\u00a0', ' ').replace('\r', '')
+    lines = [re.sub(r'[ \t]+', ' ', l).strip() for l in text.split('\n')]
+    text = "\n".join(lines)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
 
 def generate_citations_from_csv(metadata_row):
     citations = []
     raw_ip_rights = metadata_row.get('Relevant IP right', '')
-    if not raw_ip_rights:
-        return citations
-
+    if not raw_ip_rights: return citations
     cleaned_rights = raw_ip_rights.replace('"', '').lower()
     rights_list = [r.strip() for r in cleaned_rights.split(',')]
-    
     added_urls = set()
-
     for right in rights_list:
         if right in LEGISLATION_MAP:
             for leg in LEGISLATION_MAP[right]:
@@ -208,209 +310,187 @@ def generate_citations_from_csv(metadata_row):
                         "legislationType": leg['type']
                     })
                     added_urls.add(leg['url'])
-                    
     return citations
 
 def resolve_provider(provider_raw_string, archetype_hint=""):
     base_obj = {"@type": "Organization"}
-
     if provider_raw_string:
         for key, obj in PROVIDER_MAP.items():
             if key.lower() in provider_raw_string.lower():
                 base_obj = obj.copy()
                 break
-
-    if "Government Service" in archetype_hint:
-        base_obj["@type"] = "GovernmentOrganization"
-    elif "Non-Government" in archetype_hint:
-        base_obj["@type"] = "NGO"
-    elif "Commercial" in archetype_hint:
-        base_obj["@type"] = "Organization"
-
+    if "Government Service" in archetype_hint: base_obj["@type"] = "GovernmentOrganization"
+    elif "Non-Government" in archetype_hint: base_obj["@type"] = "NGO"
+    elif "Commercial" in archetype_hint: base_obj["@type"] = "Organization"
     base_obj["name"] = "xXx_PLACEHOLDER_xXx"
     return base_obj
 
-def clean_text_retain_formatting(text, strip_images=False):
-    if not text: return ""
-    
-    if strip_images:
-        text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
-        text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
-        text = re.sub(r'\[\s*\]\(.*?\)', '', text)
-    
-    text = text.replace(u'\u00a0', ' ')
-    text = text.replace('\r', '')
-    
-    lines = text.split('\n')
-    cleaned_lines = []
-    
-    for line in lines:
-        clean_line = re.sub(r'[ \t]+', ' ', line).strip()
-        cleaned_lines.append(clean_line)
-        
-    text = "\n".join(cleaned_lines)
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    return text.strip()
+def resolve_about_topics(metadata_row):
+    raw_ip_rights = metadata_row.get('Relevant IP right', '')
+    cleaned_rights = raw_ip_rights.replace('"', '').lower()
+    rights_list = [r.strip() for r in cleaned_rights.split(',')]
+    about_entities = []
+    for right in rights_list:
+        if not right: continue
+        name = right.title()
+        url = None
+        for map_key in IP_TOPIC_MAP:
+            if map_key.lower() == right:
+                url = IP_TOPIC_MAP[map_key]
+                name = map_key 
+                break
+        entity = {"@type": "Thing", "name": name}
+        if url: entity["sameAs"] = url
+        about_entities.append(entity)
+    if len(about_entities) == 1: return about_entities[0]
+    elif len(about_entities) > 1: return about_entities
+    else: return {"@type": "Thing", "name": "Intellectual Property Right"}
 
-def extract_dynamic_content(blocks, main_description_key=None):
-    """
-    Captures content as FAQs, excluding the block used for the main description.
-    """
+# --- 4. EXTRACTORS (Updated for HTML) ---
+
+def extract_dynamic_content_html(blocks, main_description_key=None):
+    """ Extracts FAQs using HTML blocks, allowing semantic HTML in answers. """
     IGNORED_HEADERS = {
-        "intro", 
-        "description", 
-        "see also", 
-        "want to give us feedback?", 
-        "references", 
-        "external links",
-        "table of contents",
-        "feedback"
+        "intro", "description", "see also", "want to give us feedback?", 
+        "references", "external links", "table of contents", "feedback", 
+        "start here", "receiving a letter of demand"
     }
-    
     if main_description_key:
         IGNORED_HEADERS.add(main_description_key.lower())
 
     content_items = []
-
-    for header, content in blocks.items():
+    for header, html_content in blocks.items():
         clean_header_key = header.lower().strip()
         
-        if not content: continue
+        if not html_content: continue
         if clean_header_key in IGNORED_HEADERS: continue
         if "step" in clean_header_key or "proceed" in clean_header_key: continue
 
         display_name = header.capitalize()
+        # Intelligent phrasing for headers that aren't questions
         if not display_name.endswith('?') and not display_name.endswith(':'):
-             if "features" in clean_header_key:
-                 display_name = f"What are the {header.lower()}?"
-             elif "watch out" in clean_header_key:
-                 display_name = f"What should I watch out for?"
-             else:
-                 display_name = f"{display_name}?"
+             if "features" in clean_header_key: display_name = f"What are the {header.lower()}?"
+             elif "watch out" in clean_header_key: display_name = f"What should I watch out for?"
+             elif "outcomes" in clean_header_key: display_name = f"What are the possible outcomes?"
+             elif "costs" in clean_header_key: display_name = f"What might the costs be?"
+             elif "time" in clean_header_key: display_name = f"How much time might be involved?"
+             elif "benefits" in clean_header_key: display_name = f"What are the benefits?"
+             elif "risks" in clean_header_key: display_name = f"What are the risks?"
+             else: display_name = f"{display_name}?"
 
         content_items.append({
             "@type": "Question",
             "name": display_name,
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": clean_text_retain_formatting(content)
+                "text": html_content # Embeds HTML string
             }
         })
-
     return content_items
 
-def extract_howto_steps(blocks):
+def extract_howto_steps_html(blocks):
+    """ Extracts steps as HTML fragments. """
     steps = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
     
     if target_key:
+        html_content = blocks[target_key]
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
+        list_items = soup.find_all('li')
+        if list_items:
+            for li in list_items:
+                steps.append({
+                    "@type": "HowToStep",
+                    "name": "xXx_PLACEHOLDER_xXx", 
+                    "text": clean_html_fragment(li)
+                })
+        else:
+            paragraphs = soup.find_all('p')
+            for p in paragraphs:
+                 steps.append({
+                    "@type": "HowToStep",
+                    "name": "xXx_PLACEHOLDER_xXx", 
+                    "text": clean_html_fragment(p)
+                })
+    return steps
+
+def extract_howto_steps_md(blocks):
+    """ Fallback MD extractor. """
+    steps = []
+    target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
+    if target_key:
         raw_text = blocks[target_key]
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
-        
         if matches:
             for step_text in matches:
-                clean_text = clean_text_retain_formatting(step_text)
-                if clean_text:
-                    steps.append({
-                        "@type": "HowToStep",
-                        "name": "xXx_PLACEHOLDER_xXx", 
-                        "text": clean_text
-                    })
+                steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_text_retain_formatting(step_text)})
         else:
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
-                clean_p = clean_text_retain_formatting(p)
-                if clean_p:
-                    steps.append({
-                        "@type": "HowToStep",
-                        "name": "xXx_PLACEHOLDER_xXx", 
-                        "text": clean_p
-                    })
+                steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_text_retain_formatting(p)})
     return steps
 
-def resolve_about_topics(metadata_row):
-    raw_ip_rights = metadata_row.get('Relevant IP right', '')
-    cleaned_rights = raw_ip_rights.replace('"', '').lower()
-    rights_list = [r.strip() for r in cleaned_rights.split(',')]
-    
-    about_entities = []
-    
-    for right in rights_list:
-        if not right: continue
-        
-        name = right.title()
-        url = None
-        
-        for map_key in IP_TOPIC_MAP:
-            if map_key.lower() == right:
-                url = IP_TOPIC_MAP[map_key]
-                name = map_key 
-                break
-        
-        entity = {"@type": "Thing", "name": name}
-        if url:
-            entity["sameAs"] = url
-            
-        about_entities.append(entity)
-        
-    if len(about_entities) == 1:
-        return about_entities[0]
-    elif len(about_entities) > 1:
-        return about_entities
-    else:
-        return {"@type": "Thing", "name": "Intellectual Property Right"}
+# --- 5. MAIN PROCESSOR ---
 
-# --- 3. MAIN BUILDER FUNCTION ---
-
-def process_file(filepath, filename, metadata_row):
-    with open(filepath, 'r', encoding='utf-8') as f:
+def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
+    # Load MD
+    with open(md_filepath, 'r', encoding='utf-8') as f:
         md_content = f.read()
-
-    blocks = parse_markdown_blocks(md_content)
     
+    # Load HTML if valid
+    html_content = ""
+    use_html = False
+    if html_filepath and os.path.exists(html_filepath):
+        try:
+            with open(html_filepath, 'r', encoding='utf-8') as f:
+                html_content = f.read()
+            use_html = True
+        except Exception:
+            pass
+
+    blocks = parse_html_to_blocks(html_content) if use_html else parse_markdown_blocks(md_content)
+    if not blocks and use_html: # Fallback if HTML parsing yields nothing
+        blocks = parse_markdown_blocks(md_content)
+        use_html = False
+
     udid = metadata_row.get('UDID', 'Dxxxx')
     title = metadata_row.get('Main Title', filename.replace('.md', '').replace('_', ' '))
     archetype = metadata_row.get('Archectype') or metadata_row.get('Archetype', 'Government Service')
     archetype = archetype.strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
-    
-    # --- UPDATED DESCRIPTION LOGIC ---
-    # Prioritize "What is it?" block for description if CSV description is missing
+
+    # --- DESCRIPTION ---
     description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
     used_desc_key = None 
-
-    # If CSV description is empty, check MD blocks
     if not description:
-        # Check specific keys that act as descriptions
-        desc_keys = ["what is it?", "description", "intro"]
+        desc_keys = ["what is it", "description", "intro"]
         for k in desc_keys:
-            if k in blocks:
-                description_raw = blocks[k]
-                description = clean_text_retain_formatting(description_raw, strip_images=True)
-                used_desc_key = k # Mark this key as used so it doesn't become an FAQ
+            found_key = next((bk for bk in blocks.keys() if k in bk), None)
+            if found_key:
+                raw_desc = blocks[found_key]
+                if use_html:
+                    # Strip tags for schema 'description' property, keep raw for internal logic if needed
+                    description = BeautifulSoup(raw_desc, 'html.parser').get_text(separator=' ').strip()[:300] + "..."
+                else:
+                    description = clean_text_retain_formatting(raw_desc, strip_images=True)
+                used_desc_key = found_key
                 break
 
-    # --- ARCHETYPE HANDLING ---
-    main_entities = []
+    # --- ENTITY CONSTRUCTION ---
     service_id = "#the-service"
+    has_provider = True
     
-    # Correct mapping for "Self-Help"
     if "Self-Help" in archetype:
-        service_type = "HowTo"
-        has_provider = False 
+        service_type, has_provider = "HowTo", False 
     elif "Government Service" in archetype:
         service_type = "GovernmentService"
-        has_provider = True
     elif "Non-Government" in archetype:
         service_type = "Service" 
-        has_provider = True
     else:
-        # Default fallback
         service_type = "GovernmentService"
-        has_provider = True
 
-    # Build the Main Object
     main_obj = {
         "@id": service_id,
         "@type": service_type,
@@ -419,33 +499,43 @@ def process_file(filepath, filename, metadata_row):
         "areaServed": {"@type": "Country", "name": "Australia"}
     }
 
-    # Add steps directly if it is a HowTo (Self-Help)
+    # Extract Steps
+    if use_html:
+        steps = extract_howto_steps_html(blocks)
+    else:
+        steps = extract_howto_steps_md(blocks)
+
     if service_type == "HowTo":
-        main_obj["step"] = extract_howto_steps(blocks)
+        main_obj["step"] = steps
     
     if has_provider:
-        provider_name_raw = metadata_row.get('Provider') or metadata_row.get('Overtitle')
-        provider_obj = resolve_provider(provider_name_raw, archetype_hint=archetype)
-        if service_type == "GovernmentService":
-             main_obj["serviceOperator"] = provider_obj
-        else:
-             main_obj["provider"] = provider_obj
+        provider_name = metadata_row.get('Provider') or metadata_row.get('Overtitle')
+        provider_obj = resolve_provider(provider_name, archetype_hint=archetype)
+        if service_type == "GovernmentService": main_obj["serviceOperator"] = provider_obj
+        else: main_obj["provider"] = provider_obj
 
-    main_entities.append(main_obj)
+    main_entities = [main_obj]
 
-    # Sidecar HowTo (If service has steps, but main entity is not HowTo)
-    if service_type != "HowTo":
-        steps = extract_howto_steps(blocks)
-        if steps:
-            main_entities.append({
-                "@type": "HowTo",
-                "name": f"How to proceed with {title}",
-                "about": {"@id": service_id},
-                "step": steps
-            })
+    # Sidecar HowTo
+    if service_type != "HowTo" and steps:
+        main_entities.append({
+            "@type": "HowTo",
+            "name": f"How to proceed with {title}",
+            "about": {"@id": service_id},
+            "step": steps
+        })
 
-    # FAQ Extraction
-    faqs = extract_dynamic_content(blocks, main_description_key=used_desc_key)
+    # FAQs (Dynamic Content)
+    faqs = []
+    if use_html:
+        faqs = extract_dynamic_content_html(blocks, main_description_key=used_desc_key)
+    else:
+        # Re-use extract logic for MD (simplified for brevity here, assuming previous logic)
+        for h, c in blocks.items():
+            if h in ["intro", "description", "see also", "step"] or (used_desc_key and h == used_desc_key): continue
+            q_name = h.capitalize() + ("?" if not h.endswith('?') else "")
+            faqs.append({"@type": "Question", "name": q_name, "acceptedAnswer": {"@type": "Answer", "text": clean_text_retain_formatting(c)}})
+
     if faqs:
         main_entities.append({
             "@type": "FAQPage",
@@ -453,6 +543,7 @@ def process_file(filepath, filename, metadata_row):
             "mainEntity": faqs
         })
 
+    # Citations & Topics
     citations = generate_citations_from_csv(metadata_row)
     about_obj = resolve_about_topics(metadata_row)
 
@@ -481,19 +572,19 @@ def process_file(filepath, filename, metadata_row):
         "mainEntity": main_entities
     }
     
-    see_also_block = next((v for k,v in blocks.items() if "see also" in k), None)
-    if see_also_block:
-        links = re.findall(r'\((https?://[^\)]+)\)', see_also_block)
-        if links:
-            json_ld["relatedLink"] = links
+    # Related Links extraction
+    see_also = next((k for k in blocks.keys() if "see also" in k), None)
+    if see_also:
+        content = blocks[see_also]
+        links = re.findall(r'href=[\'"]?(https?://[^\'" >]+)', content) if use_html else re.findall(r'\((https?://[^\)]+)\)', content)
+        if links: json_ld["relatedLink"] = list(set(links))
 
     out_path = os.path.join(OUTPUT_DIR, filename.replace('.md', '.json'))
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(json_ld, f, indent=2)
-    print(f"Generated: {out_path} (Detected Archetype: {archetype})")
+    print(f"Generated: {out_path} {'[HTML Enhanced]' if use_html else '[Markdown Fallback]'}")
 
-
-# --- 4. EXECUTION LOOP ---
+# --- 6. EXECUTION ---
 
 def main():
     if not os.path.exists(OUTPUT_DIR):
@@ -502,18 +593,38 @@ def main():
     csv_rows = load_csv_metadata(CSV_FILE)
     md_files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.md')]
     
+    # Check if the dedicated HTML folder exists, otherwise fallback to INPUT_DIR
+    html_source_dir = HTML_DIR if os.path.exists(HTML_DIR) else INPUT_DIR
+    
+    print(f"Processing Markdown from: {INPUT_DIR}")
+    print(f"Looking for HTML in:      {html_source_dir}")
+
     for filename in md_files:
-        filepath = os.path.join(INPUT_DIR, filename)
-        with open(filepath, 'r', encoding='utf-8') as f:
+        md_path = os.path.join(INPUT_DIR, filename)
+        
+        # Determine potential HTML files
+        # Matches user pattern: "B1000...md" -> "B1000...-html.html"
+        base = filename.replace('.md', '')
+        html_cands = [
+            f"{base}-html.html",  # Primary pattern observed
+            f"{base}.html", 
+            f"{base}_html.html"
+        ]
+        
+        # Look for the first candidate that exists in the HTML_DIR
+        html_path = next(
+            (os.path.join(html_source_dir, h) for h in html_cands if os.path.exists(os.path.join(html_source_dir, h))), 
+            None
+        )
+        
+        with open(md_path, 'r', encoding='utf-8') as f:
             content_sample = f.read()
             
         matched_row = find_metadata_row(content_sample, filename, csv_rows)
-        
         if not matched_row:
-            print(f"WARNING: No CSV match for {filename}. Using default fallback.")
-            matched_row = {"Main Title": filename.replace('.md', '').replace('IPFR_', '').replace('_', ' ')}
+            matched_row = {"Main Title": base.replace('IPFR_', '').replace('_', ' ')}
 
-        process_file(filepath, filename, matched_row)
+        process_file_pair(md_path, html_path, filename, matched_row)
 
 if __name__ == "__main__":
     main()
