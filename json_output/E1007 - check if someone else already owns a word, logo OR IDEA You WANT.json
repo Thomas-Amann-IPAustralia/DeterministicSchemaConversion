@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "check if someone else already owns a word, logo OR IDEA You WANT ",
   "alternativeHeadline": "Checking IP rights ",
-  "description": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an 'IP search'.\nAn IP search means looking in",
+  "description": "Null",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-if-someone-else-already-owns-word-logo-or-idea-you-want",
   "identifier": {
     "@type": "PropertyValue",
@@ -39,70 +39,9 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute Related To Intellectual Property"
+    "name": "All Intellectual Property Rights"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Regulations"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -124,7 +63,7 @@
       "@id": "#the-service",
       "@type": "HowTo",
       "name": "check if someone else already owns a word, logo OR IDEA You WANT ",
-      "description": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an 'IP search'.\nAn IP search means looking in free online tools called registers. These show who owns trade marks (names, logos), patents (inventions), designs (product looks) and domai...",
+      "description": "Null",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-if-someone-else-already-owns-word-logo-or-idea-you-want"
@@ -134,6 +73,22 @@
         "name": "Australia"
       },
       "step": []
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an 'IP search'.\nAn IP search means looking in free online tools called registers. These show who owns trade marks (names, logos), patents (inventions), designs (product looks) and domain names (website addresses).\nFor:\n* **Names and logos**- Use Australian Trade Mark Search. If you already have a logo and want to check if something like it is registered, you can also use TM Checker.\n\n* **Inventions**- Use Australian Patent Search.\n\n* **Product designs**- Use Australian Design Search.\n\n* **Plant breeders' rights (PBRs)**- Use Australian Plant breeder's rights search.\n\n* **Copyright**- There's no register in Australia. Search online, in image tools, or in industry databases.\n\n* **Website addresses**- Search the .au domain name register.\nYou can do a quick search yourself, but a lawyer or IP professional can do a deeper search and explain tricky results.\n**Please note:**\n\nNo results doesn't mean you're safe. New rights appear often, and some rights (like unregistered trade marks) don't show in registers."
+          }
+        }
+      ]
     }
   ],
   "relatedLink": [

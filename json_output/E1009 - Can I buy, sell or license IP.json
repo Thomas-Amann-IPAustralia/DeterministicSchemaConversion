@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Can I buy, sell or license IP?",
   "alternativeHeadline": "Selling or licensing",
-  "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, in",
+  "description": "Null",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip",
   "identifier": {
     "@type": "PropertyValue",
@@ -39,70 +39,9 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute Related To Intellectual Property"
+    "name": "All Intellectual Property Rights"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Regulations"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
@@ -124,7 +63,7 @@
       "@id": "#the-service",
       "@type": "HowTo",
       "name": "Can I buy, sell or license IP?",
-      "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\nHere are some examples of what you may choose ...",
+      "description": "Null",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip"
@@ -134,6 +73,22 @@
         "name": "Australia"
       },
       "step": []
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\nHere are some examples of what you may choose to do:\n* Let other people use it, either for a fee (called 'licensing') or for no cost.\n\n* Set rules around how it's used. For example, you can set rules on how it can be used only in certain places, on certain types of products, or in certain ways.\n\n* You can sell it on its own or as part of your business.\n\n* Make an offer to buy someone else's IP.\n\n* If you don't use your IP and no longer wish pay fees to IP Australia to keep it, you can let the ownership lapse.\nRegistered IP (such as trade marks, patents, design rights and PBR) serves as a proof of your ownership, and what that ownership covers, much like a deed to a house clearly states the boundaries. This makes it much easier for everyone to be clear about who owns an IP right.\nIn all these situations, you may wish to think carefully about your business plans, and seek independent help, especially to work out the value of IP you are thinking about, and any conditions you might consider about its usage.\nMany of these actions are done through contracts with other businesses. It can be vital to get an experienced professional to help you draft the agreement - such as IP lawyers - to make sure your rights are protected and no important details are missed."
+          }
+        }
+      ]
     }
   ],
   "relatedLink": [

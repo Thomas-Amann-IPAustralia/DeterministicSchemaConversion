@@ -39,70 +39,9 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute Related To Intellectual Property"
+    "name": "All Intellectual Property Rights"
   },
-  "citation": [
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Act 1995",
-      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Trade Marks Regulations 1995",
-      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Act 1990",
-      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Patents Regulations 1991",
-      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Act 2003",
-      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Designs Regulations 2004",
-      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Act 1994",
-      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Plant Breeder\u2019s Rights Regulations 1994",
-      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "legislationType": "Regulations"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Act 1968",
-      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
-      "legislationType": "Act"
-    },
-    {
-      "@type": "Legislation",
-      "name": "Copyright Regulations 2017",
-      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
-      "legislationType": "Regulations"
-    }
-  ],
+  "citation": [],
   "publisher": {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
