@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -63,7 +63,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Discover where you are in your IP journey",
-      "description": "As a business owner, there's a lot of information to grapple with and working out which IP options apply to you can be tricky. By matching your current activities to common stages in the IP journey, you can quickly see what's most relevant now and what might come next.  'Where am I in the IP journey...",
+      "description": "As a business owner, there's a lot of information to grapple with and working out which IP options apply to you can be tricky. By matching your current activities to common stages in the IP journey, you can quickly see what's most relevant now and what might come next.\n'Where am I in the IP journey?...",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -75,8 +75,8 @@
     }
   ],
   "relatedLink": [
-    "https://www.wipo.int/en/web/business/checklist",
+    "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
     "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
-    "https://www.ipaustralia.gov.au/tools-and-research/business-resources"
+    "https://www.wipo.int/en/web/business/checklist"
   ]
 }

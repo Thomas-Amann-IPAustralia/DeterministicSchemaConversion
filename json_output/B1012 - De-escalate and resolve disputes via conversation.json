@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -83,27 +83,32 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>A copy of the cease-and-desist letter or the request, including deadlines and requested actions.</li>"
+          "text": "Before you engage in a conversation with the other party, consider gathering:"
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Evidence of your product, branding or content development timeline and any prior rights you may hold.</li>"
+          "text": "A copy of the cease-and-desist letter or the request, including deadlines and requested actions."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed.</li>"
+          "text": "Evidence of your product, branding or content development timeline and any prior rights you may hold."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Contact details for the rights holder or their representative to open dialogue.</li>"
+          "text": "Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>A confidentiality agreement template to protect commercial information during negotiations.</li>"
+          "text": "Contact details for the rights holder or their representative to open dialogue."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "A confidentiality agreement template to protect commercial information during negotiations.\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: \n\n[Learn more about alternative dispute resolution](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)\n\n."
         }
       ]
     },
@@ -118,7 +123,7 @@
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action. </p><p>Often this contact comes in the form of a cease-and-desist or a letter of demand<strong>.</strong> They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand\">Receiving a letter of demand</a>.</p><p>You can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.</p><p>For more information on possible commercial solutions, see IP First Response's page: <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement\">Agree to a commercial arrangement</a>. </p>"
+            "text": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\nOften this contact comes in the form of a cease-and-desist or a letter of demand\n\n**.**\n\n They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: \n\n[Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand)\n\n.\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\nFor more information on possible commercial solutions, see IP First Response's page: \n\n[Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement)\n\n."
           }
         },
         {
@@ -126,7 +131,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Early dialogue can limit legal costs and reduce the risk of expensive and lengthy litigation.</li><li>Settlement terms such as licences or co-existence agreements may lead to practical benefits like agreed market access or ongoing use.</li><li>Confidential negotiations may preserve commercial relationships and business reputation.</li><li>You and the other party keep control of the timeline and proposed solutions.</li><li>When there is an existing relationship to build on (even simply both parties being in the same industry), it can be easier to find productive, business-specific solutions.</li></ul>"
+            "text": "* Early dialogue can limit legal costs and reduce the risk of expensive and lengthy litigation.\n\n* Settlement terms such as licences or co-existence agreements may lead to practical benefits like agreed market access or ongoing use.\n\n* Confidential negotiations may preserve commercial relationships and business reputation.\n\n* You and the other party keep control of the timeline and proposed solutions.\n\n* When there is an existing relationship to build on (even simply both parties being in the same industry), it can be easier to find productive, business-specific solutions."
           }
         },
         {
@@ -134,7 +139,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Relies on the other party's willingness to engage or negotiate with you.</li><li>Either party can withdraw from the conversation at any point in time, resulting in wasted time, money and effort.</li><li>If you share sensitive business information without a confidentiality agreement, it may be used against you later.</li><li>A mere verbal agreement, without a signed or executed deed of settlement, may not be easily enforceable.</li></ul>"
+            "text": "* Relies on the other party's willingness to engage or negotiate with you.\n\n* Either party can withdraw from the conversation at any point in time, resulting in wasted time, money and effort.\n\n* If you share sensitive business information without a confidentiality agreement, it may be used against you later.\n\n* A mere verbal agreement, without a signed or executed deed of settlement, may not be easily enforceable."
           }
         },
         {
@@ -142,7 +147,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>You both agree that no infringement has occurred, and no further action is taken.</li><li>You and the other party 'agree to disagree', but no further action is taken.</li><li>You reach a financial settlement or pay a one-off fee for past use.</li><li>You enter a licence or co-existence agreement that allows continued use under agreed conditions and undertake not to infringe in the future.</li><li>You can also agree to purchase the IP.</li><li>You agree to alter or withdraw the product, branding or content within a set timeframe.</li><li>You agree to resolve the matter through alternative dispute settlement procedures such as mediation or arbitration.</li><li>One of the parties may choose to take the matter to the court.</li></ul>"
+            "text": "* You both agree that no infringement has occurred, and no further action is taken.\n\n* You and the other party 'agree to disagree', but no further action is taken.\n\n* You reach a financial settlement or pay a one-off fee for past use.\n\n* You enter a licence or co-existence agreement that allows continued use under agreed conditions and undertake not to infringe in the future.\n\n* You can also agree to purchase the IP.\n\n* You agree to alter or withdraw the product, branding or content within a set timeframe.\n\n* You agree to resolve the matter through alternative dispute settlement procedures such as mediation or arbitration.\n\n* One of the parties may choose to take the matter to the court."
           }
         },
         {
@@ -150,7 +155,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>There is no official cost, apart from your own time and efforts, to reply to a cease-and-desist letter or requests to the same effect, or to start informal negotiations.</p><p>Possible expenses include:</p><ul><li>Professional fees for legal professionals such as lawyers or IP attorneys.</li><li>Any agreed payment to the rights holder, such as back-dated royalties or a lump-sum settlement.</li><li>If you decide to engage in alternative dispute resolution such as mediation, fees can range from being free, a few thousand dollars (shared between the parties) or, if the case is complex, even higher amounts.</li></ul><p>Actual costs depend on the complexity of the dispute, how quickly the parties cooperate and whether you need expert advice.</p>"
+            "text": "There is no official cost, apart from your own time and efforts, to reply to a cease-and-desist letter or requests to the same effect, or to start informal negotiations.\nPossible expenses include:\n* Professional fees for legal professionals such as lawyers or IP attorneys.\n\n* Any agreed payment to the rights holder, such as back-dated royalties or a lump-sum settlement.\n\n* If you decide to engage in alternative dispute resolution such as mediation, fees can range from being free, a few thousand dollars (shared between the parties) or, if the case is complex, even higher amounts.\nActual costs depend on the complexity of the dispute, how quickly the parties cooperate and whether you need expert advice."
           }
         },
         {
@@ -158,7 +163,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Simple written exchanges may resolve the matter within a few days or weeks. In-person conversations may take more time to arrange. However, timeframes to finalise a dispute can vary drastically depending on individual circumstances and the complexity of the dispute. </p>"
+            "text": "Simple written exchanges may resolve the matter within a few days or weeks. In-person conversations may take more time to arrange. However, timeframes to finalise a dispute can vary drastically depending on individual circumstances and the complexity of the dispute."
           }
         },
         {
@@ -166,7 +171,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Many businesses choose to engage in a dialogue with the other party, with or without obtaining legal advice.</p>"
+            "text": "Many businesses choose to engage in a dialogue with the other party, with or without obtaining legal advice."
           }
         },
         {
@@ -174,7 +179,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Anyone that has been contacted about allegedly infringing on someone else's IP and wishes to explore co-operative solutions rather than escalating the dispute.</p>"
+            "text": "Anyone that has been contacted about allegedly infringing on someone else's IP and wishes to explore co-operative solutions rather than escalating the dispute."
           }
         },
         {
@@ -182,18 +187,18 @@
           "name": "Whos involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Alleged infringer (you or your business).</li><li>The party alleging you have infringed their IP (often an IP right owner or authorised user).</li><li>(Optional) Legal representatives or IP professionals.</li></ul>"
+            "text": "* Alleged infringer (you or your business).\n\n* The party alleging you have infringed their IP (often an IP right owner or authorised user).\n\n* (Optional) Legal representatives or IP professionals."
           }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
     "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*lf25uu*_ga*OTM2NTQ2NDI2LjE3NDI5NjA5OTg.*_ga_GMT4KC15KS*czE3NDc3MDM4ODgkbzI1JGcxJHQxNzQ3NzAzOTExJGowJGwwJGgw",
     "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand"
+    "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement"
   ]
 }

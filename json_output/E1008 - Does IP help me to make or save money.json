@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -63,7 +63,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Does IP help me to make or save money?",
-      "description": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example:  A patent  gives you the exclusive right to make or use your ...",
+      "description": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example:\n* **A patent**gives you the exclusive right to make or use yo...",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -75,8 +75,8 @@
     }
   ],
   "relatedLink": [
+    "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
     "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool"
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
   ]
 }

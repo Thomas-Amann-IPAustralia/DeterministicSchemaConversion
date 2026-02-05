@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "Can I buy, sell or license IP?",
   "alternativeHeadline": "Selling or licensing",
-  "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.  Like any property, i",
+  "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, in",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip",
   "identifier": {
     "@type": "PropertyValue",
@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -63,7 +63,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Can I buy, sell or license IP?",
-      "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.  Like any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).  Here are some examples of what you may choos...",
+      "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\nHere are some examples of what you may choose ...",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -75,8 +75,8 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
     "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
     "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement"
   ]
 }

@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -84,7 +84,7 @@
           "name": "Give feedback about ip first response?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Send us an <a href=\"Mailto:IPFirstResponse@ipaustralia.gov.au\">email </a><br/>Fill out a feedback form by following the button</p>"
+            "text": "Send us an \n\n[email](Mailto:IPFirstResponse@ipaustralia.gov.au)\n\nFill out a feedback form by following the button"
           }
         }
       ]

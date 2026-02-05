@@ -64,7 +64,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -97,37 +97,42 @@
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>A clear inventory of your registered IP rights and key products.</li>"
+          "text": "The materials needed for supply chain monitoring would vary depending on the extent of monitoring activities and the methods you choose to adopt. Below is a list of some common data, evidence and materials used to monitor supply chain."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Up\u2011to\u2011date supplier and shipment records.</li>"
+          "text": "A clear inventory of your registered IP rights and key products."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Up-to-date contact details for all supply chain partners.</li>"
+          "text": "Up\u2011to\u2011date supplier and shipment records."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Written supply agreements specifying IP use permissions and audit rights.</li>"
+          "text": "Up-to-date contact details for all supply chain partners."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Procedures for staff to flag unusual orders or routes.</li>"
+          "text": "Written supply agreements specifying IP use permissions and audit rights."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Monitoring tools such as order checks, sampling protocols, web alerts, tracking codes, barcodes, serial numbers or analytics dashboards.</li>"
+          "text": "Procedures for staff to flag unusual orders or routes."
         },
         {
           "@type": "HowToStep",
           "name": "xXx_PLACEHOLDER_xXx",
-          "text": "<li>Secure system for storing evidence (photos, screenshots, audit reports). </li>"
+          "text": "Monitoring tools such as order checks, sampling protocols, web alerts, tracking codes, barcodes, serial numbers or analytics dashboards."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Secure system for storing evidence (photos, screenshots, audit reports)."
         }
       ]
     },
@@ -142,7 +147,7 @@
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include: </p><ul><li>Vetting suppliers</li><li>Implementing track\u2011and\u2011trace systems</li><li>Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)</li><li>Regular inspections of incoming orders</li><li>Sampling finished products for quality and authenticity</li><li>Scanning online marketplace listings for unauthorised items</li><li>Conducting basic factory or warehouse audits. </li></ul><p>One aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low\u2011cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings. </p><p>Some businesses may also engage third\u2011party brand\u2011protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country\"><u>Notice of Objection</u></a> scheme. </p><p>Monitoring can be continuous or ad\u2011hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement. </p>"
+            "text": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include:\n* Vetting suppliers\n\n* Implementing track\u2011and\u2011trace systems\n\n* Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n\n* Regular inspections of incoming orders\n\n* Sampling finished products for quality and authenticity\n\n* Scanning online marketplace listings for unauthorised items\n\n* Conducting basic factory or warehouse audits.\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low\u2011cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.\nSome businesses may also engage third\u2011party brand\u2011protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the  \n\n[Notice of Objection](https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country)\n\n scheme.\nMonitoring can be continuous or ad\u2011hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement."
           }
         },
         {
@@ -150,7 +155,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Provides early warning so you can act before harm occurs to your business. </li><li>Reduces risk of unsafe or non\u2011compliant items entering the market.</li><li>Provides data and insight into infringement trends and behaviour.</li><li>Can uncover new markets or trends in consumer demands.</li><li>May allow you to build stronger evidence to support enforcement or negotiation actions. </li></ul>"
+            "text": "* Provides early warning so you can act before harm occurs to your business.\n\n* Reduces risk of unsafe or non\u2011compliant items entering the market.\n\n* Provides data and insight into infringement trends and behaviour.\n\n* Can uncover new markets or trends in consumer demands.\n\n* May allow you to build stronger evidence to support enforcement or negotiation actions."
           }
         },
         {
@@ -158,7 +163,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>Poor data quality may trigger false alarms and wasted resources, which may strain your relationship with suppliers. </li><li>Extensive monitoring could raise privacy or confidentiality concerns with business partners.</li><li>Business partners might view extra checks as a sign of distrust affecting goodwill and reputation of your business. </li></ul>"
+            "text": "* Poor data quality may trigger false alarms and wasted resources, which may strain your relationship with suppliers.\n\n* Extensive monitoring could raise privacy or confidentiality concerns with business partners.\n\n* Business partners might view extra checks as a sign of distrust affecting goodwill and reputation of your business."
           }
         },
         {
@@ -166,7 +171,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>The outcomes of monitoring supply chain depend heavily on your individual circumstances, the tools used, industry practices and your overall IP strategy. </p>"
+            "text": "The outcomes of monitoring supply chain depend heavily on your individual circumstances, the tools used, industry practices and your overall IP strategy."
           }
         },
         {
@@ -174,7 +179,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>The costs for supply chain monitoring depend heavily on the extent of monitoring activities and whether you choose to engage third-party services such as commercial monitoring software or brand protection specialists. </p><p>Costs for basic software subscriptions vary but can start in the low hundreds of dollars per year. Custom analytics or forensic audits may cost several thousand dollars. For more information on engaging third-party services, see <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip\">Obtain advice to help manage your IP.</a></p><p>You can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product's life cycle, adjusting the effort as your risk profile or budget changes. </p>"
+            "text": "The costs for supply chain monitoring depend heavily on the extent of monitoring activities and whether you choose to engage third-party services such as commercial monitoring software or brand protection specialists.\nCosts for basic software subscriptions vary but can start in the low hundreds of dollars per year. Custom analytics or forensic audits may cost several thousand dollars. For more information on engaging third-party services, see \n\n[Obtain advice to help manage your IP.](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip)\nYou can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product's life cycle, adjusting the effort as your risk profile or budget changes."
           }
         },
         {
@@ -182,7 +187,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Implementing basic checks can be done in a shorter amount of time (days to weeks), depending on vendor and scope. Comprehensive programs covering supplier vetting, data integrations and response protocols may take several months to embed. </p><p>Ongoing effort depends on shipment volume and review frequency, but it is common for businesses to implement some forms of supply chain monitoring. The exact length of time will be highly dependent on the strategies you employ and the size of your business. </p>"
+            "text": "Implementing basic checks can be done in a shorter amount of time (days to weeks), depending on vendor and scope. Comprehensive programs covering supplier vetting, data integrations and response protocols may take several months to embed.\nOngoing effort depends on shipment volume and review frequency, but it is common for businesses to implement some forms of supply chain monitoring. The exact length of time will be highly dependent on the strategies you employ and the size of your business."
           }
         },
         {
@@ -190,7 +195,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Supply chain monitoring for mitigating risks associated with IP is commonly used. Conducting regular audits and having visibility over supply chain are often seen as part of best practices to protect one's IP. </p>"
+            "text": "Supply chain monitoring for mitigating risks associated with IP is commonly used. Conducting regular audits and having visibility over supply chain are often seen as part of best practices to protect one's IP."
           }
         },
         {
@@ -198,7 +203,7 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Any IP rights holders. </p>"
+            "text": "Any IP rights holders."
           }
         },
         {
@@ -206,16 +211,16 @@
           "name": "Whos involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<ul><li>The IP right owner or authorised user.</li><li>Suppliers, manufacturers and logistics partners.</li><li>Private monitoring or brand\u2011protection service providers (optional).</li><li>Australian Border Force officers (when the Notice of Objection scheme is used).</li><li>IP lawyers or attorneys for legal and strategic advice (optional). </li></ul>"
+            "text": "* The IP right owner or authorised user.\n\n* Suppliers, manufacturers and logistics partners.\n\n* Private monitoring or brand\u2011protection service providers (optional).\n\n* Australian Border Force officers (when the Notice of Objection scheme is used).\n\n* IP lawyers or attorneys for legal and strategic advice (optional)."
           }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
     "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip"
+    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+    "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country"
   ]
 }
