@@ -53,9 +53,24 @@ def initialize_driver():
         logger.error(f"  [x] Failed to initialize WebDriver: {e}")
         return None
 
+def normalize_text(text):
+    """Replaces smart quotes and dashes with standard ASCII versions."""
+    replacements = {
+        '\u2018': "'",  # Left single quote
+        '\u2019': "'",  # Right single quote
+        '\u201c': '"',  # Left double quote
+        '\u201d': '"',  # Right double quote
+        '\u2013': '-',  # En dash
+        '\u2014': '--', # Em dash
+        '…': '...',     # Ellipsis
+    }
+    for k, v in replacements.items():
+        text = text.replace(k, v)
+    return text
+
 def clean_markdown(text, url, title, overtitle):
     """Post-processing to match the 'Ideal' format."""
-    
+    text = normalize_text(text)
     text = re.sub(r'^## ', '### ', text, flags=re.MULTILINE)
     text = re.sub(r'(\]\([^\)]+\))\s+\.', r'\1.', text)
     text = re.sub(r'(\]\([^\)]+\))\s+,', r'\1,', text)
