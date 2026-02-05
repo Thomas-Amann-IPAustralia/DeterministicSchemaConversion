@@ -3,7 +3,7 @@
   "@type": "WebPage",
   "headline": "check if someone else already owns a word, logo OR IDEA You WANT ",
   "alternativeHeadline": "Checking IP rights ",
-  "description": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an ‘IP search’.\n\nAn IP search means looking i",
+  "description": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an 'IP search'.  An IP search means looking i",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-if-someone-else-already-owns-word-logo-or-idea-you-want",
   "identifier": {
     "@type": "PropertyValue",
@@ -63,7 +63,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "check if someone else already owns a word, logo OR IDEA You WANT ",
-      "description": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an ‘IP search’.\n\nAn IP search means looking in free online tools called registers. These show who owns trade marks (names, logos), patents (inventions), designs (product looks) and domain names (website addresses).\n\nFor:\n\n* **Names and logos** – Use Australian Trade Mark Search. If you already have a logo and want to check if something like it is registered, you can also use TM Checker.\n* **Inventions** – Use Australian Patent Search.\n* **Product designs** – Use Australian Design Search.\n* **Plant breeders’ rights (PBRs)** – Use Australian Plant breeder's rights search.\n* **Copyright** – There’s no register in Australia. Search online, in image tools, or in industry databases.\n* **Website addresses** – Search the .au domain name register.\n\nYou can do a quick search yourself, but a lawyer or IP professional can do a deeper search and explain tricky results.\n\n**Please note:** No results doesn’t mean you’re safe. New rights appear often, and some rights (like unregistered trade marks) don’t show in registers.",
+      "description": "Before you spend money on your name, logo or idea, it can help to check if someone already owns it. This is called an 'IP search'.  An IP search means looking in free online tools called registers. These show who owns trade marks (names, logos), patents (inventions), designs (product looks) and doma...",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -72,30 +72,13 @@
         "@type": "GovernmentOrganization",
         "name": "xXx_PLACEHOLDER_xXx"
       }
-    },
-    {
-      "@type": "FAQPage",
-      "about": {
-        "@id": "#the-service"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Check if someone else already owns a word, logo or idea you want?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
-          }
-        }
-      ]
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
-    "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-    "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-    "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
     "https://www.auda.org.au/au-domain-names/au-tools/",
-    "https://www.auda.org.au/au-domain-names/au-tools/"
+    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
+    "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+    "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+    "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010"
   ]
 }

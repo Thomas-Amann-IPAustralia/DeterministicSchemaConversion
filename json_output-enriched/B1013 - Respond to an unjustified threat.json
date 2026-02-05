@@ -83,12 +83,12 @@
         {
           "@type": "HowToStep",
           "name": "Gather Threat Documentation",
-          "text": "copies of the threat and any related emails or letters"
+          "text": "<li>copies of the threat and any related emails or letters</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Assess the Impact of the Threat on Your Business",
-          "text": "evidence of how the threat has affected (or might affect) your business."
+          "name": "Assess Impact of Threat on Business",
+          "text": "<li>evidence of how the threat has affected (or might affect) your business. </li>"
         }
       ]
     },
@@ -100,18 +100,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Respond to an unjustified threat?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threatens to take legal action against you for infringing their Australian registered IP rights, and these threats are unjustified and received by you in Australia, you may be able to take action under Australia’s ‘unjustified threats’ laws. Similarly, if someone threatens to take action against you in Australia for infringing copyright and these threats are unjustified, you may be able to take action under the ‘groundless threats’ provisions of Australian copyright law.\n\nIf you receive or are affected by an unjustified threat, you can start legal action and ask a court to:\n\n* declare the threat unjustified\n* order the sender to stop making threats\n* award compensation for any losses.\n\nSome reasons a threat might be unjustified are:\n\n* for registered IP rights – the accuser does not actually own a current, valid Australian IP right, and therefore is not entitled to take IP infringement action\n* the alleged infringement isn't occurring because, for example: the actions you’ve been accused of taking would not actually infringe IP rights under Australian law.\n\nIf someone makes a threat against you, they need to be able to show that the threat was justified if you decide to start legal action against them. However, is important to note that Australian IP laws make it clear that mere notification of registration or protection of IP rights, or the mere notification of the existence of a copyright, is not by itself a threat.\n\nIt can be difficult to know whether a notice or correspondence amounts to an unjustified threat. An IP lawyer or IP attorney may be able to advise you on whether you have received an unjustified threat.\n\n**It is always prudent to seek legal advice before deciding whether to start legal action.**There are often options other than court for responding to an unjustified threat — like writing back to the other party to clarify your position — before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond."
+            "text": "<p>Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threatens to take legal action against you for infringing their Australian registered IP rights, and these threats are unjustified and received by you in Australia, you may be able to take action under Australia's 'unjustified threats' laws. Similarly, if someone threatens to take action against you in Australia for infringing copyright and these threats are unjustified, you may be able to take action under the 'groundless threats' provisions of Australian copyright law. </p><p> If you receive or are affected by an unjustified threat, you can start legal action and ask a court to: </p><ul><li>declare the threat unjustified</li><li>order the sender to stop making threats</li><li>award compensation for any losses. </li></ul><p> Some reasons a threat might be unjustified are: </p><ul><li>for registered IP rights - the accuser does not actually own a current, valid Australian IP right, and therefore is not entitled to take IP infringement action</li><li>the alleged infringement isn't occurring because, for example: the actions you've been accused of taking would not actually infringe IP rights under Australian law.</li></ul><p>If someone makes a threat against you, they need to be able to show that the threat was justified if you decide to start legal action against them. However, is important to note that Australian IP laws make it clear that mere notification of registration or protection of IP rights, or the mere notification of the existence of a copyright, is not by itself a threat. </p><p>It can be difficult to know whether a notice or correspondence amounts to an unjustified threat. An IP lawyer or IP attorney may be able to advise you on whether you have received an unjustified threat. </p><p><strong>It is always prudent to seek legal advice before deciding whether to start legal action. </strong>There are often options other than court for responding to an unjustified threat - like writing back to the other party to clarify your position - before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond. </p>"
           }
         },
         {
@@ -119,7 +111,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Can help stop unjustified threats which may be negatively impacting your business.\n* A court may award compensation if the threat caused damages (for example, loss of sales or customers for your business)."
+            "text": "<ul><li>Can help stop unjustified threats which may be negatively impacting your business.</li><li>A court may award compensation if the threat caused damages (for example, loss of sales or customers for your business). </li></ul>"
           }
         },
         {
@@ -127,7 +119,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Escalating the issue to court may prompt the other party to take further enforcement actions such as infringement proceedings or to make other counterclaims against you.\n* If the court finds the threat was justified, you may need to pay the other party’s costs.\n* Court proceedings are generally public so you should consider any reputational impacts."
+            "text": "<ul><li>Escalating the issue to court may prompt the other party to take further enforcement actions such as infringement proceedings or to make other counterclaims against you.</li><li>If the court finds the threat was justified, you may need to pay the other party's costs.</li><li>Court proceedings are generally public so you should consider any reputational impacts.</li></ul>"
           }
         },
         {
@@ -135,7 +127,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The possible outcomes will depend on how you respond to the unjustified threat. For example, whether you try to resolve the matter by writing back to the party or decide to start legal action.\n\nIf you decide to start legal action, possible outcomes include:\n\n* The parties resolve their dispute outside of court through mediation, negotiation or another alternative dispute resolution (ADR) process and stop the legal action.\n* A court declares the threat unjustified and might also order the other party to stop making threats and/or pay you damages if you have suffered loss as a result of the threat.\n* A court finds the threat is justified. You may be required to pay the other party’s costs and could face other liabilities if it is found that you were infringing their IP rights."
+            "text": "<p>The possible outcomes will depend on how you respond to the unjustified threat. For example, whether you try to resolve the matter by writing back to the party or decide to start legal action. </p><p>If you decide to start legal action, possible outcomes include: </p><ul><li>The parties resolve their dispute outside of court through mediation, negotiation or another alternative dispute resolution (ADR) process and stop the legal action.</li><li>A court declares the threat unjustified and might also order the other party to stop making threats and/or pay you damages if you have suffered loss as a result of the threat.</li><li>A court finds the threat is justified. You may be required to pay the other party's costs and could face other liabilities if it is found that you were infringing their IP rights. </li></ul>"
           }
         },
         {
@@ -143,7 +135,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If you decide to start legal action and your case is not resolved outside of court, court proceedings are generally expensive as legal representation is usually involved, and they can take a long time to resolve. Companies, in particular, are generally required by court rules to be represented by legal practitioners. Legal fees and the cost of expert witnesses usually make up most of the cost."
+            "text": "<p>If you decide to start legal action and your case is not resolved outside of court, court proceedings are generally expensive as legal representation is usually involved, and they can take a long time to resolve. Companies, in particular, are generally required by court rules to be represented by legal practitioners. Legal fees and the cost of expert witnesses usually make up most of the cost. </p>"
           }
         },
         {
@@ -151,7 +143,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Courts can take a long time to resolve disputes. It usually takes months, and sometimes years, to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court.\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.\n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing."
+            "text": "<p>Courts can take a long time to resolve disputes. It usually takes months, and sometimes years, to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court. </p><p>If a party appeals the initial decision, this will add extra time before the matter is finalised. </p><p>Where appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing. </p>"
           }
         },
         {
@@ -159,7 +151,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It is common for parties to respond to letters of demand (or cease and desist letters) to dispute threats and, where appropriate, allege that they were unjustified. However, it is not very common for parties to start legal action based solely on the unjustified threats. This is because of the risk that the other party is likely to respond by making a claim of infringement. More commonly, a person might decide to make an unjustified threat counterclaim where the other party starts legal action against them."
+            "text": "<p>It is common for parties to respond to letters of demand (or cease and desist letters) to dispute threats and, where appropriate, allege that they were unjustified. However, it is not very common for parties to start legal action based solely on the unjustified threats. This is because of the risk that the other party is likely to respond by making a claim of infringement. More commonly, a person might decide to make an unjustified threat counterclaim where the other party starts legal action against them. </p>"
           }
         },
         {
@@ -167,23 +159,23 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Anyone aggrieved by an unjustified threat."
+            "text": "<p>Anyone aggrieved by an unjustified threat. </p>"
           }
         },
         {
           "@type": "Question",
-          "name": "Who's involved?",
+          "name": "Whos involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You (the person receiving or aggrieved by the threat).\n* The person or business making the threat.\n* Any legal professionals engaged by you or the other parties involved.\n* A court (Federal Court of Australia or Federal Circuit and Family Court of Australia, or (for copyright matters) the Supreme Court of a State or Territory)."
+            "text": "<ul><li>You (the person receiving or aggrieved by the threat).</li><li>The person or business making the threat.</li><li>Any legal professionals engaged by you or the other parties involved.</li><li>A court (Federal Court of Australia or Federal Circuit and Family Court of Australia, or (for copyright matters) the Supreme Court of a State or Territory). </li></ul>"
           }
         }
       ]
     }
   ],
   "relatedLink": [
+    "https://ipta.org.au/community/find-an-attorney/",
     "https://www.fcfcoa.gov.au/gfl/gfl-fees",
-    "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
-    "https://ipta.org.au/community/find-an-attorney/"
+    "https://www.fedcourt.gov.au/forms-and-fees/court-fees"
   ]
 }

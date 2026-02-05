@@ -82,73 +82,73 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Learn About Intellectual Property (IP)",
-          "text": "[Learning more about IP](https://www.ipaustralia.gov.au/understanding-ip/types-of-ip)  and your specific IP type. Having some basic knowledge will help you to better understand the professional's advice and recommendations."
+          "name": "Learn About Intellectual Property (IP) Types",
+          "text": "<li><a href=\"https://www.ipaustralia.gov.au/understanding-ip/types-of-ip\"><u>Learning more about IP </u> </a> and your specific IP type. Having some basic knowledge will help you to better understand the professional's advice and recommendations.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Research Competitors and Suspected Infringers",
-          "text": "Researching what your suspected infringers or competitors are doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice."
+          "name": "Research Competitors and Infringers",
+          "text": "<li>Researching what your suspected infringers or competitors are doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice. </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Access the Law Society of NSW Solicitors Register",
-          "text": "[The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors)"
+          "name": "Find a Solicitor in NSW",
+          "text": "<li><a href=\"https://www.lawsociety.com.au/register-of-solicitors\">The Law Society of NSW </a></li>"
         },
         {
           "@type": "HowToStep",
           "name": "Law Institute Victoria Legal Help",
-          "text": "[Law Institute Victoria](https://www.liv.asn.au/legalhelp)"
+          "text": "<li><a href=\"https://www.liv.asn.au/legalhelp\">Law Institute Victoria </a></li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Queensland Law Society Website",
-          "text": "[Queensland Law Society](https://www.youandthelaw.com.au/)"
+          "name": "Queensland Law Society Link",
+          "text": "<li><a href=\"https://www.youandthelaw.com.au/\">Queensland Law Society </a></li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Find a Lawyer Service by The Law Society of Western Australia",
-          "text": "[The Law Society of Western Australia](https://lawsocietywa.asn.au/services/find-a-lawyer/)"
+          "name": "Find a Lawyer through The Law Society of Western Australia",
+          "text": "<li><a href=\"https://lawsocietywa.asn.au/services/find-a-lawyer/\">The Law Society of Western Australia </a></li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Access the Law Society of South Australia Website",
-          "text": "[The Law Society of South Australia](https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx)"
+          "name": "Find a Lawyer in South Australia",
+          "text": "<li><a href=\"https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx\">The Law Society of South Australia </a></li>"
         },
         {
           "@type": "HowToStep",
           "name": "Find a Lawyer - The Law Society of Tasmania",
-          "text": "[The Law Society of Tasmania](https://www.lst.org.au/find-a-lawyer/)"
+          "text": "<li><a href=\"https://www.lst.org.au/find-a-lawyer/\">The Law Society of Tasmania </a></li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Find a Lawyer - The Law Society of the ACT",
-          "text": "[The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer)"
+          "name": "Find a Lawyer in ACT",
+          "text": "<li><a href=\"https://www.actlawsociety.asn.au/find-a-lawyer\">The Law Society of the ACT </a></li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Finding Arts and Entertainment Lawyers",
-          "text": "[Law Society Northern Territory](https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/)\n\n[The Arts Law Centre of Australia’s website](https://www.artslaw.com.au/services/common-questions/) indicates that it maintains a national referral panel of arts and entertainment lawyers to which it may refer eligible copyright owners where appropriate."
+          "name": "Find a Law Firm in Northern Territory",
+          "text": "<li><a href=\"https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/\">Law Society Northern Territory </a></li>"
         },
         {
           "@type": "HowToStep",
           "name": "Seek Recommendations from Peers",
-          "text": "Ask for recommendations from other business owners or members of your industry association."
+          "text": "<li>Ask for recommendations from other business owners or members of your industry association.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Inquire About Service Cost and Duration",
-          "text": "Ask how much you'll be charged and how long the service will take."
+          "name": "Inquire About Cost and Duration",
+          "text": "<li>Ask how much you'll be charged and how long the service will take.</li>"
         },
         {
           "@type": "HowToStep",
           "name": "Choosing the Right IP Attorney",
-          "text": "Don't assume that all lawyers or IP attorneys specialise in the type of IP that you have."
+          "text": "<li>Don't assume that all lawyers or IP attorneys specialise in the type of IP that you have.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Establishing Trust with an Adviser",
-          "text": "Try to determine if you can establish a trusting relationship. If you don't feel comfortable sharing relevant information, it could be difficult for an adviser to work in your best interests.\n\nIf you think you may need to go to court to enforce your IP rights, speak to an IP lawyer."
+          "name": "Establish Trust with Adviser",
+          "text": "<li>Try to determine if you can establish a trusting relationship. If you don't feel comfortable sharing relevant information, it could be difficult for an adviser to work in your best interests. </li>"
         }
       ]
     },
@@ -160,18 +160,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Obtain legal advice on enforcement options?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What is it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "**What is it?**\n\nHaving a qualified expert can help you navigate the complex system of IP enforcement. Qualified experts for IP enforcement include lawyers specialising in IP, and trade mark and patent attorneys. We refer to these experts as 'legal professionals', although trade mark and patent attorneys are not necessarily lawyers and may not be qualified to engage in legal practice.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of legal professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which may require a lawyer or barrister with litigation experience in IP).\n\nIf you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the [Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm) register as a starting point.\n\n**How about other types of IP professionals?**\n\nThe term IP professionals refers to a range of experts who can help you plan and manage your business in relation to IP, including legal professionals. If you are seeking advice on how to enforce your IP rights, and what might be most appropriate to your situation, you should seek it from an IP lawyer or other relevant legal professional.\n\nIf you wish to obtain support for other IP-related aspects of your business, you may wish to engage services provided by non-legal IP professionals such as:\n\n* an accountant who specialises in IP marketing or commercialisation\n* a brand consultant\n* a franchise and export consultant\n* a management consultant\n* IP search firms\n* IP monitoring service providers\n* Government business support.\n\nIf you are a copyright owner who is a member of a copyright collecting society or a professional organisation representing certain kinds of creator or creative business, you could explore whether that organisation is able to provide information or another form of assistance in your particular circumstances."
+            "text": "<p><strong>What is it? </strong></p><p>Having a qualified expert can help you navigate the complex system of IP enforcement. Qualified experts for IP enforcement include lawyers specialising in IP, and trade mark and patent attorneys. We refer to these experts as 'legal professionals', although trade mark and patent attorneys are not necessarily lawyers and may not be qualified to engage in legal practice.</p><p>Depending on your situation, it may be necessary to seek advice from more than one type of legal professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which may require a lawyer or barrister with litigation experience in IP). </p><p>If you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the <a href=\"https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm\">Trans-Tasman IP Attorney Board </a>register as a starting point. </p><p><strong>How about other types of IP professionals?</strong> </p><p>The term IP professionals refers to a range of experts who can help you plan and manage your business in relation to IP, including legal professionals. If you are seeking advice on how to enforce your IP rights, and what might be most appropriate to your situation, you should seek it from an IP lawyer or other relevant legal professional. </p><p>If you wish to obtain support for other IP-related aspects of your business, you may wish to engage services provided by non-legal IP professionals such as: </p><ul><li>an accountant who specialises in IP marketing or commercialisation</li><li>a brand consultant</li><li>a franchise and export consultant</li><li>a management consultant</li><li>IP search firms</li><li>IP monitoring service providers</li><li>Government business support. </li></ul><p>If you are a copyright owner who is a member of a copyright collecting society or a professional organisation representing certain kinds of creator or creative business, you could explore whether that organisation is able to provide information or another form of assistance in your particular circumstances. </p>"
           }
         },
         {
@@ -179,7 +171,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* In most cases, engaging a legal professional is likely to reduce the risks you may encounter in enforcing your IP rights.\n* Legal professionals can provide a wide range of legal services and develop a holistic IP enforcement strategy suited to your IP and business goals.\n* They have the knowledge, training and experience to guide you through a dispute or a conflict which can be highly stressful and draining.\n* They have an in-depth knowledge of relevant legislation and industry practices surrounding IP, with the ability to leverage both appropriately and proportionately.\n* They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct.\n* They are able to recognise common issues which come up and refer you to other professionals when needed."
+            "text": "<ul><li>In most cases, engaging a legal professional is likely to reduce the risks you may encounter in enforcing your IP rights.</li><li>Legal professionals can provide a wide range of legal services and develop a holistic IP enforcement strategy suited to your IP and business goals.</li><li>They have the knowledge, training and experience to guide you through a dispute or a conflict which can be highly stressful and draining.</li><li>They have an in-depth knowledge of relevant legislation and industry practices surrounding IP, with the ability to leverage both appropriately and proportionately.</li><li>They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct.</li><li>They are able to recognise common issues which come up and refer you to other professionals when needed. </li></ul>"
           }
         },
         {
@@ -187,7 +179,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Some legal professionals have different specialties and may be more effective in their particular field of expertise. For instance, your lawyer may be highly experienced in dealing with trade marks, but not so much in patents, or vice versa.\n* Once you engage a legal professional for their service, they are obliged to follow your instructions. While they can advise you on certain courses of action, you have the ultimate decision. Using a legal professional can lead to a false sense of security if you do not understand and pay heed to their advice."
+            "text": "<ul><li>Some legal professionals have different specialties and may be more effective in their particular field of expertise. For instance, your lawyer may be highly experienced in dealing with trade marks, but not so much in patents, or vice versa.</li><li>Once you engage a legal professional for their service, they are obliged to follow your instructions. While they can advise you on certain courses of action, you have the ultimate decision. Using a legal professional can lead to a false sense of security if you do not understand and pay heed to their advice. </li></ul>"
           }
         },
         {
@@ -195,7 +187,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The outcomes of seeing a legal professional depend heavily on your individual circumstances.\n\nA legal professional can provide you with legal and strategic advice and act for you at different stages of IP protection and enforcement. They can:\n\n* Develop an IP strategy for your business.\n* Search for existing IP rights similar to your current or future IP.\n* Prepare and file your application for a registered right (if they are an IP attorney).\n* Develop confidentiality or non-disclosure agreements.\n* Provide advice on enforcement options.\n* Assist and represent you in taking enforcement actions.\n* Provide advice on taking your IP to international markets."
+            "text": "<p>The outcomes of seeing a legal professional depend heavily on your individual circumstances. </p><p>A legal professional can provide you with legal and strategic advice and act for you at different stages of IP protection and enforcement. They can: </p><ul><li>Develop an IP strategy for your business.</li><li>Search for existing IP rights similar to your current or future IP.</li><li>Prepare and file your application for a registered right (if they are an IP attorney).</li><li>Develop confidentiality or non-disclosure agreements.</li><li>Provide advice on enforcement options.</li><li>Assist and represent you in taking enforcement actions.</li><li>Provide advice on taking your IP to international markets. </li></ul>"
           }
         },
         {
@@ -203,7 +195,7 @@
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The total costs of engaging a legal professional will depend on factors such as their fees and the complexity of the matter.\n\nFor trade mark and patent attorneys, you can expect an average fee of:\n\n* $400-700 per hour for a [patent attorney](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney).\n* $1,000-2,000 total for a [trade mark attorney](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney) to file and register a single trade mark in one or two classes of goods and services.\n\nSome legal professionals offer a free consultation to assess what services you need and an estimate of costs.\n\nIt’s a good idea to ask your legal professional for an indication of how much the entire process may cost for the service you would like to use during your first meeting.\n\nSome copyright owners could also explore avenues for accessing low- or no-cost legal advice. For example:\n\n* the Arts Law Centre of Australia (a not-for-profit independent national community legal centre for the arts) can provide advice to artists and arts organisations on queries related to their arts practice, including in relation to copyright ([www.artslaw.com.au/services/legal-query-form/](http://www.artslaw.com.au/services/legal-query-form/) ), and also offers templates for some common legal documents, and\n* the Australian Copyright Council (an independent, not-for-profit Community Legal Service (CLS) whose affiliate members include the peak bodies for Australian writers, musicians, designers, photographers, visual artists, journalists, film makers and architects) offers eligible persons (predominantly those working in the creative industries) free written advice ([www.copyright.org.au/legal-advice/](http://www.copyright.org.au/legal-advice/) )."
+            "text": "<p>The total costs of engaging a legal professional will depend on factors such as their fees and the complexity of the matter. </p><p>For trade mark and patent attorneys, you can expect an average fee of: </p><ul><li>$400-700 per hour for a <a href=\"https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney\">patent attorney </a>.</li><li>$1,000-2,000 total for a <a href=\"https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney\">trade mark attorney </a> to file and register a single trade mark in one or two classes of goods and services. </li></ul><p>Some legal professionals offer a free consultation to assess what services you need and an estimate of costs. </p><p>It's a good idea to ask your legal professional for an indication of how much the entire process may cost for the service you would like to use during your first meeting. </p><p>Some copyright owners could also explore avenues for accessing low- or no-cost legal advice. For example: </p><ul><li>the Arts Law Centre of Australia (a not-for-profit independent national community legal centre for the arts) can provide advice to artists and arts organisations on queries related to their arts practice, including in relation to copyright (<a href=\"http://www.artslaw.com.au/services/legal-query-form/\">www.artslaw.com.au/services/legal-query-form/ </a>), and also offers templates for some common legal documents, and</li><li>the Australian Copyright Council (an independent, not-for-profit Community Legal Service (CLS) whose affiliate members include the peak bodies for Australian writers, musicians, designers, photographers, visual artists, journalists, film makers and architects) offers eligible persons (predominantly those working in the creative industries) free written advice (<a href=\"http://www.copyright.org.au/legal-advice/\">www.copyright.org.au/legal-advice/ </a>).</li></ul>"
           }
         },
         {
@@ -211,7 +203,7 @@
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Your first consultation is likely to take place shortly after you contact the legal professional. However, the total length of time for engaging their service will vary greatly depending on what steps you decide to take or the services you decide to use. For instance, if you are seeing a legal professional for a court proceeding, you are likely to use their service for the duration of the dispute, while some simple matters may only require one or two meetings."
+            "text": "<p>Your first consultation is likely to take place shortly after you contact the legal professional. However, the total length of time for engaging their service will vary greatly depending on what steps you decide to take or the services you decide to use. For instance, if you are seeing a legal professional for a court proceeding, you are likely to use their service for the duration of the dispute, while some simple matters may only require one or two meetings. </p>"
           }
         },
         {
@@ -219,7 +211,7 @@
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "IP Australia does not have access to information about how many, nor for which reasons, businesses engage IP lawyers and IP attorneys."
+            "text": "<p>IP Australia does not have access to information about how many, nor for which reasons, businesses engage IP lawyers and IP attorneys.</p>"
           }
         },
         {
@@ -227,23 +219,22 @@
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Anyone — You do not have to be an IP rights owner to engage a legal professional."
+            "text": "<p>Anyone - You do not have to be an IP rights owner to engage a legal professional. </p>"
           }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
-    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
-    "http://www.artslaw.com.au/",
-    "https://www.copyright.org.au/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://www.copyright.org.au/legal-advice/",
     "https://ipta.org.au/community/get-free-consultation/",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
+    "https://www.copyright.org.au/",
     "https://www.artslaw.com.au/services/legal-query-form/",
-    "https://www.copyright.org.au/legal-advice/"
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+    "http://www.artslaw.com.au/",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
+    "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline"
   ]
 }
