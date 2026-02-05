@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -211,14 +211,14 @@
     }
   ],
   "relatedLink": [
-    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
-    "https://www.wipo.int/amc/en/arbitration/fees/",
-    "https://www.education.gov.au/hercip",
     "https://acica.org.au/",
-    "https://www.fedcourt.gov.au/services/ADR/arbitration",
-    "https://ipta.org.au/community/get-free-consultation/",
+    "https://www.education.gov.au/hercip",
     "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://ipta.org.au/community/get-free-consultation/",
+    "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
+    "https://www.fedcourt.gov.au/services/ADR/arbitration",
     "https://www.wipo.int/amc/en/clauses/",
-    "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR"
+    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+    "https://www.wipo.int/amc/en/arbitration/fees/"
   ]
 }

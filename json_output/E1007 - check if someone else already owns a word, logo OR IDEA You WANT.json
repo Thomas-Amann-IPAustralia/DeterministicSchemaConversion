@@ -50,7 +50,7 @@
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
   },
   "isPartOf": {
     "@type": "WebSite",
@@ -75,10 +75,10 @@
     }
   ],
   "relatedLink": [
-    "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-    "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
-    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
     "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-    "https://www.auda.org.au/au-domain-names/au-tools/"
+    "https://www.auda.org.au/au-domain-names/au-tools/",
+    "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
+    "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+    "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010"
   ]
 }
