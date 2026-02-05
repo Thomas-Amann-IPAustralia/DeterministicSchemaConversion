@@ -133,7 +133,7 @@ def clean_html_fragment(soup_element):
     for tag in fragment.find_all(True):
         # Remove all attributes except href
         allowed_attrs = ['href']
-        attrs = dict(tag.attrs)
+        attrs = dict(tag.attrs or {})
         for attr in attrs:
             if attr not in allowed_attrs:
                 del tag[attr]
