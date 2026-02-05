@@ -1,10 +1,3 @@
-Here is the updated `scraper.py` script.
-
-I have replaced the `sources.json` dependency with the standard Python `csv` library to read directly from `metatable-Content.csv`. I also added a helper function to sanitize the filenames (removing characters like `?` or `/` that are illegal in file paths).
-
-### Updated `scraper.py`
-
-```python
 import csv
 import os
 import sys
@@ -12,6 +5,7 @@ import time
 import random
 import logging
 import re
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import WebDriverWait
@@ -25,6 +19,7 @@ from markdownify import markdownify as md
 CSV_FILE = 'metatable-Content.csv'
 OUTPUT_DIR = 'IPFR-Webpages'
 HTML_OUTPUT_DIR = 'IPFR-Webpages-html'
+REPORTS_DIR = os.path.join('DeterministicSchemaConversion', 'reports', 'scrape_reports')
 
 # --- Logging ---
 logging.basicConfig(
@@ -114,15 +109,49 @@ def clean_markdown(text, url, title, overtitle):
     return final_text
 
 def sanitize_filename(name):
-    """Removes illegal characters from filenames (e.g. / \ : * ? " < > |)."""
+    """Removes illegal characters from filenames."""
     if not name:
         return "Untitled"
-    # Replace illegal characters with empty string or space
     cleaned = re.sub(r'[\\/*?:"<>|]', "", str(name))
     return cleaned.strip()
 
+def save_session_report(report_data):
+    """Saves a rich CSV report of the scraping session."""
+    if not os.path.exists(REPORTS_DIR):
+        os.makedirs(REPORTS_DIR)
+        
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    report_filename = f"scrape_report_{timestamp}.csv"
+    report_path = os.path.join(REPORTS_DIR, report_filename)
+    
+    fieldnames = [
+        "Timestamp", "UDID", "Filename", "URL", "Status", 
+        "Error_Message", "HTML_Size_Bytes", "MD_Size_Bytes", "Title_Detected"
+    ]
+    
+    try:
+        with open(report_path, mode='w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            for row in report_data:
+                writer.writerow(row)
+        logger.info(f"--- Session Report Saved: {report_path} ---")
+    except Exception as e:
+        logger.error(f"Failed to save session report: {e}")
+
 def fetch_and_convert(driver, url):
-    """Scrapes URL via Selenium and returns both Markdown and raw HTML."""
+    """
+    Scrapes URL via Selenium and returns content + telemetry.
+    Returns: (markdown_text, html_content, telemetry_dict)
+    """
+    telemetry = {
+        "status": "FAILURE",
+        "error": "",
+        "html_len": 0,
+        "md_len": 0,
+        "title_found": False
+    }
+
     try:
         logger.info(f"Processing: {url}")
         driver.get(url)
@@ -138,6 +167,8 @@ def fetch_and_convert(driver, url):
         
         try:
             page_title = driver.find_element(By.TAG_NAME, "h1").text.strip()
+            if page_title:
+                telemetry["title_found"] = True
         except:
             pass
 
@@ -160,6 +191,8 @@ def fetch_and_convert(driver, url):
             logger.warning(f"  [!] Could not isolate main content, using body. ({e})")
             content_html = driver.find_element(By.TAG_NAME, "body").get_attribute('innerHTML')
 
+        telemetry["html_len"] = len(content_html)
+
         # --- STEP 3: Convert ---
         markdown_text = md(
             content_html, 
@@ -169,17 +202,22 @@ def fetch_and_convert(driver, url):
         )
 
         if not markdown_text:
+            telemetry["error"] = "Markdownify returned empty string"
             logger.warning(f"  [!] Markdownify produced empty text for {url}")
-            return None, None 
+            return None, None, telemetry
 
         # --- STEP 4: Clean and Polish ---
         final_markdown = clean_markdown(markdown_text, url, page_title, page_overtitle)
         
-        return final_markdown, content_html
+        telemetry["md_len"] = len(final_markdown)
+        telemetry["status"] = "SUCCESS"
+        
+        return final_markdown, content_html, telemetry
 
     except Exception as e:
+        telemetry["error"] = str(e)
         logger.error(f"  [x] Error scraping {url}: {e}")
-        return None, None
+        return None, None, telemetry
 
 def main():
     # Check if CSV exists
@@ -199,6 +237,8 @@ def main():
     if not driver:
         sys.exit(1)
 
+    session_report = []
+
     try:
         # Read the CSV File
         logger.info(f"Reading targets from {CSV_FILE}...")
@@ -211,20 +251,32 @@ def main():
                 udid = row.get('UDID', '').strip()
                 main_title = row.get('Main-title', '').strip()
 
-                # Validation: Skip if URL is empty or doesn't start with http
+                # Validation
                 if not url or not url.lower().startswith('http'):
                     logger.debug(f"Skipping row ID {udid}: Invalid URL '{url}'")
                     continue
                 
-                # Construct Filename: [UDID] - [Main-title].md
-                # We also sanitize the title to remove illegal filesystem characters
                 clean_title = sanitize_filename(main_title)
                 filename = f"{udid} - {clean_title}.md"
 
                 # Scrape
-                md_content, html_content = fetch_and_convert(driver, url)
+                md_content, html_content, stats = fetch_and_convert(driver, url)
                 
-                if md_content:
+                # Add to Report
+                report_entry = {
+                    "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "UDID": udid,
+                    "Filename": filename,
+                    "URL": url,
+                    "Status": stats["status"],
+                    "Error_Message": stats["error"],
+                    "HTML_Size_Bytes": stats["html_len"],
+                    "MD_Size_Bytes": stats["md_len"],
+                    "Title_Detected": stats["title_found"]
+                }
+                session_report.append(report_entry)
+
+                if md_content and stats["status"] == "SUCCESS":
                     # 1. Save Markdown
                     md_filepath = os.path.join(OUTPUT_DIR, filename)
                     with open(md_filepath, 'w', encoding='utf-8') as f_md:
@@ -240,15 +292,14 @@ def main():
 
                     logger.info(f"  -> Saved: {filename}")
                 else:
-                    logger.warning(f"  -> Skipped: {filename} (No content retrieved)")
+                    logger.warning(f"  -> Skipped: {filename} (Reason: {stats['error']})")
 
     except Exception as e:
         logger.critical(f"An unexpected error occurred during execution: {e}")
     finally:
         driver.quit()
+        save_session_report(session_report)
         logger.info("--- Scrape Run Complete ---")
 
 if __name__ == "__main__":
     main()
-
-```
