@@ -125,7 +125,7 @@
       "@id": "#the-service",
       "@type": "HowTo",
       "name": "Choose not to respond immediately ",
-      "description": "When to delay responding to groundless IP infringement claims and how to gather evidence for future defence.",
+      "description": "It can be very stressful when someone accuses you of IP infringement. This can be even more confusing if the allegation that you are infringing someone's intellectual property (IP) appears weak or unfounded. It is a good idea to evaluate the situation and consider your options before deciding how you might deal with the infringement allegation.\n**Not taking an immediate action does not mean that you should ignore the issue. You may require some time to:**\n* Assess the other party's claims and demands relating to the alleged infringement.\n\n* Verify their identity and the validity of the rights they claim ownership of.\n\n* Consider any evidence you may have to refute their claims.\n\n* Consult with legal professionals, or to decide on your next steps.\n\n* Determine whether the letter is genuine or is fraudulent.\nFor more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on \n\nReceiving a letter of demand\n\n.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately"
@@ -173,14 +173,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It can be very stressful when someone accuses you of IP infringement. This can be even more confusing if the allegation that you are infringing someone's intellectual property (IP) appears weak or unfounded. It is a good idea to evaluate the situation and consider your options before deciding how you might deal with the infringement allegation.\n**Not taking an immediate action does not mean that you should ignore the issue. You may require some time to:**\n* Assess the other party's claims and demands relating to the alleged infringement.\n\n* Verify their identity and the validity of the rights they claim ownership of.\n\n* Consider any evidence you may have to refute their claims.\n\n* Consult with legal professionals, or to decide on your next steps.\n\n* Determine whether the letter is genuine or is fraudulent.\nFor more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on \n\nReceiving a letter of demand\n\n."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

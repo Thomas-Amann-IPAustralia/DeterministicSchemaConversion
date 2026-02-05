@@ -147,7 +147,7 @@
       "@id": "#the-service",
       "@type": "Service",
       "name": "Inform online platforms that you have IP rights",
-      "description": "Register your IP with online platforms to access their enforcement tools.",
+      "description": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform.\n\n \n\n \n\nSigning up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process.\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights"
@@ -201,14 +201,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform.\n\n \n\n \n\nSigning up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process.\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application."
-          }
-        },
         {
           "@type": "Question",
           "name": "Please note that ip rights covered vary by platform?",

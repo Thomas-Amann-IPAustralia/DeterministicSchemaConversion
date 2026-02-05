@@ -125,7 +125,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Access help tailored to resolve business disputes",
-      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "description": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency.\nYou can access ASBFEO's \n\nDispute Support Tool\n\nto identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers.\nASBFEO can guide you through dispute resolution by:\n* Providing information to resolve your dispute in a timely and low-cost way\n\n* Engaging with the parties to encourage resolution\n\n* When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO"
@@ -161,14 +161,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency.\nYou can access ASBFEO's \n\nDispute Support Tool\n\nto identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers.\nASBFEO can guide you through dispute resolution by:\n* Providing information to resolve your dispute in a timely and low-cost way\n\n* Engaging with the parties to encourage resolution\n\n* When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",
@@ -239,13 +231,13 @@
   "relatedLink": [
     {
       "@type": "WebPage",
-      "url": "https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf",
-      "name": "Assistance Charter."
+      "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+      "name": "Dispute Support Tool"
     },
     {
       "@type": "WebPage",
-      "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-      "name": "Dispute Support Tool"
+      "url": "https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf",
+      "name": "Assistance Charter."
     },
     {
       "@type": "WebPage",

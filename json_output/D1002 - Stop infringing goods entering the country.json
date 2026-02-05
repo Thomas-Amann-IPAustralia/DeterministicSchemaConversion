@@ -96,7 +96,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Stop infringing goods entering the country",
-      "description": "Lodge a notice of objection with the Australian Border Force.",
+      "description": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer.\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.\n**Please Note:**\n\n A Notice of Objection \n\ncannot act retrospectively\n\n for goods/copies that have already been imported.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country"
@@ -184,14 +184,6 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer.\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.\n**Please Note:**\n\n A Notice of Objection \n\ncannot act retrospectively\n\n for goods/copies that have already been imported."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -260,13 +252,13 @@
   "relatedLink": [
     {
       "@type": "WebPage",
-      "url": "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
-      "name": "Notice of Objection."
+      "url": "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
+      "name": "cannot act retrospectively"
     },
     {
       "@type": "WebPage",
-      "url": "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
-      "name": "cannot act retrospectively"
+      "url": "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
+      "name": "Notice of Objection."
     },
     {
       "@type": "WebPage",

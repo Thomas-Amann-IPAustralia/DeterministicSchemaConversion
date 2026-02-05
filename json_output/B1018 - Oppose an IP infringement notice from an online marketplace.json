@@ -125,7 +125,7 @@
       "@id": "#the-service",
       "@type": "Service",
       "name": "Oppose an IP infringement notice from an online marketplace ",
-      "description": "Dispute an action that an eCommerce platform has taken against you",
+      "description": "An online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are:\n* Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n\n* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy's Intellectual Property report, receive the complainant's contact details by email, and may need to resolve it directly or seek legal advice.\n\n* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form-Shein removes listings when notified and does not mediate between parties.\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing.\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises.\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace"
@@ -179,14 +179,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "An online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are:\n* Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n\n* Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy's Intellectual Property report, receive the complainant's contact details by email, and may need to resolve it directly or seek legal advice.\n\n* Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form-Shein removes listings when notified and does not mediate between parties.\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing.\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises.\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

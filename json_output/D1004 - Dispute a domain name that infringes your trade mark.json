@@ -96,7 +96,7 @@
       "@id": "#the-service",
       "@type": "Service",
       "name": "Dispute a domain name that infringes your trade mark",
-      "description": "Dispute a .au domain name that may infringe an IP right",
+      "description": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.\nA panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties.\n**Please Note:**\n\n If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP).",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name"
@@ -215,14 +215,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.\nA panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties.\n**Please Note:**\n\n If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP)."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

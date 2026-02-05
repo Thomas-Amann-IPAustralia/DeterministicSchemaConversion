@@ -77,7 +77,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Remove a trade mark\u00a0from the register",
-      "description": "Let IP Australia know a recently registered trade mark should not have been registered",
+      "description": "Registration of a trade mark can be 'revoked' in certain circumstances where it should not have been registered in the first place. This is only possible within the first 12 months of registration.\nGenerally, revocation of registration is followed immediately by revocation of acceptance, resulting in the subject trade mark application returning to the examiner for a re-examination. Only in very rare cases would a revocation of registration return to the 'Accepted' status, allowing an opposition to proceed instead of a re-examination by a trade mark examiner.\nRevocation of registration is rare. It is not a substitute for court action to challenge someone else's entitlement to a trade mark, rather, it is about identifying information showing that the registration should not have occurred in the first place. The power to revoke will usually only be used where there is a clear case:\n* of error by IP Australia, or\n\n* new circumstances become known.\nThe Registrar of Trade Marks (the Registrar) is not required to consider a request for revocation, but if they do, they must consider all the circumstances and whether it is reasonable to revoke the registration, including whether there is a more appropriate remedy (such as court challenge).\nIn making a revocation decision, IP Australia can take account of a range of circumstances that could have prevented registration. This includes reasons which go to the heart of whether the application should have been accepted, such as whether it's:\n* scandalous\n\n* likely to cause confusion\n\n* not sufficiently distinctive\n\n* too similar to another registered trade mark.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation"
@@ -162,14 +162,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Registration of a trade mark can be 'revoked' in certain circumstances where it should not have been registered in the first place. This is only possible within the first 12 months of registration.\nGenerally, revocation of registration is followed immediately by revocation of acceptance, resulting in the subject trade mark application returning to the examiner for a re-examination. Only in very rare cases would a revocation of registration return to the 'Accepted' status, allowing an opposition to proceed instead of a re-examination by a trade mark examiner.\nRevocation of registration is rare. It is not a substitute for court action to challenge someone else's entitlement to a trade mark, rather, it is about identifying information showing that the registration should not have occurred in the first place. The power to revoke will usually only be used where there is a clear case:\n* of error by IP Australia, or\n\n* new circumstances become known.\nThe Registrar of Trade Marks (the Registrar) is not required to consider a request for revocation, but if they do, they must consider all the circumstances and whether it is reasonable to revoke the registration, including whether there is a more appropriate remedy (such as court challenge).\nIn making a revocation decision, IP Australia can take account of a range of circumstances that could have prevented registration. This includes reasons which go to the heart of whether the application should have been accepted, such as whether it's:\n* scandalous\n\n* likely to cause confusion\n\n* not sufficiently distinctive\n\n* too similar to another registered trade mark."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

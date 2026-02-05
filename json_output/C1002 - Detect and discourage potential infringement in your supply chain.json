@@ -77,7 +77,7 @@
       "@id": "#the-service",
       "@type": "HowTo",
       "name": "Detect and discourage potential infringement in your supply chain",
-      "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
+      "description": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include:\n* Vetting suppliers\n\n* Implementing track\u2011and\u2011trace systems\n\n* Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n\n* Regular inspections of incoming orders\n\n* Sampling finished products for quality and authenticity\n\n* Scanning online marketplace listings for unauthorised items\n\n* Conducting basic factory or warehouse audits.\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low\u2011cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.\nSome businesses may also engage third\u2011party brand\u2011protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the  \n\nNotice of Objection\n\n scheme.\nMonitoring can be continuous or ad\u2011hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain"
@@ -135,14 +135,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include:\n* Vetting suppliers\n\n* Implementing track\u2011and\u2011trace systems\n\n* Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n\n* Regular inspections of incoming orders\n\n* Sampling finished products for quality and authenticity\n\n* Scanning online marketplace listings for unauthorised items\n\n* Conducting basic factory or warehouse audits.\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low\u2011cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.\nSome businesses may also engage third\u2011party brand\u2011protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the  \n\nNotice of Objection\n\n scheme.\nMonitoring can be continuous or ad\u2011hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

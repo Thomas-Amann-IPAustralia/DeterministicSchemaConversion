@@ -77,7 +77,7 @@
       "@id": "#the-service",
       "@type": "Service",
       "name": "Seek binding, authoritative decisions",
-      "description": "Escalate a wide range of trade mark matters to court",
+      "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful\n\n,\n\n and obtaining the outcome you seek is never guaranteed.\n**It is prudent to seek legal advice before deciding whether to start a court action.**\n\n You will likely also need assistance from an IP lawyer should you decide to start a court action.\nCourts can hear many types of trade mark disputes including:\n* actions against someone for infringing your trade mark\n\n* matters relating to someone else's trade mark registration\n\n* appeals from decisions made by IP Australia.\nTrade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks"
@@ -111,14 +111,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful\n\n,\n\n and obtaining the outcome you seek is never guaranteed.\n**It is prudent to seek legal advice before deciding whether to start a court action.**\n\n You will likely also need assistance from an IP lawyer should you decide to start a court action.\nCourts can hear many types of trade mark disputes including:\n* actions against someone for infringing your trade mark\n\n* matters relating to someone else's trade mark registration\n\n* appeals from decisions made by IP Australia.\nTrade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",

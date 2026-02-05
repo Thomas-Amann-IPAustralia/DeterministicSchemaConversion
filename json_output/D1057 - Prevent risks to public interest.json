@@ -125,7 +125,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Prevent risks to public interest",
-      "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.\u00a0\u00a0\u00a0\n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.\u00a0\u00a0\u00a0\n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest"
@@ -159,14 +159,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by [emailing us](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response).*"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You, as the owner of your IP, are responsible for enforcing your IP rights.\n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.\n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement."
           }
         },
         {

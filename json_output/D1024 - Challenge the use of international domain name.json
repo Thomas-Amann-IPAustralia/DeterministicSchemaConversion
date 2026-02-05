@@ -96,7 +96,7 @@
       "@id": "#the-service",
       "@type": "Service",
       "name": "Challenge the use of international domain name",
-      "description": "Dispute an international domain name that infringes your trade mark",
+      "description": "If you believe someone is infringing your trade mark in their website's domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.\nThe relevant dispute provider will vary depending on the domain name extension:\n* If the domain name extension ends in .au, then the relevant dispute policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.\n\n* If the domain name ends in a generic term like .com, .net or .org, then the relevant policy is theUniform Dispute Resolution Policy (UDRP). A full list of approved UDRP providers is available here:List of Approved Dispute Resolution Service Providers - ICANNThe World Intellectual Property Organization (WIPO) is a leading provider.\n\n* If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country's Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO.Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)\nThe World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are put into effect by the registrar (the host of the domain name).\n**Please Note:**\n\n If the infringing domain name ends in '.au' then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name"
@@ -142,14 +142,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "If you believe someone is infringing your trade mark in their website's domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.\nThe relevant dispute provider will vary depending on the domain name extension:\n* If the domain name extension ends in .au, then the relevant dispute policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.\n\n* If the domain name ends in a generic term like .com, .net or .org, then the relevant policy is theUniform Dispute Resolution Policy (UDRP). A full list of approved UDRP providers is available here:List of Approved Dispute Resolution Service Providers - ICANNThe World Intellectual Property Organization (WIPO) is a leading provider.\n\n* If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country's Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO.Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)\nThe World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are put into effect by the registrar (the host of the domain name).\n**Please Note:**\n\n If the infringing domain name ends in '.au' then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",
@@ -212,6 +204,21 @@
   "relatedLink": [
     {
       "@type": "WebPage",
+      "url": "https://www.icann.org/resources/pages/help/dndr/udrp-en",
+      "name": "Uniform Dispute Resolution Policy (UDRP)"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.icann.org/resources/pages/providers-6d-2012-02-25-en",
+      "name": "List of Approved Dispute Resolution Service Providers - ICANN"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/cctld",
+      "name": "Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)"
+    },
+    {
+      "@type": "WebPage",
       "url": "https://www.wipo.int/amc/en/domains/",
       "name": "Domain Name Disputes"
     },
@@ -259,21 +266,6 @@
       "@type": "WebPage",
       "url": "https://www.wipo.int/amc/en/domains/expiry.html",
       "name": "Q&A: domain name expiration and the UDRP"
-    },
-    {
-      "@type": "WebPage",
-      "url": "https://www.icann.org/resources/pages/help/dndr/udrp-en",
-      "name": "Uniform Dispute Resolution Policy (UDRP)"
-    },
-    {
-      "@type": "WebPage",
-      "url": "https://www.icann.org/resources/pages/providers-6d-2012-02-25-en",
-      "name": "List of Approved Dispute Resolution Service Providers - ICANN"
-    },
-    {
-      "@type": "WebPage",
-      "url": "https://www.wipo.int/amc/en/domains/cctld",
-      "name": "Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)"
     },
     {
       "@type": "WebPage",

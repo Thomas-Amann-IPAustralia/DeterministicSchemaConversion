@@ -125,7 +125,7 @@
       "@id": "#the-service",
       "@type": "HowTo",
       "name": "Receiving a letter of demand ",
-      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "description": "In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It's often the first formal step used in notifying someone of an IP issue.\nIt can be shocking to receive a legal letter like this, and the emotional impact should not be underestimated. Take time to carefully read the information to ensure you understand the other business' or IP right owner's concerns. Some important things to identify are:\n* which IP right the sender claims has been used without permission ('infringed')\n\n* what the sender wants you to do (for example, halting sales or removing content)\n\n* what evidence the sender has given in support of their claim.\nIt is usually not a good idea to ignore a letter of demand without first seeking professional advice. Taking time to understand their perspective may help you decide whether to negotiate, seek advice, or contest the claim.\n**Before responding to a letter of demand, you may want to show the letter and explain the situation to a qualified**\n\nIP legal professional\n\n**who can explain your position and outline possible options.**",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand"
@@ -168,14 +168,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It's often the first formal step used in notifying someone of an IP issue.\nIt can be shocking to receive a legal letter like this, and the emotional impact should not be underestimated. Take time to carefully read the information to ensure you understand the other business' or IP right owner's concerns. Some important things to identify are:\n* which IP right the sender claims has been used without permission ('infringed')\n\n* what the sender wants you to do (for example, halting sales or removing content)\n\n* what evidence the sender has given in support of their claim.\nIt is usually not a good idea to ignore a letter of demand without first seeking professional advice. Taking time to understand their perspective may help you decide whether to negotiate, seek advice, or contest the claim.\n**Before responding to a letter of demand, you may want to show the letter and explain the situation to a qualified**\n\nIP legal professional\n\n**who can explain your position and outline possible options.**"
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the common features in a letter of demand?",

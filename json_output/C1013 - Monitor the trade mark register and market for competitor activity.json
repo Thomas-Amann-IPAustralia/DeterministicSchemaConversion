@@ -77,7 +77,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Monitor the trade mark register and market for competitor activity",
-      "description": "Ensure the exclusivity of your trade mark by detecting potential conflicts early.",
+      "description": "Monitoring competitors' trade marks involves regularly checking the Australian Trade Marks Register, your market and other sources to spot new or changing brands that may be too similar to yours.\nEarly detection can give you time to oppose an application, contact the other business, or adjust your own plans before investing further.\nYou can do this yourself using search engines and free tools such as \n\nIP Australia's Australian Trade mark Search (ATMS)\n\n and its 'saved search' features, or pay a commercial service to send you regular reports.\nYou can also be flexible with the scope of your monitoring activity - you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity"
@@ -132,14 +132,6 @@
         "@id": "#the-service"
       },
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Monitoring competitors' trade marks involves regularly checking the Australian Trade Marks Register, your market and other sources to spot new or changing brands that may be too similar to yours.\nEarly detection can give you time to oppose an application, contact the other business, or adjust your own plans before investing further.\nYou can do this yourself using search engines and free tools such as \n\nIP Australia's Australian Trade mark Search (ATMS)\n\n and its 'saved search' features, or pay a commercial service to send you regular reports.\nYou can also be flexible with the scope of your monitoring activity - you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers."
-          }
-        },
         {
           "@type": "Question",
           "name": "What are the benefits?",
@@ -211,7 +203,7 @@
     {
       "@type": "WebPage",
       "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
-      "name": "Australian Trade Mark Search"
+      "name": "IP Australia's Australian Trade mark Search (ATMS)"
     },
     {
       "@type": "WebPage",
