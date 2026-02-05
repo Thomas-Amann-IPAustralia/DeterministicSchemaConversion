@@ -7,9 +7,9 @@ from bs4 import BeautifulSoup  # Requires: pip install beautifulsoup4
 
 # --- CONFIGURATION ---
 INPUT_DIR = 'IPFR-Webpages' if os.path.exists('IPFR-Webpages') else '.'
-HTML_DIR = 'IPFR-Webpages-html'  # <--- NEW CONFIGURATION
+HTML_DIR = 'IPFR-Webpages-html'
 OUTPUT_DIR = 'json_output'
-CSV_FILE = 'metatable-Content.csv' # <--- UPDATED to new CSV
+CSV_FILE = 'metatable-Content.csv'
 
 # --- 1. KNOWLEDGE BASES ---
 LEGISLATION_MAP = {
@@ -25,6 +25,7 @@ LEGISLATION_MAP = {
         {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/text", "type": "Act"},
         {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/text", "type": "Regulations"}
     ],
+    # PBR mapped explicitly to Plant Breeder's Rights Act as requested
     "pbr": [ 
         {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/text", "type": "Act"},
         {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/text", "type": "Regulations"}
@@ -154,7 +155,6 @@ def clean_html_fragment(soup_element):
             li.replace_with(f"\n* {text}")
 
     # 6. Extract Text (handling paragraphs via newlines)
-    # The separator ensures that <p> content doesn't mash together
     text = fragment.get_text(separator="\n\n")
 
     # --- Unicode Normalization ---
@@ -168,7 +168,7 @@ def clean_html_fragment(soup_element):
         text = text.replace(k, v)
     
     # Clean up whitespace
-    text = re.sub(r'\n{3,}', '\n\n', text) # Collapse multiple newlines to max 2
+    text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip()
 
 def parse_html_to_blocks(html_content):
@@ -179,15 +179,11 @@ def parse_html_to_blocks(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     blocks = {}
     
-    # Target main content area to avoid nav/footer noise if possible
     main_content = soup.find('div', class_='ct-layout__inner') or soup
     
     current_header = "intro"
     current_elements = []
     
-    # Locate all relevant tags in flattened order
-    
-    # Find the container holding the content
     container = main_content
     if main_content.find('article'):
         container = main_content.find('article')
@@ -195,7 +191,6 @@ def parse_html_to_blocks(html_content):
     start_node = container.find(['h1', 'h2'])
     
     if start_node:
-        # Iterate siblings of the header
         iterator_parent = start_node.parent
         
         for child in iterator_parent.children:
@@ -210,7 +205,6 @@ def parse_html_to_blocks(html_content):
                 
                 # Start new block
                 current_header = child.get_text(strip=True).lower()
-                # --- AMENDED REGEX: Added \' to the allowed list to preserve apostrophes ---
                 current_header = re.sub(r'[^\w\s\?\']', '', current_header).strip()
                 current_elements = []
             
@@ -237,7 +231,6 @@ def load_csv_metadata(csv_path):
     try:
         with open(csv_path, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
-            # Normalize headers (strip whitespace)
             reader.fieldnames = [name.strip() for name in reader.fieldnames]
             rows = list(reader)
     except Exception as e:
@@ -250,7 +243,6 @@ def find_metadata_row(md_content, filename, csv_rows):
     if url_match:
         page_url = url_match.group(1).strip()
         for row in csv_rows:
-            # UPDATED: Key is now 'Canonical-url'
             csv_url = row.get('Canonical-url', '').strip()
             if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
                 return row
@@ -268,7 +260,6 @@ def find_metadata_row(md_content, filename, csv_rows):
     clean_name = re.sub(r'^[a-z]\d{4}\s*-\s*', '', clean_name).strip()
     
     for row in csv_rows:
-        # UPDATED: Key is now 'Main-title'
         csv_title = row.get('Main-title', '').lower().strip()
         if clean_name == csv_title: return row
         if clean_name and clean_name in csv_title: return row
@@ -298,21 +289,14 @@ def parse_markdown_blocks(md_text):
 def clean_text_retain_formatting(text, strip_images=False):
     if not text: return ""
     
-    # --- NEW: Unicode Normalization ---
-    # Replace smart quotes, dashes, and non-breaking spaces with standard characters
     replacements = {
-        "\u2018": "'",  # Left single quote
-        "\u2019": "'",  # Right single quote
-        "\u201c": '"',  # Left double quote
-        "\u201d": '"',  # Right double quote
-        "\u2013": "-",  # En dash
-        "\u2014": "-",  # Em dash
-        "\u2026": "...", # Ellipsis
-        "\u00a0": " ",  # Non-breaking space
+        "\u2018": "'", "\u2019": "'",
+        "\u201c": '"', "\u201d": '"',
+        "\u2013": "-", "\u2014": "-",
+        "\u2026": "...", "\u00a0": " ",
     }
     for src, target in replacements.items():
         text = text.replace(src, target)
-    # ----------------------------------
 
     if strip_images:
         text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
@@ -326,12 +310,6 @@ def clean_text_retain_formatting(text, strip_images=False):
     return text.strip()
 
 def extract_links_and_clean(text):
-    """
-    Extracts Markdown links [text](url) from text.
-    Returns: (cleaned_text, list_of_link_objects)
-    cleaned_text: string with links replaced by just their text.
-    list_of_link_objects: [{"@type": "WebPage", "url": url, "name": text}, ...]
-    """
     if not text:
         return text, []
 
@@ -341,7 +319,6 @@ def extract_links_and_clean(text):
         name = match.group(1).strip()
         url = match.group(2).strip()
         
-        # Don't add empty links
         if url:
             found_links.append({
                 "@type": "WebPage",
@@ -349,24 +326,40 @@ def extract_links_and_clean(text):
                 "name": name if name else "Link"
             })
         
-        return name # Replace [name](url) with just name
+        return name 
 
-    # Regex matches [text](url)
     cleaned_text = re.sub(r'\[(.*?)\]\((https?://[^\)]+)\)', replace_fn, text)
     return cleaned_text, found_links
 
 def generate_citations_from_csv(metadata_row):
+    """
+    Generates citations based on the 'Relevant-ip-right' field in the CSV.
+    Logic:
+    1. If text implies 'Any dispute related to intellectual property', it generates
+       citations for ALL major IP rights (Trade Mark, Patent, Design, PBR, Copyright).
+    2. 'pbr' is explicitly treated as 'Plant Breeder's Rights'.
+    """
     citations = []
-    # UPDATED: Key is 'Relevant-ip-right'
     raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
     if not raw_ip_rights: return citations
     
-    # CLEANING: Remove extra quotes and normalize
-    cleaned_rights = raw_ip_rights.replace('"', '').replace("'", "").lower()
-    rights_list = [r.strip() for r in cleaned_rights.split(',') if r.strip()]
+    # Cleaning: Remove extra quotes and normalize to lower case
+    cleaned_rights_str = raw_ip_rights.replace('"', '').replace("'", "").lower().strip()
+    
+    rights_to_process = []
+    
+    # --- UPDATED LOGIC: Handle "Any Dispute" Wildcard ---
+    if "any dispute related to intellectual property" in cleaned_rights_str:
+        # If "Any dispute" is found, we must include all 5 major IP types
+        rights_to_process = ["trade mark", "patent", "design", "pbr", "copyright"]
+    else:
+        # Standard processing: split by comma
+        rights_to_process = [r.strip() for r in cleaned_rights_str.split(',') if r.strip()]
     
     added_urls = set()
-    for right in rights_list:
+    for right in rights_to_process:
+        # Look up legilsation. Note: 'pbr' is a key in LEGISLATION_MAP 
+        # that points to Plant Breeder's Rights Act/Regs.
         if right in LEGISLATION_MAP:
             for leg in LEGISLATION_MAP[right]:
                 if leg['url'] not in added_urls:
@@ -377,6 +370,7 @@ def generate_citations_from_csv(metadata_row):
                         "legislationType": leg['type']
                     })
                     added_urls.add(leg['url'])
+                    
     return citations
 
 def resolve_provider(provider_raw_string, archetype_hint=""):
@@ -393,7 +387,6 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     return base_obj
 
 def resolve_about_topics(metadata_row):
-    # UPDATED: Key is 'Relevant-ip-right'
     raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
     cleaned_rights = raw_ip_rights.replace('"', '').replace("'", "").lower()
     rights_list = [r.strip() for r in cleaned_rights.split(',') if r.strip()]
@@ -415,10 +408,9 @@ def resolve_about_topics(metadata_row):
     elif len(about_entities) > 1: return about_entities
     else: return {"@type": "Thing", "name": "Intellectual Property Right"}
 
-# --- 4. EXTRACTORS (Updated for HTML & Links) ---
+# --- 4. EXTRACTORS ---
 
 def extract_dynamic_content_html(blocks, main_description_key=None):
-    """ Extracts FAQs using blocks. Returns (content_items, collected_links). """
     IGNORED_HEADERS = {
         "intro", "description", "see also", "want to give us feedback?", 
         "references", "external links", "table of contents", "feedback", 
@@ -438,7 +430,6 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
         if "step" in clean_header_key or "proceed" in clean_header_key: continue
 
         display_name = header.capitalize()
-        # Intelligent phrasing for headers that aren't questions
         if not display_name.endswith('?') and not display_name.endswith(':'):
              if "features" in clean_header_key: display_name = f"What are the {header.lower()}?"
              elif "watch out" in clean_header_key: display_name = f"What should I watch out for?"
@@ -449,7 +440,6 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
              elif "risks" in clean_header_key: display_name = f"What are the risks?"
              else: display_name = f"{display_name}?"
 
-        # Extract links and strip them from the answer text
         clean_md, links = extract_links_and_clean(text_content)
         collected_links.extend(links)
 
@@ -464,7 +454,6 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
     return content_items, collected_links
 
 def extract_howto_steps_html(blocks):
-    """ Extracts steps. Returns (steps, collected_links). """
     steps = []
     collected_links = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
@@ -472,7 +461,6 @@ def extract_howto_steps_html(blocks):
     if target_key:
         raw_text = blocks[target_key]
         
-        # Split by bullet points if they exist
         if "\n* " in raw_text:
              matches = raw_text.split("\n* ")
              for m in matches:
@@ -485,7 +473,6 @@ def extract_howto_steps_html(blocks):
                     "text": clean_step
                 })
         else:
-             # Fallback to paragraphs
              paragraphs = raw_text.split('\n\n')
              for p in paragraphs:
                  if not p.strip(): continue
@@ -500,7 +487,6 @@ def extract_howto_steps_html(blocks):
     return steps, collected_links
 
 def extract_howto_steps_md(blocks):
-    """ Fallback MD extractor. Returns (steps, collected_links). """
     steps = []
     collected_links = []
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
@@ -542,22 +528,18 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
             pass
 
     blocks = parse_html_to_blocks(html_content) if use_html else parse_markdown_blocks(md_content)
-    if not blocks and use_html: # Fallback if HTML parsing yields nothing
+    if not blocks and use_html: 
         blocks = parse_markdown_blocks(md_content)
         use_html = False
 
     udid = metadata_row.get('UDID', 'Dxxxx')
-    # UPDATED: Key is 'Main-title'
     title = metadata_row.get('Main-title', filename.replace('.md', '').replace('_', ' '))
-    # UPDATED: Key is 'Archectype' (handling potential trailing space via load_csv normalization)
     archetype = metadata_row.get('Archectype', 'Government Service').strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
 
-    # Define page_url early so it can be used in both main_obj and the final json_ld
-    # UPDATED: Key is 'Canonical-url'
     page_url = metadata_row.get('Canonical-url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}")
 
-    master_links = [] # Collector for all links
+    master_links = [] 
 
     # --- DESCRIPTION ---
     description = clean_text_retain_formatting(metadata_row.get('Description', ''), strip_images=True)
@@ -568,7 +550,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
             found_key = next((bk for bk in blocks.keys() if k in bk), None)
             if found_key:
                 raw_desc = blocks[found_key]
-                # Extract links and strip them from description
                 clean_desc, links = extract_links_and_clean(raw_desc)
                 master_links.extend(links)
                 
@@ -580,8 +561,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     service_id = "#the-service"
     has_provider = True
     
-    # UPDATED: Archetype Logic based on new CSV values
-    # "Self-Help Strategy", "Government Service", "Commercial Third Party Service"
     if "Self-Help" in archetype:
         service_type, has_provider = "HowTo", False 
     elif "Government Service" in archetype:
@@ -605,7 +584,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "areaServed": {"@type": "Country", "name": "Australia"}
     }
 
-    # Extract Steps
     if use_html:
         steps, s_links = extract_howto_steps_html(blocks)
     else:
@@ -616,7 +594,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         main_obj["step"] = steps
     
     if has_provider:
-        # In new CSV, we often rely on Archetype or Overtitle as there is no specific Provider column
         provider_name = metadata_row.get('Overtitle')
         provider_obj = resolve_provider(provider_name, archetype_hint=archetype)
         if service_type == "GovernmentService": main_obj["serviceOperator"] = provider_obj
@@ -624,7 +601,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
 
     main_entities = [main_obj]
 
-    # Sidecar HowTo
     if service_type != "HowTo" and steps:
         main_entities.append({
             "@type": "HowTo",
@@ -639,7 +615,6 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         faqs, f_links = extract_dynamic_content_html(blocks, main_description_key=used_desc_key)
         master_links.extend(f_links)
     else:
-        # Re-use extract logic for MD (simplified manually here to include link extraction)
         for h, c in blocks.items():
             if h in ["intro", "description", "see also", "step"] or (used_desc_key and h == used_desc_key): continue
             q_name = h.capitalize() + ("?" if not h.endswith('?') else "")
@@ -685,23 +660,18 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "mainEntity": main_entities
     }
     
-    # Related Links extraction (See Also + Captured Links)
     see_also = next((k for k in blocks.keys() if "see also" in k), None)
     if see_also:
         content = blocks[see_also]
-        # Extract links from See Also block using the same helper to get objects
         _, sa_links = extract_links_and_clean(content)
         master_links.extend(sa_links)
 
-    # Deduplicate Links (by URL)
     unique_links_map = {}
     for lnk in master_links:
         u = lnk['url']
-        # If url already exists, we might want to keep the one with a better name
         if u not in unique_links_map:
             unique_links_map[u] = lnk
         else:
-            # If the stored name is generic "Link" but new one is specific, update it
             if unique_links_map[u]['name'] == "Link" and lnk['name'] != "Link":
                 unique_links_map[u] = lnk
 
@@ -722,7 +692,6 @@ def main():
     csv_rows = load_csv_metadata(CSV_FILE)
     md_files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.md')]
     
-    # Check if the dedicated HTML folder exists, otherwise fallback to INPUT_DIR
     html_source_dir = HTML_DIR if os.path.exists(HTML_DIR) else INPUT_DIR
     
     print(f"Processing Markdown from: {INPUT_DIR}")
@@ -731,16 +700,13 @@ def main():
     for filename in md_files:
         md_path = os.path.join(INPUT_DIR, filename)
         
-        # Determine potential HTML files
-        # Matches user pattern: "B1000...md" -> "B1000...-html.html"
         base = filename.replace('.md', '')
         html_cands = [
-            f"{base}-html.html",  # Primary pattern observed
+            f"{base}-html.html",
             f"{base}.html", 
             f"{base}_html.html"
         ]
         
-        # Look for the first candidate that exists in the HTML_DIR
         html_path = next(
             (os.path.join(html_source_dir, h) for h in html_cands if os.path.exists(os.path.join(html_source_dir, h))), 
             None
