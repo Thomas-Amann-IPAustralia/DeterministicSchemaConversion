@@ -55,7 +55,7 @@ PROVIDER_MAP = {
         "url": "https://www.ipaustralia.gov.au",
         "sameAs": [
             "https://en.wikipedia.org/wiki/IP_Australia",
-            "https://www.wikidata.org/wiki/Q5973650"
+            "https://www.wikidata.org/wiki/Q5973154"
         ]
     },
     "Australian Border Force": {
@@ -91,7 +91,7 @@ PUBLISHER_BLOCK = {
         "@type": "GovernmentOrganization", 
         "name": "Australian Government"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
 }
 
 USAGE_INFO_BLOCK = {
