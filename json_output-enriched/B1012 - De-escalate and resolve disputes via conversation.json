@@ -82,7 +82,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Include Cease-and-Desist Letter or Request",
+          "name": "Cease-and-Desist Letter or Request Copy",
           "text": "<li>A copy of the cease-and-desist letter or the request, including deadlines and requested actions.</li>"
         },
         {
@@ -92,12 +92,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Review IP Right's Scope and Ownership",
+          "name": "Verify IP Ownership and Scope",
           "text": "<li>Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Contact Rights Holder",
+          "name": "Provide Contact Details",
           "text": "<li>Contact details for the rights holder or their representative to open dialogue.</li>"
         },
         {
@@ -189,11 +189,11 @@
     }
   ],
   "relatedLink": [
+    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*lf25uu*_ga*OTM2NTQ2NDI2LjE3NDI5NjA5OTg.*_ga_GMT4KC15KS*czE3NDc3MDM4ODgkbzI1JGcxJHQxNzQ3NzAzOTExJGowJGwwJGgw",
     "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
     "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
     "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*lf25uu*_ga*OTM2NTQ2NDI2LjE3NDI5NjA5OTg.*_ga_GMT4KC15KS*czE3NDc3MDM4ODgkbzI1JGcxJHQxNzQ3NzAzOTExJGowJGwwJGgw",
     "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options"
   ]
 }

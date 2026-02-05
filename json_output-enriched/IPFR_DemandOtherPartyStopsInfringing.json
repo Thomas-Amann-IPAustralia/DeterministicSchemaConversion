@@ -82,17 +82,17 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Check IP Status and Details",
+          "name": "Check IP Status and Details in Relevant Jurisdiction",
           "text": "<li>The status and details of the relevant IP in the jurisdiction where infringement occurred. For registered rights, this includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices. For copyright, this might include checking any rules around registration in that other jurisdiction - while there is no copyright registration requirement or system in Australia, this is not the case everywhere.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Assessing Potential Infringement",
+          "name": "Assessing Infringement and Scope of Protection",
           "text": "<li>Whether the other party's conduct amounts to infringement, having regard to <a href=\"https://ipfirstresponse.ipaustralia.gov.au/infringement-101\">what infringement looks like</a>, to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services. For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent. For copyright, you could consider whether any exceptions or statutory licence under copyright law may apply that could have enabled the use of the material in question without your permission. For more information about copyright exceptions, see <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement\">Copyright infringement | IP Australia First Response</a>.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Consider Informal Contact Methods",
+          "name": "Consider Informal Communication Options",
           "text": "<li>Whether there any other less confrontational and more informal ways to contact the other party before sending out the letter.</li>"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Consideration of Engagement and Follow-Through",
+          "name": "Consideration of Engagement in Further Correspondence or Disputes",
           "text": "<li>Whether you will be prepared to be engaged in further correspondence, negotiation or even disputes with the other party. If you threaten to do something and do not follow through, it could be found to be an unjustified threat. </li>"
         }
       ]
@@ -189,9 +189,9 @@
     }
   ],
   "relatedLink": [
-    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
     "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action"
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+    "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
   ]
 }

@@ -82,7 +82,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Choosing Mediator's Role",
+          "name": "Choosing the Mediator's Role",
           "text": "<li>Would the parties like the mediator to provide a neutral evaluation of their dispute, or act as a facilitator of their negotiations? </li>"
         },
         {
@@ -92,7 +92,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Choosing a Mediator: Subject Matter Expertise vs. Mediation Process Experience",
+          "name": "Mediator's Experience: Subject Matter vs. Mediation Process",
           "text": "<li>Is it more important for the mediator to have experience in the subject matter of the dispute, or the process of mediation itself? </li>"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Identify Conflict of Interest",
+          "name": "Determine Conflict of Interest",
           "text": "<li>Does a conflict of interest exist? </li>"
         },
         {
@@ -112,17 +112,17 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Access Dispute Resolution Resources for Small Businesses",
+          "name": "Australian Small Business and Family Enterprise Ombudsman (ASBFEO) Resources",
           "text": "<li><a href=\"https://www.asbfeo.gov.au/\">The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) </a> provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "WIPO Arbitration and Mediation Center Information",
+          "name": "WIPO Arbitration and Mediation Center",
           "text": "<li><a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&amp;url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&amp;usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&amp;opi=89978449\">The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Center </a> offers mediation, arbitration and expert determination to enable private parties to settle their international commercial disputes. For more information, see <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes\">WIPO ADR Options</a>.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Include the Australian Centre for International Commercial Arbitration",
+          "name": "Australian Centre for International Commercial Arbitration",
           "text": "<li>the <a href=\"https://acica.org.au/\">Australian Centre for International Commercial Arbitration </a> </li>"
         },
         {
@@ -132,42 +132,42 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Australian Disputes Centre Information",
+          "name": "Australian Disputes Centre",
           "text": "<li>the <a href=\"https://disputescentre.com.au/\">Australian Disputes Centre </a> </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Victorian Small Business Commission Link",
+          "name": "Access the Victorian Small Business Commission Website",
           "text": "<li><a href=\"https://www.vsbc.vic.gov.au/\">Victorian Small Business Commission </a> </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "New South Wales Small Business Commissioner Website",
+          "name": "Link to New South Wales Small Business Commissioner",
           "text": "<li><a href=\"https://www.smallbusiness.nsw.gov.au/\">New South Wales Small Business Commissioner </a> </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "South Australian Small Business Commissioner Website",
+          "name": "Access South Australian Small Business Commissioner Website",
           "text": "<li><a href=\"https://www.sasbc.sa.gov.au/\">South Australian Small Business Commissioner </a> </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Western Australia Small Business Development Corporation Link",
+          "name": "Link to Western Australia Small Business Development Corporation",
           "text": "<li><a href=\"https://www.smallbusiness.wa.gov.au/\">Western Australia Small Business Development Corporation </a> </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Access Queensland Small Business Commissioner Resources",
+          "name": "Access Queensland Small Business Commissioner",
           "text": "<li><a href=\"https://www.business.qld.gov.au/running-business/support-assistance/qsbc\">Queensland Small Business Commissioner </a> </li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Access to Arts Law Centre's ADR Services",
+          "name": "Arts Law Centre ADR Services",
           "text": "<li><a href=\"https://www.artslaw.com.au/information-sheet/alternative-dispute-resolution-binding-expert-dermination-and-non-binding-e/#:~:text=How%20does%20the%20Arts%20Law,of%20the%20Centre&amp;apos;s%20panel%20lawyers.\">the Arts Law Centre of Australia </a>has access to a panel of mediators and experts who can provide low-cost ADR services to artists and arts organisations who subscribe to Arts Law.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Resolution Pathways Service",
+          "name": "Resolution Pathways Service for Music Disputes",
           "text": "<li><a href=\"https://resolutionpathways.com.au/\">Resolution Pathways </a>is a service available to music creators and music users disputing their interactions with<s>,</s> APRA AMCOS and/or OneMusic Australia, as well as, in limited circumstances, disputes between music creators.</li>"
         }
       ]
@@ -254,13 +254,13 @@
     }
   ],
   "relatedLink": [
-    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
     "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-    "https://www.education.gov.au/hercip",
     "https://www.fedcourt.gov.au/services/ADR/mediation",
-    "https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24"
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://ipta.org.au/community/get-free-consultation/",
+    "https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+    "https://www.education.gov.au/hercip"
   ]
 }

@@ -82,7 +82,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Check IP Status and Details",
+          "name": "Check IP Status and Registrations",
           "text": "<li>The status and details of the relevant IP in the jurisdiction where suspected infringement occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices.</li>"
         },
         {
@@ -92,12 +92,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Evaluate Trade Mark Similarity",
+          "name": "Consider Goods and Services",
           "text": "<li>For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Patent Claim Features Evaluation",
+          "name": "Determine Patent Claim Coverage",
           "text": "<li>For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent.</li>"
         },
         {
@@ -117,17 +117,17 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Consideration of Engagement in Further Correspondence",
+          "name": "Consideration of Engagement in Further Correspondence or Disputes",
           "text": "<li>Whether you will be prepared to be engaged in further correspondence, negotiation or even disputes with the other party. If you threaten to do something and do not follow through, it could be found to be an unjustified threat.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Considerations for Commercializing and Promoting Your IP",
+          "name": "Considerations for Commercializing and Promoting IP",
           "text": "<li>Your plans to commercialise and promote your IP, and whether making informal contact could undermine (or strengthen) these.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Engage in Amicable Conversation",
+          "name": "Engage in Productive Conversation",
           "text": "<li>Ways you can engage in an amicable, productive conversation with the other party. </li>"
         }
       ]
@@ -214,11 +214,11 @@
     }
   ],
   "relatedLink": [
+    "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
     "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
     "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
-    "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
     "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat"
   ]
 }

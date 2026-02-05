@@ -92,12 +92,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Provide Evidence",
+          "name": "Provide Evidence of Infringement",
           "text": "<li>Screenshots of the original listing and the allegedly infringing content.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Platform-Specific Infringement Response Processes",
+          "name": "Platform-Specific Infringement Response Procedures",
           "text": "<li>Knowledge of each platform's process, for example:<ul><li>Amazon: Using the <a href=\"https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=sc_au_amazon_v2&amp;openid.mode=checkid_setup&amp;language=en_AU&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=sc_amazon_v3_unified&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ\"><u>Account Health Page</u> </a> to provide evidence against a notice or warning for infringement.</li><li>eBay: file a <a href=\"https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program\"><u>VeRO</u> </a> counter notice via email or the provided form (NOCI).</li><li>Etsy: use \"<a href=\"https://help.etsy.com/hc/en-us/articles/360034079714-What-to-Do-if-You-Receive-a-Notice-of-Intellectual-Property-Infringement?segment=selling\"><u>What to Do if You Receive a Notice of Intellectual Property Infringement\"</u> </a> page and contact the rights owner directly.</li><li>Shein: submit via \"IP Notice\" portal at Shein <a href=\"https://ipp.shein.com/ipp\"><u>IPP</u> </a>.</li></ul></li>"
         },
         {
@@ -122,7 +122,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Communication and Submission Log",
+          "name": "Communication and Decision Log",
           "text": "<li>A log of all communications, submissions and platform decisions. </li>"
         }
       ]
@@ -210,9 +210,9 @@
   ],
   "relatedLink": [
     "https://www.ebay.com/sellercenter/ebay-for-business/verified-rights-owner-program",
-    "https://ipp.shein.com/ipp?language=en",
     "https://sellercentral.amazon.com/help/hub/reference/external/201361070?locale=en-US",
+    "https://www.etsy.com/legal/ip/",
     "https://www.ttipattorney.gov.au/",
-    "https://www.etsy.com/legal/ip/"
+    "https://ipp.shein.com/ipp?language=en"
   ]
 }

@@ -97,7 +97,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Determine Arbitrability of IP Disputes",
+          "name": "Determine Arbitrability of Dispute",
           "text": "<li>Is the subject matter of the dispute considered arbitrable in relevant jurisdictions? Though most areas of IP are considered arbitrable in many jurisdictions, questions relating to validity or registrability of intellectual property are deemed as non-arbitrable in some jurisdictions.</li>"
         },
         {
@@ -107,7 +107,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Determine the Need for Multiple Arbitrators",
+          "name": "Determine the Number and Expertise of Arbitrators",
           "text": "<li>Is more than one arbitrator required? For example, do the parties come from different cultural and linguistic backgrounds? Or would it be beneficial to have both a technical expert and a legal practitioner as co-arbitrators? </li>"
         },
         {
@@ -122,7 +122,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "WIPO Arbitration and Mediation Center",
+          "name": "WIPO Arbitration and Mediation Center Information",
           "text": "<li><a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&amp;url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&amp;usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&amp;opi=89978449\">The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Center </a> offers mediation, arbitration and expert determination to enable private parties to settle their international commercial disputes. For more information, see <a href=\"https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes\">WIPO ADR options</a>.</li>"
         },
         {
@@ -132,7 +132,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Find Australian Disputes Centre",
+          "name": "Australian Disputes Centre",
           "text": "<li>the <a href=\"https://disputescentre.com.au/\">Australian Disputes Centre </a>. </li>"
         }
       ]
@@ -211,14 +211,14 @@
     }
   ],
   "relatedLink": [
-    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
-    "https://acica.org.au/",
-    "https://www.fedcourt.gov.au/services/ADR/arbitration",
-    "https://www.wipo.int/amc/en/arbitration/fees/",
     "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
-    "https://ipta.org.au/community/get-free-consultation/",
-    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
     "https://www.wipo.int/amc/en/clauses/",
-    "https://www.education.gov.au/hercip"
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://ipta.org.au/community/get-free-consultation/",
+    "https://www.wipo.int/amc/en/arbitration/fees/",
+    "https://www.fedcourt.gov.au/services/ADR/arbitration",
+    "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+    "https://www.education.gov.au/hercip",
+    "https://acica.org.au/"
   ]
 }

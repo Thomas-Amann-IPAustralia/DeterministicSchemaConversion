@@ -96,7 +96,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Inventory of Registered IP Rights and Key Products",
+          "name": "Create an IP Inventory",
           "text": "<li>A clear inventory of your registered IP rights and key products.</li>"
         },
         {
@@ -106,17 +106,17 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Supply Chain Contact Details",
+          "name": "Supply Chain Partner Contact Details",
           "text": "<li>Up-to-date contact details for all supply chain partners.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Create Supply Agreements with IP Use Permissions and Audit Rights",
+          "name": "Supply Agreements with IP Use Permissions and Audit Rights",
           "text": "<li>Written supply agreements specifying IP use permissions and audit rights.</li>"
         },
         {
           "@type": "HowToStep",
-          "name": "Flagging Unusual Orders or Routes Procedures",
+          "name": "Flagging Unusual Orders or Routes",
           "text": "<li>Procedures for staff to flag unusual orders or routes.</li>"
         },
         {
@@ -213,9 +213,9 @@
     }
   ],
   "relatedLink": [
-    "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
     "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
-    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip"
+    "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+    "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+    "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com"
   ]
 }
