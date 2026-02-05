@@ -473,29 +473,42 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
 def extract_howto_steps_html(blocks):
     steps = []
     collected_links = []
+    # Locate the key for the "How To" section (e.g., "What do you need to proceed?")
     target_key = next((k for k in blocks.keys() if "proceed" in k or "steps" in k), None)
-    
+
     if target_key:
-        raw_text = blocks[target_key]
+        raw_text = blocks[target_key].strip()
         
-        if "\n* " in raw_text:
-             matches = raw_text.split("\n* ")
-             for m in matches:
-                 if not m.strip(): continue
-                 clean_step, links = extract_links_and_clean(m.strip())
-                 collected_links.extend(links)
-                 steps.append({
-                    "@type": "HowToStep",
-                    "name": "xXx_PLACEHOLDER_xXx", 
-                    "text": clean_step
-                })
-        else:
-             paragraphs = raw_text.split('\n\n')
-             for p in paragraphs:
-                 if not p.strip(): continue
-                 clean_step, links = extract_links_and_clean(p.strip())
-                 collected_links.extend(links)
-                 steps.append({
+        # 1. Split the text by bullet points (*), utilizing regex to capture start-of-line bullets.
+        # This creates a list where parts[0] is text BEFORE the first bullet, 
+        # and parts[1:] are the bullets (potentially with trailing text attached).
+        parts = re.split(r'(?:^|\n)\* ', raw_text)
+        
+        # 2. Process the "Intro" text (everything before the first bullet point)
+        if parts[0].strip():
+            clean_step, links = extract_links_and_clean(parts[0].strip())
+            collected_links.extend(links)
+            steps.append({
+                 "@type": "HowToStep",
+                 "name": "xXx_PLACEHOLDER_xXx", 
+                 "text": clean_step
+            })
+        
+        # 3. Process the bullet points and any trailing paragraphs
+        for part in parts[1:]:
+            if not part.strip(): continue
+            
+            # Split the bullet segment by double newlines.
+            # This separates the actual list item from any subsequent paragraphs 
+            # (like the "Consider getting help..." section) that followed the list.
+            sub_segments = re.split(r'\n{2,}', part)
+            
+            for segment in sub_segments:
+                if not segment.strip(): continue
+                
+                clean_step, links = extract_links_and_clean(segment.strip())
+                collected_links.extend(links)
+                steps.append({
                     "@type": "HowToStep",
                     "name": "xXx_PLACEHOLDER_xXx", 
                     "text": clean_step
