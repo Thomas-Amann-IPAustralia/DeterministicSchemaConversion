@@ -1,0 +1,144 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "Prevent risks to public interest",
+  "alternativeHeadline": "Report IP crime or safety concerns",
+  "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "D1057"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-05",
+  "dateModified": "2026-02-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Any Dispute"
+  },
+  "citation": [],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "Prevent risks to public interest",
+      "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "name": "xXx_PLACEHOLDER_xXx"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Prevent risks to public interest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our [IP First Response feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) and by [emailing us](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response).*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You, as the owner of your IP, are responsible for enforcing your IP rights.\n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.\n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "**if the infringement involves ip crime**?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most IP infringement is not a criminal matter. However, under Australian law it can be a criminal offence to engage in:\n\n* trade mark counterfeiting\n* certain copyright infringements — generally involving commercial dealings or done on a commercial scale\n* plant breeder’s rights infringement.\n\nThese usually become a police matter when activity is serious, for example if it poses imminent risk of public harm or is highly organised or widespread. The Australian Federal Police (AFP) focuses on taking action against organisers, major importers and wholesalers of counterfeit goods. These goods pose public safety risks and can be used to support organised crime, money laundering and cybercrime.\n\nSales of counterfeit goods can be reported to [Crime Stoppers](https://crimestoppers.com.au/). If you suspect links to serious or organised crime like the above, phone 131 444 and report the matter to your local police."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "**if the infringement involves counterfeit medicines or medical devices**?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Counterfeit medicines and medical devices are particularly serious as they can cause harm to users or not work as intended. Counterfeit medical products should be reported to the Therapeutic Goods Administration (TGA) at [this page](https://www.tga.gov.au/resources/resource/forms/report-perceived-breach-or-questionable-practices)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "**if there is serious risk of consumer harm**?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Counterfeit goods are often substandard or low quality, which can be dangerous. Some IP infringement involves making false and misleading claims. These things can harm consumers and are not allowed under the Australian Consumer Law (ACL).\n\nConsumer harm/issues/concerns can be reported to the Australian Consumer and Competition Commission (ACCC) at [this page](https://www.accc.gov.au/about-us/contact-us-or-report-an-issue/report-a-consumer-issue). These reports can help inform future compliance activity. Please note the ACCC does not usually resolve individual complaints."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "**scams and fraudulent activity**?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to your IP rights, you can report this activity to [Product and service scams | Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams).\n\nThere are a number of scams relating to managing IP rights, which is unfortunately a problem around the world. You can read more about these on IP Australia’s website at [Scams related to managing IP Rights | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights) and learn how to report these at [How to report fraud and corruption | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption). Sometimes this will also mean reporting to [Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams)."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption",
+    "https://www.afp.gov.au/crimes/fraud-and-corruption/intellectual-property-crime",
+    "https://www.tga.gov.au/safety/buying-health-products-online-has-risks/counterfeit-fake-medicines-and-medical-devices",
+    "https://www.afp.gov.au/news-centre/media-release/man-charged-selling-counterfeit-electronics-gold-coast",
+    "https://www.arnnet.com.au/article/1256866/aussie-hacker-ordered-to-give-up-1-7m-after-international-investigation.html",
+    "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+    "https://ipta.org.au/community/get-free-consultation/",
+    "https://www.artslaw.com.au/services/legal-query-form/",
+    "https://www.copyright.org.au/legal-advice/"
+  ]
+}
