@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "Discover where you are in your IP journey",
       "description": "As a business owner, there's a lot of information to grapple with and working out which IP options apply to you can be tricky. By matching your current activities to common stages in the IP journey, you can quickly see what's most relevant now and what might come next.\n'Where am I in the IP journey?...",
       "mainEntityOfPage": {
@@ -72,10 +72,7 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
+      "step": []
     }
   ],
   "relatedLink": [

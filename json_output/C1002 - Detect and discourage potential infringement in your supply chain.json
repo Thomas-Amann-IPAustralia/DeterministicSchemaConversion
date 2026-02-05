@@ -75,7 +75,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "Detect and discourage potential infringement in your supply chain",
       "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
       "mainEntityOfPage": {
@@ -85,17 +85,6 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "name": "How to proceed with Detect and discourage potential infringement in your supply chain",
-      "about": {
-        "@id": "#the-service"
       },
       "step": [
         {

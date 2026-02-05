@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "What is IP and how does it protect me?",
       "description": "Intellectual property (IP) is a term used to describe 'creations of the mind' that the law can help protect. This includes things like inventions, brand names, logos, designs, creative works, and plant varieties. Owning an IP right means you may have the exclusive legal right to use, make, sell, or ...",
       "mainEntityOfPage": {
@@ -72,10 +72,7 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
+      "step": []
     }
   ],
   "relatedLink": [

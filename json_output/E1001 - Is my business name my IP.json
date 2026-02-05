@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "Is my business name my IP?",
       "description": "A business may operate under several 'names', but only a registered trade mark is an intellectual property right that can give you exclusive control over your brand across Australia. IP Australia administers trade marks, while ASIC handles business and company name registration.\u00a0\n\n**Business name**\u00a0...",
       "mainEntityOfPage": {
@@ -72,10 +72,7 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
+      "step": []
     },
     {
       "@type": "FAQPage",

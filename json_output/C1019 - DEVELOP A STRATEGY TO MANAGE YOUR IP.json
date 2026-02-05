@@ -149,7 +149,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
       "description": "Develop a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
       "mainEntityOfPage": {
@@ -159,17 +159,6 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "name": "How to proceed with DEVELOP A STRATEGY TO MANAGE YOUR IP",
-      "about": {
-        "@id": "#the-service"
       },
       "step": [
         {

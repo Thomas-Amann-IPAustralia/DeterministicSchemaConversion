@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "De-escalate and resolve disputes via conversation",
       "description": "Engage in an informal conversation to resolve IP disputes",
       "mainEntityOfPage": {
@@ -71,17 +71,6 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "name": "How to proceed with De-escalate and resolve disputes via conversation",
-      "about": {
-        "@id": "#the-service"
       },
       "step": [
         {

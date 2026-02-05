@@ -94,7 +94,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "Service",
       "name": "Dispute a domain name that infringes your trade mark",
       "description": "Dispute a .au domain name that may infringe an IP right",
       "mainEntityOfPage": {
@@ -105,8 +105,8 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
+      "provider": {
+        "@type": "NGO",
         "name": "xXx_PLACEHOLDER_xXx"
       }
     },

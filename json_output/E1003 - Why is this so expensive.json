@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "Why is this so expensive?",
       "description": "Enforcing your intellectual property (IP) is about stopping suspected or alleged infringement and, in some cases, seeking damages. Costs usually rise with urgency, complexity and the number of parties involved.\nYou need to show that you own the right and that the other party's conduct likely infring...",
       "mainEntityOfPage": {
@@ -72,10 +72,7 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
+      "step": []
     }
   ],
   "relatedLink": [

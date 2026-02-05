@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "Service",
       "name": "Seek a court order to prevent further damage while preparing for court.",
       "description": "Lodge an interim injunction order through court",
       "mainEntityOfPage": {
@@ -72,8 +72,8 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
+      "provider": {
+        "@type": "NGO",
         "name": "xXx_PLACEHOLDER_xXx"
       }
     },

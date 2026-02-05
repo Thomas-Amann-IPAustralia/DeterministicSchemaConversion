@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS",
       "description": "Identify IP in your portfolio, who owns it, what it's worth, it's legal status, and what to do next.",
       "mainEntityOfPage": {
@@ -71,17 +71,6 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "name": "How to proceed with CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS",
-      "about": {
-        "@id": "#the-service"
       },
       "step": [
         {

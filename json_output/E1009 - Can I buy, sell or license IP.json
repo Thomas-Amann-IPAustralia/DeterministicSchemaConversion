@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "Can I buy, sell or license IP?",
       "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\nHere are some examples of what you may choose ...",
       "mainEntityOfPage": {
@@ -72,10 +72,7 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
+      "step": []
     }
   ],
   "relatedLink": [

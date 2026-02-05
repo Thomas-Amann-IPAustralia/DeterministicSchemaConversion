@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Any Dispute"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "Service",
       "name": "Resolve IP issues with the help of a third party",
       "description": "Agree to be bound by the decision of a highly qualified third-party assessment",
       "mainEntityOfPage": {
@@ -72,8 +72,8 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
+      "provider": {
+        "@type": "Organization",
         "name": "xXx_PLACEHOLDER_xXx"
       }
     },

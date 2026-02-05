@@ -82,7 +82,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "HowTo",
       "name": "Choose to rebrand to avoid potential IP conflicts",
       "description": "Strategically rebrand your business to avoid disputes.",
       "mainEntityOfPage": {
@@ -92,17 +92,6 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "name": "How to proceed with Choose to rebrand to avoid potential IP conflicts",
-      "about": {
-        "@id": "#the-service"
       },
       "step": [
         {

@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": "WhatIpInfringement",
-  "alternativeHeadline": "",
-  "description": "",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
+  "headline": "What is IP Infringement ",
+  "alternativeHeadline": "Infringement 101",
+  "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person's or business's creative work, invention, brand name, or des",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "UDID",
-    "value": "Dxxxx"
+    "value": "101-10"
   },
   "inLanguage": "en-AU",
   "datePublished": "2026-02-05",
@@ -39,7 +39,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "Intellectual Property Right"
+    "name": "Any Dispute Related To Intellectual Property"
   },
   "citation": [],
   "publisher": {
@@ -61,21 +61,18 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
-      "name": "WhatIpInfringement",
-      "description": "",
+      "@type": "HowTo",
+      "name": "What is IP Infringement ",
+      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person's or business's creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders' rights.",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement"
       },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
-      }
+      "step": []
     },
     {
       "@type": "FAQPage",
