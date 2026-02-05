@@ -120,8 +120,8 @@ IP_TOPIC_MAP = {
 def clean_html_fragment(soup_element):
     """
     Converts an HTML soup element into plain text for the JSON fields.
-    Crucially, it preserves [Link Name](URL) format temporarily so extracting functions
-    can find the URL, but strips all other formatting (bold, italic) down to plain text.
+    Preserves [Link Name](URL) format temporarily so extraction functions
+    can find the URL, but strips formatting (bold, italic) to plain text.
     """
     if not soup_element:
         return ""
@@ -274,30 +274,43 @@ def parse_markdown_blocks(md_text):
 
 def clean_markdown_artifacts(text):
     """
-    Aggressively removes Markdown syntax (*, **, _) to ensure plain text.
-    Preserves list bullets if they are likely list indicators.
+    Strictly cleans Markdown syntax artifacts (*, **, _, __).
+    Preserves list bullets if they appear at the start of a line.
     """
     if not text: return ""
     
-    # Remove bold/italic markers (**, __, *)
-    # But be careful not to remove single * at start of line which indicates a bullet
+    lines = text.split('\n')
+    cleaned_lines = []
     
-    # 1. Remove ** and __
-    text = re.sub(r'\*\*|__', '', text)
+    for line in lines:
+        stripped_line = line.strip()
+        is_list_item = stripped_line.startswith('* ') or stripped_line.startswith('- ')
+        
+        # 1. Remove bold/italic markers (**, __)
+        line = re.sub(r'\*\*|__', '', line)
+        
+        # 2. Remove single * or _
+        # If it's a list item, protect the first character
+        if is_list_item:
+            # Separate the bullet from content
+            if stripped_line.startswith('* '):
+                content = line[line.find('*')+1:]
+                # Clean content, add bullet back
+                content = content.replace('*', '').replace('_', '')
+                line = "* " + content
+            else:
+                # Starts with -, clean internal * and _
+                line = line.replace('*', '').replace('_', '')
+        else:
+            # Not a list, remove all * and _
+            line = line.replace('*', '').replace('_', '')
+            
+        cleaned_lines.append(line)
+        
+    text = "\n".join(cleaned_lines)
     
-    # 2. Remove * or _ ONLY if they are wrapping text (pairs) or inside text.
-    #    We avoid replacing * at the literal start of a line to keep bullets.
-    
-    # Simple approach: remove all * that are NOT followed by a space at the start of a line
-    # Actually, simpler: The blocks usually have formatted lists like "* Item".
-    # We want to keep "* Item" but remove "word *bold* word".
-    
-    # Remove * inside words or wrapping words
-    text = re.sub(r'(?<!^)(?<!\n)\*(?!\s)', '', text) # * not at start, not followed by space
-    text = re.sub(r'(?<!\s)\*(?!\s)', '', text) # * inside text
-    
-    # Clean up leftovers (pairs of *)
-    text = text.replace('*', '') if '*' in text and not re.search(r'(^|\n)\*\s', text) else text
+    # Final cleanup of double spaces created by deletions
+    text = re.sub(r' +', ' ', text)
     
     return text
 
@@ -313,10 +326,9 @@ def clean_text_retain_formatting(text, strip_images=False):
     for src, target in replacements.items():
         text = text.replace(src, target)
 
+    # Aggressively remove Markdown images [!alt](url) or ![]()
     if strip_images:
-        text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
         text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
-        text = re.sub(r'\[\s*\]\(.*?\)', '', text)
         
     text = text.replace('\r', '')
     lines = [re.sub(r'[ \t]+', ' ', l).strip() for l in text.split('\n')]
@@ -327,12 +339,16 @@ def clean_text_retain_formatting(text, strip_images=False):
 
 def extract_links_and_clean(text):
     """
-    Extracts Markdown links [text](url), returns the plain text 'text', 
-    and returns a list of link objects.
-    Then, it cleans any remaining Markdown artifacts from the text.
+    Extracts Markdown links [text](url), returns the plain text 'text'
+    (where the link is replaced by just its text), and returns a list of link objects.
+    Also handles relative URLs which were previously breaking the regex.
     """
     if not text:
         return text, []
+
+    # First, strip any Markdown images to prevent "broken" image code in text
+    # Matches ![alt](url)
+    text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
 
     found_links = []
 
@@ -340,22 +356,27 @@ def extract_links_and_clean(text):
         name = match.group(1).strip()
         url = match.group(2).strip()
         
-        if url:
+        if url and name:
+            # Construct full URL for relative paths if needed, though strictly we just store what's there
+            # If valid URL or path
             found_links.append({
                 "@type": "WebPage",
                 "url": url,
-                "name": name if name else "Link"
+                "name": name
             })
         
+        # Return JUST the name (Plain Text)
         return name 
 
-    # More permissive regex for links (handles loose whitespace)
-    cleaned_text = re.sub(r'\[\s*(.*?)\s*\]\s*\(\s*(https?://[^\)]+)\s*\)', replace_fn, text, flags=re.DOTALL)
+    # Robust regex for links: [text](url)
+    # Allows for relative URLs (does not enforce http) and loose whitespace
+    # Non-greedy match for content inside brackets
+    cleaned_text = re.sub(r'\[\s*([^\]]+?)\s*\]\s*\(\s*([^\)]+?)\s*\)', replace_fn, text, flags=re.DOTALL)
     
     # Final pass to strip bold/italic markdown artifacts from the text
     cleaned_text = clean_markdown_artifacts(cleaned_text)
     
-    return cleaned_text, found_links
+    return cleaned_text.strip(), found_links
 
 def convert_csv_date(date_str):
     if not date_str:
@@ -535,7 +556,7 @@ def extract_howto_steps_md(blocks):
         matches = re.findall(r'(?:^|\n)(?:\*|\d+\.)\s+(.*?)(?=\n(?:\*|\d+\.)|\Z)', raw_text, re.DOTALL)
         if matches:
             for step_text in matches:
-                formatted_text = clean_text_retain_formatting(step_text)
+                formatted_text = clean_text_retain_formatting(step_text, strip_images=True)
                 clean_step, links = extract_links_and_clean(formatted_text)
                 collected_links.extend(links)
                 steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_step})
@@ -543,7 +564,7 @@ def extract_howto_steps_md(blocks):
             paragraphs = [p.strip() for p in raw_text.split('\n\n') if p.strip()]
             for p in paragraphs:
                 if "see also" in p.lower(): continue
-                formatted_text = clean_text_retain_formatting(p)
+                formatted_text = clean_text_retain_formatting(p, strip_images=True)
                 clean_step, links = extract_links_and_clean(formatted_text)
                 collected_links.extend(links)
                 steps.append({"@type": "HowToStep", "name": "xXx_PLACEHOLDER_xXx", "text": clean_step})
@@ -621,7 +642,9 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         has_provider = True 
     else:
         if "Self-Help" in archetype:
-            service_type, has_provider = "HowTo", False 
+        # OLD: service_type, has_provider = "HowTo", False 
+        # NEW: Change to Article, but keep provider False
+        service_type, has_provider = "Article", False 
         elif "Government Service" in archetype:
             service_type = "GovernmentService"
         elif "Commercial" in archetype:
@@ -685,7 +708,7 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
 
             q_name = h.capitalize() + ("?" if not h.endswith('?') else "")
             
-            clean_ans, links = extract_links_and_clean(clean_text_retain_formatting(c))
+            clean_ans, links = extract_links_and_clean(clean_text_retain_formatting(c, strip_images=True))
             master_links.extend(links)
             
             faqs.append({"@type": "Question", "name": q_name, "acceptedAnswer": {"@type": "Answer", "text": clean_ans}})
