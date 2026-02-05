@@ -3,6 +3,7 @@ import json
 import csv
 import difflib
 import math
+import sys
 from openai import OpenAI
 
 # Configuration
@@ -26,7 +27,7 @@ def get_llm_name(text, client):
     """Sends text to LLM to generate a short name."""
     try:
         response = client.chat.completions.create(
-            model="gpt-4o", # Using a capable model for accurate naming
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are an editor helper. Read the text provided. It is a step in a 'How-To' guide. Look for the string 'xXx_PLACEHOLDER_xXx' and replace it with a short and accurate name for the text that follows it. You must ONLY return the content required for the HowToStep 'name'. Do not include quotes or extra markup."},
                 {"role": "user", "content": f"Text: {text}"}
@@ -35,7 +36,7 @@ def get_llm_name(text, client):
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
-        print(f"Error calling LLM: {e}")
+        print(f"   ❌ Error calling LLM: {e}")
         return "ERROR_GENERATING_NAME"
 
 def perform_diff_check(original_path, new_path):
@@ -53,27 +54,18 @@ def perform_diff_check(original_path, new_path):
     
     unexpected_changes = []
     
-    # Simple state machine to track diff blocks
-    # We expect pairs of:
-    # - "name": "xXx_PLACEHOLDER_xXx"
-    # + "name": "Generated Name"
-    
     for line in diff:
         if line.startswith('---') or line.startswith('+++') or line.startswith('@@'):
             continue
             
         clean_line = line[1:].strip()
         
-        # Allow removal of placeholder lines
         if line.startswith('-'):
             if '"name": "xXx_PLACEHOLDER_xXx"' in clean_line:
                 continue
             else:
-                # We can't easily get the exact line number from unified_diff without parsing @@ headers
-                # For simplicity in this script, we flag the content that changed unexpectedly
                 unexpected_changes.append(f"Unexpected removal: {clean_line}")
         
-        # Allow addition of lines that look like name fields (assuming they replaced the placeholder)
         elif line.startswith('+'):
             if '"name":' in clean_line:
                 continue
@@ -96,16 +88,33 @@ def process_files():
     files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.json')]
     files.sort()
     
+    if not files:
+        print("No JSON files found in input directory.")
+        return
+
     report_rows = []
+    
+    # Statistics
+    stats = {
+        'total_files': len(files),
+        'files_modified': 0,
+        'llm_calls': 0,
+        'diff_failures': 0
+    }
+
+    print(f"🚀 Starting Enrichment Process for {len(files)} files...")
     
     # Process in batches
     total_batches = math.ceil(len(files) / BATCH_SIZE)
     
     for i in range(total_batches):
         batch_files = files[i * BATCH_SIZE : (i + 1) * BATCH_SIZE]
-        print(f"Processing batch {i+1}/{total_batches}: {batch_files}")
+        
+        # GitHub Action Group Start
+        print(f"::group::📦 Processing Batch {i+1}/{total_batches} ({len(batch_files)} files)")
         
         for file_name in batch_files:
+            print(f"  📄 Processing: {file_name}")
             input_path = os.path.join(INPUT_DIR, file_name)
             output_path = os.path.join(OUTPUT_DIR, file_name)
             
@@ -114,8 +123,6 @@ def process_files():
             
             service_name, udid = get_service_details(data)
             
-            # Find mainEntity of type HowTo
-            # mainEntity can be a list or dict
             entities = data.get('mainEntity', [])
             if isinstance(entities, dict):
                 entities = [entities]
@@ -129,14 +136,19 @@ def process_files():
                         if step.get('name') == 'xXx_PLACEHOLDER_xXx':
                             text = step.get('text', '')
                             
+                            # Log the attempt
+                            print(f"     🤖 Generating name for step...")
+                            
                             # Call LLM
                             new_name = get_llm_name(text, client)
+                            stats['llm_calls'] += 1
                             
+                            print(f"     ✨ Result: '{new_name}'")
+
                             # Update JSON
                             step['name'] = new_name
                             file_modified = True
                             
-                            # Prepare report entry (temporarily, diff check comes after save)
                             report_rows.append({
                                 'file_name': file_name,
                                 'service_name': service_name,
@@ -147,20 +159,32 @@ def process_files():
                             })
 
             # Save enriched file
-            # Using indent=2 to match the likely source format and minimize diff noise
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
-                # Add a newline at end of file if source had it, standard for many editors
                 f.write('\n') 
 
             # Perform Diff Check
             if file_modified:
+                stats['files_modified'] += 1
                 diff_result = perform_diff_check(input_path, output_path)
                 
-                # Update rows for this file with the diff result
+                # Update rows
                 for row in report_rows:
                     if row['file_name'] == file_name and row['diff_status'] == 'Pending':
                         row['diff_status'] = diff_result
+                
+                if diff_result == "Pass":
+                    print(f"     ✅ Diff Check: PASS")
+                else:
+                    print(f"     ⚠️ Diff Check: FAIL - {diff_result}")
+                    stats['diff_failures'] += 1
+            else:
+                print(f"     ℹ️ No placeholders found.")
+
+        # GitHub Action Group End
+        print("::endgroup::")
+        # Flush stdout to ensure logs appear in real-time in GHA
+        sys.stdout.flush()
 
     # Write CSV Report
     with open(REPORT_FILE, 'w', newline='', encoding='utf-8') as csvfile:
@@ -177,10 +201,19 @@ def process_files():
                 'Generated Name': row['generated_name']
             })
             
-    print(f"Processing complete. Report saved to {REPORT_FILE}")
+    # Final Summary Log
+    print("\n" + "="*40)
+    print("📊 ENRICHMENT SUMMARY")
+    print("="*40)
+    print(f"Total Files Processed: {stats['total_files']}")
+    print(f"Files Modified:        {stats['files_modified']}")
+    print(f"Total LLM Calls:       {stats['llm_calls']}")
+    print(f"Diff Failures:         {stats['diff_failures']}")
+    print(f"Report Location:       {REPORT_FILE}")
+    print("="*40 + "\n")
 
 if __name__ == "__main__":
     if not os.environ.get("OPENAI_API_KEY"):
-        print("Error: OPENAI_API_KEY environment variable not set.")
+        print("❌ Error: OPENAI_API_KEY environment variable not set.")
         exit(1)
     process_files()
