@@ -14,24 +14,24 @@ CSV_FILE = 'metatable-Content.csv' # <--- UPDATED to new CSV
 # --- 1. KNOWLEDGE BASES ---
 LEGISLATION_MAP = {
     "trade mark": [
-        {"name": "Trade Marks Act 1995", "url": "https://www.legislation.gov.au/C2004A04969/latest/versions", "type": "Act"},
-        {"name": "Trade Marks Regulations 1995", "url": "https://www.legislation.gov.au/F1996B00084/latest/versions", "type": "Regulations"}
+        {"name": "Trade Marks Act 1995", "url": "https://www.legislation.gov.au/C2004A04969/latest/text", "type": "Act"},
+        {"name": "Trade Marks Regulations 1995", "url": "https://www.legislation.gov.au/F1996B00084/latest/text", "type": "Regulations"}
     ],
     "patent": [
-        {"name": "Patents Act 1990", "url": "https://www.legislation.gov.au/C2004A04014/latest/versions", "type": "Act"},
-        {"name": "Patents Regulations 1991", "url": "https://www.legislation.gov.au/F1996B02697/latest/versions", "type": "Regulations"}
+        {"name": "Patents Act 1990", "url": "https://www.legislation.gov.au/C2004A04014/latest/text", "type": "Act"},
+        {"name": "Patents Regulations 1991", "url": "https://www.legislation.gov.au/F1996B02697/latest/text", "type": "Regulations"}
     ],
     "design": [
-        {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/versions", "type": "Act"},
-        {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/versions", "type": "Regulations"}
+        {"name": "Designs Act 2003", "url": "https://www.legislation.gov.au/C2004A01232/latest/text", "type": "Act"},
+        {"name": "Designs Regulations 2004", "url": "https://www.legislation.gov.au/F2004B00136/latest/text", "type": "Regulations"}
     ],
     "pbr": [ 
-        {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
-        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Regulations"}
+        {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/text", "type": "Act"},
+        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/text", "type": "Regulations"}
     ],
     "plant breeder": [ 
-        {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/versions", "type": "Act"},
-        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/versions", "type": "Regulations"}
+        {"name": "Plant Breeder’s Rights Act 1994", "url": "https://www.legislation.gov.au/C2004A04783/latest/text", "type": "Act"},
+        {"name": "Plant Breeder’s Rights Regulations 1994", "url": "https://www.legislation.gov.au/F1996B02512/latest/text", "type": "Regulations"}
     ],
     "copyright": [
         {"name": "Copyright Act 1968", "url": "https://www.legislation.gov.au/C1968A00063/latest/text", "type": "Act"},
@@ -422,7 +422,7 @@ def extract_dynamic_content_html(blocks, main_description_key=None):
     IGNORED_HEADERS = {
         "intro", "description", "see also", "want to give us feedback?", 
         "references", "external links", "table of contents", "feedback", 
-        "start here", "receiving a letter of demand"
+        "start here"
     }
     if main_description_key:
         IGNORED_HEADERS.add(main_description_key.lower())
