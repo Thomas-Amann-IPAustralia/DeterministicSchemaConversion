@@ -26,7 +26,7 @@ The pipeline operates in four distinct stages, moving from raw web content to va
 
 ### Stage 1: The Stealth Scraper (`scraper.py`)
 
-*See [docs/scraper-architecture.md](https://www.google.com/search?q=docs/scraper-architecture.md) for details.*
+*See [docs/scraper-architecture.md]([https://www.google.com/search?q=docs/scraper-architecture.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/scraper-architecture.md)) for details.*
 
 We employ a "Headless Browser" approach to render dynamic content before extraction.
 
