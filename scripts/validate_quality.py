@@ -1,0 +1,109 @@
+import json
+import csv
+import os
+import glob
+from bs4 import BeautifulSoup
+from difflib import SequenceMatcher
+
+# Configuration
+JSON_DIR = 'json_output-enriched'
+HTML_DIR = 'IPFR-Webpages-html'
+OUTPUT_DIR = 'Stage-4_Validation'
+SIMILARITY_THRESHOLD = 0.85  # 85% match required for semantic fields
+
+def normalize_text(text):
+    """Normalize whitespace and stripping for comparison."""
+    if not text:
+        return ""
+    return ' '.join(text.split()).lower()
+
+def calculate_similarity(a, b):
+    """Returns a ratio 0-1 of similarity between two strings."""
+    return SequenceMatcher(None, normalize_text(a), normalize_text(b)).ratio()
+
+def validate_file(json_path, html_path):
+    report_rows = []
+    
+    # 1. Structural Integrity Check
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        report_rows.append(["Structure", "JSON Syntax", "Valid", "1.0", "PASS"])
+    except json.JSONDecodeError as e:
+        return [["Structure", "JSON Syntax", str(e), "0.0", "CRITICAL FAIL"]]
+
+    # Load HTML Content
+    try:
+        with open(html_path, 'r', encoding='utf-8') as f:
+            soup = BeautifulSoup(f, 'html.parser')
+            html_text = normalize_text(soup.get_text())
+    except FileNotFoundError:
+        return [["Structure", "HTML Source", "File not found", "0.0", "CRITICAL FAIL"]]
+
+    # 2. Schema Key Checks
+    required_keys = ["@context", "@type", "headline", "description"]
+    for key in required_keys:
+        if key in data:
+            report_rows.append(["Schema", f"Key: {key}", "Present", "1.0", "PASS"])
+        else:
+            report_rows.append(["Schema", f"Key: {key}", "Missing", "0.0", "FAIL"])
+
+    # 3. Semantic & Data Integrity Checks
+    # Check Headline alignment
+    json_headline = data.get("headline", "")
+    # We check if the headline exists somewhere in the HTML body
+    if json_headline:
+        sim_score = 0.0
+        if normalize_text(json_headline) in html_text:
+            sim_score = 1.0
+        else:
+            # Fallback to fuzzy match against title or h1
+            html_title = soup.find('h1') or soup.find('title')
+            if html_title:
+                sim_score = calculate_similarity(json_headline, html_title.get_text())
+        
+        status = "PASS" if sim_score > SIMILARITY_THRESHOLD else "WARN"
+        report_rows.append(["Semantic", "Headline Match", f"Score: {sim_score:.2f}", str(sim_score), status])
+
+    # Check Description alignment
+    json_desc = data.get("description", "")
+    if json_desc:
+        # Check if description appears in the text
+        is_present = normalize_text(json_desc) in html_text
+        score = 1.0 if is_present else 0.0
+        # If not exact, try fuzzy match against specific layout divs if known, otherwise warn
+        status = "PASS" if score == 1.0 else "WARN"
+        report_rows.append(["Semantic", "Description Presence", "Found in body" if is_present else "Not found exactly", str(score), status])
+
+    return report_rows
+
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
+    # Iterate over all JSON files
+    json_files = glob.glob(os.path.join(JSON_DIR, '*.json'))
+    
+    for json_file in json_files:
+        filename = os.path.basename(json_file)
+        # Calculate expected HTML filename based on your convention
+        # JSON: "Name.json" -> HTML: "Name-html.html"
+        name_root = os.path.splitext(filename)[0]
+        html_filename = f"{name_root}-html.html"
+        html_path = os.path.join(HTML_DIR, html_filename)
+        
+        # Run validation
+        results = validate_file(json_file, html_path)
+        
+        # Write unique CSV report
+        csv_name = f"Report_{name_root}.csv"
+        csv_path = os.path.join(OUTPUT_DIR, csv_name)
+        
+        with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(["Category", "Check", "Details", "Score", "Status"])
+            writer.writerows(results)
+            
+    print(f"Validation complete. Reports saved to {OUTPUT_DIR}")
+
+if __name__ == "__main__":
+    main()
