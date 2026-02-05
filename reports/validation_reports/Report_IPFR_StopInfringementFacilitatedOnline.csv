@@ -1,0 +1,8 @@
+Category,Check,Details,Score,Status
+Structure,JSON Syntax,Valid,1.0,PASS
+Schema,Key: @context,Present,1.0,PASS
+Schema,Key: @type,Present,1.0,PASS
+Schema,Key: headline,Present,1.0,PASS
+Schema,Key: description,Present,1.0,PASS
+Semantic,Headline Match,Score: 0.10,0.09523809523809523,WARN
+Semantic,Description Presence,Not found exactly,0.0,WARN
