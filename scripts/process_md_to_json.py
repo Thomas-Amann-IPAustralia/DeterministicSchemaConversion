@@ -331,6 +331,18 @@ def extract_links_and_clean(text):
     cleaned_text = re.sub(r'\[(.*?)\]\((https?://[^\)]+)\)', replace_fn, text)
     return cleaned_text, found_links
 
+def convert_csv_date(date_str):
+    """
+    Parses a date string in d/m/Y format and returns Y-m-d.
+    Returns current date if parsing fails or input is empty.
+    """
+    if not date_str:
+        return datetime.now().strftime("%Y-%m-%d")
+    try:
+        return datetime.strptime(date_str.strip(), "%d/%m/%Y").strftime("%Y-%m-%d")
+    except ValueError:
+        return datetime.now().strftime("%Y-%m-%d")
+
 def generate_citations_from_csv(metadata_row):
     """
     Generates citations based on the 'Relevant-ip-right' field in the CSV.
@@ -377,12 +389,17 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     base_obj = {"@type": "Organization"}
     if provider_raw_string:
         for key, obj in PROVIDER_MAP.items():
+            # Check if map key is inside the raw string (e.g. "IP Australia" in "IP Australia")
             if key.lower() in provider_raw_string.lower():
                 base_obj = obj.copy()
                 break
-    if "Government Service" in archetype_hint: base_obj["@type"] = "GovernmentOrganization"
-    elif "Non-Government" in archetype_hint: base_obj["@type"] = "NGO"
-    elif "Commercial" in archetype_hint: base_obj["@type"] = "Organization"
+    
+    # Fallback types based on Archetype if map didn't provide specific type
+    if base_obj.get("@type") == "Organization":
+        if "Government Service" in archetype_hint: base_obj["@type"] = "GovernmentOrganization"
+        elif "Non-Government" in archetype_hint: base_obj["@type"] = "NGO"
+        elif "Commercial" in archetype_hint: base_obj["@type"] = "Organization"
+    
     base_obj["name"] = "xXx_PLACEHOLDER_xXx"
     return base_obj
 
@@ -534,8 +551,10 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
 
     udid = metadata_row.get('UDID', 'Dxxxx')
     title = metadata_row.get('Main-title', filename.replace('.md', '').replace('_', ' '))
-    archetype = metadata_row.get('Archectype', 'Government Service').strip()
-    date_val = datetime.now().strftime("%Y-%m-%d")
+    
+    # --- UPDATED: Date Handling ---
+    pub_date_val = convert_csv_date(metadata_row.get('Publication-date'))
+    last_updated_val = convert_csv_date(metadata_row.get('Last-updated'))
 
     page_url = metadata_row.get('Canonical-url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}")
 
@@ -557,20 +576,32 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
                 used_desc_key = found_key
                 break
 
-    # --- ENTITY CONSTRUCTION ---
+    # --- UPDATED: ENTITY CONSTRUCTION ---
     service_id = "#the-service"
     has_provider = True
     
-    if "Self-Help" in archetype:
-        service_type, has_provider = "HowTo", False 
-    elif "Government Service" in archetype:
-        service_type = "GovernmentService"
-    elif "Commercial" in archetype:
-        service_type = "Service"
-    elif "Non-Government" in archetype:
-        service_type = "Service" 
+    # Fallback default
+    archetype = metadata_row.get('Archectype') # Matches CSV header "Archectype" (ignoring trailing space if stripped)
+    
+    if not archetype:
+        service_type = "xXx_Err-PLACEHOLDER_xXx"
+        # Determine provider status roughly or default to True so we can put the error placeholder
+        has_provider = True 
     else:
-        service_type = "GovernmentService"
+        # Map known types
+        if "Self-Help" in archetype:
+            service_type, has_provider = "HowTo", False 
+        elif "Government Service" in archetype:
+            service_type = "GovernmentService"
+        elif "Commercial" in archetype:
+            service_type = "Service"
+        elif "Non-Government" in archetype:
+            service_type = "Service" 
+        else:
+            # If archetype exists but not mapped, fallback to GovernmentService or placeholder?
+            # User instruction: "derived from... fallback to hardcoding xXx_Err-PLACEHOLDER_xXx"
+            # It implies if we can't derive a valid type. Let's fallback to placeholder if unknown.
+            service_type = "xXx_Err-PLACEHOLDER_xXx"
 
     main_obj = {
         "@id": service_id,
@@ -593,9 +624,17 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     if service_type == "HowTo":
         main_obj["step"] = steps
     
+    # --- UPDATED: PROVIDER LOGIC ---
     if has_provider:
-        provider_name = metadata_row.get('Overtitle')
-        provider_obj = resolve_provider(provider_name, archetype_hint=archetype)
+        # Strict fallback for name
+        provider_name_csv = metadata_row.get('Provider')
+        if not provider_name_csv:
+            provider_name_csv = "xXx_Err-PLACEHOLDER_xXx"
+            
+        # Resolve other details (like URL) using the map, but force the name from CSV
+        provider_obj = resolve_provider(provider_name_csv, archetype_hint=(archetype if archetype else ""))
+        provider_obj["name"] = provider_name_csv
+
         if service_type == "GovernmentService": main_obj["serviceOperator"] = provider_obj
         else: main_obj["provider"] = provider_obj
 
@@ -644,8 +683,8 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "url": page_url,
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
-        "datePublished": date_val,
-        "dateModified": date_val,
+        "datePublished": pub_date_val,  # Source: CSV Publication-date
+        "dateModified": last_updated_val, # Source: CSV Last-updated
         "audience": AUDIENCE_BLOCK,
         "usageInfo": USAGE_INFO_BLOCK,
         "about": about_obj,
