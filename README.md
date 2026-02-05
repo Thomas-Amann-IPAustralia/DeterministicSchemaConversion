@@ -1,64 +1,75 @@
-# Deterministic Schema Conversion Pipeline
+# 🕸️ Deterministic Schema Conversion Pipeline
 
-**A robust, hybrid-parsing toolchain for transforming unstructured government content into high-fidelity, Large Language Model (LLM) optimized Schema.org JSON-LD.**
+> **A robust, hybrid-parsing toolchain for transforming unstructured government content into high-fidelity, Large Language Model (LLM) optimized Schema.org JSON-LD.**
 
 ---
 
 ## 📖 Overview
 
-The **DeterministicSchemaConversion** pipeline is designed to solve a specific problem: bridging the gap between legacy government Content Management Systems (GovCMS/Drupal) and modern AI agents.
+In the age of AI agents and RAG (Retrieval-Augmented Generation), unstructured HTML is a bottleneck. The **Deterministic Schema Conversion** pipeline bridges the gap between legacy Government Content Management Systems (GovCMS/Drupal) and modern AI consumers.
 
-While standard web scrapers capture text, they often lose the semantic *intent* of the data (e.g., distinguishing a legal obligation from a general tip). This repository hosts a Python-based pipeline that digitizes **IP First Response** content, transforming it into structured data graphs including `GovernmentService`, `HowTo`, `FAQPage`, and `Legislation`.
+Unlike generic scrapers that "guess" the content structure, this pipeline uses a **deterministic, rule-based engine** to extract legal obligations, government services, and self-help guides with 100% factual integrity. It reserves Generative AI (GPT-4o) strictly for "cosmetic enrichment"—naming steps or summarizing descriptions—while enforcing a rigorous **Semantic Diff Guardrail** to prevent hallucinations.
 
-### Why "Deterministic"?
+### 🌟 Key Features
 
-Unlike purely generative AI scrapers that may "hallucinate" or alter facts, this pipeline uses a **deterministic rule set** for the core data extraction. It prioritizes:
-
-1. **Structure Authority:** Using raw DOM traversal to identify process steps.
-2. **Legal Accuracy:** Hardcoded mapping of IP rights (e.g., Trade Marks) to their specific Legislation Acts (e.g., *Trade Marks Act 1995*).
-3. **Safety:** AI is strictly limited to an enrichment role (naming steps) and is gated by a rigorous semantic diff validator.
+* **🕵️ Stealth Scraping:** Bypasses WAFs and bot detection using a headless "Stealth" Selenium driver.
+* **🧠 Hybrid Parsing:** Synthesizes raw DOM structure (HTML) with clean text extraction (Markdown) for maximum precision.
+* **🛡️ Safety-First AI:** Uses LLMs *only* to fill specific placeholders. A recursive JSON comparator ensures no facts, dates, or laws are altered.
+* **⚖️ Legal Accuracy:** Hardcoded "Knowledge Bases" automatically map keywords to specific Legislation Acts (e.g., *Trade Marks Act 1995*).
+* **✅ Automated QA:** A built-in validation layer compares the final JSON against the source HTML to detect data drift.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
-The pipeline operates in three distinct stages:
+The pipeline operates in four distinct stages, moving from raw web content to validated structured data.
 
-### 1. The Stealth Scraper (`scraper.py`)
+### Stage 1: The Stealth Scraper (`scraper.py`)
 
-Extracts content from the target domain using a "Stealth" Selenium driver to bypass bot detection.
+*See [docs/scraper-architecture.md](https://www.google.com/search?q=docs/scraper-architecture.md) for details.*
 
-* **Hybrid Output:** Saves two versions of every page:
-* **Raw HTML (`.html`):** Preserves the exact DOM structure (lists, nested divs) for precise logic parsing.
-* **Clean Markdown (`.md`):** Uses `markdownify` with custom regex cleaning to strip "noise" (feedback forms, footers, navigation) for clean text extraction.
+We employ a "Headless Browser" approach to render dynamic content before extraction.
 
-
-* **Metadata Injection:** Automatically prepends YAML-like headers (URL, Title, Overtitle) to the Markdown files for downstream tracking.
-
-### 2. The Semantic Processor (`process_md_to_json.py`)
-
-This is the core logic engine. It ingests the scraped files + a Control Plane CSV to generate JSON-LD.
-
-* **Archetype Mapping:** Converts business logic into Schema.org types:
-* `Government Service` → `schema:GovernmentService`
-* `Self-Help` → `schema:HowTo`
-* `Organization` → `schema:Organization`
-
-
-* **Dynamic FAQ Extraction:** Identifies headers ending in `?` or specific keywords (e.g., "Costs", "Risks", "Time") to build `FAQPage` schemas automatically.
-* **Knowledge Base Injection:** Enriches data using internal dictionaries:
-* **Legislation Map:** Automatically cites relevant Acts/Regulations based on the topic.
-* **Provider Map:** Resolves entity names (e.g., "ASBFEO") to full Organization schemas.
+* **Bot Evasion:** Uses `selenium-stealth` to mock user behaviors, user-agents, and WebGL vendors, appearing as a legitimate Windows 10 user.
+* **Dual Output:** Saves two versions of every page:
+* **`.html` (The Structure):** Preserves the exact DOM (lists, nested divs) for logic parsing.
+* **`.md` (The Content):** Uses `markdownify` with custom regex to strip UI noise (feedback forms, footers) for clean RAG ingestion.
 
 
 
-### 3. The Safety-Gated Enrichment (`enrich_howto_steps.py`)
+### Stage 2: The Semantic Processor (`process_md_to_json.py`)
 
-An optional step that uses **OpenAI (GPT-4o)** to improve data quality *without* risking data integrity.
+*See [docs/json_generation_logic.md](https://www.google.com/search?q=docs/json_generation_logic.md) for details.*
 
-* **The Problem:** `HowToStep` items often lack names in raw HTML (e.g., just a bullet point).
-* **The Solution:** The LLM reads the step text and generates a short, 3-5 word summary name.
-* **The Guardrail (Semantic Diff):** A recursive JSON comparator ensures the LLM *only* modified the designated `xXx_PLACEHOLDER_xXx` fields. If the LLM altered any factual text, dates, or logic, the file is flagged as **FAIL** and changes are discarded.
+The core logic engine converts content into Schema.org entities (`GovernmentService`, `HowTo`, `FAQPage`) using a "Control Plane" CSV.
+
+* **Archetype Mapping:** Automatically casts content types based on metadata (e.g., "Self-Help" → `schema:HowTo`).
+* **Dynamic FAQ Extraction:** Identifies headers ending in `?` to build `FAQPage` schemas automatically.
+* **Legislation Injection:** Scans content for IP rights (e.g., "Patent") and injects precise legal citations from an internal dictionary.
+
+### Stage 3: Safety-Gated Enrichment (`enrich_howto_steps.py`)
+
+*See [docs/json_enrichment.md](https://www.google.com/search?q=docs/json_enrichment.md) for details.*
+
+An optional step that uses **GPT-4o** to polish the data without risking integrity.
+
+* **The Task:** LLMs replace specific `xXx_PLACEHOLDER_xXx` values (e.g., naming a generic bullet point).
+* **The Guardrail:** A **Semantic Diff Check** compares input vs. output.
+* Did the LLM change a date? ❌ **FAIL**
+* Did the LLM add a new step? ❌ **FAIL**
+* Did the LLM only rename the placeholder? ✅ **PASS**
+
+
+
+### Stage 4: Quality Validation (`validate_quality.py`)
+
+*See [docs/validation_architecture.md](https://www.google.com/search?q=docs/validation_architecture.md) for details.*
+
+The final gatekeeper. It compares the generated JSON-LD back against the source HTML.
+
+* **ID Consistency:** Ensures the file ID (e.g., `B1000`) matches the JSON identifier.
+* **Semantic Text Matching:** Uses fuzzy logic to ensure the `description` in JSON actually exists on the webpage (>85% similarity required).
+* **Link Integrity:** Verifies that every `relatedLink` in the schema is a valid anchor tag in the source DOM.
 
 ---
 
@@ -66,32 +77,36 @@ An optional step that uses **OpenAI (GPT-4o)** to improve data quality *without*
 
 ```text
 DeterministicSchemaConversion/
-├── IPFR-Webpages/              # [Output] Cleaned Markdown (Human-readable text source)
+├── IPFR-Webpages/              # [Output] Cleaned Markdown (Human-readable source)
 ├── IPFR-Webpages-html/         # [Output] Raw HTML (Structure source)
 ├── json_output/                # [Output] Initial Schema.org JSON-LD (Pre-enrichment)
 ├── json_output-enriched/       # [Output] Final AI-enriched JSON-LD (Production Ready)
+├── reports/
+│   ├── validation_reports/     # [Audit] CSV reports of Quality Checks
+│   └── after_action_report.csv # [Audit] Log of AI modifications
 ├── scripts/
-│   ├── process_md_to_json.py   # Core Logic: Hybrid parsing, schema mapping, and serialization
-│   └── enrich_howto_steps.py   # AI Logic: GPT-4o step naming & Diff Validator
-├── metatable-Content.csv       # [Config] The "Control Plane" metadata for all pages
-├── scraper.py                  # [Script] Selenium-stealth scraper
-├── sources.json                # [Config] List of target URLs to scrape
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project Documentation
+│   ├── scraper.py              # Stage 1: Selenium-stealth scraper
+│   ├── process_md_to_json.py   # Stage 2: Hybrid parsing & mapping logic
+│   ├── enrich_howto_steps.py   # Stage 3: AI Enrichment & Diff Validator
+│   └── validate_quality.py     # Stage 4: Structural & Semantic QA
+├── docs/                       # Detailed Architecture Documentation
+├── metatable-Content.csv       # [Config] The "Control Plane" metadata
+├── sources.json                # [Config] List of target URLs
+└── requirements.txt            # Python dependencies
 
 ```
 
 ---
 
-## 🛠️ Installation & Prerequisites
+## 🛠️ Installation & Setup
 
 ### Prerequisites
 
 * **Python 3.8+**
 * **Google Chrome** (Must be installed on the host machine for Selenium).
-* **OpenAI API Key** (Required only if running the enrichment step).
+* **OpenAI API Key** (Required only for Stage 3).
 
-### Setup
+### Quick Start
 
 1. **Clone the repository:**
 ```bash
@@ -101,127 +116,101 @@ cd DeterministicSchemaConversion
 ```
 
 
-2. **Install Python Dependencies:**
+2. **Install Dependencies:**
 ```bash
 pip install -r requirements.txt
 
 ```
 
 
-
----
-
-## ⚙️ Configuration
-
-### 1. Source Definition (`sources.json`)
-
-Define the URLs you wish to scrape.
-
-```json
-[
-  {
-    "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-    "filename": "D1006 - Mediation.md"
-  }
-]
+3. **Configure Environment (Optional):**
+```bash
+export OPENAI_API_KEY="sk-..."  # Only needed for enrichment
 
 ```
 
-### 2. The Control Plane (`metatable-Content.csv`)
 
-This CSV is **critical**. The processor uses it to enrich the scraped content with official metadata. It must contain the following headers:
-
-| Header | Description | Example |
-| --- | --- | --- |
-| `UDID` | Unique Document ID | `D1006` |
-| `Main-title` | Canonical Title for the schema | `Mediation for IP Disputes` |
-| `Archectype` | Determines the Schema `@type` | `Government Service` or `Self-Help` |
-| `Relevant-ip-right` | Triggers legislation citations | `Trade Mark, Copyright` |
-| `Provider` | Entity providing the service | `ASBFEO` or `IP Australia` |
-| `Description` | High-level summary | `A guide on mediating disputes...` |
-| `Canonical-url` | The official URL | `https://...` |
 
 ---
 
 ## 🚀 Usage Workflow
 
-### Step 1: Scrape Content
+### 1. Define Your Sources
 
-Run the scraper to fetch pages in "Stealth Mode".
+Edit `sources.json` to add URLs and `metatable-Content.csv` to define the metadata (Title, UDID, Provider) for those URLs.
+
+### 2. Run the Scraper (Stage 1)
+
+Fetches content in "Stealth Mode" to avoid detection.
 
 ```bash
-python scraper.py
+python scripts/scraper.py
 
 ```
 
-* **Result:** Populates `IPFR-Webpages/` (MD) and `IPFR-Webpages-html/` (HTML).
+* **Output:** Populates `IPFR-Webpages/` and `IPFR-Webpages-html/`.
 
-### Step 2: Generate Structured Data
+### 3. Generate Structured Data (Stage 2)
 
-Run the processor to convert content into JSON-LD.
+Converts the scraped content into raw JSON-LD.
 
 ```bash
 python scripts/process_md_to_json.py
 
 ```
 
-* **Result:** Populates `json_output/`.
-* *Note:* At this stage, `HowToStep` names will be `xXx_PLACEHOLDER_xXx`.
+* **Output:** Populates `json_output/`. Steps will have `xXx_PLACEHOLDER_xXx` names.
 
-### Step 3: AI Enrichment (Optional)
+### 4. Enrich with AI (Stage 3 - Optional)
 
-Use GPT-4o to intelligently name the steps.
+Uses GPT-4o to intelligently name steps and write descriptions, guarded by the Diff Checker.
 
 ```bash
-# Set API Key (Linux/Mac)
-export OPENAI_API_KEY="sk-..."
-
-# Run Enrichment
 python scripts/enrich_howto_steps.py
 
 ```
 
-* **Result:** Populates `json_output-enriched/`.
-* **Audit:** Check `after_action_report.csv` to see exactly what the AI changed.
+* **Output:** Populates `json_output-enriched/`.
+* **Audit:** Check `after_action_report.csv` to see exactly what changed.
+
+### 5. Validate Quality (Stage 4)
+
+Runs the full suite of integrity checks.
+
+```bash
+python scripts/validate_quality.py
+
+```
+
+* **Output:** Generates `reports/validation_reports/Validation_Report.csv` with Pass/Fail statuses.
 
 ---
 
-## 🧩 Schema Details
+## 🧩 The "Control Plane" Configuration
 
-The pipeline generates complex, nested JSON-LD objects.
+The `metatable-Content.csv` is the brain of the operation. It dictates how the raw content is interpreted.
 
-### Supported Types
-
-* **`GovernmentService`:** For official services (e.g., "Apply for a Trade Mark").
-* **`HowTo`:** For guides and self-help wizards.
-* **`FAQPage`:** Aggregates questions found within the page content.
-* **`Legislation`:** Automatically linked based on the "Relevant IP right" in the CSV.
-
-### The "Knowledge Base" Maps
-
-The system contains hardcoded dictionaries in `process_md_to_json.py` to ensure consistency:
-
-* **Legislation:** Maps "patent" to *Patents Act 1990* and *Patents Regulations 1991*.
-* **Providers:** Maps "ASBFEO" to their specific `GovernmentOrganization` schema.
-* **Audience:** Defaults to `Australian Small Business Owners` (`BusinessAudience`).
+| Header | Description | Example |
+| --- | --- | --- |
+| **UDID** | Unique Document ID | `D1006` |
+| **Main-title** | Canonical Title for the schema | `Mediation for IP Disputes` |
+| **Archectype** | Determines the Schema `@type` | `Government Service` or `Self-Help` |
+| **Relevant-ip-right** | Triggers legislation citations | `Trade Mark, Copyright` |
+| **Provider** | Entity providing the service | `ASBFEO` or `IP Australia` |
 
 ---
 
-## 🛡️ Safety Protocols
+## 🛡️ Safety & Compliance
 
-This project implements a **Strict Semantic Diff** in `scripts/enrich_howto_steps.py`.
+We prioritize data integrity over AI creativity.
 
-When the LLM returns a response, the script performs a recursive comparison between the input JSON and the output JSON:
+1. **Topology Check:** The AI cannot add or remove keys.
+2. **Type Check:** The AI cannot change a list to a string.
+3. **Value Check:** The AI can **only** change values that were explicitly marked as `xXx_PLACEHOLDER_xXx`.
 
-1. **Topology Check:** Did the LLM add or remove any keys? (Fail if yes)
-2. **Type Check:** Did a list become a string? (Fail if yes)
-3. **Value Check:** Did a value change?
-* If the original value was `xXx_PLACEHOLDER_xXx`, the change is **ALLOWED**.
-* If the original value was anything else (e.g., the step description text), the change is **DENIED**.
+*If the AI attempts to "fix" a typo in a legal citation or change a date, the Diff Checker will **reject the entire file** and flag it for human review.*
 
-
-
-This ensures that the AI **cannot** hallucinate new steps, alter legal text, or change URLs. It can *only* fill in the specific blanks we explicitly left for it.
+---
 
 ## 📝 License
 
