@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "How does IP Australia fit in a broader business support context?",
+  "alternativeHeadline": "Protecting your business",
+  "description": "If you're starting or growing a business in Australia we know that there\u2019s a lot to keep track of. If you\u2019ve got a logo, there\u2019s a chance you\u2019ve come across us,",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-does-ip-australia-compare-other-government-services",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "E1024"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-02-05",
+  "dateModified": "2026-02-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Any Dispute"
+  },
+  "citation": [],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "How does IP Australia fit in a broader business support context?",
+      "description": "If you're starting or growing a business in Australia we know that there\u2019s a lot to keep track of. If you\u2019ve got a logo, there\u2019s a chance you\u2019ve come across us, a government agency called **IP Australia.**\n\nBut how are we different from all the other government services out there?\n\n| | | |\n| --- | --- | --- |\n| **Agency** | **Main Focus** | **How It Helps You** |\n| **IP Australia** | Intellectual property rights that can be registered (patents, trade marks, designs and plant breeders\u2019 rights) | Helps you protect many of the things that make your business unique. |\n| **ATO (Australian Tax Office)** | Tax & Super | Helps with tax returns, superannuation, and small business deductions. |\n| **ASBFEO (Small Business Ombudsman)** | Advocacy & Disputes | Helps if you're in a dispute with another business or the government. |\n| **Austrade** | Exporting | Supports businesses trying to sell overseas. |\n| **AusIndustry** | Innovation & Funding | Gives advice and support to help you grow and innovate. |\n| **Fair Work Ombudsman** | Hiring Staff | Helps you follow the rules when employing people. |\n| **Business.gov.au** | All-round help | Connects you to programs, grants, and advice across all departments. |\n| **Services Australia** | Benefits & Reporting | Offers tools for things like paid parental leave and employer reporting. |\n| **ABF (Border Force)** | Imports/Exports | Helps with customs and border rules. |\n| **ASIC** | Business Names & Companies | Helps you register and manage your business name or company. |\n| **Safe Work Australia** | Workplace Safety | Gives advice and templates to keep workers safe. |\n\n**Protect your uniqueness**\n\nYour name, logo, invention, or product design can be *some of your most valuable assets*. But they don\u2019t automatically get legal protection \u2014 you often need to **register** them. While some forms of IP rights are automatically created (e.g. copyright), many other forms of IP rights require registration for legal protection and enforcement.\n\nWe make it easier to:\n\n* **Own your brand** (by holding it as an intellectual property and a legal basis to enforce your right to the IP)\n* **Stop copycats** (by minimising confusion between your product, brand, ideas and those of others)\n* **Get funding or partners** (because your IP proves you have something valuable)\n\n**Use the right service at the right time**\n\nYou don\u2019t have to know everything all at once. But knowing that **IP Australia** helps you protect your ideas \u2014 and that other agencies support your growth, staff, taxes, exports and more \u2014 is a great starting point.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "name": "xXx_PLACEHOLDER_xXx"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does ip australia compare to other government services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    "https://www.ipaustralia.gov.au/about-us"
+  ]
+}
