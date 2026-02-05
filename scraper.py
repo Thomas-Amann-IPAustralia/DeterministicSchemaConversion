@@ -1,4 +1,11 @@
-import json
+Here is the updated `scraper.py` script.
+
+I have replaced the `sources.json` dependency with the standard Python `csv` library to read directly from `metatable-Content.csv`. I also added a helper function to sanitize the filenames (removing characters like `?` or `/` that are illegal in file paths).
+
+### Updated `scraper.py`
+
+```python
+import csv
 import os
 import sys
 import time
@@ -15,9 +22,9 @@ from selenium_stealth import stealth
 from markdownify import markdownify as md
 
 # --- Configuration ---
-SOURCES_FILE = 'sources.json'
+CSV_FILE = 'metatable-Content.csv'
 OUTPUT_DIR = 'IPFR-Webpages'
-HTML_OUTPUT_DIR = 'IPFR-Webpages-html'  # <--- NEW CONFIG
+HTML_OUTPUT_DIR = 'IPFR-Webpages-html'
 
 # --- Logging ---
 logging.basicConfig(
@@ -106,6 +113,14 @@ def clean_markdown(text, url, title, overtitle):
     
     return final_text
 
+def sanitize_filename(name):
+    """Removes illegal characters from filenames (e.g. / \ : * ? " < > |)."""
+    if not name:
+        return "Untitled"
+    # Replace illegal characters with empty string or space
+    cleaned = re.sub(r'[\\/*?:"<>|]', "", str(name))
+    return cleaned.strip()
+
 def fetch_and_convert(driver, url):
     """Scrapes URL via Selenium and returns both Markdown and raw HTML."""
     try:
@@ -155,12 +170,11 @@ def fetch_and_convert(driver, url):
 
         if not markdown_text:
             logger.warning(f"  [!] Markdownify produced empty text for {url}")
-            return None, None # Return Tuple
+            return None, None 
 
         # --- STEP 4: Clean and Polish ---
         final_markdown = clean_markdown(markdown_text, url, page_title, page_overtitle)
         
-        # Return both the processed markdown AND the raw content HTML
         return final_markdown, content_html
 
     except Exception as e:
@@ -168,56 +182,73 @@ def fetch_and_convert(driver, url):
         return None, None
 
 def main():
-    if not os.path.exists(SOURCES_FILE):
-        logger.critical(f"Error: {SOURCES_FILE} not found.")
+    # Check if CSV exists
+    if not os.path.exists(CSV_FILE):
+        logger.critical(f"Error: {CSV_FILE} not found.")
         sys.exit(1)
 
-    # Ensure both output directories exist
+    # Ensure output directories exist
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     
     if not os.path.exists(HTML_OUTPUT_DIR):
         os.makedirs(HTML_OUTPUT_DIR)
 
-    with open(SOURCES_FILE, 'r') as f:
-        sources = json.load(f)
-
+    # Initialize Driver
     driver = initialize_driver()
     if not driver:
         sys.exit(1)
 
-    for item in sources:
-        url = item.get('url')
-        filename = item.get('filename', 'output.md')
+    try:
+        # Read the CSV File
+        logger.info(f"Reading targets from {CSV_FILE}...")
         
-        if not filename.endswith('.md'):
-            filename += '.md'
-
-        # Unpack the tuple returned by fetch_and_convert
-        md_content, html_content = fetch_and_convert(driver, url)
-        
-        if md_content:
-            # 1. Save Markdown
-            md_filepath = os.path.join(OUTPUT_DIR, filename)
-            with open(md_filepath, 'w', encoding='utf-8') as f:
-                f.write(md_content)
+        with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
             
-            # 2. Save HTML
-            # Create base name by stripping .md extension
-            base_name = os.path.splitext(filename)[0]
-            html_filename = f"{base_name}-html.html"
-            html_filepath = os.path.join(HTML_OUTPUT_DIR, html_filename)
-            
-            with open(html_filepath, 'w', encoding='utf-8') as f:
-                f.write(html_content)
+            for row in reader:
+                url = row.get('Canonical-url', '').strip()
+                udid = row.get('UDID', '').strip()
+                main_title = row.get('Main-title', '').strip()
 
-            logger.info(f"  -> Saved MD to {md_filepath}")
-            logger.info(f"  -> Saved HTML to {html_filepath}")
-        else:
-            logger.warning(f"  -> Skipped saving {filename} (No content)")
+                # Validation: Skip if URL is empty or doesn't start with http
+                if not url or not url.lower().startswith('http'):
+                    logger.debug(f"Skipping row ID {udid}: Invalid URL '{url}'")
+                    continue
+                
+                # Construct Filename: [UDID] - [Main-title].md
+                # We also sanitize the title to remove illegal filesystem characters
+                clean_title = sanitize_filename(main_title)
+                filename = f"{udid} - {clean_title}.md"
 
-    driver.quit()
-    logger.info("--- Scrape Run Complete ---")
+                # Scrape
+                md_content, html_content = fetch_and_convert(driver, url)
+                
+                if md_content:
+                    # 1. Save Markdown
+                    md_filepath = os.path.join(OUTPUT_DIR, filename)
+                    with open(md_filepath, 'w', encoding='utf-8') as f_md:
+                        f_md.write(md_content)
+                    
+                    # 2. Save HTML
+                    base_name = os.path.splitext(filename)[0]
+                    html_filename = f"{base_name}-html.html"
+                    html_filepath = os.path.join(HTML_OUTPUT_DIR, html_filename)
+                    
+                    with open(html_filepath, 'w', encoding='utf-8') as f_html:
+                        f_html.write(html_content)
+
+                    logger.info(f"  -> Saved: {filename}")
+                else:
+                    logger.warning(f"  -> Skipped: {filename} (No content retrieved)")
+
+    except Exception as e:
+        logger.critical(f"An unexpected error occurred during execution: {e}")
+    finally:
+        driver.quit()
+        logger.info("--- Scrape Run Complete ---")
 
 if __name__ == "__main__":
     main()
+
+```
