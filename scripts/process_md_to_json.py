@@ -542,6 +542,9 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     archetype = archetype.strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
 
+    # Define page_url early so it can be used in both main_obj and the final json_ld
+    page_url = metadata_row.get('canonical url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}")
+
     master_links = [] # Collector for all links
 
     # --- DESCRIPTION ---
@@ -579,6 +582,10 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "@type": service_type,
         "name": title,
         "description": description,
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": page_url
+        },
         "areaServed": {"@type": "Country", "name": "Australia"}
     }
 
@@ -642,7 +649,7 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "headline": title,
         "alternativeHeadline": metadata_row.get('Overtitle', ''),
         "description": description[:160] if description else "", 
-        "url": metadata_row.get('canonical url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}"),
+        "url": page_url,
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
         "datePublished": date_val,
