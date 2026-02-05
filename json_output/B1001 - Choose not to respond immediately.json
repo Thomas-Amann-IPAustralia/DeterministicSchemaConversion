@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Choose not to respond immediately ",
       "description": "When to delay responding to groundless IP infringement claims and how to gather evidence for future defence.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

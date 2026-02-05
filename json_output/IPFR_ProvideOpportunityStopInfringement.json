@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "ProvideOpportunityStopInfringement",
       "description": "You can consider reaching out informally to the party who you suspect to be infringing your IP, before taking any legal or formal action against them.\nIn some cases, infringement can be unintentional or a suspected infringer might be open to reaching an amicable solution.\nInformal contact with anoth...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Choose not to act immediately ",
       "description": "Strategically enforce your IP only when worthwhile",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

@@ -85,6 +85,10 @@
       "@type": "GovernmentService",
       "name": "Request IP Australia remove an unused trade mark to defend your right",
       "description": "Request IP Australia removes an unused trade mark from the register.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

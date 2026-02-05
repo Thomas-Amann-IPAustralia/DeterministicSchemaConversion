@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Agree to a formal commercial arrangement",
       "description": "Work with an IP professional to come to an agreement with another party",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Considerations when responding to international accusations",
       "description": "Find the right assistance for responding to accusations of IP infringement happening outside of Australia.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

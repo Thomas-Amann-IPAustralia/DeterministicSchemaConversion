@@ -85,6 +85,10 @@
       "@type": "GovernmentService",
       "name": "Monitor the trade mark register and market for competitor activity",
       "description": "Ensure the exclusivity of your trade mark by detecting potential conflicts early.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

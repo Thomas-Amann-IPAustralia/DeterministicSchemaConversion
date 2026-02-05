@@ -78,6 +78,10 @@
       "@type": "GovernmentService",
       "name": "Seek binding, authoritative decisions",
       "description": "Escalate a wide range of patent matters to court",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

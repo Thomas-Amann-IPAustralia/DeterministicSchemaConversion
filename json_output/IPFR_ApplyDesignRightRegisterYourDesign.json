@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "ApplyDesignRightRegisterYourDesign",
       "description": "PageURL: \"https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design\"...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

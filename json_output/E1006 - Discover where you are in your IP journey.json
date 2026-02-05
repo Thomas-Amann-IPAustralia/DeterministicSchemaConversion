@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Discover where you are in your IP journey",
       "description": "As a business owner, there's a lot of information to grapple with and working out which IP options apply to you can be tricky. By matching your current activities to common stages in the IP journey, you can quickly see what's most relevant now and what might come next.\n'Where am I in the IP journey?...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Prevent risks to public interest",
       "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

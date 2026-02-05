@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Obtain legal advice on your enforcement options",
       "description": "Seek a qualified & experienced professional to provide specific, tailored advice.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

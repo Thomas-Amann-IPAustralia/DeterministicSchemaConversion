@@ -97,6 +97,10 @@
       "@type": "GovernmentService",
       "name": "Challenge the use of international domain name",
       "description": "Dispute an international domain name that infringes your trade mark",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

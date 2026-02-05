@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Resolve IP issues with the help of a third party",
       "description": "Agree to be bound by the decision of a highly qualified third-party assessment",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

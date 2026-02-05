@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Seek a court order to prevent further damage while preparing for court.",
       "description": "Lodge an interim injunction order through court",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

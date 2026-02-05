@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Assert your rights, as a response to an accusation  ",
       "description": "If you believe that you are genuinely in the right to retain your IP, gather evidence and defend your right to use it.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

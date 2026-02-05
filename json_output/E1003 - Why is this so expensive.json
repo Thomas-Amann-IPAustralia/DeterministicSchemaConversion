@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Why is this so expensive?",
       "description": "Enforcing your intellectual property (IP) is about stopping suspected or alleged infringement and, in some cases, seeking damages. Costs usually rise with urgency, complexity and the number of parties involved.\nYou need to show that you own the right and that the other party's conduct likely infring...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/why-so-expensive"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

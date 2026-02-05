@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "What is IP and how does it protect me?",
       "description": "Intellectual property (IP) is a term used to describe 'creations of the mind' that the law can help protect. This includes things like inventions, brand names, logos, designs, creative works, and plant varieties. Owning an IP right means you may have the exclusive legal right to use, make, sell, or ...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-and-how-does-it-protect-me"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

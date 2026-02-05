@@ -78,6 +78,10 @@
       "@type": "GovernmentService",
       "name": "Detect and discourage potential infringement in your supply chain",
       "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

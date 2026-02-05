@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Resolve IP issues with the help of a third party",
       "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

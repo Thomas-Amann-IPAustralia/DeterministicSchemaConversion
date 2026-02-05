@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "What IP protection means for my business ",
       "description": "IP protection means securing legal rights over the things your business creates...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-does-ip-protection-mean-my-business"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

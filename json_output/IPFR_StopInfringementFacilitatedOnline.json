@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "StopInfringementFacilitatedOnline",
       "description": "Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can underm...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

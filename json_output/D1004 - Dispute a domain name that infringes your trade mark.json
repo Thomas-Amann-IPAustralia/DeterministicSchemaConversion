@@ -97,6 +97,10 @@
       "@type": "GovernmentService",
       "name": "Dispute a domain name that infringes your trade mark",
       "description": "Dispute a .au domain name that may infringe an IP right",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

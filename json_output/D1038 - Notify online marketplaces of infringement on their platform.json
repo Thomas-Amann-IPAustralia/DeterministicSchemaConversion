@@ -147,6 +147,10 @@
       "@type": "GovernmentService",
       "name": "Notify online marketplaces of infringement on their platform",
       "description": "Request infringing material is removed from online marketplaces and platforms",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-marketplaces-infringement-their-platform"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

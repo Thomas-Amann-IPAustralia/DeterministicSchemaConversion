@@ -85,6 +85,10 @@
       "@type": "GovernmentService",
       "name": "Seek binding, authoritative decisions",
       "description": "Escalate a wide range of trade mark matters to court",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

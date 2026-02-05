@@ -152,6 +152,10 @@
       "@type": "GovernmentService",
       "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
       "description": "Develop a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

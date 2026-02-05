@@ -147,6 +147,10 @@
       "@type": "GovernmentService",
       "name": "Inform online platforms that you have IP rights",
       "description": "Register your IP with online platforms to access their enforcement tools.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

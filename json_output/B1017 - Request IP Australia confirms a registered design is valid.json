@@ -78,6 +78,10 @@
       "@type": "GovernmentService",
       "name": "Request IP Australia confirms a registered design is valid",
       "description": "Request IP Australia examines and certifies a registered design to secure full protection",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

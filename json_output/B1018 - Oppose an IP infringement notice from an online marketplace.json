@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Oppose an IP infringement notice from an online marketplace ",
       "description": "Dispute an action that an eCommerce platform has taken against you",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

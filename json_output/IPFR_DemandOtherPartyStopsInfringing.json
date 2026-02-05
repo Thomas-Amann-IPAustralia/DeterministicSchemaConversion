@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "DemandOtherPartyStopsInfringing",
       "description": "A letter of demand, or a cease and desist letter, can be an effective way of stopping infringing behaviour and avoiding the need for legal action. You can use this letter to communicate your concerns and demands. It's often one of the first actions taken if you are satisfied that an infringement is ...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

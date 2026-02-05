@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "De-escalate and resolve disputes via conversation",
       "description": "Engage in an informal conversation to resolve IP disputes",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

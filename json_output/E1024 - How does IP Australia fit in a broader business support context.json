@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "How does IP Australia fit in a broader business support context?",
       "description": "If you're starting or growing a business in Australia we know that there's a lot to keep track of. If you've got a logo, there's a chance you've come across us, a government agency called \n\n**IP Australia.**\nBut how are we different from all the other government services out there?\n**Agency**\n\n \n\n**...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-does-ip-australia-compare-other-government-services"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

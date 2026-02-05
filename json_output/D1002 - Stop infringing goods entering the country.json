@@ -97,6 +97,10 @@
       "@type": "GovernmentService",
       "name": "Stop infringing goods entering the country",
       "description": "Lodge a notice of objection with the Australian Border Force.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

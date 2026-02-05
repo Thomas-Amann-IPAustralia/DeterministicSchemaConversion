@@ -85,6 +85,10 @@
       "@type": "GovernmentService",
       "name": "Remove a trade mark\u00a0from the register",
       "description": "Let IP Australia know a recently registered trade mark should not have been registered",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

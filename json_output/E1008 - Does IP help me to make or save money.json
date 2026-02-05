@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "Does IP help me to make or save money?",
       "description": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example:\n* **A patent**gives you the exclusive right to make or use yo...",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

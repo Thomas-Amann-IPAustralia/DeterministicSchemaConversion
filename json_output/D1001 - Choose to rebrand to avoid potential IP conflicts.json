@@ -85,6 +85,10 @@
       "@type": "GovernmentService",
       "name": "Choose to rebrand to avoid potential IP conflicts",
       "description": "Strategically rebrand your business to avoid disputes.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"

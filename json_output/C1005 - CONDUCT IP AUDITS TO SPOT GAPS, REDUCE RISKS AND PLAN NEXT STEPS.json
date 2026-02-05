@@ -64,6 +64,10 @@
       "@type": "GovernmentService",
       "name": "CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS",
       "description": "Identify IP in your portfolio, who owns it, what it's worth, it's legal status, and what to do next.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
