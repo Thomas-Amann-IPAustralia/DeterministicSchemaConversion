@@ -133,7 +133,10 @@ def clean_html_fragment(soup_element):
     for tag in fragment.find_all(True):
         # Remove all attributes except href
         allowed_attrs = ['href']
-        attrs = dict(tag.attrs or {})
+        
+        # FIX: Handle cases where tag.attrs is None using "or {}"
+        attrs = dict(tag.attrs or {}) 
+        
         for attr in attrs:
             if attr not in allowed_attrs:
                 del tag[attr]
@@ -143,8 +146,22 @@ def clean_html_fragment(soup_element):
         elif tag.name in unwrap_tags:
             tag.unwrap()
     
-    # Convert to string and clean up whitespace
+    # Convert to string
     html_str = str(fragment)
+
+    # --- NEW: Unicode Normalization for HTML ---
+    # Apply the same cleaning to HTML content
+    replacements = {
+        "\u2018": "'", "\u2019": "'",
+        "\u201c": '"', "\u201d": '"',
+        "\u2013": "-", "\u2014": "-",
+        "\u00a0": " "
+    }
+    for k, v in replacements.items():
+        html_str = html_str.replace(k, v)
+    # -------------------------------------------
+    
+    # Clean up whitespace
     html_str = re.sub(r'\s+', ' ', html_str).strip()
     
     # Remove empty tags like <p> </p> or <a></a>
@@ -282,11 +299,29 @@ def parse_markdown_blocks(md_text):
 
 def clean_text_retain_formatting(text, strip_images=False):
     if not text: return ""
+    
+    # --- NEW: Unicode Normalization ---
+    # Replace smart quotes, dashes, and non-breaking spaces with standard characters
+    replacements = {
+        "\u2018": "'",  # Left single quote
+        "\u2019": "'",  # Right single quote
+        "\u201c": '"',  # Left double quote
+        "\u201d": '"',  # Right double quote
+        "\u2013": "-",  # En dash
+        "\u2014": "-",  # Em dash
+        "\u2026": "...", # Ellipsis
+        "\u00a0": " ",  # Non-breaking space
+    }
+    for src, target in replacements.items():
+        text = text.replace(src, target)
+    # ----------------------------------
+
     if strip_images:
         text = re.sub(r'\[\s*!\[.*?\]\(.*?\)\s*\]\(.*?\)', '', text)
         text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
         text = re.sub(r'\[\s*\]\(.*?\)', '', text)
-    text = text.replace(u'\u00a0', ' ').replace('\r', '')
+        
+    text = text.replace('\r', '')
     lines = [re.sub(r'[ \t]+', ' ', l).strip() for l in text.split('\n')]
     text = "\n".join(lines)
     text = re.sub(r'\n{3,}', '\n\n', text)
