@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup  # Requires: pip install beautifulsoup4
 INPUT_DIR = 'IPFR-Webpages' if os.path.exists('IPFR-Webpages') else '.'
 HTML_DIR = 'IPFR-Webpages-html'  # <--- NEW CONFIGURATION
 OUTPUT_DIR = 'json_output'
-CSV_FILE = '260203_IPFRMetaTable.csv'
+CSV_FILE = 'metatable-Content.csv' # <--- UPDATED to new CSV
 
 # --- 1. KNOWLEDGE BASES ---
 LEGISLATION_MAP = {
@@ -237,6 +237,8 @@ def load_csv_metadata(csv_path):
     try:
         with open(csv_path, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
+            # Normalize headers (strip whitespace)
+            reader.fieldnames = [name.strip() for name in reader.fieldnames]
             rows = list(reader)
     except Exception as e:
         print(f"Error reading CSV: {e}")
@@ -248,7 +250,8 @@ def find_metadata_row(md_content, filename, csv_rows):
     if url_match:
         page_url = url_match.group(1).strip()
         for row in csv_rows:
-            csv_url = row.get('canonical url', '').strip()
+            # UPDATED: Key is now 'Canonical-url'
+            csv_url = row.get('Canonical-url', '').strip()
             if csv_url == page_url or (csv_url and page_url.endswith(csv_url.split('/')[-1])):
                 return row
 
@@ -265,7 +268,8 @@ def find_metadata_row(md_content, filename, csv_rows):
     clean_name = re.sub(r'^[a-z]\d{4}\s*-\s*', '', clean_name).strip()
     
     for row in csv_rows:
-        csv_title = row.get('Main Title', '').lower().strip()
+        # UPDATED: Key is now 'Main-title'
+        csv_title = row.get('Main-title', '').lower().strip()
         if clean_name == csv_title: return row
         if clean_name and clean_name in csv_title: return row
     return {}
@@ -353,10 +357,14 @@ def extract_links_and_clean(text):
 
 def generate_citations_from_csv(metadata_row):
     citations = []
-    raw_ip_rights = metadata_row.get('Relevant IP right', '')
+    # UPDATED: Key is 'Relevant-ip-right'
+    raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
     if not raw_ip_rights: return citations
-    cleaned_rights = raw_ip_rights.replace('"', '').lower()
-    rights_list = [r.strip() for r in cleaned_rights.split(',')]
+    
+    # CLEANING: Remove extra quotes and normalize
+    cleaned_rights = raw_ip_rights.replace('"', '').replace("'", "").lower()
+    rights_list = [r.strip() for r in cleaned_rights.split(',') if r.strip()]
+    
     added_urls = set()
     for right in rights_list:
         if right in LEGISLATION_MAP:
@@ -385,9 +393,11 @@ def resolve_provider(provider_raw_string, archetype_hint=""):
     return base_obj
 
 def resolve_about_topics(metadata_row):
-    raw_ip_rights = metadata_row.get('Relevant IP right', '')
-    cleaned_rights = raw_ip_rights.replace('"', '').lower()
-    rights_list = [r.strip() for r in cleaned_rights.split(',')]
+    # UPDATED: Key is 'Relevant-ip-right'
+    raw_ip_rights = metadata_row.get('Relevant-ip-right', '')
+    cleaned_rights = raw_ip_rights.replace('"', '').replace("'", "").lower()
+    rights_list = [r.strip() for r in cleaned_rights.split(',') if r.strip()]
+    
     about_entities = []
     for right in rights_list:
         if not right: continue
@@ -537,13 +547,15 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         use_html = False
 
     udid = metadata_row.get('UDID', 'Dxxxx')
-    title = metadata_row.get('Main Title', filename.replace('.md', '').replace('_', ' '))
-    archetype = metadata_row.get('Archectype') or metadata_row.get('Archetype', 'Government Service')
-    archetype = archetype.strip()
+    # UPDATED: Key is 'Main-title'
+    title = metadata_row.get('Main-title', filename.replace('.md', '').replace('_', ' '))
+    # UPDATED: Key is 'Archectype' (handling potential trailing space via load_csv normalization)
+    archetype = metadata_row.get('Archectype', 'Government Service').strip()
     date_val = datetime.now().strftime("%Y-%m-%d")
 
     # Define page_url early so it can be used in both main_obj and the final json_ld
-    page_url = metadata_row.get('canonical url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}")
+    # UPDATED: Key is 'Canonical-url'
+    page_url = metadata_row.get('Canonical-url', f"https://ipfirstresponse.ipaustralia.gov.au/options/{udid}")
 
     master_links = [] # Collector for all links
 
@@ -568,10 +580,14 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
     service_id = "#the-service"
     has_provider = True
     
+    # UPDATED: Archetype Logic based on new CSV values
+    # "Self-Help Strategy", "Government Service", "Commercial Third Party Service"
     if "Self-Help" in archetype:
         service_type, has_provider = "HowTo", False 
     elif "Government Service" in archetype:
         service_type = "GovernmentService"
+    elif "Commercial" in archetype:
+        service_type = "Service"
     elif "Non-Government" in archetype:
         service_type = "Service" 
     else:
@@ -600,7 +616,8 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         main_obj["step"] = steps
     
     if has_provider:
-        provider_name = metadata_row.get('Provider') or metadata_row.get('Overtitle')
+        # In new CSV, we often rely on Archetype or Overtitle as there is no specific Provider column
+        provider_name = metadata_row.get('Overtitle')
         provider_obj = resolve_provider(provider_name, archetype_hint=archetype)
         if service_type == "GovernmentService": main_obj["serviceOperator"] = provider_obj
         else: main_obj["provider"] = provider_obj
@@ -734,7 +751,7 @@ def main():
             
         matched_row = find_metadata_row(content_sample, filename, csv_rows)
         if not matched_row:
-            matched_row = {"Main Title": base.replace('IPFR_', '').replace('_', ' ')}
+            matched_row = {"Main-title": base.replace('IPFR_', '').replace('_', ' ')}
 
         process_file_pair(md_path, html_path, filename, matched_row)
 
