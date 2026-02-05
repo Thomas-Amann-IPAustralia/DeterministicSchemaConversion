@@ -61,7 +61,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "GovernmentService",
+      "@type": "xXx_Err-PLACEHOLDER_xXx",
       "name": "ApplyDesignRightRegisterYourDesign",
       "description": "PageURL: \"https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design\"...",
       "mainEntityOfPage": {
@@ -72,9 +72,9 @@
         "@type": "Country",
         "name": "Australia"
       },
-      "serviceOperator": {
-        "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
+      "provider": {
+        "@type": "Organization",
+        "name": "xXx_Err-PLACEHOLDER_xXx"
       }
     },
     {

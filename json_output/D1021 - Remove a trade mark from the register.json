@@ -11,8 +11,8 @@
     "value": "D1021"
   },
   "inLanguage": "en-AU",
-  "datePublished": "2026-02-05",
-  "dateModified": "2026-02-05",
+  "datePublished": "2025-02-28",
+  "dateModified": "2025-09-05",
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Australian Small Business Owners",
@@ -95,7 +95,13 @@
       },
       "serviceOperator": {
         "@type": "GovernmentOrganization",
-        "name": "xXx_PLACEHOLDER_xXx"
+        "alternateName": "Intellectual Property Australia",
+        "url": "https://www.ipaustralia.gov.au",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/IP_Australia",
+          "https://www.wikidata.org/wiki/Q5973154"
+        ],
+        "name": "IP Australia"
       }
     },
     {
