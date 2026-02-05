@@ -123,7 +123,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "HowTo",
+      "@type": "Article",
       "name": "What is IP Infringement ",
       "description": "",
       "mainEntityOfPage": {
@@ -133,8 +133,7 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "step": []
+      }
     },
     {
       "@type": "FAQPage",

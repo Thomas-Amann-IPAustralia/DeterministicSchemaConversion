@@ -123,7 +123,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "HowTo",
+      "@type": "Article",
       "name": "Can I buy, sell or license IP?",
       "description": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it - It's intangible.\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\nHere are some examples of what you may choose to do:\n* Let other people use it, either for a fee (called 'licensing') or for no cost.\n\n* Set rules around how it's used. For example, you can set rules on how it can be used only in certain places, on certain types of products, or in certain ways.\n\n* You can sell it on its own or as part of your business.\n\n* Make an offer to buy someone else's IP.\n\n* If you don't use your IP and no longer wish pay fees to IP Australia to keep it, you can let the ownership lapse.\nRegistered IP (such as trade marks, patents, design rights and PBR) serves as a proof of your ownership, and what that ownership covers, much like a deed to a house clearly states the boundaries. This makes it much easier for everyone to be clear about who owns an IP right.\nIn all these situations, you may wish to think carefully about your business plans, and seek independent help, especially to work out the value of IP you are thinking about, and any conditions you might consider about its usage.\nMany of these actions are done through contracts with other businesses. It can be vital to get an experienced professional to help you draft the agreement - such as IP lawyers - to make sure your rights are protected and no important details are missed.",
       "mainEntityOfPage": {
@@ -133,8 +133,7 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      },
-      "step": []
+      }
     }
   ],
   "relatedLink": [

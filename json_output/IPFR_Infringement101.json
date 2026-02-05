@@ -89,10 +89,17 @@
           "name": "Give feedback about ip first response?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Send us an \n\n[email](Mailto:IPFirstResponse@ipaustralia.gov.au)\n\nFill out a feedback form by following the button"
+            "text": "Send us an \n\nemail\n\nFill out a feedback form by following the button"
           }
         }
       ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "Mailto:IPFirstResponse@ipaustralia.gov.au",
+      "name": "email"
     }
   ]
 }

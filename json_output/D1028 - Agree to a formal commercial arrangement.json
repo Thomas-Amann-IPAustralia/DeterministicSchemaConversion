@@ -123,7 +123,7 @@
   "mainEntity": [
     {
       "@id": "#the-service",
-      "@type": "HowTo",
+      "@type": "Article",
       "name": "Agree to a formal commercial arrangement",
       "description": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute.\u202fWhile negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their lawyers to communicate on their behalf.\nNegotiation for a commercial outcome is particularly suitable if you and the other party are involved:\n* can have a discussion and make decisions without relying on formal procedures\n\n* want to maintain ongoing relationship with the other parties involved\n\n* want to find productive ways to resolve the dispute, which can benefit all parties involved\n\n* would like to maintain control over the outcome, rather than having someone hand down a decision\n\n* want to keep discussions confidential (if the parties involved agree that the negotiations will be confidential).\nIn deciding whether negotiation is a suitable pathway, you can consider:\n* whether you can identify and contact the other parties involved\n\n* the other parties' willingness to participate in negotiations\n\n* when and where negotiation will take place\n\n* how decisions will be made and observed\n\n* each party's desires, needs and priorities in relation to the disputed issues\n\n* whether you will negotiate directly with the other party or whether you will be assisted by representatives or support people\n\n* what outcomes would benefit each of the parties involved\n\n* your next steps if the negotiation does not yield an agreement.\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other parties involved or find it challenging to communicate with the other parties. For this reason, representatives such as lawyers are commonly used.\nIn some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see - \n\nResolve IP issues with the help of a third party | IP Australia First Response\n\n).",
       "mainEntityOfPage": {
@@ -133,6 +133,13 @@
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Agree to a formal commercial arrangement",
+      "about": {
+        "@id": "#the-service"
       },
       "step": [
         {
