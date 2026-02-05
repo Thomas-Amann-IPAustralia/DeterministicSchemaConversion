@@ -1,0 +1,204 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#webpage",
+  "headline": "Seek binding, authoritative decisions",
+  "alternativeHeadline": "Court - Designs",
+  "description": "Escalate a wide range of design rights matters to court.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "D1087"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2026-01-23",
+  "dateModified": "2026-02-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Design Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q252799"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Service",
+      "name": "Seek binding, authoritative decisions",
+      "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful, and obtaining the outcome you seek is never guaranteed.\n\nIt is prudent to seek legal advice before starting legal proceedings. You will likely also need the assistance of a lawyer with experience in IP.\n\nCourts can hear many types of design disputes including:\n\n \n\n* Actions against someone for suspected infringement of your registered design. A certificate of examination from IP Australia is required before you can enforce your design in court.\n\n* Matters relating to the validity of a registered design.\n\n* Appeals from decisions made by IP Australia.\n\nDesign proceedings in Australia are typically started in the Federal Court of Australia or the Federal Circuit and Family Court of Australia (Division 2).\n\nDesigns court cases are rare. This means there is limited legal precedent for judges and lawyers to draw on. This makes it harder to build a strong case, increases potential costs, and adds uncertainty to how a judge might rule.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "provider": {
+        "@type": "NGO",
+        "name": "Court"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Seek binding, authoritative decisions",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Here are some things you might consider before you proceed with legal action in a designs matter. \n\nFind an IP lawyer for advice and representation\n\n \n\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.\n\nConsider your goals before deciding to start a legal claim\n\n \n\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes.\n\nConsider the impact of publicity\n\n \n\nCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential.\n\nGather all your documents\n\n \n\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that you think might be relevant to your claim. You can give these to your lawyer to review."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* If you succeed, a court can award damages or compensation for losses and costs (including, in some cases, an account of profits made in relation to the infringement).\n\n* Court decisions are binding and enforceable between the parties to the proceedings.\n\n* The other party cannot simply ignore your legal claim without consequences.\n\n* You can often resolve several related matters in one case.\n\n* Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia's Opposition and Hearing processes.\n\n* Court proceedings allow cross-examination of evidence and expert witnesses, which could be helpful for prosecuting your argument if you have a highly technical case.\n\n* The gravity, expense, publicity and protracted nature of court proceedings can encourage the other party to negotiate or engage in other forms of dispute resolution to settle legal claims and avoid the court proceedings continuing.\n\n* For suspected infringement claims, a court can, in appropriate situations, make orders to prevent the other party from continuing to infringe your registered design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The outcome can be unpredictable.\n\n* While a court can determine the dispute between the parties, it may not be in the best interests of your business. Proving you are in the right, legally, may not be the same as making a good business decision.\n\n* The other party to the legal action may make counterclaims or other legal claims against you, including challenges to the validity of your design.\n\n* On top of paying your legal costs, you may be required to pay some (or all) of the legal costs of the other party or parties.\n\n* The outcome you obtain may not be as advantageous as an offer of settlement previously made to you. This can have implications for any costs you may incur.\n\n* If you or your staff are required to provide evidence in court, this can be very stressful, time-consuming, and distract from the operation of your business.\n\n* Court proceedings are usually public unless they are covered by a confidentiality order, so this option may not be suitable if confidentiality is important.\n\n* You may be required to disclose information in the proceedings to the other party or parties that you may prefer to keep confidential.\n\n* Court proceedings may attract unwanted publicity and potentially damage your reputation - particularly if you are unsuccessful or if your case is seen as unduly litigious.\n\n* It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see 'How much time might be involved?' below).\n\n* If you intend to commence proceedings against a party that you have a pre-existing contractual agreement with, it may be important to consider whether the agreement covers ways to deal with IP disputes. For example, some agreements may require a party try forms of alternative dispute resolution before they are able to commence proceedings"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are a wide range of possible outcomes, and these will also depend on the type of court action you might take. Some possible outcomes are:\n* You might reach a negotiated settlement with the other party.\n\n* The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.\n\n* The other party's registered design might be cancelled or amended.\n\n* The court might decide against you, in which case your registered design could be cancelled and you may need to pay some or all of the other party's legal costs.\n\n* You could be awarded damages.\n\n* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your design rights - including on a temporary basis while you are waiting for the court to hear your matter.\n\n* A decision made by IP Australia can be affirmed, reversed or varied.\n\n* Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims under the Australian Consumer Law).\n\n* In most cases, the outcome can be appealed to a higher court."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Infringement and other court proceedings are generally very expensive as legal representation is usually involved and they can take a long time to resolve.\n\nCourt proceedings can be expensive because they often involve lawyers and expert witnesses. Actual costs vary widely depending on complexity and procedure.\n\nFor comparison, simple patent-related litigation may cost\u202f\n\nbetween $100-500k\n\n, major patent litigation can cost in the millions. Appeals cost anywhere from $150k-300k+.\n\nBecause of the lack of legal precedent for designs. It is likely that any designs dispute in court will be very expensive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Court cases can take months or years to conclude, depending on complexity, the evidence required, and whether there are appeals. Interim injunctions (temporary orders to stop suspected infringement) may be available more quickly, but full proceedings generally take much longer.\n\nThe timeframe is typically shorter if the matter is resolved through negotiations or a court-ordered mediation process.\n\n \n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.\n\n \n\nLimitations on how long you can take to file an action\n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start.\n* The limitation period for a designs infringement action is six years from the date on which the act of infringement took place. The infringement act must also have taken place in the period of registration.\n\n* If you are challenging a decision made by IP Australia, an appeal to the courts must be started within 21 days after the date of the decision. It may be possible to obtain an extension of time with the court.\nDue to these complexities, it may be helpful to speak to an IP lawyer about time limits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are very few designs related court cases. Most years there are no designs proceedings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For infringement actions, the owner of the certified design right usually starts the infringement action. However, an exclusive licensee may also hold the right to start an action.\u202f\n\nOther court actions can generally be taken by any aggrieved party with a relevant interest in the matter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute\n\n* Lawyers\n\n* Witnesses\n\n* A judge\n\n* Legal professionals, including IP attorneys or lawyers with designs experience."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
+      "name": "between $100-500k"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+      "name": "Escalate To Court | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
+      "name": "Rights of appeal from decisions of the Registrar | IPA Manuals"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    }
+  ]
+}
