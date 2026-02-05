@@ -81,6 +81,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Business names?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": ""
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Is my business name my ip?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -94,13 +102,21 @@
             "@type": "Answer",
             "text": "[Register a business name | ASIC](https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/)\n\n[Register a company | ASIC](https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/)\n\n[What are trade marks? | IP Australia](https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks)"
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
         }
       ]
     }
   ],
   "relatedLink": [
-    "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
+    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
     "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
-    "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks"
+    "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/"
   ]
 }
