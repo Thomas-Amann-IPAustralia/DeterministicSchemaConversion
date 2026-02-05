@@ -1,0 +1,305 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip#webpage",
+  "headline": "Explore opportunities by licensing  your IP",
+  "alternativeHeadline": "IP Licensing",
+  "description": "Consider licensing your IP to others or obtaining a licence for contested IP to avoid disputes and add value.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "C1007"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-28",
+  "dateModified": "2025-09-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q167270"
+    },
+    {
+      "@type": "Thing",
+      "name": "Design Right",
+      "sameAs": "https://www.wikidata.org/wiki/Q252799"
+    },
+    {
+      "@type": "Thing",
+      "name": "Plant Breeders' Right",
+      "sameAs": "https://www.wikidata.org/wiki/Q695112"
+    },
+    {
+      "@type": "Thing",
+      "name": "Copyright",
+      "sameAs": "https://www.wikidata.org/wiki/Q1297822"
+    },
+    {
+      "@type": "Thing",
+      "name": "Patent",
+      "sameAs": "https://www.wikidata.org/wiki/Q253623"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Explore opportunities by licensing  your IP",
+      "description": "Licensing is a legal arrangement where you, as the rights holder, give another party permission to use your IP rights under agreed terms. This can be done for any IP rights you own or have the right to sublicense, and may apply across specific products, industries or geographic areas.\nDeciding to grant someone else the right to use your IP rights could benefit your business and may be an effective way to resolve various IP disputes, including where another party wants to keep using your IP rights. You can investigate potential licensees yourself or engage an IP professional to assist.\nTypes of licences can include:\n* Exclusive licences (you grant IP rights to only one licensee and can no longer use the IP yourself),\n\n* Non-exclusive licences (you grant IP rights to multiple parties and retain the right to use the IP yourself), or\n\n* Sole licences (you grant IP rights to only one licensee and retain the right to use the IP yourself).",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Explore opportunities by licensing  your IP",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Prepare for IP Licensing Exploration",
+          "text": "To explore licensing your IP, consider taking these steps before beginning:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Verify IP Rights",
+          "text": "Confirm your IP- Make sure your IP rights are valid and enforceable."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Identify Licensing Details",
+          "text": "Gather evidence and factual details- Identify what you're licensing, including registration numbers, territories and any existing rights or restrictions."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Identify Relevant Negotiation Parties",
+          "text": "Identify relevant parties- Search out and understand who you plan to negotiate with, and whether others (such as intermediaries) may need to be involved."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Understand Licensing Obligations",
+          "text": "Review applicable rules- Understand legal principles around licensing, especially any obligations to maintain control of your IP and speak to an IP professional if you need assistance."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consult Professional Services",
+          "text": "Consider where you may use the assistance of various professional servicesand contact them to understand costs and other considerations before deciding."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Licensing your IP can offer several advantages:\n* Generating income from ongoing royalty payments or a single lump-sum payment.\n\n* Expanding into new markets without setting-up operations yourself.\n\n* Retaining ownership while allowing others to use your IP.\n\n* Depending on the licence you choose, you can allow others to use your IP but retain the right to use the IP yourself.\n\n* Strengthening business relationships and opening up partnership opportunities.\n\n* Leveraging another party's distribution, manufacturing or marketing capacity.\n\n* Maintaining control through terms and restrictions in the agreement.\n\n* Licences are incredibly flexible - you can choose what, where, when and how IP can be used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Licensing your IP also comes with potential risks:\n* Disputes can arise if the terms of the licence are not clear. Getting an IP professional to draft the licence can help to reduce this risk.\n\n* You may need to monitor the licence agreement to ensure the other party complies with it.\n\n* Licensing your IP rights to others has the potential to reduce the uniqueness or value of your IP depending on the circumstances, including who you license it to and the licensing terms.\n\n* If youexclusivelylicense your IP rights, you will no longer be able to use them yourself.\n\n* In specific instances regarding trade marks, if the licensor is unable to maintain effective controls over trade mark use, the trade mark can become vulnerable to removal for non-use.\n\n* In the case a patent has been licensed to an exclusive licensee - they will have the right to commence infringement proceedings. In some cases, the patent holder can also be added as a party to those proceedings, potentially leading to legal action or expense.\n\n* If you do not put in place arrangements to protect your sensitive commercial information (such as specific business practices or product features) during negotiations, it may be shared with other parties or misused by the recipient.\n\n* You may also need to consider the potential tax implications of the licence, particularly if you are operating in multiple jurisdictions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Outcomes of licensing investigations may include:\n* Reaching a signed licence agreement with one or more parties\n\n* Identifying and investigating a licensing opportunity but deciding not to proceed\n\n* Using insights to negotiate stronger terms in future arrangements\n\n* Deciding not to licence your IP rights if you decide it would not be beneficial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs to pursue this may include:\n* Professional fees: Legal professional fees to draft or review a licence agreement ($1,500-$5,000 indicative range for a simple agreement)\n\n* Shared or variable costs: Negotiation or dispute resolution costs if terms are contested and parties are represented\n\n* Additional costs: Travel, translation, and administrative costs for international or complex arrangements.\nActual costs may vary depending on complexity, which rights are involved and how professional advice is used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timeframes vary depending on your goals and the complexity of the arrangement. You might spend:\n* Hours reviewing templates or example agreements\n\n* Weeks negotiating and finalising terms with a licensee\n\n* Longer if multiple parties or multiple legal jurisdictions are involved.\nInfluencing factors include:\n* The number of parties and IP assets involved\n\n* Whether you're licensing domestically or internationally\n\n* How much professional assistance is used\n\n* How clearly defined your commercial objectives are."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is very common for parties to commercialise their IP rights by licensing them to others."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An IP rights owner and any other person with a right to sublicense IP rights (as long as that person complies with any restrictions that may apply to their right to sublicense those IP rights)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Whos involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP rights owner - You or any other person with a right to sublicense.\n\n* Licensee - The party interested in using your IP.\nOften used:\n* Legal professionals - Often involved to draft and negotiate terms, able to confirm extent and details of various IP rights in multiple jurisdictions, sometimes able to assist with determining the value/price the IP being licensed.\n\n* Business advisers - For commercialisation or partnership strategy advice that falls outside of legal and IP domains."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on enforcement options | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "Get professional assistance with your IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip",
+      "name": "How to licence my IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/en/web/business/assignment-licensing",
+      "name": "IP Assignment and Licensing"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/commercialisation-and-collaboration",
+      "name": "Commercialisation and collaboration |IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    }
+  ]
+}

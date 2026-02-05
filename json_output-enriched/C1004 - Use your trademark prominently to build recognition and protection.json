@@ -1,0 +1,210 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#webpage",
+  "headline": "Use your trademark prominently to build recognition and protection",
+  "alternativeHeadline": "Reinforce your right",
+  "description": "Make strong, visible use of your IP to increase consumer recognition and legal standing.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "C1004"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-28",
+  "dateModified": "2025-09-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Trade Mark",
+    "sameAs": "https://www.wikidata.org/wiki/Q167270"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Use your trademark prominently to build recognition and protection",
+      "description": "Using your trade mark in a uniform recognisable way helps customers link the trade mark with your goods or services and shows that you claim the brand as yours. On the other hand, not using your trade mark on the claimed goods or services following registration, or adopting a trade mark that is very different from the registered trade mark may render your trade mark vulnerable to removal from the register for non-use.\nFor consistent, strategic use of your trade mark, you would need to think about the key elements that constitute the trade mark and apply these elements coherently. Having the same spelling, layout, colours and positioning across public touch-points, such as packaging and marketing materials, can help your consumers and competitors to recognise your brand and link it to your goods or services.\nAdding the 'TM' symbol for unregistered marks or the '®' symbol once registered also signals your intent to use the mark as a trade mark and a badge of origin distinguishing your goods or services from those of competitors.\nYou may develop simple brand guidelines for consistent usage of your trade mark. You may provide training to your staff using these brand guidelines, and establish review processes for authorised users such as your suppliers, distributors and licensees to ensure your trade mark is being used in a manner that's consistent with your branding strategy.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Use your trademark prominently to build recognition and protection",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Present Your Trade Mark",
+          "text": "A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Define Trademark Design Guidelines",
+          "text": "Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Conduct Public Use Audit",
+          "text": "Routine checks of public use and finding inconsistencies."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Collect dated evidence",
+          "text": "Records of dated examples (screenshots, packaging, adverts) showing correct use."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Increases likelihood of building public recognition and goodwill for the brand.\n\n* Creates evidence of trade mark use that may support administration processes or enforcement later.\n\n* Helps prevent a mark becoming generic or losing distinctiveness.\n\n* Deters copycats by signalling that you value and monitor the trade mark."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Misuse of the '®' symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see:What are trade marks? | IP Australia.\n\n* Strict brand rules may limit creative marketing or re‑branding opportunities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using your trade mark in a consistent manner may result in:\n* Customers reliably associating the mark with your business alone\n\n* Easier proof of ownership and distinctiveness in a dispute or trade mark application\n\n* Fewer instances of accidental misuse by employees or third parties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The costs of setting up brand guidelines for consistent trade mark usage can vary heavily, depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists.\nPreparing simple brand guidelines and training materials may cost a few hours of staff time or modest design fees. However, optional legal review of the guidelines or close collaboration with marketing specialist may involve substantial professional fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The time taken to set up brand guidelines for consistent trade mark usage will vary heavily depending on the size of your business, the scope of the trade mark and whether you choose to \n\nengage third-party services\n\n such as IP attorneys, marketing or brand protection specialists."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Developing policies and guidelines for consistent, strategic use of trade mark is commonly used by businesses that have trade marks. It is often seen as part of best practices to reinforce one's right to a trade mark."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any trade mark owner or authorised user."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Whos involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Trade mark owner or authorised users such as employees and contractors who apply the branding.\n\n* Optional: IP professionals for review, consultation and advice."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+      "name": "engage third-party services"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+      "name": "What are trade marks? | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://business.gov.au/marketing-and-advertising",
+      "name": "Marketing and advertising | business.gov.au"
+    }
+  ]
+}

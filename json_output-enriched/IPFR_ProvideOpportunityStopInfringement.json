@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx#webpage",
   "headline": "ProvideOpportunityStopInfringement",
   "alternativeHeadline": "",
-  "description": "Discover strategies to effectively address and prevent infringement issues, ensuring compliance and maximizing opportunities for growth and innovation.",
+  "description": "Explore strategies to effectively provide opportunities while preventing infringement. Learn actionable steps to balance growth and compliance.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
   "identifier": {
     "@type": "PropertyValue",
@@ -76,7 +76,7 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Placeholder Organization"
+        "name": "Organization Name"
       }
     },
     {
@@ -93,7 +93,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Verify IP Status and Registrations",
+          "name": "Check IP Status and Registrations",
           "text": "The status and details of the relevant IP in the jurisdiction where suspected infringement occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices."
         },
         {
@@ -103,7 +103,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Identify Suspected Infringer",
+          "name": "Identify the Suspected Infringer",
           "text": "The identity and contact details of the suspected infringer. It's important to make sure you speak to the correct party.\nIf you are not sure about any of the above, then you might want to speak to an IP professional for help.\nBefore taking this action, it might also be helpful to consider your goals and potential outcomes, including:"
         },
         {
@@ -113,7 +113,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Assess Willingness for Further Engagement",
+          "name": "Consider Future Correspondence and Follow-Through",
           "text": "Whether you will be prepared to be engaged in further correspondence, negotiation or even disputes with the other party. If you threaten to do something and do not follow through, it could be found to be an unjustified threat."
         },
         {

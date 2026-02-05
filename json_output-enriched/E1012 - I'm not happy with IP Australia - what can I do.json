@@ -1,0 +1,177 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do#webpage",
+  "headline": "I'm not happy with IP Australia - what can I do?",
+  "alternativeHeadline": "Complaints",
+  "description": "Discover steps to address dissatisfaction with IP Australia, including complaint procedures and alternative resolution options for intellectual property issues.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "E1012"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-09-11",
+  "dateModified": "2025-09-12",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "I'm not happy with IP Australia - what can I do?",
+      "description": "If you are not happy with the service you received from IP Australia, there are ways you can raise your concerns. A complaint allows you to explain what went wrong and what outcome you would like.\nComplaints are handled separately from IP decisions. Making a complaint does not replace or pause any formal review or appeal deadlines. If you want to challenge a formal decision (for example, an objection being raised for a trade mark or patent), you need to use the separate review and appeal processes available. \n\nFor more information about this process please see here:\n\nWhat can I do if I disagree with IP Australia's examination decision? | IP Australia First Response\n\n.\nWhen making a complaint, it helps if you include:\n* your name and contact details\n\n* details of the issue, including any reference numbers\n\n* what outcome you are hoping for (such as an explanation, correction, or apology)\n\n* any evidence or documents that support your complaint.\nIP Australia staff are required to follow the Australian Public Service (APS) Code of Conduct. This means they must behave honestly, act with care and diligence, and treat everyone with respect and courtesy. If you feel this did not happen, you may raise that in your complaint.\nYou can start by contacting IP Australia directly through their \n\nonline feedback form\n\n or by using the \n\ncontact channels\n\n on their website. If you are not satisfied with the response, you may take your complaint to \n\nthe Commonwealth Ombudsman\n\n, who handles complaints about Australian Government agencies. The Ombudsman can review how your complaint was managed but cannot overturn IP Australia's formal decisions.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "alternateName": "Intellectual Property Australia",
+        "url": "https://www.ipaustralia.gov.au",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/IP_Australia",
+          "https://www.wikidata.org/wiki/Q5973154"
+        ],
+        "name": "IP Australia"
+      }
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+      "name": "What can I do if I disagree with IP Australia's examination decision? | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/about-us/contact-us",
+      "name": "contact channels"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
+      "name": "the Commonwealth Ombudsman"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/feedback-form",
+      "name": "Feedback form | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
+      "name": "APS Code of Conduct | Australian Public Service Commission"
+    }
+  ]
+}

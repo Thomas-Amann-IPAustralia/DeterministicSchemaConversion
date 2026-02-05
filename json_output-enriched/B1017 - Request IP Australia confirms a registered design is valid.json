@@ -107,12 +107,12 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Enter the registered design number",
+          "name": "Enter design registration number",
           "text": "Registered design number."
         },
         {
           "@type": "HowToStep",
-          "name": "Pay the examination fee",
+          "name": "Pay examination fee",
           "text": "Ability to pay the examination fee."
         },
         {
@@ -122,12 +122,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Consult an IP Lawyer",
+          "name": "Consult an IP Professional",
           "text": "Consider whether to get help from an IP lawyer or IP attorney."
         },
         {
           "@type": "HowToStep",
-          "name": "Retain Documentation",
+          "name": "Retain documentation",
           "text": "Keep copies of all correspondence and the certificate of examination."
         }
       ]

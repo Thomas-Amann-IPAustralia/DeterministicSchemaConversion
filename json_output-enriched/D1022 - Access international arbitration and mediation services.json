@@ -1,0 +1,403 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage",
+  "headline": "Access international arbitration and mediation services",
+  "alternativeHeadline": "World IP Organisation (WIPO) ",
+  "description": "Seek dispute resolution through the WIPO Arbitration and Mediation Center",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "D1022"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-03-01",
+  "dateModified": "2026-01-22",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q167270"
+    },
+    {
+      "@type": "Thing",
+      "name": "Patent",
+      "sameAs": "https://www.wikidata.org/wiki/Q253623"
+    },
+    {
+      "@type": "Thing",
+      "name": "Design Right",
+      "sameAs": "https://www.wikidata.org/wiki/Q252799"
+    },
+    {
+      "@type": "Thing",
+      "name": "Plant Breeders' Right",
+      "sameAs": "https://www.wikidata.org/wiki/Q695112"
+    },
+    {
+      "@type": "Thing",
+      "name": "Copyright",
+      "sameAs": "https://www.wikidata.org/wiki/Q1297822"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Service",
+      "name": "Access international arbitration and mediation services",
+      "description": "If you need to resolve an international dispute, one option is to use the \n\nWorld Intellectual Property Organization (WIPO) Arbitration and Mediation Center\n\n ('the WIPO Center').\nThe WIPO Center offers a range of alternative dispute resolution (ADR) services designed to resolve international and domestic disputes without going to court.\nThey can help parties access and navigate ADR processes. For more information about what ADR is, see IP First Response's webpage available at: \n\nGeneral ADR Card\n\n.\nThe WIPO Center's tools and services include:\n* Free information and procedural assistance services (sometimes called 'Good Offices') to facilitate or submit a dispute to WIPO's ADR processes. This includes providing support throughout the parties' engagement with the ADR options.\n\n* Anextensive global databaseof mediators, arbitrators and experts, including from Australia. This includes experts from specific fields/specialties:WIPO Alternative Dispute Resolution (ADR) Services for Specific Sectors.\n\n* Freeonline case administration toolsthat allow parties to manage and resolve disputes remotely.\nADR processes offered by the WIPO Centre include:\n* Mediation\n\n* Arbitration\n\n* Expedited Arbitration\n\n* Expert determination\nYour dispute doesn't need to be international to use the WIPO Center, and other international dispute resolution services are available in some countries. For more information, see \n\nIP First Response webpage on enforcing your IP overseas\n\n.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "provider": {
+        "@type": "NGO",
+        "alternateName": "WIPO",
+        "sameAs": "https://www.wikidata.org/wiki/Q178332",
+        "name": "WIPO"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Access international arbitration and mediation services",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Contact WIPO for Dispute Assistance",
+          "text": "WIPO procedural assistance\nTo receive information and procedural assistance from the WIPO Center, you can contact \n\n \n\narbiter.mail@wipo.int\n\n or file a Request for \n\nGood Offices\n\n using the \n\nWIPO Good Office\n\n Services\nIf you are facing a dispute related to intellectual property, innovation, or technology, you can book a free online Orientation Session with the \n\nWIPO Arbitration and Mediation Center\n\n for assistance at: \n\nHow can WIPO assist in resolving intellectual property disputes?\nUnilateral request for mediation\nIf parties are already facing a dispute, and in the absence of a mediation agreement (for example in infringement disputes or in cases pending before the courts), a party may submit \n\na unilateral request for mediation\n\n to the WIPO Center, by e-mail to \n\narbiter.mail@wipo.int\n\n or through the IP Portal.\nThe WIPO Center provides complimentary procedural assistance and ADR options at reduced fees for \n\nSMEs\n\n. Interested SMEs should contact the WIPO Center on (+65) 6225 2129 (Singapore), +4122 338 82 47 (Geneva) or \n\narbiter.mail@wipo.int\n\n for further information.\nGetting advice\nYou can also seek help from IP professionals to seek advice on whether the WIPO Center would be suitable for your situation and represent you throughout their ADR processes. You can find a qualified IP attorney to assist you at\n\n: \n\nFind an IP attorney or firm | Trans-Tasman IP Attorneys Board\n\n."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While this varies depending on the ADR process used, ADR generally offers the following benefits over dispute resolution through the court system:\n* Costs are lower than court proceedings - particularly in the case of complex international disputes.\n\n* Flexible and informal, as parties have control over shaping the process.\n\n* Offers broader and more creative resolution solutions.\n\n* Confidentiality, as decisions and records are not shared with the public.\n\n* Less confrontational, helping both parties keep things from getting heated and can help preserve business relationships.\n\n* If a dispute spans across multiple countries, a single ADR procedure can potentially resolve all the issues in one forum, saving time, reducing costs, and minimising the risk of inconsistent outcomes. Can have binding and enforceable outcomes in the form of a settlement contract or arbitral award.\n\n* Arbitral decisions are final and cannot be appealed, unlike court rulings, while mediated settlements typically align with both parties' interests, preventing the likelihood of further dispute.\n\n* Globally enforceable, whereas a court decision is typically confined to the jurisdiction of the country where the court is located.Using the WIPO Center's services has the additional benefits of:Procedural assistance so the process is easy to navigate and use.Simplifying international disputes that involve multiple jurisdictions and languages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Relies on genuine engagement and willingness of parties to work out an agreement.\n\n* Without a binding agreement prior to the process, either party can withdraw from the process at any point in time, resulting in wasted time, money and effort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Outcomes of ADR will depend on the specific type of ADR processes used. Possible outcomes include:\n* Parties successfully negotiating and reaching an agreement to resolve a dispute.\n\n* A binding decision such as an arbitral award or an enforceable settlement agreement.\n\n* Further escalation into court litigation.\n\n* Parties may withdraw from the ADR process prior to resolution of the dispute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Information, procedural assistance, and use of the WIPO Center's \n\nFee Calculator\n\n are free.\nThere are fees for using the ADR processes (mediation, arbitration, expedited arbitration or expert determination). Costs vary depending on the process used, the provider, the complexity of the case and the value of the dispute. There will be additional costs if you choose to engage a legal professional for advice and representation. Room hire and travel expenses may also apply, although most WIPO ADR processes can be done online.\nYou can use the WIPO Center's \n\nfee calculator\n\n and read the latest \n\nfees and costs.\nThe WIPO Center offers a 25% reduction on its fees\n\n when a small to medium enterprise (SME) is involved in a dispute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Length of the process will vary depending on factors like the type of ADR used and the nature of the dispute. ADR can be much faster than court processes.\nA typical WIPO Mediation takes 3 to 4 months, while the average duration of a WIPO Expedited Arbitration has been 6 to 7 months, and of a WIPO Arbitration 14 months These processes may be completed more rapidly at the request of the parties, for instance to ensure compliance with timelines in court referrals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anybody who is a party to a dispute. However, ADR options, including those provided by the WIPO Center, generally require engagement from both parties to the dispute. It can be easier to use their services if:\n* Parties agree to resolve their dispute through the WIPO Center - However, the WIPO Center allows one party to initiate mediation by submittinga unilateral request for mediation.\n\n* There is a contract in place whereby parties agree to resolve disputes through the WIPO Center. You might wish to consider includingADR clauses in your contractsin case you would like to resolve your future IP disputes with your business partners through ADR at the WIPO Center."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Whos involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute\n\n* WIPO Center/case manager\n\n* Facilitator/s (mediator, arbitrator, and/or expert)\n\n* (Optional) Legal representation for one or more of the participants"
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/center/background.html",
+      "name": "World Intellectual Property Organization (WIPO) Arbitration and Mediation Center"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "General ADR Card"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/goodoffices/",
+      "name": "Good Offices"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/neutrals/index.html",
+      "name": "extensive global database"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/center/specific-sectors/",
+      "name": "WIPO Alternative Dispute Resolution (ADR) Services for Specific Sectors"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/eadr/",
+      "name": "online case administration tools"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/mediation/index.html",
+      "name": "Mediation"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/arbitration/",
+      "name": "Arbitration"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/arbitration/what-is-exp-arb.html",
+      "name": "Expedited Arbitration"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/expert-determination/",
+      "name": "Expert determination"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas",
+      "name": "IP First Response webpage on enforcing your IP overseas"
+    },
+    {
+      "@type": "WebPage",
+      "url": "mailto:arbiter.mail@wipo.int",
+      "name": "arbiter.mail@wipo.int"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc-forms/adr/good-offices-services",
+      "name": "WIPO Good Office"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/index.html",
+      "name": "WIPO Arbitration and Mediation Center"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/center/adr-assistance.html",
+      "name": "How can WIPO assist in resolving intellectual property disputes?"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www3.wipo.int/amc-forms/en/adr/mediation",
+      "name": "a unilateral request for mediation"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/center/specific-sectors/smes/index.html",
+      "name": "SMEs"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://amc.wipo.int/adr-fee-calculator/",
+      "name": "Fee Calculator"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www3.wipo.int/amc-forms/en/adr/unilateral-mediation",
+      "name": "a unilateral request for mediation"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/clauses/index.html",
+      "name": "ADR clauses in your contracts"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+      "name": "Your guide to dispute resolution"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/",
+      "name": "Alternative Dispute Resolution"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
+      "name": "Resolve disputes | business.gov.au"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+      "name": "IP First Response Option Guide:Understanding alternative dispute resolution"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+      "name": "IP First Response Option Guide: Mediation"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+      "name": "IP First Response Option Guide: Arbitration"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.education.gov.au/hercip",
+      "name": "Higher Education Research Commercialisation Intellectual Property Framework - Department of Education, Australian Government"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/clauses/",
+      "name": "Recommended WIPO Contract Clauses and Submission Agreements"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
+  ]
+}

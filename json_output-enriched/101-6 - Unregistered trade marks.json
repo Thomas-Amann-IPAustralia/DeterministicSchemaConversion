@@ -1,0 +1,111 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage",
+  "headline": "Unregistered trade marks",
+  "alternativeHeadline": "Infringement 101",
+  "description": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects these \"unregistered\" trade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else's that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "101-6"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-04",
+  "dateModified": "2025-08-18",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Unregistered trade marks",
+      "description": "",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an unregistered trade mark?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects these \"unregistered\" trade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else's that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Legal protection for unregistered trade marks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Since unregistered trade marks are not protected under the \n\nTrade Marks Act\n\n, businesses may rely on two alternative legal frameworks. These prevent someone from gaining a commercial advantage by wrongfully taking the identifying attributes of another's business.\n\n1\n1. An action for passing off\nThe common law action of passing off protects the goodwill or reputation associated with an unregistered trade mark. A successful passing off action must prove:\n\n2\n* A business has established goodwill or reputation in a trade mark or another identifying mark in Australia.\n\n* Another business has made a misrepresentation (intentional or not) that is likely to deceive or confuse consumers. For example, consumers are confused thinking that the goods or services come from one business and not the other.\n\n* The business has suffered or is likely to suffer damage as a result.\n\nFor example,\n\na small café called \"Koala Brews\" operates in Brisbane for 15 years, developing strong local recognition in the name. When a new coffee shop opens nearby with a similar name and logo called \"Kola Brews\", causing customer confusion. The original café may have grounds for a passing off action.\n2. Australian Consumer Law (ACL)\nCompetition and Consumer Act 2010\n\n (Cth) prohibits misleading or deceptive conduct and false representations.\n\n3\n\n These provisions can protect unregistered trade marks when:\n* A competitor's conduct misleads consumers about the origin of goods or services\n\n* A business falsely claims association, sponsorship, or approval\n\n* A business makes false representations about goods or services.\n\nFor example\n\n, a clothing manufacturer uses a logo that closely resembles that of a well-known Australian designer, leading consumers to believe they are purchasing the designer's products. Even without a registered trade mark, the designer may have grounds for an action under the ACL."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Key differences between registered and unregistered trade marks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registered Trade Marks\n\n \n\nUnregistered Trade Marks\n\n \n\nProtected under the \n\nTrade Marks Act 1995\n\n(Cth).\n\n \n\nProtected through an action for passing off and the Australian Consumer Law.\n\n \n\nProtection across Australia when registered.\n\n \n\nProtection where reputation has been established in Australia.\n\n \n\nExclusive rights to use the trade mark for the registered goods/services.\n\n \n\nPassing off protects a right of property in business or goodwill, whereas the Australian Consumer Law protects consumers against misleading and deceptive conduct.\n\n4\n\n \n\nInfringement does not require proof of reputation, misrepresentation or damage. See [trade mark infringement card]\n\n \n\nThe owner must prove reputation, misrepresentation and damage in court. \n\n \n\nLonger-term protection (renewable every 10 years).\n\n \n\nProtection exists as long as the trade mark is used, and the reputation continues.\n\nNavigating the protection of unregistered marks can be complex and often requires legal expertise. Given that unregistered trade marks are not filed with IP Australia, experts can help work out what is protected and how it might be misused. Court actions for passing off and ACL violations can be more complex, time-consuming, and costly. Additionally, these actions may also be pursued in conjunction with trade mark infringement cases. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.\n\n* ConAgra Inc v McCain Foods (Aust) Pty Ltd(1992) FCR 302, 340 (Lockhart J).\n\n* Reckitt and Coleman Products Ltd v Borden Inc(1990)\n\n* WLR 491.S 18 Australian Consumer Law.\n\n* Cadbury Schweppes Pty Ltd v Darrell Lea Chocolate Shops Pty Ltd(2007) 159 FCR 397, [98]."
+          }
+        }
+      ]
+    }
+  ]
+}

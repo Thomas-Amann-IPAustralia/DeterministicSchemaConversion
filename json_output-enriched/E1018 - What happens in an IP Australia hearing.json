@@ -1,0 +1,172 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#webpage",
+  "headline": "What happens in an IP Australia hearing?",
+  "alternativeHeadline": "IP Australia process",
+  "description": "Discover the process and key steps involved in an IP Australia hearing, including preparation tips and what to expect during the proceedings.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "E1018"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-09-11",
+  "dateModified": "2025-09-11",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "What happens in an IP Australia hearing?",
+      "description": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It's handled by a hearing officer from IP Australia who specialises in the relevant field of IP law.\nThese hearings can deal with both \n\ninter partes\n\n (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and \n\nex partes\n\n matters such as an IP applicant challenging an examination decision made by IP Australia.\nThe hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.\nProcess steps:\n* (For inter partes matters) File an opposition:You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.\n\n* Request a hearing:You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.\n\n* Hearing: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.\n\n* Decision:The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.\nOutcomes and next steps:\n* The decision may uphold, refuse, or change the scope of the IP right/s in question.\n\n* Appeals:If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "alternateName": "Intellectual Property Australia",
+        "url": "https://www.ipaustralia.gov.au",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/IP_Australia",
+          "https://www.wikidata.org/wiki/Q5973154"
+        ],
+        "name": "IP Australia"
+      }
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+      "name": "Opposition hearings | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+      "name": "How to challenge someone else's IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+      "name": "Challenge a granted patent | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+      "name": "Challenge the registration of a trade mark | IP Australia First Response"
+    }
+  ]
+}
