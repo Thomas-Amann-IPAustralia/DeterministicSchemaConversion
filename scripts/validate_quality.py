@@ -6,10 +6,12 @@ from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 
 # Configuration
+# Assumes script is run from the repository root
 JSON_DIR = 'json_output-enriched'
 HTML_DIR = 'IPFR-Webpages-html'
-OUTPUT_DIR = 'Stage-4_Validation'
-SIMILARITY_THRESHOLD = 0.85  # 85% match required for semantic fields
+# Updated output directory based on your request
+OUTPUT_DIR = os.path.join('reports', 'validation_reports')
+SIMILARITY_THRESHOLD = 0.85
 
 def normalize_text(text):
     """Normalize whitespace and stripping for comparison."""
@@ -51,7 +53,6 @@ def validate_file(json_path, html_path):
     # 3. Semantic & Data Integrity Checks
     # Check Headline alignment
     json_headline = data.get("headline", "")
-    # We check if the headline exists somewhere in the HTML body
     if json_headline:
         sim_score = 0.0
         if normalize_text(json_headline) in html_text:
@@ -68,33 +69,29 @@ def validate_file(json_path, html_path):
     # Check Description alignment
     json_desc = data.get("description", "")
     if json_desc:
-        # Check if description appears in the text
         is_present = normalize_text(json_desc) in html_text
         score = 1.0 if is_present else 0.0
-        # If not exact, try fuzzy match against specific layout divs if known, otherwise warn
         status = "PASS" if score == 1.0 else "WARN"
         report_rows.append(["Semantic", "Description Presence", "Found in body" if is_present else "Not found exactly", str(score), status])
 
     return report_rows
 
 def main():
+    # Ensure the output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
-    # Iterate over all JSON files
     json_files = glob.glob(os.path.join(JSON_DIR, '*.json'))
+    
+    print(f"Starting validation for {len(json_files)} files...")
     
     for json_file in json_files:
         filename = os.path.basename(json_file)
-        # Calculate expected HTML filename based on your convention
-        # JSON: "Name.json" -> HTML: "Name-html.html"
         name_root = os.path.splitext(filename)[0]
         html_filename = f"{name_root}-html.html"
         html_path = os.path.join(HTML_DIR, html_filename)
         
-        # Run validation
         results = validate_file(json_file, html_path)
         
-        # Write unique CSV report
         csv_name = f"Report_{name_root}.csv"
         csv_path = os.path.join(OUTPUT_DIR, csv_name)
         
