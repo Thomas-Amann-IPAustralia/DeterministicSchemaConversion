@@ -41,37 +41,60 @@ def get_llm_name(text, client):
 
 def perform_diff_check(original_path, new_path):
     """
-    Compares files line by line. 
-    Returns "Pass" if only placeholder lines changed.
-    Otherwise returns specific line numbers of unexpected changes.
+    Compares files semantically as JSON objects.
+    Ignores formatting/encoding differences.
+    Only allows changes where the original value was 'xXx_PLACEHOLDER_xXx'.
     """
-    with open(original_path, 'r', encoding='utf-8') as f:
-        orig_lines = f.readlines()
-    with open(new_path, 'r', encoding='utf-8') as f:
-        new_lines = f.readlines()
+    try:
+        with open(original_path, 'r', encoding='utf-8') as f:
+            orig_data = json.load(f)
+        with open(new_path, 'r', encoding='utf-8') as f:
+            new_data = json.load(f)
+    except json.JSONDecodeError as e:
+        return f"JSON Decode Error: {e}"
 
-    diff = difflib.unified_diff(orig_lines, new_lines, n=0)
-    
     unexpected_changes = []
-    
-    for line in diff:
-        if line.startswith('---') or line.startswith('+++') or line.startswith('@@'):
-            continue
-            
-        clean_line = line[1:].strip()
-        
-        if line.startswith('-'):
-            if '"name": "xXx_PLACEHOLDER_xXx"' in clean_line:
-                continue
+
+    def recursive_compare(path, obj1, obj2):
+        # 1. Check for type mismatch
+        if type(obj1) != type(obj2):
+            unexpected_changes.append(f"Type mismatch at {path}: {type(obj1)} vs {type(obj2)}")
+            return
+
+        # 2. Compare Dictionaries
+        if isinstance(obj1, dict):
+            # Check keys present in both
+            all_keys = set(obj1.keys()) | set(obj2.keys())
+            for key in all_keys:
+                if key not in obj1:
+                    unexpected_changes.append(f"New key added at {path}.{key}")
+                elif key not in obj2:
+                    unexpected_changes.append(f"Key removed at {path}.{key}")
+                else:
+                    recursive_compare(f"{path}.{key}", obj1[key], obj2[key])
+
+        # 3. Compare Lists
+        elif isinstance(obj1, list):
+            if len(obj1) != len(obj2):
+                unexpected_changes.append(f"List length changed at {path}: {len(obj1)} vs {len(obj2)}")
             else:
-                unexpected_changes.append(f"Unexpected removal: {clean_line}")
-        
-        elif line.startswith('+'):
-            if '"name":' in clean_line:
-                continue
-            else:
-                unexpected_changes.append(f"Unexpected addition: {clean_line}")
-    
+                for i, (item1, item2) in enumerate(zip(obj1, obj2)):
+                    recursive_compare(f"{path}[{i}]", item1, item2)
+
+        # 4. Compare Primitive Values (Strings, Ints, etc.)
+        else:
+            if obj1 != obj2:
+                # ALLOWED EXCEPTION:
+                # If the original was the placeholder, we accept the change.
+                if obj1 == "xXx_PLACEHOLDER_xXx":
+                    return 
+                
+                # Otherwise, it's a genuine unexpected change
+                unexpected_changes.append(f"Value mismatch at {path}: '{obj1}' -> '{obj2}'")
+
+    # Start the recursive comparison
+    recursive_compare("root", orig_data, new_data)
+
     if not unexpected_changes:
         return "Pass"
     else:
