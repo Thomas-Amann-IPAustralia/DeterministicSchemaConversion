@@ -39,7 +39,7 @@ We employ a "Headless Browser" approach to render dynamic content before extract
 
 ### Stage 2: The Semantic Processor (`process_md_to_json.py`)
 
-*See [docs/json_generation_logic.md](https://www.google.com/search?q=docs/json_generation_logic.md) for details.*
+*See [docs/json_generation_logic.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/json_generation_logic.md) for details.*
 
 The core logic engine converts content into Schema.org entities (`GovernmentService`, `HowTo`, `FAQPage`) using a "Control Plane" CSV.
 
@@ -49,7 +49,7 @@ The core logic engine converts content into Schema.org entities (`GovernmentServ
 
 ### Stage 3: Safety-Gated Enrichment (`enrich_howto_steps.py`)
 
-*See [docs/json_enrichment.md](https://www.google.com/search?q=docs/json_enrichment.md) for details.*
+*See [docs/json_enrichment.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/json_enrichment.md) for details.*
 
 An optional step that uses **GPT-4o** to polish the data without risking integrity.
 
@@ -63,7 +63,7 @@ An optional step that uses **GPT-4o** to polish the data without risking integri
 
 ### Stage 4: Quality Validation (`validate_quality.py`)
 
-*See [docs/validation_architecture.md](https://www.google.com/search?q=docs/validation_architecture.md) for details.*
+*See [docs/validation_architecture.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/validation_architecture.md) for details.*
 
 The final gatekeeper. It compares the generated JSON-LD back against the source HTML.
 
