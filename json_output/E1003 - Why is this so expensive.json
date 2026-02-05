@@ -63,7 +63,7 @@
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Why is this so expensive?",
-      "description": "Enforcing your intellectual property (IP) is about stopping suspected or alleged infringement and, in some cases, seeking damages. Costs usually rise with urgency, complexity and the number of parties involved.  You need to show that you own the right and that the other party\u2019s conduct likely infrin...",
+      "description": "Enforcing your intellectual property (IP) is about stopping suspected or alleged infringement and, in some cases, seeking damages. Costs usually rise with urgency, complexity and the number of parties involved.  You need to show that you own the right and that the other party's conduct likely infrin...",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -75,12 +75,12 @@
     }
   ],
   "relatedLink": [
-    "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
-    "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-    "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
-    "https://www.fedcourt.gov.au/services/ADR/mediation",
     "https://www.wipo.int/amc/en/",
     "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
+    "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+    "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+    "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+    "https://www.fedcourt.gov.au/services/ADR/mediation",
+    "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs"
   ]
 }
