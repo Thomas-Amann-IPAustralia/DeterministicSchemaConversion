@@ -12,10 +12,10 @@ E1017 - What are the ways to challenge a decision IP Australia has made.json,Lin
 E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Link Validation,Valid,1.0,PASS,-,-
-E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Link Validation,Broken/Missing,0.5,WARN,"https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994",Verify link exists in HTML
 E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Link Validation,Valid,1.0,PASS,-,-
-E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,"https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994).",Consider adding to relatedLink
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Link Validation,Broken/Missing,0.5,WARN,"https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994",Verify link exists in HTML
 E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,Consider adding to relatedLink
+E1017 - What are the ways to challenge a decision IP Australia has made.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,"https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994).",Consider adding to relatedLink
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Structure,JSON Syntax,Valid,1.0,PASS,-,-
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: @context,Present,1.0,PASS,-,-
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: @type,Present,1.0,PASS,-,-
@@ -379,29 +379,29 @@ IPFR_Infringement101.json,Semantic,Description Match,Text Mismatch,0.5,WARN,Leng
 IPFR_Infringement101.json,Quality,QM Hallucination,Extra '?' detected,0.0,FAIL,Give feedback about ip first response?,Remove '?' from JSON name
 IPFR_Infringement101.json,Quality,Hyperlink Lost,Answer missing URL,0.0,FAIL,Link: email,Convert to [Text](URL)
 IPFR_Infringement101.json,Links,Link Validation,Valid,1.0,PASS,-,-
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,Consider adding to relatedLink
 IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement,Consider adding to relatedLink
 IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/tools-and-research/business-resources/tm-checker,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,"https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-examination-report/how-to-provide-evidence-of-use#:~:text=It%20generally%20consists%20of%3A,sales%20figures%20and%20market%20share.",Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/what-to-consider-before-applying-for-a-trade-mark,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://business.gov.au/news/brand-protection-enforcing-your-registered-trade-mark,Consider adding to relatedLink
-IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.wipo.int/treaties/en/ip/paris/,Consider adding to relatedLink
 IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://business.gov.au/news/brand-protection-enforcing-your-registered-trade-mark,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,"https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-examination-report/how-to-provide-evidence-of-use#:~:text=It%20generally%20consists%20of%3A,sales%20figures%20and%20market%20share.",Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/what-to-consider-before-applying-for-a-trade-mark,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.wipo.int/treaties/en/ip/paris/,Consider adding to relatedLink
+IPFR_Infringement101.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,Consider adding to relatedLink
 D1022 - Access international arbitration and mediation services.json,Structure,JSON Syntax,Valid,1.0,PASS,-,-
 D1022 - Access international arbitration and mediation services.json,Schema,Key: @context,Present,1.0,PASS,-,-
 D1022 - Access international arbitration and mediation services.json,Schema,Key: @type,Present,1.0,PASS,-,-
@@ -843,13 +843,13 @@ E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
-E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
-E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
-E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1025 - Common scams.json,Links,Link Validation,Broken/Missing,0.5,WARN,"https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",Verify link exists in HTML
 E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
-E1025 - Common scams.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,"https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency)",Consider adding to relatedLink
+E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
+E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
+E1025 - Common scams.json,Links,Link Validation,Valid,1.0,PASS,-,-
 E1025 - Common scams.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,Consider adding to relatedLink
+E1025 - Common scams.json,Links,Orphaned Link,HTML link not in JSON,0.5,WARN,"https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency)",Consider adding to relatedLink
 E1001 - Is my business name my IP.json,Structure,JSON Syntax,Valid,1.0,PASS,-,-
 E1001 - Is my business name my IP.json,Schema,Key: @context,Present,1.0,PASS,-,-
 E1001 - Is my business name my IP.json,Schema,Key: @type,Present,1.0,PASS,-,-
@@ -1375,8 +1375,8 @@ D1019 - Challenge a granted patent.json,Links,Orphaned Link,HTML link not in JSO
 "D1084 - Seek binding, authoritative decisions.json",Links,Link Validation,Valid,1.0,PASS,-,-
 "D1084 - Seek binding, authoritative decisions.json",Links,Link Validation,Valid,1.0,PASS,-,-
 "D1084 - Seek binding, authoritative decisions.json",Links,Link Validation,Valid,1.0,PASS,-,-
-"D1084 - Seek binding, authoritative decisions.json",Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement,Consider adding to relatedLink
 "D1084 - Seek binding, authoritative decisions.json",Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,Consider adding to relatedLink
+"D1084 - Seek binding, authoritative decisions.json",Links,Orphaned Link,HTML link not in JSON,0.5,WARN,https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement,Consider adding to relatedLink
 D1080 - Choosing the right IP professional.json,Structure,JSON Syntax,Valid,1.0,PASS,-,-
 D1080 - Choosing the right IP professional.json,Schema,Key: @context,Present,1.0,PASS,-,-
 D1080 - Choosing the right IP professional.json,Schema,Key: @type,Present,1.0,PASS,-,-
