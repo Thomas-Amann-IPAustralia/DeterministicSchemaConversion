@@ -87,6 +87,15 @@ PUBLISHER_BLOCK = {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+    ],
     "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "website content owner",
