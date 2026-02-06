@@ -72,12 +72,9 @@ def validate_file(json_path, html_path, filename):
             report_rows.append([filename, "Schema", f"Key: {key}", "Missing", "0.0", "FAIL"])
 
     # --- CHECK 2: IDENTIFIER CONSISTENCY ---
-    # Extract ID from filename (e.g., "B1000" from "B1000 - Receiving...")
     filename_id_match = re.search(r'^([A-Z]\d{4})', filename)
     if filename_id_match:
         filename_id = filename_id_match.group(1)
-        
-        # Extract ID from JSON
         json_id = "Not Found"
         if "identifier" in data and isinstance(data["identifier"], dict):
             json_id = data["identifier"].get("value", "Not Found")
@@ -99,44 +96,62 @@ def validate_file(json_path, html_path, filename):
             if normalize_text(text) in html_text:
                 sim_score = 1.0
             else:
-                # Fallback: check against H1/Title for headline
                 if field == "headline":
                     html_title = soup.find('h1') or soup.find('title')
                     if html_title:
                         sim_score = calculate_similarity(text, html_title.get_text())
                 else:
-                    # Generic fuzzy check against whole body for description
-                    # (This is expensive but effective for small descriptions)
-                    if calculate_similarity(text, html_text) > 0.1: # Basic sanity check
-                         # If exact match failed, we assume a lower score unless we find a specific substring
-                         sim_score = 0.5 # Warning level
+                    if calculate_similarity(text, html_text) > 0.1: 
+                         sim_score = 0.5 
             
             status = "PASS" if sim_score > SIMILARITY_THRESHOLD else "WARN"
             report_rows.append([filename, "Semantic", f"{field.capitalize()} Match", f"Score: {sim_score:.2f}", str(sim_score), status])
 
     # --- CHECK 4: FAQ / SUB-ENTITY VALIDATION ---
-    # If mainEntity is a list (FAQPage), check if Questions exist in HTML
-    if "mainEntity" in data and isinstance(data["mainEntity"], list):
-        for entity in data["mainEntity"]:
-            if entity.get("@type") == "Question":
-                q_text = entity.get("name", "")
-                if q_text:
-                    is_found = normalize_text(q_text) in html_text
-                    score = 1.0 if is_found else 0.0
-                    status = "PASS" if is_found else "WARN"
-                    report_rows.append([filename, "Content", "FAQ Question Found", q_text[:30]+"...", str(score), status])
+    
+    # Helper to find questions recursively (handles nested FAQPage structures)
+    def find_questions(node):
+        found = []
+        if isinstance(node, dict):
+            if node.get("@type") == "Question":
+                found.append(node)
+            for value in node.values():
+                found.extend(find_questions(value))
+        elif isinstance(node, list):
+            for item in node:
+                found.extend(find_questions(item))
+        return found
+
+    questions = find_questions(data)
+
+    if questions:
+        for q in questions:
+            q_text = q.get("name", "")
+            
+            # 4a: Check if Question Text exists in HTML
+            if q_text:
+                is_found = normalize_text(q_text) in html_text
+                score = 1.0 if is_found else 0.0
+                status = "PASS" if is_found else "WARN"
+                report_rows.append([filename, "Content", "FAQ Question Found", q_text[:30]+"...", str(score), status])
+
+            # 4b: Check if Answer Text is missing (NEW CHECK)
+            answer = q.get("acceptedAnswer", {})
+            ans_text = ""
+            if isinstance(answer, dict):
+                ans_text = answer.get("text", "")
+            
+            if not ans_text or not str(ans_text).strip():
+                report_rows.append([filename, "Content", "FAQ Answer Status", f"Missing answer for: {q_text[:20]}...", "0.0", "FAIL"])
+            else:
+                report_rows.append([filename, "Content", "FAQ Answer Status", "Answer populated", "1.0", "PASS"])
 
     # --- CHECK 5: LINK INTEGRITY ---
-    # Check if links in 'relatedLink' exist in HTML
     if "relatedLink" in data:
         json_links = [l.get('url') for l in data['relatedLink'] if 'url' in l]
         for link in json_links:
-            # We check if the exact link exists, or a relative version of it
-            # Simple check: is the link present in the set of HTML hrefs?
             is_found = link in html_urls
-            # Try matching relative paths if exact match fails
             if not is_found and link.startswith('http'): 
-                # check if a relative path exists in html that matches the end of this url
                 is_found = any(link.endswith(h) for h in html_urls if h)
             
             score = 1.0 if is_found else 0.0
