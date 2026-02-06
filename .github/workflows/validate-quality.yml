@@ -40,13 +40,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Force add the specific consolidated report
-          git add reports/validation_reports/Validation_Report.csv
+          # Use -f to ensure it's added even if ignored
+          git add -f reports/validation_reports/Validation_Report.csv
           
-          # Check for changes
           if git diff --staged --quiet; then
-            echo "No changes in validation reports to commit."
+            echo "No changes to commit."
           else
-            git commit -m "Auto-generated: Update validation report [Stage-4]"
+            git commit -m "Auto-generated: Update validation report"
             git push
           fi
