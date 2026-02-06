@@ -1,0 +1,312 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#webpage",
+  "headline": "Challenge the use of international domain name",
+  "alternativeHeadline": "Domain Name Dispute (UDRP)",
+  "description": "Dispute an international domain name that infringes your trade mark",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "D1024"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-03-01",
+  "dateModified": "2025-12-02",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Trade Mark",
+      "sameAs": "https://www.wikidata.org/wiki/Q167270"
+    },
+    {
+      "@type": "Thing",
+      "name": "Copyright",
+      "sameAs": "https://www.wikidata.org/wiki/Q1297822"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Service",
+      "name": "Challenge the use of international domain name",
+      "description": "If you believe someone is infringing your trade mark in their website's domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.\nThe relevant dispute provider will vary depending on the domain name extension:\n* If the domain name extension ends in .au, then the relevant dispute policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.\n\n* If the domain name ends in a generic term like .com, .net or .org, then the relevant policy is theUniform Dispute Resolution Policy (UDRP). A full list of approved UDRP providers is available here:List of Approved Dispute Resolution Service Providers - ICANNThe World Intellectual Property Organization (WIPO) is a leading provider.\n\n* If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country's Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO.Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)\nThe World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are put into effect by the registrar (the host of the domain name).\nPlease Note:\n\n If the infringing domain name ends in '.au' then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "provider": {
+        "@type": "NGO",
+        "alternateName": "WIPO",
+        "sameAs": "https://www.wikidata.org/wiki/Q178332",
+        "name": "WIPO"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Challenge the use of international domain name",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "This will vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most DRPs when disputed at WIPO.\nTo read and understand the steps to file a complaint as described on the WIPO website at \n\nDomain Name Disputes\n\n, and of the relevant \n\nUDRP\n\n,\u202f\n\nUDRP Rules\n\n, and\u202f\n\nWIPO Supplemental Rules\n\n.\nA written complaint. You can download WIPO's\u202f\n\nModel Complaint\n\n\u202fform or write your own based on Paragraph 3 of the \n\nUDRP Rules\n\n. \n\n \n\nThe \n\nWIPO website\n\n and the UDRP\u202f\n\nprovide guidance\n\n on what evidence can be used to meet/prove these criteria. This should be attached with your complaint.\nTo check whether the registrant has a valid trade mark registration overseas (which might indicate that they have a legitimate interest in the domain name), read about searching trade mark registrations internationally \n\nhere\n\n.\nAlso note:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "If your complaint involves multiple domain names, you should learn about 'consolidation' of complaints and complete the WIPO UDRP consolidation worksheet. SeeWIPO Overview 3.0,section 4.11."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Check the domain name status in case it's expiring during the dispute. For more information seeQ&A: domain name expiration and the UDRP."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Benefits vary depending on the relevant dispute resolution policy. Some country code dispute resolution policies may have different requirements. For the UDRP, and country code policies closely based on it, benefits include:\n* The process can occur even without participation from the other party.\n\n* Fast and accessible process.\n\n* A focus on practical, non-punitive outcomes.\n\n* Fair opportunity for both parties to present their case in writing.\n\n* There is usually no compensation for loss (including lawyers' costs) or damages, meaning this process is less adversarial.\n\n* If using WIPO as a dispute resolution provider, the WIPO Arbitration and Mediation Center will provide free procedural/service support to help navigate the process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Decisions are usually made public. If you are found to have made an unjustified threat it could expose you to public scrutiny, negative publicity or reputational damage.\n\n* Undergoing a formal dispute resolution process may undermine existing or future business relationships with the other party.\n\n* If either party is unhappy with the decision of the panel, they can initiate legal proceedings. This can get complicated when dealing with international disputes, and will probably be in the registrar's or the registrant's location. This means you may not be able to choose which jurisdiction/country the court is in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the UDRP and country code policies based closely on the UDRP, these main outcomes are possible as a result of the panel's decision:\n* The disputed domain name licence(s) cancelled, in which case the domain name(s) will become available for registration by another eligible party.\n\n* The disputed domain name licence(s) is transferred to you.\n\n* The disputed domain name licence(s) remains with the current registrant.\n\n* If the Panel finds that the complaint was brought in bad faith they will note in their decision that the complaint constitutes an abuse of the proceeding called 'reverse domain name hijacking'.\n\n* For more infoWIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP).\nYou and the other party are still able to reach a direct settlement during the proceedings. If this occurs before a panel is appointed, you are entitled to a partial refund of the filing fee. In most cases this is a refund of US $1,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Please note:\n\nCosts vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most dispute resolution providers (DRPs) when disputed at WIPO.\nYou must pay a \n\nfee to lodge\n\n the dispute. Fees start at US$1,500 for single member and US$4,000 for a 3-member panel.\nFees increase based on how many domain names are in dispute, and whether you choose to have the dispute heard by a panel of one or 3 panellists. If you choose a one-member panel, the domain owner can elect to have the dispute heard by a 3 -member panel (or vice versa), in which case you and the domain owner each pay half of the fee.\nThe UDRP when used at WIPO does not award costs or charge additional fees.\nYou will also need to pay the fees of any legal representative if you choose to seek their advice or assistance regarding the dispute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If there are no procedural issues, the case normally should be completed within 2 months from the date WIPO receives the complaint.\nTimelines vary based on the relevant dispute resolution policy and the provider used. The below is relevant for most DRPs when disputed at WIPO.\nWIPO will notify the domain name holder after registrar verification, and an administrative compliance check (up to 5 days). They will then be allowed up to 20 days to provide a response. Otherwise, the decision will be made based on the information you initially provided.\nOnce a response has been received or the deadline has passed, panel members will be appointed, and a decision will be made within 14 days. This will be communicated to you, the other party and the registrar of the disputed domain.\nIf the panel decides that the disputed domain name should be transferred or cancelled, the domain provider is required to wait 10 business days before fulfilling the decision. This gives you or the other party the option to commence legal proceedings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone with competing legal rights to a domain name licence (including the ownership of a relevant trade mark). Whether you have the right to the licence will depend on the dispute resolution policy.\nWhen using the UDRP your trade mark can be registered anywhere in the world, including Australia. Some specific country code domains might require that your trade mark is registered in that country."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Whos involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A trade mark owner.\n\n* A domain name licence holder (registrant).\n\n* A dispute panel of one or 3 members selected by WIPO (in the case of 3 panel members, the complainant and respondent each select one).\n\n* Legal representatives (if you choose to not self-represent).\n\n* The registrar (business which registers and licences the domain name) is not involved in the dispute (beyond confirming certain administrative details), but will enact the decision."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.icann.org/resources/pages/help/dndr/udrp-en",
+      "name": "Uniform Dispute Resolution Policy (UDRP)"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.icann.org/resources/pages/providers-6d-2012-02-25-en",
+      "name": "List of Approved Dispute Resolution Service Providers - ICANN"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/cctld",
+      "name": "Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/",
+      "name": "Domain Name Disputes"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.icann.org/resources/pages/policy-2012-02-25-en",
+      "name": "UDRP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.icann.org/resources/pages/udrp-rules-2015-03-11-en",
+      "name": "UDRP Rules"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/supplemental/eudrp/newrules.html",
+      "name": "WIPO Supplemental Rules"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/docs/complaint-lock-eudrp.docx",
+      "name": "Model Complaint"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/guide",
+      "name": "provide guidance"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/international-ip/how-to-search-existing-ip-overseas",
+      "name": "here"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/search/overview3.0/",
+      "name": "WIPO Overview 3.0"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/search/overview3.0/#item411",
+      "name": "section 4.11"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/expiry.html",
+      "name": "Q&A: domain name expiration and the UDRP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/guide/#What_is_a",
+      "name": "WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/fees/index.html",
+      "name": "fee to lodge"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains",
+      "name": "https://www.wipo.int/amc/en/domains"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/domains/guide/",
+      "name": "WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.artslaw.com.au/services/legal-query-form/",
+      "name": "Arts Law Centre of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.copyright.org.au/legal-advice/",
+      "name": "Australian Copyright Council"
+    }
+  ]
+}

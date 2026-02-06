@@ -1,0 +1,268 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#webpage",
+  "headline": "Choose not to respond immediately ",
+  "alternativeHeadline": "Gauge the situation  ",
+  "description": "When to delay responding to groundless IP infringement claims and how to gather evidence for future defence.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "B1001"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-01",
+  "dateModified": "2025-10-02",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Choose not to respond immediately ",
+      "description": "It can be very stressful when someone accuses you of IP infringement. This can be even more confusing if the allegation that you are infringing someone's intellectual property (IP) appears weak or unfounded. It is a good idea to evaluate the situation and consider your options before deciding how you might deal with the infringement allegation.\nNot taking an immediate action does not mean that you should ignore the issue. You may require some time to:\n* Assess the other party's claims and demands relating to the alleged infringement.\n\n* Verify their identity and the validity of the rights they claim ownership of.\n\n* Consider any evidence you may have to refute their claims.\n\n* Consult with legal professionals, or to decide on your next steps.\n\n* Determine whether the letter is genuine or is fraudulent.\nFor more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on \n\nReceiving a letter of demand\n\n.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Choose not to respond immediately ",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "This will depend on what you decide to do.\n\nTo evaluate the situation before deciding, it is recommended that you carefully consider:"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "the allegations of infringement that have been made against you"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "whether the allegations of infringement have merit"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "what relevant IP\u202frights you might have"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "what demands the other party has made and when they might expect a reply"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "whether to seek advice from an IP lawyer or IP attorney."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Gives you time to consider your options and gather evidence and documentation to understand your position better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and,for example,commence a legal action.\n\n* If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: seeReceiving a letter of demand.\n\n* If you are actually infringing the other party's IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The other party may give up and decide not to escalate the issue.\n\n* The other party chooses to escalate the dispute.\n\n* You decide to take action - for example, by sending a reply, seeking legal advice, or starting legal action (including where the other party has made unjustified threats of infringement action against you (also referred to as 'groundless threats' in copyright law)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This option does not necessarily involve upfront costs. However, you may choose to consult an IP lawyer or IP attorney to assess your situation and provide you with advice on your options and they will charge a fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This will depend on your situation. It can take some time to research the identity of the other party and assess the strength of their claims before deciding what to do. You may also want to speak to an IP lawyer or IP attorney to get some advice on your options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most businesses will take some time to evaluate the situation before deciding what to do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Anyone accused of infringing IP, particularly where the claim seems unfounded\n\n* People who want time to gather evidence and obtain legal advice before making a move."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Whos involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The person or business alleging infringement\n\n* You\n\n* (Optional) An IP lawyer or IP attorney who can help you with assessing the situation and advise you on your options."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+      "name": "IP First Response | Ceasing use of contested IP"
+    }
+  ]
+}

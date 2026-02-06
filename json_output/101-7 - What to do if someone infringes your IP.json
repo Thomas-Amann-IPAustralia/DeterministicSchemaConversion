@@ -1,0 +1,212 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#webpage",
+  "headline": "What to do if someone infringes your IP",
+  "alternativeHeadline": "Infringement 101",
+  "description": "Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "101-7"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-04",
+  "dateModified": "2025-01-22",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "What to do if someone infringes your IP",
+      "description": "",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What to do if someone infringes your ip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Consider your options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Next, consider your options with IP Australia's \n\nIP First Response\n\n. The website provides information designed to help IP rights holders navigate IP infringement and the factors involved in pursuing various options.\nThere are a variety of options available across a spectrum.\n\nTake no immediate action\nSometimes, the infringement might be minor, unintentional, or not worth pursuing. Reflect on whether the infringement has a negative impact on your business and whether taking action could involve reputational risk.\nDirect contact\nA polite letter or email explaining your intellectual property rights and requesting that the infringement stop can sometimes resolve matters quickly. The infringement may be unintentional, and the other party might be willing to stop once informed.\nSending a formal letter\nA lawyer can draft a more formal letter outlining your rights, the nature of the infringement, and demanding that specific actions be taken to stop the infringement.\nAlternative dispute resolution\nAlternative Dispute Resolution (ADR) enables you to settle disputes with the assistance of skilled facilitators. Mediation or arbitration can resolve disputes more quickly and cheaply than court proceedings. They offer opinions, facilitate agreements between the parties, or provide binding or non-binding decisions.\nLegal proceedings\nCourts can address many types of intellectual property matters, and their decisions are binding and enforceable. Proceedings tend to be expensive and time-consuming, with the outcome never assured. However, it may be necessary for serious infringements or when other methods fail. Court action is generally seen as a last resort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Getting professional advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP infringement can be legally complex. What may seem like a clear-cut infringement to you may not be as straightforward under the law. Before taking significant action, consider consulting an IP professional, such as a lawyer specialising in intellectual property. They can help assess the situation and provide guidance on available options.\nProfessional advice is crucial because:\n* Incorrectly accusing someone of infringement can lead to legal consequences\n\n* The strength of your case affects which response options are most appropriate\n\n* Some actions have strict time limits\n\n* The costs of getting it wrong can be significant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Moving forward?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep in mind that determining whether infringement has occurred often requires a legal analysis. What seems obvious to you may be less straightforward under the law.\nPrioritise protecting your business interests instead of pursuing infringement claims solely on principle. At times, the wisest business decision is not necessarily to pursue every potential infringement."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "name": "IP First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action",
+      "name": "Take no immediate action"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
+      "name": "Direct contact"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing",
+      "name": "Sending a formal letter"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "Alternative dispute resolution"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
+      "name": "Legal proceedings"
+    }
+  ]
+}
