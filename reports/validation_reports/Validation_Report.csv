@@ -20,11 +20,17 @@ CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counte
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Schema,Key: description,Present,1.0,PASS
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Question Found,Notice of objection?...,0.0,WARN
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,QM Hallucination,HTML missing '?': Notice of objection?,0.0,FAIL
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Answer Status,Missing answer for: Notice of objection?...,0.0,FAIL
-CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Question Found,The toyota story: what can sme...,0.0,WARN
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Question Found,Not found,0.0,WARN
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,Hyperlink Preservation,Link 'IP First Response feedback form' lost in answer,0.0,FAIL
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,Hyperlink Preservation,Link 'emailing us' lost in answer,0.0,FAIL
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,Hyperlink Preservation,Link 'with a market share of 19.5% in Australia and a new sales record in 2024' lost in answer,0.0,FAIL
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,Hyperlink Preservation,"Link 'often substandard, causing health problems and injuries, even proving fatal.' lost in answer",0.0,FAIL
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Question Found,Want to give us feedback?...,1.0,PASS
+CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,1.0,PASS
 CS1001 - The Toyota story What can SMEs learn from Toyota’s approach to counterfeit products.json,Links,Related Link Exists,mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response,1.0,PASS
@@ -54,7 +60,7 @@ C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Question Found,How
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps,1.0,PASS
 C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,https://www.wipo.int/en/web/business/checklist,1.0,PASS
@@ -71,12 +77,14 @@ C1019 - DEVELOP A STRATEGY TO MANAGE YOUR IP.json,Links,Related Link Exists,http
 101-2 - Design infringement.json,Content,FAQ Question Found,What is design infringement?...,1.0,PASS
 101-2 - Design infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-2 - Design infringement.json,Content,FAQ Question Found,What do registered designs pro...,1.0,PASS
+101-2 - Design infringement.json,Quality,Hyperlink Preservation,Link 'How to apply for a design right' lost in answer,0.0,FAIL
 101-2 - Design infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-2 - Design infringement.json,Content,FAQ Question Found,How does design infringement h...,1.0,PASS
 101-2 - Design infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-2 - Design infringement.json,Content,FAQ Question Found,Examples of design infringemen...,0.0,WARN
+101-2 - Design infringement.json,Quality,QM Hallucination,HTML missing '?': Examples of design infringement?,0.0,FAIL
+101-2 - Design infringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-2 - Design infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-2 - Design infringement.json,Content,FAQ Question Found,What is not designinfringement...,0.0,WARN
+101-2 - Design infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-2 - Design infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-2 - Design infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right,1.0,PASS
 101-2 - Design infringement.json,Links,Related Link Exists,Emmett J,0.0,WARN
@@ -92,10 +100,15 @@ D1039 - Register your unregistered trade mark.json,Semantic,Description Match,Sc
 D1039 - Register your unregistered trade mark.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 D1039 - Register your unregistered trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1039 - Register your unregistered trade mark.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Quality,Hyperlink Preservation,Link 'TM Headstart' lost in answer,0.0,FAIL
 D1039 - Register your unregistered trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1039 - Register your unregistered trade mark.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+D1039 - Register your unregistered trade mark.json,Quality,Hyperlink Preservation,Link 'TM Headstart' lost in answer,0.0,FAIL
+D1039 - Register your unregistered trade mark.json,Quality,Hyperlink Preservation,Link 'picklist' lost in answer,0.0,FAIL
 D1039 - Register your unregistered trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1039 - Register your unregistered trade mark.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1039 - Register your unregistered trade mark.json,Quality,Hyperlink Preservation,Link 'TM Headstart' lost in answer,0.0,FAIL
 D1039 - Register your unregistered trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks,1.0,PASS
 D1039 - Register your unregistered trade mark.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
@@ -131,13 +144,13 @@ D1030 - Seek a court order to prevent further damage while preparing for court.j
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,How much timemight be involved...,0.0,WARN
+D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
@@ -183,7 +196,7 @@ B1013 - Respond to an unjustified threat.json,Content,FAQ Question Found,How muc
 B1013 - Respond to an unjustified threat.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1013 - Respond to an unjustified threat.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1013 - Respond to an unjustified threat.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1013 - Respond to an unjustified threat.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Links,Related Link Exists,https://www.fcfcoa.gov.au/gfl/gfl-fees,1.0,PASS
 B1013 - Respond to an unjustified threat.json,Links,Related Link Exists,https://www.fedcourt.gov.au/forms-and-fees/court-fees,1.0,PASS
@@ -196,7 +209,14 @@ C1010 - Inform online platforms that you have IP rights.json,Schema,Key: descrip
 C1010 - Inform online platforms that you have IP rights.json,Data Integrity,ID Match,C1010 == C1010,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Semantic,Headline Match,Score: 0.18,0.17857142857142858,WARN
 C1010 - Inform online platforms that you have IP rights.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,Please note that ip rights cov...,0.0,WARN
+C1010 - Inform online platforms that you have IP rights.json,Quality,QM Hallucination,HTML missing '?': Please note that ip rights covered vary by platform?,0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,"Link 'trade marks, copyrights, designs and patents.' lost in answer",0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,Link 'Etsy Intellectual Property Portal' lost in answer,0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,Link 'all types of IP infringement' lost in answer,0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,Link 'Temu IP Portal' lost in answer,0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,Link 'Amazon Brand Registry' lost in answer,0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,Link 'Etsy Intellectual Property Portal' lost in answer,0.0,FAIL
+C1010 - Inform online platforms that you have IP rights.json,Quality,Hyperlink Preservation,Link 'Shein IP Protection Platform' lost in answer,0.0,FAIL
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -207,12 +227,13 @@ C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer 
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+C1010 - Inform online platforms that you have IP rights.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1010 - Inform online platforms that you have IP rights.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Links,Related Link Exists,https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349,1.0,PASS
 C1010 - Inform online platforms that you have IP rights.json,Links,Related Link Exists,https://www.etsy.com/au/ipreporting,1.0,PASS
@@ -244,7 +265,7 @@ C1003 - Identify and track your competitors' patents and activity.json,Content,F
 C1003 - Identify and track your competitors' patents and activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1003 - Identify and track your competitors' patents and activity.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1003 - Identify and track your competitors' patents and activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1003 - Identify and track your competitors' patents and activity.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1003 - Identify and track your competitors' patents and activity.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1003 - Identify and track your competitors' patents and activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents,1.0,PASS
 C1003 - Identify and track your competitors' patents and activity.json,Links,Related Link Exists,https://ipsearch.ipaustralia.gov.au/patents/,1.0,PASS
@@ -266,16 +287,22 @@ D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answ
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1010 - Demand the other party stops infringing in writing.json,Quality,Hyperlink Preservation,Link 'www.artslaw.com.au/services/legal-query-form/' lost in answer,0.0,FAIL
+D1010 - Demand the other party stops infringing in writing.json,Quality,Hyperlink Preservation,Link 'template letter of demand' lost in answer,0.0,FAIL
+D1010 - Demand the other party stops infringing in writing.json,Quality,Hyperlink Preservation,Link 'www.copyright.org.au/legal-advice/' lost in answer,0.0,FAIL
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,Consider contacting an ip prof...,0.0,WARN
+D1010 - Demand the other party stops infringing in writing.json,Quality,QM Hallucination,HTML missing '?': Consider contacting an ip professional for advice and assistance?,0.0,FAIL
+D1010 - Demand the other party stops infringing in writing.json,Quality,Hyperlink Preservation,Link 'informal contact' lost in answer,0.0,FAIL
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+D1010 - Demand the other party stops infringing in writing.json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+D1010 - Demand the other party stops infringing in writing.json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+D1010 - Demand the other party stops infringing in writing.json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
 D1010 - Demand the other party stops infringing in writing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/infringement-101,1.0,PASS
 D1010 - Demand the other party stops infringing in writing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,1.0,PASS
@@ -321,7 +348,7 @@ B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Quest
 B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1012 - De-escalate and resolve disputes via conversation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1012 - De-escalate and resolve disputes via conversation.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand,1.0,PASS
 B1012 - De-escalate and resolve disputes via conversation.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement,1.0,PASS
@@ -338,20 +365,28 @@ D1006 - Resolve IP issues with the help of a third party.json,Data Integrity,ID 
 D1006 - Resolve IP issues with the help of a third party.json,Semantic,Headline Match,Score: 0.14,0.14035087719298245,WARN
 D1006 - Resolve IP issues with the help of a third party.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'mediation by a court officer' lost in answer,0.0,FAIL
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'private mediator' lost in answer,0.0,FAIL
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'take 3-4 months' lost in answer,0.0,FAIL
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,How often is this used?...,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1006 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link 'role' lost in answer,0.0,FAIL
 D1006 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx,1.0,PASS
 D1006 - Resolve IP issues with the help of a third party.json,Links,Related Link Exists,https://www.asbfeo.gov.au/,1.0,PASS
@@ -388,7 +423,8 @@ IPFR_Infringement101.json,Schema,Key: headline,Present,1.0,PASS
 IPFR_Infringement101.json,Schema,Key: description,Present,1.0,PASS
 IPFR_Infringement101.json,Semantic,Headline Match,Score: 0.08,0.08333333333333333,WARN
 IPFR_Infringement101.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-IPFR_Infringement101.json,Content,FAQ Question Found,Give feedback about ip first r...,0.0,WARN
+IPFR_Infringement101.json,Quality,QM Hallucination,HTML missing '?': Give feedback about ip first response?,0.0,FAIL
+IPFR_Infringement101.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 IPFR_Infringement101.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_Infringement101.json,Links,Related Link Exists,Mailto:IPFirstResponse@ipaustralia.gov.au,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Structure,JSON Syntax,Valid,1.0,PASS
@@ -399,19 +435,38 @@ D1022 - Access international arbitration and mediation services.json,Schema,Key:
 D1022 - Access international arbitration and mediation services.json,Data Integrity,ID Match,D1022 == D1022,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Semantic,Headline Match,Score: 0.06,0.0625,WARN
 D1022 - Access international arbitration and mediation services.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'Mediation' found but URL lost,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'Arbitration' found but URL lost,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO Arbitration and Mediation Center' found but URL lost,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO' found but URL lost,0.0,FAIL
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'Fee Calculator' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'fee calculator' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'fees and costs.' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'The WIPO Center offers a 25% reduction on its fees' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'Arbitration' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'Expedited Arbitration' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'a unilateral request for mediation' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'ADR clauses in your contracts' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'a unilateral request for mediation' lost in answer,0.0,FAIL
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1022 - Access international arbitration and mediation services.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1022 - Access international arbitration and mediation services.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 D1022 - Access international arbitration and mediation services.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://www.wipo.int/amc/en/center/background.html,1.0,PASS
 D1022 - Access international arbitration and mediation services.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ADR,1.0,PASS
@@ -452,19 +507,34 @@ D1057 - Prevent risks to public interest.json,Schema,Key: description,Present,1.
 D1057 - Prevent risks to public interest.json,Data Integrity,ID Match,D1057 == D1057,1.0,PASS
 D1057 - Prevent risks to public interest.json,Semantic,Headline Match,Score: 0.20,0.1951219512195122,WARN
 D1057 - Prevent risks to public interest.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Report ip crime or safety conc...,0.0,WARN
+D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Missing answer for: Report ip crime or s...,0.0,FAIL
-D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Prevent risks to public intere...,0.0,WARN
+D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'IP First Response feedback form' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'emailing us' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,**if the infringement involves...,0.0,WARN
+D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'Crime Stoppers' lost in answer,0.0,FAIL
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,**if the infringement involves...,0.0,WARN
+D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'this page' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'this page' lost in answer,0.0,FAIL
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,**if there is serious risk of ...,0.0,WARN
+D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'this page' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'this page' lost in answer,0.0,FAIL
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,**scams and fraudulent activit...,0.0,WARN
+D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'Product and service scams | Scamwatch' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'Scams related to managing IP Rights | IP Australia' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'How to report fraud and corruption | IP Australia' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'Scamwatch' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'How to report fraud and corruption | IP Australia' lost in answer,0.0,FAIL
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1057 - Prevent risks to public interest.json,Content,FAQ Question Found,Want to give us feedback?...,1.0,PASS
+D1057 - Prevent risks to public interest.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 D1057 - Prevent risks to public interest.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1057 - Prevent risks to public interest.json,Links,Related Link Exists,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,1.0,PASS
 D1057 - Prevent risks to public interest.json,Links,Related Link Exists,mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response,1.0,PASS
@@ -511,9 +581,10 @@ E1003 - Why is this so expensive.json,Links,Related Link Exists,https://www.fedc
 101-3 - Patent infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-3 - Patent infringement.json,Content,FAQ Question Found,How does patent infringement h...,1.0,PASS
 101-3 - Patent infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-3 - Patent infringement.json,Content,FAQ Question Found,Examples of patent infringemen...,0.0,WARN
+101-3 - Patent infringement.json,Quality,QM Hallucination,HTML missing '?': Examples of patent infringement?,0.0,FAIL
 101-3 - Patent infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-3 - Patent infringement.json,Content,FAQ Question Found,What is not patentinfringement...,0.0,WARN
+101-3 - Patent infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
+101-3 - Patent infringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-3 - Patent infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1001 - Choose not to respond immediately.json,Structure,JSON Syntax,Valid,1.0,PASS
 B1001 - Choose not to respond immediately.json,Schema,Key: @context,Present,1.0,PASS
@@ -526,6 +597,9 @@ B1001 - Choose not to respond immediately.json,Semantic,Description Match,Score:
 B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 B1001 - Choose not to respond immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+B1001 - Choose not to respond immediately.json,Quality,Hyperlink Preservation,Link 'Receiving a letter of demand' lost in answer,0.0,FAIL
+B1001 - Choose not to respond immediately.json,Quality,Hyperlink Preservation,Link 'Receiving a letter of demand' lost in answer,0.0,FAIL
+B1001 - Choose not to respond immediately.json,Quality,Hyperlink Preservation,Link 'Receiving a letter of demand' lost in answer,0.0,FAIL
 B1001 - Choose not to respond immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 B1001 - Choose not to respond immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -537,7 +611,7 @@ B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,How mu
 B1001 - Choose not to respond immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1001 - Choose not to respond immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1001 - Choose not to respond immediately.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1001 - Choose not to respond immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1001 - Choose not to respond immediately.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand,1.0,PASS
 B1001 - Choose not to respond immediately.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
@@ -575,7 +649,7 @@ D1011 - Choose not to act immediately.json,Content,FAQ Question Found,How much t
 D1011 - Choose not to act immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1011 - Choose not to act immediately.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1011 - Choose not to act immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1011 - Choose not to act immediately.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1011 - Choose not to act immediately.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1011 - Choose not to act immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1011 - Choose not to act immediately.json,Content,FAQ Question Found,How often is this used?...,1.0,PASS
 D1011 - Choose not to act immediately.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -610,16 +684,18 @@ B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Statu
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Quality,Hyperlink Preservation,Link 'Agree to a commercial arrangement | IP Australia First Response' lost in answer,0.0,FAIL
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+B1014 - Reach an agreement with the accusing party.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1014 - Reach an agreement with the accusing party.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1014 - Reach an agreement with the accusing party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement,1.0,PASS
 B1014 - Reach an agreement with the accusing party.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO,1.0,PASS
@@ -646,6 +722,7 @@ D1016 - Challenge the registration of a new trade mark.json,Schema,Key: descript
 D1016 - Challenge the registration of a new trade mark.json,Data Integrity,ID Match,D1016 == D1016,1.0,PASS
 D1016 - Challenge the registration of a new trade mark.json,Semantic,Headline Match,Score: 0.11,0.10909090909090909,WARN
 D1016 - Challenge the registration of a new trade mark.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+D1016 - Challenge the registration of a new trade mark.json,Quality,Hyperlink Preservation,Link 'trade mark opposition' found but URL lost,0.0,FAIL
 D1016 - Challenge the registration of a new trade mark.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 D1016 - Challenge the registration of a new trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1016 - Challenge the registration of a new trade mark.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
@@ -684,16 +761,22 @@ IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer popul
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,Hyperlink Preservation,Link 'www.artslaw.com.au/services/legal-query-form/' lost in answer,0.0,FAIL
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,Hyperlink Preservation,Link 'template letter of demand' lost in answer,0.0,FAIL
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,Hyperlink Preservation,Link 'www.copyright.org.au/legal-advice/' lost in answer,0.0,FAIL
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,Consider contacting an ip prof...,0.0,WARN
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,QM Hallucination,HTML missing '?': Consider contacting an ip professional for advice and assistance?,0.0,FAIL
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,Hyperlink Preservation,Link 'informal contact' lost in answer,0.0,FAIL
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+IPFR_DemandOtherPartyStopsInfringing.json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
 IPFR_DemandOtherPartyStopsInfringing.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/infringement-101,1.0,PASS
 IPFR_DemandOtherPartyStopsInfringing.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement,1.0,PASS
@@ -737,18 +820,21 @@ C1004 - Use your trademark prominently to build recognition and protection.json,
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Quality,Hyperlink Preservation,Link 'What are trade marks? | IP Australia' lost in answer,0.0,FAIL
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Quality,Hyperlink Preservation,Link 'engage third-party services' lost in answer,0.0,FAIL
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+C1004 - Use your trademark prominently to build recognition and protection.json,Quality,Hyperlink Preservation,Link 'engage third-party services' lost in answer,0.0,FAIL
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1004 - Use your trademark prominently to build recognition and protection.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip,1.0,PASS
 C1004 - Use your trademark prominently to build recognition and protection.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks,1.0,PASS
@@ -761,25 +847,37 @@ B1000 - Receiving a letter of demand.json,Schema,Key: description,Present,1.0,PA
 B1000 - Receiving a letter of demand.json,Data Integrity,ID Match,B1000 == B1000,1.0,PASS
 B1000 - Receiving a letter of demand.json,Semantic,Headline Match,Score: 0.05,0.05405405405405406,WARN
 B1000 - Receiving a letter of demand.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,What are the common features i...,0.0,WARN
+B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,Not found,0.0,WARN
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'Trans-Tasman IP Attorney registry' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'ABN lookup tool' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'Choose not to respond immediately' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'personally respond' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'speak to an IP lawyer or IP attorney' lost in answer,0.0,FAIL
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,What should I watch out for?...,0.0,WARN
+B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,Not found,0.0,WARN
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'speak to an IP lawyer or IP attorney' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'misleading or sent in bad faith' lost in answer,0.0,FAIL
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'without going to court.' lost in answer,0.0,FAIL
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'engage a legal professional' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'agree to stop the alleged conduct' lost in answer,0.0,FAIL
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,"Link 'alternative dispute resolution process, such as mediation' lost in answer",0.0,FAIL
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+B1000 - Receiving a letter of demand.json,Quality,Hyperlink Preservation,Link 'speak to an IP lawyer or IP attorney' lost in answer,0.0,FAIL
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1000 - Receiving a letter of demand.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1000 - Receiving a letter of demand.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1000 - Receiving a letter of demand.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP,1.0,PASS
 B1000 - Receiving a letter of demand.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm,1.0,PASS
@@ -833,13 +931,20 @@ E1001 - Is my business name my IP.json,Schema,Key: description,Present,1.0,PASS
 E1001 - Is my business name my IP.json,Data Integrity,ID Match,E1001 == E1001,1.0,PASS
 E1001 - Is my business name my IP.json,Semantic,Headline Match,Score: 0.23,0.22857142857142856,WARN
 E1001 - Is my business name my IP.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-E1001 - Is my business name my IP.json,Content,FAQ Question Found,Business names?...,0.0,WARN
+E1001 - Is my business name my IP.json,Content,FAQ Question Found,Not found,0.0,WARN
 E1001 - Is my business name my IP.json,Content,FAQ Answer Status,Missing answer for: Business names?...,0.0,FAIL
-E1001 - Is my business name my IP.json,Content,FAQ Question Found,Is my business name my ip?...,0.0,WARN
+E1001 - Is my business name my IP.json,Content,FAQ Question Found,Not found,0.0,WARN
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'IP First Response feedback form' lost in answer,0.0,FAIL
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'emailing us' lost in answer,0.0,FAIL
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 E1001 - Is my business name my IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-E1001 - Is my business name my IP.json,Content,FAQ Question Found,**see also**?...,0.0,WARN
+E1001 - Is my business name my IP.json,Content,FAQ Question Found,Not found,0.0,WARN
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'Register a business name | ASIC' lost in answer,0.0,FAIL
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'Register a company | ASIC' lost in answer,0.0,FAIL
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'What are trade marks? | IP Australia' lost in answer,0.0,FAIL
 E1001 - Is my business name my IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 E1001 - Is my business name my IP.json,Content,FAQ Question Found,Want to give us feedback?...,1.0,PASS
+E1001 - Is my business name my IP.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 E1001 - Is my business name my IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 E1001 - Is my business name my IP.json,Links,Related Link Exists,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,1.0,PASS
 E1001 - Is my business name my IP.json,Links,Related Link Exists,mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response,1.0,PASS
@@ -862,6 +967,12 @@ D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Answer 
 D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1012 - Obtain legal advice on your enforcement options.json,Quality,Hyperlink Preservation,Link 'patent attorney' lost in answer,0.0,FAIL
+D1012 - Obtain legal advice on your enforcement options.json,Quality,Hyperlink Preservation,Link 'trade mark attorney' lost in answer,0.0,FAIL
+D1012 - Obtain legal advice on your enforcement options.json,Quality,Hyperlink Preservation,Link 'www.artslaw.com.au/services/legal-query-form/' lost in answer,0.0,FAIL
+D1012 - Obtain legal advice on your enforcement options.json,Quality,Hyperlink Preservation,Link 'www.copyright.org.au/legal-advice/' lost in answer,0.0,FAIL
+D1012 - Obtain legal advice on your enforcement options.json,Quality,Hyperlink Preservation,Link 'Arts Law Centre of Australia' lost in answer,0.0,FAIL
+D1012 - Obtain legal advice on your enforcement options.json,Quality,Hyperlink Preservation,Link 'Australian Copyright Council' lost in answer,0.0,FAIL
 D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 D1012 - Obtain legal advice on your enforcement options.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -925,18 +1036,28 @@ D1024 - Challenge the use of international domain name.json,Data Integrity,ID Ma
 D1024 - Challenge the use of international domain name.json,Semantic,Headline Match,Score: 0.15,0.14545454545454545,WARN
 D1024 - Challenge the use of international domain name.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'UDRP' lost in answer,0.0,FAIL
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'here' lost in answer,0.0,FAIL
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)' lost in answer,0.0,FAIL
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'UDRP' lost in answer,0.0,FAIL
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'WIPO Guide to the Uniform Domain Name Dispute Resolution Policy (UDRP)' lost in answer,0.0,FAIL
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'fee to lodge' lost in answer,0.0,FAIL
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'UDRP' lost in answer,0.0,FAIL
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'here' lost in answer,0.0,FAIL
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'UDRP' lost in answer,0.0,FAIL
+D1024 - Challenge the use of international domain name.json,Quality,Hyperlink Preservation,Link 'here' lost in answer,0.0,FAIL
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1024 - Challenge the use of international domain name.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1024 - Challenge the use of international domain name.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Links,Related Link Exists,https://www.icann.org/resources/pages/help/dndr/udrp-en,1.0,PASS
 D1024 - Challenge the use of international domain name.json,Links,Related Link Exists,https://www.icann.org/resources/pages/providers-6d-2012-02-25-en,1.0,PASS
@@ -978,10 +1099,14 @@ C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Co
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Quality,Hyperlink Preservation,Link 'Qualified Persons Directory' lost in answer,0.0,FAIL
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Quality,Hyperlink Preservation,Link 'Qualified Persons Directory' lost in answer,0.0,FAIL
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Quality,Hyperlink Preservation,Link 'Qualified Persons Directory' lost in answer,0.0,FAIL
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Quality,Hyperlink Preservation,Link 'Qualified Persons Directory' lost in answer,0.0,FAIL
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory#qpds_e=0,1.0,PASS
 C1012 - CHOOSING A ‘QUALIFIED PERSON’ (QP) to conduct growing trials.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory,1.0,PASS
@@ -996,15 +1121,19 @@ IPFR_TradeMarkInfringement.json,Schema,Key: headline,Present,1.0,PASS
 IPFR_TradeMarkInfringement.json,Schema,Key: description,Present,1.0,PASS
 IPFR_TradeMarkInfringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 IPFR_TradeMarkInfringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,What is trade markinfringement...,0.0,WARN
+IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,Not found,0.0,WARN
+IPFR_TradeMarkInfringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 IPFR_TradeMarkInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,What is protected under a regi...,1.0,PASS
+IPFR_TradeMarkInfringement.json,Quality,Hyperlink Preservation,Link 'Kinds of Trade Marks' lost in answer,0.0,FAIL
+IPFR_TradeMarkInfringement.json,Quality,Hyperlink Preservation,Link 'Classes of Goods and Services' lost in answer,0.0,FAIL
 IPFR_TradeMarkInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,How does trade mark infringeme...,1.0,PASS
 IPFR_TradeMarkInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,What is not trade markinfringe...,0.0,WARN
+IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_TradeMarkInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,Understanding theboundariesof ...,0.0,WARN
+IPFR_TradeMarkInfringement.json,Content,FAQ Question Found,Not found,0.0,WARN
+IPFR_TradeMarkInfringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 IPFR_TradeMarkInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_TradeMarkInfringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks,1.0,PASS
 IPFR_TradeMarkInfringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services,1.0,PASS
@@ -1047,6 +1176,7 @@ D1040 - Ask your suppliers and sellers to help protect your IP.json,Semantic,Des
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Quality,Hyperlink Preservation,Link 'unjustified threats' lost in answer,0.0,FAIL
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1058,7 +1188,7 @@ D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ 
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online,1.0,PASS
 D1040 - Ask your suppliers and sellers to help protect your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
@@ -1080,6 +1210,8 @@ C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status
 C1011 - Check your idea against existing patents..json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1011 - Check your idea against existing patents..json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+C1011 - Check your idea against existing patents..json,Quality,Hyperlink Preservation,Link 'Australian patent Search' lost in answer,0.0,FAIL
+C1011 - Check your idea against existing patents..json,Quality,Hyperlink Preservation,Link 'Espacenet' lost in answer,0.0,FAIL
 C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1011 - Check your idea against existing patents..json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1087,7 +1219,7 @@ C1011 - Check your idea against existing patents..json,Content,FAQ Question Foun
 C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1011 - Check your idea against existing patents..json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1011 - Check your idea against existing patents..json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1011 - Check your idea against existing patents..json,Content,FAQ Question Found,Not found,0.0,WARN
 C1011 - Check your idea against existing patents..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://worldwide.espacenet.com/,1.0,PASS
 C1011 - Check your idea against existing patents..json,Links,Related Link Exists,https://ipsearch.ipaustralia.gov.au/patents/,1.0,PASS
@@ -1107,8 +1239,10 @@ C1011 - Check your idea against existing patents..json,Links,Related Link Exists
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What are the risks?...,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Quality,Hyperlink Preservation,Link 'Seek an urgent injunction' lost in answer,0.0,FAIL
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+"D1018 - Seek binding, authoritative decisions.json",Quality,Hyperlink Preservation,Link 'between $100-500k' lost in answer,0.0,FAIL
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1116,7 +1250,7 @@ C1011 - Check your idea against existing patents..json,Links,Related Link Exists
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,Who can use this?...,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
-"D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,Whos involved?...,0.0,WARN
+"D1018 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,Not found,0.0,WARN
 "D1018 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction,1.0,PASS
 "D1018 - Seek binding, authoritative decisions.json",Links,Related Link Exists,"https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",1.0,PASS
@@ -1134,13 +1268,18 @@ C1011 - Check your idea against existing patents..json,Links,Related Link Exists
 101-1 - How to avoid infringing others' intellectual property.json,Schema,Key: description,Present,1.0,PASS
 101-1 - How to avoid infringing others' intellectual property.json,Semantic,Headline Match,Score: 0.19,0.1935483870967742,WARN
 101-1 - How to avoid infringing others' intellectual property.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Question Found,How to avoid infringing others...,0.0,WARN
+101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Question Found,Avoiding ip infringement?...,0.0,WARN
+101-1 - How to avoid infringing others' intellectual property.json,Quality,QM Hallucination,HTML missing '?': Avoiding ip infringement?,0.0,FAIL
+101-1 - How to avoid infringing others' intellectual property.json,Quality,Hyperlink Preservation,Link 'Australian Trade Mark Search' lost in answer,0.0,FAIL
+101-1 - How to avoid infringing others' intellectual property.json,Quality,Hyperlink Preservation,Link 'Australian Design Search' lost in answer,0.0,FAIL
+101-1 - How to avoid infringing others' intellectual property.json,Quality,Hyperlink Preservation,"Link 'the Australian PBR Search,' lost in answer",0.0,FAIL
+101-1 - How to avoid infringing others' intellectual property.json,Quality,Hyperlink Preservation,Link 'the Australian Patent Search' lost in answer,0.0,FAIL
+101-1 - How to avoid infringing others' intellectual property.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Question Found,Red flags to watch for?...,0.0,WARN
+101-1 - How to avoid infringing others' intellectual property.json,Quality,QM Hallucination,HTML missing '?': Red flags to watch for?,0.0,FAIL
 101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Question Found,When to seek help?...,0.0,WARN
+101-1 - How to avoid infringing others' intellectual property.json,Quality,QM Hallucination,HTML missing '?': When to seek help?,0.0,FAIL
 101-1 - How to avoid infringing others' intellectual property.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-1 - How to avoid infringing others' intellectual property.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
 101-1 - How to avoid infringing others' intellectual property.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/designs/search/quick,1.0,PASS
@@ -1168,7 +1307,7 @@ B1009 - Challenge a granted patent.json,Content,FAQ Question Found,How much is t
 B1009 - Challenge a granted patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1009 - Challenge a granted patent.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1009 - Challenge a granted patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1009 - Challenge a granted patent.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1009 - Challenge a granted patent.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1009 - Challenge a granted patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1009 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent,1.0,PASS
 B1009 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
@@ -1195,8 +1334,10 @@ D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+D1018 - Court - Patent.json,Quality,Hyperlink Preservation,Link 'Seek an urgent injunction' lost in answer,0.0,FAIL
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1018 - Court - Patent.json,Quality,Hyperlink Preservation,Link 'between $100-500k' lost in answer,0.0,FAIL
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1204,7 +1345,7 @@ D1018 - Court - Patent.json,Content,FAQ Question Found,How much is this used?...
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1018 - Court - Patent.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1018 - Court - Patent.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1018 - Court - Patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1018 - Court - Patent.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction,1.0,PASS
 D1018 - Court - Patent.json,Links,Related Link Exists,"https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",1.0,PASS
@@ -1237,7 +1378,7 @@ D1017 - Challenge a new or amended patent.json,Content,FAQ Question Found,How mu
 D1017 - Challenge a new or amended patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1017 - Challenge a new or amended patent.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1017 - Challenge a new or amended patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1017 - Challenge a new or amended patent.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1017 - Challenge a new or amended patent.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1017 - Challenge a new or amended patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1017 - Challenge a new or amended patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections,1.0,PASS
 D1017 - Challenge a new or amended patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
@@ -1264,7 +1405,7 @@ C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Question Fo
 C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1007 - Explore opportunities by licensing  your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options,1.0,PASS
 C1007 - Explore opportunities by licensing  your IP.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
@@ -1291,7 +1432,7 @@ IPFR_ApplyDesignRightRegisterYourDesign.json,Schema,Key: headline,Present,1.0,PA
 IPFR_ApplyDesignRightRegisterYourDesign.json,Schema,Key: description,Present,1.0,PASS
 IPFR_ApplyDesignRightRegisterYourDesign.json,Semantic,Headline Match,Score: 0.00,0.0,WARN
 IPFR_ApplyDesignRightRegisterYourDesign.json,Semantic,Description Match,Score: 0.50,0.5,WARN
-IPFR_ApplyDesignRightRegisterYourDesign.json,Content,FAQ Question Found,Access denied?...,0.0,WARN
+IPFR_ApplyDesignRightRegisterYourDesign.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_ApplyDesignRightRegisterYourDesign.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Schema,Key: @context,Present,1.0,PASS
@@ -1315,7 +1456,7 @@ D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Quest
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker,1.0,PASS
 D1001 - Choose to rebrand to avoid potential IP conflicts.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart,1.0,PASS
@@ -1344,7 +1485,7 @@ D1019 - Challenge a granted patent.json,Content,FAQ Question Found,How much is t
 D1019 - Challenge a granted patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1019 - Challenge a granted patent.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1019 - Challenge a granted patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1019 - Challenge a granted patent.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1019 - Challenge a granted patent.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1019 - Challenge a granted patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1019 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent,1.0,PASS
 D1019 - Challenge a granted patent.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
@@ -1364,6 +1505,8 @@ D1019 - Challenge a granted patent.json,Links,Related Link Exists,https://ipta.o
 "D1084 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 "D1084 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1084 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+"D1084 - Seek binding, authoritative decisions.json",Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+"D1084 - Seek binding, authoritative decisions.json",Quality,Hyperlink Preservation,Link 'between $100-500k .' lost in answer,0.0,FAIL
 "D1084 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1084 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 "D1084 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1385,7 +1528,25 @@ D1080 - Choosing the right IP professional.json,Schema,Key: description,Present,
 D1080 - Choosing the right IP professional.json,Data Integrity,ID Match,D1080 == D1080,1.0,PASS
 D1080 - Choosing the right IP professional.json,Semantic,Headline Match,Score: 0.19,0.18604651162790697,WARN
 D1080 - Choosing the right IP professional.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-D1080 - Choosing the right IP professional.json,Content,FAQ Question Found,What all ip professionals have...,0.0,WARN
+D1080 - Choosing the right IP professional.json,Quality,QM Hallucination,HTML missing '?': What all ip professionals have in common?,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Find an IP attorney or firm | Trans-Tasman IP Attorneys Board' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Benefits of using an IP attorney |Trans-Tasman IP Attorneys Regulation' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Find an IP attorney or firm | Trans-Tasman IP Attorneys Board' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Benefits of using an IP attorney |Trans-Tasman IP Attorneys Regulation' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Law Institute Victoria' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Law Society Northern Territory' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Queensland Law Society' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'The Law Society of NSW' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'The Law Society of South Australia' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'The Law Society of Tasmania' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'The Law Society of the ACT' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'The Law Society of Western Australia' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'franchise.org.au' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'Qualified Person directory' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'IP Australia website' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'IP Australia' lost in answer,0.0,FAIL
+D1080 - Choosing the right IP professional.json,Quality,Hyperlink Preservation,Link 'business.gov.au' lost in answer,0.0,FAIL
 D1080 - Choosing the right IP professional.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
 D1080 - Choosing the right IP professional.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney,1.0,PASS
@@ -1425,13 +1586,15 @@ E1020 - Can I protect my ideas in other countries.json,Links,Related Link Exists
 101-9 - Addressing Overseas Infringement.json,Schema,Key: @type,Present,1.0,PASS
 101-9 - Addressing Overseas Infringement.json,Schema,Key: headline,Present,1.0,PASS
 101-9 - Addressing Overseas Infringement.json,Schema,Key: description,Present,1.0,PASS
+101-9 - Addressing Overseas Infringement.json,Quality,Casing Consistency,Headline casing mismatch (HTML preferred),0.5,WARN
 101-9 - Addressing Overseas Infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 101-9 - Addressing Overseas Infringement.json,Semantic,Description Match,Score: 1.00,1.0,PASS
-101-9 - Addressing Overseas Infringement.json,Content,FAQ Question Found,Key considerations for oversea...,0.0,WARN
+101-9 - Addressing Overseas Infringement.json,Quality,QM Hallucination,HTML missing '?': Key considerations for overseas infringement?,0.0,FAIL
+101-9 - Addressing Overseas Infringement.json,Quality,Hyperlink Preservation,Link 'How to Apply for IP Overseas' lost in answer,0.0,FAIL
 101-9 - Addressing Overseas Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-9 - Addressing Overseas Infringement.json,Content,FAQ Question Found,Enforcement options?...,0.0,WARN
+101-9 - Addressing Overseas Infringement.json,Quality,QM Hallucination,HTML missing '?': Enforcement options?,0.0,FAIL
 101-9 - Addressing Overseas Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-9 - Addressing Overseas Infringement.json,Content,FAQ Question Found,Practical tips?...,0.0,WARN
+101-9 - Addressing Overseas Infringement.json,Quality,QM Hallucination,HTML missing '?': Practical tips?,0.0,FAIL
 101-9 - Addressing Overseas Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-9 - Addressing Overseas Infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Structure,JSON Syntax,Valid,1.0,PASS
@@ -1451,12 +1614,13 @@ B1020 - Request IP Australia remove an unused trade mark to defend your right.js
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Quality,Hyperlink Preservation,Link 'opposition processes' lost in answer,0.0,FAIL
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use,1.0,PASS
 B1020 - Request IP Australia remove an unused trade mark to defend your right.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings,1.0,PASS
@@ -1486,6 +1650,8 @@ B1016 - Considerations when responding to international accusations.json,Content
 B1016 - Considerations when responding to international accusations.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 B1016 - Considerations when responding to international accusations.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1016 - Considerations when responding to international accusations.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
+B1016 - Considerations when responding to international accusations.json,Quality,Hyperlink Preservation,Link 'Receiving a letter of demand' lost in answer,0.0,FAIL
+B1016 - Considerations when responding to international accusations.json,Quality,Hyperlink Preservation,Link 'Reporting a threat or a scam that you received' lost in answer,0.0,FAIL
 B1016 - Considerations when responding to international accusations.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1016 - Considerations when responding to international accusations.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1016 - Considerations when responding to international accusations.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1516,12 +1682,13 @@ D1014 - resolve conflicts with the help of experienced facilitators.json,Content
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1014 - resolve conflicts with the help of experienced facilitators.json,Quality,Hyperlink Preservation,Link 'IP First Response website' lost in answer,0.0,FAIL
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1014 - resolve conflicts with the help of experienced facilitators.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/mediation,1.0,PASS
 D1014 - resolve conflicts with the help of experienced facilitators.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/arbitration,1.0,PASS
@@ -1552,6 +1719,7 @@ D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,P
 D1005 - Court - Trade mark.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1005 - Court - Trade mark.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+D1005 - Court - Trade mark.json,Quality,Hyperlink Preservation,Link 'Seek an urgent injunction' lost in answer,0.0,FAIL
 D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1005 - Court - Trade mark.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1561,7 +1729,7 @@ D1005 - Court - Trade mark.json,Content,FAQ Question Found,How much is this used
 D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1005 - Court - Trade mark.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1005 - Court - Trade mark.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1005 - Court - Trade mark.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1005 - Court - Trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1005 - Court - Trade mark.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction,1.0,PASS
 D1005 - Court - Trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
@@ -1606,20 +1774,28 @@ D1006 - Mediation.json,Data Integrity,ID Match,D1006 == D1006,1.0,PASS
 D1006 - Mediation.json,Semantic,Headline Match,Score: 0.14,0.14035087719298245,WARN
 D1006 - Mediation.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 D1006 - Mediation.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'mediation by a court officer' lost in answer,0.0,FAIL
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'private mediator' lost in answer,0.0,FAIL
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'take 3-4 months' lost in answer,0.0,FAIL
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Question Found,How often is this used?...,1.0,PASS
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'Mediation' lost in answer,0.0,FAIL
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1006 - Mediation.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1006 - Mediation.json,Content,FAQ Question Found,Not found,0.0,WARN
+D1006 - Mediation.json,Quality,Hyperlink Preservation,Link 'role' lost in answer,0.0,FAIL
 D1006 - Mediation.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1006 - Mediation.json,Links,Related Link Exists,https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx,1.0,PASS
 D1006 - Mediation.json,Links,Related Link Exists,https://www.asbfeo.gov.au/,1.0,PASS
@@ -1664,6 +1840,7 @@ D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Statu
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1002 - Stop infringing goods entering the country.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1671,7 +1848,7 @@ D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Fou
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1002 - Stop infringing goods entering the country.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1002 - Stop infringing goods entering the country.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Links,Related Link Exists,https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf,1.0,PASS
 D1002 - Stop infringing goods entering the country.json,Links,Related Link Exists,https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf,1.0,PASS
@@ -1689,17 +1866,24 @@ B1005 - Register your trade mark.json,Schema,Key: @type,Present,1.0,PASS
 B1005 - Register your trade mark.json,Schema,Key: headline,Present,1.0,PASS
 B1005 - Register your trade mark.json,Schema,Key: description,Present,1.0,PASS
 B1005 - Register your trade mark.json,Data Integrity,ID Match,B1005 == B1005,1.0,PASS
+B1005 - Register your trade mark.json,Quality,Casing Consistency,Headline casing mismatch (HTML preferred),0.5,WARN
 B1005 - Register your trade mark.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 B1005 - Register your trade mark.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 B1005 - Register your trade mark.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 B1005 - Register your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1005 - Register your trade mark.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+B1005 - Register your trade mark.json,Quality,Hyperlink Preservation,Link 'TM Headstart' lost in answer,0.0,FAIL
 B1005 - Register your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1005 - Register your trade mark.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+B1005 - Register your trade mark.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+B1005 - Register your trade mark.json,Quality,Hyperlink Preservation,Link 'TM Headstart' lost in answer,0.0,FAIL
+B1005 - Register your trade mark.json,Quality,Hyperlink Preservation,Link 'picklist' lost in answer,0.0,FAIL
 B1005 - Register your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1005 - Register your trade mark.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+B1005 - Register your trade mark.json,Quality,Hyperlink Preservation,Link 'TM Headstart' lost in answer,0.0,FAIL
 B1005 - Register your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1005 - Register your trade mark.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
+B1005 - Register your trade mark.json,Quality,Hyperlink Preservation,Link 'Australia Trade MarkRegister.' lost in answer,0.0,FAIL
 B1005 - Register your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1005 - Register your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks,1.0,PASS
 B1005 - Register your trade mark.json,Links,Related Link Exists,https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0,1.0,PASS
@@ -1722,8 +1906,10 @@ D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1029 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,"Link 'US$48,000 and cases under the WIPO Arbitration Rules cost some US$165,000' lost in answer",0.0,FAIL
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1029 - Resolve IP issues with the help of a third party.json,Quality,Hyperlink Preservation,Link '27 months' lost in answer,0.0,FAIL
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1029 - Resolve IP issues with the help of a third party.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1762,13 +1948,13 @@ D1030 - Seek a court order to prevent further damage while preparing for court..
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,How much timemight be involved...,0.0,WARN
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,Not found,0.0,WARN
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Question Found,Not found,0.0,WARN
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action,1.0,PASS
 D1030 - Seek a court order to prevent further damage while preparing for court..json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
@@ -1796,7 +1982,7 @@ C1006 - Help customers differentiate between your products and lookalikes.json,C
 C1006 - Help customers differentiate between your products and lookalikes.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1006 - Help customers differentiate between your products and lookalikes.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1006 - Help customers differentiate between your products and lookalikes.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1006 - Help customers differentiate between your products and lookalikes.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1006 - Help customers differentiate between your products and lookalikes.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1006 - Help customers differentiate between your products and lookalikes.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1006 - Help customers differentiate between your products and lookalikes.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip,1.0,PASS
 C1006 - Help customers differentiate between your products and lookalikes.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip,1.0,PASS
@@ -1808,13 +1994,20 @@ C1006 - Help customers differentiate between your products and lookalikes.json,L
 101-7 - What to do if someone infringes your IP.json,Schema,Key: description,Present,1.0,PASS
 101-7 - What to do if someone infringes your IP.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 101-7 - What to do if someone infringes your IP.json,Semantic,Description Match,Score: 1.00,1.0,PASS
-101-7 - What to do if someone infringes your IP.json,Content,FAQ Question Found,What to do if someone infringe...,0.0,WARN
+101-7 - What to do if someone infringes your IP.json,Quality,QM Hallucination,HTML missing '?': What to do if someone infringes your ip?,0.0,FAIL
 101-7 - What to do if someone infringes your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-7 - What to do if someone infringes your IP.json,Content,FAQ Question Found,Consider your options?...,0.0,WARN
+101-7 - What to do if someone infringes your IP.json,Quality,QM Hallucination,HTML missing '?': Consider your options?,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'IP First Response' lost in answer,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'Take no immediate action' lost in answer,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'Direct contact' lost in answer,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'Sending a formal letter' lost in answer,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'Alternative dispute resolution' lost in answer,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'Legal proceedings' lost in answer,0.0,FAIL
+101-7 - What to do if someone infringes your IP.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 101-7 - What to do if someone infringes your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-7 - What to do if someone infringes your IP.json,Content,FAQ Question Found,Getting professional advice?...,0.0,WARN
+101-7 - What to do if someone infringes your IP.json,Quality,QM Hallucination,HTML missing '?': Getting professional advice?,0.0,FAIL
 101-7 - What to do if someone infringes your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-7 - What to do if someone infringes your IP.json,Content,FAQ Question Found,Moving forward?...,0.0,WARN
+101-7 - What to do if someone infringes your IP.json,Quality,QM Hallucination,HTML missing '?': Moving forward?,0.0,FAIL
 101-7 - What to do if someone infringes your IP.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/,1.0,PASS
 101-7 - What to do if someone infringes your IP.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action,1.0,PASS
@@ -1837,14 +2030,17 @@ B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ 
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Quality,Hyperlink Preservation,Link 'can be seen here.' lost in answer,0.0,FAIL
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+B1006 - Respond to an opposition filed against your trade mark.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+B1006 - Respond to an opposition filed against your trade mark.json,Quality,Hyperlink Preservation,Link 'Flow chart - Oppose the registration of a trade mark' lost in answer,0.0,FAIL
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1006 - Respond to an opposition filed against your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://portal.ipaustralia.gov.au/,1.0,PASS
 B1006 - Respond to an opposition filed against your trade mark.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections,1.0,PASS
@@ -1887,9 +2083,14 @@ IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Question Found,Who can u
 IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+IPFR_StopInfringementFacilitatedOnline.json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+IPFR_StopInfringementFacilitatedOnline.json,Quality,Hyperlink Preservation,Link 'Australian' lost in answer,0.0,FAIL
+IPFR_StopInfringementFacilitatedOnline.json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+IPFR_StopInfringementFacilitatedOnline.json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
+IPFR_StopInfringementFacilitatedOnline.json,Quality,Hyperlink Preservation,Link 'Arts Law Centre of Australia' lost in answer,0.0,FAIL
+IPFR_StopInfringementFacilitatedOnline.json,Quality,Hyperlink Preservation,Link 'Australian Copyright Council' lost in answer,0.0,FAIL
 IPFR_StopInfringementFacilitatedOnline.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://www.auda.org.au/au-domain-names/domain-name-help/using-whois,1.0,PASS
 IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://lookup.icann.org/en,1.0,PASS
@@ -1914,16 +2115,23 @@ IPFR_StopInfringementFacilitatedOnline.json,Links,Related Link Exists,https://ww
 101-10 - What is IP Infringement.json,Content,FAQ Question Found,What is infringement?...,1.0,PASS
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-10 - What is IP Infringement.json,Content,FAQ Question Found,What does infringement mean?...,1.0,PASS
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Trade mark infringement' lost in answer,0.0,FAIL
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Patent infringement' lost in answer,0.0,FAIL
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Design infringement' lost in answer,0.0,FAIL
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Plant Breeder's Rights (PBR) infringement' lost in answer,0.0,FAIL
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Copyright infringement' lost in answer,0.0,FAIL
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Unregistered trade marks' lost in answer,0.0,FAIL
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-10 - What is IP Infringement.json,Content,FAQ Question Found,Why ip infringement matters?...,0.0,WARN
+101-10 - What is IP Infringement.json,Quality,QM Hallucination,HTML missing '?': Why ip infringement matters?,0.0,FAIL
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-10 - What is IP Infringement.json,Content,FAQ Question Found,Key elements of ip infringemen...,0.0,WARN
+101-10 - What is IP Infringement.json,Quality,QM Hallucination,HTML missing '?': Key elements of ip infringement?,0.0,FAIL
+101-10 - What is IP Infringement.json,Quality,Hyperlink Preservation,Link 'Copyright infringement' lost in answer,0.0,FAIL
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-10 - What is IP Infringement.json,Content,FAQ Question Found,Example scenarios?...,0.0,WARN
+101-10 - What is IP Infringement.json,Quality,QM Hallucination,HTML missing '?': Example scenarios?,0.0,FAIL
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-10 - What is IP Infringement.json,Content,FAQ Question Found,Common misconceptionsmyths abo...,0.0,WARN
+101-10 - What is IP Infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-10 - What is IP Infringement.json,Content,FAQ Question Found,Why its hard to figure out on ...,0.0,WARN
+101-10 - What is IP Infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-10 - What is IP Infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement,1.0,PASS
 101-10 - What is IP Infringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement,1.0,PASS
@@ -1970,6 +2178,7 @@ E1018 - What happens in an IP Australia hearing.json,Links,Related Link Exists,h
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What are the risks?...,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+"D1005 - Seek binding, authoritative decisions.json",Quality,Hyperlink Preservation,Link 'Seek an urgent injunction' lost in answer,0.0,FAIL
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -1979,7 +2188,7 @@ E1018 - What happens in an IP Australia hearing.json,Links,Related Link Exists,h
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,Who can use this?...,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
-"D1005 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,Whos involved?...,0.0,WARN
+"D1005 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,Not found,0.0,WARN
 "D1005 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction,1.0,PASS
 "D1005 - Seek binding, authoritative decisions.json",Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court,1.0,PASS
@@ -2011,7 +2220,7 @@ D1013 - Coverage against potential future costs related to infringement.json,Con
 D1013 - Coverage against potential future costs related to infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1013 - Coverage against potential future costs related to infringement.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1013 - Coverage against potential future costs related to infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1013 - Coverage against potential future costs related to infringement.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1013 - Coverage against potential future costs related to infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1013 - Coverage against potential future costs related to infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_WhatIpInfringement.json,Structure,JSON Syntax,Valid,1.0,PASS
 IPFR_WhatIpInfringement.json,Schema,Key: @context,Present,1.0,PASS
@@ -2023,16 +2232,23 @@ IPFR_WhatIpInfringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 IPFR_WhatIpInfringement.json,Content,FAQ Question Found,What is infringement?...,1.0,PASS
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_WhatIpInfringement.json,Content,FAQ Question Found,What does infringement mean?...,1.0,PASS
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Trade mark infringement' lost in answer,0.0,FAIL
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Patent infringement' lost in answer,0.0,FAIL
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Design infringement' lost in answer,0.0,FAIL
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Plant Breeder's Rights (PBR) infringement' lost in answer,0.0,FAIL
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Copyright infringement' lost in answer,0.0,FAIL
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Unregistered trade marks' lost in answer,0.0,FAIL
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Why ip infringement matters?...,0.0,WARN
+IPFR_WhatIpInfringement.json,Quality,QM Hallucination,HTML missing '?': Why ip infringement matters?,0.0,FAIL
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Key elements of ip infringemen...,0.0,WARN
+IPFR_WhatIpInfringement.json,Quality,QM Hallucination,HTML missing '?': Key elements of ip infringement?,0.0,FAIL
+IPFR_WhatIpInfringement.json,Quality,Hyperlink Preservation,Link 'Copyright infringement' lost in answer,0.0,FAIL
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Example scenarios?...,0.0,WARN
+IPFR_WhatIpInfringement.json,Quality,QM Hallucination,HTML missing '?': Example scenarios?,0.0,FAIL
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Common misconceptionsmyths abo...,0.0,WARN
+IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Why its hard to figure out on ...,0.0,WARN
+IPFR_WhatIpInfringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_WhatIpInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_WhatIpInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement,1.0,PASS
 IPFR_WhatIpInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement,1.0,PASS
@@ -2062,7 +2278,7 @@ C1014 - Register your right to use your design exclusively.json,Content,FAQ Ques
 C1014 - Register your right to use your design exclusively.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1014 - Register your right to use your design exclusively.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1014 - Register your right to use your design exclusively.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1014 - Register your right to use your design exclusively.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1014 - Register your right to use your design exclusively.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1014 - Register your right to use your design exclusively.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://portal.ipaustralia.gov.au/login,1.0,PASS
 C1014 - Register your right to use your design exclusively.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design,1.0,PASS
@@ -2112,6 +2328,7 @@ B1021 - Request confirmation that someone else's registered design is valid.json
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+B1021 - Request confirmation that someone else's registered design is valid.json,Quality,Hyperlink Preservation,Link '22.3. Amendments: Amending a registration | IPA Manuals' lost in answer,0.0,FAIL
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2121,7 +2338,7 @@ B1021 - Request confirmation that someone else's registered design is valid.json
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1021 - Request confirmation that someone else's registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
 B1021 - Request confirmation that someone else's registered design is valid.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/design/amending-a-registration,1.0,PASS
@@ -2173,8 +2390,10 @@ D1033 - Provide an opportunity for the other party to stop infringing..json,Sema
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,Hyperlink Preservation,Link 'unjustified threat' lost in answer,0.0,FAIL
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,Hyperlink Preservation,Link 'unjustified threat' lost in answer,0.0,FAIL
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2182,11 +2401,14 @@ D1033 - Provide an opportunity for the other party to stop infringing..json,Cont
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,Not found,0.0,WARN
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,Consider contacting an ip prof...,0.0,WARN
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,QM Hallucination,HTML missing '?': Consider contacting an ip professional for advice and assistance?,0.0,FAIL
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,Hyperlink Preservation,Link 'unjustified threat' lost in answer,0.0,FAIL
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+D1033 - Provide an opportunity for the other party to stop infringing..json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
 D1033 - Provide an opportunity for the other party to stop infringing..json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
 D1033 - Provide an opportunity for the other party to stop infringing..json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/infringement-101,1.0,PASS
@@ -2204,13 +2426,15 @@ D1033 - Provide an opportunity for the other party to stop infringing..json,Link
 101-6 - Unregistered trade marks.json,Schema,Key: @type,Present,1.0,PASS
 101-6 - Unregistered trade marks.json,Schema,Key: headline,Present,1.0,PASS
 101-6 - Unregistered trade marks.json,Schema,Key: description,Present,1.0,PASS
+101-6 - Unregistered trade marks.json,Quality,Casing Consistency,Headline casing mismatch (HTML preferred),0.5,WARN
 101-6 - Unregistered trade marks.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 101-6 - Unregistered trade marks.json,Semantic,Description Match,Score: 0.50,0.5,WARN
 101-6 - Unregistered trade marks.json,Content,FAQ Question Found,What is an unregistered trade ...,1.0,PASS
 101-6 - Unregistered trade marks.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-6 - Unregistered trade marks.json,Content,FAQ Question Found,Legal protection for unregiste...,0.0,WARN
+101-6 - Unregistered trade marks.json,Quality,QM Hallucination,HTML missing '?': Legal protection for unregistered trade marks?,0.0,FAIL
 101-6 - Unregistered trade marks.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-6 - Unregistered trade marks.json,Content,FAQ Question Found,Key differences between regist...,0.0,WARN
+101-6 - Unregistered trade marks.json,Quality,QM Hallucination,HTML missing '?': Key differences between registered and unregistered trade marks?,0.0,FAIL
+101-6 - Unregistered trade marks.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-6 - Unregistered trade marks.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Structure,JSON Syntax,Valid,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Schema,Key: @context,Present,1.0,PASS
@@ -2227,8 +2451,10 @@ D1033 - Provide an opportunity for the other party to stop infringing..json,Link
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Quality,Hyperlink Preservation,Link 'between $100-500k' lost in answer,0.0,FAIL
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+"D1087 - Seek binding, authoritative decisions.json",Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Question Found,How much is this used?...,1.0,PASS
 "D1087 - Seek binding, authoritative decisions.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2280,14 +2506,20 @@ D1004 - Dispute a domain name that infringes your trade mark.json,Semantic,Descr
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+D1004 - Dispute a domain name that infringes your trade mark.json,Quality,Hyperlink Preservation,Link 'auDRP' lost in answer,0.0,FAIL
+D1004 - Dispute a domain name that infringes your trade mark.json,Quality,Hyperlink Preservation,Link 'auDRP' lost in answer,0.0,FAIL
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+D1004 - Dispute a domain name that infringes your trade mark.json,Quality,Hyperlink Preservation,Link 'auDRP' lost in answer,0.0,FAIL
+D1004 - Dispute a domain name that infringes your trade mark.json,Quality,Hyperlink Preservation,Link 'auDRP' lost in answer,0.0,FAIL
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
+D1004 - Dispute a domain name that infringes your trade mark.json,Quality,Hyperlink Preservation,Link 'auDRP' lost in answer,0.0,FAIL
+D1004 - Dispute a domain name that infringes your trade mark.json,Quality,Hyperlink Preservation,Link 'auDRP' lost in answer,0.0,FAIL
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1004 - Dispute a domain name that infringes your trade mark.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2314,6 +2546,7 @@ C1002 - Detect and discourage potential infringement in your supply chain.json,C
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+C1002 - Detect and discourage potential infringement in your supply chain.json,Quality,Hyperlink Preservation,Link 'Obtain advice to help manage your IP.' lost in answer,0.0,FAIL
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2321,7 +2554,8 @@ C1002 - Detect and discourage potential infringement in your supply chain.json,C
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Question Found,Not found,0.0,WARN
+C1002 - Detect and discourage potential infringement in your supply chain.json,Quality,Hyperlink Preservation,Link 'Notice of Objection' lost in answer,0.0,FAIL
 C1002 - Detect and discourage potential infringement in your supply chain.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country,1.0,PASS
 C1002 - Detect and discourage potential infringement in your supply chain.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip,1.0,PASS
@@ -2353,14 +2587,19 @@ E1011 - Can I get in trouble for using IP that is not mine.json,Links,Related Li
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,What are the risks?...,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Quality,Hyperlink Preservation,Link 'Receiving a letter of demand.' lost in answer,0.0,FAIL
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Quality,Hyperlink Preservation,Link 'Scamwatch' lost in answer,0.0,FAIL
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,How much is this used?...,1.0,PASS
+"B1010 - Report a scam, fraud or risk to public interest.json",Quality,Hyperlink Preservation,"Link 'they had 249,448 scams reported to them, with reported losses estimated at $318,762.688.' lost in answer",0.0,FAIL
+"B1010 - Report a scam, fraud or risk to public interest.json",Quality,Hyperlink Preservation,Link 'The Annual Cyber Threat Report 2023-2024' lost in answer,0.0,FAIL
+"B1010 - Report a scam, fraud or risk to public interest.json",Quality,Hyperlink Preservation,Link 'Scamwatch' lost in answer,0.0,FAIL
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Question Found,Who can use this?...,1.0,PASS
 "B1010 - Report a scam, fraud or risk to public interest.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2403,16 +2642,30 @@ E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,What are the risks?...,1.0,PASS
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'UnjustifiedThreats' lost in answer,0.0,FAIL
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'All enforcement options | IP Australia First Response' lost in answer,0.0,FAIL
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,How much is this used?...,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Question Found,Who can use this?...,1.0,PASS
+"B1015 - Assert your rights, as a response to an accusation.json",Quality,Hyperlink Preservation,Link 'serious legal consequences' lost in answer,0.0,FAIL
 "B1015 - Assert your rights, as a response to an accusation.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement,1.0,PASS
 "B1015 - Assert your rights, as a response to an accusation.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement,1.0,PASS
@@ -2429,15 +2682,19 @@ E1019 - Does my Australian ip work overseas.json,Links,Related Link Exists,https
 101-8 - Trade mark infringement.json,Schema,Key: description,Present,1.0,PASS
 101-8 - Trade mark infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 101-8 - Trade mark infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-101-8 - Trade mark infringement.json,Content,FAQ Question Found,What is trade markinfringement...,0.0,WARN
+101-8 - Trade mark infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
+101-8 - Trade mark infringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-8 - Trade mark infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-8 - Trade mark infringement.json,Content,FAQ Question Found,What is protected under a regi...,1.0,PASS
+101-8 - Trade mark infringement.json,Quality,Hyperlink Preservation,Link 'Kinds of Trade Marks' lost in answer,0.0,FAIL
+101-8 - Trade mark infringement.json,Quality,Hyperlink Preservation,Link 'Classes of Goods and Services' lost in answer,0.0,FAIL
 101-8 - Trade mark infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-8 - Trade mark infringement.json,Content,FAQ Question Found,How does trade mark infringeme...,1.0,PASS
 101-8 - Trade mark infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-8 - Trade mark infringement.json,Content,FAQ Question Found,What is not trade markinfringe...,0.0,WARN
+101-8 - Trade mark infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-8 - Trade mark infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-8 - Trade mark infringement.json,Content,FAQ Question Found,Understanding theboundariesof ...,0.0,WARN
+101-8 - Trade mark infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
+101-8 - Trade mark infringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-8 - Trade mark infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-8 - Trade mark infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks,1.0,PASS
 101-8 - Trade mark infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services,1.0,PASS
@@ -2449,15 +2706,17 @@ B1017 - Request IP Australia confirms a registered design is valid.json,Schema,K
 B1017 - Request IP Australia confirms a registered design is valid.json,Data Integrity,ID Match,B1017 == B1017,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Semantic,Headline Match,Score: 0.12,0.11940298507462686,WARN
 B1017 - Request IP Australia confirms a registered design is valid.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Question Found,What are the benefits?...,0.0,WARN
+B1017 - Request IP Australia confirms a registered design is valid.json,Quality,QM Hallucination,HTML missing '?': What are the benefits?,0.0,FAIL
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+B1017 - Request IP Australia confirms a registered design is valid.json,Quality,Hyperlink Preservation,Link '22.2.1. Amending an application: Amendments that are allowable | IPA Manuals' lost in answer,0.0,FAIL
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+B1017 - Request IP Australia confirms a registered design is valid.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 B1017 - Request IP Australia confirms a registered design is valid.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2486,6 +2745,10 @@ D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+D1028 - Agree to a formal commercial arrangement.json,Quality,Hyperlink Preservation,Link 'How To Licence My IP | IP Australia' lost in answer,0.0,FAIL
+D1028 - Agree to a formal commercial arrangement.json,Quality,Hyperlink Preservation,Link 'Online Services portal' lost in answer,0.0,FAIL
+D1028 - Agree to a formal commercial arrangement.json,Quality,Hyperlink Preservation,Link 'a letter' lost in answer,0.0,FAIL
+D1028 - Agree to a formal commercial arrangement.json,Quality,Hyperlink Preservation,Link 'How To Licence My IP | IP Australia' lost in answer,0.0,FAIL
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2495,9 +2758,11 @@ D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+D1028 - Agree to a formal commercial arrangement.json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+D1028 - Agree to a formal commercial arrangement.json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+D1028 - Agree to a formal commercial arrangement.json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
 D1028 - Agree to a formal commercial arrangement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/mediation,1.0,PASS
 D1028 - Agree to a formal commercial arrangement.json,Links,Related Link Exists,"https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.",1.0,PASS
@@ -2521,8 +2786,10 @@ IPFR_ProvideOpportunityStopInfringement.json,Semantic,Description Match,Score: 0
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+IPFR_ProvideOpportunityStopInfringement.json,Quality,Hyperlink Preservation,Link 'unjustified threat' lost in answer,0.0,FAIL
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+IPFR_ProvideOpportunityStopInfringement.json,Quality,Hyperlink Preservation,Link 'unjustified threat' lost in answer,0.0,FAIL
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2530,11 +2797,14 @@ IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,How much
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,Consider contacting an ip prof...,0.0,WARN
+IPFR_ProvideOpportunityStopInfringement.json,Quality,QM Hallucination,HTML missing '?': Consider contacting an ip professional for advice and assistance?,0.0,FAIL
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+IPFR_ProvideOpportunityStopInfringement.json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+IPFR_ProvideOpportunityStopInfringement.json,Quality,Hyperlink Preservation,Link 'unjustified threat' lost in answer,0.0,FAIL
+IPFR_ProvideOpportunityStopInfringement.json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+IPFR_ProvideOpportunityStopInfringement.json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
 IPFR_ProvideOpportunityStopInfringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat,1.0,PASS
 IPFR_ProvideOpportunityStopInfringement.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/infringement-101,1.0,PASS
@@ -2586,7 +2856,7 @@ D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Q
 D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1067 - Prevent a patent under examination from being granted.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://portal.ipaustralia.gov.au/login,1.0,PASS
 D1067 - Prevent a patent under examination from being granted.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications,1.0,PASS
@@ -2615,7 +2885,7 @@ C1015 - Apply for a patent to protect your invention from being copied.json,Cont
 C1015 - Apply for a patent to protect your invention from being copied.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1015 - Apply for a patent to protect your invention from being copied.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1015 - Apply for a patent to protect your invention from being copied.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1015 - Apply for a patent to protect your invention from being copied.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1015 - Apply for a patent to protect your invention from being copied.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1015 - Apply for a patent to protect your invention from being copied.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1015 - Apply for a patent to protect your invention from being copied.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents,1.0,PASS
 C1015 - Apply for a patent to protect your invention from being copied.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/patents/how-to-apply-for-a-standard-patent,1.0,PASS
@@ -2643,9 +2913,14 @@ D1038 - Notify online marketplaces of infringement on their platform.json,Conten
 D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Question Found,Exercise caution before making...,0.0,WARN
+D1038 - Notify online marketplaces of infringement on their platform.json,Quality,QM Hallucination,HTML missing '?': Exercise caution before making accusations of infringement?,0.0,FAIL
+D1038 - Notify online marketplaces of infringement on their platform.json,Quality,Hyperlink Preservation,Link 'Australian' lost in answer,0.0,FAIL
+D1038 - Notify online marketplaces of infringement on their platform.json,Quality,Hyperlink Preservation,Link 'getting professional assistance with your IP' lost in answer,0.0,FAIL
+D1038 - Notify online marketplaces of infringement on their platform.json,Quality,Hyperlink Preservation,Link '30 minute consultations with an attorney' lost in answer,0.0,FAIL
+D1038 - Notify online marketplaces of infringement on their platform.json,Quality,Hyperlink Preservation,Link 'Arts Law Centre of Australia' lost in answer,0.0,FAIL
+D1038 - Notify online marketplaces of infringement on their platform.json,Quality,Hyperlink Preservation,Link 'Australian Copyright Council' lost in answer,0.0,FAIL
 D1038 - Notify online marketplaces of infringement on their platform.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Links,Related Link Exists,https://www.auda.org.au/au-domain-names/domain-name-help/using-whois,1.0,PASS
 D1038 - Notify online marketplaces of infringement on their platform.json,Links,Related Link Exists,https://lookup.icann.org/en,1.0,PASS
@@ -2668,21 +2943,34 @@ C1009 - Plan how IP disputes will be handled via contracts.json,Schema,Key: desc
 C1009 - Plan how IP disputes will be handled via contracts.json,Data Integrity,ID Match,C1009 == C1009,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Semantic,Headline Match,Score: 0.14,0.13559322033898305,WARN
 C1009 - Plan how IP disputes will be handled via contracts.json,Semantic,Description Match,Score: 0.00,0.0,WARN
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' found but URL lost,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO Clause Generator' lost in answer,0.0,FAIL
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO administrative fees' lost in answer,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO AMC)' lost in answer,0.0,FAIL
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO Arbitration and Mediation Center' lost in answer,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO Arbitration and Mediation Center' lost in answer,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Question Found,Not found,0.0,WARN
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO' lost in answer,0.0,FAIL
+C1009 - Plan how IP disputes will be handled via contracts.json,Quality,Hyperlink Preservation,Link 'WIPO Arbitration and Mediation Center' lost in answer,0.0,FAIL
 C1009 - Plan how IP disputes will be handled via contracts.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://amc.wipo.int/clause-generator/,1.0,PASS
 C1009 - Plan how IP disputes will be handled via contracts.json,Links,Related Link Exists,https://www.wipo.int/amc/en/,1.0,PASS
@@ -2710,6 +2998,12 @@ C1020 - Check your design against existing designs.json,Content,FAQ Answer Statu
 C1020 - Check your design against existing designs.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 C1020 - Check your design against existing designs.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1020 - Check your design against existing designs.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+C1020 - Check your design against existing designs.json,Quality,Hyperlink Preservation,Link 'Australian Design Search' lost in answer,0.0,FAIL
+C1020 - Check your design against existing designs.json,Quality,Hyperlink Preservation,Link 'Australian Design Search' lost in answer,0.0,FAIL
+C1020 - Check your design against existing designs.json,Quality,Hyperlink Preservation,Link 'WIPO Global Design Database' lost in answer,0.0,FAIL
+C1020 - Check your design against existing designs.json,Quality,Hyperlink Preservation,Link 'Australian Design Search' lost in answer,0.0,FAIL
+C1020 - Check your design against existing designs.json,Quality,Hyperlink Preservation,Link 'Global Design Database' lost in answer,0.0,FAIL
+C1020 - Check your design against existing designs.json,Quality,Hyperlink Preservation,Link 'WIPO Global Design Database' lost in answer,0.0,FAIL
 C1020 - Check your design against existing designs.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1020 - Check your design against existing designs.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 C1020 - Check your design against existing designs.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2735,17 +3029,19 @@ C1020 - Check your design against existing designs.json,Links,Related Link Exist
 101-5 - Copyright infringement.json,Schema,Key: description,Present,1.0,PASS
 101-5 - Copyright infringement.json,Semantic,Headline Match,Score: 1.00,1.0,PASS
 101-5 - Copyright infringement.json,Semantic,Description Match,Score: 1.00,1.0,PASS
-101-5 - Copyright infringement.json,Content,FAQ Question Found,What is copyrightinfringement?...,0.0,WARN
+101-5 - Copyright infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-5 - Copyright infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-5 - Copyright infringement.json,Content,FAQ Question Found,What is protected by copyright...,1.0,PASS
+101-5 - Copyright infringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-5 - Copyright infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-5 - Copyright infringement.json,Content,FAQ Question Found,What rights do copyright owner...,1.0,PASS
 101-5 - Copyright infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-5 - Copyright infringement.json,Content,FAQ Question Found,When does copyright infringeme...,1.0,PASS
 101-5 - Copyright infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-5 - Copyright infringement.json,Content,FAQ Question Found,Common misconceptions about co...,0.0,WARN
+101-5 - Copyright infringement.json,Quality,QM Hallucination,HTML missing '?': Common misconceptions about copyright infringement?,0.0,FAIL
 101-5 - Copyright infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-5 - Copyright infringement.json,Content,FAQ Question Found,When is using copyright materi...,1.0,PASS
+101-5 - Copyright infringement.json,Quality,Whitespace,Excessive newlines in FAQ Answer,0.5,WARN
 101-5 - Copyright infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Structure,JSON Syntax,Valid,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Schema,Key: @context,Present,1.0,PASS
@@ -2770,7 +3066,7 @@ D1021 - Remove a trade mark from the register.json,Content,FAQ Answer Status,An
 D1021 - Remove a trade mark from the register.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Quality,Answer Length,Too short (9 chars),0.5,WARN
-D1021 - Remove a trade mark from the register.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1021 - Remove a trade mark from the register.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1021 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark,1.0,PASS
 D1021 - Remove a trade mark from the register.json,Links,Related Link Exists,https://manuals.ipaustralia.gov.au/trademark/1.-what-is-revocation-of-registration-,1.0,PASS
@@ -2833,7 +3129,7 @@ B1019 - Challenge the registration of a new trade mark to defend your right.json
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Content,FAQ Question Found,Who can use this?...,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
-"C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Content,FAQ Question Found,Whos involved?...,0.0,WARN
+"C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Content,FAQ Question Found,Not found,0.0,WARN
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Content,FAQ Answer Status,Answer populated,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip,1.0,PASS
 "C1005 - CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS.json",Links,Related Link Exists,https://www.wipo.int/en/web/business/ip-audit,1.0,PASS
@@ -2853,6 +3149,8 @@ B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answ
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+B1007 - Respond to an opposition filed against your patent.json,Quality,Hyperlink Preservation,Link 'Schedule 8 of Patents Regulation 1991' lost in answer,0.0,FAIL
+B1007 - Respond to an opposition filed against your patent.json,Quality,Hyperlink Preservation,Link 'Schedule 8 of Patents Regulation 1991' lost in answer,0.0,FAIL
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -2860,7 +3158,7 @@ B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Ques
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1007 - Respond to an opposition filed against your patent.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html,1.0,PASS
 B1007 - Respond to an opposition filed against your patent.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent,1.0,PASS
@@ -2878,20 +3176,25 @@ C1013 - Monitor the trade mark register and market for competitor activity.json,
 C1013 - Monitor the trade mark register and market for competitor activity.json,Semantic,Headline Match,Score: 0.11,0.10666666666666667,WARN
 C1013 - Monitor the trade mark register and market for competitor activity.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,What are the benefits?...,1.0,PASS
+C1013 - Monitor the trade mark register and market for competitor activity.json,Quality,Hyperlink Preservation,Link 'informal contact' lost in answer,0.0,FAIL
+C1013 - Monitor the trade mark register and market for competitor activity.json,Quality,Hyperlink Preservation,Link 'trade mark opposition' lost in answer,0.0,FAIL
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,What are the risks?...,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
+C1013 - Monitor the trade mark register and market for competitor activity.json,Quality,Hyperlink Preservation,Link 're-brand' lost in answer,0.0,FAIL
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+C1013 - Monitor the trade mark register and market for competitor activity.json,Quality,Hyperlink Preservation,Link 'an opposition' lost in answer,0.0,FAIL
+C1013 - Monitor the trade mark register and market for competitor activity.json,Quality,Hyperlink Preservation,"Link 'takedown notice,' lost in answer",0.0,FAIL
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Question Found,Not found,0.0,WARN
 C1013 - Monitor the trade mark register and market for competitor activity.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/search/quick,1.0,PASS
 C1013 - Monitor the trade mark register and market for competitor activity.json,Links,Related Link Exists,https://search.ipaustralia.gov.au/trademarks/help,1.0,PASS
@@ -2916,15 +3219,16 @@ C1013 - Monitor the trade mark register and market for competitor activity.json,
 101-4 - Plant breeder's rights (PBR) infringement.json,Semantic,Description Match,Score: 0.00,0.0,WARN
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,What is pbr infringement?...,1.0,PASS
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,What are plant breeders rights...,0.0,WARN
+101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,How does pbr infringement happ...,1.0,PASS
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,What is not pbrinfringement?...,0.0,WARN
+101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,Not found,0.0,WARN
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,Importance of labelling?...,0.0,WARN
+101-4 - Plant breeder's rights (PBR) infringement.json,Quality,QM Hallucination,HTML missing '?': Importance of labelling?,0.0,FAIL
+101-4 - Plant breeder's rights (PBR) infringement.json,Quality,Hyperlink Preservation,Link 'How to label my protected plant variety' lost in answer,0.0,FAIL
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Question Found,Example?...,0.0,WARN
+101-4 - Plant breeder's rights (PBR) infringement.json,Quality,QM Hallucination,HTML missing '?': Example?,0.0,FAIL
 101-4 - Plant breeder's rights (PBR) infringement.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 101-4 - Plant breeder's rights (PBR) infringement.json,Quality,Question Length,Too short (8 chars),0.5,WARN
 101-4 - Plant breeder's rights (PBR) infringement.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available,1.0,PASS
@@ -2947,12 +3251,14 @@ D1015 - Remove a trade mark from the register.json,Content,FAQ Answer Status,An
 D1015 - Remove a trade mark from the register.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
+D1015 - Remove a trade mark from the register.json,Quality,Hyperlink Preservation,Link 'Manage my IP' lost in answer,0.0,FAIL
+D1015 - Remove a trade mark from the register.json,Quality,Hyperlink Preservation,Link 'Manage my IP' lost in answer,0.0,FAIL
 D1015 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-D1015 - Remove a trade mark from the register.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+D1015 - Remove a trade mark from the register.json,Content,FAQ Question Found,Not found,0.0,WARN
 D1015 - Remove a trade mark from the register.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use,1.0,PASS
 D1015 - Remove a trade mark from the register.json,Links,Related Link Exists,https://www.ipaustralia.gov.au/manage-my-ip,1.0,PASS
@@ -2973,10 +3279,14 @@ B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Ans
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Question Found,What are the possible outcomes...,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Question Found,What might the costs be?...,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Quality,Hyperlink Preservation,Link 'patent attorney' lost in answer,0.0,FAIL
+B1004 - Obtain legal advice on an accusation of infringment.json,Quality,Hyperlink Preservation,Link 'trade marks attorney' lost in answer,0.0,FAIL
+B1004 - Obtain legal advice on an accusation of infringment.json,Quality,Hyperlink Preservation,Link 'here' lost in answer,0.0,FAIL
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Question Found,How much time might be involve...,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Question Found,How much is this used?...,1.0,PASS
+B1004 - Obtain legal advice on an accusation of infringment.json,Quality,Hyperlink Preservation,Link 'here' lost in answer,0.0,FAIL
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1004 - Obtain legal advice on an accusation of infringment.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
@@ -3021,7 +3331,7 @@ B1003 - Pause use of contested IP until resolution.json,Content,FAQ Question Fou
 B1003 - Pause use of contested IP until resolution.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1003 - Pause use of contested IP until resolution.json,Content,FAQ Question Found,Who can use this?...,1.0,PASS
 B1003 - Pause use of contested IP until resolution.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
-B1003 - Pause use of contested IP until resolution.json,Content,FAQ Question Found,Whos involved?...,0.0,WARN
+B1003 - Pause use of contested IP until resolution.json,Content,FAQ Question Found,Not found,0.0,WARN
 B1003 - Pause use of contested IP until resolution.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 B1003 - Pause use of contested IP until resolution.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand,1.0,PASS
 B1003 - Pause use of contested IP until resolution.json,Links,Related Link Exists,https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts,1.0,PASS
@@ -3035,7 +3345,20 @@ D1020 - Other IP Types.json,Schema,Key: description,Present,1.0,PASS
 D1020 - Other IP Types.json,Data Integrity,ID Match,D1020 == D1020,1.0,PASS
 D1020 - Other IP Types.json,Semantic,Headline Match,Score: 0.35,0.34782608695652173,WARN
 D1020 - Other IP Types.json,Semantic,Description Match,Score: 0.00,0.0,WARN
-D1020 - Other IP Types.json,Content,FAQ Question Found,This right is currently not co...,0.0,WARN
+D1020 - Other IP Types.json,Quality,QM Hallucination,HTML missing '?': This right is currently not covered by the navigation tool?,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'IP First Response feedback form' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'IP First Response feedback form' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'ipfirstresponse@ipaustralia.gov.au' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'Geographical Indications And Trade Marks | IP Australia' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,"Link 'Department of Agriculture, Fisheries and Forestry' lost in answer",0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'IP Australia' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'Food Standards Australia New Zealand' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'Indigenous Knowledge | IP Australia' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'Yarnline' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'Copyright | Attorney-General's Department' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,"Link 'Trade secrets, know-how, and confidential information | Business Queensland' lost in answer",0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'WIPO - World Intellectual Property Organization' lost in answer,0.0,FAIL
+D1020 - Other IP Types.json,Quality,Hyperlink Preservation,Link 'email' lost in answer,0.0,FAIL
 D1020 - Other IP Types.json,Content,FAQ Answer Status,Answer populated,1.0,PASS
 D1020 - Other IP Types.json,Links,Related Link Exists,https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy,1.0,PASS
 D1020 - Other IP Types.json,Links,Related Link Exists,mailto:ipfirstresponse@ipaustralia.gov.au,1.0,PASS
