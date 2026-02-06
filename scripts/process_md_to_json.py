@@ -87,8 +87,14 @@ PUBLISHER_BLOCK = {
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "website content owner",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
-        "@type": "GovernmentOrganization", 
+        "@type": "GovernmentOrganization",
         "name": "Australian Government"
     },
     "sameAs": "https://www.wikidata.org/wiki/Q5973154"
@@ -734,6 +740,20 @@ def process_file_pair(md_filepath, html_filepath, filename, metadata_row):
         "url": page_url,
         "identifier": {"@type": "PropertyValue", "propertyID": "UDID", "value": udid},
         "inLanguage": "en-AU",
+        # --- PROVENANCE DATA ---
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "copyrightYear": datetime.now().strftime("%Y"), # Or hardcode "2025"
+        "copyrightHolder": {
+            "@id": "https://www.ipaustralia.gov.au"
+        },
+        "creditText": "Source: IP Australia - IP First Response",
+        # --- METADATA PROVENANCE ---
+        "sdPublisher": {
+            "@type": "GovernmentOrganization",
+            "name": "IP Australia"
+        },
+        "sdDatePublished": pub_date_val, # Reusing the pub date, or use datetime.now().strftime("%Y-%m-%d") for generation date
+        "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
         "datePublished": pub_date_val,
         "dateModified": last_updated_val,
         "audience": AUDIENCE_BLOCK,
