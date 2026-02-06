@@ -132,44 +132,12 @@ IP_TOPIC_MAP = {
 
 # --- 2. HTML CLEANING & EXTRACTION FUNCTIONS ---
 
-def clean_html_fragment(soup_element):
+def normalize_text_chars(text):
     """
-    Converts an HTML soup element into plain text for the JSON fields.
-    Preserves [Link Name](URL) format temporarily so extraction functions
-    can find the URL, but strips formatting (bold, italic) to plain text.
+    Normalizes smart quotes, dashes, and non-breaking spaces before processing.
     """
-    if not soup_element:
+    if not text:
         return ""
-    
-    # Create a fresh soup to manipulate
-    fragment = BeautifulSoup(str(soup_element), 'html.parser')
-
-    # Remove non-content tags
-    for tag in fragment(['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe']):
-        tag.decompose()
-
-    # Convert links to Markdown format for extraction later
-    for a in fragment.find_all('a', href=True):
-        text = a.get_text(strip=True)
-        url = a['href']
-        if text and url:
-            a.replace_with(f"[{text}]({url})")
-
-    # Flatten bold/strong/em/i to PLAIN TEXT (No Markdown artifacts)
-    for b in fragment.find_all(['strong', 'b', 'em', 'i']):
-        text = b.get_text(strip=True)
-        if text:
-            b.replace_with(text)
-
-    # Convert list items to bulleted text
-    for li in fragment.find_all('li'):
-        text = li.get_text(strip=True)
-        if text:
-            li.replace_with(f"\n* {text}")
-
-    # Get text and clean up whitespace
-    text = fragment.get_text(separator="\n\n")
-
     replacements = {
         "\u2018": "'", "\u2019": "'",
         "\u201c": '"', "\u201d": '"',
@@ -178,7 +146,65 @@ def clean_html_fragment(soup_element):
     }
     for k, v in replacements.items():
         text = text.replace(k, v)
+    return text
+
+def clean_html_fragment(soup_element):
+    """
+    Converts an HTML soup element into plain text for the JSON fields.
+    Fixed: Prevents concatenated words by ensuring spacing during tag replacement.
+    """
+    if not soup_element:
+        return ""
     
+    # 1. Pre-normalize text (smart quotes, etc) before parsing to avoid regex issues later
+    raw_str = normalize_text_chars(str(soup_element))
+    fragment = BeautifulSoup(raw_str, 'html.parser')
+
+    # Remove non-content tags
+    for tag in fragment(['script', 'style', 'button', 'svg', 'figure', 'img', 'iframe']):
+        tag.decompose()
+
+    # 2. Convert links with smart spacing
+    # Issue #1 Fix: "see[Link]" -> "see [Link]"
+    for a in fragment.find_all('a', href=True):
+        text = a.get_text(strip=True)
+        url = a['href']
+        if text and url:
+            # Check previous sibling for lack of whitespace
+            prev = a.previous_sibling
+            prefix = ""
+            if prev and isinstance(prev, str) and prev.strip() and not prev.endswith(' '):
+                prefix = " "
+                
+            a.replace_with(f"{prefix}[{text}]({url})")
+
+    # 3. Flatten bold/strong/em/i with smart spacing
+    for b in fragment.find_all(['strong', 'b', 'em', 'i']):
+        text = b.get_text(strip=True)
+        if text:
+            # Check previous sibling for lack of whitespace
+            prev = b.previous_sibling
+            prefix = ""
+            if prev and isinstance(prev, str) and prev.strip() and not prev.endswith(' '):
+                prefix = " "
+            b.replace_with(f"{prefix}{text}")
+
+    # Convert list items to bulleted text
+    for li in fragment.find_all('li'):
+        text = li.get_text(strip=True)
+        if text:
+            li.replace_with(f"\n* {text}")
+
+    # Get text and clean up whitespace
+    # Using separator=" " helps prevent run-ons between block elements if not handled above
+    text = fragment.get_text(separator="\n\n")
+
+    # 4. Post-processing cleanup for punctuation spacing
+    # Fix: "and,for" -> "and, for"
+    text = re.sub(r',([a-zA-Z])', r', \1', text) 
+    # Fix: "word.Next" -> "word. Next" (conservative)
+    text = re.sub(r'\.([A-Z])', r'. \1', text)
+
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip()
 
@@ -209,8 +235,17 @@ def parse_html_to_blocks(html_content):
                     if clean_text.strip():
                         blocks[current_header] = clean_text.strip()
                 
-                current_header = child.get_text(strip=True).lower()
-                current_header = re.sub(r'[^\w\s\?\']', '', current_header).strip()
+                # Issue #2 Fix: "Whos involved?" -> "Who's involved?"
+                # 1. Get raw text
+                raw_header = child.get_text(strip=True)
+                # 2. Normalize smart quotes FIRST (e.g. ’ -> ')
+                norm_header = normalize_text_chars(raw_header)
+                # 3. Lowercase
+                clean_header_key = norm_header.lower()
+                # 4. Regex allows word chars, whitespace, question mark, AND apostrophe
+                clean_header_key = re.sub(r'[^\w\s\?\'\-]', '', clean_header_key).strip()
+                
+                current_header = clean_header_key
                 current_elements = []
             
             elif child.name and child.name not in ['script', 'style', 'button', 'svg', 'form']:
@@ -332,14 +367,10 @@ def clean_markdown_artifacts(text):
 def clean_text_retain_formatting(text, strip_images=False):
     if not text: return ""
     
-    replacements = {
-        "\u2018": "'", "\u2019": "'",
-        "\u201c": '"', "\u201d": '"',
-        "\u2013": "-", "\u2014": "-",
-        "\u2026": "...", "\u00a0": " ",
-    }
-    for src, target in replacements.items():
-        text = text.replace(src, target)
+    # Use global normalize function
+    text = normalize_text_chars(text)
+    
+    text = text.replace("...", "...") # standardize ellipsis if needed
 
     # Aggressively remove Markdown images [!alt](url) or ![]()
     if strip_images:
