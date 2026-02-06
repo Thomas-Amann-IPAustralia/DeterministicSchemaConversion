@@ -12,6 +12,18 @@
     "value": "C1002"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-28",
   "dateModified": "2026-01-22",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -102,7 +129,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Compile IP Inventory",
+          "name": "Create IP Inventory",
           "text": "A clear inventory of your registered IP rights and key products."
         },
         {
@@ -112,12 +139,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Update Partner Contact Information",
+          "name": "Update Contact Details",
           "text": "Up-to-date contact details for all supply chain partners."
         },
         {
           "@type": "HowToStep",
-          "name": "Draft supply agreements",
+          "name": "Draft Supply Agreements",
           "text": "Written supply agreements specifying IP use permissions and audit rights."
         },
         {
@@ -201,7 +228,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* The IP right owner or authorised user.\n\n* Suppliers, manufacturers and logistics partners.\n\n* Private monitoring or brand‑protection service providers (optional).\n\n* Australian Border Force officers (when the Notice of Objection scheme is used).\n\n* IP lawyers or attorneys for legal and strategic advice (optional)."

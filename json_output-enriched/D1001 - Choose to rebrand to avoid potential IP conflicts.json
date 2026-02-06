@@ -12,6 +12,18 @@
     "value": "D1001"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-09-05",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -97,12 +124,12 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Review Enforcement Resources",
+          "name": "Review IP Enforcement Options",
           "text": "Review IP First Response resources to understand all your enforcement options. This helps you make an informed choice to weigh other options."
         },
         {
           "@type": "HowToStep",
-          "name": "Estimate Costs and Timeline",
+          "name": "Evaluate Costs and Timelines",
           "text": "Calculate the potential costs and timeline for different options actions."
         },
         {
@@ -131,7 +158,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Without professional advice, there is a risk that you will miss easy and effective enforcement options.\n\n* You may have a legal right to use the IP and will have given it up when you didn't have to; advice from an IP professional can help you determine this.\n\n* Rebranding may not resolve the fundamental IP issue (e.g. you may believe that the new brand is different enough, but someone else could still consider itdeceptively similar,and thus grounds for challenging).\n\n* You may lose some reputation/goodwill you may have built under your previous brand.\n\n* Rebranding will not resolve any disputes about the design or the functional elements of your product(s).\n\n* While rebranding does not necessarily require engagement with the other party, without engagement or agreement, you can't be assured the other party will not pursue enforcement actions (which may have occurred while using the previous brand)."
+            "text": "* Without professional advice, there is a risk that you will miss easy and effective enforcement options.\n\n* You may have a legal right to use the IP and will have given it up when you didn't have to; advice from an IP professional can help you determine this.\n\n* Rebranding may not resolve the fundamental IP issue (e.g. you may believe that the new brand is different enough, but someone else could still consider itdeceptively similar, and thus grounds for challenging).\n\n* You may lose some reputation/goodwill you may have built under your previous brand.\n\n* Rebranding will not resolve any disputes about the design or the functional elements of your product(s).\n\n* While rebranding does not necessarily require engagement with the other party, without engagement or agreement, you can't be assured the other party will not pursue enforcement actions (which may have occurred while using the previous brand)."
           }
         },
         {
@@ -176,7 +203,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Yourself.\n\n* IP Professional - professional advice can help provide you with expertise to ensure you have considered the issue comprehensively, and additionally that the new designs adequately avoid any current and future IP conflicts.  These professionals can also help you protect the new brand with registered IP if desired.\n\n* Design professionals (optional)."

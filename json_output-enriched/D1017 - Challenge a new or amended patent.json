@@ -12,6 +12,18 @@
     "value": "D1017"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-10-03",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -112,12 +139,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Identify Grounds for Opposition",
-          "text": "Grounds for opposition, including (but not limited to), a lack of support or enablement(sections 40(2)(a), 40(3)of thepatents act),novelty or inventive step(section 7of thepatents act)."
+          "name": "Identify Grounds for Patent Opposition",
+          "text": "Grounds for opposition, including (but not limited to), a lack of support or enablement(sections 40(2)(a), 40(3)of thepatents act), novelty or inventive step(section 7of thepatents act)."
         },
         {
           "@type": "HowToStep",
-          "name": "Prepare and Evaluate Evidence",
+          "name": "Prepare and Review Evidence",
           "text": "In cases where you are using evidence tosupport your opposition, that evidence must be collected and prepared. Refer toEvidence In Oppositions And PBR Objections | IP Australiafor more information about evidence.\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on"
         },
         {
@@ -137,7 +164,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "End the sentence",
+          "name": "End the process",
           "text": "."
         }
       ]
@@ -206,7 +233,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The opposing party, the patentee and a hearing officer from IP Australia are all involved. Both parties to the dispute will commonly engage legal practitioners for advice and representation."

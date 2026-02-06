@@ -12,6 +12,18 @@
     "value": "D1036"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-12-02",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -160,37 +187,37 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Consult IP Professional Directory",
+          "name": "Consult IP Professional Resources",
           "text": "Government resources or reputable industry associations in the relevant country may provide a list of IP professionals you can contact.\nWhile it may be useful to seek the advice of an"
         },
         {
           "@type": "HowToStep",
-          "name": "Consult an IP attorney",
+          "name": "Consult an IP Lawyer",
           "text": "IP legal professional"
         },
         {
           "@type": "HowToStep",
-          "name": "Consult a Legal Advisor",
+          "name": "Consult a Legal Expert",
           "text": "(who can start legal actions such as court in the jurisdiction), you might also wish to consult an"
         },
         {
           "@type": "HowToStep",
-          "name": "Identify IP professional",
+          "name": "Identify IP Professional",
           "text": "IP strategic or commercialisation professional"
         },
         {
           "@type": "HowToStep",
-          "name": "Consult an IP Professional",
+          "name": "Consult with an IP Professional",
           "text": "about your general IP strategy including ways to protect and commercialise your IP overseas.\nPart of enforcing your rights in other countries, even in response to current suspected infringement, may involve registering your IP in another country. This consideration can be discussed with an IP professional familiar with the IP system in that country.\nSee what services the local IP office provides"
         },
         {
           "@type": "HowToStep",
-          "name": "Locate IP Office Services",
+          "name": "Consult International IP Offices",
           "text": "Some international IP offices provide information on enforcement in their jurisdictions and may have services to help you with dispute resolution or enforcement. You can find out the relevant IP office and what services they provide using the"
         },
         {
           "@type": "HowToStep",
-          "name": "Access Intellectual Property Directory",
+          "name": "Access IP Office Directory",
           "text": "Directory of Intellectual Property Offices"
         },
         {

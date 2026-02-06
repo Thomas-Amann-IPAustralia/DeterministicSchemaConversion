@@ -12,6 +12,18 @@
     "value": "D1029"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-03-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-03-01",
   "dateModified": "2026-01-27",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -154,12 +181,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Check for Existing Arbitration Clause",
+          "name": "Check for existing arbitration clause",
           "text": "Is there an existing contractual relationship between the parties which requires them (such as through an arbitration clause) to take disputes to a specific arbitral institution?"
         },
         {
           "@type": "HowToStep",
-          "name": "Consider Arbitration Agreement",
+          "name": "Assess Arbitration Agreement Likelihood",
           "text": "If not, is the other party likely to agree to take the dispute to an arbitrator or an arbitral institution?"
         },
         {
@@ -179,22 +206,22 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Select Appropriate Arbitrators",
+          "name": "Determine Arbitrator Requirements",
           "text": "Is more than one arbitrator required? For example, do the parties come from different cultural and linguistic backgrounds? Or would it be beneficial to have both a technical expert and a legal practitioner as co-arbitrators?\nThere is a wide range of arbitrators and arbitral institutions, ranging from public-funded bodies to private practitioners. Here's a list of directories and arbitral institutions that may assist you in finding an arbitrator/s you would like to engage:"
         },
         {
           "@type": "HowToStep",
-          "name": "Access Dispute Resolver Directory",
+          "name": "Access the Dispute Resolver Directory",
           "text": "The Resolution Institute's Dispute Resolver Directory list."
         },
         {
           "@type": "HowToStep",
-          "name": "Access Dispute Resolution Resources",
+          "name": "Access Dispute Resolution Services",
           "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes including arbitration."
         },
         {
           "@type": "HowToStep",
-          "name": "Explore WIPO ADR Options",
+          "name": "Explore WIPO ADR Services",
           "text": "The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Centeroffers mediation, arbitration and expert determination to enable private parties to settle their international commercial disputes. For more information, seeWIPO ADR options."
         },
         {
@@ -204,12 +231,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Seek Legal Advice for ADR Suitability",
+          "name": "Consult a Qualified IP Attorney",
           "text": "theAustralian Disputes Centre.\nYou can also seek help from legal professionals to seek advice on whether arbitration or other forms of ADR would be suitable for your situation and represent you throughout the dispute resolution process. You can find a qualified IP attorney to assist you at:"
         },
         {
           "@type": "HowToStep",
-          "name": "Locate an IP Attorney",
+          "name": "Locate IP Attorney",
           "text": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
         },
         {

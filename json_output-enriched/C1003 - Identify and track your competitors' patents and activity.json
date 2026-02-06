@@ -12,6 +12,18 @@
     "value": "C1003"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-28",
   "dateModified": "2026-01-23",
   "audience": {
@@ -48,6 +60,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -89,12 +116,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Identify and Describe Key Features",
+          "name": "Describe Product Features",
           "text": "Gather product or brand details: Describe your offering clearly to guide the search, particularly essential features that may differentiate your offering from the competitors. For example, you may benefit if you are able to identify the most relevant classification marks, or descriptions of your differentiating or inventive features, as it will streamline the searching process."
         },
         {
           "@type": "HowToStep",
-          "name": "Define Search Scope",
+          "name": "Define Search Parameters",
           "text": "Decide on search scope: Domestic only, or international? Patent or trade mark focused?"
         },
         {
@@ -104,7 +131,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Acknowledge Search Limitations",
+          "name": "Acknowledge Search Constraints",
           "text": "Understand search limitations: Results may not be legally definitive; freedom to operate is not a guarantee that competitors and patents don't exist in that market, it is possible for patents to be missed in the search process."
         },
         {
@@ -183,7 +210,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You(as the business or IP rights holder).\n\n* IP professionalssuch as patent attorneys or trademark attorneys.\n\n* Search service providers(for example, commercial IP databases, analytics tools).\n\n* Registry bodieslike IP Australia or international equivalents (in some cases due to the provision of IP databases and search tools).\n\n* Legal advisors(optional) to provide opinions or manage enforcement follow-up."

@@ -12,6 +12,18 @@
     "value": "B1021"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-28",
   "dateModified": "2026-01-27",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -107,7 +134,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Enter registered design number",
+          "name": "Enter design number",
           "text": "Registered design number."
         },
         {
@@ -191,7 +218,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Design right owner, who will be notified.\n\n* IP Australia's design examiner makes the examination decision.\n\n* The person or business who requests the examination.\n\n* Optional: IP lawyer or patent attorney."

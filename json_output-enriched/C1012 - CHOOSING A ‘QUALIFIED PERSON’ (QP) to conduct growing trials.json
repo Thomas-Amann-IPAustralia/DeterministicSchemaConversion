@@ -12,6 +12,18 @@
     "value": "C1012"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-28",
   "dateModified": "2025-09-12",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -101,27 +128,27 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Consult the Qualified Persons Directory",
+          "name": "Consult the QPs Directory",
           "text": "Check theQualified Persons Directoryfor consultant QPs."
         },
         {
           "@type": "HowToStep",
-          "name": "Draft the Agreement",
+          "name": "Draft the agreement",
           "text": "Written agreement covering the QP's scope, fees and timelines."
         },
         {
           "@type": "HowToStep",
-          "name": "Develop PBR-Compliant Trial Plan",
+          "name": "Establish trial site and plan",
           "text": "Trial site, reference varieties and data-collection plan that meets PBR guidelines."
         },
         {
           "@type": "HowToStep",
-          "name": "Submit QP Application Requirements",
+          "name": "Complete QP Application Requirements",
           "text": "(optional) To become a QP: up-to-date résumé, three referees, completed online training and accreditation fee. More information can be found here:How to become a Qualified Person."
         },
         {
           "@type": "HowToStep",
-          "name": "Retain All Trial Documentation",
+          "name": "Archive trial documentation",
           "text": "Keep copies of all trial data, photographs and correspondence."
         }
       ]
@@ -137,7 +164,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Engaging a QP is a requirement to registering a PBR.\n\n* Relevant expert oversight helps set up robust trials and increases chances of a PBR being accepted.\n\n* Accredited status lends credibility when negotiating with investors or partners.\n\n* Choosing the right QP can shorten overall application time by getting the trial right the first time.Please note:You must engage a QP even if you do not need to do an Australian growing trial.\n\n* Outsourcing this work allows plant breeders to focus on commercial plans rather than technical paperwork."
+            "text": "* Engaging a QP is a requirement to registering a PBR.\n\n* Relevant expert oversight helps set up robust trials and increases chances of a PBR being accepted.\n\n* Accredited status lends credibility when negotiating with investors or partners.\n\n* Choosing the right QP can shorten overall application time by getting the trial right the first time. Please note:You must engage a QP even if you do not need to do an Australian growing trial.\n\n* Outsourcing this work allows plant breeders to focus on commercial plans rather than technical paperwork."
           }
         },
         {
@@ -153,7 +180,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* For breeders:Engaging a QP is a requirement to registering a PBR.Finding a QP who specialised in your area can help your PBR application proceeds smoothly with certified trial data.\n\n* To become a QP:Accreditation is granted and the new QP is added to the public register.Accreditation application is refused, requiring further evidence or experience.Accreditation lapses if renewal paperwork or fees are not lodged on time."
+            "text": "* For breeders:Engaging a QP is a requirement to registering a PBR. Finding a QP who specialised in your area can help your PBR application proceeds smoothly with certified trial data.\n\n* To become a QP:Accreditation is granted and the new QP is added to the public register. Accreditation application is refused, requiring further evidence or experience. Accreditation lapses if renewal paperwork or fees are not lodged on time."
           }
         },
         {
@@ -190,7 +217,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* The plant breeder or applicant.\n\n* An accredited Qualified Person (QP).\n\n* IP Australia PBR examiners."

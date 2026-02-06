@@ -12,6 +12,18 @@
     "value": "B1012"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2026-01-30",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -126,7 +153,7 @@
       "@id": "#the-service",
       "@type": "Article",
       "name": "De-escalate and resolve disputes via conversation",
-      "description": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\nOften this contact comes in the form of a cease-and-desist or a letter of demand\n\n.\n\n They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: \n\nReceiving a letter of demand\n\n.\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\nFor more information on possible commercial solutions, see IP First Response's page: \n\nAgree to a commercial arrangement\n\n.",
+      "description": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\nOften this contact comes in the form of a cease-and-desist or a letter of demand\n\n .\n\n They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: \n\nReceiving a letter of demand\n\n.\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\nFor more information on possible commercial solutions, see IP First Response's page: \n\nAgree to a commercial arrangement\n\n.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation"
@@ -150,27 +177,27 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Provide cease-and-desist letter copy",
+          "name": "Provide cease-and-desist documentation",
           "text": "A copy of the cease-and-desist letter or the request, including deadlines and requested actions."
         },
         {
           "@type": "HowToStep",
-          "name": "Provide Evidence of Development Timeline and Prior Rights",
+          "name": "Provide Development Timeline Evidence",
           "text": "Evidence of your product, branding or content development timeline and any prior rights you may hold."
         },
         {
           "@type": "HowToStep",
-          "name": "Verify IP Ownership and Scope",
+          "name": "Verify IP Ownership and Claims",
           "text": "Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed."
         },
         {
           "@type": "HowToStep",
-          "name": "Provide contact information",
+          "name": "Provide contact details",
           "text": "Contact details for the rights holder or their representative to open dialogue."
         },
         {
           "@type": "HowToStep",
-          "name": "Consider Alternative Dispute Resolution",
+          "name": "Draft a confidentiality agreement",
           "text": "A confidentiality agreement template to protect commercial information during negotiations.\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute:"
         },
         {
@@ -249,7 +276,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Alleged infringer (you or your business).\n\n* The party alleging you have infringed their IP (often an IP right owner or authorised user).\n\n* (Optional) Legal representatives or IP professionals."

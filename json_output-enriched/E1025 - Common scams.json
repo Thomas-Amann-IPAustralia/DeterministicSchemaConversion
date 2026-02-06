@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams#webpage",
   "headline": "Common scams",
   "alternativeHeadline": "Protecting your business",
-  "description": "Discover and avoid common scams with our comprehensive guide. Stay informed and protect yourself from fraud with expert tips and real-life examples.",
+  "description": "Discover various common scams, learn how to identify them, and protect yourself with practical tips and insights to stay safe and secure online.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1025"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-12",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -170,7 +197,7 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",
+      "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information, create%20a%20sense%20of%20urgency",
       "name": "Scams related to managing IP Rights | IP Australia"
     },
     {

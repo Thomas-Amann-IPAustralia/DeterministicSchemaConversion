@@ -12,6 +12,18 @@
     "value": "D1022"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-03-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-03-01",
   "dateModified": "2026-01-22",
   "audience": {
@@ -131,6 +143,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -159,9 +186,7 @@
       },
       "provider": {
         "@type": "NGO",
-        "alternateName": "WIPO",
-        "sameAs": "https://www.wikidata.org/wiki/Q178332",
-        "name": "WIPO"
+        "name": "World Intellectual Property Office"
       }
     },
     {
@@ -189,7 +214,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "While this varies depending on the ADR process used, ADR generally offers the following benefits over dispute resolution through the court system:\n* Costs are lower than court proceedings - particularly in the case of complex international disputes.\n\n* Flexible and informal, as parties have control over shaping the process.\n\n* Offers broader and more creative resolution solutions.\n\n* Confidentiality, as decisions and records are not shared with the public.\n\n* Less confrontational, helping both parties keep things from getting heated and can help preserve business relationships.\n\n* If a dispute spans across multiple countries, a single ADR procedure can potentially resolve all the issues in one forum, saving time, reducing costs, and minimising the risk of inconsistent outcomes. Can have binding and enforceable outcomes in the form of a settlement contract or arbitral award.\n\n* Arbitral decisions are final and cannot be appealed, unlike court rulings, while mediated settlements typically align with both parties' interests, preventing the likelihood of further dispute.\n\n* Globally enforceable, whereas a court decision is typically confined to the jurisdiction of the country where the court is located.Using the WIPO Center's services has the additional benefits of:Procedural assistance so the process is easy to navigate and use.Simplifying international disputes that involve multiple jurisdictions and languages."
+            "text": "While this varies depending on the ADR process used, ADR generally offers the following benefits over dispute resolution through the court system:\n* Costs are lower than court proceedings - particularly in the case of complex international disputes.\n\n* Flexible and informal, as parties have control over shaping the process.\n\n* Offers broader and more creative resolution solutions.\n\n* Confidentiality, as decisions and records are not shared with the public.\n\n* Less confrontational, helping both parties keep things from getting heated and can help preserve business relationships.\n\n* If a dispute spans across multiple countries, a single ADR procedure can potentially resolve all the issues in one forum, saving time, reducing costs, and minimising the risk of inconsistent outcomes. Can have binding and enforceable outcomes in the form of a settlement contract or arbitral award.\n\n* Arbitral decisions are final and cannot be appealed, unlike court rulings, while mediated settlements typically align with both parties' interests, preventing the likelihood of further dispute.\n\n* Globally enforceable, whereas a court decision is typically confined to the jurisdiction of the country where the court is located. Using the WIPO Center's services has the additional benefits of:Procedural assistance so the process is easy to navigate and use. Simplifying international disputes that involve multiple jurisdictions and languages."
           }
         },
         {
@@ -234,7 +259,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Parties to the dispute\n\n* WIPO Center/case manager\n\n* Facilitator/s (mediator, arbitrator, and/or expert)\n\n* (Optional) Legal representation for one or more of the participants"

@@ -12,6 +12,18 @@
     "value": "B1001"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2025-10-02",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -150,12 +177,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Address Infringement Allegations",
+          "name": "Address Allegations of Infringement",
           "text": "the allegations of infringement that have been made against you"
         },
         {
           "@type": "HowToStep",
-          "name": "Evaluate Allegations Merit",
+          "name": "Evaluate infringement allegations",
           "text": "whether the allegations of infringement have merit"
         },
         {
@@ -194,7 +221,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and,for example,commence a legal action.\n\n* If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: seeReceiving a letter of demand.\n\n* If you are actually infringing the other party's IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
+            "text": "* If you do not take some action in response to the allegations of infringement in a timely way, the person alleging infringement may decide to escalate the issue and, for example, commence a legal action.\n\n* If you have received a letter of demand (or cease and desist letter), the other party may expect a response within a set period of time: seeReceiving a letter of demand.\n\n* If you are actually infringing the other party's IP rights and you continue to do so while you decide what to do, then your ongoing infringement (particularly after you were made aware) could result in the other party being able to claim additional compensation if they start legal action against you."
           }
         },
         {
@@ -239,7 +266,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* The person or business alleging infringement\n\n* You\n\n* (Optional) An IP lawyer or IP attorney who can help you with assessing the situation and advise you on your options."

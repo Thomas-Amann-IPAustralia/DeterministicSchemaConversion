@@ -12,6 +12,18 @@
     "value": "D1030"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2026-01-22",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -126,7 +153,7 @@
       "@id": "#the-service",
       "@type": "Service",
       "name": "Seek a court order to prevent further damage while preparing for court.",
-      "description": "If you need \n\nimmediate\n\n action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond.\nUrgent action can include:\n* interim injunction\n\n* search order (Anton Piller order).\nInterim injunction\n\n \n\nAn injunction\n\n,\n\nin the context of an Australian IP dispute, is a court order that can:\n* Stop someone from infringing your IP rights.\n\n* Compel them to take specific actions to prevent further infringement.\n\n* Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called aMareva injunction).\nAn \n\ninterim injunction\n\n is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.\n* Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n\n* Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n\n* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n\n* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\nSearch order\n\n \n\nA search order (sometimes called an \n\nAnton Piller order\n\n) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
+      "description": "If you need \n\nimmediate\n\n action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond.\nUrgent action can include:\n* interim injunction\n\n* search order (Anton Piller order).\nInterim injunction\n\n \n\nAn injunction\n\n ,\n\nin the context of an Australian IP dispute, is a court order that can:\n* Stop someone from infringing your IP rights.\n\n* Compel them to take specific actions to prevent further infringement.\n\n* Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called aMareva injunction).\nAn \n\ninterim injunction\n\n is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.\n* Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n\n* Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n\n* When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n\n* Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\nSearch order\n\n \n\nA search order (sometimes called an \n\nAnton Piller order\n\n) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction"
@@ -149,8 +176,8 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Provide Strong Infringement Evidence",
-          "text": "Evidence of infringement.While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter."
+          "name": "Provide Strong Evidence",
+          "text": "Evidence of infringement. While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter."
         },
         {
           "@type": "HowToStep",
@@ -175,7 +202,7 @@
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Rapid cessation of infringement.By halting any infringement immediately, you prevent further damage to your IP, such as erosion of market share or brand reputation.\n\n* Increased leverage in negotiations.The court's willingness to grant an urgent injunction sends a powerful signal to the defendant, which may affect future negotiations.\n\n* Preservation of evidence.An urgent injunction often comes with additional orders that can include the preservation of documents, files or infringing stock.\n\n* Enforceability.There are existing mechanisms in place to ensure people comply with court orders."
+            "text": "* Rapid cessation of infringement. By halting any infringement immediately, you prevent further damage to your IP, such as erosion of market share or brand reputation.\n\n* Increased leverage in negotiations. The court's willingness to grant an urgent injunction sends a powerful signal to the defendant, which may affect future negotiations.\n\n* Preservation of evidence. An urgent injunction often comes with additional orders that can include the preservation of documents, files or infringing stock.\n\n* Enforceability. There are existing mechanisms in place to ensure people comply with court orders."
           }
         },
         {
@@ -183,7 +210,7 @@
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Potential to pay damages.If it later turns out the injunction was unjustified, the applicant may need to compensate the defendant.\n\n* Evidence threshold.While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter.\n\n* Escalation.Seeking an injunction is a serious escalation of a conflict and may make it difficult or use other enforcement actions in future. Additionally, filing an interim injunction requires you to take further actions in court."
+            "text": "* Potential to pay damages. If it later turns out the injunction was unjustified, the applicant may need to compensate the defendant.\n\n* Evidence threshold. While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter.\n\n* Escalation. Seeking an injunction is a serious escalation of a conflict and may make it difficult or use other enforcement actions in future. Additionally, filing an interim injunction requires you to take further actions in court."
           }
         },
         {
@@ -228,7 +255,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* IP owner\n\n* Infringing (allegedly) parties\n\n* Court (typically a single judge)\n\n* Legal representatives (if engaged)"

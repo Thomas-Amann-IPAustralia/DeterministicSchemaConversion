@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right#webpage",
   "headline": "Can I protect my ideas in other countries?",
   "alternativeHeadline": "IP in other countries",
-  "description": "Learn how to safeguard your intellectual property internationally with strategies for protecting ideas across borders and navigating global patent laws.",
+  "description": "Learn how to safeguard your intellectual property internationally, ensuring your ideas are protected across borders with expert tips and legal insights.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1020"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-11-14",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"

@@ -12,6 +12,18 @@
     "value": "D1015"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-09-05",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -107,8 +134,8 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Submit Non-Use Application",
-          "text": "The \n\napplication for removal/cessation of protection for non-use\n\n must be filed in an approved form. Complete \n\nthis form\n\n when applying to have a registered trade mark removed from the register for non-use. This form is also used when applying for the cessation of protection of a protected international trade mark for non-use.\nYou can submit the completed form on the \n\nManage my IP\n\n page of the IP Australia website.\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on\n\ngetting professional assistance with your IP\n\n. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free\n\n30 minute consultations with an attorney\n\n."
+          "name": "Submit Removal/Cessation Application",
+          "text": "The \n\napplication for removal/cessation of protection for non-use\n\n must be filed in an approved form. Complete \n\nthis form\n\n when applying to have a registered trade mark removed from the register for non-use. This form is also used when applying for the cessation of protection of a protected international trade mark for non-use.\nYou can submit the completed form on the \n\nManage my IP\n\n page of the IP Australia website.\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on\n\ngetting professional assistance with your IP\n\n . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free\n\n30 minute consultations with an attorney\n\n ."
         }
       ]
     },
@@ -176,7 +203,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* The applicant filing the removal application.\n\n* IP professionals, when they are engaged by parties to help advise and navigate the process.\n\n* IP Australia.\n\n* Other parties with interests to challenge the removal application, typically the owner of the trade mark subject to the removal action and their representatives."

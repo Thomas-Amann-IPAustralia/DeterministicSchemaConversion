@@ -12,6 +12,18 @@
     "value": "101-6"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-04",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-04",
   "dateModified": "2025-08-18",
   "audience": {
@@ -48,6 +60,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -102,7 +129,7 @@
           "name": "Key differences between registered and unregistered trade marks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Registered Trade Marks\n\n \n\nUnregistered Trade Marks\n\n \n\nProtected under the \n\nTrade Marks Act 1995\n\n(Cth).\n\n \n\nProtected through an action for passing off and the Australian Consumer Law.\n\n \n\nProtection across Australia when registered.\n\n \n\nProtection where reputation has been established in Australia.\n\n \n\nExclusive rights to use the trade mark for the registered goods/services.\n\n \n\nPassing off protects a right of property in business or goodwill, whereas the Australian Consumer Law protects consumers against misleading and deceptive conduct.\n\n4\n\n \n\nInfringement does not require proof of reputation, misrepresentation or damage. See [trade mark infringement card]\n\n \n\nThe owner must prove reputation, misrepresentation and damage in court. \n\n \n\nLonger-term protection (renewable every 10 years).\n\n \n\nProtection exists as long as the trade mark is used, and the reputation continues.\n\nNavigating the protection of unregistered marks can be complex and often requires legal expertise. Given that unregistered trade marks are not filed with IP Australia, experts can help work out what is protected and how it might be misused. Court actions for passing off and ACL violations can be more complex, time-consuming, and costly. Additionally, these actions may also be pursued in conjunction with trade mark infringement cases. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.\n\n* ConAgra Inc v McCain Foods (Aust) Pty Ltd(1992) FCR 302, 340 (Lockhart J).\n\n* Reckitt and Coleman Products Ltd v Borden Inc(1990)\n\n* WLR 491.S 18 Australian Consumer Law.\n\n* Cadbury Schweppes Pty Ltd v Darrell Lea Chocolate Shops Pty Ltd(2007) 159 FCR 397, [98]."
+            "text": "Registered Trade Marks\n\n \n\nUnregistered Trade Marks\n\n \n\nProtected under the \n\nTrade Marks Act 1995\n\n(Cth).\n\n \n\nProtected through an action for passing off and the Australian Consumer Law.\n\n \n\nProtection across Australia when registered.\n\n \n\nProtection where reputation has been established in Australia.\n\n \n\nExclusive rights to use the trade mark for the registered goods/services.\n\n \n\nPassing off protects a right of property in business or goodwill, whereas the Australian Consumer Law protects consumers against misleading and deceptive conduct.\n\n4\n\n \n\nInfringement does not require proof of reputation, misrepresentation or damage. See [trade mark infringement card]\n\n \n\nThe owner must prove reputation, misrepresentation and damage in court. \n\n \n\nLonger-term protection (renewable every 10 years).\n\n \n\nProtection exists as long as the trade mark is used, and the reputation continues.\n\nNavigating the protection of unregistered marks can be complex and often requires legal expertise. Given that unregistered trade marks are not filed with IP Australia, experts can help work out what is protected and how it might be misused. Court actions for passing off and ACL violations can be more complex, time-consuming, and costly. Additionally, these actions may also be pursued in conjunction with trade mark infringement cases. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.\n\n* ConAgra Inc v McCain Foods (Aust) Pty Ltd(1992) FCR 302, 340 (Lockhart J).\n\n* Reckitt and Coleman Products Ltd v Borden Inc(1990)\n\n* WLR 491. S 18 Australian Consumer Law.\n\n* Cadbury Schweppes Pty Ltd v Darrell Lea Chocolate Shops Pty Ltd(2007) 159 FCR 397, [98]."
           }
         }
       ]

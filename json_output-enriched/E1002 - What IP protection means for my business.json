@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-does-ip-protection-mean-my-business#webpage",
   "headline": "What IP protection means for my business ",
   "alternativeHeadline": "Protecting your business",
-  "description": "IP protection means securing legal rights over the things your business creates...",
+  "description": "IP protection means securing legal rights over the things your business creates…",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-does-ip-protection-mean-my-business",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1002"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-11",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"

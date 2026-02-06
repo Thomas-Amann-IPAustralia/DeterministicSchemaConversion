@@ -12,6 +12,18 @@
     "value": "D1039"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-03-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-03-01",
   "dateModified": "2025-09-05",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -107,7 +134,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Set up an IP Australia account",
+          "name": "Set Up Account and Check Trade Mark",
           "text": "You will need to set up an account with IP Australia's Online Services. There is a \n\nstep-by-step guide\n\n to applying for an Australian trade mark on our website.\n\nYou don't need a lawyer to apply. However, if you would like support in making your application, you can contact an IP professional such as a registered trade mark attorney via \n\nFind an IP attorney or firm | Trans-Tasman IP Attorneys Board\n\n.\n\nYou will need an address for service in Australia. This just means a postal address where you can be reached.\nBefore applying, consider using TM Checker, a free online trade mark checking tool to check the registrability of your potential trade mark. TM Checker can be accessed here: \n\nTM Checker"
         }
       ]

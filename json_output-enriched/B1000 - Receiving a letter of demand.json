@@ -12,6 +12,18 @@
     "value": "B1000"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2026-01-29",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -145,7 +172,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Review Letter for Deadlines",
+          "name": "Review Letter Deadlines",
           "text": "Read the letter in full and note any deadlines."
         },
         {
@@ -160,7 +187,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Consult an IP Expert",
+          "name": "Consult an IP Legal Expert",
           "text": "Decide whether to seek advice from an IP lawyer or IP attorney."
         },
         {
@@ -250,7 +277,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* IP right owner or authorised user sending the letter\n\n* Recipient of the letter (you)\n\n* (Optional) legal professionals acting for either party\n\n* (Optional) mediators or other dispute resolution providers\n\n* Court officers - if the matter proceeds to legal action."

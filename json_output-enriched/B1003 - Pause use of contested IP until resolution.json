@@ -12,6 +12,18 @@
     "value": "B1003"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2025-10-02",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -150,17 +177,17 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Determine Changes",
+          "name": "Choose Changes",
           "text": "Decide what changes to make (remove, redesign or rebrand)."
         },
         {
           "@type": "HowToStep",
-          "name": "Contact IP Owner Without Admitting Fault",
+          "name": "Contact the IP Owner",
           "text": "Write to the alleged IP owner to explain what you've done, what you will do and when but note that admitting any fault or liability in your communications would likely assist IP owner's legal position against you."
         },
         {
           "@type": "HowToStep",
-          "name": "Document Change Records",
+          "name": "Document Changes",
           "text": "Keep clear records showing when you made changes (screenshots, shipping logs, letters)."
         }
       ]
@@ -229,7 +256,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You or your team.\n\n* The party accusing you of using their IP, usually an IP owner or their representative.\n\n* (Optional) Your business partners such as suppliers, staff or online platforms if they need to help remove or change things.\n\n* (Optional) Legal professionals such as an IP lawyer, patent attorney or trade mark attorney."

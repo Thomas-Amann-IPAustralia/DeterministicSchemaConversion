@@ -12,6 +12,18 @@
     "value": "D1012"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-12-02",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-12-02",
   "dateModified": "2025-02-28",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -137,7 +164,7 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Self-Help"
+        "name": "Legal service provider"
       }
     },
     {
@@ -164,7 +191,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Search for a registered attorney",
+          "name": "Search for an attorney",
           "text": "To find a registered Australian trade mark or patent attorney, you can search the"
         },
         {
@@ -179,27 +206,27 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Identify the Institute",
+          "name": "Visit the Law Institute Victoria",
           "text": "Law Institute Victoria"
         },
         {
           "@type": "HowToStep",
-          "name": "Identify the Organization",
+          "name": "Consult the Queensland Law Society",
           "text": "Queensland Law Society"
         },
         {
           "@type": "HowToStep",
-          "name": "Join the Law Society",
+          "name": "Identify the Organization",
           "text": "The Law Society of Western Australia"
         },
         {
           "@type": "HowToStep",
-          "name": "Identify the Law Society",
+          "name": "Consult the Law Society",
           "text": "The Law Society of South Australia"
         },
         {
           "@type": "HowToStep",
-          "name": "'Contact the Law Society'",
+          "name": "Identify the Organization",
           "text": "The Law Society of Tasmania"
         },
         {
@@ -209,22 +236,22 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Visit the Arts Law Centre of Australia Website",
+          "name": "Visit the Arts Law Centre of Australia website",
           "text": "Law Society Northern Territory\nThe Arts Law Centre of Australia's website"
         },
         {
           "@type": "HowToStep",
-          "name": "Select an IP Lawyer",
+          "name": "Consult a National Referral Panel",
           "text": "indicates that it maintains a national referral panel of arts and entertainment lawyers to which it may refer eligible copyright owners where appropriate.\nTips for choosing an IP lawyer or IP attorney"
         },
         {
           "@type": "HowToStep",
-          "name": "Choose an IP Lawyer",
+          "name": "Select an IP Lawyer",
           "text": "Here are some suggestions for choosing an IP lawyer or IP attorney for your IP:"
         },
         {
           "@type": "HowToStep",
-          "name": "Seek Recommendations",
+          "name": "Seek Peer Recommendations",
           "text": "Ask for recommendations from other business owners or members of your industry association."
         },
         {
@@ -234,7 +261,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Verify Attorney Specialization",
+          "name": "Verify Attorney's IP Specialization",
           "text": "Don't assume that all lawyers or IP attorneys specialise in the type of IP that you have."
         },
         {

@@ -12,6 +12,18 @@
     "value": "B1018"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2025-10-01",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -137,7 +164,7 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Self-Help"
+        "name": "eCommerce provider"
       }
     },
     {
@@ -154,22 +181,22 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Send removal notice",
+          "name": "Send Takedown Notice Email",
           "text": "The takedown notice or removal email with reference numbers."
         },
         {
           "@type": "HowToStep",
-          "name": "Capture evidence",
+          "name": "Capture comparison screenshots",
           "text": "Screenshots of the original listing and the allegedly infringing content."
         },
         {
           "@type": "HowToStep",
           "name": "Submit Infringement Counter Notices",
-          "text": "Knowledge of each platform's process, for example:Amazon: Using theAccount Health Pageto provide evidence against a notice or warning for infringement.eBay: file aVeROcounter notice via email or the provided form (NOCI).Etsy: use \"What to Do if You Receive a Notice of Intellectual Property Infringement\"page and contact the rights owner directly.Shein: submit via \"IP Notice\" portal at SheinIPP."
+          "text": "Knowledge of each platform's process, for example:Amazon: Using theAccount Health Pageto provide evidence against a notice or warning for infringement.eBay: file aVeROcounter notice via email or the provided form (NOCI). Etsy: use \"What to Do if You Receive a Notice of Intellectual Property Infringement\"page and contact the rights owner directly. Shein: submit via \"IP Notice\" portal at SheinIPP."
         },
         {
           "@type": "HowToStep",
-          "name": "Record all interactions",
+          "name": "Record communications log",
           "text": "A log of all communications, submissions and platform decisions."
         }
       ]
@@ -250,7 +277,7 @@
   "relatedLink": [
     {
       "@type": "WebPage",
-      "url": "https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A.UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ",
+      "url": "https://sellercentral.amazon.com.au/ap/signin?clientContext=356-0403267-0221635&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.com.au%2Fperformance%2Fdashboard&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_au_amazon_v2&openid.mode=checkid_setup&language=en_AU&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_amazon_v3_unified&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.ei_Rkvz4D_tiHkwJ-xMgUxmexQX7kXEJuOH_ATzAPzNHXF1mTbV61A. UXP7b7zppv_9yEF0.1-X2jljwUSUZDZNeIKoyPpHvMCuU5UTIZd-dLW30_3mQmCiqCTuNJ3D5rBTm55zphLvV01Zyq_GmvSAOUXo1qg3d4PwlfnWWfCQpzZXCePEg8n3HGvxuDVb9KTOQWzxWzZ_mX3KJo5bxliAODg98EHYmFFKQjskxutxt5dc08IpqkcLP1G-KXdgFE1g8skoxG3znTX1EUg.rTsZel0hA_nIEu_ShICRnQ",
       "name": "Account Health Page"
     },
     {

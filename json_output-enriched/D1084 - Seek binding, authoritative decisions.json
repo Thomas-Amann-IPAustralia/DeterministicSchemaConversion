@@ -12,6 +12,18 @@
     "value": "D1084"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2026-01-23",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2026-01-23",
   "dateModified": "2026-02-03",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -101,7 +128,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Considerations Before Legal Action",
+          "name": "Consider Before Legal Action",
           "text": "There are some things you might consider before you proceed with legal action in a PBR matter."
         },
         {
@@ -116,12 +143,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Assess Publicity Impact",
+          "name": "Evaluate Publicity Impact",
           "text": "Consider the impact of publicityCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential."
         },
         {
           "@type": "HowToStep",
-          "name": "Organize and Collect Relevant Documents",
+          "name": "Organize Relevant Documents",
           "text": "Gather all your documentsBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that helps to show what was sold, grown or distributed. It can be beneficial to organise these materials so that they show dates, sources, and how the suspected copying connects back to your variety, as courts often rely on orderly, traceable evidence. You can give these to your lawyer to review."
         }
       ]
@@ -202,7 +229,7 @@
   "relatedLink": [
     {
       "@type": "WebPage",
-      "url": "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
+      "url": "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-, a.pdf",
       "name": "between $100-500k ."
     },
     {

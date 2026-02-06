@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey#webpage",
   "headline": "Discover where you are in your IP journey",
   "alternativeHeadline": "Using IP in business",
-  "description": "Explore your Intellectual Property (IP) progress with our guide, helping you identify your current stage and next steps for effective IP management.",
+  "description": "Explore your intellectual property journey with insights and tools to assess your current stage, enhance strategies, and maximize IP potential.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1006"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-11",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"

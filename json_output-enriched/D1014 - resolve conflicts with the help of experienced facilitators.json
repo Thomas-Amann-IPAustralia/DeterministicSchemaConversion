@@ -12,6 +12,18 @@
     "value": "D1014"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2026-01-09",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -137,7 +164,7 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Arbitrators, Mediators, Self-Help "
+        "name": "Qualified Facilitator"
       }
     },
     {
@@ -169,7 +196,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Identify ACICA",
+          "name": "Visit the Australian Centre for International Commercial Arbitration",
           "text": "The Australian Centre for International Commercial Arbitration (ACICA)"
         },
         {
@@ -184,12 +211,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Locate IP Attorney",
+          "name": "Locate an IP Attorney",
           "text": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
         },
         {
           "@type": "HowToStep",
-          "name": "End process",
+          "name": "End the process",
           "text": "."
         }
       ]
@@ -250,7 +277,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Parties to the dispute(s).\n\n* Facilitator/s (Mediator, arbitrator, neutral evaluator, etc.).\n\n* (Optional) Legal representation for one or more of the participants, noting that some ADR service providers limit the participation of legal representation in dispute resolution processes."

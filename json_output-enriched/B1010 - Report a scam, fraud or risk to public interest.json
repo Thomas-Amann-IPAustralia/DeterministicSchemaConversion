@@ -12,6 +12,18 @@
     "value": "B1010"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2025-10-02",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -155,7 +182,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Report IP Fraud or Scam",
+          "name": "Report Fraudulent IP Claims",
           "text": "If you believe that the other party is fraudulently claiming that you have infringed their IP, you could consider making a report to an appropriate authority.\nScamwatch\nThe ACCC collects scam reports to detect patterns and issue public alerts through its Scamwatch service.\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to someone else's IP rights, you can report this activity to \n\nScamwatch\n\n, using their \n\nReport a Scam page\n\n.\nThe Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC)\nScams or fraudulent activities often take the form of cybercrimes\n\n, using a computer or online network to target victims.\nReportCyber is the Australian Government's cybercrime reporting tool. They assess all cybercrime reports and assign the relevant ones to police and other law enforcement agencies for investigation. If you believe that the other party is using IP as part of fraudulent activity or criminal threats through digital channels such as emails, text messages, phone calls or social media, you can consider reporting this activity to Reportcyber using their\n\nReport page\n\n.\nIP Australia\nIP Australia accepts reports of suspected misuse of its name or processes. You can read more about these on IP Australia's website at \n\nScams related to managing IP Rights | IP Australia.\n\n You can also learn how to report these at \n\nHow to report fraud and corruption | IP Australia.\nFederal and state police agencies\nThe AFP and state or territory police investigate fraud, impersonation, and criminal extortion.\nIf you believe that the other party is involved in a serious cybercrime or a criminal fraud, you may also consider directly alerting the Australian Federal Police (AFP) or your State and Territory Police."
         }
       ]

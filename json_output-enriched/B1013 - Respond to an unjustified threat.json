@@ -12,6 +12,18 @@
     "value": "B1013"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2025-10-02",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -149,12 +176,12 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Assess Threat Validity",
+          "name": "Evaluate Threat Validity",
           "text": "Consider whether the threat is unjustified\nA key starting point can be to check the IP right registration status of the accuser (except for copyright, which in Australia does not have a formal registration system). You can search the Australian IP registers to check whether they have a current (not pending or expired) registered IP right. For design rights, the status must be listed as 'certified' (not simply registered) before they can enforce their design.\nReview your own use of the contested IP and consider whether this might amount to infringement.\nIt can be very difficult to determine whether a threat is unjustified as you will usually need to determine whether the allegations of infringement are accurate. An IP lawyer or IP attorney can help you with considering whether a threat is unjustified and how you might best respond.\nGather evidence\nKeep evidence of the threat, including:"
         },
         {
           "@type": "HowToStep",
-          "name": "Gather related documents",
+          "name": "Gather threat documentation",
           "text": "copies of the threat and any related emails or letters"
         },
         {
@@ -228,7 +255,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You (the person receiving or aggrieved by the threat).\n\n* The person or business making the threat.\n\n* Any legal professionals engaged by you or the other parties involved.\n\n* A court (Federal Court of Australia or Federal Circuit and Family Court of Australia, or (for copyright matters) the Supreme Court of a State or Territory)."

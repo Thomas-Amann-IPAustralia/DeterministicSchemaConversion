@@ -12,6 +12,18 @@
     "value": "B1014"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2025-10-03",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -145,22 +172,22 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Verify Facts and Evaluate Claims",
+          "name": "Verify and Evaluate Claims",
           "text": "It's important to get all the factual details right and evaluate the merits of the claims before you respond to the other party. Here are some things you might want to check and consider before talking to the other party:"
         },
         {
           "@type": "HowToStep",
-          "name": "Verify IP Status and Registrations",
+          "name": "Verify IP Status and Registration",
           "text": "The status and details of the relevant IP in the jurisdiction where the alleged infringement occurred. This includes checking the status of your IP registrations, and whether the accuser has registered IP rights with IP Australia or overseas IP offices."
         },
         {
           "@type": "HowToStep",
-          "name": "Verify Other Party's Identity and Contact Information",
+          "name": "Verify Party Identity",
           "text": "The identity and contact details of the other party - it's important to make sure you speak to the correct party.\nThroughout the negotiation with the other party, it can be helpful to remember to:"
         },
         {
           "@type": "HowToStep",
-          "name": "Maintain Composure and Professionalism",
+          "name": "Maintain Professional Composure",
           "text": "Stay calm and professional throughout the conversation, avoiding emotional, accusatory language."
         },
         {
@@ -170,7 +197,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Recognize Root Causes",
+          "name": "Recognize Misunderstandings",
           "text": "Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can be reached."
         },
         {
@@ -244,7 +271,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You, an individual or business accused of IP infringement.\n\n* The party who has accused you of IP infringement, often the owner or authorised user of an IP right.\n\n* Legal representatives (lawyers or in some cases IP attorneys) may assist with drafting, advising, or attending discussions.\n\n* Business advisors, franchise consultants or other IP professionals may help facilitate talks or propose terms."

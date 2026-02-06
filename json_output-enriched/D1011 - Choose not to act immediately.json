@@ -12,6 +12,18 @@
     "value": "D1011"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-12-02",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -151,11 +178,11 @@
         {
           "@type": "HowToStep",
           "name": "Define Enforcement Action Triggers",
-          "text": "Develop a clear strategy for when youwilltake future enforcement action. Your plan can outline specific triggers that will prompt you to act. These might be when the infringer:Grows beyond a certain size.Starts competing in your geographic area or digital space.Has been infringing for a set period.Crosses other meaningful boundaries for your business."
+          "text": "Develop a clear strategy for when youwilltake future enforcement action. Your plan can outline specific triggers that will prompt you to act. These might be when the infringer:Grows beyond a certain size. Starts competing in your geographic area or digital space. Has been infringing for a set period. Crosses other meaningful boundaries for your business."
         },
         {
           "@type": "HowToStep",
-          "name": "Estimate Costs and Timeline",
+          "name": "Assess Costs and Timeline",
           "text": "Calculate the potential costs and timeline for different enforcement actions. This helps you budget and prepare for if you do decide to move forward."
         },
         {
@@ -226,7 +253,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You\n\n* an IP professional - professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement."

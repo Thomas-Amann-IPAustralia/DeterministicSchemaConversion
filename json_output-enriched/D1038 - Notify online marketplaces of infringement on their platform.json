@@ -12,6 +12,18 @@
     "value": "D1038"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-12-02",
   "audience": {
@@ -131,6 +143,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -159,7 +186,7 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Self-Help"
+        "name": "eCommerce provider"
       }
     },
     {
@@ -171,27 +198,27 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Check Multiple Platforms for Infringement",
+          "name": "Check multiple platforms",
           "text": "If you have detected infringement on an online platform, it is worth checking several platforms (such as all those listed above) to see if infringement is taking place elsewhere.\nDifferent online platforms have different requirements for making IP complaints and takedown requests.\nYou will usually need:"
         },
         {
           "@type": "HowToStep",
-          "name": "Gather Infringement Evidence",
+          "name": "Collect Infringement Evidence",
           "text": "Evidence such as screenshots, product listings, and any other documentation that clearly demonstrates the infringement. Refer toEvidence you can collect about infringements."
         },
         {
           "@type": "HowToStep",
-          "name": "Verify IP Ownership and Check Copyright Exceptions",
+          "name": "Verify IP Ownership and Compliance",
           "text": "Evidence that you are the legitimate owner of the IP. Some platforms require you to have a registered IP right for you to access their brand protection and complaint mechanisms. You may consider applying for a registered IP right to access these procedures and prevent future infringements and protect your ideas, products and branding.\nNote that if you do not provide sufficiently accurate information, your takedown application may be rejected and the whole process would be delayed.\nFor matters involving copyright infringement online, before issuing a takedown notice, copyright owners should check that the user does not have a valid reason to use the material in question (for example a valid license or a 'fair dealing' use permitted as an exception to copyright under the Copyright Act). More information about when using copyright material is allowed is provided on the"
         },
         {
           "@type": "HowToStep",
-          "name": "Report copyright infringement",
+          "name": "Address Copyright Infringement",
           "text": "copyrightinfringement page"
         },
         {
           "@type": "HowToStep",
-          "name": "End the sentence",
+          "name": "End the process",
           "text": "."
         }
       ]
@@ -260,7 +287,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* IP rights owner(s).\n\n* Websites or online platforms including e-commerce or advertising platform(s).\n\n* Legal professionals (optional).\n\n* IP Monitoring services (optional)."
@@ -271,7 +298,7 @@
           "name": "Exercise caution before making accusations of infringement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Making an unfounded claim of IP infringement can result in liability for damages. Proving infringement is an important issue that should be considered before taking legal action, including sending written demands.\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on\n\ngetting professional assistance with your IP\n\n. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free\n\n30 minute consultations with an attorney\n\n.\n\nCopyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the\n\nArts Law Centre of Australia\n\nor no-cost advice from the\n\nAustralian Copyright Council\n\n."
+            "text": "Making an unfounded claim of IP infringement can result in liability for damages. Proving infringement is an important issue that should be considered before taking legal action, including sending written demands.\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on\n\ngetting professional assistance with your IP\n\n . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free\n\n30 minute consultations with an attorney\n\n .\n\nCopyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the\n\nArts Law Centre of Australia\n\n or no-cost advice from the\n\nAustralian Copyright Council\n\n ."
           }
         }
       ]
@@ -320,7 +347,7 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
+      "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-, Managing%20online%20infringement, a%20complaint%20directly%20to%20them",
       "name": "Prevent International Infringement | IP Australia"
     },
     {

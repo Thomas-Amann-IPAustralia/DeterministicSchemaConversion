@@ -12,6 +12,18 @@
     "value": "101-1"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-04",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-04",
   "dateModified": "2026-01-22",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -154,7 +181,7 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How to avoid infringing others intellectual property?",
+          "name": "How to avoid infringing others' intellectual property?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Running a business or developing new products or services often means creating intellectual property (IP) or encountering IP rights owned by others. Whether it is a brand name, invention, design, or creative work, using something similar to someone else's existing intellectual property may be considered infringement.\nAn IP owner may contact you informally, seeking an amicable resolution, or formally, with a letter from a lawyer demanding that the infringement stop. Alternatively, IP owners might initiate legal action, requesting a court to stop you from using a brand, design, or technology, or to compel you to pay damages to the IP owner. In some instances, you may be required to destroy products or marketing materials.\nIt is crucial to understand that you can infringe on someone's IP rights without even knowing those rights exist. While you might not have to pay monetary compensation (called damages) to the IP owner if you genuinely had no reason to believe the IP existed, you can still be ordered to stop using the IP.\nUnderstanding how to avoid infringing on others' rights from the beginning can save your business from serious consequences. With awareness and careful planning, you can minimise the risk of infringing on others' intellectual property rights."

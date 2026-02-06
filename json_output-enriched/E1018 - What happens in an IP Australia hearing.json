@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#webpage",
   "headline": "What happens in an IP Australia hearing?",
   "alternativeHeadline": "IP Australia process",
-  "description": "Discover the process and key details of an IP Australia hearing, including preparation tips, procedural steps, and what to expect during the proceedings.",
+  "description": "Discover the process and key elements of an IP Australia hearing, including preparation tips, procedural insights, and outcomes for intellectual property disputes.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1018"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-11",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -155,7 +182,7 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose, after%20your%20intention%20to%20oppose.",
       "name": "How to challenge someone else's IP | IP Australia"
     },
     {

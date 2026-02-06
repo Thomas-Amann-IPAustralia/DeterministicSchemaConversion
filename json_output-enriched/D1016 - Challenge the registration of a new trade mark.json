@@ -12,6 +12,18 @@
     "value": "D1016"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-01",
   "dateModified": "2026-01-27",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -107,12 +134,12 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Review Trade Mark Opposition Information",
+          "name": "Review Trademark Opposition Information",
           "text": "Read all the information relating totrade mark oppositionandthe formsrequired in the opposition process on the IP Australia website. You can find more specific, technical information on the trade mark opposition process in the relevant parts ofTrade Marks Manual of Practice and Procedure."
         },
         {
           "@type": "HowToStep",
-          "name": "Monitor Trade Marks for Conflicts",
+          "name": "Monitor ATMS for Conflicting Trade Marks",
           "text": "Monitor theAustralian Trade Mark Search (ATMS)and spot conflicting trade marks within two months of advertisement. You may consider engaging an IP professional who undertakes trade mark monitoring or watching services if you need assistance in this process. For more information on this, see IP First Response's page on Monitoring Competitors' IP."
         },
         {
@@ -164,7 +191,7 @@
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* IP Australia refuses the application and the trade mark does become registered.\n\n* The applicant narrows or amends thegoods and services specified in thetrade markapplication,and it proceeds in a reduced form.\n\n* The oppositionto registering the trade mark is dismissedand the trade markis registered without changes.\n\n* Either party appeals a decisionto the AdministrativeReview Tribunal, or the Federal Court of Australia, or the Federal Circuit and Family Court.\n\n* The parties settle privately and withdraw the opposition (or application) before a decision."
+            "text": "* IP Australia refuses the application and the trade mark does become registered.\n\n* The applicant narrows or amends thegoods and services specified in thetrade markapplication, and it proceeds in a reduced form.\n\n* The oppositionto registering the trade mark is dismissedand the trade markis registered without changes.\n\n* Either party appeals a decisionto the AdministrativeReview Tribunal, or the Federal Court of Australia, or the Federal Circuit and Family Court.\n\n* The parties settle privately and withdraw the opposition (or application) before a decision."
           }
         },
         {

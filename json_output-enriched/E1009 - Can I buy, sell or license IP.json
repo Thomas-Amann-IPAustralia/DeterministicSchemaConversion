@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip#webpage",
   "headline": "Can I buy, sell or license IP?",
   "alternativeHeadline": "Selling or licensing",
-  "description": "Explore how to buy, sell, or license intellectual property effectively, with insights on legal considerations and strategies for maximizing IP value.",
+  "description": "Explore how to buy, sell, or license intellectual property effectively. Understand the processes and legal considerations for IP transactions.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1009"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-11",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -140,7 +167,7 @@
   "relatedLink": [
     {
       "@type": "WebPage",
-      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for, your%20product%20or%20service%20yourself.",
       "name": "How to commercialise my IP | IP Australia"
     },
     {

@@ -12,6 +12,18 @@
     "value": "D1021"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-09-05",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -107,7 +134,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Verify trade mark dates",
+          "name": "Verify Trade Mark Dates",
           "text": "Check the relevant dates of the relevant trade mark."
         },
         {
@@ -117,7 +144,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Review Trade Marks Guidelines",
+          "name": "Review Trade Marks Regulations",
           "text": "Consider carefullyPart 62 of theTrade Marks Manual of Practice and Procedureand the relevant sections of theTrade Marks Act 1995"
         },
         {
@@ -127,7 +154,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Learn Trade Mark Challenge Process",
+          "name": "Challenge Trade Mark Registration",
           "text": "Understand what's involved should you need toChallenge the registration of a trade mark | IP Australia First Response"
         },
         {
@@ -137,7 +164,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Seek IP Assistance",
+          "name": "Seek IP Expert Help",
           "text": "getting professional assistance with your IP"
         },
         {
@@ -152,7 +179,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "End the process",
+          "name": "Pause",
           "text": "."
         }
       ]
@@ -221,7 +248,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You, or the person providing information.\n\n* IP Australia.\n\n* The owner of the trade mark registration and their representatives."

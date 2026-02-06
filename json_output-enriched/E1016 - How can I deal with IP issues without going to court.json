@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court#webpage",
   "headline": "How can I deal with IP issues without going to court? ",
   "alternativeHeadline": "IP Disputes ",
-  "description": "Explore effective strategies to resolve intellectual property disputes amicably, avoiding court through negotiation, mediation, and alternative dispute resolution.",
+  "description": "Discover effective strategies to resolve intellectual property disputes outside of court, saving time and resources while protecting your rights.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1016"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-11",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -174,7 +201,7 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has, to%20challenge%20their%20IP%20right.",
       "name": "What to consider before taking legal action | IP Australia"
     },
     {

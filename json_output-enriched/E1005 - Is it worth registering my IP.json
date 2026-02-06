@@ -4,7 +4,7 @@
   "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#webpage",
   "headline": "Is it worth registering my IP?",
   "alternativeHeadline": "Applying for IP",
-  "description": "Discover the benefits and considerations of registering intellectual property to protect your innovations and enhance your business's competitive edge.",
+  "description": "Explore the benefits of registering your intellectual property and understand its impact on protecting your ideas and enhancing business value.",
   "url": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip",
   "identifier": {
     "@type": "PropertyValue",
@@ -12,6 +12,18 @@
     "value": "E1005"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-09-11",
   "dateModified": "2025-09-11",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -150,8 +177,8 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
-      "name": "Why its important to register your IP | Business.Gov"
+      "url": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your, using%20your%20ideas%20without%20permission",
+      "name": "Why its important to register your IP | Business. Gov"
     },
     {
       "@type": "WebPage",

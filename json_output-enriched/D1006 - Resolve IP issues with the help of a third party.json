@@ -12,6 +12,18 @@
     "value": "D1006"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-03-01",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-03-01",
   "dateModified": "2025-10-17",
   "audience": {
@@ -109,6 +121,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -137,7 +164,7 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Self-Help"
+        "name": "Mediator"
       }
     },
     {
@@ -149,17 +176,17 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Choose the Right Mediator",
+          "name": "Select the Right Mediator",
           "text": "Before you engage in mediation, you should think about whether mediation is a suitable dispute resolution method for your situation and what kind of mediator would suit your needs best.\nHow do I choose the right mediator?\nIt can be helpful to consider these questions when selecting a mediator to help ensure they are right for you:"
         },
         {
           "@type": "HowToStep",
-          "name": "Choose Mediator Role",
+          "name": "Choose Mediation Role",
           "text": "Would the parties like the mediator to provide a neutral evaluation of their dispute, or act as a facilitator of their negotiations?"
         },
         {
           "@type": "HowToStep",
-          "name": "Identify Mediator Qualifications",
+          "name": "Specify Mediator Qualifications",
           "text": "What are the desirable professional qualifications and specialist experience of the mediator?"
         },
         {
@@ -169,7 +196,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Determine the Need for Multiple Mediators",
+          "name": "Determine Mediator Requirements",
           "text": "Is more than one mediator required? For example, do the parties come from different cultural and linguistic backgrounds? Or would it be beneficial to have both a technical expert and a mediation specialist as co-mediators?"
         },
         {
@@ -184,7 +211,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Access Dispute Resolution Information",
+          "name": "Access Dispute Resolution Resources",
           "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes."
         },
         {
@@ -194,7 +221,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "'Access Arbitration Centre'",
+          "name": "Visit the Australian Centre for International Commercial Arbitration",
           "text": "theAustralian Centre for International Commercial Arbitration"
         },
         {
@@ -224,7 +251,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Consult the Corporation",
+          "name": "Develop Your Small Business in Western Australia",
           "text": "Western Australia Small Business Development Corporation"
         },
         {
@@ -234,22 +261,22 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Access ADR Services",
+          "name": "Access Arts Law ADR Services",
           "text": "the Arts Law Centre of Australiahas access to a panel of mediators and experts who can provide low-cost ADR services to artists and arts organisations who subscribe to Arts Law."
         },
         {
           "@type": "HowToStep",
-          "name": "Seek IP Professional Assistance",
-          "text": "Resolution Pathwaysis a service available to music creators and music users disputing their interactions with,APRA AMCOS and/or OneMusic Australia, as well as, in limited circumstances, disputes between music creators.\nYou can also seek help from IP professionals to obtain advice on whether ADR would be suitable for your situation and represent you throughout an ADR process. You can find a qualified IP attorney to assist you at:"
+          "name": "Seek ADR Guidance",
+          "text": "Resolution Pathwaysis a service available to music creators and music users disputing their interactions with, APRA AMCOS and/or OneMusic Australia, as well as, in limited circumstances, disputes between music creators.\nYou can also seek help from IP professionals to obtain advice on whether ADR would be suitable for your situation and represent you throughout an ADR process. You can find a qualified IP attorney to assist you at:"
         },
         {
           "@type": "HowToStep",
-          "name": "Locate IP Attorney",
+          "name": "Locate an IP Attorney",
           "text": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
         },
         {
           "@type": "HowToStep",
-          "name": "End the sentence",
+          "name": "End process",
           "text": "."
         }
       ]
@@ -318,7 +345,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Parties to the dispute(s).\n\n* Mediator, whoseroleis to:control the processcreate an environment where parties have a chance to hear and listen to each other in a respectful mannerhelp keep emotions in checkguide parties through discussions about the issuesmake sure all relevant issues are coveredhelp parties explore a variety of options.\n\n* (Optional) Legal representation for one or more of the participants, noting that some mediation providers limit the participation of legal representation in dispute resolution processes."
@@ -390,7 +417,7 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://www.artslaw.com.au/information-sheet/alternative-dispute-resolution-binding-expert-dermination-and-non-binding-e/#:~:text=How%20does%20the%20Arts%20Law,of%20the%20Centre&apos;s%20panel%20lawyers.",
+      "url": "https://www.artslaw.com.au/information-sheet/alternative-dispute-resolution-binding-expert-dermination-and-non-binding-e/#:~:text=How%20does%20the%20Arts%20Law, of%20the%20Centre&apos;s%20panel%20lawyers.",
       "name": "the Arts Law Centre of Australia"
     },
     {

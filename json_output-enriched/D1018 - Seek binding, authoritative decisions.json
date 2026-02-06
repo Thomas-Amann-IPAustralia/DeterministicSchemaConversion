@@ -12,6 +12,18 @@
     "value": "D1018"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2025-09-24",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -101,7 +128,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Evaluate Legal Action Considerations",
+          "name": "Evaluate Legal Considerations",
           "text": "Here are some things you might consider before you proceed with legal action in a\n\n \n\npatent matter.\nFind an IP lawyer for advice and representation\n\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.\nConsider your goals before deciding to start a legal claim\n\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes.\nConsider the impact of publicity\n\nCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential.\nGather all your documents\n\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that you think might be relevant to your claim. You can give these to your lawyer to review."
         }
       ]
@@ -170,7 +197,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Parties to the dispute\n\n* Lawyers\n\n* Witnesses\n\n* A judge"
@@ -187,7 +214,7 @@
     },
     {
       "@type": "WebPage",
-      "url": "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
+      "url": "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-, a.pdf",
       "name": "between $100-500k"
     },
     {

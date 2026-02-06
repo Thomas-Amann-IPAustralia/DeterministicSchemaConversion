@@ -12,6 +12,18 @@
     "value": "D1002"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-02-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-02-28",
   "dateModified": "2026-01-22",
   "audience": {
@@ -80,6 +92,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -127,7 +154,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Complete the Notice of Objection form",
+          "name": "Complete Notice of Objection Form",
           "text": "A completed Notice of Objection form (B1025)."
         },
         {
@@ -147,12 +174,12 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Acknowledge Copyright Act 1968",
+          "name": "Refer to Copyright Act 1968",
           "text": "Copyright Act 1968"
         },
         {
           "@type": "HowToStep",
-          "name": "Gather necessary materials",
+          "name": "Gather Materials",
           "text": ", you will require:"
         },
         {
@@ -241,7 +268,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Australian Border Force.\n\n* The trade mark owner, copyright owner or authorised user.\n\n* Businesses importing goods for commercial purposes that bear your trade mark or a similar trade mark, or infringing copies of copyright material.\n\n* (Potentially) legal representatives, if you choose to take legal action."

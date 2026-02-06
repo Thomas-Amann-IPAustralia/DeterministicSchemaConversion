@@ -12,6 +12,18 @@
     "value": "D1013"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-04-02",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-04-02",
   "dateModified": "2025-10-01",
   "audience": {
@@ -131,6 +143,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -167,7 +194,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Gather Information and Research Insurers",
+          "name": "Gather IP Information and Research Insurers",
           "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings.\nIt may be beneficial to have a preferred legal counsel.\nYou will also need to research, identify and compare insurers before making a decision."
         }
       ]
@@ -236,7 +263,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* You (the IP holder)\n\n* The insurer\n\n* Your legal counsel (if any)"

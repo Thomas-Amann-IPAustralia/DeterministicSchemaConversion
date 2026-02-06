@@ -12,6 +12,18 @@
     "value": "C1007"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-28",
   "dateModified": "2025-09-05",
   "audience": {
@@ -131,6 +143,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -167,12 +194,12 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Prepare for IP Licensing",
+          "name": "Explore IP Licensing Steps",
           "text": "To explore licensing your IP, consider taking these steps before beginning:"
         },
         {
           "@type": "HowToStep",
-          "name": "Verify IP Validity",
+          "name": "Validate IP Rights",
           "text": "Confirm your IP- Make sure your IP rights are valid and enforceable."
         },
         {
@@ -187,7 +214,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Understand Licensing Obligations",
+          "name": "Understand Licensing Rules",
           "text": "Review applicable rules- Understand legal principles around licensing, especially any obligations to maintain control of your IP and speak to an IP professional if you need assistance."
         },
         {
@@ -261,7 +288,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* IP rights owner - You or any other person with a right to sublicense.\n\n* Licensee - The party interested in using your IP.\nOften used:\n* Legal professionals - Often involved to draft and negotiate terms, able to confirm extent and details of various IP rights in multiple jurisdictions, sometimes able to assist with determining the value/price the IP being licensed.\n\n* Business advisers - For commercialisation or partnership strategy advice that falls outside of legal and IP domains."

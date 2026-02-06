@@ -12,6 +12,18 @@
     "value": "C1014"
   },
   "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
   "datePublished": "2025-07-28",
   "dateModified": "2025-09-05",
   "audience": {
@@ -61,6 +73,21 @@
     "@type": "GovernmentOrganization",
     "name": "IP Australia",
     "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
     "parentOrganization": {
       "@type": "GovernmentOrganization",
       "name": "Australian Government"
@@ -107,7 +134,7 @@
       "step": [
         {
           "@type": "HowToStep",
-          "name": "Provide clear design visuals",
+          "name": "Provide detailed visuals",
           "text": "High‑quality drawings (or photographs) that clearly show all views of the design."
         },
         {
@@ -117,7 +144,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Provide Ownership Details",
+          "name": "Provide ownership proof",
           "text": "Details proving you own the design (for example design brief or commissioning agreement)."
         },
         {
@@ -127,7 +154,7 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Budget for fees",
+          "name": "Allocate fees budget",
           "text": "Budget for application, examination and renewal fees."
         },
         {
@@ -206,7 +233,7 @@
         },
         {
           "@type": "Question",
-          "name": "Whos involved?",
+          "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "* Design owner.\n\n* IP Australia design examination team.\n\n* Optional: IP attorneys or lawyers acting on your behalf."
