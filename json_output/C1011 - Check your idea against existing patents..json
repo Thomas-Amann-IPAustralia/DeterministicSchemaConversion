@@ -1,0 +1,225 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#webpage",
+  "headline": "Check your idea against existing patents.",
+  "alternativeHeadline": "Patent search",
+  "description": "Conduct a thorough search of existing patents - also known as Freedom to Operate search.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "C1011"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-28",
+  "dateModified": "2025-09-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Patent",
+    "sameAs": "https://www.wikidata.org/wiki/Q253623"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Check your idea against existing patents.",
+      "description": "A 'freedom to operate' search helps you check whether your product or process might infringe on someone else's patent. It's sometimes called a 'clearance search'.\nThis kind of search can help identify if there are any existing patent rights that could block you from making, using, or selling your product or invention - particularly in the countries where you plan to operate.\nIf products or inventions are found that might be relevant, you may wish to explore options such as changing your design, negotiating a licence, or asking a legal professional to investigate further.\nYou can do a basic search yourself using free tools like the Australian patent search Australian Patent Search, or global databases like \n\nEspacenet - patent search\n\n. However, a freedom to operate search is more detailed than just checking if something is new - it often requires specialist help to interpret results properly.\nA freedom to operate search typically only searches patents, and does not include other sources such as published research papers or other businesses selling similar products: the search only focuses on patents on which your idea or product would potentially infringe.\nA freedom to operate search does not give you a legal guarantee - but it may help you avoid costly surprises later.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Check your idea against existing patents.",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "A clear description of your product, process or innovation."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Basic knowledge of what a patent is and what it protects."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Access to patent databases such asAusPat,EspacenetorThe Lens."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Optional: A qualified patent attorney to perform a professional search and interpret results."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "A decision on whether you want to search only in Australia or also internationally."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Reduces risk of accidentally infringing someone else's patent.\n\n* Can support investment decisions and product launches with greater confidence.\n\n* Helps you understand the patent landscape in your industry.\n\n* May reveal licensing opportunities or expired patents you can freely use.\n\n* Helps inform whether you need to change your product or seek permission.\n\n* Demonstrates to investors or partners that you've done your due diligence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Complex results may be difficult to interpret without expert help.\n\n* Missed patents in the search may result in unexpected issues later.\n\n* A 'clear' result can give false confidence if the scope of patents is misunderstood. Further clarification may require legal advice, which adds to costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You identify existing patents that could pose a risk to your business.\n\n* You find there are no relevant patents, and proceed with greater confidence.\n\n* You discover expired patents, allowing free use of certain technologies.\n\n* You use the findings to adapt your product or negotiate a licence.\n\n* You decide to seek legal advice or conduct further searching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can do a preliminary search yourself at no cost using online databases, like \n\nAustralian patent Search\n\n and \n\nEspacenet - patent search\n\n.\nIf you engage a patent attorney to perform or analyse the search:\n* Professional fees typically range from $400 to $1100 per hour.\n\n* Full searches and advice may cost between $2,000 to $7,000 depending on complexity.\nCosts are generally higher for global searches or very technical fields."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A simple self-directed search may take a few hours to several days.\n\n* A professional search and legal opinion may take 2 to 4 weeks depending on complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Freedom to operate searches are fairly common practice, particularly in new or emerging sectors. It forms a significant part of an IP monitoring strategy.\nIn smaller enterprises, this is more likely to be handled in-house, although professional IP monitoring and searching services are also widely used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Any individual or business planning to launch a new product or process.\n\n* Anyone concerned their innovation may overlap with existing patent rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Whos involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The business or person planning to launch a product or service.\n\n* Optional: A patent attorney to conduct the search and provide analysis.\n\n* Optional: Business advisors or investors who want to understand commercial risks."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://worldwide.espacenet.com/",
+      "name": "Espacenet - patent search"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipsearch.ipaustralia.gov.au/patents/",
+      "name": "AusPat"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.lens.org/",
+      "name": "The Lens"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+      "name": "How to search existing patents | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+      "name": "How to engage an IP attorney |Trans-Tasman IP Attorneys Regulation"
+    }
+  ]
+}

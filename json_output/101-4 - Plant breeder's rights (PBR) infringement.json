@@ -1,0 +1,175 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pbr-infringement#webpage",
+  "headline": "Plant breeder's rights (PBR) infringement",
+  "alternativeHeadline": "Infringement 101",
+  "description": "Infringement of Plant Breeders' Rights (PBRs) can occur when someone uses a protected variety without the owner's permission. In Australia, PBRs last for up to 20 years or 25 years, depending on the plant type.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/pbr-infringement",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "101-4"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-04",
+  "dateModified": "2025-09-12",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Plant Breeders' Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q695112"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "Plant breeder's rights (PBR) infringement",
+      "description": "",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pbr-infringement"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "alternateName": "Intellectual Property Australia",
+        "url": "https://www.ipaustralia.gov.au",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/IP_Australia",
+          "https://www.wikidata.org/wiki/Q5973154"
+        ],
+        "name": "Self-help, IP Australia"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is pbr infringement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Infringement of Plant Breeders' Rights (PBRs) can occur when someone \n\nuses a protected variety \n\nwithout the owner's permission. In Australia, PBRs last for \n\nup to 20 years or 25 years, depending on the plant type.\n\n1"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are plant breeders rights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PBRs protect new plant varieties.\n\n2\n\n In Australia, when someone registers a plant variety, they obtain exclusive rights to control how that plant's reproductive materials (such as seeds, cuttings, or bulbs) are used and sold. If another person uses the plant variety without proper permission, \n\nthey may be infringing the owner's rights.\n\nFor example,\n\n the barley variety Spartacus CL or the flowering plant variety called \n\nLegacyFlame.\nWhile a PBR is granted for a particular new variety of plants and their propagating material (such as seeds or stems), in some cases, breeders can claim further protection. Protection can extend to:\n* Harvested material.3\n\n* Products of harvested material.4\n\n* Plant varieties that could only be developed from a PBR-protected variety (known as dependent varieties and essentially derived varieties).5\n\n* Propagating material of dependent varieties and essentially derived varieties.6"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does pbr infringement happen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where a PBR is registered with IP Australia, the following activities may constitute infringement, provided they occur during the term of protection and without permission of the owner:\n1. Someone uses the plant variety\nAustralian plant variety law gives plant breeders exclusive control over their varieties.\n\n7\n\n Infringement occurs when a person uses a protected plant variety in ways that only the owner is allowed to do so and without permission.\n\n8\n\n They could be using the plant variety in different ways, including:\n\n* Producing or reproducing the plant material.This happens when someone creates more plants of the protected variety. Reproduction here is the act of making more plants by growing seeds or using cuttings.9\n\n* Conditioning the plant material for propagation.This happens when someone prepares the plant materials for growing more plants.10For example, cleaning, coating, sorting, packaging, or grading materials such as seeds, stems, and branches.\n\n* Commercialising of propagating material.Including selling (or offering to sell) plants or their reproductive materials, bringing protected plant materials into Australia or sending them overseas or keeping plant materials for any of these commercial purposes.11\n2. Someone uses the plant variety name\nInfringement can also occur where the protected plant variety name is used on \n\nother plants or varieties\n\n.\n\n12\n\n Protection can extend to include a synonym of the plant variety name registered with IP Australia.\n\n13\n\nFor example,\n\n if a plant breeder registers a new rose variety with the name 'SUNSPARK' with the synonym 'SPARK', another grower developing and selling a rose called 'SPARK' would be an infringement.\n\n3. Someone uses an\n\nessentially derived variety\nPBR protection also covers plant varieties that are very similar to the protected ones.\n\n14\n\n Therefore, infringement can occur when someone uses another variety that is considered too similar. Owners of PBRs\n\n can also seek to have varieties called an essentially derived variety (EDV).\n\n15\n\n These varieties share all the essential characteristics of a registered plant variety but are distinguishable from one another. See information on PBR \n\n'Additional rights available'\n\n.\n\n4. Someone uses harvested material\nInfringement can also occur \n\nif someone grows a protected plant variety without permission and harvests material from those plants \n\n(such as fruit or flowers).\n\n16\n\n This can also include products \n\nmade from material harvested from the protected variety (such as fruit juice).\n\n17"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is not pbrinfringement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is important to understand what does not constitute infringement. The \n\nPlant Breeders' Act 1994\n\n provides several situations where a PBR is not infringed, including:\n\n* Privately using the plant variety for non-commercial purposes.18\n\n* Using the plant variety for experimental purposes.19\n\n* Using the plant variety for breeding other plant varieties.20\n\n* A farmer saves harvested propagating material (such as seeds) and uses that material for the production of further propagating material.21"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Importance of labelling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The \n\nPlant Breeders' Act 1994\n\nrecognises that someone might unknowingly infringe a PBR. For instance, using a protected plant material without realising it was protected. Where a court finds infringement has occurred, it may refuse to award damages or to make an order for account of profits against an \"innocent\" infringer.\n\n22\n\n For a person to be \"innocent\", they must satisfy the court that at the time of infringement, they were not aware that the plant material was protected.\n\n23\n\nHowever, if the plant variety has been appropriately labelled to indicate its protection, the law assumes that the person should have been aware of its protection under a PBR.\n\n24\nThis makes proper labelling crucial for owners. It not only informs people about existing rights but also prevents infringers from later claiming they were unaware of the protection. See more information about labelling here: '\n\nHow to label my protected plant variety\n\n'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Example?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Imagine Crisp Orchards has developed and registered a new apple variety with the name 'SweetCrunch'. The variety has a distinctive flavour, appearance, and storage qualities. They have obtained PBR protection in Australia.\nWhat would likely be an infringement\n* A competing orchard purchases a few 'SweetCrunch' trees and uses cuttings to propagate hundreds more trees without permission\n\n* A nursery imports 'SweetCrunch' from overseas and grafts it onto rootstock to sell to local growers\n\n* A grower obtains 'SweetCrunch' trees legitimately but then sells cuttings to other growers without permission.25\nWhat would unlikely be an infringement\n* A consumer purchasing and eating 'SweetCrunch' apples\n\n* A farmer growing 'SweetCrunch' trees with permission from Crisp Orchards\n\n* Using 'SweetCrunch' in a breeding program to develop a new and distinct variety\nDetermining patent infringement can be complex and often requires expertise in both legal and plant variety matters. For infringement to happen, the PBR must be legally valid. PBRs can be challenged if, for example, the variety is not new, distinct, uniform and stable (for more information, see \n\nWhat are plant breeder's rights\n\n).\n\n26\n\n An expert can also assess the available defences that can affect the outcome. This guide provides a starting point, but qualified professionals should assess specific cases.\n\n* Plant Breeder's Rights Act 1994(Cth) s 22 ('the 1994 Act').\n\n* Ibid s 24 and 43.\n\n* Ibid s 14.\n\n* Ibid s 15.\n\n* Ibid s 12-13.\n\n* Ibid.\n\n* Ibid s 11.\n\n* Ibid s 53.\n\n* Ibid s3(1) (definitions of 'reproduction' and 'propagating material').\n\n* Ibid s 3(1) (definition of \"conditioning\").\n\n* Ibid s 11.\n\n* Ibid s 53(1)(c).\n\n* Ibid s 53(1A).\n\n* Ibid s 53(2).\n\n* Ibid s 40(1).\n\n* Ibid s 14.\n\n* Ibid s 15.\n\n* Ibid s 16(1).\n\n* Ibid s 16(2).\n\n* Ibid s 16(3).\n\n* Ibid s 17(1).\n\n* Ibid s 57(1).\n\n* Ibid.\n\n* Ibid s 57(2).\n\n* Cf s 23.\n\n* Ibid s 54A."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available",
+      "name": "'Additional rights available'"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety",
+      "name": "How to label my protected plant variety"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights",
+      "name": "What are plant breeder's rights"
+    }
+  ]
+}
