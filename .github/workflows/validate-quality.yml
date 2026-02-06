@@ -40,12 +40,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Use -f to ensure it's added even if ignored
-          git add -f reports/validation_reports/Validation_Report.csv
+          # UPDATE THIS LINE to match the log output:
+          git add -f reports/validation_reports/Validation_Report_Extended.csv
           
           if git diff --staged --quiet; then
-            echo "No changes to commit."
+            echo "No changes in validation reports to commit."
           else
-            git commit -m "Auto-generated: Update validation report"
+            git commit -m "Auto-generated: Update validation report [Stage-4]"
             git push
           fi
