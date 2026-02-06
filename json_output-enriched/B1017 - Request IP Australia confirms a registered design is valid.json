@@ -1,0 +1,250 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#webpage",
+  "headline": "Request IP Australia confirms a registered design is valid",
+  "alternativeHeadline": "Design certification ",
+  "description": "Request IP Australia examines and certifies a registered design to secure full protection",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "B1017"
+  },
+  "inLanguage": "en-AU",
+  "datePublished": "2025-07-01",
+  "dateModified": "2025-09-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Design Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q252799"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "Request IP Australia confirms a registered design is valid",
+      "description": "You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia's examiner\n\n'\n\ns will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be 'certified'.\nExamination is often requested by the design's owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design.\nIf an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.\nYou can only take formal action to protect your design right - like sending a letter of demand (or cease-and-desist letter) - after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see\n\nUnjustified Threats\n\n.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "serviceOperator": {
+        "@type": "GovernmentOrganization",
+        "alternateName": "Intellectual Property Australia",
+        "url": "https://www.ipaustralia.gov.au",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/IP_Australia",
+          "https://www.wikidata.org/wiki/Q5973154"
+        ],
+        "name": "IP Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Request IP Australia confirms a registered design is valid",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Enter design number",
+          "text": "Registered design number."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pay the examination fee",
+          "text": "Ability to pay the examination fee."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Respond to Examination Report",
+          "text": "Be prepared to respond to an examination report which may require providing additional evidence or submissions to address any issues raised."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consult an IP Lawyer",
+          "text": "Consider whether to get help from an IP lawyer or IP attorney."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Retain Documentation",
+          "text": "Keep copies of all correspondence and the certificate of examination."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Converts your registered design into a certified design allowing you to enforce it against infringers.\n\n* Provides proof of validity, providing further deterrence to possible copycats (in comparison to a registered but uncertified design).\n\n* May provide further surety to investors, licensees and customers over the validity and value of your intellectualproperty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Examination could lead to you needing to amend your registered design.\n\n* Examination could lead to your registered design being revoked.\n\n* Failing to pay your share of the examination fee (when examination is requested by a third party) will cause your registration to cease.\n\n* A certificate of examination related to a registered design does not guarantee success; enforcing a design may still be costly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Your registered design is certified and becomes enforceable.\n\n* You apply to amend your registered design so it can be certified, a list of allowable amendments can be found in the relevant section of the Designs Manual:22.2.1. Amending an application: Amendments that are allowable | IPA Manuals\n\n* Your registered design is revoked because you were unable to overcome objections or other matters raised by theExaminer within the relevant time limit (whether through submissions, amendments to your registration, lodgement of evidence or other steps).\n\n* You do not pay your share of the fee for a third-party examination and your registered design ceases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP Australia's fee schedule lists the owner's examination fee at $500 (effective 1 October 2024). If a third party requests examination, you and the requester split the fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP Australia reports an average wait of up to 12  weeks from request to decision. If you have urgent reasons (for example, pending litigation), you may request expedited examination. IP Australia offers this as a business process and timelines can vary, but reports are often issued within 4-8 weeks.\n\n \n\nPreparing evidence or amendments may add extra work hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of 2024, approximately 20% of designs registered with IP Australia were also certified."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The registered design owner or an exclusive licensee who wants to enforce the right.\n\n* Any other person (for example, a competitor) can request examination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Design right owner.\n\n* IP Australia's design examiner makes the examination decision.\n\n* Optional: third‑party requester of examination.\n\n* Optional: IP lawyer or patent attorney."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+      "name": "Unjustified Threats"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://manuals.ipaustralia.gov.au/design/amendments-that-are-allowable",
+      "name": "22.2.1. Amending an application: Amendments that are allowable | IPA Manuals"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+      "name": "How to apply for a design right | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+      "name": "Design rights timeframes and fees | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
+      "name": "Understanding designs"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+      "name": "getting professional assistance with your IP"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipta.org.au/community/get-free-consultation/",
+      "name": "30 minute consultations with an attorney"
+    }
+  ]
+}
