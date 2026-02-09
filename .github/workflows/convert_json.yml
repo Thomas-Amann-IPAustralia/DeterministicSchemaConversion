@@ -28,7 +28,6 @@ jobs:
       run: |
         echo "Current Directory:"
         pwd
-        echo "Recursive List of Files:"
         ls -R
 
     - name: Run Conversion Script
@@ -45,11 +44,15 @@ jobs:
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
         
-        # Add the specific file we generated
+        # Add the specific file
         git add DeterministicSchemaConversion/reports/SQLite_Structure.xlsx
         
-        # Commit the change. The '|| echo' part prevents the workflow from failing if there are no changes to commit.
+        # Commit
         git commit -m "Auto-update generated SQLite Structure" || echo "No changes to commit"
+        
+        # --- FIX: PULL LATEST CHANGES BEFORE PUSHING ---
+        git pull --rebase
+        # -----------------------------------------------
         
         # Push back to the repository
         git push
