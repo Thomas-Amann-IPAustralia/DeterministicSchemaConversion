@@ -25,12 +25,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Run Conversion Script
-      # CHANGED: Point to the script inside the folder
       run: python scripts/json_to_sqlite_xlsx.py
 
     - name: Upload Excel Artifact
       uses: actions/upload-artifact@v4
       with:
         name: SQLite_Structure
-        # The script now explicitly saves this to the Repo Root
-        path: SQLite_Structure.xlsx
+        # Update path to match the new location
+        path: DeterministicSchemaConversion/reports/SQLite_Structure.xlsx
