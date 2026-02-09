@@ -18,6 +18,8 @@ You can request removal of a trade mark if you believe the owner: 
 
 If nobody opposes removal in the time allowed and the removal application is in order, the trade mark will be removed completely or in relation to specific goods and/or services to the extent specified in the application.  
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 **When can you file an application for removal for non-use?** 
 
 If you are filing an application for removal on the ground that the owner never intended to use the trade mark, then the application may be made at any time after the subject trade mark has been filed.

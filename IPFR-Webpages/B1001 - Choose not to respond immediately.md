@@ -22,6 +22,8 @@ It can be very stressful when someone accuses you of IP infringement. This can b
 
 For more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on [Receiving a letter of demand](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand). 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Gives you time to consider your options and gather evidence and documentation to understand your position better.

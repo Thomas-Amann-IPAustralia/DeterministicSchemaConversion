@@ -24,6 +24,8 @@ Regardless of whether you have a strong claim to the use of a trade marked brand
 * The new brand would be a relatively simple change for you, with little loss of business advantage
 * The cost or effort of other actions (enforcing or defending your right) far outweighs the value of the right and cost of rebranding.
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Rebranding does not require the cooperation or even engagement with the other party, and is thus a very non-adversarial process.

@@ -16,6 +16,8 @@ Registering a trade mark can give you an exclusive right to use your branding on
 
 You might have some rights to protect your trade mark even if it's not registered with IP Australia. However, trade mark registration makes defending your right to use your trade mark easier. It also increases your enforcement options.  
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 Registering a trade mark offers a range of benefits which can simplify the process of defending your IP rights. It provides:  

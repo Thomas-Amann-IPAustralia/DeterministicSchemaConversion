@@ -16,6 +16,8 @@ Depending on your situation, it may be necessary to seek advice from more than o
 
 If you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the [Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm) register as a starting point. 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 **How about other types of IP professionals?** 
 
 The term IP professionals refers to a range of experts who can help you plan and manage your business in relation to IP, including legal professionals. If you are seeking advice on how to enforce your IP rights, and what might be most appropriate to your situation, you should seek it from an IP lawyer or other relevant legal professional.  

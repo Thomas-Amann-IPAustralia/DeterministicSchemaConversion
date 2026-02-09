@@ -26,6 +26,8 @@ These usually become a police matter when activity is serious, for example if it
 
 Sales of counterfeit goods can be reported to [Crime Stoppers](https://crimestoppers.com.au/). If you suspect links to serious or organised crime like the above, phone 131 444 and report the matter to your local police. 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ##### **If the infringement involves counterfeit medicines or medical devices**
 
 Counterfeit medicines and medical devices are particularly serious as they can cause harm to users or not work as intended. Counterfeit medical products should be reported to the Therapeutic Goods Administration (TGA) at [this page](https://www.tga.gov.au/resources/resource/forms/report-perceived-breach-or-questionable-practices).  

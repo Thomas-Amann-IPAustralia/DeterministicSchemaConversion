@@ -26,6 +26,8 @@ It is usually not a good idea to ignore a letter of demand without first seeking
 
 **Before responding to a letter of demand, you may want to show the letter and explain the situation to a qualified** [**IP legal professional**](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP)  **who can explain your position and outline possible options.**
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### Common features in a letter of demand
 
 Here are common features of these letters: 

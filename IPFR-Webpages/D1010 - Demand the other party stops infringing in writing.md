@@ -29,6 +29,8 @@ An effective letter of demand will:  
 
 **A letter of demand will also usually be more effective if it is sent by an IP lawyer or IP attorney on your behalf, rather than you sending it personally. However, you may want to consider the cost of obtaining this legal assistance against the monetary value of any compensation or licence fee you are seeking.**
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Often cost-effective.

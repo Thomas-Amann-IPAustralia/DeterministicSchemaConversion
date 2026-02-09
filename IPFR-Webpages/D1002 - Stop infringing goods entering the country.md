@@ -18,6 +18,8 @@ The scheme works better if you keep ABF informed about potential unapproved impo
 
 **Please Note:** A Notice of Objection [cannot act retrospectively](https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf)  for goods/copies that have already been imported. 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Provides a way to intercept infringing imports before they enter the Australian market.

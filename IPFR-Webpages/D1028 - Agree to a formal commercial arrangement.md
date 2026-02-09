@@ -37,6 +37,8 @@ Sometimes, direct negotiation may not be the best way forward to resolve an IP d
 
 In some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see - [Resolve IP issues with the help of a third party | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/mediation)).   
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Often cost-effective.

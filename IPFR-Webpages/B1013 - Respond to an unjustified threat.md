@@ -27,6 +27,8 @@ It can be difficult to know whether a notice or correspondence amounts to an unj
 
 **It is always prudent to seek legal advice before deciding whether to start legal action.**There are often options other than court for responding to an unjustified threat -- like writing back to the other party to clarify your position -- before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond. 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Can help stop unjustified threats which may be negatively impacting your business.

@@ -18,6 +18,8 @@ You can respond in a way that lowers the risk of conflict and explores mutually 
 
 For more information on possible commercial solutions, see IP First Response's page: [Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement). 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Early dialogue can limit legal costs and reduce the risk of expensive and lengthy litigation.

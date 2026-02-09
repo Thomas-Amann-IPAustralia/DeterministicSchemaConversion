@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/common-scams](http
 
 ### What is it?
 
-Business owners have reported receiving messages from scammers that threaten others with claims of IP infringement or send unsolicited invoices pretending to be IP Australia. It helps you spot warning signs quickly so you can decide whether to look closer or ignore the message. 
+Business owners have reported receiving messages from scammers that threaten others with claims of IP infringement or send unsolicited invoices pretending to be IP Australia. Spot warning signs quickly so you can decide whether to look closer or ignore the message. 
 
 Common examples include fake renewal invoices or reminders, emails claiming to be from 'IP Australia', and 'cease and desist' threats from a pretend law firm. Scammers also send fake IP violation notices via social or marketplace platforms, or sell listing services that sound like official protection. Note that listings on non-official 'registers' don't create legal rights or protection. 
 
@@ -28,6 +28,8 @@ Look for these red flags: 
 You can also confirm any official notice by logging into IP Australia's [Online Services](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings).  
 
 If you suspect a scam, you may wish to report it to [Scamwatch](https://www.scamwatch.gov.au/)  or [ReportCyber](https://www.cyber.gov.au/report-and-recover/report), and keep any evidence such as screenshots or email headers. 
+
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### See also
 

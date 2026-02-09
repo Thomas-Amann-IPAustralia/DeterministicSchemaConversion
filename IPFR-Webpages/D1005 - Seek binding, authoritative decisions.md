@@ -22,6 +22,8 @@ Courts can hear many types of trade mark disputes including:  
 
 Trade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.   
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * If you succeed, a court can award damages or compensation for losses and costs (including, in some cases, an account of profits made by an infringer through their infringement).

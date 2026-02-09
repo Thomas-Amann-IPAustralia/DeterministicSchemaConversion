@@ -29,6 +29,8 @@ It can feel very personal when someone is infringing on your intellectual proper
 
 It can be helpful to speak to an IP professional to help you develop an overall IP strategy, which makes it easier to decide when and how to respond to different types of infringement, as well as taking pro-active steps to prevent future infringement. 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * The time, cost and labour required to take actions to prevent infringement on your IP may not be justified at this point in your business or IP journey.

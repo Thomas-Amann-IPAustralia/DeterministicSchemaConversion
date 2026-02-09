@@ -2,94 +2,111 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registra
 
 ## Opposition process
 
-# Challenge the registration of a new trade mark to defend your right
+# Challenge the registration of a new trade mark
 
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
+*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
 ### What is it?
 
-If someone has accused you of copying or using their trade mark without permission, and the other party's trade mark is pending registration with IP Australia,  you may be able to challenge their trade mark application directly with IP Australia by initiating a trade mark opposition process. This process requires you to submit your supporting evidence and argument as to why the trade mark should not be registered.
+Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia. 
 
-There are several reasons on which a trade mark application can be opposed, including (but not limited to):
+There are several reasons on which a trade mark application can be opposed, including (but not limited to):  
 
-* Similarity to an existing trade mark
-* Being too generic or descriptive
-* Containing a connotation that is misleading and confusing.
+* similarity to an existing trade mark
+* being too generic or descriptive
+* containing a connotation that is misleading and confusing.
 
-If your actions are successful, the  other party will no longer have rights associated with the registration of their trade mark.
+Opposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia. 
 
-Objections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.
+Objections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options. 
 
-If the application you wish to oppose is in the two-month window, you can file a 'Notice of Intention to Oppose'  before it becomes registered. The opposition procedure can involve either a written or oral hearing, or a written decision without a hearing.
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 
-* A successful opposition weakens the other party's rights to the trade mark that is allegedly being copied or used without permission.
-* Trade mark opposition and hearing processes are more informal and generally quicker than court proceedings in reaching an outcome.
+* Initiating this process allows you to draw attention to factors which may have been overlooked in the examination process or other issues which may not have been allowed to be considered during examination.
+* The hearing officer has the power to award *costs* against a party to help recoup some of the costs incurred by the other party during the opposition process. This does not, however, extend to any losses or damages.
 * Hearing officers in IP Australia have a high level of expertise, experience and authority in the field of trade mark law.
 * The process is accessible without professional assistance required, though IP professionals are commonly used.
+* Trade mark opposition and hearing processes are more informal and generally quicker than court proceedings in reaching an outcome.
 * The process allows parties to request a cooling-off period or temporary suspension of the process to engage in negotiations and settlement, should they wish to resolve the dispute that way.
-* You can withdraw from the opposition process at any time before the hearing officer has made a decision. This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.
+* You can withdraw from the opposition process at any time. This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.
 
 ### What are the risks?
 
-* If your opposition is unsuccessful and the trade mark proceeds to registration, you may also be required to pay the other party's costs.
-* When opposing the registration of a trade mark, the applicant will be notified of your opposition. You should consider your overall strategy and if you are comfortable having the other party be aware of your actions.
-* Due to the public nature of these procedures there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to take an enforcement action should be considered as part of your IP/brand protection strategy.
+* If your opposition action is unsuccessful and the trade mark is registered, you may also be required to pay the other party's costs.
+* When opposing the registration of a trade mark, the applicant will be notified of your opposition. You should consider your overall strategy and if you are comfortable having the applicant be aware of you and your business.
+* Due to the public nature of this process there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to take enforcement action should be considered as part of your IP/brand protection strategy.
 * There is a risk that taking this action would require you to defend your own IP rights. The ruling might not go your way and undermine the strength of your own IP.
-* Using these procedures improperly can be considered a bullying tactic and may expose you to costs.
-* If you are successful in opposing registration of a trade mark, the denied applicant may appeal the decision to court.
-* If you lose, the other party may refer to that decision in their infringement claim, though Courts are not bound by IP Australia's decisions.
-* The other party may still take court action during the process.
+* It is possible that opposing a registration of a trade mark can alert the other party to your claims and can cause them to act more defensively or even contest your own rights.
+* Using this process improperly can be considered a bullying tactic and may expose you to costs.
+* If you are late in providing evidence, you can request an extension to the evidence submission timeframe. However, these can be difficult to obtain. You will need to demonstrate strong grounds for the extension and pay additional fees to IP Australia when you make the request. These fees are not refundable even if the extension isn't granted.
+* If you are successful in opposing registration of a trade mark, the denied applicant may appeal the decision
 
 ### What are the possible outcomes?
 
-* IP Australia refuses the application and the trade mark does become registered.
-* The applicant narrows or amends the goods and services specified in the trade mark application, and it proceeds in a reduced form.
-* The opposition to registering the trade mark is dismissed and the trade mark is registered without changes.
-* Either party appeals a decision to the Administrative Review Tribunal, or the Federal Court of Australia, or the Federal Circuit and Family Court.
-* The parties settle privately and withdraw the opposition (or application) before a decision.
+1. The other party does not contest your opposition to their registration, and the trade mark application does not get registered.
+2. The other party contests your argument and defends their application in an opposition and hearings process, resulting in:
+   * achieving registration, advertised amendment or extension of time in favour of their position, or
+   * your opposition being upheld, and the other party fails to achieve registration, advertised amendment or extension of time.
+3. IP Australia doesn't accept your application to oppose an accepted trade mark when your application does not meet formal or legal requirements.
 
-### What might the costs be?
+### What might the cost be?
 
-Official fees start at $250 to file the notice of intention to oppose. If a hearing is needed, IP Australia charges $700, or $500 for a hearing conducted on written submissions only. The fee for requesting a decision without a hearing is $400.
+* The fees to IP Australia will typically cost $650. However, extensions of time and other processes will incur further costs. Detailed costs [can be seen here](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0).
+* If you have an IP professional acting on your behalf, you may be liable for additional legal fees.
 
 ### How much time might be involved?
 
-From filing the notice of your intention to oppose to a final decision on written evidence typically takes at least 6 to 12 months.
+**Duration of process** \
+The process duration varies depending on the complexity of the matter in question, how quickly each party responds and each party's strategy. Refer to some of the timeframes permitted in the image below. 
+
+![Process of opposing Australian trade mark registration. After IP Australia accepts application, paths: unopposed (mark registered) or opposed (up to 6 steps with set timeframes). Opposition process: file opposition → 1 month → file statement of grounds → 1 month → notice of intention to defend → 3 months → evidence in support → 3 months → evidence in answer → 2 months → evidence in reply. Total process: 10 months without extensions.](/sites/default/files/images/2025-03/Screenshot%202025-03-05%20103622.png)
+
+[Flow chart - Oppose the registration of a trade mark](https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60)  
+
+**Timeframe to initiate process** 
+
+![Status diagram showing trade mark application process. Current status: 'Acceptance / Opposition' (highlighted), with 'Acceptance advertised / published 30 Jan 2025' details below. Future status 'Registered' appears at bottom, indicating the next step in the process.](/sites/default/files/images/2025-03/Published%20TM.png)
+
+Unless the period has been extended, opposition to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options. 
+
+The status of the trade mark in the Register will be shown as 'Accepted: In opposition period' during this period. It will also contain an 'application being considered' notice above the application's timeline. Check the status of the trade mark now, and ensure that less than two months have passed from the date of acceptance from [Australian Trade Mark Search](https://search.ipaustralia.gov.au/trademarks/search/quick). 
 
 ### How much is this used?
 
-Between 1% - 3% of trade marks whose acceptance is advertised are opposed. This currently equates to around 2,000 oppositions to registration per year.
+Between 1% - 3% of marks whose acceptance is advertised are opposed. This currently equates to around 2,000 oppositions to registration per year.
 
 ### Who can use this?
 
-Any person can oppose accepted trade marks within the opposition period.
+Any person can oppose accepted trade marks within the opposition period.
 
 ### Who's involved?
 
-* The other party (trade mark owner or applicant).
-* You (the opponent).
-* IP Australia's Oppositions & Hearings Section.
+* You, or in other words, the person who initiates an opposition process.
+* The party who has applied for registration of the trade mark.
+* IP Australia's Oppositions & Hearings Section in Trade Marks and Designs Group.
 * Your legal representatives, if you choose to engage an IP professional (such as a lawyer or IP attorney).
 
-### What do you need to proceed?
+### What you need to proceed?
 
-* Read all the information relating to [trade mark opposition](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings)  and [the forms](https://www.ipaustralia.gov.au/tools-and-research/forms/notice-of-intention-to-oppose)  required in the opposition process on the IP Australia website. You can find more specific, technical information on the trade mark opposition process in the relevant parts of [Trade Marks Manual of Practice and Procedure](https://manuals.ipaustralia.gov.au/trademark).
-* Monitor the[Australian Trade Mark Search (ATMS)](https://search.ipaustralia.gov.au/trademarks/search/quick)  and spot conflicting trade marks within two months of advertisement. You may consider engaging an IP professional who undertakes trade mark monitoring or watching services if you need assistance in this process. For more information on this, see IP First Response's page on Monitoring Competitors' IP.
-* Gather evidence demonstrating your earlier trade mark use, registration or other legal basis.
-* Complete and submit online forms: notice of intention to oppose and Statement of Grounds and Particulars.
-* Budget for official and professional fees.
-* Keep copies of all filings, correspondence and evidence.
+IP professionals are commonly used to help navigate the process and assist parties to present their cases, though it is not a requirement of IP Australia.
+
+You can initiate an opposition process by submitting *a notice of opposition.* Doing so informs IP Australia of the potential conflict or grounds as to why the trade mark is not registrable, and gives all parties involved opportunities to present their cases and evidence, which will then enable IP Australia to decide whether or not to register the trade mark. If the opposition to registration is successful, the trade mark will not be registered.
+
+Depending on the grounds on which you are opposing, you may need to provide documents, details or other types of supporting evidence to support your argument. More information can be found on the IP Australia website regarding the types of evidence that would help your case and formal requirements for evidence: [Evidence In Oppositions And PBR Objections | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections).
+
+To begin the process, log into [online services.](https://www.ipaustralia.gov.au/manage-my-ip)  and select 'File an opposition'
+
+![Screenshot of IP Australia's trade mark opposition webpage. The page shows three main sections: 'File an opposition' (showing options to file a new opposition or statement of grounds), 'Manage an opposition matter' (showing options for submission management, extensions, and withdrawal), and 'Request or attend a hearing' (showing hearing request options and cooling-off period requests). The Australian Government logo appears in the top left, with navigation menu options visible across the top of the page.](/sites/default/files/images/2025-03/How%20to%20file%20a%20TM%20opposition.png)
 
 ### See also
 
-* [Challenge the registration of a trade mark | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)
-* [Opposition hearings | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings)
-* [How to challenge someone else's IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip)
-* [Trade Marks Manual of Practice and Procedure](https://manuals.ipaustralia.gov.au/trademark)
-* [Forms](https://www.ipaustralia.gov.au/tools-and-research/forms)
-* [IP First Response | Monitoring Competitors' IP](https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity)
+* [Opposition And Objection Fees | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)
+* [How To Challenge Someone Else's IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip)
+* [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0).
+
+*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
 
 ### Want to give us feedback?
 

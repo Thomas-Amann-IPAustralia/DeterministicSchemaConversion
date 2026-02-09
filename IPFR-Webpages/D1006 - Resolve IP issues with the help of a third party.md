@@ -30,6 +30,8 @@ Mediation isn't for everyone. Mediation may not be suitable when:  
 * a party is certain that it has a straightforward case to the extent that there is no room for settlement or negotiation
 * deliberate counterfeiting or piracy has occurred.
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Costs and duration of the process is generally quite low.

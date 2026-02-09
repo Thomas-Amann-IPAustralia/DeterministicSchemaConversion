@@ -14,6 +14,8 @@ A panel of independent arbitrators and legal practitioners will consider submiss
 
 **Please Note:** If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP). 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * The process can occur even without participation from the other party.

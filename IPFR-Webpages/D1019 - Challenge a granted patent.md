@@ -20,6 +20,8 @@ A patent re-examination is a means for challenging the *validity*\* of a granted
 
 *\*the validity of a patent regards its compliance with the Patents Act, i.e. if it should have been granted in the first place (or has new evidence come to light that indicates it should not have been granted).*
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 A patent re-examination provides a relatively affordable and expedient means of challenging the validity of a patent. 

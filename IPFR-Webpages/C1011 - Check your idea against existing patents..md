@@ -20,6 +20,8 @@ A freedom to operate search typically only searches patents, and does not includ
 
 **A freedom to operate search does not give you a legal guarantee - but it may help you avoid costly surprises later.** 
 
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+
 ### What are the benefits?
 
 * Reduces risk of accidentally infringing someone else's patent.

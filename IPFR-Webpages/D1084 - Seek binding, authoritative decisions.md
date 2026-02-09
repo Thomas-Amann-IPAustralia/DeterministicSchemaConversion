@@ -26,7 +26,7 @@ These are only granted in narrow circumstances, including that you have a strong
 
 **PBR court cases are rare. This means there is limited legal precedent for judges and lawyers to draw on. This makes it harder to build a strong case, increases potential costs, and adds uncertainty to how a judge might rule.** 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement)
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 
