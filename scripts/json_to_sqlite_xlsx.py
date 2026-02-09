@@ -7,16 +7,24 @@ import re
 from datetime import datetime
 
 # Configuration
-# Get the directory where this script resides (e.g., /repo/scripts)
+# 1. Get the absolute path of the script file itself (e.g., /repo/scripts/myscript.py)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Define Repo Root (Go up one level from /scripts)
+# 2. Go up one level to find the Repo Root (e.g., /repo/)
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
-# Define Input/Output paths relative to the Repo Root
+# 3. Define Input Path
 INPUT_FOLDER = os.path.join(REPO_ROOT, "JSON_output-enriched")
-OUTPUT_FILE = os.path.join(REPO_ROOT, "SQLite_Structure.xlsx")
-ENCODING_MODEL = "cl100k_base"  # Standard GPT-4 encoding
+
+# 4. Define Output Path (New Requirements)
+OUTPUT_DIR = os.path.join(REPO_ROOT, "DeterministicSchemaConversion", "reports")
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, "SQLite_Structure.xlsx")
+
+# Ensure the output directory exists before we try to save to it
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# Encoding settings
+ENCODING_MODEL = "cl100k_base"
 
 # Initialize Tokenizer
 tokenizer = tiktoken.get_encoding(ENCODING_MODEL)
