@@ -14,7 +14,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
 # 3. Define Input Path
-INPUT_FOLDER = os.path.join(REPO_ROOT, "JSON_output-enriched")
+INPUT_FOLDER = os.path.join(REPO_ROOT, "json_output-enriched")
 
 # 4. Define Output Path (New Requirements)
 OUTPUT_DIR = os.path.join(REPO_ROOT, "DeterministicSchemaConversion", "reports")
