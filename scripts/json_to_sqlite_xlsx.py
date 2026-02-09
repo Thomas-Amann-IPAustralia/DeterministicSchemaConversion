@@ -7,8 +7,15 @@ import re
 from datetime import datetime
 
 # Configuration
-INPUT_FOLDER = "JSON_output-enriched"
-OUTPUT_FILE = "SQLite_Structure.xlsx"
+# Get the directory where this script resides (e.g., /repo/scripts)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define Repo Root (Go up one level from /scripts)
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+
+# Define Input/Output paths relative to the Repo Root
+INPUT_FOLDER = os.path.join(REPO_ROOT, "JSON_output-enriched")
+OUTPUT_FILE = os.path.join(REPO_ROOT, "SQLite_Structure.xlsx")
 ENCODING_MODEL = "cl100k_base"  # Standard GPT-4 encoding
 
 # Initialize Tokenizer
