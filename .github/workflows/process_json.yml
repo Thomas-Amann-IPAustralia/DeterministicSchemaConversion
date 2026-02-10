@@ -1,0 +1,66 @@
+name: Generate JSON-LD from Markdown
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      # Run automatically if markdown, script, or csv changes
+      - 'IPFR-Webpages/*.md'
+      - 'scripts/*.py'
+      - '*.csv'
+
+# Required to push the report back to the repo
+permissions:
+  contents: write
+
+jobs:
+  build-and-process:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code so the script can access IPFR-Webpages and the CSV
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 2. Run the script from the root directory
+      # This ensures it finds 'IPFR-Webpages' and generates 'json_output'
+      - name: Run Processing Script
+        run: python scripts/process_md_to_json.py
+
+      # 3. Upload the JSON files as an artifact (Updated to v4)
+      - name: Upload JSON Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-ld-output
+          path: json_output/
+          if-no-files-found: warn
+
+      # 4. Commit and push the report AND json files
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the report AND the JSON output directory
+          git add reports/after_action_report.txt
+          git add json_output/
+          
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update JSON-LD outputs and report [skip ci]"
+            git push
+          fi
