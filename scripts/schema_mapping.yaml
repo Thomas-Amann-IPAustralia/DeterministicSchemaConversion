@@ -1,17 +1,8 @@
-# schema_mapping.yaml
-settings:
-  source_folder: "./json_data"
-  output_folder: "./output_tables"
-
-# ---------------------------------------------------------
-# Table Definitions
-# ---------------------------------------------------------
 tables:
-  
   # 1. Primary Table (Metadata & Service Info)
   primary:
     filename: "Primary.csv"
-    root_path: "$" # Root of the JSON
+    root_path: "$"
     columns:
       UDID: "identifier.value"
       Headline: "headline"
@@ -23,15 +14,15 @@ tables:
       Geographic_Area: "audience.geographicArea.name"
       IP_Right_Name: "about.name"
       IP_Right_Wikidata_URL: "about.sameAs"
-      Service_Type: "mainEntity[0].@type" # Assumes first entity defines type
+      Service_Type: "mainEntity[0].@type"
       Service_Name: "mainEntity[0].name"
-      HowTo_Name: "mainEntity[?(@.@type=='HowTo')].name" # JSONPath filter for HowTo
+      HowTo_Name: "mainEntity[?(@.@type=='HowTo')].name"
       Service_Provider: 
         path: "mainEntity[0].serviceOperator.name"
         default: "Self-service"
-        logic: "if_article_then_self_service" # Custom logic hook
+        logic: "if_article_then_self_service"
 
-  # 2. Influences (Currently Placeholders)
+  # 2. Influences (Citations/Related)
   influences:
     filename: "Influences.csv"
     root_path: "$"
@@ -42,12 +33,12 @@ tables:
       Influence_ID: "const:Null (FOR NOW)"
       Influence_URL: "const:Null (FOR NOW)"
 
-  # 3. LinksTo (Related Links)
+  # 3. LinksTo (Outbound Links)
   links_to:
     filename: "LinksTo.csv"
-    root_path: "relatedLink[*]" # Iterates over the relatedLink array
+    root_path: "relatedLink[*]"
     columns:
-      UDID: "parent:identifier.value" # 'parent:' grabs from the root JSON, not the current item
+      UDID: "parent:identifier.value"
       Headline_Alt: "parent:alternativeHeadline"
       Destination_URL: "url"
       Destination_name: "name"
@@ -56,12 +47,11 @@ tables:
         logic: "check_internal_link"
       Internal_Destination_UDID: 
         path: "url"
-        logic: "extract_udid_from_url" # Placeholder logic
+        logic: "extract_udid_from_url"
 
   # 4. HowTo (Steps)
   howto:
     filename: "HowTo.csv"
-    # Complex path: Find the mainEntity that is a HowTo, then get its steps
     root_path: "mainEntity[?(@.@type=='HowTo')].step[*]" 
     columns:
       UDID: "parent:identifier.value"
@@ -72,23 +62,17 @@ tables:
   # 5. FAQ (Q&A)
   faq:
     filename: "FAQ.csv"
-    # Complex path: Find the FAQPage, then iterate its mainEntity (Questions)
     root_path: "mainEntity[?(@.@type=='FAQPage')].mainEntity[*]"
     columns:
       UDID: "parent:identifier.value"
       Headline_Alt: "parent:alternativeHeadline"
       Question: "name"
       Answer: "acceptedAnswer.text"
-      # Note: Your Excel flattens specific questions into columns (Benefits, Risks, Costs).
-      # The generic script extracts them as rows. A 'pivot' logic would be required 
-      # to match the exact wide-format of your Excel if strictly required, 
-      # but row-based is better for SQL ingestion.
-      # *Logic below attempts to categorize them for the 'pivot' style if needed*
       Category: 
         path: "name"
         logic: "categorize_faq"
 
-  # 6. Semantic (Chunks - Placeholders)
+  # 6. Semantic (Chunks)
   semantic:
     filename: "Semantic.csv"
     root_path: "$"
@@ -98,27 +82,32 @@ tables:
       Chunk_ID: "const:Null (FOR NOW)"
       Chunk_Token_Count: "const:Null (FOR NOW)"
       Chunk_Text: 
-        path: "description" # Using description as a simple chunk for now
+        path: "description"
         logic: "append_headline"
       Chunk_Embedding: "const:Null (FOR NOW)"
       Chunk_Injection: "const:Null (FOR NOW)"
 
-  # 7. Raw Data
-raw_data:
+  # 7. Raw Data (Source Content & Tokens)
+  raw_data:
     filename: "RawData.csv"
     root_path: "$"
     columns:
       UDID: "identifier.value"
       Headline_Alt: "alternativeHeadline"
-      # These hooks now use the UDID lookup logic
+      
+      # Looks for file in IPFR-Webpages-html starting with UDID
       HTML_Raw: 
         logic: "get_raw_html"
       HTML_Raw_Token_Count: 
         logic: "count_raw_html"
+      
+      # Looks for file in IPFR-Webpages starting with UDID
       MD_Raw: 
         logic: "get_raw_md"
       MD_Raw_Token_Count: 
         logic: "count_raw_md"
+      
+      # Dumps the specific JSON file
       JSON_Raw: "whole_json"
       Json_Raw_Token_Count: 
         logic: "count_json_tokens"
