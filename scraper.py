@@ -48,7 +48,7 @@ def initialize_driver():
         # Set a custom header that sends your email with every request
         driver.execute_cdp_cmd('Network.setExtraHTTPHeaders', {
             'headers': {
-                'X-Scraper-Contact': 'mailto:your-email@example.com',
+                'X-Scraper-Contact': 'mailto:ipfirstresponse@ipaustralia.gov.au',
                 'X-Bot-Name': 'IPFR-Content-Aggregator'
             }
         })
