@@ -7,291 +7,243 @@ import pandas as pd
 import tiktoken
 from jsonpath_ng.ext import parse
 from typing import Any, List, Dict
-import time
 
-# --- Global Cache ---
-# We store directory listings here so we don't scan the hard drive 1000s of times
+# --- Global Cache & Registry ---
 FILE_CACHE = {
-    "md": [],
-    "html": []
+    "md": {},   # Map: {'B1020': 'full_path_to_file.md'}
+    "html": {}  # Map: {'B1020': 'full_path_to_file.html'}
 }
-
-# We store compiled JSON paths here to save CPU
+URL_REGISTRY = {} # Map: {'https://ipfirstresponse...': 'B1020'}
 JSONPATH_CACHE = {}
-
 TOKENIZER = None
 
-# --- Setup & Optimization ---
+# --- Setup & Helpers ---
 
 def setup_tokenizer():
     global TOKENIZER
-    print("⏳ Initializing Tiktoken (this may download model data)...")
     try:
         TOKENIZER = tiktoken.get_encoding("cl100k_base")
-        print("✅ Tiktoken initialized.")
     except Exception as e:
         print(f"⚠️ Warning: Tiktoken failed to load ({e}). Token counts will be 0.")
 
-def pre_scan_directories(md_path, html_path):
-    """Scans directories ONCE and stores filenames in memory."""
-    print("⏳ Pre-scanning source directories...")
-    
-    if md_path and os.path.exists(md_path):
-        FILE_CACHE["md"] = os.listdir(md_path)
-        print(f"   - Found {len(FILE_CACHE['md'])} Markdown files.")
-    
-    if html_path and os.path.exists(html_path):
-        FILE_CACHE["html"] = os.listdir(html_path)
-        print(f"   - Found {len(FILE_CACHE['html'])} HTML files.")
-
-def get_jsonpath(path_str):
-    """Returns a compiled JSONPath expression from cache."""
-    if path_str not in JSONPATH_CACHE:
-        try:
-            JSONPATH_CACHE[path_str] = parse(path_str)
-        except Exception as e:
-            print(f"❌ Invalid JSONPath: {path_str}")
-            return None
-    return JSONPATH_CACHE[path_str]
-
-# --- Helper: Fast File Lookup ---
-
-def find_file_by_udid_fast(udid, cache_key, folder, extension):
-    """
-    Looks up file in the memory cache instead of the disk.
-    """
-    if not udid or not folder:
-        return ""
-    
-    # Access the cached list of files
-    file_list = FILE_CACHE.get(cache_key, [])
-    
-    # Fast filtering in memory
-    # We assume the file STARTS with the UDID (e.g., "B1000 - ...")
-    for fname in file_list:
-        if fname.startswith(udid) and fname.endswith(extension):
-            full_path = os.path.join(folder, fname)
-            try:
-                with open(full_path, 'r', encoding='utf-8') as f:
-                    return f.read()
-            except:
-                return ""
-    return ""
-
 def count_tokens(text):
-    if not text or TOKENIZER is None:
-        return 0
+    if not text or not TOKENIZER: return 0
+    return len(TOKENIZER.encode(str(text)))
+
+def pre_scan_files(source_dir, md_dir, html_dir):
+    """
+    1. Maps UDIDs to their specific MD/HTML filenames.
+    2. Builds a URL -> UDID registry from all JSONs for internal linking.
+    """
+    print("⏳ Pre-scanning files to build registries...")
+    
+    # Scan MD/HTML
+    for f_type, path in [("md", md_dir), ("html", html_dir)]:
+        if path and os.path.exists(path):
+            for file_path in glob.glob(os.path.join(path, "*")):
+                # Assuming filename starts with UDID (e.g., "B1020 - Name.md")
+                filename = os.path.basename(file_path)
+                udid = filename.split()[0].strip() # Simple extraction
+                FILE_CACHE[f_type][udid] = file_path
+
+    # Scan JSONs for URL Registry
+    json_files = glob.glob(os.path.join(source_dir, "*.json"))
+    for jf in json_files:
+        try:
+            with open(jf, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                # Extract UDID and URL
+                udid_match = parse("identifier.value").find(data)
+                url_match = parse("url").find(data)
+                
+                if udid_match and url_match:
+                    udid = udid_match[0].value
+                    url = url_match[0].value
+                    URL_REGISTRY[url] = udid
+        except:
+            continue
+            
+    print(f"   - Mapped {len(URL_REGISTRY)} internal URLs for cross-referencing.")
+
+# --- Custom Logic Functions ---
+
+def logic_derive_service_provider(value, row_context, root_data):
+    """Implements: IF Service_Type = Article THEN Self-service ELSE serviceOperator.name"""
     try:
-        return len(TOKENIZER.encode(text))
+        service_type = root_data.get("mainEntity", [{}])[0].get("@type", "")
+        if service_type == "Article":
+            return "Self-service"
+        else:
+            return root_data.get("mainEntity", [{}])[0].get("serviceOperator", {}).get("name", "Unknown")
     except:
-        return 0
+        return "Unknown"
 
-# --- Logic Functions ---
+def logic_check_is_internal_link(url, row_context, root_data):
+    if not url: return "No"
+    return "Yes" if "ipfirstresponse" in str(url) else "No"
 
-def get_udid(root_data):
-    return root_data.get('identifier', {}).get('value')
+def logic_lookup_internal_udid(url, row_context, root_data):
+    # Normalize URL (remove trailing slash for matching)
+    clean_url = str(url).rstrip('/')
+    # Try direct match or match with/without slash
+    return URL_REGISTRY.get(clean_url, URL_REGISTRY.get(clean_url + '/', "Null"))
 
-def logic_get_raw_md(value, row_context, root_data):
-    udid = get_udid(root_data)
-    # Use the global FILE_PATHS stored in main context if needed, 
-    # but here we pass the folder path dynamically? 
-    # To keep it clean, we rely on the args passed to main being available or passed down.
-    # For simplicity in this architecture, we will access the global ARGS_PATHS set in main.
-    return find_file_by_udid_fast(udid, "md", ARGS_PATHS['md'], '.md')
+def logic_generate_semantic_chunk(root_data, row_context, _):
+    """Concatenates Headline + Alt + Description for embedding"""
+    h = root_data.get("headline", "")
+    alt = root_data.get("alternativeHeadline", "")
+    desc = root_data.get("description", "")
+    return f"{h}\n{alt}\n{desc}"
 
-def logic_get_raw_html(value, row_context, root_data):
-    udid = get_udid(root_data)
-    return find_file_by_udid_fast(udid, "html", ARGS_PATHS['html'], '.html')
+def logic_read_file_content(udid, file_type):
+    path = FILE_CACHE[file_type].get(udid)
+    if not path: return "FILE_NOT_FOUND"
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except Exception as e:
+        return f"ERROR: {str(e)}"
 
-def logic_count_raw_md(value, row_context, root_data):
-    content = logic_get_raw_md(value, row_context, root_data)
-    return count_tokens(content)
+# Wrappers for specific logic calls
+def logic_read_html_file(udid, *args): return logic_read_file_content(udid, "html")
+def logic_read_md_file(udid, *args): return logic_read_file_content(udid, "md")
+def logic_count_html_tokens(udid, *args): return count_tokens(logic_read_file_content(udid, "html"))
+def logic_count_md_tokens(udid, *args): return count_tokens(logic_read_file_content(udid, "md"))
+def logic_dump_json_string(root_data, *args): return json.dumps(root_data)
+def logic_count_json_tokens(root_data, *args): return count_tokens(json.dumps(root_data))
 
-def logic_count_raw_html(value, row_context, root_data):
-    content = logic_get_raw_html(value, row_context, root_data)
-    return count_tokens(content)
-
-def logic_count_json_tokens(value, row_context, root_data):
-    json_str = json.dumps(root_data, default=str)
-    return count_tokens(json_str)
-
-def logic_if_article_then_self_service(value, row_context, root_data):
-    main_entities = root_data.get('mainEntity', [])
-    if isinstance(main_entities, list) and main_entities:
-        if main_entities[0].get('@type') == 'Article':
-            return 'Self-service'
-    return value if value else "IP Australia"
-
-def logic_check_internal_link(value, row_context, root_data):
-    if value and "ipfirstresponse" in str(value):
-        return "Yes"
-    return "No"
-
-def logic_extract_udid_from_url(value, row_context, root_data):
-    return "Null"
-
-def logic_categorize_faq(value, row_context, root_data):
-    val_lower = str(value).lower()
-    if "benefit" in val_lower: return "Benefits"
-    if "risk" in val_lower: return "Risks"
-    if "cost" in val_lower: return "Costs"
-    if "time" in val_lower: return "Time"
-    return "General"
-
-def logic_append_headline(value, row_context, root_data):
-    headline = root_data.get('headline', '')
-    return f"{headline}\n{value}"
-
-LOGIC_MAP = {
-    "get_raw_md": logic_get_raw_md,
-    "get_raw_html": logic_get_raw_html,
-    "count_raw_md": logic_count_raw_md,
-    "count_raw_html": logic_count_raw_html,
-    "count_json_tokens": logic_count_json_tokens,
-    "if_article_then_self_service": logic_if_article_then_self_service,
-    "check_internal_link": logic_check_internal_link,
-    "extract_udid_from_url": logic_extract_udid_from_url,
-    "categorize_faq": logic_categorize_faq,
-    "append_headline": logic_append_headline
+LOGIC_FUNCTIONS = {
+    "derive_service_provider": logic_derive_service_provider,
+    "check_is_internal_link": logic_check_is_internal_link,
+    "lookup_internal_udid": logic_lookup_internal_udid,
+    "generate_semantic_chunk": logic_generate_semantic_chunk,
+    "read_html_file": logic_read_html_file,
+    "count_html_tokens": logic_count_html_tokens,
+    "read_md_file": logic_read_md_file,
+    "count_md_tokens": logic_count_md_tokens,
+    "dump_json_string": logic_dump_json_string,
+    "count_json_tokens": logic_count_json_tokens
 }
-
-# Global container for paths
-ARGS_PATHS = {"md": None, "html": None}
 
 # --- Core Processing ---
 
-def extract_value(path_str: str, data: Any) -> Any:
-    # Use cached parser
-    expr = get_jsonpath(path_str)
-    if not expr: return None
+def get_value(datum, selector, logic_name=None, row_context=None, root_data=None):
+    """Extracts value using JSONPath or Custom Logic"""
+    val = None
     
-    try:
-        match = expr.find(data)
-        if match:
-            return match[0].value
-    except:
-        return None
-    return None
-
-def process_file(file_path: str, config: Dict) -> Dict[str, List[Dict]]:
-    with open(file_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    results = {}
-    for table_name, table_config in config['tables'].items():
-        rows = []
-        root_path = table_config.get('root_path', '$')
-        
-        # Determine Context
-        if root_path == '$':
-            context_items = [data]
+    # 1. Path Extraction
+    if selector:
+        # Handle parent reference (hacky but functional for 1 level depth)
+        if selector.startswith("parent:"):
+            # If we are in a list item, we might not have easy access to parent unless passed
+            # For this script, 'root_data' is the parent for top-level lists
+            clean_path = selector.replace("parent:", "")
+            target = root_data
         else:
-            try:
-                expr = get_jsonpath(root_path) # Use Cache
-                context_items = [m.value for m in expr.find(data)]
-                if context_items and isinstance(context_items[0], list):
-                     context_items = [item for sublist in context_items for item in sublist]
-            except:
-                context_items = []
+            target = datum
+            clean_path = selector
 
-        # Build Rows
-        for item in context_items:
+        if clean_path not in JSONPATH_CACHE:
+            JSONPATH_CACHE[clean_path] = parse(clean_path)
+        
+        matches = JSONPATH_CACHE[clean_path].find(target)
+        if matches:
+            val = matches[0].value
+            # Handle List results (join if expected string, or return list)
+            if isinstance(val, list) and len(val) == 1:
+                val = val[0]
+
+    # 2. Logic Application
+    if logic_name and logic_name in LOGIC_FUNCTIONS:
+        # If path provided, use extracted val as input, else use datum
+        input_val = val if val is not None else datum
+        val = LOGIC_FUNCTIONS[logic_name](input_val, row_context, root_data)
+
+    # 3. Defaults
+    if val is None:
+        if selector and selector.startswith("const:"):
+            val = selector.replace("const:", "")
+        else:
+            val = None # CSV will show empty
+            
+    return val
+
+def process_file(filepath, config):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        root_data = json.load(f)
+    
+    file_results = {}
+    
+    for table_name, settings in config['tables'].items():
+        rows = []
+        root_path = settings['root_path']
+        
+        # Determine items to iterate over
+        if root_path == "$":
+            items = [root_data]
+        else:
+            if root_path not in JSONPATH_CACHE:
+                JSONPATH_CACHE[root_path] = parse(root_path)
+            items = [m.value for m in JSONPATH_CACHE[root_path].find(root_data)]
+            
+        # Process rows
+        for item in items:
             row = {}
-            for col_name, col_def in table_config['columns'].items():
+            for col, rules in settings['columns'].items():
+                path = rules if isinstance(rules, str) else rules.get('path')
+                logic = rules.get('logic') if isinstance(rules, dict) else None
                 
-                # ... (Same Extraction Logic as before) ...
-                if isinstance(col_def, str):
-                    if col_def.startswith("const:"):
-                        row[col_name] = col_def.replace("const:", "")
-                    elif col_def.startswith("parent:"):
-                        row[col_name] = extract_value(col_def.replace("parent:", ""), data)
-                    elif col_def == "whole_json":
-                        row[col_name] = json.dumps(data)
-                    else:
-                        row[col_name] = extract_value(col_def, item)
-                
-                elif isinstance(col_def, dict):
-                    path = col_def.get('path')
-                    logic = col_def.get('logic')
-                    val = None
-                    
-                    if not path and logic:
-                        val = None 
-                    elif path:
-                        if path == "whole_json":
-                            val = json.dumps(data)
-                        elif path.startswith("parent:"):
-                             val = extract_value(path.replace("parent:", ""), data)
-                        else:
-                             val = extract_value(path, item)
-                    
-                    if logic and logic in LOGIC_MAP:
-                        val = LOGIC_MAP[logic](val, item, data)
-                    
-                    if val is None and 'default' in col_def:
-                        val = col_def['default']
-
-                    row[col_name] = val
+                row[col] = get_value(item, path, logic, item, root_data)
             rows.append(row)
-        results[table_name] = rows
-    return results
+            
+        file_results[table_name] = rows
+        
+    return file_results
 
-def main():
+# --- Main Execution ---
+
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
     parser.add_argument("--source", required=True)
     parser.add_argument("--output", required=True)
-    parser.add_argument("--md-source", required=False)
-    parser.add_argument("--html-source", required=False)
+    parser.add_argument("--md-source", default="")
+    parser.add_argument("--html-source", default="")
     args = parser.parse_args()
 
-    # 1. Setup Globals
-    ARGS_PATHS['md'] = args.md_source
-    ARGS_PATHS['html'] = args.html_source
-    
     setup_tokenizer()
-    pre_scan_directories(args.md_source, args.html_source)
-
-    # 2. Load Config
+    pre_scan_files(args.source, args.md_source, args.html_source)
+    
     with open(args.config, 'r') as f:
         config = yaml.safe_load(f)
     
     if not os.path.exists(args.output):
         os.makedirs(args.output)
-
-    # 3. Gather Files
-    all_tables_data = {t: [] for t in config['tables']}
+        
+    all_data = {t: [] for t in config['tables']}
     json_files = glob.glob(os.path.join(args.source, "*.json"))
-    total_files = len(json_files)
     
-    print(f"🚀 Starting processing of {total_files} JSON files...")
-
-    # 4. Processing Loop with Heartbeat
-    start_time = time.time()
+    print(f"🚀 Processing {len(json_files)} files...")
     
-    for i, json_file in enumerate(json_files):
-        # HEARTBEAT LOG: Print every 10 files
-        if i % 10 == 0:
-            elapsed = time.time() - start_time
-            print(f"   [{i}/{total_files}] Processing {os.path.basename(json_file)} (Time: {elapsed:.1f}s)")
-
+    for jf in json_files:
         try:
-            file_data = process_file(json_file, config)
-            for table, rows in file_data.items():
-                all_tables_data[table].extend(rows)
+            res = process_file(jf, config)
+            for t, rows in res.items():
+                all_data[t].extend(rows)
         except Exception as e:
-            print(f"❌ Error processing {json_file}: {e}")
-
-    print("✅ Processing complete. Saving CSVs...")
-
-    # 5. Save Results
-    for table_name, data in all_tables_data.items():
-        if not data: continue
-        df = pd.DataFrame(data)
-        filename = config['tables'][table_name]['filename']
-        output_path = os.path.join(args.output, filename)
-        df.to_csv(output_path, index=False)
-        print(f"   Saved {filename} ({len(df)} rows)")
-
-if __name__ == "__main__":
-    main()
+            print(f"❌ Error in {jf}: {e}")
+            
+    print("💾 Saving CSVs...")
+    for t, data in all_data.items():
+        if data:
+            df = pd.DataFrame(data)
+            # Ensure columns order matches config
+            cols = list(config['tables'][t]['columns'].keys())
+            # Add missing cols if any (for safety)
+            for c in cols:
+                if c not in df.columns: df[c] = None
+            df = df[cols]
+            
+            out_path = os.path.join(args.output, config['tables'][t]['filename'])
+            df.to_csv(out_path, index=False)
+            print(f"   - {out_path} ({len(df)} rows)")
