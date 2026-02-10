@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas jsonpath-ng pyyaml tiktoken
+          pip install pandas jsonpath-ng pyyaml tiktoken openpyxl
 
       - name: Run Normalization Script
         run: |
