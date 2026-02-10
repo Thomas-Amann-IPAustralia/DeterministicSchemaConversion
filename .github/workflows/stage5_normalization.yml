@@ -36,8 +36,9 @@ jobs:
             --md-source IPFR-Webpages \
             --html-source IPFR-Webpages-html
 
-      - name: Commit and Push CSVs
+      - name: Commit and Push Data Tables
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Stage 5: Auto-generated Relational CSVs [skip ci]"
-          file_pattern: 'sqlite_data/*.xlsx'
+          commit_message: "Stage 5: Auto-generated Excel and CSV tables [skip ci]"
+          # Use a wildcard to catch both .csv and .xlsx
+          file_pattern: 'sqlite_data/*'
