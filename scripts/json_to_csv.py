@@ -240,7 +240,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"❌ Error in {jf}: {e}")
             
-print("💾 Saving data...")
+    print("💾 Saving data...")
     for t, data in all_data.items():
         if data:
             df = pd.DataFrame(data)
