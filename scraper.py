@@ -42,6 +42,16 @@ def initialize_driver():
     try:
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
+        # Enable network tracking to allow header injection
+        driver.execute_cdp_cmd('Network.enable', {})
+        
+        # Set a custom header that sends your email with every request
+        driver.execute_cdp_cmd('Network.setExtraHTTPHeaders', {
+            'headers': {
+                'X-Scraper-Contact': 'mailto:your-email@example.com',
+                'X-Bot-Name': 'IPFR-Content-Aggregator'
+            }
+        })
         stealth(driver,
                 languages=["en-US", "en"],
                 vendor="Google Inc.",
