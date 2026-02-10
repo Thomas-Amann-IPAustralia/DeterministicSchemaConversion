@@ -34,6 +34,7 @@ def find_file_by_udid(udid, folder, extension):
     try:
         files = os.listdir(folder)
         # Filter for files starting with UDID and ending with extension
+        # We assume the UDID is the first part of the filename
         matches = [f for f in files if f.startswith(udid) and f.endswith(extension)]
         
         if matches:
@@ -123,7 +124,8 @@ LOGIC_MAP = {
     "append_headline": logic_append_headline
 }
 
-# --- Core Processing (Unchanged) ---
+# --- Core Processing ---
+
 def extract_value(path_str: str, data: Any) -> Any:
     try:
         jsonpath_expr = parse(path_str)
@@ -143,20 +145,25 @@ def process_file(file_path: str, config: Dict) -> Dict[str, List[Dict]]:
         rows = []
         root_path = table_config.get('root_path', '$')
         
+        # Determine Context
         if root_path == '$':
             context_items = [data]
         else:
             try:
                 expr = parse(root_path)
                 context_items = [m.value for m in expr.find(data)]
+                # Flatten list of lists if necessary
                 if context_items and isinstance(context_items[0], list):
                      context_items = [item for sublist in context_items for item in sublist]
             except Exception:
                 context_items = []
 
+        # Build Rows
         for item in context_items:
             row = {}
             for col_name, col_def in table_config['columns'].items():
+                
+                # Simple String Definition
                 if isinstance(col_def, str):
                     if col_def.startswith("const:"):
                         row[col_name] = col_def.replace("const:", "")
@@ -167,12 +174,15 @@ def process_file(file_path: str, config: Dict) -> Dict[str, List[Dict]]:
                     else:
                         row[col_name] = extract_value(col_def, item)
                 
+                # Complex Dict Definition
                 elif isinstance(col_def, dict):
                     path = col_def.get('path')
                     logic = col_def.get('logic')
                     val = None
                     
-                    if path:
+                    if not path and logic:
+                        val = None 
+                    elif path:
                         if path == "whole_json":
                             val = json.dumps(data)
                         elif path.startswith("parent:"):
@@ -200,22 +210,29 @@ def main():
     parser.add_argument("--html-source", required=False)
     args = parser.parse_args()
 
+    # Set Global Paths for Logic Functions
     FILE_PATHS['md'] = args.md_source
     FILE_PATHS['html'] = args.html_source
 
+    # Load Config
     with open(args.config, 'r') as f:
         config = yaml.safe_load(f)
     
+    # Ensure Output Directory Exists
     if not os.path.exists(args.output):
         os.makedirs(args.output)
 
+    # Initialize Table Data Containers
     all_tables_data = {t: [] for t in config['tables']}
+    
+    # Get JSON Files
     json_files = glob.glob(os.path.join(args.source, "*.json"))
     
     print(f"🚀 Processing {len(json_files)} JSON files...")
-    if FILE_PATHS['md']: print(f"   🔍 MD Source: {FILE_PATHS['md']}")
-    if FILE_PATHS['html']: print(f"   🔍 HTML Source: {FILE_PATHS['html']}")
+    if FILE_PATHS['md']: print(f"   Using Markdown source: {FILE_PATHS['md']}")
+    if FILE_PATHS['html']: print(f"   Using HTML source: {FILE_PATHS['html']}")
 
+    # Process Files
     for json_file in json_files:
         try:
             file_data = process_file(json_file, config)
@@ -224,11 +241,15 @@ def main():
         except Exception as e:
             print(f"❌ Error processing {json_file}: {e}")
 
+    # Write Results to CSV
     for table_name, data in all_tables_data.items():
-        if not data: continue
+        if not data:
+            continue
+            
         df = pd.DataFrame(data)
         filename = config['tables'][table_name]['filename']
-        df.to_csv(os.path.join(args.output, filename), index=False)
+        output_path = os.path.join(args.output, filename)
+        df.to_csv(output_path, index=False)
         print(f"✅ Saved {filename} ({len(df)} rows)")
 
 if __name__ == "__main__":
