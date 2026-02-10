@@ -40,4 +40,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Stage 5: Auto-generated Relational CSVs [skip ci]"
-          file_pattern: 'sqlite_data/*.csv'
+          file_pattern: 'sqlite_data/*.xlsx'
