@@ -7,44 +7,75 @@ import pandas as pd
 import tiktoken
 from jsonpath_ng.ext import parse
 from typing import Any, List, Dict
+import time
 
-# --- Global Settings ---
-TOKENIZER = None
-try:
-    TOKENIZER = tiktoken.get_encoding("cl100k_base")
-except:
-    print("⚠️ Warning: tiktoken not found. Token counts will be 0.")
-
-FILE_PATHS = {
-    "md": None,
-    "html": None
+# --- Global Cache ---
+# We store directory listings here so we don't scan the hard drive 1000s of times
+FILE_CACHE = {
+    "md": [],
+    "html": []
 }
 
-# --- Helper: File Lookup & Token Counting ---
+# We store compiled JSON paths here to save CPU
+JSONPATH_CACHE = {}
 
-def find_file_by_udid(udid, folder, extension):
+TOKENIZER = None
+
+# --- Setup & Optimization ---
+
+def setup_tokenizer():
+    global TOKENIZER
+    print("⏳ Initializing Tiktoken (this may download model data)...")
+    try:
+        TOKENIZER = tiktoken.get_encoding("cl100k_base")
+        print("✅ Tiktoken initialized.")
+    except Exception as e:
+        print(f"⚠️ Warning: Tiktoken failed to load ({e}). Token counts will be 0.")
+
+def pre_scan_directories(md_path, html_path):
+    """Scans directories ONCE and stores filenames in memory."""
+    print("⏳ Pre-scanning source directories...")
+    
+    if md_path and os.path.exists(md_path):
+        FILE_CACHE["md"] = os.listdir(md_path)
+        print(f"   - Found {len(FILE_CACHE['md'])} Markdown files.")
+    
+    if html_path and os.path.exists(html_path):
+        FILE_CACHE["html"] = os.listdir(html_path)
+        print(f"   - Found {len(FILE_CACHE['html'])} HTML files.")
+
+def get_jsonpath(path_str):
+    """Returns a compiled JSONPath expression from cache."""
+    if path_str not in JSONPATH_CACHE:
+        try:
+            JSONPATH_CACHE[path_str] = parse(path_str)
+        except Exception as e:
+            print(f"❌ Invalid JSONPath: {path_str}")
+            return None
+    return JSONPATH_CACHE[path_str]
+
+# --- Helper: Fast File Lookup ---
+
+def find_file_by_udid_fast(udid, cache_key, folder, extension):
     """
-    Scans the folder for a file that STARTS with the UDID.
-    Example: UDID 'B1000' will match 'B1000 - Title.md' and 'B1000 - Title-html.html'
+    Looks up file in the memory cache instead of the disk.
     """
-    if not folder or not os.path.exists(folder) or not udid:
+    if not udid or not folder:
         return ""
     
-    # List all files in the directory
-    try:
-        files = os.listdir(folder)
-        # Filter for files starting with UDID and ending with extension
-        # We assume the UDID is the first part of the filename
-        matches = [f for f in files if f.startswith(udid) and f.endswith(extension)]
-        
-        if matches:
-            # Use the first match found
-            full_path = os.path.join(folder, matches[0])
-            with open(full_path, 'r', encoding='utf-8') as f:
-                return f.read()
-    except Exception as e:
-        print(f"Error searching for {udid} in {folder}: {e}")
+    # Access the cached list of files
+    file_list = FILE_CACHE.get(cache_key, [])
     
+    # Fast filtering in memory
+    # We assume the file STARTS with the UDID (e.g., "B1000 - ...")
+    for fname in file_list:
+        if fname.startswith(udid) and fname.endswith(extension):
+            full_path = os.path.join(folder, fname)
+            try:
+                with open(full_path, 'r', encoding='utf-8') as f:
+                    return f.read()
+            except:
+                return ""
     return ""
 
 def count_tokens(text):
@@ -52,25 +83,25 @@ def count_tokens(text):
         return 0
     try:
         return len(TOKENIZER.encode(text))
-    except Exception:
+    except:
         return 0
 
 # --- Logic Functions ---
 
 def get_udid(root_data):
-    # Helper to safely extract UDID from the loaded JSON
-    try:
-        return root_data.get('identifier', {}).get('value')
-    except:
-        return None
+    return root_data.get('identifier', {}).get('value')
 
 def logic_get_raw_md(value, row_context, root_data):
     udid = get_udid(root_data)
-    return find_file_by_udid(udid, FILE_PATHS['md'], '.md')
+    # Use the global FILE_PATHS stored in main context if needed, 
+    # but here we pass the folder path dynamically? 
+    # To keep it clean, we rely on the args passed to main being available or passed down.
+    # For simplicity in this architecture, we will access the global ARGS_PATHS set in main.
+    return find_file_by_udid_fast(udid, "md", ARGS_PATHS['md'], '.md')
 
 def logic_get_raw_html(value, row_context, root_data):
     udid = get_udid(root_data)
-    return find_file_by_udid(udid, FILE_PATHS['html'], '.html')
+    return find_file_by_udid_fast(udid, "html", ARGS_PATHS['html'], '.html')
 
 def logic_count_raw_md(value, row_context, root_data):
     content = logic_get_raw_md(value, row_context, root_data)
@@ -97,7 +128,7 @@ def logic_check_internal_link(value, row_context, root_data):
     return "No"
 
 def logic_extract_udid_from_url(value, row_context, root_data):
-    return "Null" # Placeholder
+    return "Null"
 
 def logic_categorize_faq(value, row_context, root_data):
     val_lower = str(value).lower()
@@ -124,15 +155,21 @@ LOGIC_MAP = {
     "append_headline": logic_append_headline
 }
 
+# Global container for paths
+ARGS_PATHS = {"md": None, "html": None}
+
 # --- Core Processing ---
 
 def extract_value(path_str: str, data: Any) -> Any:
+    # Use cached parser
+    expr = get_jsonpath(path_str)
+    if not expr: return None
+    
     try:
-        jsonpath_expr = parse(path_str)
-        match = jsonpath_expr.find(data)
+        match = expr.find(data)
         if match:
             return match[0].value
-    except Exception:
+    except:
         return None
     return None
 
@@ -150,12 +187,11 @@ def process_file(file_path: str, config: Dict) -> Dict[str, List[Dict]]:
             context_items = [data]
         else:
             try:
-                expr = parse(root_path)
+                expr = get_jsonpath(root_path) # Use Cache
                 context_items = [m.value for m in expr.find(data)]
-                # Flatten list of lists if necessary
                 if context_items and isinstance(context_items[0], list):
                      context_items = [item for sublist in context_items for item in sublist]
-            except Exception:
+            except:
                 context_items = []
 
         # Build Rows
@@ -163,7 +199,7 @@ def process_file(file_path: str, config: Dict) -> Dict[str, List[Dict]]:
             row = {}
             for col_name, col_def in table_config['columns'].items():
                 
-                # Simple String Definition
+                # ... (Same Extraction Logic as before) ...
                 if isinstance(col_def, str):
                     if col_def.startswith("const:"):
                         row[col_name] = col_def.replace("const:", "")
@@ -174,7 +210,6 @@ def process_file(file_path: str, config: Dict) -> Dict[str, List[Dict]]:
                     else:
                         row[col_name] = extract_value(col_def, item)
                 
-                # Complex Dict Definition
                 elif isinstance(col_def, dict):
                     path = col_def.get('path')
                     logic = col_def.get('logic')
@@ -210,30 +245,36 @@ def main():
     parser.add_argument("--html-source", required=False)
     args = parser.parse_args()
 
-    # Set Global Paths for Logic Functions
-    FILE_PATHS['md'] = args.md_source
-    FILE_PATHS['html'] = args.html_source
+    # 1. Setup Globals
+    ARGS_PATHS['md'] = args.md_source
+    ARGS_PATHS['html'] = args.html_source
+    
+    setup_tokenizer()
+    pre_scan_directories(args.md_source, args.html_source)
 
-    # Load Config
+    # 2. Load Config
     with open(args.config, 'r') as f:
         config = yaml.safe_load(f)
     
-    # Ensure Output Directory Exists
     if not os.path.exists(args.output):
         os.makedirs(args.output)
 
-    # Initialize Table Data Containers
+    # 3. Gather Files
     all_tables_data = {t: [] for t in config['tables']}
-    
-    # Get JSON Files
     json_files = glob.glob(os.path.join(args.source, "*.json"))
+    total_files = len(json_files)
     
-    print(f"🚀 Processing {len(json_files)} JSON files...")
-    if FILE_PATHS['md']: print(f"   Using Markdown source: {FILE_PATHS['md']}")
-    if FILE_PATHS['html']: print(f"   Using HTML source: {FILE_PATHS['html']}")
+    print(f"🚀 Starting processing of {total_files} JSON files...")
 
-    # Process Files
-    for json_file in json_files:
+    # 4. Processing Loop with Heartbeat
+    start_time = time.time()
+    
+    for i, json_file in enumerate(json_files):
+        # HEARTBEAT LOG: Print every 10 files
+        if i % 10 == 0:
+            elapsed = time.time() - start_time
+            print(f"   [{i}/{total_files}] Processing {os.path.basename(json_file)} (Time: {elapsed:.1f}s)")
+
         try:
             file_data = process_file(json_file, config)
             for table, rows in file_data.items():
@@ -241,16 +282,16 @@ def main():
         except Exception as e:
             print(f"❌ Error processing {json_file}: {e}")
 
-    # Write Results to CSV
+    print("✅ Processing complete. Saving CSVs...")
+
+    # 5. Save Results
     for table_name, data in all_tables_data.items():
-        if not data:
-            continue
-            
+        if not data: continue
         df = pd.DataFrame(data)
         filename = config['tables'][table_name]['filename']
         output_path = os.path.join(args.output, filename)
         df.to_csv(output_path, index=False)
-        print(f"✅ Saved {filename} ({len(df)} rows)")
+        print(f"   Saved {filename} ({len(df)} rows)")
 
 if __name__ == "__main__":
     main()
