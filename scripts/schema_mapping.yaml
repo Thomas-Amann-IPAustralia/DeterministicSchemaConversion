@@ -104,26 +104,21 @@ tables:
       Chunk_Injection: "const:Null (FOR NOW)"
 
   # 7. Raw Data
-  raw_data:
+raw_data:
     filename: "RawData.csv"
     root_path: "$"
     columns:
       UDID: "identifier.value"
       Headline_Alt: "alternativeHeadline"
-      
-      # RAW HTML
+      # These hooks now use the UDID lookup logic
       HTML_Raw: 
-        logic: "get_raw_html"  # Looks for file in IPFR-Webpages-html matching JSON filename
+        logic: "get_raw_html"
       HTML_Raw_Token_Count: 
         logic: "count_raw_html"
-      
-      # RAW MARKDOWN
       MD_Raw: 
-        logic: "get_raw_md"    # Looks for file in IPFR-Webpages matching JSON filename
+        logic: "get_raw_md"
       MD_Raw_Token_Count: 
         logic: "count_raw_md"
-      
-      # JSON
       JSON_Raw: "whole_json"
       Json_Raw_Token_Count: 
         logic: "count_json_tokens"
