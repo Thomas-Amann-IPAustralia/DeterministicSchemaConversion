@@ -240,7 +240,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"❌ Error in {jf}: {e}")
             
-    print("💾 Saving CSVs...")
+    print("💾 Saving CSVs...")  # You might want to update this print text too!
     for t, data in all_data.items():
         if data:
             df = pd.DataFrame(data)
@@ -249,7 +249,6 @@ if __name__ == "__main__":
             for c in cols:
                 if c not in df.columns: df[c] = None
             df = df[cols]
-            
             out_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
-print(f"   - Saving {out_path}...")
-df.to_excel(out_path, index=False)
+            print(f"   - Saving {out_path}...")
+            df.to_excel(out_path, index=False)
