@@ -240,7 +240,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"❌ Error in {jf}: {e}")
             
-    print("💾 Saving CSVs...")  # You might want to update this print text too!
+print("💾 Saving data...")
     for t, data in all_data.items():
         if data:
             df = pd.DataFrame(data)
@@ -249,6 +249,14 @@ if __name__ == "__main__":
             for c in cols:
                 if c not in df.columns: df[c] = None
             df = df[cols]
-            out_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
-            print(f"   - Saving {out_path}...")
-            df.to_excel(out_path, index=False)
+            
+            # 1. Save as Excel (Best for viewing)
+            xlsx_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
+            print(f"   - Saving {xlsx_path}...")
+            df.to_excel(xlsx_path, index=False)
+
+            # 2. Save as CSV (Best for machines)
+            # We use 'utf-8-sig' to fix the weird characters in Excel
+            csv_path = os.path.join(args.output, config['tables'][t]['filename'])
+            print(f"   - Saving {csv_path}...")
+            df.to_csv(csv_path, index=False, encoding='utf-8-sig')
