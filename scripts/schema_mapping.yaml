@@ -14,9 +14,9 @@ tables:
       Geographic_Area: "audience.geographicArea.name"
       IP_Right_Name: "about.name"
       IP_Right_Wikidata_URL: "about.sameAs"
-      Service_Type: "mainEntity[0].@type"
-      Service_Name: "mainEntity[0].name"
-      HowTo_Name: "mainEntity[?(@.@type=='HowTo')].name"
+      Service_Type: "mainEntity[0]['@type']"
+      Service_Name: "mainEntity[0]['name']"
+      HowTo_Name: "mainEntity[?(@['@type']=='HowTo')].name"
       Service_Provider:
         path: "$"
         logic: "derive_service_provider"
@@ -51,7 +51,7 @@ tables:
   # 4. HowTo Sheet: Step-by-Step Instructions
   howto:
     filename: "HowTo.csv"
-    root_path: "mainEntity[?(@.@type=='HowTo')].step[*]"
+    root_path: "mainEntity[?(@['@type']=='HowTo')].step[*]"
     columns:
       UDID: "parent:identifier.value"
       HowTo_Name: "parent:name"
@@ -65,14 +65,14 @@ tables:
     columns:
       UDID: "identifier.value"
       Headline_Alt: "alternativeHeadline"
-      What_are_the_benefits: "mainEntity[?(@.@type=='FAQPage')].mainEntity[?(@.name=='What are the benefits?')].acceptedAnswer.text"
-      What_are_the_risks: "mainEntity[?(@.@type=='FAQPage')].mainEntity[?(@.name=='What are the risks?')].acceptedAnswer.text"
-      What_might_the_cost_be: "mainEntity[?(@.@type=='HowTo')].estimatedCost.price"
-      How_much_time_might_be_involved: "mainEntity[?(@.@type=='HowTo')].totalTime"
-      Who_can_use_this: "mainEntity[?(@.@type=='FAQPage')].mainEntity[?(@.name=='Who can use this?')].acceptedAnswer.text"
-      Whos_involved: "mainEntity[?(@.@type=='FAQPage')].mainEntity[?(@.name=='Who is involved?')].acceptedAnswer.text"
-      How_much_is_this_used: "mainEntity[?(@.@type=='FAQPage')].mainEntity[?(@.name=='How much is this used?')].acceptedAnswer.text"
-      What_are_the_possible_outcomes: "mainEntity[?(@.@type=='FAQPage')].mainEntity[?(@.name=='What are the possible outcomes?')].acceptedAnswer.text"
+      What_are_the_benefits: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='What are the benefits?')].acceptedAnswer.text"
+      What_are_the_risks: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='What are the risks?')].acceptedAnswer.text"
+      What_might_the_cost_be: "mainEntity[?(@['@type']=='HowTo')].estimatedCost.price"
+      How_much_time_might_be_involved: "mainEntity[?(@['@type']=='HowTo')].totalTime"
+      Who_can_use_this: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='Who can use this?')].acceptedAnswer.text"
+      Whos_involved: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='Who is involved?')].acceptedAnswer.text"
+      How_much_is_this_used: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='How much is this used?')].acceptedAnswer.text"
+      What_are_the_possible_outcomes: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='What are the possible outcomes?')].acceptedAnswer.text"
 
   # 6. Semantic Sheet: Content Chunking
   semantic:
