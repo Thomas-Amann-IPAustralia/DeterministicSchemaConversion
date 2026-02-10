@@ -1,4 +1,4 @@
-name: Enrich JSON with LLM
+name: Stage 3 - Enrich JSON with LLM
 
 on:
   workflow_dispatch:
