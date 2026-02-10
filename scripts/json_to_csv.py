@@ -70,19 +70,25 @@ def pre_scan_files(source_dir, md_dir, html_dir):
 def logic_derive_service_provider(value, row_context, root_data):
     """Implements: IF Service_Type = Article THEN Self-service ELSE serviceOperator.name"""
     try:
-        service_type = root_data.get("mainEntity", [{}])[0].get("@type", "")
+        # Safe access to type using list checking
+        entities = root_data.get("mainEntity", [])
+        if not entities: return "Unknown"
+        
+        service_type = entities[0].get("@type", "")
         if service_type == "Article":
             return "Self-service"
         else:
-            return root_data.get("mainEntity", [{}])[0].get("serviceOperator", {}).get("name", "Unknown")
+            return entities[0].get("serviceOperator", {}).get("name", "Unknown")
     except:
         return "Unknown"
 
 def logic_check_is_internal_link(url, row_context, root_data):
     if not url: return "No"
+    # Basic check for your domain
     return "Yes" if "ipfirstresponse" in str(url) else "No"
 
 def logic_lookup_internal_udid(url, row_context, root_data):
+    if not url: return "Null"
     # Normalize URL (remove trailing slash for matching)
     clean_url = str(url).rstrip('/')
     # Try direct match or match with/without slash
@@ -104,7 +110,7 @@ def logic_read_file_content(udid, file_type):
     except Exception as e:
         return f"ERROR: {str(e)}"
 
-# Wrappers for specific logic calls
+# Wrappers
 def logic_read_html_file(udid, *args): return logic_read_file_content(udid, "html")
 def logic_read_md_file(udid, *args): return logic_read_file_content(udid, "md")
 def logic_count_html_tokens(udid, *args): return count_tokens(logic_read_file_content(udid, "html"))
@@ -131,41 +137,42 @@ def get_value(datum, selector, logic_name=None, row_context=None, root_data=None
     """Extracts value using JSONPath or Custom Logic"""
     val = None
     
-    # 1. Path Extraction
+    # 1. CONST Handling (Fix for Parse Error)
+    if selector and str(selector).startswith("const:"):
+        return selector.replace("const:", "")
+
+    # 2. Path Extraction
     if selector:
-        # Handle parent reference (hacky but functional for 1 level depth)
-        if selector.startswith("parent:"):
-            # If we are in a list item, we might not have easy access to parent unless passed
-            # For this script, 'root_data' is the parent for top-level lists
-            clean_path = selector.replace("parent:", "")
-            target = root_data
-        else:
-            target = datum
-            clean_path = selector
+        try:
+            # Handle parent reference
+            if selector.startswith("parent:"):
+                clean_path = selector.replace("parent:", "")
+                target = root_data
+            else:
+                target = datum
+                clean_path = selector
 
-        if clean_path not in JSONPATH_CACHE:
-            JSONPATH_CACHE[clean_path] = parse(clean_path)
-        
-        matches = JSONPATH_CACHE[clean_path].find(target)
-        if matches:
-            val = matches[0].value
-            # Handle List results (join if expected string, or return list)
-            if isinstance(val, list) and len(val) == 1:
-                val = val[0]
+            if clean_path not in JSONPATH_CACHE:
+                JSONPATH_CACHE[clean_path] = parse(clean_path)
+            
+            matches = JSONPATH_CACHE[clean_path].find(target)
+            if matches:
+                val = matches[0].value
+                # If single item list, extract it
+                if isinstance(val, list) and len(val) == 1:
+                    val = val[0]
+        except Exception as e:
+            # Print warning but don't crash the whole script
+            print(f"      ⚠️ JSONPath Error on '{selector}': {e}")
+            val = "ERROR"
 
-    # 2. Logic Application
+    # 3. Logic Application
     if logic_name and logic_name in LOGIC_FUNCTIONS:
         # If path provided, use extracted val as input, else use datum
         input_val = val if val is not None else datum
         val = LOGIC_FUNCTIONS[logic_name](input_val, row_context, root_data)
 
-    # 3. Defaults
-    if val is None:
-        if selector and selector.startswith("const:"):
-            val = selector.replace("const:", "")
-        else:
-            val = None # CSV will show empty
-            
+    # 4. Fallback
     return val
 
 def process_file(filepath, config):
@@ -237,9 +244,8 @@ if __name__ == "__main__":
     for t, data in all_data.items():
         if data:
             df = pd.DataFrame(data)
-            # Ensure columns order matches config
             cols = list(config['tables'][t]['columns'].keys())
-            # Add missing cols if any (for safety)
+            # Ensure all columns exist
             for c in cols:
                 if c not in df.columns: df[c] = None
             df = df[cols]
