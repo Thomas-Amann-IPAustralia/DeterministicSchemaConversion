@@ -1,4 +1,4 @@
-name: Generate JSON-LD from Markdown
+name: Stage 2 - Generate JSON-LD from Markdown
 
 on:
   workflow_dispatch:
