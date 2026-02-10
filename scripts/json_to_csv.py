@@ -250,6 +250,6 @@ if __name__ == "__main__":
                 if c not in df.columns: df[c] = None
             df = df[cols]
             
-            out_path = os.path.join(args.output, config['tables'][t]['filename'])
-            df.to_csv(out_path, index=False)
-            print(f"   - {out_path} ({len(df)} rows)")
+            out_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
+print(f"   - Saving {out_path}...")
+df.to_excel(out_path, index=False)
