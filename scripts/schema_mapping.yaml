@@ -110,9 +110,20 @@ tables:
     columns:
       UDID: "identifier.value"
       Headline_Alt: "alternativeHeadline"
-      HTML_Raw: "const:<html>...</html>" # Placeholder as we only have JSON here
-      HTML_Raw_Token_Count: "const:0"
-      MD_Raw: "const:## Markdown..."
-      MD_Raw_Token_Count: "const:0"
+      
+      # RAW HTML
+      HTML_Raw: 
+        logic: "get_raw_html"  # Looks for file in IPFR-Webpages-html matching JSON filename
+      HTML_Raw_Token_Count: 
+        logic: "count_raw_html"
+      
+      # RAW MARKDOWN
+      MD_Raw: 
+        logic: "get_raw_md"    # Looks for file in IPFR-Webpages matching JSON filename
+      MD_Raw_Token_Count: 
+        logic: "count_raw_md"
+      
+      # JSON
       JSON_Raw: "whole_json"
-      Json_Raw_Token_Count: "logic:count_json_tokens"
+      Json_Raw_Token_Count: 
+        logic: "count_json_tokens"
