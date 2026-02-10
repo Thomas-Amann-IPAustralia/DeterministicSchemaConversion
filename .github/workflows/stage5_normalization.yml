@@ -3,16 +3,16 @@ name: Stage 5 - Relational Normalization
 on:
   push:
     paths:
-      - 'json_output-enriched/**'   # Trigger when enriched JSONs are added/modified
-      - 'scripts/json_to_csv.py'    # Trigger if the script itself changes
+      - 'json_output-enriched/**'
+      - 'scripts/json_to_csv.py'
       - 'scripts/schema_mapping.yaml'
-  workflow_dispatch:                # Allows manual run from Actions tab
+  workflow_dispatch:
 
 jobs:
   normalize_json:
     runs-on: ubuntu-latest
     permissions:
-      contents: write               # Necessary to commit CSVs back to the repo
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -25,14 +25,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas jsonpath-ng pyyaml
+          pip install pandas jsonpath-ng pyyaml tiktoken
 
       - name: Run Normalization Script
         run: |
           python scripts/json_to_csv.py \
             --config scripts/schema_mapping.yaml \
             --source json_output-enriched \
-            --output sqlite_data
+            --output sqlite_data \
+            --md-source IPFR-Webpages \
+            --html-source IPFR-Webpages-html
 
       - name: Commit and Push CSVs
         uses: stefanzweifel/git-auto-commit-action@v5
