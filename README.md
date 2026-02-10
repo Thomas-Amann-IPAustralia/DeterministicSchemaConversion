@@ -1,217 +1,193 @@
-# 🕸️ Deterministic Schema Conversion Pipeline
+# Deterministic Schema Conversion: System Architecture & Logic
 
-> **A robust, hybrid-parsing toolchain for transforming unstructured government content into high-fidelity, Large Language Model (LLM) optimized Schema.org JSON-LD.**
+## 1. System Ontology & Objective
 
----
+**System Goal:** To deterministically transform unstructured government web content (HTML/GovCMS) into high-fidelity, validated Schema.org JSON-LD, optimized for consumption by Large Language Models (LLMs) and RAG agents.
 
-## 📖 Overview
+**Core Philosophy:**
 
-In the age of AI agents and RAG (Retrieval-Augmented Generation), unstructured HTML is a bottleneck. The **Deterministic Schema Conversion** pipeline bridges the gap between legacy Government Content Management Systems (GovCMS/Drupal) and modern AI consumers.
-
-Unlike generic scrapers that "guess" the content structure, this pipeline uses a **deterministic, rule-based engine** to extract legal obligations, government services, and self-help guides with 100% factual integrity. It reserves Generative AI (GPT-4o) strictly for "cosmetic enrichment"—naming steps or summarizing descriptions—while enforcing a rigorous **Semantic Diff Guardrail** to prevent hallucinations.
-
-### 🌟 Key Features
-
-* **🕵️ Stealth Scraping:** Bypasses WAFs and bot detection using a headless "Stealth" Selenium driver.
-* **🧠 Hybrid Parsing:** Synthesizes raw DOM structure (HTML) with clean text extraction (Markdown) for maximum precision.
-* **🛡️ Safety-First AI:** Uses LLMs *only* to fill specific placeholders. A recursive JSON comparator ensures no facts, dates, or laws are altered.
-* **⚖️ Legal Accuracy:** Hardcoded "Knowledge Bases" automatically map keywords to specific Legislation Acts (e.g., *Trade Marks Act 1995*).
-* **✅ Automated QA:** A built-in validation layer compares the final JSON against the source HTML to detect data drift.
+* **Deterministic Ingestion:** Content extraction is rule-based, not probabilistic.
+* **Hybrid Parsing:** Utilization of both raw DOM (HTML) for structure and Markdown (MD) for clean text.
+* **Safety-Gated AI:** Generative AI is restricted to "cosmetic" enrichment (naming, summarization) and is sandboxed by a Semantic Diff Guardrail.
+* **Immutable Truth:** The `metatable-Content.csv` acts as the single source of truth for metadata.
 
 ---
 
-## 🏗️ System Architecture
+## 2. The Control Plane (`metatable-Content.csv`)
 
-The pipeline operates in four distinct stages, moving from raw web content to validated structured data.
+The entire pipeline is orchestrated by a central configuration file. The system does not crawl; it iterates through this manifest.
 
-### Stage 1: The Stealth Scraper (`scraper.py`)
-
-*See [docs/scraper-architecture.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/scraper-architecture.md) for details.*
-
-We employ a "Headless Browser" approach to render dynamic content before extraction.
-
-* **Bot Evasion:** Uses `selenium-stealth` to mock user behaviors, user-agents, and WebGL vendors, appearing as a legitimate Windows 10 user.
-* **Dual Output:** Saves two versions of every page:
-* **`.html` (The Structure):** Preserves the exact DOM (lists, nested divs) for logic parsing.
-* **`.md` (The Content):** Uses `markdownify` with custom regex to strip UI noise (feedback forms, footers) for clean RAG ingestion.
-
-
-
-### Stage 2: The Semantic Processor (`process_md_to_json.py`)
-
-*See [docs/json_generation_logic.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/json_generation_logic.md) for details.*
-
-The core logic engine converts content into Schema.org entities (`GovernmentService`, `HowTo`, `FAQPage`) using a "Control Plane" CSV.
-
-* **Archetype Mapping:** Automatically casts content types based on metadata (e.g., "Self-Help" → `schema:HowTo`).
-* **Dynamic FAQ Extraction:** Identifies headers ending in `?` to build `FAQPage` schemas automatically.
-* **Legislation Injection:** Scans content for IP rights (e.g., "Patent") and injects precise legal citations from an internal dictionary.
-
-### Stage 3: Safety-Gated Enrichment (`enrich_howto_steps.py`)
-
-*See [docs/json_enrichment.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/json_enrichment.md) for details.*
-
-An optional step that uses **GPT-4o** to polish the data without risking integrity.
-
-* **The Task:** LLMs replace specific `xXx_PLACEHOLDER_xXx` values (e.g., naming a generic bullet point).
-* **The Guardrail:** A **Semantic Diff Check** compares input vs. output.
-* Did the LLM change a date? ❌ **FAIL**
-* Did the LLM add a new step? ❌ **FAIL**
-* Did the LLM only rename the placeholder? ✅ **PASS**
-
-
-
-### Stage 4: Quality Validation (`validate_quality.py`)
-
-*See [docs/validation_architecture.md](https://github.com/Thomas-Amann-IPAustralia/DeterministicSchemaConversion/blob/main/docs/validation_architecture.md) for details.*
-
-The final gatekeeper. It compares the generated JSON-LD back against the source HTML.
-
-* **ID Consistency:** Ensures the file ID (e.g., `B1000`) matches the JSON identifier.
-* **Semantic Text Matching:** Uses fuzzy logic to ensure the `description` in JSON actually exists on the webpage (>85% similarity required).
-* **Link Integrity:** Verifies that every `relatedLink` in the schema is a valid anchor tag in the source DOM.
+| Field | Function | System Behavior |
+| --- | --- | --- |
+| **UDID** | Unique Document ID (e.g., `B1005`) | Used as the immutable primary key for file naming, validation, and traceability. |
+| **Main-title** | Canonical Title | Overrides the scraping title to ensure consistency in the Schema `name` field. |
+| **Canonical-url** | Target URL | The specific endpoint targeted by the Selenium scraper. |
+| **Archetype** | Schema Classification | Determines the root `@type` of the generated JSON (e.g., `GovernmentService` vs `Article`). |
+| **Relevant-ip-right** | Legislation Trigger | Keywords (e.g., "Patent") trigger the injection of specific `citation` objects linking to the *Patents Act 1990*. |
+| **Provider** | Service Owner | Maps to specific `Organization` objects (e.g., `IP Australia`) in the output JSON. |
 
 ---
 
-## 📂 Project Structure
+## 3. Data Pipeline Architecture
+
+The system operates in a linear, five-stage pipeline.
+
+### Stage 1: Ingestion (Stealth Scraper)
+
+**Script:** `scripts/scraper.py`
+**Input:** `metatable-Content.csv`
+**Output:** `IPFR-Webpages-html/` (Raw HTML) & `IPFR-Webpages/` (Clean Markdown)
+
+**Operational Logic:**
+
+1. **Bot Evasion:** Utilizing `selenium-stealth`, the scraper mocks a Windows 10/Chrome environment, overriding `navigator.webdriver`, User-Agent, and WebGL vendor flags to bypass Government WAFs.
+2. **DOM Isolation:** Content is extracted via a priority cascade:
+* *Priority 1:* `<main>` tag (Semantic standard).
+* *Priority 2:* `.region-content` (GovCMS specific wrapper).
+* *Fallback:* `<body>`.
+
+
+3. **Dual-State Serialization:**
+* **HTML Preservation:** The raw DOM of the isolated region is saved as `.html` to preserve nested `<div>` and `<ul>` structures for logic parsing.
+* **Markdown Normalization:** The content is passed through `markdownify` with custom Regex filters to strip UI noise (feedback widgets, "back to top" links) and normalize headers, producing a clean `.md` file for RAG ingestion.
+
+
+
+### Stage 2: Transformation (Semantic Processor)
+
+**Script:** `scripts/process_md_to_json.py`
+**Input:** `IPFR-Webpages/*.md`, `IPFR-Webpages-html/*.html`, `metatable-Content.csv`
+**Output:** `json_output/*.json`
+
+**Operational Logic:**
+
+1. **Metadata Association:** The script iterates `.md` files and matches them to the CSV Control Plane via URL, UDID, or Fuzzy Title Match.
+2. **Block Parsing:** The content is segmented into Key/Value blocks.
+* *HTML Parser:* Uses BeautifulSoup to extract text between `<h>` tags, preserving semantic structure.
+* *Markdown Fallback:* Splits content by `#` headers if HTML is invalid.
+
+
+3. **Schema Construction:**
+* **Root Type:** Mapped from CSV Archetype (e.g., "Self-Help" → `schema:Article`).
+* **HowTo Extraction:** Detects headers containing "step" or "proceed" and parses child list items into `HowToStep` objects.
+* **FAQ Extraction:** Headers ending in `?` are automatically converted to `Question`/`Answer` objects.
+* **Placeholder Injection:** Specific fields (Step Names, Descriptions) are populated with explicit tokens: `xXx_PLACEHOLDER_xXx`.
+
+
+4. **Legislation Injection:** The `citation` array is populated by cross-referencing the `Relevant-ip-right` CSV column against an internal `LEGISLATION_MAP` (e.g., mapping "Trade Mark" to the *Trade Marks Act 1995*).
+
+### Stage 3: Enrichment (Safety-Gated AI)
+
+**Script:** `scripts/enrich_howto_steps.py`
+**Input:** `json_output/*.json`
+**Output:** `json_output-enriched/*.json`, `reports/after_action_report.csv`
+
+**Operational Logic:**
+
+1. **Recursive Traversal:** The script walks the JSON tree looking specifically for values matching `xXx_PLACEHOLDER_xXx`.
+2. **Contextual Prompting:**
+* *Scenario A (Step Name):* Reads the step `text`; generates a short imperative title.
+* *Scenario B (Description):* Reads the `headline` and sub-entities; generates a 160-char SEO summary.
+* *Scenario C (Service Type):* Infers Schema classification.
+
+
+3. **Semantic Diff Guardrail:** Post-generation, the script compares the Input JSON vs. Output JSON.
+* **Pass Condition:** Only values associated with known placeholders have changed.
+* **Fail Condition:** Any change to structure (keys added/removed), types (list → string), or non-placeholder values (dates, legal citations).
+* *Result:* If validation fails, the file is rejected to prevent "hallucinations."
+
+
+
+### Stage 4: Quality Assurance (Validation)
+
+**Script:** `scripts/validate_quality.py`
+**Input:** `json_output-enriched/` vs. `IPFR-Webpages-html/`
+**Output:** `reports/validation_reports/Validation_Report.csv`
+
+**Operational Logic:**
+
+1. **Identity Check:** Verifies the UDID in the filename (e.g., `B1005`) matches the `identifier` field in the JSON payload.
+2. **Schema Syntax:** Validates the presence of mandatory Schema.org keys (`@context`, `@type`, `headline`).
+3. **Semantic Grounding (Fuzzy Match):**
+* Compares the `description` and `text` fields in the JSON against the raw HTML.
+* Requires >85% similarity (via `difflib`) to ensure the Schema accurately reflects the webpage content.
+
+
+4. **FAQ Verification:** Ensures every `Question` object in the JSON actually exists as text in the source HTML (prevents invented questions).
+5. **Link Integrity:** Verifies that every `relatedLink` URL in the JSON exists as an `href` anchor in the source DOM.
+
+### Stage 5: Normalization (Relational Flattening)
+
+**Script:** `scripts/json_to_csv.py`
+**Configuration:** `scripts/schema_mapping.yaml`
+**Input:** `json_output-enriched/`, `IPFR-Webpages/`, `IPFR-Webpages-html/`
+**Output:** `sqlite_data/` (CSV & Excel)
+
+**Operational Logic:**
+
+1. **Registry Construction:** The system pre-scans all Markdown, HTML, and JSON assets to build a global `URL -> UDID` map. This enables the script to detect "Internal Links" and replace raw URLs with precise Document IDs (e.g., `B1005`) for knowledge graph integrity.
+2. **Schema Projection:** utilizing `jsonpath-ng`, the script flattens the hierarchical JSON-LD into 7 relational tables defined in the YAML config:
+* **Primary/Influences:** Core metadata and legislative citations.
+* **LinksTo:** Graph edges containing outbound links with computed internal resolution.
+* **HowTo/FAQ:** Exploded views of procedural steps and Q&A pairs.
+* **RawData:** Contains the full text payload of HTML, MD, and JSON versions.
+
+
+3. **Tokenization Metrics:** Uses OpenAI's `tiktoken` (cl100k_base encoding) to calculate and append precise token counts for every file version (HTML vs MD vs JSON). This data allows developers to optimize context-window usage for RAG applications.
+
+---
+
+## 4. Directory Structure Map
 
 ```text
 DeterministicSchemaConversion/
-├── IPFR-Webpages/              # [Output] Cleaned Markdown (Human-readable source)
-├── IPFR-Webpages-html/         # [Output] Raw HTML (Structure source)
-├── json_output/                # [Output] Initial Schema.org JSON-LD (Pre-enrichment)
-├── json_output-enriched/       # [Output] Final AI-enriched JSON-LD (Production Ready)
+├── IPFR-Webpages/              # [Context] Cleaned Markdown (Human/LLM readable)
+├── IPFR-Webpages-html/         # [Context] Raw HTML (Source of Truth for Validation)
+├── json_output/                # [Intermediate] Schema containing xXx_PLACEHOLDER_xXx
+├── json_output-enriched/       # [Artifact] Final, Validated, AI-Enriched JSON-LD
+├── sqlite_data/                # [Artifact] Relational Tables (CSV/XLSX) with Token Counts
 ├── reports/
-│   ├── validation_reports/     # [Audit] CSV reports of Quality Checks
-│   └── after_action_report.csv # [Audit] Log of AI modifications
+│   ├── validation_reports/     # [Log] QA Pass/Fail CSVs
+│   └── after_action_report.csv # [Log] AI modification audit trail
 ├── scripts/
-│   ├── scraper.py              # Stage 1: Selenium-stealth scraper
-│   ├── process_md_to_json.py   # Stage 2: Hybrid parsing & mapping logic
-│   ├── enrich_howto_steps.py   # Stage 3: AI Enrichment & Diff Validator
-│   └── validate_quality.py     # Stage 4: Structural & Semantic QA
-├── docs/                       # Detailed Architecture Documentation
-├── metatable-Content.csv       # [Config] The "Control Plane" metadata
-├── sources.json                # [Config] List of target URLs
-└── requirements.txt            # Python dependencies
+│   ├── scraper.py              # [Logic] Selenium Stealth implementation
+│   ├── process_md_to_json.py   # [Logic] Hybrid Parser & Schema Mapper
+│   ├── enrich_howto_steps.py   # [Logic] recursive_enrich() & perform_diff_check()
+│   ├── validate_quality.py     # [Logic] Structural & Semantic comparators
+│   ├── json_to_csv.py          # [Logic] Relational Flattener & Token Counter
+│   └── schema_mapping.yaml     # [Config] Mapping rules for Stage 5
+├── metatable-Content.csv       # [Config] The Control Plane
+└── sources.json                # [Config] Scraper target list
 
 ```
 
 ---
 
-## 🛠️ Installation & Setup
+## 5. Key Algorithms & Heuristics
 
-### Prerequisites
+### The Archetype Mapper
 
-* **Python 3.8+**
-* **Google Chrome** (Must be installed on the host machine for Selenium).
-* **OpenAI API Key** (Required only for Stage 3).
+Located in `process_md_to_json.py`, this maps CSV metadata to Schema Types:
 
-### Quick Start
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/your-org/DeterministicSchemaConversion.git
-cd DeterministicSchemaConversion
-
-```
-
-
-2. **Install Dependencies:**
-```bash
-pip install -r requirements.txt
-
-```
-
-
-3. **Configure Environment (Optional):**
-```bash
-export OPENAI_API_KEY="sk-..."  # Only needed for enrichment
-
-```
-
-
-
----
-
-## 🚀 Usage Workflow
-
-### 1. Define Your Sources
-
-Edit `sources.json` to add URLs and `metatable-Content.csv` to define the metadata (Title, UDID, Provider) for those URLs.
-
-### 2. Run the Scraper (Stage 1)
-
-Fetches content in "Stealth Mode" to avoid detection.
-
-```bash
-python scripts/scraper.py
-
-```
-
-* **Output:** Populates `IPFR-Webpages/` and `IPFR-Webpages-html/`.
-
-### 3. Generate Structured Data (Stage 2)
-
-Converts the scraped content into raw JSON-LD.
-
-```bash
-python scripts/process_md_to_json.py
-
-```
-
-* **Output:** Populates `json_output/`. Steps will have `xXx_PLACEHOLDER_xXx` names.
-
-### 4. Enrich with AI (Stage 3 - Optional)
-
-Uses GPT-4o to intelligently name steps and write descriptions, guarded by the Diff Checker.
-
-```bash
-python scripts/enrich_howto_steps.py
-
-```
-
-* **Output:** Populates `json_output-enriched/`.
-* **Audit:** Check `after_action_report.csv` to see exactly what changed.
-
-### 5. Validate Quality (Stage 4)
-
-Runs the full suite of integrity checks.
-
-```bash
-python scripts/validate_quality.py
-
-```
-
-* **Output:** Generates `reports/validation_reports/Validation_Report.csv` with Pass/Fail statuses.
-
----
-
-## 🧩 The "Control Plane" Configuration
-
-The `metatable-Content.csv` is the brain of the operation. It dictates how the raw content is interpreted.
-
-| Header | Description | Example |
+| CSV Archetype | JSON-LD `@type` | Note |
 | --- | --- | --- |
-| **UDID** | Unique Document ID | `D1006` |
-| **Main-title** | Canonical Title for the schema | `Mediation for IP Disputes` |
-| **Archectype** | Determines the Schema `@type` | `Government Service` or `Self-Help` |
-| **Relevant-ip-right** | Triggers legislation citations | `Trade Mark, Copyright` |
-| **Provider** | Entity providing the service | `ASBFEO` or `IP Australia` |
+| `Self-Help` | `Article` | Previously `HowTo`, mapped to Article for broader search support. |
+| `Government Service` | `GovernmentService` | Includes `serviceOperator` details. |
+| `Commercial` | `Service` | Generic service fallback. |
+| `Non-Government` | `Service` | Generic service fallback. |
 
----
+### The Semantic Diff Check
 
-## 🛡️ Safety & Compliance
+Located in `enrich_howto_steps.py`, this enforces the "Zero-Hallucination" policy:
 
-We prioritize data integrity over AI creativity.
+1. **Topology Check:** `len(input_keys) == len(output_keys)`
+2. **Type Check:** `type(input_val) == type(output_val)`
+3. **Mutation Check:** `if input_val != output_val AND input_val NOT IN [TARGET_PLACEHOLDERS] -> FAIL`
 
-1. **Topology Check:** The AI cannot add or remove keys.
-2. **Type Check:** The AI cannot change a list to a string.
-3. **Value Check:** The AI can **only** change values that were explicitly marked as `xXx_PLACEHOLDER_xXx`.
+### The Relational Tokenizer
 
-*If the AI attempts to "fix" a typo in a legal citation or change a date, the Diff Checker will **reject the entire file** and flag it for human review.*
+Located in `json_to_csv.py`, this calculates cost metrics:
 
----
-
-## 📝 License
-
-[Insert License Information Here]
+1. **Encoding:** Loads `cl100k_base` (GPT-4 standard).
+2. **Resolution:** Calculates tokens for `HTML_Raw`, `MD_Raw`, and `JSON_Raw` independently.
+3. **Purpose:** Enables precise cost-benefit analysis of using Markdown vs. JSON for LLM Context Windows.
