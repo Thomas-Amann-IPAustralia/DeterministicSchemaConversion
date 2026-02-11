@@ -32,7 +32,7 @@ tables:
       Influence_ID: "const:Null (FOR NOW)"
       Influence_URL: "const:Null (FOR NOW)"
 
-  # 3. LinksTo Sheet: Outbound Links with Internal UDID Lookup
+  # 3. LinksTo Sheet: Outbound Links
   links_to:
     filename: "LinksTo.csv"
     root_path: "relatedLink[*]"
@@ -48,7 +48,7 @@ tables:
         path: "url"
         logic: "lookup_internal_udid"
 
-  # 4. HowTo Sheet: Step-by-Step Instructions
+  # 4. HowTo Sheet: Step-by-Step
   howto:
     filename: "HowTo.csv"
     root_path: "mainEntity[?(@['@type']=='HowTo')].step[*]"
@@ -58,7 +58,7 @@ tables:
       Step_Name: "name"
       Step_Description: "text"
 
-  # 5. FAQ Sheet: Wide Format (One row per UDID, specific columns for answers)
+  # 5. FAQ Sheet
   faq:
     filename: "FAQ.csv"
     root_path: "$"
@@ -74,22 +74,21 @@ tables:
       How_much_is_this_used: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='How much is this used?')].acceptedAnswer.text"
       What_are_the_possible_outcomes: "mainEntity[?(@['@type']=='FAQPage')].mainEntity[?(@['name']=='What are the possible outcomes?')].acceptedAnswer.text"
 
-  # 6. Semantic Sheet: Content Chunking
+  # 6. Semantic Sheet: Content Chunking (Custom Generator)
   semantic:
     filename: "Semantic.csv"
-    root_path: "$"
+    row_generator: "generate_semantic_rows"
+    # Columns here are used for ordering the output CSV
     columns:
-      UDID: "identifier.value"
-      Headline_Alt: "alternativeHeadline"
-      Chunk_ID: "const:Null (FOR NOW)"
-      Chunk_Token_Count: "const:Null (FOR NOW)"
-      Chunk_Text: 
-        path: "$"
-        logic: "generate_semantic_chunk"
-      Chunk_Embedding: "const:Null (FOR NOW)"
-      Chunk_Injection: "const:Null (FOR NOW)"
+      UDID: ""
+      Headline_Alt: ""
+      Chunk_ID: ""
+      Chunk_Token_Count: ""
+      Chunk_Text: ""
+      Chunk_Embedding: ""
+      Chunk_Context_Prepend: ""
 
-  # 7. Raw Data Sheet: Full Content & Token Counts
+  # 7. Raw Data Sheet
   raw_data:
     filename: "RawData.csv"
     root_path: "$"
