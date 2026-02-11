@@ -2,14 +2,6 @@ name: Stage 2 - Generate JSON-LD from Markdown
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      # Run automatically if markdown, script, or csv changes
-      - 'IPFR-Webpages/*.md'
-      - 'scripts/*.py'
-      - '*.csv'
 
 # Required to push the report back to the repo
 permissions:
