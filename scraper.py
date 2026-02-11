@@ -15,8 +15,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium_stealth import stealth
 from markdownify import markdownify as md
 
-# --- FIX 1: FORCE UNBUFFERED OUTPUT ---
-# This ensures logs appear immediately in GitHub Actions
+# --- FORCE UNBUFFERED OUTPUT ---
 sys.stdout.reconfigure(line_buffering=True)
 
 # --- Configuration ---
@@ -29,7 +28,7 @@ REPORTS_DIR = os.path.join('DeterministicSchemaConversion', 'reports', 'scrape_r
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)] # Force stream to stdout
+    handlers=[logging.StreamHandler(sys.stdout)]
 )
 logger = logging.getLogger("Scraper")
 
@@ -37,7 +36,7 @@ def initialize_driver(ethical_mode=True):
     """
     Sets up the Driver. 
     If ethical_mode=True: Identifies as a Bot.
-    If ethical_mode=False: Falls back to Stealth (Original Logic).
+    If ethical_mode=False: Falls back to Stealth.
     """
     mode_name = "ETHICAL" if ethical_mode else "STEALTH"
     logger.info(f"  -> Initializing Selenium Driver ({mode_name} Mode)...")
@@ -47,26 +46,26 @@ def initialize_driver(ethical_mode=True):
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument('--window-size=1920,1080')
+    
+    # --- FIX 1: DISABLE HTTP/2 ---
+    # This prevents the ERR_HTTP2_PROTOCOL_ERROR by forcing HTTP/1.1
+    chrome_options.add_argument('--disable-http2')
 
     base_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
     
     if ethical_mode:
-        # Polite User-Agent
         contact_info = " (compatible; IPFR-Bot/1.0; +mailto:your-email@example.com)"
         chrome_options.add_argument(f'user-agent={base_ua}{contact_info}')
     else:
-        # Stealth User-Agent (Original)
         chrome_options.add_argument(f'user-agent={base_ua}')
     
     try:
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
 
-        # Timeout to prevent hanging
         driver.set_page_load_timeout(30)
         driver.set_script_timeout(30)
 
-        # Inject Headers (Only in Ethical Mode)
         if ethical_mode:
             try:
                 driver.execute_cdp_cmd('Network.enable', {})
@@ -74,9 +73,8 @@ def initialize_driver(ethical_mode=True):
                     'headers': {'X-Bot-Name': 'IPFR-Content-Aggregator'}
                 })
             except Exception:
-                pass # Ignore if CDP fails
+                pass 
 
-        # Apply Stealth (Essential for both modes to pass WAFs)
         stealth(driver,
                 languages=["en-US", "en"],
                 vendor="Google Inc.",
@@ -90,7 +88,6 @@ def initialize_driver(ethical_mode=True):
         logger.error(f"  [x] Failed to initialize {mode_name} WebDriver: {e}")
         return None
 
-# --- Original Helper Functions (Unchanged) ---
 def normalize_text(text):
     if not text: return ""
     replacements = {'\u2018': "'", '\u2019': "'", '\u201c': '"', '\u201d': '"', '\u2013': '-', '\u2014': '--', '…': '...'}
@@ -102,6 +99,7 @@ def clean_markdown(text, url, title, overtitle):
     text = re.sub(r'^## ', '### ', text, flags=re.MULTILINE)
     text = re.sub(r'(\]\([^\)]+\))\s+\.', r'\1.', text)
     text = re.sub(r'(\]\([^\)]+\))\s+,', r'\1,', text)
+    
     noise_patterns = [r'Was this information useful\?', r'Thumbs UpThumbs Down', r'\[Give feedback.*?\]\([^\)]+\)', r'\(Opens in a new tab/window\)', r'Opens in a new tab/window']
     for pattern in noise_patterns: text = re.sub(pattern, '', text, flags=re.IGNORECASE | re.DOTALL)
     
@@ -140,14 +138,20 @@ def fetch_and_convert(driver, url):
         logger.info(f"Processing: {url}")
         driver.get(url)
         
-        # Wait for body (Basic check)
         try:
-            WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-        except:
-            pass # Try scraping anyway
+            WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        except: pass
         
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
         time.sleep(random.uniform(2.0, 4.0)) 
+
+        # --- FIX 2: EXPLICIT ERROR TRAP ---
+        # If the browser renders an error page, we must catch it to trigger fallback.
+        page_source = driver.page_source
+        if "ERR_HTTP2_PROTOCOL_ERROR" in page_source or "ERR_HTTP2_PROTOCOL_ERROR" in driver.title:
+            raise Exception("ERR_HTTP2_PROTOCOL_ERROR detected")
+        if "Access Denied" in driver.title:
+            raise Exception("Access Denied (WAF Block) detected")
 
         # Metadata
         page_title = ""
@@ -160,8 +164,7 @@ def fetch_and_convert(driver, url):
             page_overtitle = driver.find_element(By.CLASS_NAME, "option-detail-page-tag").text.strip()
         except: pass
 
-        # --- FIX 3: IMPROVED CONTENT SELECTOR ---
-        # Prioritize finding the cleanest content block
+        # Content Extraction
         content_html = ""
         selectors = [
             (By.TAG_NAME, "main"),
@@ -181,16 +184,17 @@ def fetch_and_convert(driver, url):
             except: continue
             
         if not found:
-            logger.warning("  [!] Fallback to body content (expect noise).")
+            logger.warning("  [!] Fallback to body content.")
             content_html = driver.find_element(By.TAG_NAME, "body").get_attribute('innerHTML')
 
         telemetry["html_len"] = len(content_html)
 
         # Convert
         markdown_text = md(content_html, heading_style="ATX", strip=['script', 'style', 'iframe', 'noscript', 'button'], newline_style="BACKSLASH")
-        if not markdown_text:
-            telemetry["error"] = "Markdownify empty"
-            return None, None, telemetry
+        
+        # Double check result isn't just an error message
+        if not markdown_text or "ERR_HTTP2" in markdown_text:
+             raise Exception("Extracted content contains Protocol Error")
 
         final_markdown = clean_markdown(markdown_text, url, page_title, page_overtitle)
         telemetry["md_len"] = len(final_markdown)
@@ -198,8 +202,9 @@ def fetch_and_convert(driver, url):
         return final_markdown, content_html, telemetry
 
     except Exception as e:
+        # This catches the ERR_HTTP2 exception raised above
         telemetry["error"] = str(e).split('\n')[0]
-        logger.error(f"  [x] Error scraping: {telemetry['error']}")
+        logger.error(f"  [x] Scrape Failed: {telemetry['error']}")
         return None, None, telemetry
 
 def main():
@@ -210,7 +215,6 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     os.makedirs(HTML_OUTPUT_DIR, exist_ok=True)
 
-    # Start with Ethical Driver
     main_driver = initialize_driver(ethical_mode=True)
     if not main_driver: sys.exit(1)
 
@@ -220,7 +224,6 @@ def main():
         logger.info(f"Reading targets from {CSV_FILE}...")
         with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
-            # FIX: Sanitize headers to prevent skips
             if reader.fieldnames: reader.fieldnames = [name.strip() for name in reader.fieldnames]
 
             for row in reader:
@@ -232,21 +235,24 @@ def main():
                 
                 filename = f"{udid} - {sanitize_filename(main_title)}.md"
 
-                # --- FIX 2: FALLBACK LOGIC ---
-                # Attempt 1: Ethical
+                # ATTEMPT 1: Ethical
                 md_content, html_content, stats = fetch_and_convert(main_driver, url)
 
-                # Attempt 2: Stealth Fallback (If Ethical failed)
+                # ATTEMPT 2: Fallback (Triggered by any Exception in Attempt 1)
                 if stats["status"] != "SUCCESS":
-                    logger.warning(f"  [!] Ethical scrape failed. Retrying in Stealth Mode...")
+                    logger.warning(f"  [!] Ethical mode failed ({stats['error']}). Engaging Stealth Fallback...")
+                    
                     fallback_driver = initialize_driver(ethical_mode=False)
                     if fallback_driver:
                         md_content, html_content, stats = fetch_and_convert(fallback_driver, url)
                         if stats["status"] == "SUCCESS":
                             stats["status"] = "SUCCESS_VIA_FALLBACK"
+                            logger.info("  [+] Stealth fallback SUCCESS.")
                         fallback_driver.quit()
+                    else:
+                        logger.error("  [x] Stealth Driver Init Failed.")
 
-                # Report & Save
+                # Save
                 session_report.append({
                     "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     "UDID": udid, "Filename": filename, "URL": url,
