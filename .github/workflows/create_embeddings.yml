@@ -21,6 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          # Added openpyxl for Excel support
           pip install pandas openai openpyxl
 
       - name: Run embedding generation script
@@ -30,7 +31,8 @@ jobs:
           python scripts/generate_embeddings.py
 
       - name: Upload Embeddings CSV as Artifact
-        uses: actions/upload-artifact@v4  # UPDATED: Changed from v3 to v4
+        uses: actions/upload-artifact@v4
         with:
           name: enriched-semantic-csv
-          path: Semantic_Embeddings_Output.csv
+          # UPDATED: Matches the new output location in the script
+          path: sqlite_data/Semantic_Embeddings_Output.csv
