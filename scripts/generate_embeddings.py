@@ -4,8 +4,7 @@ import pandas as pd
 import logging
 from openai import OpenAI
 
-# 1. Setup Logging
-# This configures the logs to show Time - Level - Message
+# --- Logging Setup ---
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -15,35 +14,52 @@ logger = logging.getLogger(__name__)
 
 def generate_embeddings():
     # --- Configuration ---
-    input_file = 'Semantic.xlsx - Sheet1.csv'
-    output_file = 'Semantic_Embeddings_Output.csv'
+    # UPDATED: Path matches your folder structure
+    input_file = 'sqlite_data/Semantic.xlsx'
+    
+    # We save the output in the same folder to keep things tidy
+    output_file = 'sqlite_data/Semantic_Embeddings_Output.csv'
     
     logger.info("--- Starting Embedding Generation Workflow ---")
     logger.info(f"Target Input File: {input_file}")
     logger.info(f"Target Output File: {output_file}")
+    logger.info(f"Current Working Directory: {os.getcwd()}")
 
     # --- Credential Check ---
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         logger.error("CRITICAL: OPENAI_API_KEY environment variable is missing.")
-        sys.exit(1) # Exit with error code to fail the GitHub Action
+        sys.exit(1)
     logger.info("Credential Check: API Key found.")
 
     client = OpenAI(api_key=api_key)
 
-    # --- Load Data ---
+    # --- Load Data (With Enhanced Debugging) ---
     if not os.path.exists(input_file):
         logger.error(f"CRITICAL: Input file '{input_file}' not found.")
+        
+        # DEBUG: Print directory contents to help you find the file
+        logger.info("--- DEBUGGING PATHS ---")
+        logger.info(f"Files in root: {os.listdir('.')}")
+        if os.path.exists('sqlite_data'):
+            logger.info(f"Files in 'sqlite_data': {os.listdir('sqlite_data')}")
+        else:
+            logger.info("Folder 'sqlite_data' does not exist in root.")
+            
         sys.exit(1)
 
-    df = pd.read_csv(input_file)
-    logger.info(f"Data Loaded: {len(df)} total rows found in CSV.")
+    try:
+        # UPDATED: Using read_excel instead of read_csv
+        # We enforce string conversion on the Chunk_Text column immediately
+        df = pd.read_excel(input_file, engine='openpyxl')
+        logger.info(f"Data Loaded: {len(df)} total rows found in Excel file.")
+    except Exception as e:
+        logger.error(f"CRITICAL: Failed to read Excel file. Error: {e}")
+        sys.exit(1)
 
-    # Validate Columns
-    required_cols = ['Chunk_Text', 'Chunk_ID']
-    missing = [col for col in required_cols if col not in df.columns]
-    if missing:
-        logger.error(f"CRITICAL: Missing columns in CSV: {missing}")
+    # --- Validation ---
+    if 'Chunk_Text' not in df.columns:
+        logger.error(f"CRITICAL: Column 'Chunk_Text' not found. Columns are: {list(df.columns)}")
         sys.exit(1)
 
     # Ensure output column exists
@@ -52,15 +68,13 @@ def generate_embeddings():
         logger.info("Schema Update: Added missing 'Chunk_Embedding' column.")
 
     # --- Filter Workload ---
-    # We define 'work' as rows where Chunk_Embedding is NaN or empty string
-    # We force string conversion to handle potential float/NaN issues safely
+    # Work = rows where Chunk_Embedding is NaN or empty
     mask = df['Chunk_Embedding'].isna() | (df['Chunk_Embedding'].astype(str).str.strip() == '')
     rows_to_process = df[mask]
     
     total_work = len(rows_to_process)
-    skipped_count = len(df) - total_work
     
-    logger.info(f"Workload Assessment: {skipped_count} rows already have embeddings (SKIPPING).")
+    logger.info(f"Workload Assessment: {len(df) - total_work} rows already done.")
     logger.info(f"Workload Assessment: {total_work} rows require embeddings.")
 
     if total_work == 0:
@@ -74,6 +88,7 @@ def generate_embeddings():
     error_count = 0
 
     for index, row in rows_to_process.iterrows():
+        # Fallback to index if Chunk_ID is missing
         chunk_id = row.get('Chunk_ID', f"Row_{index}")
         text_content = row['Chunk_Text']
 
@@ -83,27 +98,25 @@ def generate_embeddings():
             continue
 
         try:
-            # Log before call
-            logger.info(f"Sending ID: {chunk_id} | Length: {len(str(text_content))} chars")
+            logger.info(f"Processing ID: {chunk_id} | Length: {len(str(text_content))} chars")
 
             response = client.embeddings.create(
                 input=str(text_content),
                 model="text-embedding-3-small"
             )
 
-            # Extract data
             embedding_vector = response.data[0].embedding
-            prompt_tokens = response.usage.prompt_tokens
+            tokens = response.usage.prompt_tokens
             
-            # Update DataFrame
+            # Save into DataFrame
             df.at[index, 'Chunk_Embedding'] = embedding_vector
             
             success_count += 1
-            logger.info(f"Success ID: {chunk_id} | Tokens used: {prompt_tokens}")
+            logger.info(f"Success ID: {chunk_id} | Tokens: {tokens}")
 
         except Exception as e:
             error_count += 1
-            logger.error(f"FAILURE ID: {chunk_id} | Error: {str(e)}")
+            logger.error(f"FAILURE ID: {chunk_id} | Error: {e}")
 
     # --- Finalize ---
     logger.info("--- Processing Complete ---")
