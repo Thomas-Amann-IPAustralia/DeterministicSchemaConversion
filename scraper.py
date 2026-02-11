@@ -2,6 +2,7 @@ import csv
 import os
 import sys
 import time
+import random
 import logging
 import re
 from datetime import datetime
@@ -14,7 +15,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium_stealth import stealth
 from markdownify import markdownify as md
 
-# --- FORCE UNBUFFERED OUTPUT ---
+# --- CRITICAL FIX: Force Unbuffered Output ---
 # This ensures logs appear immediately in GitHub Actions
 sys.stdout.reconfigure(line_buffering=True)
 
@@ -24,22 +25,31 @@ OUTPUT_DIR = 'IPFR-Webpages'
 HTML_OUTPUT_DIR = 'IPFR-Webpages-html'
 REPORTS_DIR = os.path.join('DeterministicSchemaConversion', 'reports', 'scrape_reports')
 
-# --- Helper: Raw Print ---
-def log(msg):
-    """Bypasses logging module to ensure output in CI/CD."""
-    timestamp = datetime.now().strftime("%H:%M:%S")
-    print(f"[{timestamp}] {msg}", flush=True)
+# --- Logging ---
+# We use a custom logger configuration to ensure it writes to stdout immediately
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stdout)] # Force stream to stdout
+)
+logger = logging.getLogger("Scraper")
 
 def initialize_driver(ethical_mode=True):
+    """
+    Sets up a Chrome driver. 
+    If ethical_mode=True, adds contact info headers/UA.
+    If ethical_mode=False, runs in maximum stealth.
+    """
     mode_name = "ETHICAL" if ethical_mode else "STEALTH"
-    log(f"-> Initializing Driver ({mode_name})...")
+    logger.info(f"  -> Initializing Selenium Driver ({mode_name} Mode)...")
     
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless=new')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument('--window-size=1920,1080')
-    
+
+    # 1. User-Agent Configuration
     base_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
     
     if ethical_mode:
@@ -52,17 +62,22 @@ def initialize_driver(ethical_mode=True):
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
-        # Set a hard timeout so it can't hang forever
+        # TIMEOUT FIX: Ensure we don't hang forever
         driver.set_page_load_timeout(30)
+        driver.set_script_timeout(30)
 
+        # 2. Header Injection (Only in Ethical Mode)
         if ethical_mode:
             try:
                 driver.execute_cdp_cmd('Network.enable', {})
                 driver.execute_cdp_cmd('Network.setExtraHTTPHeaders', {
-                    'headers': {'X-Bot-Name': 'IPFR-Content-Aggregator'}
+                    'headers': {
+                        'X-Scraper-Contact': 'mailto:your-email@example.com',
+                        'X-Bot-Name': 'IPFR-Content-Aggregator'
+                    }
                 })
             except Exception as e:
-                log(f"Warning: CDP Headers failed: {e}")
+                logger.warning(f"Could not inject CDP headers: {e}")
 
         stealth(driver,
                 languages=["en-US", "en"],
@@ -74,101 +89,214 @@ def initialize_driver(ethical_mode=True):
         )
         return driver
     except Exception as e:
-        log(f"[X] Driver Init Failed: {e}")
+        logger.error(f"  [x] Failed to initialize {mode_name} WebDriver: {e}")
         return None
 
-# ... (Keep normalize_text, clean_markdown, sanitize_filename as is) ...
 def normalize_text(text):
     if not text: return ""
-    replacements = {'\u2018': "'", '\u2019': "'", '\u201c': '"', '\u201d': '"', '\u2013': '-', '\u2014': '--', '…': '...'}
-    for k, v in replacements.items(): text = text.replace(k, v)
+    replacements = {
+        '\u2018': "'", '\u2019': "'", '\u201c': '"', '\u201d': '"',
+        '\u2013': '-', '\u2014': '--', '…': '...',
+    }
+    for k, v in replacements.items():
+        text = text.replace(k, v)
     return text
 
 def clean_markdown(text, url, title, overtitle):
     text = normalize_text(text)
+    text = re.sub(r'^## ', '### ', text, flags=re.MULTILINE)
+    text = re.sub(r'(\]\([^\)]+\))\s+\.', r'\1.', text)
+    text = re.sub(r'(\]\([^\)]+\))\s+,', r'\1,', text)
+
+    noise_patterns = [
+        r'Was this information useful\?',
+        r'Thumbs UpThumbs Down',
+        r'\[Give feedback.*?\]\([^\)]+\)', 
+        r'\(Opens in a new tab/window\)',
+        r'Opens in a new tab/window'
+    ]
+    for pattern in noise_patterns:
+        text = re.sub(pattern, '', text, flags=re.IGNORECASE | re.DOTALL)
+
+    disclaimer_start = "This IP First Response website has been designed"
+    if disclaimer_start in text:
+        if f"*{disclaimer_start}" not in text: 
+            pattern = r'(' + re.escape(disclaimer_start) + r'.*?)(\n\n|$)'
+            text = re.sub(pattern, r'*\1*\2', text, count=1, flags=re.DOTALL)
+
+    text = re.sub(r'([^\n])\n(### )', r'\1\n\n\2', text)
+    
     header_block = f'PageURL: "[{url}]({url})"\n\n'
-    return header_block + text[:500] # Truncated for brevity in this example
+    if overtitle: header_block += f"## {overtitle}\n\n"
+    if title: header_block += f"# {title}\n\n"
+
+    final_text = header_block + text.strip()
+    return re.sub(r'\n{3,}', '\n\n', final_text)
 
 def sanitize_filename(name):
-    return re.sub(r'[\\/*?:"<>|]', "", str(name or "Untitled")).strip()
+    if not name: return "Untitled"
+    return re.sub(r'[\\/*?:"<>|]', "", str(name)).strip()
+
+def save_session_report(report_data):
+    if not os.path.exists(REPORTS_DIR):
+        os.makedirs(REPORTS_DIR, exist_ok=True)
+        
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    report_path = os.path.join(REPORTS_DIR, f"scrape_report_{timestamp}.csv")
+    
+    fieldnames = [
+        "Timestamp", "UDID", "Filename", "URL", "Status", 
+        "Error_Message", "HTML_Size_Bytes", "MD_Size_Bytes", "Title_Detected"
+    ]
+    
+    try:
+        with open(report_path, mode='w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(report_data)
+        logger.info(f"--- Session Report Saved: {report_path} ---")
+    except Exception as e:
+        logger.error(f"Failed to save session report: {e}")
 
 def fetch_and_convert(driver, url):
-    # Minimal version for debugging
     telemetry = {"status": "FAILURE", "error": "", "html_len": 0, "md_len": 0, "title_found": False}
+
     try:
-        log(f"   Navigating to: {url}")
+        logger.info(f"Processing: {url}")
         driver.get(url)
-        time.sleep(2)
+        
+        # Wait for body to be present
+        try:
+            WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        except:
+            logger.warning("  [!] Timeout waiting for body, attempting to scrape anyway...")
+        
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+        time.sleep(random.uniform(2.0, 4.0)) 
+
+        # Metadata
+        page_title = ""
+        page_overtitle = ""
+        try:
+            page_title = driver.find_element(By.TAG_NAME, "h1").text.strip()
+            if page_title: telemetry["title_found"] = True
+        except: pass
+        
+        try:
+            overtitle_elem = driver.find_element(By.CLASS_NAME, "option-detail-page-tag")
+            page_overtitle = overtitle_elem.text.strip()
+        except: pass
+
+        # Content
+        content_html = ""
+        try:
+            try:
+                main_element = driver.find_element(By.TAG_NAME, "main")
+                content_html = main_element.get_attribute('innerHTML')
+            except:
+                main_element = driver.find_element(By.CLASS_NAME, "region-content")
+                content_html = main_element.get_attribute('innerHTML')
+        except Exception as e:
+            logger.warning(f"  [!] Fallback to body content: {e}")
+            content_html = driver.find_element(By.TAG_NAME, "body").get_attribute('innerHTML')
+
+        telemetry["html_len"] = len(content_html)
+
+        # Convert
+        markdown_text = md(
+            content_html, 
+            heading_style="ATX",
+            strip=['script', 'style', 'iframe', 'noscript', 'button'],
+            newline_style="BACKSLASH"
+        )
+
+        if not markdown_text:
+            telemetry["error"] = "Markdownify returned empty string"
+            return None, None, telemetry
+
+        final_markdown = clean_markdown(markdown_text, url, page_title, page_overtitle)
+        telemetry["md_len"] = len(final_markdown)
         telemetry["status"] = "SUCCESS"
-        return "Dummy Content", "Dummy HTML", telemetry
+        
+        return final_markdown, content_html, telemetry
+
     except Exception as e:
-        telemetry["error"] = str(e)
+        telemetry["error"] = str(e).split('\n')[0]
+        logger.error(f"  [x] Error scraping {url}: {telemetry['error']}")
         return None, None, telemetry
 
 def main():
-    log("--- SCRIPT STARTED ---")
-
     if not os.path.exists(CSV_FILE):
-        log(f"CRITICAL: {CSV_FILE} does not exist!")
+        logger.critical(f"Error: {CSV_FILE} not found.")
         sys.exit(1)
-
-    # --- DIAGNOSTIC: CHECK CSV CONTENT ---
-    log(f"Inspecting {CSV_FILE}...")
-    with open(CSV_FILE, 'r', encoding='utf-8-sig') as f:
-        lines = f.readlines()
-        log(f"File Line Count: {len(lines)}")
-        if len(lines) > 0:
-            log(f"Header Row: {lines[0].strip()}")
-        else:
-            log("CRITICAL: CSV FILE IS EMPTY.")
-            sys.exit(1)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     os.makedirs(HTML_OUTPUT_DIR, exist_ok=True)
 
     main_driver = initialize_driver(ethical_mode=True)
-    if not main_driver:
-        sys.exit(1)
+    if not main_driver: sys.exit(1)
+
+    session_report = []
 
     try:
-        log("Opening CSV Reader...")
+        logger.info(f"Reading targets from {CSV_FILE}...")
+        
         with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
-            
-            # Sanitize headers (remove whitespace)
+            # Normalize headers
             if reader.fieldnames:
                 reader.fieldnames = [name.strip() for name in reader.fieldnames]
-            log(f"Parsed Columns: {reader.fieldnames}")
 
-            row_count = 0
             for row in reader:
-                row_count += 1
                 url = row.get('Canonical-url', '').strip()
                 udid = row.get('UDID', '').strip()
-                
-                log(f"Processing Row {row_count}: {udid} | {url}")
-                
-                if not url:
+                main_title = row.get('Main-title', '').strip()
+
+                if not url or not url.lower().startswith('http'):
                     continue
-
-                # Test scrape
-                md_c, html_c, stats = fetch_and_convert(main_driver, url)
                 
-                if stats["status"] != "SUCCESS":
-                    log("   [!] Ethical Failed. Triggering Fallback...")
-                    # Fallback logic here...
-                else:
-                    log("   [+] Success.")
+                clean_title = sanitize_filename(main_title)
+                filename = f"{udid} - {clean_title}.md"
 
-            log(f"Total Rows Processed: {row_count}")
-            if row_count == 0:
-                log("WARNING: Loop finished with 0 rows processed.")
+                # ATTEMPT 1: Ethical
+                md_content, html_content, stats = fetch_and_convert(main_driver, url)
+
+                # ATTEMPT 2: Fallback
+                if stats["status"] != "SUCCESS":
+                    logger.warning(f"  [!] Ethical failed. Attempting Stealth Fallback for {udid}...")
+                    fallback_driver = initialize_driver(ethical_mode=False)
+                    if fallback_driver:
+                        md_content, html_content, stats = fetch_and_convert(fallback_driver, url)
+                        if stats["status"] == "SUCCESS":
+                            stats["status"] = "SUCCESS_VIA_FALLBACK"
+                        fallback_driver.quit()
+
+                # Report & Save
+                session_report.append({
+                    "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "UDID": udid, "Filename": filename, "URL": url,
+                    "Status": stats["status"], "Error_Message": stats["error"],
+                    "HTML_Size_Bytes": stats["html_len"], "MD_Size_Bytes": stats["md_len"],
+                    "Title_Detected": stats["title_found"]
+                })
+
+                if md_content and "SUCCESS" in stats["status"]:
+                    with open(os.path.join(OUTPUT_DIR, filename), 'w', encoding='utf-8') as f:
+                        f.write(md_content)
+                    
+                    html_fname = f"{os.path.splitext(filename)[0]}-html.html"
+                    with open(os.path.join(HTML_OUTPUT_DIR, html_fname), 'w', encoding='utf-8') as f:
+                        f.write(html_content)
+                    logger.info(f"  -> Saved: {filename}")
+                else:
+                    logger.warning(f"  -> Skipped: {filename}")
 
     except Exception as e:
-        log(f"Global Crash: {e}")
+        logger.critical(f"Unexpected Execution Error: {e}")
     finally:
-        main_driver.quit()
-        log("--- SCRIPT FINISHED ---")
+        if main_driver: main_driver.quit()
+        save_session_report(session_report)
+        logger.info("--- Scrape Run Complete ---")
 
 if __name__ == "__main__":
     main()
