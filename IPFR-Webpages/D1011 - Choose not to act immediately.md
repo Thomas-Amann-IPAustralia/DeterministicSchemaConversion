@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-imm
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button)
 
 Taking no action when you have identified infringement is a valid and common strategic choice to consider. People choose not to actively pursue enforcement actions for several reasons including: 
 

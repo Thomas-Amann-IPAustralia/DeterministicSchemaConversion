@@ -89,6 +89,8 @@ Even if someone is using IP in a way that appears to infringe, there may be lega
 * **Designs:** Making parts needed to repair a complex product is a defence.
 * **Plant breeders' rights**: Using a plant variety for the purpose of experimentation, further breeding, like cross breeding, or using the variety for private and non-commercial use.
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 ### Example scenarios
 
 Here are some general examples that illustrate potential IP infringement situations: 

@@ -12,7 +12,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-d
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button)
 
 In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It's often the first formal step used in notifying someone of an IP issue. 
 
