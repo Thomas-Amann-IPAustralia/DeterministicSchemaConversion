@@ -5,6 +5,7 @@ import os
 import argparse
 import pandas as pd
 import tiktoken
+import re
 from jsonpath_ng.ext import parse
 from typing import Any, List, Dict
 
@@ -43,7 +44,8 @@ def pre_scan_files(source_dir, md_dir, html_dir):
             for file_path in glob.glob(os.path.join(path, "*")):
                 # Assuming filename starts with UDID (e.g., "B1020 - Name.md")
                 filename = os.path.basename(file_path)
-                udid = filename.split()[0].strip() # Simple extraction
+                # Extract UDID (first sequence of chars before space or dash)
+                udid = filename.split()[0].strip() 
                 FILE_CACHE[f_type][udid] = file_path
 
     # Scan JSONs for URL Registry
@@ -63,14 +65,14 @@ def pre_scan_files(source_dir, md_dir, html_dir):
         except:
             continue
             
-    print(f"   - Mapped {len(URL_REGISTRY)} internal URLs for cross-referencing.")
+    print(f"   - Mapped {len(FILE_CACHE['md'])} MD files.")
+    print(f"   - Mapped {len(URL_REGISTRY)} internal URLs.")
 
-# --- Custom Logic Functions ---
+# --- Logic Functions ---
 
 def logic_derive_service_provider(value, row_context, root_data):
     """Implements: IF Service_Type = Article THEN Self-service ELSE serviceOperator.name"""
     try:
-        # Safe access to type using list checking
         entities = root_data.get("mainEntity", [])
         if not entities: return "Unknown"
         
@@ -84,22 +86,12 @@ def logic_derive_service_provider(value, row_context, root_data):
 
 def logic_check_is_internal_link(url, row_context, root_data):
     if not url: return "No"
-    # Basic check for your domain
     return "Yes" if "ipfirstresponse" in str(url) else "No"
 
 def logic_lookup_internal_udid(url, row_context, root_data):
     if not url: return "Null"
-    # Normalize URL (remove trailing slash for matching)
     clean_url = str(url).rstrip('/')
-    # Try direct match or match with/without slash
     return URL_REGISTRY.get(clean_url, URL_REGISTRY.get(clean_url + '/', "Null"))
-
-def logic_generate_semantic_chunk(root_data, row_context, _):
-    """Concatenates Headline + Alt + Description for embedding"""
-    h = root_data.get("headline", "")
-    alt = root_data.get("alternativeHeadline", "")
-    desc = root_data.get("description", "")
-    return f"{h}\n{alt}\n{desc}"
 
 def logic_read_file_content(udid, file_type):
     path = FILE_CACHE[file_type].get(udid)
@@ -118,11 +110,85 @@ def logic_count_md_tokens(udid, *args): return count_tokens(logic_read_file_cont
 def logic_dump_json_string(root_data, *args): return json.dumps(root_data)
 def logic_count_json_tokens(root_data, *args): return count_tokens(json.dumps(root_data))
 
+# --- Row Generator Functions (One Input -> Multiple Rows) ---
+
+def logic_generate_semantic_rows(root_data, *args):
+    """
+    Generates multiple chunk rows from the associated Markdown file.
+    Splits by '###' headers.
+    """
+    rows = []
+    
+    # 1. Get Basic Info
+    udid = root_data.get("identifier", {}).get("value", "UNKNOWN")
+    headline = root_data.get("headline", "")
+    alt_headline = root_data.get("alternativeHeadline", "")
+    description = root_data.get("description", "")
+    
+    # 2. Construct Context Prepend
+    # Format: Headline + \n + Alt + \n + Desc
+    context_prepend = f"{headline}\n{alt_headline}\n{description}"
+    
+    # 3. Read Markdown
+    md_content = logic_read_file_content(udid, "md")
+    if not md_content or md_content.startswith("FILE_NOT_FOUND") or md_content.startswith("ERROR"):
+        # Fallback if no MD found
+        return [{
+            "UDID": udid,
+            "Headline_Alt": alt_headline,
+            "Chunk_ID": f"{udid}_ERROR",
+            "Chunk_Token_Count": 0,
+            "Chunk_Text": "Markdown file not found.",
+            "Chunk_Embedding": None,
+            "Chunk_Context_Prepend": context_prepend
+        }]
+
+    # 4. Clean Markdown Metadata (Remove PageURL, Title block at top)
+    # Strategy: Find the first occurrence of actual content or headers.
+    # Often these files start with PageURL: ... then # Title.
+    # We will remove lines until we hit the first Header, or just parse blindly.
+    
+    # Split by "###" (Level 3 headers)
+    # The split will result in: [Intro text, Header 1 + text, Header 2 + text...]
+    parts = re.split(r'(?=^### )', md_content, flags=re.MULTILINE)
+    
+    # Filter out empty parts and clean up the intro
+    chunks = []
+    
+    for i, part in enumerate(parts):
+        text = part.strip()
+        if not text: continue
+        
+        # Skip the metadata block if it's the first chunk and just contains URL/Title
+        # Heuristic: If it starts with "PageURL" and has "# Title", strip those lines.
+        if i == 0:
+            lines = text.split('\n')
+            clean_lines = [l for l in lines if not l.startswith("PageURL:") and not l.startswith("## ") and not l.startswith("# ")]
+            text = "\n".join(clean_lines).strip()
+            if not text: continue # Skip if empty after cleaning
+
+        # Construct Chunk Text (Prepend + Content)
+        full_chunk_text = f"{context_prepend}\n{text}"
+        
+        chunk_id = f"{udid}_{len(chunks)+1:02d}"
+        
+        rows.append({
+            "UDID": udid,
+            "Headline_Alt": alt_headline,
+            "Chunk_ID": chunk_id,
+            "Chunk_Token_Count": count_tokens(full_chunk_text),
+            "Chunk_Text": full_chunk_text,
+            "Chunk_Embedding": None, # Explicitly Null as requested
+            "Chunk_Context_Prepend": context_prepend
+        })
+        
+    return rows
+
+
 LOGIC_FUNCTIONS = {
     "derive_service_provider": logic_derive_service_provider,
     "check_is_internal_link": logic_check_is_internal_link,
     "lookup_internal_udid": logic_lookup_internal_udid,
-    "generate_semantic_chunk": logic_generate_semantic_chunk,
     "read_html_file": logic_read_html_file,
     "count_html_tokens": logic_count_html_tokens,
     "read_md_file": logic_read_md_file,
@@ -131,20 +197,23 @@ LOGIC_FUNCTIONS = {
     "count_json_tokens": logic_count_json_tokens
 }
 
+ROW_GENERATORS = {
+    "generate_semantic_rows": logic_generate_semantic_rows
+}
+
 # --- Core Processing ---
 
 def get_value(datum, selector, logic_name=None, row_context=None, root_data=None):
     """Extracts value using JSONPath or Custom Logic"""
     val = None
     
-    # 1. CONST Handling (Fix for Parse Error)
+    # 1. CONST Handling
     if selector and str(selector).startswith("const:"):
         return selector.replace("const:", "")
 
     # 2. Path Extraction
     if selector:
         try:
-            # Handle parent reference
             if selector.startswith("parent:"):
                 clean_path = selector.replace("parent:", "")
                 target = root_data
@@ -158,21 +227,17 @@ def get_value(datum, selector, logic_name=None, row_context=None, root_data=None
             matches = JSONPATH_CACHE[clean_path].find(target)
             if matches:
                 val = matches[0].value
-                # If single item list, extract it
                 if isinstance(val, list) and len(val) == 1:
                     val = val[0]
         except Exception as e:
-            # Print warning but don't crash the whole script
-            print(f"      ⚠️ JSONPath Error on '{selector}': {e}")
-            val = "ERROR"
+            # val remains None
+            pass
 
     # 3. Logic Application
     if logic_name and logic_name in LOGIC_FUNCTIONS:
-        # If path provided, use extracted val as input, else use datum
         input_val = val if val is not None else datum
         val = LOGIC_FUNCTIONS[logic_name](input_val, row_context, root_data)
 
-    # 4. Fallback
     return val
 
 def process_file(filepath, config):
@@ -183,25 +248,35 @@ def process_file(filepath, config):
     
     for table_name, settings in config['tables'].items():
         rows = []
-        root_path = settings['root_path']
         
-        # Determine items to iterate over
-        if root_path == "$":
-            items = [root_data]
+        # Check for Row Generator (Custom Table Logic)
+        if "row_generator" in settings:
+            generator_name = settings["row_generator"]
+            if generator_name in ROW_GENERATORS:
+                generated_rows = ROW_GENERATORS[generator_name](root_data)
+                rows.extend(generated_rows)
+            else:
+                print(f"❌ Unknown generator: {generator_name}")
+        
         else:
-            if root_path not in JSONPATH_CACHE:
-                JSONPATH_CACHE[root_path] = parse(root_path)
-            items = [m.value for m in JSONPATH_CACHE[root_path].find(root_data)]
+            # Standard Processing (Iterate items -> Map columns)
+            root_path = settings['root_path']
             
-        # Process rows
-        for item in items:
-            row = {}
-            for col, rules in settings['columns'].items():
-                path = rules if isinstance(rules, str) else rules.get('path')
-                logic = rules.get('logic') if isinstance(rules, dict) else None
+            if root_path == "$":
+                items = [root_data]
+            else:
+                if root_path not in JSONPATH_CACHE:
+                    JSONPATH_CACHE[root_path] = parse(root_path)
+                items = [m.value for m in JSONPATH_CACHE[root_path].find(root_data)]
                 
-                row[col] = get_value(item, path, logic, item, root_data)
-            rows.append(row)
+            for item in items:
+                row = {}
+                for col, rules in settings['columns'].items():
+                    path = rules if isinstance(rules, str) else rules.get('path')
+                    logic = rules.get('logic') if isinstance(rules, dict) else None
+                    
+                    row[col] = get_value(item, path, logic, item, root_data)
+                rows.append(row)
             
         file_results[table_name] = rows
         
@@ -239,24 +314,25 @@ if __name__ == "__main__":
                 all_data[t].extend(rows)
         except Exception as e:
             print(f"❌ Error in {jf}: {e}")
+            # print traceback for debugging
+            import traceback
+            traceback.print_exc()
             
     print("💾 Saving data...")
     for t, data in all_data.items():
         if data:
             df = pd.DataFrame(data)
-            cols = list(config['tables'][t]['columns'].keys())
-            # Ensure all columns exist
-            for c in cols:
-                if c not in df.columns: df[c] = None
-            df = df[cols]
             
-            # 1. Save as Excel (Best for viewing)
-            xlsx_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
-            print(f"   - Saving {xlsx_path}...")
-            df.to_excel(xlsx_path, index=False)
-
-            # 2. Save as CSV (Best for machines)
-            # We use 'utf-8-sig' to fix the weird characters in Excel
+            # For generator tables, columns are defined by the generator output keys
+            # For standard tables, force column ordering based on config
+            if "columns" in config['tables'][t]:
+                cols = list(config['tables'][t]['columns'].keys())
+                # Ensure all columns exist
+                for c in cols:
+                    if c not in df.columns: df[c] = None
+                df = df[cols]
+            
+            # Save CSV
             csv_path = os.path.join(args.output, config['tables'][t]['filename'])
             print(f"   - Saving {csv_path}...")
             df.to_csv(csv_path, index=False, encoding='utf-8-sig')
