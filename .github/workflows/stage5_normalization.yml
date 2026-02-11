@@ -1,11 +1,6 @@
 name: Stage 5 - Relational Normalization
 
 on:
-  push:
-    paths:
-      - 'json_output-enriched/**'
-      - 'scripts/json_to_csv.py'
-      - 'scripts/schema_mapping.yaml'
   workflow_dispatch:
 
 jobs:
