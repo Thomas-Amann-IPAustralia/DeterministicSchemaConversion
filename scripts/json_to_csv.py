@@ -126,7 +126,6 @@ def logic_generate_semantic_rows(root_data, *args):
     description = root_data.get("description", "")
     
     # 2. Construct Context Prepend
-    # Format: Headline + \n + Alt + \n + Desc
     context_prepend = f"{headline}\n{alt_headline}\n{description}"
     
     # 3. Read Markdown
@@ -143,33 +142,22 @@ def logic_generate_semantic_rows(root_data, *args):
             "Chunk_Context_Prepend": context_prepend
         }]
 
-    # 4. Clean Markdown Metadata (Remove PageURL, Title block at top)
-    # Strategy: Find the first occurrence of actual content or headers.
-    # Often these files start with PageURL: ... then # Title.
-    # We will remove lines until we hit the first Header, or just parse blindly.
-    
-    # Split by "###" (Level 3 headers)
-    # The split will result in: [Intro text, Header 1 + text, Header 2 + text...]
+    # 4. Clean Markdown Metadata & Split
     parts = re.split(r'(?=^### )', md_content, flags=re.MULTILINE)
     
-    # Filter out empty parts and clean up the intro
     chunks = []
-    
     for i, part in enumerate(parts):
         text = part.strip()
         if not text: continue
         
-        # Skip the metadata block if it's the first chunk and just contains URL/Title
-        # Heuristic: If it starts with "PageURL" and has "# Title", strip those lines.
+        # Skip top metadata block if present
         if i == 0:
             lines = text.split('\n')
             clean_lines = [l for l in lines if not l.startswith("PageURL:") and not l.startswith("## ") and not l.startswith("# ")]
             text = "\n".join(clean_lines).strip()
-            if not text: continue # Skip if empty after cleaning
+            if not text: continue
 
-        # Construct Chunk Text (Prepend + Content)
         full_chunk_text = f"{context_prepend}\n{text}"
-        
         chunk_id = f"{udid}_{len(chunks)+1:02d}"
         
         rows.append({
@@ -178,9 +166,10 @@ def logic_generate_semantic_rows(root_data, *args):
             "Chunk_ID": chunk_id,
             "Chunk_Token_Count": count_tokens(full_chunk_text),
             "Chunk_Text": full_chunk_text,
-            "Chunk_Embedding": None, # Explicitly Null as requested
+            "Chunk_Embedding": None,
             "Chunk_Context_Prepend": context_prepend
         })
+        chunks.append(chunk_id) # Track count
         
     return rows
 
@@ -230,7 +219,6 @@ def get_value(datum, selector, logic_name=None, row_context=None, root_data=None
                 if isinstance(val, list) and len(val) == 1:
                     val = val[0]
         except Exception as e:
-            # val remains None
             pass
 
     # 3. Logic Application
@@ -249,7 +237,7 @@ def process_file(filepath, config):
     for table_name, settings in config['tables'].items():
         rows = []
         
-        # Check for Row Generator (Custom Table Logic)
+        # Check for Row Generator
         if "row_generator" in settings:
             generator_name = settings["row_generator"]
             if generator_name in ROW_GENERATORS:
@@ -259,7 +247,7 @@ def process_file(filepath, config):
                 print(f"❌ Unknown generator: {generator_name}")
         
         else:
-            # Standard Processing (Iterate items -> Map columns)
+            # Standard Processing
             root_path = settings['root_path']
             
             if root_path == "$":
@@ -314,7 +302,6 @@ if __name__ == "__main__":
                 all_data[t].extend(rows)
         except Exception as e:
             print(f"❌ Error in {jf}: {e}")
-            # print traceback for debugging
             import traceback
             traceback.print_exc()
             
@@ -323,16 +310,23 @@ if __name__ == "__main__":
         if data:
             df = pd.DataFrame(data)
             
-            # For generator tables, columns are defined by the generator output keys
-            # For standard tables, force column ordering based on config
+            # Ensure columns and order
             if "columns" in config['tables'][t]:
                 cols = list(config['tables'][t]['columns'].keys())
-                # Ensure all columns exist
                 for c in cols:
                     if c not in df.columns: df[c] = None
                 df = df[cols]
             
-            # Save CSV
+            # 1. Save as Excel (Added per request)
+            xlsx_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
+            print(f"   - Saving {xlsx_path}...")
+            # Requires 'openpyxl' installed
+            try:
+                df.to_excel(xlsx_path, index=False)
+            except Exception as e:
+                 print(f"   ⚠️ Failed to save Excel (check if openpyxl is installed): {e}")
+
+            # 2. Save as CSV
             csv_path = os.path.join(args.output, config['tables'][t]['filename'])
             print(f"   - Saving {csv_path}...")
             df.to_csv(csv_path, index=False, encoding='utf-8-sig')
