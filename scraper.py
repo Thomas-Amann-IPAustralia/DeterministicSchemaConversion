@@ -29,29 +29,47 @@ logging.basicConfig(
 )
 logger = logging.getLogger("Scraper")
 
-def initialize_driver():
-    """Sets up a stealthy Headless Chrome driver."""
-    logger.info("  -> Initializing Selenium Driver...")
+def initialize_driver(ethical_mode=True):
+    """
+    Sets up a Chrome driver. 
+    If ethical_mode=True, adds contact info headers/UA.
+    If ethical_mode=False, runs in maximum stealth.
+    """
+    mode_name = "ETHICAL" if ethical_mode else "STEALTH"
+    logger.info(f"  -> Initializing Selenium Driver ({mode_name} Mode)...")
+    
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless=new')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument('--window-size=1920,1080')
-    chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36')
+
+    # 1. User-Agent Configuration
+    base_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    
+    if ethical_mode:
+        # Append Contact Info for "Polite" Mode
+        contact_info = " (compatible; IPFR-Bot/1.0; +mailto:your-email@example.com)"
+        chrome_options.add_argument(f'user-agent={base_ua}{contact_info}')
+    else:
+        # Use Standard User-Agent for "Stealth" Mode
+        chrome_options.add_argument(f'user-agent={base_ua}')
     
     try:
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
-        # Enable network tracking to allow header injection
-        driver.execute_cdp_cmd('Network.enable', {})
-        
-        # Set a custom header that sends your email with every request
-        driver.execute_cdp_cmd('Network.setExtraHTTPHeaders', {
-            'headers': {
-                'X-Scraper-Contact': 'mailto:ipfirstresponse@ipaustralia.gov.au',
-                'X-Bot-Name': 'IPFR-Content-Aggregator'
-            }
-        })
+
+        # 2. Header Injection (Only in Ethical Mode)
+        if ethical_mode:
+            driver.execute_cdp_cmd('Network.enable', {})
+            driver.execute_cdp_cmd('Network.setExtraHTTPHeaders', {
+                'headers': {
+                    'X-Scraper-Contact': 'mailto:your-email@example.com',
+                    'X-Bot-Name': 'IPFR-Content-Aggregator'
+                }
+            })
+
+        # Apply Stealth settings to both (essential for avoiding bot detection signatures)
         stealth(driver,
                 languages=["en-US", "en"],
                 vendor="Google Inc.",
@@ -62,7 +80,7 @@ def initialize_driver():
         )
         return driver
     except Exception as e:
-        logger.error(f"  [x] Failed to initialize WebDriver: {e}")
+        logger.error(f"  [x] Failed to initialize {mode_name} WebDriver: {e}")
         return None
 
 def normalize_text(text):
@@ -242,9 +260,9 @@ def main():
     if not os.path.exists(HTML_OUTPUT_DIR):
         os.makedirs(HTML_OUTPUT_DIR)
 
-    # Initialize Driver
-    driver = initialize_driver()
-    if not driver:
+    # Initialize Main Driver (Ethical Mode by default)
+    main_driver = initialize_driver(ethical_mode=True)
+    if not main_driver:
         sys.exit(1)
 
     session_report = []
@@ -269,9 +287,32 @@ def main():
                 clean_title = sanitize_filename(main_title)
                 filename = f"{udid} - {clean_title}.md"
 
-                # Scrape
-                md_content, html_content, stats = fetch_and_convert(driver, url)
+                # --- ATTEMPT 1: Ethical Scrape ---
+                md_content, html_content, stats = fetch_and_convert(main_driver, url)
+
+                # --- FALLBACK LOGIC ---
+                if stats["status"] != "SUCCESS":
+                    logger.warning(f"  [!] Ethical scrape failed ({stats['error']}). Attempting Stealth Fallback...")
+                    
+                    # Spin up a temporary Stealth Driver
+                    fallback_driver = initialize_driver(ethical_mode=False)
+                    
+                    if fallback_driver:
+                        # ATTEMPT 2: Stealth Scrape
+                        md_content, html_content, stats = fetch_and_convert(fallback_driver, url)
+                        
+                        # Update status if successful so we know it worked via fallback
+                        if stats["status"] == "SUCCESS":
+                            stats["status"] = "SUCCESS_VIA_FALLBACK"
+                        else:
+                            stats["status"] = "FAILED_BOTH"
+                        
+                        # Close the stealth driver immediately
+                        fallback_driver.quit()
+                    else:
+                        logger.error("  [x] Could not initialize Stealth Driver.")
                 
+                # --- SAVE & REPORT ---
                 # Add to Report
                 report_entry = {
                     "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -286,7 +327,7 @@ def main():
                 }
                 session_report.append(report_entry)
 
-                if md_content and stats["status"] == "SUCCESS":
+                if md_content and "SUCCESS" in stats["status"]:
                     # 1. Save Markdown
                     md_filepath = os.path.join(OUTPUT_DIR, filename)
                     with open(md_filepath, 'w', encoding='utf-8') as f_md:
@@ -300,16 +341,14 @@ def main():
                     with open(html_filepath, 'w', encoding='utf-8') as f_html:
                         f_html.write(html_content)
 
-                    logger.info(f"  -> Saved: {filename}")
+                    logger.info(f"  -> Saved: {filename} (Status: {stats['status']})")
                 else:
                     logger.warning(f"  -> Skipped: {filename} (Reason: {stats['error']})")
 
     except Exception as e:
         logger.critical(f"An unexpected error occurred during execution: {e}")
     finally:
-        driver.quit()
+        if main_driver:
+            main_driver.quit()
         save_session_report(session_report)
         logger.info("--- Scrape Run Complete ---")
-
-if __name__ == "__main__":
-    main()
