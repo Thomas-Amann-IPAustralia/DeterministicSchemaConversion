@@ -15,11 +15,13 @@ logger = logging.getLogger(__name__)
 def generate_embeddings():
     # --- Configuration ---
     input_file = 'sqlite_data/Semantic.xlsx'
-    output_file = 'sqlite_data/Semantic_Embeddings_Output.csv'
+    output_file_csv = 'sqlite_data/Semantic_Embeddings_Output.csv'
+    output_file_xlsx = 'sqlite_data/Semantic_Embeddings_Output.xlsx'
     
     logger.info("--- Starting Embedding Generation Workflow ---")
     logger.info(f"Target Input File: {input_file}")
-    logger.info(f"Target Output File: {output_file}")
+    logger.info(f"Target Output CSV: {output_file_csv}")
+    logger.info(f"Target Output XLSX: {output_file_xlsx}")
 
     # --- Credential Check ---
     api_key = os.environ.get("OPENAI_API_KEY")
@@ -36,29 +38,24 @@ def generate_embeddings():
         sys.exit(1)
 
     try:
-        # Load Excel file
         df = pd.read_excel(input_file, engine='openpyxl')
         logger.info(f"Data Loaded: {len(df)} total rows found in Excel file.")
     except Exception as e:
         logger.error(f"CRITICAL: Failed to read Excel file. Error: {e}")
         sys.exit(1)
 
-    # --- Validation & Schema Update ---
+    # --- Validation ---
     if 'Chunk_Text' not in df.columns:
-        logger.error(f"CRITICAL: Column 'Chunk_Text' not found. Columns are: {list(df.columns)}")
+        logger.error(f"CRITICAL: Column 'Chunk_Text' not found.")
         sys.exit(1)
 
-    # Ensure output column exists
     if 'Chunk_Embedding' not in df.columns:
         df['Chunk_Embedding'] = None
 
-    # CRITICAL FIX: Force the column to be of type 'object' to allow storing lists/strings
-    # Without this, pandas treats empty columns as floats (NaN) and fails when assigning a list
+    # Force object type to allow stringified lists
     df['Chunk_Embedding'] = df['Chunk_Embedding'].astype('object')
-    logger.info("Schema Update: 'Chunk_Embedding' column ready for vector data.")
 
     # --- Filter Workload ---
-    # Work = rows where Chunk_Embedding is NaN or empty
     mask = df['Chunk_Embedding'].isna() | (df['Chunk_Embedding'].astype(str).str.strip() == '')
     rows_to_process = df[mask]
     
@@ -71,7 +68,6 @@ def generate_embeddings():
 
     # --- Processing Loop ---
     logger.info("--- Beginning API Calls ---")
-    
     success_count = 0
     error_count = 0
 
@@ -80,40 +76,39 @@ def generate_embeddings():
         text_content = row['Chunk_Text']
 
         if pd.isna(text_content) or str(text_content).strip() == "":
-            logger.warning(f"Row {index} (ID: {chunk_id}): Text is empty. Skipping.")
             continue
 
         try:
-            logger.info(f"Processing ID: {chunk_id} | Length: {len(str(text_content))} chars")
-
+            logger.info(f"Processing ID: {chunk_id} | Length: {len(str(text_content))}")
+            
             response = client.embeddings.create(
                 input=str(text_content),
                 model="text-embedding-3-small"
             )
 
-            embedding_vector = response.data[0].embedding
-            tokens = response.usage.prompt_tokens
-            
-            # CRITICAL FIX: Convert list to string before assignment
-            # This prevents the "Must have equal len keys and value" error
-            df.at[index, 'Chunk_Embedding'] = str(embedding_vector)
-            
+            # Save as stringified list
+            df.at[index, 'Chunk_Embedding'] = str(response.data[0].embedding)
             success_count += 1
-            logger.info(f"Success ID: {chunk_id} | Tokens: {tokens}")
+            logger.info(f"Success ID: {chunk_id}")
 
         except Exception as e:
             error_count += 1
             logger.error(f"FAILURE ID: {chunk_id} | Error: {e}")
 
-    # --- Finalize ---
     logger.info("--- Processing Complete ---")
-    logger.info(f"Summary: {success_count} succeeded, {error_count} failed.")
     
+    # --- Save Outputs ---
     try:
-        df.to_csv(output_file, index=False)
-        logger.info(f"File Saved: Successfully wrote to {output_file}")
+        # Save CSV
+        df.to_csv(output_file_csv, index=False)
+        logger.info(f"Saved CSV: {output_file_csv}")
+        
+        # Save Excel
+        df.to_excel(output_file_xlsx, index=False, engine='openpyxl')
+        logger.info(f"Saved Excel: {output_file_xlsx}")
+        
     except Exception as e:
-        logger.error(f"CRITICAL: Failed to save output file: {e}")
+        logger.error(f"CRITICAL: Failed to save output files: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
