@@ -1,154 +1,16 @@
 PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement)"
 
-## Negotiation
+# This site can’t be reached
 
-# Agree to a formal commercial arrangement
+# This site can't be reached
 
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement** might be temporarily down or it may have moved permanently to a new web address.
 
-### What is it?
+ERR\_HTTP2\_PROTOCOL\_ERROR
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement** might be temporarily down or it may have moved permanently to a new web address.
 
-Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute. While negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.   
+![](data:image/png;base64,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)
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACY4AAADCCAMAAADT9DSoAAAANlBMVEUAAADa2tr/////9/e5ubn39/dTU1P29vbv7+/+/v74+Pjw8PD///9ZWVlfX1/z8/P5+fn///9RgilMAAAAEnRSTlMA///////////////2////9gn80juWAAAR/UlEQVR4AezdAW+jOBPG8QcgVPv9P+xqHQPvu9nrTWWd1enNuY7D/ydpS+gwdqRq44yN0WUBAAAAAAAA06u/sVPPbZZ0/Ie5LNvIEWbRu11msCsK7duYZM4OcaWzf1+rVk13fbTpj1SctXMWZJHluSLYTmxlUBlVxJlkZz/py2a/txeV/o1qls9B3q55/TALAAAAHa16KeU340nT4+gKZq36LesYPMIsWmR2mbGuqGvZxqkrOsct+wNgOAYA2Gy6bysmEo3N/71HKhWzg+W1haTCZqdr06Blu5tSvS/GpLIhAAzHmsxMWyWsqJA980zxKinb+4zWxh4Zs46RIyoVosWqRGNcYRGOrJE2zCTjjzsD+SwysJLTFXdaRCjf+DA7P74yeTvmrdtUKCTWjr2uaZIAoHR7k5a3H+oLANZX+W4zdf4WjFmHP+IyrM616/ucQ+S1nFO3FWTn/r6Gsbi50Sb+3l+aykxk5Q5Mu9xstTshK20UL5MAMBwbzsmyXgCF22yD5OVx/EthAMBw7NSobP1Yh2qV7X4WyjF/shLMIio5Xrw2tsTrY/3XjQXiLPYMxFktLZ7v3O04azRYA/+z9stL3s0Zk/ibHkqvqUwA2Opzl9ock5B2J2Qtn50t5ky38txW6R8AhmM9xt4w/mrVnyMpB3I8MjyOKyyimqO9+r2O16sRswdZtv+HNN01KGRJK/1tmfdhbZ4Xq67AtoS11wDwcLsLAK49HEvhqvrU9O7Po2HudpVAq0Udn0bocfQ4DuRo0NOB7nXsULPrsG7s9MUZ/zouTV3Wj0lZq6Z7juyclFQe1yYh7ZxxXJvKBJvsd+XvTbKTQHxtc+u8WPXyJp3Fh8kkAAAAhmMxzu/G/WHWccF7HesWazVYswOw0l/L++zAvmP1Oy0BoLr5a8WmIsC9lasdBVgeE8sMgOHYFl4nczZ7lqRsPVez3Nle2/qxXrvhN8hh903CqmB7uGYX3x/sDOdzaLj/2BTNB8Ahf1NerNz+DgAAwHCs/Vox9hdr2Yp/tzFqYw1XrZ1C9KmYSdrKab+tOh+42XXldqxJFf8Q95VrN5lUucuzov4+gP5r3TDrwqb/E4BLur39KI57AYCVfccra7v65Lb1Y4HqU7O9wQbdocvqUezcD3PuR3HcCwCsTGEAYDf+v4+TCkn1M/Wz9d8l/7X1vvj7l+wAAMMxoMeu+vErAhW45nVB92O/JpXOxndVtr+78tTkiiu/fFlctnqvHXcBAOtYS/incq/9oNPyALic27xrmeef6goAVqFc21Vfy9Uot+ptXozVf/y76nuvWKox8Tbsmn2op23i3MW+eAAYjn11YuOsTlUAgN9ttoHt8jj+JQBgOAb+GOKrvLr0yiIWixngaZvUxd5lgf3jyQuGYw5n5RwANH1wW3LHOyNT5WUtvpBav6n2/dwcwR0BDMfy06wb8++XewRzG9aPlfWfwBUXqEpNMqczTq3j2t9dGYg7Ncnisuw/wOkuAGBX/n4A4CYAoDrWFQ5lrboiIGvVdM/Vebq6Mn6TNt+F23u8U1JU8aasqzGBftb7M38y7zA7P86y5SBvPG+p2dxNojoGADyzEsD4qI41GtP3Xze2+r8jxHPHOXKuofqY5aAcG9+hHzyzEgBWCQB4ZmVgpvLr85VXAYDhGLIOzZ9G/HbYfWYNWrFVOtdQ26F/0TMBz6x81uei5Opv6x9buVNe8to3jOSIKSXnWqpDDURaZe0YAAAA1bEOY++ee56tzv3Bao5GuQ9X1coTYfnmSt9irVj+rPUCxVnboZ/a2MjKzV0796RDZ+wO0Jb93AQ8S93p6NVqJR4AAACsHUO80neEIoqVYYEcplihVrRyHfv7g6u1qwTAPbNScXTIS94WNVCbI5r/dSXpGKjVSwKA2zz/tJ8f+efp3GFFZn/+pJbqPazP2Mb7WSYHsI783cYh3F52rvEyJlv+JrmPatQh442o1caiOcor5korPSxda2O2O1m3XrHzmP18QQBm5+gjW2yHVg+75noAYHuTljfpJgBogclKnjdpEcH1Z/5W1kArr10bszrYx9rY0nV3MuS//p3u2b+Va8mCt6EfzFefq03tp0TTp/eUe+cRskrkbZ+3vvfY5pyyTs62Z2ef7QqvDq0yHAOA2ywbHD+OfwnAeKiOdRh793C41niZLHO0zN20PmYttG/le+0d60+7ngfO3Y6zXheA1RmTu7Vq8QAAm698IpvKHsbfVHJflVr2s5yvBBg0Yli2m5cjonUr6wB/XFYfu3Kf8PHvebqrK8SrBtnieuUlb7F+bHMuo9yaDVdW/7vo1SrPrASA25setrcf6gkA1qG+2wzA1sDF16a5cjt2LLGIAFcrSXN9z31qUdW9+JcufcK5T/f1URs7/LNs9cjUOD4itbwqBdImXRpAdQwAbvbzdQFg7RhgtTHqY7YXf3muR5+Qle0nhv94yn3ykjf+2LD4vFn8HXdvdVZHAAAAWIf5bjOALHPE9zYL5u4vh3q7fH4ucMVejVia18aWyrn9S704JU36Y9LpijPt4zzOb42bKnFdAQDVMQC46YUBoDoGHFKz2tiuXYvnCosvrrcIRxvOVmL2IqPvnfyPvXvRkRMHogAKYdT//70ImH3WitHGkTXuCpQ4Z59NsD2iETE3hWGEujHXG/2m9zvwNH9HJVfVUaVjAADSsYajaJ1YOEbfjdl9fNinPWf/Rpv+BG6ZxsnGAOqTjgEASMcgaTWwSIiiRXo2tvf/VL85FYynHP/5d//TlfEsZv7TlXlPS86eqqyv9Yx5hX7123j3pPox6RgAgHRsfO5dp27suKx2Tj62T3tfi9hvMBv7yzJeaZZSMQfEFVm/tfpdJ6RjAABqx9pzb+Rj/VlXTz7WNjBGo0Xs+159Kd+sMqqrygz1Y/pVP7ZdOKp0rD4AQDqmfkySl+1Xb27ce1sM2L+R2oX0fOyNT0PO0+d4f5e9q3J+c38AascAAKRjcL98bBlokZnaLZ0VcNlA/dim39x+k+rH1t9WP7Y1JjsfP9nnuHTUS9MxAAA+Kt3btHGcjuRRd48Cqd1ym7xutN4rnsQc70/dGIDaMQAA6RjXO4rv8YAV1GLbafvy5vX258QkaE5LmGYrjvVSP9ZR8aPf/H5H6sfWod/jfnyjkuvoXGfs2lEvTccAAPi4yb2NNcd4bGYW2VjV+rHoR90YcK3ty+RmKzCqdAwAQO0YyMf2+He4dQXZnNDrrGqshfgzlsbnGv3+4+O/7du/KcjxvX6jz5sfh6gfa30e89E4CltqzXLre/1VJnZIxwAApGO9c+8CDnVjpK1ftk/vE8nV3L9fO0vr769dQfbGGq9ZzRhYmatz/f5zivbP5yNv1NAY9XnpGACAdOz1zRX3X+Nvt4JC9sjGUkXqVZOqMSLnCNtPntk/7t9vvPXw5Bh6X2OkL9cfhz5rZv3YBSsfnEfarMoPACAd60yxeubea5H7NKjh86r9CvysQPm8tMN2bnfNqNIxAABPVgJAQr1OjX4/T/0eb8yFtvPnAsdhzVsF/7K6sZF3TkrHAACkY9mzVwCA4zajSscAAKRjr1MqBgDjq0wd7W236neOVdmz0pcCxyFmAmt72+BR+NH+SZPPw17SMQAA6dga8723zr1hmfb6LULiGPkAkI4BAEjH8r0e+75KCdjS+JW/tu+XtAjtFpliDHiarbGtQL95ChyHtXNblaO9SccAAKRjnV4x/33b3HudeJjIgRrJ1f7PP/kt+jO7aDFc4dU/BgBqxwAAeJt5gjK1Y/uFLZZGiz1anPbaT59O+8W48SuxtWsMAJ6SjgEA4MlKiDqp9pOF+S36K8rO2/f/fQr7lxH209beMQB4cjoGAACwLAVaJIwQbQB4djoGAAAAAAAAYN0xAF5eYEKVM9AZq3YMAEA6BkBCMrF+/XBPOAOdsdIxAADpGAAJNTtrM3qA689AZ6x0DABAOgZAfs1OO4CAa85AZ2zJdAwAgDmmqABU0C7R6WzabgwJZ+D62JNuvWM6BgCA2jEAz8M9sY4H1I4BACAdA+DVX+UCSMcAAKRj+dULNb0S7iQd1fzvBN+d65Wj6jsh/7uTjgEAlDRXmre/prVnteACqxknHIPe1mWOSv5Ryr9H7x+x8qhxtON7zP8ZXK9cr1yv8rleqR0DAFA7RlWvafVzXHt/XOn4q+bBdcL1yvXKk5UAAMzJM92EWXx+zUh+bUD+/D7vT9VlKfXvbOURrleuV2RwvZKOAQAUNZ/v3HJmuu3+3ZlTt0agfX6Pn2PuctvHz/WK+3K9cr2SjgEAAAAAAADFzN6R3vZHe3ew27YORGH4DDHLbu77P2Q3WQ40FygCI0xpj0xJjST8H9A2qugTZ3cwZqiFnDoHAACwdwwAAODKXLfW5JoXWoocci4NAACmYwAAALDVjW3RvD7n3LOxTmghp8jZBgAAeF2guotlvoi5FG/mNDaXAwCAu7OXXcjVianG0/rmF0Vz2q2ONbm2C4mcA+djAADA325CbZkpY95/x1iT80u2pjdm9/WHAAAArsTfH0s1LW+VMY/ht40ipypjD6b88vUvCtkNAABAHWvdrXKwVW8a2zhos+J26qIAAAC8no3ND8ia5FXO7GysY8przscAAAD87RLlkqIcbNWlztcO2kyd+w3IUiYAAMAxsA9t7oWH5dj5Hr6ZqdPKvPjPCAAAdaxNvnJ82zfnmFYyXVdSfgAAoI51166Ce9WjmtzrmDrHtJpduj9lMh8DAIA6doCIuthdj+3byEwAAIA6Nr4salSrY2vxcrHtVWvysz9lKk80I2M+BgAA2pEvdp/rdfuPmVKZn/0idaIOBQAA4IPTJ0r1Ute5WI5bW6pn6+N6OZWjHJ54kXM5gyQpD83ZDgAA+GjcFa512vJ6bBYbc2xw0qu96BCWawpUms4CAADA9c+EXCOuUMW0leV+J7IORm2zOT2bzxm98vic7QAAgI9OuQg9xMxYq41K2CPMV+dY96/likck5Yo+ZtqP6cQAAADTMX+0se8Nz3+w8aRtmo+lCrM5tuf7sR/LmQcAAHWsPa5C8r45DVtUjMdaTUNdMYuvWa4Y5di3NmB5umdXmgAAALbxw1MfTS4e3ev9KVnxO4wm5VSHsj56fi+aTedIUvYJNpUz/g1I2zXnwgAAYCu/y0cb+KN4DynZ3qOvNAEAAJy6jnkMplcuhULyvlK9Fl9iunj/8nFoEZKy2btjtttRZnbOTz3tTDkAAKDQdCh3H5Q+7xb4P+wHZ2tQAAAA7Vkzi/j7KUfuLwPGORqK+BbbqrqTuU9JMqVuzexUOQAAoOA/EuqhCXm/z/IYtAEAAK+fR7mNK/bpY3Qf9o0BAMDescO4CwAAgOnYYfzJ8ysBAADQDhhYub4JjQEAAKDpXwgVKGwAAIA6pkV/iXhy+epVS0TUc7Y6JzUjBQAAwHTM9U0MLwEAAOAvb8W65YWQFN5fO8dWAAAArOlX8VgSmtX1uvDYv3elAAAAOOjitZB3Ba8TAgAAoI5paeGDI/VDz4S0qDfOiaJzjXPS9LacX9Aj504AAGA65uM2BgAAAO/HWk/vx7i7LRpZWl3JipxuPJard46lnjOlaqYCOVcAAADTseiDn3Q6to4BAAD4eEhVKdYvbZ+ctPe2NOXW+Y+pRg4AANiTPzvXohQ80BIAAGA71wZL/XHlfM6EVMW0ATkAAOD4OrY0heT1nq8Ytagu57uYaWNpk20MAACAgy5CXnw3AAAA+MpN+F4OtYqcGGZElZPGcAwAANxaG5WsUCGiaFGj214sHEvaGAAAuLU2u69+WbEg9CkihqUuVuQkbQwAANyZj3pUi683Qp2o21iXUy0qpYw2BgAAbsunTnFdVOtzXPHWtrEP/ZKt3kCWekh9CAAA4Dr8WY8KSfJ+UbxsY0Wv876J+Ts5aYzGAADA7RT769suh7YuiienX0SV08/HZHUZYzZ2DwAAUMeKQrZoqMgJySVFP2KrC9modHnIpc+/eh8CAAC4Fi+24v8Rk2WsL3bR/+e8ePwBAAC4PFOpTRSoI3P+0x+/VWpybRNaTpfTpFO9HwAAsI2rtGjCgTm/BQAAcB+mW2vy7bOfk+U0STrZzwUAAOY1ATgnAADTMfrmcracLuEs7wcAADAdAwAAuLD/AQPLUxmjjeldAAAAAElFTkSuQmCC)
 
-Parties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their lawyers to communicate on their behalf.   
-
-Negotiation for a commercial outcome is particularly suitable if you and the other party are involved:   
-
-* can have a discussion and make decisions without relying on formal procedures
-* want to maintain ongoing relationship with the other parties involved
-* want to find productive ways to resolve the dispute, which can benefit all parties involved
-* would like to maintain control over the outcome, rather than having someone hand down a decision
-* want to keep discussions confidential (if the parties involved agree that the negotiations will be confidential).
-
-In deciding whether negotiation is a suitable pathway, you can consider:  
-
-* whether you can identify and contact the other parties involved
-* the other parties' willingness to participate in negotiations
-* when and where negotiation will take place
-* how decisions will be made and observed
-* each party's desires, needs and priorities in relation to the disputed issues
-* whether you will negotiate directly with the other party or whether you will be assisted by representatives or support people
-* what outcomes would benefit each of the parties involved
-* your next steps if the negotiation does not yield an agreement.
-
-Sometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other parties involved or find it challenging to communicate with the other parties. For this reason, representatives such as lawyers are commonly used.  
-
-In some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see - [Resolve IP issues with the help of a third party | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/mediation)).   
-
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
-
-### What are the benefits?
-
-* Often cost-effective.
-* Quick and easy to initiate, and can progress to an agreed outcome quickly where both parties are willing and able to do so.
-* The ability to agree to a creative, productive outcome that can benefit both parties commercially.
-* Much less adversarial than legal procedures, helping you preserve your relationship with the other parties involved.
-* Flexible and informal, as it is entirely up to the parties to shape the process
-* Parties can focus on the issues that matter to both sides.
-* Negotiation can be conducted across multiple jurisdictions.
-* Parties can agree to keep the negotiations confidential.
-* Other enforcement processes often expect you to take genuine steps to resolve a dispute before escalating.
-
-### What are the risks?
-
-* Relies on genuine engagement and willingness of parties to resolve issues.
-* If you do not agree to enter into a legally binding agreement that sets out the agreed outcomes from the negotiations, it may be difficult to enforce the outcomes. This risk can be avoided if you enter into a legally binding agreement.
-* If you do not negotiate in good faith with the other parties, this may prompt them to escalate and resist, rather than comply.
-* Depending on what you say to the other parties, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other parties that any negotiations are on a 'without prejudice' basis and to include this in any written communications with them.**
-
-### What are the possible outcomes?
-
-Commercial negotiations can result in a wide range of different outcomes depending on the parties' desires and specific circumstances. Some popular forms of commercial arrangements involving IP include:   
-
-**Licensing** 
-
-You can agree to a licensing agreement. Licensing involves the owner of the IP or someone else with a right to licence the IP (the licensor) giving someone else (the licensee) permission to use - but not own - their IP usually in exchange for payment. For detailed information on types of licences and licence conditions, see [How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.).  
-
-**Assignment (selling or transferring your IP)** 
-
-You may decide to sell your IP as part of your negotiation with the other party. This involves transferring the ownership of the IP to another entity (the assignee) through a process called 'assignment' so that you no longer have the rights to use the IP.  
-
-Once assignment is completed, you won't have any control over the IP asset you have sold unless you have agreed that the assignee licence some rights back to you. The assignee will bear the risk of commercial development of the IP and be responsible for all costs, including renewal fees paid to IP Australia.   
-
-Once the title of a registered IP right has been assigned through a contractual agreement, the transfer of the ownership can be recorded on the IP Australia register through IP Australia's[Online Services portal](https://portal.ipaustralia.gov.au/login?_gl=1%2an6kr9w%2a_ga%2aMTUwOTM4MDc5LjE3MzM3ODMxNTI.%2a_ga_GMT4KC15KS%2aMTczOTIyMTY0Ny41NS4xLjE3MzkyMjU5MTEuMC4wLjA.).  
-
-**Franchising (trade marks)** 
-
-In a franchise agreement, you can give one or more parties (the franchisees) the right to use your trade mark or trade name, your business systems and processes, and so on.  
-
-The licensed rights are typically used by the franchisees to provide goods or services to agreed specifications. In return, they pay royalties and fees. Franchisees often contribute to marketing costs for the brand as well. Franchising is a highly regulated area of law and you should consult with a franchising expert such as a franchising lawyer before agreeing to a franchising agreement. 
-
-**Letter of consent or co-existence agreement (trade marks)** 
-
-Trade mark owners can negotiate to have their trade marks co-exist in the market. This can allow both parties to use potentially conflicting rights in ways that both agree to (such as in certain geographical areas).  
-
-Trade mark co-existence agreements may take the form a formal contract stipulating rights and obligations of both parties, or a letter of consent where a party gives the other party (often in the form of[a letter](https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent) ) consent to the registration of their right with IP Australia.   
-
-### What might the costs be?
-
-If you engage an IP lawyer or IP attorney to give you legal advice or act on your behalf, you will have to pay their fees.  
-
-### How much time might be involved?
-
-Commercial negotiation often serves as a cost-effective and non-adversarial way to resolve a dispute with the other party.   
-
-However, the amount of time taken to reach an agreeable outcome with the other party will vary depending on the complexity of each case, individual circumstances surrounding each party, and whether the parties choose to engage an IP professional to act on your behalf.  
-
-### How much is this used?
-
-Commercial negotiations are a very common strategy to resolve IP disputes. Even where parties decide to take more formal enforcement action, they will often continue to seek to resolve their dispute through negotiations to avoid the time and expense of enforcement action. 
-
-### Who can use this?
-
-Anyone whose IP is being infringed.  
-
-### Who's involved?
-
-* IP right owner/s or authorised users of IP.
-* Alleged infringer(s).
-* (Optional) IP professionals acting on parties' behalf.
-
-### What do you need to proceed?
-
-It's important to get all the factual details right and evaluate the merits of your claims before you reach out to the other party. Here are some things you might want to check and consider before talking to the other party:  
-
-* The status and details of the relevant IP in the jurisdiction where the alleged infringement/dispute occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices.
-* Ensuring your claims do not amount to baseless accusations which would be seen as unjustified threats.
-* The identity and contact details of the other party - it's important to make sure you speak to the correct party.
-
-Throughout the negotiation with the other party, it can be helpful to remember to:  
-
-* Make sure you stay calm and professional throughout the conversation, avoiding emotional, accusatory language.
-* Focus on the issues at hand, not the personalities of the other parties involved.
-* Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can often be reached.
-* Be clear on the terms of agreement you reached with the other party, writing down the agreement in detail at the end of the conversation and making sure you enter into a legally binding agreement that reflects the negotiated outcome. An IP lawyer can assist you with negotiations or recording the outcomes in a legally binding agreement.
-
-It can be difficult to determine whether negotiations are a suitable option. An IP professional can help you make this assessment and advise what steps would work best in your situation.   
-
-### See also
-
-Information about commercialisation:  
-
-* [How To Commercialise My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip)
-* [How To Licence My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.)
-* [Licence royalties | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip/licence-royalties)
-* [An example of a letter of consent | IPA Manuals](https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent)  ([Example for plant breeder's right](https://manuals.ipaustralia.gov.au/trademark/annex-4---an-example-of-a-pbr-letter-of-consent) )
-
-Information about resolving disputes:  
-
-* [What To Consider Before Taking Legal Action | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action)
-* [Five steps to resolve your dispute | ASBFEO](https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute)
-* [Your Guide to Dispute Resolution | Attorney-General's Department](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)
-
-### Exercise caution before making accusations of infringement
-
-Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation or damages or an order that you stop making the threat. Proving infringement is an important issue that should be considered before taking entering into negotiations. 
-
-*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
-
-### Want to give us feedback?
-
-Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
-Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
+var loadTimeDataRaw = {"details":"Details","errorCode":"ERR\_HTTP2\_PROTOCOL\_ERROR","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can't be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"The webpage at \u003Cstrong>https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement\u003C/strong> might be temporarily down or it may have moved permanently to a new web address."},"textdirection":"ltr","title":"ipfirstresponse.ipaustralia.gov.au"};

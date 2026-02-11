@@ -1,136 +1,16 @@
 PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/ADR](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)"
 
-## Alternative dispute resolution (ADR)
+# This site can’t be reached
 
-# Resolve conflicts with the help of experienced facilitators
+# This site can't be reached
 
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/ADR** might be temporarily down or it may have moved permanently to a new web address.
 
-![Overview of ADR options ](/sites/default/files/images/2026-01/GD2526_079%20-%20IP%20First%20Response%20Infographic-2.png)
+ERR\_HTTP2\_PROTOCOL\_ERROR
 
-### What is it?
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/ADR** might be temporarily down or it may have moved permanently to a new web address.
 
-Alternative Dispute Resolution (ADR) allows you to settle disputes without going to court. There are various types of ADR, most notably procedures such as mediation, arbitration and expert determination. These processes typically help resolve disputes through an experienced, impartial person providing opinions, facilitating an agreement between parties and/or providing a binding or non-binding decision. 
+![](data:image/png;base64,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)
+![](data:image/png;base64,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)
 
-You can also use ADR at any stage of your IP dispute. ADR procedures and services are offered by a wide range of public and private bodies such as courts, tribunals and legal practitioners. Below are most common forms of ADR you may like to consider in resolving your IP dispute. 
-
-**Mediation** 
-
-Mediation is a structured negotiation process where the parties, with the assistance of an independent person as mediator: 
-
-* listen to each other and are heard by each other
-* identify the disputed issues
-* work out what everyone agrees on
-* develop options to address the disputed issues
-* aim to reach a workable agreement.
-
-The mediator has no determinative power to decide the outcome of the dispute - instead, the mediator will assist and advise both parties in shaping the mediation process and facilitating an agreement. Find more information about [mediation](https://ipfirstresponse.ipaustralia.gov.au/options/mediation).
-
-**Arbitration** 
-
-Arbitration is a process where you and the other parties present the points being contended and facts to an independent person (the arbitrator). The arbitrator, who is often someone with a high level of expertise in the relevant field of law, then makes a decision based on the information received (an arbitral award). Notable features of arbitration include:  
-
-* A more formal and structured process than other types of ADR, akin to a shorter and more flexible version of a court or tribunal hearing
-* The parties are typically expected to produce evidence and submissions before the arbitrator. Both parties must agree before the process commences that the arbitrator's decision will be binding and enforceable
-* Parties are in most cases required to renounce all other related legal claims to avoid going to court after arbitral decisions.
-
-Many contracts stipulate that parties must resolve disputes through arbitration. Arbitration can also be voluntary or required under a court order.
-
-Find more information about [arbitration](https://ipfirstresponse.ipaustralia.gov.au/options/arbitration). 
-
-**Expert determination** 
-
-Expert determination is a process where one or more independent experts in the specialist area make a determination on matters referred to them. Expert determination is a highly flexible and collaborative procedure, and its notable features include: 
-
-* The process is initiated by agreement between the parties
-* The parties decide the issues that are to be referred to the expert to make a determination on
-* The parties need to agree as to whether they want the expert decision to be binding or not
-* The parties can select and nominate an expert together
-* It is suitable for highly technical issues in a specialist area as the expert would often have a high level of expertise and experience in the relevant industry.
-
-### What are the benefits?
-
-While this varies depending on the ADR process used, ADR generally offers the following benefits over more formal dispute resolution through the legal system or courts: 
-
-* Costs are lower than court proceedings
-* Flexible and informal, as parties have control over shaping the process
-* More easily narrow the scope of a dispute to the issues that matter to both sides
-* Offers broader and more creative solutions
-* Confidentiality, as decisions and records are not shared with the public
-* Can have binding and enforceable outcomes in the form of contract or arbitral award.
-
-### What are the risks?
-
-* Relies on genuine engagement and willingness of parties to work out an agreement.
-* Facilitators may not have an adequate skillset for resolving intellectual property disputes.
-* The level of enforceability of outcomes and the availability of appeals or challenges may differ depending on the specific ADR process (for example, in some cases, a party may be able to have an arbitral award annulled or set aside, or a court may refuse to enforce to enforce an arbitral award in a limited number of circumstances).
-* Without a binding agreement prior to the process, either party can withdraw from the process at any point in time, resulting in wasted time, money and effort.
-
-### What are the possible outcomes?
-
-Outcomes of ADR will depend on the specific type of ADR processes used. Possible outcomes include: 
-
-* Parties successfully negotiating and reaching an agreement to resolve a dispute
-* A binding decision such as an arbitral award or an enforceable agreement
-* Further escalation into more formal dispute resolution processes such as litigation or administrative hearings
-* Parties may withdraw from the ADR process prior to resolution of the dispute.
-
-### What might the costs be?
-
-The costs of ADR may include: 
-
-* practitioner's fees
-* travel expenses
-* administrative expenses.
-
-Please note that the costs of ADR can differ a lot depending on the type of procedure you choose and whether you choose to engage a legal professional for advice and representation. 
-
-For more information about costs of different ADR options, please refer to specific pages for each ADR type available at the [IP First Response website](https://ipfirstresponse.ipaustralia.gov.au). 
-
-### How much time might be involved?
-
-Length of the process will vary depending on factors like the type of ADR used and the nature of the dispute. ADR can be much faster than more formal processes like court.  
-
-### Who can use this?
-
-Anybody who is a party to a dispute, although some ADR processes will have additional requirements. 
-
-ADR generally requires engagement from both parties to the dispute. It can be easier to use ADR if:  
-
-* Parties agree to resolve their dispute through ADR. However, some ADR providers allow one party to initiate an ADR process even without agreement from the other party.
-* There is a contract in place whereby parties agree to resolve disputes through ADR. You might wish to consider including ADR clauses in your contracts in case you would like to resolve any future IP disputes with your business partners through ADR.
-
-### Who's involved?
-
-* Parties to the dispute(s).
-* Facilitator/s (Mediator, arbitrator, neutral evaluator, etc.).
-* (Optional) Legal representation for one or more of the participants, noting that some ADR service providers limit the participation of legal representation in dispute resolution processes.
-
-### What do you need to proceed?
-
-Before you engage in an ADR process, you should think about what type of ADR process would best suit your needs and find the appropriate ADR provider for the chosen process. There is a wide range of ADR providers, ranging from government and public-funded bodies to private practitioners. Here's a list of directories and ADR providers that may assist you in finding what type of ADR is most suitable for your case and the facilitator/s you would like to engage:  
-
-* [The Resolution Institute's Dispute Resolver Directory list](https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx)
-* [The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)](https://www.asbfeo.gov.au/)  provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes.
-* [The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Center](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449) offers mediation, arbitration and expert determination to enable private parties to settle their international commercial disputes
-* [The Australian Centre for International Commercial Arbitration (ACICA)](https://acica.org.au/)
-* [The Australian Disputes Centre (ADC)](https://disputescentre.com.au/)
-* [Australian Copyright Council](https://www.copyright.org.au/legal-advice/)  offers no-cost online legal advice for professional creators, arts organisations, affiliated organisations and educations institutions and libraries.
-
-You can also seek help from IP professionals for advice on whether ADR would be suitable for your situation and to represent you throughout an ADR process. You can find a qualified IP attorney to assist you at: [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0). 
-
-### See also
-
-For more information on various types of ADR and features of each dispute resolution method, see:  
-
-* [Your guide to dispute resolution](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)  at Attorney General's Department website
-* [Resolve disputes | business.gov.au](https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR)
-* [Higher Education Research Commercialisation Intellectual Property Framework - Department of Education, Australian Government](https://www.education.gov.au/hercip)
-* [Alternative Dispute Resolution](https://www.wipo.int/amc/en/)
-
-*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
-
-### Want to give us feedback?
-
-Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
-Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
+var loadTimeDataRaw = {"details":"Details","errorCode":"ERR\_HTTP2\_PROTOCOL\_ERROR","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can't be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"The webpage at \u003Cstrong>https://ipfirstresponse.ipaustralia.gov.au/options/ADR\u003C/strong> might be temporarily down or it may have moved permanently to a new web address."},"textdirection":"ltr","title":"ipfirstresponse.ipaustralia.gov.au"};

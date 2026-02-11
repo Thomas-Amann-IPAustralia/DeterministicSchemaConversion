@@ -1,154 +1,16 @@
 PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/court-patents](https://ipfirstresponse.ipaustralia.gov.au/options/court-patents)"
 
-## Court - Patent
+# This site can’t be reached
 
-# Seek binding, authoritative decisions
+# This site can't be reached
 
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/court-patents** might be temporarily down or it may have moved permanently to a new web address.
 
-### What is it?
+ERR\_HTTP2\_PROTOCOL\_ERROR
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/court-patents** might be temporarily down or it may have moved permanently to a new web address.
 
-If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed. 
+![](data:image/png;base64,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)
+![](data:image/png;base64,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)
 
-**It is prudent to seek legal advice before deciding whether to start a legal action in court.** You will likely also need assistance from an IP lawyer if you decide to start a legal action. 
-
-Patent proceedings usually involve:  
-
-* a validity challenge intended to revoke a patent in whole or in part
-* allegations of infringement of a patent.
-
-Patent proceedings in Australia are typically started in the Federal Court of Australia. 
-
-### What are the benefits?
-
-* If you succeed, a court may award damages or compensation to cover various losses and costs (including, in some cases, an account of profits made by the infringer through their infringement).
-* Court decisions are binding and enforceable.
-* The other party cannot simply ignore your legal claim without consequences.
-* You can resolve several related matters in one case including claims of infringement, patent validity challenges and other related legal claims.
-* Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia's Opposition and Hearing processes.
-* Court proceedings allow cross-examination of evidence and expert witnesses, which could be helpful for prosecuting your argument if you have a highly technical case.
-* The gravity, expense, publicity and protracted nature of court proceedings can encourage parties to negotiate or engage in other forms of dispute resolution to settle legal claims and avoid court proceedings continuing.
-* For infringement claims, a court can in appropriate situations make orders to prevent the infringer from continuing to infringe your IP rights.
-
-### What are the risks?
-
-* The outcome can be unpredictable.
-* While a court can determine matters of law, it may not be in the best interests of your business. Proving you are in the right, legally, may not be the same as making a good business decision.
-* The other party to the legal action may make counterclaims or other legal claims against you.
-* On top of paying your legal costs, you may be required to pay some (or all) of the legal costs of the other party or parties if you are wholly (or partially) unsuccessful.
-* The outcome you obtain may not be as advantageous as an offer of settlement previously made to you.
-* If you or your staff are required to provide evidence in court, this can be very stressful and time-consuming and distract from the operation of your business.
-* Court proceedings are usually public, so this option may not be suitable if confidentiality is important.
-* You may be required to disclose information in the proceedings to the other party or parties that you may prefer to keep confidential.
-* Court proceedings may attract unwanted publicity and potentially damage your reputation - particularly if you are unsuccessful or if your case is seen as unduly litigious.
-* It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see 'How much time might be involved?' below).
-* You may not be able to bring a legal claim if you have agreed in a contract that you will use, or that you will first try, an alternative form of dispute resolution.
-
-### What are the possible outcomes?
-
-The possible outcomes vary depending on the type of litigation.   
-
-It is possible you may reach a negotiated settlement with the other party.  
-
-For revocation proceedings, a court might order that a patent be:  
-
-* revoked in whole or in part
-* amended in whole or in part
-* upheld in whole or in part.
-
-It is also possible to have a mixed result. For example, if some of the claims in a patent are challenged, one claim might be upheld and the other claim might be revoked. 
-
-For infringement proceedings:  
-
-* A court might temporarily order the alleged infringer to stop any alleged infringement until a final decision is made - see [Seek an urgent injunction](https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction)
-* If you're successful in infringement proceedings, a court might order:
-  + that you be paid damages or compensation
-  + that the other party or parties pay some or all of your legal costs
-  + the infringer not to infringe your IP rights in future.
-* If you're unsuccessful in infringement proceedings, a court might order:
-  + that you pay some or all of the legal costs for the other party or parties.
-
-Again, it is possible to have a mixed result. For example, a court might agree that some of the other party's conduct infringes your patent, but that other conduct does not. 
-
-Courts also have powers to make other types of orders as part of the outcome. 
-
-You or the other party or parties may be able to appeal the decision. 
-
-### What might the costs be?
-
-While simple patent-related litigation may cost [between $100-500k](https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf), major patent litigation can cost in the millions. Appeals cost anywhere from $150k-300k+. 
-
-Legal representation typically makes up a large proportion of these costs.  
-
-### How much time might be involved?
-
-Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, and which court hears your claim.  
-
-Patent cases are typically heard by the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed *intellectual property* as the cause of action, were as follows:~~;~~ 
-
-* 95 cases (45%) under 12 months
-* 43 cases (21%) 12-24 months
-* 71 cases (34%) over 24 months.1
-
-If a party appeals the initial decision, this will add extra time before the matter is finalised.   
-
-Where appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.   
-
-**Time limits for starting legal claims**
-
-There are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start. Due to the complexities, it may be helpful to  speak to an IP lawyer about time limits. 
-
-### How much is this used?
-
-Patent proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. 
-
-In the 2023-24 financial year, there were 41 patent and associated statutes filings in the Federal Court of Australia.2
-
-Some patent proceedings are also started in State/Territory courts. 
-
-### Who can use this?
-
-For infringement actions, the owner of the patent usually starts the infringement action. In Australia, an exclusive licensee also has the right to start infringement proceedings.  
-
-Any party can challenge the validity of a patent and apply for it to be revoked in whole or in part.  
-
-### Who's involved?
-
-* Parties to the dispute
-* Lawyers
-* Witnesses
-* A judge
-
-### What do you need to proceed?
-
-Here are some things you might consider before you proceed with legal action in a patent  matter. 
-
-**Find an IP lawyer for advice and representation**\
-Court proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.  
-
-**Consider your goals before deciding to start a legal claim**\
-Going to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes. 
-
-**Consider the impact of publicity**\
-Court proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential.
-
-**Gather all your documents**\
-Before seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that you think might be relevant to your claim. You can give these to your lawyer to review. 
-
-### See also
-
-* [Escalate To Court | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court)
-* [Rights of appeal from decisions of the Registrar | IPA Manuals](https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar)
-* [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.)
-
-*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
-
-1. Federal Court of Australia, [*Annual Report 2022-2023*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23), p 24
-2. Federal Court of Australia, [*Annual Report 2023-2024*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024), p 60
-
-### Want to give us feedback?
-
-Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
-Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
+var loadTimeDataRaw = {"details":"Details","errorCode":"ERR\_HTTP2\_PROTOCOL\_ERROR","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can't be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"The webpage at \u003Cstrong>https://ipfirstresponse.ipaustralia.gov.au/options/court-patents\u003C/strong> might be temporarily down or it may have moved permanently to a new web address."},"textdirection":"ltr","title":"ipfirstresponse.ipaustralia.gov.au"};

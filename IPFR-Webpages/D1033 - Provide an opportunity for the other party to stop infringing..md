@@ -1,130 +1,16 @@
 PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing](https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing)"
 
-## Informal contact
+# This site can’t be reached
 
-# Provide an opportunity for the other party to stop infringing
+# This site can't be reached
 
-*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing** might be temporarily down or it may have moved permanently to a new web address.
 
-### What is it?
+ERR\_HTTP2\_PROTOCOL\_ERROR
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing** might be temporarily down or it may have moved permanently to a new web address.
 
-You can consider reaching out informally to the party who you suspect to be infringing your IP, before taking any legal or formal action against them.  
+![](data:image/png;base64,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)
+![](data:image/png;base64,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)
 
-In some cases, infringement can be unintentional or a suspected infringer might be open to reaching an amicable solution. 
-
-Informal contact with another party can be effective at resolving IP disputes -- however, it can also open you up to a range of unexpected or detrimental results. Any consideration for informal contact should be weighed against the possible negative outcomes. An IP professional can help inform this decision.  
-
-Before talking to the other party, you should be satisfied that the other party's actions would amount to infringement of your IP. This is something that an IP lawyer or an IP attorney can assist with. 
-
-**There can be serious consequences if you threaten a person with infringement proceedings on an incorrect basis, including a risk that the party may sue you. You might be liable to pay compensation or damages or you may be ordered to stop making the threat under '**[**unjustified threat**](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)**' provisions (also referred to as 'groundless threats' in copyright law).**  
-
-For more information about what constitutes an infringement, see our information on [what infringement can look like](https://ipfirstresponse.ipaustralia.gov.au/infringement-101 "Infringement 101 ").An IP professional can help you make this assessment. 
-
-**Please note** **t****hat engaging in any informal contact with the other party before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved.**
-
-### What are the benefits?
-
-* Often cost-effective.
-* Quick and easy to initiate.
-* Possibility of stopping infringing behaviour without the need for additional stepsand the stress of more formal actions.
-* Allows you to consider many options to escalate, if suspected infringement continues.
-* Other enforcement processes often expect you to take genuine steps to resolve a dispute before escalating.
-
-### What are the risks?
-
-* **Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation, damages and costs resulting from the threat and in you being ordered to stop making the threat.**
-* Using unreasonably aggressive or unprofessional tone in the communication with the other party may prompt the other party to escalate and resist, rather than comply.
-* Alerting the other party, regardless of the legitimacy of your claim, can expose you counterclaims or actions from the other party, which may escalate the conflict in an unwanted way. This could jeopardise your IP rights.
-* For registered rights, it might prompt the other party to challenge the validity or registrability of your IP right in an attempt to undermine your claims.
-* In the case of trade marks, the other party may apply for a trade mark as a defensive strategy against your claims, and you may then need to decide if you wish to oppose their application.
-* Contacting the suspected infringer might give them time to hide or destroy evidence. This could harm your case in future legal actions. If you are worried about this possibility, you should seek legal advice before communicating with the other party.
-* Depending on what you say to the other party, or what you might agree with them, this could impact your ability to take other enforcement action in future. **It is usually prudent to tell the other party that any informal communications are on a 'without prejudice' basis and to include this in any written communications with them.**
-
-### What are the possible outcomes?
-
-Informal communication with the other party can result in a wide range of different outcomes depending on the specific circumstances. 
-
-Some possible outcomes are: 
-
-* The alleged infringing behaviour stops following the conversation, especially if the other party was simply unaware of existing IP rights.
-* The alleged infringer does not change their behaviour, in which case you may have to consider other enforcement options.
-* Parties can engage in further communication disputing part or all of your claims.
-* The alleged infringer is placed on notice that their conduct may involve infringement, which may assist you to seek monetary compensation if you later commence court action.
-* The conflict can further escalate into more serious, formal dispute settlement procedures (for example, sending a letter of demand, litigation, mediation, arbitration, administrative hearings.).
-* The other party may not fulfil all the requirements but may be willing to participate in some form of negotiation.
-* The other party may commence proceedings challenging the validity of the IP right, or be prompted to take legal action against you (for instance if they are of the opinion that you are infringing on their rights). This could include seeking damages or compensation for unjustified threats.
-
-### What might the costs be?
-
-If you engage an IP professional to give you legal advice or act on your behalf, fees will be incurred for their service. 
-
-Fees for IP professionals vary depending on the complexity of the issues at hand and which type of IP professional you engage. For instance, you can expect an average fee of $500-1000 per hour for a patent or trade mark attorney.  
-
-### How much time might be involved?
-
-Informal communication can be a quick and simple enforcement option. However, the amount of time involved in communicating with the other party will vary depending on things like the complexity of the case, whether you choose to engage an IP professional to act on your behalf, and the response of the other party.  
-
-### Who can use this?
-
-Someone who owns IP (or in limited cases authorised user) and can provide evidence of their rights.  
-
-### Who's involved?
-
-* IP right owner/s or authorised users or exclusive licensees of IP.
-* Alleged infringer(s).
-* (Optional) IP professionals acting on parties' behalf.
-
-### What do you need to proceed?
-
-Understanding what constitutes IP infringement, and possible consequences of contacting a suspected infringer, can help you decide if this is the right option for you. 
-
-It's important to get all the factual details correct and evaluate the merits of your claims before you reach out to the other party. **Making unjustified claims of IP infringement can have serious consequences. If you are found to have made an unjustified threat, you might be liable to pay damages or compensate the other party or you may be ordered to stop making the threat.** 
-
-For more information about how someone can take action against unjustified threats through the courts, please review [Respond to an unjustified threat | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat) 
-
-Here are some things you might wish to check and consider before talking to the other party you should consider engaging an IP lawyer or IP attorney to work through these issues with you:  
-
-* The status and details of the relevant IP in the jurisdiction where suspected infringement occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices.
-* Whether the other party's conduct amounts to infringement, having regard to [what infringement looks like](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement), to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. 
-  + For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services.
-  + For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent.
-  + For designs, the scope of protection would require consideration of not only the visual appearance of the product but the tangible physical product (e.g. a chair, a bottle, etc.) that the design is applied to.  \
-    **Please note:** a design right can only be enforced if the right is also certified. For more information please see [Request certification for your registered design | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design)
-* The identity and contact details of the suspected infringer. It's important to make sure you speak to the correct party.
-
-If you are not sure about any of the above, then you might want to speak to an IP professional for help. 
-
-Before taking this action, it might also be helpful to consider your goals and potential outcomes, including:  
-
-* Options for outcomes that would benefit or be agreeable to everyone involved.
-* Whether you will be prepared to be engaged in further correspondence, negotiation or even disputes with the other party. If you threaten to do something and do not follow through, it could be found to be an unjustified threat.
-* Your plans to commercialise and promote your IP, and whether making informal contact could undermine (or strengthen) these.
-* Ways you can engage in an amicable, productive conversation with the other party.
-
-### Consider contacting an IP professional for advice and assistance
-
-It can be difficult to determine whether the other party's behaviour amounts to infringement and facilitate a productive, amicable discussion with the other party. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.   
-
-**Please note:** Making informal contact before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, you might want to consult an IP professional.   
-
-### See also
-
-* [Five steps to resolve your dispute | ASBFEO](https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute)
-* [Your Guide to Dispute Resolution | Attorney-General's Department](https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution)
-* [What To Consider Before Taking Legal Action | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action)
-* [Someone Is Using My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip)
-* [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.)
-* [Respond to an unjustified threat | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat)
-
-### **Exercise caution before making accusations of infringement**
-
-Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation or damages or an order that you stop making the threat. Proving infringement is an important issue that should be considered before you informally contact another party.  
-
-*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*
-
-### Want to give us feedback?
-
-Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
-Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
+var loadTimeDataRaw = {"details":"Details","errorCode":"ERR\_HTTP2\_PROTOCOL\_ERROR","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can't be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"The webpage at \u003Cstrong>https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing\u003C/strong> might be temporarily down or it may have moved permanently to a new web address."},"textdirection":"ltr","title":"ipfirstresponse.ipaustralia.gov.au"};
