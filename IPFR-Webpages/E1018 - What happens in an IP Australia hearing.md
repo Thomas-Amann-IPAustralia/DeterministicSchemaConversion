@@ -1,11 +1,42 @@
 PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing](https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing)"
 
-# This site can’t be reached
+## IP Australia process
 
-# This site can't be reached
+# What happens in an IP Australia hearing?
 
-The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing** might be temporarily down or it may have moved permanently to a new web address.
+*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
-ERR\_HTTP2\_PROTOCOL\_ERROR
+### What is it?
 
-The webpage at **https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing** might be temporarily down or it may have moved permanently to a new web address.
+A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It's handled by a hearing officer from IP Australia who specialises in the relevant field of IP law. 
+
+These hearings can deal with both *inter partes* (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and *ex partes* matters such as an IP applicant challenging an examination decision made by IP Australia. 
+
+The hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.  
+
+**Process steps:** 
+
+* **(*****For inter partes matters*****) File an opposition:** You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.
+* **Request a hearing:** You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.
+* **Hearing**: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.
+* **Decision:** The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.
+
+**Outcomes and next steps:** 
+
+* The decision may uphold, refuse, or change the scope of the IP right/s in question.
+* **Appeals:** If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.
+
+### See also
+
+[Opposition hearings | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings)  
+
+[How to challenge someone else's IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.)  
+
+[Challenge a granted patent | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0) 
+
+[Challenge the registration of a trade mark | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)
+
+### Want to give us feedback?
+
+Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\
+Fill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).
