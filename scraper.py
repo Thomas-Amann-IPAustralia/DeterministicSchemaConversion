@@ -1,3 +1,5 @@
+import sys
+print("DEBUG: Scraper script has started initialization...", file=sys.stderr)
 import csv
 import os
 import sys
