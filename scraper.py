@@ -274,14 +274,27 @@ def main():
         with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
             
+            if reader.fieldnames:
+                reader.fieldnames = [name.strip() for name in reader.fieldnames]
+            
+            # DEBUG: Print what headers Python actually sees
+            logger.info(f"Detected CSV Headers: {reader.fieldnames}")
+
+            row_count = 0
             for row in reader:
+                row_count += 1
+                # Robust extraction: defaults to empty string if key is missing
                 url = row.get('Canonical-url', '').strip()
                 udid = row.get('UDID', '').strip()
                 main_title = row.get('Main-title', '').strip()
 
-                # Validation
-                if not url or not url.lower().startswith('http'):
-                    logger.debug(f"Skipping row ID {udid}: Invalid URL '{url}'")
+                # DEBUG: Alert if URL is missing so you know WHY it skipped
+                if not url:
+                    logger.warning(f"  [?] Row {row_count} (UDID: {udid}) skipped: 'Canonical-url' column is empty.")
+                    continue
+
+                if not url.lower().startswith('http'):
+                    logger.warning(f"  [?] Row {row_count} skipped: Invalid URL format '{url}'")
                     continue
                 
                 clean_title = sanitize_filename(main_title)
