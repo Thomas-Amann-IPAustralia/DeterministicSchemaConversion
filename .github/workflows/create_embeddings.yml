@@ -27,11 +27,10 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          # UPDATED PATH: Points to the 'scripts' folder now
           python scripts/generate_embeddings.py
 
       - name: Upload Embeddings CSV as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # UPDATED: Changed from v3 to v4
         with:
           name: enriched-semantic-csv
           path: Semantic_Embeddings_Output.csv
