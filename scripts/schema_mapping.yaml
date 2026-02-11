@@ -78,7 +78,6 @@ tables:
   semantic:
     filename: "Semantic.csv"
     row_generator: "generate_semantic_rows"
-    # Columns here are used for ordering the output CSV
     columns:
       UDID: ""
       Headline_Alt: ""
