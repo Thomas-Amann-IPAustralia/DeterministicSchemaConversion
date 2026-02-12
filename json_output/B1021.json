@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#webpage",
-      "headline": "Request confirmation that someone else's registered design is valid",
+      "headline": "Design certification",
       "alternativeHeadline": "Design certification\u00a0",
       "description": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid",
@@ -52,12 +52,65 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "name": "**Respond to an unjustified threat | IP Australia First Response**"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://manuals.ipaustralia.gov.au/design/amending-a-registration",
+          "name": "22.3. Amendments: Amending a registration | IPA Manuals"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1",
+          "name": "IP Australia's fee schedule"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "name": "How to apply for a design right | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+          "name": "Design rights timeframes and fees | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/design-rights/what-are-design-rights",
+          "name": "What are design rights? | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Request confirmation that someone else's registered design is valid",
+      "headline": "Design certification",
       "description": "Third-party examination lets any person request IP Australia to conduct a formal examination of a registered Australian design",
       "about": {
         "@type": "Thing",
@@ -70,6 +123,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Offers a cost-effective challenge to a competitor's design without starting court proceedings.\n* Accessible to any person via online or postal application.\n* May remove or narrow the owner's monopoly, opening market opportunities.\n* Quick administrative procedure handled online through IP Australia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Certification may strengthen the owner's exclusive rights and enforcement options.\n* Alerting the owner to your interest could prompt quicker or stronger enforcement action.\n* Optional hearings to dispute an adverse report may incur extra fees and delays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The design is certified, confirming the owner's exclusive rights.\n* Note that the owner of the design may choose to make amendment to the design to address objections raised during the examination process. A list of allowable amendments can be found in the relevant section of the Designs Examiners' Manual: [22.3. Amendments: Amending a registration | IPA Manuals](https://manuals.ipaustralia.gov.au/design/amending-a-registration).\n* The registration is revoked, removing design protection.\n* Parties settle the dispute commercially or by negotiation before the examination is completed\u00a0 - in these cases the requesting party withdraws their request for certification as part of the resolution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[IP Australia's fee schedule](https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1)  lists the examination fee at $500 (effective from 1\u202fOctober\u202f2024). If a third party requests examination, both parties split the fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP Australia aims to issue the first examination report to the requester within 13\u202fweeks in 85% of cases and within 16\u202fweeks in 95% of cases. If a first adverse report is issued, the owner will then have 6 months to overcome any objections raised by the examiner. Total process duration can extend to 12\u202fmonths or more if extensions of time and hearings occur. After lodging, the requester's involvement is minimal unless the owner contests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of 2024, approximately 20% of designs registered with IP Australia were also certified."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any person or business, even if they are **not** the owner of the design, may request certification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Design right owner, who will be notified.\n* IP Australia's design examiner makes the examination decision.\n* The person or business who requests the examination.\n* Optional: IP lawyer or patent attorney."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Registered design number.\n* Ability to pay the examination fee.\n* Consider whether to get help from an IP lawyer or IP attorney.\n* Keep copies of all correspondence and the certificate of examination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

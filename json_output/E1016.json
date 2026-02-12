@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court#webpage",
-      "headline": "How can I deal with IP issues without going to court? ",
+      "headline": "IP disputes",
       "alternativeHeadline": "IP Disputes ",
       "description": "",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court",
@@ -52,12 +52,80 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-deal-ip-issues-without-going-court"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+          "name": "an administrative action at IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+          "name": "Navigator tool"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "name": "Resolve conflicts with the help of experienced facilitators\u00a0\u00a0 | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+          "name": "Agree to a commercial arrangement | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+          "name": "Resolve IP issues with the help of a third party | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
+          "name": "What to consider before taking legal action | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
+          "name": "Member Directory - Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.asbfeo.gov.au/",
+          "name": "Welcome | ASBFEO"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "Service",
       "name": "How can I deal with IP issues without going to court? ",
+      "headline": "IP disputes",
       "description": "",
       "about": {
         "@type": "Thing",
@@ -71,6 +139,28 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I deal with IP issues without going to court?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

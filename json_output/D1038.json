@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-marketplaces-infringement-their-platform#webpage",
-      "headline": "Notify online marketplaces of infringement on their platform",
+      "headline": "eCommerce platform",
       "alternativeHeadline": "eCommerce platform",
       "description": "Request infringing material is removed from online marketplaces and platforms",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-marketplaces-infringement-their-platform",
@@ -52,12 +52,95 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-marketplaces-infringement-their-platform",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-marketplaces-infringement-their-platform"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
+          "name": "Australian"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lookup.icann.org/en",
+          "name": "international WHOIS databases"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "name": "Evidence you can collect about infringements"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+          "name": "copyright\u00a0infringement page"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
+          "name": "Prevent International Infringement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone Is Using My IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
+          "name": "How To Prevent Infringement Of My IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/",
+          "name": ".au WHOIS tool: look up .au domain names\u202f | auDA"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces",
+          "name": "Protecting your IP rights on e-commerce marketplaces\u00a0 - EUIPO"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "*getting professional assistance with your IP*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "*30 minute consultations with an attorney*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.artslaw.com.au/services/legal-query-form/",
+          "name": "*Arts Law Centre of Australia*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "*Australian Copyright Council*"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "Service",
       "name": "Notify online marketplaces of infringement on their platform",
+      "headline": "eCommerce platform",
       "description": "Request infringing material is removed from online marketplaces and platforms",
       "about": {
         "@type": "Thing",
@@ -71,6 +154,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Cost-effective.\n* Often quick to action and obtain outcome.\n* Simple to prepare and initiate compared to other enforcement options.\n* Outcome-focused, as it targets infringing products/content directly and prevents customers making purchases/accessing the infringing content.\n* Some platforms are not limited by the country the infringer is located in, due to these platforms having an international reach - while others only action takedown requests within jurisdictions in which the rights apply.\n* You may not need to identify or track down the infringer yourself.\n* Being able to reduce infringement and prevent sales being diverted by addressing infringement on a major sales channel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Due to the one-off nature of this process there is a risk that the counterfeiters/infringers can return in the future. You will usually need to continuously monitor for reoccurrence.\n* Online platforms can only take down infringing products or content from their platforms, and do not have power to stop the infringing behaviour itself.\n* The outcome of the action can be somewhat unpredictable, as platforms will have different set of rules and procedures in dealing with complaints."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The outcomes of your complaints with online platforms can vary in accordance with policy, service offerings, and the terms and conditions of each platform. Some possible outcomes include:\u00a0\n\n* Infringing products and content being removed from the platform.\n* Being required to provide further information, documentation or evidence.\n* Refusal to take an action, whether it is due to lack of evidence or their assessment that infringing behaviour did not take place."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most online platforms will not charge you for making complaints or takedown requests.\u00a0\u00a0\n\nHowever, if you engage an IP professional such as brand monitoring services or IP attorneys to act on your behalf, this will incur additional fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Length of complaint processes with online platforms can vary anywhere between 1-2 days to a few months, depending on the volume of your requests, amount of supporting evidence, and terms and conditions of each platform.\u00a0\u00a0\n\nDepending on how or if alleged infringer disputes the takedown request you submit, it may take considerably longer to resolve the issue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some mechanisms offered by platforms may require you to be a seller or user with a valid account. However, access to specific services and complaint mechanisms can vary in accordance with each platform's terms and conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP-related takedown notices submitted to platforms is likely in the **millions annually.**"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* IP rights owner(s).\n* Websites or online platforms including e-commerce or advertising platform(s).\n* Legal professionals (optional).\n* IP Monitoring services (optional)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you have detected infringement on an online platform, it is worth checking several platforms (such as all those listed above) to see if infringement is taking place elsewhere.\u00a0\n\nDifferent online platforms have different requirements for making IP complaints and takedown requests.\u00a0\n\nYou will usually need:\u00a0\n\n* Evidence such as screenshots, product listings, and any other documentation that clearly demonstrates the infringement. Refer to\u00a0[Evidence you can collect about infringements](https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement).\n* Evidence that you are the legitimate owner of the IP. Some platforms require you to have a registered IP right for you to access their brand protection and complaint mechanisms. You may consider applying for a registered IP right to access these procedures and prevent future infringements and protect your ideas, products and branding.\n\nNote that if you do not provide sufficiently accurate information, your takedown application may be rejected and the whole process would be delayed.\u00a0\n\nFor matters involving copyright infringement online, before issuing a takedown notice, copyright owners should check that the user does not have a valid reason to use the material in question (for example a valid license or a 'fair dealing' use permitted as an exception to copyright under the Copyright Act). More information about when using copyright material is allowed is provided on the\u00a0[copyright\u00a0infringement page](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

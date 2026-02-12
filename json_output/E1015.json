@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#webpage",
-      "headline": "When do I need a lawyer or attorney to deal with IP issues?",
+      "headline": "IP attorney or lawyer",
       "alternativeHeadline": "IP attorney or lawyer",
       "description": "",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues",
@@ -52,12 +52,60 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
+          "name": "'suspected infringement'"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
+          "name": "What to consider before taking legal action | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
+          "name": "Advanced Trade Marks: Enforcement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.artslaw.com.au/legal/raw-law/legal-help-who-can-you-go-to/",
+          "name": "Legal help: who can you go to? - Arts Law Centre of Australia"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "Service",
       "name": "When do I need a lawyer or attorney to deal with IP issues?",
+      "headline": "IP attorney or lawyer",
       "description": "",
       "about": {
         "@type": "Thing",
@@ -71,6 +119,28 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When do I need a lawyer or attorney to deal with IP issues?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do#webpage",
-      "headline": "I'm not happy with IP Australia - what can I do?",
+      "headline": "Complaints",
       "alternativeHeadline": "Complaints",
       "description": "",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do",
@@ -52,12 +52,55 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+          "name": "**What can I do if I disagree with IP Australia's examination decision? | IP Australia First Response**"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/about-us/contact-us",
+          "name": "contact channels"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
+          "name": "the Commonwealth Ombudsman"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/feedback-form",
+          "name": "Feedback form | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
+          "name": "APS Code of Conduct | Australian Public Service Commission"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "I'm not happy with IP Australia - what can I do?",
+      "headline": "Complaints",
       "description": "",
       "about": {
         "@type": "Thing",
@@ -70,6 +113,28 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "I am not happy with IP Australia - what can I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

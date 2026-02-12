@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#webpage",
-      "headline": "Does IP help me to make or save money?",
+      "headline": "Making money",
       "alternativeHeadline": "Making money",
       "description": "",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money",
@@ -52,7 +52,34 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "name": "Choosing the right IP tool | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+          "name": "How to commercialise my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        }
+      ]
     },
     {
       "@id": "#the-service",
@@ -61,6 +88,7 @@
         "HowTo"
       ],
       "name": "Does IP help me to make or save money?",
+      "headline": "Making money",
       "description": "",
       "about": {
         "@type": "Thing",
@@ -70,8 +98,30 @@
         "@type": "Person",
         "name": "Self-Help"
       },
-      "articleBody": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example:\u00a0\n\n* **A patent** gives you the exclusive right to make or use your invention. If people want what you have, and you're the only one legally allowed to sell it, you will have a strong position in the market. Competitors can't copy you which means more business for you.\n* **A trade mark** helps protect the name, logo or look of your brand or product. It can stop others from trying to imitate you, and helps customers easily recognise and return to your business. This means people are more likely to choose your product and less likely to buy someone else's by mistake.\n\nThere are costs involved when you apply for an IP rights, and also fees to keep it active over time. If someone copies your idea or product without permission, you may need to spend money to stop them. But even with these costs, many businesses choose to invest in IP. That's because it can help protect your unique position in the market which is likely to benefit your business.\u00a0\u00a0\n\nIP can also be valuable when it comes time to sell your business. Owning registered IP shows that your products or brand may be harder for others to copy. That can increase what your business is worth.\u00a0\n\n### See also\n\n[Choosing the right IP tool | IP Australia](https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool) \u00a0\n\n[How to commercialise my IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip) \u00a0\n\n[Someone is using my IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "articleBody": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example:\u00a0\n\n* **A patent** gives you the exclusive right to make or use your invention. If people want what you have, and you're the only one legally allowed to sell it, you will have a strong position in the market. Competitors can't copy you which means more business for you.\n* **A trade mark** helps protect the name, logo or look of your brand or product. It can stop others from trying to imitate you, and helps customers easily recognise and return to your business. This means people are more likely to choose your product and less likely to buy someone else's by mistake.\n\nThere are costs involved when you apply for an IP rights, and also fees to keep it active over time. If someone copies your idea or product without permission, you may need to spend money to stop them. But even with these costs, many businesses choose to invest in IP. That's because it can help protect your unique position in the market which is likely to benefit your business.\u00a0\u00a0\n\nIP can also be valuable when it comes time to sell your business. Owning registered IP shows that your products or brand may be harder for others to copy. That can increase what your business is worth.",
       "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does IP help me to make or save money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

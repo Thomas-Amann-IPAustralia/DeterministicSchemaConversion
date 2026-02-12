@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#webpage",
-      "headline": "Plan how IP disputes will be handled via contracts ",
+      "headline": "Create contract clauses",
       "alternativeHeadline": "Create Contact Clauses",
       "description": "Create ready-to-use contract clauses that will proactively refer IP disputes to dispute resolution processes endorsed by the World Intellectual Property Organisation (WIPO). ",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts",
@@ -52,12 +52,80 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://amc.wipo.int/clause-generator/",
+          "name": "WIPO Clause Generator"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/amc/en/",
+          "name": "WIPO AMC)"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/portal/en/index.html",
+          "name": "WIPO"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/amc/en/film/fees/index.html",
+          "name": "WIPO administrative fees"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+          "name": "WIPO Arbitration and Mediation Center"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "name": "alternative dispute resolution (ADR) options."
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/amc/en/clauses/index.html",
+          "name": "Recommended WIPO Contract Clauses and Submission Agreements"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+          "name": "Resolve IP issues with the help of a third party | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+          "name": "Resolve IP issues with the help of a third party | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "Get professional assistance with your IP | IP Australia"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "Service",
       "name": "Plan how IP disputes will be handled via contracts ",
+      "headline": "Create contract clauses",
       "description": "Create ready-to-use contract clauses that will proactively refer IP disputes to dispute resolution processes endorsed by the World Intellectual Property Organisation (WIPO). ",
       "about": {
         "@type": "Thing",
@@ -71,6 +139,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The *WIPO AMC* is specialised in IP and technology disputes and offers time and cost efficient ADR options.\n* Helps you clearly set out in your contract how international IP disputes will be managed through confidential and neutral dispute resolution processes such as mediation or arbitration.\n* Helps you explore widely recognised ADR options -- including mediation, arbitration, expedited arbitration and expert determination -- and guides you through common decisions often built into contracts. These include choosing the type of process, naming a mediator or arbitrator, setting expectations around their qualifications or expertise, agreeing on the location and language of proceedings, online conduct of proceedings, and specifying how long to wait before escalating to the next step.\n* Suitable for both drafting new contracts and resolving existing disputes.\n* Can be used for both new contract drafting and resolving existing disputes.\n* Free to use and easy to customise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* As a free, automated tool, it does not replace tailored legal advice.\n* Poorly drafted clauses may miss key protections or overlook important details. As this is a general-purpose tool, using it without help from a qualified IP professional may not address your specific needs, industry standards or jurisdictional issues. For example;\n* You may be less able to seek resolution within Australia if you commit to international resolution processes, or\n* You may wave certain rights such as the ability to appeal a decision after arbitration.\n* Contact clauses may not suit all situations - particularly if your dispute requires court enforcement or urgent remedies.\n* Requires agreement from both parties to be effective.\n* While WIPO ADR outcomes are widely respected, enforcing awards across borders may still need\u00a0 legal assistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A ready-to-insert clause referring potential future IP disputes are added and agreed to by both parties and signed into contracts.\n* Using the clause-generator helps both parties explore and discuss their preferences; negotiating from a standard starting point.\n* Parties do not reach an agreement and no clause is included in the contract."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no cost to use the WIPO Clause Generator, but if a dispute arises and the clause is triggered, costs may include:\u00a0\n\n* Mediator or arbitrator fees based on complexity and duration.\n* [WIPO administrative fees](https://www.wipo.int/amc/en/film/fees/index.html). SME's and individuals are entitled to a 25% reduction of fees.\n* The WIPO Center offers free online case administration tools and procedural advice to Parties.\n* Legal or professional support fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Drafting a clause takes under 10 minutes with the tool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In 2024, the WIPO Arbitration and Mediation Center (WIPO AMC) was involved in the resolution of 858 intellectual property (IP), innovation, and technology disputes.\u00a0\u00a0\n\nLarger businesses will typically include provisions to resolve disputes in their contracts, though this can be overlooked by smaller businesses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Any business entering into a contract that may involve IP issues - particularly international contracts.\n* Businesses with existing disputes they wish to refer to [WIPO Arbitration and Mediation Center](https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The contracting parties (e.g. buyer, supplier, licensee, licensor).\n* WIPO Arbitration and Mediation Center.\n* The mediator, arbitrator or expert (if dispute arises).\n* Optional: Legal or IP professionals to assist with drafting and negotiation contracts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A contract (existing or planned) where IP matters may arise.\n* It will be useful to have a basic understanding of [alternative dispute resolution (ADR) options.](https://ipfirstresponse.ipaustralia.gov.au/options/ADR)\n* The WIPO Center is available to assist with free procedural advice in generating the clauses: [arbiter.mail@wipo.int](mailto:arbiter.mail@wipo.int)\n* Optional: Support from an IP attorney or legal expert, especially for high-value or complex agreements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

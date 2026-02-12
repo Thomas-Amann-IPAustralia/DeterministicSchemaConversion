@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#webpage",
-      "headline": "Apply for a patent to protect your invention from being copied ",
+      "headline": "Apply for a patent",
       "alternativeHeadline": "Apply for a patent",
       "description": " Prepare and submit formal patent applications to IP Australia to secure exclusive rights for your invention.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied",
@@ -52,12 +52,50 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/patents",
+          "name": "Patents | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/patents/how-to-apply-for-a-standard-patent",
+          "name": "How to apply for a patent | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "Getting help with your IP | IP Australia"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Apply for a patent to protect your invention from being copied ",
+      "headline": "Apply for a patent",
       "description": " Prepare and submit formal patent applications to IP Australia to secure exclusive rights for your invention.",
       "about": {
         "@type": "Thing",
@@ -70,6 +108,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Gives you exclusive rights to your invention for up to 20 years.\n* Stops others from legally copying, using or profiting from your invention.\n* Builds your bargaining power with investors, licensees or competitors.\n* Can increase the commercial value of your product or business.\n* May deter others from trying to copy your idea once they see it's protected.\n* Positions you to take legal action if suspected infringement occurs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Filing a patent may result in details of your invention becoming public.\n* The process can take years and may not result in a granted patent.\n* Competitors may try to challenge your application or patent.\n* Costs may be significant, especially if you use a patent attorney or seek international protection.\n* A granted patent only protects you in the country where it was filed.\n* You may need to enforce the patent yourself if someone uses your invention without permission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Your patent is granted, and you receive exclusive legal rights.\n* Your application is rejected due to lack of novelty, inventive step or other criteria (such as a lack of support for the claims, or other issues with the specification such as a lack of clarity).\n* Your patent is opposed by a third party, leading to a hearing or negotiation.\n* You withdraw the application or let it lapse due to cost, complexity or commercial decisions.\n* You license or sell the patent to another party."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patent costs vary depending on the type of application and whether you use professional support.\u00a0\n\n* **Provisional patent application**: From around $110 if self-filed with IP Australia (as discussed above, a provisional application does not offer any patent protection, and simply acts as a placeholder while you consider your options).\n* **Standard patent application**: Filing starts at $400, with potential additional costs for examination, maintenance and legal advice.\n* **Patent attorney fees**: May range from $2,000 to over $10,000 depending on complexity.\n* **Ongoing fees**: Annual renewal fees start at $300 at the 4th anniversary and steadily increase to $2815 for the 19th anniversary (i.e. for the 20th year).\n\nIf you seek patent protection in other countries, additional international filing and translation fees will apply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The patent process can take:\u00a0\n\n* A few days for a provisional application.\n* 6 months to 2+ years for a standard patent (longer if examined late or challenged).\n* Up to 5 years or more in complex cases.\n\nIf you want quicker protection while exploring your options, filing a provisional application may give you breathing room for 12 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Over 30,000 patents are filed annually in Australia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Anyone who has developed a new invention that is not yet publicly disclosed.\n* Individuals, businesses or researchers who want exclusive rights to their innovation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The applicant (you or your business).\n* IP Australia, who examines and grants patents.\n* Optional: a registered patent attorney who can draft and file your application.\n* Optional: competitors or third parties who may oppose the patent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A clear description of your invention--what it is, how it works, and how it's different.\n* A decision on whether to file a provisional or standard application.\n* An account with IP Australia's online services.\n* Budget to pay application and examination fees.\n* Optional: get help from a registered patent attorney.\n* A plan for international protection if you need overseas rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

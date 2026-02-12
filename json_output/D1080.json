@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage",
-      "headline": "Choosing the right IP professional",
+      "headline": "Hiring a professional",
       "alternativeHeadline": "Hiring a professional",
       "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
@@ -52,12 +52,105 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney",
+          "name": "Benefits of using an IP attorney |Trans-Tasman IP Attorneys Regulation"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.liv.asn.au/legalhelp",
+          "name": "Law Institute Victoria"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
+          "name": "Law Society Northern Territory"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.youandthelaw.com.au/",
+          "name": "Queensland Law Society"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.lawsociety.com.au/register-of-solicitors",
+          "name": "The Law Society of NSW"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx",
+          "name": "The Law Society of South Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.lst.org.au/find-a-lawyer/",
+          "name": "The Law Society of Tasmania"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.actlawsociety.asn.au/find-a-lawyer",
+          "name": "The Law Society of the ACT"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lawsocietywa.asn.au/services/find-a-lawyer/",
+          "name": "The Law Society of Western Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ami.org.au/",
+          "name": "AMI"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.franchise.org.au/",
+          "name": "franchise.org.au"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory",
+          "name": "Qualified Person directory"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/",
+          "name": "IP Australia website"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.business.gov.au/",
+          "name": "business.gov.au"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "Service",
       "name": "Choosing the right IP professional",
+      "headline": "Hiring a professional",
       "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
       "about": {
         "@type": "Thing",
@@ -71,6 +164,20 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

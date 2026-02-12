@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#webpage",
-      "headline": "Stop infringing goods entering the country",
+      "headline": "Notice of objection",
       "alternativeHeadline": "Notice of Objection",
       "description": "Lodge a notice of objection with the Australian Border Force.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
@@ -52,12 +52,80 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
+          "name": "cannot act retrospectively"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
+          "name": "Notice of Objection."
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+          "name": "The Toyota story: What can SMEs learn from Toyota's approach to counterfeit products? | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx",
+          "name": "IPObjections | The Australian Border Force"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+          "name": "How to import intellectual property | The Australian Border Force"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "*getting professional assistance with your IP*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "*30 minute consultations with an attorney*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.artslaw.com.au/services/legal-query-form/",
+          "name": "*Arts Law Centre of Australia*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "*Australian Copyright Council*"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Stop infringing goods entering the country",
+      "headline": "Notice of objection",
       "description": "Lodge a notice of objection with the Australian Border Force.",
       "about": {
         "@type": "Thing",
@@ -71,6 +139,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Provides a way to intercept infringing imports before they enter the Australian market.\n* Acts as a deterrent for anyone who tries to import goods that infringe on your trade marks.\n* When caught, the vast majority of infringing importers abandon their goods.\n* No financial cost to lodge the Notice itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You must agree to pay for costs incurred by the ABF which might result from the seizure of potentially infringing goods. Generally, costs are minimal.\n* Failure to identify importers within your own supply chain may result in the seizure of your own imported goods.\n* This action does not permanently resolve the issue of your goods being counterfeited.\n* It doesn't take much for matters to escalate to court, potentially introducing higher risks and costs.\n* Escalation of the dispute could require you to defend/reaffirm your claim to your IP rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The goods/copies are not detected entering Australia, or goods are detected but cannot be verified as potentially infringing; you are not notified.\n* The goods/copies are seized entering Australia. You and the importer are informed.\n\nThe importer may then:\u00a0\n\n* choose to abandon the goods/copies, which are then disposed of by the ABF, or\n* file a Claim for Release of Seized goods/copies form.\n\nIf they submit this form, one of two things can happen:\u00a0\n\n* you\u00a0do not\u00a0begin legal proceedings within 10 days and the goods are released to the importer, or\n* you begin legal proceedings within 10 days.\n\nThe court's decision will likely result in either:\u00a0\n\n* the ABF disposing of the goods, or\n* the goods being released back to the importer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While there are no fees to lodge a Notice of Objection, you will also need to lodge a Deed of Undertaking. This is a formal agreement to repay the ABF's costs resulting from any seizures made (e.g. transportation, storage and destruction costs).\u00a0\u00a0\n\nIf you choose to take legal action against the importer, you will need to cover the costs of the legal action.\u00a0Depending on the court's determination you may need to pay other party's costs, possibly damages, etc."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Notice of Objection is valid for 4 years and ABF may seize imports at any point during this time. It can be re-lodged, or withdrawn if it is no longer required.\u00a0\n\nIf a seizure has occurred:\u00a0\n\n1. The ABF will notify you and the importer. The importer has 10 working days from the date of notification to ask for the goods to be released.\n2. If no response is received, the goods are deemed to be forfeited and can be disposed of 30 days later.\n3. If the importer seeks to have the goods released, you will be notified and have 10 working days to start legal action against the importer.\n4. If the ABF does not receive a court order maintaining seizure of the goods/copies within 20 days of legal action commencing then they are still required to release the goods to the importer.\n\n[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "More than 500 trade mark notices and 41 copyright notices are currently in force."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Owners of registered trade marks which claim goods (services are not eligible for the scheme).\n* Authorised users or importers of a trade mark, with the registered trade mark owner's permission.\n* Copyright owners of copyright material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Australian Border Force.\n* The trade mark owner, copyright owner or authorised user.\n* Businesses importing goods for commercial purposes that bear your trade mark or a similar trade mark, or infringing copies of copyright material.\n* (Potentially) legal representatives, if you choose to take legal action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To lodge a Notice of Objection under the *Trade Marks Act 1995*, you will require the following:\u00a0\n\n* A completed Notice of Objection form (B1025).\n* Evidence of trade mark registration from IP Australia (for example, a copy of the registration certificate or a copy of an Australian Trade Mark Search report).\n* A completed Trade Marks Act 1995 Security Under Section 133 - Deed of Undertaking form.\n* If you are an authorised user or importer - an authorisation letter from the registered trade mark's owner.\n\nTo lodge a Notice of Objection under the *Copyright Act 1968*, you will require:\n\n* A completed Notice of Objection form (B470).\n* If you are a company authorised by the copyright owner to file the Notice on their behalf - a letter (or multiple - if more than one copyright owner) of authorisation from the copyright owner/s (for any copyright material covered that is not owned by the company lodging the Notice).\n* A completed Copyright Act 1968 Security Under Section 135 - Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.\n\nYou can find more information in the ABF Guide to lodging a\u00a0[Notice of Objection.](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

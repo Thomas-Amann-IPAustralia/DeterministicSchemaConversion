@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#webpage",
-      "headline": "Other IP Types",
+      "headline": "Sorry, this information is not available yet",
       "alternativeHeadline": "Sorry, This information isn't available yet",
       "description": "We cannot provide information on this right just yet",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
@@ -52,7 +52,84 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks/geographical-indications-and-trade-marks",
+          "name": "Geographical Indications And Trade Marks | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.agriculture.gov.au/agriculture-land/farm-food-drought/wine-policy",
+          "name": "Department of Agriculture, Fisheries and Forestry"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/understanding-trade-marks/types-of-trade-marks/other-types-trade-marks#Trade-marks-for-wine",
+          "name": "IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "http://www.foodstandards.gov.au/Pages/default.aspx",
+          "name": "Food Standards Australia New Zealand"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/indigenous-knowledge",
+          "name": "Indigenous Knowledge | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
+          "name": "Yarnline"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ag.gov.au/rights-and-protections/copyright",
+          "name": "Copyright | Attorney-General's Department"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.business.qld.gov.au/running-business/risk/ip/ip-kit/browse-ip-topics/trade-secrets",
+          "name": "Trade secrets, know-how, and confidential information | Business Queensland"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/portal/en/index.html",
+          "name": "WIPO - World Intellectual Property Organization"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.dfat.gov.au/trade/organisations/wto/intellectual-property",
+          "name": "Intellectual property | Australian Government Department of Foreign Affairs and Trade"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://international.austrade.gov.au/en/do-business-with-australia/invest-in-australia/investor-guide/running-a-business/understanding-australian-business-regulations",
+          "name": "Australian business regulations | Austrade International"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "*getting professional assistance with your IP*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "*30 minute consultations with an attorney*"
+        }
+      ]
     },
     {
       "@id": "#the-service",
@@ -61,6 +138,7 @@
         "HowTo"
       ],
       "name": "Other IP Types",
+      "headline": "Sorry, this information is not available yet",
       "description": "We cannot provide information on this right just yet",
       "about": {
         "@type": "Thing",
@@ -70,8 +148,22 @@
         "@type": "Person",
         "name": "Self-Help"
       },
-      "articleBody": "## Sorry, this information is not available yet\n\n# Other IP types\n\n*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*\n\n### This right is currently not covered by the navigation tool\n\nInformation relevant to the enforcement of other types of IP has not been included as part of the platform's pilot. However, IP First Response contains general information which may be useful for the enforcement of all intellectual property. Consider exploring the enforcement options and whether they may still contain information that's useful for your situation.\u00a0\u00a0\u00a0\n\nThis tool is currently in early-stage development and testing, aimed at determining its usefulness to rights holders like you. We invite you to provide feedback about this navigator tool, IP First Response, and your experience enforcing your IP through our [IP First Response feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  and/or via email at [ipfirstresponse@ipaustralia.gov.au](mailto:ipfirstresponse@ipaustralia.gov.au)\u00a0\n\nIf you have other types of IP, you might be interested in the following resources:\u00a0\n\n* Geographical Indications (GIs) [Geographical Indications And Trade Marks | IP Australia](https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks/geographical-indications-and-trade-marks) :\n* Wine GIs are managed by the [Department of Agriculture, Fisheries and Forestry](https://www.agriculture.gov.au/agriculture-land/farm-food-drought/wine-policy).\n* [IP Australia](https://www.ipaustralia.gov.au/trade-marks/understanding-trade-marks/types-of-trade-marks/other-types-trade-marks#Trade-marks-for-wine)  is responsible for the registration of GIs as certification trade marks for all goods.\n* Specific enforcement mechanisms for spirits are managed by [Food Standards Australia New Zealand](http://www.foodstandards.gov.au/Pages/default.aspx).\n* [Indigenous Knowledge | IP Australia](https://www.ipaustralia.gov.au/understanding-ip/indigenous-knowledge)  or speak with IP Australia on [Yarnline](https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline)\n* Copyright and circuit layout rights are managed by the Attorney-General's Department in Australia [Copyright | Attorney-General's Department](https://www.ag.gov.au/rights-and-protections/copyright)\n* [Trade secrets, know-how, and confidential information | Business Queensland](https://www.business.qld.gov.au/running-business/risk/ip/ip-kit/browse-ip-topics/trade-secrets)\n* Some IP rights recognised overseas, such as data and rights to publicity or your likeness ('image rights'), do not have specific IP protection in Australia. You can learn more about IP in general at [WIPO - World Intellectual Property Organization](https://www.wipo.int/portal/en/index.html)\n\nPlease provide feedback about the IP type you're interested in and we will consider adding it to the tool in future. Thank you for your engagement with the tool.\u00a0\n\n### See also\n\n* [Intellectual property | Australian Government Department of Foreign Affairs and Trade](https://www.dfat.gov.au/trade/organisations/wto/intellectual-property)\n* [Australian business regulations | Austrade International](https://international.austrade.gov.au/en/do-business-with-australia/invest-in-australia/investor-guide/running-a-business/understanding-australian-business-regulations)\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "articleBody": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types](https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types)\"",
       "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

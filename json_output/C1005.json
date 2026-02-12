@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#webpage",
-      "headline": "CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS",
+      "headline": "IP audit",
       "alternativeHeadline": "IP Audit",
       "description": "Identify IP in your portfolio, who owns it, what it\u2019s worth, it\u2019s legal status, and what to do next.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
@@ -52,7 +52,34 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+          "name": "comprehensive IP strategy"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/en/web/business/ip-audit",
+          "name": "Uncovering IP Risks and Potential: IP Audit"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
+          "name": "WIPO IP Diagnostics"
+        }
+      ]
     },
     {
       "@id": "#the-service",
@@ -61,6 +88,7 @@
         "HowTo"
       ],
       "name": "CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS",
+      "headline": "IP audit",
       "description": "Identify IP in your portfolio, who owns it, what it\u2019s worth, it\u2019s legal status, and what to do next.",
       "about": {
         "@type": "Thing",
@@ -70,8 +98,94 @@
         "@type": "Organization",
         "name": "IP Professionals"
       },
-      "articleBody": "An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it's worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a\u00a0[comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip).\u00a0\n\nAudits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals.\u00a0\n\nCommon triggers for an IP audit include:\u00a0\n\n* Significant corporate change, such as a merger or acquisition\n* Entering a joint venture or strategic alliance\n* Transfer or assignment of IP rights\n* Launch of a new product line or market expansion\n* Initiation of enforcement or defence actions.\n\nHowever, many businesses also conduct regular audits to systematically review their IP portfolio to evaluate their IP assets, renew their IP rights and minimise risks.\u00a0\n\n### What are the benefits?\n\n* May help identify and address legal or infringement risks early.\n* Can support compliance with IP laws and regulations.\n* Can demonstrate to investors and partners that you have a clear understanding and control over your IP.\n* Can provide strategic insights to maximise commercial use of your IP.\n\n### What are the risks?\n\n* May require specialised expertise, which can add complexity or cost.\n* Confidential information might be exposed if not handled securely.\n* One-off audits can become outdated -- regular reviews are usually needed.\n\n### What are the possible outcomes?\n\nPossible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.\u00a0\u00a0\n\nNoting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to:\u00a0\n\n* A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates\n* Clear list of possible infringement risks and how to handle them\n* Decision to get ongoing help from an IP professional.\n\n### What might the costs be?\n\nCosts would vary depending on your portfolio and whether you choose to engage professional service:\u00a0\n\n* In-house audits mainly cost staff time and may take several days to several weeks\n* Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets.\n\n### How much time might be involved?\n\nThe amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review:\u00a0\n\n* A focused audit of one IP type may take several days\n* Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process.\n\n### How much is this used?\n\nConducting a one-off or regular IP audit is a practice commonly used by businesses that own or use multiple IP assets.\u00a0\n\n### Who can use this?\n\nAny IP rights holder or authorised user managing IP assets.\u00a0\n\n### Who's involved?\n\n* Business owner or employee/s leading the audit.\n* Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers.\n\n### What do you need to proceed?\n\n* Clear scope and purpose for the audit.\n* Copies of registrations, applications, licences and confidentiality agreements.\n* Evidence of creation dates, market use and renewal deadlines.\n* Access to branding, technical and commercial records.\n* Secure system (like a spreadsheet or software) to record your findings.\n\nYou may also consider obtaining tailored advice from an IP professional before acting on results.\u00a0\n\n### See also\n\n* [Develop a strategy to manage your IP | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip)\n* [Uncovering IP Risks and Potential: IP Audit](https://www.wipo.int/en/web/business/ip-audit)\n* [WIPO IP Diagnostics](https://www.wipo.int/en/web/wipo-ip-diagnostics)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "articleBody": "An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it's worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a\u00a0[comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip).\u00a0\n\nAudits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals.\u00a0\n\nCommon triggers for an IP audit include:\u00a0\n\n* Significant corporate change, such as a merger or acquisition\n* Entering a joint venture or strategic alliance\n* Transfer or assignment of IP rights\n* Launch of a new product line or market expansion\n* Initiation of enforcement or defence actions.\n\nHowever, many businesses also conduct regular audits to systematically review their IP portfolio to evaluate their IP assets, renew their IP rights and minimise risks.",
       "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* May help identify and address legal or infringement risks early.\n* Can support compliance with IP laws and regulations.\n* Can demonstrate to investors and partners that you have a clear understanding and control over your IP.\n* Can provide strategic insights to maximise commercial use of your IP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* May require specialised expertise, which can add complexity or cost.\n* Confidential information might be exposed if not handled securely.\n* One-off audits can become outdated -- regular reviews are usually needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.\u00a0\u00a0\n\nNoting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to:\u00a0\n\n* A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates\n* Clear list of possible infringement risks and how to handle them\n* Decision to get ongoing help from an IP professional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs would vary depending on your portfolio and whether you choose to engage professional service:\u00a0\n\n* In-house audits mainly cost staff time and may take several days to several weeks\n* Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review:\u00a0\n\n* A focused audit of one IP type may take several days\n* Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conducting a one-off or regular IP audit is a practice commonly used by businesses that own or use multiple IP assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any IP rights holder or authorised user managing IP assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Business owner or employee/s leading the audit.\n* Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Clear scope and purpose for the audit.\n* Copies of registrations, applications, licences and confidentiality agreements.\n* Evidence of creation dates, market use and renewal deadlines.\n* Access to branding, technical and commercial records.\n* Secure system (like a spreadsheet or software) to record your findings.\n\nYou may also consider obtaining tailored advice from an IP professional before acting on results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

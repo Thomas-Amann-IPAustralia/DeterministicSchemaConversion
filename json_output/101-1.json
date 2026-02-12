@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#webpage",
-      "headline": "How to avoid infringing others' intellectual property",
+      "headline": "Infringement 101",
       "alternativeHeadline": "Infringement 101",
       "description": "Running a business or developing new products or services often means creating intellectual property (IP) or encountering IP rights owned by others. Whether it is a brand name, invention, design, or creative work, using something similar to someone else\u2019s existing intellectual property may be considered infringement.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property",
@@ -52,12 +52,50 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+          "name": "Australian Trade Mark Search"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://search.ipaustralia.gov.au/designs/search/quick",
+          "name": "Australian Design Search"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipsearch.ipaustralia.gov.au/pbr/",
+          "name": "the Australian PBR Search,"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "name": "the Australian Patent Search"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "feedback form"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "How to avoid infringing others' intellectual property",
+      "headline": "Infringement 101",
       "description": "Running a business or developing new products or services often means creating intellectual property (IP) or encountering IP rights owned by others. Whether it is a brand name, invention, design, or creative work, using something similar to someone else\u2019s existing intellectual property may be considered infringement.",
       "about": {
         "@type": "Thing",
@@ -70,6 +108,20 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

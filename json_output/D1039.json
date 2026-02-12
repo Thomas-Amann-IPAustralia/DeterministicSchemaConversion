@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#webpage",
-      "headline": "Register your unregistered trade mark",
+      "headline": "Apply for a trade mark",
       "alternativeHeadline": "Apply for a trade mark",
       "description": "Strengthen your position as the registered owner of your trade mark in Australia",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark",
@@ -52,12 +52,65 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
+          "name": "TM Headstart"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://tmgns.search.ipaustralia.gov.au/",
+          "name": "picklist"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/trade-marks",
+          "name": "step-by-step guide"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+          "name": "TM Checker"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "*getting professional assistance with your IP*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "*30 minute consultations with an attorney*"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Register your unregistered trade mark",
+      "headline": "Apply for a trade mark",
       "description": "Strengthen your position as the registered owner of your trade mark in Australia",
       "about": {
         "@type": "Thing",
@@ -70,6 +123,60 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registering a trade mark offers a range of benefits which can simplify the enforcement process. It provides:\u00a0\n\n* Exclusive legal rights to use the trade mark commercially (on the goods and services claimed).\n* Robust and universally recognised registration (within Australia).\n* Clear evidence of ownership date to support your claims.\n* Strong negotiating position for settlement discussions.\n\nSome enforcement options are only available if your trade mark is registered. These include the ability to take action against infringement under the *Trade Marks 1995*, and the ability to lodge an objection to imports of trade mark-infringing goods at the border under the Australian Border Force (ABF) Notice of Objection scheme.\u00a0\n\nRegistration can also make it easier to commercialise and licence your trade mark, and for others to be aware that you claim the rights. Your trade mark will appear on a public, searchable database showing your claim and its scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Registering your trade mark requires an upfront fee that must be paid **before** the trade mark is examined. This fee is for the *examination* of the trade mark and is therefore **non-refundable** if the trade mark is not registrable.\n* Applications to register a trade mark are generally public (an exception is TM Headstart). Your competitors might become aware you are trying to register your trade mark. They may take actions like trying to register their own similar trade mark, or oppose your application.\n* You might discover that there is a problem with your trade mark, or that someone else has already registered a similar trade mark. This could mean you need to reconsider whether your trade mark is right for you.\n* An Australian trade mark registration does not cover you in overseas markets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are two main ways to apply to register a trade mark in Australia:\n\n* standard application\n* TM Headstart.\n\nThese have different costs and timeframes.\u00a0\n\n**TM Headstart fees**\u00a0\n\nRegistering a trade mark through [TM Headstart](https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart)  costs a minimum of $330. This covers submitting your pre-application (step 1), and finalising your application (step 3). If you need to make changes before finalising your application (step 2), this will add to your cost.\u00a0\n\n| **Action** | **Fees (per class)** |\n| --- | --- |\n| Step 1 - TM Headstart request | $200 |\n| Step 2 - Amendments to an application (optional)\u00a0  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0Change of trade mark representation (optional) | $150 |\n| Step 2 - Amendments to an application (optional)  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Addition of new classes (optional) | $200 |\n| Step 3 - Conversion to a standard application (Part 2 fee) | $130 |\n\n**Standard application fees**\u00a0\n\nA standard trade mark application costs a minimum of $250.\u00a0\\\n\u00a0\\\nYour fees will be lower if you use the [picklist](https://tmgns.search.ipaustralia.gov.au/). The picklist is a searchable list of 60,000+ goods and services categorised into 45 classes relevant to trade marks. This helps examiners to know exactly which goods the trade mark is intended to apply.\u00a0\u00a0\n\n| **Action** | **Fees (per class) with picklist** | **Fees (per class) without picklist** |\n| --- | --- | --- |\n| Trade mark application | $250 | $400 |"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While TM Headstart and standard applications will have different examination timeframes, registration of a trade mark takes **at least 7 months** to finalise. This is because a trade mark cannot be registered until at least seven and a half months after its priority date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You will need to set up an account with IP Australia's Online Services. There is a [step-by-step guide](https://www.ipaustralia.gov.au/trade-marks)  to applying for an Australian trade mark on our website.\u00a0\n\nYou don't need a lawyer to apply. However, if you would like support in making your application, you can contact an IP professional such as a registered trade mark attorney via \u00a0[Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0).\u00a0\n\nYou will need an address for service in Australia. This just means a postal address where you can be reached.\u00a0\n\nBefore applying, consider using TM Checker, a free online trade mark checking tool to check the registrability of your potential trade mark. TM Checker can be accessed here: [TM Checker](https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

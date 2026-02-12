@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#webpage",
-      "headline": "Does my Australian ip work overseas? ",
+      "headline": "Australian IP overseas",
       "alternativeHeadline": "Australian IP overseas",
       "description": "",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas",
@@ -52,7 +52,44 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
+          "name": "Can I protect my ideas in other countries? | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/international-ip",
+          "name": "International intellectual property | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "name": "Prevent international infringement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/en/web/madrid-system",
+          "name": "WIPO Madrid System - International Trademark Protection"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/en/web/pct-system",
+          "name": "PCT - The International Patent System"
+        }
+      ]
     },
     {
       "@id": "#the-service",
@@ -61,6 +98,7 @@
         "HowTo"
       ],
       "name": "Does my Australian ip work overseas? ",
+      "headline": "Australian IP overseas",
       "description": "",
       "about": {
         "@type": "Thing",
@@ -70,8 +108,30 @@
         "@type": "Person",
         "name": "Self-Help"
       },
-      "articleBody": "**Australian registration protects the relevant IP right within Australia.** When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia.\u00a0\n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: [Can I protect my ideas in other countries? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries).\u00a0\n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.\u00a0\n\n### See also\n\n* [Can I protect my ideas in other countries? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries)\n* [International intellectual property | IP Australia](https://www.ipaustralia.gov.au/international-ip)\n* [Prevent international infringement | IP Australia](https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement)\n* [WIPO Madrid System - International Trademark Protection](https://www.wipo.int/en/web/madrid-system)\n* [PCT - The International Patent System](https://www.wipo.int/en/web/pct-system)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "articleBody": "**Australian registration protects the relevant IP right within Australia.** When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia.\u00a0\n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: [Can I protect my ideas in other countries? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries).\u00a0\n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.",
       "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does my Australian IP work overseas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

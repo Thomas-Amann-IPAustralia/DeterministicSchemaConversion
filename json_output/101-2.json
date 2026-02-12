@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage",
-      "headline": "Design infringement",
+      "headline": "Infringement 101",
       "alternativeHeadline": "Infringement 101",
       "description": "Design infringement can occur when someone uses a design that is identical or similar to a registered design without obtaining permission from the owner. In Australia, a registered design provides designers protection for up to 10 years. Importantly, the law does not require exact copying. If the overall visual impression of the suspected infringing design is substantially similar to the registered design, it may be considered infringemen",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
@@ -52,12 +52,35 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "name": "How to apply for a design right"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "feedback form"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Design infringement",
+      "headline": "Infringement 101",
       "description": "Design infringement can occur when someone uses a design that is identical or similar to a registered design without obtaining permission from the owner. In Australia, a registered design provides designers protection for up to 10 years. Importantly, the law does not require exact copying. If the overall visual impression of the suspected infringing design is substantially similar to the registered design, it may be considered infringemen",
       "about": {
         "@type": "Thing",
@@ -70,6 +93,44 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is design infringement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design infringement can occur when someone uses a design that is identical or similar to a registered design without\u00a0obtaining permission from the owner.1 In Australia, a registered design provides designers protection for up to 10 years. Importantly, the law does not require exact copying. If the overall visual impression of the suspected infringing design is substantially similar to the registered design, it may be considered infringement.2"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do registered designs protect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Australia, new and distinctive designs are afforded protection with owners registering with IP Australia.3 A registered design protects the visual appearance of a product.4 The law protects visual features such as shape, configuration, pattern, or ornamentation.5 It does not protect how the product works or what it is made from.6 Designs are tied to physical products that have a tangible form.7 Products must also be manufactured or handmade and are produced on a commercial scale.8 For example, the shape of a bottle, the pattern on fabric, or the combined features of shape and patterns on furniture.\n\n**Protecting a design involves a two-part process.** To\u00a0gain the legal right to take action against someone who uses a design without permission, owners must first register and then certify it with IP Australia. In Australia, this two-part process to apply for a design right is crucial to enforce the right against another person. See more information here '[How to apply for a design right](https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right) '.\n\nWhen it comes to design infringement, it is essential to understand what a registered design protects.\u00a0\n\n**Designs are tied to specific products**. Designs are registered for a particular product (like \"a chair\" or \"a bottle\"). Protection only covers the appearance of that product. If someone uses the exact design on a completely different product, this may not be infringement. For example, a chair design is used as a pattern on a t-shirt.\n\n**What is shown with the registered design is what is protected**. The images and descriptions of a registered design define what is protected. Registration not only protects the design but also designs that are substantially similar. However, it does not protect every possible variation. Additionally, if a unique feature is not clearly shown or described, it may not be protected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does design infringement happen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where a design is registered and certified with IP Australia, the following combined events may constitute infringement, provided they occur during the term of protection and without the permission of the owner:\n\n**1. Someone****uses****the design**\n\nAustralian law gives designers exclusive control over their registered designs.9 Infringement occurs when a person uses a design that closely resembles a registered design in a way that only the owner is allowed to do so and without permission.10 Someone uses a design when:\n\n* Making or offering to make a product with the design11\n* Importing a product with the design for sale or business use12\n* Selling, hiring, or disposing of a product with the design13\n* Using a product with the design for business purposes14\n* Keeping a product with the design for sale or business use.15\n\n**2. Someone uses a design that is similar to a registered design**\n\nInfringement occurs when someone uses a design that looks too similar to a registered design. When looking at possible infringement, courts compare the registered design with the suspected infringing design.16 This comparison requires consideration of multiple factors. They consider:\n\n* **The overall look**. Does the infringing design give the same overall impression as the registered design?17\n* **Focus on similarities between the designs.** Attention is paid to what is similar than what is different.18\n* **What a familiar person would think**. A familiar person is someone who is familiar with the product and similar products.19 They consider whether someone familiar with these types of products thinks they look too similar.\n* **The field for prior designs.** If the registered design is more innovative and distinct from existing designs, common features between the design and the infringing design would support a finding of infringement. On the other hand, if the registered design is only slightly different from existing designs, small differences between the registered design and the infringing design support a finding of no infringement.20\n* **Common features**. Features that are common in many similar products are given less importance.21\n* **Design options**. Courts will consider how many different ways a designer could create a design for the product.22\n* **Statement of Newness and Distinctiveness**. A registered design can include a statement that highlights the new and distinctive aspects of a design, helping to focus protection on crucial elements. Comparisons between designs will then focus on these features.23"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

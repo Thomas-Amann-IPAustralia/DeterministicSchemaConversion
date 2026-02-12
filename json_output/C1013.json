@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#webpage",
-      "headline": "Monitor the trade mark register and market for competitor activity",
+      "headline": "Monitor competitors' IP",
       "alternativeHeadline": "Monitor Competitors ' IP",
       "description": "Ensure the exclusivity of your trade mark by detecting potential conflicts early.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
@@ -52,12 +52,100 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+          "name": "IP Australia's Australian Trade mark Search (ATMS)"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
+          "name": "informal contact"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+          "name": "trade mark opposition"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts",
+          "name": "re-brand"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+          "name": "takedown notice,"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://search.ipaustralia.gov.au/trademarks/help",
+          "name": "HELP"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+          "name": "Infringement 101 | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+          "name": "Trade mark infringement | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+          "name": "Develop a strategy to manage your IP | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+          "name": "navigator tool for IP rights holders faced with IP infringement"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right",
+          "name": "Tips and tricks for searching for an existing right | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.gov.au/tm-checker",
+          "name": "TM Checker: Free trade mark availability check | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://business.gov.au/planning/protect-your-brand-idea-or-creation/trade-mark",
+          "name": "Trade mark | business.gov.au"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.wipo.int/en/web/global-brand-database",
+          "name": "Global Brand Database"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Monitor the trade mark register and market for competitor activity",
+      "headline": "Monitor competitors' IP",
       "description": "Ensure the exclusivity of your trade mark by detecting potential conflicts early.",
       "about": {
         "@type": "Thing",
@@ -70,6 +158,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* There is a higher chance of detecting potential conflicts early, before it escalates into a serious dispute or products reach shelves.\n* Gives you more time to gather evidence and consider responses such as [informal contact](https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement) or [trade mark opposition](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark).\n* Could deter others from copying your brand once they know that you are actively monitoring.\n* Helps you have an overview of the gaps and trends in rival trade mark filings, which can inform your overall intellectual property (IP) strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Responding to low-risk applications may negatively affect your reputation, and may be a waste of time and money."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You find no conflicting activity and gain peace of mind.\n* You spot a *potentially* conflicting application and decide to oppose its registration.\n* You contact the other business early and resolve concerns informally.\n* You decide to [re-brand](https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts) or adjust marketing before launch to avoid clash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monitoring the register on IP Australia's Australian Trade Marks Search (ATMS) is free apart from your time. Many overseas national IP offices also offer free search tools. You can also monitor the market by regularly conducting searches on internet search engines or e-commerce platforms.\u00a0\n\nCommercial monitoring services typically start from a few hundred dollars per year for one class of goods and services claimed and rise with extra classes or overseas coverage.\u00a0\n\nIf you chose engage a trade mark attorney or IP lawyer for legal advice and taking further actions on the results, you may incur further professional fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The time involved will depend heavily on the scope of your monitoring activities, such as whether you are including overseas trade mark registers, the number of e-commerce platforms or how many classes of goods and services you would like to cover. A quick manual check can take minutes, but reviewing saved searches may become a short weekly task.\u00a0\n\nUsing a watch service is quicker day-to-day, yet you still need time to review results and decide on any follow-up.\u00a0\n\nActing on a match, such as lodging [an opposition](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark) or a [takedown notice,](https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online) can add weeks or months for the process to be finalised."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monitoring competitors' trade marks is widely recognised as best practice for trade mark holders. Businesses also commonly use IP monitoring services or software to help them detect potential conflicts early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone who owns or is authorised to use a registered or unregistered trade mark and wants to stay alerted to possible conflicts.\u00a0\n\nAnyone planning to register a trade mark or launch a brand can also monitor filings to observe trends in trade mark filings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The trade mark owner or authorised user\n* Optional: commercial watch service provider\n* Optional: IP professionals such as trade mark attorneys or IP lawyers for advice, enforcement action or monitoring services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* [Australian Trade Mark Search](https://search.ipaustralia.gov.au/trademarks/search/quick)  (ATMS) and [HELP](https://search.ipaustralia.gov.au/trademarks/help)  page to familiarise yourself with how the ATMS search works and various features of the search tool.\n* Current trade mark details (e.g. registration number, priority date and its registration status).\n* Criteria for what you will consider as 'too close' to your brand. Check out [Infringement 101 | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/infringement-101) and [Trade mark infringement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement) to understand the factors that determine trade mark infringement.\n* Plan for next steps if you find a conflict [Develop a strategy to manage your IP | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip). You can use IP First Response's [navigator tool for IP rights holders faced with IP infringement](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement) for more information regarding various pathways to address an IP dispute or an infringement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

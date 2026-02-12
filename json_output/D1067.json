@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#webpage",
-      "headline": "Prevent a patent under examination from being granted",
+      "headline": "Notification of prior art",
       "alternativeHeadline": "Notification of prior art",
       "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and thus cannot be granted.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted",
@@ -52,12 +52,55 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://portal.ipaustralia.gov.au/login",
+          "name": "IP Australia's eServices"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
+          "name": "5.6.4.5 Third Party Notifications | IPA Manuals"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+          "name": "Challenge a new or amended patent | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "name": "Challenge a granted patent | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
+          "name": "Seek binding, authoritative decisions | IP Australia First Response"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Prevent a patent under examination from being granted",
+      "headline": "Notification of prior art",
       "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and thus cannot be granted.",
       "about": {
         "@type": "Thing",
@@ -70,6 +113,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Quick and free to lodge via IP Australia's online system.\n* Allows you to influence examination without needing to file a formal opposition.\n* No need to be an IP owner or have legal standing.\n* Helps protect your freedom to operate by challenging overly broad or undeserved patents.\n* Can avoid or reduce later costs by addressing issues early.\n* May prompt the examiner to reject or narrow the applicant's patent application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Submissions become public and can be seen by the patent applicant.\n* Mistakes (like poor translations, unclear submission, or weak supporting evidence) may reduce the impact of your submission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The examiner will review the submission and decide what to do.\u00a0\n\n* The examiner raises objections based on your notice, and the application may be rejected if the objections are not overcome.\n* Objections raised due to the S27 submissions may lead to the applicant amending their claims, potentially reducing the scope of protection.\n* The examiner decides your notice doesn't change their view.\n\nIf the examination proceeds and no other issues are found, the application will be accepted, and you may need to consider alternate avenues of opposition if you still believe the patent should not proceed to grant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There's no fee paid to IP Australia to lodge a section 27 notice.\u00a0\n\nIf you chose engage an IP professional, such as a patent attorney, to assist making your case you may incur fees. Actual costs depend on the complexity and level of professional help used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The notice itself can be prepared and lodged quickly, often in a day or two.\u00a0\n\nHowever, identifying good-quality prior art may take more time. Translating and verifying documents may also cause delays. Notices must be lodged after the application is *published,* and up to three months after notice *acceptance*."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S27 notices \u00a0are rarely submitted to IP Australia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Any individual or business; there is no need to own a patent or be directly affected.\n* This can only be submitted within the allowed time window."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You (or your representative) lodging the section 27 notice.\n* The patent applicant (who will be notified of your submission).\n* The IP Australia examiner handling the patent application.\n* Optional: Patent attorney or IP professional assisting with your notice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Identify the patent application number and title.\n* Find examples of prior art that may affect novelty or inventiveness.\n* Ensure the prior art meets the criteria of 'publicly available' before the patent's 'priority date'.\n* Provide documents or reliable links (and translations if not in English).\n* Submit via [IP Australia's eServices](https://portal.ipaustralia.gov.au/login)  portal (use the general eService request or the specific link in AusPat).\n* Keep records of your submission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage",
-      "headline": "Respond to an unjustified threat ",
+      "headline": "Court",
       "alternativeHeadline": "Court",
       "description": "Use the court to respond to a legally unjustified demand or threat ",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
@@ -52,12 +52,45 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.fcfcoa.gov.au/gfl/gfl-fees",
+          "name": "Federal Court and Family Court of Australia | Fees"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
+          "name": "Federal Court of Australia | Fees"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipta.org.au/community/find-an-attorney/",
+          "name": "See an IP Professional"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "Service",
       "name": "Respond to an unjustified threat ",
+      "headline": "Court",
       "description": "Use the court to respond to a legally unjustified demand or threat ",
       "about": {
         "@type": "Thing",
@@ -71,6 +104,92 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Can help stop unjustified threats which may be negatively impacting your business.\n* A court may award compensation if the threat caused damages (for example, loss of sales or customers for your business)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Escalating the issue to court may prompt the other party to take further enforcement actions such as infringement proceedings or to make other counterclaims against you.\n* If the court finds the threat was justified, you may need to pay the other party's costs.\n* Court proceedings are generally public so you should consider any reputational impacts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The possible outcomes will depend on how you respond to the unjustified threat. For example, whether you try to resolve the matter by writing back to the party or decide to start legal action.\u00a0\u00a0\n\nIf you decide to start legal action, possible outcomes include:\u00a0\n\n* The parties resolve their dispute outside of court through mediation, negotiation or another alternative dispute resolution (ADR) process and stop the legal action.\n* A court declares the threat unjustified and might also order the other party to stop making threats and/or pay you damages if you have suffered loss as a result of the threat.\n* A court finds the threat is justified. You may be required to pay the other party's costs and could face other liabilities if it is found that you were infringing their IP rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you decide to start legal action and your case is not resolved outside of court, court proceedings are generally expensive as legal representation is usually involved, and they can take a long time to resolve. Companies, in particular, are generally required by court rules to be represented by legal practitioners.\u202fLegal fees and the cost of expert witnesses usually make up most of the cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Courts can take a long time to resolve disputes. It usually takes months, and sometimes years, to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court.\u00a0\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.\u202f\u202f\u00a0\n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is common for parties to respond to letters of demand (or cease and desist letters) to dispute threats and, where appropriate, allege that they were unjustified. However, it is not very common for parties to start legal action based solely on the unjustified threats. This is because of the risk that the other party is likely to respond by making a claim of infringement. More commonly, a person might decide to make an unjustified threat counterclaim where the other party starts legal action against them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone aggrieved by an unjustified threat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You (the person receiving or aggrieved by the threat).\n* The person or business making the threat.\n* Any legal professionals engaged by you or the other parties involved.\n* A court (Federal Court of Australia or Federal Circuit and Family Court of Australia, or (for copyright matters) the Supreme Court of a State or Territory)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "**Consider whether the threat is unjustified**\u00a0\n\nA key starting point can be to check the IP right registration status of the accuser (except for copyright, which in Australia does not have a formal registration system). You can search the Australian IP registers to check whether they have a current (not pending or expired) registered IP right. For design rights, the status must be listed as 'certified' (not simply registered) before they can enforce their design.\u00a0\n\nReview your own use of the contested IP and consider whether this might amount to infringement.\u00a0\n\nIt can be very difficult to determine whether a threat is unjustified as you will usually need to determine whether the allegations of infringement are accurate. An IP lawyer or IP attorney can help you with considering whether a threat is unjustified and how you might best respond.\u00a0\n\n**Gather evidence**\u00a0\n\nKeep evidence of the threat, including:\u00a0\n\n* copies of the threat and any related emails or letters\n* evidence of how the threat has affected (or might affect) your business.\n\n**Consider getting help from an IP lawyer**\u00a0\n\nStrongly consider the value of speaking to an IP lawyer. An IP lawyer can review the evidence, provide legal advice and represent you in court if the threat cannot be resolved in some other way.\u00a0\u00a0\n\nGoing to court without legal representation is not advisable and, in some cases, a court will require that you have legal representation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

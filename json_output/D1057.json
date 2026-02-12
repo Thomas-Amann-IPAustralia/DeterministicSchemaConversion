@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#webpage",
-      "headline": "Prevent risks to public interest",
+      "headline": "Report IP crime or safety concerns",
       "alternativeHeadline": "Report IP crime or safety concerns",
       "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest",
@@ -52,12 +52,100 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "IP First Response feedback form"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://crimestoppers.com.au/",
+          "name": "Crime Stoppers"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.tga.gov.au/resources/resource/forms/report-perceived-breach-or-questionable-practices",
+          "name": "this page"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.accc.gov.au/about-us/contact-us-or-report-an-issue/report-a-consumer-issue",
+          "name": "this page"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams",
+          "name": "Product and service scams | Scamwatch"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights",
+          "name": "Scams related to managing IP Rights | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption",
+          "name": "How to report fraud and corruption | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.afp.gov.au/crimes/fraud-and-corruption/intellectual-property-crime",
+          "name": "Intellectual Property crime | AFP"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.tga.gov.au/safety/buying-health-products-online-has-risks/counterfeit-fake-medicines-and-medical-devices",
+          "name": "Counterfeit (fake) medicines and medical devices | Therapeutic Goods Administration (TGA)"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.afp.gov.au/news-centre/media-release/man-charged-selling-counterfeit-electronics-gold-coast",
+          "name": "Man charged with selling counterfeit electronics on the Gold Coast | Australian Federal Police"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.arnnet.com.au/article/1256866/aussie-hacker-ordered-to-give-up-1-7m-after-international-investigation.html",
+          "name": "Aussie hacker ordered to give up $1.7M after international investigation - ARN"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "*getting professional assistance with your IP*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "*30 minute consultations with an attorney*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.artslaw.com.au/services/legal-query-form/",
+          "name": "*Arts Law Centre of Australia*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "*Australian Copyright Council*"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Prevent risks to public interest",
+      "headline": "Report IP crime or safety concerns",
       "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
       "about": {
         "@type": "Thing",
@@ -71,6 +159,20 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

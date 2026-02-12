@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage",
-      "headline": "Copyright infringement",
+      "headline": "Infringement 101",
       "alternativeHeadline": "Infringement 101",
       "description": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used.  ",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
@@ -52,12 +52,30 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "feedback form"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#faq"
+        }
+      ]
     },
     {
       "@id": "#the-service",
       "@type": "GovernmentService",
       "name": "Copyright infringement",
+      "headline": "Infringement 101",
       "description": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used.  ",
       "about": {
         "@type": "Thing",
@@ -71,6 +89,60 @@
         "@type": "Country",
         "name": "Australia"
       }
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is copyright infringement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is protected by copyright?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copyright protects original creative works without requiring registration.1 In Australia, copyright protection generally lasts for 70 years after the author's death. Protection is automatic once the work is created and documented.2 Additionally, there is no need to use the \u00a9 symbol next to the protected work.\u00a0\n\nCopyright provides legal protection for people who express their ideas in an original way.3 Ideas alone cannot be protected under copyright law.4\u00a0\n\nCopyright protects several types of creative works, including:\u00a0\n\n* Literary works (like books, articles, computer programs, software code, song lyrics and poems).5\n* Artistic works (like paintings, drawings, sculptures, photographs, maps, diagrams and works of artistic craftsmanship).6\n* Musical works(musical compositions or the notes and arrangement).7\n* Dramatic works (like plays, scripts, dance choreography, mime performances).8\n\nCopyright also protects creations of other technologies, including:\u00a0\n\n* Sound recordings.9\n* Films.10\n* Television and radio broadcasts.11\n* Published editions (that is, the typographical arrangement in a book).12\n\nThe duration of copyright protection can vary depending on the type of copyrighted material.\u00a0\n\nImportantly, copyright material created overseas can be protected in Australia. Suppose the material is made by someone in a country that is a party to a relevant international copyright convention to which Australia is also a party. In that case, it will also be protected in Australia.13"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What rights do copyright owners have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copyright law grants the owner the right to control how their work is used. These rights vary depending on the type of work, but generally include:\u00a0\n\n* **Reproduction:** Making copies of the work.14\n* **Publication:** Making the work publicly available for the first time.15\n* **Public performance:** Performing the work in public.16\n* **Communication to the public:** Transmitting the work electronically (e.g., online).17\n* **Adaptation:** Creating adaptations, such as translations or screen adaptations.18\n\nFor sound recordings, films, and broadcasts, the rights include making copies, playing them in public, and communicating them to the public.19"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When does copyright infringement occur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Australian copyright law grants authors and creators exclusive control over their material.20 Generally, copyright is infringed if a person performs one of the exclusive acts reserved to the copyright owner without the copyright owner's permission, and an exception or limitation does not apply. 21\u00a0\n\nDepending on how the copyright material was used, the following requirements need to be proven to establish infringement.\u00a0\u00a0\n\n**1. Someone reproduces the copyright work**\n\nReproduction involves some form of copying. To establish infringement, three key elements must be shown:\u00a0\n\n1. **The whole or a \"substantial\" part of the copyright-protected work has been used.** Infringement can occur even if a part of it was copied. \"Substantial\" refers to quality rather than quantity. Even a small but important or distinctive part may be substantial. Courts will look at the entirety of the original copyright work and consider whether the quality or essential part of the work was copied.22\n2. **There is a connection between the copyright-protected work and the copied work.** Infringement will generally be found if there was access to the copyright work.23 Independent creation is unlikely to be an infringement.24\n3. **There is an objective similarity between the original copyright-protected work and the copied work.** Courts compare the works to determine if there is an objective similarity. Literal copying is straightforward, but courts may struggle if the similarities are not apparent.25\n\nCopyright law will automatically consider copying to occur when a literary, dramatic or musical work has been made into a sound recording or film26 or converted into digital form.27 Additionally, an artistic work in two-dimensional form will be infringed if it has been made into three dimensions and vice versa.28\u00a0\n\n**2. Someone publishes the work**\n\nInfringement will occur when someone makes something available to the public in Australia that was not previously available.29\u00a0\n\n**3. Someone performs the work in public**\n\nInfringement will happen when someone performs the work for members of the public.\u00a0\u00a0\n\n**4. Someone communicates the work to the public**\n\nInfringement will occur if someone makes the work available to the public by uploading it to the Internet, for example.30\u00a0\n\n**5. Someone copies a sound recording, film or broadcast**\n\nInfringement occurs when someone makes a copy of a sound recording or film and plays or shows it in public.31"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is using copyright material allowed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is important to understand what does not constitute infringement. Notably, when copyright protection expires, the material enters what is known as the \"public domain.\" These works can be freely used.\u00a0\n\nThe Copyright Act also provides numerous defences and exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. These exceptions permit \"fair dealings\" with copyright material for particular purposes, including:\u00a0\n\n* research or study32\n* criticism or review33\n* reporting of news34\n* giving of professional legal advice35\n* parody and satire36\n* making accessible format copies by, or on behalf of, a person with a disability.37\n\nDetermining copyright infringement can be complex and often requires legal expertise. Experts can help work out exactly what is protected by copyright and how it has been copied. Additionally, they can assess the available defences and exceptions under the Copyright Act that can affect the outcome. This guide provides a starting point, but qualified professionals should assess specific cases.\u00a0\n\n[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)\n\n1. Copyright Act 1968 (Cth) ('1968 Act').\n2. Ibid 22(1).\n3. Ibid 32.\n4. Skybase Nominees Pty Ltd v Fortuity Pty Ltd (1996) 36 IPR 529, 531.\n5. 1968 Act (no 1) s 32(1) and 10(1) (definition of \"literary work\"). Cf. Fairfax v Reed International\n6. 1968 Act (no 1) s 32(1) and 10(1) (definition of \"artistic work\").\n7. 1968 Act (no 1) s 32(1) and 10(1) (definition of \"musical work\").\n8. 1968 Act (no 1) s 32(1) and 10(1) (definition of \"dramatic work\").\n9. Ibid s 89.\n10. Ibid s 90.\n11. Ibid s 91.\n12. Ibid s 92.\n13. Copyright (International Protection) Regulations 1969 (Cth) reg 4.\n14. 1968 Act (no 1) s 31 for Part III works and s 85-88 for Part IV works.\n15. 1968 Act (no 1) s 31\n16. 1968 Act (no 1) s 31 for Part III works and s 85 and 86 for sound recordings and films respectively for being played in public.\n17. 1968 Act (no 1) s 31 for Part III works and s 85-87 for Part IV works.\n18. 1968 Act (no 1) s 31 for Part III works.\n19. See 1968 Act (no 1) s 85-87.\n20. 1968 Act (no 1) ss 31, 85-88.\n21. Ibid s 36 and 101.\n22. Ladbroke (Football) Ltd v William Hill (Football) Ltd [1964] 1 WLR 273 and IceTV Pty Limited v Nine Network Australia Pty Limited\\_ [2009] HCA 14.\n23. Barret Property Group Pty Ltd v Dennis Family Homes Pty Ltd (2011) 91 IPR 1.\n24. Cf. Francis Day & Hunter v. Bron [1963] Ch 587.\n25. See Zeccola v Universal City Studios Inc (1982) 46 ALR 189.\n26. 1968 Act (no 1) s 21(1)\n27. Ibid s21(1A).\n28. Ibid s 21(3).\n29. Avel Pty Ltd v Multicoin Amusement Pty Ltd [1990] HCA 58.\n30. 1968 Act (no 1) s 10(1) (definition of \"communicate\").\n31. Ibid s 85-86.\n32. Ibid s 40 and 103C for creative works and audio-visual works respectively.\n33. Ibid s 41 and 103A for creative works and audio-visual works respectively.\n34. Ibid s 42 and 103B for creative works and audio-visual works respectively.\n35. Ibid s 43 and 104 for creative works.\n36. Ibid s 41A and 103AA for creative works and audio-visual works respectively.\n37. Ibid s 113E and 113F for creative works and audio-visual works respectively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",

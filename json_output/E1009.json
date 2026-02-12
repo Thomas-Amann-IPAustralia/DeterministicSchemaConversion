@@ -4,7 +4,7 @@
     {
       "@type": "WebPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip#webpage",
-      "headline": "Can I buy, sell or license IP?",
+      "headline": "Selling or licensing",
       "alternativeHeadline": "Selling or licensing",
       "description": "",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip",
@@ -52,7 +52,34 @@
       },
       "mainEntity": {
         "@id": "#the-service"
-      }
+      },
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip",
+          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-buy-sell-or-license-ip"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+          "name": "*IP First Response feedback form*"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
+          "name": "How to commercialise my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement",
+          "name": "Agree to a formal commercial arrangement | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+          "name": "Obtain legal advice on enforcement options | IP Australia First Response"
+        }
+      ]
     },
     {
       "@id": "#the-service",
@@ -61,6 +88,7 @@
         "HowTo"
       ],
       "name": "Can I buy, sell or license IP?",
+      "headline": "Selling or licensing",
       "description": "",
       "about": {
         "@type": "Thing",
@@ -70,8 +98,30 @@
         "@type": "Person",
         "name": "Self-Help"
       },
-      "articleBody": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it -- It's intangible.\u00a0\u00a0\n\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\u00a0\n\nHere are some examples of what you may choose to do:\u00a0\n\n* Let other people use it, either for a fee (called 'licensing') or for no cost.\n* Set rules around how it's used. For example, you can set rules on how it can be used only in certain places, on certain types of products, or in certain ways.\n* You can sell it on its own or as part of your business.\n* Make an offer to buy someone else's IP.\n* If you don't use your IP and no longer wish pay fees to IP Australia to keep it, you can let the ownership lapse.\n\nRegistered IP (such as trade marks, patents, design rights and PBR) serves as a proof of your ownership, and what that ownership covers, much like a deed to a house clearly states the boundaries. This makes it much easier for everyone to be clear about who owns an IP right.\u00a0\n\nIn all these situations, you may wish to think carefully about your business plans, and seek independent help, especially to work out the value of IP you are thinking about, and any conditions you might consider about its usage.\u00a0\n\nMany of these actions are done through contracts with other businesses. It can be vital to get an experienced professional to help you draft the agreement - such as IP lawyers - to make sure your rights are protected and no important details are missed.\u00a0\n\n### See also\n\n[How to commercialise my IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.) \u00a0\n\n[Agree to a formal commercial arrangement | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement)\u00a0\n\n[Obtain legal advice on enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "articleBody": "Intellectual property is a type of property, just like a house or a car. The only difference is that you can't touch it -- It's intangible.\u00a0\u00a0\n\nLike any property, intellectual property can be bought, sold, or rented (called 'licensing' when referring to IP).\u00a0\n\nHere are some examples of what you may choose to do:\u00a0\n\n* Let other people use it, either for a fee (called 'licensing') or for no cost.\n* Set rules around how it's used. For example, you can set rules on how it can be used only in certain places, on certain types of products, or in certain ways.\n* You can sell it on its own or as part of your business.\n* Make an offer to buy someone else's IP.\n* If you don't use your IP and no longer wish pay fees to IP Australia to keep it, you can let the ownership lapse.\n\nRegistered IP (such as trade marks, patents, design rights and PBR) serves as a proof of your ownership, and what that ownership covers, much like a deed to a house clearly states the boundaries. This makes it much easier for everyone to be clear about who owns an IP right.\u00a0\n\nIn all these situations, you may wish to think carefully about your business plans, and seek independent help, especially to work out the value of IP you are thinking about, and any conditions you might consider about its usage.\u00a0\n\nMany of these actions are done through contracts with other businesses. It can be vital to get an experienced professional to help you draft the agreement - such as IP lawyers - to make sure your rights are protected and no important details are missed.",
       "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I buy, sell or license IP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Want to give us feedback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+          }
+        }
+      ]
     },
     {
       "@id": "https://www.ipaustralia.gov.au/#organization",
