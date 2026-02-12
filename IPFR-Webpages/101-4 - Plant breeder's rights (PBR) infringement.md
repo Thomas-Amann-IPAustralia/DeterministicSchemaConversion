@@ -82,6 +82,8 @@ Imagine Crisp Orchards has developed and registered a new apple variety with the
 
 Determining patent infringement can be complex and often requires expertise in both legal and plant variety matters. For infringement to happen, the PBR must be legally valid. PBRs can be challenged if, for example, the variety is not new, distinct, uniform and stable (for more information, see [What are plant breeder's rights](https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights) ).26 An expert can also assess the available defences that can affect the outcome. This guide provides a starting point, but qualified professionals should assess specific cases.
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 \
                                                                                                                                                                                                                                                                                                  
 

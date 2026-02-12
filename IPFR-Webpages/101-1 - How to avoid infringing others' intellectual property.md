@@ -67,6 +67,8 @@ Professional advice is especially valuable in specific situations. Seeking early
 * You are developing products for highly competitive markets.
 * You receive a letter of demand or a 'cease and desist' letter.
 
+[![Deciding proactive steps you can take to avoid future IP headaches? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Proactive%20Navigator%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 ### Want to give us feedback?
 
 Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\

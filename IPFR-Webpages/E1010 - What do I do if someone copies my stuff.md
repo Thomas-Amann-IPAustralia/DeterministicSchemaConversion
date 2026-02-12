@@ -30,6 +30,8 @@ To figure out what's going on, many people start by: 
 
 You may wish to speak with a legal professional to assess whether the other person's behaviour may legally amount to infringement. Qualified experts for IP enforcement include lawyers who specialise in IP, as well as registered trade mark and patent attorneys. 
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 ### See also
 
 * [Someone Is Using My IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip)

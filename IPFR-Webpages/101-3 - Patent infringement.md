@@ -60,6 +60,8 @@ It is important to understand what does not constitute infringement. The *Patent
 
 Navigating patent infringement can be complex and often requires legal expertise. Experts can help work out exactly what a patent protects. They can interpret the legal language in the patent claims. Additionally, for infringement to happen, the patent must be legally valid. Patents can be challenged if, for example, the invention is not new or innovative. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 \
 
 1. *Patents Act 1990* (Cth) s 18.

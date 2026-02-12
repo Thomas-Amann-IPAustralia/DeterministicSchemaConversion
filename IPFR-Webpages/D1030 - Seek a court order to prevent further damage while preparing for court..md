@@ -34,7 +34,9 @@ An **interim injunction** is a type of injunction which can be granted without
 **Search order** \
 A search order (sometimes called an *Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.  
 
-These are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.  
+These are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.
+
+[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

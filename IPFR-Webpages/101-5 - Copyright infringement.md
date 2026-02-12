@@ -101,6 +101,8 @@ The Copyright Act also provides numerous defences and exceptions that enable som
 
 Determining copyright infringement can be complex and often requires legal expertise. Experts can help work out exactly what is protected by copyright and how it has been copied. Additionally, they can assess the available defences and exceptions under the Copyright Act that can affect the outcome. This guide provides a starting point, but qualified professionals should assess specific cases. 
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 1. Copyright Act 1968 (Cth) ('1968 Act').
 2. Ibid 22(1).
 3. Ibid 32.

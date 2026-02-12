@@ -16,8 +16,6 @@ Copyright, however, can be protected in several countries under specific conditi
 
 **For example,** Alec discovers that someone has been reproducing his painting in the UK. He could take action in the UK for copyright infringement of his artistic work, as both Australia and the UK recognise the protection of copyright in each other's countries.
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
-
 ### Key considerations for overseas infringement
 
 If you find that someone is using your intellectual property overseas, consider:
@@ -59,6 +57,8 @@ When addressing overseas infringement, you have a range of options, each carryin
 **Customs enforcement.**Countries like Australia allow IP rights holders to register with customs authorities, which enables officials to identify and seize infringing goods at the border. This can be particularly effective for physical products being imported.
 
 **Legal proceedings.**Court action is appropriate when the infringement is causing significant commercial damage or when other methods have been unsuccessful. Legal proceedings should be a last resort due to their costs, complexity, and uncertainty in foreign legal systems.
+
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
 ### Practical tips
 

@@ -45,6 +45,8 @@ The common law action of passing off protects the goodwill or reputation associa
 
 Navigating  the protection of unregistered marks can be complex and often requires legal expertise. Given that unregistered trade marks are not filed with IP Australia, experts can help work out what is protected and how it might be misused. Court actions for passing off and ACL violations can be more complex, time-consuming, and costly. Additionally, these actions may also be pursued in conjunction with trade mark infringement cases. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases. 
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
  
 
 1. Con*Agra Inc v McCain Foods (Aust) Pty Ltd*(1992) FCR 302, 340 (Lockhart J).

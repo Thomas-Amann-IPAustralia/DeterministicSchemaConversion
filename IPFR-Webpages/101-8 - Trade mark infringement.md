@@ -107,6 +107,8 @@ It is essential to recognise that trade mark protection has limitations. Let's s
 
 Navigating trade mark infringement can be complex and often requires legal expertise. Additionally, the registered trade mark must be legally valid. A registered trade mark may be challenged in court and sought to be cancelled during a claim of infringement. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
                                                                                                                                                                                                                                                                                                  
 
 1. *Trade Marks Act 1995*(Cth) s 120 (*'1995 Act'*).

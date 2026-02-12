@@ -74,6 +74,8 @@ It is important to understand what does not constitute infringement. The *Design
 
 Navigating design infringement can be complex and often requires legal expertise. The scope of protection, the similarity between designs and available defences can all affect the outcome. Additionally, for infringement to occur, the registered design must be legally valid. Registered designs can be re-examined by IP Australia or challenged in court if, for example, it is not new or distinctive. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.
 
+[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+
 \
 
 1. *Designs Act 2003* (Cth) s 71 (*'2003 Act'*).
