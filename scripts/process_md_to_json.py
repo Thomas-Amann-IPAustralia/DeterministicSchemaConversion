@@ -2,14 +2,10 @@ import csv
 import json
 import os
 import re
-import sys
-from bs4 import BeautifulSoup
-import markdown
 
 # --- CONFIGURATION ---
 CSV_PATH = 'metatable-Content.csv'
 MD_DIR = 'IPFR-Webpages'
-HTML_DIR = 'IPFR-Webpages-html'
 OUTPUT_DIR = 'json_output'
 
 # Ensure output directory exists
@@ -48,31 +44,21 @@ USAGE_INFO_NODE = {
 }
 
 # --- FILE INDEXING SYSTEM ---
-# We preload all filenames to handle case-sensitivity and naming variations.
-
 MD_FILES_INDEX = {}
-HTML_FILES_INDEX = {}
 
 def build_file_indices():
-    """Scans directories and builds a lowercase map for robust lookup."""
+    """Scans MD directory and builds a lowercase map for robust lookup."""
     print(f"Indexing {MD_DIR}...")
     if os.path.exists(MD_DIR):
         for f in os.listdir(MD_DIR):
-            MD_FILES_INDEX[f.lower()] = f
+            if f.lower().endswith('.md'):
+                MD_FILES_INDEX[f.lower()] = f
         print(f"  > Indexed {len(MD_FILES_INDEX)} Markdown files.")
     else:
         print(f"  > CRITICAL WARNING: Directory {MD_DIR} does not exist.")
 
-    if os.path.exists(HTML_DIR):
-        for f in os.listdir(HTML_DIR):
-            HTML_FILES_INDEX[f.lower()] = f
-
-def find_files_robust(udid, canonical_url):
-    """
-    Finds files by scanning the index for UDID or Slug matches.
-    Case-insensitive.
-    """
-    # 1. Define Search Keys
+def find_md_file_robust(udid, canonical_url):
+    """Finds MD file by scanning the index for UDID or Slug matches (Case-Insensitive)."""
     udid_key = udid.lower() if udid else "xxxxx"
     
     slug = ""
@@ -81,14 +67,13 @@ def find_files_robust(udid, canonical_url):
     
     match_md = None
 
-    # 2. Search Strategy
-    # Priority A: Exact Filename Match (e.g., "b1000.md")
+    # Priority A: Exact Filename Match
     if f"{udid_key}.md" in MD_FILES_INDEX:
         match_md = MD_FILES_INDEX[f"{udid_key}.md"]
     elif f"{slug}.md" in MD_FILES_INDEX:
         match_md = MD_FILES_INDEX[f"{slug}.md"]
     
-    # Priority B: Contains UDID (e.g., "B1000_Title.md")
+    # Priority B: Contains UDID
     if not match_md:
         for lower_name, real_name in MD_FILES_INDEX.items():
             if udid_key in lower_name:
@@ -102,23 +87,67 @@ def find_files_robust(udid, canonical_url):
                 match_md = real_name
                 break
 
-    # 3. Resolve HTML Pair
-    path_md = None
-    path_html = None
+    return os.path.join(MD_DIR, match_md) if match_md else None
 
-    if match_md:
-        path_md = os.path.join(MD_DIR, match_md)
-        # Try to find corresponding HTML (same basename)
-        base_name = os.path.splitext(match_md)[0]
-        html_candidate = f"{base_name}.html"
-        
-        if html_candidate.lower() in HTML_FILES_INDEX:
-            real_html_name = HTML_FILES_INDEX[html_candidate.lower()]
-            path_html = os.path.join(HTML_DIR, real_html_name)
+# --- MARKDOWN PARSER ---
+
+def parse_markdown_sections(md_text):
+    """
+    Parses markdown into a list of structured sections.
+    Returns: [{'level': int, 'title': str, 'content': str, 'raw_lines': []}, ...]
+    """
+    sections = []
+    lines = md_text.split('\n')
     
-    return path_md, path_html
+    # Header regex: # Title, ## Title, etc.
+    header_pattern = re.compile(r'^(#+)\s+(.*)')
+    
+    # Initial buffer for content before the first header (Intro)
+    current_section = {
+        'level': 0, 
+        'title': 'Intro', 
+        'raw_lines': []
+    }
+    
+    for line in lines:
+        match = header_pattern.match(line)
+        if match:
+            # 1. Finalize the previous section
+            if current_section['raw_lines'] or current_section['title'] != 'Intro':
+                current_section['content'] = '\n'.join(current_section['raw_lines']).strip()
+                sections.append(current_section)
+            
+            # 2. Start new section
+            current_section = {
+                'level': len(match.group(1)),
+                'title': match.group(2).strip(),
+                'raw_lines': []
+            }
+        else:
+            current_section['raw_lines'].append(line)
+            
+    # Finalize the last section
+    if current_section['raw_lines'] or current_section['title']:
+        current_section['content'] = '\n'.join(current_section['raw_lines']).strip()
+        sections.append(current_section)
+        
+    return sections
 
-# --- HELPER FUNCTIONS ---
+def extract_links(text):
+    """Extracts [Text](URL) from markdown content."""
+    # Regex for standard markdown links
+    return re.findall(r'\[([^\]]+)\]\(([^)]+)\)', text)
+
+def determine_archetype_logic(archetype_raw):
+    arch = archetype_raw.lower()
+    if "self-help" in arch:
+        return ["Article", "HowTo"], True, False
+    elif "government service" in arch:
+        return "GovernmentService", False, True
+    elif "commercial" in arch or "non-government" in arch:
+        return "Service", False, False
+    else:
+        return "Service", False, False
 
 def clean_key(key):
     return key.replace('\ufeff', '').strip()
@@ -135,59 +164,7 @@ def load_metatable(csv_path):
         print(f"Error loading CSV: {e}")
     return data
 
-def extract_faqs_from_html(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
-    faqs = []
-    candidates = soup.find_all(['h2', 'h3', 'strong'])
-    
-    for tag in candidates:
-        text = tag.get_text().strip()
-        if text.endswith('?'):
-            answer_parts = []
-            curr = tag.find_next_sibling()
-            while curr and curr.name not in ['h2', 'h3', 'h1']:
-                answer_parts.append(curr.get_text().strip())
-                curr = curr.find_next_sibling()
-            
-            answer_text = " ".join(answer_parts).strip()
-            if answer_text:
-                faqs.append({
-                    "@type": "Question",
-                    "name": text,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": answer_text
-                    }
-                })
-    return faqs
-
-def extract_content_body(md_content):
-    lines = md_content.split('\n')
-    body_lines = []
-    capturing = False
-    for line in lines:
-        if "What is it?" in line:
-            capturing = True
-            continue
-        if capturing:
-            body_lines.append(line)
-            
-    if not body_lines and len(lines) > 2:
-        return "\n".join(lines[2:])
-    return "\n".join(body_lines).strip()
-
-def determine_archetype_logic(archetype_raw):
-    arch = archetype_raw.lower()
-    if "self-help" in arch:
-        return ["Article", "HowTo"], True, False
-    elif "government service" in arch:
-        return "GovernmentService", False, True
-    elif "commercial" in arch or "non-government" in arch:
-        return "Service", False, False
-    else:
-        return "Service", False, False
-
-# --- MAIN GENERATOR ---
+# --- MAIN LOGIC ---
 
 def process_file(row):
     udid = row.get('UDID')
@@ -198,37 +175,83 @@ def process_file(row):
     provider_name = row.get('Provider', 'IP Australia')
     archetype_raw = row.get('Archectype', 'Service').strip()
     
-    # 1. Robust File Finding
-    md_path, html_path = find_files_robust(udid, canonical_url)
+    # 1. Find MD File
+    md_path = find_md_file_robust(udid, canonical_url)
     
-    md_content = ""
-    html_content = ""
+    if not md_path:
+        print(f"Skipping {udid}: MD file not found.")
+        return
 
-    # 2. Content Extraction (With Failover)
-    if md_path:
-        with open(md_path, 'r', encoding='utf-8') as f:
-            md_content = f.read()
-    else:
-        print(f"Skipping {udid}: MD file not found in {MD_DIR} (Slug: {canonical_url.split('/')[-1] if canonical_url else 'None'})")
-        return # Cannot proceed without at least MD or HTML
+    with open(md_path, 'r', encoding='utf-8') as f:
+        md_text = f.read()
 
-    if html_path:
-        with open(html_path, 'r', encoding='utf-8') as f:
-            html_content = f.read()
+    # 2. Parse Markdown Structure
+    sections = parse_markdown_sections(md_text)
 
-    # Determine Logic
+    # 3. Extract Specific Components
+    
+    # A. FAQs: Any header ending in '?' (except 'What is it?')
+    faqs = []
+    for sec in sections:
+        clean_title = sec['title'].strip()
+        if clean_title.endswith('?') and "what is it" not in clean_title.lower():
+            if sec['content']: # Only if there is an answer
+                faqs.append({
+                    "@type": "Question",
+                    "name": clean_title,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": sec['content']
+                    }
+                })
+
+    # B. Article Body: Content under "What is it?"
+    article_body = None
+    for sec in sections:
+        if "what is it" in sec['title'].lower():
+            article_body = sec['content']
+            break
+    # Fallback: if no "What is it?", use the Intro or first content section
+    if not article_body and len(sections) > 0:
+        # Use the first section that isn't the title itself or empty
+        for sec in sections:
+            if sec['content'] and sec['title'] != title:
+                article_body = sec['content']
+                break
+
+    # C. Headline: Text with "##" in front (Level 2 header)
+    extracted_headline = None
+    for sec in sections:
+        if sec['level'] == 2:
+            extracted_headline = sec['title']
+            break
+    
+    # D. Related Links (Extracted from all content)
+    related_links = []
+    seen_urls = set()
+    all_content = "\n".join([s['content'] for s in sections])
+    found_links = extract_links(all_content)
+    
+    for link_text, link_url in found_links:
+        # Simple filter to avoid mailto, anchor links, or duplicates
+        if link_url.startswith('http') and link_url not in seen_urls:
+            related_links.append({
+                "@type": "WebPage",
+                "url": link_url,
+                "name": link_text
+            })
+            seen_urls.add(link_url)
+
+    # 4. Construct JSON Graph
     schema_type, is_self_help, is_gov_service = determine_archetype_logic(archetype_raw)
     
-    faqs = extract_faqs_from_html(html_content) if html_content else []
-    article_body = extract_content_body(md_content) if is_self_help else None
-
-    # --- BUILD GRAPH ---
     graph = []
 
+    # NODE 1: WebPage
     webpage_node = {
         "@type": "WebPage",
         "@id": f"{canonical_url}#webpage",
-        "headline": title,
+        "headline": extracted_headline if extracted_headline else title,
         "alternativeHeadline": row.get('Overtitle'),
         "description": description,
         "url": canonical_url,
@@ -260,15 +283,21 @@ def process_file(row):
         "mainEntity": {"@id": "#the-service"}
     }
 
+    if related_links:
+        webpage_node["relatedLink"] = related_links
+
+    # Split Personality Logic
     if not is_self_help and faqs:
         webpage_node["hasPart"] = [{"@id": "#faq"}]
 
     graph.append(webpage_node)
 
+    # NODE 2: Service / Article
     service_node = {
         "@id": "#the-service",
         "@type": schema_type,
         "name": title,
+        "headline": extracted_headline if extracted_headline else title, # Fallback to CSV title
         "description": description,
         "about": {"@type": "Thing", "name": row.get('Relevant-ip-right')}
     }
@@ -286,13 +315,14 @@ def process_file(row):
         service_node["provider"] = {"@type": prov_type, "name": provider_name}
 
     if is_self_help:
-        service_node["articleBody"] = article_body
+        service_node["articleBody"] = article_body if article_body else "Content not found."
         service_node["step"] = "xXx_PLACEHOLDER_xXx" 
     else:
         service_node["areaServed"] = {"@type": "Country", "name": "Australia"}
 
     graph.append(service_node)
 
+    # NODE 3: FAQPage
     if faqs:
         faq_node = {
             "@id": "#faq",
@@ -301,8 +331,10 @@ def process_file(row):
         }
         graph.append(faq_node)
 
+    # NODE 4: Organization
     graph.append(IP_AUSTRALIA_NODE)
 
+    # Save
     final_json = {
         "@context": "https://schema.org",
         "@graph": graph
@@ -315,10 +347,8 @@ def process_file(row):
 # --- EXECUTION ---
 
 if __name__ == "__main__":
-    # 1. Build Index
     build_file_indices()
     
-    # 2. Process
     print("Loading Metadata...")
     rows = load_metatable(CSV_PATH)
     print(f"Found {len(rows)} entries in CSV.")
@@ -329,4 +359,4 @@ if __name__ == "__main__":
             process_file(row)
             processed_count += 1
             
-    print(f"Processing Complete. Attempted: {processed_count}")
+    print(f"Processing Complete. Processed {processed_count} files.")
