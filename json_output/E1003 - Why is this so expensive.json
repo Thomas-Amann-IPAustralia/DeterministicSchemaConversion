@@ -1,0 +1,204 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/why-so-expensive#webpage",
+  "headline": "Why is this so expensive?",
+  "alternativeHeadline": "Costs of IP",
+  "description": "xXx_Err-PLACEHOLDER_xXx",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/why-so-expensive",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "E1003"
+  },
+  "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-09-11",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
+  "datePublished": "2025-09-11",
+  "dateModified": "2025-09-11",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Why is this so expensive?",
+      "description": "Enforcing your intellectual property (IP) is about stopping suspected or alleged infringement and, in some cases, seeking damages. Costs usually rise with urgency, complexity and the number of parties involved.\nYou need to show that you own the right and that the other party's conduct likely infringes it. That can mean searches, collecting screenshots or records, and getting expert views. Each step takes time and money.\nLegal help adds cost. Many steps use specialist lawyers or IP attorneys to provide opinions, draft letters, negotiate, prepare evidence and, if needed, file hearing or court documents. Professional time is charged, and costs can rise with the number of issues, documents and parties involved.\nFormal dispute resolution processes such as court proceedings or administrative hearings can be complex. Filing and serving documents, discovery, witness statements, expert reports and hearings all often add time and cost. Even simple-looking disputes can become detailed once evidence and procedure are involved.\nUrgency can increase cost. If you need quick orders (for example, an interlocutory injunction), the team may need to work fast and at short notice. Compressing months of tasks into days can be costly.\nTechnical or cross-border issues add to the bill. Patent and design disputes can need technical experts. If the problem spans other countries, you may need local advisers, as Australian rights mainly apply in Australia. IP rights are territorial, so enforcement depends on each country's system.\nMultiple sellers and platforms multiply effort. Stopping many small sellers, listings or shipments can mean repeating steps across marketplaces and channels. That repeat work adds up because each marketplace has its own process.\nCourt cases can lead to an order that you pay some of the other side's legal costs if you lose.\n\n This usual rule, called 'costs follow the event', is a normal feature of Australian court proceedings, and it is one reason parties seek to settle earlier.\nLower-cost paths exist.\n\n Many disputes resolve through negotiation or mediation (which is a form of alternative dispute resolution, 'ADR'), including with the World Intellectual Property Organization (WIPO) Arbitration and Mediation Center or accredited mediators within Australia. These still need preparation but can be faster and less costly than going to court. The Federal Court of Australia can also order mediation that may reduce time and cost.\nSeveral things can influence your spend. Clear records, sensible contracts and early, calm contact can sometimes reduce effort. Having registered rights can make proof quicker and provide a stronger negotiating position.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/why-so-expensive"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+      "name": "All enforcement options | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "Resolve conflicts with the help of experienced facilitators   | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+      "name": "Someone is using my IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+      "name": "Access help tailored to resolve business disputes  | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.wipo.int/amc/en/",
+      "name": "Alternative Dispute Resolution | WIPO AMC"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/services/ADR/mediation",
+      "name": "Mediation | Federal Court of Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
+      "name": "Costs Practice Note (GPN-COSTS) | Federal Court of Australia"
+    }
+  ]
+}

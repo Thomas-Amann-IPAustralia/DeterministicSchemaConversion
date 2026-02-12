@@ -1,0 +1,300 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ask-your-suppliers-and-sellers-help-protect-your-ip#webpage",
+  "headline": "Ask your suppliers and sellers to help protect your IP ",
+  "alternativeHeadline": "Support from your vendors",
+  "description": "Contact businesses you work with to raise concerns about suspected IP infringement and ask for their help preventing further infringement.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ask-your-suppliers-and-sellers-help-protect-your-ip",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "D1040"
+  },
+  "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2025-07-28",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
+  "datePublished": "2025-07-28",
+  "dateModified": "2025-09-05",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "All Intellectual Property Rights",
+    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Article",
+      "name": "Ask your suppliers and sellers to help protect your IP ",
+      "description": "One way to target infringing products is contacting the businesses that make, ship, or sell the suspected infringing goods and asking them to take action. These 'intermediaries' might include manufacturers, wholesalers, retailers, suppliers or importers.\nSeveral intermediaries operate along a product's supply chain and can be used to help prevent infringement. If third party businesses are inadvertently involved in facilitating IP infringement, they may be willing to cease this activity once they are made aware. This could include stopping things like manufacturing the goods, stocking or advertising them, handling payments, repairing items, or delivering orders.\nYou might wish to consider sending a polite letter, call, or visit in person to explain your rights, provide evidence, and ask the intermediary to stop production or sales. Clear, factual information can persuade them to cooperate.\nThis approach is informal and voluntary, but can be effective as businesses generally prefer to avoid risks. In some cases, intermediaries may be liable for facilitating IP infringing activity, though a legal professional will be able to advise you on whether this relates to your situation.\nPlease note:\n\nIf infringement is occurring on an online e-commerce or advertising platform, you can consider: \n\nStop infringement facilitated online | IP Australia First Response\n\n.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ask-your-suppliers-and-sellers-help-protect-your-ip"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Ask your suppliers and sellers to help protect your IP ",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Proof of your IP right (registration certificate or other documentation)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Clear examples of the suspected 'infringing' product (photos, samples, purchase receipt)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Contact details for the intermediary."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "A concise letter that explains your rights and the action you are requesting, and attaches the relevant evidence."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "It is generally considered a good practice to keep copies of all correspondence and evidence."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Low or no formal costs.\n\n* Fast way to remove potentially infringing goods from shelves.\n\n* May reveal useful details about the source of the goods.\n\n* Less publicity compared with some other options.\n\n* Can stop further losses before they grow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Contacting anyone about infringement without solid evidence may expose you to claims ofunjustified threats. Depending on your approach, you may be seen to be engaging in unfair business practices\n\n* The intermediary may be complicit or may alert the suspected infringer, giving them time to hide or destroy evidence.\n\n* Taking a firm stance may strain or end a valuable commercial relationship.\n\n* Intermediaries may seek compensation for lost stock if your claim is unfounded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* The intermediary stops making, importing or selling the goods. This may include a voluntary product recall to remove existing stock from stores.\n\n* The intermediary might decline or refuse to act. If no agreement is reached, you may decide to pursue other enforcement options.\n\n* The intermediary might provide details of their supplier, helping you act 'upstream' or investigate suspected infringement further.\n\n* You and the suspected infringer agree to a commercial solution, such as licence terms or re\u2011labelling to avoid confusion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are no set fees involved in using this option. Expenses might involve preparing evidence, drafting letters and any professional advice you choose to seek.\nIf a voluntary recall is agreed, the intermediary normally covers recall logistics, but you may need to negotiate who pays for shipping or disposal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initial contact can be made quickly. Cooperative intermediaries may be able to remove goods within a week, although this will depend on the nature of the infringement and logistical details. If negotiations are needed, you might expect anywhere from weeks to months before a solution is agreed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As this process is directly between businesses, IP Australia cannot estimate how often this option is used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A person who owns the IP right or an authorised user,\n\n* Who has evidence that infringement has occurred, and\n\n* Can identify an intermediary whose actions may be able to prevent further infringement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* You (as the IP rights holder or authorised user).\n\n* The intermediary (manufacturer, wholesaler, retailer, supplier, importer etc).\n\n* Optional: Legal professionals such as a lawyer or patent or trade\u2011mark attorney."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+      "name": "Stop infringement facilitated online | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+      "name": "unjustified threats"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+      "name": "Help customers differentiate between your products and lookalikes | IP Australia First Response"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
+      "name": "How to prevent infringement of my IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.productsafety.gov.au/business/recall-an-unsafe-product",
+      "name": "Recall an unsafe product | ACCC Product Safety"
+    }
+  ]
+}

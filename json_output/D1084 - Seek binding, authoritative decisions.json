@@ -1,0 +1,251 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#webpage",
+  "headline": "Seek binding, authoritative decisions",
+  "alternativeHeadline": "Court - PBR",
+  "description": "Escalate a wide range of PBR matters to court.",
+  "url": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "UDID",
+    "value": "D1084"
+  },
+  "inLanguage": "en-AU",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyrightYear": "2026",
+  "copyrightHolder": {
+    "@id": "https://www.ipaustralia.gov.au"
+  },
+  "creditText": "Source: IP Australia - IP First Response",
+  "sdPublisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia"
+  },
+  "sdDatePublished": "2026-01-23",
+  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
+  "datePublished": "2026-01-23",
+  "dateModified": "2026-02-03",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Australian Small Business Owners",
+    "alternateName": [
+      "Startups",
+      "Entrepreneurs",
+      "SME",
+      "Spinout Company",
+      "Startup",
+      "Spinout",
+      "Small to Medium Enterprise",
+      "Sole Trader"
+    ],
+    "geographicArea": {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  },
+  "usageInfo": {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Plant Breeders' Right",
+    "sameAs": "https://www.wikidata.org/wiki/Q695112"
+  },
+  "citation": [
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "name": "Plant Breeder\u2019s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    }
+  ],
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "website content owner",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Australian Government"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "IP First Response",
+    "url": "https://ipfirstresponse.ipaustralia.gov.au",
+    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+  },
+  "mainEntity": [
+    {
+      "@id": "#the-service",
+      "@type": "Service",
+      "name": "Seek binding, authoritative decisions",
+      "description": "If other efforts to resolve a dispute are unsuccessful or not appropriate, you may consider starting a legal claim in court. Court proceedings are usually a last resort. They can be expensive, time consuming and stressful, and the outcome is not guaranteed to be in your favour.\n\nIt is prudent to seek legal advice before starting legal proceedings. You will likely also need the assistance of a lawyer with experience in IP.\n\nCourt proceedings for plant breeder's rights (PBRs) may involve:\n* allegations of suspected infringement of a PBR\n* challenges to the validity of a granted PBR (sometimes raised as a counterclaim in infringement proceedings).\nIn Australia, PBR disputes are heard in the Federal Court of Australia or the Federal Circuit and Family Court of Australia (Division 2). A court can determine if a PBR has been infringed, whether the PBR is valid, and make binding orders to resolve the dispute.\n\nPBR court cases can involve a search order (\n\nAnton Piller order).\n\nThis is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed. For more detailed information about an Anton Piller order, consider seeking professional advice.\n\nPBR court cases are rare. This means there is limited legal precedent for judges and lawyers to draw on. This makes it harder to build a strong case, increases potential costs, and adds uncertainty to how a judge might rule.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "provider": {
+        "@type": "NGO",
+        "name": "Court"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to proceed with Seek binding, authoritative decisions",
+      "about": {
+        "@id": "#the-service"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "There are some things you might consider before you proceed with legal action in a PBR matter."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Find an IP lawyer for advice and representationCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Consider your goals before deciding to start a legal claimGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Consider the impact of publicityCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "xXx_PLACEHOLDER_xXx",
+          "text": "Gather all your documentsBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that helps to show what was sold, grown or distributed. It can be beneficial to organise these materials so that they show dates, sources, and how the suspected copying connects back to your variety, as courts often rely on orderly, traceable evidence. You can give these to your lawyer to review."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "about": {
+        "@id": "#the-service"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Court decisions are binding and enforceable.\n\n* You may be awarded a financial remedy to compensate you for the loss suffered because of the infringement.\n\n* A court can order an infringer to stop infringing your PBR.\n\n* Court proceedings allow cross-examination of witnesses and expert evidence.\n\n* Multiple related issues (such as validity and infringement) can be resolved in one case.\n\n* The seriousness and cost of court proceedings may encourage settlement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Outcomes are unpredictable and may not align with business interests.\n\n* You may have to pay some or all of the other party's legal costs if unsuccessful.\n\n* The other party may bring counterclaims, including challenges to your PBR.\n\n* Proceedings are usually public, which may harm your reputation.\n\n* You may be required to share sensitive business information through discovery.\n\n* Cases can be lengthy, distracting you from running your business.\n\n* Unwanted publicity may arise, especially if the case is seen as aggressive or is unsuccessful."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possible outcomes will depend on the circumstances and the type of claim. They may include:\n* A negotiated settlement between the parties.\n\n* Revocation of the PBR in whole or in part (by a counterclaim in court, or by the Registrar on application by a person whose interests are affected).\n\n* Injunctions ordering the alleged infringer to stop infringing the PBR, including temporary (interlocutory) injunctions.\n\n* Damages or compensation awarded to the PBR owner, or an account of profits (but not both).\n\n* Additional damages awarded in appropriate cases.\n\n* Orders on payment of legal costs by one or both parties.\n\n* Mixed results, where some claims succeed but others fail.\nIt is possible to have a mixed result. For example, a court might agree that some of the other party's conduct infringes your PBR, but that other conduct does not.\nCourts also have powers to make other types of orders as part of the outcome.\nYou or the other party or parties may be able to appeal the decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Court proceedings are among the most expensive options for resolving PBR disputes. Legal representation usually makes up the largest cost. For comparison, simple patent-related litigation, which are similar to PBR cases in terms of complexity, may cost\u202f\n\nbetween $100-500k\u202f.\n\n Major patent litigation can cost in the millions. Appeals cost anywhere from $150k-300k+.\u202f\n\nBecause of the lack of legal precedent for PBR, it is likely that any PBR dispute in court will be expensive.\n\n \n\nIf you lose, you may also be required to pay the other party's legal costs.\nExact costs vary significantly depending on the complexity of the case, the amount of evidence involved, and whether there are appeals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Court cases can take months or years to conclude, depending on complexity, the evidence required, and whether there are appeals. Interim injunctions (temporary orders to stop suspected infringement) may be available more quickly, but full proceedings generally take much longer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There have been fewer than five substantive judicial judgments regarding Plant Breeder's Rights (PBR) enforcement or infringement in Australia in the years between 2015-2025."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* A PBR owner can start infringement proceedings.\n\n* An exclusive licensee may also have the right to bring an infringement claim.\n\n* A defendant in infringement proceedings can raise validity issues by counterclaim.\nNote: A person whose interests are affected can apply to the Registrar to revoke a PBR"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "* Parties to the dispute (PBR owner, exclusive licensee, alleged infringer).\n\n* Lawyers representing either side.\n\n* Witnesses, including expert witnesses.\n\n* A judge of the relevant court."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedLink": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-, a.pdf",
+      "name": "between $100-500k\u202f."
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+      "name": "What To Consider Before Taking Legal Action | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+      "name": "Someone Is Using My IP | IP Australia"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+      "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+    }
+  ]
+}
