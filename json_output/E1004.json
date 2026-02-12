@@ -1,0 +1,103 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-check-getting-registered-ip#webpage",
+      "headline": "What to check before getting registered IP",
+      "alternativeHeadline": "Before applying",
+      "description": "",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-check-getting-registered-ip",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "UDID",
+        "value": "E1004"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "copyrightYear": "2026",
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "datePublished": "11/09/2025",
+      "dateModified": "11/09/2025",
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "IP First Response",
+        "url": "https://ipfirstresponse.ipaustralia.gov.au",
+        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Australian Small Business Owners - \"IP Basics\"",
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Sole Trader"
+        ],
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "mainEntity": {
+        "@id": "#the-service"
+      }
+    },
+    {
+      "@id": "#the-service",
+      "@type": [
+        "Article",
+        "HowTo"
+      ],
+      "name": "What to check before getting registered IP",
+      "description": "",
+      "about": {
+        "@type": "Thing",
+        "name": "\"Any dispute related to intellectual property\""
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Self-Help"
+      },
+      "articleBody": "**Start by** [**matching what you have to the right IP type.**](https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool)  Brands are usually protected with trade marks, technical inventions with patents, the look of a product with designs, and new plant varieties with plant breeders' rights (PBRs). You might prefer to protect certain know-how and knowledge as trade secrets, rather than seeking registration of IP.\u00a0\n\n**Consider timing risks and benefits.** Avoiding registration can mean someone else files first, or that public use affects your options. Registration can make it easier to act on suspected copycats and can support deals like licensing or investment. However, IP registers are publicly accessible, meaning that competitors can find information about your IP registrations or applications.\u00a0\n\n**Check whether your idea meets the basic requirements for registration.** Below are some of the basic requirements for each registrable IP type:\u00a0\n\n* Patents must be new and inventive compared with what is already public.\n* Designs must be new and distinctive.\n* Trade marks need to be capable of distinguishing your goods or services. Also, they cannot be identical or too similar to earlier trade marks that are applied for or registered in Australia.\n* PBRs need a new, distinct, uniform and stable variety.\n\nThere are many other formal and legal requirements for IP to be deemed as valid or registrable. Assessing whether your IP meets all legal requirements for registration is a complex process -- It is common for people to engage professional services from IP lawyers or IP attorneys to obtain advice on this point and assistance in the overall registration process.\u00a0\n\n**(For patents, designs, and PBRs only) Think about what has already been made public.** Showing an invention or design before you file can affect your options. Australia often allows a 12-month grace period for patents and designs, but relying on this can be risky and conditions apply. Using confidentiality agreements when testing or pitching can help you keep options open.\u00a0\n\n**Confirm who owns it.** If employees, contractors or partners helped creating it, check contracts so the right person or business is named as the applicant.\u00a0\n\n**Run availability and clearance checks relevant to the type of IP**:\u00a0\n\n* Search the [Australian Trade Mark Search (ATMS)](https://search.ipaustralia.gov.au/trademarks/search/quick)  and use [TM Checker](https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker)  to spot lookalike brands.\n* Search global patent databases for similar inventions and design databases for similar product looks.\n* Search global plant variety registers if you plan to apply for PBRs.\n* Do a quick web and marketplace scan to see what is already out there.\n\n**Remember that** **IP rights are territorial, meaning that Australian registrations protect you in Australia**. Protection overseas usually needs separate applications. You may want to seek registration with national IP offices in other countries, if you are thinking of operating in overseas markets.\u00a0\n\n**Get your evidence and documents together.** For your patent, design or PBR applications, make sure you keep dated notes and drafts, drawings or photos, and any testing results. While such 'evidence' is not required for trade mark applications, keeping note of the date you first used the brand and examples of packaging or advertising can help you down the track should your application run into an objection or opposition during the examination process.\u00a0\n\n**Applications involve government fees and can take time to examine**. You may need to respond to objections raised by examiners, or an opposition process initiated by third parties.\u00a0\u00a0\n\n### See also\n\n[Choosing the right IP tool | IP Australia](https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool) \u00a0\n\n[Trade marks | IP Australia](https://www.ipaustralia.gov.au/trade-marks) \u00a0\n\n[TM Checker: Free trade mark availability check | IP Australia](https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker) \u00a0\n\n[IP Australia | Trade Mark Search](https://search.ipaustralia.gov.au/trademarks/search/quick) \u00a0\n\n[Patents | IP Australia](https://www.ipaustralia.gov.au/patents)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "@type": "GovernmentOrganization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Website content owner",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      },
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government"
+      }
+    }
+  ]
+}

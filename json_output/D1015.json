@@ -1,0 +1,101 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage",
+      "headline": "Remove a trade mark\u00a0from the register",
+      "alternativeHeadline": "Trade mark non-use action",
+      "description": "Request IP Australia removes an unused  trade mark from the register.",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "UDID",
+        "value": "D1015"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "copyrightYear": "2026",
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "datePublished": "28/02/2025",
+      "dateModified": "5/09/2025",
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "IP First Response",
+        "url": "https://ipfirstresponse.ipaustralia.gov.au",
+        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Australian Small Business Owners - \"Enforcement\", \"Proactive\"",
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Sole Trader"
+        ],
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "mainEntity": {
+        "@id": "#the-service"
+      }
+    },
+    {
+      "@id": "#the-service",
+      "@type": "GovernmentService",
+      "name": "Remove a trade mark\u00a0from the register",
+      "description": "Request IP Australia removes an unused  trade mark from the register.",
+      "about": {
+        "@type": "Thing",
+        "name": "\"Trade mark\""
+      },
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    },
+    {
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "@type": "GovernmentOrganization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Website content owner",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      },
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government"
+      }
+    }
+  ]
+}

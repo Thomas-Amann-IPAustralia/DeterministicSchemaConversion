@@ -1,0 +1,103 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#webpage",
+      "headline": "Does my Australian ip work overseas? ",
+      "alternativeHeadline": "Australian IP overseas",
+      "description": "",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "UDID",
+        "value": "E1019"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "copyrightYear": "2026",
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "datePublished": "11/09/2025",
+      "dateModified": "2/10/2025",
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "IP First Response",
+        "url": "https://ipfirstresponse.ipaustralia.gov.au",
+        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Australian Small Business Owners - \"IP Basics\"",
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Sole Trader"
+        ],
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "mainEntity": {
+        "@id": "#the-service"
+      }
+    },
+    {
+      "@id": "#the-service",
+      "@type": [
+        "Article",
+        "HowTo"
+      ],
+      "name": "Does my Australian ip work overseas? ",
+      "description": "",
+      "about": {
+        "@type": "Thing",
+        "name": "\"Any dispute related to intellectual property\""
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Self-Help"
+      },
+      "articleBody": "**Australian registration protects the relevant IP right within Australia.** When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia.\u00a0\n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: [Can I protect my ideas in other countries? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries).\u00a0\n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.\u00a0\n\n### See also\n\n* [Can I protect my ideas in other countries? | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries)\n* [International intellectual property | IP Australia](https://www.ipaustralia.gov.au/international-ip)\n* [Prevent international infringement | IP Australia](https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement)\n* [WIPO Madrid System - International Trademark Protection](https://www.wipo.int/en/web/madrid-system)\n* [PCT - The International Patent System](https://www.wipo.int/en/web/pct-system)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "@type": "GovernmentOrganization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Website content owner",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      },
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government"
+      }
+    }
+  ]
+}

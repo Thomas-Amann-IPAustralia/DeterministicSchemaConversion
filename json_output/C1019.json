@@ -1,0 +1,103 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage",
+      "headline": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
+      "alternativeHeadline": "IP STRATEGY ",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "UDID",
+        "value": "C1019"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "copyrightYear": "2026",
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "datePublished": "28/07/2025",
+      "dateModified": "5/09/2025",
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "IP First Response",
+        "url": "https://ipfirstresponse.ipaustralia.gov.au",
+        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Australian Small Business Owners - \"Proactive\"",
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Sole Trader"
+        ],
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "mainEntity": {
+        "@id": "#the-service"
+      }
+    },
+    {
+      "@id": "#the-service",
+      "@type": [
+        "Article",
+        "HowTo"
+      ],
+      "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "about": {
+        "@type": "Thing",
+        "name": "\"Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\",  \"Unregistered-tm\""
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Self-Help"
+      },
+      "articleBody": "You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors' IP, and planning responses should you experience suspected copying in the future.\u00a0\n\nBy mapping this out early, you may avoid making important decisions under pressure, reduce legal risks and place your business in a stronger position to grow or defend your IP assets.\u00a0\n\nAn IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders' right and copyright.\u00a0\n\nKey elements often include:\u00a0\n\n* Identifying what IP assets you already have or intend to create.\n* Choosing the best protection tools (e.g. trade mark registration or using non-disclosure agreements and contracts to protect your IP assets).\n* Setting reminders for renewals and annual reviews.\n* Deciding how you will monitor the market for suspected infringement.\n* Outlining who will act and what budget is available if enforcement is needed.\n\n[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)\n\n### What are the benefits?\n\n* Help streamline decision-making if suspected infringement occurs.\n* May help you build clear evidence of ownership that deters copycats.\n* May help secure investment by demonstrating due diligence on IP.\n* May support expansion into new markets or product lines.\n* Assist your employees and partners in developing team awareness on how to handle ideas and branding.\n\n### What are the risks?\n\n* Plans can become outdated if not reviewed regularly, leaving blind spots.\n* Over-protection (for example, filing unnecessary patents) may waste resources.\n* Relying on internal resources rather than expert input may create false confidence.\n\n### What are the possible outcomes?\n\nDeveloping a comprehensive IP strategy may not immediately yield a tangible outcome. This option involves preparation and implementation of preventative measures.\u00a0\u00a0\n\n### What might the costs be?\n\nCreating an IP strategy in-house can be free apart from staff time. For example, it may take a few days to compile an inventory and action list. Engaging an IP professional such as IP lawyers, IP attorneys, or IP commercialisation experts for a tailored plan would involve professional fees, which may vary depending on the scale and complexity of the plan.\u00a0\u00a0\n\nOngoing costs, however, relate mainly to the protection steps you choose, such as renewal fees or monitoring services.\u00a0\n\n### How much time might be involved?\n\nDrafting a simple strategy may take around a day or two of focused work. More detailed plans that cover multiple IP types and overseas markets may take several weeks to months, especially if you seek professional advice.\u00a0\n\nAlso, consider reviewing the strategy at least annually, or whenever you launch new products or enter new markets.\u00a0\n\n### How much is this used?\n\nDeveloping and implementing a comprehensive IP strategy a common practice used by businesses that own or use multiple IP assets.\u00a0\n\n### Who can use this?\n\n* IP rights holders or authorised users managing IP assets.\n* Anyone or businesses planning to use, develop or acquire IP assets.\n\n### Who's involved?\n\n* The business owner or employee/s.\n* Optional: IP professionals such as trade mark or patent attorneys.\n* Optional: Business advisors or accountants assisting with commercial planning.\n\n### What do you need to proceed?\n\nIP strategies can vary in its scope and complexity depending on a wide range of factors such as the number of IP assets involved, the size of your business and the composition of your IP portfolio. While businesses can take many different approaches in designing their IP strategies, a common starting point is conducting an [IP audit](https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps) to create a clear register of IP assets owned and used by your business.\u00a0\n\n### See also\n\n* [Conduct IP audits to spot gaps, reduce risks and plan next-steps | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps)\n* [A step-by-step IP Strategy Checklist for SMEs](https://www.wipo.int/en/web/business/checklist)\n* [Understanding intellectual property (IP) | IP Australia](https://www.ipaustralia.gov.au/understanding-ip)\n* [Choosing the right IP tool | IP Australia](https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool)\n* [Get professional assistance with your IP | IP Australia](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)\n\n### Want to give us feedback?\n\nSend us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy).",
+      "step": "xXx_PLACEHOLDER_xXx"
+    },
+    {
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "@type": "GovernmentOrganization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Website content owner",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      },
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government"
+      }
+    }
+  ]
+}
