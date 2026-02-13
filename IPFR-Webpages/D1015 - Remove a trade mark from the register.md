@@ -10,6 +10,8 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use
 
 If a registered trade mark is not being used by its owner, you may be able to have it removed from the Register. This allows you to potentially use a trade mark that you believe you have the right to use, even if someone else has registered it. 
 
+[![Easy English](/sites/default/files/images/2026-02/Easy%20English%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english)
+
 You can request removal of a trade mark if you believe the owner: 
 
 * hasn't used the trade mark in relation to all or some of their goods and/or services for 3 years
