@@ -2,174 +2,128 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#webpage",
-      "headline": "Free tools",
-      "alternativeHeadline": "Free tools\u00a0",
-      "description": "",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "E1022"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "11/09/2025",
-      "dateModified": "11/09/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use",
+      "headline": "Free IP tools you can use - IP First Response",
+      "description": "",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"IP Basics\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Free tools",
+      "identifier": "E1022",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#article"
       },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-want-to-give-us-feedback"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#article",
+      "headline": "Free IP tools you can use",
+      "articleBody": "Free IP tools are no-cost online services that let you look up, track and learn about intellectual property (IP) rights. They cover everything from quick trade mark checks to deep patent searches and step-by-step help guides. \n\nUsing these tools may boost your confidence before spending money on paid databases or engaging professional help. They can help you spot obvious conflicts, confirm renewal dates or see if someone is already using a similar brand. \n\nMost tools work through online forms. Users can enter keywords, images or classification codes and receive instant results drawn from official registers such as Australian trade mark, patent, design and plant breeder's rights databases, or global collections like the Global Brand Database. \n\nMany also include learning modules, alerts or visual maps so users can keep an eye on possible competitors. Some providers (e.g. PATENTSCOPE) offer free accounts for saving searches and setting up email notifications. \n\nThese services focus on publicly available data. Results are often limited to the scope of their own databases (e.g. IP Australia registers will only have data relating to applications submitted to IP Australia), and can be hard to interpret. If you are worried about copying, it's important to remember that only a court can confirm that infringement has occurred. It's also important to make sure that your confidential details are never be entered into public search tools.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#webpage"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
       "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use",
+        "https://ipsearch.ipaustralia.gov.au/patents/",
+        "https://patentscope.wipo.int/",
+        "https://search.ipaustralia.gov.au/designs/search/quick",
+        "https://search.ipaustralia.gov.au/trademarks/search/quick",
+        "https://www.ipaustralia.gov.au/plant-breeders-rights/search-plant-breeders-rights",
+        "https://www.ipaustralia.gov.au/tools-resources/trade-mark-check",
+        "https://www.lens.org/",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+        "https://www.wipo.int/branddb/en/"
+      ],
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-see-also"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/tools-resources/trade-mark-check",
-          "name": "**TM Checker - IP Australia**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
-          "name": "**Australian Trade Mark Search - IP Australia**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "name": "**Australian Patent Search - IP Australia**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://search.ipaustralia.gov.au/designs/search/quick",
-          "name": "**Australian Design Search - IP Australia**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/search-plant-breeders-rights",
-          "name": "**Australian Plant Breeder's Rights Search - IP Australia**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "name": "**Find an IP attorney or firm - Trans-Tasman IP Attorneys Board**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.wipo.int/branddb/en/",
-          "name": "**Global Brand Database - WIPO**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://patentscope.wipo.int/",
-          "name": "**PATENTSCOPE - WIPO**"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.lens.org/",
-          "name": "**The Lens**"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
-      ],
-      "name": "Free IP tools you can use ",
-      "headline": "Free tools",
-      "description": "",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Self-Help"
-      },
-      "articleBody": "Free IP tools are no-cost online services that let you look up, track and learn about intellectual property (IP) rights. They cover everything from quick trade mark checks to deep patent searches and step-by-step help guides.\u00a0\n\nUsing these tools may boost your confidence before spending money on paid databases or engaging professional help. They can help you spot obvious conflicts, confirm renewal dates or see if someone is already using a similar brand.\u00a0\n\nMost tools work through online forms. Users can enter keywords, images or classification codes and receive instant results drawn from official registers such as Australian trade mark, patent, design and plant breeder's rights databases, or global collections like the Global Brand Database.\u00a0\n\nMany also include learning modules, alerts or visual maps so users can keep an eye on possible competitors. Some providers (e.g. PATENTSCOPE) offer free accounts for saving searches and setting up email notifications.\u00a0\n\nThese services focus on publicly available data. Results are often limited to the scope of their own databases (e.g. IP Australia registers will only have data relating to applications submitted to IP Australia), and can be hard to interpret. If you are worried about copying, it's important to remember that only a court can confirm that infringement has occurred. It's also important to make sure that your confidential details are never be entered into public search tools.\u00a0\n\n[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-what-is-it",
+      "name": "What is it?",
+      "text": "Free IP tools are no-cost online services that let you look up, track and learn about intellectual property (IP) rights. They cover everything from quick trade mark checks to deep patent searches and step-by-step help guides. \n\nUsing these tools may boost your confidence before spending money on paid databases or engaging professional help. They can help you spot obvious conflicts, confirm renewal dates or see if someone is already using a similar brand. \n\nMost tools work through online forms. Users can enter keywords, images or classification codes and receive instant results drawn from official registers such as Australian trade mark, patent, design and plant breeder's rights databases, or global collections like the Global Brand Database. \n\nMany also include learning modules, alerts or visual maps so users can keep an eye on possible competitors. Some providers (e.g. PATENTSCOPE) offer free accounts for saving searches and setting up email notifications. \n\nThese services focus on publicly available data. Results are often limited to the scope of their own databases (e.g. IP Australia registers will only have data relating to applications submitted to IP Australia), and can be hard to interpret. If you are worried about copying, it's important to remember that only a court can confirm that infringement has occurred. It's also important to make sure that your confidential details are never be entered into public search tools. \n\n[](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)"
     },
     {
-      "@id": "#faq",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
-        }
-      ]
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-see-also",
+      "name": "See also",
+      "text": "Here are some common tools and what they can help with: \n\n* [**TM Checker - IP Australia**](https://www.ipaustralia.gov.au/tools-resources/trade-mark-check) : Quickly checks if your business name or logo is similar to any registered Australian trade marks.\n* [**Australian Trade Mark Search - IP Australia**](https://search.ipaustralia.gov.au/trademarks/search/quick) : Searches the full trade mark register for registered and pending marks, including word and image marks.\n* [**Australian Patent Search - IP Australia**](https://ipsearch.ipaustralia.gov.au/patents/) : Lets you search Australian patent applications and granted patents.\n* [**Australian Design Search - IP Australia**](https://search.ipaustralia.gov.au/designs/search/quick) : Helps you check if a design similar to yours has already been registered.\n* [**Australian Plant Breeder's Rights Search - IP Australia**](https://www.ipaustralia.gov.au/plant-breeders-rights/search-plant-breeders-rights) : Lets you find out if a plant variety is protected in Australia.\n* [**Find an IP attorney or firm - Trans-Tasman IP Attorneys Board**](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm) **:** Helps you find and contact a qualified IP attorney.\n* [**Global Brand Database - WIPO**](https://www.wipo.int/branddb/en/) : Searches trade marks registered in many countries at once.\n* [**PATENTSCOPE - WIPO**](https://patentscope.wipo.int/) : Lets you search international patent applications and many national patent collections.\n* [**The Lens**](https://www.lens.org/) : Combines global patent data with scientific research and innovation landscapes."
     },
     {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/free-ip-tools-you-can-use#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
     }
   ]
 }

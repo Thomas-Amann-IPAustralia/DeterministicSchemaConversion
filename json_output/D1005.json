@@ -2,245 +2,343 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage",
-      "headline": "Court - Trade mark",
-      "alternativeHeadline": "Court - Trade mark",
-      "description": "Escalate a wide range of trade mark matters to court",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "D1005"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "NGO",
+      "@id": "https://www.fedcourt.gov.au/#organization",
+      "name": "Federal Court of Australia",
+      "url": "https://www.fedcourt.gov.au",
+      "sameAs": [
+        "https://www.fedcourt.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "28/02/2025",
-      "dateModified": "5/09/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
+      "headline": "Seek binding, authoritative decisions - IP First Response",
+      "description": "Escalate a wide range of trade mark matters to court",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Enforcement\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Court - Trade mark",
+      "identifier": "D1005",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-09-05",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
-          "name": "Seek an urgent injunction"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-benefits"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
-          "name": "Escalate To Court | IP Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-risks"
         },
         {
-          "@type": "WebPage",
-          "url": "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
-          "name": "Rights of appeal from decisions of the Registrar | IPA Manuals"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-possible-outcomes"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
-          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-might-the-costs-be"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "*getting professional assistance with your IP*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-how-much-time-might-be-involved"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "*30 minute consultations with an attorney*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-how-much-is-this-used"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23",
-          "name": "*Annual Report 2022-2023*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-who-can-use-this"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024",
-          "name": "*Annual Report 2023-2024*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq"
         }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#article",
+      "name": "Seek binding, authoritative decisions",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
+      },
+      "description": "Escalate a wide range of trade mark matters to court",
+      "provider": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "$80k+ in legal fees",
+        "priceCurrency": "AUD"
+      },
+      "timeRequired": "Years",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-09-05",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
+        "https://ipta.org.au/community/get-free-consultation/",
+        "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
+        "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23",
+        "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA."
       ],
       "hasPart": [
         {
-          "@id": "#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": "Service",
-      "name": "Seek binding, authoritative decisions",
-      "headline": "Court - Trade mark",
-      "description": "Escalate a wide range of trade mark matters to court",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Trade mark\", \"Unregistered-tm\""
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "Court"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Australia"
-      }
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-is-it",
+      "name": "What is it?",
+      "text": "[](/node/208)\n\nIf other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful, and obtaining the outcome you seek is never guaranteed. \n\n**It is prudent to seek legal advice before deciding whether to start a court action.** You will likely also need assistance from an IP lawyer should you decide to start a court action.   \n\nCourts can hear many types of trade mark disputes including:  \n\n* actions against someone for infringing your trade mark\n* matters relating to someone else's trade mark registration\n* appeals from decisions made by IP Australia.\n\nTrade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.   \n\n[](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)"
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* If you succeed, a court can award damages or compensation for losses and costs (including, in some cases, an account of profits made by an infringer through their infringement).\n* Court decisions are binding and enforceable.\n* The other party cannot simply ignore your legal claim without consequences.\n* You can often resolve several related matters in one case.\n* Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia's Opposition and Hearing processes.\n* Court proceedings allow cross-examination of evidence and expert witnesses, which could be helpful for prosecuting your argument if you have a highly technical case.\n* The gravity, expense, publicity and protracted nature of court proceedings can encourage the other party to negotiate or engage in other forms of dispute resolution to settle legal claims and avoid the court proceedings continuing.\n* For infringement claims, a court can, in appropriate situations, make orders to prevent the other party from continuing to infringe your IP rights."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* The outcome can be unpredictable.\n* While a court can determine matters of law, it may not be in the best interests of your business. Proving you are in the right, legally, may not be the same as making a good business decision.\n* The other party to the legal action may make counterclaims or other legal claims against you.\n* On top of paying your legal costs, you may be required to pay some (or all) of the legal costs of the other party or parties if you are wholly (or partially) unsuccessful.\n* The outcome you obtain may not be as advantageous as an offer of settlement previously made to you.\n* If you or your staff are required to provide evidence in court, this can be very stressful and time-consuming and distract from the operation of your business\n* Court proceedings are usually public, so this option may not be suitable if confidentiality is important.\n* You may be required to disclose information in the proceedings to the other party or parties that you may prefer to keep confidential.\n* Court proceedings may attract unwanted publicity and potentially damage your reputation - particularly if you are unsuccessful or if your case is seen as unduly litigious.\n* It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see 'How much time might be involved?' below).\n* You may not be able to bring a legal claim if you have agreed in a contract that you will use, or that you will first try, an alternative form of dispute resolution."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "here are a wide range of possible outcomes, and these will also depend on the type of court action you might take. Some possible outcomes are:  \n\n* You might reach a negotiated settlement with the other party.\n* The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.\n* The other party's trade mark registration might be cancelled, removed or amended.\n* The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party's legal costs.\n* You could be awarded damages or compensation.\n* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights - including on a temporary basis while you are waiting for the court to hear your matter (see [Seek an urgent injunction](https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction)).\n* A decision made by IP Australia can be affirmed, reversed or varied.\n* Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims for *passing off* or under the Australian Consumer Law).\n\nIn most cases, the outcome can be appealed to a higher court."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "Infringement and other court proceedings are generally very expensive as legal representation is usually involved and they can take a long time to resolve. Companies in particular are generally required by court rules to be represented by legal practitioners.  \n\nLegal fees and the cost of expert witnesses usually make up most of the cost. \n\nIt is common for the costs of trade mark-related litigation in the Federal Court of Australia to exceed $100,000."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court. \n\nTrade mark claims are typically heard by the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed *intellectual property* as the cause of action, were as follows: \n\n* 95 cases (45%) under 12 months\n* 43 cases (21%) 12-24 months\n* 71 cases (34%) over 24 months.1\n\n**The timeframe is typically shorter if the matter is resolved through negotiations or a court-ordered mediation process.** \n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.   \n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.   \n\n**Limitations on how long you can take to file an action** \n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start.  \n\n* The limitation period for a trade mark infringement action in most Australian states is six years from the date on which the first act of infringement took place, with the exception of Northern Territory where the limitation period is three years.\n* If you are challenging a decision made by IP Australia, an appeal to the courts must be started within 21 days after the date of the decision. It may be possible to obtain an extension of time with the court.\n\nDue to these complexities, it may be helpful to speak to an IP lawyer about time limits."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "Trade mark proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. However, they are more common than some other types of intellectual property disputes like patent proceedings. \n\nIn the 2023-24 financial year, there were 77 trade mark filings in the Federal Court of Australia2\n\nSome trade mark proceedings are also started in State/Territory courts."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "For infringement actions, the owner of the registered trade mark usually starts the infringement action. However, an exclusive licensee or authorised user may also hold the right to start an action.  \n\nOther court actions can generally be taken by any aggrieved party with a relevant interest in the matter."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* Parties to the dispute\n* Lawyers\n* Witnesses\n* A judge"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-what-you-need-to-proceed",
+      "name": "What you need to proceed?",
+      "text": "Here are some things you might consider before you proceed with legal action in a trade mark matter. \n\n**Finding an IP lawyer for advice and representation**\\\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have serious impacts on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.  \n\n**Consider your goals before deciding to start a legal claim**\\\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes.  \n\n**Decide who you intend to commence proceedings against**\\\nMore than one person can be liable for IP infringement. A legal representative can help you decide who should be a party to a dispute.  \n\n**Consider the impact of publicity**\\\nUnless covered by a confidentiality order, evidence and documents read in open court will become available to the public.   \n\n**Gather all your documents**\\\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences and correspondence that you think might be relevant to your case. You can give these to your lawyer to review."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-see-also",
+      "name": "See also",
+      "text": "* [Escalate To Court | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court)\n* [Rights of appeal from decisions of the Registrar | IPA Manuals](https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar)\n* [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.)\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*\n\n1. Federal Court of Australia, [*Annual Report 2022-2023*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23), p 24\n2. Federal Court of Australia, [*Annual Report 2023-2024*](https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024), p 61"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If you succeed, a court can award damages or compensation for losses and costs (including, in some cases, an account of profits made by an infringer through their infringement).\n* Court decisions are binding and enforceable.\n* The other party cannot simply ignore your legal claim without consequences.\n* You can often resolve several related matters in one case.\n* Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia's Opposition and Hearing processes.\n* Court proceedings allow cross-examination of evidence and expert witnesses, which could be helpful for prosecuting your argument if you have a highly technical case.\n* The gravity, expense, publicity and protracted nature of court proceedings can encourage the other party to negotiate\u202for engage in other forms of dispute resolution to settle legal claims and avoid the court proceedings continuing.\n* For infringement claims, a court can, in appropriate situations, make orders to prevent the other party from continuing to infringe your IP rights."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q1-a",
+            "text": "If you succeed, a court can award damages or compensation for losses and costs (including, in some cases, an account of profits made by an infringer through their infringement).\n Court decisions are binding and enforceable.\n The other party cannot simply ignore your legal claim without consequences.\n You can often resolve several related matters in one case.\n Court can take into consideration a wide range of legal factors which may fall outside the scope of other decision-making bodies such as IP Australia's Opposition and Hearing processes.\n Court proceedings allow cross-examination of evidence and expert witnesses, which could be helpful for prosecuting your argument if you have a highly technical case.\n The gravity, expense, publicity and protracted nature of court proceedings can encourage the other party to negotiate or engage in other forms of dispute resolution to settle legal claims and avoid the court proceedings continuing.\n For infringement claims, a court can, in appropriate situations, make orders to prevent the other party from continuing to infringe your IP rights."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The outcome can be unpredictable.\n* While a court can determine matters of law, it may not be in the best interests of your business. Proving you are in the right, legally, may not be the same as making a good business decision.\n* The other party to the legal action may make counterclaims or other legal claims against you.\n* On top of paying your legal costs, you may be required to pay some (or all) of the legal costs of the other party or parties if you are wholly (or partially) unsuccessful.\n* The outcome you obtain may not be as advantageous as an offer of settlement previously made to you.\n* If you or your staff are required to provide evidence in court, this can be very stressful and time-consuming and distract from the operation of your business\n* Court proceedings are usually public, so this option may not be suitable if confidentiality is important.\n* You may be required to disclose information in the proceedings to the other party or parties that you may prefer to keep confidential.\n* Court proceedings may attract unwanted publicity and potentially damage your reputation - particularly if you are unsuccessful or if your case is seen as unduly litigious.\n* It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see 'How much time might be involved?' below).\n* You may not be able to bring a legal claim if you have agreed in a contract that you will use, or that you will first try, an alternative form of dispute resolution."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q2-a",
+            "text": "The outcome can be unpredictable.\n While a court can determine matters of law, it may not be in the best interests of your business. Proving you are in the right, legally, may not be the same as making a good business decision.\n The other party to the legal action may make counterclaims or other legal claims against you.\n On top of paying your legal costs, you may be required to pay some (or all) of the legal costs of the other party or parties if you are wholly (or partially) unsuccessful.\n The outcome you obtain may not be as advantageous as an offer of settlement previously made to you.\n If you or your staff are required to provide evidence in court, this can be very stressful and time-consuming and distract from the operation of your business\n Court proceedings are usually public, so this option may not be suitable if confidentiality is important.\n You may be required to disclose information in the proceedings to the other party or parties that you may prefer to keep confidential.\n Court proceedings may attract unwanted publicity and potentially damage your reputation - particularly if you are unsuccessful or if your case is seen as unduly litigious.\n It can take a lot of time to prepare a legal claim and for proceedings to be finalised if the claim is not settled by the parties (see 'How much time might be involved?' below).\n* You may not be able to bring a legal claim if you have agreed in a contract that you will use, or that you will first try, an alternative form of dispute resolution."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "here are a wide range of possible outcomes, and these will also depend on the type of court action you might take. Some possible outcomes are:\u00a0\u00a0\n\n* You might reach a negotiated settlement with the other party.\n* The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.\n* The other party's trade mark registration might be cancelled, removed or amended.\n* The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party's legal costs.\n* You could be awarded damages or compensation.\n* A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights - including on a temporary basis while you are waiting for the court to hear your matter (see [Seek an urgent injunction](https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction)).\n* A decision made by IP Australia can be affirmed, reversed or varied.\n* Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims for *passing off* or under the Australian Consumer Law).\n\nIn most cases, the outcome can be appealed to a higher court."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q3-a",
+            "text": "here are a wide range of possible outcomes, and these will also depend on the type of court action you might take. Some possible outcomes are:  \n\n You might reach a negotiated settlement with the other party.\n The other party might not respond or participate in the court proceedings, in which case the court might decide in your favour.\n The other party's trade mark registration might be cancelled, removed or amended.\n The court might decide against you, in which case your trade mark registration could be cancelled, removed or amended and you may need to pay some or all of the other party's legal costs.\n You could be awarded damages or compensation.\n A court may, in appropriate situations, make orders to prevent an infringer from continuing to infringe your IP rights - including on a temporary basis while you are waiting for the court to hear your matter (see Seek an urgent injunction).\n A decision made by IP Australia can be affirmed, reversed or varied.\n Some other outcome depending on what you have claimed (including, for example, if you have made other legal claims for passing off or under the Australian Consumer Law).\n\nIn most cases, the outcome can be appealed to a higher court."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Infringement and other court proceedings are generally very expensive as legal representation is usually involved and they can take a long time to resolve. Companies in particular are generally required by court rules to be represented by legal practitioners.\u00a0\u00a0\n\nLegal fees and the cost of expert witnesses usually make up most of the cost.\u00a0\n\nIt is common for the costs of trade mark-related litigation in the Federal Court of Australia to exceed $100,000."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q4-a",
+            "text": "Infringement and other court proceedings are generally very expensive as legal representation is usually involved and they can take a long time to resolve. Companies in particular are generally required by court rules to be represented by legal practitioners.  \n\nLegal fees and the cost of expert witnesses usually make up most of the cost. \n\nIt is common for the costs of trade mark-related litigation in the Federal Court of Australia to exceed $100,000."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court.\u00a0\n\nTrade mark claims are typically heard by the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed *intellectual property* as the cause of action, were as follows:\u00a0\n\n* 95 cases (45%) under 12 months\n* 43 cases (21%) 12-24 months\n* 71 cases (34%) over 24 months.1\n\n**The timeframe is typically shorter if the matter is resolved through negotiations or a court-ordered mediation process.**\u00a0\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.\u00a0\u00a0\u00a0\n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.\u202f\u00a0\u00a0\n\n**Limitations on how long you can take to file an action**\u00a0\n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start.\u00a0\u00a0\n\n* The limitation period for a trade mark infringement action in most Australian states is six years from the date on which the first act of infringement took place, with the exception of Northern Territory where the limitation period is three years.\n* If you are challenging a decision made by IP Australia, an appeal to the courts must be started within 21 days after the date of the decision. It may be possible to obtain an extension of time with the court.\n\nDue to these complexities, it may be helpful to speak to an IP lawyer about time limits."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q5-a",
+            "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, which court hears your claim, and the backlog of matters before that court. \n\nTrade mark claims are typically heard by the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed intellectual property as the cause of action, were as follows: \n\n 95 cases (45%) under 12 months\n 43 cases (21%) 12-24 months\n 71 cases (34%) over 24 months.1\n\nThe timeframe is typically shorter if the matter is resolved through negotiations or a court-ordered mediation process. \n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.   \n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.   \n\nLimitations on how long you can take to file an action \n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start.  \n\n The limitation period for a trade mark infringement action in most Australian states is six years from the date on which the first act of infringement took place, with the exception of Northern Territory where the limitation period is three years.\n* If you are challenging a decision made by IP Australia, an appeal to the courts must be started within 21 days after the date of the decision. It may be possible to obtain an extension of time with the court.\n\nDue to these complexities, it may be helpful to speak to an IP lawyer about time limits."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Trade mark proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. However, they are more common than some other types of intellectual property disputes like patent proceedings.\u00a0\n\nIn the 2023-24 financial year, there were 77 trade mark filings in the Federal Court of Australia2\n\nSome trade mark proceedings are also started in State/Territory courts."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q6-a",
+            "text": "Trade mark proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. However, they are more common than some other types of intellectual property disputes like patent proceedings. \n\nIn the 2023-24 financial year, there were 77 trade mark filings in the Federal Court of Australia2\n\nSome trade mark proceedings are also started in State/Territory courts."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For infringement actions, the owner of the registered trade mark usually starts the infringement action. However, an exclusive licensee or authorised user may also hold the right to start an action.\u00a0\u00a0\n\nOther court actions can generally be taken by any aggrieved party with a relevant interest in the matter."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q7-a",
+            "text": "For infringement actions, the owner of the registered trade mark usually starts the infringement action. However, an exclusive licensee or authorised user may also hold the right to start an action.  \n\nOther court actions can generally be taken by any aggrieved party with a relevant interest in the matter."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Parties to the dispute\n* Lawyers\n* Witnesses\n* A judge"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q8-a",
+            "text": "Parties to the dispute\n Lawyers\n Witnesses\n A judge"
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q9",
           "name": "What you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Here are some things you might consider before you proceed with legal action in a trade mark matter.\u00a0\n\n**Finding an IP lawyer for advice and representation**\\\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have serious impacts on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.\u00a0\u00a0\n\n**Consider your goals before deciding to start a legal claim**\\\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes.\u00a0\u00a0\n\n**Decide who you intend to commence proceedings against**\\\nMore than one person can be liable for IP infringement. A legal representative can help you decide who should be a party to a dispute.\u00a0\u00a0\n\n**Consider the impact of publicity**\\\nUnless covered by a confidentiality order, evidence and documents read in open court will become available to the public.\u00a0\u00a0\u00a0\n\n**Gather all your documents**\\\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences and correspondence that you think might be relevant to your case. You can give these to your lawyer to review."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq#q9-a",
+            "text": "Here are some things you might consider before you proceed with legal action in a trade mark matter. \n\nFinding an IP lawyer for advice and representation\\\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have serious impacts on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.  \n\nConsider your goals before deciding to start a legal claim\\\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes.  \n\nDecide who you intend to commence proceedings against\\\nMore than one person can be liable for IP infringement. A legal representative can help you decide who should be a party to a dispute.  \n\nConsider the impact of publicity\\\nUnless covered by a confidentiality order, evidence and documents read in open court will become available to the public.   \n\nGather all your documents\\\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences and correspondence that you think might be relevant to your case. You can give these to your lawyer to review."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

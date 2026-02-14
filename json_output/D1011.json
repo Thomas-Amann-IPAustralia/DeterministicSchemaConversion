@@ -2,226 +2,332 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#webpage",
-      "headline": "Gauge the situation",
-      "alternativeHeadline": "Guage the situation  ",
-      "description": "Strategically enforce your IP only when worthwhile",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "D1011"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "28/02/2025",
-      "dateModified": "2/12/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately",
+      "headline": "Choose not to act immediately - IP First Response",
+      "description": "Strategically enforce your IP only when worthwhile",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Enforcement\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Guage the situation",
+      "identifier": "D1011",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-12-02",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "IP\u00a0 lawyer or IP attorney"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-benefits"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
-          "name": "Obtain legal advice on enforcement options | IP Australia First Response"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-risks"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "*30 minute consultations with an attorney*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-possible-outcomes"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.artslaw.com.au/services/legal-query-form/",
-          "name": "*Arts Law Centre of Australia*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-might-the-costs-be"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.copyright.org.au/legal-advice/",
-          "name": "*Australian Copyright Council*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-how-often-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
-      ],
-      "name": "Choose not to act immediately ",
-      "headline": "Gauge the situation",
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#article",
+      "headline": "Choose not to act immediately",
+      "articleBody": "Taking no action when you have identified infringement is a valid and common strategic choice to consider. People choose not to actively pursue enforcement actions for several reasons including: \n\n* the infringer is inconsequential\n* the infringement has little risk of confusing your customers\n* there is low risk of damaging your brand or business\n* there can be reputational risk in taking action\n* the chances of successful enforcement are low compared to the costs involved.\n\nIt is important to take a holistic approach to addressing infringement which considers several factors: \n\n* the details of your IP rights\n* your current business situation and objectives\n* your personal circumstances\n* the nature and potential consequences of the infringement.\n\nIt can feel very personal when someone is infringing on your intellectual property - and it is important to acknowledge any emotional response you have to the situation - but choosing to take no action (as part of a thought-out IP strategy) can be a valid and rational choice. \n\nIt can be helpful to speak to an IP professional to help you develop an overall IP strategy, which makes it easier to decide when and how to respond to different types of infringement, as well as taking pro-active steps to prevent future infringement.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#webpage"
+      },
       "description": "Strategically enforce your IP only when worthwhile",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Self-Help"
-      },
-      "articleBody": "[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button)\n\nTaking no action when you have identified infringement is a valid and common strategic choice to consider. People choose not to actively pursue enforcement actions for several reasons including:\u00a0\n\n* the infringer is inconsequential\n* the infringement has little risk of confusing your customers\n* there is low risk of damaging your brand or business\n* there can be reputational risk in taking action\n* the chances of successful enforcement are low compared to the costs involved.\n\nIt is important to take a holistic approach to addressing infringement which considers several factors:\u00a0\n\n* the details of your IP rights\n* your current business situation and objectives\n* your personal circumstances\n* the nature and potential consequences of the infringement.\n\nIt can feel very personal when someone is infringing on your intellectual property - and it is important to acknowledge any emotional response you have to the situation - but choosing to take no action (as part of a thought-out IP strategy) can be a valid and rational choice.\u00a0\n\nIt can be helpful to speak to an IP professional to help you develop an overall IP strategy, which makes it easier to decide when and how to respond to different types of infringement, as well as taking pro-active steps to prevent future infringement.\u00a0\n\n[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-12-02",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+        "https://ipta.org.au/community/get-free-consultation/",
+        "https://www.artslaw.com.au/services/legal-query-form/",
+        "https://www.copyright.org.au/legal-advice/",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-how-often-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-is-it",
+      "name": "What is it?",
+      "text": "[](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button)\n\nTaking no action when you have identified infringement is a valid and common strategic choice to consider. People choose not to actively pursue enforcement actions for several reasons including: \n\n* the infringer is inconsequential\n* the infringement has little risk of confusing your customers\n* there is low risk of damaging your brand or business\n* there can be reputational risk in taking action\n* the chances of successful enforcement are low compared to the costs involved.\n\nIt is important to take a holistic approach to addressing infringement which considers several factors: \n\n* the details of your IP rights\n* your current business situation and objectives\n* your personal circumstances\n* the nature and potential consequences of the infringement.\n\nIt can feel very personal when someone is infringing on your intellectual property - and it is important to acknowledge any emotional response you have to the situation - but choosing to take no action (as part of a thought-out IP strategy) can be a valid and rational choice. \n\nIt can be helpful to speak to an IP professional to help you develop an overall IP strategy, which makes it easier to decide when and how to respond to different types of infringement, as well as taking pro-active steps to prevent future infringement. \n\n[](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* The time, cost and labour required to take actions to prevent infringement on your IP may not be justified at this point in your business or IP journey.\n* Taking no immediate action can allow you to gather evidence and time to evaluate the true risk and possible damage to your business, so you can act when the time is right.\n* You can usually change your mind and pursue an action in future - you are not required to act as soon as you became aware of infringement, although delays could pose risks.\n* Infringing businesses may fail or leave the market with no intervention from you.\n* Choosing to avoid enforcement actions shelters you from needing to establish or defend your rights, which you may not wish to draw attention to.\n* You can choose more opportune timing to take action, for example: when your business is impacted enough to warrant action, when you have gathered enough evidence to take effective action, or other practical timing issues relating to your business (like avoiding the busy season)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* Without professional advice, there is a risk that you will miss easy and effective enforcement options.\n* Delaying taking enforcement actions may make them more difficult to pursue in the future.\n* The cost and energy of monitoring the infringement in an ongoing way may exceed the effort of dealing with it immediately.\n* If infringement has happened and you do not take action, the infringement may be repeated by the current infringer or others also infringing.\n* Allowing infringement - even that which doesn't directly damage your business - may:\n  + affect public perception of your rights\n  + undermine your entitlement to these rights\n  + in extreme cases, leave you open to legal actions (such as cases where fake versions of a product pose a risk to customers)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "* The consequences of infringement remain (or become) insignificant.\n* The consequences of infringement increase, and you re-evaluate your stance on enforcement."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "There are no upfront or direct costs if you take no immediate action. However, it could be prudent to consult with an [IP  lawyer or IP attorney](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)  to help you consider the situation. \n\nNote that there may be an indirect cost, in that allowing continued infringement may damage your business or the value of your intellectual property rights."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "While taking no action is not a significant time commitment, it may take some time to research the infringement taking place, the options available, and the consequences for your business in order to make this decision."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "Both large and small businesses use this strategy frequently - only pursuing enforcement when it is necessary."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* You\n* an IP professional - professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-how-often-is-this-used",
+      "name": "How often is this used?",
+      "text": "Variable. Many businesses may suspect infringement and have not, or will not, take action - ultimately it is a business decision that will depend on the specific circumstances of a business. Additionally, many possible actions may be resolved between two parties directly."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "* Review IP First Response resources to understand all your enforcement options, even if you're not using them now. This helps you make an informed choice about waiting and know what tools are available if you change your mind later.\n* Develop a clear strategy for when you *will* take future enforcement action. Your plan can outline specific triggers that will prompt you to act. These might be when the infringer:\n  + Grows beyond a certain size.\n  + Starts competing in your geographic area or digital space.\n  + Has been infringing for a set period.\n  + Crosses other meaningful boundaries for your business.\n* Calculate the potential costs and timeline for different enforcement actions. This helps you budget and prepare for if you do decide to move forward.\n* Identify which type of IP professional you would consult if you choose to act. Consider having initial conversations to understand their services and approach.\n* Keep documentation of the infringement, including dates and evidence, to maintain a strong foundation if you choose to take action in the future."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-see-also",
+      "name": "See also",
+      "text": "* [Obtain legal advice on enforcement options | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options)\n* [Get Professional Assistance With Your IP | IP Australia](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*\\\n*Copyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the* [*Arts Law Centre of Australia*](https://www.artslaw.com.au/services/legal-query-form/)  *or no-cost advice from the* [*Australian Copyright Council*](https://www.copyright.org.au/legal-advice/) *.*"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The time, cost and labour required to take actions to prevent infringement on your IP may not be justified at this point in your business or IP journey.\n* Taking no immediate action can allow you to gather evidence and time to evaluate the true risk and possible damage to your business, so you can act when the time is right.\n* You can usually change your mind and pursue an action in future - you are not required to act as soon as you became aware of infringement, although delays could pose risks.\n* Infringing businesses may fail or leave the market with no intervention from you.\n* Choosing to avoid enforcement actions shelters you from needing to establish or defend your rights, which you may not wish to draw attention to.\n* You can choose more opportune timing to take action, for example: when your business is impacted enough to warrant action, when you have gathered enough evidence to take effective action, or other practical timing issues relating to your business (like avoiding the busy season)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q1-a",
+            "text": "The time, cost and labour required to take actions to prevent infringement on your IP may not be justified at this point in your business or IP journey.\n Taking no immediate action can allow you to gather evidence and time to evaluate the true risk and possible damage to your business, so you can act when the time is right.\n You can usually change your mind and pursue an action in future - you are not required to act as soon as you became aware of infringement, although delays could pose risks.\n Infringing businesses may fail or leave the market with no intervention from you.\n Choosing to avoid enforcement actions shelters you from needing to establish or defend your rights, which you may not wish to draw attention to.\n You can choose more opportune timing to take action, for example: when your business is impacted enough to warrant action, when you have gathered enough evidence to take effective action, or other practical timing issues relating to your business (like avoiding the busy season)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Without professional advice, there is a risk that you will miss easy and effective enforcement options.\n* Delaying taking enforcement actions may make them more difficult to pursue in the future.\n* The cost and energy of monitoring the infringement in an ongoing way may exceed the effort of dealing with it immediately.\n* If infringement has happened and you do not take action, the infringement may be repeated by the current infringer or others also infringing.\n* Allowing infringement - even that which doesn't directly damage your business - may:\n  + affect public perception of your rights\n  + undermine your entitlement to these rights\n  + in extreme cases, leave you open to legal actions (such as cases where fake versions of a product pose a risk to customers)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q2-a",
+            "text": "Without professional advice, there is a risk that you will miss easy and effective enforcement options.\n Delaying taking enforcement actions may make them more difficult to pursue in the future.\n The cost and energy of monitoring the infringement in an ongoing way may exceed the effort of dealing with it immediately.\n If infringement has happened and you do not take action, the infringement may be repeated by the current infringer or others also infringing.\n* Allowing infringement - even that which doesn't directly damage your business - may:\n  + affect public perception of your rights\n  + undermine your entitlement to these rights\n  + in extreme cases, leave you open to legal actions (such as cases where fake versions of a product pose a risk to customers)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The consequences of infringement remain (or become) insignificant.\n* The consequences of infringement increase, and you re-evaluate your stance on enforcement."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q3-a",
+            "text": "The consequences of infringement remain (or become) insignificant.\n The consequences of infringement increase, and you re-evaluate your stance on enforcement."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are no upfront or direct costs if you take no immediate action. However, it could be prudent to consult with an [IP\u00a0 lawyer or IP attorney](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)  to help you consider the situation.\u00a0\n\nNote that there may be an indirect cost, in that allowing continued infringement may damage your business or the value of your intellectual property rights."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q4-a",
+            "text": "There are no upfront or direct costs if you take no immediate action. However, it could be prudent to consult with an IP  lawyer or IP attorney  to help you consider the situation. \n\nNote that there may be an indirect cost, in that allowing continued infringement may damage your business or the value of your intellectual property rights."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q5-a",
             "text": "While taking no action is not a significant time commitment, it may take some time to research the infringement taking place, the options available, and the consequences for your business in order to make this decision."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q6",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q6-a",
             "text": "Both large and small businesses use this strategy frequently - only pursuing enforcement when it is necessary."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q7",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You\n* an IP professional - professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q7-a",
+            "text": "You\n an IP professional - professional advice can help provide you with advice about your specific situation. Some services can also help you monitor infringement."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q8",
           "name": "How often is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q8-a",
             "text": "Variable. Many businesses may suspect infringement and have not, or will not, take action - ultimately it is a business decision that will depend on the specific circumstances of a business. Additionally, many possible actions may be resolved between two parties directly."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Review IP First Response resources to understand all your enforcement options, even if you're not using them now. This helps you make an informed choice about waiting and know what tools are available if you change your mind later.\n* Develop a clear strategy for when you\u00a0*will*\u00a0take future enforcement action.\u00a0Your plan can outline specific triggers that will prompt you to act. These might be when the infringer:\n  + Grows beyond a certain size.\n  + Starts competing in your geographic area or digital space.\n  + Has been infringing for a set period.\n  + Crosses other meaningful boundaries for your business.\n* Calculate the potential costs and timeline for different enforcement actions. This helps you budget and prepare for if you do decide to move forward.\n* Identify which type of IP professional you would consult if you choose to act. Consider having initial conversations to understand their services and approach.\n* Keep documentation of the infringement, including dates and evidence, to maintain a strong foundation if you choose to take action in the future."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq#q9-a",
+            "text": "Review IP First Response resources to understand all your enforcement options, even if you're not using them now. This helps you make an informed choice about waiting and know what tools are available if you change your mind later.\n Develop a clear strategy for when you will take future enforcement action. Your plan can outline specific triggers that will prompt you to act. These might be when the infringer:\n  + Grows beyond a certain size.\n  + Starts competing in your geographic area or digital space.\n  + Has been infringing for a set period.\n  + Crosses other meaningful boundaries for your business.\n Calculate the potential costs and timeline for different enforcement actions. This helps you budget and prepare for if you do decide to move forward.\n Identify which type of IP professional you would consult if you choose to act. Consider having initial conversations to understand their services and approach.\n* Keep documentation of the infringement, including dates and evidence, to maintain a strong foundation if you choose to take action in the future."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

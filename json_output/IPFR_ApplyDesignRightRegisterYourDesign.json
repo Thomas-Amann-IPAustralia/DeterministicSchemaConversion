@@ -1,125 +1,74 @@
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx#webpage",
-  "headline": "ApplyDesignRightRegisterYourDesign",
-  "alternativeHeadline": "",
-  "description": "xXx_Err-PLACEHOLDER_xXx",
-  "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx",
-  "identifier": {
-    "@type": "PropertyValue",
-    "propertyID": "UDID",
-    "value": "Dxxxx"
-  },
-  "inLanguage": "en-AU",
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "copyrightYear": "2026",
-  "copyrightHolder": {
-    "@id": "https://www.ipaustralia.gov.au"
-  },
-  "creditText": "Source: IP Australia - IP First Response",
-  "sdPublisher": {
-    "@type": "GovernmentOrganization",
-    "name": "IP Australia"
-  },
-  "sdDatePublished": "2026-02-11",
-  "sdLicense": "https://creativecommons.org/licenses/by/4.0/",
-  "datePublished": "2026-02-11",
-  "dateModified": "2026-02-11",
-  "audience": {
-    "@type": "BusinessAudience",
-    "audienceType": "Australian Small Business Owners",
-    "alternateName": [
-      "Startups",
-      "Entrepreneurs",
-      "SME",
-      "Spinout Company",
-      "Startup",
-      "Spinout",
-      "Small to Medium Enterprise",
-      "Sole Trader"
-    ],
-    "geographicArea": {
-      "@type": "Country",
-      "name": "Australia"
-    }
-  },
-  "usageInfo": {
-    "@type": "CreativeWork",
-    "name": "Disclaimer and Feedback Policy",
-    "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
-  },
-  "about": {
-    "@type": "Thing",
-    "name": "All Intellectual Property Rights",
-    "sameAs": "https://www.wikidata.org/wiki/Q108855835"
-  },
-  "citation": [],
-  "publisher": {
-    "@type": "GovernmentOrganization",
-    "name": "IP Australia",
-    "url": "https://www.ipaustralia.gov.au",
-    "knowsAbout": [
-      "Intellectual Property",
-      "Patents",
-      "Trade Marks",
-      "Design Rights",
-      "Plant Breeder's Rights",
-      "Copyright",
-      "Dispute Resolution"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "website content owner",
-      "email": "IPFirstResponse@IPAustralia.gov.au",
-      "description": "Feedback and enquiries regarding IP First Response"
-    },
-    "parentOrganization": {
+  "@graph": [
+    {
       "@type": "GovernmentOrganization",
-      "name": "Australian Government"
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154"
-  },
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "IP First Response",
-    "url": "https://ipfirstresponse.ipaustralia.gov.au",
-    "description": "A first port of call for businesses to easily understand complex intellectual property issues."
-  },
-  "mainEntity": [
     {
-      "@id": "#the-service",
-      "@type": "xXx_Err-PLACEHOLDER_xXx",
-      "name": "ApplyDesignRightRegisterYourDesign",
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design",
+      "headline": "Access denied - IP First Response",
       "description": "",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Dxxxx"
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Australia"
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "provider": {
-        "@type": "Organization",
-        "name": "xXx_Err-PLACEHOLDER_xXx"
-      }
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses, startups, and individuals"
+      },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article"
+        }
+      ]
     },
     {
-      "@type": "FAQPage",
-      "about": {
-        "@id": "#the-service"
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article",
+      "headline": "Access denied",
+      "articleBody": "You are not authorized to access this page.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Access denied?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You are not authorized to access this page."
-          }
-        }
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage"
+      },
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design"
       ]
     }
   ]

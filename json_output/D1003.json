@@ -2,230 +2,345 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage",
-      "headline": "ASBFEO",
-      "alternativeHeadline": "ASBFEO",
-      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "D1003"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.asbfeo.gov.au/#organization",
+      "name": "Australian Small Business and Family Enterprise Ombudsman",
+      "url": "https://www.asbfeo.gov.au",
+      "sameAs": [
+        "https://www.asbfeo.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "28/02/2025",
-      "dateModified": "2/10/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+      "headline": "Access help tailored to resolve business disputes - IP First Response",
+      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Enforcement\", \"Accused\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "ASBFEO",
+      "identifier": "D1003",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-10-02",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#article"
       },
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-          "name": "Dispute Support Tool"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf",
-          "name": "Assistance Charter."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-          "name": "Alternative dispute resolution (ADR)\u00a0\u00a0 | IP First Response"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "*getting professional assistance with your IP*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "*30 minute consultations with an attorney*"
-        }
-      ],
       "hasPart": [
         {
-          "@id": "#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-how-often-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
       "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#article",
       "name": "Access help tailored to resolve business disputes",
-      "headline": "ASBFEO",
-      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Small Business and Family Enterprise Ombudsman"
-      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "serviceType": "IP Registration and Protection",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      }
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
+      },
+      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "provider": {
+        "@id": "https://www.asbfeo.gov.au/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "Free (dispute resolution costs extra)",
+        "priceCurrency": "AUD"
+      },
+      "timeRequired": "Days to weeks",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-10-02",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+        "https://ipta.org.au/community/get-free-consultation/",
+        "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+        "https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-how-often-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-is-it",
+      "name": "What is it?",
+      "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency. \n\nYou can access ASBFEO's [Dispute Support Tool](https://www.asbfeo.gov.au/disputes-assistance/dispute-support) to identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers. \n\nASBFEO can guide you through dispute resolution by: \n\n* Providing information to resolve your dispute in a timely and low-cost way\n* Engaging with the parties to encourage resolution\n* When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* Guides you through resolving disputes in a way that's designed to suit the needs of small businesses.\n* Can address disputes over a wider range of business issues, rather than intellectual property rights in isolation.\n* Can help you find a mutually acceptable solution while preserving business relationships.\n* Can encourage parties to engage in alternative dispute resolution such as mediation and arbitration which can help resolve disputes in a structured and confidential context while providing more control on the agreed outcomes (as opposed to being mandated by a tribunal or court)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* ASBFEO cannot make a determinative decision. If the parties do not reach a resolution, either party may consider other options, including formal legal options.\n* Due to the potential complexities and unpredictability of this process, costs might increase beyond initial estimates.\n* Escalation of the dispute could require you to defend your claim to your IP rights."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "* ASBFEO provides information to help you decide on what to do next.\n* You proceed with an informal solution like a letter of demand.\n* ASBFEO contacts the other party to encourage disputing parties to resolve their dispute, with a focus on maintaining relationships.\n* ASBFEO refers you other services that can better assist with your particular situation.\n* You proceed with alternative dispute resolution services such as conferencing, mediation, or conciliation.\n* You decide not to pursue resolution of the dispute.\n\nResolution of cases through engagement and alternative dispute resolution is around 80% -- in whole or part through these methods. In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as: \n\n* The goodwill between the parties\n* Whether the parties would benefit from continuing their relationship\n* The potential to bring a legal action should informal methods fail\n* The freedom and ability to negotiate an outcome."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "* Engaging with ASBFEO is free.\n* Alternative dispute resolution options may involve a cost (generally up to about $4,000 shared between the parties)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "ASBFEO offers a variety of ways to resolve issues so it is difficult to provide a single timeframe.  \n\nIn 2024, ASBFEO reports that: \n\n* 90% of calls to the ASBFEO contact centre are answered within 30 seconds.\n* Nearly two thirds of enquiries are resolved at point of contact, for example by providing information."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-how-often-is-this-used",
+      "name": "How often is this used?",
+      "text": "ASBFEO helps approximately 5,000 small businesses per year - over 50,000 small businesses since 2016"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "* Small businesses and family enterprise operators that are in dispute with other businesses or Australian Government agencies.\n* ASBFEO can provide assistance to parties who are businesses with fewer than 100 employees **or** are businesses with revenue of less than $5 million per year."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* Yourself\n* The other party\n* ASBFEO case managers\n* If selected, an alternative dispute resolution service provider"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "An understanding of what you can expect when dealing with ASBFEO by reading their [Assistance Charter.](https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-see-also",
+      "name": "See also",
+      "text": "* [Dispute support | ASBFEO](https://www.asbfeo.gov.au/disputes-assistance/dispute-support)\n* [Alternative dispute resolution (ADR)   | IP First Response](https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators)\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Guides you through resolving disputes in a way that's designed to suit the needs of small businesses.\n* Can address disputes over a wider range of business issues, rather than intellectual property rights in isolation.\n* Can help you find a mutually acceptable solution while preserving business relationships.\n* Can encourage parties to engage in alternative dispute resolution such as mediation and arbitration which can help resolve disputes in a structured and confidential context while providing more control on the agreed outcomes (as opposed to being mandated by a tribunal or court)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q1-a",
+            "text": "Guides you through resolving disputes in a way that's designed to suit the needs of small businesses.\n Can address disputes over a wider range of business issues, rather than intellectual property rights in isolation.\n Can help you find a mutually acceptable solution while preserving business relationships.\n Can encourage parties to engage in alternative dispute resolution such as mediation and arbitration which can help resolve disputes in a structured and confidential context while providing more control on the agreed outcomes (as opposed to being mandated by a tribunal or court)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* ASBFEO cannot make a determinative decision. If the parties do not reach a resolution, either party may consider other options, including formal legal options.\n* Due to the potential complexities and unpredictability of this process, costs might increase beyond initial estimates.\n* Escalation of the dispute could require you to defend your claim to your IP rights."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q2-a",
+            "text": "ASBFEO cannot make a determinative decision. If the parties do not reach a resolution, either party may consider other options, including formal legal options.\n Due to the potential complexities and unpredictability of this process, costs might increase beyond initial estimates.\n* Escalation of the dispute could require you to defend your claim to your IP rights."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* ASBFEO provides information to help you decide on what to do next.\n* You proceed with an informal solution like a letter of demand.\n* ASBFEO contacts the other party to encourage disputing parties to resolve their dispute, with a focus on maintaining relationships.\n* ASBFEO refers you other services that can better assist with your particular situation.\n* You proceed with alternative dispute resolution services such as conferencing, mediation, or conciliation.\n* You decide not to pursue resolution of the dispute.\n\nResolution of cases through engagement and alternative dispute resolution is around 80%\u00a0-- in whole or part through these methods.\u00a0In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as:\u00a0\n\n* The goodwill between the parties\n* Whether the parties would benefit from continuing their relationship\n* The potential to bring a legal action should informal methods fail\n* The freedom and ability to negotiate an outcome."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q3-a",
+            "text": "ASBFEO provides information to help you decide on what to do next.\n You proceed with an informal solution like a letter of demand.\n ASBFEO contacts the other party to encourage disputing parties to resolve their dispute, with a focus on maintaining relationships.\n ASBFEO refers you other services that can better assist with your particular situation.\n You proceed with alternative dispute resolution services such as conferencing, mediation, or conciliation.\n You decide not to pursue resolution of the dispute.\n\nResolution of cases through engagement and alternative dispute resolution is around 80% -- in whole or part through these methods. In a specific dispute, the likelihood of resolution may depend on a wide range of factors such as: \n\n The goodwill between the parties\n Whether the parties would benefit from continuing their relationship\n The potential to bring a legal action should informal methods fail\n The freedom and ability to negotiate an outcome."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Engaging with ASBFEO is free.\n* Alternative dispute resolution options may involve a cost (generally up to about $4,000 shared between the parties)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q4-a",
+            "text": "Engaging with ASBFEO is free.\n Alternative dispute resolution options may involve a cost (generally up to about $4,000 shared between the parties)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASBFEO offers a variety of ways to resolve issues so it is difficult to provide a single timeframe.\u00a0\u00a0\n\nIn 2024, ASBFEO reports that:\u00a0\n\n* 90% of calls to the ASBFEO contact centre are answered within 30 seconds.\n* Nearly two thirds of enquiries are resolved at point of contact, for example by providing information."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q5-a",
+            "text": "ASBFEO offers a variety of ways to resolve issues so it is difficult to provide a single timeframe.  \n\nIn 2024, ASBFEO reports that: \n\n 90% of calls to the ASBFEO contact centre are answered within 30 seconds.\n Nearly two thirds of enquiries are resolved at point of contact, for example by providing information."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q6",
           "name": "How often is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q6-a",
             "text": "ASBFEO helps approximately 5,000 small businesses per year - over 50,000 small businesses since 2016"
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Small businesses and family enterprise operators that are in dispute with other businesses or Australian Government agencies.\n* ASBFEO can provide assistance to parties who are businesses with fewer than 100 employees **or** are businesses with revenue of less than $5 million per year."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q7-a",
+            "text": "Small businesses and family enterprise operators that are in dispute with other businesses or Australian Government agencies.\n ASBFEO can provide assistance to parties who are businesses with fewer than 100 employees or are businesses with revenue of less than $5 million per year."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Yourself\n* The other party\n* ASBFEO case managers\n* If selected, an alternative dispute resolution service provider"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q8-a",
+            "text": "Yourself\n The other party\n ASBFEO case managers\n If selected, an alternative dispute resolution service provider"
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "An understanding of what you can expect when dealing with ASBFEO by reading their [Assistance Charter.](https://www.asbfeo.gov.au/sites/default/files/2024-12/Assistance%20Service%20Charter_Dec%202024.pdf)"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq#q9-a",
+            "text": "An understanding of what you can expect when dealing with ASBFEO by reading their Assistance Charter."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

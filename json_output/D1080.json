@@ -2,208 +2,277 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage",
-      "headline": "Hiring a professional",
-      "alternativeHeadline": "Hiring a professional",
-      "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "D1080"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "Organization",
+      "@id": "https://www.example.com/self-help/#organization",
+      "name": "Self-Help"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "23/01/2025",
-      "dateModified": "27/01/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+      "headline": "Choosing the right IP professional - IP First Response",
+      "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"IP Basics\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Hiring a professional",
+      "identifier": "D1080",
+      "datePublished": "2025-01-23",
+      "dateModified": "2025-01-27",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-what-all-ip-professionals-have-in-common"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
-          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-legal-professionals"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney",
-          "name": "Benefits of using an IP attorney |Trans-Tasman IP Attorneys Regulation"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-trade-mark-attorneys"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.liv.asn.au/legalhelp",
-          "name": "Law Institute Victoria"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-patent-attorneys"
         },
         {
-          "@type": "WebPage",
-          "url": "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
-          "name": "Law Society Northern Territory"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-lawyers-including-solicitors-and-barristers"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.youandthelaw.com.au/",
-          "name": "Queensland Law Society"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-other-ip-professionals"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.lawsociety.com.au/register-of-solicitors",
-          "name": "The Law Society of NSW"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-commercialisation-specialists"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx",
-          "name": "The Law Society of South Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-brand-consultants"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.lst.org.au/find-a-lawyer/",
-          "name": "The Law Society of Tasmania"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-franchise-and-export-consultants"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.actlawsociety.asn.au/find-a-lawyer",
-          "name": "The Law Society of the ACT"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-monitoring-services"
         },
         {
-          "@type": "WebPage",
-          "url": "https://lawsocietywa.asn.au/services/find-a-lawyer/",
-          "name": "The Law Society of Western Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-qualified-persons-qp-for-plant-breeders-rights-pbr"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ami.org.au/",
-          "name": "AMI"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-valuation-professionals"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.franchise.org.au/",
-          "name": "franchise.org.au"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-search-firms"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory",
-          "name": "Qualified Person directory"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-government-business-support-services"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/",
-          "name": "IP Australia website"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.business.gov.au/",
-          "name": "business.gov.au"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-want-to-give-us-feedback"
         }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#article",
+      "name": "Choosing the right IP professional",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage"
+      },
+      "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "datePublished": "2025-01-23",
+      "dateModified": "2025-01-27",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+        "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
+        "https://lawsocietywa.asn.au/services/find-a-lawyer/",
+        "https://www.actlawsociety.asn.au/find-a-lawyer",
+        "https://www.ami.org.au/",
+        "https://www.business.gov.au/",
+        "https://www.franchise.org.au/",
+        "https://www.ipaustralia.gov.au/",
+        "https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory",
+        "https://www.lawsociety.com.au/register-of-solicitors",
+        "https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx",
+        "https://www.liv.asn.au/legalhelp",
+        "https://www.lst.org.au/find-a-lawyer/",
+        "https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.youandthelaw.com.au/"
       ],
       "hasPart": [
         {
-          "@id": "#faq"
-        }
-      ]
-    },
-    {
-      "@id": "#the-service",
-      "@type": "Service",
-      "name": "Choosing the right IP professional",
-      "headline": "Hiring a professional",
-      "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\", \"Unregistered-tm\""
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Self-Help"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Australia"
-      }
-    },
-    {
-      "@id": "#faq",
-      "@type": "FAQPage",
-      "mainEntity": [
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-what-all-ip-professionals-have-in-common"
+        },
         {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-legal-professionals"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-trade-mark-attorneys"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-patent-attorneys"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-lawyers-including-solicitors-and-barristers"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-other-ip-professionals"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-commercialisation-specialists"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-brand-consultants"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-franchise-and-export-consultants"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-monitoring-services"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-qualified-persons-qp-for-plant-breeders-rights-pbr"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-valuation-professionals"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-search-firms"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-government-business-support-services"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-what-all-ip-professionals-have-in-common",
+      "name": "What all IP professionals have in common",
+      "text": "* IP professionals are typically engaged on a fee-for-service basis, either charged hourly or on an amount agreed upon per task.\n* They provide expert advice and guidance, but the final decisions and responsibility for action remain with you.\n* Some may specialise in a particular IP right, industry or area, such as mining, biotechnology, online enforcement, or international IP rights.\n* Many have professional networks and may be able to refer you to other experts, including contacts in other countries.\n\nOn this page:\n\n* Legal professionals\n\n  + Patent attorneys\n  + Trade mark attorneys\n  + Lawyers\n* Other IP professionals\n\n  + Commercialisation specialists\n  + Brand consultants\n  + Franchise and export consultants\n  + IP monitoring services\n  + Qualified Persons (QP) for Plant Breeder's Rights (PBR)\n  + IP valuation professionals\n  + IP search firms\n* Government business support services"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-legal-professionals",
+      "name": "Legal professionals",
+      "text": "If you are seeking advice on how to enforce or defend your IP rights, and what actions might be most appropriate for your situation, speak to a lawyer or other relevant legal professional. We use the term 'legal professional' to refer to professionals who aren't necessarily lawyers, such as IP attorneys. IP attorneys (registered patent or trade mark attorneys) are not necessarily lawyers, but they are qualified to provide information about protecting IP.\n\nMany IP lawyers and IP attorneys have specialties relating to particular industries or situations, and may be more effective in their particular field of expertise. For instance, some IP lawyers may specialise and be highly experienced in dealing with trade marks, but less experienced with patents.\n\nBoth an IP lawyer or IP attorney can provide you with advice and act for you at different stages of IP protection and enforcement. Read below to consider which is most appropriate for your needs."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-trade-mark-attorneys",
+      "name": "Trade mark attorneys",
+      "text": "**Who they are:** Specialists in trade marks who focus on obtaining and maintaining registered IP rights to protect brands (names, logos, slogans) and support business growth.\n\n**Professional standards:** Attorneys must be registered with the Trans-Tasman IP Attorneys Board. They are required to complete ongoing education, and are bound by strict professional and ethical standards.\n\n**How they can help (for example):**\n\n* Advise whether a brand is registrable and run clearance searches to identify conflicts.\n* Prepare and lodge trade mark applications in Australia and some other countries; manage renewals and ownership changes.\n* Help respond to objections and file oppositions with IP Australia in relation to trade mark applications.\n* Advise on brand strategy and related IP options where appropriate.\n* Monitor competitors and support steps to enforce rights.\n* Evaluate the strength or vulnerability of your IP rights and those of others.\n* Assist with licensing.\n* Advise on possible infringement risks relating to others' rights.\n\n**What they don't do:**  A trade mark attorney cannot provide general legal advice and can't conduct proceedings in a court. If you engage an IP attorney, they would need to refer you to a lawyer if you find you need to go to court to enforce your IP rights.\n\n**Where to find one:**  You can find a qualified IP attorney to assist you on the Trans-Tasman Attorneys Board website: [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0).\n\n[Benefits of using an IP attorney |Trans-Tasman IP Attorneys Regulation](https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-patent-attorneys",
+      "name": "Patent attorneys",
+      "text": "**Who they are:** Specialists in patent law and practice with in-depth knowledge of one or more fields of science or technology, used to help protect inventions.\n\n**Professional standards:** Attorneys must be registered with the Trans-Tasman IP Attorneys Board. They are required to complete ongoing education, and are bound by strict professional and ethical standards.\n\n**How they can help (for example but not limited to):**\n\n* Assess whether an idea might be protectable by a patent and conduct prior-art searches.\n* Draft and file patent applications in Australia, and advise on timing and jurisdictions aligned to business goals.\n* Provide strategies to protect inventions and to monitor competitors' activity.\n* Assist in patent office processes (e.g. examination, oppositions).\n* Advise on other IP options (for example, designs, trade marks and protection of trade secrets).\n* Evaluate the strength or vulnerability of your IP rights and those of others.\n* Monitor competitors and support steps to enforce rights.\n* Assist with licensing and technology transfer.\n* Conduct IP audits to identify protectable ideas and potential gaps.\n* Advise on possible infringement risks relating to others' rights.\n* Help you commercialise ideas in a way that supports business growth.\n\n**What they don't do:**  A patent attorney cannot provide general legal advice and can't conduct proceedings in a court. If you engage an IP attorney, they would need to refer you to a lawyer if you find you need to go to court to enforce your IP rights.\n\n**Where to find one:** You can find a qualified IP attorney to assist you at: [Find an IP attorney or firm | Trans-Tasman IP Attorneys Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0).\n\n[Benefits of using an IP attorney |Trans-Tasman IP Attorneys Regulation](https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-lawyers-including-solicitors-and-barristers",
+      "name": "IP lawyers (including solicitors and barristers)",
+      "text": "**Who they are:** Lawyers who specialise in IP law, which for some is regarded a distinct area of legal practice involving a focus on IP rights matters. \\\nIn Australia, \"lawyer\" is a broad term that includes both solicitors and barristers. Most individuals and businesses will engage a solicitor as their first point of legal contact.\n\n* Solicitors provide legal advice, manage disputes, and prepare legal documents.\n* Barristers are specialists in court advocacy, representing their clients in court.\n* An \"IP lawyer\" typically refers to a solicitor who specialises in intellectual property law and may collaborate with a barrister for litigation.\n\n**Qualifications:** All lawyers must hold a law degree, be admitted to legal practice in an Australian jurisdiction, and maintain a practising certificate. Solicitors and barristers are separately regulated and may also pursue specialist accreditation in IP law.\n\n**What they can do (for example but not limited to):** \n\n* Advise you on different areas of IP law, often including infringement, licensing, ownership, commercialisation, and enforcement.\n* Evaluate the strength or vulnerability of your IP rights and those of others.\n* Draft and negotiate legally binding agreements such as licences, assignments, confidentiality agreements (also referred to as non-disclosure agreements or NDAs), and terms of use.\n* Issue or respond to cease and desist letters relating to potential IP infringement\n* Represent you in dispute resolution processes such as negotiation, mediation, and appearances in lower courts.\n* Manage the legal aspects of an IP dispute and manage complex or higher court proceedings.\n* Help identify and mitigate legal risks associated with creating, using, or enforcing IP.\n\nIt's a good idea to ask for an indication of how much the entire process may cost during your first meeting. IP lawyers have a professional obligation to provide you with an upfront estimate of their fees and costs.\n\n**What they don't do:** Lawyers generally do not prepare technical IP specifications unless they are also registered as patent attorneys. Generally speaking, if your legal matter goes to court, solicitors will work with a barrister to represent you in court. \n\nBy engaging an IP professional, they will aim to provide their services to achieve your intended outcome - but they are obliged to follow the instructions you provide them. While they can advise you on certain courses of action, you have the ultimate decision and responsibility. \n\n**Where to find one:**\n\nTo find an IP lawyer, you can search on your State or Territory's law society website:\n\n* [Law Institute Victoria](https://www.liv.asn.au/legalhelp)\n\n* [Law Society Northern Territory](https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/)\n\n* [Queensland Law Society](https://www.youandthelaw.com.au/)\n\n* [The Law Society of NSW](https://www.lawsociety.com.au/register-of-solicitors)\n\n* [The Law Society of South Australia](https://www.lawsocietysa.asn.au/PseudoCode/Radius_Search.aspx)\n\n* [The Law Society of Tasmania](https://www.lst.org.au/find-a-lawyer/)\n\n* [The Law Society of the ACT](https://www.actlawsociety.asn.au/find-a-lawyer)\n\n* [The Law Society of Western Australia](https://lawsocietywa.asn.au/services/find-a-lawyer/)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-other-ip-professionals",
+      "name": "Other IP professionals",
+      "text": "The term 'IP professionals' can refer to a wide range of experts and people who can help you plan and manage your business in relation to IP, including those listed above.\n\nIf you wish to obtain support for other IP-related aspects of your business, you may wish to engage services provided by non-legal IP professionals. While these services can complement a lawyer's or IP attorney's work, they do not replace legal advice. \n\n* **Commercialisation specialists:** Assess commercial potential, align IP with business models, and support licensing or investment readiness.\n* **Brand consultants:** Help position brands and reduce marketplace confusion; they often collaborate with trade mark attorneys and lawyers.\n* **Franchise and export consultants:** Support growth pathways (for example, franchising, overseas expansion) and work alongside legal professionals on agreements.\n* **IP monitoring services:** Track marketplaces, registers and domains and provide alerts about potential conflicts.\n* **Qualified Persons (QP) for Plant Breeder's Rights (PBR):** Technically accredit growing trials and certify data for PBR applications.\n* **IP valuation professionals and IP search firms:** Provide specialised reports and searches often used by IP attorneys and lawyers to inform strategy.\n* **Government business support services:** Provide tools and general guidance (for example, IP Australia and business.gov.au); they do not offer individual legal advice."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-commercialisation-specialists",
+      "name": "Commercialisation specialists",
+      "text": "**Who they are:** Business professionals who help bring IP-based innovations to market and create commercial value.\n\n**Qualifications:** May come from backgrounds in business development, commercial law, marketing, or product management. Some are also registered IP attorneys.\n\n**What they can do:**\n\n* Assess the commercial potential of your innovation or IP\n* Help develop a business model or pricing strategy\n* Identify market entry opportunities or potential customers\n* Assist you in preparing for investment pitches, ensuring your IP position supports your commercial story\n* Recommend strategies for licensing, joint ventures, or strategic partnerships\n* Align IP protection efforts with broader business growth objectives.\n\n**What they don't do:** Cannot offer legal advice unless they are registered lawyers, or file IP rights unless qualified as an IP attorney. \n\n**Where to find one:** Explore university tech transfer offices, innovation hubs, or search for \"IP commercialisation consultant Australia.\""
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-brand-consultants",
+      "name": "Brand consultants",
+      "text": "**Who they are:** Branding and communications professionals who support the development, presentation, and positioning of your brand.\n\n**Qualifications:** May hold qualifications in marketing, design, or business strategy. This profession is not formally regulated.\n\n**What they can do:** \n\n* Help you understand the business impacts of potential brand infringement, including damaging your reputation, confusion, or weakening of your market presence.\n* Support product and service positioning to differentiate from competitors.\n* Collaborate with trade mark attorneys or lawyers in developing new IP avoid legal pitfalls in branding.\n\n**What they don't do:**  Cannot offer legal advice unless they are registered lawyers, or file IP rights unless qualified as an IP attorney.\n\n**Where to find one:** Use search terms like \"brand strategy consultant Australia\" or visit [AMI](https://www.ami.org.au/)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-franchise-and-export-consultants",
+      "name": "Franchise and export consultants",
+      "text": "**Who they are:** Business development experts who help extend your IP through franchising or into global markets.\n\n**What they can do:**\n\n* Provide guidance on structuring a franchise or licensing model using your IP\n* Support with export strategies that account for IP registration and enforcement overseas\n* Help you understand local market risks and opportunities\n* Work with legal professionals to prepare agreements and documents.\n\n**What they don't do:**  Cannot offer legal advice unless they are registered lawyers, or file IP rights unless qualified as an IP attorney. \n\n**Where to find one:** Visit [franchise.org.au](https://www.franchise.org.au/)  or for export assistance search \"export consultant Australia.\""
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-monitoring-services",
+      "name": "IP monitoring services",
+      "text": "**Who they are:** Commercial services that track activity across marketplaces, registers, and domains to detect possible infringement.\n\n**What they can do:**\n\n* Provide alerts about similar IP filings, domain registrations, or suspected counterfeit products. These alerts may be automated, or reviewed by an employee of the monitoring service.\n* Monitor online listings and e-commerce platforms.\n\n**What they don't do:** Cannot offer legal advice if they are not registered lawyers, or file IP rights unless qualified as an IP attorney. \\\nSome providers only monitor activity and it's up to you to act on their results - and to verify if a discovered use of your IP is likely to be considered infringement. Other providers offer broader services such as investigating suspected infringement, or reporting this to online platforms. These services may be offered by law firms or attorney firms that may be able to offer a package of services beyond standard IP monitoring services. \n\n**Where to find one:** Search \"IP monitoring service Australia\" or ask your IP professional for suggestions."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-qualified-persons-qp-for-plant-breeders-rights-pbr",
+      "name": "Qualified Persons (QP) for Plant Breeder's Rights (PBR)",
+      "text": "**Who they are**: Qualified Persons (QPs) are experts accredited by IP Australia in a specific plant group. They are authorised to certify the technical aspects of Plant Breeder's Rights (PBR) applications, including supervision and verification of growing trials.\n\n**Qualifications**: A QP must have recognised expertise in plant breeding or related fields and be formally accredited by IP Australia. Their accreditation enables them to act as official certifiers for PBR applications.\n\n**What they can do**:\n\n* Provide advice and guidance throughout the PBR application process\n* Design and oversee the growing trial needed to demonstrate that a plant variety is distinct, uniform, and stable (DUS)\n* Identify the most appropriate comparator variety of common knowledge (VCK) for the trial\n* Submit a pre-trial agreement (PETA) to IP Australia for approval\n* Supervise the growing trial to ensure it follows the approved plan\n* Collect and analyse trial data to support the application\n* Submit a detailed description of the candidate variety through the Interactive Variety Description System (IVDS)\n* Organise independent verification of the DUS characteristics by a PBR examiner\n* Certify Part 2 of the PBR application, confirming that the trial results support protection.\n\n**What they don't do**: QPs do not provide legal advice or manage the commercial aspects of IP rights. They focus specifically on the scientific and technical certification of PBR trials.\n\n**Where to find one**: You can search the [Qualified Person directory](https://www.ipaustralia.gov.au/plant-breeders-rights/role-of-a-qualified-person/qualified-persons-directory)  on the [IP Australia website](https://www.ipaustralia.gov.au/). When selecting a QP, consider their plant specialisation and location. If no QP is available in your region, you may also apply to become a QP yourself."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-valuation-professionals",
+      "name": "IP valuation professionals",
+      "text": "**Who they are:** Financial professionals who specialise in determining the value of intangible IP assets. The service can be accessed directly by a business owner, but can be engaged by the professionals listed above who use the outputs as part of broader interpretation, strategy and advice.\n\n**What they can do:**\n\n* Determine the market value of IP rights used to:\n* Support fundraising, licensing negotiations, or mergers and acquisitions\n* Assist in tax reporting or depreciation of IP assets\n* Provide court-admissible reports for IP disputes or damages claims.\n\n**Where to find one:** This is a very specialised area of IP.  If you are unsure of your options, you can seek recommendations from other IP professionals."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-ip-search-firms",
+      "name": "IP search firms",
+      "text": "**Who they are:** Companies that perform detailed IP searches and competitive landscape assessments. They are often used by other IP professionals on your behalf, who then interpret the discovered IP in terms of their own speciality.\n\n**What they can do:**\n\n* Search for registered IP rights which may be related to the search query, with experience in searching the right terms and registers.\n* Search for evidence which may conflict with proposed rights (e.g. showing 'prior use' of a trade mark, or evidence that a patent is not 'novel').\n* Monitor IP registers and business sectors for IP conflicts.\n* Assist with due diligence during IP acquisition or investment.\n\n**What they can't do:** Cannot offer legal advice unless they are registered lawyers, or file IP rights unless qualified as an IP attorney.\n\n**Where to find one:** Use terms like \"IP search firm Australia\" or ask for referrals from your lawyer or IP attorney."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-government-business-support-services",
+      "name": "Government business support services",
+      "text": "**Who they are:** Federal and state services that offer tools and general IP guidance.\n\n**What they can do:**\n\n* Provide IP information and educational resources\n* Connect you with advisors or external support\n* Offer tools to help you self-assess or manage your IP.\n\n**What they don't do:** Provide legal advice or act on your behalf.\n\n**Where to find one:** Visit [IP Australia](https://www.ipaustralia.gov.au/)  or [business.gov.au](https://www.business.gov.au/)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
     }
   ]
 }

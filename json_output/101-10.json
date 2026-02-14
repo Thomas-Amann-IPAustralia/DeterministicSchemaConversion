@@ -2,175 +2,215 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage",
-      "headline": "Infringement 101",
-      "alternativeHeadline": "Infringement 101",
-      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person\u2019s or business\u2019s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders\u2019 rights. ",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "101-10"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "4/07/2025",
-      "dateModified": "19/08/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
+      "headline": "What is IP infringement? - IP First Response",
+      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Infringement 101\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Infringement 101",
+      "identifier": "101-10",
+      "datePublished": "2025-07-04",
+      "dateModified": "2025-08-19",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
-          "name": "Trade mark infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-what-is-infringement"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
-          "name": "Patent infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-what-does-infringement-mean"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
-          "name": "Design infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-why-ip-infringement-matters"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
-          "name": "Plant Breeder's Rights (PBR) infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-key-elements-of-ip-infringement"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
-          "name": "Copyright infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-example-scenarios"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
-          "name": "Unregistered trade marks"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-common-misconceptionsmyths-about-ip-infringement"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "feedback form"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-why-its-hard-to-figure-out-on-your-own"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article",
+      "headline": "What is IP infringement?",
+      "articleBody": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage"
+      },
+      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",
+      "datePublished": "2025-07-04",
+      "dateModified": "2025-08-19",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement"
       ],
-      "name": "What is IP Infringement ",
-      "headline": "Infringement 101",
-      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person\u2019s or business\u2019s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders\u2019 rights. ",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Self-help"
-      },
-      "articleBody": "PageURL: \"[https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement)\"",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-what-is-infringement"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-what-does-infringement-mean"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-why-ip-infringement-matters"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-key-elements-of-ip-infringement"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-example-scenarios"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-common-misconceptionsmyths-about-ip-infringement"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-why-its-hard-to-figure-out-on-your-own"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-what-is-infringement",
+      "name": "What is infringement?",
+      "text": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person's or business's creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders' rights. \n\nUnderstanding the basics of IP infringement is essential for anyone who creates, innovates, or operates a business in Australia. This article provides a general introduction to the concept of infringement and what it means for both IP owners and those who may use others' IP."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-what-does-infringement-mean",
+      "name": "What does infringement mean?",
+      "text": "At its simplest, infringement occurs when someone uses another's protected creative work or invention without that person's permission or consent. Australian law gives creators and inventors legal protection and rights over their work. Australian IP law protects various types of intellectual creations. These include inventions with patents, distinctive brand names with registered trade marks, unique product appearances with registered designs, various creative works with copyright, and new plant varieties with plant breeders' rights. Each type of intellectual property grants its owner specific, exclusive rights.  \n\nWhen someone exercises any of these exclusive rights without permission, infringement may occur. Infringement can be understood as the act of breaching those rights. As part of their bundle of rights, the IP owner can take legal action against anyone involved in infringement. \n\nThink of it as using someone else's property without asking. Just as you would not use someone's car without permission, you should not use their intellectual property without permission either. IP infringement is sometimes informally referred to as copying, imitation, ripping off, or duping. \n\n* [Trade mark infringement](https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement)\n* [Patent infringement](https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement)\n* [Design infringement](https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement)\n* [Plant Breeder's Rights (PBR) infringement](https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement)\n* [Copyright infringement](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement)\n* [Unregistered trade marks](https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-why-ip-infringement-matters",
+      "name": "Why IP infringement matters",
+      "text": "IP infringement matters for several reasons: \n\n1. **For IP owners**: Someone using your IP without permission can damage your business, cost you money, and weaken the value of what you have created.\n2. **For businesses and creators**: Using someone else's protected IP without permission can lead to legal disputes, financial penalties, and damage to your reputation.\n3. **For everyone**: Australia's IP system tries to balance rewarding creators with allowing new ideas to flourish. Respecting IP rights helps maintain this balance."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-key-elements-of-ip-infringement",
+      "name": "Key elements of IP infringement",
+      "text": "While different types of IP have their own specific rules, some common elements help determine if infringement might be occurring: \n\n**1. There must be protected intellectual property**\n\nFor infringement to occur, the creative work or invention must first be protected under the law. This means answering the question, 'What exactly is protected?' Different rules apply to different types of IP and protect only specific aspects of creation or innovation. \n\nSome types of IP, like patents, trade marks, and designs, must be officially registered with IP Australia to be protected. On the other hand, IP rights, such as copyright, are automatically protected when certain conditions are met. \n\nImportantly, IP rights must be in place that have not expired. The various IP rights last for different periods: \n\n* Patents generally last up to 20 years\n* Trade marks can last forever if renewed\n* Designs last a maximum of 10 years\n* Copyright lasts generally 70 years after the creator dies\n* Plant breeders' rights last up to 20 or 25 years, depending on the plant variety.\n\n**2. Someone used it without permission**\n\nThe person or business must use the protected IP without proper permission (commonly called the alleged infringer). Without some form of \"yes, you can use this,\" using protected IP might be considered infringement. Permission might be granted through: \n\n* Written agreement allowing its use (called a licence)\n* Written agreement to transfer ownership (called an assignment)\n* Informal permission (verbal agreement or consent).\n\n**3. What they are using is too similar**\n\nWhen determining infringement, the material created or the activity of the alleged infringer is examined. The alleged infringing material or activity must be sufficiently similar to the protected IP to create a problem. How this is judged under the law depends on the type of IP involved. Different tests are applied to determine what constitutes a problematic level of similarity. \n\n* **For patents**: Are they using what a granted patent specifically describes and claims?\n* **For trade marks**: Are they using a trade mark that is too similar and likely to confuse customers, and is it being used on similar goods or services?\n* **For designs**: Does the product look too much like the protected design?\n* **For copyright**: Have they copied a substantial part of the original work?\n* **For plant breeders' rights**: Have they propagated or copied the protected plant variety?\n\n**4. How it is being used matters**\n\nHow the IP is used is an important factor in determining infringement though the requirements vary by the IP type: \n\n* **Trade marks**: To infringe a registered trade mark, someone needs to use something similar to the registered mark to brand or identify their products or services in the marketplace. Mentioning the brand name in conversation or for informational purposes, or in non-commercial contexts, is generally not infringement.\n* **Designs**: Infringement typically involves making, importing, selling, or using products that incorporate the protected design. While often commercial, infringement can occur in non-commercial contexts.\n* **Patents**: Infringement occurs when someone makes, uses, sells, offers to sell, or imports the patented invention without permission.\n* **Plant breeders' rights**: Infringement is primarily in commercial contexts, involving production, reproduction, conditioning for propagation, offering for sale, selling, importing, exporting, or stocking of the protected plant variety.\n* **Copyright**: Copyright infringement can occur in both commercial and non-commercial situations. Copying, distributing, performing, or displaying copyrighted works without permission can be infringement.\n\n**5. When using someone's IP might be allowed**\n\nEven if someone is using IP in a way that appears to infringe, there may be legal defences or exceptions that allow their use. Each type of IP right has its own defences. Here are some common defences: \n\n* **Trade marks:** Using your own name in business is a defence.\n* **Patents**: Using a patented invention for experimental use, like research and testing, is a defence.\n* **Copyright:** Using copyright material for research or study, criticism or review, parody or satire, or news reporting are defences.\n* **Designs:** Making parts needed to repair a complex product is a defence.\n* **Plant breeders' rights**: Using a plant variety for the purpose of experimentation, further breeding, like cross breeding, or using the variety for private and non-commercial use."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-example-scenarios",
+      "name": "Example scenarios",
+      "text": "Here are some general examples that illustrate potential IP infringement situations: \n\n* **Example 1**: A small business develops and uses a logo that closely resembles another cafe's registered trade mark. Even without the intention to copy, this similarity could constitute infringement if it might confuse consumers about the source of the services.\n* **Example 2**: A manufacturer creates a product using a method that incorporates all the essential steps described in someone else's granted patent. This is likely infringement, even if they were unaware of the patent.\n* **Example 3**: A website copies an image from another website without asking for permission. This may constitute copyright infringement, even if the website provides a source for the image."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-common-misconceptionsmyths-about-ip-infringement",
+      "name": "Common misconceptions/myths about IP infringement",
+      "text": "There are several misunderstandings about IP infringement that many people believe: \n\n* **\"If I change it by 10%, it's not infringement\"**: Each IP right has different tests for when something is too similar. No fixed percentage change automatically avoids infringement.\n* **\"I didn't know they owned it\"**: Not knowing about someone else's IP rights usually is not a defence against infringement.\n* **\"I'm not charging for it, so it's not infringement\"**: Even if you are not making money from it, using someone's IP without permission can still be infringement.\n* **\"I'm giving credit to the creator\"**: Acknowledging the source of material does not necessarily avoid infringement.\n* **\"It's not registered, so I can use it \"**: Some IP rights, like copyright, do not require registration to be protected."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-why-its-hard-to-figure-out-on-your-own",
+      "name": "Why it's hard to figure out on your own",
+      "text": "Determining whether infringement has occurred can be tricky and often needs legal expertise. Courts make the final decisions on infringement cases, and many involve complicated legal arguments. Things that make it hard to assess include: \n\n* The complexity of IP laws\n* Understanding precisely what is protected\n* Judging whether something is too similar\n* Knowing which exceptions or defences might apply\n* Keeping up with changes in how courts interpret the laws.\n\n##"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq#q1",
           "name": "What is infringement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person's or business's creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders' rights.\u00a0\n\nUnderstanding the basics of IP infringement is essential for anyone who creates, innovates, or operates a business in Australia. This article provides a general introduction to the concept of infringement and what it means for both IP owners and those who may use others' IP."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq#q1-a",
+            "text": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person's or business's creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders' rights. \n\nUnderstanding the basics of IP infringement is essential for anyone who creates, innovates, or operates a business in Australia. This article provides a general introduction to the concept of infringement and what it means for both IP owners and those who may use others' IP."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq#q2",
           "name": "What does infringement mean?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "At its simplest, infringement occurs when someone uses another's protected creative work or invention without that person's permission or consent. Australian law gives creators and inventors legal protection and rights over their work. Australian IP law protects various types of intellectual creations. These include inventions with patents, distinctive brand names with registered trade marks, unique product appearances with registered designs, various creative works with copyright, and new plant varieties with plant breeders' rights. Each type of intellectual property grants its owner specific, exclusive rights.\u00a0\u00a0\n\nWhen someone exercises any of these exclusive rights without permission, infringement may occur. Infringement can be understood as the act of breaching those rights. As part of their bundle of rights, the IP owner can take legal action against anyone involved in infringement.\u00a0\n\nThink of it as using someone else's property without asking. Just as you would not use someone's car without permission, you should not use their intellectual property without permission either. IP infringement is sometimes informally referred to as copying, imitation, ripping off, or duping.\u00a0\n\n* [Trade mark infringement](https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement)\n* [Patent infringement](https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement)\n* [Design infringement](https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement)\n* [Plant Breeder's Rights (PBR) infringement](https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement)\n* [Copyright infringement](https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement)\n* [Unregistered trade marks](https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks)"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq#q2-a",
+            "text": "At its simplest, infringement occurs when someone uses another's protected creative work or invention without that person's permission or consent. Australian law gives creators and inventors legal protection and rights over their work. Australian IP law protects various types of intellectual creations. These include inventions with patents, distinctive brand names with registered trade marks, unique product appearances with registered designs, various creative works with copyright, and new plant varieties with plant breeders' rights. Each type of intellectual property grants its owner specific, exclusive rights.  \n\nWhen someone exercises any of these exclusive rights without permission, infringement may occur. Infringement can be understood as the act of breaching those rights. As part of their bundle of rights, the IP owner can take legal action against anyone involved in infringement. \n\nThink of it as using someone else's property without asking. Just as you would not use someone's car without permission, you should not use their intellectual property without permission either. IP infringement is sometimes informally referred to as copying, imitation, ripping off, or duping. \n\n Trade mark infringement\n Patent infringement\n Design infringement\n Plant Breeder's Rights (PBR) infringement\n Copyright infringement\n Unregistered trade marks"
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

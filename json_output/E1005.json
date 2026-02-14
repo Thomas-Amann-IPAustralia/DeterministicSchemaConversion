@@ -2,157 +2,123 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#webpage",
-      "headline": "Applying for IP",
-      "alternativeHeadline": "Applying for IP",
-      "description": "",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "E1005"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "11/09/2025",
-      "dateModified": "11/09/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip",
+      "headline": "Is it worth registering my IP? - IP First Response",
+      "description": "",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"IP Basics\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Applying for IP",
+      "identifier": "E1005",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#article"
       },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-want-to-give-us-feedback"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#article",
+      "headline": "Is it worth registering my IP?",
+      "articleBody": "Your ideas, brands, inventions and designs can be some of the most valuable assets in your business. Like physical assets, they can grow in value over time -- but only if you take steps to protect them. \n\nRegistering an IP right involves applying through IP Australia for a trade mark, patent, design, or plant breeder's right. Once granted or registered (and certified for design rights), these rights are legally recognised and easier to enforce. They can also become long-term business assets that you can sell, license, or use to attract investment. \n\nHowever, 'protection' doesn't always mean registering IP. Copyright, for example, applies automatically to original works like writing, art, music, or software. Confidential information can be protected through contracts, such as non-disclosure agreements (NDAs). Trade marks can sometimes be defended under 'common law', though this is usually harder and more expensive than relying on a registered trade mark. \n\nContexts where a registered right may be preferred include: \n\n* When your brand or invention is central to your business identity or growth.\n* If you need clear proof of ownership to show to investors, buyers, or lenders.\n* When you want confidence to expand into new markets, including overseas.\n* Where stopping competitors from copying is critical to your business model.\n\nOn the other hand, if your work is short-lived, fast-moving, or unlikely to be copied, automatic protections, contracts or trade secrets may be enough. Many small businesses use a mix of registered and unregistered protections, depending on the stage they are at and what value they see in their ideas. \n\nRegistration is therefore not the only way. However, in the right context, it can provide confidence, recognition, and long-term value that other protections may not.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#webpage"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
       "relatedLink": [
+        "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+        "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+        "https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip"
+      ],
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-see-also"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
-          "name": "Choosing the right IP tool | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone is using my IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
-          "name": "Why its important to register your IP | Business.Gov"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip",
-          "name": "Why should I value my IP assets | IP Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
-      ],
-      "name": "Is it worth registering my IP?",
-      "headline": "Applying for IP",
-      "description": "",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Self-Help"
-      },
-      "articleBody": "Your ideas, brands, inventions and designs can be some of the most valuable assets in your business. Like physical assets, they can grow in value over time -- but only if you take steps to protect them.\u00a0\n\nRegistering an IP right involves applying through IP Australia for a trade mark, patent, design, or plant breeder's right. Once granted or registered (and certified for design rights), these rights are legally recognised and easier to enforce. They can also become long-term business assets that you can sell, license, or use to attract investment.\u00a0\n\nHowever, 'protection' doesn't always mean registering IP. Copyright, for example, applies automatically to original works like writing, art, music, or software. Confidential information can be protected through contracts, such as non-disclosure agreements (NDAs). Trade marks can sometimes be defended under 'common law', though this is usually harder and more expensive than relying on a registered trade mark.\u00a0\n\nContexts where a registered right may be preferred include:\u00a0\n\n* When your brand or invention is central to your business identity or growth.\n* If you need clear proof of ownership to show to investors, buyers, or lenders.\n* When you want confidence to expand into new markets, including overseas.\n* Where stopping competitors from copying is critical to your business model.\n\nOn the other hand, if your work is short-lived, fast-moving, or unlikely to be copied, automatic protections, contracts or trade secrets may be enough. Many small businesses use a mix of registered and unregistered protections, depending on the stage they are at and what value they see in their ideas.\u00a0\n\nRegistration is therefore not the only way. However, in the right context, it can provide confidence, recognition, and long-term value that other protections may not.",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-what-is-it",
+      "name": "What is it?",
+      "text": "Your ideas, brands, inventions and designs can be some of the most valuable assets in your business. Like physical assets, they can grow in value over time -- but only if you take steps to protect them. \n\nRegistering an IP right involves applying through IP Australia for a trade mark, patent, design, or plant breeder's right. Once granted or registered (and certified for design rights), these rights are legally recognised and easier to enforce. They can also become long-term business assets that you can sell, license, or use to attract investment. \n\nHowever, 'protection' doesn't always mean registering IP. Copyright, for example, applies automatically to original works like writing, art, music, or software. Confidential information can be protected through contracts, such as non-disclosure agreements (NDAs). Trade marks can sometimes be defended under 'common law', though this is usually harder and more expensive than relying on a registered trade mark. \n\nContexts where a registered right may be preferred include: \n\n* When your brand or invention is central to your business identity or growth.\n* If you need clear proof of ownership to show to investors, buyers, or lenders.\n* When you want confidence to expand into new markets, including overseas.\n* Where stopping competitors from copying is critical to your business model.\n\nOn the other hand, if your work is short-lived, fast-moving, or unlikely to be copied, automatic protections, contracts or trade secrets may be enough. Many small businesses use a mix of registered and unregistered protections, depending on the stage they are at and what value they see in their ideas. \n\nRegistration is therefore not the only way. However, in the right context, it can provide confidence, recognition, and long-term value that other protections may not."
     },
     {
-      "@id": "#faq",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is it worth registering my IP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
-        }
-      ]
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-see-also",
+      "name": "See also",
+      "text": "[Choosing the right IP tool | IP Australia](https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool)  \n\n[Someone is using my IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip)  \n\n[Why its important to register your IP | Business.Gov](https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission)   \n\n[Why should I value my IP assets | IP Australia](https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip)"
     },
     {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
     }
   ]
 }

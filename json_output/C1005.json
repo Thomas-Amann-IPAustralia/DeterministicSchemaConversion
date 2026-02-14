@@ -2,216 +2,330 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#webpage",
-      "headline": "IP audit",
-      "alternativeHeadline": "IP Audit",
-      "description": "Identify IP in your portfolio, who owns it, what it\u2019s worth, it\u2019s legal status, and what to do next.",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "C1005"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "28/07/2025",
-      "dateModified": "1/10/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+      "headline": "Conduct IP audits to spot gaps, reduce risks and plan next-steps - IP First Response",
+      "description": "Identify IP in your portfolio, who owns it, what it’s worth, it’s legal status, and what to do next.",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Proactive\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "IP Audit",
+      "identifier": "C1005",
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-10-01",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
-          "name": "comprehensive IP strategy"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-benefits"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.wipo.int/en/web/business/ip-audit",
-          "name": "Uncovering IP Risks and Potential: IP Audit"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-risks"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
-          "name": "WIPO IP Diagnostics"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#article",
+      "headline": "Conduct IP audits to spot gaps, reduce risks and plan next-steps",
+      "articleBody": "An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it's worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a comprehensive IP strategy. \n\nAudits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals. \n\nCommon triggers for an IP audit include: \n\n* Significant corporate change, such as a merger or acquisition\n* Entering a joint venture or strategic alliance\n* Transfer or assignment of IP rights\n* Launch of a new product line or market expansion\n* Initiation of enforcement or defence actions.\n\nHowever, many businesses also conduct regular audits to systematically review their IP portfolio to evaluate their IP assets, renew their IP rights and minimise risks.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#webpage"
+      },
+      "description": "Identify IP in your portfolio, who owns it, what it’s worth, it’s legal status, and what to do next.",
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-10-01",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+        "https://www.wipo.int/en/web/business/ip-audit",
+        "https://www.wipo.int/en/web/wipo-ip-diagnostics"
       ],
-      "name": "CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS",
-      "headline": "IP audit",
-      "description": "Identify IP in your portfolio, who owns it, what it\u2019s worth, it\u2019s legal status, and what to do next.",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "IP Professionals"
-      },
-      "articleBody": "An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it's worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a\u00a0[comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip).\u00a0\n\nAudits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals.\u00a0\n\nCommon triggers for an IP audit include:\u00a0\n\n* Significant corporate change, such as a merger or acquisition\n* Entering a joint venture or strategic alliance\n* Transfer or assignment of IP rights\n* Launch of a new product line or market expansion\n* Initiation of enforcement or defence actions.\n\nHowever, many businesses also conduct regular audits to systematically review their IP portfolio to evaluate their IP assets, renew their IP rights and minimise risks.",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-is-it",
+      "name": "What is it?",
+      "text": "An intellectual property (IP) audit is a review of the intellectual property you or your business owns, uses or has acquired. It aims to identify what IP exists in your portfolio, who owns it, what it's worth, its legal status, and what to do next. An IP audit is often the very first step in designing and setting up a [comprehensive IP strategy](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip). \n\nAudits can be done in-house or with help from IP professionals such as IP lawyers or a qualified patent or trade mark attorney. They offer a clear picture of whether your IP assets are protected and aligned with your business goals. \n\nCommon triggers for an IP audit include: \n\n* Significant corporate change, such as a merger or acquisition\n* Entering a joint venture or strategic alliance\n* Transfer or assignment of IP rights\n* Launch of a new product line or market expansion\n* Initiation of enforcement or defence actions.\n\nHowever, many businesses also conduct regular audits to systematically review their IP portfolio to evaluate their IP assets, renew their IP rights and minimise risks."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* May help identify and address legal or infringement risks early.\n* Can support compliance with IP laws and regulations.\n* Can demonstrate to investors and partners that you have a clear understanding and control over your IP.\n* Can provide strategic insights to maximise commercial use of your IP."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* May require specialised expertise, which can add complexity or cost.\n* Confidential information might be exposed if not handled securely.\n* One-off audits can become outdated -- regular reviews are usually needed."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "Possible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.  \n\nNoting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to: \n\n* A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates\n* Clear list of possible infringement risks and how to handle them\n* Decision to get ongoing help from an IP professional."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "Costs would vary depending on your portfolio and whether you choose to engage professional service: \n\n* In-house audits mainly cost staff time and may take several days to several weeks\n* Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review: \n\n* A focused audit of one IP type may take several days\n* Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "Conducting a one-off or regular IP audit is a practice commonly used by businesses that own or use multiple IP assets."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "Any IP rights holder or authorised user managing IP assets."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* Business owner or employee/s leading the audit.\n* Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "* Clear scope and purpose for the audit.\n* Copies of registrations, applications, licences and confidentiality agreements.\n* Evidence of creation dates, market use and renewal deadlines.\n* Access to branding, technical and commercial records.\n* Secure system (like a spreadsheet or software) to record your findings.\n\nYou may also consider obtaining tailored advice from an IP professional before acting on results."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-see-also",
+      "name": "See also",
+      "text": "* [Develop a strategy to manage your IP | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip)\n* [Uncovering IP Risks and Potential: IP Audit](https://www.wipo.int/en/web/business/ip-audit)\n* [WIPO IP Diagnostics](https://www.wipo.int/en/web/wipo-ip-diagnostics)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* May help identify and address legal or infringement risks early.\n* Can support compliance with IP laws and regulations.\n* Can demonstrate to investors and partners that you have a clear understanding and control over your IP.\n* Can provide strategic insights to maximise commercial use of your IP."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q1-a",
+            "text": "May help identify and address legal or infringement risks early.\n Can support compliance with IP laws and regulations.\n Can demonstrate to investors and partners that you have a clear understanding and control over your IP.\n Can provide strategic insights to maximise commercial use of your IP."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* May require specialised expertise, which can add complexity or cost.\n* Confidential information might be exposed if not handled securely.\n* One-off audits can become outdated -- regular reviews are usually needed."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q2-a",
+            "text": "May require specialised expertise, which can add complexity or cost.\n Confidential information might be exposed if not handled securely.\n* One-off audits can become outdated -- regular reviews are usually needed."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Possible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.\u00a0\u00a0\n\nNoting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to:\u00a0\n\n* A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates\n* Clear list of possible infringement risks and how to handle them\n* Decision to get ongoing help from an IP professional."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q3-a",
+            "text": "Possible outcomes of an IP audit would depend heavily on factors such as the scope of the IP portfolio being audited, commercial strategies surrounding your business and the quality of the IP rights involved.  \n\nNoting that outcomes may vary heavily, possible outcomes of an IP audit can include, but are not limited to: \n\n A comprehensive IP register showing a record of IP assets that your business owns or has permission to use, the relevant IP owners and renewal dates\n Clear list of possible infringement risks and how to handle them\n* Decision to get ongoing help from an IP professional."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Costs would vary depending on your portfolio and whether you choose to engage professional service:\u00a0\n\n* In-house audits mainly cost staff time and may take several days to several weeks\n* Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q4-a",
+            "text": "Costs would vary depending on your portfolio and whether you choose to engage professional service: \n\n In-house audits mainly cost staff time and may take several days to several weeks\n Specialist audits by IP lawyers or attorneys would generally involve professional fees, of which amount can vary depending on the size and complexity of your assets."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review:\u00a0\n\n* A focused audit of one IP type may take several days\n* Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q5-a",
+            "text": "The amount of time taken to conduct an IP audit would depend heavily on the scope of the IP portfolio being reviewed and the depth of the review: \n\n A focused audit of one IP type may take several days\n Full audits across multiple IP types may run over several weeks\n* Once your IP register is set up, annual updates may take less time than the initial set-up process."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q6-a",
             "text": "Conducting a one-off or regular IP audit is a practice commonly used by businesses that own or use multiple IP assets."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q7-a",
             "text": "Any IP rights holder or authorised user managing IP assets."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Business owner or employee/s leading the audit.\n* Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q8-a",
+            "text": "Business owner or employee/s leading the audit.\n Optional: patent or trade mark attorney, IP lawyer or external consultant or service providers such as evaluation experts or database search providers."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Clear scope and purpose for the audit.\n* Copies of registrations, applications, licences and confidentiality agreements.\n* Evidence of creation dates, market use and renewal deadlines.\n* Access to branding, technical and commercial records.\n* Secure system (like a spreadsheet or software) to record your findings.\n\nYou may also consider obtaining tailored advice from an IP professional before acting on results."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#faq#q9-a",
+            "text": "Clear scope and purpose for the audit.\n Copies of registrations, applications, licences and confidentiality agreements.\n Evidence of creation dates, market use and renewal deadlines.\n Access to branding, technical and commercial records.\n* Secure system (like a spreadsheet or software) to record your findings.\n\nYou may also consider obtaining tailored advice from an IP professional before acting on results."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

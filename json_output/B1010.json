@@ -2,269 +2,391 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage",
-      "headline": "Report criminal activities",
-      "alternativeHeadline": "Report criminal activities\u00a0",
-      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "B1010"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.accc.gov.au/#organization",
+      "name": "Australian Competition and Consumer Commission",
+      "url": "https://www.accc.gov.au",
+      "sameAs": [
+        "https://www.accc.gov.au"
+      ]
+    },
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.cyber.gov.au/#organization",
+      "name": "Australian Signals and Communications Security",
+      "url": "https://www.cyber.gov.au",
+      "sameAs": [
+        "https://www.cyber.gov.au"
+      ]
+    },
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.afp.gov.au/#organization",
+      "name": "Australian Federal Police",
+      "url": "https://www.afp.gov.au",
+      "sameAs": [
+        "https://www.afp.gov.au"
+      ]
+    },
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "1/07/2025",
-      "dateModified": "2/10/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
+      "headline": "Report a scam, fraud or risk to public interest - IP First Response",
+      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Accused\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Report criminal activities",
+      "identifier": "B1010",
+      "datePublished": "2025-07-01",
+      "dateModified": "2025-10-02",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#article"
       },
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights",
-          "name": "Scams related to managing IP rights"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-          "name": "Receiving a letter of demand."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.scamwatch.gov.au/research-and-resources/scam-statistics",
-          "name": "they had 249,448 scams reported to them, with reported losses estimated at $318,762.688."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024",
-          "name": "The Annual Cyber Threat Report 2023-2024"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams",
-          "name": "Scamwatch"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.scamwatch.gov.au/report-a-scam",
-          "name": "Report a Scam page"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.cyber.gov.au/report-and-recover/where-get-help",
-          "name": "Scams or fraudulent activities often take the form of cybercrimes"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.cyber.gov.au/report-and-recover/report",
-          "name": "Report page"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption",
-          "name": "How to report fraud and corruption | IP Australia."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
-          "name": "Identifying unofficial invoices and registers | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.scamwatch.gov.au/",
-          "name": "Home | Scamwatch"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.afp.gov.au/crimes/cybercrime",
-          "name": "Cybercrime | Australian Federal Police"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.afp.gov.au/crimes/fraud-and-corruption",
-          "name": "Fraud and corruption | Australian Federal Police"
-        }
-      ],
       "hasPart": [
         {
-          "@id": "#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
       "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#article",
       "name": "Report a scam, fraud or risk to public interest",
-      "headline": "Report criminal activities",
-      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "serviceType": "IP Registration and Protection",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      }
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage"
+      },
+      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
+      "provider": [
+        {
+          "@id": "https://www.accc.gov.au/#organization"
+        },
+        {
+          "@id": "https://www.cyber.gov.au/#organization"
+        },
+        {
+          "@id": "https://www.afp.gov.au/#organization"
+        },
+        {
+          "@id": "https://www.ipaustralia.gov.au/#organization"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "Free",
+        "priceCurrency": "AUD"
+      },
+      "timeRequired": "Varibale",
+      "datePublished": "2025-07-01",
+      "dateModified": "2025-10-02",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
+        "https://www.afp.gov.au/crimes/cybercrime",
+        "https://www.afp.gov.au/crimes/fraud-and-corruption",
+        "https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024",
+        "https://www.cyber.gov.au/report-and-recover/report",
+        "https://www.cyber.gov.au/report-and-recover/where-get-help",
+        "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption",
+        "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
+        "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights",
+        "https://www.scamwatch.gov.au/",
+        "https://www.scamwatch.gov.au/report-a-scam",
+        "https://www.scamwatch.gov.au/research-and-resources/scam-statistics",
+        "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-is-it",
+      "name": "What is it?",
+      "text": "Scammers may pretend to be rights holders, lawyers or even government agencies to demand money, personal details, or business changes from innocent parties, or to deceive them into downloading malware onto your computer or other device. \n\nIf you believe that the allegation of infringement from the other party is a scam or of a fraudulent nature, you could consider reporting scams or criminal behaviour to an appropriate authority. You can also consider consulting a legal professional such as a trade mark attorney, patent attorney or IP lawyer to assess the claims made by the other party and obtain legal advice. \n\nCommon tactics used by scammers include emails or letters claiming your trade mark, business name,  domain name, content or product is infringing a registered trade mark, copyright or other IP rights. They might threaten to sue unless you pay a fee, or demand that you register your IP right using their services, often at an inflated cost. Note that there is no formal system of copyright registration in Australia - copyright automatically arises in original works and other subject-matter by virtue of the Copyright Act 1968, free of charge, as soon as you write down or otherwise record a work. 'Registering' your work with a private organisation would not give your material any greater copyright protection in Australia.\n\nScammers might also try to convince you to click on a link to a fake website to get access to your personal information or log-in credentials for a real platform you use, or to download malware by opening a file or link (for example, by saying this will let you see details of or dispute the alleged infringement, or dispute the supposed suspension of your account). You might also receive phone calls impersonating legal professionals or IP Australia officers. For more information on scams relating to IP rights, see IP Australia's page: [Scams related to managing IP rights](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights). \n\nSeveral Australian federal and state bodies can help, depending on the situation: \n\n* The Australian Competition and Consumer Commission (ACCC), through its Scamwatch service.\n* The Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC).\n* The Australian Federal Police (AFP) and state or territory police investigate fraud, impersonation, and criminal extortion.\n* IP Australia.\n\nReporting fraudulent activity promptly can help protect others and build evidence for enforcement. \n\n[](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* Can give you more certainty around whether the threat is genuine or a mere scam.\n* Alerts enforcement bodies so they can investigate and warn others.\n* May help prevent further contact from scammers.\n* Helps protect your business from financial loss or reputational harm.\n* Builds a formal record that could support future legal steps."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "Dismissing a genuine claim of infringement as a scam or a fraud could result in escalation from the other party, and the delay might be detrimental to you. For more information on how to assess a letter of demand that you have received, see IP First Response's page: [Receiving a letter of demand.](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "* Your report may be logged to help identify scam patterns.\n* A public alert may be issued by the body you report to, with your report helping inform these warnings.\n* Police or regulators may investigate, potentially leading to charges against the scammer.\n* You may receive confirmation and reassurance that the claim appears to be a scam"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "There is no cost to report to Scamwatch, ReportCyber, IP Australia or your local police.\n\nHowever, you will need to pay the fees of any legal representative or IP professionals if you choose to seek their advice or assistance regarding the process."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "Reporting time depends on how much information you have. Some forms are short, but follow-up steps or investigations may take longer.\n\nResponse times vary depending on the agency and the nature of the report. Even if there's no follow-up, your report remains helpful."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "Data specific to IP scams is unavailable, however the ACCC's Scamwatch service noted that in 2024 [they had 249,448 scams reported to them, with reported losses estimated at $318,762.688.](https://www.scamwatch.gov.au/research-and-resources/scam-statistics)  \n\n[The Annual Cyber Threat Report 2023-2024](https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024)  published by the Australian Cyber Security Centre states that they received over 87,400 cybercrime reports were received in FY2023-2024."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "* Any individual or business that has received a suspicious IP-related threat or who suspects they have been targeted by a scam using IP claims."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* You - the person or business targeted by the threat.\n* The scammer or group making the false claim.\n* (Optional) Legal professionals such as IP lawyers, trade mark or patent attorneys.\n* A federal or state agency that you choose to engage."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "If you believe that the other party is fraudulently claiming that you have infringed their IP, you could consider making a report to an appropriate authority.\n\n**Scamwatch**\n\nThe ACCC collects scam reports to detect patterns and issue public alerts through its Scamwatch service. \n\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to someone else's IP rights, you can report this activity to [Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams), using their [Report a Scam page](https://www.scamwatch.gov.au/report-a-scam). \n\n**The Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC)**\n\n[Scams or fraudulent activities often take the form of cybercrimes](https://www.cyber.gov.au/report-and-recover/where-get-help), using a computer or online network to target victims.\n\nReportCyber is the Australian Government's cybercrime reporting tool. They assess all cybercrime reports and assign the relevant ones to police and other law enforcement agencies for investigation. If you believe that the other party is using IP as part of fraudulent activity or criminal threats through digital channels such as emails, text messages, phone calls or social media, you can consider reporting this activity to Reportcyber using their[Report page](https://www.cyber.gov.au/report-and-recover/report).   \n\n**IP Australia**\n\nIP Australia accepts reports of suspected misuse of its name or processes. You can read more about these on IP Australia's website at [Scams related to managing IP Rights | IP Australia.](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights)  You can also learn how to report these at [How to report fraud and corruption | IP Australia.](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption)  \n\n**Federal and state police agencies**\n\nThe AFP and state or territory police investigate fraud, impersonation, and criminal extortion.\n\nIf you believe that the other party is involved in a serious cybercrime or a criminal fraud, you may also consider directly alerting the Australian Federal Police (AFP) or your State and Territory Police."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-see-also",
+      "name": "See also",
+      "text": "* [Scams related to managing IP Rights | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights)\n* [Identifying unofficial invoices and registers | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers)\n* [How to report fraud and corruption | IP Australia](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption)\n* [Home | Scamwatch](https://www.scamwatch.gov.au/)\n* [Cybercrime | Australian Federal Police](https://www.afp.gov.au/crimes/cybercrime)\n* [Fraud and corruption | Australian Federal Police](https://www.afp.gov.au/crimes/fraud-and-corruption)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Can give you more certainty around whether the threat is genuine or a mere scam.\n* Alerts enforcement bodies so they can investigate and warn others.\n* May help prevent further contact from scammers.\n* Helps protect your business from financial loss or reputational harm.\n* Builds a formal record that could support future legal steps."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q1-a",
+            "text": "Can give you more certainty around whether the threat is genuine or a mere scam.\n Alerts enforcement bodies so they can investigate and warn others.\n May help prevent further contact from scammers.\n Helps protect your business from financial loss or reputational harm.\n* Builds a formal record that could support future legal steps."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Dismissing a genuine claim of infringement as a scam or a fraud could result in escalation from the other party, and the delay might be detrimental to you.\u00a0For more information on how to assess a letter of demand that you have received, see IP First Response's page:\u00a0[Receiving a letter of demand.](https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand)"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q2-a",
+            "text": "Dismissing a genuine claim of infringement as a scam or a fraud could result in escalation from the other party, and the delay might be detrimental to you. For more information on how to assess a letter of demand that you have received, see IP First Response's page: Receiving a letter of demand."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Your report may be logged to help identify scam patterns.\n* A public alert may be issued by the body you report to, with your report helping inform these warnings.\n* Police or regulators may investigate, potentially leading to charges against the scammer.\n* You may receive confirmation and reassurance that the claim appears to be a scam"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q3-a",
+            "text": "Your report may be logged to help identify scam patterns.\n A public alert may be issued by the body you report to, with your report helping inform these warnings.\n Police or regulators may investigate, potentially leading to charges against the scammer.\n You may receive confirmation and reassurance that the claim appears to be a scam"
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q4-a",
             "text": "There is no cost to report to Scamwatch, ReportCyber, IP Australia or your local police.\n\nHowever, you will need to pay the fees of any legal representative or IP professionals if you choose to seek their advice or assistance regarding the process."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q5-a",
             "text": "Reporting time depends on how much information you have. Some forms are short, but follow-up steps or investigations may take longer.\n\nResponse times vary depending on the agency and the nature of the report. Even if there's no follow-up, your report remains helpful."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Data specific to IP scams is unavailable, however the ACCC's Scamwatch service noted that in 2024\u00a0[they had 249,448 scams reported to them, with reported losses estimated at $318,762.688.](https://www.scamwatch.gov.au/research-and-resources/scam-statistics) \u00a0\n\n[The Annual Cyber Threat Report 2023-2024](https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024) \u00a0published by the\u00a0Australian Cyber Security Centre states that they received over 87,400 cybercrime reports were received in FY2023-2024."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q6-a",
+            "text": "Data specific to IP scams is unavailable, however the ACCC's Scamwatch service noted that in 2024 they had 249,448 scams reported to them, with reported losses estimated at $318,762.688.  \n\nThe Annual Cyber Threat Report 2023-2024  published by the Australian Cyber Security Centre states that they received over 87,400 cybercrime reports were received in FY2023-2024."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q7-a",
             "text": "* Any individual or business that has received a suspicious IP-related threat or who suspects they have been targeted by a scam using IP claims."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You - the person or business targeted by the threat.\n* The scammer or group making the false claim.\n* (Optional) Legal professionals such as IP lawyers, trade mark or patent attorneys.\n* A federal or state agency that you choose to engage."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q8-a",
+            "text": "You - the person or business targeted by the threat.\n The scammer or group making the false claim.\n (Optional) Legal professionals such as IP lawyers, trade mark or patent attorneys.\n A federal or state agency that you choose to engage."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If you believe that the other party is fraudulently claiming that you have infringed their IP, you could consider making a report to an appropriate authority.\n\n**Scamwatch**\n\nThe ACCC collects scam reports to detect patterns and issue public alerts through its Scamwatch service.\u00a0\n\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to someone else's IP rights, you can report this activity to\u00a0[Scamwatch](https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams), using their\u00a0[Report a Scam page](https://www.scamwatch.gov.au/report-a-scam).\u00a0\n\n**The Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC)**\n\n[Scams or fraudulent activities often take the form of cybercrimes](https://www.cyber.gov.au/report-and-recover/where-get-help), using a computer or online network to target victims.\n\nReportCyber is the Australian Government's cybercrime reporting tool. They assess all cybercrime reports and assign the relevant ones to police and other law enforcement agencies for investigation. If you believe that the other party is using IP as part of fraudulent activity or criminal threats through digital channels such as emails, text messages, phone calls or social media, you can consider reporting this activity to Reportcyber using their[Report page](https://www.cyber.gov.au/report-and-recover/report).\u00a0\u00a0\u00a0\n\n**IP Australia**\n\nIP Australia accepts reports of suspected misuse of its name or processes. You can read more about these on IP Australia's website at\u00a0[Scams related to managing IP Rights | IP Australia.](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights) \u00a0You can also learn how to report these at\u00a0[How to report fraud and corruption | IP Australia.](https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption) \u00a0\n\n**Federal and state police agencies**\n\nThe AFP and state or territory police investigate fraud, impersonation, and criminal extortion.\n\nIf you believe that the other party is involved in a serious cybercrime or a criminal fraud, you may also consider directly alerting the Australian Federal Police (AFP) or your State and Territory Police."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq#q9-a",
+            "text": "If you believe that the other party is fraudulently claiming that you have infringed their IP, you could consider making a report to an appropriate authority.\n\nScamwatch\n\nThe ACCC collects scam reports to detect patterns and issue public alerts through its Scamwatch service. \n\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to someone else's IP rights, you can report this activity to Scamwatch, using their Report a Scam page. \n\nThe Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC)\n\nScams or fraudulent activities often take the form of cybercrimes, using a computer or online network to target victims.\n\nReportCyber is the Australian Government's cybercrime reporting tool. They assess all cybercrime reports and assign the relevant ones to police and other law enforcement agencies for investigation. If you believe that the other party is using IP as part of fraudulent activity or criminal threats through digital channels such as emails, text messages, phone calls or social media, you can consider reporting this activity to Reportcyber using theirReport page.   \n\nIP Australia\n\nIP Australia accepts reports of suspected misuse of its name or processes. You can read more about these on IP Australia's website at Scams related to managing IP Rights | IP Australia.  You can also learn how to report these at How to report fraud and corruption | IP Australia.  \n\nFederal and state police agencies\n\nThe AFP and state or territory police investigate fraud, impersonation, and criminal extortion.\n\nIf you believe that the other party is involved in a serious cybercrime or a criminal fraud, you may also consider directly alerting the Australian Federal Police (AFP) or your State and Territory Police."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

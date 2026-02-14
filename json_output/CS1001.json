@@ -2,156 +2,106 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#webpage",
-      "headline": "Notice of objection",
-      "alternativeHeadline": "Notice of Objection",
-      "description": "What can businesses do to protect themselves against importation of counterfeits that might jeopardise their brand and their products? The story of Toyota provides insight into their use of the ABF notice of objection scheme ",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "CS1001"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.abf.gov.au/#organization",
+      "name": "Australian Border Force",
+      "url": "https://www.abf.gov.au",
+      "sameAs": [
+        "https://www.abf.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "29/08/2025",
-      "dateModified": "29/08/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+      "headline": "The Toyota story: What can SMEs learn from Toyota’s approach to counterfeit products? - IP First Response",
+      "description": "What can businesses do to protect themselves against importation of counterfeits that might jeopardise their brand and their products? The story of Toyota provides insight into their use of the ABF notice of objection scheme",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Case Study\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Notice of Objection",
+      "identifier": "CS1001",
+      "datePublished": "2025-08-29",
+      "dateModified": "2025-08-29",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#article"
       },
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.abf.gov.au/help-and-support-subsite/Pages/notices/intellectual-property.aspx#:~:text=A%20Notice%20of%20Objection%20is,a%20valid%20Notice%20of%20Objection.",
-          "name": "Australian Border Force's (ABF) Notice of Objection scheme"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.drive.com.au/news/toyota-annual-sales-record-2024-australia/",
-          "name": "with a market share of 19.5% in Australia and a new sales record in 2024"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.interpol.int/en/Crimes/Illicit-goods/Illicit-goods-the-issues",
-          "name": "often substandard, causing health problems and injuries, even proving fatal."
-        }
-      ],
       "hasPart": [
         {
-          "@id": "#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "The Toyota story: What can SMEs learn from Toyota\u2019s approach to counterfeit products?",
-      "headline": "Notice of objection",
-      "description": "What can businesses do to protect themselves against importation of counterfeits that might jeopardise their brand and their products? The story of Toyota provides insight into their use of the ABF notice of objection scheme ",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Trade Mark\" \"Copyright\" \"Designs\""
-      },
-      "provider": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Border Force"
-      },
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#article",
+      "name": "The Toyota story: What can SMEs learn from Toyota’s approach to counterfeit products?",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "serviceType": "IP Registration and Protection",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      }
-    },
-    {
-      "@id": "#faq",
-      "@type": "FAQPage",
-      "mainEntity": [
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#webpage"
+      },
+      "description": "What can businesses do to protect themselves against importation of counterfeits that might jeopardise their brand and their products? The story of Toyota provides insight into their use of the ABF notice of objection scheme",
+      "provider": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "datePublished": "2025-08-29",
+      "dateModified": "2025-08-29",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+        "https://www.abf.gov.au/help-and-support-subsite/Pages/notices/intellectual-property.aspx#:~:text=A%20Notice%20of%20Objection%20is,a%20valid%20Notice%20of%20Objection.",
+        "https://www.drive.com.au/news/toyota-annual-sales-record-2024-australia/",
+        "https://www.interpol.int/en/Crimes/Illicit-goods/Illicit-goods-the-issues"
+      ],
+      "hasPart": [
         {
-          "@type": "Question",
-          "name": "The Toyota story: What can SMEs learn from Toyota\u2019s approach to counterfeit products?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*\n\n**The Toyota story:** ***What can SMEs learn from Toyota's approach to counterfeit products?***\n\n![An image comparing a counterfeit auto part and a genuine Toyota brand auto part](/sites/default/files/images/2025-08/Picture3.png)\n\nWhat can businesses do to protect themselves against importation of counterfeits that might jeopardise their brand and their products? The story of Toyota provides insight into their use of the [Australian Border Force's (ABF) Notice of Objection scheme](https://www.abf.gov.au/help-and-support-subsite/Pages/notices/intellectual-property.aspx#:~:text=A%20Notice%20of%20Objection%20is,a%20valid%20Notice%20of%20Objection.).\n\nThe Toyota brand prides itself on having a reputation of quality and reliability among Australian drivers, with its vehicles being a common sight on roads across the country. The company's track record in quality and customer service has helped earn it a loyal customer base, [with a market share of 19.5% in Australia and a new sales record in 2024](https://www.drive.com.au/news/toyota-annual-sales-record-2024-australia/).\n\nHowever, counterfeit vehicle parts pose a challenge to public safety and to Toyota's brand integrity. According to INTERPOL, counterfeit auto parts--including brake pads, airbags, and filters--are \"[often substandard, causing health problems and injuries, even proving fatal.](https://www.interpol.int/en/Crimes/Illicit-goods/Illicit-goods-the-issues) \"\n\nThe infiltration of such parts into the Australian market has far-reaching consequences--undermining consumer trust, jeopardising driver safety, and eroding the standards Toyota strives for. That's why Toyota proactively collaborates with the ABF using one of the options open to brands to combat the circulation of counterfeit products.\n\n**The role of IP in fighting counterfeits**\n\nIntellectual property (IP), particularly trade marks and copyright, plays a critical role for Toyota's in protecting its brand and reputation. The unique Toyota branding, including the word Toyota and its emblem, prevents consumer confusion by ensuring that products bearing the Toyota brand originate from authorised sources and meet Toyota's quality standards. When consumers see the Toyota logo, they know what they are getting.\n\nBut when these rights are infringed, the risk extends beyond brand damage. Counterfeit parts that misuse Toyota's branding can deceive consumers and introduce serious safety hazards, particularly when critical components are involved.\n\nIP enforcement is therefore both a commercial and consumer protection priority. It provides the legal basis for identifying and removing fake goods from the market, helping ensure that consumers can have confidence in their purchase of Toyota goods.\n\n**Toyota's use of the Notice of Objection scheme**\n\n![Toyota and ABF officers participating in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)](/sites/default/files/images/2025-08/workshop.png)\n\n*Toyota and ABF officers participating in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)*\n\nToyota's journey in protecting its IP rights begins with the detection of infringements. The company actively gathers intelligence on counterfeit products through a range of channels. One of the major sources of detection information comes from the ABF through its Notice of Objection Scheme.\n\nThe scheme allows the ABF to engage Toyota's commercial information to identify counterfeit from legitimate products. Toyota's IP assists the ABF in the identification and seizure of counterfeit goods at the point of import, preventing dangerous and unauthorised products from reaching Australian consumers.\n\nThe scheme has been particularly useful for:\n\n* Intercepting counterfeit goods at the border and safeguarding consumers from unauthorised imports falsely marketed as \"Toyota\" products, which can potentially compromise consumer safety and the integrity of their vehicles.\n* Understanding unlawful importation trends concerning parts and accessories. Without a Notice of Objection in place, Toyota may not be aware of the existence of these products in the market. For example, through a notice of seizure, Toyota became aware of the importation of counterfeit products such as fake airbags and steering wheels.\n* Performing testing on product imitation to analyse counterfeit products and understand risks associated with using fake parts. From time to time, Toyota requests a sample of a fake part from the ABF seizure before they are forfeited for physical verification. This verification process allows Toyota to learn more about these fake parts and compare them side by side with genuine Toyota products.\n* Obtaining available information from ABF should Toyota commence a legal action -- Toyota may choose to institute a court proceeding against the importer of counterfeit products when the importer makes a claim for release of seized products. However, Toyota is committed to taking genuine steps to resolve disputes before commencing a legal action.\n\nABF have consistently demonstrated a high level of expertise in identifying and intercepting unlawful goods, allowing Toyota to detect fake \"Toyota\" parts and accessories before they enter the market. However, as outlined above, the benefits of using the Scheme can go beyond physical interception of counterfeit products, providing additional information about trends in unlawful importation, looks and quality of fake products, and identity of the entities involved.\n\nThe insights and evaluations obtained from border seizures further enhance the collaborative efforts of Toyota and ABF to identify and prevent counterfeit products from entering the market. For example, Toyota's Brand Protection team has been a regular participant in IP Enforcement Workshops hosted by the ABF in different ports across the country to provide latest information and training on counterfeit products to ABF officers.\n\nHowever, counterfeit parts are getting increasingly sophisticated. They can look similar in appearance to the genuine products. In some cases, they are indistinguishable to the naked eye. Therefore, other brand protection strategies and mechanisms are implemented by Toyota to assist with a comprehensive approach to brand protection.\n\n**One tool among many in the IP enforcement portfolio**\n\n![ABF officers inspecting automobile parts in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)](/sites/default/files/images/2025-08/workshop2.png)\n\n*ABF officers inspecting automobile parts in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)*\n\nWhen suspected counterfeit products are seized, both the importer and Toyota are notified of the seizure in writing by the ABF. If the importer makes a claim for release of seized goods within ten working days of notification, Toyota will be notified and will also have ten working days to commence a legal action.\n\nHowever, Toyota aims to adopt a legal, proportionate, and commercially pragmatic approach to their enforcement of their IP. Their enforcement strategy may include:\n\n* Verifying Toyota's IP rights relevant to the alleged infringement\n* Legal assessment of the infringing conduct against the legislative framework\n* Engaging in correspondence and negotiation with the infringing party's legal representation.\n\n**Outcome and finalisation**\n\nToyota's use of the Notice of Objection Scheme shows the way in which businesses can work with the ABF, for a mutually beneficial outcome, to stop counterfeit products entering the Australian market. This mechanism also highlights how IP protection can prevent the circulation of low-quality counterfeit products that might otherwise jeopardise public health and safety.\n\nToyota's approach also highlights how IP enforcement may involve a range of different options as part of a comprehensive proactive approach to IP."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
     }
   ]
 }

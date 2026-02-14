@@ -2,216 +2,330 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage",
-      "headline": "Educate your customers",
-      "alternativeHeadline": "Educate your customers ",
-      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine. ",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "C1006"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "28/07/2025",
-      "dateModified": "2/10/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+      "headline": "Help customers differentiate between your products and lookalikes - IP First Response",
+      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine.",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Proactive\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Educate your customers",
+      "identifier": "C1006",
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-10-02",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "Get professional assistance with your IP | IP Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-benefits"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
-          "name": "How to commercialise my IP | IP Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-risks"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
-          "name": "Develop a strategy to manage your IP | IP Australia First Response"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#article",
+      "headline": "Help customers differentiate between your products and lookalikes",
+      "articleBody": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied. \n\nWhile it's a legal question as to whether something infringes your rights, it's often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart -- and how to identify a fake -- can reduce that risk. \n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues. \n\nCustomer education can include: \n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools--such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the ® symbol to indicate a *trade mark* has been registered, or using a © symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage"
+      },
+      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine.",
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-10-02",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
       ],
-      "name": "Help customers differentiate between your products and lookalikes  ",
-      "headline": "Educate your customers",
-      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine. ",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Person",
-        "name": "Self-Help"
-      },
-      "articleBody": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied.\u00a0\n\nWhile it's a legal question as to whether something infringes your rights, it's often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart -- and how to identify a fake -- can reduce that risk.\u00a0\n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues.\u00a0\n\nCustomer education can include:\u00a0\n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools--such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the \u00ae symbol to indicate a\u00a0*trade mark*\u00a0has been registered, or using a \u00a9 symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product.",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-is-it",
+      "name": "What is it?",
+      "text": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied. \n\nWhile it's a legal question as to whether something infringes your rights, it's often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart -- and how to identify a fake -- can reduce that risk. \n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues. \n\nCustomer education can include: \n\n* Sharing the story and authenticity of your brand through advertising\n* Highlighting proprietary features of your product or service\n* Explaining where your genuine products are from, like official retailers or country of origin\n* Adding or promoting product validation tools--such as QR codes, security tags, or post-sale verification\n* Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the ® symbol to indicate a *trade mark* has been registered, or using a © symbol to indicate *copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n* Equipping sales teams to explain the value and unique features of your genuine product."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* Helps customers choose your product over confusing or inferior copies.\n* Supports your brand positioning and long-term customer loyalty.\n* Makes suspected infringement easier to detect and explain.\n* Can reduce the incentive for others to copy your product if consumers avoid fakes.\n* May already align with your existing marketing and advertising spend.\n* Non-confrontational way to respond when you suspect copying.\n* Can diversify your business' sources of value outside of reliance on registered IP alone."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* Careless wording may be seen as an attack on a competitor.\n* Poorly designed campaigns might confuse or alienate customers.\n* May have limited impact if not paired with broader brand strategy."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "There are few easily-measurable outcomes from customer education. These may include: \n\n* Customers become better at identifying and choosing your genuine products.\n* Reduced sales of counterfeit or lookalike products.\n* For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "Costs depend on how much new work is required. Many businesses already spend on brand marketing, and customer education may be integrated into that. If you engage a marketing firm or IP commercialisation expert, additional fees apply."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "* Minor updates to packaging or website content: A few hours to a few weeks.\n* Developing a new customer education campaign: Several weeks to a few months."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "Most businesses try to educate customers about their brand through advertising, customer outreach, blogs, social media content and more. Helping customers recognise and value registered IP can be one aim of this education but is rarely the main focus."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "* This approach is most applicable for business that offer products or services to the public.\n* Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* The business owner or brand manager.\n* Marketing or communications professionals.\n* Optional: An IP commercialisation advisor or brand protection expert."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "* A clear understanding of what makes your product or brand distinctive.\n* Knowledge of your IP rights and what aspects are protected.\n* Customer touchpoints where educational messages can be placed (for example, website, packaging, social media).\n* Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP.\n* Optional: Marketing or design support to build customer-friendly materials."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-see-also",
+      "name": "See also",
+      "text": "* [Get professional assistance with your IP | IP Australia](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip)\n* [How to commercialise my IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip)\n* [Develop a strategy to manage your IP | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Helps customers choose your product over confusing or inferior copies.\n* Supports your brand positioning and long-term customer loyalty.\n* Makes suspected infringement easier to detect and explain.\n* Can reduce the incentive for others to copy your product if consumers avoid fakes.\n* May already align with your existing marketing and advertising spend.\n* Non-confrontational way to respond when you suspect copying.\n* Can diversify your business' sources of value outside of reliance on registered IP alone."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q1-a",
+            "text": "Helps customers choose your product over confusing or inferior copies.\n Supports your brand positioning and long-term customer loyalty.\n Makes suspected infringement easier to detect and explain.\n Can reduce the incentive for others to copy your product if consumers avoid fakes.\n May already align with your existing marketing and advertising spend.\n Non-confrontational way to respond when you suspect copying.\n* Can diversify your business' sources of value outside of reliance on registered IP alone."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Careless wording may be seen as an attack on a competitor.\n* Poorly designed campaigns might confuse or alienate customers.\n* May have limited impact if not paired with broader brand strategy."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q2-a",
+            "text": "Careless wording may be seen as an attack on a competitor.\n Poorly designed campaigns might confuse or alienate customers.\n* May have limited impact if not paired with broader brand strategy."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There are few easily-measurable outcomes from customer education. These may include:\u00a0\n\n* Customers become better at identifying and choosing your genuine products.\n* Reduced sales of counterfeit or lookalike products.\n* For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q3-a",
+            "text": "There are few easily-measurable outcomes from customer education. These may include: \n\n Customers become better at identifying and choosing your genuine products.\n Reduced sales of counterfeit or lookalike products.\n* For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q4-a",
             "text": "Costs depend on how much new work is required. Many businesses already spend on brand marketing, and customer education may be integrated into that. If you engage a marketing firm or IP commercialisation expert, additional fees apply."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Minor updates to packaging or website content: A few hours to a few weeks.\n* Developing a new customer education campaign: Several weeks to a few months."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q5-a",
+            "text": "Minor updates to packaging or website content: A few hours to a few weeks.\n Developing a new customer education campaign: Several weeks to a few months."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q6-a",
             "text": "Most businesses try to educate customers about their brand through advertising, customer outreach, blogs, social media content and more. Helping customers recognise and value registered IP can be one aim of this education but is rarely the main focus."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* This approach is most applicable for business that offer products or services to the public.\n* Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q7-a",
+            "text": "This approach is most applicable for business that offer products or services to the public.\n Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The business owner or brand manager.\n* Marketing or communications professionals.\n* Optional: An IP commercialisation advisor or brand protection expert."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q8-a",
+            "text": "The business owner or brand manager.\n Marketing or communications professionals.\n* Optional: An IP commercialisation advisor or brand protection expert."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* A clear understanding of what makes your product or brand distinctive.\n* Knowledge of your IP rights and what aspects are protected.\n* Customer touchpoints where educational messages can be placed (for example, website, packaging, social media).\n* Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP.\n* Optional: Marketing or design support to build customer-friendly materials."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q9-a",
+            "text": "A clear understanding of what makes your product or brand distinctive.\n Knowledge of your IP rights and what aspects are protected.\n Customer touchpoints where educational messages can be placed (for example, website, packaging, social media).\n Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP.\n* Optional: Marketing or design support to build customer-friendly materials."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

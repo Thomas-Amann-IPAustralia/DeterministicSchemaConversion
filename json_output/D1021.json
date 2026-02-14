@@ -2,239 +2,335 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#webpage",
-      "headline": "Trade mark registration revocation",
-      "alternativeHeadline": "Trade mark registration revocation",
-      "description": "Let IP Australia know a recently registered trade mark should not have been registered",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "D1021"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "28/02/2025",
-      "dateModified": "5/09/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation",
+      "headline": "Remove a trade mark from the register - IP First Response",
+      "description": "Let IP Australia know a recently registered trade mark should not have been registered",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Enforcement\", \"Accused\", \"Proactive\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Trade mark registration revocation",
+      "identifier": "D1021",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-09-05",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#article"
       },
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark",
-          "name": "What Can't Be A Trade Mark? | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://manuals.ipaustralia.gov.au/trademark/1.-what-is-revocation-of-registration-",
-          "name": "Part 62 of the Trade Marks Manual of Practice and Procedure"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.legislation.gov.au/C2004A04969/latest/versions",
-          "name": "Trade Marks Act 1995"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
-          "name": "Challenge the registration of a trade mark | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/about-us/contact-us",
-          "name": "Contact us | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "*getting professional assistance with your IP*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "*30 minute consultations with an attorney*"
-        }
-      ],
       "hasPart": [
         {
-          "@id": "#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
       "@type": "GovernmentService",
-      "name": "Remove a trade mark\u00a0from the register",
-      "headline": "Trade mark registration revocation",
-      "description": "Let IP Australia know a recently registered trade mark should not have been registered",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Trade mark\", \"Unregistered-tm\""
-      },
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#article",
+      "name": "Remove a trade mark from the register",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "serviceType": "IP Registration and Protection",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      }
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#webpage"
+      },
+      "description": "Let IP Australia know a recently registered trade mark should not have been registered",
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "Free, plus optional professional fees",
+        "priceCurrency": "AUD"
+      },
+      "timeRequired": "Days (to request)",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-09-05",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation",
+        "https://ipta.org.au/community/get-free-consultation/",
+        "https://manuals.ipaustralia.gov.au/trademark/1.-what-is-revocation-of-registration-",
+        "https://www.ipaustralia.gov.au/about-us/contact-us",
+        "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://www.legislation.gov.au/C2004A04969/latest/versions"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-is-it",
+      "name": "What is it?",
+      "text": "Registration of a trade mark can be 'revoked' in certain circumstances where it should not have been registered in the first place. This is only possible within the first 12 months of registration. \n\nGenerally, revocation of registration is followed immediately by revocation of acceptance, resulting in the subject trade mark application returning to the examiner for a re-examination. Only in very rare cases would a revocation of registration return to the 'Accepted' status, allowing an opposition to proceed instead of a re-examination by a trade mark examiner.  \n\nRevocation of registration is rare. It is not a substitute for court action to challenge someone else's entitlement to a trade mark, rather, it is about identifying information showing that the registration should not have occurred in the first place. The power to revoke will usually only be used where there is a clear case: \n\n* of error by IP Australia, or\n* new circumstances become known.\n\nThe Registrar of Trade Marks (the Registrar) is not required to consider a request for revocation, but if they do, they must consider all the circumstances and whether it is reasonable to revoke the registration, including whether there is a more appropriate remedy (such as court challenge). \n\nIn making a revocation decision, IP Australia can take account of a range of circumstances that could have prevented registration. This includes reasons which go to the heart of whether the application should have been accepted, such as whether it's:  \n\n* scandalous\n* likely to cause confusion\n* not sufficiently distinctive\n* too similar to another registered trade mark.\n\n[](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* There is no cost involved in giving this information to IP Australia.\n* Revocation procedures are generally run internally within IP Australia, meaning that you are less likely to confront other parties, compared to more adversarial ways of dispute resolution (i.e. court proceedings, administrative hearing procedures, etc.)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* IP Australia does not have an obligation to consider a request to revoke a trade mark registration. As such, it might be risky to base your entire enforcement strategy on this procedure expecting IP Australia to make a revocation decision, instead of using other enforcement mechanisms such as challenging the trade mark registration through the court system.\n* While IP Australia does not publish the details of the party who requested revocation, it is possible for documents to be obtained under Freedom of Information Act 1982 so the owner of the trade mark can ascertain the identity of the party who requested revocation.\n* This procedure provides a much more limited opportunity to participate in the decision-making process, when compared to challenging a trade mark registration through the opposition and hearing procedures or courts.\n* Even if revocation of acceptance follows revocation of registration, the application will be returned to examination and the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* In some rare cases, the application may only be reverted to acceptance stage even though the registration has been revoked, meaning that opposition process would need to be initiated to block the application proceeding to registration once more. You might need to undertake an opposition in order to prevent registration occurring again."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "* Upon receipt of information, IP Australia may initiate the procedure to revoke the registered trade mark.\n* Revocation procedure is not initiated despite the information provided. As noted above, IP Australia does not have an obligation to consider a request to revoke a trade mark registration.\n* Once the revocation procedure is initiated, IP Australia must give the owner of the registered trade mark the opportunity to be heard on the revocation (to put their case forward why it shouldn't be revoked). If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked.\n* If a decision is made to revoke registration, the owner of the registered trade mark is able to appeal this decision to the courts. If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "* None. However, administrative fees will be incurred if you wish to oppose the application following the revocation of registration. You may also be liable for additional legal fees if you have an attorney acting on your behalf."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "* 2-4 months, if revocation procedures are initiated and IP Australia's decision is not challenged by the trade mark owner.\n* If the application is returned to examination, the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* If the application is returned to the acceptance stage, you may need to challenge the registration of their trade mark in an opposition procedure, which will take additional time."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "Out of more than 900,000 trade marks registered with IP Australia, only a handful of trade marks are revoked each year."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "* Anyone."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* You, or the person providing information.\n* IP Australia.\n* The owner of the trade mark registration and their representatives."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "* Check the relevant dates of the relevant trade mark.\n* In order to understand what factors contribute to the registrability of trade mark applications, refer to IP Australia's webpage [What Can't Be A Trade Mark? | IP Australia](https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark)\n* Consider carefully [Part 62 of the Trade Marks Manual of Practice and Procedure](https://manuals.ipaustralia.gov.au/trademark/1.-what-is-revocation-of-registration-)  and the relevant sections of the [Trade Marks Act 1995](https://www.legislation.gov.au/C2004A04969/latest/versions)\n* A detailed and documented case for the revocation.\n* Understand what's involved should you need to [Challenge the registration of a trade mark | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)\n* To get in touch with IP Australia, refer to [Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* There is no cost involved in giving this information to IP Australia.\n* Revocation procedures are generally run internally within IP Australia, meaning that you are less likely to confront other parties, compared to more adversarial ways of dispute resolution (i.e. court proceedings, administrative hearing procedures, etc.)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q1-a",
+            "text": "There is no cost involved in giving this information to IP Australia.\n Revocation procedures are generally run internally within IP Australia, meaning that you are less likely to confront other parties, compared to more adversarial ways of dispute resolution (i.e. court proceedings, administrative hearing procedures, etc.)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* IP Australia does not have an obligation to consider a request to revoke a trade mark registration. As such, it might be risky to base your entire enforcement strategy on this procedure expecting IP Australia to make a revocation decision, instead of using other enforcement mechanisms such as challenging the trade mark registration through the court system.\n* While IP Australia does not publish the details of the party who requested revocation, it is possible for documents to be obtained under Freedom of Information Act 1982 so the owner of the trade mark can ascertain the identity of the party who requested revocation.\n* This procedure provides a much more limited opportunity to participate in the decision-making process, when compared to challenging a trade mark registration through the opposition and hearing procedures or courts.\n* Even if revocation of acceptance follows revocation of registration, the application will be returned to examination and the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* In some rare cases, the application may only be reverted to acceptance stage even though the registration has been revoked, meaning that opposition process would need to be initiated to block the application proceeding to registration once more. You might need to undertake an opposition in order to prevent registration occurring again."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q2-a",
+            "text": "IP Australia does not have an obligation to consider a request to revoke a trade mark registration. As such, it might be risky to base your entire enforcement strategy on this procedure expecting IP Australia to make a revocation decision, instead of using other enforcement mechanisms such as challenging the trade mark registration through the court system.\n While IP Australia does not publish the details of the party who requested revocation, it is possible for documents to be obtained under Freedom of Information Act 1982 so the owner of the trade mark can ascertain the identity of the party who requested revocation.\n This procedure provides a much more limited opportunity to participate in the decision-making process, when compared to challenging a trade mark registration through the opposition and hearing procedures or courts.\n Even if revocation of acceptance follows revocation of registration, the application will be returned to examination and the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* In some rare cases, the application may only be reverted to acceptance stage even though the registration has been revoked, meaning that opposition process would need to be initiated to block the application proceeding to registration once more. You might need to undertake an opposition in order to prevent registration occurring again."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Upon receipt of information, IP Australia may initiate the procedure to revoke the registered trade mark.\n* Revocation procedure is not initiated despite the information provided. As noted above, IP Australia does not have an obligation to consider a request to revoke a trade mark registration.\n* Once the revocation procedure is initiated, IP Australia must give the owner of the registered trade mark the opportunity to be heard on the revocation (to put their case forward why it shouldn't be revoked). If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked.\n* If a decision is made to revoke registration, the owner of the registered trade mark is able to appeal this decision to the courts. If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q3-a",
+            "text": "Upon receipt of information, IP Australia may initiate the procedure to revoke the registered trade mark.\n Revocation procedure is not initiated despite the information provided. As noted above, IP Australia does not have an obligation to consider a request to revoke a trade mark registration.\n Once the revocation procedure is initiated, IP Australia must give the owner of the registered trade mark the opportunity to be heard on the revocation (to put their case forward why it shouldn't be revoked). If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked.\n If a decision is made to revoke registration, the owner of the registered trade mark is able to appeal this decision to the courts. If they are successful, the registration will be maintained. If they are unsuccessful, the registration can be revoked."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q4-a",
             "text": "* None. However, administrative fees will be incurred if you wish to oppose the application following the revocation of registration. You may also be liable for additional legal fees if you have an attorney acting on your behalf."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* 2-4 months, if revocation procedures are initiated and IP Australia's decision is not challenged by the trade mark owner.\n* If the application is returned to examination, the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* If the application is returned to the acceptance stage, you may need to challenge the registration of their trade mark in an opposition procedure, which will take additional time."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q5-a",
+            "text": "2-4 months, if revocation procedures are initiated and IP Australia's decision is not challenged by the trade mark owner.\n If the application is returned to examination, the owner of the application will be given 15 months to overcome the grounds for rejection preventing their application from achieving acceptance.\n* If the application is returned to the acceptance stage, you may need to challenge the registration of their trade mark in an opposition procedure, which will take additional time."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q6-a",
             "text": "Out of more than 900,000 trade marks registered with IP Australia, only a handful of trade marks are revoked each year."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q7-a",
             "text": "* Anyone."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You, or the person providing information.\n* IP Australia.\n* The owner of the trade mark registration and their representatives."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q8-a",
+            "text": "You, or the person providing information.\n IP Australia.\n* The owner of the trade mark registration and their representatives."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Check the relevant dates of the relevant trade mark.\n* In order to understand what factors contribute to the registrability of trade mark applications, refer to IP Australia's webpage [What Can't Be A Trade Mark? | IP Australia](https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-cant-be-a-trade-mark)\n* Consider carefully [Part 62 of the Trade Marks Manual of Practice and Procedure](https://manuals.ipaustralia.gov.au/trademark/1.-what-is-revocation-of-registration-)  and the relevant sections of the [Trade Marks Act 1995](https://www.legislation.gov.au/C2004A04969/latest/versions)\n* A detailed and documented case for the revocation.\n* Understand what's involved should you need to [Challenge the registration of a trade mark | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)\n* To get in touch with IP Australia, refer to [Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)\n\n*Before you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information on*[*getting professional assistance with your IP*](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip) *. In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free*[*30 minute consultations with an attorney*](https://ipta.org.au/community/get-free-consultation/) *.*"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-revocation#faq#q9-a",
+            "text": "Check the relevant dates of the relevant trade mark.\n In order to understand what factors contribute to the registrability of trade mark applications, refer to IP Australia's webpage What Can't Be A Trade Mark? | IP Australia\n Consider carefully Part 62 of the Trade Marks Manual of Practice and Procedure  and the relevant sections of the Trade Marks Act 1995\n A detailed and documented case for the revocation.\n Understand what's involved should you need to Challenge the registration of a trade mark | IP Australia First Response\n To get in touch with IP Australia, refer to Contact us | IP Australia\n\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information ongetting professional assistance with your IP . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free30 minute consultations with an attorney ."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

@@ -2,239 +2,347 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#webpage",
-      "headline": "Opposition process",
-      "alternativeHeadline": "Opposition process",
-      "description": "How to respond when someone has opposed your trade mark application",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "B1006"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "1/07/2025",
-      "dateModified": "5/09/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark",
+      "headline": "Respond to an opposition filed against your trade mark - IP First Response",
+      "description": "How to respond when someone has opposed your trade mark application",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Accused\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Opposition process",
+      "identifier": "B1006",
+      "datePublished": "2025-07-01",
+      "dateModified": "2025-09-05",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#article"
       },
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
-          "name": "can be seen here."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60",
-          "name": "Flow chart - Oppose the registration of a trade mark"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://portal.ipaustralia.gov.au/",
-          "name": "Online Services portal"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
-          "name": "Evidence In Oppositions And PBR Objections | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
-          "name": "Challenge the registration of a trade mark | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-opposition",
-          "name": "How to respond to an opposition | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
-          "name": "How to challenge someone else's IP | IP Australia"
-        }
-      ],
       "hasPart": [
         {
-          "@id": "#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#article"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
       "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#article",
       "name": "Respond to an opposition filed against your trade mark",
-      "headline": "Opposition process",
-      "description": "How to respond when someone has opposed your trade mark application",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Trade mark\", \"Unregistered-tm\""
-      },
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "serviceType": "IP Registration and Protection",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
-      }
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#webpage"
+      },
+      "description": "How to respond when someone has opposed your trade mark application",
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "$650+, plus legal fees",
+        "priceCurrency": "AUD"
+      },
+      "timeRequired": "Weeks to months",
+      "datePublished": "2025-07-01",
+      "dateModified": "2025-09-05",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark",
+        "https://portal.ipaustralia.gov.au/",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+        "https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-opposition",
+        "https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-is-it",
+      "name": "What is it?",
+      "text": "When seeking registration of your trade mark with IP Australia, there is a chance that a third party opposes the registration of your trade mark. If this happens, you will have the opportunity to defend your application by responding to the trade mark opposition.\n\nAfter your trade mark application is formally *accepted*by IP Australia, there is a 2-month window in which someone can oppose the registration under various reasons outlined in the *Trade Marks Act*. There are many reasons for opposing registration, including that your trade mark is too similar to another trade mark, or that you applied to register your trade mark in bad faith.\n\nOnce your application has been opposed, you will have the opportunity to defend your application by responding to the trade mark opposition. If you do not defend your application, it will lapse and will not proceed to registration. You can respond to a trade mark opposition by lodging a *notice of intention to defend* at IP Australia. After this, parties to the opposition process submit relevant submissions and evidence to IP Australia and may request a written or oral hearing, or a written decision without a hearing before an IP Australia hearing officer, who will decide whether your mark can proceed to registration. \n\nThe process is generally less formal or costly than going to court. Parties to the opposition sometimes use this process to negotiate a settlement, such as limiting goods and services or agreeing to co-exist in the market."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* Defending your application from opposition prevents your application from lapsing automatically and gives you opportunities to present your argument and evidence as to why the application meets the requirements for registration.\n* Trade mark opposition and hearing processes are less formal and generally quicker than court proceedings in reaching an outcome.\n* The process allows parties to request a cooling-off period or temporary suspension of the process to engage in negotiations and settlement, should they wish to resolve the dispute that way.\n* You can withdraw from the opposition process at any time before the hearing officer has made a decision.  This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.\n* Hearing officers have a high level of expertise, experience and authority in the field of trade mark law.\n* The unsuccessful party may be required to pay the costs incurred by the other party during the opposition process. This does not, however, extend to commercial losses or damages."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* If your defence is unsuccessful or if you choose not to defend, your trade mark might fail to proceed to registration or might need to be amended in order to be registrable.\n* You might be required to pay the other party's costs.\n* Due to the public nature of this process there is a risk of public scrutiny, negative publicity or reputational damage.\n* If you decide to defend, you are choosing to engage with an administrative process with various stages of paperwork and requirements, each with deadlines and consequences for failing to meet the deadline. Failing to meet specific timeframes and submit documents and evidence in acceptable formats can jeopardise your defence.\n* Even if you are successful, the opponent can appeal the decision and take the matter to court. This will occur additional expenses."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "1. Your trade mark achieving registration as applied for if your defence is upheld, or\n   * The opposition being upheld, and your trade mark fails to achieve registration, or\n     + It is also possible that the opposition was only raised in relation to part of the goods and services claimed under the trade mark, or the hearing officer considers that your defence or the other party's opposition is only partially established. In this case, your trade mark may still achieve registration for part of the goods and services you have specified in your application.\n   * The opponent withdraws or abandons the opposition, including if you reach a settlement or the matter resolves commercially before a final decision is made.\n2. You withdraw your trade mark application.\n3. If you choose not to defend your application against the opposition, your application will lapse."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "* There is no fee for filing a *notice of intention to defend.*However, extensions of time and other processes may incur further costs. Detailed costs [can be seen here.](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)\n* If you have an IP professional acting on your behalf, you may be liable for additional legal fees.\n* If your defence to the opposition is unsuccessful, it is likely that you will be required to pay the other party's costs."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "**Duration of process** \\\nThe process duration varies depending on the complexity of the matter in question, how quickly each party responds and each party's strategy. Refer to some of the timeframes permitted in the image below. \n\n\n\n[Flow chart - Oppose the registration of a trade mark](https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "Between 1% - 3% of marks whose acceptance is advertised are opposed. This currently equates to around 2,000 oppositions to registration per year."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "A trade mark applicant whose application has been opposed."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* The trade mark applicant (you).\n* The person or business opposing your application.\n* IP Australia.\n* Your legal representatives, if you choose to engage an IP professional (such as a lawyer or IP attorney)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "You can respond to an opposition by submitting a notice of intention to defend on IP Australia's [Online Services portal](https://portal.ipaustralia.gov.au/)  within the deadline set out in the opposition notice. You will then be required to regularly check the same portal for updates and directions.\n\n\n\nDepending on the grounds on which your application is being opposed, you may need to provide documents, details or other types of supporting evidence to support your defence. More information can be found on the IP Australia website regarding the types of evidence that would help your case and formal requirements for evidence: [Evidence In Oppositions And PBR Objections | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-see-also",
+      "name": "See also",
+      "text": "* [Challenge the registration of a trade mark | IP Australia First Response](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark)\n* [How to respond to an opposition | IP Australia](https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-opposition)\n* [Opposition and objection fees | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)\n* [How to challenge someone else's IP | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* Defending your application from opposition prevents your application from lapsing automatically and gives you opportunities to present your argument and evidence as to why the application meets the requirements for registration.\n* Trade mark opposition and hearing processes are less formal and generally quicker than court proceedings in reaching an outcome.\n* The process allows parties to request a cooling-off period or temporary suspension of the process to engage in negotiations and settlement, should they wish to resolve the dispute that way.\n* You can withdraw from the opposition process at any time before the hearing officer has made a decision.\u00a0 This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.\n* Hearing officers have a high level of expertise, experience and authority in the field of trade mark law.\n* The unsuccessful party may be required to pay the costs incurred by the other party during the opposition process. This does not, however, extend to commercial losses or damages."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q1-a",
+            "text": "Defending your application from opposition prevents your application from lapsing automatically and gives you opportunities to present your argument and evidence as to why the application meets the requirements for registration.\n Trade mark opposition and hearing processes are less formal and generally quicker than court proceedings in reaching an outcome.\n The process allows parties to request a cooling-off period or temporary suspension of the process to engage in negotiations and settlement, should they wish to resolve the dispute that way.\n You can withdraw from the opposition process at any time before the hearing officer has made a decision.  This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached.\n Hearing officers have a high level of expertise, experience and authority in the field of trade mark law.\n The unsuccessful party may be required to pay the costs incurred by the other party during the opposition process. This does not, however, extend to commercial losses or damages."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* If your defence is unsuccessful or if you choose not to defend, your trade mark might fail to proceed to registration or might need to be amended in order to be registrable.\n* You might be required to pay the other party's costs.\n* Due to the public nature of this process there is a risk of public scrutiny, negative publicity or reputational damage.\n* If you decide to defend, you are choosing to engage with an administrative process with various stages of paperwork and requirements, each with deadlines and consequences for failing to meet the deadline. Failing to meet specific timeframes and submit documents and evidence in acceptable formats can jeopardise your defence.\n* Even if you are successful, the opponent can appeal the decision and take the matter to court. This will occur additional expenses."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q2-a",
+            "text": "If your defence is unsuccessful or if you choose not to defend, your trade mark might fail to proceed to registration or might need to be amended in order to be registrable.\n You might be required to pay the other party's costs.\n Due to the public nature of this process there is a risk of public scrutiny, negative publicity or reputational damage.\n If you decide to defend, you are choosing to engage with an administrative process with various stages of paperwork and requirements, each with deadlines and consequences for failing to meet the deadline. Failing to meet specific timeframes and submit documents and evidence in acceptable formats can jeopardise your defence.\n* Even if you are successful, the opponent can appeal the decision and take the matter to court. This will occur additional expenses."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "1. Your trade mark achieving registration as applied for if your defence is upheld, or\n   * The opposition being upheld, and your trade mark fails to achieve registration, or\n     + It is also possible that the opposition was only raised in relation to part of the goods and services claimed under the trade mark, or the hearing officer considers that your defence or the other party's opposition is only partially established. In this case, your trade mark may still achieve registration for part of the goods and services you have specified in your application.\n   * The opponent withdraws or abandons the opposition, including if you reach a settlement or the matter resolves commercially before a final decision is made.\n2. You withdraw your trade mark application.\n3. If you choose not to defend your application against the opposition, your application will lapse."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q3-a",
+            "text": "1. Your trade mark achieving registration as applied for if your defence is upheld, or\n    The opposition being upheld, and your trade mark fails to achieve registration, or\n     + It is also possible that the opposition was only raised in relation to part of the goods and services claimed under the trade mark, or the hearing officer considers that your defence or the other party's opposition is only partially established. In this case, your trade mark may still achieve registration for part of the goods and services you have specified in your application.\n    The opponent withdraws or abandons the opposition, including if you reach a settlement or the matter resolves commercially before a final decision is made.\n2. You withdraw your trade mark application.\n3. If you choose not to defend your application against the opposition, your application will lapse."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* There is no fee for filing a *notice of intention to defend.*However, extensions of time and other processes may incur further costs. Detailed costs [can be seen here.](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0)\n* If you have an IP professional acting on your behalf, you may be liable for additional legal fees.\n* If your defence to the opposition is unsuccessful, it is likely that you will be required to pay the other party's costs."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q4-a",
+            "text": "There is no fee for filing a notice of intention to defend.However, extensions of time and other processes may incur further costs. Detailed costs can be seen here.\n If you have an IP professional acting on your behalf, you may be liable for additional legal fees.\n* If your defence to the opposition is unsuccessful, it is likely that you will be required to pay the other party's costs."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "**Duration of process**\u00a0\\\nThe process duration varies depending on the complexity of the matter in question, how quickly each party responds and each party's strategy. Refer to some of the timeframes permitted in the image below.\u00a0\n\n![Process of opposing Australian trade mark registration. After IP Australia accepts application, paths: unopposed (mark registered) or opposed (up to 6 steps with set timeframes). Opposition process: file opposition \u2192 1 month \u2192 file statement of grounds \u2192 1 month \u2192 notice of intention to defend \u2192 3 months \u2192 evidence in support \u2192 3 months \u2192 evidence in answer \u2192 2 months \u2192 evidence in reply. Total process: 10 months without extensions.](/sites/default/files/images/2025-03/Screenshot%202025-03-05%20103622.png)\n\n[Flow chart - Oppose the registration of a trade mark](https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60)"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q5-a",
+            "text": "Duration of process \\\nThe process duration varies depending on the complexity of the matter in question, how quickly each party responds and each party's strategy. Refer to some of the timeframes permitted in the image below. \n\nFlow chart - Oppose the registration of a trade mark"
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q6-a",
             "text": "Between 1% - 3% of marks whose acceptance is advertised are opposed. This currently equates to around 2,000 oppositions to registration per year."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q7-a",
             "text": "A trade mark applicant whose application has been opposed."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* The trade mark applicant (you).\n* The person or business opposing your application.\n* IP Australia.\n* Your legal representatives, if you choose to engage an IP professional (such as a lawyer or IP attorney)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q8-a",
+            "text": "The trade mark applicant (you).\n The person or business opposing your application.\n IP Australia.\n Your legal representatives, if you choose to engage an IP professional (such as a lawyer or IP attorney)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can respond to an opposition by submitting a notice of intention to defend on IP Australia's [Online Services portal](https://portal.ipaustralia.gov.au/)  within the deadline set out in the opposition notice. You will then be required to regularly check the same portal for updates and directions.\n\n![Location of where to submit a notice of intention to defend on IP Australia's Online Services Portal.](/sites/default/files/images/2025-07/Where_to_find_how_to_submit_NOID.png)\n\nDepending on the grounds on which your application is being opposed, you may need to provide documents, details or other types of supporting evidence to support your defence. More information can be found on the IP Australia website regarding the types of evidence that would help your case and formal requirements for evidence: [Evidence In Oppositions And PBR Objections | IP Australia](https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq#q9-a",
+            "text": "You can respond to an opposition by submitting a notice of intention to defend on IP Australia's Online Services portal  within the deadline set out in the opposition notice. You will then be required to regularly check the same portal for updates and directions.\n\nDepending on the grounds on which your application is being opposed, you may need to provide documents, details or other types of supporting evidence to support your defence. More information can be found on the IP Australia website regarding the types of evidence that would help your case and formal requirements for evidence: Evidence In Oppositions And PBR Objections | IP Australia."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }

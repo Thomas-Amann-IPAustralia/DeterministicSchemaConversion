@@ -2,186 +2,131 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#webpage",
-      "headline": "Complaints",
-      "alternativeHeadline": "Complaints",
-      "description": "",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "E1013"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "NGO",
+      "@id": "https://www.ttipattorney.gov.au/#organization",
+      "name": "Trans-Tasman IP Attorneys Board",
+      "url": "https://www.ttipattorney.gov.au",
+      "sameAs": [
+        "https://www.ttipattorney.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "11/09/2025",
-      "dateModified": "11/09/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney",
+      "headline": "How can I make a complaint about a lawyer or attorney? - IP First Response",
+      "description": "",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"IP Basics\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "Complaints",
+      "identifier": "E1013",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-what-is-it"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint",
-          "name": "How to lodge a complaint with the TTIAB"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-see-also"
         },
         {
-          "@type": "WebPage",
-          "url": "https://www.actlawsociety.asn.au/",
-          "name": "Law Society of the ACT"
-        },
-        {
-          "@type": "WebPage",
-          "url": "http://www.olsc.nsw.gov.au/",
-          "name": "Office of the NSW Legal Services Commissioner"
-        },
-        {
-          "@type": "WebPage",
-          "url": "http://lawsocietynt.asn.au/",
-          "name": "Law Society NT"
-        },
-        {
-          "@type": "WebPage",
-          "url": "http://www.lsc.qld.gov.au/",
-          "name": "Legal Services Commission"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://lpcc.sa.gov.au/",
-          "name": "Legal Profession Conduct Commissioner"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.lst.org.au/",
-          "name": "Law Society of Tasmania"
-        },
-        {
-          "@type": "WebPage",
-          "url": "http://www.lsbc.vic.gov.au/",
-          "name": "Victorian Legal Services Board & Commissioner"
-        },
-        {
-          "@type": "WebPage",
-          "url": "http://www.lpbwa.org.au/",
-          "name": "Legal Practice Board of Western Australia"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-want-to-give-us-feedback"
         }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#article",
+      "name": "How can I make a complaint about a lawyer or attorney?",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#webpage"
+      },
+      "description": "If you are unhappy with how a lawyer or a patent or trade marks attorney has acted, you may be able to make a formal complaint to the body that regulates them. This process is meant to protect the public, keep professional standards high, and deal with serious misconduct. \n\nFor lawyers, complaints are handled by the relevant regulator in each state and territory. They can look into both service issues (such as poor communication or delays) and conduct issues (such as dishonesty or serious breach",
+      "provider": {
+        "@id": "https://www.ttipattorney.gov.au/#organization"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
+      "relatedLink": [
+        "http://lawsocietynt.asn.au/",
+        "http://www.lpbwa.org.au/",
+        "http://www.lsbc.vic.gov.au/",
+        "http://www.lsc.qld.gov.au/",
+        "http://www.olsc.nsw.gov.au/",
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney",
+        "https://lpcc.sa.gov.au/",
+        "https://www.actlawsociety.asn.au/",
+        "https://www.lst.org.au/",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint"
       ],
       "hasPart": [
         {
-          "@id": "#faq"
-        }
-      ]
-    },
-    {
-      "@id": "#the-service",
-      "@type": "Service",
-      "name": "How can I make a complaint about a lawyer or attorney?",
-      "headline": "Complaints",
-      "description": "",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Any dispute related to intellectual property\""
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "Trans-Tasman IP Attorneys Board"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Australia"
-      }
-    },
-    {
-      "@id": "#faq",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How can I make a complaint about a lawyer or attorney?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "*This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options.\u00a0It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*"
-          }
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-what-is-it"
         },
         {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
-          }
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-see-also"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-want-to-give-us-feedback"
         }
       ]
     },
     {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-what-is-it",
+      "name": "What is it?",
+      "text": "If you are unhappy with how a lawyer or a patent or trade marks attorney has acted, you may be able to make a formal complaint to the body that regulates them. This process is meant to protect the public, keep professional standards high, and deal with serious misconduct. \n\nFor lawyers, complaints are handled by the relevant regulator in each state and territory. They can look into both service issues (such as poor communication or delays) and conduct issues (such as dishonesty or serious breaches of professional rules). \n\nFor registered patent and trade marks attorneys, complaints go to the **Trans-Tasman IP Attorneys Board** (TTIPAB). This Board makes sure attorneys follow their Code of Conduct, which requires them to act lawfully, in the best interests of clients and in the public interest. \n\nBefore making a formal complaint, it is often worth trying to resolve the problem directly with the lawyer or attorney, or someone more senior in their firm. Many issues can be addressed through clearer communication or by following the firm's own complaint process. \n\nTo issue a complaint you will usually need to provide: \n\n* Your name and contact details.\n* The name of the lawyer or attorney.\n* A clear description of what happened and when.\n* Copies of relevant documents, emails, or agreements.\n\nThere are often **time limits**. Many regulators will not investigate matters that happened more than three years ago, unless there are special circumstances or it is in the public interest. \n\nAfter you lodge a complaint, the regulator may: \n\n* Dismiss it if there is not enough evidence or it is outside their scope.\n* Offer mediation to help both sides reach agreement.\n* Investigate to decide if professional rules were broken.\n\n**Please note:** Regulators usually cannot order a lawyer or attorney to pay you compensation. If you want compensation, you may need to look at other dispute resolution processes or court action."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-see-also",
+      "name": "See also",
+      "text": "[How to lodge a complaint with the TTIAB](https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint)  \n\n[Reasons to make a complaint to the TTIAB](https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint)  \n\n[Law Society of the ACT](https://www.actlawsociety.asn.au/)  \n\n[Office of the NSW Legal Services Commissioner](http://www.olsc.nsw.gov.au/)  \n\n[Law Society NT](http://lawsocietynt.asn.au/)   \n\n[Legal Services Commission](http://www.lsc.qld.gov.au/)   \n\n[Legal Profession Conduct Commissioner](https://lpcc.sa.gov.au/)   \n\n[Law Society of Tasmania](https://www.lst.org.au/)  \n\n[Victorian Legal Services Board & Commissioner](http://www.lsbc.vic.gov.au/)   \n\n[Legal Practice Board of Western Australia](http://www.lpbwa.org.au/)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
     }
   ]
 }

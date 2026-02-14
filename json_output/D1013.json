@@ -2,201 +2,315 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#webpage",
-      "headline": "IP insurance",
-      "alternativeHeadline": "IP insurance",
-      "description": "Protect yourself from some costs involved in IP disputes  ",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "UDID",
-        "value": "D1013"
-      },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "copyrightYear": "2026",
-      "copyrightHolder": {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "datePublished": "2/04/2025",
-      "dateModified": "1/10/2025",
-      "usageInfo": {
-        "@type": "CreativeWork",
-        "name": "Disclaimer and Feedback Policy",
-        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement",
+      "headline": "Coverage against potential future costs related to infringement - IP First Response",
+      "description": "Protect yourself from some costs involved in IP disputes",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "IP First Response",
-        "url": "https://ipfirstresponse.ipaustralia.gov.au",
-        "description": "A first port of call for businesses to easily understand complex intellectual property issues."
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Australian Small Business Owners - \"Proactive\"",
-        "alternateName": [
-          "Startups",
-          "Entrepreneurs",
-          "SME",
-          "Sole Trader"
-        ],
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Australia"
-        }
+        "audienceType": "Small and medium businesses, startups, and individuals"
       },
+      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "alternativeHeadline": "IP insurance",
+      "identifier": "D1013",
+      "datePublished": "2025-04-02",
+      "dateModified": "2025-10-01",
       "mainEntity": {
-        "@id": "#the-service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#article"
       },
-      "relatedLink": [
+      "hasPart": [
         {
-          "@type": "WebPage",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement",
-          "name": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#article"
         },
         {
-          "@type": "WebPage",
-          "url": "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
-          "name": "*IP First Response feedback form*"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-want-to-give-us-feedback"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq"
         }
       ]
     },
     {
-      "@id": "#the-service",
-      "@type": [
-        "Article",
-        "HowTo"
-      ],
-      "name": "Coverage against potential future costs related to infringement",
-      "headline": "IP insurance",
-      "description": "Protect yourself from some costs involved in IP disputes  ",
-      "about": {
-        "@type": "Thing",
-        "name": "\"Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\""
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "IP Insurers "
-      },
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#article",
+      "headline": "Coverage against potential future costs related to infringement",
       "articleBody": "Intellectual Property (IP) insurance is a specific type of coverage designed to protect businesses and individuals against the financial risks associated with intellectual property disputes. It can help cover the legal costs and potential damages involved in defending against infringement allegations or enforcing one's own IP rights. IP insurance can apply to various forms of registered intellectual property, such as patents and trademarks, or unregistered rights like copyrights and trade secrets. There are also other forms of insurance that may be relevant, such as litigation insurance.",
-      "step": "xXx_PLACEHOLDER_xXx"
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#webpage"
+      },
+      "description": "Protect yourself from some costs involved in IP disputes",
+      "datePublished": "2025-04-02",
+      "dateModified": "2025-10-01",
+      "relatedLink": [
+        "https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-benefits"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-risks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-possible-outcomes"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-might-the-costs-be"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-how-much-time-might-be-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-how-much-is-this-used"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-who-can-use-this"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-whos-involved"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-do-you-need-to-proceed"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-want-to-give-us-feedback"
+        }
+      ]
     },
     {
-      "@id": "#faq",
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-is-it",
+      "name": "What is it?",
+      "text": "Intellectual Property (IP) insurance is a specific type of coverage designed to protect businesses and individuals against the financial risks associated with intellectual property disputes. It can help cover the legal costs and potential damages involved in defending against infringement allegations or enforcing one's own IP rights. IP insurance can apply to various forms of registered intellectual property, such as patents and trademarks, or unregistered rights like copyrights and trade secrets. There are also other forms of insurance that may be relevant, such as litigation insurance."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-benefits",
+      "name": "What are the benefits?",
+      "text": "* **Financial Protection:** IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events.\n* **Legal Support:** IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively.\n* **Investor Confidence:** Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed.\n* **Predictable Costs:** While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-risks",
+      "name": "What are the risks?",
+      "text": "* **Coverage limitations and exclusions:** Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions - certain types of IP may not be fully covered. Additionally, insurers typically **do not cover disputes or infringements that are already known, in progress or on the horizon.**\n* **Insurer control over litigation strategy:** When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer's cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer's panel of approved attorneys - which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind)."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-are-the-possible-outcomes",
+      "name": "What are the possible outcomes?",
+      "text": "There can be both positive and negative outcomes from IP insurance.  \n\n**Positives:**\n\n* **Financial protection** in IP disputes, covering costly legal fees and potential damages or settlements.\n* **Improved enforcement** of your intellectual property, as insurance may help fund actions against infringers.\n* **Deterrent effect** -- the knowledge that you're insured may discourage potential infringers.\n* **Enforcement coverage** for both asserting your rights and defending against claims.\n* **Credibility boost**, offering reassurance to investors, partners, or stakeholders.\n* **Stronger negotiating position** when resolving disputes.\n\n**Negatives:**\n\n* **High deductibles (excess)** may apply before insurance kicks in.\n* **Premiums may increase** after making a claim.\n* **Coverage limitations** depending on the policy terms -- not all types of disputes or jurisdictions may be included.\n* **Insurer influence** -- the insurance company might want a say in your legal strategy.\n* **Risk of declined coverage** if the insurer determines the issue isn't covered.\n* **False sense of security**, leading to overreliance and mistaken belief that \"everything is covered.\""
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-might-the-costs-be",
+      "name": "What might the costs be?",
+      "text": "As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable. \n\nA premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate. \n\nA clear indication of the costs can be obtained by requesting a quote from insurers."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-how-much-time-might-be-involved",
+      "name": "How much time might be involved?",
+      "text": "While there may be a waiting period accessing the premium - owing to the time taken for risk assessment and valuation - once the contract has been confirmed, there is generally little waiting time to make claims."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-how-much-is-this-used",
+      "name": "How much is this used?",
+      "text": "As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past. \n\nAdditionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-who-can-use-this",
+      "name": "Who can use this?",
+      "text": "Given that IP insurance is marketed towards IP holders, any party holding or in the process of attaining IP can make use of IP insurance, although most commercial insurance products are directed towards trade marks or patents."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-whos-involved",
+      "name": "Who's involved?",
+      "text": "* You (the IP holder)\n* The insurer\n* Your legal counsel (if any)"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-what-do-you-need-to-proceed",
+      "name": "What do you need to proceed?",
+      "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings. \n\nIt may be beneficial to have a preferred legal counsel. \n\nYou will also need to research, identify and compare insurers before making a decision."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#section-want-to-give-us-feedback",
+      "name": "Want to give us feedback?",
+      "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq",
       "mainEntity": [
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Financial Protection:** IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events.\n* **Legal Support:** IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively.\n* **Investor Confidence:** Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed.\n* **Predictable Costs:** While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q1-a",
+            "text": "Financial Protection: IP lawsuits can be extremely costly, and insurance can help preserve your financial stability in such events.\n Legal Support: IP insurance providers often have specialised legal networks or resources to help manage and defend claims effectively.\n Investor Confidence: Holding IP insurance can reassure potential investors and partners that risks associated with IP disputes are managed.\n Predictable Costs: While the excess you may need to pay before insurance takes over can be high, it is a known amount which can be planned for."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* **Coverage limitations and exclusions:** Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions - certain types of IP may not be fully covered. Additionally, insurers typically **do not cover disputes or infringements that are already known, in progress or on the horizon.**\n* **Insurer control over litigation strategy:** When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer's cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer's panel of approved attorneys - which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q2-a",
+            "text": "Coverage limitations and exclusions: Like all insurance, IP insurance policies can be complex, with narrowly defined terms and exclusions - certain types of IP may not be fully covered. Additionally, insurers typically do not cover disputes or infringements that are already known, in progress or on the horizon.\n Insurer control over litigation strategy: When a claim arises, the insurance company may want to settle quickly to minimise costs, even if you would prefer to continue to fight the claim. In some cases, this can lead to a conflict between the insurer's cost-control objectives and your business goals. Additionally, some policies will require you to use the insurer's panel of approved attorneys - which may make it difficult or more costly to use your own preferred IP counsel (if you already have one in mind)."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There can be both positive and negative outcomes from IP insurance.\u00a0\u00a0\n\n**Positives:**\n\n* **Financial protection** in IP disputes, covering costly legal fees and potential damages or settlements.\n* **Improved enforcement** of your intellectual property, as insurance may help fund actions against infringers.\n* **Deterrent effect** -- the knowledge that you're insured may discourage potential infringers.\n* **Enforcement coverage** for both asserting your rights and defending against claims.\n* **Credibility boost**, offering reassurance to investors, partners, or stakeholders.\n* **Stronger negotiating position** when resolving disputes.\n\n**Negatives:**\n\n* **High deductibles (excess)** may apply before insurance kicks in.\n* **Premiums may increase** after making a claim.\n* **Coverage limitations** depending on the policy terms -- not all types of disputes or jurisdictions may be included.\n* **Insurer influence** -- the insurance company might want a say in your legal strategy.\n* **Risk of declined coverage** if the insurer determines the issue isn't covered.\n* **False sense of security**, leading to overreliance and mistaken belief that \"everything is covered.\""
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q3-a",
+            "text": "There can be both positive and negative outcomes from IP insurance.  \n\nPositives:\n\n Financial protection in IP disputes, covering costly legal fees and potential damages or settlements.\n Improved enforcement of your intellectual property, as insurance may help fund actions against infringers.\n Deterrent effect -- the knowledge that you're insured may discourage potential infringers.\n Enforcement coverage for both asserting your rights and defending against claims.\n Credibility boost, offering reassurance to investors, partners, or stakeholders.\n Stronger negotiating position when resolving disputes.\n\nNegatives:\n\n High deductibles (excess) may apply before insurance kicks in.\n Premiums may increase after making a claim.\n Coverage limitations depending on the policy terms -- not all types of disputes or jurisdictions may be included.\n Insurer influence -- the insurance company might want a say in your legal strategy.\n Risk of declined coverage if the insurer determines the issue isn't covered.\n False sense of security, leading to overreliance and mistaken belief that \"everything is covered.\""
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable.\u00a0\n\nA premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate.\u00a0\n\nA clear indication of the costs can be obtained by requesting a quote from insurers."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q4-a",
+            "text": "As IP rights can be worth a lot, and IP litigation can be costly, IP insurance can be quite expensive. It should be noted that the cost of protection varies widely depending on the specific IP right to be covered. Additionally, you may need to pay a significant deductible (excess) before the insurance covers the case, which can be highly variable. \n\nA premium can range widely depending on the type of IP, business and type of coverage sought, and is often an annual rate. \n\nA clear indication of the costs can be obtained by requesting a quote from insurers."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q5-a",
             "text": "While there may be a waiting period accessing the premium - owing to the time taken for risk assessment and valuation - once the contract has been confirmed, there is generally little waiting time to make claims."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past.\u00a0\n\nAdditionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q6-a",
+            "text": "As the visibility of IP insurance is fairly low, it is difficult to estimate how widely it is used, although popularity has fluctuated in the past. \n\nAdditionally, insurance products have often been expensive, meaning the costs and limitations of specific insurance products often act as a barrier to those considering it."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q7-a",
             "text": "Given that IP insurance is marketed towards IP holders, any party holding or in the process of attaining IP can make use of IP insurance, although most commercial insurance products are directed towards trade marks or patents."
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "* You (the IP holder)\n* The insurer\n* Your legal counsel (if any)"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q8-a",
+            "text": "You (the IP holder)\n The insurer\n* Your legal counsel (if any)"
           }
         },
         {
           "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings.\u00a0\n\nIt may be beneficial to have a preferred legal counsel.\u00a0\n\nYou will also need to research, identify and compare insurers before making a decision."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Want to give us feedback?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Send us an [email](mailto:ipfirstresponse@ipaustralia.gov.au).\\\nFill out our [feedback form](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#faq#q9-a",
+            "text": "Make sure you have all the relevant information regarding your IP right, including any R&D and prior dealings. \n\nIt may be beneficial to have a preferred legal counsel. \n\nYou will also need to research, identify and compare insurers before making a decision."
           }
         }
       ]
-    },
-    {
-      "@id": "https://www.ipaustralia.gov.au/#organization",
-      "@type": "GovernmentOrganization",
-      "name": "IP Australia",
-      "url": "https://www.ipaustralia.gov.au",
-      "sameAs": "https://www.wikidata.org/wiki/Q5973154",
-      "knowsAbout": [
-        "Intellectual Property",
-        "Patents",
-        "Trade Marks",
-        "Design Rights",
-        "Plant Breeder's Rights",
-        "Copyright",
-        "Dispute Resolution"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Website content owner",
-        "email": "IPFirstResponse@IPAustralia.gov.au",
-        "description": "Feedback and enquiries regarding IP First Response"
-      },
-      "parentOrganization": {
-        "@type": "GovernmentOrganization",
-        "name": "Australian Government"
-      }
     }
   ]
 }
