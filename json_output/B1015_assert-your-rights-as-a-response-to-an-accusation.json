@@ -1,0 +1,334 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation",
+      "headline": "Assert your rights, as a response to an accusation - IP First Response",
+      "description": "If you believe that you are genuinely in the right to retain your IP, gather evidence and defend your right to use it.",
+      "identifier": "B1015",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#article"
+      },
+      "datePublished": "2025-07-01",
+      "dateModified": "2026-01-22",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#article",
+      "headline": "Assert your rights, as a response to an accusation",
+      "description": "If you believe that you are genuinely in the right to retain your IP, gather evidence and defend your right to use it.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#webpage"
+      },
+      "articleBody": "Sometimes being accused of infringing someone else's intellectual property (IP) makes you aware of the other party's use of the contested IP for the first time. Looking into their allegations might lead you to suspect that it is actually you that has a stronger claim, and that it is your IP - not theirs - that is at risk of being infringed.  \n\nIt is quite common for both parties involved in an IP dispute to believe that their IP has been copied or misappropriated by the other side. Some common situations include: \n\n- The owner of a registered trade mark being accused of copying someone's unregistered trade mark or branding.\n- Both parties believing that they are the rightful owner of contested IP. For instance, parties may have developed IP together but may have differing views as to who can own and use this IP, leading them to accuse each other of infringing the disputed IP.\n\nIf you think that someone accusing you of infringement is actually infringing yourIP, you can consider whether to take enforcement action against them. \n\nThere are a wide variety of enforcement actions with varying levels of formality, costs, benefits and risks, ranging from commercial, private pathways such as negotiation to something more formal, like court proceedings. Find out more about how to enforce your IP rights and compare different enforcement pathways by following the 'I believe my IP has been infringed'option.  \n\nBefore taking any of these actions, it can be a good idea to consider whether the other party's actions amount to infringement -- see our information on what infringement can look like. A legal professional can help you make this assessment and give advice on your next steps.",
+      "datePublished": "2025-07-01",
+      "dateModified": "2026-01-22",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+          "name": "I believe my IP has been infringed'"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "name": "what infringement can look like"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "name": "Unjustified Threats"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+          "name": "All enforcement options | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+          "name": "Obtain legal advice on your situation | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "name": "What to consider before taking legal action | IP Australia"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q1-a",
+            "text": "The benefits of enforcing your own IP as a response to another infringement action will vary depending on the nature of the infringement and the strength of your IP. In general, some of the strengths of this action are: \n\n- It can help provide clarity about the respective strengths of your positions.\n- Taking a proactive step may help you in later negotiations or mediations.\n- It can help speed up the dispute if the other party is disingenuous."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q2-a",
+            "text": "The inherent risks of this action will vary depending on the nature of the infringement and the strength of your IP. In general, some of the risks of this action are: \n\n- Attempts to enforce a non-valid or non-relevant right can expose someone to legal issues such as unjustified threats (for more information, please see Unjustified Threats).\n- Trying to enforce a non-valid IP right will likely require a large investment without the possibility of a return.\n- Attempting to enforce a right that is not valid will likely increase the damages levied against the losing party in a successful IP enforcement action.\n\nAttempting to enforce your IP in response to an enforcement action can be a strategic decision, however you should strongly considerthe relative strength and validity of the IP rights in question. You may wish to consider speaking to an IP lawyer or IP attorney before taking this course of action."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q3-a",
+            "text": "The outcomes of enforcing your IP depend heavily on your individual circumstances, the type of IP rights involved and the enforcement pathway you take. You can find out more about possible outcomes relating to a specific enforcement option via using the 'I believe my IP has been infringed'pathway. Otherwise, you can simply use All enforcement options | IP Australia First Response page to view information on different enforcement options."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q4-a",
+            "text": "The estimated costs of enforcing your IP would vary heavily depending on your individual circumstances, the type of IP rights involved and the enforcement pathway you pursue. You can find out more about costs relating to a specific enforcement option via using the 'I believe my IP has been infringed'tool. Otherwise, you can simply use All enforcement options | IP Australia First Response page to view information on different enforcement options."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q5-a",
+            "text": "The estimated timeframe of enforcing your IP would vary heavily depending on your individual circumstances, the type of IP rights involved and the enforcement pathway you pursue. You can find out more about timeframes relating to a specific enforcement option via using the 'I believe my IP has been infringed'tool. Otherwise, you can simply use All enforcement options | IP Australia First Response page to view information on different enforcement options."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q6-a",
+            "text": "IP rights holders can choose to enforce their IP rights through a wide range of enforcement options with varying degrees of specialisation, features and prevalence. Some enforcement options are, by nature, more accessible than others that require more time, commitment and effort."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q7-a",
+            "text": "We have not provided an indication of who can use this option guide because it encompasses a variety of situations.   \n\nHowever, making a counter-action against an accusation of infringement is a serious matter, and must have a genuine basis. Before responding with an enforcement action or a counter-action, it is worth being aware that using this option can sometimes result in serious legal consequences"
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q8",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq#q8-a",
+            "text": "The steps you may need to take will largely depend on the exact nature of the infringement issue. For more information, please utilise IP First Response to find additional information about options that might be available to you. You may also wish to speak to an IP lawyer or IP attorney (for more information, please see Obtain legal advice on your situation | IP Australia First Response) to provide advice specific to your situation. \n\n- Navigator Tool - Suspected Infringement | IP Australia First Response\n- Find an IP attorney or firm | Trans-Tasman IP Attorneys Board\n- Someone is using my IP | IP Australia\n- What to consider before taking legal action | IP Australia"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

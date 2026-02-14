@@ -23,11 +23,11 @@
     },
     {
       "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
-      "headline": "Provide an opportunity for the other party to stop infringing - IP First Response",
-      "description": "",
-      "identifier": "",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing",
+      "headline": "Provide an opportunity for the other party to stop infringing. - IP First Response",
+      "description": "Alert the alleged infringer of your registered rights to allow them to stop infringing",
+      "identifier": "D1033",
       "about": {
         "@type": "Thing",
         "name": "Any dispute related to intellectual property"
@@ -50,50 +50,87 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "mainEntity": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#article"
+      },
+      "datePublished": "2025-02-20",
+      "dateModified": "2025-10-01",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "IP First Response initiative led by IP Australia",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-1-informal-contact"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-1-consider-contacting-an-ip-professional-for-advice-and-assistance"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-2-consider-contacting-an-ip-professional-for-advice-and-assistance"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-2-exercise-caution-before-making-accusations-of-infringement"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-3-exercise-caution-before-making-accusations-of-infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-3-disclaimer"
         }
       ]
     },
     {
       "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#article",
-      "headline": "Provide an opportunity for the other party to stop infringing",
-      "description": "",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#article",
+      "headline": "Provide an opportunity for the other party to stop infringing.",
+      "description": "Alert the alleged infringer of your registered rights to allow them to stop infringing",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#webpage"
       },
       "articleBody": "You can consider reaching out informally to the party who you suspect to be infringing your IP, before taking any legal or formal action against them.  \n\nIn some cases, infringement can be unintentional or a suspected infringer might be open to reaching an amicable solution. \n\nInformal contact with another party can be effective at resolving IP disputes -- however, it can also open you up to a range of unexpected or detrimental results. Any consideration for informal contact should be weighed against the possible negative outcomes. An IP professional can help inform this decision.  \n\nBefore talking to the other party, you should be satisfied that the other party's actions would amount to infringement of your IP. This is something that an IP lawyer or an IP attorney can assist with. \n\nThere can be serious consequences if you threaten a person with infringement proceedings on an incorrect basis, including a risk that the party may sue you. You might be liable to pay compensation or damages or you may be ordered to stop making the threat under 'unjustified threat' provisions (also referred to as 'groundless threats' in copyright law).  \n\nFor more information about what constitutes an infringement, see our information on what infringement can look like.An IP professional can help you make this assessment. \n\nPlease note that engaging in any informal contact with the other party before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved.",
+      "datePublished": "2025-02-20",
+      "dateModified": "2025-10-01",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-1-informal-contact"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-1-consider-contacting-an-ip-professional-for-advice-and-assistance"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-2-consider-contacting-an-ip-professional-for-advice-and-assistance"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-2-exercise-caution-before-making-accusations-of-infringement"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-3-exercise-caution-before-making-accusations-of-infringement"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq"
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ],
       "relatedLink": [
@@ -167,124 +204,194 @@
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-1-informal-contact",
-      "headline": "Informal contact",
-      "text": "",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-2-consider-contacting-an-ip-professional-for-advice-and-assistance",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-1-consider-contacting-an-ip-professional-for-advice-and-assistance",
       "headline": "Consider contacting an IP professional for advice and assistance",
       "text": "It can be difficult to determine whether the other party's behaviour amounts to infringement and facilitate a productive, amicable discussion with the other party. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.   \n\nPlease note: Making informal contact before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, you might want to consult an IP professional.",
-      "position": 2,
+      "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#article"
       }
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-3-exercise-caution-before-making-accusations-of-infringement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-2-exercise-caution-before-making-accusations-of-infringement",
       "headline": "**Exercise caution before making accusations of infringement**",
       "text": "Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation or damages or an order that you stop making the threat. Proving infringement is an important issue that should be considered before you informally contact another party.  \n\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information ongetting professional assistance with your IP . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free30 minute consultations with an attorney .",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#article"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-3-disclaimer",
+      "headline": "Disclaimer",
+      "text": "There can be serious consequences if you threaten a person with infringement proceedings on an incorrect basis, including a risk that the party may sue you. You might be liable to pay compensation or damages or you may be ordered to stop making the threat under ‘unjustified threat’ provisions (also referred to as ‘groundless threats’ in copyright law).",
       "position": 3,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#article"
       }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq",
       "inLanguage": "en-AU",
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#webpage"
       },
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q1-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q1-a",
             "text": "- Often cost-effective.\n- Quick and easy to initiate.\n- Possibility of stopping infringing behaviour without the need for additional stepsand the stress of more formal actions.\n- Allows you to consider many options to escalate, if suspected infringement continues.\n- Other enforcement processes often expect you to take genuine steps to resolve a dispute before escalating."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q2-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q2-a",
             "text": "- Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation, damages and costs resulting from the threat and in you being ordered to stop making the threat.\n- Using unreasonably aggressive or unprofessional tone in the communication with the other party may prompt the other party to escalate and resist, rather than comply.\n- Alerting the other party, regardless of the legitimacy of your claim, can expose you counterclaims or actions from the other party, which may escalate the conflict in an unwanted way. This could jeopardise your IP rights.\n- For registered rights, it might prompt the other party to challenge the validity or registrability of your IP right in an attempt to undermine your claims.\n- In the case of trade marks, the other party may apply for a trade mark as a defensive strategy against your claims, and you may then need to decide if you wish to oppose their application.\n- Contacting the suspected infringer might give them time to hide or destroy evidence. This could harm your case in future legal actions. If you are worried about this possibility, you should seek legal advice before communicating with the other party.\n- Depending on what you say to the other party, or what you might agree with them, this could impact your ability to take other enforcement action in future. It is usually prudent to tell the other party that any informal communications are on a 'without prejudice' basis and to include this in any written communications with them."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q3-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q3-a",
             "text": "Informal communication with the other party can result in a wide range of different outcomes depending on the specific circumstances. \n\nSome possible outcomes are: \n\n- The alleged infringing behaviour stops following the conversation, especially if the other party was simply unaware of existing IP rights.\n- The alleged infringer does not change their behaviour, in which case you may have to consider other enforcement options.\n- Parties can engage in further communication disputing part or all of your claims.\n- The alleged infringer is placed on notice that their conduct may involve infringement, which may assist you to seek monetary compensation if you later commence court action.\n- The conflict can further escalate into more serious, formal dispute settlement procedures (for example, sending a letter of demand, litigation, mediation, arbitration, administrative hearings.).\n- The other party may not fulfil all the requirements but may be willing to participate in some form of negotiation.\n- The other party may commence proceedings challenging the validity of the IP right, or be prompted to take legal action against you (for instance if they are of the opinion that you are infringing on their rights). This could include seeking damages or compensation for unjustified threats."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q4-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q4-a",
             "text": "If you engage an IP professional to give you legal advice or act on your behalf, fees will be incurred for their service. \n\nFees for IP professionals vary depending on the complexity of the issues at hand and which type of IP professional you engage. For instance, you can expect an average fee of $500-1000 per hour for a patent or trade mark attorney."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q5-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q5-a",
             "text": "Informal communication can be a quick and simple enforcement option. However, the amount of time involved in communicating with the other party will vary depending on things like the complexity of the case, whether you choose to engage an IP professional to act on your behalf, and the response of the other party."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q6",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q6-a",
             "text": "Someone who owns IP (or in limited cases authorised user) and can provide evidence of their rights."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q7",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q7-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q7-a",
             "text": "- IP right owner/s or authorised users or exclusive licensees of IP.\n- Alleged infringer(s).\n- (Optional) IP professionals acting on parties' behalf."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q8",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#faq#q8-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#faq#q8-a",
             "text": "Understanding what constitutes IP infringement, and possible consequences of contacting a suspected infringer, can help you decide if this is the right option for you. \n\nIt's important to get all the factual details correct and evaluate the merits of your claims before you reach out to the other party. Making unjustified claims of IP infringement can have serious consequences. If you are found to have made an unjustified threat, you might be liable to pay damages or compensate the other party or you may be ordered to stop making the threat. \n\nFor more information about how someone can take action against unjustified threats through the courts, please review Respond to an unjustified threat | IP Australia First Response \n\nHere are some things you might wish to check and consider before talking to the other party you should consider engaging an IP lawyer or IP attorney to work through these issues with you:  \n\n- The status and details of the relevant IP in the jurisdiction where suspected infringement occurred. This includes checking the status of your IP registrations, and whether the alleged infringer has registered IP rights with IP Australia or overseas IP offices.\n- Whether the other party's conduct amounts to infringement, having regard to what infringement looks like, to avoid making unjustified threats. For registered IP, it's worth considering the 'scope of protection' of your registered claim. \n  + For trade marks, this includes the goods or services attached to your registration, and whether the other party is offering similar goods and services.\n  + For patents, it includes whether the product or process contains all the essential features of a claim in a granted patent.\n  + For designs, the scope of protection would require consideration of not only the visual appearance of the product but the tangible physical product (e.g. a chair, a bottle, etc.) that the design is applied to.  \\\n    Please note: a design right can only be enforced if the right is also certified. For more information please see Request certification for your registered design | IP Australia First Response\n- The identity and contact details of the suspected infringer. It's important to make sure you speak to the correct party.\n\nIf you are not sure about any of the above, then you might want to speak to an IP professional for help. \n\nBefore taking this action, it might also be helpful to consider your goals and potential outcomes, including:  \n\n- Options for outcomes that would benefit or be agreeable to everyone involved.\n- Whether you will be prepared to be engaged in further correspondence, negotiation or even disputes with the other party. If you threaten to do something and do not follow through, it could be found to be an unjustified threat.\n- Your plans to commercialise and promote your IP, and whether making informal contact could undermine (or strengthen) these.\n- Ways you can engage in an amicable, productive conversation with the other party."
           }
         }
       ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
     }
   ]
 }

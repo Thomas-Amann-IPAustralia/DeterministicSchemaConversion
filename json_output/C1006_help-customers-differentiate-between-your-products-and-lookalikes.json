@@ -1,0 +1,314 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+      "headline": "Help customers differentiate between your products and lookalikes - IP First Response",
+      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine.",
+      "identifier": "C1006",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#article"
+      },
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-10-02",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#article",
+      "headline": "Help customers differentiate between your products and lookalikes",
+      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage"
+      },
+      "articleBody": "Educating your customers to recognise and value your genuine product, service, or invention can help protect your brand or invention and reduce the risk of being copied. \n\nWhile it's a legal question as to whether something infringes your rights, it's often customer confusion that causes the most damage. Making sure your customers understand what sets your product apart -- and how to identify a fake -- can reduce that risk. \n\nFor many types of IP rights, customer education supports both your marketing and IP strategy. It can help stop counterfeit or inferior copies from gaining traction and may make enforcement easier if you can show that your customers rely on specific brand cues. \n\nCustomer education can include: \n\n- Sharing the story and authenticity of your brand through advertising\n- Highlighting proprietary features of your product or service\n- Explaining where your genuine products are from, like official retailers or country of origin\n- Adding or promoting product validation tools--such as QR codes, security tags, or post-sale verification\n Informing customers that your product is protected (for example, stating 'patented', listing a trade mark registration number, using the ® symbol to indicate a trade mark has been registered, or using a © symbol to indicate copyright*material (although the symbol is not required in order for the material to be protected by copyright)\n- Equipping sales teams to explain the value and unique features of your genuine product.",
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-10-02",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "Get professional assistance with your IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+          "name": "How to commercialise my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+          "name": "Develop a strategy to manage your IP | IP Australia First Response"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q1-a",
+            "text": "- Helps customers choose your product over confusing or inferior copies.\n- Supports your brand positioning and long-term customer loyalty.\n- Makes suspected infringement easier to detect and explain.\n- Can reduce the incentive for others to copy your product if consumers avoid fakes.\n- May already align with your existing marketing and advertising spend.\n- Non-confrontational way to respond when you suspect copying.\n- Can diversify your business' sources of value outside of reliance on registered IP alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q2-a",
+            "text": "- Careless wording may be seen as an attack on a competitor.\n- Poorly designed campaigns might confuse or alienate customers.\n- May have limited impact if not paired with broader brand strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q3-a",
+            "text": "There are few easily-measurable outcomes from customer education. These may include: \n\n- Customers become better at identifying and choosing your genuine products.\n- Reduced sales of counterfeit or lookalike products.\n- For trade marks particularly, stronger recognition in the market may strengthen future enforcement efforts."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q4-a",
+            "text": "Costs depend on how much new work is required. Many businesses already spend on brand marketing, and customer education may be integrated into that. If you engage a marketing firm or IP commercialisation expert, additional fees apply."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q5-a",
+            "text": "- Minor updates to packaging or website content: A few hours to a few weeks.\n- Developing a new customer education campaign: Several weeks to a few months."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q6-a",
+            "text": "Most businesses try to educate customers about their brand through advertising, customer outreach, blogs, social media content and more. Helping customers recognise and value registered IP can be one aim of this education but is rarely the main focus."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q7-a",
+            "text": "- This approach is most applicable for business that offer products or services to the public.\n- Particularly worth considering for businesses that face pervasive copycat or counterfeit issues."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q8-a",
+            "text": "- The business owner or brand manager.\n- Marketing or communications professionals.\n- Optional: An IP commercialisation advisor or brand protection expert."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq#q9-a",
+            "text": "- A clear understanding of what makes your product or brand distinctive.\n- Knowledge of your IP rights and what aspects are protected.\n- Customer touchpoints where educational messages can be placed (for example, website, packaging, social media).\n- Optional: Access to an IP professional to help understand what aspects of your business are protected by your IP.\n- Optional: Marketing or design support to build customer-friendly materials."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

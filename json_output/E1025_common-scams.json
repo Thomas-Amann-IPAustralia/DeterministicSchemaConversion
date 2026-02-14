@@ -1,0 +1,257 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams",
+      "headline": "Common scams - IP First Response",
+      "description": "",
+      "identifier": "E1025",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams#article"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-12",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams#article",
+      "headline": "Common scams",
+      "description": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/common-scams#webpage"
+      },
+      "articleBody": "Business owners have reported receiving messages from scammers that threaten others with claims of IP infringement or send unsolicited invoices pretending to be IP Australia. Spot warning signs quickly so you can decide whether to look closer or ignore the message. \n\nCommon examples include fake renewal invoices or reminders, emails claiming to be from 'IP Australia', and 'cease and desist' threats from a pretend law firm. Scammers also send fake IP violation notices via social or marketplace platforms, or sell listing services that sound like official protection. Note that listings on non-official 'registers' don't create legal rights or protection. \n\nThe goal is usually to rush you with claims of 'suspected' or 'alleged' infringement, to collect money or your login details. Lookalike email addresses or websites may be used, and payment requests can be unusual. \n\nTreat with caution any message demanding immediate payment or urging you to click a link to 'keep your trade mark alive' or 'stop legal action'. \n\nLook for these red flags: \n\n- The sender's email does not end with an official government domain. Official IP Australia will come from @ipaustralia.gov.au.\n- The message uses a generic greeting, has spelling mistakes, or your IP details are wrong or incomplete.\n- There is pressure to 'pay now' or threats of court action for 'alleged infringement' without clear case details.\n- Payment is requested to an overseas account, by gift cards, or in cryptocurrency.\n- Links point to a site that looks unusual or is not on a trusted government domain. Also, never click links in an unexpected email.\n- The claimed 'IP attorney' or 'law firm' cannot be found on the Trans-Tasman IP Attorneys Board register  or a relevant law society register (e.g. Register of Solicitors | The Law Society of NSW ) .\n\nYou can also confirm any official notice by logging into IP Australia's Online Services.  \n\nIf you suspect a scam, you may wish to report it to Scamwatch  or ReportCyber, and keep any evidence such as screenshots or email headers.",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-12",
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "the Trans-Tasman IP Attorneys Board register"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.lawsociety.com.au/register-of-solicitors",
+          "url": "https://www.lawsociety.com.au/register-of-solicitors",
+          "name": "Register of Solicitors | The Law Society of NSW"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+          "name": "Online Services"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.scamwatch.gov.au/",
+          "url": "https://www.scamwatch.gov.au/",
+          "name": "Scamwatch"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.cyber.gov.au/report-and-recover/report",
+          "url": "https://www.cyber.gov.au/report-and-recover/report",
+          "name": "ReportCyber"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator Tool Suspected Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
+          "name": "Report a scam, fraud or risk to public interest | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",
+          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",
+          "name": "Scams related to managing IP Rights | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
+          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
+          "name": "Identifying unofficial invoices and registers | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption",
+          "url": "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption",
+          "name": "Fraud and corruption | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip",
+          "name": "Manage my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.qls.com.au/register-of-solicitors",
+          "url": "https://www.qls.com.au/register-of-solicitors",
+          "name": "Register of Solicitors"
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

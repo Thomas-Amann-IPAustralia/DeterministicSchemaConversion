@@ -1,0 +1,276 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs",
+      "headline": "Check your design against existing designs - IP First Response",
+      "description": "Conduct a thorough search of existing registered designs - also known as Freedom to Operate search.",
+      "identifier": "C1020",
+      "about": {
+        "@type": "Thing",
+        "name": "Design"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#article"
+      },
+      "datePublished": "2026-01-27",
+      "dateModified": "2026-01-27",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#article",
+      "headline": "Check your design against existing designs",
+      "description": "Conduct a thorough search of existing registered designs - also known as Freedom to Operate search.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#webpage"
+      },
+      "articleBody": "Searching through the publicly accessible list of registered designs helps you understand whether your product infringes upon an existing registered design. This is sometimes called a clearance search or a freedom to operate search (FTO).\n\nThese searches look across the Australian Design Search database to identify any earlier registered designs that may limit your ability to make, sell or import your design. \n\nYou can carry out a search yourself using Australian Design Search  on the IP Australia website for registered designs in Australia. Should you wish to export your product overseas, many overseas IP offices also offer free search tools for registered designs in their jurisdictions. Searching and interpreting existing designs can be complex, so you may want to reach out to an IP professional with experience in designs to run such searches or help interpret any results.\n\nWhile not a guarantee against disputes, a freedom to operate search can reduce the chance of running into legal and commercial conflicts in the future.\n\nDetermining if two designs are similar can be difficult without IP knowledge. You may wish to seek professional assistance from an IP attorney or other service which offers designs searches. For more information about what constitutes design infringement: see Infringement 101 | Designs infringement",
+      "datePublished": "2026-01-27",
+      "dateModified": "2026-01-27",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://search.ipaustralia.gov.au/designs/search/quick",
+          "url": "https://search.ipaustralia.gov.au/designs/search/quick",
+          "name": "Australian Design Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+          "name": "Infringement 101 | Designs infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator Tool Suspected Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA",
+          "url": "https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA",
+          "name": "Australian Design Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://designdb.wipo.int/designdb/en/",
+          "url": "https://designdb.wipo.int/designdb/en/",
+          "name": "WIPO Global Design Database"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.tmdn.org/tmdsview-web/#/dsview",
+          "url": "https://www.tmdn.org/tmdsview-web/#/dsview",
+          "name": "DesignView"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+          "name": "How to search existing designs | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
+          "name": "Request IP Australia confirms a registered design is valid | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.tmdn.org/tmdsview-web/",
+          "url": "https://www.tmdn.org/tmdsview-web/",
+          "name": "EUIPO DesignView"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q1-a",
+            "text": "- Identifies potential conflicts before launching your product.\n\n- Reduces the risk of disputes or costly redesigns, or further investment in a product which you may not be able to sell.\n\n- Can support investment decisions and product launches with greater confidence.\n\n- Helps you understand the designs landscape in your industry.\n\n- May reveal licensing opportunities or expired designs you can freely use."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q2-a",
+            "text": "- Searches may not uncover every potential conflict, especially overseas.\n\n- Designs filed in foreign countries can be filed in Australia and given a backdated filing date (up to six months) under international agreements.\n\n- Complex results or somewhat similar designs may be difficult to interpret without expert help.\n\n- This search might not identify other IP rights which might be infringed\n\n- Relying only on a basic search, without professional assistance, may result in missed conflicts and later disputes."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q3-a",
+            "text": "- You find no similar registered designs and feel more confident to proceed.\n\n- You identify similar designs, leading you to adjust or rethink your design.\n\n- You learn that you may need to seek a licence or agreement with another rights holder.\n\n- You decide to engage further professional help for complex results."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q4-a",
+            "text": "You can do a preliminary search yourself at no cost using online databases, like Australian Design Search  or WIPO Global Design Database.\n\nIf you hire an IP professional search as an IP lawyer or a firm specialising in IP searches, fees vary with the scope and complexity of the search (for example, Australian-only versus multiple countries)."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q5-a",
+            "text": "Timeframes vary with scope and complexity:\n\n- A simple, self-directed search may take a few hours to several days.\n\n- A professional search and legal opinion may take up to 2 to 4 weeks depending on complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q6-a",
+            "text": "Freedom to operate searches are fairly common practice, particularly when considering new or updated products or selling in new countries. It forms a significant part of an IP monitoring strategy.\n\nIn smaller enterprises, this is more likely to be handled in-house, although professional IP monitoring and searching services are also widely used."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q7-a",
+            "text": "- Anyone developing a new product or design.\n\n- Businesses considering launching in Australia or internationally.\n\n- Investors, partners and local distributors wanting assurance before committing to a design-reliant project."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q8-a",
+            "text": "- The design owner or business creating the product.\n\n- Optional: IP professionals such as IP lawyers or IP searching firms who can conduct and review searches."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq#q9-a",
+            "text": "- Clear images or representations of your design.\n\n- Details of the products the design will be applied to.\n\n- Access to Australian Design Search.\n\n- If you are targeting overseas markets, plan to search relevant overseas databases of the market you wish to enter (for example, World Intellectual Property Organization (WIPO) Global Design Database  and European Union Intellectual Property Office (EUIPO) DesignView ).\n\n Check the legal status of any relevant designs (registered, certified, expired). Only design rights that have a certificate of examination issued under Section 68 of the Designs Act 2003* can be enforced in court in Australia.\n\n- Dated records of your search results for future reference."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

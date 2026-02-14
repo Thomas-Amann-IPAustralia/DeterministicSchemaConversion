@@ -1,0 +1,246 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors",
+      "headline": "Identify and track your competitors' patents and activity - IP First Response",
+      "description": "Monitor your competitors' activity to anticipate conflicts or opportunities.",
+      "identifier": "C1003",
+      "about": {
+        "@type": "Thing",
+        "name": "Patents"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#article"
+      },
+      "datePublished": "2025-07-28",
+      "dateModified": "2026-01-23",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#article",
+      "headline": "Identify and track your competitors' patents and activity",
+      "description": "Monitor your competitors' activity to anticipate conflicts or opportunities.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#webpage"
+      },
+      "articleBody": "Monitoring competitors' intellectual property (IP) and conducting a freedom to operate (FTO) search allows you to check whether any registered or pending rights could restrict your ability to make, use, or sell your product or service. These tools help you stay informed about relevant trade marks, patents or designs and avoid infringing on existing rights. Monitoring may be ongoing, while Freedom to Operate (FTO) searches are typically done before product launch or investment decisions. \n\nAdditionally, it should be noted that certain patent monitoring procedures are available through the IP Australia Patent Search tool (Australian Patent Search ). In particular, you can save a specific patent so that email updates are sent, if a new document is added to the dossier. \n\nYou can use the search tool to identify related patents. If there is a particular area of interest, you can also set up a saved search with a variety of search terms, classification marks and other parameters. This saved search can also be set up so that email updates can be sent if a new patent that meets the criteria (that is, falls within the search parameters) is published or granted.",
+      "datePublished": "2025-07-28",
+      "dateModified": "2026-01-23",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+          "name": "Freedom to Operate (FTO) searches"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "name": "Australian Patent Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "Get professional assistance with your IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956",
+          "url": "https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956",
+          "name": "Freedom to Operate search strategies | WIPO"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub",
+          "url": "https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub",
+          "name": "Patent analytics for business decision-making | IP Australia"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q1-a",
+            "text": "This process helps you make informed decisions about your products and branding: \n\n- Avoid costly infringement by identifying conflicting rights early\n- Spot competitor activity and emerging risks in your industry\n- Plan around potential legal or commercial barriers\n- Identify gaps in the market or opportunities for your own IP\n- Build confidence for launching or expanding a product."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q2-a",
+            "text": "- Incomplete information: There is a risk that not all relevant IP is detected, which could result in missed threats and exposure to future claims.\n- Incorrect interpretation: There is a risk that search results are misunderstood, which could result in false assumptions about your rights or risks.\n- Outdated monitoring: There is a risk your monitoring is not frequent or detailed enough, which could result in late responses to new filings or changes in competitor IP.\n- Cost and time burdens: There is a risk that complex or wide-ranging searches become expensive or require specialist support, particularly in international markets."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q3-a",
+            "text": "- You identify no major risks and proceed with confidence.\n- You find IP that blocks your current plans and decide to redesign or rebrand.\n- You spot competitor activity early and take action to oppose or challenge it.\n- You choose to license existing rights rather than risk infringement.\n- You build your own IP strategy around gaps in the competitive landscape."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q4-a",
+            "text": "- Official fees: Free for most public registers; some platforms charge for advanced tools or international data.\n- Professional fees: $150-$600/hr for an IP attorney or search firm.\n- Monitoring costs: Ongoing monitoring subscriptions vary widely, but can be more than $100/month.\n- Actual costs may vary depending on your industry, scope, and the markets in which you operate."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q5-a",
+            "text": "Timeframes vary depending on the type of search and how broad it is: \n\n- An initial FTO search can take 1-3 weeks with professional help\n- Setting up monitoring tools may take a few hours, but ongoing effort is minimal\n- Analysing competitor filings or assessing risks can take longer, especially if international rights are involved.\n\nInfluencing factors include: \n\n- Scope and complexity of the product or IP\n- Markets covered (Australia only vs. global)\n- Use of professionals vs. in-house review\n- Frequency and urgency of your monitoring needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q6-a",
+            "text": "Monitoring of competitors IP is fairly common in the patent space, particularly in new or rapidly iterating areas. In smaller enterprises, this is more likely to be handled in house, although professional IP monitoring services are also widely used."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q7-a",
+            "text": "This option is available to: \n\n- Anyone planning to launch a new product or brand\n- Businesses entering new markets or industries\n- Existing IP owners checking for similar or competing filings\n- Investors or partners conducting due diligence before commercialisation."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q8-a",
+            "text": "- You (as the business or IP rights holder).\n- IP professionals such as patent attorneys or trademark attorneys.\n- Search service providers (for example, commercial IP databases, analytics tools).\n- Registry bodies like IP Australia or international equivalents (in some cases due to the provision of IP databases and search tools).\n- Legal advisors (optional) to provide opinions or manage enforcement follow-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#faq#q9-a",
+            "text": "- Confirm your IP and market: Know what product or service you want to launch or protect and in which regions (particularly given the domestic nature of IP registrations), this is particularly of relevance if you hold multiple patents or hold patents across multiple jurisdictions (as you may also want to monitor overseas registrations).\n- Gather product or brand details: Describe your offering clearly to guide the search, particularly essential features that may differentiate your offering from the competitors. For example, you may benefit if you are able to identify the most relevant classification marks, or descriptions of your differentiating or inventive features, as it will streamline the searching process.\n- Decide on search scope: Domestic only, or international? Patent or trade mark focused?\n- Select tools or professionals: Choose between do it yourself search tools or paid services.\n- Understand search limitations: Results may not be legally definitive; freedom to operate is not a guarantee that competitors and patents don't exist in that market, it is possible for patents to be missed in the search process.\n- Consider advice: You may wish to seek an FTO opinion from a qualified IP professional.\n- Keep records: Retain copies of search results, interpretations, and advice received."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

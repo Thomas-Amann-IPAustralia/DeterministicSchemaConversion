@@ -1,0 +1,231 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney",
+      "headline": "What can I expect from a lawyer or attorney? - IP First Response",
+      "description": "",
+      "identifier": "E1014",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#service"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#section-1-what-is-it"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#service",
+      "headline": "What can I expect from a lawyer or attorney?",
+      "description": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#webpage"
+      },
+      "serviceType": "Commercial Third Party Service",
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "text": "If you're dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal professional. \n\nLegal professionals can help you understand your rights, the strength of your case, and the legal processes involved. This may include general lawyers, IP lawyers, or specialist attorneys (such as patent or trade mark attorneys). \n\nHiring a legal professional does not guarantee that you will win a dispute, but it may give you confidence that your rights are being taken seriously and your next steps are well considered. \n\nHere's what you can generally expect: \n\n- They can help you understand if what's happening may be a suspected infringement and what options are available.\n- They may draft or review documents such as letters of demand, agreements, or court submissions.\n- Some are also qualified to represent you in court or at hearings.\n- Attorneys (such as patent and trade mark attorneys) are specially trained in certain IP rights and may help with applications, oppositions, or enforcement; though not all attorneys are lawyers.\n\nYou should ask early about the costs, timing, and what's included in their services. Some professionals charge a fixed fee, while others bill hourly. \n\nPlease note: Trade mark and patent attorneys are not technically lawyers, but they are qualified to give advice on specific IP rights under Australian law.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#section-1-what-is-it"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone Is Using My IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "name": "What To Consider Before Taking Legal Action | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
+          "url": "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
+          "name": "Advanced Trade Marks: Enforcement | IP Australia"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "If you're dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal professional. \n\nLegal professionals can help you understand your rights, the strength of your case, and the legal processes involved. This may include general lawyers, IP lawyers, or specialist attorneys (such as patent or trade mark attorneys). \n\nHiring a legal professional does not guarantee that you will win a dispute, but it may give you confidence that your rights are being taken seriously and your next steps are well considered. \n\nHere's what you can generally expect: \n\n- They can help you understand if what's happening may be a suspected infringement and what options are available.\n- They may draft or review documents such as letters of demand, agreements, or court submissions.\n- Some are also qualified to represent you in court or at hearings.\n- Attorneys (such as patent and trade mark attorneys) are specially trained in certain IP rights and may help with applications, oppositions, or enforcement; though not all attorneys are lawyers.\n\nYou should ask early about the costs, timing, and what's included in their services. Some professionals charge a fixed fee, while others bill hourly. \n\nPlease note: Trade mark and patent attorneys are not technically lawyers, but they are qualified to give advice on specific IP rights under Australian law.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#service"
+      }
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

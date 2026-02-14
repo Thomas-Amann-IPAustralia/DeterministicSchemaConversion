@@ -1,0 +1,261 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ttipattorney.gov.au/#organization",
+      "name": "Trans-Tasman IP Attorneys Board",
+      "url": "https://www.ttipattorney.gov.au",
+      "sameAs": [
+        "https://www.ttipattorney.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ttipattorney.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney",
+      "headline": "How can I make a complaint about a lawyer or attorney? - IP First Response",
+      "description": "",
+      "identifier": "E1013",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ttipattorney.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#service"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ttipattorney.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-1-what-is-it"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#service",
+      "headline": "How can I make a complaint about a lawyer or attorney?",
+      "description": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ttipattorney.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#webpage"
+      },
+      "serviceType": "Commercial Third Party Service",
+      "provider": {
+        "@id": "https://www.ttipattorney.gov.au/#organization"
+      },
+      "text": "If you are unhappy with how a lawyer or a patent or trade marks attorney has acted, you may be able to make a formal complaint to the body that regulates them. This process is meant to protect the public, keep professional standards high, and deal with serious misconduct. \n\nFor lawyers, complaints are handled by the relevant regulator in each state and territory. They can look into both service issues (such as poor communication or delays) and conduct issues (such as dishonesty or serious breaches of professional rules). \n\nFor registered patent and trade marks attorneys, complaints go to the Trans-Tasman IP Attorneys Board (TTIPAB). This Board makes sure attorneys follow their Code of Conduct, which requires them to act lawfully, in the best interests of clients and in the public interest. \n\nBefore making a formal complaint, it is often worth trying to resolve the problem directly with the lawyer or attorney, or someone more senior in their firm. Many issues can be addressed through clearer communication or by following the firm's own complaint process. \n\nTo issue a complaint you will usually need to provide: \n\n- Your name and contact details.\n- The name of the lawyer or attorney.\n- A clear description of what happened and when.\n- Copies of relevant documents, emails, or agreements.\n\nThere are often time limits. Many regulators will not investigate matters that happened more than three years ago, unless there are special circumstances or it is in the public interest. \n\nAfter you lodge a complaint, the regulator may: \n\n- Dismiss it if there is not enough evidence or it is outside their scope.\n- Offer mediation to help both sides reach agreement.\n- Investigate to decide if professional rules were broken.\n\nPlease note: Regulators usually cannot order a lawyer or attorney to pay you compensation. If you want compensation, you may need to look at other dispute resolution processes or court action.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-1-what-is-it"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-lodge-a-complaint/reasons-to-make-a-complaint",
+          "name": "How to lodge a complaint with the TTIAB"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.actlawsociety.asn.au/",
+          "url": "https://www.actlawsociety.asn.au/",
+          "name": "Law Society of the ACT"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "http://www.olsc.nsw.gov.au/",
+          "url": "http://www.olsc.nsw.gov.au/",
+          "name": "Office of the NSW Legal Services Commissioner"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "http://lawsocietynt.asn.au/",
+          "url": "http://lawsocietynt.asn.au/",
+          "name": "Law Society NT"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "http://www.lsc.qld.gov.au/",
+          "url": "http://www.lsc.qld.gov.au/",
+          "name": "Legal Services Commission"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://lpcc.sa.gov.au/",
+          "url": "https://lpcc.sa.gov.au/",
+          "name": "Legal Profession Conduct Commissioner"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.lst.org.au/",
+          "url": "https://www.lst.org.au/",
+          "name": "Law Society of Tasmania"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "http://www.lsbc.vic.gov.au/",
+          "url": "http://www.lsbc.vic.gov.au/",
+          "name": "Victorian Legal Services Board & Commissioner"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "http://www.lpbwa.org.au/",
+          "url": "http://www.lpbwa.org.au/",
+          "name": "Legal Practice Board of Western Australia"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "If you are unhappy with how a lawyer or a patent or trade marks attorney has acted, you may be able to make a formal complaint to the body that regulates them. This process is meant to protect the public, keep professional standards high, and deal with serious misconduct. \n\nFor lawyers, complaints are handled by the relevant regulator in each state and territory. They can look into both service issues (such as poor communication or delays) and conduct issues (such as dishonesty or serious breaches of professional rules). \n\nFor registered patent and trade marks attorneys, complaints go to the Trans-Tasman IP Attorneys Board (TTIPAB). This Board makes sure attorneys follow their Code of Conduct, which requires them to act lawfully, in the best interests of clients and in the public interest. \n\nBefore making a formal complaint, it is often worth trying to resolve the problem directly with the lawyer or attorney, or someone more senior in their firm. Many issues can be addressed through clearer communication or by following the firm's own complaint process. \n\nTo issue a complaint you will usually need to provide: \n\n- Your name and contact details.\n- The name of the lawyer or attorney.\n- A clear description of what happened and when.\n- Copies of relevant documents, emails, or agreements.\n\nThere are often time limits. Many regulators will not investigate matters that happened more than three years ago, unless there are special circumstances or it is in the public interest. \n\nAfter you lodge a complaint, the regulator may: \n\n- Dismiss it if there is not enough evidence or it is outside their scope.\n- Offer mediation to help both sides reach agreement.\n- Investigate to decide if professional rules were broken.\n\nPlease note: Regulators usually cannot order a lawyer or attorney to pay you compensation. If you want compensation, you may need to look at other dispute resolution processes or court action.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-can-i-make-complaint-about-lawyer-or-attorney#service"
+      }
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

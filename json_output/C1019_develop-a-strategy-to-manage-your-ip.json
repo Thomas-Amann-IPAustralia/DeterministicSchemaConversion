@@ -1,0 +1,332 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+      "headline": "DEVELOP A STRATEGY TO MANAGE YOUR IP - IP First Response",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "identifier": "C1019",
+      "about": {
+        "@type": "Thing",
+        "name": "Trade mark\", \"Patent\", \"Design\", \"PBR\", \"Copyright\",  \"Unregistered-tm"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#article"
+      },
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-09-05",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#article",
+      "headline": "DEVELOP A STRATEGY TO MANAGE YOUR IP",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage"
+      },
+      "articleBody": "You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors' IP, and planning responses should you experience suspected copying in the future. \n\nBy mapping this out early, you may avoid making important decisions under pressure, reduce legal risks and place your business in a stronger position to grow or defend your IP assets. \n\nAn IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders' right and copyright. \n\nKey elements often include: \n\n- Identifying what IP assets you already have or intend to create.\n- Choosing the best protection tools (e.g. trade mark registration or using non-disclosure agreements and contracts to protect your IP assets).\n- Setting reminders for renewals and annual reviews.\n- Deciding how you will monitor the market for suspected infringement.\n- Outlining who will act and what budget is available if enforcement is needed.",
+      "datePublished": "2025-07-28",
+      "dateModified": "2025-09-05",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator Tool Suspected Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+          "name": "IP audit"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/business/checklist",
+          "url": "https://www.wipo.int/en/web/business/checklist",
+          "name": "A step-by-step IP Strategy Checklist for SMEs"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip",
+          "name": "Understanding intellectual property (IP) | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "name": "Choosing the right IP tool | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "Get professional assistance with your IP | IP Australia"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q1-a",
+            "text": "- Help streamline decision-making if suspected infringement occurs.\n- May help you build clear evidence of ownership that deters copycats.\n- May help secure investment by demonstrating due diligence on IP.\n- May support expansion into new markets or product lines.\n- Assist your employees and partners in developing team awareness on how to handle ideas and branding."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q2-a",
+            "text": "- Plans can become outdated if not reviewed regularly, leaving blind spots.\n- Over-protection (for example, filing unnecessary patents) may waste resources.\n- Relying on internal resources rather than expert input may create false confidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q3-a",
+            "text": "Developing a comprehensive IP strategy may not immediately yield a tangible outcome. This option involves preparation and implementation of preventative measures."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q4-a",
+            "text": "Creating an IP strategy in-house can be free apart from staff time. For example, it may take a few days to compile an inventory and action list. Engaging an IP professional such as IP lawyers, IP attorneys, or IP commercialisation experts for a tailored plan would involve professional fees, which may vary depending on the scale and complexity of the plan.  \n\nOngoing costs, however, relate mainly to the protection steps you choose, such as renewal fees or monitoring services."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q5-a",
+            "text": "Drafting a simple strategy may take around a day or two of focused work. More detailed plans that cover multiple IP types and overseas markets may take several weeks to months, especially if you seek professional advice. \n\nAlso, consider reviewing the strategy at least annually, or whenever you launch new products or enter new markets."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q6-a",
+            "text": "Developing and implementing a comprehensive IP strategy a common practice used by businesses that own or use multiple IP assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q7-a",
+            "text": "- IP rights holders or authorised users managing IP assets.\n- Anyone or businesses planning to use, develop or acquire IP assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q8-a",
+            "text": "- The business owner or employee/s.\n- Optional: IP professionals such as trade mark or patent attorneys.\n- Optional: Business advisors or accountants assisting with commercial planning."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq#q9-a",
+            "text": "IP strategies can vary in its scope and complexity depending on a wide range of factors such as the number of IP assets involved, the size of your business and the composition of your IP portfolio. While businesses can take many different approaches in designing their IP strategies, a common starting point is conducting an IP audit to create a clear register of IP assets owned and used by your business."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

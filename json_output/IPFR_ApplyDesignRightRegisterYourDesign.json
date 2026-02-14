@@ -27,38 +27,38 @@
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design",
       "headline": "Access denied - IP First Response",
       "description": "",
+      "identifier": "",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
       "inLanguage": "en-AU",
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
-      },
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "copyrightYear": 2026,
-      "copyrightHolder": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "creditText": "IP First Response initiative led by IP Australia",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "audience": {
         "@type": "BusinessAudience",
-        "audienceType": "Small and medium businesses, startups, and individuals"
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
       },
-      "usageInfo": "This information is general in nature and should not be relied upon as legal advice. You should seek independent professional advice relevant to your specific circumstances.",
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
       "mainEntity": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article"
       },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article"
-        }
-      ]
+      "creditText": "IP First Response initiative led by IP Australia"
     },
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article",
       "headline": "Access denied",
-      "articleBody": "You are not authorized to access this page.",
+      "description": "",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -67,9 +67,7 @@
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage"
       },
-      "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design"
-      ]
+      "articleBody": "You are not authorized to access this page."
     }
   ]
 }

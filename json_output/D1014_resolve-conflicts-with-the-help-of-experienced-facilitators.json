@@ -1,0 +1,396 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#organization",
+      "name": "Qualified facilitator"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "headline": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#service"
+      },
+      "datePublished": "2025-02-28",
+      "dateModified": "2026-01-09",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-1-what-is-it"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#service",
+      "headline": "resolve conflicts with the help of experienced facilitators",
+      "description": "Understand more about the options in the ADR space.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+      },
+      "serviceType": "Commercial Third Party Service",
+      "provider": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#organization"
+      },
+      "text": "Alternative Dispute Resolution (ADR) allows you to settle disputes without going to court. There are various types of ADR, most notably procedures such as mediation, arbitration and expert determination. These processes typically help resolve disputes through an experienced, impartial person providing opinions, facilitating an agreement between parties and/or providing a binding or non-binding decision. \n\nYou can also use ADR at any stage of your IP dispute. ADR procedures and services are offered by a wide range of public and private bodies such as courts, tribunals and legal practitioners. Below are most common forms of ADR you may like to consider in resolving your IP dispute. \n\nMediation \n\nMediation is a structured negotiation process where the parties, with the assistance of an independent person as mediator: \n\n- listen to each other and are heard by each other\n- identify the disputed issues\n- work out what everyone agrees on\n- develop options to address the disputed issues\n- aim to reach a workable agreement.\n\nThe mediator has no determinative power to decide the outcome of the dispute - instead, the mediator will assist and advise both parties in shaping the mediation process and facilitating an agreement. Find more information about mediation.\n\nArbitration \n\nArbitration is a process where you and the other parties present the points being contended and facts to an independent person (the arbitrator). The arbitrator, who is often someone with a high level of expertise in the relevant field of law, then makes a decision based on the information received (an arbitral award). Notable features of arbitration include:  \n\n- A more formal and structured process than other types of ADR, akin to a shorter and more flexible version of a court or tribunal hearing\n- The parties are typically expected to produce evidence and submissions before the arbitrator. Both parties must agree before the process commences that the arbitrator's decision will be binding and enforceable\n- Parties are in most cases required to renounce all other related legal claims to avoid going to court after arbitral decisions.\n\nMany contracts stipulate that parties must resolve disputes through arbitration. Arbitration can also be voluntary or required under a court order.\n\nFind more information about arbitration. \n\nExpert determination \n\nExpert determination is a process where one or more independent experts in the specialist area make a determination on matters referred to them. Expert determination is a highly flexible and collaborative procedure, and its notable features include: \n\n- The process is initiated by agreement between the parties\n- The parties decide the issues that are to be referred to the expert to make a determination on\n- The parties need to agree as to whether they want the expert decision to be binding or not\n- The parties can select and nominate an expert together\n- It is suitable for highly technical issues in a specialist area as the expert would often have a high level of expertise and experience in the relevant industry.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+          "name": "mediation"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+          "name": "arbitration"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au",
+          "name": "IP First Response website"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
+          "url": "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
+          "name": "The Resolution Institute's Dispute Resolver Directory list"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.asbfeo.gov.au/",
+          "url": "https://www.asbfeo.gov.au/",
+          "name": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449",
+          "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449",
+          "name": "The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Center"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://acica.org.au/",
+          "url": "https://acica.org.au/",
+          "name": "The Australian Centre for International Commercial Arbitration (ACICA)"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://disputescentre.com.au/",
+          "url": "https://disputescentre.com.au/",
+          "name": "The Australian Disputes Centre (ADC)"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.copyright.org.au/legal-advice/",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "Australian Copyright Council"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+          "url": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+          "name": "Your guide to dispute resolution"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
+          "url": "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
+          "name": "Resolve disputes | business.gov.au"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.education.gov.au/hercip",
+          "url": "https://www.education.gov.au/hercip",
+          "name": "Higher Education Research Commercialisation Intellectual Property Framework - Department of Education, Australian Government"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/amc/en/",
+          "url": "https://www.wipo.int/amc/en/",
+          "name": "Alternative Dispute Resolution"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "Alternative Dispute Resolution (ADR) allows you to settle disputes without going to court. There are various types of ADR, most notably procedures such as mediation, arbitration and expert determination. These processes typically help resolve disputes through an experienced, impartial person providing opinions, facilitating an agreement between parties and/or providing a binding or non-binding decision. \n\nYou can also use ADR at any stage of your IP dispute. ADR procedures and services are offered by a wide range of public and private bodies such as courts, tribunals and legal practitioners. Below are most common forms of ADR you may like to consider in resolving your IP dispute. \n\nMediation \n\nMediation is a structured negotiation process where the parties, with the assistance of an independent person as mediator: \n\n- listen to each other and are heard by each other\n- identify the disputed issues\n- work out what everyone agrees on\n- develop options to address the disputed issues\n- aim to reach a workable agreement.\n\nThe mediator has no determinative power to decide the outcome of the dispute - instead, the mediator will assist and advise both parties in shaping the mediation process and facilitating an agreement. Find more information about mediation.\n\nArbitration \n\nArbitration is a process where you and the other parties present the points being contended and facts to an independent person (the arbitrator). The arbitrator, who is often someone with a high level of expertise in the relevant field of law, then makes a decision based on the information received (an arbitral award). Notable features of arbitration include:  \n\n- A more formal and structured process than other types of ADR, akin to a shorter and more flexible version of a court or tribunal hearing\n- The parties are typically expected to produce evidence and submissions before the arbitrator. Both parties must agree before the process commences that the arbitrator's decision will be binding and enforceable\n- Parties are in most cases required to renounce all other related legal claims to avoid going to court after arbitral decisions.\n\nMany contracts stipulate that parties must resolve disputes through arbitration. Arbitration can also be voluntary or required under a court order.\n\nFind more information about arbitration. \n\nExpert determination \n\nExpert determination is a process where one or more independent experts in the specialist area make a determination on matters referred to them. Expert determination is a highly flexible and collaborative procedure, and its notable features include: \n\n- The process is initiated by agreement between the parties\n- The parties decide the issues that are to be referred to the expert to make a determination on\n- The parties need to agree as to whether they want the expert decision to be binding or not\n- The parties can select and nominate an expert together\n- It is suitable for highly technical issues in a specialist area as the expert would often have a high level of expertise and experience in the relevant industry.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#service"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q1-a",
+            "text": "While this varies depending on the ADR process used, ADR generally offers the following benefits over more formal dispute resolution through the legal system or courts: \n\n- Costs are lower than court proceedings\n- Flexible and informal, as parties have control over shaping the process\n- More easily narrow the scope of a dispute to the issues that matter to both sides\n- Offers broader and more creative solutions\n- Confidentiality, as decisions and records are not shared with the public\n- Can have binding and enforceable outcomes in the form of contract or arbitral award."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q2-a",
+            "text": "- Relies on genuine engagement and willingness of parties to work out an agreement.\n- Facilitators may not have an adequate skillset for resolving intellectual property disputes.\n- The level of enforceability of outcomes and the availability of appeals or challenges may differ depending on the specific ADR process (for example, in some cases, a party may be able to have an arbitral award annulled or set aside, or a court may refuse to enforce to enforce an arbitral award in a limited number of circumstances).\n- Without a binding agreement prior to the process, either party can withdraw from the process at any point in time, resulting in wasted time, money and effort."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q3-a",
+            "text": "Outcomes of ADR will depend on the specific type of ADR processes used. Possible outcomes include: \n\n- Parties successfully negotiating and reaching an agreement to resolve a dispute\n- A binding decision such as an arbitral award or an enforceable agreement\n- Further escalation into more formal dispute resolution processes such as litigation or administrative hearings\n- Parties may withdraw from the ADR process prior to resolution of the dispute."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q4-a",
+            "text": "The costs of ADR may include: \n\n- practitioner's fees\n- travel expenses\n- administrative expenses.\n\nPlease note that the costs of ADR can differ a lot depending on the type of procedure you choose and whether you choose to engage a legal professional for advice and representation. \n\nFor more information about costs of different ADR options, please refer to specific pages for each ADR type available at the IP First Response website."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q5-a",
+            "text": "Length of the process will vary depending on factors like the type of ADR used and the nature of the dispute. ADR can be much faster than more formal processes like court."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q6",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q6-a",
+            "text": "Anybody who is a party to a dispute, although some ADR processes will have additional requirements. \n\nADR generally requires engagement from both parties to the dispute. It can be easier to use ADR if:  \n\n- Parties agree to resolve their dispute through ADR. However, some ADR providers allow one party to initiate an ADR process even without agreement from the other party.\n- There is a contract in place whereby parties agree to resolve disputes through ADR. You might wish to consider including ADR clauses in your contracts in case you would like to resolve any future IP disputes with your business partners through ADR."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q7",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q7-a",
+            "text": "- Parties to the dispute(s).\n- Facilitator/s (Mediator, arbitrator, neutral evaluator, etc.).\n- (Optional) Legal representation for one or more of the participants, noting that some ADR service providers limit the participation of legal representation in dispute resolution processes."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q8",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq#q8-a",
+            "text": "Before you engage in an ADR process, you should think about what type of ADR process would best suit your needs and find the appropriate ADR provider for the chosen process. There is a wide range of ADR providers, ranging from government and public-funded bodies to private practitioners. Here's a list of directories and ADR providers that may assist you in finding what type of ADR is most suitable for your case and the facilitator/s you would like to engage:  \n\n- The Resolution Institute's Dispute Resolver Directory list\n- The Australian Small Business and Family Enterprise Ombudsman (ASBFEO)  provides small business and family enterprises with information about dispute resolution options, access to mediation and alternative dispute resolution processes.\n- The World Intellectual Property Organization's (WIPO) Arbitration and Mediation Center offers mediation, arbitration and expert determination to enable private parties to settle their international commercial disputes\n- The Australian Centre for International Commercial Arbitration (ACICA)\n- The Australian Disputes Centre (ADC)\n- Australian Copyright Council  offers no-cost online legal advice for professional creators, arts organisations, affiliated organisations and educations institutions and libraries.\n\nYou can also seek help from IP professionals for advice on whether ADR would be suitable for your situation and to represent you throughout an ADR process. You can find a qualified IP attorney to assist you at: Find an IP attorney or firm | Trans-Tasman IP Attorneys Board."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

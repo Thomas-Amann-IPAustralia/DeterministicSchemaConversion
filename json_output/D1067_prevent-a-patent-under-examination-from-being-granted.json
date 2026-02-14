@@ -1,0 +1,267 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted",
+      "headline": "Prevent a patent under examination from being granted - IP First Response",
+      "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and thus cannot be granted.",
+      "identifier": "D1067",
+      "about": {
+        "@type": "Thing",
+        "name": "Patent"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#governmentservice"
+      },
+      "datePublished": "2025-07-18",
+      "dateModified": "2026-01-27",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#section-1-what-is-it"
+        }
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#governmentservice",
+      "headline": "Prevent a patent under examination from being granted",
+      "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and thus cannot be granted.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#webpage"
+      },
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "text": "Third Party Notification of Prior Art lets you raise concerns about someone else's patent application directly with IP Australia before it's accepted or granted. You do this by lodging a 'section 27 notice', which alerts the examiner to earlier work - known as 'prior art' - that may show the application lacks novelty or inventiveness. \n\nSection 27 notices are allowed up to three months after the notice of acceptance of an application. Formal opposition becomes available after the patent is accepted, and court or administrative action may be possible after the grant of the patent. \n\nYou can raise the same kinds of concerns about a patent at different points in its life - but the mechanism you use depends on the patent's current status. \n\nRaising concerns during examination can be quicker, simpler and less costly. It gives the examiner a chance to consider your evidence before a decision is made. If successful, this could prevent a patent from being granted at all--avoiding future disputes. \n\nYou don't need to own a patent or be directly affected to file a notice. Anyone can use this option if they have access to useful prior art and act within the time window. \n\nThis is a one-way process: the examiner considers your materials, but you won't be told the outcome, and you can't argue your case. There are still other channels in which you can pursue the matter if the patent is accepted despite the S27 submissions. \n\nIt is also important to consider that the document(s) raised under the s27(1) notice were published prior to the relevant priority date of the patent application.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://portal.ipaustralia.gov.au/login",
+          "url": "https://portal.ipaustralia.gov.au/login",
+          "name": "IP Australia's eServices"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
+          "url": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
+          "name": "5.6.4.5 Third Party Notifications | IPA Manuals"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+          "name": "Challenge a new or amended patent | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "name": "Challenge a granted patent | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
+          "name": "Seek binding, authoritative decisions | IP Australia First Response"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "Third Party Notification of Prior Art lets you raise concerns about someone else's patent application directly with IP Australia before it's accepted or granted. You do this by lodging a 'section 27 notice', which alerts the examiner to earlier work - known as 'prior art' - that may show the application lacks novelty or inventiveness. \n\nSection 27 notices are allowed up to three months after the notice of acceptance of an application. Formal opposition becomes available after the patent is accepted, and court or administrative action may be possible after the grant of the patent. \n\nYou can raise the same kinds of concerns about a patent at different points in its life - but the mechanism you use depends on the patent's current status. \n\nRaising concerns during examination can be quicker, simpler and less costly. It gives the examiner a chance to consider your evidence before a decision is made. If successful, this could prevent a patent from being granted at all--avoiding future disputes. \n\nYou don't need to own a patent or be directly affected to file a notice. Anyone can use this option if they have access to useful prior art and act within the time window. \n\nThis is a one-way process: the examiner considers your materials, but you won't be told the outcome, and you can't argue your case. There are still other channels in which you can pursue the matter if the patent is accepted despite the S27 submissions. \n\nIt is also important to consider that the document(s) raised under the s27(1) notice were published prior to the relevant priority date of the patent application.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#governmentservice"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q1-a",
+            "text": "- Quick and free to lodge via IP Australia's online system.\n- Allows you to influence examination without needing to file a formal opposition.\n- No need to be an IP owner or have legal standing.\n- Helps protect your freedom to operate by challenging overly broad or undeserved patents.\n- Can avoid or reduce later costs by addressing issues early.\n- May prompt the examiner to reject or narrow the applicant's patent application."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q2-a",
+            "text": "- Submissions become public and can be seen by the patent applicant.\n- Mistakes (like poor translations, unclear submission, or weak supporting evidence) may reduce the impact of your submission."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q3-a",
+            "text": "The examiner will review the submission and decide what to do. \n\n- The examiner raises objections based on your notice, and the application may be rejected if the objections are not overcome.\n- Objections raised due to the S27 submissions may lead to the applicant amending their claims, potentially reducing the scope of protection.\n- The examiner decides your notice doesn't change their view.\n\nIf the examination proceeds and no other issues are found, the application will be accepted, and you may need to consider alternate avenues of opposition if you still believe the patent should not proceed to grant."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q4-a",
+            "text": "There's no fee paid to IP Australia to lodge a section 27 notice. \n\nIf you chose engage an IP professional, such as a patent attorney, to assist making your case you may incur fees. Actual costs depend on the complexity and level of professional help used."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q5-a",
+            "text": "The notice itself can be prepared and lodged quickly, often in a day or two. \n\nHowever, identifying good-quality prior art may take more time. Translating and verifying documents may also cause delays. Notices must be lodged after the application is published, and up to three months after notice acceptance."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q6-a",
+            "text": "S27 notices  are rarely submitted to IP Australia."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q7-a",
+            "text": "- Any individual or business; there is no need to own a patent or be directly affected.\n- This can only be submitted within the allowed time window."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q8-a",
+            "text": "- You (or your representative) lodging the section 27 notice.\n- The patent applicant (who will be notified of your submission).\n- The IP Australia examiner handling the patent application.\n- Optional: Patent attorney or IP professional assisting with your notice."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#faq#q9-a",
+            "text": "- Identify the patent application number and title.\n- Find examples of prior art that may affect novelty or inventiveness.\n- Ensure the prior art meets the criteria of 'publicly available' before the patent's 'priority date'.\n- Provide documents or reliable links (and translations if not in English).\n- Submit via IP Australia's eServices  portal (use the general eService request or the specific link in AusPat).\n- Keep records of your submission."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

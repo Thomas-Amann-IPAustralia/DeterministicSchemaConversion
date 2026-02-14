@@ -1,0 +1,245 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right",
+      "headline": "Can I protect my ideas in other countries? - IP First Response",
+      "description": "",
+      "identifier": "E1020",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right#article"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-11-14",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right#article",
+      "headline": "Can I protect my ideas in other countries?",
+      "description": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-worldwide-ip-right#webpage"
+      },
+      "articleBody": "IP Australia administers four types of IP rights\n\nTrade marks\n\nPatents\n\nDesign rights\n\nPlant breeder's rights\n\nThere is no such thing as a worldwide IP right as IP rights are territorial and must be filed in each country where protection is sought. IP rights only apply in the countries or regions where they are granted. Australian registrations do not cover activities beyond Australia's borders. \n\nIf you plan to sell, license or manufacture overseas, you can seek similar rights in other countries so businesses in those countries cannot legally copy your idea. \n\nThese are some of the main ways you can apply for protection overseas: \n\n- You can directly lodge separate applications with each country's IP office. You will usually work with a local expert (an IP lawyer or patent attorney or trade mark attorney) who understands that office's rules.\n- International systems:\n- Patent Cooperation Treaty (PCT) for patents gives a single international application up to 30 months (or 31 months in some countries, like Australia and New Zealand) from the first filing date ('priority date') before you need to choose specific countries to apply in ('national phases').\n- Madrid System (Madrid Protocol) for trade marks covers 131 member countries under a single application, enabling extension of your Australian trade mark abroad.\n- Hague System (Hague Agreement) for design rights allows one international design right application to be extended to 92 member countries. Note that Australia is not a contracting party to the Hague Agreement, and that Australians need to meet eligibility criteria  to use the Hague System.\n- Copyright registration -- While copyright is automatic in all Berne Convention countries, some jurisdictions (for example, the United States Copyright Office) allow or require a simple registration or recordation to strengthen enforcement.\n\nInternational protection can be costly and complex, so planning early helps you focus on the markets that matter most. You may wish to speak with an IP professional experienced in the overseas jurisdictions you are considering.",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-11-14",
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks",
+          "url": "https://www.ipaustralia.gov.au/trade-marks",
+          "name": "Trade marks"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/patents",
+          "url": "https://www.ipaustralia.gov.au/patents",
+          "name": "Patents"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights",
+          "url": "https://www.ipaustralia.gov.au/design-rights",
+          "name": "Design rights"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/plant-breeders-rights",
+          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights",
+          "name": "Plant breeder's rights"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/international-cooperation/the-hague-system",
+          "url": "https://www.ipaustralia.gov.au/international-ip/international-cooperation/the-hague-system",
+          "name": "eligibility criteria"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip",
+          "url": "https://www.ipaustralia.gov.au/international-ip",
+          "name": "International intellectual property | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "name": "Prevent international infringement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/madrid-system",
+          "url": "https://www.wipo.int/en/web/madrid-system",
+          "name": "WIPO Madrid System - International Trademark Protection"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/pct-system",
+          "url": "https://www.wipo.int/en/web/pct-system",
+          "name": "PCT - The International Patent System"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

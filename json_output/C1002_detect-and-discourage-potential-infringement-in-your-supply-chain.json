@@ -1,0 +1,240 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain",
+      "headline": "Detect and discourage potential infringement in your supply chain - IP First Response",
+      "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
+      "identifier": "C1002",
+      "about": {
+        "@type": "Thing",
+        "name": "Patent"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#article"
+      },
+      "datePublished": "2025-07-28",
+      "dateModified": "2026-01-22",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#article",
+      "headline": "Detect and discourage potential infringement in your supply chain",
+      "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#webpage"
+      },
+      "articleBody": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include: \n\n- Vetting suppliers\n- Implementing track‑and‑trace systems\n- Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n- Regular inspections of incoming orders\n- Sampling finished products for quality and authenticity\n- Scanning online marketplace listings for unauthorised items\n- Conducting basic factory or warehouse audits.\n\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low‑cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.  \n\nSome businesses may also engage third‑party brand‑protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the  Notice of Objection scheme.  \n\nMonitoring can be continuous or ad‑hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement.",
+      "datePublished": "2025-07-28",
+      "dateModified": "2026-01-22",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
+          "name": "Notice of Objection"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+          "name": "Obtain advice to help manage your IP."
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com",
+          "name": "How to prevent infringement of my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+          "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+          "name": "How to import intellectual property"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q1-a",
+            "text": "- Provides early warning so you can act before harm occurs to your business.\n- Reduces risk of unsafe or non‑compliant items entering the market.\n- Provides data and insight into infringement trends and behaviour.\n- Can uncover new markets or trends in consumer demands.\n- May allow you to build stronger evidence to support enforcement or negotiation actions."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q2-a",
+            "text": "- Poor data quality may trigger false alarms and wasted resources, which may strain your relationship with suppliers.\n- Extensive monitoring could raise privacy or confidentiality concerns with business partners.\n- Business partners might view extra checks as a sign of distrust affecting goodwill and reputation of your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q3-a",
+            "text": "The outcomes of monitoring supply chain depend heavily on your individual circumstances, the tools used, industry practices and your overall IP strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q4-a",
+            "text": "The costs for supply chain monitoring depend heavily on the extent of monitoring activities and whether you choose to engage third-party services such as commercial monitoring software or brand protection specialists. \n\nCosts for basic software subscriptions vary but can start in the low hundreds of dollars per year. Custom analytics or forensic audits may cost several thousand dollars. For more information on engaging third-party services, see Obtain advice to help manage your IP.\n\nYou can adopt a light-touch program or scale up to a comprehensive monitoring regime at various stages of a product's life cycle, adjusting the effort as your risk profile or budget changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q5-a",
+            "text": "Implementing basic checks can be done in a shorter amount of time (days to weeks), depending on vendor and scope. Comprehensive programs covering supplier vetting, data integrations and response protocols may take several months to embed.  \n\nOngoing effort depends on shipment volume and review frequency, but it is common for businesses to implement some forms of supply chain monitoring. The exact length of time will be highly dependent on the strategies you employ and the size of your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q6-a",
+            "text": "Supply chain monitoring for mitigating risks associated with IP is commonly used. Conducting regular audits and having visibility over supply chain are often seen as part of best practices to protect one's IP."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q7-a",
+            "text": "Any IP rights holders."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q8-a",
+            "text": "- The IP right owner or authorised user.\n- Suppliers, manufacturers and logistics partners.\n- Private monitoring or brand‑protection service providers (optional).\n- Australian Border Force officers (when the Notice of Objection scheme is used).\n- IP lawyers or attorneys for legal and strategic advice (optional)."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq#q9-a",
+            "text": "The materials needed for supply chain monitoring would vary depending on the extent of monitoring activities and the methods you choose to adopt. Below is a list of some common data, evidence and materials used to monitor supply chain.   \n\n- A clear inventory of your registered IP rights and key products.\n- Up‑to‑date supplier and shipment records.\n- Up-to-date contact details for all supply chain partners.\n- Written supply agreements specifying IP use permissions and audit rights.\n- Procedures for staff to flag unusual orders or routes.\n- Monitoring tools such as order checks, sampling protocols, web alerts, tracking codes, barcodes, serial numbers or analytics dashboards.\n- Secure system for storing evidence (photos, screenshots, audit reports)."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

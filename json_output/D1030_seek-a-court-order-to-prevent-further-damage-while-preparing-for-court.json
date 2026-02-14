@@ -1,0 +1,354 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.fedcourt.gov.au/#organization",
+      "name": "Federal Court of Australia",
+      "url": "https://www.fedcourt.gov.au",
+      "sameAs": [
+        "https://www.fedcourt.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
+      "headline": "Seek a court order to prevent further damage while preparing for court. - IP First Response",
+      "description": "Lodge an interim injunction order through court",
+      "identifier": "D1030",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service"
+      },
+      "datePublished": "2025-02-28",
+      "dateModified": "2026-01-22",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-1-interim-court-injunction-order"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-2-what-is-it"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service",
+      "headline": "Seek a court order to prevent further damage while preparing for court.",
+      "description": "Lodge an interim injunction order through court",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
+      },
+      "serviceType": "Non-Government Third-Party Authority",
+      "provider": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "text": "If you need immediate action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond. \n\nUrgent action can include: \n\n- interim injunction\n search order (Anton Piller order*).\n\nInterim injunction \\\nAn injunction,in the context of an Australian IP dispute, is a court order that can: \n\n- Stop someone from infringing your IP rights.\n- Compel them to take specific actions to prevent further infringement.\n Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a Mareva injunction*).\n\nAn interim injunction is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.  \n\n- Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n- Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n- When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n- Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\n\nSearch order \\\nA search order (sometimes called an Anton Piller order) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.  \n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-1-interim-court-injunction-order"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-2-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "name": "What To Consider Before Taking Legal Action | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+          "name": "Escalate To Court | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-1-interim-court-injunction-order",
+      "headline": "Interim court injunction order",
+      "text": "",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-2-what-is-it",
+      "headline": "What is it?",
+      "text": "If you need immediate action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond. \n\nUrgent action can include: \n\n- interim injunction\n search order (Anton Piller order*).\n\nInterim injunction \\\nAn injunction,in the context of an Australian IP dispute, is a court order that can: \n\n- Stop someone from infringing your IP rights.\n- Compel them to take specific actions to prevent further infringement.\n Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a Mareva injunction*).\n\nAn interim injunction is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.  \n\n- Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n- Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n- When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n- Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\n\nSearch order \\\nA search order (sometimes called an Anton Piller order) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.  \n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q1-a",
+            "text": "- Rapid cessation of infringement.By halting any infringement immediately, you prevent further damage to your IP, such as erosion of market share or brand reputation.\n- Increased leverage in negotiations.The court's willingness to grant an urgent injunction sends a powerful signal to the defendant, which may affect future negotiations.\n- Preservation of evidence.An urgent injunction often comes with additional orders that can include the preservation of documents, files or infringing stock.\n- Enforceability.There are existing mechanisms in place to ensure people comply with court orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q2-a",
+            "text": "- Potential to pay damages.If it later turns out the injunction was unjustified, the applicant may need to compensate the defendant.\n- Evidence threshold.While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter.\n- Escalation.Seeking an injunction is a serious escalation of a conflict and may make it difficult or use other enforcement actions in future. Additionally, filing an interim injunction requires you to take further actions in court."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q3-a",
+            "text": "- If the interim injunction is granted, the defending party must cease all activity suspected of infringing.\n- This can be extended throughout the trial as an 'interlocutory injunction'. If the subsequent lawsuit is ruled in your favour, the defendant might then face a final, permanent injunction.\n- If the subsequent lawsuit is ruled in favour of the defendant, you may be required to compensate the defendant for lost revenue due to the interim injunction. Additionally, you may be liable for subsequent legal costs, and the defendant is free to continue their previous activities.\n- If the interim injunction is not granted, the defendant can continue their activities.\n- If you continue taking court action for infringement/with the subsequent lawsuit, an injunction or damages may be granted at a later stage."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q4-a",
+            "text": "An interim injunction is often the first step in an infringement action/court process/lawsuit. \n\nWhile it is difficult to specify exact costs, the total cost of the lawsuit will likely be in the hundreds of thousands of dollars. A large proportion of these costs will be legal fees for your legal counsel."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q5-a",
+            "text": "The granting of an interim injunction is an urgent process, typically taking days to weeks, depending on the nature of the case.  \n\nThe interim injunction will typically only be granted for a few days, or until the parties are able to present preliminary arguments."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q6-a",
+            "text": "In 2024 the Federal Court heard 5 applications for interlocutory injunctions in IP matters, only 2 were granted."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q7-a",
+            "text": "Interim injunctions are available for many matters. For IP infringement actions, you'll usually need to clearly own an IP right."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q8-a",
+            "text": "- IP owner\n- Infringing (allegedly) parties\n- Court (typically a single judge)\n- Legal representatives (if engaged)"
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq#q9-a",
+            "text": "- Evidence of infringement.While the threshold for an urgent injunction is lower than for a final decision, you still need strong evidence outlining both the infringement and the urgency of the matter.\n- Evidence of urgency of the matter and the reason you need the other party to stop their activity immediately.\n Find a legal practitioner for advice and representation. Court proceedings can be a stressful, complicated process that can have serious impacts on you and your business. The vast majority of cases will utilise legal professionals/practitioners to help navigate the serious and complex matters and processes associated with court proceedings. Additionally, corporations must* be represented by a lawyer in civil proceedings in the courts."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

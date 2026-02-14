@@ -1,0 +1,336 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.abf.gov.au/#organization",
+      "name": "Australian Border Force",
+      "url": "https://www.abf.gov.au",
+      "sameAs": [
+        "https://www.abf.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
+      "headline": "Stop infringing goods entering the country - IP First Response",
+      "description": "Lodge a notice of objection with the Australian Border Force.",
+      "identifier": "D1002",
+      "about": {
+        "@type": "Thing",
+        "name": "Trade mark\", \"Copyright"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#governmentservice"
+      },
+      "datePublished": "2025-02-28",
+      "dateModified": "2026-01-22",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-2-disclaimer"
+        }
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#governmentservice",
+      "headline": "Stop infringing goods entering the country",
+      "description": "Lodge a notice of objection with the Australian Border Force.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#webpage"
+      },
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://www.abf.gov.au/#organization"
+      },
+      "text": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.   \n\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer. \n\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.   \n\nPlease Note: A Notice of Objection cannot act retrospectively  for goods/copies that have already been imported.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
+          "url": "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
+          "name": "cannot act retrospectively"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator Tool Suspected Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
+          "url": "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
+          "name": "Notice of Objection."
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+          "name": "The Toyota story: What can SMEs learn from Toyota's approach to counterfeit products? | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx",
+          "url": "https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx",
+          "name": "IPObjections | The Australian Border Force"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+          "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
+          "name": "How to import intellectual property | The Australian Border Force"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.artslaw.com.au/services/legal-query-form/",
+          "url": "https://www.artslaw.com.au/services/legal-query-form/",
+          "name": "Arts Law Centre of Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.copyright.org.au/legal-advice/",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "Australian Copyright Council"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.   \n\nIf the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer. \n\nThe scheme works better if you keep ABF informed about potential unapproved importation, red flags and recommended ways to spot counterfeits of your product(s) or copies of your copyright material. It may also be beneficial for you to update the ABF when any personal, business or IP information is added or amended. To ensure the ABF's registry contains only actively used trade marks and/or that it continues to cover your copyright material, you would be required to re-lodge the notice every 4 years to continue your protection.   \n\nPlease Note: A Notice of Objection cannot act retrospectively  for goods/copies that have already been imported.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#governmentservice"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-2-disclaimer",
+      "headline": "Disclaimer",
+      "text": "Please Note: A Notice of Objection cannot act retrospectively  for goods/copies that have already been imported.",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#governmentservice"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q1-a",
+            "text": "- Provides a way to intercept infringing imports before they enter the Australian market.\n- Acts as a deterrent for anyone who tries to import goods that infringe on your trade marks.\n- When caught, the vast majority of infringing importers abandon their goods.\n- No financial cost to lodge the Notice itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q2-a",
+            "text": "- You must agree to pay for costs incurred by the ABF which might result from the seizure of potentially infringing goods. Generally, costs are minimal.\n- Failure to identify importers within your own supply chain may result in the seizure of your own imported goods.\n- This action does not permanently resolve the issue of your goods being counterfeited.\n- It doesn't take much for matters to escalate to court, potentially introducing higher risks and costs.\n- Escalation of the dispute could require you to defend/reaffirm your claim to your IP rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q3-a",
+            "text": "- The goods/copies are not detected entering Australia, or goods are detected but cannot be verified as potentially infringing; you are not notified.\n- The goods/copies are seized entering Australia. You and the importer are informed.\n\nThe importer may then: \n\n- choose to abandon the goods/copies, which are then disposed of by the ABF, or\n- file a Claim for Release of Seized goods/copies form.\n\nIf they submit this form, one of two things can happen: \n\n- you do not begin legal proceedings within 10 days and the goods are released to the importer, or\n- you begin legal proceedings within 10 days.\n\nThe court's decision will likely result in either: \n\n- the ABF disposing of the goods, or\n- the goods being released back to the importer."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q4-a",
+            "text": "While there are no fees to lodge a Notice of Objection, you will also need to lodge a Deed of Undertaking. This is a formal agreement to repay the ABF's costs resulting from any seizures made (e.g. transportation, storage and destruction costs).  \n\nIf you choose to take legal action against the importer, you will need to cover the costs of the legal action. Depending on the court's determination you may need to pay other party's costs, possibly damages, etc."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q5-a",
+            "text": "A Notice of Objection is valid for 4 years and ABF may seize imports at any point during this time. It can be re-lodged, or withdrawn if it is no longer required. \n\nIf a seizure has occurred: \n\n1. The ABF will notify you and the importer. The importer has 10 working days from the date of notification to ask for the goods to be released.\n2. If no response is received, the goods are deemed to be forfeited and can be disposed of 30 days later.\n3. If the importer seeks to have the goods released, you will be notified and have 10 working days to start legal action against the importer.\n4. If the ABF does not receive a court order maintaining seizure of the goods/copies within 20 days of legal action commencing then they are still required to release the goods to the importer."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q6-a",
+            "text": "More than 500 trade mark notices and 41 copyright notices are currently in force."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q7-a",
+            "text": "- Owners of registered trade marks which claim goods (services are not eligible for the scheme).\n- Authorised users or importers of a trade mark, with the registered trade mark owner's permission.\n- Copyright owners of copyright material."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q8-a",
+            "text": "- Australian Border Force.\n- The trade mark owner, copyright owner or authorised user.\n- Businesses importing goods for commercial purposes that bear your trade mark or a similar trade mark, or infringing copies of copyright material.\n- (Potentially) legal representatives, if you choose to take legal action."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq#q9-a",
+            "text": "To lodge a Notice of Objection under the Trade Marks Act 1995, you will require the following: \n\n- A completed Notice of Objection form (B1025).\n- Evidence of trade mark registration from IP Australia (for example, a copy of the registration certificate or a copy of an Australian Trade Mark Search report).\n- A completed Trade Marks Act 1995 Security Under Section 133 - Deed of Undertaking form.\n- If you are an authorised user or importer - an authorisation letter from the registered trade mark's owner.\n\nTo lodge a Notice of Objection under the Copyright Act 1968, you will require:\n\n- A completed Notice of Objection form (B470).\n- If you are a company authorised by the copyright owner to file the Notice on their behalf - a letter (or multiple - if more than one copyright owner) of authorisation from the copyright owner/s (for any copyright material covered that is not owned by the company lodging the Notice).\n- A completed Copyright Act 1968 Security Under Section 135 - Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.\n\nYou can find more information in the ABF Guide to lodging a Notice of Objection."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

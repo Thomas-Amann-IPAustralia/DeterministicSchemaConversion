@@ -1,0 +1,227 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey",
+      "headline": "Discover where you are in your IP journey - IP First Response",
+      "description": "",
+      "identifier": "E1006",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey#article"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey#article",
+      "headline": "Discover where you are in your IP journey",
+      "description": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you-are-your-ip-journey#webpage"
+      },
+      "articleBody": "As a business owner, there's a lot of information to grapple with and working out which IP options apply to you can be tricky. By matching your current activities to common stages in the IP journey, you can quickly see what's most relevant now and what might come next. \n\n'Where am I in the IP journey?' is a way to help pinpoint your stage in protecting and using your IP. Businesses take different IP steps depending on whether they're just starting out, developing a product, protecting it, commercialising, or expanding. \n\nKnowing your stage can help you focus your attention and avoid missing protections that are easier to put in place early. The IP journey often follows five broad stages: \n\n1. Idea and readiness \\\nYou're here if you're still shaping your concept and testing whether it has real-world value. You may be: \n\n- Checking whether your idea is unique and protectable, such as by conducting some internet research and searching for existing trade marks, patents, designs  and plant breeders' rights  (PBRs).\n- Protecting original material with copyright (automatically created when certain conditions are met) and keeping details confidential using non-disclosure agreements (NDAs) during prototype testing.\n- Conducting early market research and 'freedom to operate' checks to identify any existing rights you might risk infringing.\n- Not necessarily set up a business structure yet, secured funding, or registered any IP rights.\n\n2. Development \\\nThis is the stage where you turn an idea into something market-ready. You may be: \n\n- Creating prototypes or running service trials.\n- Collaborating with partners, suppliers, or researchers.\n- Running more detailed freedom-to-operate searches to avoid infringing others' rights.\n- Deciding whether to apply for trade marks, designs, patents, or PBRs.\n- Beginning to think about how registered IP could make your business more attractive to potential investors.\n\n3. Protection \\\nHere you've started locking in your rights. You may be: \n\n- Applying for, or registering, relevant IP rights in Australia and any other countries you plan to use the IP.\n- Understanding that Australian IP rights only apply within Australia -- protection in other countries usually requires separate applications, sometimes using agreements like the Patent Cooperation Treaty (PCT). There is no single 'international patent' or a 'global trade mark'.\n- Putting systems in place to safeguard confidential information, trade secrets, and your brand.\n- Making sure your IP strategy fits your business goals and timelines.\n\n4. Commercialisation \\\nYour IP is now part of how you make money. You may be: \n\n- Selling, licensing, or otherwise monetising your product or service.\n- Securing IP rights before going to market to help protect your competitive position.\n- Choosing your commercialisation model, such as franchising or partnering.\n- Actively marketing your brand and monitoring competitors for suspected infringement.\n- Using registered IP to help build investor confidence in your business model.\n\n5. Growth and expansion \\\nThis stage is about scaling and staying competitive. You may be: \n\n- Entering new markets, in Australia or overseas, and considering IP protection in each new location -- as registered rights do not automatically extend beyond Australia.\n- Managing a growing IP portfolio, including new rights for new products or services.\n- Continuing research and development to keep your edge.\n\nThese stages are not always strictly linear -- you might revisit earlier steps as your business changes.",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+          "name": "trade marks"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+          "name": "patents"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA",
+          "url": "https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA",
+          "name": "designs"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipsearch.ipaustralia.gov.au/pbr/",
+          "url": "https://ipsearch.ipaustralia.gov.au/pbr/",
+          "name": "plant breeders' rights"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
+          "name": "monitoring competitors"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/business/checklist",
+          "url": "https://www.wipo.int/en/web/business/checklist",
+          "name": "A step-by-step IP Strategy Checklist for SMEs"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
+          "name": "Business Resources | IP Australia"
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

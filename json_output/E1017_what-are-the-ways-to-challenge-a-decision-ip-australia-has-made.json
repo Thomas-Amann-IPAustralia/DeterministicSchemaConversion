@@ -1,0 +1,246 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+      "headline": "What are the ways to challenge a decision IP Australia has made? - IP First Response",
+      "description": "",
+      "identifier": "E1017",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#governmentservice"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-10-01",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-what-is-it"
+        }
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#governmentservice",
+      "headline": "What are the ways to challenge a decision IP Australia has made?",
+      "description": "",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#webpage"
+      },
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "text": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a 'hearing' to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder's rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a 'merits review' by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard de novo, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-what-is-it"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-a-hearing",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-a-hearing",
+          "name": "Application For A Hearing | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+          "name": "Opposition hearings | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.fedcourt.gov.au/law-and-practice/national-practice-areas/ip",
+          "url": "https://www.fedcourt.gov.au/law-and-practice/national-practice-areas/ip",
+          "name": "Intellectual Property National Practice Area (NPA) - Home page"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994",
+          "url": "https://www.fcfcoa.gov.au/gfl/intellectual-property#:~:text=The%20Federal%20Circuit%20and%20Family,Plant%20Breeder%27s%20Rights%20Act%201994",
+          "name": "Intellectual property | Federal Circuit and Family Court of Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.art.gov.au/",
+          "url": "https://www.art.gov.au/",
+          "name": "Homepage | Administrative Review Tribunal"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://peo.gov.au/understand-our-parliament/your-questions-on-notice/questions/what-is-judicial-review",
+          "url": "https://peo.gov.au/understand-our-parliament/your-questions-on-notice/questions/what-is-judicial-review",
+          "name": "What is judicial review? - Parliamentary Education Office"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a 'hearing' to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder's rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a 'merits review' by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard de novo, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#governmentservice"
+      }
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}

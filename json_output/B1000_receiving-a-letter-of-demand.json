@@ -1,0 +1,425 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "sameAs": [
+        "https://www.ipaustralia.gov.au"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "headline": "Receiving a letter of demand - IP First Response",
+      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "identifier": "B1000",
+      "about": {
+        "@type": "Thing",
+        "name": "Any dispute related to intellectual property"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      },
+      "usageInfo": "This information is general in nature and does not constitute legal advice. You should consider obtaining professional advice that is specific to your circumstances.",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article"
+      },
+      "datePublished": "2025-07-01",
+      "dateModified": "2026-01-29",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-1-common-features-in-a-letter-of-demand"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-2-things-to-watch-out-for-possible-scams-or-false-claims"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-3-disclaimer"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article",
+      "headline": "Receiving a letter of demand",
+      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
+      },
+      "articleBody": "In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It's often the first formal step used in notifying someone of an IP issue. \n\nIt can be shocking to receive a legal letter like this, and the emotional impact should not be underestimated. Take time to carefully read the information to ensure you understand the other business' or IP right owner's concerns. Some important things to identify are: \n\n- which IP right the sender claims has been used without permission ('infringed')\n- what the sender wants you to do (for example, halting sales or removing content)\n- what evidence the sender has given in support of their claim.\n\nIt is usually not a good idea to ignore a letter of demand without first seeking professional advice. Taking time to understand their perspective may help you decide whether to negotiate, seek advice, or contest the claim. \n\nBefore responding to a letter of demand, you may want to show the letter and explain the situation to a qualified IP legal professional  who can explain your position and outline possible options.",
+      "datePublished": "2025-07-01",
+      "dateModified": "2026-01-29",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-1-common-features-in-a-letter-of-demand"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-2-things-to-watch-out-for-possible-scams-or-false-claims"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+          "name": "What Ip Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
+          "name": "IP legal professional"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator Tool Suspected Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Trans-Tasman IP Attorney registry"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://abr.business.gov.au/",
+          "url": "https://abr.business.gov.au/",
+          "name": "ABN lookup tool"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+          "name": "Choose not to respond immediately"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
+          "name": "personally respond"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+          "name": "speak to an IP lawyer or IP attorney"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
+          "url": "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
+          "name": "misleading or sent in bad faith"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "name": "without going to court."
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+          "name": "agree to stop the alleged conduct"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "name": "alternative dispute resolution process, such as mediation"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
+          "name": "Evaluate the situation before deciding what to do | IP Australia First Response"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-1-common-features-in-a-letter-of-demand",
+      "headline": "Common features in a letter of demand",
+      "text": "Here are common features of these letters: \n\n- Heading and sender details -- The letter should identify who sent the letter (whether the rights holder or their representative). You may want to verify their authority and ensure the letter was addressed to the right person or business. Some useful starting points include the Trans-Tasman IP Attorney registry  and the ABN lookup tool.\n- Description of the alleged infringement -- Explains which IP rights are involved (for example trade mark number, patent number, specific item of copyright material and so on), identifies the sender's ownership of the right (or if they do not own the right themselves, it identifies the other basis on which they make the claim - for example if they have an exclusive license) and what actions you took that the sender claims infringe their IP rights.\n- Demand to stop the activity -- Usually includes a list of things that the sender wants you to do in response to their letter, such as taking something down from a website, stopping selling a product, changing branding or marketing, or paying them compensation.\n- Deadline for compliance -- Often includes a time limit for responding to their demands (for example, from 7 to 30 days) after which they may decide to start legal action against you.\n- Evidence or exhibits -- May include screenshots, photos, links or documents.\n- Consequences of non-compliance -- Often warns of possible court action, damages or injunctions. This is a common inclusion but doesn't mean legal action will immediately or definitely follow.\n- Reservation of rights -- A general phrase keeping the sender's legal options open.\n- Contact details for discussion -- Gives you a way to reply or negotiate.\n\nNote: While you should not ignore a letter of demand, you may not need to respond to the demand immediately (Choose not to respond immediately), nor do you need to personally respond or simply comply to their demands . It may be advisable to speak to an IP lawyer or IP attorney about the letter of demand. They can advise you on next steps and also communicate on your behalf.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-2-things-to-watch-out-for-possible-scams-or-false-claims",
+      "headline": "Things to watch out for (possible scams or false claims)",
+      "text": "Some cease and desist letters may be misleading or sent in bad faith. Signs that the letter may not be genuine include: \n\n- No clear sender -- The letter lacks the sender's name, firm or contact details.\n- No specific IP right mentioned -- There is no trade mark, patent or design number, or information or evidence to support their claim of copyright.\n- Fake IP right number (for registered rights) -- The IP right number provided is not published on the IP register (but you need to be careful to make sure you are checking the correct register).\n- Poor grammar or formatting -- Scam letters often contain multiple typos or formatting issues.\n- Overly aggressive or urgent tone -- Extreme threats or unrealistically short deadlines can be intimidation tactics.\n- Demands for payment to unknown accounts -- You are asked to pay quickly to unfamiliar or overseas bank details.\n- No evidence provided -- Genuine letters usually attach screenshots, product photos or other proof of the alleged infringement.\n- Threats about confidentiality-- While there are often reasonable requests to keep the letter confidential, this can also be used as an intimidation tactic.\n\nHowever, a letter of demand may not be a scam even if it has some of the features listed above. If you are not sure, it may be advisable to speak to an IP lawyer or IP attorney about the letter you received.",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-3-disclaimer",
+      "headline": "Disclaimer",
+      "text": "Before responding to a letter of demand, you may want to show the letter and explain the situation to a qualified IP legal professional  who can explain your  who can explain your position and outline possible options.",
+      "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q1-a",
+            "text": "- Gives the receiver a clear and early warning of a potential dispute, allowing time to gather information.\n- Offers a chance to resolve matters quickly without going to court.\n- Clarifies the specific IP right and scope of goods or services in question so that it can be verified.\n- Provides a written record of the sender's position, which can inform negotiations and clarifies what is being asked and why.\n- Can open dialogue that preserves business relationships, if handled constructively."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q2-a",
+            "text": "When you receive a letter of demand, there are risks which should be managed carefully: \n\n- Ignoring the letter, missing the response deadline or responding inadequately may result in the sender starting legal action against you.\n- Admitting liability may strengthen the sender's claims or lead to further demands.\n- Sharing the letter publicly may result in reputational harm."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q3-a",
+            "text": "There are a range of possible outcomes depending on how you respond, and whether the other party continues to pursue the matter. These can include: \n\n- You engage a legal professional to advise you or to respond on your behalf.\n- You respond directly and explain why you disagree with claims made by the sender.\n- You respond and agree to stop the alleged conduct and to comply with none, some or all other demands (potentially without admitting liability).\n- You ask them to negotiate or you suggest to resolve the dispute through analternative dispute resolution process, such as mediation.\n- You ignore the letter -- which may lead to the other party escalating the matter, such as starting legal action against you. It may not be advisable to ignore a letter of demand without first speaking to an IP lawyer or IP attorney."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q4-a",
+            "text": "Costs vary depending on the complexity of the matter and adviser rates. Professional review and a written response could involve a lower fee for straightforward cases or higher fees if detailed analysis is required."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q5-a",
+            "text": "Letters commonly request action within somewhere between 7 and 30 days. The amount of time it will take to respond will depend on the complexity of the claims and what evidence there is to support them. If you are investigating the claims made by the sender and it will take longer than the period included in the letter of demand, it can sometimes be appropriate to send a reply to say when you will come back to them. However, it may be advisable to speak to an IP lawyer or IP attorney first."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q6-a",
+            "text": "Letters of demand are a commonly used tool in IP disputes."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q7-a",
+            "text": "An owner or, in some cases, an authorised user or licensee of IP rights can send a letter of demand to someone if they have a proper basis for alleging that the other person is infringing their IP rights. The recipient of a letter of demand could be almost anyone, from a large business to a small business, to a private individual."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q8-a",
+            "text": "- IP right owner or authorised user sending the letter\n- Recipient of the letter (you)\n- (Optional) legal professionals acting for either party\n- (Optional) mediators or other dispute resolution providers\n- Court officers - if the matter proceeds to legal action."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#faq#q9-a",
+            "text": "- Read the letter in full and note any deadlines.\n- Identify the IP right mentioned (registration number, jurisdiction).\n- Gather your own evidence about your product, brand or content and its development timeline.\n- Decide whether to seek advice from an IP lawyer or IP attorney.\n- Keep copies of all correspondence, screenshots, invoices and other relevant documents."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder’s Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder’s Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    }
+  ]
+}
