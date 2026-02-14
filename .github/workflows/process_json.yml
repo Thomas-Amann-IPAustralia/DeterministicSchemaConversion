@@ -27,17 +27,26 @@ jobs:
           pip install -r requirements.txt
 
       # 2. Run the script from the root directory
-      # This ensures it finds 'IPFR-Webpages' and generates 'json_output'
+      #    set -e ensures the step fails visibly if the script errors out
       - name: Run Processing Script
-        run: python scripts/process_md_to_json.py
+        run: |
+          set -e
+          python scripts/process_md_to_json.py
+          echo "--- Verifying output ---"
+          JSON_COUNT=$(find json_output -name '*.json' 2>/dev/null | wc -l)
+          echo "JSON files generated: $JSON_COUNT"
+          if [ "$JSON_COUNT" -eq 0 ]; then
+            echo "::error::No JSON files were generated. Check script output above."
+            exit 1
+          fi
 
-      # 3. Upload the JSON files as an artifact (Updated to v4)
+      # 3. Upload the JSON files as an artifact
       - name: Upload JSON Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: json-ld-output
           path: json_output/
-          if-no-files-found: warn
+          if-no-files-found: error
 
       # 4. Commit and push the report AND json files
       - name: Commit and Push Changes
