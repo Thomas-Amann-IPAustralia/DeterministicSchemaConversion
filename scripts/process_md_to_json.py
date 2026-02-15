@@ -42,6 +42,54 @@ WEBSITE_URL = "https://ipfirstresponse.ipaustralia.gov.au/"
 DEFAULT_LANGUAGE = "en-AU"
 DEFAULT_LICENCE = "https://creativecommons.org/licenses/by/4.0/"
 
+# ── Hardcoded IP Australia identity (always the publisher & copyrightHolder) ──
+IP_AUSTRALIA_ID = "https://www.ipaustralia.gov.au/#organization"
+IP_AUSTRALIA_ENTITY: dict = {
+    "@type": "GovernmentOrganization",
+    "@id": IP_AUSTRALIA_ID,
+    "name": "IP Australia",
+    "url": "https://www.ipaustralia.gov.au",
+    "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government",
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650",
+}
+
+# ── Standard disclaimer (hardcoded on every page as usageInfo) ──
+STANDARD_DISCLAIMER: dict = {
+    "@type": "CreativeWork",
+    "name": "Disclaimer and Feedback Policy",
+    "text": (
+        "This IP First Response website has been designed to help IP rights "
+        "holders navigate IP infringement and enforcement by making it visible, "
+        "accessible, and to provide information about the factors involved in "
+        "pursuing different options. It does not provide legal, business or "
+        "other professional advice, and none of the content should be regarded "
+        "as recommending a specific course of action. We welcome any feedback "
+        "via our IP First Response feedback form and by emailing us."
+    ),
+    "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response",
+}
+
+# ── IP topic → Wikidata sameAs map (for 'about' Thing objects) ──
+IP_TOPIC_MAP: dict[str, str] = {
+    "intellectual property right": "https://www.wikidata.org/wiki/Q108855835",
+    "trade mark": "https://www.wikidata.org/wiki/Q165196",
+    "trade marks": "https://www.wikidata.org/wiki/Q165196",
+    "trademark": "https://www.wikidata.org/wiki/Q165196",
+    "unregistered-tm": "https://www.wikidata.org/wiki/Q165196",
+    "unregistered tm": "https://www.wikidata.org/wiki/Q165196",
+    "patent": "https://www.wikidata.org/wiki/Q253623",
+    "patents": "https://www.wikidata.org/wiki/Q253623",
+    "design": "https://www.wikidata.org/wiki/Q1240325",
+    "designs": "https://www.wikidata.org/wiki/Q1240325",
+    "copyright": "https://www.wikidata.org/wiki/Q12978",
+    "pbr": "https://www.wikidata.org/wiki/Q695112",
+    "plant breeder's rights": "https://www.wikidata.org/wiki/Q695112",
+    "plant breeder": "https://www.wikidata.org/wiki/Q695112",
+}
+
 # Headings whose content should be silently discarded (noise sections).
 EXCLUDED_HEADINGS = {
     "see also",
@@ -796,6 +844,54 @@ def resolve_legislation(ip_right_field: str) -> list[tuple[str, str, str]]:
     return results
 
 
+def resolve_about_topics(ip_right_field: str) -> list[dict]:
+    """
+    Parse the CSV 'Relevant-ip-right' field into an array of Schema.org
+    Thing objects, each with an optional Wikidata sameAs link.
+
+    Input examples:
+        '"Trade Mark", "Copyright"'
+        '"Any dispute related to intellectual property"'
+        '"Patent"'
+    """
+    if not ip_right_field or not ip_right_field.strip():
+        return [{"@type": "Thing", "name": "Intellectual property"}]
+
+    # Strip outer quotes and split on comma-delimited quoted values.
+    raw = ip_right_field.strip()
+    # Extract individually quoted terms: "Trade Mark", "Copyright", etc.
+    terms = re.findall(r'"([^"]+)"', raw)
+    if not terms:
+        # Fallback: treat the whole string as a single term.
+        terms = [raw.strip('" ')]
+
+    seen: set[str] = set()
+    things: list[dict] = []
+    for term in terms:
+        term_clean = term.strip()
+        if not term_clean:
+            continue
+        # Normalise for deduplication.
+        key = term_clean.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+
+        # Build the display name with title-cased first letter.
+        display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
+
+        thing: dict = {"@type": "Thing", "name": display_name}
+
+        # Attach Wikidata sameAs if available.
+        same_as_url = IP_TOPIC_MAP.get(key)
+        if same_as_url:
+            thing["sameAs"] = same_as_url
+
+        things.append(thing)
+
+    return things if things else [{"@type": "Thing", "name": "Intellectual property"}]
+
+
 # ──────────────────────────────────────────────────────────────────────
 # 10. BODY TEXT FORMATTER
 # ──────────────────────────────────────────────────────────────────────
@@ -856,37 +952,35 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     provider_entry = _resolve_provider(meta.provider) if meta else None
     provider_org_type = resolve_provider_type_for_archetype(archetype_type, provider_entry)
 
-    # ── Resolve "about" from the relevant IP right field ──
-    about_name = "Any dispute related to intellectual property"
-    if meta and meta.relevant_ip_right:
-        about_raw = meta.relevant_ip_right.strip('"').strip()
-        if about_raw:
-            about_name = about_raw
+    # ── Resolve "about" as an array of Thing objects (Fix 2 + 7) ──
+    about_things = resolve_about_topics(meta.relevant_ip_right) if meta else [
+        {"@type": "Thing", "name": "Intellectual property"}
+    ]
 
-    # ── Build the organisation entity ──
-    org_id = f"{provider_entry.url}/#organization" if (provider_entry and provider_entry.url) else f"{base_url}/#organization"
+    # ── Build the dynamic service-provider entity (if distinct from IP Australia) ──
+    # IP Australia is always publisher and copyrightHolder (hardcoded).
+    # The CSV "Provider" column drives only Service.provider / GovernmentService.serviceOperator.
+    provider_entity: dict | None = None
+    provider_id: str = IP_AUSTRALIA_ID  # default
 
-    if provider_entry and provider_entry.name.lower() not in ("self-help", ""):
-        org_entity = {
-            "@type": provider_org_type,
-            "@id": org_id,
-            "name": provider_entry.name,
-        }
-        if provider_entry.url:
-            org_entity["url"] = provider_entry.url
-        if provider_entry.same_as:
-            org_entity["sameAs"] = provider_entry.same_as
-    else:
-        # Default to IP Australia when provider is Self-Help.
-        ip_au = _GOV_PROVIDERS["ip australia"]
-        org_id = f"{ip_au.url}/#organization"
-        org_entity = {
-            "@type": "GovernmentOrganization",
-            "@id": org_id,
-            "name": ip_au.name,
-            "url": ip_au.url,
-            "sameAs": ip_au.same_as,
-        }
+    if provider_entry and provider_entry.name.lower() not in ("self-help", "self help", ""):
+        # Check whether the provider IS IP Australia (avoid duplicate entity).
+        is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
+        if not is_ip_australia:
+            provider_id = (
+                f"{provider_entry.url}/#organization"
+                if provider_entry.url
+                else f"{base_url}/#provider-organization"
+            )
+            provider_entity = {
+                "@type": provider_org_type,
+                "@id": provider_id,
+                "name": provider_entry.name,
+            }
+            if provider_entry.url:
+                provider_entity["url"] = provider_entry.url
+            if provider_entry.same_as:
+                provider_entity["sameAs"] = provider_entry.same_as
 
     # ── Classify sections and build sub-entities ──
     faq_questions: list[ParsedSection] = []
@@ -1058,14 +1152,17 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         has_part_refs.append({"@id": disclaimer_id})
 
     # ── Build the WebPage entity ──
+    # Fix 3: Always use the H1 heading from markdown (parsed.title) as the
+    # canonical headline. CSV main_title is a fallback only.
+    h1_title = parsed.title if (parsed.title and parsed.title != "Untitled") else main_title
     webpage_entity: dict = {
         "@type": "WebPage",
         "@id": f"{base_url}#webpage",
         "url": base_url,
-        "headline": f"{main_title} - {WEBSITE_NAME}",
+        "name": f"{h1_title} - {WEBSITE_NAME}",
         "description": description,
         "identifier": udid,
-        "about": {"@type": "Thing", "name": about_name},
+        "about": about_things,
         "inLanguage": DEFAULT_LANGUAGE,
         "license": DEFAULT_LICENCE,
         "audience": {
@@ -1073,12 +1170,10 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
             "audienceType": "Small and medium businesses",
             "geographicArea": {"@type": "Country", "name": "Australia"},
         },
-        "usageInfo": (
-            "This information is general in nature and does not constitute "
-            "legal advice. You should consider obtaining professional advice "
-            "that is specific to your circumstances."
-        ),
-        "publisher": {"@id": org_id},
+        # Fix 5: Always include the standard hardcoded disclaimer.
+        "usageInfo": STANDARD_DISCLAIMER,
+        # Fix 1: Publisher and copyrightHolder are always IP Australia.
+        "publisher": {"@id": IP_AUSTRALIA_ID},
         "isPartOf": {"@id": WEBSITE_ID},
         "mainEntity": {"@id": f"{base_url}#{archetype_type.lower()}"},
     }
@@ -1088,22 +1183,30 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         webpage_entity["dateModified"] = mod_date
     if copyright_year:
         webpage_entity["copyrightYear"] = copyright_year
-        webpage_entity["copyrightHolder"] = {"@id": org_id}
+        webpage_entity["copyrightHolder"] = {"@id": IP_AUSTRALIA_ID}
     webpage_entity["creditText"] = "IP First Response initiative led by IP Australia"
     if has_part_refs:
         webpage_entity["hasPart"] = has_part_refs
 
     # ── Build the main content entity (Article / GovernmentService / Service) ──
+    # Fix 3: Use H1 from markdown as the canonical title.
+    # Fix 4: Use "name" for Service types; "headline" only for Article.
     main_entity: dict = {
         "@type": archetype_type,
         "@id": f"{base_url}#{archetype_type.lower()}",
-        "headline": main_title,
         "description": description,
         "inLanguage": DEFAULT_LANGUAGE,
         "license": DEFAULT_LICENCE,
-        "publisher": {"@id": org_id},
+        # Fix 1: Publisher is always IP Australia.
+        "publisher": {"@id": IP_AUSTRALIA_ID},
         "mainEntityOfPage": {"@id": f"{base_url}#webpage"},
     }
+
+    # Fix 4: Articles use "headline"; Service types use "name".
+    if archetype_type == "Article":
+        main_entity["headline"] = h1_title
+    else:
+        main_entity["name"] = h1_title
 
     # Article-specific fields.
     if archetype_type == "Article":
@@ -1116,16 +1219,18 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     # GovernmentService-specific fields.
     if archetype_type == "GovernmentService":
         main_entity["serviceType"] = meta.archetype if meta else "Government Service"
-        main_entity["serviceOperator"] = {"@id": org_id}
-        if provider_entry and provider_entry.url:
-            main_entity["provider"] = {"@id": org_id}
+        # Fix 1: serviceOperator is always IP Australia.
+        main_entity["serviceOperator"] = {"@id": IP_AUSTRALIA_ID}
+        # Fix 1: provider is the dynamic entity from the CSV.
+        main_entity["provider"] = {"@id": provider_id}
         if article_body_text:
             main_entity["text"] = article_body_text
 
-    # Service-specific fields.
+    # Service-specific fields (non-government / commercial).
     if archetype_type == "Service":
         main_entity["serviceType"] = meta.archetype if meta else "Service"
-        main_entity["provider"] = {"@id": org_id}
+        # Fix 1: provider is the dynamic entity from the CSV.
+        main_entity["provider"] = {"@id": provider_id}
         if article_body_text:
             main_entity["text"] = article_body_text
 
@@ -1144,9 +1249,10 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     if article_parts:
         main_entity["hasPart"] = article_parts
 
-    # Citations.
+    # Fix 6: Use "mentions" instead of "citation" (the documents reference
+    # but do not formally cite the legislative instruments).
     if citation_refs:
-        main_entity["citation"] = citation_refs
+        main_entity["mentions"] = citation_refs
 
     # Related links (as semantically rich WebPage objects).
     if link_objects:
@@ -1155,17 +1261,21 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     # ── Assemble the @graph ──
     graph: list[dict] = []
 
-    # 1. Organisation.
-    graph.append(org_entity)
+    # 1. IP Australia (always present as publisher & copyrightHolder).
+    graph.append(dict(IP_AUSTRALIA_ENTITY))
 
-    # 2. WebSite.
+    # 1b. Dynamic service provider (if distinct from IP Australia).
+    if provider_entity:
+        graph.append(provider_entity)
+
+    # 2. WebSite (publisher is always IP Australia).
     graph.append(
         {
             "@type": "WebSite",
             "@id": WEBSITE_ID,
             "name": WEBSITE_NAME,
             "url": WEBSITE_URL,
-            "publisher": {"@id": org_id},
+            "publisher": {"@id": IP_AUSTRALIA_ID},
             "inLanguage": DEFAULT_LANGUAGE,
             "license": DEFAULT_LICENCE,
         }
