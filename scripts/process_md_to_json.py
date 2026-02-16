@@ -1026,11 +1026,10 @@ def resolve_about_topics(ip_right_field: str) -> list[dict]:
         # Special case: the catch-all IP topic gets a descriptive name and
         # the Wikidata link for "intellectual property right".
         if "any dispute" in key and "intellectual property" in key:
-            display_name = "A topic which relates to all intellectual property"
             thing: dict = {
                 "@type": "Thing",
-                "name": display_name,
-                "description": display_name,
+                "name": "All intellectual property (IP)",
+                "description": "A topic which relates to all intellectual property",
                 "sameAs": IP_TOPIC_MAP.get("intellectual property right", ""),
             }
             things.append(thing)
@@ -1317,14 +1316,7 @@ def build_jsonld(
             continue
         if url not in seen_link_urls:
             seen_link_urls.add(url)
-            link_objects.append(
-                {
-                    "@type": "WebPage",
-                    "@id": url,
-                    "url": url,
-                    "name": _link_name_from_url(url, anchor, url_title_map),
-                }
-            )
+            link_objects.append(url)
 
     # ── Legislation ──
     legislation_entries = resolve_legislation(meta.relevant_ip_right) if meta else []
@@ -1504,8 +1496,8 @@ def build_jsonld(
     if citation_refs:
         main_entity["mentions"] = citation_refs
 
-    # Related links belong on the WebPage entity (relatedLink is a
-    # property of WebPage in Schema.org, not Article / Service).
+    # Related links belong on the WebPage entity. relatedLink expects
+    # plain URL strings per the Schema.org spec (not WebPage objects).
     if link_objects:
         webpage_entity["relatedLink"] = link_objects
 
