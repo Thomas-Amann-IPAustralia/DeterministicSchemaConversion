@@ -249,14 +249,14 @@ _GOV_PROVIDERS: dict[str, ProviderEntry] = {
         name="IP Australia",
         alternateName="Intellectual Property Australia",
         url="https://www.ipaustralia.gov.au",
-        same_as=["https://www.ipaustralia.gov.au"],
+        same_as=["https://www.wikidata.org/wiki/Q5973154"],
         org_type="GovernmentOrganization",
     ),
     "australian border force": ProviderEntry(
         name="Australian Border Force",
         alternateName="ABF",
         url="https://www.abf.gov.au",
-        same_as=["https://www.abf.gov.au"],
+        same_as=["https://www.wikidata.org/wiki/Q17000879"],
         org_type="GovernmentOrganization",
     ),
     "australian small business and family enterprise ombudsman": ProviderEntry(
@@ -269,7 +269,7 @@ _GOV_PROVIDERS: dict[str, ProviderEntry] = {
     "court": ProviderEntry(
         name="Federal Court of Australia",
         url="https://www.fedcourt.gov.au",
-        same_as=["https://www.fedcourt.gov.au"],
+        same_as=["https://www.wikidata.org/wiki/Q1400030"],
         org_type="GovernmentOrganization",
     ),
     "trans-tasman ip attorneys board": ProviderEntry(
@@ -287,7 +287,7 @@ _NGO_PROVIDERS: dict[str, ProviderEntry] = {
         name=".au Domain Administration",
         alternateName="auDA",
         url="https://www.auda.org.au",
-        same_as=["https://www.auda.org.au"],
+        same_as=["https://www.wikidata.org/wiki/Q151602"],
         org_type="NGO",
     ),
     "world intellectual property office": ProviderEntry(
@@ -300,7 +300,7 @@ _NGO_PROVIDERS: dict[str, ProviderEntry] = {
     "world intellectual property office arbitration and mediation center": ProviderEntry(
         name="WIPO Arbitration and Mediation Center",
         url="https://www.wipo.int/amc/en/",
-        same_as=["https://www.wipo.int/amc/en/"],
+        same_as=["https://www.wikidata.org/wiki/Q177773"],
         org_type="NGO",
     ),
     "copyright council": ProviderEntry(
@@ -325,16 +325,19 @@ _COMMERCIAL_PROVIDERS: dict[str, ProviderEntry] = {
     ),
     "mediator": ProviderEntry(
         name="Mediator",
+        same_as=["https://www.wikidata.org/wiki/Q4859473"],
         url="",
         org_type="Organization",
     ),
     "arbitrator": ProviderEntry(
         name="Arbitrator",
+        same_as=["https://www.wikidata.org/wiki/Q105425483"],
         url="",
         org_type="Organization",
     ),
     "qualified facilitator": ProviderEntry(
         name="Qualified facilitator",
+        same_as=["https://www.wikidata.org/wiki/Q1150166"]
         url="",
         org_type="Organization",
     ),
@@ -355,6 +358,7 @@ _COMMERCIAL_PROVIDERS: dict[str, ProviderEntry] = {
     ),
     "online marketplaces": ProviderEntry(
         name="Online Marketplaces",
+        same_as=["https://www.wikidata.org/wiki/Q3390477"]
         url="",
         org_type="Organization",
     ),
