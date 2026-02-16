@@ -53,7 +53,7 @@ IP_AUSTRALIA_ENTITY: dict = {
         "@type": "GovernmentOrganization",
         "name": "Australian Government",
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973154",
+    "sameAs": "https://www.wikidata.org/wiki/Q5973650",
 }
 
 # ── Standard disclaimer (hardcoded on every page as usageInfo) ──
@@ -850,8 +850,49 @@ def _slugify(text: str) -> str:
     return text
 
 
-def _link_name_from_url(url: str, anchor: str) -> str:
-    """Derive a human-readable name from a link's anchor text or URL path."""
+def _link_name_from_url(
+    url: str, anchor: str, url_title_map: dict[str, str] | None = None
+) -> str:
+    """Derive a human-readable name from a link's anchor text or URL path.
+
+    For internal IP First Response links the canonical page title is looked
+    up from *url_title_map* (built from the CSV metatable).  If the URL is
+    not in the map the name is derived from the URL slug so that we never
+    use contextual anchor text (e.g. "speak to an IP lawyer") as a page
+    name.  External links continue to prefer anchor text.
+    """
+    IPFR_HOST = "ipfirstresponse.ipaustralia.gov.au"
+    is_internal = IPFR_HOST in url
+
+    # ── Internal IPFR links: CSV title → slug-derived name ──
+    if is_internal:
+        # 1. Try the CSV metatable lookup.
+        if url_title_map:
+            lookup_key = url.lower().rstrip("/")
+            # Also try without query strings / fragments.
+            lookup_key_clean = lookup_key.split("?")[0].split("#")[0].rstrip("/")
+            title = url_title_map.get(lookup_key) or url_title_map.get(
+                lookup_key_clean
+            )
+            if title:
+                return title
+
+        # 2. Derive from the URL slug (sentence-case).
+        path = urlparse(url).path.rstrip("/")
+        slug = path.split("/")[-1] if "/" in path else path
+        words = slug.replace("-", " ").replace("_", " ").strip()
+        if words:
+            # Apply sentence-case then fix known abbreviations.
+            name = words[0].upper() + words[1:]
+            _ABBREVIATIONS = {"ip", "adr", "abn", "accc", "nda"}
+            name = " ".join(
+                w.upper() if w.lower() in _ABBREVIATIONS else w
+                for w in name.split()
+            )
+            return name
+        return url
+
+    # ── External links: prefer anchor text, then slug ──
     if anchor and not anchor.startswith("http"):
         # Clean markdown bold, italics, etc. from anchor text.
         name = re.sub(r"[*_]", "", anchor).strip()
@@ -1011,7 +1052,11 @@ def _format_body_text(raw_body: str) -> str:
 # 11. JSON-LD BUILDER
 # ──────────────────────────────────────────────────────────────────────
 
-def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
+def build_jsonld(
+    parsed: ParsedMarkdown,
+    meta: MetaRecord | None,
+    metatable: dict[str, MetaRecord] | None = None,
+) -> dict:
     """Assemble the full @graph JSON-LD document."""
 
     base_url = parsed.page_url or (meta.canonical_url if meta else "")
@@ -1211,6 +1256,14 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     link_objects: list[dict] = []
     seen_link_urls: set[str] = set()
 
+    # Build a URL → canonical-title lookup from the full metatable so that
+    # internal IPFR links resolve to their proper page name.
+    url_title_map: dict[str, str] = {}
+    if metatable:
+        for rec in metatable.values():
+            if rec.canonical_url and rec.main_title:
+                url_title_map[rec.canonical_url.lower().rstrip("/")] = rec.main_title
+
     # Filter out noisy links (feedback forms, email, images, CMS nodes).
     noise_patterns = ["qualtrics.com", "mailto:", "/sites/default/files/", "/node/"]
     for url, anchor in parsed.links:
@@ -1226,7 +1279,7 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
                     "@type": "WebPage",
                     "@id": url,
                     "url": url,
-                    "name": _link_name_from_url(url, anchor),
+                    "name": _link_name_from_url(url, anchor, url_title_map),
                 }
             )
 
@@ -1397,9 +1450,10 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     if citation_refs:
         main_entity["mentions"] = citation_refs
 
-    # Related links (as semantically rich WebPage objects).
+    # Related links belong on the WebPage entity (relatedLink is a
+    # property of WebPage in Schema.org, not Article / Service).
     if link_objects:
-        main_entity["relatedLink"] = link_objects
+        webpage_entity["relatedLink"] = link_objects
 
     # ── Assemble the @graph ──
     graph: list[dict] = []
@@ -1466,7 +1520,7 @@ def process_single_file(
     else:
         print(f"  [WARN] {md_path.name} → no CSV match found; using defaults.")
 
-    jsonld = build_jsonld(parsed, meta)
+    jsonld = build_jsonld(parsed, meta, metatable)
 
     # Determine output filename: prefer UDID-based naming.
     if meta and meta.udid:
