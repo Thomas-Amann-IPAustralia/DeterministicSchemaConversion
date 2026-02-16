@@ -116,6 +116,38 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#section-4-disclaimer"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage"
@@ -157,56 +189,7 @@
       "serviceType": "Commercial Third Party Service",
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#section-2-consider-contacting-an-ip-professional-for-advice-and-assistance"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#section-3-exercise-caution-before-making-accusations-of-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#section-4-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -215,7 +198,7 @@
       "text": "A letter of demand, or a cease and desist letter, can be an effective way of stopping infringing behaviour and avoiding the need for legal action. You can use this letter to communicate your concerns and demands. It's often one of the first actions taken if you are satisfied that an infringement is occurring. \n\nAn effective letter of demand will:  \n\n Identify your ownership of the IP right (or the other basis on which you can make a claim if you do not own the right yourself - for example, if you have an exclusive licence) and whether you are entitled to make requests to cease infringement.\n Document the infringing conduct, with written examples, if possible.\n Specify the legislation under which your IP is being protected.\n Clearly specify your demands - for example, that the party stop infringing your IP rights, return or destroy all infringing property, pay you compensation, or obtain a licence from you.\n Give a specific timeframe for the infringer to stop infringing, return all infringing property to you, or pay the requested sum.\n State that if the demands aren't met, you may take further actions to stop the infringing behaviour.\n\nBefore sending a letter of demand, you will need to be satisfied that the other party's actions amount to infringement and it is recommended that you speak to an IP lawyer or an IP attorney. There can be serious consequences if you send a letter of demand with no basis including a risk that the party you sent the letter of demand to may sue you. IP laws include 'unjustified threat' provisions (also referred to as 'groundless threats' in copyright law) under which you might be liable to pay damages/compensation or you may be ordered to stop making the threat.\n\nFor more information about what constitutes an infringement, see our information onwhat infringement can look like.An IP professional can help you make this assessment and draft the letter.\n\nPlease note that sending a letter of demand before consulting with an IP professional may result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved.  \n\nA letter of demand will also usually be more effective if it is sent by an IP lawyer or IP attorney on your behalf, rather than you sending it personally. However, you may want to consider the cost of obtaining this legal assistance against the monetary value of any compensation or licence fee you are seeking.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage"
       }
     },
     {
@@ -225,7 +208,7 @@
       "text": "It can be difficult to determine whether the other party's behaviour amounts to infringement. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.  \n\nPlease note: Making informal contact before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, please consult an IP professional.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage"
       }
     },
     {
@@ -235,7 +218,7 @@
       "text": "Making an unjustified threat that you will start legal action against another person for IP infringement can result in liability for compensation or damages or an order that you stop making the threat. Proving infringement is an important issue that should be considered before sending a letter of demand. \n\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information ongetting professional assistance with your IP . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free30 minute consultations with an attorney .",
       "position": 3,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage"
       }
     },
     {
@@ -245,7 +228,7 @@
       "text": "Before sending a letter of demand, you will need to be satisfied that the other party’s actions amount to infringement and it is recommended that you speak to an IP lawyer or an IP attorney. There can be serious consequences if you send a letter of demand with no basis including a risk that the party you sent the letter of demand to may sue you. IP laws include ‘unjustified threat’ provisions (also referred to as ‘groundless threats’ in copyright law) under which you might be liable to pay damages/compensation or you may be ordered to stop making the threat. For more information about what constitutes an infringement, see our information on what infringement can look like. An IP professional can help you make this assessment and draft the letter. Please note that sending a letter of demand before consulting with an IP professional may result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved.  A letter of demand will also usually be more effective if it is sent by an IP lawyer or IP attorney on your behalf, rather than you sending it personally. However, you may want to consider the cost of obtaining this legal assistance against the monetary value of any compensation or licence fee you are seeking.",
       "position": 4,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage"
       }
     },
     {

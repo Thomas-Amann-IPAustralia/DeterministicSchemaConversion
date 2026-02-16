@@ -111,6 +111,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
         "https://tmgns.search.ipaustralia.gov.au/",
@@ -143,23 +151,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -168,7 +160,7 @@
       "text": "If you haven't already done so, registering your trade mark with IP Australia can help you respond to suspected copying or infringement. \n\nRegistration establishes ownership and exclusive rights, giving you stronger legal grounds to take action against current and future infringers. \n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these. \n\nYou might have some rights to protect your trade mark even if it's not registered with IP Australia. However, trade mark registration makes enforcing your trade mark easier and increases your enforcement options.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#webpage"
       }
     },
     {

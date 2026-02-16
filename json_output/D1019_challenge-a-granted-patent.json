@@ -106,6 +106,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -137,23 +145,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -162,7 +154,7 @@
       "text": "A patent re-examination is a means for challenging the validity\\ of a granted patent. In certain situations, such as being accused of infringement, the validity of the patent may come under heavy scrutiny. This can be requested at any time after a patent is granted by filing a request with IP Australia. Patent re-examination can be requested if you believe the patent should not have been granted for a variety of reasons, including; \n\n The invention claimed in the patent isn't novel, innovative or inventive (this is the most common reason)\n The invention isn't something that can be patented\n The invention was used in public before the patent was filed\n The patent specification doesn't provide enough detail to build or perform the invention\n The invention isn't consistent with the description\n The claims are so unclear that it's impossible for a skilled person to understand them\n The invention is a biological process for generation of human beings (such as human cloning).\n\n\\the validity of a patent regards its compliance with the Patents Act, i.e. if it should have been granted in the first place (or has new evidence come to light that indicates it should not have been granted).*",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#webpage"
       }
     },
     {

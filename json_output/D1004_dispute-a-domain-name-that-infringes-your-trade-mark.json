@@ -121,6 +121,20 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -152,29 +166,7 @@
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
         "@id": "https://www.auda.org.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -183,7 +175,7 @@
       "text": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.   \n\nA panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties. \n\nPlease Note: If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP).",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#webpage"
       }
     },
     {

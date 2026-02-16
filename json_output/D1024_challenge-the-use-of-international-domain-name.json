@@ -124,6 +124,20 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-2-disclaimer"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.icann.org/resources/pages/help/dndr/udrp-en",
         "https://www.icann.org/resources/pages/providers-6d-2012-02-25-en",
@@ -168,32 +182,7 @@
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
         "@id": "https://www.wipo.int#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-2-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -202,7 +191,7 @@
       "text": "If you believe someone is infringing your trade mark in their website's domain name, you might be able to dispute this with the relevant dispute provider. This can result in cancellation or transfer of the domain name.   \n\nThe relevant dispute provider will vary depending on the domain name extension: \n\n If the domain name extension ends in .au, then the relevant dispute policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.\n If the domain name ends in a generic term like .com, .net or .org, then the relevant policy is the Uniform Dispute Resolution Policy (UDRP). A full list of approved UDRP providers is available here: List of Approved Dispute Resolution Service Providers - ICANN   The World Intellectual Property Organization (WIPO) is a leading provider.\n- If the domain name ends in another country code (such as .us, .uk, .nz) then it can be resolved under that country's Dispute Resolution Policy. These are often modelled on the UDRP and many countries (including Australia) allow disputes to be held at WIPO. Domain Name Dispute Resolution Service for Country Code Top Level Domains (ccTLDs)\n\nThe World Intellectual Property Organization (WIPO) is a leading provider of domain name dispute resolution services. Once you lodge a complaint, a one- or 3-person panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are put into effect by the registrar (the host of the domain name).  \n\nPlease Note: If the infringing domain name ends in '.au' then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#webpage"
       }
     },
     {
@@ -212,7 +201,7 @@
       "text": "Please Note: If the infringing domain name ends in ‘.au’ then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#webpage"
       }
     },
     {

@@ -71,7 +71,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design",
+          "name": "Design right",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -141,6 +141,38 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.wipo.int/amc/en/center/background.html",
         {
@@ -203,47 +235,7 @@
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
         "@id": "https://www.wipo.int#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -252,7 +244,7 @@
       "text": "If you need to resolve an international dispute, one option is to use the World Intellectual Property Organization (WIPO) Arbitration and Mediation Center  ('the WIPO Center').\n\nThe WIPO Center offers a range of alternative dispute resolution (ADR) services designed to resolve international and domestic disputes without going to court.\n\nThey can help parties access and navigate ADR processes. For more information about what ADR is, see IP First Response's webpage available at: General ADR Card.\n\nThe WIPO Center's tools and services include:\n\n Free information and procedural assistance services (sometimes called 'Good Offices ') to facilitate or submit a dispute to WIPO's ADR processes. This includes providing support throughout the parties' engagement with the ADR options.\n An extensive global database  of mediators, arbitrators and experts, including from Australia. This includes experts from specific fields/specialties: WIPO Alternative Dispute Resolution (ADR) Services for Specific Sectors.\n Free online case administration tools that allow parties to manage and resolve disputes remotely.\n\nADR processes offered by the WIPO Centre include: \n\n Mediation\n Arbitration\n Expedited Arbitration\n- Expert determination\n\nYour dispute doesn't need to be international to use the WIPO Center, and other international dispute resolution services are available in some countries. For more information, see IP First Response webpage on enforcing your IP overseas.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
       }
     },
     {

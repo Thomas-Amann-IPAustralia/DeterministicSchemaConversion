@@ -106,6 +106,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html",
         {
@@ -140,23 +148,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -165,7 +157,7 @@
       "text": "A patent opposition is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you'll have a chance to respond through IP Australia's formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights. \n\nThe oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn't resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision. \n\nYou can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#webpage"
       }
     },
     {

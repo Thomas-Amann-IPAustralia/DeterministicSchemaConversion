@@ -117,46 +117,6 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-1-what-is-it"
         }
       ],
-      "relatedLink": [
-        "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage"
-        },
-        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
-      ]
-    },
-    {
-      "@type": "GovernmentService",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#governmentservice",
-      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
-      },
-      "name": "Access help tailored to resolve business disputes",
-      "serviceType": "Government Service",
-      "serviceOperator": {
-        "@id": "https://www.asbfeo.gov.au#organization"
-      },
-      "provider": {
-        "@id": "https://www.asbfeo.gov.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq"
-        }
-      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -188,7 +148,39 @@
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
+      ],
+      "relatedLink": [
+        "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage"
+        },
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://ipta.org.au/community/get-free-consultation/"
       ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#governmentservice",
+      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
+      },
+      "name": "Access help tailored to resolve business disputes",
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.asbfeo.gov.au#organization"
+      },
+      "provider": {
+        "@id": "https://www.asbfeo.gov.au#organization"
+      }
     },
     {
       "@type": "WebPageElement",
@@ -197,7 +189,7 @@
       "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency. \n\nYou can access ASBFEO's Dispute Support Tool to identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers. \n\nASBFEO can guide you through dispute resolution by: \n\n Providing information to resolve your dispute in a timely and low-cost way\n Engaging with the parties to encourage resolution\n- When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
       }
     },
     {

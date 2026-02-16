@@ -61,7 +61,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design",
+          "name": "Design right",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -134,6 +134,38 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-2-exercise-caution-before-making-accusations-of-infringement"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
         "https://lookup.icann.org/en",
@@ -173,50 +205,7 @@
       "serviceType": "Commercial Third Party Service",
       "provider": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-2-exercise-caution-before-making-accusations-of-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -225,7 +214,7 @@
       "text": "Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The 'intermediaries' have a responsibility not to facilitate infringement.    \n\nIf you notice infringement on a website or online platform, you can approach the owners of the site to request that they take down infringing content. To find out who owns a website, you can check their domain name's registration in the Australian  and international WHOIS databases. \n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods and material that infringes copyright. \n\nYou can be proactive by listing your IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon and Alibaba, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale. \n\nNote: It can be time-consuming for rights owners to monitor e-commerce platforms and submit IP complaints themselves. A time and cost-effective way to manage this process is often to engage IP professionals such as IP monitoring services. These IP professionals can use their experience and knowledge to identify and remove counterfeit goods across multiple online platforms.Beyond online marketplaces, many other digital platforms available to Australian users (including social media platforms to which users can upload content) also offer mechanisms that copyright owners can use to address or prevent infringement. These often include complaint forms and notice and takedown processes that copyright owners can use if they believe their rights have been infringed. They may also include bespoke tools copyright owners can choose use to proactively manage and enforce their rights on those platforms. For example,  automated content recognition/identification or screening tools (like YouTube Content ID or Meta Rights Manager) allow copyright owners to upload their content and find matches to content uploaded on platforms by third parties. Where matches are found, copyright owners may be able to seek to pre-emptively block or otherwise monetise the content (for example, through share of advertising revenue in some cases).",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
       }
     },
     {
@@ -235,7 +224,7 @@
       "text": "Making an unfounded claim of IP infringement can result in liability for damages. Proving infringement is an important issue that should be considered before taking legal action, including sending written demands. \n\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information ongetting professional assistance with your IP . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free30 minute consultations with an attorney .\nCopyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the Arts Law Centre of Australia  or no-cost advice from the Australian Copyright Council .",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
       }
     },
     {

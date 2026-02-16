@@ -112,6 +112,38 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         {
@@ -160,47 +192,7 @@
       "serviceType": "Commercial Third Party Service",
       "provider": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -209,7 +201,7 @@
       "text": "What is it?\n\nHaving a qualified expert can help you navigate the complex system of IP enforcement. Qualified experts for IP enforcement include lawyers specialising in IP, and trade mark and patent attorneys. We refer to these experts as 'legal professionals', although trade mark and patent attorneys are not necessarily lawyers and may not be qualified to engage in legal practice.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of legal professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which may require a lawyer or barrister with litigation experience in IP). \n\nIf you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the Trans-Tasman IP Attorney Board register as a starting point. \n\nHow about other types of IP professionals? \n\nThe term IP professionals refers to a range of experts who can help you plan and manage your business in relation to IP, including legal professionals. If you are seeking advice on how to enforce your IP rights, and what might be most appropriate to your situation, you should seek it from an IP lawyer or other relevant legal professional.  \n\nIf you wish to obtain support for other IP-related aspects of your business, you may wish to engage services provided by non-legal IP professionals such as: \n\n an accountant who specialises in IP marketing or commercialisation\n a brand consultant\n a franchise and export consultant\n a management consultant\n IP search firms\n IP monitoring service providers\n- Government business support.\n\nIf you are a copyright owner who is a member of a copyright collecting society or a professional organisation representing certain kinds of creator or creative business, you could explore whether that organisation is able to provide information or another form of assistance in your particular circumstances.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
       }
     },
     {

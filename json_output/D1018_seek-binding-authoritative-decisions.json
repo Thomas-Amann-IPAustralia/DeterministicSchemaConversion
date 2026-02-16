@@ -118,6 +118,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-2-disclaimer"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
@@ -151,26 +159,7 @@
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
         "@id": "https://www.fedcourt.gov.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-2-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -179,7 +168,7 @@
       "text": "If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed. \n\nIt is prudent to seek legal advice before deciding whether to start a legal action in court. You will likely also need assistance from an IP lawyer if you decide to start a legal action. \n\nPatent proceedings usually involve:  \n\n a validity challenge intended to revoke a patent in whole or in part\n allegations of infringement of a patent.\n\nPatent proceedings in Australia are typically started in the Federal Court of Australia.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage"
       }
     },
     {
@@ -189,7 +178,7 @@
       "text": "It is prudent to seek legal advice before deciding whether to start a legal action in court. You will likely also need assistance from an IP lawyer if you decide to start a legal action.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage"
       }
     },
     {

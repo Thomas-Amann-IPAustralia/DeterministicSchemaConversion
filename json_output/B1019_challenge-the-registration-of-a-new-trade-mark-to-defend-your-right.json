@@ -111,6 +111,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
         "https://www.ipaustralia.gov.au/tools-and-research/forms/notice-of-intention-to-oppose",
@@ -148,23 +156,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -173,7 +165,7 @@
       "text": "If someone has accused you of copying or using their trade mark without permission, and the other party's trade mark is pending registration with IP Australia,  you may be able to challenge their trade mark application directly with IP Australia by initiating a trade mark opposition process. This process requires you to submit your supporting evidence and argument as to why the trade mark should not be registered.\n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):\n\n Similarity to an existing trade mark\n Being too generic or descriptive\n- Containing a connotation that is misleading and confusing.\n\nIf your actions are successful, the  other party will no longer have rights associated with the registration of their trade mark.\n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.\n\nIf the application you wish to oppose is in the two-month window, you can file a 'Notice of Intention to Oppose'  before it becomes registered. The opposition procedure can involve either a written or oral hearing, or a written decision without a hearing.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#webpage"
       }
     },
     {

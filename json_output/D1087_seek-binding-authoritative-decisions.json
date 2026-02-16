@@ -60,7 +60,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Design",
+          "name": "Design right",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         }
       ],
@@ -121,6 +121,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#section-3-disclaimer"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
@@ -147,29 +155,7 @@
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
         "@id": "https://www.fedcourt.gov.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#section-2-limitations-on-how-long-you-can-take-to-file-an-action"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#section-3-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -178,7 +164,7 @@
       "text": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful, and obtaining the outcome you seek is never guaranteed.\n\nIt is prudent to seek legal advice before starting legal proceedings. You will likely also need the assistance of a lawyer with experience in IP.\n\nCourts can hear many types of design disputes including:\n\n Actions against someone for suspected infringement of your registered design. A certificate of examination from IP Australia is required before you can enforce your design in court.\n\n Matters relating to the validity of a registered design.\n\n- Appeals from decisions made by IP Australia.\n\nDesign proceedings in Australia are typically started in the Federal Court of Australia or the Federal Circuit and Family Court of Australia (Division 2).\n\nDesigns court cases are rare. This means there is limited legal precedent for judges and lawyers to draw on. This makes it harder to build a strong case, increases potential costs, and adds uncertainty to how a judge might rule.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#webpage"
       }
     },
     {
@@ -188,7 +174,7 @@
       "text": "There are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start.\n\n The limitation period for a designs infringement action is six years from the date on which the act of infringement took place. The infringement act must also have taken place in the period of registration.\n If you are challenging a decision made by IP Australia, an appeal to the courts must be started within 21 days after the date of the decision. It may be possible to obtain an extension of time with the court.\n\nDue to these complexities, it may be helpful to speak to an IP lawyer about time limits.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#webpage"
       }
     },
     {
@@ -198,7 +184,7 @@
       "text": "Designs court cases are rare. This means there is limited legal precedent for judges and lawyers to draw on. This makes it harder to build a strong case, increases potential costs, and adds uncertainty to how a judge might rule.",
       "position": 3,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-designs#webpage"
       }
     },
     {

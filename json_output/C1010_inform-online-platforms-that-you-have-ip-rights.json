@@ -64,7 +64,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design",
+          "name": "Design right",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -140,6 +140,38 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-3-please-note-that-ip-rights-covered-vary-by-platform"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ebay.com/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349",
         "https://www.etsy.com/au/ipreporting",
@@ -172,53 +204,7 @@
       "serviceType": "Commercial Third Party Service",
       "provider": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-1-ecommerce-registries"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-2-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-3-please-note-that-ip-rights-covered-vary-by-platform"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -227,7 +213,7 @@
       "text": "",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#webpage"
       }
     },
     {
@@ -237,7 +223,7 @@
       "text": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \n \nSigning up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.  \n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. \n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#webpage"
       }
     },
     {
@@ -247,7 +233,7 @@
       "text": "Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n eBay VeRO Program allows rights owners to report suspected infringement of trade marks, copyrights, designs and patents.\n Etsy Intellectual Property Portal  lets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n Shein IP Protection Platform accepts notices for all types of IP infringement  (trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n- Temu IP Portal  accepts notices for all types of IP infringement.",
       "position": 3,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#webpage"
       }
     },
     {

@@ -51,7 +51,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Design",
+          "name": "Design right",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         }
       ],
@@ -109,6 +109,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#section-2-what-is-not-design-infringement"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
         {
@@ -138,26 +146,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#section-1-examples-of-design-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#section-2-what-is-not-design-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -166,7 +155,7 @@
       "text": "For example, a furniture company registers a design for a distinctive chair (Chair A) with a unique curved backrest and armrests that flow into the seat in one continuous line. \n\nMight be an infringement: Another company makes a chair (Chair B) with the same flowing lines from armrests to seat, differing only in size and materials.\n\nProbably not infringement: Another company makes a chair (Chair C) with a similar seat but completely different backrest and arms. \n\nFor example, a soft drink company registers a design for a bottle (Bottle A) with a distinctive hourglass shape and textured surface. \n\nMight be infringement: A competitor makes a bottle (Bottle B) with a very similar hourglass shape and a slightly different but recognisably similar texture. \n\nProbably not infringement: A competitor makes a bottle (Bottle C) with a completely different shape but uses a texture that is somewhat similar.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage"
       }
     },
     {
@@ -176,7 +165,7 @@
       "text": "It is important to understand what does not constitute infringement. The Designs Act 2003 provides several situations where a registered design is not infringed, including:\n\n Prior use defence. If the suspected infringing design was already being used in Australia before the registered design, the design may continue to be used.\n\n Repairs and spare parts: In certain circumstances, using a design to repair a complex product may not be infringement. This defence recognises the practical need for replacement parts.\n\nNavigating design infringement can be complex and often requires legal expertise. The scope of protection, the similarity between designs and available defences can all affect the outcome. Additionally, for infringement to occur, the registered design must be legally valid. Registered designs can be re-examined by IP Australia or challenged in court if, for example, it is not new or distinctive. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage"
       }
     },
     {

@@ -111,6 +111,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -148,23 +156,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -173,7 +165,7 @@
       "text": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia. \n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):  \n\n similarity to an existing trade mark\n being too generic or descriptive\n- containing a connotation that is misleading and confusing.\n\nOpposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia. \n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#webpage"
       }
     },
     {

@@ -111,6 +111,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
         "https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60",
@@ -145,23 +153,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -170,7 +162,7 @@
       "text": "When seeking registration of your trade mark with IP Australia, there is a chance that a third party opposes the registration of your trade mark. If this happens, you will have the opportunity to defend your application by responding to the trade mark opposition.\n\nAfter your trade mark application is formally acceptedby IP Australia, there is a 2-month window in which someone can oppose the registration under various reasons outlined in the Trade Marks Act. There are many reasons for opposing registration, including that your trade mark is too similar to another trade mark, or that you applied to register your trade mark in bad faith.\n\nOnce your application has been opposed, you will have the opportunity to defend your application by responding to the trade mark opposition. If you do not defend your application, it will lapse and will not proceed to registration. You can respond to a trade mark opposition by lodging a notice of intention to defend at IP Australia. After this, parties to the opposition process submit relevant submissions and evidence to IP Australia and may request a written or oral hearing, or a written decision without a hearing before an IP Australia hearing officer, who will decide whether your mark can proceed to registration. \n\nThe process is generally less formal or costly than going to court. Parties to the opposition sometimes use this process to negotiate a settlement, such as limiting goods and services or agreeing to co-exist in the market.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#webpage"
       }
     },
     {

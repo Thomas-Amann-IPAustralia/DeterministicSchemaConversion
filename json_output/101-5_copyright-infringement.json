@@ -125,6 +125,20 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#section-1-common-misconceptions-about-copyright-infringement"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -153,29 +167,7 @@
       },
       "provider": {
         "@id": "https://www.copyright.org.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#section-1-common-misconceptions-about-copyright-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -184,7 +176,7 @@
       "text": "There is no percentage rule. Even small portions can infringe if they are an important or distinctive part of the original work.Attribution does not prevent infringement.Personal use is not a general exception to copyright infringement in Australia, though specific exceptions may apply.Works found online are still protected by copyright law unless it is in the public domain or under an open licence.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage"
       }
     },
     {

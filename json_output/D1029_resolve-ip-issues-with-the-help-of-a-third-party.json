@@ -115,6 +115,38 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.wipo.int/web/wipo-magazine/articles/what-does-it-cost-to-defend-your-ip-rights-38493",
         "https://iccwbo.org/wp-content/uploads/sites/3/2024/06/2023-Statistics_ICC_Dispute-Resolution_991.pdf",
@@ -156,47 +188,7 @@
       "serviceType": "Commercial Third Party Service",
       "provider": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -205,7 +197,7 @@
       "text": "Arbitration is a type of alternative dispute resolution (ADR) in which a dispute is submitted, by agreement of the parties, to one or more arbitrators who make a binding decision on the dispute (known as an 'arbitral award'). The arbitrator is often someone with a high level of expertise in the specific field of law relevant to the industry or subject matter of the dispute.  \n\nArbitration can be somewhat similar to a court or tribunal hearing, but often are a shorter and more flexible version: \n\n Parties are typically expected to produce evidence and submissions before the arbitrator to make a decision.\n Usually, the parties to the dispute must agree before the process that the arbitrator's decision will be binding and enforceable.\n- Arbitration is generally seen as an efficient, impartial, and enforceable process to resolve both domestic and international commercial disputes, including IP matters.\n\nArbitration may be voluntary, required under a court order, or as part of a contract - arbitration clauses are often added to contracts, stipulating that the parties resolve future disputes using this method.  \n\nArbitration requires agreement from both parties, which can be challenging to obtain after a dispute arises, especially in cases involving no prior contractual relationship. For this reason, where there are contractual negotiations, it is often advantageous for parties to consider including an arbitration clause in their initial contract.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
       }
     },
     {

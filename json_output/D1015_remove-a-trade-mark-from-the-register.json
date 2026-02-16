@@ -109,6 +109,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#section-2-disclaimer"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -141,26 +149,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#section-2-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -169,7 +158,7 @@
       "text": "If a registered trade mark is not being used by its owner, you may be able to have it removed from the Register. This allows you to potentially use a trade mark that you believe you have the right to use, even if someone else has registered it. \n\nYou can request removal of a trade mark if you believe the owner: \n\n hasn't used the trade mark in relation to all or some of their goods and/or services for 3 years\n never intended to use the trade mark\n hasn't used the trade mark in good faith.\n\nIf nobody opposes removal in the time allowed and the removal application is in order, the trade mark will be removed completely or in relation to specific goods and/or services to the extent specified in the application.  \n\nWhen can you file an application for removal for non-use? \n\nIf you are filing an application for removal on the ground that the owner never intended to use the trade mark, then the application may be made at any time after the subject trade mark has been filed.\n\nIf you are filing an application for removal on the ground that the trade mark has not been used, the following timeframes would apply:\n\n| For trade marks with a filing date 23 February 2019 or earlier; | For trade marks with a filing date 24 February 2019 or later; |\n| --- | --- |\n| You can file after 5 years or more have passed since the filing date* of the application (and if you believe that a trade mark hasn't been used in three years.)  An image of the trade mark register highlighting the date of filing. | You can file after 3 years have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.)     Image of the trade mark register highlighting the Entered on Register date |",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage"
       }
     },
     {
@@ -179,7 +168,7 @@
       "text": "The application for removal/cessation of protection for non-use must be filed in an approved form",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage"
       }
     },
     {

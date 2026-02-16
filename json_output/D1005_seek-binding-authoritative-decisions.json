@@ -123,6 +123,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-2-disclaimer"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -158,26 +166,7 @@
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
         "@id": "https://www.fedcourt.gov.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-2-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -186,7 +175,7 @@
       "text": "If other efforts to resolve a dispute are unsuccessful or not appropriate in your situation, you may consider starting a legal action in court. Going to court is usually a last resort. Court proceedings are often expensive, time-consuming and stressful, and obtaining the outcome you seek is never guaranteed. \n\nIt is prudent to seek legal advice before deciding whether to start a court action. You will likely also need assistance from an IP lawyer should you decide to start a court action.   \n\nCourts can hear many types of trade mark disputes including:  \n\n actions against someone for infringing your trade mark\n matters relating to someone else's trade mark registration\n- appeals from decisions made by IP Australia.\n\nTrade mark proceedings in Australia are typically started in the Federal Circuit and Family Court of Australia (Division 2) or the Federal Court of Australia.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
       }
     },
     {
@@ -196,7 +185,7 @@
       "text": "It is prudent to seek legal advice before deciding whether to start a court action. You will likely also need assistance from an IP lawyer should you decide to start a court action.   The timeframe is typically shorter if the matter is resolved through negotiations or a court-ordered mediation process.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
       }
     },
     {

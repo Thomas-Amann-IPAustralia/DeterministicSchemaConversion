@@ -106,6 +106,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        }
+      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/patents",
         "https://www.ipaustralia.gov.au/patents/how-to-apply-for-a-standard-patent",
@@ -135,23 +143,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -160,7 +152,7 @@
       "text": "Applying for a patent is one way to protect a new product, process or method that you've developed. \n\nA patent application is a formal request to IP Australia to be granted exclusive rights over your invention. If granted, a patent can stop others from making, using, or selling your invention in Australia without your permission. \n\nPatents are typically used for inventions that are new, useful and involve an inventive step. This could include anything from a physical product to a chemical process, mechanical tool or software-enabled system. \n\nYou don't need a granted patent to start selling your product, but a patent can strengthen your legal position and give you more control over how your invention is used by others. \n\nIt is important to note that disclosing your invention can create issues later on for your patent application - if you are considering applying for a patent, it is important to avoid publicly disclosing your invention. \n\nYou can apply for a standard patent or a provisional application first--each has different costs, benefits and timeframes. Provisional applications are often used as a first step to secure a priority date while you refine your invention or seek investors. \n\nA provisional application does not offer any patent protection, and simply acts as a placeholder while you decide whether to continue with the patenting process. A provisional application gives you 12 months to consider your options, and most importantly, it establishes your priority date.  \n\nIf you wish to proceed with the application process (and enter the examination stage), you will need to file a standard application. Importantly, you can use the priority date from your provisional application in your standard application. This is of particular value if there is a competitor who has filed a patent application - if they are both directed towards a similar process, you would have a greater chance of being granted the patent owing to your earlier priority date.  \n\nIt is important to note that any features claimed in your standard application must have also been disclosed in your provisional application if you wish to claim the earlier priority date.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#webpage"
       }
     },
     {

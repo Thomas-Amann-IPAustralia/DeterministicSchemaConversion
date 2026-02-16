@@ -119,44 +119,6 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-2-what-is-it"
         }
       ],
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
-        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service",
-      "description": "Lodge an interim injunction order through court",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
-      },
-      "name": "Seek a court order to prevent further damage while preparing for court",
-      "serviceType": "Non-Government Third-Party Authority",
-      "provider": {
-        "@id": "https://www.fedcourt.gov.au#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-1-interim-court-injunction-order"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-2-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq"
-        }
-      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -188,7 +150,34 @@
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://ipta.org.au/community/get-free-consultation/"
       ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service",
+      "description": "Lodge an interim injunction order through court",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
+      },
+      "name": "Seek a court order to prevent further damage while preparing for court",
+      "serviceType": "Non-Government Third-Party Authority",
+      "provider": {
+        "@id": "https://www.fedcourt.gov.au#organization"
+      }
     },
     {
       "@type": "WebPageElement",
@@ -197,7 +186,7 @@
       "text": "",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
       }
     },
     {
@@ -207,7 +196,7 @@
       "text": "If you need immediate action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond. \n\nUrgent action can include: \n\n interim injunction\n search order (Anton Piller order).\n\nInterim injunction \nAn injunction,in the context of an Australian IP dispute, is a court order that can: \n\n Stop someone from infringing your IP rights.\n Compel them to take specific actions to prevent further infringement.\n Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a Mareva injunction).\n\nAn interim injunction is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.  \n\n Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\n\nSearch order \nA search order (sometimes called an Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.  \n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#service"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
       }
     },
     {

@@ -106,6 +106,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#section-1-what-is-it"
         }
       ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
       "relatedLink": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
@@ -140,23 +148,7 @@
       },
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#faq"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
@@ -165,7 +157,7 @@
       "text": "If you are accused of copying or infringing someone else's trade mark, it might help to register your own rights in the trade mark which they have claimed is copying/infringing. This can be especially applicable when the other party's claim seems baseless or the two trade marks are not sufficiently similar in your opinion. \n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these. \n\nRegistering a trade mark can give you an exclusive right to use your branding on specific goods or services in Australia. Your trade mark will appear on a public, searchable database. This may help you demonstrate your ownership if others allege you have copied their branding. \n\nYou might have some rights to protect your trade mark even if it's not registered with IP Australia. However, trade mark registration makes defending your right to use your trade mark easier. It also increases your enforcement options.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#webpage"
       }
     },
     {
