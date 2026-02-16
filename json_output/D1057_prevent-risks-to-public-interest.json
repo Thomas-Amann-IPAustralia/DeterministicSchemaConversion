@@ -1,0 +1,284 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973650",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      },
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#provider-organization",
+      "name": "tga",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest",
+      "name": "Prevent risks to public interest - IP First Response",
+      "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+      "identifier": "D1057",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "All intellectual property (IP)",
+          "description": "A topic which relates to all intellectual property",
+          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Spinout Company",
+          "Startup",
+          "Spinout",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#article"
+      },
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-12-02",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-1-disclaimer"
+        }
+      ],
+      "relatedLink": [
+        "https://crimestoppers.com.au/",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        "https://www.tga.gov.au/resources/resource/forms/report-perceived-breach-or-questionable-practices",
+        "https://www.accc.gov.au/about-us/contact-us-or-report-an-issue/report-a-consumer-issue",
+        "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams",
+        "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights",
+        "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption",
+        "https://www.afp.gov.au/crimes/fraud-and-corruption/intellectual-property-crime",
+        "https://www.tga.gov.au/safety/buying-health-products-online-has-risks/counterfeit-fake-medicines-and-medical-devices",
+        "https://www.afp.gov.au/news-centre/media-release/man-charged-selling-counterfeit-electronics-gold-coast",
+        "https://www.arnnet.com.au/article/1256866/aussie-hacker-ordered-to-give-up-1-7m-after-international-investigation.html",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://ipta.org.au/community/get-free-consultation/",
+        "https://www.artslaw.com.au/services/legal-query-form/",
+        "https://www.copyright.org.au/legal-advice/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#article",
+      "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#webpage"
+      },
+      "headline": "Prevent risks to public interest",
+      "articleBody": "You, as the owner of your IP, are responsible for enforcing your IP rights.   \n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.   \n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement. \n\n##### If the infringement involves IP crime\n\nMost IP infringement is not a criminal matter. However, under Australian law it can be a criminal offence to engage in:\n\n trade mark counterfeiting\n certain copyright infringements -- generally involving commercial dealings or done on a commercial scale\n- plant breeder's rights infringement.\n\nThese usually become a police matter when activity is serious, for example if it poses imminent risk of public harm or is highly organised or widespread. The Australian Federal Police (AFP) focuses on taking action against organisers, major importers and wholesalers of counterfeit goods. These goods pose public safety risks and can be used to support organised crime, money laundering and cybercrime. \n\nSales of counterfeit goods can be reported to Crime Stoppers. If you suspect links to serious or organised crime like the above, phone 131 444 and report the matter to your local police. \n\n##### If the infringement involves counterfeit medicines or medical devices\n\nCounterfeit medicines and medical devices are particularly serious as they can cause harm to users or not work as intended. Counterfeit medical products should be reported to the Therapeutic Goods Administration (TGA) at this page.  \n\n##### If there is serious risk of consumer harm\n\nCounterfeit goods are often substandard or low quality, which can be dangerous. Some IP infringement involves making false and misleading claims. These things can harm consumers and are not allowed under the Australian Consumer Law (ACL).  \n\nConsumer harm/issues/concerns can be reported to the Australian Consumer and Competition Commission (ACCC) at this page. These reports can help inform future compliance activity. Please note the ACCC does not usually resolve individual complaints.  \n\n##### Scams and fraudulent activity\n\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to your IP rights, you can report this activity to Product and service scams | Scamwatch. \n\nThere are a number of scams relating to managing IP rights, which is unfortunately a problem around the world. You can read more about these on IP Australia's website at Scams related to managing IP Rights | IP Australia  and learn how to report these at How to report fraud and corruption | IP Australia. Sometimes this will also mean reporting to Scamwatch.",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-12-02",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-1-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-1-disclaimer",
+      "headline": "Disclaimer",
+      "text": "Sales of counterfeit goods can be reported to Crime Stoppers . If you suspect links to serious or organised crime like the above, phone 131 444 and report the matter to your local police.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#article"
+      },
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder's Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder's Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations",
+      "description": "You, as the owner of your IP, are responsible for enforcing your IP rights.     However, sometimes IP infringement is accompanied by other serious issues, such."
+    }
+  ]
+}

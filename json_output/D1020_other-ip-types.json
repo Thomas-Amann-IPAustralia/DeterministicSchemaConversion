@@ -1,0 +1,291 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973650",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      },
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types",
+      "name": "Other IP types - IP First Response",
+      "description": "We cannot provide information on this right just yet",
+      "identifier": "D1020",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "All intellectual property (IP)",
+          "description": "A topic which relates to all intellectual property",
+          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Spinout Company",
+          "Startup",
+          "Spinout",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#article"
+      },
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-07-10",
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-1-sorry-this-information-is-not-available-yet"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-2-this-right-is-currently-not-covered-by-the-navigation-tool"
+        }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks/geographical-indications-and-trade-marks",
+        "https://www.agriculture.gov.au/agriculture-land/farm-food-drought/wine-policy",
+        "https://www.ipaustralia.gov.au/trade-marks/understanding-trade-marks/types-of-trade-marks/other-types-trade-marks#Trade-marks-for-wine",
+        "http://www.foodstandards.gov.au/Pages/default.aspx",
+        "https://www.ipaustralia.gov.au/understanding-ip/indigenous-knowledge",
+        "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
+        "https://www.ag.gov.au/rights-and-protections/copyright",
+        "https://www.business.qld.gov.au/running-business/risk/ip/ip-kit/browse-ip-topics/trade-secrets",
+        "https://www.wipo.int/portal/en/index.html",
+        "https://www.dfat.gov.au/trade/organisations/wto/intellectual-property",
+        "https://international.austrade.gov.au/en/do-business-with-australia/invest-in-australia/investor-guide/running-a-business/understanding-australian-business-regulations",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://ipta.org.au/community/get-free-consultation/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#article",
+      "description": "We cannot provide information on this right just yet",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#webpage"
+      },
+      "headline": "Other IP types",
+      "articleBody": "We cannot provide information on this right just yet",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-07-10",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-1-sorry-this-information-is-not-available-yet"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-2-this-right-is-currently-not-covered-by-the-navigation-tool"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-1-sorry-this-information-is-not-available-yet",
+      "headline": "Sorry, this information is not available yet",
+      "text": "",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#article"
+      },
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-2-this-right-is-currently-not-covered-by-the-navigation-tool",
+      "headline": "This right is currently not covered by the navigation tool",
+      "text": "Information relevant to the enforcement of other types of IP has not been included as part of the platform's pilot. However, IP First Response contains general information which may be useful for the enforcement of all intellectual property. Consider exploring the enforcement options and whether they may still contain information that's useful for your situation.   \n\nThis tool is currently in early-stage development and testing, aimed at determining its usefulness to rights holders like you. We invite you to provide feedback about this navigator tool, IP First Response, and your experience enforcing your IP through our IP First Response feedback form  and/or via email at ipfirstresponse@ipaustralia.gov.au \n\nIf you have other types of IP, you might be interested in the following resources: \n\n Geographical Indications (GIs) Geographical Indications And Trade Marks | IP Australia :\n Wine GIs are managed by the Department of Agriculture, Fisheries and Forestry.\n IP Australia  is responsible for the registration of GIs as certification trade marks for all goods.\n Specific enforcement mechanisms for spirits are managed by Food Standards Australia New Zealand.\n Indigenous Knowledge | IP Australia  or speak with IP Australia on Yarnline\n Copyright and circuit layout rights are managed by the Attorney-General's Department in Australia Copyright | Attorney-General's Department\n Trade secrets, know-how, and confidential information | Business Queensland\n Some IP rights recognised overseas, such as data and rights to publicity or your likeness ('image rights'), do not have specific IP protection in Australia. You can learn more about IP in general at WIPO - World Intellectual Property Organization\n\nPlease provide feedback about the IP type you're interested in and we will consider adding it to the tool in future. Thank you for your engagement with the tool.",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#article"
+      },
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder's Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder's Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act",
+      "description": "We cannot provide information on this right just yet."
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations",
+      "description": "We cannot provide information on this right just yet."
+    }
+  ]
+}
