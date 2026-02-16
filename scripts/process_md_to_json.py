@@ -26,7 +26,7 @@ from dataclasses import dataclass, field
 from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -105,6 +105,25 @@ IP_TOPIC_MAP: dict[str, str] = {
     "pbr": "https://www.wikidata.org/wiki/Q695112",
     "plant breeder's rights": "https://www.wikidata.org/wiki/Q695112",
     "plant breeder": "https://www.wikidata.org/wiki/Q695112",
+}
+
+# ── Canonical display names for IP topics (sentence case) ──
+# Ensures consistent naming regardless of CSV input casing.
+IP_TOPIC_DISPLAY_NAMES: dict[str, str] = {
+    "trade mark": "Trade mark",
+    "trade marks": "Trade mark",
+    "trademark": "Trade mark",
+    "unregistered-tm": "Unregistered trade mark",
+    "unregistered tm": "Unregistered trade mark",
+    "patent": "Patent",
+    "patents": "Patent",
+    "design": "Design",
+    "designs": "Design",
+    "copyright": "Copyright",
+    "pbr": "Plant breeder's rights",
+    "plant breeder's rights": "Plant breeder's rights",
+    "plant breeder": "Plant breeder's rights",
+    "intellectual property right": "Intellectual property",
 }
 
 # Headings whose content should be silently discarded (noise sections).
@@ -205,12 +224,12 @@ LEGISLATION_MAP: dict[str, list[tuple[str, str, str]]] = {
     "pbr": [
         (
             "https://www.legislation.gov.au/C2004A04783/latest/text",
-            "Plant Breeder\u2019s Rights Act 1994",
+            "Plant Breeder's Rights Act 1994",
             "Act",
         ),
         (
             "https://www.legislation.gov.au/F1996B02512/latest/text",
-            "Plant Breeder\u2019s Rights Regulations 1994",
+            "Plant Breeder's Rights Regulations 1994",
             "Regulations",
         ),
     ],
@@ -558,6 +577,26 @@ def _clean_text(text: str) -> str:
     return text.strip()
 
 
+def _strip_tracking_params(url: str) -> str:
+    """Remove known analytics/tracking query parameters from a URL.
+
+    Strips parameters matching common tracking patterns (_gl, _ga, utm_*)
+    and returns the cleaned URL. If all parameters are removed, the trailing
+    '?' is also stripped.
+    """
+    TRACKING_PREFIXES = ("utm_", "_gl", "_ga")
+    parsed = urlparse(url)
+    if not parsed.query:
+        return url
+    params = parse_qs(parsed.query, keep_blank_values=True)
+    cleaned = {
+        k: v for k, v in params.items()
+        if not any(k.startswith(prefix) for prefix in TRACKING_PREFIXES)
+    }
+    new_query = urlencode(cleaned, doseq=True) if cleaned else ""
+    return urlunparse(parsed._replace(query=new_query))
+
+
 def _extract_links(text: str, base_url: str = "") -> list[tuple[str, str]]:
     """Pull all markdown-style [text](url) links from the body.
     
@@ -594,6 +633,9 @@ def _extract_links(text: str, base_url: str = "") -> list[tuple[str, str]]:
             url_clean = raw_url
         else:
             continue  # Skip unresolvable relative paths.
+
+        # Strip known tracking query parameters before deduplication.
+        url_clean = _strip_tracking_params(url_clean)
 
         if url_clean not in seen_urls:
             seen_urls.add(url_clean)
@@ -746,13 +788,9 @@ def parse_markdown(md_text: str) -> ParsedMarkdown:
         )
 
     intro_text = "\n\n".join(p for p in intro_parts if p).strip()
-    # Strip any remaining link/formatting markup from intro for clean articleBody.
-    intro_text_clean = re.sub(r"\[!\[.*?\]\(.*?\)\]\(.*?\)", "", intro_text)
-    intro_text_clean = re.sub(r"!\[.*?\]\(.*?\)", "", intro_text_clean)
-    intro_text_clean = re.sub(r"\[\s*\]\([^\)]+\)", "", intro_text_clean)
-    intro_text_clean = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", intro_text_clean)
-    intro_text_clean = re.sub(r"\*\*(.+?)\*\*", r"\1", intro_text_clean)
-    intro_text_clean = re.sub(r"\n{3,}", "\n\n", intro_text_clean).strip()
+    # Run the unified body text formatter for consistent markdown stripping,
+    # footnote removal, and mojibake repair (replaces prior ad-hoc cleanup).
+    intro_text_clean = _format_body_text(intro_text)
 
     return ParsedMarkdown(
         page_url=page_url,
@@ -1020,8 +1058,11 @@ def resolve_about_topics(ip_right_field: str) -> list[dict]:
             continue
         seen.add(key)
 
-        # Build the display name with title-cased first letter.
-        display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
+        # Build the display name from the canonical map (sentence case).
+        display_name = IP_TOPIC_DISPLAY_NAMES.get(key)
+        if not display_name:
+            # Fallback: sentence-case the first letter only.
+            display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
 
         # Special case: the catch-all IP topic gets a descriptive name and
         # the Wikidata link for "intellectual property right".
@@ -1082,6 +1123,15 @@ def _format_body_text(raw_body: str) -> str:
     text = re.sub(r'\s*"[^"]*"\s*', "", text)
     # Normalise list bullets from * to -.
     text = re.sub(r"^(\s*)\*\s+", r"\1- ", text, flags=re.MULTILINE)
+    # Strip inline footnote reference markers at sentence boundaries.
+    # Matches 1-2 digits following a sentence-ending period, where the
+    # marker is followed by a space+uppercase letter (new sentence) or
+    # end-of-string. This avoids stripping legitimate decimals like "2.5%".
+    text = re.sub(r"(?<=\.)\d{1,2}(?=\s+[A-Z]|\s*$)", "", text)
+    # Also strip markers that follow closing punctuation at end of text.
+    text = re.sub(r"(?<=[\.\)\]\"\u2019])\d{1,2}\s*$", "", text)
+    # Strip trailing footnote blocks (consecutive lines like "1. Act s 18.").
+    text = re.sub(r"(?:\n\d+\.\s[^\n]+)+\s*$", "", text)
     # Normalise whitespace.
     text = re.sub(r"\n{3,}", "\n\n", text)
 
@@ -1099,13 +1149,14 @@ def build_jsonld(
 ) -> dict:
     """Assemble the full @graph JSON-LD document."""
 
-    base_url = parsed.page_url or (meta.canonical_url if meta else "")
+    base_url = (parsed.page_url or (meta.canonical_url if meta else "")).rstrip("/")
     udid = meta.udid if meta else ""
     main_title = _repair_mojibake((meta.main_title if meta else "") or parsed.title)
     description = _repair_mojibake((meta.description if meta else "").strip('"').strip())
-    # Fix 4: Use placeholder when description is empty.
+    # Fix 4: Use placeholder sentinel when description is empty;
+    # replaced by _validate_and_repair_jsonld() after build.
     if not description:
-        description = "xXx_PLACEHOLDER_xXx"
+        description = _PLACEHOLDER_SENTINEL
     pub_date = _parse_date(meta.publication_date) if meta else ""
     mod_date = _parse_date(meta.last_updated) if meta else ""
     disclaimer = _repair_mojibake((meta.additional_disclaimer if meta else "").strip())
@@ -1137,9 +1188,9 @@ def build_jsonld(
         is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
         if not is_ip_australia:
             provider_id = (
-                f"{provider_entry.url}/#organization"
+                f"{provider_entry.url.rstrip('/')}#organization"
                 if provider_entry.url
-                else f"{base_url}/#provider-organization"
+                else f"{base_url}#provider-organization"
             )
             provider_entity = {
                 "@type": provider_org_type,
@@ -1295,7 +1346,8 @@ def build_jsonld(
         }
 
     # ── Collect unique links ──
-    link_objects: list[dict] = []
+    IPFR_HOST = "ipfirstresponse.ipaustralia.gov.au"
+    link_objects: list = []
     seen_link_urls: set[str] = set()
 
     # Build a URL → canonical-title lookup from the full metatable so that
@@ -1311,12 +1363,20 @@ def build_jsonld(
     for url, anchor in parsed.links:
         if any(p in url for p in noise_patterns):
             continue
+        # Strip tracking parameters for deduplication.
+        url = _strip_tracking_params(url)
         # Skip self-referencing URLs (the page linking to itself).
         if base_url and url.rstrip("/") == base_url.rstrip("/"):
             continue
-        if url not in seen_link_urls:
-            seen_link_urls.add(url)
-            link_objects.append(url)
+        # Normalise for deduplication.
+        dedup_key = url.rstrip("/").lower()
+        if dedup_key not in seen_link_urls:
+            seen_link_urls.add(dedup_key)
+            # Internal IPFR links use structured @id references.
+            if IPFR_HOST in url:
+                link_objects.append({"@id": f"{url.rstrip('/')}#webpage"})
+            else:
+                link_objects.append(url)
 
     # ── Legislation ──
     legislation_entries = resolve_legislation(meta.relevant_ip_right) if meta else []
@@ -1356,21 +1416,8 @@ def build_jsonld(
         section_entities.append(disclaimer_entity)
         has_part_refs.append({"@id": disclaimer_id})
 
-    # ── Fix 8: Include the standard site disclaimer as content, not just
-    # metadata. This ensures it is visible to consumers of the @graph
-    # content, not buried in usageInfo alone. ──
-    std_disclaimer_pos = len(content_sections) + (2 if disclaimer_section_id else 1)
-    std_disclaimer_id = f"{base_url}#section-{std_disclaimer_pos}-standard-disclaimer"
-    std_disclaimer_entity = {
-        "@type": "WebPageElement",
-        "@id": std_disclaimer_id,
-        "headline": "Standard disclaimer",
-        "text": STANDARD_DISCLAIMER["text"],
-        "position": std_disclaimer_pos,
-        "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
-    }
-    section_entities.append(std_disclaimer_entity)
-    has_part_refs.append({"@id": std_disclaimer_id})
+    # ── Standard disclaimer is represented via usageInfo on the WebPage ──
+    # (No separate WebPageElement is created; this avoids triple-redundancy.)
 
     # ── Build the WebPage entity ──
     # Fix 3: Always use the H1 heading from markdown (parsed.title) as the
@@ -1431,6 +1478,8 @@ def build_jsonld(
         "license": DEFAULT_LICENCE,
         # Fix 1: Publisher is always IP Australia.
         "publisher": {"@id": IP_AUSTRALIA_ID},
+        # Author is IP Australia (content is authored by the agency).
+        "author": {"@id": IP_AUSTRALIA_ID},
         "mainEntityOfPage": {"@id": f"{base_url}#webpage"},
     }
 
@@ -1451,9 +1500,9 @@ def build_jsonld(
     # GovernmentService-specific fields.
     if archetype_type == "GovernmentService":
         main_entity["serviceType"] = meta.archetype if meta else "Government Service"
-        # Fix 1: serviceOperator is always IP Australia.
-        main_entity["serviceOperator"] = {"@id": IP_AUSTRALIA_ID}
-        # Fix 1: provider is the dynamic entity from the CSV.
+        # serviceOperator is derived from the CSV Provider column.
+        main_entity["serviceOperator"] = {"@id": provider_id}
+        # provider is also the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
         # Only include "text" if the body came from intro text, not from a
         # named section that already exists as a WebPageElement.
@@ -1486,8 +1535,6 @@ def build_jsonld(
     # the bidirectional hasPart/isPartOf relationship is consistent.
     if disclaimer_section_id:
         article_parts.append({"@id": disclaimer_section_id})
-    # Fix 8: Include the standard disclaimer in the main entity's hasPart.
-    article_parts.append({"@id": std_disclaimer_id})
     if article_parts:
         main_entity["hasPart"] = article_parts
 
@@ -1548,6 +1595,67 @@ def build_jsonld(
 
 
 # ──────────────────────────────────────────────────────────────────────
+# 11b. POST-BUILD VALIDATION
+# ──────────────────────────────────────────────────────────────────────
+
+_PLACEHOLDER_SENTINEL = "xXx_PLACEHOLDER_xXx"
+
+
+def _validate_and_repair_jsonld(jsonld: dict) -> dict:
+    """Post-build validation pass.
+
+    Currently handles:
+      - Replacing placeholder descriptions with a generated summary
+        derived from the first 160 characters of the articleBody, text,
+        or longest WebPageElement text in the main content entity.
+    """
+    graph = jsonld.get("@graph", [])
+
+    # Locate the main content entity (Article, GovernmentService, or Service)
+    # and extract its body text for summary generation.
+    body_text = ""
+    for entity in graph:
+        etype = entity.get("@type", "")
+        if etype in ("Article", "GovernmentService", "Service"):
+            body_text = entity.get("articleBody", "") or entity.get("text", "")
+            break
+
+    # Fallback: use the longest WebPageElement text (e.g. "What is it?" section).
+    if not body_text:
+        for entity in graph:
+            if entity.get("@type") == "WebPageElement":
+                candidate = entity.get("text", "")
+                if len(candidate) > len(body_text):
+                    body_text = candidate
+
+    # Generate a summary: first 160 characters, trimmed to the last whole word.
+    generated_summary = ""
+    if body_text:
+        truncated = body_text[:160].strip()
+        # Trim to the last complete word boundary.
+        if len(body_text) > 160:
+            last_space = truncated.rfind(" ")
+            if last_space > 80:
+                truncated = truncated[:last_space]
+            generated_summary = truncated.rstrip(".,;:- ") + "..."
+        else:
+            generated_summary = truncated
+
+    # Walk the graph and replace any placeholder descriptions.
+    for entity in graph:
+        if entity.get("description") == _PLACEHOLDER_SENTINEL:
+            if generated_summary:
+                entity["description"] = generated_summary
+                print(f"  [REPAIR] Generated description for {entity.get('@type', '?')}: "
+                      f"\"{generated_summary[:60]}...\"")
+            else:
+                print(f"  [WARN] No body text available to generate description for "
+                      f"{entity.get('@type', '?')}; placeholder remains.")
+
+    return jsonld
+
+
+# ──────────────────────────────────────────────────────────────────────
 # 12. MAIN PIPELINE
 # ──────────────────────────────────────────────────────────────────────
 
@@ -1567,6 +1675,7 @@ def process_single_file(
         print(f"  [WARN] {md_path.name} → no CSV match found; using defaults.")
 
     jsonld = build_jsonld(parsed, meta, metatable)
+    jsonld = _validate_and_repair_jsonld(jsonld)
 
     # Determine output filename: prefer UDID-based naming.
     if meta and meta.udid:
