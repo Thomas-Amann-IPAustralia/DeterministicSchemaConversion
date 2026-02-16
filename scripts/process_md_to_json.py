@@ -1285,6 +1285,14 @@ def build_jsonld(
         slug = _slugify(sec.heading)
         sec_id = f"{base_url}#section-{idx}-{slug}"
         section_ids.append(sec_id)
+        # isPartOf must reference a CreativeWork. Article qualifies, but
+        # Service and GovernmentService do not, so sections fall back to
+        # the WebPage (which is always a CreativeWork).
+        is_part_of_id = (
+            f"{base_url}#{archetype_type.lower()}"
+            if archetype_type == "Article"
+            else f"{base_url}#webpage"
+        )
         section_entities.append(
             {
                 "@type": "WebPageElement",
@@ -1292,7 +1300,7 @@ def build_jsonld(
                 "headline": sec.heading,
                 "text": _format_body_text(sec.body),
                 "position": idx,
-                "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
+                "isPartOf": {"@id": is_part_of_id},
             }
         )
 
@@ -1405,13 +1413,19 @@ def build_jsonld(
         disclaimer_slug = "disclaimer"
         disclaimer_id = f"{base_url}#section-{len(content_sections) + 1}-{disclaimer_slug}"
         disclaimer_section_id = disclaimer_id
+        # isPartOf target: Article (CreativeWork) or WebPage for Service types.
+        disclaimer_parent_id = (
+            f"{base_url}#{archetype_type.lower()}"
+            if archetype_type == "Article"
+            else f"{base_url}#webpage"
+        )
         disclaimer_entity = {
             "@type": "WebPageElement",
             "@id": disclaimer_id,
             "headline": "Disclaimer",
             "text": disclaimer,
             "position": len(content_sections) + 1,
-            "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
+            "isPartOf": {"@id": disclaimer_parent_id},
         }
         section_entities.append(disclaimer_entity)
         has_part_refs.append({"@id": disclaimer_id})
@@ -1520,28 +1534,35 @@ def build_jsonld(
             main_entity["text"] = article_body_text
 
     # HowTo reference (if applicable).
-    if howto_entity:
-        main_entity["hasPart"] = [{"@id": f"{base_url}#howto"}]
-        article_parts = main_entity.get("hasPart", [])
+    # hasPart is only valid on CreativeWork subtypes (e.g. Article), not on
+    # Service or GovernmentService. For non-Article archetypes, the WebPage
+    # (which IS a CreativeWork) already carries the hasPart references to
+    # sections, FAQ and disclaimer; we add HowTo there too.
+    if archetype_type == "Article":
+        article_parts: list[dict] = []
+        if howto_entity:
+            article_parts.append({"@id": f"{base_url}#howto"})
+        for sid in section_ids:
+            article_parts.append({"@id": sid})
+        if faq_entity:
+            article_parts.append({"@id": faq_id})
+        if disclaimer_section_id:
+            article_parts.append({"@id": disclaimer_section_id})
+        if article_parts:
+            main_entity["hasPart"] = article_parts
     else:
-        article_parts = []
+        # For Service / GovernmentService, add HowTo to the WebPage's
+        # hasPart (sections and FAQ are already there).
+        if howto_entity:
+            has_part_refs.append({"@id": f"{base_url}#howto"})
 
-    # Attach section + FAQ references to the main entity.
-    for sid in section_ids:
-        article_parts.append({"@id": sid})
-    if faq_entity:
-        article_parts.append({"@id": faq_id})
-    # Fix 6: Include the disclaimer in the main entity's hasPart so that
-    # the bidirectional hasPart/isPartOf relationship is consistent.
-    if disclaimer_section_id:
-        article_parts.append({"@id": disclaimer_section_id})
-    if article_parts:
-        main_entity["hasPart"] = article_parts
-
-    # Fix 6: Use "mentions" instead of "citation" (the documents reference
-    # but do not formally cite the legislative instruments).
+    # "mentions" is a CreativeWork property, so it belongs on the Article
+    # or the WebPage, not on Service / GovernmentService.
     if citation_refs:
-        main_entity["mentions"] = citation_refs
+        if archetype_type == "Article":
+            main_entity["mentions"] = citation_refs
+        else:
+            webpage_entity["mentions"] = citation_refs
 
     # Related links belong on the WebPage entity. relatedLink expects
     # plain URL strings per the Schema.org spec (not WebPage objects).
