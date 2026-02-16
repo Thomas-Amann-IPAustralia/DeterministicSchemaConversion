@@ -117,8 +117,8 @@ IP_TOPIC_DISPLAY_NAMES: dict[str, str] = {
     "unregistered tm": "Unregistered trade mark",
     "patent": "Patent",
     "patents": "Patent",
-    "design": "Design right",
-    "designs": "Design right",
+    "design": "Design",
+    "designs": "Design",
     "copyright": "Copyright",
     "pbr": "Plant breeder's rights",
     "plant breeder's rights": "Plant breeder's rights",
@@ -1380,7 +1380,9 @@ def build_jsonld(
         dedup_key = url.rstrip("/").lower()
         if dedup_key not in seen_link_urls:
             seen_link_urls.add(dedup_key)
-            # Internal IPFR links use structured @id references.
+            # Internal IPFR links use @id references to enable graph
+            # traversal by JSON-LD-aware AI consumers. External links
+            # remain plain URL strings.
             if IPFR_HOST in url:
                 link_objects.append({"@id": f"{url.rstrip('/')}#webpage"})
             else:
@@ -1478,24 +1480,35 @@ def build_jsonld(
         webpage_entity["copyrightYear"] = copyright_year
         webpage_entity["copyrightHolder"] = {"@id": IP_AUSTRALIA_ID}
     webpage_entity["creditText"] = "Source: IP First Response initiative led by IP Australia"
+    # For Service / GovernmentService types, "text" is a CreativeWork
+    # property and is not valid on the main entity. Preserve any intro
+    # body text (not already in a named section) on the WebPage instead.
+    if archetype_type != "Article" and article_body_text and not article_body_from_section:
+        webpage_entity["text"] = article_body_text
     if has_part_refs:
         webpage_entity["hasPart"] = has_part_refs
 
     # ── Build the main content entity (Article / GovernmentService / Service) ──
     # Fix 3: Use H1 from markdown as the canonical title.
     # Fix 4: Use "name" for Service types; "headline" only for Article.
+    #
+    # Service and GovernmentService inherit from Thing > Intangible > Service,
+    # NOT from CreativeWork. Only properties valid on the target type are
+    # included; CreativeWork-specific properties (inLanguage, license,
+    # publisher, author, text) are confined to Article and the WebPage.
     main_entity: dict = {
         "@type": archetype_type,
         "@id": f"{base_url}#{archetype_type.lower()}",
         "description": description,
-        "inLanguage": DEFAULT_LANGUAGE,
-        "license": DEFAULT_LICENCE,
-        # Fix 1: Publisher is always IP Australia.
-        "publisher": {"@id": IP_AUSTRALIA_ID},
-        # Author is IP Australia (content is authored by the agency).
-        "author": {"@id": IP_AUSTRALIA_ID},
         "mainEntityOfPage": {"@id": f"{base_url}#webpage"},
     }
+
+    # CreativeWork-only properties (valid on Article, not on Service types).
+    if archetype_type == "Article":
+        main_entity["inLanguage"] = DEFAULT_LANGUAGE
+        main_entity["license"] = DEFAULT_LICENCE
+        main_entity["publisher"] = {"@id": IP_AUSTRALIA_ID}
+        main_entity["author"] = {"@id": IP_AUSTRALIA_ID}
 
     # Fix 4: Articles use "headline"; Service types use "name".
     if archetype_type == "Article":
@@ -1518,20 +1531,12 @@ def build_jsonld(
         main_entity["serviceOperator"] = {"@id": provider_id}
         # provider is also the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
-        # Only include "text" if the body came from intro text, not from a
-        # named section that already exists as a WebPageElement.
-        if article_body_text and not article_body_from_section:
-            main_entity["text"] = article_body_text
 
     # Service-specific fields (non-government / commercial).
     if archetype_type == "Service":
         main_entity["serviceType"] = meta.archetype if meta else "Service"
-        # Fix 1: provider is the dynamic entity from the CSV.
+        # provider is the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
-        # Only include "text" if the body came from intro text, not from a
-        # named section that already exists as a WebPageElement.
-        if article_body_text and not article_body_from_section:
-            main_entity["text"] = article_body_text
 
     # HowTo reference (if applicable).
     # hasPart is only valid on CreativeWork subtypes (e.g. Article), not on
