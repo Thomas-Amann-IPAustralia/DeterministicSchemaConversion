@@ -55,7 +55,7 @@ IP_AUSTRALIA_ENTITY: dict = {
     },
     "sameAs": [ "https://www.wikidata.org/wiki/Q5973650",
     "https://en.wikipedia.org/wiki/IP_Australia"
-    ]
+    ],
     "knowsAbout": [
       "Intellectual Property",
       "Patents",
@@ -240,6 +240,7 @@ class ProviderEntry:
     name: str
     url: str
     same_as: list[str] = field(default_factory=list)
+    alternate_name: str | list[str] | None = None
     org_type: str = "Organization"  # default; overridden per-archetype
 
 
@@ -247,21 +248,21 @@ class ProviderEntry:
 _GOV_PROVIDERS: dict[str, ProviderEntry] = {
     "ip australia": ProviderEntry(
         name="IP Australia",
-        alternateName="Intellectual Property Australia",
+        alternate_name="Intellectual Property Australia",
         url="https://www.ipaustralia.gov.au",
         same_as=["https://www.wikidata.org/wiki/Q5973154"],
         org_type="GovernmentOrganization",
     ),
     "australian border force": ProviderEntry(
         name="Australian Border Force",
-        alternateName="ABF",
+        alternate_name="ABF",
         url="https://www.abf.gov.au",
         same_as=["https://www.wikidata.org/wiki/Q17000879"],
         org_type="GovernmentOrganization",
     ),
     "australian small business and family enterprise ombudsman": ProviderEntry(
         name="Australian Small Business and Family Enterprise Ombudsman",
-        alternateName="ASBFEO",
+        alternate_name="ASBFEO",
         url="https://www.asbfeo.gov.au",
         same_as=["https://www.asbfeo.gov.au"],
         org_type="GovernmentOrganization",
@@ -274,7 +275,7 @@ _GOV_PROVIDERS: dict[str, ProviderEntry] = {
     ),
     "trans-tasman ip attorneys board": ProviderEntry(
         name="Trans-Tasman IP Attorneys Board",
-        alternateName="TTIPA",
+        alternate_name="TTIPA",
         url="https://www.ttipattorney.gov.au",
         same_as=["https://www.ttipattorney.gov.au"],
         org_type="GovernmentOrganization",
@@ -285,14 +286,14 @@ _GOV_PROVIDERS: dict[str, ProviderEntry] = {
 _NGO_PROVIDERS: dict[str, ProviderEntry] = {
     "auda": ProviderEntry(
         name=".au Domain Administration",
-        alternateName="auDA",
+        alternate_name="auDA",
         url="https://www.auda.org.au",
         same_as=["https://www.wikidata.org/wiki/Q151602"],
         org_type="NGO",
     ),
     "world intellectual property office": ProviderEntry(
         name="World Intellectual Property Organization",
-        alternateName="WIPO",
+        alternate_name="WIPO",
         url="https://www.wipo.int",
         same_as=["https://www.wikidata.org/wiki/Q177773"],
         org_type="NGO",
@@ -337,7 +338,7 @@ _COMMERCIAL_PROVIDERS: dict[str, ProviderEntry] = {
     ),
     "qualified facilitator": ProviderEntry(
         name="Qualified facilitator",
-        same_as=["https://www.wikidata.org/wiki/Q1150166"]
+        same_as=["https://www.wikidata.org/wiki/Q1150166"],
         url="",
         org_type="Organization",
     ),
@@ -358,7 +359,7 @@ _COMMERCIAL_PROVIDERS: dict[str, ProviderEntry] = {
     ),
     "online marketplaces": ProviderEntry(
         name="Online Marketplaces",
-        same_as=["https://www.wikidata.org/wiki/Q3390477"]
+        same_as=["https://www.wikidata.org/wiki/Q3390477"],
         url="",
         org_type="Organization",
     ),
@@ -1022,6 +1023,19 @@ def resolve_about_topics(ip_right_field: str) -> list[dict]:
         # Build the display name with title-cased first letter.
         display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
 
+        # Special case: the catch-all IP topic gets a descriptive name and
+        # the Wikidata link for "intellectual property right".
+        if "any dispute" in key and "intellectual property" in key:
+            display_name = "A topic which relates to all intellectual property"
+            thing: dict = {
+                "@type": "Thing",
+                "name": display_name,
+                "description": display_name,
+                "sameAs": IP_TOPIC_MAP.get("intellectual property right", ""),
+            }
+            things.append(thing)
+            continue
+
         thing: dict = {"@type": "Thing", "name": display_name}
 
         # Attach Wikidata sameAs if available.
@@ -1137,6 +1151,8 @@ def build_jsonld(
                 provider_entity["url"] = provider_entry.url
             if provider_entry.same_as:
                 provider_entity["sameAs"] = provider_entry.same_as
+            if provider_entry.alternate_name:
+                provider_entity["alternateName"] = provider_entry.alternate_name
 
     # ── Classify sections and build sub-entities ──
     faq_questions: list[ParsedSection] = []
@@ -1382,7 +1398,7 @@ def build_jsonld(
             "@type": "BusinessAudience",
             "audienceType": "Small and medium businesses",
             "geographicArea": {"@type": "Country", "name": "Australia"},
-                "alternateName": [
+            "alternateName": [
                 "Startups",
                 "Entrepreneurs",
                 "SME",
@@ -1392,7 +1408,7 @@ def build_jsonld(
                 "Small to Medium Enterprise",
                 "Sole Trader",
                 "Australian Small Business Owners"
-                ],
+            ],
         },
         # Fix 5: Always include the standard hardcoded disclaimer.
         "usageInfo": STANDARD_DISCLAIMER,
