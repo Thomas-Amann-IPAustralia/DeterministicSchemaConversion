@@ -10,7 +10,25 @@
         "@type": "GovernmentOrganization",
         "name": "Australian Government"
       },
-      "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973650",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
     },
     {
       "@type": "GovernmentOrganization",
@@ -18,8 +36,9 @@
       "name": "Australian Border Force",
       "url": "https://www.abf.gov.au",
       "sameAs": [
-        "https://www.abf.gov.au"
-      ]
+        "https://www.wikidata.org/wiki/Q17000879"
+      ],
+      "alternateName": "ABF"
     },
     {
       "@type": "WebSite",
@@ -64,7 +83,18 @@
         "geographicArea": {
           "@type": "Country",
           "name": "Australia"
-        }
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Spinout Company",
+          "Startup",
+          "Spinout",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
       },
       "usageInfo": {
         "@type": "CreativeWork",
@@ -87,7 +117,7 @@
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "creditText": "IP First Response initiative led by IP Australia",
+      "creditText": "Source: IP First Response initiative led by IP Australia",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#section-1-standard-disclaimer"

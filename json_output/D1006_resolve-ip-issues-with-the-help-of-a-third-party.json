@@ -10,12 +10,33 @@
         "@type": "GovernmentOrganization",
         "name": "Australian Government"
       },
-      "sameAs": "https://www.wikidata.org/wiki/Q5973650"
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973650",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Copyright",
+        "Dispute Resolution"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
     },
     {
       "@type": "Organization",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation/#provider-organization",
-      "name": "Mediator"
+      "name": "Mediator",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q4859473"
+      ]
     },
     {
       "@type": "WebSite",
@@ -38,7 +59,9 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Any dispute related to intellectual property"
+          "name": "A topic which relates to all intellectual property",
+          "description": "A topic which relates to all intellectual property",
+          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
         }
       ],
       "inLanguage": "en-AU",
@@ -49,7 +72,18 @@
         "geographicArea": {
           "@type": "Country",
           "name": "Australia"
-        }
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Spinout Company",
+          "Startup",
+          "Spinout",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
       },
       "usageInfo": {
         "@type": "CreativeWork",
@@ -72,7 +106,7 @@
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "creditText": "IP First Response initiative led by IP Australia",
+      "creditText": "Source: IP First Response initiative led by IP Australia",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#faq"
