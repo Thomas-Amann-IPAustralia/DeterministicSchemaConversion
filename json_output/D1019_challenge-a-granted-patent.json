@@ -79,6 +79,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent",
+          "name": "Request A Re-examination Of A Patent | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        }
       ]
     },
     {
@@ -118,32 +144,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent",
-          "url": "https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent",
-          "name": "Request A Re-examination Of A Patent | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "getting professional assistance with your IP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipta.org.au/community/get-free-consultation/",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "30 minute consultations with an attorney"
         }
       ]
     },

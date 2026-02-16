@@ -82,6 +82,50 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#section-3-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "name": "Respond to an unjustified threat"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://manuals.ipaustralia.gov.au/design/amending-a-registration",
+          "url": "https://manuals.ipaustralia.gov.au/design/amending-a-registration",
+          "name": "22.3. Amendments: Amending a registration | IPA Manuals"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1",
+          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1",
+          "name": "IP Australia's fee schedule"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "name": "How to apply for a design right | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+          "name": "Design rights timeframes and fees | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/what-are-design-rights",
+          "url": "https://www.ipaustralia.gov.au/design-rights/what-are-design-rights",
+          "name": "What are design rights? | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        }
       ]
     },
     {
@@ -124,50 +168,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-          "name": "Respond to an unjustified threat | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://manuals.ipaustralia.gov.au/design/amending-a-registration",
-          "url": "https://manuals.ipaustralia.gov.au/design/amending-a-registration",
-          "name": "22.3. Amendments: Amending a registration | IPA Manuals"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1",
-          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1",
-          "name": "IP Australia's fee schedule"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
-          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
-          "name": "How to apply for a design right | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
-          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
-          "name": "Design rights timeframes and fees | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/what-are-design-rights",
-          "url": "https://www.ipaustralia.gov.au/design-rights/what-are-design-rights",
-          "name": "What are design rights? | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
         }
       ]
     },

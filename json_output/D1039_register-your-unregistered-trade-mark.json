@@ -84,46 +84,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "GovernmentService",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#governmentservice",
-      "description": "Strengthen your position as the registered owner of your trade mark in Australia",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#webpage"
-      },
-      "name": "Register your unregistered trade mark",
-      "serviceType": "Government Service",
-      "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
       ],
       "relatedLink": [
         {
@@ -167,6 +127,46 @@
           "@id": "https://ipta.org.au/community/get-free-consultation/",
           "url": "https://ipta.org.au/community/get-free-consultation/",
           "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#governmentservice",
+      "description": "Strengthen your position as the registered owner of your trade mark in Australia",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#webpage"
+      },
+      "name": "Register your unregistered trade mark",
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
         }
       ]
     },

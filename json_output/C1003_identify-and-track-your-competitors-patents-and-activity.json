@@ -76,6 +76,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/identify-and-track-patents-and-activity-your-competitors#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+          "name": "Check your idea against existing patents."
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "name": "Australian Patent Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "Get professional assistance with your IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956",
+          "url": "https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956",
+          "name": "Freedom to Operate search strategies | WIPO"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub",
+          "url": "https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub",
+          "name": "Patent analytics for business decision-making | IP Australia"
+        }
       ]
     },
     {
@@ -108,38 +140,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
-          "name": "Freedom to Operate (FTO) searches"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "name": "Australian Patent Search"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "Get professional assistance with your IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956",
-          "url": "https://www.wipo.int/en/web/wipo-magazine/articles/ip-and-business-launching-a-new-product-freedom-to-operate-34956",
-          "name": "Freedom to Operate search strategies | WIPO"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub",
-          "url": "https://www.ipaustralia.gov.au/tools-resources/patent-analytics-hub",
-          "name": "Patent analytics for business decision-making | IP Australia"
         }
       ]
     },

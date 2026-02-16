@@ -78,79 +78,19 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#article",
-      "description": "Work with an IP professional to come to an agreement with another party",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#webpage"
-      },
-      "headline": "Agree to a formal commercial arrangement",
-      "articleBody": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute. While negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.   \n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their lawyers to communicate on their behalf.   \n\nNegotiation for a commercial outcome is particularly suitable if you and the other party are involved:   \n\n can have a discussion and make decisions without relying on formal procedures\n want to maintain ongoing relationship with the other parties involved\n want to find productive ways to resolve the dispute, which can benefit all parties involved\n would like to maintain control over the outcome, rather than having someone hand down a decision\n want to keep discussions confidential (if the parties involved agree that the negotiations will be confidential).\n\nIn deciding whether negotiation is a suitable pathway, you can consider:  \n\n whether you can identify and contact the other parties involved\n the other parties' willingness to participate in negotiations\n when and where negotiation will take place\n how decisions will be made and observed\n each party's desires, needs and priorities in relation to the disputed issues\n whether you will negotiate directly with the other party or whether you will be assisted by representatives or support people\n what outcomes would benefit each of the parties involved\n- your next steps if the negotiation does not yield an agreement.\n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other parties involved or find it challenging to communicate with the other parties. For this reason, representatives such as lawyers are commonly used.  \n\nIn some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see - Resolve IP issues with the help of a third party | IP Australia First Response).",
-      "datePublished": "2025-02-28",
-      "dateModified": "2025-09-08",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#section-1-exercise-caution-before-making-accusations-of-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-          "name": "Resolve IP issues with the help of a third party | IP Australia First Response"
+          "name": "Resolve IP issues with the help of a third party"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
+          "name": "Navigator tool suspected infringement"
         },
         {
           "@type": "WebPage",
@@ -217,6 +157,66 @@
           "@id": "https://ipta.org.au/community/get-free-consultation/",
           "url": "https://ipta.org.au/community/get-free-consultation/",
           "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#article",
+      "description": "Work with an IP professional to come to an agreement with another party",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#webpage"
+      },
+      "headline": "Agree to a formal commercial arrangement",
+      "articleBody": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute. While negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process.   \n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their lawyers to communicate on their behalf.   \n\nNegotiation for a commercial outcome is particularly suitable if you and the other party are involved:   \n\n can have a discussion and make decisions without relying on formal procedures\n want to maintain ongoing relationship with the other parties involved\n want to find productive ways to resolve the dispute, which can benefit all parties involved\n would like to maintain control over the outcome, rather than having someone hand down a decision\n want to keep discussions confidential (if the parties involved agree that the negotiations will be confidential).\n\nIn deciding whether negotiation is a suitable pathway, you can consider:  \n\n whether you can identify and contact the other parties involved\n the other parties' willingness to participate in negotiations\n when and where negotiation will take place\n how decisions will be made and observed\n each party's desires, needs and priorities in relation to the disputed issues\n whether you will negotiate directly with the other party or whether you will be assisted by representatives or support people\n what outcomes would benefit each of the parties involved\n- your next steps if the negotiation does not yield an agreement.\n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other parties involved or find it challenging to communicate with the other parties. For this reason, representatives such as lawyers are commonly used.  \n\nIn some cases, having a neutral third party such as a mediator may help you overcome these challenges and facilitate an outcome, as opposed to direct negotiation (see - Resolve IP issues with the help of a third party | IP Australia First Response).",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-09-08",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#section-1-exercise-caution-before-making-accusations-of-infringement"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

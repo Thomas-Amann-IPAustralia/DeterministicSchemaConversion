@@ -83,70 +83,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "GovernmentService",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#governmentservice",
-      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage"
-      },
-      "name": "Report a scam, fraud or risk to public interest",
-      "serviceType": "Government Service",
-      "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest/#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
@@ -159,13 +95,13 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
+          "name": "Navigator tool suspected infringement"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-          "name": "Receiving a letter of demand."
+          "name": "Receiving a letter of demand"
         },
         {
           "@type": "WebPage",
@@ -232,6 +168,70 @@
           "@id": "https://www.afp.gov.au/crimes/fraud-and-corruption",
           "url": "https://www.afp.gov.au/crimes/fraud-and-corruption",
           "name": "Fraud and corruption | Australian Federal Police"
+        }
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#governmentservice",
+      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage"
+      },
+      "name": "Report a scam, fraud or risk to public interest",
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest/#provider-organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

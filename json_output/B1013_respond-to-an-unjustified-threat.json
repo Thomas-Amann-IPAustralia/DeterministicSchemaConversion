@@ -81,6 +81,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#section-3-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.fcfcoa.gov.au/gfl/gfl-fees",
+          "url": "https://www.fcfcoa.gov.au/gfl/gfl-fees",
+          "name": "Federal Court and Family Court of Australia | Fees"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
+          "url": "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
+          "name": "Federal Court of Australia | Fees"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/find-an-attorney/",
+          "url": "https://ipta.org.au/community/find-an-attorney/",
+          "name": "See an IP Professional"
+        }
       ]
     },
     {
@@ -144,32 +170,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.fcfcoa.gov.au/gfl/gfl-fees",
-          "url": "https://www.fcfcoa.gov.au/gfl/gfl-fees",
-          "name": "Federal Court and Family Court of Australia | Fees"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
-          "url": "https://www.fedcourt.gov.au/forms-and-fees/court-fees",
-          "name": "Federal Court of Australia | Fees"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipta.org.au/community/find-an-attorney/",
-          "url": "https://ipta.org.au/community/find-an-attorney/",
-          "name": "See an IP Professional"
         }
       ]
     },

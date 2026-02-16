@@ -90,6 +90,44 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-6-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+          "name": "Trade mark infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+          "name": "Patent infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+          "name": "Design infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+          "name": "Plant breeders right pbr infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+          "name": "Copyright infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+          "name": "Unregistered trade marks"
+        }
       ]
     },
     {
@@ -161,44 +199,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
-          "name": "Trade mark infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
-          "name": "Patent infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
-          "name": "Design infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
-          "name": "Plant Breeder's Rights (PBR) infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
-          "name": "Copyright infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
-          "name": "Unregistered trade marks"
         }
       ]
     },

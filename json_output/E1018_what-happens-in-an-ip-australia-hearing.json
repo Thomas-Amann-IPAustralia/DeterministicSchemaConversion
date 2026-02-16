@@ -72,6 +72,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+          "name": "Opposition hearings | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+          "name": "How to challenge someone else's IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "name": "Challenge granted patent 0"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+          "name": "Challenge registration trade mark"
+        }
       ]
     },
     {
@@ -125,32 +151,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
-          "name": "Opposition hearings | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
-          "name": "How to challenge someone else's IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
-          "name": "Challenge a granted patent | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
-          "name": "Challenge the registration of a trade mark | IP Australia First Response"
         }
       ]
     },

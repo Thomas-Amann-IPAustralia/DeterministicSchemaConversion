@@ -72,6 +72,14 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-and-how-does-it-protect-me#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/",
+          "url": "https://www.ipaustralia.gov.au/",
+          "name": "IP Australia | Protect The Value Of Your Ideas"
+        }
       ]
     },
     {
@@ -125,14 +133,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/",
-          "url": "https://www.ipaustralia.gov.au/",
-          "name": "IP Australia | Protect The Value Of Your Ideas"
         }
       ]
     },

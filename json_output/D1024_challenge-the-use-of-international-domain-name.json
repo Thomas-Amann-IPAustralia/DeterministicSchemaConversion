@@ -96,52 +96,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-3-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#service",
-      "description": "Dispute an international domain name that infringes your trade mark",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#webpage"
-      },
-      "name": "Challenge the use of international domain name",
-      "serviceType": "Non-Government Third-Party Authority",
-      "provider": {
-        "@id": "https://www.wipo.int/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-3-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
@@ -166,7 +120,7 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
+          "name": "Navigator tool suspected infringement"
         },
         {
           "@type": "WebPage",
@@ -269,6 +223,52 @@
           "@id": "https://www.copyright.org.au/legal-advice/",
           "url": "https://www.copyright.org.au/legal-advice/",
           "name": "Australian Copyright Council"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#service",
+      "description": "Dispute an international domain name that infringes your trade mark",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#webpage"
+      },
+      "name": "Challenge the use of international domain name",
+      "serviceType": "Non-Government Third-Party Authority",
+      "provider": {
+        "@id": "https://www.wipo.int/#organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-2-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-3-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

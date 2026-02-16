@@ -83,74 +83,13 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#service",
-      "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
-      },
-      "name": "Resolve IP issues with the help of a third party",
-      "serviceType": "Commercial Third Party Service",
-      "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation/#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
+          "name": "Navigator tool suspected infringement"
         },
         {
           "@type": "WebPage",
@@ -204,7 +143,7 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
-          "name": "WIPO ADR Options"
+          "name": "Access international arbitration and mediation services"
         },
         {
           "@type": "WebPage",
@@ -276,7 +215,7 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-          "name": "Understanding alternative dispute resolution"
+          "name": "Resolve conflicts help experienced facilitators"
         },
         {
           "@type": "WebPage",
@@ -319,6 +258,67 @@
           "@id": "https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24",
           "url": "https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24",
           "name": "Annual Reports 2023-24"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#service",
+      "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
+      },
+      "name": "Resolve IP issues with the help of a third party",
+      "serviceType": "Commercial Third Party Service",
+      "provider": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation/#provider-organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

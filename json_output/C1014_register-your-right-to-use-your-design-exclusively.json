@@ -79,6 +79,44 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-right-use-your-design-exclusively#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://portal.ipaustralia.gov.au/login",
+          "url": "https://portal.ipaustralia.gov.au/login",
+          "name": "IP Australia's Online Services"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design",
+          "name": "Request certification registered design"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "name": "How to apply for a design right | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
+          "name": "Design rights timeframes and fees | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
+          "url": "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
+          "name": "Understanding designs"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        }
       ]
     },
     {
@@ -118,44 +156,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://portal.ipaustralia.gov.au/login",
-          "url": "https://portal.ipaustralia.gov.au/login",
-          "name": "IP Australia's Online Services"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design",
-          "name": "Request Certification for a Registered Design"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
-          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
-          "name": "How to apply for a design right | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
-          "url": "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
-          "name": "Design rights timeframes and fees | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
-          "url": "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
-          "name": "Understanding designs"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
         }
       ]
     },

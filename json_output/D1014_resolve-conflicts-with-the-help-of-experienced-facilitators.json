@@ -83,86 +83,25 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#service",
-      "description": "Understand more about the options in the ADR space.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
-      },
-      "name": "Resolve conflicts with the help of experienced facilitators",
-      "serviceType": "Commercial Third Party Service",
-      "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#provider-organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-          "name": "mediation"
+          "name": "Resolve IP issues with the help of a third party"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
-          "name": "arbitration"
+          "name": "Resolve IP issues with the help of a third party"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au",
           "url": "https://ipfirstresponse.ipaustralia.gov.au",
-          "name": "IP First Response website"
+          "name": "https://ipfirstresponse.ipaustralia.gov.au"
         },
         {
           "@type": "WebPage",
@@ -241,6 +180,67 @@
           "@id": "https://ipta.org.au/community/get-free-consultation/",
           "url": "https://ipta.org.au/community/get-free-consultation/",
           "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#service",
+      "description": "Understand more about the options in the ADR space.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+      },
+      "name": "Resolve conflicts with the help of experienced facilitators",
+      "serviceType": "Commercial Third Party Service",
+      "provider": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR/#provider-organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

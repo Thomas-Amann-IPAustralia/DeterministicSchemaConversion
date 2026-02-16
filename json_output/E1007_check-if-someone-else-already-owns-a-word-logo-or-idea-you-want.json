@@ -72,6 +72,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-if-someone-else-already-owns-word-logo-or-idea-you-want#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
+          "name": "How to search existing trade marks | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+          "url": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+          "name": "How to search existing patents | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
+          "name": "How to search existing designs | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
+          "url": "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
+          "name": "An Introduction to Copyright in Australia - ACC - INFO010 - Australian Copyright Council"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.auda.org.au/au-domain-names/au-tools/",
+          "url": "https://www.auda.org.au/au-domain-names/au-tools/",
+          "name": ".au tools"
+        }
       ]
     },
     {
@@ -125,38 +157,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
-          "name": "How to search existing trade marks | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-          "url": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-          "name": "How to search existing patents | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-          "name": "How to search existing designs | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
-          "url": "https://www.copyright.org.au/browse/book/ACC-An-Introduction-to-Copyright-in-Australia-INFO010",
-          "name": "An Introduction to Copyright in Australia - ACC - INFO010 - Australian Copyright Council"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.auda.org.au/au-domain-names/au-tools/",
-          "url": "https://www.auda.org.au/au-domain-names/au-tools/",
-          "name": ".au tools"
         }
       ]
     },

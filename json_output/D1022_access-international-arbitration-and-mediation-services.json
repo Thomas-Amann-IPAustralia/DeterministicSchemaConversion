@@ -113,67 +113,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#service",
-      "description": "Seek dispute resolution through the WIPO Arbitration and Mediation Center",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
-      },
-      "name": "Access international arbitration and mediation services",
-      "serviceType": "Non-Government Third-Party Authority",
-      "provider": {
-        "@id": "https://www.wipo.int/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
@@ -186,7 +125,7 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-          "name": "General ADR Card"
+          "name": "resolve conflicts with the help of experienced facilitators"
         },
         {
           "@type": "WebPage",
@@ -240,7 +179,7 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas",
-          "name": "IP First Response webpage on enforcing your IP overseas"
+          "name": "Considerations before enforcing your IP overseas"
         },
         {
           "@type": "WebPage",
@@ -318,19 +257,19 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-          "name": "IP First Response Option Guide: Understanding alternative dispute resolution"
+          "name": "Resolve conflicts help experienced facilitators"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-          "name": "IP First Response Option Guide: Mediation"
+          "name": "Resolve IP issues with the help of a third party"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
-          "name": "IP First Response Option Guide: Arbitration"
+          "name": "Resolve IP issues with the help of a third party"
         },
         {
           "@type": "WebPage",
@@ -355,6 +294,67 @@
           "@id": "https://ipta.org.au/community/get-free-consultation/",
           "url": "https://ipta.org.au/community/get-free-consultation/",
           "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#service",
+      "description": "Seek dispute resolution through the WIPO Arbitration and Mediation Center",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
+      },
+      "name": "Access international arbitration and mediation services",
+      "serviceType": "Non-Government Third-Party Authority",
+      "provider": {
+        "@id": "https://www.wipo.int/#organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

@@ -79,6 +79,44 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://worldwide.espacenet.com/",
+          "url": "https://worldwide.espacenet.com/",
+          "name": "Espacenet - patent search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "name": "Australian patent Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.lens.org/",
+          "url": "https://www.lens.org/",
+          "name": "The Lens"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+          "url": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
+          "name": "How to search existing patents | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+          "name": "How to engage an IP attorney |Trans-Tasman IP Attorneys Regulation"
+        }
       ]
     },
     {
@@ -114,44 +152,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://worldwide.espacenet.com/",
-          "url": "https://worldwide.espacenet.com/",
-          "name": "Espacenet - patent search"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "name": "Australian patent Search"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.lens.org/",
-          "url": "https://www.lens.org/",
-          "name": "The Lens"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-          "url": "https://www.ipaustralia.gov.au/patents/search-existing-patents",
-          "name": "How to search existing patents | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
-          "name": "How to engage an IP attorney |Trans-Tasman IP Attorneys Regulation"
         }
       ]
     },

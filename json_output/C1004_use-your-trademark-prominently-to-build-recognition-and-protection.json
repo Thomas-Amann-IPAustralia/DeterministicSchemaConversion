@@ -81,6 +81,26 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+          "name": "Obtain legal advice help manage your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+          "name": "What are trade marks? | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://business.gov.au/marketing-and-advertising",
+          "url": "https://business.gov.au/marketing-and-advertising",
+          "name": "Marketing and advertising | business.gov.au"
+        }
       ]
     },
     {
@@ -113,26 +133,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
-          "name": "engage third-party services"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
-          "name": "What are trade marks? | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://business.gov.au/marketing-and-advertising",
-          "url": "https://business.gov.au/marketing-and-advertising",
-          "name": "Marketing and advertising | business.gov.au"
         }
       ]
     },

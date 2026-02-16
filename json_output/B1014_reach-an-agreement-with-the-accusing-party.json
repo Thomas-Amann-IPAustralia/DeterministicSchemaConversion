@@ -75,6 +75,20 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+          "name": "Agree commercial arrangement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+          "name": "Access help tailored to resolve business disputes"
+        }
       ]
     },
     {
@@ -131,20 +145,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
-          "name": "Agree to a commercial arrangement | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-          "name": "Access help tailored to resolve business disputes  | IP Australia First Response"
         }
       ]
     },

@@ -80,6 +80,26 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+          "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/business/ip-audit",
+          "url": "https://www.wipo.int/en/web/business/ip-audit",
+          "name": "Uncovering IP Risks and Potential: IP Audit"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
+          "url": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
+          "name": "WIPO IP Diagnostics"
+        }
       ]
     },
     {
@@ -136,26 +156,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
-          "name": "comprehensive IP strategy"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/business/ip-audit",
-          "url": "https://www.wipo.int/en/web/business/ip-audit",
-          "name": "Uncovering IP Risks and Potential: IP Audit"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
-          "url": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
-          "name": "WIPO IP Diagnostics"
         }
       ]
     },

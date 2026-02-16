@@ -78,66 +78,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-3-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#article",
-      "description": "We cannot provide information on this right just yet",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#webpage"
-      },
-      "headline": "Other IP types",
-      "articleBody": "We cannot provide information on this right just yet",
-      "datePublished": "2025-02-28",
-      "dateModified": "2025-07-10",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-1-sorry-this-information-is-not-available-yet"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-2-this-right-is-currently-not-covered-by-the-navigation-tool"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-3-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
@@ -217,6 +157,66 @@
           "@id": "https://ipta.org.au/community/get-free-consultation/",
           "url": "https://ipta.org.au/community/get-free-consultation/",
           "name": "30 minute consultations with an attorney"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#article",
+      "description": "We cannot provide information on this right just yet",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#webpage"
+      },
+      "headline": "Other IP types",
+      "articleBody": "We cannot provide information on this right just yet",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-07-10",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-1-sorry-this-information-is-not-available-yet"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-2-this-right-is-currently-not-covered-by-the-navigation-tool"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/other-ip-types#section-3-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },

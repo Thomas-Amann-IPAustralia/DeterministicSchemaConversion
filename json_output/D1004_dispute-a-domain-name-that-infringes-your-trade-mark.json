@@ -93,6 +93,50 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
+          "url": "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
+          "name": "auDRP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
+          "url": "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
+          "name": "auDRP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.artslaw.com.au/services/legal-query-form/",
+          "url": "https://www.artslaw.com.au/services/legal-query-form/",
+          "name": "Arts Law Centre of Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.copyright.org.au/legal-advice/",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "Australian Copyright Council"
+        }
       ]
     },
     {
@@ -135,50 +179,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
-          "url": "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
-          "name": "auDRP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
-          "url": "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
-          "name": "auDRP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "getting professional assistance with your IP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipta.org.au/community/get-free-consultation/",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "30 minute consultations with an attorney"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.artslaw.com.au/services/legal-query-form/",
-          "url": "https://www.artslaw.com.au/services/legal-query-form/",
-          "name": "Arts Law Centre of Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.copyright.org.au/legal-advice/",
-          "url": "https://www.copyright.org.au/legal-advice/",
-          "name": "Australian Copyright Council"
         }
       ]
     },

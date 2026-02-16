@@ -72,6 +72,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
+          "name": "Can i protect my ideas other countries"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip",
+          "url": "https://www.ipaustralia.gov.au/international-ip",
+          "name": "International intellectual property | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "name": "Prevent international infringement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/madrid-system",
+          "url": "https://www.wipo.int/en/web/madrid-system",
+          "name": "WIPO Madrid System - International Trademark Protection"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/pct-system",
+          "url": "https://www.wipo.int/en/web/pct-system",
+          "name": "PCT - The International Patent System"
+        }
       ]
     },
     {
@@ -125,38 +157,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
-          "name": "Can I protect my ideas in other countries? | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/international-ip",
-          "url": "https://www.ipaustralia.gov.au/international-ip",
-          "name": "International intellectual property | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
-          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
-          "name": "Prevent international infringement | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/madrid-system",
-          "url": "https://www.wipo.int/en/web/madrid-system",
-          "name": "WIPO Madrid System - International Trademark Protection"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/pct-system",
-          "url": "https://www.wipo.int/en/web/pct-system",
-          "name": "PCT - The International Patent System"
         }
       ]
     },

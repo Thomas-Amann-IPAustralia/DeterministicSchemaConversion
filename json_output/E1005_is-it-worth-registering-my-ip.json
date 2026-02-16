@@ -72,6 +72,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/it-worth-registering-my-ip#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "name": "Choosing the right IP tool | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
+          "url": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
+          "name": "Why its important to register your IP | Business.Gov"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip",
+          "name": "Why should I value my IP assets | IP Australia"
+        }
       ]
     },
     {
@@ -125,32 +151,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
-          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
-          "name": "Choosing the right IP tool | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone is using my IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
-          "url": "https://business.gov.au/news/your-top-ip-questions-answered#:~:text=It&apos;s%20important%20to%20protect%20your,using%20your%20ideas%20without%20permission",
-          "name": "Why its important to register your IP | Business.Gov"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/why-its-important-to-value-ip",
-          "name": "Why should I value my IP assets | IP Australia"
         }
       ]
     },

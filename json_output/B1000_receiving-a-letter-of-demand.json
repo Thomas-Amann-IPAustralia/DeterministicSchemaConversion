@@ -84,6 +84,92 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-4-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+          "name": "What is IP Infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
+          "name": "IP legal professional"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Trans-Tasman IP Attorney registry"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://abr.business.gov.au/",
+          "url": "https://abr.business.gov.au/",
+          "name": "ABN lookup tool"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+          "name": "Choose not to respond immediately"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
+          "name": "De escalate and resolve disputes informally"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+          "name": "Obtain legal advice your situation"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
+          "url": "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
+          "name": "misleading or sent in bad faith"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "name": "without going to court."
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+          "name": "Ceasing use contested IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "name": "resolve conflicts with the help of experienced facilitators"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
+          "name": "Evaluate situation deciding what do"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        }
       ]
     },
     {
@@ -149,92 +235,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
-          "name": "What Ip Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
-          "name": "IP legal professional"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "name": "Trans-Tasman IP Attorney registry"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://abr.business.gov.au/",
-          "url": "https://abr.business.gov.au/",
-          "name": "ABN lookup tool"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
-          "name": "Choose not to respond immediately"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
-          "name": "personally respond"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
-          "name": "speak to an IP lawyer or IP attorney"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
-          "url": "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
-          "name": "misleading or sent in bad faith"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-          "name": "without going to court."
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
-          "name": "agree to stop the alleged conduct"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-          "name": "alternative dispute resolution process, such as mediation"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
-          "name": "Evaluate the situation before deciding what to do | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone is using my IP | IP Australia"
         }
       ]
     },

@@ -81,6 +81,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-4-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+          "name": "Australian Trade Mark Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://search.ipaustralia.gov.au/designs/search/quick",
+          "url": "https://search.ipaustralia.gov.au/designs/search/quick",
+          "name": "Australian Design Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipsearch.ipaustralia.gov.au/pbr/",
+          "url": "https://ipsearch.ipaustralia.gov.au/pbr/",
+          "name": "the Australian PBR Search,"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
+          "name": "the Australian Patent Search"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        }
       ]
     },
     {
@@ -148,38 +180,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://search.ipaustralia.gov.au/trademarks/search/quick",
-          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
-          "name": "Australian Trade Mark Search"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://search.ipaustralia.gov.au/designs/search/quick",
-          "url": "https://search.ipaustralia.gov.au/designs/search/quick",
-          "name": "Australian Design Search"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipsearch.ipaustralia.gov.au/pbr/",
-          "url": "https://ipsearch.ipaustralia.gov.au/pbr/",
-          "name": "the Australian PBR Search,"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "url": "https://ipsearch.ipaustralia.gov.au/patents/",
-          "name": "the Australian Patent Search"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
         }
       ]
     },

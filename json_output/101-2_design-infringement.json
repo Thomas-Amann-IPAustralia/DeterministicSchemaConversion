@@ -82,6 +82,20 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#section-3-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
+          "name": "How to apply for a design right"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        }
       ]
     },
     {
@@ -124,20 +138,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
-          "url": "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
-          "name": "How to apply for a design right"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
         }
       ]
     },

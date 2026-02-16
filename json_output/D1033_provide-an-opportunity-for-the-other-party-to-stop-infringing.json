@@ -84,6 +84,74 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#section-4-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "name": "Respond to an unjustified threat"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+          "name": "Infringement 101"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "name": "Heres some helpful information enforcement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
+          "name": "Request certification your registered design"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
+          "url": "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
+          "name": "Five steps to resolve your dispute | ASBFEO"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+          "url": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
+          "name": "Your Guide to Dispute Resolution | Attorney-General's Department"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+          "name": "What To Consider Before Taking Legal Action | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone Is Using My IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        }
       ]
     },
     {
@@ -149,74 +217,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-          "name": "unjustified threat"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
-          "name": "what infringement can look like"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
-          "name": "what infringement looks like"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
-          "name": "Request certification for your registered design | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
-          "url": "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
-          "name": "Five steps to resolve your dispute | ASBFEO"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
-          "url": "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
-          "name": "Your Guide to Dispute Resolution | Attorney-General's Department"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-          "name": "What To Consider Before Taking Legal Action | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone Is Using My IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
-          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "getting professional assistance with your IP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipta.org.au/community/get-free-consultation/",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "30 minute consultations with an attorney"
         }
       ]
     },

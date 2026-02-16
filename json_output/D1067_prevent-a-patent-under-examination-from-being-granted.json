@@ -79,6 +79,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://portal.ipaustralia.gov.au/login",
+          "url": "https://portal.ipaustralia.gov.au/login",
+          "name": "IP Australia's eServices"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
+          "url": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
+          "name": "5.6.4.5 Third Party Notifications | IPA Manuals"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+          "name": "Challenge a new or amended patent"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+          "name": "Challenge granted patent 0"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
+          "name": "Seek binding, authoritative decisions"
+        }
       ]
     },
     {
@@ -118,38 +150,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://portal.ipaustralia.gov.au/login",
-          "url": "https://portal.ipaustralia.gov.au/login",
-          "name": "IP Australia's eServices"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
-          "url": "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
-          "name": "5.6.4.5 Third Party Notifications | IPA Manuals"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
-          "name": "Challenge a new or amended patent | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
-          "name": "Challenge a granted patent | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
-          "name": "Seek binding, authoritative decisions | IP Australia First Response"
         }
       ]
     },

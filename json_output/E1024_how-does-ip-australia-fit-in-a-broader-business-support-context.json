@@ -72,6 +72,14 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-does-ip-australia-compare-other-government-services#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/about-us",
+          "url": "https://www.ipaustralia.gov.au/about-us",
+          "name": "About us | IP Australia"
+        }
       ]
     },
     {
@@ -125,14 +133,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/about-us",
-          "url": "https://www.ipaustralia.gov.au/about-us",
-          "name": "About us | IP Australia"
         }
       ]
     },

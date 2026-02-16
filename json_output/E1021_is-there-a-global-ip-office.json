@@ -72,6 +72,50 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",
+          "url": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",
+          "name": "How to apply for IP overseas | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
+          "name": "Prevent international infringement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/about-wipo/en/",
+          "url": "https://www.wipo.int/about-wipo/en/",
+          "name": "Inside WIPO"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/pct-system",
+          "url": "https://www.wipo.int/en/web/pct-system",
+          "name": "PCT - The International Patent System"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/madrid-system",
+          "url": "https://www.wipo.int/en/web/madrid-system",
+          "name": "WIPO Madrid System - International Trademark Protection"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/en/web/hague-system",
+          "url": "https://www.wipo.int/en/web/hague-system",
+          "name": "Hague System - The International Design System"
+        }
       ]
     },
     {
@@ -125,50 +169,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone is using my IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",
-          "url": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",
-          "name": "How to apply for IP overseas | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
-          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
-          "name": "Prevent international infringement | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/about-wipo/en/",
-          "url": "https://www.wipo.int/about-wipo/en/",
-          "name": "Inside WIPO"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/pct-system",
-          "url": "https://www.wipo.int/en/web/pct-system",
-          "name": "PCT - The International Patent System"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/madrid-system",
-          "url": "https://www.wipo.int/en/web/madrid-system",
-          "name": "WIPO Madrid System - International Trademark Protection"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/en/web/hague-system",
-          "url": "https://www.wipo.int/en/web/hague-system",
-          "name": "Hague System - The International Design System"
         }
       ]
     },

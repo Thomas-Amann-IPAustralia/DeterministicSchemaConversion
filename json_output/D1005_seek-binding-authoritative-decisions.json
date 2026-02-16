@@ -96,59 +96,19 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-3-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#service",
-      "description": "Escalate a wide range of trade mark matters to court",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
-      },
-      "name": "Seek binding, authoritative decisions",
-      "serviceType": "Non-Government Third-Party Authority",
-      "provider": {
-        "@id": "https://www.fedcourt.gov.au/#organization"
-      },
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-3-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
       ],
       "relatedLink": [
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
+          "name": "Navigator tool suspected infringement"
         },
         {
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
-          "name": "Seek an urgent injunction"
+          "name": "Seek a court order to prevent further damage while preparing for court."
         },
         {
           "@type": "WebPage",
@@ -191,6 +151,46 @@
           "@id": "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024",
           "url": "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024",
           "name": "Annual Report 2023-2024"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#service",
+      "description": "Escalate a wide range of trade mark matters to court",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
+      },
+      "name": "Seek binding, authoritative decisions",
+      "serviceType": "Non-Government Third-Party Authority",
+      "provider": {
+        "@id": "https://www.fedcourt.gov.au/#organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-2-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#section-3-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
         }
       ]
     },

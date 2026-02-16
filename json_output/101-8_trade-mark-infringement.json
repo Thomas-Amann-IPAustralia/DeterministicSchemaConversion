@@ -86,6 +86,20 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#section-3-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks",
+          "name": "Kinds of Trade Marks"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services",
+          "name": "Classes of Goods and Services"
+        }
       ]
     },
     {
@@ -124,20 +138,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/kinds-of-trade-marks",
-          "name": "Kinds of Trade Marks"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks/what-are-classes-of-goods-and-services",
-          "name": "Classes of Goods and Services"
         }
       ]
     },

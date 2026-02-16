@@ -72,6 +72,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-check-getting-registered-ip#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
+          "name": "matching what you have to the right IP type."
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+          "name": "Australian Trade Mark Search (ATMS)"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+          "name": "TM Checker"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks",
+          "url": "https://www.ipaustralia.gov.au/trade-marks",
+          "name": "Trade marks | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/patents",
+          "url": "https://www.ipaustralia.gov.au/patents",
+          "name": "Patents | IP Australia"
+        }
       ]
     },
     {
@@ -125,38 +157,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
-          "url": "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
-          "name": "matching what you have to the right IP type."
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://search.ipaustralia.gov.au/trademarks/search/quick",
-          "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
-          "name": "Australian Trade Mark Search (ATMS)"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
-          "name": "TM Checker"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks",
-          "url": "https://www.ipaustralia.gov.au/trade-marks",
-          "name": "Trade marks | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/patents",
-          "url": "https://www.ipaustralia.gov.au/patents",
-          "name": "Patents | IP Australia"
         }
       ]
     },

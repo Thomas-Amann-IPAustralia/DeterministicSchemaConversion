@@ -72,6 +72,50 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/why-so-expensive#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+          "name": "All enforcement options"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+          "name": "resolve conflicts with the help of experienced facilitators"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone is using my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+          "name": "Access help tailored to resolve business disputes"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.wipo.int/amc/en/",
+          "url": "https://www.wipo.int/amc/en/",
+          "name": "Alternative Dispute Resolution | WIPO AMC"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.fedcourt.gov.au/services/ADR/mediation",
+          "url": "https://www.fedcourt.gov.au/services/ADR/mediation",
+          "name": "Mediation | Federal Court of Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
+          "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
+          "name": "Costs Practice Note (GPN-COSTS) | Federal Court of Australia"
+        }
       ]
     },
     {
@@ -125,50 +169,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
-          "name": "All enforcement options | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-          "name": "Resolve conflicts with the help of experienced facilitators   | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone is using my IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
-          "name": "Access help tailored to resolve business disputes  | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.wipo.int/amc/en/",
-          "url": "https://www.wipo.int/amc/en/",
-          "name": "Alternative Dispute Resolution | WIPO AMC"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.fedcourt.gov.au/services/ADR/mediation",
-          "url": "https://www.fedcourt.gov.au/services/ADR/mediation",
-          "name": "Mediation | Federal Court of Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
-          "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs",
-          "name": "Costs Practice Note (GPN-COSTS) | Federal Court of Australia"
         }
       ]
     },

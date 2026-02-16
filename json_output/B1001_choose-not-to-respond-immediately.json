@@ -75,6 +75,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+          "name": "Receiving a letter of demand"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+          "name": "Ceasing use contested IP"
+        }
       ]
     },
     {
@@ -131,32 +157,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-          "name": "Receiving a letter of demand"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "url": "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-          "name": "Find an IP attorney or firm | Trans-Tasman IP Attorneys Board"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
-          "name": "IP First Response | Ceasing use of contested IP"
         }
       ]
     },

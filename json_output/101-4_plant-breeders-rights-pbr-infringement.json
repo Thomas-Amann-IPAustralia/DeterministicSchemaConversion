@@ -85,6 +85,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pbr-infringement#section-4-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available",
+          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available",
+          "name": "'Additional rights available'"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety",
+          "name": "How to label my protected plant variety"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights",
+          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights",
+          "name": "What are plant breeder's rights"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        }
       ]
     },
     {
@@ -130,32 +156,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available",
-          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available",
-          "name": "'Additional rights available'"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety",
-          "name": "How to label my protected plant variety"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights",
-          "url": "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights",
-          "name": "What are plant breeder's rights"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
         }
       ]
     },

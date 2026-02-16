@@ -87,6 +87,32 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+          "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
+          "name": "Dispute Support Tool"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+          "name": "Resolve conflicts help experienced facilitators"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        }
       ]
     },
     {
@@ -150,32 +176,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-          "url": "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-          "name": "Dispute Support Tool"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-          "name": "Alternative dispute resolution (ADR)   | IP First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "getting professional assistance with your IP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipta.org.au/community/get-free-consultation/",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "30 minute consultations with an attorney"
         }
       ]
     },

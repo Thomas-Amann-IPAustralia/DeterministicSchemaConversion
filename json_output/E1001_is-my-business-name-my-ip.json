@@ -75,6 +75,26 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#section-2-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
+          "url": "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
+          "name": "Register a business name | ASIC"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
+          "url": "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
+          "name": "Register a company | ASIC"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
+          "name": "What are trade marks? | IP Australia"
+        }
       ]
     },
     {
@@ -131,26 +151,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
-          "url": "https://www.asic.gov.au/for-business-and-companies/business-names/register-a-business-name/",
-          "name": "Register a business name | ASIC"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
-          "url": "https://www.asic.gov.au/for-business-and-companies/companies/register-a-company/",
-          "name": "Register a company | ASIC"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
-          "url": "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
-          "name": "What are trade marks? | IP Australia"
         }
       ]
     },

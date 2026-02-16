@@ -75,6 +75,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ask-your-suppliers-and-sellers-help-protect-your-ip#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+          "name": "Stop infringement facilitated online"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+          "name": "Respond to an unjustified threat"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+          "name": "Help customers differentiate between your products and lookalikes"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
+          "name": "How to prevent infringement of my IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.productsafety.gov.au/business/recall-an-unsafe-product",
+          "url": "https://www.productsafety.gov.au/business/recall-an-unsafe-product",
+          "name": "Recall an unsafe product | ACCC Product Safety"
+        }
       ]
     },
     {
@@ -131,38 +163,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
-          "name": "Stop infringement facilitated online | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-          "name": "unjustified threats"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
-          "name": "Help customers differentiate between your products and lookalikes | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
-          "name": "How to prevent infringement of my IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.productsafety.gov.au/business/recall-an-unsafe-product",
-          "url": "https://www.productsafety.gov.au/business/recall-an-unsafe-product",
-          "name": "Recall an unsafe product | ACCC Product Safety"
         }
       ]
     },

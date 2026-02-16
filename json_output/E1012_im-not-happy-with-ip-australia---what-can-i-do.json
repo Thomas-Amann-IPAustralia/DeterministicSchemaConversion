@@ -72,6 +72,38 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/i-am-not-happy-ip-australia-what-can-i-do#section-1-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+          "name": "What are the ways to challenge a decision IP Australia has made?"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/about-us/contact-us",
+          "url": "https://www.ipaustralia.gov.au/about-us/contact-us",
+          "name": "contact channels"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
+          "url": "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
+          "name": "the Commonwealth Ombudsman"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/feedback-form",
+          "url": "https://www.ipaustralia.gov.au/feedback-form",
+          "name": "Feedback form | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
+          "url": "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
+          "name": "APS Code of Conduct | Australian Public Service Commission"
+        }
       ]
     },
     {
@@ -125,38 +157,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
-          "name": "What can I do if I disagree with IP Australia's examination decision? | IP Australia First Response"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/about-us/contact-us",
-          "url": "https://www.ipaustralia.gov.au/about-us/contact-us",
-          "name": "contact channels"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
-          "url": "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
-          "name": "the Commonwealth Ombudsman"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/feedback-form",
-          "url": "https://www.ipaustralia.gov.au/feedback-form",
-          "name": "Feedback form | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
-          "url": "https://www.apsc.gov.au/working-aps/integrity/integrity-resources/code-of-conduct",
-          "name": "APS Code of Conduct | Australian Public Service Commission"
         }
       ]
     },

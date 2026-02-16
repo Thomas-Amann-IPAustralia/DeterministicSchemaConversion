@@ -107,6 +107,86 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-3-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
+          "url": "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
+          "name": "Australian"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://lookup.icann.org/en",
+          "url": "https://lookup.icann.org/en",
+          "name": "international WHOIS databases"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+          "name": "Heres some helpful information enforcement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+          "name": "Copyright infringement"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
+          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
+          "name": "Prevent International Infringement | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+          "name": "Someone Is Using My IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
+          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
+          "name": "How To Prevent Infringement Of My IP | IP Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/",
+          "url": "https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/",
+          "name": ".au WHOIS tool: look up .au domain names  | auDA"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces",
+          "url": "https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces",
+          "name": "Protecting your IP rights on e-commerce marketplaces  - EUIPO"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+          "name": "getting professional assistance with your IP"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipta.org.au/community/get-free-consultation/",
+          "url": "https://ipta.org.au/community/get-free-consultation/",
+          "name": "30 minute consultations with an attorney"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.artslaw.com.au/services/legal-query-form/",
+          "url": "https://www.artslaw.com.au/services/legal-query-form/",
+          "name": "Arts Law Centre of Australia"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.copyright.org.au/legal-advice/",
+          "url": "https://www.copyright.org.au/legal-advice/",
+          "name": "Australian Copyright Council"
+        }
       ]
     },
     {
@@ -170,86 +250,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
-          "url": "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
-          "name": "Australian"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://lookup.icann.org/en",
-          "url": "https://lookup.icann.org/en",
-          "name": "international WHOIS databases"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
-          "name": "Evidence you can collect about infringements"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
-          "name": "copyright infringement page"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
-          "url": "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
-          "name": "Prevent International Infringement | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
-          "name": "Someone Is Using My IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
-          "url": "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
-          "name": "How To Prevent Infringement Of My IP | IP Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/",
-          "url": "https://www.auda.org.au/au-domain-names/learn-about-au-domain-names/how-to-use-the-au-whois-tool/",
-          "name": ".au WHOIS tool: look up .au domain names  | auDA"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces",
-          "url": "https://www.euipo.europa.eu/en/observatory/enforcement/tools/protecting-ip-rights-e-commerce-marketplaces",
-          "name": "Protecting your IP rights on e-commerce marketplaces  - EUIPO"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "url": "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-          "name": "getting professional assistance with your IP"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipta.org.au/community/get-free-consultation/",
-          "url": "https://ipta.org.au/community/get-free-consultation/",
-          "name": "30 minute consultations with an attorney"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.artslaw.com.au/services/legal-query-form/",
-          "url": "https://www.artslaw.com.au/services/legal-query-form/",
-          "name": "Arts Law Centre of Australia"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.copyright.org.au/legal-advice/",
-          "url": "https://www.copyright.org.au/legal-advice/",
-          "name": "Australian Copyright Council"
         }
       ]
     },

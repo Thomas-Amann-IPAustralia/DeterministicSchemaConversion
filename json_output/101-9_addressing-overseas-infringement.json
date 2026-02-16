@@ -81,6 +81,20 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-4-standard-disclaimer"
         }
+      ],
+      "relatedLink": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
+          "url": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
+          "name": "How to Apply for IP Overseas"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
+          "name": "Navigator tool suspected infringement"
+        }
       ]
     },
     {
@@ -143,20 +157,6 @@
         },
         {
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
-      ],
-      "relatedLink": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
-          "url": "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
-          "name": "How to Apply for IP Overseas"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
         }
       ]
     },

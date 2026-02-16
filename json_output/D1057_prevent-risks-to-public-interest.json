@@ -80,63 +80,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-2-standard-disclaimer"
         }
-      ]
-    },
-    {
-      "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#article",
-      "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#webpage"
-      },
-      "headline": "Prevent risks to public interest",
-      "articleBody": "You, as the owner of your IP, are responsible for enforcing your IP rights.   \n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.   \n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement. \n\n##### If the infringement involves IP crime\n\nMost IP infringement is not a criminal matter. However, under Australian law it can be a criminal offence to engage in:\n\n trade mark counterfeiting\n certain copyright infringements -- generally involving commercial dealings or done on a commercial scale\n- plant breeder's rights infringement.\n\nThese usually become a police matter when activity is serious, for example if it poses imminent risk of public harm or is highly organised or widespread. The Australian Federal Police (AFP) focuses on taking action against organisers, major importers and wholesalers of counterfeit goods. These goods pose public safety risks and can be used to support organised crime, money laundering and cybercrime. \n\nSales of counterfeit goods can be reported to Crime Stoppers. If you suspect links to serious or organised crime like the above, phone 131 444 and report the matter to your local police. \n\n##### If the infringement involves counterfeit medicines or medical devices\n\nCounterfeit medicines and medical devices are particularly serious as they can cause harm to users or not work as intended. Counterfeit medical products should be reported to the Therapeutic Goods Administration (TGA) at this page.  \n\n##### If there is serious risk of consumer harm\n\nCounterfeit goods are often substandard or low quality, which can be dangerous. Some IP infringement involves making false and misleading claims. These things can harm consumers and are not allowed under the Australian Consumer Law (ACL).  \n\nConsumer harm/issues/concerns can be reported to the Australian Consumer and Competition Commission (ACCC) at this page. These reports can help inform future compliance activity. Please note the ACCC does not usually resolve individual complaints.  \n\n##### Scams and fraudulent activity\n\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to your IP rights, you can report this activity to Product and service scams | Scamwatch. \n\nThere are a number of scams relating to managing IP rights, which is unfortunately a problem around the world. You can read more about these on IP Australia's website at Scams related to managing IP Rights | IP Australia  and learn how to report these at How to report fraud and corruption | IP Australia. Sometimes this will also mean reporting to Scamwatch.",
-      "datePublished": "2025-02-28",
-      "dateModified": "2025-12-02",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-1-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-2-standard-disclaimer"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
-        }
       ],
       "relatedLink": [
         {
@@ -149,7 +92,7 @@
           "@type": "WebPage",
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
           "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-          "name": "Navigator Tool Suspected Infringement"
+          "name": "Navigator tool suspected infringement"
         },
         {
           "@type": "WebPage",
@@ -228,6 +171,63 @@
           "@id": "https://www.copyright.org.au/legal-advice/",
           "url": "https://www.copyright.org.au/legal-advice/",
           "name": "Australian Copyright Council"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#article",
+      "description": "Inform Government about risks to public health, crime, counterfeiting, frauds & scams.",
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#webpage"
+      },
+      "headline": "Prevent risks to public interest",
+      "articleBody": "You, as the owner of your IP, are responsible for enforcing your IP rights.   \n\nHowever, sometimes IP infringement is accompanied by other serious issues, such as dangerous goods, serious crime, fraud and scams. In these cases, it may be appropriate to report the IP infringement to government regulators.   \n\nThis option is most relevant to counterfeit goods (where a trade mark is used on physical products). However, in some cases it will also be applicable to other types of IP infringement. \n\n##### If the infringement involves IP crime\n\nMost IP infringement is not a criminal matter. However, under Australian law it can be a criminal offence to engage in:\n\n trade mark counterfeiting\n certain copyright infringements -- generally involving commercial dealings or done on a commercial scale\n- plant breeder's rights infringement.\n\nThese usually become a police matter when activity is serious, for example if it poses imminent risk of public harm or is highly organised or widespread. The Australian Federal Police (AFP) focuses on taking action against organisers, major importers and wholesalers of counterfeit goods. These goods pose public safety risks and can be used to support organised crime, money laundering and cybercrime. \n\nSales of counterfeit goods can be reported to Crime Stoppers. If you suspect links to serious or organised crime like the above, phone 131 444 and report the matter to your local police. \n\n##### If the infringement involves counterfeit medicines or medical devices\n\nCounterfeit medicines and medical devices are particularly serious as they can cause harm to users or not work as intended. Counterfeit medical products should be reported to the Therapeutic Goods Administration (TGA) at this page.  \n\n##### If there is serious risk of consumer harm\n\nCounterfeit goods are often substandard or low quality, which can be dangerous. Some IP infringement involves making false and misleading claims. These things can harm consumers and are not allowed under the Australian Consumer Law (ACL).  \n\nConsumer harm/issues/concerns can be reported to the Australian Consumer and Competition Commission (ACCC) at this page. These reports can help inform future compliance activity. Please note the ACCC does not usually resolve individual complaints.  \n\n##### Scams and fraudulent activity\n\nIf your IP is being used as part of a scam or fraudulent activity (for example through email phishing activity), or if you have been the victim of a scam related to your IP rights, you can report this activity to Product and service scams | Scamwatch. \n\nThere are a number of scams relating to managing IP rights, which is unfortunately a problem around the world. You can read more about these on IP Australia's website at Scams related to managing IP Rights | IP Australia  and learn how to report these at How to report fraud and corruption | IP Australia. Sometimes this will also mean reporting to Scamwatch.",
+      "datePublished": "2025-02-28",
+      "dateModified": "2025-12-02",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-1-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-2-standard-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },
