@@ -53,7 +53,7 @@ IP_AUSTRALIA_ENTITY: dict = {
         "@type": "GovernmentOrganization",
         "name": "Australian Government",
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650",
+    "sameAs": "https://www.wikidata.org/wiki/Q5973154",
 }
 
 # ── Standard disclaimer (hardcoded on every page as usageInfo) ──
