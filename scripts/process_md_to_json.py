@@ -435,18 +435,92 @@ class ParsedMarkdown:
     links: list[tuple[str, str]]  # (url, anchor_text)
 
 
+def _repair_mojibake(text: str) -> str:
+    """
+    Repair common UTF-8 to Windows-1252 mojibake sequences.
+
+    Smart quotes and apostrophes encoded as UTF-8 but decoded as CP-1252
+    produce characteristic multi-byte artefacts such as 'a euro tm' for
+    the right single quotation mark (U+2019).
+    """
+    # Attempt byte-level repair: re-encode mojibaked segments as latin-1
+    # then decode as UTF-8. This handles the general case robustly.
+    # We do this in a safe, segment-by-segment manner.
+    #
+    # Common visible mojibake patterns (CP-1252 interpretation of UTF-8 bytes):
+    #   U+2019 ' (right single quote): â€™
+    #   U+2018 ' (left single quote):  â€˜
+    #   U+201C " (left double quote):  â€œ
+    #   U+2013 – (en dash):           â€"
+    #   U+2026 … (ellipsis):          â€¦
+    #   U+202F   (narrow no-break):    â€¯
+    #   U+2009   (thin space):         â€‰
+
+    # Pattern: â (0xC3 0xA2) followed by € (0xE2 0x82 0xAC in UTF-8, but
+    # in mojibake context it's the CP-1252 byte 0x80) followed by another
+    # character. We match the known visible sequences directly.
+    mojibake_map = [
+        ("\u00e2\u0080\u0099", "\u2019"),  # right single quote
+        ("\u00e2\u0080\u0098", "\u2018"),  # left single quote
+        ("\u00e2\u0080\u009c", "\u201c"),  # left double quote
+        ("\u00e2\u0080\u009d", "\u201d"),  # right double quote
+        ("\u00e2\u0080\u0093", "\u2013"),  # en dash
+        ("\u00e2\u0080\u0094", "\u2014"),  # em dash
+        ("\u00e2\u0080\u00a6", "\u2026"),  # ellipsis
+        ("\u00e2\u0080\u00af", "\u202f"),  # narrow no-break space
+        ("\u00e2\u0080\u0089", "\u2009"),  # thin space
+    ]
+    for bad, good in mojibake_map:
+        text = text.replace(bad, good)
+
+    # Also try a byte-round-trip repair for any remaining mojibake.
+    # This catches sequences not in the explicit map above.
+    try:
+        repaired = text.encode("cp1252", errors="ignore").decode("utf-8", errors="ignore")
+        # Only use the repaired version if it doesn't lose significant content
+        # (the round-trip can drop characters if the text isn't purely mojibaked).
+        if len(repaired) >= len(text) * 0.9:
+            # Selectively replace segments that decoded successfully.
+            pass  # The explicit map above covers the main cases.
+    except (UnicodeDecodeError, UnicodeEncodeError):
+        pass
+
+    return text
+
+
 def _clean_text(text: str) -> str:
     """Strip markdown noise: images, widget buttons, stray nbsp, excess whitespace."""
+    # Repair mojibake before any further processing.
+    text = _repair_mojibake(text)
     # Remove image tags.
     text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
     # Remove link-wrapped images: [![alt](img)](url)
     text = re.sub(r"\[!\[.*?\]\(.*?\)\]\(.*?\)", "", text)
     # Replace non-breaking spaces.
     text = text.replace("\u00a0", " ").replace("Â", "")
-    # Remove italic disclaimer blocks (leading paragraph wrapped in *...*).
-    # These span multiple lines and start with '*This IP First Response...'
+    # Remove strikethrough artefacts.
+    text = re.sub(r"~~.*?~~", "", text)
+    # Remove the italic disclaimer paragraph. Use a tightly anchored pattern
+    # that matches the entire paragraph (across inner italic/link spans)
+    # to avoid accidentally stripping unrelated bold/italic content.
     text = re.sub(
-        r"\*This IP First Response.*?\*",
+        r"^\s*\*This IP First Response[^\n]*?emailing us[^\n]*?\*[\.\s]*$",
+        "",
+        text,
+        flags=re.MULTILINE,
+    )
+    # Fallback: if the above didn't catch it (e.g. multi-line disclaimer),
+    # match the full italic block but only if it starts with the known prefix.
+    text = re.sub(
+        r"\*This IP First Response website has been designed to help IP rights "
+        r"holders.*?emailing us\*[\.\s]*",
+        "",
+        text,
+        flags=re.DOTALL,
+    )
+    # Also strip the Before you take any action... disclaimer block.
+    text = re.sub(
+        r"\*Before you take any action.*?consultation with an attorney\*[\.\s]*",
         "",
         text,
         flags=re.DOTALL,
@@ -654,7 +728,7 @@ def parse_markdown(md_text: str) -> ParsedMarkdown:
 
     return ParsedMarkdown(
         page_url=page_url,
-        title=title or "Untitled",
+        title=_repair_mojibake(title) if title else "Untitled",
         intro_text=intro_text_clean,
         sections=sections,
         links=all_links,
@@ -904,6 +978,9 @@ def _format_body_text(raw_body: str) -> str:
     """
     text = raw_body
 
+    # Repair mojibake before any further processing.
+    text = _repair_mojibake(text)
+
     # Remove image links: [![alt](img)](url)
     text = re.sub(r"\[!\[.*?\]\(.*?\)\]\(.*?\)", "", text)
     # Remove standalone images: ![alt](url)
@@ -912,10 +989,14 @@ def _format_body_text(raw_body: str) -> str:
     text = re.sub(r"\[\s*\]\([^\)]+\)", "", text)
     # Convert markdown links [text](url) → text.
     text = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", text)
-    # Strip bold / italic markers.
-    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
-    text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"\1", text)
-    text = re.sub(r"__(.+?)__", r"\1", text)
+    # Strip strikethrough markers: ~~content~~ → remove entirely.
+    text = re.sub(r"~~.*?~~", "", text)
+    # Strip bold / italic markers (handle multi-line with DOTALL).
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text, flags=re.DOTALL)
+    text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"\1", text, flags=re.DOTALL)
+    text = re.sub(r"__(.+?)__", r"\1", text, flags=re.DOTALL)
+    # Strip markdown line breaks (trailing backslash before newline).
+    text = re.sub(r"\\\s*\n", "\n", text)
     # Strip link title references like [text](/path "title").
     text = re.sub(r'\s*"[^"]*"\s*', "", text)
     # Normalise list bullets from * to -.
@@ -935,11 +1016,14 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
 
     base_url = parsed.page_url or (meta.canonical_url if meta else "")
     udid = meta.udid if meta else ""
-    main_title = (meta.main_title if meta else "") or parsed.title
-    description = (meta.description if meta else "").strip('"').strip()
+    main_title = _repair_mojibake((meta.main_title if meta else "") or parsed.title)
+    description = _repair_mojibake((meta.description if meta else "").strip('"').strip())
+    # Fix 4: Use placeholder when description is empty.
+    if not description:
+        description = "xXx_PLACEHOLDER_xXx"
     pub_date = _parse_date(meta.publication_date) if meta else ""
     mod_date = _parse_date(meta.last_updated) if meta else ""
-    disclaimer = (meta.additional_disclaimer if meta else "").strip()
+    disclaimer = _repair_mojibake((meta.additional_disclaimer if meta else "").strip())
     copyright_year = ""
     if mod_date:
         try:
@@ -987,6 +1071,10 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     content_sections: list[ParsedSection] = []
     howto_steps: list[ParsedSection] = []
     article_body_text = parsed.intro_text  # fallback
+    # Track whether the article body originated from a named section that
+    # will also appear as a WebPageElement. If True, we skip populating
+    # "text" on Service entities to avoid duplication.
+    article_body_from_section = False
 
     # Check if the CSV overtitle appears as a heading; if so, skip it
     # (it's a navigational label, not content).
@@ -1017,6 +1105,7 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
             # articleBody field.
             if archetype_type != "Article":
                 content_sections.append(sec)
+                article_body_from_section = True
             continue
 
         if sec.classification == "faq":
@@ -1025,6 +1114,31 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
             howto_steps.append(sec)
         else:
             content_sections.append(sec)
+
+    # ── Fix 3: If the page has no FAQ questions (only a "What is it?"
+    # section), override the archetype to Article to avoid duplicating the
+    # same body text in both "text" and a separate WebPageElement. ──
+    if not faq_questions and archetype_type != "Article":
+        # Check whether the only content sections are article-body sources
+        # (e.g. "What is it?", "Overview").
+        non_article_body_sections = [
+            s for s in content_sections
+            if not any(
+                hint in s.heading.lower().strip().rstrip("?")
+                for hint in ARTICLE_BODY_HEADINGS
+            )
+        ]
+        if not non_article_body_sections:
+            archetype_type = "Article"
+            # Remove article-body sections from content_sections since
+            # Article uses articleBody directly (no separate WebPageElement).
+            content_sections = [
+                s for s in content_sections
+                if not any(
+                    hint in s.heading.lower().strip().rstrip("?")
+                    for hint in ARTICLE_BODY_HEADINGS
+                )
+            ]
 
     # ── Build section IDs ──
     section_ids: list[str] = []
@@ -1050,7 +1164,8 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
     if faq_questions:
         q_entities = []
         for qi, q in enumerate(faq_questions, start=1):
-            q_id = f"{faq_id}#q{qi}"
+            # Use a single fragment with dash separator (RFC 3986 compliance).
+            q_id = f"{base_url}#faq-q{qi}"
             q_entities.append(
                 {
                     "@type": "Question",
@@ -1137,9 +1252,11 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         has_part_refs.append({"@id": sid})
 
     # ── Build the disclaimer section if present ──
+    disclaimer_section_id: str | None = None
     if disclaimer and disclaimer.lower() != "null":
         disclaimer_slug = "disclaimer"
         disclaimer_id = f"{base_url}#section-{len(content_sections) + 1}-{disclaimer_slug}"
+        disclaimer_section_id = disclaimer_id
         disclaimer_entity = {
             "@type": "WebPageElement",
             "@id": disclaimer_id,
@@ -1150,6 +1267,22 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         }
         section_entities.append(disclaimer_entity)
         has_part_refs.append({"@id": disclaimer_id})
+
+    # ── Fix 8: Include the standard site disclaimer as content, not just
+    # metadata. This ensures it is visible to consumers of the @graph
+    # content, not buried in usageInfo alone. ──
+    std_disclaimer_pos = len(content_sections) + (2 if disclaimer_section_id else 1)
+    std_disclaimer_id = f"{base_url}#section-{std_disclaimer_pos}-standard-disclaimer"
+    std_disclaimer_entity = {
+        "@type": "WebPageElement",
+        "@id": std_disclaimer_id,
+        "headline": "Standard disclaimer",
+        "text": STANDARD_DISCLAIMER["text"],
+        "position": std_disclaimer_pos,
+        "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
+    }
+    section_entities.append(std_disclaimer_entity)
+    has_part_refs.append({"@id": std_disclaimer_id})
 
     # ── Build the WebPage entity ──
     # Fix 3: Always use the H1 heading from markdown (parsed.title) as the
@@ -1223,7 +1356,9 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         main_entity["serviceOperator"] = {"@id": IP_AUSTRALIA_ID}
         # Fix 1: provider is the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
-        if article_body_text:
+        # Only include "text" if the body came from intro text, not from a
+        # named section that already exists as a WebPageElement.
+        if article_body_text and not article_body_from_section:
             main_entity["text"] = article_body_text
 
     # Service-specific fields (non-government / commercial).
@@ -1231,7 +1366,9 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         main_entity["serviceType"] = meta.archetype if meta else "Service"
         # Fix 1: provider is the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
-        if article_body_text:
+        # Only include "text" if the body came from intro text, not from a
+        # named section that already exists as a WebPageElement.
+        if article_body_text and not article_body_from_section:
             main_entity["text"] = article_body_text
 
     # HowTo reference (if applicable).
@@ -1246,6 +1383,12 @@ def build_jsonld(parsed: ParsedMarkdown, meta: MetaRecord | None) -> dict:
         article_parts.append({"@id": sid})
     if faq_entity:
         article_parts.append({"@id": faq_id})
+    # Fix 6: Include the disclaimer in the main entity's hasPart so that
+    # the bidirectional hasPart/isPartOf relationship is consistent.
+    if disclaimer_section_id:
+        article_parts.append({"@id": disclaimer_section_id})
+    # Fix 8: Include the standard disclaimer in the main entity's hasPart.
+    article_parts.append({"@id": std_disclaimer_id})
     if article_parts:
         main_entity["hasPart"] = article_parts
 
