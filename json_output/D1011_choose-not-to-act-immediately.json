@@ -105,16 +105,19 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-1-gauge-the-situation"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
+        },
         "https://ipta.org.au/community/get-free-consultation/",
         "https://www.artslaw.com.au/services/legal-query-form/",
         "https://www.copyright.org.au/legal-advice/"
@@ -127,6 +130,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -142,9 +148,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -186,16 +189,6 @@
       "headline": "Gauge the situation",
       "text": "",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#article"
       }
@@ -346,14 +339,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

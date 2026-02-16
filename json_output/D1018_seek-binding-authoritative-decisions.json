@@ -32,7 +32,7 @@
     },
     {
       "@type": "GovernmentOrganization",
-      "@id": "https://www.fedcourt.gov.au/#organization",
+      "@id": "https://www.fedcourt.gov.au#organization",
       "name": "Federal Court of Australia",
       "url": "https://www.fedcourt.gov.au",
       "sameAs": [
@@ -116,17 +116,16 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
+        },
         "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
         "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/",
         "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23",
@@ -142,13 +141,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage"
       },
       "name": "Seek binding, authoritative decisions",
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
-        "@id": "https://www.fedcourt.gov.au/#organization"
+        "@id": "https://www.fedcourt.gov.au#organization"
       },
       "hasPart": [
         {
@@ -159,9 +161,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -189,16 +188,6 @@
       "headline": "Disclaimer",
       "text": "It is prudent to seek legal advice before deciding whether to start a legal action in court. You will likely also need assistance from an IP lawyer if you decide to start a legal action.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#service"
       }
@@ -259,7 +248,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q5-a",
-            "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, and which court hears your claim.  \n\nPatent cases are typically heard by the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed intellectual property as the cause of action, were as follows: \n\n 95 cases (45%) under 12 months\n 43 cases (21%) 12-24 months\n- 71 cases (34%) over 24 months.1\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.   \n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.   \n\nTime limits for starting legal claims\n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start. Due to the complexities, it may be helpful to  speak to an IP lawyer about time limits."
+            "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, and which court hears your claim.  \n\nPatent cases are typically heard by the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed intellectual property as the cause of action, were as follows: \n\n 95 cases (45%) under 12 months\n 43 cases (21%) 12-24 months\n- 71 cases (34%) over 24 months.\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.   \n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.   \n\nTime limits for starting legal claims\n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start. Due to the complexities, it may be helpful to  speak to an IP lawyer about time limits."
           }
         },
         {
@@ -269,7 +258,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q6-a",
-            "text": "Patent proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. \n\nIn the 2023-24 financial year, there were 41 patent and associated statutes filings in the Federal Court of Australia.2\n\nSome patent proceedings are also started in State/Territory courts."
+            "text": "Patent proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. \n\nIn the 2023-24 financial year, there were 41 patent and associated statutes filings in the Federal Court of Australia.\n\nSome patent proceedings are also started in State/Territory courts."
           }
         },
         {

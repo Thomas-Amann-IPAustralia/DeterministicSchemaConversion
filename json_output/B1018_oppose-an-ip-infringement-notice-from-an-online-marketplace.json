@@ -32,7 +32,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#provider-organization",
       "name": "eCommerce provider"
     },
     {
@@ -113,9 +113,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -135,13 +132,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#webpage"
       },
       "name": "Oppose an IP infringement notice from an online marketplace",
       "serviceType": "Commercial Third Party Service",
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#provider-organization"
       },
       "hasPart": [
         {
@@ -152,9 +152,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -206,16 +203,6 @@
       "headline": "Disclaimer",
       "text": "Please note, some online marketplaces may have additional fees. Be aware that the exact requirements may vary depending on the marketplace you received the notice from.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#service"
       }
@@ -366,14 +353,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

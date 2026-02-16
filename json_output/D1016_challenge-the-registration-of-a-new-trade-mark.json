@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -109,20 +109,19 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
         "https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60",
         "https://search.ipaustralia.gov.au/trademarks/search/quick",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
         "https://www.ipaustralia.gov.au/manage-my-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/"
       ]
@@ -134,6 +133,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -153,9 +155,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -173,16 +172,6 @@
       "headline": "What is it?",
       "text": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia. \n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):  \n\n similarity to an existing trade mark\n being too generic or descriptive\n- containing a connotation that is misleading and confusing.\n\nOpposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia. \n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#governmentservice"
       }
@@ -223,7 +212,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q3-a",
-            "text": "1. The other party does not contest your opposition to their registration, and the trade mark application does not get registered.\n2. The other party contests your argument and defends their application in an opposition and hearings process, resulting in:\n    achieving registration, advertised amendment or extension of time in favour of their position, or\n    your opposition being upheld, and the other party fails to achieve registration, advertised amendment or extension of time.\n3. IP Australia doesn't accept your application to oppose an accepted trade mark when your application does not meet formal or legal requirements."
+            "text": "1. The other party does not contest your opposition to their registration, and the trade mark application does not get registered.\n2. The other party contests your argument and defends their application in an opposition and hearings process, resulting in:\n    achieving registration, advertised amendment or extension of time in favour of their position, or\n    your opposition being upheld, and the other party fails to achieve registration, advertised amendment or extension of time."
           }
         },
         {

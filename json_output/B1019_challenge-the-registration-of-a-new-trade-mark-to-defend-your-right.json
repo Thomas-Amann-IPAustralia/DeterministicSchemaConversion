@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -109,9 +109,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -119,10 +116,14 @@
         "https://www.ipaustralia.gov.au/tools-and-research/forms/notice-of-intention-to-oppose",
         "https://manuals.ipaustralia.gov.au/trademark",
         "https://search.ipaustralia.gov.au/trademarks/search/quick",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
+        },
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
         "https://www.ipaustralia.gov.au/tools-and-research/forms",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity"
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#webpage"
+        }
       ]
     },
     {
@@ -132,6 +133,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -151,9 +155,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -171,16 +172,6 @@
       "headline": "What is it?",
       "text": "If someone has accused you of copying or using their trade mark without permission, and the other party's trade mark is pending registration with IP Australia,  you may be able to challenge their trade mark application directly with IP Australia by initiating a trade mark opposition process. This process requires you to submit your supporting evidence and argument as to why the trade mark should not be registered.\n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):\n\n Similarity to an existing trade mark\n Being too generic or descriptive\n- Containing a connotation that is misleading and confusing.\n\nIf your actions are successful, the  other party will no longer have rights associated with the registration of their trade mark.\n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.\n\nIf the application you wish to oppose is in the two-month window, you can file a 'Notice of Intention to Oppose'  before it becomes registered. The opposition procedure can involve either a written or oral hearing, or a written decision without a hearing.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-to-defend#governmentservice"
       }

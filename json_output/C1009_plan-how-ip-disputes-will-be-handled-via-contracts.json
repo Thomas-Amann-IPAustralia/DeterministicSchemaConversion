@@ -32,7 +32,7 @@
     },
     {
       "@type": "NGO",
-      "@id": "https://www.wipo.int/amc/en//#organization",
+      "@id": "https://www.wipo.int/amc/en#organization",
       "name": "WIPO Arbitration and Mediation Center",
       "url": "https://www.wipo.int/amc/en/",
       "sameAs": [
@@ -70,7 +70,7 @@
         },
         {
           "@type": "Thing",
-          "name": "PBR",
+          "name": "Plant breeder's rights",
           "sameAs": "https://www.wikidata.org/wiki/Q695112"
         },
         {
@@ -136,9 +136,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#section-2-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -146,11 +143,19 @@
         "https://www.wipo.int/amc/en/",
         "https://www.wipo.int/portal/en/index.html",
         "https://www.wipo.int/amc/en/film/fees/index.html",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+        },
         "https://www.wipo.int/amc/en/clauses/index.html",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
+        },
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
       ]
     },
@@ -163,13 +168,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#webpage"
       },
       "name": "Plan how IP disputes will be handled via contracts",
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
-        "@id": "https://www.wipo.int/amc/en//#organization"
+        "@id": "https://www.wipo.int/amc/en#organization"
       },
       "hasPart": [
         {
@@ -180,9 +188,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -234,16 +239,6 @@
       "headline": "What is it?",
       "text": "The WIPO Clause Generator  is a free online tool developed by the World Intellectual Property Organization Arbitration and Mediation Centre (WIPO AMC). It helps you draft contract clauses that refer intellectual property (IP) disputes to WIPO's dispute resolution services - particularly useful for agreements involving overseas partners or cross-border transactions. The model Alternative Dispute Resolution (ADR) clauses contain the principal elements of a clause to avoid any ambiguity that may later complicate and delay the dispute resolution of a dispute. \n\nThere are a range of provisions and clauses which can be included in contracts relevant to your situation, which may not be covered by the WIPO Clause Generator. A legal professional can help tailor contacts to reflect your business, the jurisdiction, as well as your preferred resolution options. \n\nThe WIPO Clause Generator covers common forms of (ADR) offered by WIPO, such as mediation, arbitration, expedited arbitration, and expert determination. These options are often built into commercial contracts to help avoid costly and time-consuming court action. The tool also guides you through standard clause elements - like naming a mediator or arbitrator, identifying their qualifications, setting a preferred location and language, and agreeing how long to wait before escalating to the next step. \n\nThe generator works for both future contracts (using model clauses, which set out in advance how any disputes will be handled) and current disputes (using submission agreements, which allow both parties to agree - after a dispute has already begun - to use WIPO to resolve it). Using the tool may also serve as a prompt for parties to discuss and align their dispute preferences early, creating a clearer path forward if things go wrong later. \n\nWIPO  is recognised globally as the leading body for resolving IP disputes, and their recommended clauses reflect global standard-practice. The tool is a helpful way to plan how IP disagreements could be handled, especially in international business settings - though it should not be mistaken for tailored legal advice.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#service"
       }
@@ -394,14 +389,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

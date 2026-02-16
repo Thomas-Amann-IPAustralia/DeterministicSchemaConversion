@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -106,16 +106,15 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#section-1-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
         "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
-        "https://search.ipaustralia.gov.au/trademarks/search/quick?_gl=1*15n3dc*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjMwNzQ0NC42LjEuMTczNjMwOTQwOC4wLjAuMA..",
+        "https://search.ipaustralia.gov.au/trademarks/search/quick",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/"
       ]
@@ -129,6 +128,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#webpage"
       },
@@ -139,9 +141,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -152,16 +151,6 @@
           "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#article"
-      }
     },
     {
       "@type": "FAQPage",

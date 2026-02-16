@@ -46,7 +46,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip",
       "name": "Is my business name my IP? - IP First Response",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "A business may operate under several 'names', but only a registered trade mark is an intellectual property right that can give you exclusive control over your...",
       "identifier": "E1001",
       "about": [
         {
@@ -102,9 +102,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#section-1-see-also"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -116,10 +113,13 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#article",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "A business may operate under several 'names', but only a registered trade mark is an intellectual property right that can give you exclusive control over your...",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -132,9 +132,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#section-1-see-also"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -176,16 +173,6 @@
       "headline": "**See also**",
       "text": "Register a business name | ASIC  \n\nRegister a company | ASIC  \n\nWhat are trade marks? | IP Australia",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/my-business-name-my-ip#article"
       }
@@ -235,14 +222,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

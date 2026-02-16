@@ -32,7 +32,7 @@
     },
     {
       "@type": "GovernmentOrganization",
-      "@id": "https://www.asbfeo.gov.au/#organization",
+      "@id": "https://www.asbfeo.gov.au#organization",
       "name": "Australian Small Business and Family Enterprise Ombudsman",
       "url": "https://www.asbfeo.gov.au",
       "sameAs": [
@@ -115,14 +115,13 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.asbfeo.gov.au/disputes-assistance/dispute-support",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage"
+        },
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/"
       ]
@@ -136,16 +135,19 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
       },
       "name": "Access help tailored to resolve business disputes",
       "serviceType": "Government Service",
       "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
+        "@id": "https://www.asbfeo.gov.au#organization"
       },
       "provider": {
-        "@id": "https://www.asbfeo.gov.au/#organization"
+        "@id": "https://www.asbfeo.gov.au#organization"
       },
       "hasPart": [
         {
@@ -153,9 +155,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -197,16 +196,6 @@
       "headline": "What is it?",
       "text": "The Australian Small Business and Family Enterprise Ombudsman (ASBFEO) offers information, support and access to dispute resolution services for small business operators looking to resolve a dispute (such as a disagreement involving contractual obligations or recovering unpaid invoices) between themselves and a business or an Australian Government agency. \n\nYou can access ASBFEO's Dispute Support Tool to identify the appropriate next steps to resolve your dispute. If your situation is not covered in the Dispute Support Tool, then you can contact the Ombudsman directly on 1300 650 460 and receive assistance from one of their case management officers. \n\nASBFEO can guide you through dispute resolution by: \n\n Providing information to resolve your dispute in a timely and low-cost way\n Engaging with the parties to encourage resolution\n- When appropriate, arranging various Alternate Dispute Resolution (ADR) solutions such as mediation, arbitration and case appraisal.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#governmentservice"
       }
@@ -357,14 +346,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

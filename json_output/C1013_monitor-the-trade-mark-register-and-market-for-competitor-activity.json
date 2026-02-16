@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -112,23 +112,38 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#section-2-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://search.ipaustralia.gov.au/trademarks/search/quick",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
+        },
         "https://search.ipaustralia.gov.au/trademarks/help",
-        "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right#webpage"
+        },
         "https://ipaustralia.gov.au/tm-checker",
         "https://business.gov.au/planning/protect-your-brand-idea-or-creation/trade-mark",
         "https://www.wipo.int/en/web/global-brand-database"
@@ -141,6 +156,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -163,9 +181,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -193,16 +208,6 @@
       "headline": "What is it?",
       "text": "Monitoring competitors' trade marks involves regularly checking the Australian Trade Marks Register, your market and other sources to spot new or changing brands that may be too similar to yours. \n\nEarly detection can give you time to oppose an application, contact the other business, or adjust your own plans before investing further.  \n\nYou can do this yourself using search engines and free tools such as IP Australia's Australian Trade mark Search (ATMS)  and its 'saved search' features, or pay a commercial service to send you regular reports.  \n\nYou can also be flexible with the scope of your monitoring activity - you decide how often to check, which classes of goods and services or markets to watch, and whether to include overseas registers.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#governmentservice"
       }

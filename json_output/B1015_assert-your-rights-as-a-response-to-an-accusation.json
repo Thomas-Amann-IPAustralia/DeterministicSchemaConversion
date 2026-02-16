@@ -102,18 +102,25 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#section-1-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
-        "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation#webpage"
+        },
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action"
       ]
@@ -127,6 +134,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#webpage"
       },
@@ -137,9 +147,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -174,16 +181,6 @@
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#article"
-      }
     },
     {
       "@type": "FAQPage",
@@ -321,14 +318,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

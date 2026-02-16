@@ -117,18 +117,27 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-5-why-its-hard-to-figure-out-on-your-own"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-6-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks"
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage"
+        }
       ]
     },
     {
@@ -138,6 +147,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -165,9 +177,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-6-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -207,7 +216,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-1-why-ip-infringement-matters",
       "headline": "Why IP infringement matters",
-      "text": "IP infringement matters for several reasons: \n\n1. For IP owners: Someone using your IP without permission can damage your business, cost you money, and weaken the value of what you have created.\n2. For businesses and creators: Using someone else's protected IP without permission can lead to legal disputes, financial penalties, and damage to your reputation.\n3. For everyone: Australia's IP system tries to balance rewarding creators with allowing new ideas to flourish. Respecting IP rights helps maintain this balance.",
+      "text": "IP infringement matters for several reasons:",
       "position": 1,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article"
@@ -249,16 +258,6 @@
       "headline": "Why it's hard to figure out on your own",
       "text": "Determining whether infringement has occurred can be tricky and often needs legal expertise. Courts make the final decisions on infringement cases, and many involve complicated legal arguments. Things that make it hard to assess include: \n\n The complexity of IP laws\n Understanding precisely what is protected\n Judging whether something is too similar\n Knowing which exceptions or defences might apply\n- Keeping up with changes in how courts interpret the laws.\n\n##",
       "position": 5,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-6-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 6,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article"
       }
@@ -339,14 +338,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

@@ -101,21 +101,23 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#section-1-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://search.ipaustralia.gov.au/designs/search/quick",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-        "https://search.ipaustralia.gov.au/designs/search/quick?_gl=1%2as1ag7s%2a_ga%2aMTExMjM3MjAxNi4xNjM1ODI2Nzc1%2a_ga_QX1TTWEZ1L%2aMTY0NDUzMTQzMy4xMjUuMS4xNjQ0NTMxNTY0LjA",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://designdb.wipo.int/designdb/en/",
         "https://www.tmdn.org/tmdsview-web/#/dsview",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#webpage"
+        },
         "https://www.tmdn.org/tmdsview-web/"
       ]
     },
@@ -128,6 +130,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#webpage"
       },
@@ -138,9 +143,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -151,16 +153,6 @@
           "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#article"
-      }
     },
     {
       "@type": "FAQPage",

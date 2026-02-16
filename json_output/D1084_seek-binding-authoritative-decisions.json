@@ -32,7 +32,7 @@
     },
     {
       "@type": "GovernmentOrganization",
-      "@id": "https://www.fedcourt.gov.au/#organization",
+      "@id": "https://www.fedcourt.gov.au#organization",
       "name": "Federal Court of Australia",
       "url": "https://www.fedcourt.gov.au",
       "sameAs": [
@@ -60,7 +60,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "PBR",
+          "name": "Plant breeder's rights",
           "sameAs": "https://www.wikidata.org/wiki/Q695112"
         }
       ],
@@ -116,13 +116,12 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
@@ -138,13 +137,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#webpage"
       },
       "name": "Seek binding, authoritative decisions",
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
-        "@id": "https://www.fedcourt.gov.au/#organization"
+        "@id": "https://www.fedcourt.gov.au#organization"
       },
       "hasPart": [
         {
@@ -155,9 +157,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -185,16 +184,6 @@
       "headline": "Disclaimer",
       "text": "PBR court cases are rare. This means there is limited legal precedent for judges and lawyers to draw on. This makes it harder to build a strong case, increases potential costs, and adds uncertainty to how a judge might rule.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/court-pbr#service"
       }
@@ -303,14 +292,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     }

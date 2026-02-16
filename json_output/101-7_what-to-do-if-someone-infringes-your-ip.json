@@ -108,18 +108,27 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-3-moving-forward"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-4-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks"
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
+        }
       ]
     },
     {
@@ -129,6 +138,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -150,9 +162,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-3-moving-forward"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -232,16 +241,6 @@
       }
     },
     {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-4-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 4,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#article"
-      }
-    },
-    {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
       "name": "Trade Marks Act 1995",
@@ -286,14 +285,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

@@ -105,14 +105,13 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-1-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.ag.gov.au/rights-and-protections/copyright/copyright-basics",
-        "https://ipfirstresponse.ipaustralia.gov.au/helpful-info-page",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/helpful-info-page#webpage"
+        },
         "https://www.wipo.int/directory/en/urls.jsp",
         "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
         "https://www.ipaustralia.gov.au/international-ip/what-is-international-ip",
@@ -120,7 +119,9 @@
         "https://www.ipaustralia.gov.au/tools-and-research/business-resources/~/-/media/Project/IPA/IPAustralia/PDF/Business-advisory-guide/About-Exporting-Fact-sheet.pdf?rev=06438fd5dbc847298783cbb2695fcbb2%E2%80%AF%E2%80%AF",
         "https://www.wipo.int/amc/en/",
         "https://www.exportfinance.gov.au/media/dfqlxv3g/protecting-your-intellectual-property-internationally-ebook.pdf",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#webpage"
+        },
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/",
         "https://www.artslaw.com.au/services/legal-query-form/",
@@ -136,6 +137,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#webpage"
       },
@@ -149,9 +153,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-1-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -193,16 +194,6 @@
       "headline": "Disclaimer",
       "text": "Without careful attention to the local operating environment, you may risk undermining your IP right.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#article"
       }
@@ -293,14 +284,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

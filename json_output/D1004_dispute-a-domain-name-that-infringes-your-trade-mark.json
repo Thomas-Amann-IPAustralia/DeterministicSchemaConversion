@@ -32,7 +32,7 @@
     },
     {
       "@type": "NGO",
-      "@id": "https://www.auda.org.au/#organization",
+      "@id": "https://www.auda.org.au#organization",
       "name": ".au Domain Administration",
       "url": "https://www.auda.org.au",
       "sameAs": [
@@ -119,13 +119,12 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
         "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
@@ -143,13 +142,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#webpage"
       },
       "name": "Dispute a domain name that infringes your trade mark",
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
-        "@id": "https://www.auda.org.au/#organization"
+        "@id": "https://www.auda.org.au#organization"
       },
       "hasPart": [
         {
@@ -157,9 +159,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -183,16 +182,6 @@
       "headline": "What is it?",
       "text": ".au Domain Administration (auDA) is a not-for-profit organisation that is responsible for administering the .au domain. If you believe someone's .au domain name licence is infringing your intellectual property rights, you can lodge a dispute with one of two independent resolution providers under auDA's .au Dispute Resolution Policy (auDRP). This can result in cancellation or transfer of the .au domain name licence.   \n\nA panel of independent arbitrators and legal practitioners will consider submissions from both parties and provide their decision with reasoning, in writing. There are usually no in-person hearings and the panel's decisions are binding on both parties. \n\nPlease Note: If the infringing domain name does not end in '.au' then you might consider accessing a different dispute resolution service like one under the Uniform Dispute Resolution Policy (UDRP).",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#service"
       }

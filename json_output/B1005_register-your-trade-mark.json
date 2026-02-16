@@ -104,18 +104,17 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
         "https://tmgns.search.ipaustralia.gov.au/",
         "https://search.ipaustralia.gov.au/trademarks/search/quick",
         "https://www.ipaustralia.gov.au/trade-marks",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker"
       ]
     },
@@ -126,6 +125,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -145,9 +147,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -165,16 +164,6 @@
       "headline": "What is it?",
       "text": "If you are accused of copying or infringing someone else's trade mark, it might help to register your own rights in the trade mark which they have claimed is copying/infringing. This can be especially applicable when the other party's claim seems baseless or the two trade marks are not sufficiently similar in your opinion. \n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these. \n\nRegistering a trade mark can give you an exclusive right to use your branding on specific goods or services in Australia. Your trade mark will appear on a public, searchable database. This may help you demonstrate your ownership if others allege you have copied their branding. \n\nYou might have some rights to protect your trade mark even if it's not registered with IP Australia. However, trade mark registration makes defending your right to use your trade mark easier. It also increases your enforcement options.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-trade-mark#governmentservice"
       }

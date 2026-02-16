@@ -32,7 +32,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#provider-organization",
       "name": "eCommerce provider"
     },
     {
@@ -66,7 +66,7 @@
         },
         {
           "@type": "Thing",
-          "name": "PBR",
+          "name": "Plant breeder's rights",
           "sameAs": "https://www.wikidata.org/wiki/Q695112"
         },
         {
@@ -132,16 +132,17 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-2-exercise-caution-before-making-accusations-of-infringement"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.auda.org.au/au-domain-names/domain-name-help/using-whois",
         "https://lookup.icann.org/en",
-        "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage"
+        },
         "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement#:~:text=as%20described%20below.-,Managing%20online%20infringement,a%20complaint%20directly%20to%20them",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
@@ -162,13 +163,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
       },
       "name": "Notify online marketplaces of infringement on their platform",
       "serviceType": "Commercial Third Party Service",
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#provider-organization"
       },
       "hasPart": [
         {
@@ -179,9 +183,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -233,16 +234,6 @@
       "headline": "Exercise caution before making accusations of infringement",
       "text": "Making an unfounded claim of IP infringement can result in liability for damages. Proving infringement is an important issue that should be considered before taking legal action, including sending written demands. \n\nBefore you take any action, you should consider whether you need legal or professional advice specific to your situation. It is important to know what rights you have, what remedies are open to you, and the cost and likelihood of success. IP Australia provides information ongetting professional assistance with your IP . In addition, the Institute of Patent and Trade Mark Attorneys Australia (IPTA) offers free30 minute consultations with an attorney .\nCopyright owners who work in creative industries may potentially be eligible to seek low- or no-cost legal advice from the Arts Law Centre of Australia  or no-cost advice from the Australian Copyright Council .",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#service"
       }
@@ -393,14 +384,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

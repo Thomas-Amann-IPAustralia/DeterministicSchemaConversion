@@ -32,7 +32,7 @@
     },
     {
       "@type": "NGO",
-      "@id": "https://www.wipo.int/#organization",
+      "@id": "https://www.wipo.int#organization",
       "name": "World Intellectual Property Organization",
       "url": "https://www.wipo.int",
       "sameAs": [
@@ -122,16 +122,15 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.icann.org/resources/pages/help/dndr/udrp-en",
         "https://www.icann.org/resources/pages/providers-6d-2012-02-25-en",
         "https://www.wipo.int/amc/en/domains/cctld",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.wipo.int/amc/en/domains/guide/#What_is_a",
         "https://www.wipo.int/amc/en/domains/fees/index.html",
         "https://www.wipo.int/amc/en/domains/",
@@ -144,7 +143,6 @@
         "https://www.wipo.int/amc/en/domains/search/overview3.0/",
         "https://www.wipo.int/amc/en/domains/search/overview3.0/#item411",
         "https://www.wipo.int/amc/en/domains/expiry.html",
-        "https://www.wipo.int/amc/en/domains/guide/",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/",
         "https://www.artslaw.com.au/services/legal-query-form/",
@@ -160,13 +158,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#webpage"
       },
       "name": "Challenge the use of international domain name",
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
-        "@id": "https://www.wipo.int/#organization"
+        "@id": "https://www.wipo.int#organization"
       },
       "hasPart": [
         {
@@ -177,9 +178,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -213,16 +211,6 @@
       "headline": "Disclaimer",
       "text": "Please Note: If the infringing domain name ends in ‘.au’ then the relevant policy is the .au Dispute Resolution Policy (auDRP) provided by auDA.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-use-international-domain-name#service"
       }

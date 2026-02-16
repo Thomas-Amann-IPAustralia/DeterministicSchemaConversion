@@ -32,7 +32,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#provider-organization",
       "name": "Legal service provider"
     },
     {
@@ -110,9 +110,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -128,8 +125,7 @@
         "https://www.lst.org.au/find-a-lawyer/",
         "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
         "https://www.actlawsociety.asn.au/find-a-lawyer",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
         "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline"
@@ -144,13 +140,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#webpage"
       },
       "name": "Obtain legal advice on an accusation of infringement",
       "serviceType": "Commercial Third Party Service",
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#provider-organization"
       },
       "hasPart": [
         {
@@ -158,9 +157,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -202,16 +198,6 @@
       "headline": "What is it?",
       "text": "Being accused of IP infringement can be a distressing, and potentially confusing, experience. Having a qualified intellectual property (IP) lawyer or a trade marks or patent attorney on your side can help you make sense of an allegation that your product, branding or content is infringing someone else's IP.\n\nSuch professionals can help:\n\n explain the claim in plain language\n assess whether, or to what extent, the accusation has merit\n- outline the full range of ways you may respond, from negotiating a quiet resolution through to defending the matter in court.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of IP professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which would require a lawyer).  \n\nIf you already have a trusted lawyer, trade marks or patent attorney, you might talk to them about finding the right IP professional for your circumstances. Alternatively, you could search the Trans-Tasman IP Attorney Board  register to find a trade marks or patent attorney or contact your local law society to find a specialist IP lawyer.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-accusation-infringement#service"
       }
@@ -362,14 +348,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

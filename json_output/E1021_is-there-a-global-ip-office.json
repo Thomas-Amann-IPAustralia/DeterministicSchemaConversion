@@ -46,7 +46,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office",
       "name": "Is there a global IP office? - IP First Response",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "Many people assume there is one IP office that grants rights everywhere in the world. In reality, each country has its own intellectual property (IP) office...",
       "identifier": "E1021",
       "about": [
         {
@@ -99,11 +99,6 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#section-1-standard-disclaimer"
-        }
-      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas#:~:text=There%20are%20two%20ways%20to,as%20entering%20the%20national%20phase.",
@@ -117,10 +112,13 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#article",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "Many people assume there is one IP office that grants rights everywhere in the world. In reality, each country has its own intellectual property (IP) office...",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -130,11 +128,6 @@
       "articleBody": "Many people assume there is one IP office that grants rights everywhere in the world. In reality, each country has its own intellectual property (IP) office. For instance, IP Australia examines and registers patents, trade marks, designs and plant breeder's rights (PBRs) for protection inside Australia.  \n\nThe World Intellectual Property Organization (WIPO) helps countries work together on IP and provides systems to simplify applying for rights overseas. However, it is not a global IP office that grants or enforces rights.  \n\nWIPO's core role is to administer international treaties, maintain global IP databases and provide systems that streamline applications across borders. It helps countries adopt consistent rules and offers tools businesses can use when expanding overseas. Key examples include: \n\n The Patent Cooperation Treaty (PCT). This allows you to file one application to seek patent protection in 158 Contracting States.\n The Madrid System. This provides a single-application path for registering trade marks in over 130 territories.\n The Hague System. This is an international route for protecting industrial designs in multiple countries.\n The WIPO Arbitration and Mediation Center. These services may resolve cross-border IP disputes without going to court.\n\nBecause WIPO focuses on coordination and policy development, national IP offices keep control of day-to-day tasks such as filing applications, examining rights, registration and renewal. \n\nWhen your business grows beyond Australia, you may use WIPO's 'single-application' process to streamline filing. However, the national IP office in each country still decides whether to grant protection in its jurisdiction under its own laws. \n\nIn short, WIPO is a hub for international treaty development and shared services, while national offices like IP Australia remain the home base for securing IP rights within their territories.",
       "datePublished": "2025-09-11",
       "dateModified": "2025-09-11",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#section-1-standard-disclaimer"
-        }
-      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -167,16 +160,6 @@
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/there-global-ip-office#article"
-      }
     },
     {
       "@type": "Legislation",
@@ -223,14 +206,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

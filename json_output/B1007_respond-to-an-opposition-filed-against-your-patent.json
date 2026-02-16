@@ -104,14 +104,13 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage"
+        },
         "https://www.ipaustralia.gov.au/patents/how-to-respond-to-an-opposition",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
@@ -126,6 +125,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -145,9 +147,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -165,16 +164,6 @@
       "headline": "What is it?",
       "text": "A patent opposition is when someone formally challenges the grant of your patent through IP Australia, after it has been accepted or amended. If someone opposes your patent application in this way, you'll have a chance to respond through IP Australia's formal hearing process. The hearing process is administrative, not a court proceeding, but the outcome can still have serious impacts on your rights. \n\nThe oppositions process allows both sides to put forward written arguments and evidence to support their position; arguing that the patent should or should not be granted. If the issue isn't resolved between the parties at this stage, a Delegate of the Commissioner of Patents will review everything and make a final decision. \n\nYou can ask for an oral hearing or conduct the process entirely in writing. Either way, this is your opportunity to defend your patent and explain why it meets the legal requirements to be granted.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-patent#governmentservice"
       }

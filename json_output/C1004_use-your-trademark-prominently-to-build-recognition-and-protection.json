@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -106,13 +106,12 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip#webpage"
+        },
         "https://www.ipaustralia.gov.au/trade-marks/what-are-trade-marks",
         "https://business.gov.au/marketing-and-advertising"
       ]
@@ -126,6 +125,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#webpage"
       },
@@ -136,9 +138,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -149,16 +148,6 @@
           "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#article"
-      }
     },
     {
       "@type": "FAQPage",

@@ -102,14 +102,15 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#section-1-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest#webpage"
+        },
         "https://www.wipo.int/directory/en/urls.jsp",
         "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
         "https://www.ipaustralia.gov.au/international-ip/what-is-international-ip",
@@ -128,6 +129,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#webpage"
       },
@@ -138,9 +142,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -175,16 +176,6 @@
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#article"
-      }
     },
     {
       "@type": "FAQPage",
@@ -332,14 +323,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

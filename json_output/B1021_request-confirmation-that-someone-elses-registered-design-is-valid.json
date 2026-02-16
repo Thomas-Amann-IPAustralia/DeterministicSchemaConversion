@@ -107,13 +107,12 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage"
+        },
         "https://manuals.ipaustralia.gov.au/design/amending-a-registration",
         "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-1",
         "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
@@ -129,6 +128,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -151,9 +153,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -181,16 +180,6 @@
       "headline": "Disclaimer",
       "text": "Formal action to protect design rights — like sending a letter of demand (or cease-and-desist letter) — can only be initiated after a design right is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat: see Respond to an unjustified threat | IP Australia First Response.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-confirmation-someone-elses-registered-design-valid#governmentservice"
       }

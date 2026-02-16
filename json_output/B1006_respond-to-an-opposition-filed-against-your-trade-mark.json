@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -109,9 +109,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -119,7 +116,9 @@
         "https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60",
         "https://portal.ipaustralia.gov.au/",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
+        },
         "https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-opposition",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip"
       ]
@@ -131,6 +130,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -150,9 +152,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -170,16 +169,6 @@
       "headline": "What is it?",
       "text": "When seeking registration of your trade mark with IP Australia, there is a chance that a third party opposes the registration of your trade mark. If this happens, you will have the opportunity to defend your application by responding to the trade mark opposition.\n\nAfter your trade mark application is formally acceptedby IP Australia, there is a 2-month window in which someone can oppose the registration under various reasons outlined in the Trade Marks Act. There are many reasons for opposing registration, including that your trade mark is too similar to another trade mark, or that you applied to register your trade mark in bad faith.\n\nOnce your application has been opposed, you will have the opportunity to defend your application by responding to the trade mark opposition. If you do not defend your application, it will lapse and will not proceed to registration. You can respond to a trade mark opposition by lodging a notice of intention to defend at IP Australia. After this, parties to the opposition process submit relevant submissions and evidence to IP Australia and may request a written or oral hearing, or a written decision without a hearing before an IP Australia hearing officer, who will decide whether your mark can proceed to registration. \n\nThe process is generally less formal or costly than going to court. Parties to the opposition sometimes use this process to negotiate a settlement, such as limiting goods and services or agreeing to co-exist in the market.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#governmentservice"
       }
@@ -220,7 +209,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-opposition-filed-against-your-trade-mark#faq-q3-a",
-            "text": "1. Your trade mark achieving registration as applied for if your defence is upheld, or\n    The opposition being upheld, and your trade mark fails to achieve registration, or\n     + It is also possible that the opposition was only raised in relation to part of the goods and services claimed under the trade mark, or the hearing officer considers that your defence or the other party's opposition is only partially established. In this case, your trade mark may still achieve registration for part of the goods and services you have specified in your application.\n    The opponent withdraws or abandons the opposition, including if you reach a settlement or the matter resolves commercially before a final decision is made.\n2. You withdraw your trade mark application.\n3. If you choose not to defend your application against the opposition, your application will lapse."
+            "text": "1. Your trade mark achieving registration as applied for if your defence is upheld, or\n    The opposition being upheld, and your trade mark fails to achieve registration, or\n     + It is also possible that the opposition was only raised in relation to part of the goods and services claimed under the trade mark, or the hearing officer considers that your defence or the other party's opposition is only partially established. In this case, your trade mark may still achieve registration for part of the goods and services you have specified in your application.\n    The opponent withdraws or abandons the opposition, including if you reach a settlement or the matter resolves commercially before a final decision is made."
           }
         },
         {

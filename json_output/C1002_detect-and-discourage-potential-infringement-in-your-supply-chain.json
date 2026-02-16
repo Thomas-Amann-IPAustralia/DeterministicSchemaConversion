@@ -101,15 +101,16 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#section-1-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip",
-        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip?utm_source=chatgpt.com",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-help-manage-your-ip#webpage"
+        },
+        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
         "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property"
       ]
     },
@@ -122,6 +123,9 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#webpage"
       },
@@ -132,9 +136,6 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -145,16 +146,6 @@
           "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#article"
-      }
     },
     {
       "@type": "FAQPage",

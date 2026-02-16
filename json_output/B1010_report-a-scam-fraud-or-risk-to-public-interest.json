@@ -32,7 +32,7 @@
     },
     {
       "@type": "GovernmentOrganization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#provider-organization",
       "name": "accc"
     },
     {
@@ -110,15 +110,16 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
+        },
         "https://www.scamwatch.gov.au/research-and-resources/scam-statistics",
         "https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024",
         "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams",
@@ -141,16 +142,19 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage"
       },
       "name": "Report a scam, fraud or risk to public interest",
       "serviceType": "Government Service",
       "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#provider-organization"
       },
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#provider-organization"
       },
       "hasPart": [
         {
@@ -158,9 +162,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -202,16 +203,6 @@
       "headline": "What is it?",
       "text": "Scammers may pretend to be rights holders, lawyers or even government agencies to demand money, personal details, or business changes from innocent parties, or to deceive them into downloading malware onto your computer or other device. \n\nIf you believe that the allegation of infringement from the other party is a scam or of a fraudulent nature, you could consider reporting scams or criminal behaviour to an appropriate authority. You can also consider consulting a legal professional such as a trade mark attorney, patent attorney or IP lawyer to assess the claims made by the other party and obtain legal advice. \n\nCommon tactics used by scammers include emails or letters claiming your trade mark, business name,  domain name, content or product is infringing a registered trade mark, copyright or other IP rights. They might threaten to sue unless you pay a fee, or demand that you register your IP right using their services, often at an inflated cost. Note that there is no formal system of copyright registration in Australia - copyright automatically arises in original works and other subject-matter by virtue of the Copyright Act 1968, free of charge, as soon as you write down or otherwise record a work. 'Registering' your work with a private organisation would not give your material any greater copyright protection in Australia.\n\nScammers might also try to convince you to click on a link to a fake website to get access to your personal information or log-in credentials for a real platform you use, or to download malware by opening a file or link (for example, by saying this will let you see details of or dispute the alleged infringement, or dispute the supposed suspension of your account). You might also receive phone calls impersonating legal professionals or IP Australia officers. For more information on scams relating to IP rights, see IP Australia's page: Scams related to managing IP rights. \n\nSeveral Australian federal and state bodies can help, depending on the situation: \n\n The Australian Competition and Consumer Commission (ACCC), through its Scamwatch service.\n The Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC).\n The Australian Federal Police (AFP) and state or territory police investigate fraud, impersonation, and criminal extortion.\n IP Australia.\n\nReporting fraudulent activity promptly can help protect others and build evidence for enforcement.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#governmentservice"
       }
@@ -362,14 +353,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

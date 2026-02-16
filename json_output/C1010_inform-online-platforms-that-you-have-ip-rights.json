@@ -32,7 +32,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#provider-organization",
       "name": "Online Marketplaces",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q3390477"
@@ -69,7 +69,7 @@
         },
         {
           "@type": "Thing",
-          "name": "PBR",
+          "name": "Plant breeder's rights",
           "sameAs": "https://www.wikidata.org/wiki/Q695112"
         },
         {
@@ -138,9 +138,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-3-please-note-that-ip-rights-covered-vary-by-platform"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-4-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -148,7 +145,9 @@
         "https://www.etsy.com/au/ipreporting",
         "https://www.sheingroup.com/our-business/operating-responsibly/#product-safety",
         "https://www.temu.com/intellectual-property-complaint.html?refer_page_name=intellectual-property-policy&refer_page_id=19457_1753084754239_fedamubrim&refer_page_sn=19457&_x_sessn_id=6yq4j50u6o",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
+        },
         "https://sell.amazon.com/brand-registry",
         "https://www.ebay.com.au/help/policies/listing-policies/selling-policies/intellectual-property-vero-program?id=4349&srsltid=AfmBOoogsp-1NqyjXaxBXWR7MfZoAO6kN91ahTpKrQuQAT0JVnWncwo1",
         "https://m.shein.com/au/copyright-noticeam-a-379.html"
@@ -163,13 +162,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#webpage"
       },
       "name": "Inform online platforms that you have IP rights",
       "serviceType": "Commercial Third Party Service",
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#provider-organization"
       },
       "hasPart": [
         {
@@ -183,9 +185,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -247,16 +246,6 @@
       "headline": "Please note that IP rights covered vary by platform:",
       "text": "Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n eBay VeRO Program allows rights owners to report suspected infringement of trade marks, copyrights, designs and patents.\n Etsy Intellectual Property Portal  lets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n Shein IP Protection Platform accepts notices for all types of IP infringement  (trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n- Temu IP Portal  accepts notices for all types of IP infringement.",
       "position": 3,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-4-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 4,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
       }
@@ -407,14 +396,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

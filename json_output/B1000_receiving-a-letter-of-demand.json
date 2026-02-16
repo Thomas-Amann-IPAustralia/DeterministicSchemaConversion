@@ -111,25 +111,38 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-3-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-4-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button#webpage"
+        },
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://abr.business.gov.au/",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation#webpage"
+        },
         "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do#webpage"
+        },
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
       ]
     },
@@ -140,6 +153,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -161,9 +177,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-3-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -225,16 +238,6 @@
       "headline": "Disclaimer",
       "text": "Before responding to a letter of demand, you may want to show the letter and explain the situation to a qualified IP legal professional  who can explain your  who can explain your position and outline possible options.",
       "position": 3,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-4-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 4,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#article"
       }
@@ -385,14 +388,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

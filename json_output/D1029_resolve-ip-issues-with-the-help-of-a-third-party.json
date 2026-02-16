@@ -32,7 +32,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#provider-organization",
       "name": "Arbitrator",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q105425483"
@@ -113,9 +113,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -124,10 +121,12 @@
         "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
         "https://www.asbfeo.gov.au/",
         "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
+        },
         "https://acica.org.au/",
         "https://disputescentre.com.au/",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.fedcourt.gov.au/services/ADR/arbitration",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
@@ -147,13 +146,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
       },
       "name": "Resolve IP issues with the help of a third party",
       "serviceType": "Commercial Third Party Service",
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#provider-organization"
       },
       "hasPart": [
         {
@@ -161,9 +163,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -205,16 +204,6 @@
       "headline": "What is it?",
       "text": "Arbitration is a type of alternative dispute resolution (ADR) in which a dispute is submitted, by agreement of the parties, to one or more arbitrators who make a binding decision on the dispute (known as an 'arbitral award'). The arbitrator is often someone with a high level of expertise in the specific field of law relevant to the industry or subject matter of the dispute.  \n\nArbitration can be somewhat similar to a court or tribunal hearing, but often are a shorter and more flexible version: \n\n Parties are typically expected to produce evidence and submissions before the arbitrator to make a decision.\n Usually, the parties to the dispute must agree before the process that the arbitrator's decision will be binding and enforceable.\n- Arbitration is generally seen as an efficient, impartial, and enforceable process to resolve both domestic and international commercial disputes, including IP matters.\n\nArbitration may be voluntary, required under a court order, or as part of a contract - arbitration clauses are often added to contracts, stipulating that the parties resolve future disputes using this method.  \n\nArbitration requires agreement from both parties, which can be challenging to obtain after a dispute arises, especially in cases involving no prior contractual relationship. For this reason, where there are contractual negotiations, it is often advantageous for parties to consider including an arbitration clause in their initial contract.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#service"
       }
@@ -355,14 +344,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

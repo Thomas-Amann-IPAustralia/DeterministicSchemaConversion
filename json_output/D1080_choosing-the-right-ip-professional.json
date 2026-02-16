@@ -66,7 +66,7 @@
         },
         {
           "@type": "Thing",
-          "name": "PBR",
+          "name": "Plant breeder's rights",
           "sameAs": "https://www.wikidata.org/wiki/Q695112"
         },
         {
@@ -76,7 +76,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -165,13 +165,10 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-14-government-business-support-services"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-15-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ttipattorney.gov.au/for-clients/benefits-of-engaging-an-attorney",
         "https://www.liv.asn.au/legalhelp",
         "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
@@ -195,6 +192,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -248,9 +248,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-14-government-business-support-services"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-15-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -427,16 +424,6 @@
       }
     },
     {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-15-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 15,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#service"
-      }
-    },
-    {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
       "name": "Trade Marks Act 1995",
@@ -481,14 +468,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

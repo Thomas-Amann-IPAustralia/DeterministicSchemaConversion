@@ -46,7 +46,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues",
       "name": "When do I need a lawyer or attorney to deal with IP issues? - IP First Response",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "This page explains when it may be helpful to speak to a legal professional, such as a lawyer or a trade mark or patent attorney, about an intellectual...",
       "identifier": "E1015",
       "about": [
         {
@@ -99,14 +99,11 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#section-1-standard-disclaimer"
-        }
-      ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA.",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage"
+        },
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
         "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
@@ -116,10 +113,13 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#article",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "This page explains when it may be helpful to speak to a legal professional, such as a lawyer or a trade mark or patent attorney, about an intellectual...",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -129,11 +129,6 @@
       "articleBody": "This page explains when it may be helpful to speak to a legal professional, such as a lawyer or a trade mark or patent attorney, about an intellectual property (IP) issue. \n\nYou don't always need legal professionals to deal with an IP problem. Some actions - like lodging a takedown request or filing a trade mark - can often be done by yourself, if you want to take the time to understand the requirements. But if things are complicated, if you are unsure of what to do, or you simply don't have the time to learn, then a legal expert can help you and may give you confidence about what to do next. \n\nLegal professionals may help with tasks like: \n\n Working out if your IP has been used without permission (known legally as 'suspected infringement').\n Writing or reviewing contracts or licensing agreements.\n Filing applications to register an IP right\n Dealing with issues from applying (including adjustments to the application during examination)\n Dealing with any opposition against a registered IP right.\n Starting legal action through the courts or responding to legal action against you.\n\nIP Attorneys vs IP Lawyers vs non-IP Lawyers \n\nIP law is a special area of law on which some lawyers focus, in the same way some doctors can specialise in certain organs or diseases - Not every lawyer is a specialist in intellectual property.  \n\nIP attorneys and IP lawyers are different professions, but there are some services they both offer. Some IP lawyers can also be IP attorneys, however not all of them are.  \n\n \n\nBoth IP lawyers and patent or trade mark attorneys can act for you at IP Australia - for example paying fees, making changes to submissions, and corresponding with IP Australia on your behalf. However, IP lawyers are needed if your issue goes to court; going to court is something an IP attorney cannot do.  \n\nGetting a legal professional \n\nEven if you don't end up needing formal legal help, a short consultation may help you decide on next steps. Some services offer free or low-cost initial advice. \n\nThere's no official rule that says when to hire someone, it depends on your situation, confidence, and what's at stake. Many businesses only seek legal help when something's gone wrong. But getting help earlier can make it easier to protect your ideas and avoid costly mistakes later.",
       "datePublished": "2025-09-11",
       "dateModified": "2025-09-11",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#section-1-standard-disclaimer"
-        }
-      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -166,16 +161,6 @@
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/when-do-i-need-lawyer-or-attorney-deal-ip-issues#article"
-      }
     },
     {
       "@type": "Legislation",
@@ -222,14 +207,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

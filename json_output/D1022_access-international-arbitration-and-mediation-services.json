@@ -32,7 +32,7 @@
     },
     {
       "@type": "NGO",
-      "@id": "https://www.wipo.int/#organization",
+      "@id": "https://www.wipo.int#organization",
       "name": "World Intellectual Property Organization",
       "url": "https://www.wipo.int",
       "sameAs": [
@@ -76,7 +76,7 @@
         },
         {
           "@type": "Thing",
-          "name": "PBR",
+          "name": "Plant breeder's rights",
           "sameAs": "https://www.wikidata.org/wiki/Q695112"
         },
         {
@@ -86,7 +86,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -139,14 +139,13 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.wipo.int/amc/en/center/background.html",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+        },
         "https://www.wipo.int/amc/en/goodoffices/",
         "https://www.wipo.int/amc/en/neutrals/index.html",
         "https://www.wipo.int/amc/en/center/specific-sectors/",
@@ -155,7 +154,9 @@
         "https://www.wipo.int/amc/en/arbitration/",
         "https://www.wipo.int/amc/en/arbitration/what-is-exp-arb.html",
         "https://www.wipo.int/amc/en/expert-determination/",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#webpage"
+        },
         "https://amc.wipo.int/adr-fee-calculator/",
         "https://www.wipo.int/amc/en/center/specific-sectors/smes/index.html",
         "https://www3.wipo.int/amc-forms/en/adr/unilateral-mediation",
@@ -164,13 +165,19 @@
         "https://www.wipo.int/amc/en/index.html",
         "https://www.wipo.int/amc/en/center/adr-assistance.html",
         "https://www3.wipo.int/amc-forms/en/adr/mediation",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://www.wipo.int/amc/en/",
         "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
+        },
         "https://www.education.gov.au/hercip",
         "https://www.wipo.int/amc/en/clauses/",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
@@ -186,13 +193,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
       },
       "name": "Access international arbitration and mediation services",
       "serviceType": "Non-Government Third-Party Authority",
       "provider": {
-        "@id": "https://www.wipo.int/#organization"
+        "@id": "https://www.wipo.int#organization"
       },
       "hasPart": [
         {
@@ -200,9 +210,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -244,16 +251,6 @@
       "headline": "What is it?",
       "text": "If you need to resolve an international dispute, one option is to use the World Intellectual Property Organization (WIPO) Arbitration and Mediation Center  ('the WIPO Center').\n\nThe WIPO Center offers a range of alternative dispute resolution (ADR) services designed to resolve international and domestic disputes without going to court.\n\nThey can help parties access and navigate ADR processes. For more information about what ADR is, see IP First Response's webpage available at: General ADR Card.\n\nThe WIPO Center's tools and services include:\n\n Free information and procedural assistance services (sometimes called 'Good Offices ') to facilitate or submit a dispute to WIPO's ADR processes. This includes providing support throughout the parties' engagement with the ADR options.\n An extensive global database  of mediators, arbitrators and experts, including from Australia. This includes experts from specific fields/specialties: WIPO Alternative Dispute Resolution (ADR) Services for Specific Sectors.\n Free online case administration tools that allow parties to manage and resolve disputes remotely.\n\nADR processes offered by the WIPO Centre include: \n\n Mediation\n Arbitration\n Expedited Arbitration\n- Expert determination\n\nYour dispute doesn't need to be international to use the WIPO Center, and other international dispute resolution services are available in some countries. For more information, see IP First Response webpage on enforcing your IP overseas.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#service"
       }
@@ -394,14 +391,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

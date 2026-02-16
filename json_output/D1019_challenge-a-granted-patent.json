@@ -104,13 +104,12 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ipaustralia.gov.au/tools-and-research/forms/request-a-re-examination-of-a-patent",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/"
@@ -123,6 +122,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -142,9 +144,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -162,16 +161,6 @@
       "headline": "What is it?",
       "text": "A patent re-examination is a means for challenging the validity\\ of a granted patent. In certain situations, such as being accused of infringement, the validity of the patent may come under heavy scrutiny. This can be requested at any time after a patent is granted by filing a request with IP Australia. Patent re-examination can be requested if you believe the patent should not have been granted for a variety of reasons, including; \n\n The invention claimed in the patent isn't novel, innovative or inventive (this is the most common reason)\n The invention isn't something that can be patented\n The invention was used in public before the patent was filed\n The patent specification doesn't provide enough detail to build or perform the invention\n The invention isn't consistent with the description\n The claims are so unclear that it's impossible for a skilled person to understand them\n The invention is a biological process for generation of human beings (such as human cloning).\n\n\\the validity of a patent regards its compliance with the Patents Act, i.e. if it should have been granted in the first place (or has new evidence come to light that indicates it should not have been granted).*",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#governmentservice"
       }

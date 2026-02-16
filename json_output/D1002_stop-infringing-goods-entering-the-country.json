@@ -32,7 +32,7 @@
     },
     {
       "@type": "GovernmentOrganization",
-      "@id": "https://www.abf.gov.au/#organization",
+      "@id": "https://www.abf.gov.au#organization",
       "name": "Australian Border Force",
       "url": "https://www.abf.gov.au",
       "sameAs": [
@@ -122,19 +122,20 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-3-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/toyota-story-what-can-smes-learn-toyotas-approach-counterfeit-products#webpage"
+        },
         "https://www.abf.gov.au/help-and-support-subsite/Pages/IPObjections.aspx",
         "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/intellectual-property",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/",
         "https://www.artslaw.com.au/services/legal-query-form/",
@@ -150,16 +151,19 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#webpage"
       },
       "name": "Stop infringing goods entering the country",
       "serviceType": "Government Service",
       "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
+        "@id": "https://www.abf.gov.au#organization"
       },
       "provider": {
-        "@id": "https://www.abf.gov.au/#organization"
+        "@id": "https://www.abf.gov.au#organization"
       },
       "hasPart": [
         {
@@ -170,9 +174,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-2-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -206,16 +207,6 @@
       "headline": "Disclaimer",
       "text": "Please Note: A Notice of Objection cannot act retrospectively  for goods/copies that have already been imported.",
       "position": 2,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#section-3-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 3,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#governmentservice"
       }
@@ -276,7 +267,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-goods-entering-country#faq-q5-a",
-            "text": "A Notice of Objection is valid for 4 years and ABF may seize imports at any point during this time. It can be re-lodged, or withdrawn if it is no longer required. \n\nIf a seizure has occurred: \n\n1. The ABF will notify you and the importer. The importer has 10 working days from the date of notification to ask for the goods to be released.\n2. If no response is received, the goods are deemed to be forfeited and can be disposed of 30 days later.\n3. If the importer seeks to have the goods released, you will be notified and have 10 working days to start legal action against the importer.\n4. If the ABF does not receive a court order maintaining seizure of the goods/copies within 20 days of legal action commencing then they are still required to release the goods to the importer."
+            "text": "A Notice of Objection is valid for 4 years and ABF may seize imports at any point during this time. It can be re-lodged, or withdrawn if it is no longer required. \n\nIf a seizure has occurred:"
           }
         },
         {

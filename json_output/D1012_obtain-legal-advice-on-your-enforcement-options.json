@@ -32,7 +32,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options/#provider-organization",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#provider-organization",
       "name": "Legal service provider"
     },
     {
@@ -110,19 +110,18 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
         "http://www.artslaw.com.au/services/legal-query-form/",
         "http://www.copyright.org.au/legal-advice/",
         "https://www.ipaustralia.gov.au/understanding-ip/types-of-ip",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.lawsociety.com.au/register-of-solicitors",
         "https://www.liv.asn.au/legalhelp",
         "https://www.youandthelaw.com.au/",
@@ -132,7 +131,6 @@
         "https://www.actlawsociety.asn.au/find-a-lawyer",
         "https://lawsocietynt.asn.au/index.php/nt-law-firms-by-area-of-law/",
         "https://www.artslaw.com.au/services/common-questions/",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*gxlotz*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjczMzE0OC4yMS4xLjE3MzY3MzM4MzkuMC4wLjA.",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
         "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
@@ -152,13 +150,16 @@
       "publisher": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
       },
       "name": "Obtain legal advice on enforcement options",
       "serviceType": "Commercial Third Party Service",
       "provider": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options/#provider-organization"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#provider-organization"
       },
       "hasPart": [
         {
@@ -166,9 +167,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -210,16 +208,6 @@
       "headline": "What is it?",
       "text": "What is it?\n\nHaving a qualified expert can help you navigate the complex system of IP enforcement. Qualified experts for IP enforcement include lawyers specialising in IP, and trade mark and patent attorneys. We refer to these experts as 'legal professionals', although trade mark and patent attorneys are not necessarily lawyers and may not be qualified to engage in legal practice.\n\nDepending on your situation, it may be necessary to seek advice from more than one type of legal professional specialising in IP for different rights in your IP portfolio and different types of enforcement actions (such as court action, which may require a lawyer or barrister with litigation experience in IP). \n\nIf you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the Trans-Tasman IP Attorney Board register as a starting point. \n\nHow about other types of IP professionals? \n\nThe term IP professionals refers to a range of experts who can help you plan and manage your business in relation to IP, including legal professionals. If you are seeking advice on how to enforce your IP rights, and what might be most appropriate to your situation, you should seek it from an IP lawyer or other relevant legal professional.  \n\nIf you wish to obtain support for other IP-related aspects of your business, you may wish to engage services provided by non-legal IP professionals such as: \n\n an accountant who specialises in IP marketing or commercialisation\n a brand consultant\n a franchise and export consultant\n a management consultant\n IP search firms\n IP monitoring service providers\n- Government business support.\n\nIf you are a copyright owner who is a member of a copyright collecting society or a professional organisation representing certain kinds of creator or creative business, you could explore whether that organisation is able to provide information or another form of assistance in your particular circumstances.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#service"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#service"
       }
@@ -360,14 +348,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

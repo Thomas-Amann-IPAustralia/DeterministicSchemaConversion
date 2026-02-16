@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -109,16 +109,13 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
         "https://tmgns.search.ipaustralia.gov.au/",
         "https://www.ipaustralia.gov.au/trade-marks",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/"
@@ -131,6 +128,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -150,9 +150,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -170,16 +167,6 @@
       "headline": "What is it?",
       "text": "If you haven't already done so, registering your trade mark with IP Australia can help you respond to suspected copying or infringement. \n\nRegistration establishes ownership and exclusive rights, giving you stronger legal grounds to take action against current and future infringers. \n\nA trade mark identifies your unique brand, product or service from other competitors. It might be a logo, phrase, word, letter, colour, sound, smell, picture, movement, aspect of packaging or any combination of these. \n\nYou might have some rights to protect your trade mark even if it's not registered with IP Australia. However, trade mark registration makes enforcing your trade mark easier and increases your enforcement options.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/register-your-unregistered-trade-mark#governmentservice"
       }

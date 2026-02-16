@@ -56,7 +56,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Unregistered-tm",
+          "name": "Unregistered trade mark",
           "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
@@ -109,20 +109,23 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#section-1-what-is-it"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
+        },
         "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage"
+        },
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*wp2lum*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgxNTEyNS4yNS4xLjE3MzY4MTY5MDEuMC4wLjA.#als_iptags=Trade%20marks&als_e=0",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://ipta.org.au/community/get-free-consultation/"
       ]
@@ -134,6 +137,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -153,9 +159,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#faq"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -173,16 +176,6 @@
       "headline": "What is it?",
       "text": "If someone has accused you of infringing their registered trade mark,and you believe their trade mark has not been used in the market on the goods and/or services specified in their registration for more than 3 years, you may consider submitting a request to remove the trade mark on the basis of non-use.\n\nYou can request removal of a trade mark if you believe the owner:\n\n hasn't used the trade mark in relation to all or some of their goods and/or services for 3 years\n never intended to use the trade mark\n hasn't used the trade mark in good faith.\n\nWhen can you file an application for removal for non-use?\n\nIf you are filing an application for removal on the ground that the owner never intended to use the trade mark, then the application may be made at any time after the subject trade mark has been filed.\n\nIf you are filing an application for removal on the ground that the trade mark has not been used, the following timeframes would apply:\n\n| For trade marks with a filing date 23 February 2019 or earlier; | For trade marks with a filing date 24 February 2019 or later; |\n| --- | --- |\n| You can file after 5 years or more have passed since the filing date* of the application (and if you believe that a trade mark hasn't been used in three years.)  An image of the trade mark register highlighting the date of filing. | You can file after 3 years have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.)     Image of the trade mark register highlighting the Entered on Register date |",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#governmentservice"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-remove-unused-trade-mark-defend-your-right#governmentservice"
       }

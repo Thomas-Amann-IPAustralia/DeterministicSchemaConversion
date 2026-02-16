@@ -105,16 +105,17 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#section-1-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
-        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
-        "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts#webpage"
+        },
         "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm?_gl=1*1a9t713*_ga*MTUwOTM4MDc5LjE3MzM3ODMxNTI.*_ga_GMT4KC15KS*MTczNjgyNzM1OS4yNy4xLjE3MzY4MjczNjkuMC4wLjA."
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
       ]
     },
     {
@@ -124,6 +125,9 @@
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -139,9 +143,6 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#section-1-disclaimer"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -183,16 +184,6 @@
       "headline": "Disclaimer",
       "text": "Please note: Ceasing use of the contested IP alone may not be sufficient to prevent further escalation. It can also have negative consequences on your ability to respond to allegations of infringement or be seen as an admission of liability. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. An IP lawyer or IP attorney can help you assess the strength of the allegations made against you and whether ceasing use of the contested IP is in your best interests.",
       "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#article"
-      }
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#section-2-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-contested-ip-until-resolution#article"
       }
@@ -343,14 +334,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },

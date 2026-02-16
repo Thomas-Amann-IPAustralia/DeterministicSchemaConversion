@@ -46,7 +46,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney",
       "name": "What can I expect from a lawyer or attorney? - IP First Response",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "If you're dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal...",
       "identifier": "E1014",
       "about": [
         {
@@ -99,11 +99,6 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#section-1-standard-disclaimer"
-        }
-      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
@@ -114,10 +109,13 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#article",
-      "description": "xXx_PLACEHOLDER_xXx",
+      "description": "If you're dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal...",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "mainEntityOfPage": {
@@ -127,11 +125,6 @@
       "articleBody": "If you're dealing with a suspected infringement or need help securing or enforcing your IP rights, you may want to speak with a qualified legal professional. \n\nLegal professionals can help you understand your rights, the strength of your case, and the legal processes involved. This may include general lawyers, IP lawyers, or specialist attorneys (such as patent or trade mark attorneys). \n\nHiring a legal professional does not guarantee that you will win a dispute, but it may give you confidence that your rights are being taken seriously and your next steps are well considered. \n\nHere's what you can generally expect: \n\n They can help you understand if what's happening may be a suspected infringement and what options are available.\n They may draft or review documents such as letters of demand, agreements, or court submissions.\n Some are also qualified to represent you in court or at hearings.\n Attorneys (such as patent and trade mark attorneys) are specially trained in certain IP rights and may help with applications, oppositions, or enforcement; though not all attorneys are lawyers.\n\nYou should ask early about the costs, timing, and what's included in their services. Some professionals charge a fixed fee, while others bill hourly. \n\nPlease note: Trade mark and patent attorneys are not technically lawyers, but they are qualified to give advice on specific IP rights under Australian law.",
       "datePublished": "2025-09-11",
       "dateModified": "2025-09-11",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#section-1-standard-disclaimer"
-        }
-      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -164,16 +157,6 @@
           "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#section-1-standard-disclaimer",
-      "headline": "Standard disclaimer",
-      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
-      "position": 1,
-      "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-expect-lawyer-or-attorney#article"
-      }
     },
     {
       "@type": "Legislation",
@@ -220,14 +203,14 @@
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
-      "name": "Plant Breeder’s Rights Act 1994",
+      "name": "Plant Breeder's Rights Act 1994",
       "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
       "legislationType": "Act"
     },
     {
       "@type": "Legislation",
       "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
-      "name": "Plant Breeder’s Rights Regulations 1994",
+      "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
     },
