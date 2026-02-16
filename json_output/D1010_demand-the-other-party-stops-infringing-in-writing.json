@@ -174,14 +174,6 @@
       "@type": "Service",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#service",
       "description": "Send a letter to infringing party notifying them of potential infringement",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage"
       },

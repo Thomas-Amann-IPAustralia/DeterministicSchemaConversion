@@ -65,7 +65,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -195,14 +195,6 @@
       "@type": "Service",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#service",
       "description": "Create ready-to-use contract clauses that will proactively refer IP disputes to dispute resolution processes endorsed by the World Intellectual Property Organisation (WIPO).",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plan-how-ip-disputes-will-be-handled-contracts#webpage"
       },

@@ -61,7 +61,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -143,6 +143,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip#article",
       "description": "Consider licensing your IP to others or obtaining a licence for contested IP to avoid disputes and add value.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -150,9 +153,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip#webpage"
       },
       "headline": "Explore opportunities by licensing your IP",
       "articleBody": "Licensing is a legal arrangement where you, as the rights holder, give another party permission to use your IP rights under agreed terms. This can be done for any IP rights you own or have the right to sublicense, and may apply across specific products, industries or geographic areas.  \n\nDeciding to grant someone else the right to use your IP rights could benefit your business and may be an effective way to resolve various IP disputes, including where another party wants to keep using your IP rights. You can investigate potential licensees yourself or engage an IP professional to assist. \n\nTypes of licences can include: \n\n Exclusive licences (you grant IP rights to only one licensee and can no longer use the IP yourself),\n Non-exclusive licences (you grant IP rights to multiple parties and retain the right to use the IP yourself), or\n- Sole licences (you grant IP rights to only one licensee and retain the right to use the IP yourself).",

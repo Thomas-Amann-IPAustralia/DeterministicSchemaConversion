@@ -124,14 +124,6 @@
       "@type": "GovernmentService",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#governmentservice",
       "description": "Initiate a challenge to the validity of a new patent with IP Australia",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage"
       },

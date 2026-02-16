@@ -151,14 +151,6 @@
       "@type": "Service",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#service",
       "description": "Dispute a .au domain name that may infringe an IP right",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/dispute-au-domain-name#webpage"
       },

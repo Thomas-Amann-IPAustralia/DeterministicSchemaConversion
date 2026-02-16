@@ -135,6 +135,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#article",
       "description": "Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -142,9 +145,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#webpage"
       },
       "headline": "What to do if someone infringes your IP",
       "articleBody": "Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications.",

@@ -125,14 +125,6 @@
       "@type": "GovernmentService",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#governmentservice",
       "description": "Prepare and submit formal patent applications to IP Australia to secure exclusive rights for your invention.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-patent-protect-your-invention-being-copied#webpage"
       },

@@ -121,6 +121,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#article",
       "description": "When to delay responding to groundless IP infringement claims and how to gather evidence for future defence.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -128,9 +131,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#webpage"
       },
       "headline": "Choose not to respond immediately",
       "articleBody": "It can be very stressful when someone accuses you of IP infringement. This can be even more confusing if the allegation that you are infringing someone's intellectual property (IP) appears weak or unfounded. It is a good idea to evaluate the situation and consider your options before deciding how you might deal with the infringement allegation.\n\nNot taking an immediate action does not mean that you should ignore the issue. You may require some time to:\n\n Assess the other party's claims and demands relating to the alleged infringement.\n Verify their identity and the validity of the rights they claim ownership of.\n Consider any evidence you may have to refute their claims.\n Consult with legal professionals, or to decide on your next steps.\n- Determine whether the letter is genuine or is fraudulent.\n\nFor more information on how to assess a letter of demand (or a cease-and-desist letter), see IP First Response's page on Receiving a letter of demand.",

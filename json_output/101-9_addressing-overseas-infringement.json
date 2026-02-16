@@ -121,6 +121,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#article",
       "description": "Australian businesses that discover their intellectual property (IP) is being infringed overseas face unique challenges. By understanding these challenges, they can make informed decisions about how to protect their IP internationally.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -128,9 +131,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#webpage"
       },
       "headline": "Addressing overseas infringement",
       "articleBody": "Australian businesses that discover their intellectual property (IP) is being infringed overseas face unique challenges. By understanding these challenges, they can make informed decisions about how to protect their IP internationally.\n\nOne key point to keep in mind is that IP rights are territorial in nature.\n\nIP that requires registration, such as trade marks, patents, designs, and plant breeders' rights, only provides protection in the country where it is registered. Applying for and registering with IP Australia does not extend IP rights protection to other countries.\n\nFor example, Sarah registers a design for a chair in Australia. When she discovers that a Chinese manufacturer is copying her product, she finds that her Australian design registration offers no protection within China. Although a registered design can prevent the copied product from being imported into Australia, to take formal legal action within China, she would first need to obtain a Chinese design patent.\n\nCopyright, however, can be protected in several countries under specific conditions. If the copyright material was created and protected in Australia, it will also be protected in countries that acknowledge its protection through international treaties.\n\nFor example, Alec discovers that someone has been reproducing his painting in the UK. He could take action in the UK for copyright infringement of his artistic work, as both Australia and the UK recognise the protection of copyright in each other's countries.",

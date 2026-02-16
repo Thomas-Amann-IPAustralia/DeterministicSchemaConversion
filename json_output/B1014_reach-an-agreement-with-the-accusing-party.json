@@ -117,6 +117,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#article",
       "description": "Negotiate a mutually acceptable commercial or financial resolution.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -124,9 +127,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#webpage"
       },
       "headline": "Reach an agreement with the accusing party",
       "articleBody": "Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute. While negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process. \n\nSometimes, direct negotiation may not be the best way forward to resolve an IP dispute. This is especially the case if you have a difficult relationship with the other party involved or find it challenging to communicate with them. In these cases, representatives such as lawyers are commonly sought to provide legal advice and assistance.  \n\nParties can propose and negotiate commercial outcomes in different ways, including communicating directly in person or through correspondence, or instructing their legal representatives to do so on their behalf.",

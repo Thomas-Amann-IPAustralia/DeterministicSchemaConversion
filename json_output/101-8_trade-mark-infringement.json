@@ -122,6 +122,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#article",
       "description": "Trade mark infringement can occur when someone uses a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s registered trade mark,1 particularly if it is for the same or similar goods or services.2 This can lead to confusion among consumers about the source of the goods or services being offered.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -129,9 +132,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage"
       },
       "headline": "Trade mark infringement",
       "articleBody": "Trade mark infringement can occur when someone uses a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s registered trade mark,1 particularly if it is for the same or similar goods or services.2 This can lead to confusion among consumers about the source of the goods or services being offered.",

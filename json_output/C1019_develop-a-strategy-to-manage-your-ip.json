@@ -61,7 +61,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -145,6 +145,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#article",
       "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -152,9 +155,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage"
       },
       "headline": "Develop a strategy to manage your IP",
       "articleBody": "You may consider developing a comprehensive, a forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP. An IP strategy brings together your commercial goals with practical actions such as registering key rights, monitoring registries and market competitors' IP, and planning responses should you experience suspected copying in the future. \n\nBy mapping this out early, you may avoid making important decisions under pressure, reduce legal risks and place your business in a stronger position to grow or defend your IP assets. \n\nAn IP strategy can be formal or simple: anything from a one-page checklist to a detailed policy covering multiple types of IP such as patents, trade marks, designs, plant breeders' right and copyright. \n\nKey elements often include: \n\n Identifying what IP assets you already have or intend to create.\n Choosing the best protection tools (e.g. trade mark registration or using non-disclosure agreements and contracts to protect your IP assets).\n Setting reminders for renewals and annual reviews.\n Deciding how you will monitor the market for suspected infringement.\n- Outlining who will act and what budget is available if enforcement is needed.",

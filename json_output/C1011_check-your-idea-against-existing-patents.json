@@ -121,6 +121,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#article",
       "description": "Conduct a thorough search of existing patents - also known as Freedom to Operate search.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -128,9 +131,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#webpage"
       },
       "headline": "Check your idea against existing patents",
       "articleBody": "A 'freedom to operate' search helps you check whether your product or process might infringe on someone else's patent. It's sometimes called a 'clearance search'. \n\nThis kind of search can help identify if there are any existing patent rights that could block you from making, using, or selling your product or invention - particularly in the countries where you plan to operate. \n\nIf products or inventions are found that might be relevant, you may wish to explore options such as changing your design, negotiating a licence, or asking a legal professional to investigate further. \n\nYou can do a basic search yourself using free tools like the Australian patent search Australian Patent Search, or global databases like Espacenet - patent search. However, a freedom to operate search is more detailed than just checking if something is new - it often requires specialist help to interpret results properly. \n\nA freedom to operate search typically only searches patents, and does not include other sources such as published research papers or other businesses selling similar products: the search only focuses on patents on which your idea or product would potentially infringe.  \n\nA freedom to operate search does not give you a legal guarantee - but it may help you avoid costly surprises later.",

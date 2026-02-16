@@ -133,14 +133,6 @@
       "@type": "GovernmentService",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pbr-infringement#governmentservice",
       "description": "Infringement of Plant Breeders’ Rights (PBRs) can occur when someone uses a protected variety without the owner’s permission. In Australia, PBRs last for up to 20 years or 25 years, depending on the plant type.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/pbr-infringement#webpage"
       },

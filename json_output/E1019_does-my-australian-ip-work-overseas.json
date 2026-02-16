@@ -113,6 +113,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#article",
       "description": "Australian registration protects the relevant IP right within Australia. When you register a trade mark, patent, design or plant breeder's right with IP...",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -120,9 +123,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#webpage"
       },
       "headline": "Does my Australian IP work overseas?",
       "articleBody": "Australian registration protects the relevant IP right within Australia. When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia. \n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: Can I protect my ideas in other countries? | IP Australia First Response. \n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.",

@@ -61,7 +61,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -123,6 +123,7 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
+      "text": "Navigating intellectual property (IP) can be confusing. Different professionals offer different expertise, and their services sometimes overlap. The notes below explain who does what, how they can help, and what to consider when choosing someone for your situation. Engaging the right professional to help secure your IP rights may help you get more value from your ideas and business opportunities.",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#section-1-what-all-ip-professionals-have-in-common"
@@ -221,14 +222,6 @@
       "@type": "Service",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#service",
       "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage"
       },
@@ -236,8 +229,7 @@
       "serviceType": "Commercial Third Party Service",
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "text": "Navigating intellectual property (IP) can be confusing. Different professionals offer different expertise, and their services sometimes overlap. The notes below explain who does what, how they can help, and what to consider when choosing someone for your situation. Engaging the right professional to help secure your IP rights may help you get more value from your ideas and business opportunities."
+      }
     },
     {
       "@type": "WebPageElement",

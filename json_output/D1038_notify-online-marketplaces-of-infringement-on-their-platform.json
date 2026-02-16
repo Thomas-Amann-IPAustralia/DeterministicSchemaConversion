@@ -61,7 +61,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -190,14 +190,6 @@
       "@type": "Service",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#service",
       "description": "Request infringing material is removed from online marketplaces and platforms",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
       },

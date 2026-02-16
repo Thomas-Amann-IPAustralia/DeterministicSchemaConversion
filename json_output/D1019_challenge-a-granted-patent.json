@@ -127,14 +127,6 @@
       "@type": "GovernmentService",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#governmentservice",
       "description": "Request a re-examination with IP Australia, to revoke or amend a granted patent",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent#webpage"
       },

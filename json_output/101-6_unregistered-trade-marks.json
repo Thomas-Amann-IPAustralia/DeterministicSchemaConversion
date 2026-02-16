@@ -124,6 +124,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#article",
       "description": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects these “unregistered” trade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -131,9 +134,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage"
       },
       "headline": "Unregistered trade marks",
       "articleBody": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects these “unregistered” trade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner.",

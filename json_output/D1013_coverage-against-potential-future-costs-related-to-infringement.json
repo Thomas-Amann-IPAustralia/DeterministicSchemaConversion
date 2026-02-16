@@ -66,7 +66,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         },
         {
@@ -133,6 +133,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#article",
       "description": "Protect yourself from some costs involved in IP disputes",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -140,9 +143,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/coverage-against-potential-future-costs-related-infringement#webpage"
       },
       "headline": "Coverage against potential future costs related to infringement",
       "articleBody": "Intellectual Property (IP) insurance is a specific type of coverage designed to protect businesses and individuals against the financial risks associated with intellectual property disputes. It can help cover the legal costs and potential damages involved in defending against infringement allegations or enforcing one's own IP rights. IP insurance can apply to various forms of registered intellectual property, such as patents and trademarks, or unregistered rights like copyrights and trade secrets. There are also other forms of insurance that may be relevant, such as litigation insurance.",

@@ -96,6 +96,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article",
       "description": "You are not authorized to access this page.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -103,9 +106,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage"
       },
       "headline": "Access denied",
       "articleBody": "You are not authorized to access this page."

@@ -149,14 +149,6 @@
       "@type": "GovernmentService",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#governmentservice",
       "description": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage"
       },

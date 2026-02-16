@@ -144,6 +144,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#article",
       "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -151,9 +154,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage"
       },
       "headline": "What is IP infringement?",
       "articleBody": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",

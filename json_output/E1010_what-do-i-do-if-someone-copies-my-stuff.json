@@ -114,6 +114,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#article",
       "description": "When you think someone has copied your product, logo, idea or brand, it is called 'suspected infringement'. The word 'suspected' is used because only a court...",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -121,9 +124,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#webpage"
       },
       "headline": "What do I do if someone copies my stuff?",
       "articleBody": "When you think someone has copied your product, logo, idea or brand, it is called 'suspected infringement'. The word 'suspected' is used because only a court can decide if infringement has actually occurred - but that doesn't mean you cannot take action. \n\nDifferent types of IP are protected in different ways. You can only take action if your IP is protected by a specific right such as a registered trade mark, granted patent, certified design, or copyright. \n\nIf you don't have formal IP rights, it may still be possible to take action, but it can be harder. Some legal protections may still apply under consumer law, contract law or common law--but these usually require help from a legal professional. \n\nStart by working out: \n\n What exactly has been copied--your logo, invention, product, written work, name, style or something else.\n Whether what's been copied is actually protected by a registered or automatic IP right.\n Whether the use is actually unauthorised or illegal - some uses may be allowed, or may not amount to infringement under the law.\n\nIt's not always obvious whether infringement has happened. Even when someone copies your work, it may not be illegal. For example, your product might be copied legally if it isn't covered by a registered design or patent. \n\nTo figure out what's going on, many people start by: \n\n Checking their own IP rights (such as trade mark, patent, design or copyright status).\n Gathering evidence--like photos, screenshots, or product listings showing the suspected use.\n Looking at how similar the two things are, and whether there's confusion or copying.\n\nYou may wish to speak with a legal professional to assess whether the other person's behaviour may legally amount to infringement. Qualified experts for IP enforcement include lawyers who specialise in IP, as well as registered trade mark and patent attorneys.",

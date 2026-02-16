@@ -118,6 +118,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#article",
       "description": "Ensure your partners and suppliers are not unintentionally exposing you to IP risk through unlicensed or counterfeit components.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -125,9 +128,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/detect-and-discourage-potential-infringement-your-supply-chain#webpage"
       },
       "headline": "Detect and discourage potential infringement in your supply chain",
       "articleBody": "Monitoring your supply chain involves establishing procedures to track goods and components from raw materials to delivery. It may include: \n\n Vetting suppliers\n Implementing track‑and‑trace systems\n Analysing trade data to detect suspected copying or diversion of your products or intellectual property (IP)\n Regular inspections of incoming orders\n Sampling finished products for quality and authenticity\n Scanning online marketplace listings for unauthorised items\n- Conducting basic factory or warehouse audits.\n\nOne aim of monitoring supply chains is to identify warning signs such as unusual shipping routes, surplus inventory or unregistered factories before counterfeit or unauthorised goods reach customers. Tools range from low‑cost verification and traceability solutions such as QR codes, RFID and barcode scans to supplier questionnaires and specialised software that tracks online marketplace listings.  \n\nSome businesses may also engage third‑party brand‑protection services or share findings with local law enforcement. You can also alert the Australian Border Force to suspected trade mark or copyright infringing imports through the  Notice of Objection scheme.  \n\nMonitoring can be continuous or ad‑hoc and is most effective when paired with clear purchase agreements, auditing rights and staff training so everyone knows how to report suspected infringement.",

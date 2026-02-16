@@ -51,7 +51,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Design right",
+          "name": "Design",
           "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         }
       ],
@@ -125,6 +125,9 @@
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#article",
       "description": "Conduct a thorough search of existing registered designs - also known as Freedom to Operate search.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#webpage"
+      },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -132,9 +135,6 @@
       },
       "author": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#webpage"
       },
       "headline": "Check your product against existing designs",
       "articleBody": "Searching through the publicly accessible list of registered designs helps you understand whether your product infringes upon an existing registered design. This is sometimes called a clearance search or a freedom to operate search (FTO).\n\nThese searches look across the Australian Design Search database to identify any earlier registered designs that may limit your ability to make, sell or import your design. \n\nYou can carry out a search yourself using Australian Design Search  on the IP Australia website for registered designs in Australia. Should you wish to export your product overseas, many overseas IP offices also offer free search tools for registered designs in their jurisdictions. Searching and interpreting existing designs can be complex, so you may want to reach out to an IP professional with experience in designs to run such searches or help interpret any results.\n\nWhile not a guarantee against disputes, a freedom to operate search can reduce the chance of running into legal and commercial conflicts in the future.\n\nDetermining if two designs are similar can be difficult without IP knowledge. You may wish to seek professional assistance from an IP attorney or other service which offers designs searches. For more information about what constitutes design infringement: see Infringement 101 | Designs infringement",

@@ -132,14 +132,6 @@
       "@type": "GovernmentService",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#governmentservice",
       "description": "Submit a third-party notification of prior art (S27) to alert IP Australia to earlier work that may show a patent application lacks novelty or inventiveness and thus cannot be granted.",
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-patent-under-examination-being-granted#webpage"
       },
