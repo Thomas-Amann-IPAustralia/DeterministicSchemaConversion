@@ -53,8 +53,24 @@ IP_AUSTRALIA_ENTITY: dict = {
         "@type": "GovernmentOrganization",
         "name": "Australian Government",
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q5973650",
+    "sameAs": [ "https://www.wikidata.org/wiki/Q5973650",
     "https://en.wikipedia.org/wiki/IP_Australia"
+    ]
+    "knowsAbout": [
+      "Intellectual Property",
+      "Patents",
+      "Trade Marks",
+      "Design Rights",
+      "Plant Breeder's Rights",
+      "Copyright",
+      "Dispute Resolution"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "IP First Response content managers",
+      "email": "IPFirstResponse@IPAustralia.gov.au",
+      "description": "Feedback and enquiries regarding IP First Response"
+    },
 }
 
 # ── Standard disclaimer (hardcoded on every page as usageInfo) ──
@@ -1388,7 +1404,7 @@ def build_jsonld(
     if copyright_year:
         webpage_entity["copyrightYear"] = copyright_year
         webpage_entity["copyrightHolder"] = {"@id": IP_AUSTRALIA_ID}
-    webpage_entity["creditText"] = "IP First Response initiative led by IP Australia"
+    webpage_entity["creditText"] = "Source: IP First Response initiative led by IP Australia"
     if has_part_refs:
         webpage_entity["hasPart"] = has_part_refs
 
