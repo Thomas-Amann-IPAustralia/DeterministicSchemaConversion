@@ -54,6 +54,7 @@ IP_AUSTRALIA_ENTITY: dict = {
         "name": "Australian Government",
     },
     "sameAs": "https://www.wikidata.org/wiki/Q5973650",
+    "https://en.wikipedia.org/wiki/IP_Australia"
 }
 
 # ── Standard disclaimer (hardcoded on every page as usageInfo) ──
@@ -230,18 +231,21 @@ class ProviderEntry:
 _GOV_PROVIDERS: dict[str, ProviderEntry] = {
     "ip australia": ProviderEntry(
         name="IP Australia",
+        alternateName="Intellectual Property Australia",
         url="https://www.ipaustralia.gov.au",
         same_as=["https://www.ipaustralia.gov.au"],
         org_type="GovernmentOrganization",
     ),
     "australian border force": ProviderEntry(
         name="Australian Border Force",
+        alternateName="ABF",
         url="https://www.abf.gov.au",
         same_as=["https://www.abf.gov.au"],
         org_type="GovernmentOrganization",
     ),
     "australian small business and family enterprise ombudsman": ProviderEntry(
         name="Australian Small Business and Family Enterprise Ombudsman",
+        alternateName="ASBFEO",
         url="https://www.asbfeo.gov.au",
         same_as=["https://www.asbfeo.gov.au"],
         org_type="GovernmentOrganization",
@@ -254,6 +258,7 @@ _GOV_PROVIDERS: dict[str, ProviderEntry] = {
     ),
     "trans-tasman ip attorneys board": ProviderEntry(
         name="Trans-Tasman IP Attorneys Board",
+        alternateName="TTIPA",
         url="https://www.ttipattorney.gov.au",
         same_as=["https://www.ttipattorney.gov.au"],
         org_type="GovernmentOrganization",
@@ -263,15 +268,17 @@ _GOV_PROVIDERS: dict[str, ProviderEntry] = {
 # Known NGOs / international bodies.
 _NGO_PROVIDERS: dict[str, ProviderEntry] = {
     "auda": ProviderEntry(
-        name="auDA (.au Domain Administration Ltd)",
+        name=".au Domain Administration",
+        alternateName="auDA",
         url="https://www.auda.org.au",
         same_as=["https://www.auda.org.au"],
         org_type="NGO",
     ),
     "world intellectual property office": ProviderEntry(
-        name="World Intellectual Property Organization (WIPO)",
+        name="World Intellectual Property Organization",
+        alternateName="WIPO",
         url="https://www.wipo.int",
-        same_as=["https://www.wipo.int"],
+        same_as=["https://www.wikidata.org/wiki/Q177773"],
         org_type="NGO",
     ),
     "world intellectual property office arbitration and mediation center": ProviderEntry(
@@ -283,7 +290,7 @@ _NGO_PROVIDERS: dict[str, ProviderEntry] = {
     "copyright council": ProviderEntry(
         name="Australian Copyright Council",
         url="https://www.copyright.org.au",
-        same_as=["https://www.copyright.org.au"],
+        same_as=["https://www.wikidata.org/wiki/Q4824042"],
         org_type="NGO",
     ),
 }
@@ -1355,6 +1362,17 @@ def build_jsonld(
             "@type": "BusinessAudience",
             "audienceType": "Small and medium businesses",
             "geographicArea": {"@type": "Country", "name": "Australia"},
+                "alternateName": [
+                "Startups",
+                "Entrepreneurs",
+                "SME",
+                "Spinout Company",
+                "Startup",
+                "Spinout",
+                "Small to Medium Enterprise",
+                "Sole Trader",
+                "Australian Small Business Owners"
+                ],
         },
         # Fix 5: Always include the standard hardcoded disclaimer.
         "usageInfo": STANDARD_DISCLAIMER,
