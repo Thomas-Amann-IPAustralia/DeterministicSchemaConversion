@@ -77,6 +77,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-3-practical-tips"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-4-standard-disclaimer"
         }
       ]
     },
@@ -105,6 +108,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-3-practical-tips"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -180,6 +186,16 @@
       "headline": "Practical tips",
       "text": "Preventing issues is always better when it comes to international IP protection. Consider filing for protection in key markets early, ideally before launching products or services. While this requires an upfront investment, it's generally far less costly than trying to stop infringement once it has already begun.\n\nAddressing overseas IP infringement is a complicated and often costly process. Consider consulting an IP lawyer who specialises in international IP protection and enforcement. They can offer specific advice tailored to your situation and help you craft a cost-effective international IP strategy. While it's frustrating to see your IP copied internationally, weigh the costs against the potential benefits carefully. Focus your resources on protecting key markets where enforcement is practical and commercially justified.",
       "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#article"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-4-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 4,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#article"
       }

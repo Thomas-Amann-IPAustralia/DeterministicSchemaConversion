@@ -78,6 +78,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-2-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-3-standard-disclaimer"
         }
       ]
     },
@@ -101,13 +104,18 @@
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "text": "You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia's examiner~~'~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be 'certified'. \n\nExamination is often requested by the design's owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design. \n\nIf an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.  \n\nYou can only take formal action to protect your design right -- like sending a letter of demand (or cease-and-desist letter) -- after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see Unjustified Threats.",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-1-what-is-it"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-2-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -173,7 +181,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-1-what-is-it",
       "headline": "What is it?",
-      "text": "You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia's examiner~~'~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be 'certified'. \n\nExamination is often requested by the design's owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design. \n\nIf an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.  \n\nYou can only take formal action to protect your design right -- like sending a letter of demand (or cease-and-desist letter) -- after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see Unjustified Threats.",
+      "text": "You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia's examiners will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be 'certified'. \n\nExamination is often requested by the design's owner to secure full protection of their registered design. Examination can also be requested by a third party ahead of a dispute, usually where the third party wants to test the validity of a registered design. \n\nIf an issue is raised during the examination process, you will have the chance to respond to the issues outlined in the report. You may be able to address these issues by providing submissions or other evidence in response to the assessment, amending the registration or requesting a hearing.  \n\nYou can only take formal action to protect your design right -- like sending a letter of demand (or cease-and-desist letter) -- after your design is certified. A threat to start infringement or similar proceedings against another person in respect of a design will be an unjustified threat if the design has not been certified. A person who receives such a threat can start legal action against the person making the threat. For more information, please see Unjustified Threats.",
       "position": 1,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#governmentservice"
@@ -190,6 +198,16 @@
       }
     },
     {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#section-3-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#governmentservice"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq",
@@ -200,92 +218,92 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q1-a",
-            "text": "- Converts your registered design into a certified design allowing you to enforce it against infringers.\n- Provides proof of validity, providing further deterrence to possible copycats (in comparison to a registered but uncertified design).\n- May provide further surety to investors, licensees and customers over the validity and value of your intellectual property."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q1-a",
+            "text": "Converts your registered design into a certified design allowing you to enforce it against infringers.\n Provides proof of validity, providing further deterrence to possible copycats (in comparison to a registered but uncertified design).\n- May provide further surety to investors, licensees and customers over the validity and value of your intellectual property."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q2-a",
-            "text": "- Examination could lead to you needing to amend your registered design.\n- Examination could lead to your registered design being revoked.\n- Failing to pay your share of the examination fee (when examination is requested by a third party) will cause your registration to cease.\n- A certificate of examination related to a registered design does not guarantee success; enforcing a design may still be costly."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q2-a",
+            "text": "Examination could lead to you needing to amend your registered design.\n Examination could lead to your registered design being revoked.\n Failing to pay your share of the examination fee (when examination is requested by a third party) will cause your registration to cease.\n A certificate of examination related to a registered design does not guarantee success; enforcing a design may still be costly."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q3-a",
-            "text": "- Your registered design is certified and becomes enforceable.\n- You apply to amend your registered design so it can be certified, a list of allowable amendments can be found in the relevant section of the Designs Manual: 22.2.1. Amending an application: Amendments that are allowable | IPA Manuals\n- Your registered design is revoked because you were unable to overcome objections or other matters raised by the ~~E~~xaminer within the relevant time limit (whether through submissions, amendments to your registration, lodgement of evidence or other steps).\n- You do not pay your share of the fee for a third-party examination and your registered design ceases."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q3-a",
+            "text": "Your registered design is certified and becomes enforceable.\n You apply to amend your registered design so it can be certified, a list of allowable amendments can be found in the relevant section of the Designs Manual: 22.2.1. Amending an application: Amendments that are allowable | IPA Manuals\n Your registered design is revoked because you were unable to overcome objections or other matters raised by the xaminer within the relevant time limit (whether through submissions, amendments to your registration, lodgement of evidence or other steps).\n You do not pay your share of the fee for a third-party examination and your registered design ceases."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q4-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q4-a",
             "text": "IP Australia's fee schedule lists the owner's examination fee at $500 (effective 1 October 2024). If a third party requests examination, you and the requester split the fee."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q5-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q5-a",
             "text": "IP Australia reports an average wait of up to 12  weeks from request to decision. If you have urgent reasons (for example, pending litigation), you may request expedited examination. IP Australia offers this as a business process and timelines can vary, but reports are often issued within 4-8 weeks. Preparing evidence or amendments may add extra work hours."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q6-a",
             "text": "As of 2024, approximately 20% of designs registered with IP Australia were also certified."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q7-a",
-            "text": "- The registered design owner or an exclusive licensee who wants to enforce the right.\n- Any other person (for example, a competitor) can request examination."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q7-a",
+            "text": "The registered design owner or an exclusive licensee who wants to enforce the right.\n Any other person (for example, a competitor) can request examination."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q8-a",
-            "text": "- Design right owner.\n- IP Australia's design examiner makes the examination decision.\n- Optional: third‑party requester of examination.\n- Optional: IP lawyer or patent attorney."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q8-a",
+            "text": "Design right owner.\n IP Australia's design examiner makes the examination decision.\n Optional: third‑party requester of examination.\n Optional: IP lawyer or patent attorney."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq#q9-a",
-            "text": "- Registered design number.\n- Ability to pay the examination fee.\n- Be prepared to respond to an examination report which may require providing additional evidence or submissions to address any issues raised.\n- Consider whether to get help from an IP lawyer or IP attorney.\n- Keep copies of all correspondence and the certificate of examination."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#faq-q9-a",
+            "text": "Registered design number.\n Ability to pay the examination fee.\n Be prepared to respond to an examination report which may require providing additional evidence or submissions to address any issues raised.\n Consider whether to get help from an IP lawyer or IP attorney.\n- Keep copies of all correspondence and the certificate of examination."
           }
         }
       ]

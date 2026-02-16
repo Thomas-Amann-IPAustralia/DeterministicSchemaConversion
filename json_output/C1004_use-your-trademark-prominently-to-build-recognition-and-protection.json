@@ -77,6 +77,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer"
         }
       ]
     },
@@ -99,6 +102,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -131,6 +137,16 @@
       ]
     },
     {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#article"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq",
@@ -141,92 +157,92 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q1-a",
-            "text": "- Increases likelihood of building public recognition and goodwill for the brand.\n- Creates evidence of trade mark use that may support administration processes or enforcement later.\n- Helps prevent a mark becoming generic or losing distinctiveness.\n- Deters copycats by signalling that you value and monitor the trade mark."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q1-a",
+            "text": "Increases likelihood of building public recognition and goodwill for the brand.\n Creates evidence of trade mark use that may support administration processes or enforcement later.\n Helps prevent a mark becoming generic or losing distinctiveness.\n Deters copycats by signalling that you value and monitor the trade mark."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q2-a",
-            "text": "- Misuse of the '®' symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see: What are trade marks? | IP Australia.\n- Strict brand rules may limit creative marketing or re‑branding opportunities."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q2-a",
+            "text": "Misuse of the '®' symbol before registration can attract penalties under the Trade Marks Act 1995. For more information on this, see: What are trade marks? | IP Australia.\n Strict brand rules may limit creative marketing or re‑branding opportunities."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q3-a",
-            "text": "Using your trade mark in a consistent manner may result in: \n\n- Customers reliably associating the mark with your business alone\n- Easier proof of ownership and distinctiveness in a dispute or trade mark application\n- Fewer instances of accidental misuse by employees or third parties."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q3-a",
+            "text": "Using your trade mark in a consistent manner may result in: \n\n Customers reliably associating the mark with your business alone\n Easier proof of ownership and distinctiveness in a dispute or trade mark application\n- Fewer instances of accidental misuse by employees or third parties."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q4-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q4-a",
             "text": "The costs of setting up brand guidelines for consistent trade mark usage can vary heavily, depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists.  \n\nPreparing simple brand guidelines and training materials may cost a few hours of staff time or modest design fees. However, optional legal review of the guidelines or close collaboration with marketing specialist may involve substantial professional fees."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q5-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q5-a",
             "text": "The time taken to set up brand guidelines for consistent trade mark usage will vary heavily depending on the size of your business, the scope of the trade mark and whether you choose to engage third-party services such as IP attorneys, marketing or brand protection specialists."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q6-a",
             "text": "Developing policies and guidelines for consistent, strategic use of trade mark is commonly used by businesses that have trade marks. It is often seen as part of best practices to reinforce one's right to a trade mark."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q7-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q7-a",
             "text": "Any trade mark owner or authorised user."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q8-a",
-            "text": "- Trade mark owner or authorised users such as employees and contractors who apply the branding.\n- Optional: IP professionals for review, consultation and advice."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q8-a",
+            "text": "Trade mark owner or authorised users such as employees and contractors who apply the branding.\n Optional: IP professionals for review, consultation and advice."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq#q9-a",
-            "text": "- A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour.\n- Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark.\n- Routine checks of public use and finding inconsistencies.\n- Records of dated examples (screenshots, packaging, adverts) showing correct use."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/use-your-trade-mark-prominently-build-recognition-and-protection#faq-q9-a",
+            "text": "A clear, preferred presentation of your trade mark whether that is word, image, combination of word and image, or a non-traditional sign such as shape, sound, scent and colour.\n Basic rules covering the use of colours, fonts, size and placement of key elements in your trade mark.\n Routine checks of public use and finding inconsistencies.\n Records of dated examples (screenshots, packaging, adverts) showing correct use."
           }
         }
       ]

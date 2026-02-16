@@ -28,7 +28,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas",
       "name": "Does my Australian IP work overseas? - IP First Response",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "identifier": "E1019",
       "about": [
         {
@@ -67,12 +67,17 @@
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "creditText": "IP First Response initiative led by IP Australia"
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#section-1-standard-disclaimer"
+        }
+      ]
     },
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#article",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -85,6 +90,11 @@
       "articleBody": "Australian registration protects the relevant IP right within Australia. When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia. \n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: Can I protect my ideas in other countries? | IP Australia First Response. \n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.",
       "datePublished": "2025-09-11",
       "dateModified": "2025-10-02",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#section-1-standard-disclaimer"
+        }
+      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -149,6 +159,16 @@
           "name": "PCT - The International Patent System"
         }
       ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-my-australian-ip-work-overseas#article"
+      }
     },
     {
       "@type": "Legislation",

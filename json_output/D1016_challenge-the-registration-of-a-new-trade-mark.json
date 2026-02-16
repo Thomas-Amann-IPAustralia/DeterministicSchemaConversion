@@ -80,6 +80,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-1-what-is-it"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-2-standard-disclaimer"
         }
       ]
     },
@@ -103,13 +106,15 @@
       "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "text": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia. \n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):  \n\n- similarity to an existing trade mark\n- being too generic or descriptive\n- containing a connotation that is misleading and confusing.\n\nOpposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia. \n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-1-what-is-it"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-2-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -187,8 +192,18 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-1-what-is-it",
       "headline": "What is it?",
-      "text": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia. \n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):  \n\n- similarity to an existing trade mark\n- being too generic or descriptive\n- containing a connotation that is misleading and confusing.\n\nOpposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia. \n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.",
+      "text": "Challenges to the registration of trade marks by IP Australia are known as oppositions. You can oppose the registration of a trade mark if you believe that an accepted trade mark would impact your existing trade mark or otherwise impact your or the public interest. Some oppositions move to a hearing, conducted by neutral experts within IP Australia. \n\nThere are several reasons on which a trade mark application can be opposed, including (but not limited to):  \n\n similarity to an existing trade mark\n being too generic or descriptive\n- containing a connotation that is misleading and confusing.\n\nOpposition processes can also be used for opposing other types of IP Australia decisions such as applications for removal, advertised amendments to trade marks and certain extensions of time proposed by IP Australia. \n\nObjections to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options.",
       "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#governmentservice"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#section-2-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#governmentservice"
       }
@@ -204,91 +219,91 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q1-a",
-            "text": "- Initiating this process allows you to draw attention to factors which may have been overlooked in the examination process or other issues which may not have been allowed to be considered during examination.\n The hearing officer has the power to award costs* against a party to help recoup some of the costs incurred by the other party during the opposition process. This does not, however, extend to any losses or damages.\n- Hearing officers in IP Australia have a high level of expertise, experience and authority in the field of trade mark law.\n- The process is accessible without professional assistance required, though IP professionals are commonly used.\n- Trade mark opposition and hearing processes are more informal and generally quicker than court proceedings in reaching an outcome.\n- The process allows parties to request a cooling-off period or temporary suspension of the process to engage in negotiations and settlement, should they wish to resolve the dispute that way.\n- You can withdraw from the opposition process at any time. This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q1-a",
+            "text": "Initiating this process allows you to draw attention to factors which may have been overlooked in the examination process or other issues which may not have been allowed to be considered during examination.\n The hearing officer has the power to award costs against a party to help recoup some of the costs incurred by the other party during the opposition process. This does not, however, extend to any losses or damages.\n Hearing officers in IP Australia have a high level of expertise, experience and authority in the field of trade mark law.\n The process is accessible without professional assistance required, though IP professionals are commonly used.\n Trade mark opposition and hearing processes are more informal and generally quicker than court proceedings in reaching an outcome.\n The process allows parties to request a cooling-off period or temporary suspension of the process to engage in negotiations and settlement, should they wish to resolve the dispute that way.\n- You can withdraw from the opposition process at any time. This allows parties to start and continue negotiation throughout the opposition process and agree to withdraw from the process if a settlement is reached."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q2-a",
-            "text": "- If your opposition action is unsuccessful and the trade mark is registered, you may also be required to pay the other party's costs.\n- When opposing the registration of a trade mark, the applicant will be notified of your opposition. You should consider your overall strategy and if you are comfortable having the applicant be aware of you and your business.\n- Due to the public nature of this process there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to take enforcement action should be considered as part of your IP/brand protection strategy.\n- There is a risk that taking this action would require you to defend your own IP rights. The ruling might not go your way and undermine the strength of your own IP.\n- It is possible that opposing a registration of a trade mark can alert the other party to your claims and can cause them to act more defensively or even contest your own rights.\n- Using this process improperly can be considered a bullying tactic and may expose you to costs.\n- If you are late in providing evidence, you can request an extension to the evidence submission timeframe. However, these can be difficult to obtain. You will need to demonstrate strong grounds for the extension and pay additional fees to IP Australia when you make the request. These fees are not refundable even if the extension isn't granted.\n- If you are successful in opposing registration of a trade mark, the denied applicant may appeal the decision"
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q2-a",
+            "text": "If your opposition action is unsuccessful and the trade mark is registered, you may also be required to pay the other party's costs.\n When opposing the registration of a trade mark, the applicant will be notified of your opposition. You should consider your overall strategy and if you are comfortable having the applicant be aware of you and your business.\n Due to the public nature of this process there is a risk of public scrutiny, exposure of sensitive information, negative publicity or reputational damage. The decision to take enforcement action should be considered as part of your IP/brand protection strategy.\n There is a risk that taking this action would require you to defend your own IP rights. The ruling might not go your way and undermine the strength of your own IP.\n It is possible that opposing a registration of a trade mark can alert the other party to your claims and can cause them to act more defensively or even contest your own rights.\n Using this process improperly can be considered a bullying tactic and may expose you to costs.\n If you are late in providing evidence, you can request an extension to the evidence submission timeframe. However, these can be difficult to obtain. You will need to demonstrate strong grounds for the extension and pay additional fees to IP Australia when you make the request. These fees are not refundable even if the extension isn't granted.\n If you are successful in opposing registration of a trade mark, the denied applicant may appeal the decision"
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q3-a",
-            "text": "1. The other party does not contest your opposition to their registration, and the trade mark application does not get registered.\n2. The other party contests your argument and defends their application in an opposition and hearings process, resulting in:\n   - achieving registration, advertised amendment or extension of time in favour of their position, or\n   - your opposition being upheld, and the other party fails to achieve registration, advertised amendment or extension of time.\n3. IP Australia doesn't accept your application to oppose an accepted trade mark when your application does not meet formal or legal requirements."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q3-a",
+            "text": "1. The other party does not contest your opposition to their registration, and the trade mark application does not get registered.\n2. The other party contests your argument and defends their application in an opposition and hearings process, resulting in:\n    achieving registration, advertised amendment or extension of time in favour of their position, or\n    your opposition being upheld, and the other party fails to achieve registration, advertised amendment or extension of time.\n3. IP Australia doesn't accept your application to oppose an accepted trade mark when your application does not meet formal or legal requirements."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q4",
           "name": "What might the cost be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q4-a",
-            "text": "- The fees to IP Australia will typically cost $650. However, extensions of time and other processes will incur further costs. Detailed costs can be seen here.\n- If you have an IP professional acting on your behalf, you may be liable for additional legal fees."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q4-a",
+            "text": "The fees to IP Australia will typically cost $650. However, extensions of time and other processes will incur further costs. Detailed costs can be seen here.\n If you have an IP professional acting on your behalf, you may be liable for additional legal fees."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q5-a",
-            "text": "Duration of process \\\nThe process duration varies depending on the complexity of the matter in question, how quickly each party responds and each party's strategy. Refer to some of the timeframes permitted in the image below. \n\nFlow chart - Oppose the registration of a trade mark  \n\nTimeframe to initiate process \n\nUnless the period has been extended, opposition to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options. \n\nThe status of the trade mark in the Register will be shown as 'Accepted: In opposition period' during this period. It will also contain an 'application being considered' notice above the application's timeline. Check the status of the trade mark now, and ensure that less than two months have passed from the date of acceptance from Australian Trade Mark Search."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q5-a",
+            "text": "Duration of process \nThe process duration varies depending on the complexity of the matter in question, how quickly each party responds and each party's strategy. Refer to some of the timeframes permitted in the image below. \n\nFlow chart - Oppose the registration of a trade mark  \n\nTimeframe to initiate process \n\nUnless the period has been extended, opposition to the registration of a trade mark can typically only be raised within 2 months of its acceptance date being published. If this period has passed, you may need to explore other options. \n\nThe status of the trade mark in the Register will be shown as 'Accepted: In opposition period' during this period. It will also contain an 'application being considered' notice above the application's timeline. Check the status of the trade mark now, and ensure that less than two months have passed from the date of acceptance from Australian Trade Mark Search."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q6-a",
             "text": "Between 1% - 3% of marks whose acceptance is advertised are opposed. This currently equates to around 2,000 oppositions to registration per year."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q7-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q7-a",
             "text": "Any person can oppose accepted trade marks within the opposition period."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q8-a",
-            "text": "- You, or in other words, the person who initiates an opposition process.\n- The party who has applied for registration of the trade mark.\n- IP Australia's Oppositions & Hearings Section in Trade Marks and Designs Group.\n- Your legal representatives, if you choose to engage an IP professional (such as a lawyer or IP attorney)."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q8-a",
+            "text": "You, or in other words, the person who initiates an opposition process.\n The party who has applied for registration of the trade mark.\n IP Australia's Oppositions & Hearings Section in Trade Marks and Designs Group.\n Your legal representatives, if you choose to engage an IP professional (such as a lawyer or IP attorney)."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q9",
           "name": "What you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq#q9-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark#faq-q9-a",
             "text": "IP professionals are commonly used to help navigate the process and assist parties to present their cases, though it is not a requirement of IP Australia.\n\nYou can initiate an opposition process by submitting a notice of opposition. Doing so informs IP Australia of the potential conflict or grounds as to why the trade mark is not registrable, and gives all parties involved opportunities to present their cases and evidence, which will then enable IP Australia to decide whether or not to register the trade mark. If the opposition to registration is successful, the trade mark will not be registered.\n\nDepending on the grounds on which you are opposing, you may need to provide documents, details or other types of supporting evidence to support your argument. More information can be found on the IP Australia website regarding the types of evidence that would help your case and formal requirements for evidence: Evidence In Oppositions And PBR Objections | IP Australia.\n\nTo begin the process, log into online services.  and select 'File an opposition'"
           }
         }

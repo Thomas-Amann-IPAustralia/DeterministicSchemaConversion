@@ -77,6 +77,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-3-when-to-seek-help"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-4-standard-disclaimer"
         }
       ]
     },
@@ -110,6 +113,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-3-when-to-seek-help"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -191,7 +197,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-2-red-flags-to-watch-for",
       "headline": "Red flags to watch for",
-      "text": "Specific situations should prompt extra caution in your IP practices. For instance, exercise particular care if you find yourself:\n\n- closely copying a competitor's successful product or brand,\n- using material that you have found online,\n- modifying someone else's work slightly and claiming it as your own, or\n- importing products without checking Australian IP rights.\n\nThese scenarios frequently lead to infringement disputes and should prompt you to seek advice before proceeding.",
+      "text": "Specific situations should prompt extra caution in your IP practices. For instance, exercise particular care if you find yourself:\n\n closely copying a competitor's successful product or brand,\n using material that you have found online,\n modifying someone else's work slightly and claiming it as your own, or\n importing products without checking Australian IP rights.\n\nThese scenarios frequently lead to infringement disputes and should prompt you to seek advice before proceeding.",
       "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#governmentservice"
@@ -201,8 +207,18 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-3-when-to-seek-help",
       "headline": "When to seek help",
-      "text": "Professional advice is especially valuable in specific situations. Seeking early professional guidance often costs much less than defending against an infringement claim later. Consider speaking with an IP professional when:\n\n- Search results reveal similar existing rights to those you plan to use.\n- You are developing products for highly competitive markets.\n- You receive a letter of demand or a 'cease and desist' letter.",
+      "text": "Professional advice is especially valuable in specific situations. Seeking early professional guidance often costs much less than defending against an infringement claim later. Consider speaking with an IP professional when:\n\n Search results reveal similar existing rights to those you plan to use.\n You are developing products for highly competitive markets.\n- You receive a letter of demand or a 'cease and desist' letter.",
       "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#governmentservice"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#section-4-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 4,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#governmentservice"
       }

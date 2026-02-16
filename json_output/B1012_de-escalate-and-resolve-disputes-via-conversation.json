@@ -71,6 +71,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#section-1-standard-disclaimer"
         }
       ]
     },
@@ -93,6 +96,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -173,6 +179,16 @@
       ]
     },
     {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#article"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq",
@@ -183,92 +199,92 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q1-a",
-            "text": "- Early dialogue can limit legal costs and reduce the risk of expensive and lengthy litigation.\n- Settlement terms such as licences or co-existence agreements may lead to practical benefits like agreed market access or ongoing use.\n- Confidential negotiations may preserve commercial relationships and business reputation.\n- You and the other party keep control of the timeline and proposed solutions.\n- When there is an existing relationship to build on (even simply both parties being in the same industry), it can be easier to find productive, business-specific solutions."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q1-a",
+            "text": "Early dialogue can limit legal costs and reduce the risk of expensive and lengthy litigation.\n Settlement terms such as licences or co-existence agreements may lead to practical benefits like agreed market access or ongoing use.\n Confidential negotiations may preserve commercial relationships and business reputation.\n You and the other party keep control of the timeline and proposed solutions.\n- When there is an existing relationship to build on (even simply both parties being in the same industry), it can be easier to find productive, business-specific solutions."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q2-a",
-            "text": "- Relies on the other party's willingness to engage or negotiate with you.\n- Either party can withdraw from the conversation at any point in time, resulting in wasted time, money and effort.\n- If you share sensitive business information without a confidentiality agreement, it may be used against you later.\n- A mere verbal agreement, without a signed or executed deed of settlement, may not be easily enforceable."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q2-a",
+            "text": "Relies on the other party's willingness to engage or negotiate with you.\n Either party can withdraw from the conversation at any point in time, resulting in wasted time, money and effort.\n If you share sensitive business information without a confidentiality agreement, it may be used against you later.\n A mere verbal agreement, without a signed or executed deed of settlement, may not be easily enforceable."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q3-a",
-            "text": "- You both agree that no infringement has occurred, and no further action is taken.\n- You and the other party 'agree to disagree', but no further action is taken.\n- You reach a financial settlement or pay a one-off fee for past use.\n- You enter a licence or co-existence agreement that allows continued use under agreed conditions and undertake not to infringe in the future.\n- You can also agree to purchase the IP.\n- You agree to alter or withdraw the product, branding or content within a set timeframe.\n- You agree to resolve the matter through alternative dispute settlement procedures such as mediation or arbitration.\n- One of the parties may choose to take the matter to the court."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q3-a",
+            "text": "You both agree that no infringement has occurred, and no further action is taken.\n You and the other party 'agree to disagree', but no further action is taken.\n You reach a financial settlement or pay a one-off fee for past use.\n You enter a licence or co-existence agreement that allows continued use under agreed conditions and undertake not to infringe in the future.\n You can also agree to purchase the IP.\n You agree to alter or withdraw the product, branding or content within a set timeframe.\n You agree to resolve the matter through alternative dispute settlement procedures such as mediation or arbitration.\n One of the parties may choose to take the matter to the court."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q4-a",
-            "text": "There is no official cost, apart from your own time and efforts, to reply to a cease-and-desist letter or requests to the same effect, or to start informal negotiations.\n\nPossible expenses include:\n\n- Professional fees for legal professionals such as lawyers or IP attorneys.\n- Any agreed payment to the rights holder, such as back-dated royalties or a lump-sum settlement.\n- If you decide to engage in alternative dispute resolution such as mediation, fees can range from being free, a few thousand dollars (shared between the parties) or, if the case is complex, even higher amounts.\n\nActual costs depend on the complexity of the dispute, how quickly the parties cooperate and whether you need expert advice."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q4-a",
+            "text": "There is no official cost, apart from your own time and efforts, to reply to a cease-and-desist letter or requests to the same effect, or to start informal negotiations.\n\nPossible expenses include:\n\n Professional fees for legal professionals such as lawyers or IP attorneys.\n Any agreed payment to the rights holder, such as back-dated royalties or a lump-sum settlement.\n- If you decide to engage in alternative dispute resolution such as mediation, fees can range from being free, a few thousand dollars (shared between the parties) or, if the case is complex, even higher amounts.\n\nActual costs depend on the complexity of the dispute, how quickly the parties cooperate and whether you need expert advice."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q5-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q5-a",
             "text": "Simple written exchanges may resolve the matter within a few days or weeks. In-person conversations may take more time to arrange. However, timeframes to finalise a dispute can vary drastically depending on individual circumstances and the complexity of the dispute."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q6-a",
             "text": "Many businesses choose to engage in a dialogue with the other party, with or without obtaining legal advice."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q7-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q7-a",
             "text": "Anyone that has been contacted about allegedly infringing on someone else's IP and wishes to explore co-operative solutions rather than escalating the dispute."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q8-a",
-            "text": "- Alleged infringer (you or your business).\n- The party alleging you have infringed their IP (often an IP right owner or authorised user).\n- (Optional) Legal representatives or IP professionals."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q8-a",
+            "text": "Alleged infringer (you or your business).\n The party alleging you have infringed their IP (often an IP right owner or authorised user).\n- (Optional) Legal representatives or IP professionals."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q9",
           "name": "What you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq#q9-a",
-            "text": "Before you engage in a conversation with the other party, consider gathering:\n\n- A copy of the cease-and-desist letter or the request, including deadlines and requested actions.\n- Evidence of your product, branding or content development timeline and any prior rights you may hold.\n- Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed.\n- Contact details for the rights holder or their representative to open dialogue.\n- A confidentiality agreement template to protect commercial information during negotiations.\n\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: Learn more about alternative dispute resolution."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq-q9-a",
+            "text": "Before you engage in a conversation with the other party, consider gathering:\n\n A copy of the cease-and-desist letter or the request, including deadlines and requested actions.\n Evidence of your product, branding or content development timeline and any prior rights you may hold.\n Documents relating to the relevant IP right's scope (for registered IP rights, this would include registration details, jurisdiction, goods or services) and the other party's claims to this IP right. For instance, you may want to check if the other party is the rightful owner of the IP that you allegedly infringed.\n Contact details for the rights holder or their representative to open dialogue.\n- A confidentiality agreement template to protect commercial information during negotiations.\n\nIf you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: Learn more about alternative dispute resolution."
           }
         }
       ]

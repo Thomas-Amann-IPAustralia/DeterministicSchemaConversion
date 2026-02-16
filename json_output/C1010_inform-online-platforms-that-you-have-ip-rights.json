@@ -106,6 +106,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-3-please-note-that-ip-rights-covered-vary-by-platform"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-4-standard-disclaimer"
         }
       ]
     },
@@ -126,7 +129,6 @@
       "provider": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights/#provider-organization"
       },
-      "text": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \\\n \\\nSigning up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.  \n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. \n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-1-ecommerce-registries"
@@ -139,6 +141,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -238,7 +243,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-2-what-is-it",
       "headline": "What is it?",
-      "text": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \\\n \\\nSigning up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.  \n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. \n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
+      "text": "Many online marketplaces provide bespoke IP protection programs to help businesses protect their intellectual property by enabling them to enrol their trade marks and other IP rights on the platform. \n \nSigning up to an online marketplace's IP protection program or their brand registry involved recording your IP with the platform before issues arise.  \n\nEach marketplace sets its own eligibility rules. IP protection programs generally focus on trade marks and require a registered trade mark or a pending application with a recognised IP office. However, many platforms receive reports for other types of IP rights as well, and having an account set up with their IP protection program can help streamline this process. \n\nThese programs themselves are generally free or low-cost. While different marketplaces require different types of information, you will generally be required to provide proof of ownership, product images and contact details, then wait for the platform to verify your application.",
       "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
@@ -248,8 +253,18 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-3-please-note-that-ip-rights-covered-vary-by-platform",
       "headline": "Please note that IP rights covered vary by platform:",
-      "text": "- Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n- eBay VeRO Program allows rights owners to report suspected infringement of trade marks, copyrights, designs and patents.\n- Etsy Intellectual Property Portal  lets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n- Shein IP Protection Platform accepts notices for all types of IP infringement  (trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n- Temu IP Portal  accepts notices for all types of IP infringement.",
+      "text": "Amazon Brand Registry accepts registered or pending trade marks only, requiring a government-issued trade mark registration number to enrol.\n eBay VeRO Program allows rights owners to report suspected infringement of trade marks, copyrights, designs and patents.\n Etsy Intellectual Property Portal  lets you enrol with your registered trade mark; once enrolled, you may report copyright, design or patent infringements but cannot enrol those rights via the portal.\n Shein IP Protection Platform accepts notices for all types of IP infringement  (trade mark, copyright, design or patent) through its Intellectual Property Notice form.\n- Temu IP Portal  accepts notices for all types of IP infringement.",
       "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#section-4-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 4,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#service"
       }
@@ -265,92 +280,92 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q1-a",
-            "text": "- May gain access to tools such as bulk takedown forms, automated alerts, image search, and automated scanning tools to flag look-alike listings for review.\n- May allow faster removal of suspected infringing listings once you notify the platform.\n- There are no or very low enrolment fees, limiting upfront costs low.\n- Allows streamlined takedown requests across multiple markets.\n- Some IP platforms also offer powerful brand-building and selling tools."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q1-a",
+            "text": "May gain access to tools such as bulk takedown forms, automated alerts, image search, and automated scanning tools to flag look-alike listings for review.\n May allow faster removal of suspected infringing listings once you notify the platform.\n There are no or very low enrolment fees, limiting upfront costs low.\n Allows streamlined takedown requests across multiple markets.\n- Some IP platforms also offer powerful brand-building and selling tools."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q2-a",
-            "text": "- False positives may require your time to review legitimate sellers.\n- Program rules may change, resulting in extra steps or temporary loss of access."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q2-a",
+            "text": "False positives may require your time to review legitimate sellers.\n Program rules may change, resulting in extra steps or temporary loss of access."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q3-a",
-            "text": "- Your enrolment may be accepted and your brand added to the program.\n- Your application may be rejected if your IP right details do not match or the status is ineligible. You may be able to appeal this.\n- You may need to re-apply or update registration if you add new IP rights (e.g. a new trade mark or a certified design) or change ownership.\n- While enrolment on a platform may deter infringement on that particular platform, it may result in simply shifting infringement to other platforms."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q3-a",
+            "text": "Your enrolment may be accepted and your brand added to the program.\n Your application may be rejected if your IP right details do not match or the status is ineligible. You may be able to appeal this.\n You may need to re-apply or update registration if you add new IP rights (e.g. a new trade mark or a certified design) or change ownership.\n While enrolment on a platform may deter infringement on that particular platform, it may result in simply shifting infringement to other platforms."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q4-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q4-a",
             "text": "Enrolling in an IP protection program run by an online marketplace is generally free or has very low upfront costs. However, professional fees can be involved if you engage an IP lawyer or attorney."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q5-a",
-            "text": "Creating an account and submitting the online form would generally take no longer than a few hours. \\\nVerification with individual platforms typically takes 24-72 hours, but may extend up to two weeks if additional documents are requested. \n\nOngoing effort varies depending on what the platform offers and how proactive you wish to be. Checking alerts and confirming takedown requests generally takes a few minutes per week. Conducting further searches, investigating listings, and reporting listings may take more time."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q5-a",
+            "text": "Creating an account and submitting the online form would generally take no longer than a few hours. \nVerification with individual platforms typically takes 24-72 hours, but may extend up to two weeks if additional documents are requested. \n\nOngoing effort varies depending on what the platform offers and how proactive you wish to be. Checking alerts and confirming takedown requests generally takes a few minutes per week. Conducting further searches, investigating listings, and reporting listings may take more time."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q6-a",
             "text": "Signing up to registries or IP protection program provided by online platforms is a practice commonly used by small to medium businesses that own IP rights."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q7-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q7-a",
             "text": "The IP right holder or an authorised user, or their representative."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q8-a",
-            "text": "- The IP owner or authorised user\n- The online marketplace or platform\n- Optional: IP professionals such as an IP lawyer, attorney or brand protection specialist assisting with registration, monitoring or reporting."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q8-a",
+            "text": "The IP owner or authorised user\n The online marketplace or platform\n- Optional: IP professionals such as an IP lawyer, attorney or brand protection specialist assisting with registration, monitoring or reporting."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq#q9-a",
-            "text": "- For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application.\n- A customer account on each marketplace and verified contact details.\n- Clear product images and descriptions that show how the IP is used.\n- A list of authorised sellers, if any, so the platform doesn't accidentally remove legitimate listings.\n- Time allocated to review alerts and confirm or dispute flagged listings."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/inform-online-platforms-you-have-ip-rights#faq-q9-a",
+            "text": "For most platforms, you would need a proof of a registered right (registration number and certificate) or evidence of a pending application.\n A customer account on each marketplace and verified contact details.\n Clear product images and descriptions that show how the IP is used.\n A list of authorised sellers, if any, so the platform doesn't accidentally remove legitimate listings.\n- Time allocated to review alerts and confirm or dispute flagged listings."
           }
         }
       ]

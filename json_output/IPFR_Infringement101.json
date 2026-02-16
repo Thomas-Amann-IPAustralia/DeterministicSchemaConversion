@@ -28,7 +28,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
       "name": "Infringement 101 - IP First Response",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "identifier": "",
       "about": [
         {
@@ -65,13 +65,16 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-1-give-feedback-about-ip-first-response"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-2-standard-disclaimer"
         }
       ]
     },
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#article",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -85,6 +88,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-1-give-feedback-about-ip-first-response"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-2-standard-disclaimer"
         }
       ],
       "relatedLink": [
@@ -226,8 +232,18 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-1-give-feedback-about-ip-first-response",
       "headline": "Give feedback about IP First Response",
-      "text": "Send us an email\\\nFill out a feedback form by following the button\n\nFeedback",
+      "text": "Send us an email\nFill out a feedback form by following the button\n\nFeedback",
       "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#article"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-2-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#article"
       }

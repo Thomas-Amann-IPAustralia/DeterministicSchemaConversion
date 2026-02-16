@@ -28,7 +28,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money",
       "name": "Does IP help me to make or save money? - IP First Response",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "identifier": "E1008",
       "about": [
         {
@@ -67,12 +67,17 @@
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "creditText": "IP First Response initiative led by IP Australia"
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#section-1-standard-disclaimer"
+        }
+      ]
     },
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#article",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -82,9 +87,14 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#webpage"
       },
       "headline": "Does IP help me to make or save money?",
-      "articleBody": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example: \n\n- A patent gives you the exclusive right to make or use your invention. If people want what you have, and you're the only one legally allowed to sell it, you will have a strong position in the market. Competitors can't copy you which means more business for you.\n- A trade mark helps protect the name, logo or look of your brand or product. It can stop others from trying to imitate you, and helps customers easily recognise and return to your business. This means people are more likely to choose your product and less likely to buy someone else's by mistake.\n\nThere are costs involved when you apply for an IP rights, and also fees to keep it active over time. If someone copies your idea or product without permission, you may need to spend money to stop them. But even with these costs, many businesses choose to invest in IP. That's because it can help protect your unique position in the market which is likely to benefit your business.  \n\nIP can also be valuable when it comes time to sell your business. Owning registered IP shows that your products or brand may be harder for others to copy. That can increase what your business is worth.",
+      "articleBody": "Owning intellectual property (IP) won't earn you money outright without commercialising it, but it can make it easier to grow your business and increase your profit by protecting what makes your business or products valuable. For example: \n\n A patent gives you the exclusive right to make or use your invention. If people want what you have, and you're the only one legally allowed to sell it, you will have a strong position in the market. Competitors can't copy you which means more business for you.\n A trade mark helps protect the name, logo or look of your brand or product. It can stop others from trying to imitate you, and helps customers easily recognise and return to your business. This means people are more likely to choose your product and less likely to buy someone else's by mistake.\n\nThere are costs involved when you apply for an IP rights, and also fees to keep it active over time. If someone copies your idea or product without permission, you may need to spend money to stop them. But even with these costs, many businesses choose to invest in IP. That's because it can help protect your unique position in the market which is likely to benefit your business.  \n\nIP can also be valuable when it comes time to sell your business. Owning registered IP shows that your products or brand may be harder for others to copy. That can increase what your business is worth.",
       "datePublished": "2025-09-11",
       "dateModified": "2025-09-11",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#section-1-standard-disclaimer"
+        }
+      ],
       "mentions": [
         {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
@@ -137,6 +147,16 @@
           "name": "Someone is using my IP | IP Australia"
         }
       ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/does-ip-help-me-make-or-save-money#article"
+      }
     },
     {
       "@type": "Legislation",

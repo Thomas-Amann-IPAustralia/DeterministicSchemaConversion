@@ -71,6 +71,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#section-1-standard-disclaimer"
         }
       ]
     },
@@ -93,6 +96,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -143,6 +149,16 @@
       ]
     },
     {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#article"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq",
@@ -153,92 +169,92 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q1-a",
-            "text": "This option offers a lower cost, flexible and private way to resolve IP disputes. A negotiated commercial solution offers: \n\n- Potentially lower costs and a quicker  process, especially compared to other dispute resolution processes where you must rely on third parties (such as courts and tribunals).\n- The ability to agree to a creative, productive outcome that can benefit both parties commercially.\n- A much less adversarial pathway than legal procedures, helping you preserve your relationship with the other party.\n- A flexible and informal approach, as it is entirely up to the parties to shape the process.\n- Negotiation can be conducted across multiple jurisdictions.\n- Confidentiality, as the details of negotiation and the resulting agreements reached are generally not publicly available, allowing parties to discuss commercially sensitive topics freely."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q1-a",
+            "text": "This option offers a lower cost, flexible and private way to resolve IP disputes. A negotiated commercial solution offers: \n\n Potentially lower costs and a quicker  process, especially compared to other dispute resolution processes where you must rely on third parties (such as courts and tribunals).\n The ability to agree to a creative, productive outcome that can benefit both parties commercially.\n A much less adversarial pathway than legal procedures, helping you preserve your relationship with the other party.\n A flexible and informal approach, as it is entirely up to the parties to shape the process.\n Negotiation can be conducted across multiple jurisdictions.\n Confidentiality, as the details of negotiation and the resulting agreements reached are generally not publicly available, allowing parties to discuss commercially sensitive topics freely."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q2-a",
-            "text": "- Relies on genuine engagement and willingness of parties to resolve issues.\n- If the discussion stalls or backfires, this could result in delays or lost opportunities.\n- Outcomes may not be as easily enforceable as court or tribunal decisions, especially when parties have not clearly indicated that the outcome of the negotiation is to be legally binding.\n- In some cases, direct contact may worsen tensions. If the other party considers that you are posing unreasonable aggressive or unprofessional terms for negotiation (not negotiating in good faith), it may prompt the other party to escalate and resist, rather than comply. Some commercial arrangements may result in your intellectual property being 'diluted' by sharing the same or similar IP with others, which may cause damage to the value of your IP and make it harder to enforce it in the future.\n- If not handled with caution, it is possible that you may say something that undermines your legal position, which could result in less favourable outcomes if formal action follows."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q2-a",
+            "text": "Relies on genuine engagement and willingness of parties to resolve issues.\n If the discussion stalls or backfires, this could result in delays or lost opportunities.\n Outcomes may not be as easily enforceable as court or tribunal decisions, especially when parties have not clearly indicated that the outcome of the negotiation is to be legally binding.\n In some cases, direct contact may worsen tensions. If the other party considers that you are posing unreasonable aggressive or unprofessional terms for negotiation (not negotiating in good faith), it may prompt the other party to escalate and resist, rather than comply. Some commercial arrangements may result in your intellectual property being 'diluted' by sharing the same or similar IP with others, which may cause damage to the value of your IP and make it harder to enforce it in the future.\n- If not handled with caution, it is possible that you may say something that undermines your legal position, which could result in less favourable outcomes if formal action follows."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q3-a",
-            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties' desires and specific circumstances. If you are able to reach an agreed outcome, this might result in: \n\n- A licence or co-existence arrangement,\n Selling or transferring IP ownership (called assignment*),\n- Compensation or goodwill payment,\n- Franchising options, or\n- Mutual agreement to stop or change the disputed conduct.\n\nYou can read more about these potential outcomes of negotiations here Agree to a commercial arrangement | IP Australia First Response  \n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions. \n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q3-a",
+            "text": "Commercial negotiations can result in a wide range of different outcomes depending on the parties' desires and specific circumstances. If you are able to reach an agreed outcome, this might result in: \n\n A licence or co-existence arrangement,\n Selling or transferring IP ownership (called assignment),\n Compensation or goodwill payment,\n Franchising options, or\n- Mutual agreement to stop or change the disputed conduct.\n\nYou can read more about these potential outcomes of negotiations here Agree to a commercial arrangement | IP Australia First Response  \n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions. \n\nIf you cannot reach a resolution, the matter may escalate into further enforcement actions."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q4-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q4-a",
             "text": "Actual costs may vary depending on the complexity and whether professionals are engaged. For tailored cost estimates and next steps, consider seeking professional advice."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q5-a",
-            "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues. \n\nSome agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth. Factors that influence timing include: \n\n- urgency of the issue\n- clarity of the facts and evidence\n- willingness of the other party to engage\n- whether professionals are involved\n- whether an agreement must be documented or signed."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q5-a",
+            "text": "Timeframes vary depending on how quickly both parties respond and the complexity of the issues. \n\nSome agreements can be reached in a single exchange or meeting. Others may take several weeks of back-and-forth. Factors that influence timing include: \n\n urgency of the issue\n clarity of the facts and evidence\n willingness of the other party to engage\n whether professionals are involved\n- whether an agreement must be documented or signed."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q6-a",
             "text": "Commercial negotiation is a routine strategy used by businesses in a range of situations."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q7-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q7-a",
             "text": "Any party to an IP dispute willing to engage in good faith dialogue. Some businesses choose to use commercial negotiation even when they are unsure whether infringement has occurred."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q8-a",
-            "text": "- You, an individual or business accused of IP infringement.\n- The party who has accused you of IP infringement, often the owner or authorised user of an IP right.\n- Legal representatives (lawyers or in some cases IP attorneys) may assist with drafting, advising, or attending discussions.\n- Business advisors, franchise consultants or other IP professionals may help facilitate talks or propose terms."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q8-a",
+            "text": "You, an individual or business accused of IP infringement.\n The party who has accused you of IP infringement, often the owner or authorised user of an IP right.\n Legal representatives (lawyers or in some cases IP attorneys) may assist with drafting, advising, or attending discussions.\n Business advisors, franchise consultants or other IP professionals may help facilitate talks or propose terms."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq#q9-a",
-            "text": "It's important to get all the factual details right and evaluate the merits of the claims before you respond to the other party. Here are some things you might want to check and consider before talking to the other party:  \n\n- The status and details of the relevant IP in the jurisdiction where the alleged infringement occurred. This includes checking the status of your IP registrations, and whether the accuser has registered IP rights with IP Australia or overseas IP offices.\n- The identity and contact details of the other party - it's important to make sure you speak to the correct party.\n\nThroughout the negotiation with the other party, it can be helpful to remember to:  \n\n- Stay calm and professional throughout the conversation, avoiding emotional, accusatory language.\n- Focus on the issues at hand, not the personalities of the other parties involved.\n- Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can be reached.\n- Be clear on the terms of agreement you may reach with the other party, writing down the agreement in detail at the end of the conversation.\n\nIt can be difficult to determine whether you will be able to leverage a commercially meaningful outcome from the IP dispute you are facing and if you can have a productive, amicable discussion with the other party. An IP professional can help you make this assessment and advise which steps might work best in your situation."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq-q9-a",
+            "text": "It's important to get all the factual details right and evaluate the merits of the claims before you respond to the other party. Here are some things you might want to check and consider before talking to the other party:  \n\n The status and details of the relevant IP in the jurisdiction where the alleged infringement occurred. This includes checking the status of your IP registrations, and whether the accuser has registered IP rights with IP Australia or overseas IP offices.\n The identity and contact details of the other party - it's important to make sure you speak to the correct party.\n\nThroughout the negotiation with the other party, it can be helpful to remember to:  \n\n Stay calm and professional throughout the conversation, avoiding emotional, accusatory language.\n Focus on the issues at hand, not the personalities of the other parties involved.\n Acknowledge that problems are often caused by misunderstanding or oversight, and that a mutually beneficial outcome can be reached.\n Be clear on the terms of agreement you may reach with the other party, writing down the agreement in detail at the end of the conversation.\n\nIt can be difficult to determine whether you will be able to leverage a commercially meaningful outcome from the IP dispute you are facing and if you can have a productive, amicable discussion with the other party. An IP professional can help you make this assessment and advise which steps might work best in your situation."
           }
         }
       ]

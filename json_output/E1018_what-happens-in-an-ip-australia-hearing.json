@@ -28,7 +28,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing",
       "name": "What happens in an IP Australia hearing? - IP First Response",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "identifier": "E1018",
       "about": [
         {
@@ -59,7 +59,7 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "mainEntity": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#article"
       },
       "datePublished": "2025-09-11",
       "dateModified": "2025-09-11",
@@ -70,14 +70,14 @@
       "creditText": "IP First Response initiative led by IP Australia",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-what-is-it"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-standard-disclaimer"
         }
       ]
     },
     {
-      "@type": "GovernmentService",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#governmentservice",
-      "description": "",
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#article",
+      "description": "xXx_PLACEHOLDER_xXx",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -86,18 +86,13 @@
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#webpage"
       },
-      "name": "What happens in an IP Australia hearing?",
-      "serviceType": "Government Service",
-      "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "text": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It's handled by a hearing officer from IP Australia who specialises in the relevant field of IP law. \n\nThese hearings can deal with both inter partes (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and ex partes matters such as an IP applicant challenging an examination decision made by IP Australia. \n\nThe hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.  \n\nProcess steps: \n\n (For inter partes matters*) File an opposition: You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.\n- Request a hearing: You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.\n- Hearing: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.\n- Decision: The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.\n\nOutcomes and next steps: \n\n- The decision may uphold, refuse, or change the scope of the IP right/s in question.\n- Appeals: If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.",
+      "headline": "What happens in an IP Australia hearing?",
+      "articleBody": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It's handled by a hearing officer from IP Australia who specialises in the relevant field of IP law. \n\nThese hearings can deal with both inter partes (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and ex partes matters such as an IP applicant challenging an examination decision made by IP Australia. \n\nThe hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.  \n\nProcess steps: \n\n (For inter partes matters) File an opposition: You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.\n Request a hearing: You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.\n Hearing: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.\n Decision: The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.\n\nOutcomes and next steps: \n\n The decision may uphold, refuse, or change the scope of the IP right/s in question.\n Appeals: If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-what-is-it"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -161,12 +156,12 @@
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-what-is-it",
-      "headline": "What is it?",
-      "text": "A hearing at IP Australia is a formal, administrative way to resolve disagreements about IP rights such as patents, trade marks or designs. It's handled by a hearing officer from IP Australia who specialises in the relevant field of IP law. \n\nThese hearings can deal with both inter partes (involving two or more parties) matters such as trade mark oppositions, patent oppositions or design challenges and ex partes matters such as an IP applicant challenging an examination decision made by IP Australia. \n\nThe hearing officer decides the matter mostly on the written evidence and submission explaining the reason for the dispute, but you can also choose to present oral arguments virtually or in person. The delegate may ask questions during the hearing.  \n\nProcess steps: \n\n (For inter partes matters*) File an opposition: You initiate the opposition process by filing a notice of opposition with IP Australia and paying the requisite fee. Parties will then be invited to provide evidence.\n- Request a hearing: You request a hearing, or a decision in writing and pay the required fee. Parties will be invited to present written submissions to support their case.\n- Hearing: If you wish to have an in-person or virtual hearing, the hearing will be scheduled at least 14 days after the final evidence is submitted.\n- Decision: The delegate writes a decision explaining the outcome. They may also order one side to pay some costs.\n\nOutcomes and next steps: \n\n- The decision may uphold, refuse, or change the scope of the IP right/s in question.\n- Appeals: If you disagree with the outcome, there may be avenues to appeal the decision to a federal court or the Australian Review Tribunal (ART) depending on the nature of the decision.",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-happens-ip-australia-hearing#article"
       }
     },
     {

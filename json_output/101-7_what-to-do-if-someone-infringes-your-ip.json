@@ -77,6 +77,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-3-moving-forward"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-4-standard-disclaimer"
         }
       ]
     },
@@ -108,6 +111,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-3-moving-forward"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-4-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -208,7 +214,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-2-getting-professional-advice",
       "headline": "Getting professional advice",
-      "text": "IP infringement can be legally complex. What may seem like a clear-cut infringement to you may not be as straightforward under the law. Before taking significant action, consider consulting an IP professional, such as a lawyer specialising in intellectual property. They can help assess the situation and provide guidance on available options. \n\nProfessional advice is crucial because: \n\n- Incorrectly accusing someone of infringement can lead to legal consequences\n- The strength of your case affects which response options are most appropriate\n- Some actions have strict time limits\n- The costs of getting it wrong can be significant.",
+      "text": "IP infringement can be legally complex. What may seem like a clear-cut infringement to you may not be as straightforward under the law. Before taking significant action, consider consulting an IP professional, such as a lawyer specialising in intellectual property. They can help assess the situation and provide guidance on available options. \n\nProfessional advice is crucial because: \n\n Incorrectly accusing someone of infringement can lead to legal consequences\n The strength of your case affects which response options are most appropriate\n Some actions have strict time limits\n The costs of getting it wrong can be significant.",
       "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#article"
@@ -220,6 +226,16 @@
       "headline": "Moving forward",
       "text": "Keep in mind that determining whether infringement has occurred often requires a legal analysis. What seems obvious to you may be less straightforward under the law.  \n\nPrioritise protecting your business interests instead of pursuing infringement claims solely on principle. At times, the wisest business decision is not necessarily to pursue every potential infringement.",
       "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#article"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-4-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 4,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#article"
       }

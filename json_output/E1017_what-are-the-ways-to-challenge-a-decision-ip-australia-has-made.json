@@ -28,7 +28,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
       "name": "What can I do if I disagree with IP Australia’s examination decision? - IP First Response",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "identifier": "E1017",
       "about": [
         {
@@ -59,7 +59,7 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "mainEntity": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#article"
       },
       "datePublished": "2025-09-11",
       "dateModified": "2025-10-01",
@@ -70,14 +70,14 @@
       "creditText": "IP First Response initiative led by IP Australia",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-what-is-it"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-standard-disclaimer"
         }
       ]
     },
     {
-      "@type": "GovernmentService",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#governmentservice",
-      "description": "",
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#article",
+      "description": "xXx_PLACEHOLDER_xXx",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -86,18 +86,13 @@
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#webpage"
       },
-      "name": "What can I do if I disagree with IP Australia’s examination decision?",
-      "serviceType": "Government Service",
-      "serviceOperator": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "text": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a 'hearing' to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder's rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a 'merits review' by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard de novo, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
+      "headline": "What can I do if I disagree with IP Australia’s examination decision?",
+      "articleBody": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a 'hearing' to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder's rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a 'merits review' by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard de novo, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-10-01",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-what-is-it"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -173,12 +168,12 @@
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-what-is-it",
-      "headline": "What is it?",
-      "text": "If you disagree with an examination decision by IP Australia, there are multiple ways to challenge the decision.  \n\nOpposition and hearing process within IP Australia \n\nYou can request a 'hearing' to present your case to a hearing officer at IP Australia. You can choose to be heard on paper through written submissions, or have an oral hearing on the phone, video or in-person. A hearing officer reviews your arguments and evidence and then issues a written decision. \n\nA hearing keeps the matter within IP Australia and results in a formal decision you can accept or challenge further. \n\nChallenging a decision made by IP Australia outside of IP Australia \n\nIf you prefer a decision outside IP Australia, you can appeal to the Federal Court of Australia (FCA). For some trade marks, designs and plant breeder's rights matters, you can also use the Federal Circuit and Family Court of Australia (FCFCOA, Division 2).  \n\nIn some cases, you may seek a 'merits review' by the Administrative Review Tribunal (ART). The Tribunal takes a fresh look at the facts, law and policy and can confirm, change or make a new decision. Patent appeals go to the Federal Court. Court appeals are usually heard de novo, meaning the court re-hears the matter and can consider new evidence. \n\nAnother pathway is judicial review under the Administrative Decisions (Judicial Review) Act 1977. Judicial review focuses on whether there was a legal error in how the decision was made; it does not re-hear the facts. \n\nWhich path applies depends on your IP right and the type of decision. Your decision letter usually lists your options, deadlines and how to apply. You may wish to get help from a legal professional who works in IP.",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#governmentservice"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#article"
       }
     },
     {

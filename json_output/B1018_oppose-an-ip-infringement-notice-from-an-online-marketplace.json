@@ -82,6 +82,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-2-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-3-standard-disclaimer"
         }
       ]
     },
@@ -102,13 +105,18 @@
       "provider": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace/#provider-organization"
       },
-      "text": "An online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are: \n\n- Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n- Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy's Intellectual Property report, receive the complainant's contact details by email, and may need to resolve it directly or seek legal advice.\n- Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form--Shein removes listings when notified and does not mediate between parties.\n\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing. \n\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises. \n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.   \n\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-1-what-is-it"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-2-disclaimer"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -180,7 +188,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-1-what-is-it",
       "headline": "What is it?",
-      "text": "An online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are: \n\n- Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n- Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy's Intellectual Property report, receive the complainant's contact details by email, and may need to resolve it directly or seek legal advice.\n- Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form--Shein removes listings when notified and does not mediate between parties.\n\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing. \n\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises. \n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.   \n\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.",
+      "text": "An online takedown notice from an online marketplace may result in a listing for your product(s) being removed. If this occurs, and someone claims that your trade mark infringes theirs, major marketplaces offer different ways to dispute it or make your case for why you think it is wrong. Some examples from large marketplaces are: \n\n Amazon and eBay provide a formal appeal or counter-notice process where you submit information showing your right to use the trade mark.\n Etsy does not have a dedicated trade mark counter-notice form; instead, you use Etsy's Intellectual Property report, receive the complainant's contact details by email, and may need to resolve it directly or seek legal advice.\n- Shein offers an IP Notice portal: you file a report explaining your status, but there is no structured counter-notice form--Shein removes listings when notified and does not mediate between parties.\n\nEach platform then reviews the submission and decides whether to restore or permanently disable the listing. \n\nWhile this is not a fully expansive list of marketplaces available, this outlines some of the responses that these marketplaces can offer. You can check the specific process from the relevant marketplace in question, if or when an infringement issue arises. \n\nMost e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods.   \n\nCompanies can list their IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale.",
       "position": 1,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#service"
@@ -197,6 +205,16 @@
       }
     },
     {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#section-3-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#service"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq",
@@ -207,92 +225,92 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q1-a",
-            "text": "- Usually little to no fees. Generally using built-in appeal or report tools is free.\n- Listings may be reinstated without going to court.\n- Platforms may reduce direct confrontation by contacting the complainant on your behalf."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q1-a",
+            "text": "Usually little to no fees. Generally using built-in appeal or report tools is free.\n Listings may be reinstated without going to court.\n- Platforms may reduce direct confrontation by contacting the complainant on your behalf."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q2-a",
-            "text": "- Missing the platform's deadline (e.g. 10 business days on Etsy and eBay) may result in permanent removal.\n- Giving incomplete or inaccurate details can lead to account penalties or suspension.\n- Either party could escalate the issue to a formal dispute."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q2-a",
+            "text": "Missing the platform's deadline (e.g. 10 business days on Etsy and eBay) may result in permanent removal.\n Giving incomplete or inaccurate details can lead to account penalties or suspension.\n- Either party could escalate the issue to a formal dispute."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q3",
           "name": "What are the possible outcomes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q3-a",
-            "text": "- Your listing is reinstated after a successful appeal or counter notice.\n- Your listing is reinstated after the complaint retracts or the parties resolve the dispute outside the platform.\n- Your account could receive warnings or temporary suspension if disputes recur."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q3-a",
+            "text": "Your listing is reinstated after a successful appeal or counter notice.\n Your listing is reinstated after the complaint retracts or the parties resolve the dispute outside the platform.\n- Your account could receive warnings or temporary suspension if disputes recur."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q4",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q4",
           "name": "What might the costs be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q4-a",
-            "text": "- The processes for reporting IP Infringement is free for many online marketplaces.\n- Please note, some online marketplaces may have additional fees. Be aware that the exact requirements may vary depending on the marketplace you received the notice from."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q4-a",
+            "text": "The processes for reporting IP Infringement is free for many online marketplaces.\n Please note, some online marketplaces may have additional fees. Be aware that the exact requirements may vary depending on the marketplace you received the notice from."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q5",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q5",
           "name": "How much time might be involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q5-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q5-a",
             "text": "The exact amount of time required will vary depending on the marketplace in question. In general, most marketplaces will provide some information back within 28 business days. For more information, please consult the processes of the marketplace in question."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q6",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q6",
           "name": "How much is this used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q6-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q6-a",
             "text": "Most online marketplaces do not publish this information, however IP infringement notices occur regularly."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q7",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q7",
           "name": "Who can use this?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q7-a",
-            "text": "- Owners or authorised user of Intellectual Property whose IP is being used on an online marketplace.\n- People who have received notice that their listing has been taken off an online marketplace because of IP infringement."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q7-a",
+            "text": "Owners or authorised user of Intellectual Property whose IP is being used on an online marketplace.\n People who have received notice that their listing has been taken off an online marketplace because of IP infringement."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q8",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q8",
           "name": "Who's involved?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q8-a",
-            "text": "- You (trade mark owner or authorised user).\n- The complainant (rights owner who filed the takedown).\n- The marketplace in question.\n- (Optional) Attorneys or trade mark agents for drafting appeals or negotiating retractions."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q8-a",
+            "text": "You (trade mark owner or authorised user).\n The complainant (rights owner who filed the takedown).\n The marketplace in question.\n (Optional) Attorneys or trade mark agents for drafting appeals or negotiating retractions."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q9",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q9",
           "name": "What do you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq#q9-a",
-            "text": "- A copy of your IP registration or evidence of use.\n- The takedown notice or removal email with reference numbers.\n- Screenshots of the original listing and the allegedly infringing content.\n- Knowledge of each platform's process, for example:\n  + Amazon: Using the Account Health Page  to provide evidence against a notice or warning for infringement.\n  + eBay: file a VeRO  counter notice via email or the provided form (NOCI).\n  + Etsy: usepage and contact the rights owner directly.\n  + Shein: submit viaportal at Shein IPP.\n- A log of all communications, submissions and platform decisions."
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/oppose-ip-infringement-notice-online-marketplace#faq-q9-a",
+            "text": "A copy of your IP registration or evidence of use.\n The takedown notice or removal email with reference numbers.\n Screenshots of the original listing and the allegedly infringing content.\n Knowledge of each platform's process, for example:\n  + Amazon: Using the Account Health Page  to provide evidence against a notice or warning for infringement.\n  + eBay: file a VeRO  counter notice via email or the provided form (NOCI).\n  + Etsy: usepage and contact the rights owner directly.\n  + Shein: submit viaportal at Shein IPP.\n- A log of all communications, submissions and platform decisions."
           }
         }
       ]

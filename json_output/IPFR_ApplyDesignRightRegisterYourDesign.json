@@ -28,7 +28,7 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design",
       "name": "Access denied - IP First Response",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "identifier": "",
       "about": [
         {
@@ -61,12 +61,17 @@
       "mainEntity": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article"
       },
-      "creditText": "IP First Response initiative led by IP Australia"
+      "creditText": "IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#section-1-standard-disclaimer"
+        }
+      ]
     },
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article",
-      "description": "",
+      "description": "xXx_PLACEHOLDER_xXx",
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -76,7 +81,22 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#webpage"
       },
       "headline": "Access denied",
-      "articleBody": "You are not authorized to access this page."
+      "articleBody": "You are not authorized to access this page.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#section-1-standard-disclaimer"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#section-1-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-design-right-register-your-design#article"
+      }
     }
   ]
 }

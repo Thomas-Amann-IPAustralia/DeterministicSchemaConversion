@@ -83,6 +83,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#section-2-key-differences-between-registered-and-unregistered-trade-marks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#section-3-standard-disclaimer"
         }
       ]
     },
@@ -111,6 +114,9 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#section-3-standard-disclaimer"
         }
       ],
       "mentions": [
@@ -134,7 +140,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#section-1-legal-protection-for-unregistered-trade-marks",
       "headline": "Legal protection for unregistered trade marks",
-      "text": "Since unregistered trade marks are not protected under the Trade Marks Act, businesses may rely on two alternative legal frameworks. These prevent someone from gaining a commercial advantage by wrongfully taking the identifying attributes of another's business.1 \n\n1. An action for passing off\n\nThe common law action of passing off protects the goodwill or reputation associated with an unregistered trade mark. A successful passing off action must prove:2 \n\n1. A business has established goodwill or reputation in a trade mark or another identifying mark in Australia.\n2. Another business has made a misrepresentation (intentional or not) that is likely to deceive or confuse consumers. For example, consumers are confused thinking that the goods or services come from one business and not the other.\n3. The business has suffered or is likely to suffer damage as a result.\n\nFor example, a small café calledoperates in Brisbane for 15 years, developing strong local recognition in the name. When a new coffee shop opens nearby with a similar name and logo called, causing customer confusion. The original café may have grounds for a passing off action. \n\n2. Australian Consumer Law (ACL)\n\nCompetition and Consumer Act 2010 (Cth) prohibits misleading or deceptive conduct and false representations.3 These provisions can protect unregistered trade marks when: \n\n- A competitor's conduct misleads consumers about the origin of goods or services\n- A business falsely claims association, sponsorship, or approval\n- A business makes false representations about goods or services.\n\nFor example, a clothing manufacturer uses a logo that closely resembles that of a well-known Australian designer, leading consumers to believe they are purchasing the designer's products. Even without a registered trade mark, the designer may have grounds for an action under the ACL.",
+      "text": "Since unregistered trade marks are not protected under the Trade Marks Act, businesses may rely on two alternative legal frameworks. These prevent someone from gaining a commercial advantage by wrongfully taking the identifying attributes of another's business.1 \n\n1. An action for passing off\n\nThe common law action of passing off protects the goodwill or reputation associated with an unregistered trade mark. A successful passing off action must prove:2 \n\n1. A business has established goodwill or reputation in a trade mark or another identifying mark in Australia.\n2. Another business has made a misrepresentation (intentional or not) that is likely to deceive or confuse consumers. For example, consumers are confused thinking that the goods or services come from one business and not the other.\n3. The business has suffered or is likely to suffer damage as a result.\n\nFor example, a small café calledoperates in Brisbane for 15 years, developing strong local recognition in the name. When a new coffee shop opens nearby with a similar name and logo called, causing customer confusion. The original café may have grounds for a passing off action. \n\n2. Australian Consumer Law (ACL)\n\nCompetition and Consumer Act 2010 (Cth) prohibits misleading or deceptive conduct and false representations.3 These provisions can protect unregistered trade marks when: \n\n A competitor's conduct misleads consumers about the origin of goods or services\n A business falsely claims association, sponsorship, or approval\n- A business makes false representations about goods or services.\n\nFor example, a clothing manufacturer uses a logo that closely resembles that of a well-known Australian designer, leading consumers to believe they are purchasing the designer's products. Even without a registered trade mark, the designer may have grounds for an action under the ACL.",
       "position": 1,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#article"
@@ -151,6 +157,16 @@
       }
     },
     {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#section-3-standard-disclaimer",
+      "headline": "Standard disclaimer",
+      "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+      "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#article"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq",
@@ -161,11 +177,11 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq#q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq-q1",
           "name": "What is an unregistered trade mark?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq#q1-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#faq-q1-a",
             "text": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects thesetrade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else's that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner."
           }
         }
