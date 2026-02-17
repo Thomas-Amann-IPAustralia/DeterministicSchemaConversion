@@ -1533,9 +1533,7 @@ def build_jsonld(
                 "Startups",
                 "Entrepreneurs",
                 "SME",
-                "Spinout Company",
                 "Startup",
-                "Spinout",
                 "Small to Medium Enterprise",
                 "Sole Trader",
                 "Australian Small Business Owners"
