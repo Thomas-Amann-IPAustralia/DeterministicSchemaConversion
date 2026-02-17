@@ -61,9 +61,8 @@ IP_AUSTRALIA_ENTITY: dict = {
       "Patents",
       "Trade Marks",
       "Design Rights",
-      "Plant Breeder's Rights",
-      "Copyright",
-      "Dispute Resolution"
+      "Plant Breeder's Rights"
+      "Intellectual Property Disputes"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
