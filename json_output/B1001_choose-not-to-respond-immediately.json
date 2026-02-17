@@ -51,9 +51,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Any intellectual property right",
-          "description": "A topic which relates to all intellectual property rights",
-          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+          "name": "Any IP right"
         }
       ],
       "inLanguage": "en-AU",
@@ -92,6 +90,13 @@
       },
       "datePublished": "2025-07-01",
       "dateModified": "2025-10-02",
+      "keywords": [
+        "Intellectual property rights",
+        "Evidence gathering",
+        "Gauge the situation",
+        "Not to respond immediately",
+        "Initial assessment"
+      ],
       "copyrightYear": 2025,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -180,7 +185,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#faq-q3-a",
-            "text": "The other party may give up and decide not to escalate the issue.\n The other party chooses to escalate the dispute.\n- You decide to take action – for example, by sending a reply, seeking legal advice, or starting legal action (including where the other party has made unjustified threats of infringement action against you (also referred to as 'groundless threats' in copyright law)."
+            "text": "The other party may give up and decide not to escalate the issue.\n The other party chooses to escalate the dispute.\n- You decide to take action -- for example, by sending a reply, seeking legal advice, or starting legal action (including where the other party has made unjustified threats of infringement action against you (also referred to as 'groundless threats' in copyright law)."
           }
         },
         {
@@ -240,7 +245,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#faq-q9-a",
-            "text": "This will depend on what you decide to do.\n\nTo evaluate the situation before deciding, it is recommended that you carefully consider:\n\n the allegations of infringement that have been made against you\n whether the allegations of infringement have merit\n what relevant IP rights you might have\n what demands the other party has made and when they might expect a reply\n- whether to seek advice from an IP lawyer or IP attorney."
+            "text": "This will depend on what you decide to do.  \n\nTo evaluate the situation before deciding, it is recommended that you carefully consider: \n\n the allegations of infringement that have been made against you\n whether the allegations of infringement have merit\n what relevant IP rights you might have\n what demands the other party has made and when they might expect a reply\n- whether to seek advice from an IP lawyer or IP attorney."
           }
         }
       ]

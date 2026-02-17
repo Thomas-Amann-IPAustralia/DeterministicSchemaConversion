@@ -100,6 +100,13 @@
       },
       "datePublished": "2025-02-28",
       "dateModified": "2025-09-24",
+      "keywords": [
+        "Patents",
+        "Court proceedings",
+        "Court - patent",
+        "Binding authoritative decisions",
+        "Court patent"
+      ],
       "copyrightYear": 2025,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -156,7 +163,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#section-1-what-is-it",
       "headline": "What is it?",
-      "text": "If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed.\n\nIt is prudent to seek legal advice before deciding whether to start a legal action in court. You will likely also need assistance from an IP lawyer if you decide to start a legal action.\n\nPatent proceedings usually involve:\n\n a validity challenge intended to revoke a patent in whole or in part\n allegations of infringement of a patent.\n\nPatent proceedings in Australia are typically started in the Federal Court of Australia.",
+      "text": "If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed. \n\nIt is prudent to seek legal advice before deciding whether to start a legal action in court. You will likely also need assistance from an IP lawyer if you decide to start a legal action. \n\nPatent proceedings usually involve:  \n\n a validity challenge intended to revoke a patent in whole or in part\n allegations of infringement of a patent.\n\nPatent proceedings in Australia are typically started in the Federal Court of Australia.",
       "position": 1,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage"
@@ -207,7 +214,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q3-a",
-            "text": "The possible outcomes vary depending on the type of litigation.\n\nIt is possible you may reach a negotiated settlement with the other party.\n\nFor revocation proceedings, a court might order that a patent be:\n\n revoked in whole or in part\n amended in whole or in part\n upheld in whole or in part.\n\nIt is also possible to have a mixed result. For example, if some of the claims in a patent are challenged, one claim might be upheld and the other claim might be revoked.\n\nFor infringement proceedings:\n\n A court might temporarily order the alleged infringer to stop any alleged infringement until a final decision is made - see Seek an urgent injunction\n If you're successful in infringement proceedings, a court might order:\n + that you be paid damages or compensation\n + that the other party or parties pay some or all of your legal costs\n + the infringer not to infringe your IP rights in future.\n If you're unsuccessful in infringement proceedings, a court might order:\n + that you pay some or all of the legal costs for the other party or parties.\n\nAgain, it is possible to have a mixed result. For example, a court might agree that some of the other party's conduct infringes your patent, but that other conduct does not.\n\nCourts also have powers to make other types of orders as part of the outcome.\n\nYou or the other party or parties may be able to appeal the decision."
+            "text": "The possible outcomes vary depending on the type of litigation.   \n\nIt is possible you may reach a negotiated settlement with the other party.  \n\nFor revocation proceedings, a court might order that a patent be:  \n\n revoked in whole or in part\n amended in whole or in part\n upheld in whole or in part.\n\nIt is also possible to have a mixed result. For example, if some of the claims in a patent are challenged, one claim might be upheld and the other claim might be revoked. \n\nFor infringement proceedings:  \n\n A court might temporarily order the alleged infringer to stop any alleged infringement until a final decision is made - see Seek an urgent injunction\n If you're successful in infringement proceedings, a court might order:\n + that you be paid damages or compensation\n + that the other party or parties pay some or all of your legal costs\n + the infringer not to infringe your IP rights in future.\n If you're unsuccessful in infringement proceedings, a court might order:\n + that you pay some or all of the legal costs for the other party or parties.\n\nAgain, it is possible to have a mixed result. For example, a court might agree that some of the other party's conduct infringes your patent, but that other conduct does not. \n\nCourts also have powers to make other types of orders as part of the outcome. \n\nYou or the other party or parties may be able to appeal the decision."
           }
         },
         {
@@ -217,7 +224,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q4-a",
-            "text": "While simple patent-related litigation may cost between $100-500k, major patent litigation can cost in the millions. Appeals cost anywhere from $150k-300k+.\n\nLegal representation typically makes up a large proportion of these costs."
+            "text": "While simple patent-related litigation may cost between $100-500k, major patent litigation can cost in the millions. Appeals cost anywhere from $150k-300k+. \n\nLegal representation typically makes up a large proportion of these costs."
           }
         },
         {
@@ -227,7 +234,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q5-a",
-            "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, and which court hears your claim.\n\nPatent cases are typically heard by the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed intellectual property as the cause of action, were as follows:\n\n 95 cases (45%) under 12 months\n 43 cases (21%) 12-24 months\n- 71 cases (34%) over 24 months.\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.\n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.\n\nTime limits for starting legal claims\n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start. Due to the complexities, it may be helpful to speak to an IP lawyer about time limits."
+            "text": "Courts can take a long time to resolve disputes. It usually takes some months and can take years to finalise the entire process. Timelines vary based on factors such as the type of court action, complexity of the case, the amount of evidence involved, and which court hears your claim.  \n\nPatent cases are typically heard by the Federal Court of Australia. At 30 June 2023, the age of active cases in the Federal Court of Australia which listed intellectual property as the cause of action, were as follows: \n\n 95 cases (45%) under 12 months\n 43 cases (21%) 12-24 months\n- 71 cases (34%) over 24 months.\n\nIf a party appeals the initial decision, this will add extra time before the matter is finalised.   \n\nWhere appropriate, parties may request a faster process to resolve their dispute, but this depends on the availability of a judge to support a faster hearing.   \n\nTime limits for starting legal claims\n\nThere are time limits that apply to starting a legal claim. The time limits vary depending on the type of legal claim that you want to start. Due to the complexities, it may be helpful to  speak to an IP lawyer about time limits."
           }
         },
         {
@@ -237,7 +244,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q6-a",
-            "text": "Patent proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved.\n\nIn the 2023-24 financial year, there were 41 patent and associated statutes filings in the Federal Court of Australia.\n\nSome patent proceedings are also started in State/Territory courts."
+            "text": "Patent proceedings are not particularly common in Australia because they can be expensive and time consuming for the parties involved. \n\nIn the 2023-24 financial year, there were 41 patent and associated statutes filings in the Federal Court of Australia.\n\nSome patent proceedings are also started in State/Territory courts."
           }
         },
         {
@@ -247,7 +254,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q7-a",
-            "text": "For infringement actions, the owner of the patent usually starts the infringement action. In Australia, an exclusive licensee also has the right to start infringement proceedings.\n\nAny party can challenge the validity of a patent and apply for it to be revoked in whole or in part."
+            "text": "For infringement actions, the owner of the patent usually starts the infringement action. In Australia, an exclusive licensee also has the right to start infringement proceedings.  \n\nAny party can challenge the validity of a patent and apply for it to be revoked in whole or in part."
           }
         },
         {
@@ -267,7 +274,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#faq-q9-a",
-            "text": "Here are some things you might consider before you proceed with legal action in a patent matter.\n\nFind an IP lawyer for advice and representation\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.\n\nConsider your goals before deciding to start a legal claim\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes.\n\nConsider the impact of publicity\nCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential.\n\nGather all your documents\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that you think might be relevant to your claim. You can give these to your lawyer to review."
+            "text": "Here are some things you might consider before you proceed with legal action in a patent  matter. \n\nFind an IP lawyer for advice and representation\nCourt proceedings can be an expensive, time-consuming, stressful, complicated process that can have a serious impact on you and your business. It is recommended that you seek legal advice before deciding whether to start a legal claim and to assist you if you decide to make one.  \n\nConsider your goals before deciding to start a legal claim\nGoing to court is usually a last resort. You should carefully consider what you are seeking to achieve and whether bringing a legal claim is your best option. An IP lawyer can help you to consider your best option to achieve your goals and give you advice on likely outcomes. \n\nConsider the impact of publicity\nCourt proceedings are usually public. You should consider what impact this may have on your business. Unless they're covered by a confidentiality order, evidence and documents used in court will also become available to the public and no longer be confidential.\n\nGather all your documents\nBefore seeking legal advice, it can be helpful to collect any documents like reports, contracts, licences or correspondence that you think might be relevant to your claim. You can give these to your lawyer to review."
           }
         }
       ]

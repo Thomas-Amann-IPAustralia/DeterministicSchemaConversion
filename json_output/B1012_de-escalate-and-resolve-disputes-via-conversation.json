@@ -51,9 +51,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Any intellectual property right",
-          "description": "A topic which relates to all intellectual property rights",
-          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+          "name": "Any IP right"
         }
       ],
       "inLanguage": "en-AU",
@@ -92,6 +90,13 @@
       },
       "datePublished": "2025-07-01",
       "dateModified": "2026-01-30",
+      "keywords": [
+        "Intellectual property rights",
+        "Informal resolution",
+        "Informal contact",
+        "And resolve disputes via conversation",
+        "Informal conversation"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -145,7 +150,7 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "headline": "De-escalate and resolve disputes via conversation",
-      "articleBody": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action.\n\nOften this contact comes in the form of a cease-and-desist or a letter of demand. They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: Receiving a letter of demand.\n\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\n\nFor more information on possible commercial solutions, see IP First Response's page: Agree to a commercial arrangement.",
+      "articleBody": "If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action. \n\nOften this contact comes in the form of a cease-and-desist or a letter of demand. They might request that you stop the suspected infringement and set a deadline to reply. Sometimes they might also demand compensation. For more information on a letter of demand, see IP First Response's page: Receiving a letter of demand.\n\nYou can respond in a way that lowers the risk of conflict and explores mutually acceptable solutions, even when the other party has a valid claim to the disputed IP. This process might involve checking their specific claims, evaluating the strength of your respective positions, and inviting them to participate in a dialogue to negotiate an outcome. You can also consider obtaining legal advice from a legal professional to assess the claims made by the other party and assist you to communicate with the other party.\n\nFor more information on possible commercial solutions, see IP First Response's page: Agree to a commercial arrangement.",
       "datePublished": "2025-07-01",
       "dateModified": "2026-01-30",
       "hasPart": [

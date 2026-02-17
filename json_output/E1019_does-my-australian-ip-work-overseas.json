@@ -51,9 +51,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Any intellectual property right",
-          "description": "A topic which relates to all intellectual property rights",
-          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
+          "name": "Any IP right"
         }
       ],
       "inLanguage": "en-AU",
@@ -92,6 +90,13 @@
       },
       "datePublished": "2025-09-11",
       "dateModified": "2025-10-02",
+      "keywords": [
+        "Intellectual property rights",
+        "International disputes",
+        "Australian IP overseas",
+        "Does my australian IP work overseas",
+        "Design plant"
+      ],
       "copyrightYear": 2025,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -126,7 +131,7 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "headline": "Does my Australian IP work overseas?",
-      "articleBody": "Australian registration protects the relevant IP right within Australia. When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia.\n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: Can I protect my ideas in other countries? | IP Australia First Response.\n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.",
+      "articleBody": "Australian registration protects the relevant IP right within Australia. When you register a trade mark, patent, design or plant breeder's right with IP Australia, protection applies only inside Australia. \n\nIf you want exclusive rights in other countries, you can apply in each country or use an international filing system that covers multiple countries. For more information, see: Can I protect my ideas in other countries? | IP Australia First Response. \n\nCosts, rules and review processes differ between countries. Some people choose to get help from a registered patent or trade mark attorney familiar with the overseas market.",
       "datePublished": "2025-09-11",
       "dateModified": "2025-10-02"
     },
