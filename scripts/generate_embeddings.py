@@ -17,11 +17,13 @@ def generate_embeddings():
     input_file = 'sqlite_data/Semantic.xlsx'
     output_file_csv = 'sqlite_data/Semantic_Embeddings_Output.csv'
     output_file_xlsx = 'sqlite_data/Semantic_Embeddings_Output.xlsx'
+    output_file_json = 'sqlite_data/Semantic_Embeddings_Output.json'
     
     logger.info("--- Starting Embedding Generation Workflow ---")
     logger.info(f"Target Input File: {input_file}")
     logger.info(f"Target Output CSV: {output_file_csv}")
     logger.info(f"Target Output XLSX: {output_file_xlsx}")
+    logger.info(f"Target Output JSON: {output_file_json}")
 
     # --- Credential Check ---
     api_key = os.environ.get("OPENAI_API_KEY")
@@ -39,31 +41,22 @@ def generate_embeddings():
 
     try:
         df = pd.read_excel(input_file, engine='openpyxl')
-        logger.info(f"Data Loaded: {len(df)} total rows found in Excel file.")
+        logger.info(f"Loaded data. Total rows: {len(df)}")
     except Exception as e:
-        logger.error(f"CRITICAL: Failed to read Excel file. Error: {e}")
+        logger.error(f"CRITICAL: Failed to read input file. Error: {e}")
         sys.exit(1)
 
-    # --- Validation ---
-    if 'Chunk_Text' not in df.columns:
-        logger.error(f"CRITICAL: Column 'Chunk_Text' not found.")
-        sys.exit(1)
-
+    # --- Identify Missing Embeddings ---
     if 'Chunk_Embedding' not in df.columns:
         df['Chunk_Embedding'] = None
-
-    # Force object type to allow stringified lists
-    df['Chunk_Embedding'] = df['Chunk_Embedding'].astype('object')
-
-    # --- Filter Workload ---
-    mask = df['Chunk_Embedding'].isna() | (df['Chunk_Embedding'].astype(str).str.strip() == '')
-    rows_to_process = df[mask]
     
-    total_work = len(rows_to_process)
-    logger.info(f"Workload Assessment: {total_work} rows require embeddings.")
+    # Filter for rows where embedding is missing (NaN or empty)
+    rows_to_process = df[df['Chunk_Embedding'].isna() | (df['Chunk_Embedding'] == "")]
+    
+    logger.info(f"Rows requiring embeddings: {len(rows_to_process)}")
 
-    if total_work == 0:
-        logger.info("Nothing to do. Exiting.")
+    if rows_to_process.empty:
+        logger.info("No new embeddings needed. Exiting.")
         return
 
     # --- Processing Loop ---
@@ -106,9 +99,14 @@ def generate_embeddings():
         # Save Excel
         df.to_excel(output_file_xlsx, index=False, engine='openpyxl')
         logger.info(f"Saved Excel: {output_file_xlsx}")
-        
+
+        # Save JSON (List of objects structure)
+        # orient='records' creates the [{col:val}, {col:val}] structure
+        df.to_json(output_file_json, orient='records', indent=4, force_ascii=False)
+        logger.info(f"Saved JSON: {output_file_json}")
+
     except Exception as e:
-        logger.error(f"CRITICAL: Failed to save output files: {e}")
+        logger.error(f"CRITICAL: Failed to save output files. Error: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

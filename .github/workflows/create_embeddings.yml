@@ -34,11 +34,12 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
-          # Add both the CSV and the XLSX
+          # Add CSV, XLSX, and JSON
           git add sqlite_data/Semantic_Embeddings_Output.csv
           git add sqlite_data/Semantic_Embeddings_Output.xlsx
+          git add sqlite_data/Semantic_Embeddings_Output.json
           
-          git commit -m "Update embeddings (CSV & XLSX) [skip ci]" || echo "No changes to commit"
+          git commit -m "Update embeddings (CSV, XLSX & JSON) [skip ci]" || echo "No changes to commit"
           git push
 
       - name: Upload Artifacts
@@ -49,3 +50,4 @@ jobs:
           path: |
             sqlite_data/Semantic_Embeddings_Output.csv
             sqlite_data/Semantic_Embeddings_Output.xlsx
+            sqlite_data/Semantic_Embeddings_Output.json
