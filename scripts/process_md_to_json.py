@@ -520,17 +520,33 @@ def _repair_mojibake(text: str) -> str:
     for bad, good in mojibake_map:
         text = text.replace(bad, good)
 
-    # Also try a byte-round-trip repair for any remaining mojibake.
-    # This catches sequences not in the explicit map above.
-    try:
-        repaired = text.encode("cp1252", errors="ignore").decode("utf-8", errors="ignore")
-        # Only use the repaired version if it doesn't lose significant content
-        # (the round-trip can drop characters if the text isn't purely mojibaked).
-        if len(repaired) >= len(text) * 0.9:
-            # Selectively replace segments that decoded successfully.
-            pass  # The explicit map above covers the main cases.
-    except (UnicodeDecodeError, UnicodeEncodeError):
-        pass
+    # Byte-round-trip repair for any remaining mojibake not in the
+    # explicit map.  Only attempted when the text still contains
+    # C1 control characters (U+0080–U+009F), which are the strongest
+    # signal of mojibake: they are the CP-1252 interpretation of UTF-8
+    # continuation bytes and virtually never appear in legitimate text.
+    # After the explicit map has cleaned known sequences, any remaining
+    # C1 controls indicate unmapped mojibake worth repairing.
+    _MOJIBAKE_MARKER = re.compile(r"[\u0080-\u009f]")
+    if _MOJIBAKE_MARKER.search(text):
+        try:
+            # Use latin-1 (not cp1252) because the mojibake characters
+            # in the explicit map above use C1 control codepoints
+            # (U+0080–U+009F) which are the latin-1 1:1 byte mappings,
+            # not the CP-1252 mappings (e.g. U+0080 = byte 0x80 in
+            # latin-1, vs U+20AC = byte 0x80 in CP-1252).
+            repaired = text.encode("latin-1", errors="ignore").decode(
+                "utf-8", errors="ignore"
+            )
+            # Accept the repair only if it didn't lose significant
+            # content.  When mojibake resolves, 3 codepoints compress
+            # to 1, so the repaired string is naturally shorter.  The
+            # C1-control marker already provides high confidence, so
+            # we use a generous threshold here.
+            if len(repaired) >= len(text) * 0.7:
+                text = repaired
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            pass
 
     return text
 
@@ -1123,6 +1139,25 @@ def _format_body_text(raw_body: str) -> str:
     text = re.sub(r'\s*"[^"]*"\s*', "", text)
     # Normalise list bullets from * to -.
     text = re.sub(r"^(\s*)\*\s+", r"\1- ", text, flags=re.MULTILINE)
+    # Normalise space-only-indented list items (common in markdown
+    # converted from CMS rich-text) to consistent '- ' prefixed items.
+    # Only targets lines that are indented but lack a bullet or number
+    # prefix, and that appear within a list context (i.e. near other
+    # list items or after a blank line).
+    _normalised_lines: list[str] = []
+    for _line in text.split("\n"):
+        _stripped = _line.lstrip()
+        _indent = len(_line) - len(_stripped)
+        if (
+            _indent > 0
+            and _stripped
+            and not _stripped.startswith("-")
+            and not re.match(r"^\d+\.\s", _stripped)
+        ):
+            _normalised_lines.append(" " + _stripped)
+        else:
+            _normalised_lines.append(_line)
+    text = "\n".join(_normalised_lines)
     # Strip inline footnote reference markers at sentence boundaries.
     # Matches 1-2 digits following a sentence-ending period, where the
     # marker is followed by a space+uppercase letter (new sentence) or
@@ -1327,7 +1362,6 @@ def build_jsonld(
         faq_entity = {
             "@type": "FAQPage",
             "@id": faq_id,
-            "url": faq_id,
             "inLanguage": DEFAULT_LANGUAGE,
             "isPartOf": {"@id": f"{base_url}#webpage"},
             "mainEntity": q_entities,
