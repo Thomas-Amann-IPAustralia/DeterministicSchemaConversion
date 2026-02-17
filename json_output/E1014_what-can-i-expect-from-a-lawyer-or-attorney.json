@@ -8,7 +8,8 @@
       "url": "https://www.ipaustralia.gov.au",
       "parentOrganization": {
         "@type": "GovernmentOrganization",
-        "name": "Australian Government"
+        "name": "Australian Government",
+        "sameAs": "https://www.wikidata.org/wiki/Q2991162"
       },
       "sameAs": [
         "https://www.wikidata.org/wiki/Q5973650",
@@ -71,9 +72,7 @@
           "Startups",
           "Entrepreneurs",
           "SME",
-          "Spinout Company",
           "Startup",
-          "Spinout",
           "Small to Medium Enterprise",
           "Sole Trader",
           "Australian Small Business Owners"
