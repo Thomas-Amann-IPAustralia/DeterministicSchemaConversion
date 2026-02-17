@@ -1,4 +1,4 @@
-PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas](https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas)"
+PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas](https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas)"
 
 ## International disputes
 

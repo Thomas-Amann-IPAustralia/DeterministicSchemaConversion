@@ -1,4 +1,4 @@
-PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes](https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes)"
+PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/access-international-arbitration-and-mediation-services](https://ipfirstresponse.ipaustralia.gov.au/options/access-international-arbitration-and-mediation-services)"
 
 ## World IP Organisation (WIPO)
 
