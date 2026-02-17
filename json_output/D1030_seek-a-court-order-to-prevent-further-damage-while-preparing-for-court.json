@@ -60,7 +60,9 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "Any IP right"
+          "name": "Any intellectual property right",
+          "description": "A topic which relates to all intellectual property rights",
+          "sameAs": "https://www.wikidata.org/wiki/Q108855835"
         }
       ],
       "inLanguage": "en-AU",
@@ -149,7 +151,7 @@
       "@type": "WebPageElement",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#section-2-what-is-it",
       "headline": "What is it?",
-      "text": "If you need immediate action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond. \n\nUrgent action can include: \n\n interim injunction\n search order (Anton Piller order).\n\nInterim injunction \nAn injunction,in the context of an Australian IP dispute, is a court order that can: \n\n Stop someone from infringing your IP rights.\n Compel them to take specific actions to prevent further infringement.\n Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a Mareva injunction).\n\nAn interim injunction is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.  \n\n Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\n\nSearch order \nA search order (sometimes called an Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.  \n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
+      "text": "If you need immediate action on infringement while waiting for a court determination, you can request an urgent court order. These orders are rare due to their serious nature and their urgency does not give the other party time to respond.\n\nUrgent action can include:\n\n interim injunction\n search order (Anton Piller order).\n\nInterim injunction\nAn injunction,in the context of an Australian IP dispute, is a court order that can:\n\n Stop someone from infringing your IP rights.\n Compel them to take specific actions to prevent further infringement.\n Freeze a party's assets temporarily, to ensure they can pay should a judgment be awarded against them (sometimes called a Mareva injunction).\n\nAn interim injunction is a type of injunction which can be granted without a full hearing. It's a temporary, short-term tool to protect your IP until hearings take place.\n\n Interim injunctions are rare. They are granted only where there is a serious issue to be tried and monetary damages would not be an adequate response.\n Interim injunctions are usually ordered for short periods of time, often one or two days. After this time, all involved are required to attend court to determine whether the injunction should be continued.\n When an interim injunction is issued, the infringing conduct must stop immediately, even if it hasn't yet been proven. However, if it's later found that the injunction was not justified, you may need to pay compensation.\n Seeking an interim injunction is usually the first step in a broader legal case. Court proceedings are often expensive and time consuming. Considering the complexity of any legal strategy which involves an interim injunction, a lawyer or legal professional's advice may be vital before deciding to take any court action.\n\nSearch order\nA search order (sometimes called an Anton Piller order*) is a court order that provides the right to search premises and seize evidence without prior warning. This is primarily intended to prevent destruction of relevant evidence.\n\nThese are only granted in narrow circumstances, including that you have a strong case, and there's sufficient evidence that important material might be destroyed.",
       "position": 2,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
@@ -200,7 +202,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq-q4-a",
-            "text": "An interim injunction is often the first step in an infringement action/court process/lawsuit. \n\nWhile it is difficult to specify exact costs, the total cost of the lawsuit will likely be in the hundreds of thousands of dollars. A large proportion of these costs will be legal fees for your legal counsel."
+            "text": "An interim injunction is often the first step in an infringement action/court process/lawsuit.\n\nWhile it is difficult to specify exact costs, the total cost of the lawsuit will likely be in the hundreds of thousands of dollars. A large proportion of these costs will be legal fees for your legal counsel."
           }
         },
         {
@@ -210,7 +212,7 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#faq-q5-a",
-            "text": "The granting of an interim injunction is an urgent process, typically taking days to weeks, depending on the nature of the case.  \n\nThe interim injunction will typically only be granted for a few days, or until the parties are able to present preliminary arguments."
+            "text": "The granting of an interim injunction is an urgent process, typically taking days to weeks, depending on the nature of the case.\n\nThe interim injunction will typically only be granted for a few days, or until the parties are able to present preliminary arguments."
           }
         },
         {
