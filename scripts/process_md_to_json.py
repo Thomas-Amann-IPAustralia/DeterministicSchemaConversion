@@ -92,6 +92,8 @@ STANDARD_DISCLAIMER: dict = {
 # ── IP topic → Wikidata sameAs map (for 'about' Thing objects) ──
 IP_TOPIC_MAP: dict[str, str] = {
     "intellectual property right": "https://www.wikidata.org/wiki/Q108855835",
+    "any ip right": "https://www.wikidata.org/wiki/Q108855835",
+    "any ip rights": "https://www.wikidata.org/wiki/Q108855835",
     "trade mark": "https://www.wikidata.org/wiki/Q165196",
     "trade marks": "https://www.wikidata.org/wiki/Q165196",
     "trademark": "https://www.wikidata.org/wiki/Q165196",
@@ -110,6 +112,8 @@ IP_TOPIC_MAP: dict[str, str] = {
 # ── Canonical display names for IP topics (sentence case) ──
 # Ensures consistent naming regardless of CSV input casing.
 IP_TOPIC_DISPLAY_NAMES: dict[str, str] = {
+    "any ip right": "Any intellectual property right",
+    "any ip rights": "Any intellectual property right",
     "trade mark": "Trade mark",
     "trade marks": "Trade mark",
     "trademark": "Trade mark",
@@ -1080,13 +1084,17 @@ def resolve_about_topics(ip_right_field: str) -> list[dict]:
             # Fallback: sentence-case the first letter only.
             display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
 
-        # Special case: the catch-all IP topic gets a descriptive name and
+        # Special case: catch-all IP topics get a descriptive name and
         # the Wikidata link for "intellectual property right".
-        if "any dispute" in key and "intellectual property" in key:
+        _is_catchall = (
+            ("any dispute" in key and "intellectual property" in key)
+            or key in ("any ip right", "any ip rights")
+        )
+        if _is_catchall:
             thing: dict = {
                 "@type": "Thing",
-                "name": "All intellectual property (IP)",
-                "description": "A topic which relates to all intellectual property",
+                "name": "Any intellectual property right",
+                "description": "A topic which relates to all intellectual property rights",
                 "sameAs": IP_TOPIC_MAP.get("intellectual property right", ""),
             }
             things.append(thing)
@@ -1167,6 +1175,20 @@ def _format_body_text(raw_body: str) -> str:
     text = re.sub(r"(?<=[\.\)\]\"\u2019])\d{1,2}\s*$", "", text)
     # Strip trailing footnote blocks (consecutive lines like "1. Act s 18.").
     text = re.sub(r"(?:\n\d+\.\s[^\n]+)+\s*$", "", text)
+    # Convert ASCII double-dashes to typographic en-dash (U+2013).
+    # Spaced dashes: " -- " → " – ".
+    text = re.sub(r" -- ", " \u2013 ", text)
+    # Unspaced dashes between word characters: "word--word" → "word–word".
+    text = re.sub(r"(\w)--(\w)", "\\1\u2013\\2", text)
+    # Collapse multiple inline spaces and strip trailing whitespace per
+    # line.  Leading whitespace (list-item indentation) is preserved.
+    _tidied_lines: list[str] = []
+    for _tl in text.split("\n"):
+        _tl_body = _tl.lstrip(" ")
+        _tl_lead = _tl[: len(_tl) - len(_tl_body)]
+        _tl_body = re.sub(r"  +", " ", _tl_body)
+        _tidied_lines.append((_tl_lead + _tl_body).rstrip())
+    text = "\n".join(_tidied_lines)
     # Normalise whitespace.
     text = re.sub(r"\n{3,}", "\n\n", text)
 
@@ -1725,8 +1747,34 @@ def _validate_and_repair_jsonld(jsonld: dict) -> dict:
       - Replacing placeholder descriptions with a generated summary
         derived from the first 160 characters of the articleBody, text,
         or longest WebPageElement text in the main content entity.
+      - Warning about potential run-on text from source-data corruption
+        (e.g. missing spaces between sentences in the markdown source).
     """
     graph = jsonld.get("@graph", [])
+
+    # ── Run-on sentence warning ──
+    # Detect patterns like "areThe" or "asThe" where a common
+    # sentence-starting word is fused to the end of a preceding word.
+    # These indicate missing text or spaces in the source markdown.
+    # This check is warn-only and does not modify any text.
+    _RUNON_STARTERS = re.compile(
+        r"[a-z]{2,}(The|This|That|These|Those|However|If|When|Where|"
+        r"It|In|On|At|To|For|And|But|Or|As|A|An|He|She|We|They)\b"
+    )
+    for entity in graph:
+        for field in ("articleBody", "text"):
+            val = entity.get(field, "")
+            if not isinstance(val, str):
+                continue
+            for m in _RUNON_STARTERS.finditer(val):
+                start = max(0, m.start() - 20)
+                end = min(len(val), m.end() + 20)
+                context = val[start:end].replace("\n", " ")
+                print(
+                    f"  [WARN] Possible run-on text in "
+                    f"{entity.get('@type', '?')}.{field}: "
+                    f"\"...{context}...\""
+                )
 
     # Locate the main content entity (Article, GovernmentService, or Service)
     # and extract its body text for summary generation.
