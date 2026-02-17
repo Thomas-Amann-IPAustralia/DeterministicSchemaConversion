@@ -1389,16 +1389,22 @@ def build_jsonld(
 
     # ── Collect unique links ──
     IPFR_HOST = "ipfirstresponse.ipaustralia.gov.au"
-    link_objects: list = []
+    related_link_urls: list[str] = []       # plain URL strings for relatedLink
+    internal_page_entities: list[dict] = []  # full WebPage stubs for @graph
+    internal_page_refs: list[dict] = []      # @id refs for WebPage.mentions
     seen_link_urls: set[str] = set()
 
-    # Build a URL → canonical-title lookup from the full metatable so that
-    # internal IPFR links resolve to their proper page name.
+    # Build a URL → MetaRecord lookup from the full metatable so that
+    # internal IPFR links can be enriched with title and description.
+    url_meta_map: dict[str, MetaRecord] = {}
     url_title_map: dict[str, str] = {}
     if metatable:
         for rec in metatable.values():
-            if rec.canonical_url and rec.main_title:
-                url_title_map[rec.canonical_url.lower().rstrip("/")] = rec.main_title
+            if rec.canonical_url:
+                key = rec.canonical_url.lower().rstrip("/")
+                url_meta_map[key] = rec
+                if rec.main_title:
+                    url_title_map[key] = rec.main_title
 
     # Filter out noisy links (feedback forms, email, images, CMS nodes).
     noise_patterns = ["qualtrics.com", "mailto:", "/sites/default/files/", "/node/"]
@@ -1414,13 +1420,50 @@ def build_jsonld(
         dedup_key = url.rstrip("/").lower()
         if dedup_key not in seen_link_urls:
             seen_link_urls.add(dedup_key)
-            # Internal IPFR links use @id references to enable graph
-            # traversal by JSON-LD-aware AI consumers. External links
-            # remain plain URL strings.
+            clean_url = url.rstrip("/")
+
+            # relatedLink always gets a plain URL string (both
+            # internal and external) per Schema.org spec.
+            related_link_urls.append(clean_url)
+
+            # For internal IPFR links, also build a rich WebPage
+            # entity for the @graph and a @id ref for mentions.
             if IPFR_HOST in url:
-                link_objects.append({"@id": f"{url.rstrip('/')}#webpage"})
-            else:
-                link_objects.append(url)
+                page_id = f"{clean_url}#webpage"
+                internal_page_refs.append({"@id": page_id})
+
+                # Strip query strings / fragments for metatable lookup.
+                lookup_key = dedup_key.split("?")[0].split("#")[0].rstrip("/")
+                linked_meta = url_meta_map.get(lookup_key)
+
+                if linked_meta:
+                    page_entity: dict = {
+                        "@type": "WebPage",
+                        "@id": page_id,
+                        "url": clean_url,
+                        "name": f"{linked_meta.main_title} - {WEBSITE_NAME}",
+                    }
+                    desc = linked_meta.description.strip().strip('"')
+                    if desc and desc.lower() != "null":
+                        page_entity["description"] = desc
+                    if linked_meta.udid:
+                        page_entity["identifier"] = linked_meta.udid
+                    page_entity["isPartOf"] = {"@id": WEBSITE_ID}
+                    internal_page_entities.append(page_entity)
+                else:
+                    # No CSV match; build a minimal stub from the URL.
+                    slug_name = _link_name_from_url(
+                        clean_url, anchor, url_title_map
+                    )
+                    internal_page_entities.append(
+                        {
+                            "@type": "WebPage",
+                            "@id": page_id,
+                            "url": clean_url,
+                            "name": f"{slug_name} - {WEBSITE_NAME}",
+                            "isPartOf": {"@id": WEBSITE_ID},
+                        }
+                    )
 
     # ── Legislation ──
     legislation_entries = resolve_legislation(meta.relevant_ip_right) if meta else []
@@ -1597,16 +1640,28 @@ def build_jsonld(
 
     # "mentions" is a CreativeWork property, so it belongs on the Article
     # or the WebPage, not on Service / GovernmentService.
+    #
+    # Legislation citation_refs attach to the Article when the archetype
+    # is Article, otherwise they fall through to the WebPage.
+    #
+    # Internal IPFR page references always attach to the WebPage so that
+    # AI agents traversing the graph from the WebPage can discover
+    # related pages within the site.  These are full WebPage objects
+    # (with @id, url, name, description) emitted into the @graph, and
+    # referenced here by @id.
+    webpage_mentions: list[dict] = list(internal_page_refs)
     if citation_refs:
         if archetype_type == "Article":
             main_entity["mentions"] = citation_refs
         else:
-            webpage_entity["mentions"] = citation_refs
+            webpage_mentions.extend(citation_refs)
+    if webpage_mentions:
+        webpage_entity["mentions"] = webpage_mentions
 
-    # Related links belong on the WebPage entity. relatedLink expects
-    # plain URL strings per the Schema.org spec (not WebPage objects).
-    if link_objects:
-        webpage_entity["relatedLink"] = link_objects
+    # relatedLink: strictly plain URL strings (Schema.org expects URL
+    # values).  Both internal and external links appear here as strings.
+    if related_link_urls:
+        webpage_entity["relatedLink"] = related_link_urls
 
     # ── Assemble the @graph ──
     graph: list[dict] = []
@@ -1650,6 +1705,10 @@ def build_jsonld(
 
     # 8. Legislation.
     graph.extend(legislation_entities)
+
+    # 9. Internal IPFR page stubs (rich WebPage entities for
+    #    graph-traversable cross-page links via WebPage.mentions).
+    graph.extend(internal_page_entities)
 
     return {"@context": SCHEMA_CONTEXT, "@graph": graph}
 
