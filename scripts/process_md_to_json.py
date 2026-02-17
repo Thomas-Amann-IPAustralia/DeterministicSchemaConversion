@@ -26,7 +26,7 @@ from dataclasses import dataclass, field
 from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -52,6 +52,7 @@ IP_AUSTRALIA_ENTITY: dict = {
     "parentOrganization": {
         "@type": "GovernmentOrganization",
         "name": "Australian Government",
+        "sameAs":"https://www.wikidata.org/wiki/Q2991162"
     },
     "sameAs": [ "https://www.wikidata.org/wiki/Q5973650",
     "https://en.wikipedia.org/wiki/IP_Australia"
@@ -62,8 +63,7 @@ IP_AUSTRALIA_ENTITY: dict = {
       "Trade Marks",
       "Design Rights",
       "Plant Breeder's Rights",
-      "Copyright",
-      "Dispute Resolution"
+      "Intellectual Property Disputes"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -105,6 +105,25 @@ IP_TOPIC_MAP: dict[str, str] = {
     "pbr": "https://www.wikidata.org/wiki/Q695112",
     "plant breeder's rights": "https://www.wikidata.org/wiki/Q695112",
     "plant breeder": "https://www.wikidata.org/wiki/Q695112",
+}
+
+# ── Canonical display names for IP topics (sentence case) ──
+# Ensures consistent naming regardless of CSV input casing.
+IP_TOPIC_DISPLAY_NAMES: dict[str, str] = {
+    "trade mark": "Trade mark",
+    "trade marks": "Trade mark",
+    "trademark": "Trade mark",
+    "unregistered-tm": "Unregistered trade mark",
+    "unregistered tm": "Unregistered trade mark",
+    "patent": "Patent",
+    "patents": "Patent",
+    "design": "Design",
+    "designs": "Design",
+    "copyright": "Copyright",
+    "pbr": "Plant breeder's rights",
+    "plant breeder's rights": "Plant breeder's rights",
+    "plant breeder": "Plant breeder's rights",
+    "intellectual property right": "Intellectual property",
 }
 
 # Headings whose content should be silently discarded (noise sections).
@@ -205,12 +224,12 @@ LEGISLATION_MAP: dict[str, list[tuple[str, str, str]]] = {
     "pbr": [
         (
             "https://www.legislation.gov.au/C2004A04783/latest/text",
-            "Plant Breeder\u2019s Rights Act 1994",
+            "Plant Breeder's Rights Act 1994",
             "Act",
         ),
         (
             "https://www.legislation.gov.au/F1996B02512/latest/text",
-            "Plant Breeder\u2019s Rights Regulations 1994",
+            "Plant Breeder's Rights Regulations 1994",
             "Regulations",
         ),
     ],
@@ -501,17 +520,33 @@ def _repair_mojibake(text: str) -> str:
     for bad, good in mojibake_map:
         text = text.replace(bad, good)
 
-    # Also try a byte-round-trip repair for any remaining mojibake.
-    # This catches sequences not in the explicit map above.
-    try:
-        repaired = text.encode("cp1252", errors="ignore").decode("utf-8", errors="ignore")
-        # Only use the repaired version if it doesn't lose significant content
-        # (the round-trip can drop characters if the text isn't purely mojibaked).
-        if len(repaired) >= len(text) * 0.9:
-            # Selectively replace segments that decoded successfully.
-            pass  # The explicit map above covers the main cases.
-    except (UnicodeDecodeError, UnicodeEncodeError):
-        pass
+    # Byte-round-trip repair for any remaining mojibake not in the
+    # explicit map.  Only attempted when the text still contains
+    # C1 control characters (U+0080–U+009F), which are the strongest
+    # signal of mojibake: they are the CP-1252 interpretation of UTF-8
+    # continuation bytes and virtually never appear in legitimate text.
+    # After the explicit map has cleaned known sequences, any remaining
+    # C1 controls indicate unmapped mojibake worth repairing.
+    _MOJIBAKE_MARKER = re.compile(r"[\u0080-\u009f]")
+    if _MOJIBAKE_MARKER.search(text):
+        try:
+            # Use latin-1 (not cp1252) because the mojibake characters
+            # in the explicit map above use C1 control codepoints
+            # (U+0080–U+009F) which are the latin-1 1:1 byte mappings,
+            # not the CP-1252 mappings (e.g. U+0080 = byte 0x80 in
+            # latin-1, vs U+20AC = byte 0x80 in CP-1252).
+            repaired = text.encode("latin-1", errors="ignore").decode(
+                "utf-8", errors="ignore"
+            )
+            # Accept the repair only if it didn't lose significant
+            # content.  When mojibake resolves, 3 codepoints compress
+            # to 1, so the repaired string is naturally shorter.  The
+            # C1-control marker already provides high confidence, so
+            # we use a generous threshold here.
+            if len(repaired) >= len(text) * 0.7:
+                text = repaired
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            pass
 
     return text
 
@@ -558,6 +593,26 @@ def _clean_text(text: str) -> str:
     return text.strip()
 
 
+def _strip_tracking_params(url: str) -> str:
+    """Remove known analytics/tracking query parameters from a URL.
+
+    Strips parameters matching common tracking patterns (_gl, _ga, utm_*)
+    and returns the cleaned URL. If all parameters are removed, the trailing
+    '?' is also stripped.
+    """
+    TRACKING_PREFIXES = ("utm_", "_gl", "_ga")
+    parsed = urlparse(url)
+    if not parsed.query:
+        return url
+    params = parse_qs(parsed.query, keep_blank_values=True)
+    cleaned = {
+        k: v for k, v in params.items()
+        if not any(k.startswith(prefix) for prefix in TRACKING_PREFIXES)
+    }
+    new_query = urlencode(cleaned, doseq=True) if cleaned else ""
+    return urlunparse(parsed._replace(query=new_query))
+
+
 def _extract_links(text: str, base_url: str = "") -> list[tuple[str, str]]:
     """Pull all markdown-style [text](url) links from the body.
     
@@ -594,6 +649,9 @@ def _extract_links(text: str, base_url: str = "") -> list[tuple[str, str]]:
             url_clean = raw_url
         else:
             continue  # Skip unresolvable relative paths.
+
+        # Strip known tracking query parameters before deduplication.
+        url_clean = _strip_tracking_params(url_clean)
 
         if url_clean not in seen_urls:
             seen_urls.add(url_clean)
@@ -746,13 +804,9 @@ def parse_markdown(md_text: str) -> ParsedMarkdown:
         )
 
     intro_text = "\n\n".join(p for p in intro_parts if p).strip()
-    # Strip any remaining link/formatting markup from intro for clean articleBody.
-    intro_text_clean = re.sub(r"\[!\[.*?\]\(.*?\)\]\(.*?\)", "", intro_text)
-    intro_text_clean = re.sub(r"!\[.*?\]\(.*?\)", "", intro_text_clean)
-    intro_text_clean = re.sub(r"\[\s*\]\([^\)]+\)", "", intro_text_clean)
-    intro_text_clean = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", intro_text_clean)
-    intro_text_clean = re.sub(r"\*\*(.+?)\*\*", r"\1", intro_text_clean)
-    intro_text_clean = re.sub(r"\n{3,}", "\n\n", intro_text_clean).strip()
+    # Run the unified body text formatter for consistent markdown stripping,
+    # footnote removal, and mojibake repair (replaces prior ad-hoc cleanup).
+    intro_text_clean = _format_body_text(intro_text)
 
     return ParsedMarkdown(
         page_url=page_url,
@@ -1020,8 +1074,11 @@ def resolve_about_topics(ip_right_field: str) -> list[dict]:
             continue
         seen.add(key)
 
-        # Build the display name with title-cased first letter.
-        display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
+        # Build the display name from the canonical map (sentence case).
+        display_name = IP_TOPIC_DISPLAY_NAMES.get(key)
+        if not display_name:
+            # Fallback: sentence-case the first letter only.
+            display_name = term_clean[0].upper() + term_clean[1:] if term_clean else term_clean
 
         # Special case: the catch-all IP topic gets a descriptive name and
         # the Wikidata link for "intellectual property right".
@@ -1082,6 +1139,34 @@ def _format_body_text(raw_body: str) -> str:
     text = re.sub(r'\s*"[^"]*"\s*', "", text)
     # Normalise list bullets from * to -.
     text = re.sub(r"^(\s*)\*\s+", r"\1- ", text, flags=re.MULTILINE)
+    # Normalise space-only-indented list items (common in markdown
+    # converted from CMS rich-text) to consistent '- ' prefixed items.
+    # Only targets lines that are indented but lack a bullet or number
+    # prefix, and that appear within a list context (i.e. near other
+    # list items or after a blank line).
+    _normalised_lines: list[str] = []
+    for _line in text.split("\n"):
+        _stripped = _line.lstrip()
+        _indent = len(_line) - len(_stripped)
+        if (
+            _indent > 0
+            and _stripped
+            and not _stripped.startswith("-")
+            and not re.match(r"^\d+\.\s", _stripped)
+        ):
+            _normalised_lines.append(" " + _stripped)
+        else:
+            _normalised_lines.append(_line)
+    text = "\n".join(_normalised_lines)
+    # Strip inline footnote reference markers at sentence boundaries.
+    # Matches 1-2 digits following a sentence-ending period, where the
+    # marker is followed by a space+uppercase letter (new sentence) or
+    # end-of-string. This avoids stripping legitimate decimals like "2.5%".
+    text = re.sub(r"(?<=\.)\d{1,2}(?=\s+[A-Z]|\s*$)", "", text)
+    # Also strip markers that follow closing punctuation at end of text.
+    text = re.sub(r"(?<=[\.\)\]\"\u2019])\d{1,2}\s*$", "", text)
+    # Strip trailing footnote blocks (consecutive lines like "1. Act s 18.").
+    text = re.sub(r"(?:\n\d+\.\s[^\n]+)+\s*$", "", text)
     # Normalise whitespace.
     text = re.sub(r"\n{3,}", "\n\n", text)
 
@@ -1099,13 +1184,14 @@ def build_jsonld(
 ) -> dict:
     """Assemble the full @graph JSON-LD document."""
 
-    base_url = parsed.page_url or (meta.canonical_url if meta else "")
+    base_url = (parsed.page_url or (meta.canonical_url if meta else "")).rstrip("/")
     udid = meta.udid if meta else ""
     main_title = _repair_mojibake((meta.main_title if meta else "") or parsed.title)
     description = _repair_mojibake((meta.description if meta else "").strip('"').strip())
-    # Fix 4: Use placeholder when description is empty.
+    # Fix 4: Use placeholder sentinel when description is empty;
+    # replaced by _validate_and_repair_jsonld() after build.
     if not description:
-        description = "xXx_PLACEHOLDER_xXx"
+        description = _PLACEHOLDER_SENTINEL
     pub_date = _parse_date(meta.publication_date) if meta else ""
     mod_date = _parse_date(meta.last_updated) if meta else ""
     disclaimer = _repair_mojibake((meta.additional_disclaimer if meta else "").strip())
@@ -1137,9 +1223,9 @@ def build_jsonld(
         is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
         if not is_ip_australia:
             provider_id = (
-                f"{provider_entry.url}/#organization"
+                f"{provider_entry.url.rstrip('/')}#organization"
                 if provider_entry.url
-                else f"{base_url}/#provider-organization"
+                else f"{base_url}#provider-organization"
             )
             provider_entity = {
                 "@type": provider_org_type,
@@ -1234,6 +1320,14 @@ def build_jsonld(
         slug = _slugify(sec.heading)
         sec_id = f"{base_url}#section-{idx}-{slug}"
         section_ids.append(sec_id)
+        # isPartOf must reference a CreativeWork. Article qualifies, but
+        # Service and GovernmentService do not, so sections fall back to
+        # the WebPage (which is always a CreativeWork).
+        is_part_of_id = (
+            f"{base_url}#{archetype_type.lower()}"
+            if archetype_type == "Article"
+            else f"{base_url}#webpage"
+        )
         section_entities.append(
             {
                 "@type": "WebPageElement",
@@ -1241,7 +1335,7 @@ def build_jsonld(
                 "headline": sec.heading,
                 "text": _format_body_text(sec.body),
                 "position": idx,
-                "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
+                "isPartOf": {"@id": is_part_of_id},
             }
         )
 
@@ -1268,7 +1362,6 @@ def build_jsonld(
         faq_entity = {
             "@type": "FAQPage",
             "@id": faq_id,
-            "url": faq_id,
             "inLanguage": DEFAULT_LANGUAGE,
             "isPartOf": {"@id": f"{base_url}#webpage"},
             "mainEntity": q_entities,
@@ -1295,35 +1388,82 @@ def build_jsonld(
         }
 
     # ── Collect unique links ──
-    link_objects: list[dict] = []
+    IPFR_HOST = "ipfirstresponse.ipaustralia.gov.au"
+    related_link_urls: list[str] = []       # plain URL strings for relatedLink
+    internal_page_entities: list[dict] = []  # full WebPage stubs for @graph
+    internal_page_refs: list[dict] = []      # @id refs for WebPage.mentions
     seen_link_urls: set[str] = set()
 
-    # Build a URL → canonical-title lookup from the full metatable so that
-    # internal IPFR links resolve to their proper page name.
+    # Build a URL → MetaRecord lookup from the full metatable so that
+    # internal IPFR links can be enriched with title and description.
+    url_meta_map: dict[str, MetaRecord] = {}
     url_title_map: dict[str, str] = {}
     if metatable:
         for rec in metatable.values():
-            if rec.canonical_url and rec.main_title:
-                url_title_map[rec.canonical_url.lower().rstrip("/")] = rec.main_title
+            if rec.canonical_url:
+                key = rec.canonical_url.lower().rstrip("/")
+                url_meta_map[key] = rec
+                if rec.main_title:
+                    url_title_map[key] = rec.main_title
 
     # Filter out noisy links (feedback forms, email, images, CMS nodes).
     noise_patterns = ["qualtrics.com", "mailto:", "/sites/default/files/", "/node/"]
     for url, anchor in parsed.links:
         if any(p in url for p in noise_patterns):
             continue
+        # Strip tracking parameters for deduplication.
+        url = _strip_tracking_params(url)
         # Skip self-referencing URLs (the page linking to itself).
         if base_url and url.rstrip("/") == base_url.rstrip("/"):
             continue
-        if url not in seen_link_urls:
-            seen_link_urls.add(url)
-            link_objects.append(
-                {
-                    "@type": "WebPage",
-                    "@id": url,
-                    "url": url,
-                    "name": _link_name_from_url(url, anchor, url_title_map),
-                }
-            )
+        # Normalise for deduplication.
+        dedup_key = url.rstrip("/").lower()
+        if dedup_key not in seen_link_urls:
+            seen_link_urls.add(dedup_key)
+            clean_url = url.rstrip("/")
+
+            # relatedLink always gets a plain URL string (both
+            # internal and external) per Schema.org spec.
+            related_link_urls.append(clean_url)
+
+            # For internal IPFR links, also build a rich WebPage
+            # entity for the @graph and a @id ref for mentions.
+            if IPFR_HOST in url:
+                page_id = f"{clean_url}#webpage"
+                internal_page_refs.append({"@id": page_id})
+
+                # Strip query strings / fragments for metatable lookup.
+                lookup_key = dedup_key.split("?")[0].split("#")[0].rstrip("/")
+                linked_meta = url_meta_map.get(lookup_key)
+
+                if linked_meta:
+                    page_entity: dict = {
+                        "@type": "WebPage",
+                        "@id": page_id,
+                        "url": clean_url,
+                        "name": f"{linked_meta.main_title} - {WEBSITE_NAME}",
+                    }
+                    desc = linked_meta.description.strip().strip('"')
+                    if desc and desc.lower() != "null":
+                        page_entity["description"] = desc
+                    if linked_meta.udid:
+                        page_entity["identifier"] = linked_meta.udid
+                    page_entity["isPartOf"] = {"@id": WEBSITE_ID}
+                    internal_page_entities.append(page_entity)
+                else:
+                    # No CSV match; build a minimal stub from the URL.
+                    slug_name = _link_name_from_url(
+                        clean_url, anchor, url_title_map
+                    )
+                    internal_page_entities.append(
+                        {
+                            "@type": "WebPage",
+                            "@id": page_id,
+                            "url": clean_url,
+                            "name": f"{slug_name} - {WEBSITE_NAME}",
+                            "isPartOf": {"@id": WEBSITE_ID},
+                        }
+                    )
 
     # ── Legislation ──
     legislation_entries = resolve_legislation(meta.relevant_ip_right) if meta else []
@@ -1352,32 +1492,25 @@ def build_jsonld(
         disclaimer_slug = "disclaimer"
         disclaimer_id = f"{base_url}#section-{len(content_sections) + 1}-{disclaimer_slug}"
         disclaimer_section_id = disclaimer_id
+        # isPartOf target: Article (CreativeWork) or WebPage for Service types.
+        disclaimer_parent_id = (
+            f"{base_url}#{archetype_type.lower()}"
+            if archetype_type == "Article"
+            else f"{base_url}#webpage"
+        )
         disclaimer_entity = {
             "@type": "WebPageElement",
             "@id": disclaimer_id,
             "headline": "Disclaimer",
             "text": disclaimer,
             "position": len(content_sections) + 1,
-            "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
+            "isPartOf": {"@id": disclaimer_parent_id},
         }
         section_entities.append(disclaimer_entity)
         has_part_refs.append({"@id": disclaimer_id})
 
-    # ── Fix 8: Include the standard site disclaimer as content, not just
-    # metadata. This ensures it is visible to consumers of the @graph
-    # content, not buried in usageInfo alone. ──
-    std_disclaimer_pos = len(content_sections) + (2 if disclaimer_section_id else 1)
-    std_disclaimer_id = f"{base_url}#section-{std_disclaimer_pos}-standard-disclaimer"
-    std_disclaimer_entity = {
-        "@type": "WebPageElement",
-        "@id": std_disclaimer_id,
-        "headline": "Standard disclaimer",
-        "text": STANDARD_DISCLAIMER["text"],
-        "position": std_disclaimer_pos,
-        "isPartOf": {"@id": f"{base_url}#{archetype_type.lower()}"},
-    }
-    section_entities.append(std_disclaimer_entity)
-    has_part_refs.append({"@id": std_disclaimer_id})
+    # ── Standard disclaimer is represented via usageInfo on the WebPage ──
+    # (No separate WebPageElement is created; this avoids triple-redundancy.)
 
     # ── Build the WebPage entity ──
     # Fix 3: Always use the H1 heading from markdown (parsed.title) as the
@@ -1401,9 +1534,7 @@ def build_jsonld(
                 "Startups",
                 "Entrepreneurs",
                 "SME",
-                "Spinout Company",
                 "Startup",
-                "Spinout",
                 "Small to Medium Enterprise",
                 "Sole Trader",
                 "Australian Small Business Owners"
@@ -1424,22 +1555,35 @@ def build_jsonld(
         webpage_entity["copyrightYear"] = copyright_year
         webpage_entity["copyrightHolder"] = {"@id": IP_AUSTRALIA_ID}
     webpage_entity["creditText"] = "Source: IP First Response initiative led by IP Australia"
+    # For Service / GovernmentService types, "text" is a CreativeWork
+    # property and is not valid on the main entity. Preserve any intro
+    # body text (not already in a named section) on the WebPage instead.
+    if archetype_type != "Article" and article_body_text and not article_body_from_section:
+        webpage_entity["text"] = article_body_text
     if has_part_refs:
         webpage_entity["hasPart"] = has_part_refs
 
     # ── Build the main content entity (Article / GovernmentService / Service) ──
     # Fix 3: Use H1 from markdown as the canonical title.
     # Fix 4: Use "name" for Service types; "headline" only for Article.
+    #
+    # Service and GovernmentService inherit from Thing > Intangible > Service,
+    # NOT from CreativeWork. Only properties valid on the target type are
+    # included; CreativeWork-specific properties (inLanguage, license,
+    # publisher, author, text) are confined to Article and the WebPage.
     main_entity: dict = {
         "@type": archetype_type,
         "@id": f"{base_url}#{archetype_type.lower()}",
         "description": description,
-        "inLanguage": DEFAULT_LANGUAGE,
-        "license": DEFAULT_LICENCE,
-        # Fix 1: Publisher is always IP Australia.
-        "publisher": {"@id": IP_AUSTRALIA_ID},
         "mainEntityOfPage": {"@id": f"{base_url}#webpage"},
     }
+
+    # CreativeWork-only properties (valid on Article, not on Service types).
+    if archetype_type == "Article":
+        main_entity["inLanguage"] = DEFAULT_LANGUAGE
+        main_entity["license"] = DEFAULT_LICENCE
+        main_entity["publisher"] = {"@id": IP_AUSTRALIA_ID}
+        main_entity["author"] = {"@id": IP_AUSTRALIA_ID}
 
     # Fix 4: Articles use "headline"; Service types use "name".
     if archetype_type == "Article":
@@ -1458,55 +1602,64 @@ def build_jsonld(
     # GovernmentService-specific fields.
     if archetype_type == "GovernmentService":
         main_entity["serviceType"] = meta.archetype if meta else "Government Service"
-        # Fix 1: serviceOperator is always IP Australia.
-        main_entity["serviceOperator"] = {"@id": IP_AUSTRALIA_ID}
-        # Fix 1: provider is the dynamic entity from the CSV.
+        # serviceOperator is derived from the CSV Provider column.
+        main_entity["serviceOperator"] = {"@id": provider_id}
+        # provider is also the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
-        # Only include "text" if the body came from intro text, not from a
-        # named section that already exists as a WebPageElement.
-        if article_body_text and not article_body_from_section:
-            main_entity["text"] = article_body_text
 
     # Service-specific fields (non-government / commercial).
     if archetype_type == "Service":
         main_entity["serviceType"] = meta.archetype if meta else "Service"
-        # Fix 1: provider is the dynamic entity from the CSV.
+        # provider is the dynamic entity from the CSV.
         main_entity["provider"] = {"@id": provider_id}
-        # Only include "text" if the body came from intro text, not from a
-        # named section that already exists as a WebPageElement.
-        if article_body_text and not article_body_from_section:
-            main_entity["text"] = article_body_text
 
     # HowTo reference (if applicable).
-    if howto_entity:
-        main_entity["hasPart"] = [{"@id": f"{base_url}#howto"}]
-        article_parts = main_entity.get("hasPart", [])
+    # hasPart is only valid on CreativeWork subtypes (e.g. Article), not on
+    # Service or GovernmentService. For non-Article archetypes, the WebPage
+    # (which IS a CreativeWork) already carries the hasPart references to
+    # sections, FAQ and disclaimer; we add HowTo there too.
+    if archetype_type == "Article":
+        article_parts: list[dict] = []
+        if howto_entity:
+            article_parts.append({"@id": f"{base_url}#howto"})
+        for sid in section_ids:
+            article_parts.append({"@id": sid})
+        if faq_entity:
+            article_parts.append({"@id": faq_id})
+        if disclaimer_section_id:
+            article_parts.append({"@id": disclaimer_section_id})
+        if article_parts:
+            main_entity["hasPart"] = article_parts
     else:
-        article_parts = []
+        # For Service / GovernmentService, add HowTo to the WebPage's
+        # hasPart (sections and FAQ are already there).
+        if howto_entity:
+            has_part_refs.append({"@id": f"{base_url}#howto"})
 
-    # Attach section + FAQ references to the main entity.
-    for sid in section_ids:
-        article_parts.append({"@id": sid})
-    if faq_entity:
-        article_parts.append({"@id": faq_id})
-    # Fix 6: Include the disclaimer in the main entity's hasPart so that
-    # the bidirectional hasPart/isPartOf relationship is consistent.
-    if disclaimer_section_id:
-        article_parts.append({"@id": disclaimer_section_id})
-    # Fix 8: Include the standard disclaimer in the main entity's hasPart.
-    article_parts.append({"@id": std_disclaimer_id})
-    if article_parts:
-        main_entity["hasPart"] = article_parts
-
-    # Fix 6: Use "mentions" instead of "citation" (the documents reference
-    # but do not formally cite the legislative instruments).
+    # "mentions" is a CreativeWork property, so it belongs on the Article
+    # or the WebPage, not on Service / GovernmentService.
+    #
+    # Legislation citation_refs attach to the Article when the archetype
+    # is Article, otherwise they fall through to the WebPage.
+    #
+    # Internal IPFR page references always attach to the WebPage so that
+    # AI agents traversing the graph from the WebPage can discover
+    # related pages within the site.  These are full WebPage objects
+    # (with @id, url, name, description) emitted into the @graph, and
+    # referenced here by @id.
+    webpage_mentions: list[dict] = list(internal_page_refs)
     if citation_refs:
-        main_entity["mentions"] = citation_refs
+        if archetype_type == "Article":
+            main_entity["mentions"] = citation_refs
+        else:
+            webpage_mentions.extend(citation_refs)
+    if webpage_mentions:
+        webpage_entity["mentions"] = webpage_mentions
 
-    # Related links belong on the WebPage entity (relatedLink is a
-    # property of WebPage in Schema.org, not Article / Service).
-    if link_objects:
-        webpage_entity["relatedLink"] = link_objects
+    # relatedLink: strictly plain URL strings (Schema.org expects URL
+    # values).  Both internal and external links appear here as strings.
+    if related_link_urls:
+        webpage_entity["relatedLink"] = related_link_urls
 
     # ── Assemble the @graph ──
     graph: list[dict] = []
@@ -1551,7 +1704,72 @@ def build_jsonld(
     # 8. Legislation.
     graph.extend(legislation_entities)
 
+    # 9. Internal IPFR page stubs (rich WebPage entities for
+    #    graph-traversable cross-page links via WebPage.mentions).
+    graph.extend(internal_page_entities)
+
     return {"@context": SCHEMA_CONTEXT, "@graph": graph}
+
+
+# ──────────────────────────────────────────────────────────────────────
+# 11b. POST-BUILD VALIDATION
+# ──────────────────────────────────────────────────────────────────────
+
+_PLACEHOLDER_SENTINEL = "xXx_PLACEHOLDER_xXx"
+
+
+def _validate_and_repair_jsonld(jsonld: dict) -> dict:
+    """Post-build validation pass.
+
+    Currently handles:
+      - Replacing placeholder descriptions with a generated summary
+        derived from the first 160 characters of the articleBody, text,
+        or longest WebPageElement text in the main content entity.
+    """
+    graph = jsonld.get("@graph", [])
+
+    # Locate the main content entity (Article, GovernmentService, or Service)
+    # and extract its body text for summary generation.
+    body_text = ""
+    for entity in graph:
+        etype = entity.get("@type", "")
+        if etype in ("Article", "GovernmentService", "Service"):
+            body_text = entity.get("articleBody", "") or entity.get("text", "")
+            break
+
+    # Fallback: use the longest WebPageElement text (e.g. "What is it?" section).
+    if not body_text:
+        for entity in graph:
+            if entity.get("@type") == "WebPageElement":
+                candidate = entity.get("text", "")
+                if len(candidate) > len(body_text):
+                    body_text = candidate
+
+    # Generate a summary: first 160 characters, trimmed to the last whole word.
+    generated_summary = ""
+    if body_text:
+        truncated = body_text[:160].strip()
+        # Trim to the last complete word boundary.
+        if len(body_text) > 160:
+            last_space = truncated.rfind(" ")
+            if last_space > 80:
+                truncated = truncated[:last_space]
+            generated_summary = truncated.rstrip(".,;:- ") + "..."
+        else:
+            generated_summary = truncated
+
+    # Walk the graph and replace any placeholder descriptions.
+    for entity in graph:
+        if entity.get("description") == _PLACEHOLDER_SENTINEL:
+            if generated_summary:
+                entity["description"] = generated_summary
+                print(f"  [REPAIR] Generated description for {entity.get('@type', '?')}: "
+                      f"\"{generated_summary[:60]}...\"")
+            else:
+                print(f"  [WARN] No body text available to generate description for "
+                      f"{entity.get('@type', '?')}; placeholder remains.")
+
+    return jsonld
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -1574,6 +1792,7 @@ def process_single_file(
         print(f"  [WARN] {md_path.name} → no CSV match found; using defaults.")
 
     jsonld = build_jsonld(parsed, meta, metatable)
+    jsonld = _validate_and_repair_jsonld(jsonld)
 
     # Determine output filename: prefer UDID-based naming.
     if meta and meta.udid:
