@@ -110,11 +110,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#section-3-practical-tips"
         }
       ],
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement"
       ]
     },
     {
@@ -279,6 +282,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

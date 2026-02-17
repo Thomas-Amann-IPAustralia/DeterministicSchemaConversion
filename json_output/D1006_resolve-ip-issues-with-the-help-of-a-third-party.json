@@ -117,6 +117,15 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -148,40 +157,34 @@
         }
       ],
       "relatedLink": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.fcfcoa.gov.au/gfl/gfl-fees",
-        "https://mediationsaustralia.com.au/our-fees/",
-        "https://www.wipo.int/amc/en/",
+        "https://mediationsaustralia.com.au/our-fees",
+        "https://www.wipo.int/amc/en",
         "https://www.wipo.int/export/sites/www/amc/en/docs/wipoadr_patents-frand.pdf",
         "https://www.disputes.vic.gov.au/about-us/mediation/mediation-faqs",
         "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
-        "https://www.asbfeo.gov.au/",
+        "https://www.asbfeo.gov.au",
         "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
-        },
-        "https://acica.org.au/",
-        "https://msb.org.au/",
-        "https://disputescentre.com.au/",
-        "https://www.vsbc.vic.gov.au/",
-        "https://www.smallbusiness.nsw.gov.au/",
-        "https://www.sasbc.sa.gov.au/",
-        "https://www.smallbusiness.wa.gov.au/",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+        "https://acica.org.au",
+        "https://msb.org.au",
+        "https://disputescentre.com.au",
+        "https://www.vsbc.vic.gov.au",
+        "https://www.smallbusiness.nsw.gov.au",
+        "https://www.sasbc.sa.gov.au",
+        "https://www.smallbusiness.wa.gov.au",
         "https://www.business.qld.gov.au/running-business/support-assistance/qsbc",
         "https://www.artslaw.com.au/information-sheet/alternative-dispute-resolution-binding-expert-dermination-and-non-binding-e/#:~:text=How%20does%20the%20Arts%20Law,of%20the%20Centre&apos;s%20panel%20lawyers.",
-        "https://resolutionpathways.com.au/",
+        "https://resolutionpathways.com.au",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
         "https://www.fedcourt.gov.au/services/ADR/mediation",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
         "https://www.education.gov.au/hercip",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/",
+        "https://ipta.org.au/community/get-free-consultation",
         "https://www.fcfcoa.gov.au/fcfcoa-annual-reports/2023-24"
       ]
     },
@@ -377,6 +380,35 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+      "name": "Access international arbitration and mediation services - IP First Response",
+      "description": "Seek dispute resolution through the WIPO Arbitration and Mediation Center",
+      "identifier": "D1022",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-conflicts-help-experienced-facilitators",
+      "name": "Resolve conflicts help experienced facilitators - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

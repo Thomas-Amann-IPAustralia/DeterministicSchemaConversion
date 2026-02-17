@@ -104,7 +104,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights-response-accusation#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
@@ -119,7 +119,14 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+        "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action"
@@ -341,6 +348,53 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+      "name": "Heres some helpful information enforcement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+      "name": "Respond to an unjustified threat - IP First Response",
+      "description": "Use the court to respond to a legally unjustified demand or threat",
+      "identifier": "B1013",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+      "name": "All enforcement options - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+      "name": "Obtain legal advice your situation - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

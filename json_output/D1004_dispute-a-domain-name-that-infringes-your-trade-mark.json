@@ -123,6 +123,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -136,15 +139,13 @@
         }
       ],
       "relatedLink": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01/#8-communication-between-parties",
         "https://auda.org.au/au-domain-names/au-rules-and-policies/au-dispute-resolution-policy-audrp-2016-01",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/",
-        "https://www.artslaw.com.au/services/legal-query-form/",
-        "https://www.copyright.org.au/legal-advice/"
+        "https://ipta.org.au/community/get-free-consultation",
+        "https://www.artslaw.com.au/services/legal-query-form",
+        "https://www.copyright.org.au/legal-advice"
       ]
     },
     {
@@ -297,6 +298,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

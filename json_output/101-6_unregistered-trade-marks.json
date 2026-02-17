@@ -114,10 +114,13 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#section-2-key-differences-between-registered-and-unregistered-trade-marks"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement"
       ]
     },
     {
@@ -212,6 +215,15 @@
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

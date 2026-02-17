@@ -128,13 +128,17 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
         "https://www.wipo.int/en/web/business/checklist",
         "https://www.ipaustralia.gov.au/understanding-ip",
         "https://www.ipaustralia.gov.au/tools-and-research/business-resources/choosing-the-right-ip-tool",
@@ -367,6 +371,26 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/conduct-ip-audits-spot-gaps-reduce-risks-and-plan-next-steps",
+      "name": "CONDUCT IP AUDITS TO SPOT GAPS, REDUCE RISKS AND PLAN NEXT STEPS - IP First Response",
+      "description": "Identify IP in your portfolio, who owns it, what it’s worth, it’s legal status, and what to do next.",
+      "identifier": "C1005",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

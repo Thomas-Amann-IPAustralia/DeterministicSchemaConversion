@@ -108,6 +108,15 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
         },
         {
@@ -117,15 +126,9 @@
       "relatedLink": [
         "https://portal.ipaustralia.gov.au/login",
         "https://manuals.ipaustralia.gov.au/patent/5.6.4.5-third-party-notifications",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage"
-        }
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents"
       ]
     },
     {
@@ -267,6 +270,37 @@
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+      "name": "Challenge a new or amended patent - IP First Response",
+      "description": "Initiate a challenge to the validity of a new patent with IP Australia",
+      "identifier": "D1017",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+      "name": "Challenge granted patent 0 - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-patents",
+      "name": "Seek binding, authoritative decisions - IP First Response",
+      "description": "Escalate a wide range of patent matters to court",
+      "identifier": "D1018",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

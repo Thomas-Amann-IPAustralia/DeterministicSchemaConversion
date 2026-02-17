@@ -108,6 +108,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
         },
         {
@@ -116,9 +119,7 @@
       ],
       "relatedLink": [
         "https://portal.ipaustralia.gov.au/login",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design",
         "https://www.ipaustralia.gov.au/design-rights/how-to-apply-for-a-design-right",
         "https://www.ipaustralia.gov.au/design-rights/timeframes-and-fees#fx-tabs-0-panel-0",
         "https://www.ipaustralia.gov.au/news-and-community/webinars/understanding-designs",
@@ -264,6 +265,15 @@
       "name": "Designs Regulations 2004",
       "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-registered-design",
+      "name": "Request certification registered design - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

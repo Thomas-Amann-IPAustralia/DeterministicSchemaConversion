@@ -113,6 +113,15 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -120,22 +129,16 @@
         }
       ],
       "relatedLink": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
         "https://www.ipaustralia.gov.au/tools-and-research/forms/application-for-removal-cessation-of-protection-for-non-use",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -277,6 +280,35 @@
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+      "name": "Challenge registration trade mark - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
+      "name": "Remove a trade mark from the register - IP First Response",
+      "description": "Request IP Australia removes an unused  trade mark from the register.",
+      "identifier": "D1015",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

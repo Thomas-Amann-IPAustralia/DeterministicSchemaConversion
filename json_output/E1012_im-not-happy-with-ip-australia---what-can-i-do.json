@@ -99,10 +99,13 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
         "https://www.ipaustralia.gov.au/about-us/contact-us",
         "https://www.ombudsman.gov.au/complaints/how-to-make-a-complaint",
         "https://www.ipaustralia.gov.au/feedback-form",
@@ -230,6 +233,16 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-can-i-do-if-i-disagree-ip-australias-examination-decision",
+      "name": "What are the ways to challenge a decision IP Australia has made? - IP First Response",
+      "identifier": "E1017",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

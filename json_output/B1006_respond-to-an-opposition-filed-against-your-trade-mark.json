@@ -113,6 +113,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -122,11 +125,9 @@
       "relatedLink": [
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
         "https://www.ipaustralia.gov.au/trade-marks/~/-/media/Project/IPA/IPAustralia/PDF/Trade-marks/Flow_chart_oppose_the_registration_of_a_trade-mark.pdf?rev=b346a67c9664409b96ba5cec57c27a60",
-        "https://portal.ipaustralia.gov.au/",
+        "https://portal.ipaustralia.gov.au",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
         "https://www.ipaustralia.gov.au/trade-marks/how-to-respond-to-an-opposition",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip"
       ]
@@ -270,6 +271,15 @@
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+      "name": "Challenge registration trade mark - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

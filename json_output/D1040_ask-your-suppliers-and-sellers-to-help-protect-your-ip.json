@@ -104,7 +104,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ask-your-suppliers-and-sellers-help-protect-your-ip#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
         },
@@ -113,7 +113,12 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
         "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip",
         "https://www.productsafety.gov.au/business/recall-an-unsafe-product"
       ]
@@ -344,6 +349,37 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+      "name": "Stop infringement facilitated online - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+      "name": "Respond to an unjustified threat - IP First Response",
+      "description": "Use the court to respond to a legally unjustified demand or threat",
+      "identifier": "B1013",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes",
+      "name": "Help customers differentiate between your products and lookalikes - IP First Response",
+      "description": "Build brand loyalty and reduce confusion by clearly explaining what makes your product genuine.",
+      "identifier": "C1006",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

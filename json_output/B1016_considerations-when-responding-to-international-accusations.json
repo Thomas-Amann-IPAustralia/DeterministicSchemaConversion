@@ -104,19 +104,23 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-responding-international-accusations#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest",
         "https://www.wipo.int/directory/en/urls.jsp",
         "https://www.ipaustralia.gov.au/international-ip/how-to-apply-for-ip-overseas",
         "https://www.ipaustralia.gov.au/international-ip/what-is-international-ip",
         "https://www.ipaustralia.gov.au/tools-and-research/business-resources/ip-basics",
         "https://www.ipaustralia.gov.au/tools-and-research/business-resources/~/-/media/Project/IPA/IPAustralia/PDF/Business-advisory-guide/About-Exporting-Fact-sheet.pdf?rev=06438fd5dbc847298783cbb2695fcbb2%E2%80%AF%E2%80%AF",
-        "https://www.wipo.int/amc/en/",
+        "https://www.wipo.int/amc/en",
         "https://www.exportfinance.gov.au/media/dfqlxv3g/protecting-your-intellectual-property-internationally-ebook.pdf"
       ]
     },
@@ -346,6 +350,26 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand - IP First Response",
+      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "identifier": "B1000",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-other-risk-public-interest",
+      "name": "Report scam fraud or other risk public interest - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

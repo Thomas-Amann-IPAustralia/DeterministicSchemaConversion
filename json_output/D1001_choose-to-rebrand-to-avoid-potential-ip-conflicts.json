@@ -108,15 +108,18 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avoid-potential-ip-conflicts#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
         "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
         "https://search.ipaustralia.gov.au/trademarks/search/quick",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -265,6 +268,15 @@
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

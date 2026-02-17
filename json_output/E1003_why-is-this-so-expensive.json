@@ -99,18 +99,23 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
         },
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
-        },
-        "https://www.wipo.int/amc/en/",
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+        "https://www.wipo.int/amc/en",
         "https://www.fedcourt.gov.au/services/ADR/mediation",
         "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-costs"
       ]
@@ -236,6 +241,37 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/all-enforcement-options",
+      "name": "All enforcement options - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+      "name": "Access help tailored to resolve business disputes - IP First Response",
+      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "identifier": "D1003",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

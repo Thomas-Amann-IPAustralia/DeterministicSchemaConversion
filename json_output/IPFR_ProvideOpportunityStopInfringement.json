@@ -105,7 +105,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#section-3-exercise-caution-before-making-accusations-of-infringement"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage"
         },
@@ -117,14 +117,20 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+        "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+        "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
         "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -278,6 +284,44 @@
           }
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat",
+      "name": "Respond to an unjustified threat - IP First Response",
+      "description": "Use the court to respond to a legally unjustified demand or threat",
+      "identifier": "B1013",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+      "name": "Infringement 101 - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/heres-some-helpful-information-enforcement",
+      "name": "Heres some helpful information enforcement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-certification-your-registered-design",
+      "name": "Request certification your registered design - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

@@ -108,6 +108,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
         },
         {
@@ -116,9 +119,7 @@
       ],
       "relatedLink": [
         "https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_reg/pr1991218/sch8.html",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
         "https://www.ipaustralia.gov.au/patents/how-to-respond-to-an-opposition",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/evidence-in-oppositions-and-pbr-objections",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
@@ -265,6 +266,17 @@
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-new-or-amended-patent",
+      "name": "Challenge a new or amended patent - IP First Response",
+      "description": "Initiate a challenge to the validity of a new patent with IP Australia",
+      "identifier": "D1017",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

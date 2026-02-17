@@ -126,6 +126,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -142,25 +145,23 @@
         "https://www.icann.org/resources/pages/help/dndr/udrp-en",
         "https://www.icann.org/resources/pages/providers-6d-2012-02-25-en",
         "https://www.wipo.int/amc/en/domains/cctld",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.wipo.int/amc/en/domains/guide/#What_is_a",
         "https://www.wipo.int/amc/en/domains/fees/index.html",
-        "https://www.wipo.int/amc/en/domains/",
+        "https://www.wipo.int/amc/en/domains",
         "https://www.icann.org/resources/pages/policy-2012-02-25-en",
         "https://www.icann.org/resources/pages/udrp-rules-2015-03-11-en",
         "https://www.wipo.int/amc/en/domains/supplemental/eudrp/newrules.html",
         "https://www.wipo.int/amc/en/docs/complaint-lock-eudrp.docx",
         "https://www.wipo.int/amc/en/domains/guide",
         "https://www.ipaustralia.gov.au/international-ip/how-to-search-existing-ip-overseas",
-        "https://www.wipo.int/amc/en/domains/search/overview3.0/",
+        "https://www.wipo.int/amc/en/domains/search/overview3.0",
         "https://www.wipo.int/amc/en/domains/search/overview3.0/#item411",
         "https://www.wipo.int/amc/en/domains/expiry.html",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/",
-        "https://www.artslaw.com.au/services/legal-query-form/",
-        "https://www.copyright.org.au/legal-advice/"
+        "https://ipta.org.au/community/get-free-consultation",
+        "https://www.artslaw.com.au/services/legal-query-form",
+        "https://www.copyright.org.au/legal-advice"
       ]
     },
     {
@@ -313,6 +314,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

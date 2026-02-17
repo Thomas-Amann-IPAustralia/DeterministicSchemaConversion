@@ -96,7 +96,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#section-1-give-feedback-about-ip-first-response"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage"
         },
@@ -118,7 +118,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage"
         },
-        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#webpage"
         },
@@ -127,8 +126,21 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#webpage"
-        },
-        "https://www.wipo.int/treaties/en/ip/paris/",
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement",
+        "https://www.wipo.int/treaties/en/ip/paris",
         "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
         "https://www.ipaustralia.gov.au/trade-marks/how-to-apply-for-a-trade-mark/pre-application-service-tm-headstart",
         "https://business.gov.au/news/brand-protection-enforcing-your-registered-trade-mark",
@@ -172,6 +184,114 @@
       "position": 1,
       "isPartOf": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#article"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement",
+      "name": "What is IP Infringement - IP First Response",
+      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",
+      "identifier": "101-10",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+      "name": "Trade mark infringement - IP First Response",
+      "description": "Trade mark infringement can occur when someone uses a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s registered trade mark,1 particularly if it is for the same or similar goods or services.2 This can lead to confusion among consumers about the source of the goods or services being offered.",
+      "identifier": "101-8",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+      "name": "Patent infringement - IP First Response",
+      "description": "Patent infringement can occur when someone uses an invention protected by another person’s patent without obtaining permission first. In Australia, granted patents give inventors the ability to control the use of their invention for up to 20 years (or up to 25 years for pharmaceutical patents).",
+      "identifier": "101-3",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+      "name": "Design infringement - IP First Response",
+      "description": "Design infringement can occur when someone uses a design that is identical or similar to a registered design without obtaining permission from the owner. In Australia, a registered design provides designers protection for up to 10 years. Importantly, the law does not require exact copying. If the overall visual impression of the suspected infringing design is substantially similar to the registered design, it may be considered infringemen",
+      "identifier": "101-2",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+      "name": "Plant breeders right pbr infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+      "name": "Copyright infringement - IP First Response",
+      "description": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used.",
+      "identifier": "101-5",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+      "name": "Unregistered trade marks - IP First Response",
+      "description": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects these “unregistered” trade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner.",
+      "identifier": "101-6",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip",
+      "name": "What to do if someone infringes your IP - IP First Response",
+      "description": "Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications.",
+      "identifier": "101-7",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-avoid-infringing-others-intellectual-property",
+      "name": "How to avoid infringing others' intellectual property - IP First Response",
+      "description": "Running a business or developing new products or services often means creating intellectual property (IP) or encountering IP rights owned by others. Whether it is a brand name, invention, design, or creative work, using something similar to someone else’s existing intellectual property may be considered infringement.",
+      "identifier": "101-1",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/addressing-overseas-infringement",
+      "name": "Addressing Overseas Infringement - IP First Response",
+      "description": "Australian businesses that discover their intellectual property (IP) is being infringed overseas face unique challenges. By understanding these challenges, they can make informed decisions about how to protect their IP internationally.",
+      "identifier": "101-9",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       }
     }
   ]

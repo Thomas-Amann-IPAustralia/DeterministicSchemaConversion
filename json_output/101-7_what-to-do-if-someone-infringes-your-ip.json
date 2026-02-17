@@ -110,7 +110,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone-infringes-your-ip#section-3-moving-forward"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au#webpage"
         },
@@ -129,6 +129,14 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks"
       ]
     },
     {
@@ -309,6 +317,64 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au",
+      "name": "https://ipfirstresponse.ipaustralia.gov.au - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action",
+      "name": "Take no immediate action - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
+      "name": "Provide opportunity stop infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party-stops-infringing",
+      "name": "Demand other party stops infringing - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/court-trade-marks",
+      "name": "Seek binding, authoritative decisions - IP First Response",
+      "description": "Escalate a wide range of trade mark matters to court",
+      "identifier": "D1005",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

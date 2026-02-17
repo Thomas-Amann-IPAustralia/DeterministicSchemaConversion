@@ -104,13 +104,17 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-accusing-party#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO"
       ]
     },
     {
@@ -339,6 +343,26 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+      "name": "Agree commercial arrangement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ASBFEO",
+      "name": "Access help tailored to resolve business disputes - IP First Response",
+      "description": "Australia Small Business & Family Enterprise Ombudsman (ASBFEO)",
+      "identifier": "D1003",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

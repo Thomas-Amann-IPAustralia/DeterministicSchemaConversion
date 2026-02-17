@@ -104,12 +104,15 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/help-customers-differentiate-between-your-products-and-lookalikes#faq"
         }
       ],
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip"
       ]
     },
     {
@@ -338,6 +341,17 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+      "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP - IP First Response",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "identifier": "C1019",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

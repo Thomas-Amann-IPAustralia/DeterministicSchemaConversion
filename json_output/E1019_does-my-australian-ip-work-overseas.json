@@ -99,10 +99,13 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
         "https://www.ipaustralia.gov.au/international-ip",
         "https://www.ipaustralia.gov.au/international-ip/update-and-renew-overseas-ip/prevent-international-infringement",
         "https://www.wipo.int/en/web/madrid-system",
@@ -230,6 +233,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/can-i-protect-my-ideas-other-countries",
+      "name": "Can i protect my ideas other countries - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

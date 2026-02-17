@@ -107,13 +107,17 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#section-1-exercise-caution-before-making-accusations-of-infringement"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip#:~:text=Licensing%20involves%20the%20owner%20of,IP%20in%20exchange%20for%20payment.",
         "https://portal.ipaustralia.gov.au/login",
         "https://manuals.ipaustralia.gov.au/trademark/annex-a1---an-example-of-a-letter-of-consent",
@@ -124,7 +128,7 @@
         "https://www.asbfeo.gov.au/disputes-assistance/five-steps-resolve-your-dispute",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -366,6 +370,26 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+      "name": "Resolve IP issues with the help of a third party - IP First Response",
+      "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
+      "identifier": "D1006",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

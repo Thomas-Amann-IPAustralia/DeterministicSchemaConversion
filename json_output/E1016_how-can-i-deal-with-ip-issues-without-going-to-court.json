@@ -99,8 +99,7 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
@@ -112,12 +111,19 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
-        "https://www.asbfeo.gov.au/"
+        "https://www.asbfeo.gov.au"
       ]
     },
     {
@@ -241,6 +247,46 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+      "name": "Agree commercial arrangement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+      "name": "Resolve IP issues with the help of a third party - IP First Response",
+      "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
+      "identifier": "D1006",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

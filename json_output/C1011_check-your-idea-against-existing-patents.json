@@ -106,13 +106,16 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#section-1-disclaimer"
         }
       ],
-      "relatedLink": [
-        "https://worldwide.espacenet.com/",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
-        "https://ipsearch.ipaustralia.gov.au/patents/",
-        "https://www.lens.org/",
+        }
+      ],
+      "relatedLink": [
+        "https://worldwide.espacenet.com",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipsearch.ipaustralia.gov.au/patents",
+        "https://www.lens.org",
         "https://www.ipaustralia.gov.au/patents/search-existing-patents",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney"
       ]
@@ -276,6 +279,15 @@
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

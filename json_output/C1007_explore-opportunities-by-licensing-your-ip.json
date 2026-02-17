@@ -128,10 +128,13 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/explore-opportunities-licensing-your-ip#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip/how-to-licence-my-ip",
         "https://www.wipo.int/en/web/business/assignment-licensing",
@@ -365,6 +368,17 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on your enforcement options - IP First Response",
+      "description": "Seek a qualified & experienced professional to provide specific, tailored advice.",
+      "identifier": "D1012",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

@@ -99,15 +99,19 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip#:~:text=When%20to%20oppose,after%20your%20intention%20to%20oppose.",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark"
       ]
     },
     {
@@ -231,6 +235,24 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-0",
+      "name": "Challenge granted patent 0 - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+      "name": "Challenge registration trade mark - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

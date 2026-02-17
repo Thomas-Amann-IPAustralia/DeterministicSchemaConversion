@@ -107,20 +107,25 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-act-immediately#section-1-gauge-the-situation"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
-        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
-        },
-        "https://ipta.org.au/community/get-free-consultation/",
-        "https://www.artslaw.com.au/services/legal-query-form/",
-        "https://www.copyright.org.au/legal-advice/"
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+        "https://ipta.org.au/community/get-free-consultation",
+        "https://www.artslaw.com.au/services/legal-query-form",
+        "https://www.copyright.org.au/legal-advice"
       ]
     },
     {
@@ -362,6 +367,37 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+      "name": "What is IP Infringement - IP First Response",
+      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",
+      "identifier": "101-10",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on your enforcement options - IP First Response",
+      "description": "Seek a qualified & experienced professional to provide specific, tailored advice.",
+      "identifier": "D1012",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

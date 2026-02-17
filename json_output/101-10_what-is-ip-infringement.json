@@ -119,7 +119,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement#section-5-why-its-hard-to-figure-out-on-your-own"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage"
         },
@@ -138,6 +138,14 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks"
       ]
     },
     {
@@ -361,6 +369,70 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+      "name": "Trade mark infringement - IP First Response",
+      "description": "Trade mark infringement can occur when someone uses a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s registered trade mark,1 particularly if it is for the same or similar goods or services.2 This can lead to confusion among consumers about the source of the goods or services being offered.",
+      "identifier": "101-8",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringement",
+      "name": "Patent infringement - IP First Response",
+      "description": "Patent infringement can occur when someone uses an invention protected by another person’s patent without obtaining permission first. In Australia, granted patents give inventors the ability to control the use of their invention for up to 20 years (or up to 25 years for pharmaceutical patents).",
+      "identifier": "101-3",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+      "name": "Design infringement - IP First Response",
+      "description": "Design infringement can occur when someone uses a design that is identical or similar to a registered design without obtaining permission from the owner. In Australia, a registered design provides designers protection for up to 10 years. Importantly, the law does not require exact copying. If the overall visual impression of the suspected infringing design is substantially similar to the registered design, it may be considered infringemen",
+      "identifier": "101-2",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/plant-breeders-right-pbr-infringement",
+      "name": "Plant breeders right pbr infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+      "name": "Copyright infringement - IP First Response",
+      "description": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used.",
+      "identifier": "101-5",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/unregistered-trade-marks",
+      "name": "Unregistered trade marks - IP First Response",
+      "description": "Not all trade marks used in Australian marketplaces are registered with IP Australia. In certain circumstances, the law protects these “unregistered” trade marks. The law will offer protection or remedy when someone wrongfully appropriates a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s that has built up a reputation in the Australian marketplace. The use of a similar trade mark must lead to consumers being deceived or confused, and likely cause damage to the owner.",
+      "identifier": "101-6",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

@@ -104,17 +104,22 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip"
       ]
     },
     {
@@ -343,6 +348,35 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand - IP First Response",
+      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "identifier": "B1000",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+      "name": "Ceasing use contested IP - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

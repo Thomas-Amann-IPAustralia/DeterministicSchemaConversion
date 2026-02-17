@@ -140,6 +140,18 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -171,23 +183,15 @@
         }
       ],
       "relatedLink": [
-        "https://amc.wipo.int/clause-generator/",
-        "https://www.wipo.int/amc/en/",
+        "https://amc.wipo.int/clause-generator",
+        "https://www.wipo.int/amc/en",
         "https://www.wipo.int/portal/en/index.html",
         "https://www.wipo.int/amc/en/film/fees/index.html",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
         "https://www.wipo.int/amc/en/clauses/index.html",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip"
       ]
     },
@@ -393,6 +397,50 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+      "name": "Access international arbitration and mediation services - IP First Response",
+      "description": "Seek dispute resolution through the WIPO Arbitration and Mediation Center",
+      "identifier": "D1022",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+      "name": "Resolve IP issues with the help of a third party - IP First Response",
+      "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
+      "identifier": "D1006",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+      "name": "Resolve IP issues with the help of a third party - IP First Response",
+      "description": "Agree to be bound by the decision of a highly qualified third-party assessment",
+      "identifier": "D1029",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

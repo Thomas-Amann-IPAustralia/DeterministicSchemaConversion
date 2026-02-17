@@ -109,11 +109,14 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/prevent-risks-public-interest#section-1-disclaimer"
         }
       ],
-      "relatedLink": [
-        "https://crimestoppers.com.au/",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://crimestoppers.com.au",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.tga.gov.au/resources/resource/forms/report-perceived-breach-or-questionable-practices",
         "https://www.accc.gov.au/about-us/contact-us-or-report-an-issue/report-a-consumer-issue",
         "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams",
@@ -124,9 +127,9 @@
         "https://www.afp.gov.au/news-centre/media-release/man-charged-selling-counterfeit-electronics-gold-coast",
         "https://www.arnnet.com.au/article/1256866/aussie-hacker-ordered-to-give-up-1-7m-after-international-investigation.html",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/",
-        "https://www.artslaw.com.au/services/legal-query-form/",
-        "https://www.copyright.org.au/legal-advice/"
+        "https://ipta.org.au/community/get-free-consultation",
+        "https://www.artslaw.com.au/services/legal-query-form",
+        "https://www.copyright.org.au/legal-advice"
       ]
     },
     {
@@ -265,6 +268,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

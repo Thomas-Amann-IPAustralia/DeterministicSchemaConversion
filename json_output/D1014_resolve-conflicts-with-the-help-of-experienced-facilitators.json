@@ -117,6 +117,15 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -148,28 +157,22 @@
         }
       ],
       "relatedLink": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+        "https://ipfirstresponse.ipaustralia.gov.au",
         "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
-        "https://www.asbfeo.gov.au/",
+        "https://www.asbfeo.gov.au",
         "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449",
-        "https://acica.org.au/",
-        "https://disputescentre.com.au/",
-        "https://www.copyright.org.au/legal-advice/",
+        "https://acica.org.au",
+        "https://disputescentre.com.au",
+        "https://www.copyright.org.au/legal-advice",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
         "https://www.education.gov.au/hercip",
-        "https://www.wipo.int/amc/en/",
+        "https://www.wipo.int/amc/en",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -354,6 +357,37 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/mediation",
+      "name": "Resolve IP issues with the help of a third party - IP First Response",
+      "description": "Invite the other party to enter into mediation to agree to mutually acceptable agreement",
+      "identifier": "D1006",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/arbitration",
+      "name": "Resolve IP issues with the help of a third party - IP First Response",
+      "description": "Agree to be bound by the decision of a highly qualified third-party assessment",
+      "identifier": "D1029",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au",
+      "name": "https://ipfirstresponse.ipaustralia.gov.au - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

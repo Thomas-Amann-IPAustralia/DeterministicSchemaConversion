@@ -116,15 +116,6 @@
       ],
       "mentions": [
         {
-          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
-        },
-        {
-          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
-        }
-      ],
-      "relatedLink": [
-        "https://search.ipaustralia.gov.au/trademarks/search/quick",
-        {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage"
         },
         {
@@ -136,7 +127,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage"
         },
-        "https://search.ipaustralia.gov.au/trademarks/help",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage"
         },
@@ -152,6 +142,25 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right#webpage"
         },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
+      "relatedLink": [
+        "https://search.ipaustralia.gov.au/trademarks/search/quick",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+        "https://search.ipaustralia.gov.au/trademarks/help",
+        "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right",
         "https://ipaustralia.gov.au/tm-checker",
         "https://business.gov.au/planning/protect-your-brand-idea-or-creation/trade-mark",
         "https://www.wipo.int/en/web/global-brand-database"
@@ -306,6 +315,91 @@
       "name": "Trade Marks Regulations 1995",
       "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-stop-infringement",
+      "name": "Provide opportunity stop infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-trade-mark",
+      "name": "Challenge registration trade mark - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/avoid-potential-ip-conflicts",
+      "name": "Avoid potential IP conflicts - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringement-facilitated-online",
+      "name": "Stop infringement facilitated online - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+      "name": "Infringement 101 - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-infringement",
+      "name": "Trade mark infringement - IP First Response",
+      "description": "Trade mark infringement can occur when someone uses a brand name, logo, slogan, or another identifying mark that is too similar to someone else’s registered trade mark,1 particularly if it is for the same or similar goods or services.2 This can lead to confusion among consumers about the source of the goods or services being offered.",
+      "identifier": "101-8",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/develop-strategy-manage-your-ip",
+      "name": "DEVELOP A STRATEGY TO MANAGE YOUR IP - IP First Response",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "identifier": "C1019",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/tips-and-tricks-searching-existing-right",
+      "name": "Tips and tricks searching existing right - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

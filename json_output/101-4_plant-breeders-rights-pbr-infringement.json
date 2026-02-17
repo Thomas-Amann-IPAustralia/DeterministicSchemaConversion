@@ -114,6 +114,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
         },
         {
@@ -124,9 +127,7 @@
         "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights/additional-rights-available",
         "https://www.ipaustralia.gov.au/manage-my-ip/how-to-prevent-infringement-of-my-ip/how-to-label-my-protected-plant-variety",
         "https://www.ipaustralia.gov.au/plant-breeders-rights/what-are-plant-breeders-rights",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        }
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement"
       ]
     },
     {
@@ -228,6 +229,15 @@
       "name": "Plant Breeder's Rights Regulations 1994",
       "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

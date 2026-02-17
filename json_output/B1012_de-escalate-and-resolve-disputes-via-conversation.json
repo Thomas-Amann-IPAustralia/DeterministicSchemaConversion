@@ -104,7 +104,7 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-conversation#faq"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
         },
@@ -117,10 +117,17 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage"
         },
-        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-respond-to-accusations-of-ip-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
       ]
     },
@@ -350,6 +357,57 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand - IP First Response",
+      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "identifier": "B1000",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+      "name": "Agree commercial arrangement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on your enforcement options - IP First Response",
+      "description": "Seek a qualified & experienced professional to provide specific, tailored advice.",
+      "identifier": "D1012",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

@@ -120,6 +120,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
         },
         {
@@ -127,15 +130,13 @@
         }
       ],
       "relatedLink": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
         "https://www.twobirds.com/-/media/new-website-content/microsites/patent-hub/country-comparison-tool/australia---q,-a-,a.pdf",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/escalate-to-court",
         "https://manuals.ipaustralia.gov.au/trademark/5.-rights-of-appeal-from-decisions-of-the-registrar",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/",
+        "https://ipta.org.au/community/get-free-consultation",
         "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/2022-23",
         "https://www.fedcourt.gov.au/about/corporate-information/annual-reports/annual-report-2023-2024"
       ]
@@ -286,6 +287,17 @@
       "name": "Patents Regulations 1991",
       "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/Interim_Injunction",
+      "name": "Seek a court order to prevent further damage while preparing for court. - IP First Response",
+      "description": "Lodge an interim injunction order through court",
+      "identifier": "D1030",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

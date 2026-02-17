@@ -99,18 +99,22 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-        "https://www.lawsociety.com.au/register-of-solicitors",
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
-        "https://www.scamwatch.gov.au/",
-        "https://www.cyber.gov.au/report-and-recover/report",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+        "https://www.lawsociety.com.au/register-of-solicitors",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-hearings",
+        "https://www.scamwatch.gov.au",
+        "https://www.cyber.gov.au/report-and-recover/report",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights#:~:text=false%20and%20confusing%20information,create%20a%20sense%20of%20urgency",
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption",
@@ -239,6 +243,26 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/report-scam-fraud-or-risk-public-interest",
+      "name": "Report a scam, fraud or risk to public interest - IP First Response",
+      "description": "Notify authorities about scams, counterfeits, or fraudulent activities that pose a risk to public safety or trust.",
+      "identifier": "B1010",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

@@ -99,6 +99,11 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
+      "mentions": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage"
+        }
+      ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
         "https://www.ipaustralia.gov.au/patents/search-existing-patents",
@@ -106,9 +111,7 @@
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/how-to-challenge-someone-elses-ip/opposition-and-objection-fees#fx-tabs-0-panel-0",
         "https://www.ag.gov.au/rights-and-protections/copyright/copyright-basics",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage"
-        }
+        "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement"
       ]
     },
     {
@@ -232,6 +235,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement",
+      "name": "Agree commercial arrangement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

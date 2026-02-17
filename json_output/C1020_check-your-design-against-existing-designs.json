@@ -103,22 +103,27 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-product-against-existing-designs#faq"
         }
       ],
-      "relatedLink": [
-        "https://search.ipaustralia.gov.au/designs/search/quick",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
-        "https://designdb.wipo.int/designdb/en/",
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#webpage"
+        }
+      ],
+      "relatedLink": [
+        "https://search.ipaustralia.gov.au/designs/search/quick",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://designdb.wipo.int/designdb/en",
         "https://www.tmdn.org/tmdsview-web/#/dsview",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/design-rights/how-to-search-existing-designs",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#webpage"
-        },
-        "https://www.tmdn.org/tmdsview-web/"
+        "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
+        "https://www.tmdn.org/tmdsview-web"
       ]
     },
     {
@@ -267,6 +272,37 @@
       "name": "Designs Regulations 2004",
       "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement",
+      "name": "Design infringement - IP First Response",
+      "description": "Design infringement can occur when someone uses a design that is identical or similar to a registered design without obtaining permission from the owner. In Australia, a registered design provides designers protection for up to 10 years. Importantly, the law does not require exact copying. If the overall visual impression of the suspected infringing design is substantially similar to the registered design, it may be considered infringemen",
+      "identifier": "101-2",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-australia-confirms-registered-design-valid",
+      "name": "Request IP Australia confirms a registered design is valid - IP First Response",
+      "description": "Request IP Australia examines and certifies a registered design to secure full protection",
+      "identifier": "B1017",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

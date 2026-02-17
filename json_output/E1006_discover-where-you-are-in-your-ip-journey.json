@@ -99,16 +99,20 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#webpage"
         },
-        "https://search.ipaustralia.gov.au/designs/search/quick",
-        "https://ipsearch.ipaustralia.gov.au/pbr/",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks/tm-checker",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+        "https://search.ipaustralia.gov.au/designs/search/quick",
+        "https://ipsearch.ipaustralia.gov.au/pbr",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
         "https://www.wipo.int/en/web/business/checklist",
         "https://www.ipaustralia.gov.au/tools-and-research/business-resources"
       ]
@@ -234,6 +238,28 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/check-your-idea-against-existing-patents",
+      "name": "Check your idea against existing patents. - IP First Response",
+      "description": "Conduct a thorough search of existing patents - also known as Freedom to Operate search.",
+      "identifier": "C1011",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/monitor-trade-mark-register-and-market-competitor-activity",
+      "name": "Monitor the trade mark register and market for competitor activity - IP First Response",
+      "description": "Ensure the exclusivity of your trade mark by detecting potential conflicts early.",
+      "identifier": "C1013",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

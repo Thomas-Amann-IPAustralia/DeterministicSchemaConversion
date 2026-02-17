@@ -99,14 +99,18 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
-        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#webpage"
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage"
         }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/manage-my-ip/how-to-commercialise-my-ip#:~:text=This%20means%20giving%20permission%20for,your%20product%20or%20service%20yourself.",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options"
       ]
     },
     {
@@ -230,6 +234,28 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/agree-formal-commercial-arrangement",
+      "name": "Agree to a formal commercial arrangement - IP First Response",
+      "description": "Work with an IP professional to come to an agreement with another party",
+      "identifier": "D1028",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-enforcement-options",
+      "name": "Obtain legal advice on your enforcement options - IP First Response",
+      "description": "Seek a qualified & experienced professional to provide specific, tailored advice.",
+      "identifier": "D1012",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

@@ -114,6 +114,12 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -146,12 +152,8 @@
       ],
       "relatedLink": [
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/scams-related-to-managing-ip-rights",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
         "https://www.scamwatch.gov.au/research-and-resources/scam-statistics",
         "https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2023-2024",
         "https://www.scamwatch.gov.au/types-of-scams/product-and-service-scams",
@@ -160,7 +162,7 @@
         "https://www.cyber.gov.au/report-and-recover/report",
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/how-to-report-fraud-and-corruption",
         "https://www.ipaustralia.gov.au/about-us/doing-business-with-us/fraud-and-corruption/identifying-unofficial-invoices-and-registers",
-        "https://www.scamwatch.gov.au/",
+        "https://www.scamwatch.gov.au",
         "https://www.afp.gov.au/crimes/cybercrime",
         "https://www.afp.gov.au/crimes/fraud-and-corruption"
       ]
@@ -360,6 +362,26 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand",
+      "name": "Receiving a letter of demand - IP First Response",
+      "description": "Understanding what you can do when you receive a letter of demand / cease and desist.",
+      "identifier": "B1000",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

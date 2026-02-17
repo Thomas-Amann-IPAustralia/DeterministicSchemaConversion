@@ -117,6 +117,9 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -151,22 +154,20 @@
         "https://www.wipo.int/web/wipo-magazine/articles/what-does-it-cost-to-defend-your-ip-rights-38493",
         "https://iccwbo.org/wp-content/uploads/sites/3/2024/06/2023-Statistics_ICC_Dispute-Resolution_991.pdf",
         "https://resolution.institute/Web/Shared_Content/Profiles/Member-Directory/Member-Directory.aspx",
-        "https://www.asbfeo.gov.au/",
+        "https://www.asbfeo.gov.au",
         "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiMzbCTouqKAxVCSmwGHaVGNcEQFnoECBcQAQ&url=https%3A%2F%2Fwww.wipo.int%2Famc%2Fen%2F&usg=AOvVaw2qsEjFbq-uX_WuIOR5puTG&opi=89978449",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage"
-        },
-        "https://acica.org.au/",
-        "https://disputescentre.com.au/",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+        "https://acica.org.au",
+        "https://disputescentre.com.au",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
         "https://www.fedcourt.gov.au/services/ADR/arbitration",
         "https://www.ag.gov.au/legal-system/publications/your-guide-dispute-resolution",
         "https://business.gov.au/people/disputes/resolve-disputes#alternative-dispute-resolution-ADR",
         "https://www.education.gov.au/hercip",
-        "https://www.wipo.int/amc/en/clauses/",
-        "https://www.wipo.int/amc/en/arbitration/fees/",
+        "https://www.wipo.int/amc/en/clauses",
+        "https://www.wipo.int/amc/en/arbitration/fees",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -351,6 +352,17 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/resolve-international-disputes",
+      "name": "Access international arbitration and mediation services - IP First Response",
+      "description": "Seek dispute resolution through the WIPO Arbitration and Mediation Center",
+      "identifier": "D1022",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

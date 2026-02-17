@@ -118,6 +118,15 @@
       ],
       "mentions": [
         {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#webpage"
+        },
+        {
           "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
         },
         {
@@ -149,25 +158,19 @@
         }
       ],
       "relatedLink": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage"
-        },
+        "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
         "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952303",
-        "http://www.artslaw.com.au/services/legal-query-form/",
-        "https://www.artslaw.com.au/product/copyright-infringement-letter-of-demand/",
-        "http://www.copyright.org.au/legal-advice/",
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#webpage"
-        },
+        "http://www.artslaw.com.au/services/legal-query-form",
+        "https://www.artslaw.com.au/product/copyright-infringement-letter-of-demand",
+        "http://www.copyright.org.au/legal-advice",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
         "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
         "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
-        "https://ipta.org.au/community/get-free-consultation/"
+        "https://ipta.org.au/community/get-free-consultation"
       ]
     },
     {
@@ -382,6 +385,37 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101",
+      "name": "Infringement 101 - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement",
+      "name": "Copyright infringement - IP First Response",
+      "description": "Copyright infringement can occur when someone uses a copyright-protected work without obtaining permission. However, the Copyright Act does provide exceptions that enable some use of copyright material without the permission of the copyright owner in certain circumstances. Importantly, infringement can occur even if only part of a copyright-protected item is used.",
+      "identifier": "101-5",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunity-other-party-stop-infringing",
+      "name": "Provide an opportunity for the other party to stop infringing. - IP First Response",
+      "description": "Alert the alleged infringer of your registered rights to allow them to stop infringing",
+      "identifier": "D1033",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

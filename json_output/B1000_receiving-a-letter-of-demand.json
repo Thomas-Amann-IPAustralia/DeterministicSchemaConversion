@@ -113,16 +113,13 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-demand#section-3-disclaimer"
         }
       ],
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button#webpage"
         },
-        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
         },
-        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-        "https://abr.business.gov.au/",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#webpage"
         },
@@ -132,8 +129,6 @@
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation#webpage"
         },
-        "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
-        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip#webpage"
         },
@@ -142,7 +137,22 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP",
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
+        "https://abr.business.gov.au",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+        "https://www.accc.gov.au/consumers/stay-protected/checking-a-business-is-genuine",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
         "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip"
       ]
     },
@@ -411,6 +421,84 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button",
+      "name": "What is IP Infringement - IP First Response",
+      "description": "Intellectual property infringement occurs when someone uses, reproduces, or exploits another person’s or business’s creative work, invention, brand name, or design without permission. This concept applies across all types of intellectual property (IP) rights protected under Australian law, including patents, trade marks, designs, copyright, and plant breeders’ rights.",
+      "identifier": "101-10",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choose-not-respond-immediately",
+      "name": "Choose not to respond immediately - IP First Response",
+      "description": "When to delay responding to groundless IP infringement claims and how to gather evidence for future defence.",
+      "identifier": "B1001",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-resolve-disputes-informally",
+      "name": "De escalate and resolve disputes informally - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-legal-advice-your-situation",
+      "name": "Obtain legal advice your situation - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ceasing-use-contested-ip",
+      "name": "Ceasing use contested IP - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/ADR",
+      "name": "resolve conflicts with the help of experienced facilitators - IP First Response",
+      "description": "Understand more about the options in the ADR space.",
+      "identifier": "D1014",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/evaluate-situation-deciding-what-do",
+      "name": "Evaluate situation deciding what do - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }

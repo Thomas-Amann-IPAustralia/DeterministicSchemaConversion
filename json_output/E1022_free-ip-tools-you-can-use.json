@@ -99,19 +99,22 @@
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
       "creditText": "Source: IP First Response initiative led by IP Australia",
-      "relatedLink": [
+      "mentions": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
-        },
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
         "https://www.ipaustralia.gov.au/tools-resources/trade-mark-check",
         "https://search.ipaustralia.gov.au/trademarks/search/quick",
-        "https://ipsearch.ipaustralia.gov.au/patents/",
+        "https://ipsearch.ipaustralia.gov.au/patents",
         "https://search.ipaustralia.gov.au/designs/search/quick",
         "https://www.ipaustralia.gov.au/plant-breeders-rights/search-plant-breeders-rights",
         "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm",
-        "https://www.wipo.int/branddb/en/",
-        "https://patentscope.wipo.int/",
-        "https://www.lens.org/"
+        "https://www.wipo.int/branddb/en",
+        "https://patentscope.wipo.int",
+        "https://www.lens.org"
       ]
     },
     {
@@ -235,6 +238,15 @@
       "name": "Copyright Regulations 2017",
       "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
       "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
     }
   ]
 }
