@@ -52,6 +52,7 @@ IP_AUSTRALIA_ENTITY: dict = {
     "parentOrganization": {
         "@type": "GovernmentOrganization",
         "name": "Australian Government",
+        "sameAs":"https://www.wikidata.org/wiki/Q2991162"
     },
     "sameAs": [ "https://www.wikidata.org/wiki/Q5973650",
     "https://en.wikipedia.org/wiki/IP_Australia"
