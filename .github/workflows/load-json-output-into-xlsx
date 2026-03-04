@@ -1,0 +1,73 @@
+name: Load JSON Output into XLSX
+
+on:
+  workflow_dispatch:
+    inputs:
+      json_dir:
+        description: "Path to the JSON folder (relative to repo root)"
+        required: true
+        default: "json_output"
+      xlsx_path:
+        description: "Path to the XLSX file to populate (relative to repo root)"
+        required: true
+        default: "260305_DB-Strcuture_05.xlsx"
+      commit_changes:
+        description: "Commit the updated XLSX back to the repo"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  load-json-into-xlsx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl
+
+      - name: Run loader
+        run: |
+          python DeterministicSchemaConversion/load_json_output_into_xlsx.py \
+            --json_dir "${{ inputs.json_dir }}" \
+            --xlsx_path "${{ inputs.xlsx_path }}"
+
+      - name: Upload updated XLSX as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: populated-xlsx
+          path: ${{ inputs.xlsx_path }}
+          if-no-files-found: error
+
+      - name: Commit and push changes
+        if: ${{ inputs.commit_changes == 'true' }}
+        run: |
+          git config user.name "schema-loader-bot"
+          git config user.email "actions@github.com"
+
+          git add "${{ inputs.xlsx_path }}"
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Populate XLSX from json_output"
+          git push
