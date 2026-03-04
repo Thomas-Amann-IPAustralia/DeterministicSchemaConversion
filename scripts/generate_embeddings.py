@@ -77,6 +77,7 @@ def generate_embeddings():
             response = client.embeddings.create(
                 input=str(text_content),
                 model="text-embedding-3-small"
+                dimensions = 512
             )
 
             # Save as stringified list
