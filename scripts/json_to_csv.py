@@ -5,16 +5,17 @@ load_json_output_into_xlsx.py
 Populate the SQLite-design XLSX (acting as a staging table set) from a folder of
 Schema.org JSON-LD files (json_output).
 
-Key behaviours:
-- Loads core entities: websites, webpages, stakeholders, terms, disclaimers,
-  main content sections, FAQs, and link junctions.
-- Classifies links as INTERNAL vs EXTERNAL:
-    * INTERNAL = domain == ipfirstresponse.ipaustralia.gov.au
-      -> goes to JUNCT_webpage_links.destination_webpage_id
-    * EXTERNAL = everything else
-      -> goes to ENT_external_reference + JUNCT_webpage_links.destination_external_ref_id
-- Avoids duplicates via deterministic registries (URI/URL/text based).
-- Clears target sheets (rows 2+) before re-populating.
+Improvements over prior version:
+- INTERNAL link resolution is robust:
+    * supports relative links (/path, path)
+    * strips fragments
+    * normalises scheme/host/path
+    * resolves by URL, by WebPage @id URI, and by path fallback
+- INTERNAL links no longer pollute ENT_external_reference:
+    * if internal but unresolved -> leave destination columns blank and report
+- Skips writing junk rows (e.g., blank webpage_id in junctions)
+- Enforces "exactly one destination column" for resolved links
+- Optional link-resolution report CSV (useful in CI)
 
 Designed to run in a locked-down GitHub Actions environment with only openpyxl installed.
 """
@@ -22,32 +23,71 @@ Designed to run in a locked-down GitHub Actions environment with only openpyxl i
 from __future__ import annotations
 
 import argparse
+import csv
+import hashlib
 import json
 import os
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Tuple, Any
-from urllib.parse import urlparse, urlunparse
-import hashlib
+from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import urlparse, urlunparse, urljoin
 
 from openpyxl import load_workbook
 from openpyxl.worksheet.worksheet import Worksheet
 
 
 INTERNAL_DOMAIN = "ipfirstresponse.ipaustralia.gov.au"
+INTERNAL_BASE = f"https://{INTERNAL_DOMAIN}"
 
+
+# -----------------------------
+# Helpers
+# -----------------------------
 
 def norm_url(u: str) -> str:
-    """Normalise URLs for matching (strip fragment, trim trailing slash on non-root paths)."""
+    """
+    Normalise URLs for matching:
+    - strip whitespace
+    - drop fragments (#...)
+    - lower-case scheme + netloc
+    - trim trailing slash for non-root paths
+    """
     if not u:
         return ""
     u = str(u).strip()
+    if not u:
+        return ""
+
     parsed = urlparse(u)
     parsed = parsed._replace(fragment="")
-    nu = urlunparse(parsed)
-    # remove trailing slash unless it's root
-    if nu.endswith("/") and (parsed.path and parsed.path != "/"):
-        nu = nu.rstrip("/")
-    return nu
+
+    scheme = (parsed.scheme or "").lower()
+    netloc = (parsed.netloc or "").lower()
+
+    # Rebuild first (keeping query as-is; we may drop later for internal matching)
+    rebuilt = urlunparse(parsed._replace(scheme=scheme, netloc=netloc))
+
+    # Trim trailing slash unless root
+    p2 = urlparse(rebuilt)
+    if rebuilt.endswith("/") and (p2.path and p2.path != "/"):
+        rebuilt = rebuilt.rstrip("/")
+
+    return rebuilt
+
+
+def drop_common_tracking_params(u: str) -> str:
+    """
+    Optional: if internal URLs come with tracking params, treat them as equivalent.
+    We keep it simple: if internal, drop *all* query params.
+    """
+    if not u:
+        return ""
+    try:
+        p = urlparse(u)
+        if p.netloc.lower() == INTERNAL_DOMAIN:
+            return urlunparse(p._replace(query="", fragment=""))
+    except Exception:
+        pass
+    return u
 
 
 def is_internal_ipfr_url(u: str) -> bool:
@@ -59,8 +99,47 @@ def is_internal_ipfr_url(u: str) -> bool:
         return False
 
 
+def to_internal_absolute(maybe_url: str) -> str:
+    """
+    Convert relative or scheme-less internal links into absolute IPFR URLs when reasonable.
+    Examples:
+      /options/foo -> https://ipfirstresponse.ipaustralia.gov.au/options/foo
+      options/foo  -> https://ipfirstresponse.ipaustralia.gov.au/options/foo
+      //ipfirstresponse.ipaustralia.gov.au/x -> https://ipfirstresponse.ipaustralia.gov.au/x
+    """
+    if not maybe_url:
+        return ""
+    raw = str(maybe_url).strip()
+    if not raw:
+        return ""
+
+    # Skip non-http link types
+    lowered = raw.lower()
+    if lowered.startswith(("mailto:", "tel:", "javascript:", "#")):
+        return ""
+
+    # Scheme-relative URL
+    if raw.startswith("//"):
+        raw = "https:" + raw
+
+    p = urlparse(raw)
+
+    # Already absolute
+    if p.scheme in ("http", "https") and p.netloc:
+        return raw
+
+    # Root-relative
+    if raw.startswith("/"):
+        return urljoin(INTERNAL_BASE, raw)
+
+    # Bare path (no scheme, no netloc) – treat as internal path
+    if not p.scheme and not p.netloc and p.path:
+        return urljoin(INTERNAL_BASE + "/", raw)
+
+    return raw
+
+
 def sha1_id(text: str, prefix: str, length: int = 8) -> str:
-    """Stable short ID for de-duplication by content when you don't care about sequencing."""
     h = hashlib.sha1(text.encode("utf-8")).hexdigest()[:length]
     return f"{prefix}{h}"
 
@@ -90,6 +169,10 @@ def safe_list(x: Any) -> List[Any]:
         return x
     return [x]
 
+
+# -----------------------------
+# Registries
+# -----------------------------
 
 @dataclass
 class Registries:
@@ -148,7 +231,6 @@ def term_id_for(reg: Registries, term: str, wikidata_url: str) -> str:
 def disclaimer_id_for(reg: Registries, text: str) -> str:
     norm = " ".join(str(text or "").strip().split())
     if not norm:
-        # Should never be used, but avoid creating empty disclaimers.
         return ""
     if norm in reg.disclaimer_text_to_id:
         return reg.disclaimer_text_to_id[norm]
@@ -156,6 +238,10 @@ def disclaimer_id_for(reg: Registries, text: str) -> str:
     reg.disclaimer_text_to_id[norm] = did
     return did
 
+
+# -----------------------------
+# JSON utilities
+# -----------------------------
 
 def load_json(path: str) -> Optional[dict]:
     try:
@@ -190,34 +276,122 @@ def extract_webpages_with_identifier(nodes: List[dict]) -> List[dict]:
 
 
 def extract_website(nodes: List[dict]) -> Optional[dict]:
-    # Usually one WebSite node per file
     return first(find_nodes_by_type(nodes, "WebSite"))
 
 
-def build_url_to_webpage_id(json_files: List[str]) -> Dict[str, str]:
-    """Scan all JSONs once, mapping webpage url -> webpage_id (identifier)."""
-    mapping: Dict[str, str] = {}
+# -----------------------------
+# Internal resolvers
+# -----------------------------
+
+@dataclass
+class InternalResolvers:
+    url_to_webpage_id: Dict[str, str]
+    uri_to_webpage_id: Dict[str, str]
+    path_to_webpage_id: Dict[str, str]
+
+
+def build_internal_resolvers(json_files: List[str]) -> InternalResolvers:
+    """
+    Scan all JSONs once, mapping:
+    - webpage_url -> webpage_id (identifier)
+    - webpage_uri (@id) -> webpage_id
+    - path (/foo/bar) -> webpage_id (internal only), as fallback
+    """
+    url_map: Dict[str, str] = {}
+    uri_map: Dict[str, str] = {}
+    path_map: Dict[str, str] = {}
+
     for p in json_files:
         doc = load_json(p)
         if not doc:
             continue
+
         for wp in extract_webpages_with_identifier(graph_nodes(doc)):
             wp_id = str(wp.get("identifier")).strip()
-            url = norm_url(wp.get("url") or "")
-            if wp_id and url:
-                mapping[url] = wp_id
-                mapping[url + "/"] = wp_id  # tolerate trailing slash
-    return mapping
+            if not wp_id:
+                continue
 
+            wurl_raw = wp.get("url") or ""
+            wurl = norm_url(to_internal_absolute(str(wurl_raw)))
+            wurl = norm_url(drop_common_tracking_params(wurl))
+
+            wuri = norm_url(str(wp.get("@id") or ""))
+
+            if wurl:
+                url_map[wurl] = wp_id
+                url_map[wurl + "/"] = wp_id  # tolerate slash variants
+                # path fallback
+                try:
+                    pu = urlparse(wurl)
+                    if pu.netloc.lower() == INTERNAL_DOMAIN and pu.path:
+                        path_map[pu.path.rstrip("/") or "/"] = wp_id
+                except Exception:
+                    pass
+
+            if wuri:
+                uri_map[wuri] = wp_id
+
+    return InternalResolvers(url_to_webpage_id=url_map, uri_to_webpage_id=uri_map, path_to_webpage_id=path_map)
+
+
+def resolve_internal_destination_id(res: InternalResolvers, raw_out: str) -> Optional[str]:
+    """
+    Resolve an internal outbound link to a webpage_id using:
+      1) url_to_webpage_id (after absolute+normalise)
+      2) uri_to_webpage_id (if the link is actually a JSON @id style)
+      3) path_to_webpage_id fallback
+    """
+    if not raw_out:
+        return None
+
+    abs_u = to_internal_absolute(raw_out)
+    if not abs_u:
+        return None
+
+    u = norm_url(abs_u)
+    u = norm_url(drop_common_tracking_params(u))
+
+    # 1) direct URL match
+    if u in res.url_to_webpage_id:
+        return res.url_to_webpage_id[u]
+    if (u + "/") in res.url_to_webpage_id:
+        return res.url_to_webpage_id[u + "/"]
+
+    # 2) treat as @id / uri match
+    if u in res.uri_to_webpage_id:
+        return res.uri_to_webpage_id[u]
+
+    # 3) path fallback (internal only)
+    try:
+        pu = urlparse(u)
+        if pu.netloc.lower() == INTERNAL_DOMAIN:
+            path = (pu.path or "/").rstrip("/") or "/"
+            if path in res.path_to_webpage_id:
+                return res.path_to_webpage_id[path]
+    except Exception:
+        pass
+
+    return None
+
+
+# -----------------------------
+# Main
+# -----------------------------
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--json_dir", required=True, help="Folder containing json_output files")
     ap.add_argument("--xlsx_path", required=True, help="Path to the XLSX to populate (in-place)")
+    ap.add_argument(
+        "--link_report_path",
+        default="",
+        help="Optional CSV output path for unresolved internal links and summary (recommended in CI).",
+    )
     args = ap.parse_args()
 
     json_dir = args.json_dir
     xlsx_path = args.xlsx_path
+    report_path = args.link_report_path
 
     if not os.path.exists(json_dir):
         raise SystemExit(f"JSON directory not found: {json_dir}")
@@ -231,11 +405,10 @@ def main() -> None:
     ]
     json_files.sort()
 
-    url_to_webpage_id = build_url_to_webpage_id(json_files)
+    resolvers = build_internal_resolvers(json_files)
 
     wb = load_workbook(xlsx_path)
 
-    # Required sheets
     required = [
         "ENT_website",
         "ENT_webpage",
@@ -295,20 +468,23 @@ def main() -> None:
         disclaimer_text_to_id={},
     )
 
-    # Accumulators (dedupe by ID before writing)
+    # Accumulators
     stakeholders_out: Dict[str, Dict[str, Any]] = {}
     websites_out: Dict[str, Dict[str, Any]] = {}
     webpages_out: Dict[str, Dict[str, Any]] = {}
     extrefs_out: Dict[str, Dict[str, Any]] = {}
     disclaimers_out: Dict[str, Dict[str, Any]] = {}
     terms_out: Dict[str, Dict[str, Any]] = {}
+
     wp_term_rows: List[Dict[str, Any]] = []
     link_rows: List[Dict[str, Any]] = []
     main_rows: List[Dict[str, Any]] = []
     faq_rows: List[Dict[str, Any]] = []
     junct_disclaimer_rows: List[Dict[str, Any]] = []
 
-    # Helper to register stakeholder from a node
+    # Link resolution reporting
+    unresolved_internal: List[Tuple[str, str]] = []  # (source_webpage_id, url)
+
     def upsert_stakeholder(node: dict) -> Optional[str]:
         if not node or not isinstance(node, dict):
             return None
@@ -345,7 +521,7 @@ def main() -> None:
             continue
         nodes = graph_nodes(doc)
 
-        # 1) Stakeholders (GovernmentOrganization / Organization)
+        # 1) Stakeholders
         for st in find_nodes_by_type(nodes, "GovernmentOrganization") + find_nodes_by_type(nodes, "Organization"):
             upsert_stakeholder(st)
 
@@ -364,12 +540,16 @@ def main() -> None:
                 "website_uri": site_uri,
                 "website_title": site.get("name") or "",
                 "website_url": site.get("url") or "",
+                # IMPORTANT: store stakeholder_id (not URI)
                 "website_owned_by": owner_sid,
             }
 
-        # 3) WebPages with identifiers (including linked pages if present)
+        # 3) WebPages with identifiers
         for wp in extract_webpages_with_identifier(nodes):
             webpage_id = str(wp.get("identifier")).strip()
+            if not webpage_id:
+                continue
+
             webpage_uri = wp.get("@id") or ""
             webpage_url = wp.get("url") or ""
             webpage_name = wp.get("name") or ""
@@ -380,7 +560,7 @@ def main() -> None:
             pub_idref = publisher.get("@id") if isinstance(publisher, dict) else None
             publisher_sid = stakeholder_id_for(reg, pub_idref or "") if pub_idref else None
 
-            # isPartOf -> website_id (by WebSite @id if present)
+            # isPartOf -> website_id
             is_part_of = wp.get("isPartOf") or {}
             ipo_idref = is_part_of.get("@id") if isinstance(is_part_of, dict) else None
             website_id = website_id_for(reg, ipo_idref or "") if ipo_idref else None
@@ -396,7 +576,6 @@ def main() -> None:
                 me_node = find_node_by_id(nodes, me_idref)
                 if me_node:
                     main_entity_type = me_node.get("@type") or ""
-                    # Provider logic: Service.provider OR GovernmentService.serviceOperator OR (Article => None)
                     if main_entity_type == "Service":
                         prov = me_node.get("provider") or {}
                         prov_idref = prov.get("@id") if isinstance(prov, dict) else None
@@ -415,15 +594,18 @@ def main() -> None:
                 "webpage_name": webpage_name,
                 "webpage_altname": wp.get("alternateName") or "",
                 "webpage_description": webpage_desc,
+                # IMPORTANT: store stakeholder_id (not URI)
                 "webpage_publisher": publisher_sid,
                 "webpage_date_published": wp.get("datePublished") or "",
                 "webpage_date_modified": wp.get("dateModified") or "",
                 "webpage_main_entity_type": main_entity_type,
+                # IMPORTANT: store stakeholder_id (not URI)
                 "webpage_provider": provider_sid,
+                # IMPORTANT: store website_id (not URI)
                 "webpage_is_part_of": website_id,
             }
 
-            # 4) Terms from "about" (Thing)
+            # 4) Terms from about
             about_list = safe_list(wp.get("about"))
             for about in about_list:
                 if not isinstance(about, dict):
@@ -433,34 +615,32 @@ def main() -> None:
                 if not term_name:
                     continue
                 tid = term_id_for(reg, term_name, wd_url)
-
                 terms_out[tid] = {
                     "term_id": tid,
                     "term_to_define": term_name,
                     "wikidata_url": wd_url,
                     "internal_definition": "",
                 }
-
                 wp_term_rows.append({
                     "webpage_id": webpage_id,
                     "webpage_is_relevant_to": tid,
                     "term_relevance_weight": 1.0,
                 })
 
-            # 5) Disclaimers: usageInfo.text + any WebPageElement whose headline contains "disclaimer"
+            # 5) Disclaimers: usageInfo.text + "disclaimer" headline content
             usage = wp.get("usageInfo") or {}
             if isinstance(usage, dict):
                 usage_text = usage.get("text") or ""
                 if usage_text:
                     did = disclaimer_id_for(reg, usage_text)
-                    disclaimers_out[did] = {"disclaimer_id": did, "disclaimer_text": usage_text}
-                    junct_disclaimer_rows.append({"webpage_id": webpage_id, "disclaimer_id": did})
+                    if did:
+                        disclaimers_out[did] = {"disclaimer_id": did, "disclaimer_text": usage_text}
+                        junct_disclaimer_rows.append({"webpage_id": webpage_id, "disclaimer_id": did})
 
-            # Collect page-linked nodes scoped to this webpage
+            # Scoped nodes
             wp_id_uri = wp.get("@id")
 
-            # 6) Main content sections (WebPageElement where isPartOf points to this webpage)
-            #    Ordered by the WebPage.hasPart list if available, otherwise natural order.
+            # 6) Main content sections
             has_part = safe_list(wp.get("hasPart"))
             has_part_ids = [hp.get("@id") for hp in has_part if isinstance(hp, dict) and hp.get("@id")]
             element_nodes = [
@@ -469,7 +649,6 @@ def main() -> None:
                 and isinstance(n.get("isPartOf"), dict)
                 and n["isPartOf"].get("@id") == wp_id_uri
             ]
-
             order_map = {hid: i + 1 for i, hid in enumerate(has_part_ids)}
             element_nodes.sort(key=lambda n: order_map.get(n.get("@id"), 10**9))
 
@@ -490,10 +669,11 @@ def main() -> None:
                 headline = (el.get("headline") or "").lower()
                 if "disclaimer" in headline and text:
                     did = disclaimer_id_for(reg, text)
-                    disclaimers_out[did] = {"disclaimer_id": did, "disclaimer_text": text}
-                    junct_disclaimer_rows.append({"webpage_id": webpage_id, "disclaimer_id": did})
+                    if did:
+                        disclaimers_out[did] = {"disclaimer_id": did, "disclaimer_text": text}
+                        junct_disclaimer_rows.append({"webpage_id": webpage_id, "disclaimer_id": did})
 
-            # 7) FAQ rows (FAQPage where isPartOf points to this webpage)
+            # 7) FAQ rows
             faq_pages = [
                 n for n in nodes
                 if n.get("@type") == "FAQPage"
@@ -505,9 +685,7 @@ def main() -> None:
                 q_list = safe_list(faq_page.get("mainEntity"))
                 q_order = 1
                 for q in q_list:
-                    if not isinstance(q, dict):
-                        continue
-                    if q.get("@type") != "Question":
+                    if not isinstance(q, dict) or q.get("@type") != "Question":
                         continue
                     qid = q.get("@id") or ""
                     qtext = q.get("name") or ""
@@ -527,31 +705,48 @@ def main() -> None:
                     })
                     q_order += 1
 
-            # 8) Webpage links: relatedLink (strings) + mentions (@id)
+            # 8) Webpage links: relatedLink + mentions.@id
             outbound_urls: List[str] = []
             outbound_urls.extend([u for u in safe_list(wp.get("relatedLink")) if isinstance(u, str)])
             for m in safe_list(wp.get("mentions")):
                 if isinstance(m, dict) and m.get("@id"):
                     outbound_urls.append(m.get("@id"))
 
-            # De-dupe
+            # De-dupe + clean
             seen = set()
             for out in outbound_urls:
-                outn = norm_url(out)
+                if not out:
+                    continue
+                out_abs = to_internal_absolute(out)  # safe for external too (returns original if absolute)
+                if not out_abs:
+                    continue
+
+                outn = norm_url(out_abs)
                 if not outn or outn in seen:
                     continue
                 seen.add(outn)
 
+                # Classify internal vs external after normalisation
                 if is_internal_ipfr_url(outn):
-                    dest_webpage_id = url_to_webpage_id.get(outn) or url_to_webpage_id.get(outn + "/")
-                    link_rows.append({
-                        "webpage_id": webpage_id,
-                        "destination_webpage_id": dest_webpage_id or "",
-                        "destination_external_ref_id": "",
-                    })
+                    # Try resolve to a known webpage_id
+                    dest_id = resolve_internal_destination_id(resolvers, outn)
+                    if dest_id:
+                        link_rows.append({
+                            "webpage_id": webpage_id,
+                            "destination_webpage_id": dest_id,
+                            "destination_external_ref_id": "",
+                        })
+                    else:
+                        # Internal but unresolved: do NOT create extref (keep external refs "pure")
+                        unresolved_internal.append((webpage_id, outn))
+                        link_rows.append({
+                            "webpage_id": webpage_id,
+                            "destination_webpage_id": "",
+                            "destination_external_ref_id": "",
+                        })
                 else:
+                    # External: create external reference
                     ext_id = external_ref_id_for(reg, outn)
-                    # Title: best-effort from hostname
                     host = urlparse(outn).netloc
                     title = host or outn
                     extrefs_out[ext_id] = {
@@ -565,7 +760,9 @@ def main() -> None:
                         "destination_external_ref_id": ext_id,
                     })
 
-    # --- Write outputs to sheets ---
+    # -----------------------------
+    # Write outputs to sheets
+    # -----------------------------
 
     # Stakeholders
     for sid in sorted(stakeholders_out.keys()):
@@ -575,7 +772,7 @@ def main() -> None:
     for wid in sorted(websites_out.keys()):
         append_row(ws_website, H_WEBSITE, websites_out[wid])
 
-    # Webpages (stable order by webpage_id)
+    # Webpages
     for wpid in sorted(webpages_out.keys()):
         append_row(ws_webpage, H_WEBPAGE, webpages_out[wpid])
 
@@ -583,8 +780,27 @@ def main() -> None:
     for eid in sorted(extrefs_out.keys()):
         append_row(ws_extref, H_EXTREF, extrefs_out[eid])
 
-    # Links (junction)
+    # Links (junction) – de-dupe and skip bad rows
+    seen_links = set()
     for row in link_rows:
+        src = (row.get("webpage_id") or "").strip()
+        if not src:
+            continue  # prevents blank webpage_id rows
+
+        dwp = (row.get("destination_webpage_id") or "").strip()
+        der = (row.get("destination_external_ref_id") or "").strip()
+
+        # Enforce exactly one destination if resolved; allow both blank only for internal-unresolved
+        if dwp and der:
+            # Should never happen; prefer internal resolution if it does.
+            der = ""
+            row["destination_external_ref_id"] = ""
+
+        key = (src, dwp, der)
+        if key in seen_links:
+            continue
+        seen_links.add(key)
+
         append_row(ws_links, H_LINKS, row)
 
     # Main content
@@ -599,7 +815,7 @@ def main() -> None:
     for did in sorted(disclaimers_out.keys()):
         append_row(ws_disclaimer, H_DISCLAIMER, disclaimers_out[did])
 
-    # Junction disclaimer (de-dupe pairs)
+    # Junction disclaimer (de-dupe)
     seen_pairs = set()
     for row in junct_disclaimer_rows:
         key = (row.get("webpage_id"), row.get("disclaimer_id"))
@@ -621,22 +837,51 @@ def main() -> None:
         seen_wpt.add(key)
         append_row(ws_wprel, H_WPREL, row)
 
-    # Term aliases (optional) – left empty for now.
-    # If you later add alias extraction sources, append rows to ws_alias here.
+    # Term aliases (left empty unless you later add extraction)
 
     wb.save(xlsx_path)
 
+    # Optional report
+    internal_resolved = sum(1 for _, dwp, der in seen_links if dwp and not der)
+    external_written = sum(1 for _, dwp, der in seen_links if der and not dwp)
+    internal_unresolved = len(unresolved_internal)
+
+    if report_path:
+        try:
+            # If report path is relative, anchor it next to the XLSX for convenience
+            if not os.path.isabs(report_path):
+                report_path = os.path.join(os.path.dirname(os.path.abspath(xlsx_path)), report_path)
+
+            with open(report_path, "w", newline="", encoding="utf-8") as f:
+                w = csv.writer(f)
+                w.writerow(["metric", "value"])
+                w.writerow(["webpages_total", len(webpages_out)])
+                w.writerow(["links_internal_resolved_rows", internal_resolved])
+                w.writerow(["links_external_rows", external_written])
+                w.writerow(["links_internal_unresolved_rows", internal_unresolved])
+                w.writerow([])
+                w.writerow(["source_webpage_id", "unresolved_internal_url"])
+                for src, url in unresolved_internal:
+                    w.writerow([src, url])
+        except Exception as e:
+            print(f"⚠️ Could not write link report to {report_path}: {e}")
+
     # Basic stats output for logs
-    print("✅ XLSX populated successfully.")
-    print(f"   Stakeholders: {len(stakeholders_out)}")
-    print(f"   Websites: {len(websites_out)}")
-    print(f"   Webpages: {len(webpages_out)}")
-    print(f"   External refs: {len(extrefs_out)}")
-    print(f"   Webpage links (rows): {len(link_rows)}")
-    print(f"   Main content rows: {len(main_rows)}")
-    print(f"   FAQ rows: {len(faq_rows)}")
-    print(f"   Disclaimers: {len(disclaimers_out)}")
-    print(f"   Terms: {len(terms_out)}")
+    print("✅ Completed JSON->XLSX load")
+    print(f"   JSON dir:  {json_dir}")
+    print(f"   XLSX:      {xlsx_path}")
+    print(f"   WebPages:  {len(webpages_out)}")
+    print(f"   Content:   {len(main_rows)}")
+    print(f"   FAQs:      {len(faq_rows)}")
+    print(f"   Ext refs:  {len(extrefs_out)}")
+    print(f"   Terms:     {len(terms_out)}")
+    print(f"   Orgs:      {len(stakeholders_out)}")
+    print(f"   Links:     {len(seen_links)}")
+    print(f"     - internal resolved:   {internal_resolved}")
+    print(f"     - internal unresolved: {internal_unresolved}")
+    print(f"     - external:            {external_written}")
+    if report_path:
+        print(f"   Link report: {report_path}")
 
 
 if __name__ == "__main__":
