@@ -1,332 +1,643 @@
-import json
-import yaml
-import glob
-import os
+#!/usr/bin/env python3
+"""
+load_json_output_into_xlsx.py
+
+Populate the SQLite-design XLSX (acting as a staging table set) from a folder of
+Schema.org JSON-LD files (json_output).
+
+Key behaviours:
+- Loads core entities: websites, webpages, stakeholders, terms, disclaimers,
+  main content sections, FAQs, and link junctions.
+- Classifies links as INTERNAL vs EXTERNAL:
+    * INTERNAL = domain == ipfirstresponse.ipaustralia.gov.au
+      -> goes to JUNCT_webpage_links.destination_webpage_id
+    * EXTERNAL = everything else
+      -> goes to ENT_external_reference + JUNCT_webpage_links.destination_external_ref_id
+- Avoids duplicates via deterministic registries (URI/URL/text based).
+- Clears target sheets (rows 2+) before re-populating.
+
+Designed to run in a locked-down GitHub Actions environment with only openpyxl installed.
+"""
+
+from __future__ import annotations
+
 import argparse
-import pandas as pd
-import tiktoken
-import re
-from jsonpath_ng.ext import parse
-from typing import Any, List, Dict
+import json
+import os
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Tuple, Any
+from urllib.parse import urlparse, urlunparse
+import hashlib
 
-# --- Global Cache & Registry ---
-FILE_CACHE = {
-    "md": {},   # Map: {'B1020': 'full_path_to_file.md'}
-    "html": {}  # Map: {'B1020': 'full_path_to_file.html'}
-}
-URL_REGISTRY = {} # Map: {'https://ipfirstresponse...': 'B1020'}
-JSONPATH_CACHE = {}
-TOKENIZER = None
+from openpyxl import load_workbook
+from openpyxl.worksheet.worksheet import Worksheet
 
-# --- Setup & Helpers ---
 
-def setup_tokenizer():
-    global TOKENIZER
+INTERNAL_DOMAIN = "ipfirstresponse.ipaustralia.gov.au"
+
+
+def norm_url(u: str) -> str:
+    """Normalise URLs for matching (strip fragment, trim trailing slash on non-root paths)."""
+    if not u:
+        return ""
+    u = str(u).strip()
+    parsed = urlparse(u)
+    parsed = parsed._replace(fragment="")
+    nu = urlunparse(parsed)
+    # remove trailing slash unless it's root
+    if nu.endswith("/") and (parsed.path and parsed.path != "/"):
+        nu = nu.rstrip("/")
+    return nu
+
+
+def is_internal_ipfr_url(u: str) -> bool:
+    if not u:
+        return False
     try:
-        TOKENIZER = tiktoken.get_encoding("cl100k_base")
-    except Exception as e:
-        print(f"⚠️ Warning: Tiktoken failed to load ({e}). Token counts will be 0.")
+        return urlparse(norm_url(u)).netloc.lower() == INTERNAL_DOMAIN
+    except Exception:
+        return False
 
-def count_tokens(text):
-    if not text or not TOKENIZER: return 0
-    return len(TOKENIZER.encode(str(text)))
 
-def pre_scan_files(source_dir, md_dir, html_dir):
-    """
-    1. Maps UDIDs to their specific MD/HTML filenames.
-    2. Builds a URL -> UDID registry from all JSONs for internal linking.
-    """
-    print("⏳ Pre-scanning files to build registries...")
-    
-    # Scan MD/HTML
-    for f_type, path in [("md", md_dir), ("html", html_dir)]:
-        if path and os.path.exists(path):
-            for file_path in glob.glob(os.path.join(path, "*")):
-                # Assuming filename starts with UDID (e.g., "B1020 - Name.md")
-                filename = os.path.basename(file_path)
-                # Extract UDID (first sequence of chars before space or dash)
-                udid = filename.split()[0].strip() 
-                FILE_CACHE[f_type][udid] = file_path
+def sha1_id(text: str, prefix: str, length: int = 8) -> str:
+    """Stable short ID for de-duplication by content when you don't care about sequencing."""
+    h = hashlib.sha1(text.encode("utf-8")).hexdigest()[:length]
+    return f"{prefix}{h}"
 
-    # Scan JSONs for URL Registry
-    json_files = glob.glob(os.path.join(source_dir, "*.json"))
-    for jf in json_files:
-        try:
-            with open(jf, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                # Extract UDID and URL
-                udid_match = parse("identifier.value").find(data)
-                url_match = parse("url").find(data)
-                
-                if udid_match and url_match:
-                    udid = udid_match[0].value
-                    url = url_match[0].value
-                    URL_REGISTRY[url] = udid
-        except:
+
+def clear_sheet(ws: Worksheet) -> None:
+    """Delete all rows except header."""
+    if ws.max_row and ws.max_row > 1:
+        ws.delete_rows(2, ws.max_row - 1)
+
+
+def headers(ws: Worksheet) -> List[str]:
+    return [c.value for c in ws[1] if c.value is not None]
+
+
+def append_row(ws: Worksheet, header_list: List[str], row: Dict[str, Any]) -> None:
+    ws.append([row.get(h, None) for h in header_list])
+
+
+def first(it: List[Any]) -> Optional[Any]:
+    return it[0] if it else None
+
+
+def safe_list(x: Any) -> List[Any]:
+    if x is None:
+        return []
+    if isinstance(x, list):
+        return x
+    return [x]
+
+
+@dataclass
+class Registries:
+    stakeholder_uri_to_id: Dict[str, str]
+    website_uri_to_id: Dict[str, str]
+    external_url_to_id: Dict[str, str]
+    term_key_to_id: Dict[Tuple[str, str], str]  # (term_to_define, wikidata_url)
+    disclaimer_text_to_id: Dict[str, str]       # normalised text -> disclaimer_id
+
+    stakeholder_next: int = 1
+    website_next: int = 1
+    term_next: int = 1
+    extref_next: int = 1
+
+
+def stakeholder_id_for(reg: Registries, uri: str) -> str:
+    uri = uri or ""
+    if uri in reg.stakeholder_uri_to_id:
+        return reg.stakeholder_uri_to_id[uri]
+    sid = f"SH_{reg.stakeholder_next:04d}"
+    reg.stakeholder_next += 1
+    reg.stakeholder_uri_to_id[uri] = sid
+    return sid
+
+
+def website_id_for(reg: Registries, uri: str) -> str:
+    uri = uri or ""
+    if uri in reg.website_uri_to_id:
+        return reg.website_uri_to_id[uri]
+    wid = f"SITE_{reg.website_next:04d}"
+    reg.website_next += 1
+    reg.website_uri_to_id[uri] = wid
+    return wid
+
+
+def external_ref_id_for(reg: Registries, url: str) -> str:
+    url = norm_url(url)
+    if url in reg.external_url_to_id:
+        return reg.external_url_to_id[url]
+    eid = f"extref_{reg.extref_next:04d}"
+    reg.extref_next += 1
+    reg.external_url_to_id[url] = eid
+    return eid
+
+
+def term_id_for(reg: Registries, term: str, wikidata_url: str) -> str:
+    key = (term or "", wikidata_url or "")
+    if key in reg.term_key_to_id:
+        return reg.term_key_to_id[key]
+    tid = f"T{reg.term_next:04d}"
+    reg.term_next += 1
+    reg.term_key_to_id[key] = tid
+    return tid
+
+
+def disclaimer_id_for(reg: Registries, text: str) -> str:
+    norm = " ".join(str(text or "").strip().split())
+    if not norm:
+        # Should never be used, but avoid creating empty disclaimers.
+        return ""
+    if norm in reg.disclaimer_text_to_id:
+        return reg.disclaimer_text_to_id[norm]
+    did = sha1_id(norm, "DCL_")
+    reg.disclaimer_text_to_id[norm] = did
+    return did
+
+
+def load_json(path: str) -> Optional[dict]:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def graph_nodes(doc: dict) -> List[dict]:
+    if not isinstance(doc, dict):
+        return []
+    g = doc.get("@graph")
+    if isinstance(g, list):
+        return [n for n in g if isinstance(n, dict)]
+    return []
+
+
+def find_nodes_by_type(nodes: List[dict], t: str) -> List[dict]:
+    return [n for n in nodes if n.get("@type") == t]
+
+
+def find_node_by_id(nodes: List[dict], node_id: str) -> Optional[dict]:
+    for n in nodes:
+        if n.get("@id") == node_id:
+            return n
+    return None
+
+
+def extract_webpages_with_identifier(nodes: List[dict]) -> List[dict]:
+    return [n for n in nodes if n.get("@type") == "WebPage" and n.get("identifier")]
+
+
+def extract_website(nodes: List[dict]) -> Optional[dict]:
+    # Usually one WebSite node per file
+    return first(find_nodes_by_type(nodes, "WebSite"))
+
+
+def build_url_to_webpage_id(json_files: List[str]) -> Dict[str, str]:
+    """Scan all JSONs once, mapping webpage url -> webpage_id (identifier)."""
+    mapping: Dict[str, str] = {}
+    for p in json_files:
+        doc = load_json(p)
+        if not doc:
             continue
-            
-    print(f"   - Mapped {len(FILE_CACHE['md'])} MD files.")
-    print(f"   - Mapped {len(URL_REGISTRY)} internal URLs.")
-
-# --- Logic Functions ---
-
-def logic_derive_service_provider(value, row_context, root_data):
-    """Implements: IF Service_Type = Article THEN Self-service ELSE serviceOperator.name"""
-    try:
-        entities = root_data.get("mainEntity", [])
-        if not entities: return "Unknown"
-        
-        service_type = entities[0].get("@type", "")
-        if service_type == "Article":
-            return "Self-service"
-        else:
-            return entities[0].get("serviceOperator", {}).get("name", "Unknown")
-    except:
-        return "Unknown"
-
-def logic_check_is_internal_link(url, row_context, root_data):
-    if not url: return "No"
-    return "Yes" if "ipfirstresponse" in str(url) else "No"
-
-def logic_lookup_internal_udid(url, row_context, root_data):
-    if not url: return "Null"
-    clean_url = str(url).rstrip('/')
-    return URL_REGISTRY.get(clean_url, URL_REGISTRY.get(clean_url + '/', "Null"))
-
-def logic_read_file_content(udid, file_type):
-    path = FILE_CACHE[file_type].get(udid)
-    if not path: return "FILE_NOT_FOUND"
-    try:
-        with open(path, 'r', encoding='utf-8') as f:
-            return f.read()
-    except Exception as e:
-        return f"ERROR: {str(e)}"
-
-# Wrappers
-def logic_read_html_file(udid, *args): return logic_read_file_content(udid, "html")
-def logic_read_md_file(udid, *args): return logic_read_file_content(udid, "md")
-def logic_count_html_tokens(udid, *args): return count_tokens(logic_read_file_content(udid, "html"))
-def logic_count_md_tokens(udid, *args): return count_tokens(logic_read_file_content(udid, "md"))
-def logic_dump_json_string(root_data, *args): return json.dumps(root_data)
-def logic_count_json_tokens(root_data, *args): return count_tokens(json.dumps(root_data))
-
-# --- Row Generator Functions (One Input -> Multiple Rows) ---
-
-def logic_generate_semantic_rows(root_data, *args):
-    """
-    Generates multiple chunk rows from the associated Markdown file.
-    Splits by '###' headers.
-    """
-    rows = []
-    
-    # 1. Get Basic Info
-    udid = root_data.get("identifier", {}).get("value", "UNKNOWN")
-    headline = root_data.get("headline", "")
-    alt_headline = root_data.get("alternativeHeadline", "")
-    description = root_data.get("description", "")
-    
-    # 2. Construct Context Prepend
-    context_prepend = f"{headline}\n{alt_headline}\n{description}"
-    
-    # 3. Read Markdown
-    md_content = logic_read_file_content(udid, "md")
-    if not md_content or md_content.startswith("FILE_NOT_FOUND") or md_content.startswith("ERROR"):
-        # Fallback if no MD found
-        return [{
-            "UDID": udid,
-            "Headline_Alt": alt_headline,
-            "Chunk_ID": f"{udid}_ERROR",
-            "Chunk_Token_Count": 0,
-            "Chunk_Text": "Markdown file not found.",
-            "Chunk_Embedding": None,
-            "Chunk_Context_Prepend": context_prepend
-        }]
-
-    # 4. Clean Markdown Metadata & Split
-    parts = re.split(r'(?=^### )', md_content, flags=re.MULTILINE)
-    
-    chunks = []
-    for i, part in enumerate(parts):
-        text = part.strip()
-        if not text: continue
-        
-        # Skip top metadata block if present
-        if i == 0:
-            lines = text.split('\n')
-            clean_lines = [l for l in lines if not l.startswith("PageURL:") and not l.startswith("## ") and not l.startswith("# ")]
-            text = "\n".join(clean_lines).strip()
-            if not text: continue
-
-        full_chunk_text = f"{context_prepend}\n{text}"
-        chunk_id = f"{udid}_{len(chunks)+1:02d}"
-        
-        rows.append({
-            "UDID": udid,
-            "Headline_Alt": alt_headline,
-            "Chunk_ID": chunk_id,
-            "Chunk_Token_Count": count_tokens(full_chunk_text),
-            "Chunk_Text": full_chunk_text,
-            "Chunk_Embedding": None,
-            "Chunk_Context_Prepend": context_prepend
-        })
-        chunks.append(chunk_id) # Track count
-        
-    return rows
+        for wp in extract_webpages_with_identifier(graph_nodes(doc)):
+            wp_id = str(wp.get("identifier")).strip()
+            url = norm_url(wp.get("url") or "")
+            if wp_id and url:
+                mapping[url] = wp_id
+                mapping[url + "/"] = wp_id  # tolerate trailing slash
+    return mapping
 
 
-LOGIC_FUNCTIONS = {
-    "derive_service_provider": logic_derive_service_provider,
-    "check_is_internal_link": logic_check_is_internal_link,
-    "lookup_internal_udid": logic_lookup_internal_udid,
-    "read_html_file": logic_read_html_file,
-    "count_html_tokens": logic_count_html_tokens,
-    "read_md_file": logic_read_md_file,
-    "count_md_tokens": logic_count_md_tokens,
-    "dump_json_string": logic_dump_json_string,
-    "count_json_tokens": logic_count_json_tokens
-}
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--json_dir", required=True, help="Folder containing json_output files")
+    ap.add_argument("--xlsx_path", required=True, help="Path to the XLSX to populate (in-place)")
+    args = ap.parse_args()
 
-ROW_GENERATORS = {
-    "generate_semantic_rows": logic_generate_semantic_rows
-}
+    json_dir = args.json_dir
+    xlsx_path = args.xlsx_path
 
-# --- Core Processing ---
+    if not os.path.exists(json_dir):
+        raise SystemExit(f"JSON directory not found: {json_dir}")
+    if not os.path.exists(xlsx_path):
+        raise SystemExit(f"XLSX file not found: {xlsx_path}")
 
-def get_value(datum, selector, logic_name=None, row_context=None, root_data=None):
-    """Extracts value using JSONPath or Custom Logic"""
-    val = None
-    
-    # 1. CONST Handling
-    if selector and str(selector).startswith("const:"):
-        return selector.replace("const:", "")
+    json_files = [
+        os.path.join(json_dir, f)
+        for f in os.listdir(json_dir)
+        if f.lower().endswith(".json")
+    ]
+    json_files.sort()
 
-    # 2. Path Extraction
-    if selector:
-        try:
-            if selector.startswith("parent:"):
-                clean_path = selector.replace("parent:", "")
-                target = root_data
-            else:
-                target = datum
-                clean_path = selector
+    url_to_webpage_id = build_url_to_webpage_id(json_files)
 
-            if clean_path not in JSONPATH_CACHE:
-                JSONPATH_CACHE[clean_path] = parse(clean_path)
-            
-            matches = JSONPATH_CACHE[clean_path].find(target)
-            if matches:
-                val = matches[0].value
-                if isinstance(val, list) and len(val) == 1:
-                    val = val[0]
-        except Exception as e:
-            pass
+    wb = load_workbook(xlsx_path)
 
-    # 3. Logic Application
-    if logic_name and logic_name in LOGIC_FUNCTIONS:
-        input_val = val if val is not None else datum
-        val = LOGIC_FUNCTIONS[logic_name](input_val, row_context, root_data)
+    # Required sheets
+    required = [
+        "ENT_website",
+        "ENT_webpage",
+        "ENT_stakeholder",
+        "ENT_external_reference",
+        "JUNCT_webpage_links",
+        "ENT_webpage_main_content",
+        "ENT_webpage_faq",
+        "ENT_disclaimer",
+        "JUNCT_disclaimer",
+        "ENT_term",
+        "JUNCT_webpage_relevant_terms",
+        "JUNCT_term_alias",
+    ]
+    missing = [s for s in required if s not in wb.sheetnames]
+    if missing:
+        raise SystemExit(f"Missing sheets in workbook: {missing}")
 
-    return val
+    ws_website = wb["ENT_website"]
+    ws_webpage = wb["ENT_webpage"]
+    ws_stakeholder = wb["ENT_stakeholder"]
+    ws_extref = wb["ENT_external_reference"]
+    ws_links = wb["JUNCT_webpage_links"]
+    ws_main = wb["ENT_webpage_main_content"]
+    ws_faq = wb["ENT_webpage_faq"]
+    ws_disclaimer = wb["ENT_disclaimer"]
+    ws_jdisclaimer = wb["JUNCT_disclaimer"]
+    ws_term = wb["ENT_term"]
+    ws_wprel = wb["JUNCT_webpage_relevant_terms"]
+    ws_alias = wb["JUNCT_term_alias"]
 
-def process_file(filepath, config):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        root_data = json.load(f)
-    
-    file_results = {}
-    
-    for table_name, settings in config['tables'].items():
-        rows = []
-        
-        # Check for Row Generator
-        if "row_generator" in settings:
-            generator_name = settings["row_generator"]
-            if generator_name in ROW_GENERATORS:
-                generated_rows = ROW_GENERATORS[generator_name](root_data)
-                rows.extend(generated_rows)
-            else:
-                print(f"❌ Unknown generator: {generator_name}")
-        
-        else:
-            # Standard Processing
-            root_path = settings['root_path']
-            
-            if root_path == "$":
-                items = [root_data]
-            else:
-                if root_path not in JSONPATH_CACHE:
-                    JSONPATH_CACHE[root_path] = parse(root_path)
-                items = [m.value for m in JSONPATH_CACHE[root_path].find(root_data)]
-                
-            for item in items:
-                row = {}
-                for col, rules in settings['columns'].items():
-                    path = rules if isinstance(rules, str) else rules.get('path')
-                    logic = rules.get('logic') if isinstance(rules, dict) else None
-                    
-                    row[col] = get_value(item, path, logic, item, root_data)
-                rows.append(row)
-            
-        file_results[table_name] = rows
-        
-    return file_results
+    # Clear target sheets (keep header)
+    for ws in [
+        ws_website, ws_webpage, ws_stakeholder, ws_extref, ws_links,
+        ws_main, ws_faq, ws_disclaimer, ws_jdisclaimer, ws_term, ws_wprel, ws_alias
+    ]:
+        clear_sheet(ws)
 
-# --- Main Execution ---
+    H_WEBSITE = headers(ws_website)
+    H_WEBPAGE = headers(ws_webpage)
+    H_STAKEHOLDER = headers(ws_stakeholder)
+    H_EXTREF = headers(ws_extref)
+    H_LINKS = headers(ws_links)
+    H_MAIN = headers(ws_main)
+    H_FAQ = headers(ws_faq)
+    H_DISCLAIMER = headers(ws_disclaimer)
+    H_JDISCLAIM = headers(ws_jdisclaimer)
+    H_TERM = headers(ws_term)
+    H_WPREL = headers(ws_wprel)
+    H_ALIAS = headers(ws_alias)
+
+    reg = Registries(
+        stakeholder_uri_to_id={},
+        website_uri_to_id={},
+        external_url_to_id={},
+        term_key_to_id={},
+        disclaimer_text_to_id={},
+    )
+
+    # Accumulators (dedupe by ID before writing)
+    stakeholders_out: Dict[str, Dict[str, Any]] = {}
+    websites_out: Dict[str, Dict[str, Any]] = {}
+    webpages_out: Dict[str, Dict[str, Any]] = {}
+    extrefs_out: Dict[str, Dict[str, Any]] = {}
+    disclaimers_out: Dict[str, Dict[str, Any]] = {}
+    terms_out: Dict[str, Dict[str, Any]] = {}
+    wp_term_rows: List[Dict[str, Any]] = []
+    link_rows: List[Dict[str, Any]] = []
+    main_rows: List[Dict[str, Any]] = []
+    faq_rows: List[Dict[str, Any]] = []
+    junct_disclaimer_rows: List[Dict[str, Any]] = []
+
+    # Helper to register stakeholder from a node
+    def upsert_stakeholder(node: dict) -> Optional[str]:
+        if not node or not isinstance(node, dict):
+            return None
+        uri = node.get("@id") or ""
+        sid = stakeholder_id_for(reg, uri)
+
+        stype = node.get("@type") or ""
+        name = node.get("name") or ""
+        alt = node.get("alternateName")
+        if isinstance(alt, list):
+            alt = ", ".join([str(a) for a in alt if a is not None])
+        same_as = node.get("sameAs")
+        if isinstance(same_as, list):
+            same_as = ", ".join([str(s) for s in same_as if s is not None])
+        desc = node.get("description") or ""
+        url = node.get("url") or ""
+
+        stakeholders_out[sid] = {
+            "stakeholder_id": sid,
+            "stakeholder_uri": uri,
+            "stakeholder_type": stype,
+            "stakeholder_name": name,
+            "stakeholder_alias": alt,
+            "stakeholder_description": desc,
+            "stakeholder_url": url,
+            "stakeholder_same_as": same_as,
+        }
+        return sid
+
+    # Process each JSON
+    for p in json_files:
+        doc = load_json(p)
+        if not doc:
+            continue
+        nodes = graph_nodes(doc)
+
+        # 1) Stakeholders (GovernmentOrganization / Organization)
+        for st in find_nodes_by_type(nodes, "GovernmentOrganization") + find_nodes_by_type(nodes, "Organization"):
+            upsert_stakeholder(st)
+
+        # 2) Website
+        site = extract_website(nodes)
+        if site:
+            site_uri = site.get("@id") or ""
+            site_id = website_id_for(reg, site_uri)
+
+            pub = site.get("publisher") or {}
+            pub_idref = pub.get("@id") if isinstance(pub, dict) else None
+            owner_sid = stakeholder_id_for(reg, pub_idref or "") if pub_idref else None
+
+            websites_out[site_id] = {
+                "website_id": site_id,
+                "website_uri": site_uri,
+                "website_title": site.get("name") or "",
+                "website_url": site.get("url") or "",
+                "website_owned_by": owner_sid,
+            }
+
+        # 3) WebPages with identifiers (including linked pages if present)
+        for wp in extract_webpages_with_identifier(nodes):
+            webpage_id = str(wp.get("identifier")).strip()
+            webpage_uri = wp.get("@id") or ""
+            webpage_url = wp.get("url") or ""
+            webpage_name = wp.get("name") or ""
+            webpage_desc = wp.get("description") or ""
+
+            # publisher -> stakeholder_id
+            publisher = wp.get("publisher") or {}
+            pub_idref = publisher.get("@id") if isinstance(publisher, dict) else None
+            publisher_sid = stakeholder_id_for(reg, pub_idref or "") if pub_idref else None
+
+            # isPartOf -> website_id (by WebSite @id if present)
+            is_part_of = wp.get("isPartOf") or {}
+            ipo_idref = is_part_of.get("@id") if isinstance(is_part_of, dict) else None
+            website_id = website_id_for(reg, ipo_idref or "") if ipo_idref else None
+
+            # mainEntity -> type and provider
+            main_entity = wp.get("mainEntity") or {}
+            me_idref = main_entity.get("@id") if isinstance(main_entity, dict) else None
+
+            main_entity_type = ""
+            provider_sid: Optional[str] = None
+
+            if me_idref:
+                me_node = find_node_by_id(nodes, me_idref)
+                if me_node:
+                    main_entity_type = me_node.get("@type") or ""
+                    # Provider logic: Service.provider OR GovernmentService.serviceOperator OR (Article => None)
+                    if main_entity_type == "Service":
+                        prov = me_node.get("provider") or {}
+                        prov_idref = prov.get("@id") if isinstance(prov, dict) else None
+                        provider_sid = stakeholder_id_for(reg, prov_idref or "") if prov_idref else None
+                    elif main_entity_type == "GovernmentService":
+                        sop = me_node.get("serviceOperator") or {}
+                        sop_idref = sop.get("@id") if isinstance(sop, dict) else None
+                        provider_sid = stakeholder_id_for(reg, sop_idref or "") if sop_idref else None
+                    else:
+                        provider_sid = None
+
+            webpages_out[webpage_id] = {
+                "webpage_id": webpage_id,
+                "webpage_uri": webpage_uri,
+                "webpage_url": webpage_url,
+                "webpage_name": webpage_name,
+                "webpage_altname": wp.get("alternateName") or "",
+                "webpage_description": webpage_desc,
+                "webpage_publisher": publisher_sid,
+                "webpage_date_published": wp.get("datePublished") or "",
+                "webpage_date_modified": wp.get("dateModified") or "",
+                "webpage_main_entity_type": main_entity_type,
+                "webpage_provider": provider_sid,
+                "webpage_is_part_of": website_id,
+            }
+
+            # 4) Terms from "about" (Thing)
+            about_list = safe_list(wp.get("about"))
+            for about in about_list:
+                if not isinstance(about, dict):
+                    continue
+                term_name = about.get("name") or ""
+                wd_url = about.get("sameAs") or ""
+                if not term_name:
+                    continue
+                tid = term_id_for(reg, term_name, wd_url)
+
+                terms_out[tid] = {
+                    "term_id": tid,
+                    "term_to_define": term_name,
+                    "wikidata_url": wd_url,
+                    "internal_definition": "",
+                }
+
+                wp_term_rows.append({
+                    "webpage_id": webpage_id,
+                    "webpage_is_relevant_to": tid,
+                    "term_relevance_weight": 1.0,
+                })
+
+            # 5) Disclaimers: usageInfo.text + any WebPageElement whose headline contains "disclaimer"
+            usage = wp.get("usageInfo") or {}
+            if isinstance(usage, dict):
+                usage_text = usage.get("text") or ""
+                if usage_text:
+                    did = disclaimer_id_for(reg, usage_text)
+                    disclaimers_out[did] = {"disclaimer_id": did, "disclaimer_text": usage_text}
+                    junct_disclaimer_rows.append({"webpage_id": webpage_id, "disclaimer_id": did})
+
+            # Collect page-linked nodes scoped to this webpage
+            wp_id_uri = wp.get("@id")
+
+            # 6) Main content sections (WebPageElement where isPartOf points to this webpage)
+            #    Ordered by the WebPage.hasPart list if available, otherwise natural order.
+            has_part = safe_list(wp.get("hasPart"))
+            has_part_ids = [hp.get("@id") for hp in has_part if isinstance(hp, dict) and hp.get("@id")]
+            element_nodes = [
+                n for n in nodes
+                if n.get("@type") == "WebPageElement"
+                and isinstance(n.get("isPartOf"), dict)
+                and n["isPartOf"].get("@id") == wp_id_uri
+            ]
+
+            order_map = {hid: i + 1 for i, hid in enumerate(has_part_ids)}
+            element_nodes.sort(key=lambda n: order_map.get(n.get("@id"), 10**9))
+
+            display_order = 1
+            for el in element_nodes:
+                text = el.get("text") or ""
+                el_id = el.get("@id") or ""
+                if not text:
+                    continue
+                main_rows.append({
+                    "webpage_id": webpage_id,
+                    "main_content_text": text,
+                    "main_content_text_id": el_id,
+                    "display_order": order_map.get(el_id, display_order),
+                })
+                display_order += 1
+
+                headline = (el.get("headline") or "").lower()
+                if "disclaimer" in headline and text:
+                    did = disclaimer_id_for(reg, text)
+                    disclaimers_out[did] = {"disclaimer_id": did, "disclaimer_text": text}
+                    junct_disclaimer_rows.append({"webpage_id": webpage_id, "disclaimer_id": did})
+
+            # 7) FAQ rows (FAQPage where isPartOf points to this webpage)
+            faq_pages = [
+                n for n in nodes
+                if n.get("@type") == "FAQPage"
+                and isinstance(n.get("isPartOf"), dict)
+                and n["isPartOf"].get("@id") == wp_id_uri
+            ]
+            for faq_page in faq_pages:
+                faq_id = faq_page.get("@id") or ""
+                q_list = safe_list(faq_page.get("mainEntity"))
+                q_order = 1
+                for q in q_list:
+                    if not isinstance(q, dict):
+                        continue
+                    if q.get("@type") != "Question":
+                        continue
+                    qid = q.get("@id") or ""
+                    qtext = q.get("name") or ""
+                    ans = q.get("acceptedAnswer") or {}
+                    aid = ans.get("@id") if isinstance(ans, dict) else ""
+                    atext = ans.get("text") if isinstance(ans, dict) else ""
+                    if not qtext and not atext:
+                        continue
+                    faq_rows.append({
+                        "webpage_id": webpage_id,
+                        "faq_id": faq_id,
+                        "faq_display_order": q_order,
+                        "question_id": qid,
+                        "question_text": qtext,
+                        "answer_id": aid,
+                        "answer_text": atext,
+                    })
+                    q_order += 1
+
+            # 8) Webpage links: relatedLink (strings) + mentions (@id)
+            outbound_urls: List[str] = []
+            outbound_urls.extend([u for u in safe_list(wp.get("relatedLink")) if isinstance(u, str)])
+            for m in safe_list(wp.get("mentions")):
+                if isinstance(m, dict) and m.get("@id"):
+                    outbound_urls.append(m.get("@id"))
+
+            # De-dupe
+            seen = set()
+            for out in outbound_urls:
+                outn = norm_url(out)
+                if not outn or outn in seen:
+                    continue
+                seen.add(outn)
+
+                if is_internal_ipfr_url(outn):
+                    dest_webpage_id = url_to_webpage_id.get(outn) or url_to_webpage_id.get(outn + "/")
+                    link_rows.append({
+                        "webpage_id": webpage_id,
+                        "destination_webpage_id": dest_webpage_id or "",
+                        "destination_external_ref_id": "",
+                    })
+                else:
+                    ext_id = external_ref_id_for(reg, outn)
+                    # Title: best-effort from hostname
+                    host = urlparse(outn).netloc
+                    title = host or outn
+                    extrefs_out[ext_id] = {
+                        "external_ref_id": ext_id,
+                        "destination_link_title": title,
+                        "destination_link_url": outn,
+                    }
+                    link_rows.append({
+                        "webpage_id": webpage_id,
+                        "destination_webpage_id": "",
+                        "destination_external_ref_id": ext_id,
+                    })
+
+    # --- Write outputs to sheets ---
+
+    # Stakeholders
+    for sid in sorted(stakeholders_out.keys()):
+        append_row(ws_stakeholder, H_STAKEHOLDER, stakeholders_out[sid])
+
+    # Websites
+    for wid in sorted(websites_out.keys()):
+        append_row(ws_website, H_WEBSITE, websites_out[wid])
+
+    # Webpages (stable order by webpage_id)
+    for wpid in sorted(webpages_out.keys()):
+        append_row(ws_webpage, H_WEBPAGE, webpages_out[wpid])
+
+    # External references
+    for eid in sorted(extrefs_out.keys()):
+        append_row(ws_extref, H_EXTREF, extrefs_out[eid])
+
+    # Links (junction)
+    for row in link_rows:
+        append_row(ws_links, H_LINKS, row)
+
+    # Main content
+    for row in main_rows:
+        append_row(ws_main, H_MAIN, row)
+
+    # FAQ
+    for row in faq_rows:
+        append_row(ws_faq, H_FAQ, row)
+
+    # Disclaimers
+    for did in sorted(disclaimers_out.keys()):
+        append_row(ws_disclaimer, H_DISCLAIMER, disclaimers_out[did])
+
+    # Junction disclaimer (de-dupe pairs)
+    seen_pairs = set()
+    for row in junct_disclaimer_rows:
+        key = (row.get("webpage_id"), row.get("disclaimer_id"))
+        if key in seen_pairs:
+            continue
+        seen_pairs.add(key)
+        append_row(ws_jdisclaimer, H_JDISCLAIM, row)
+
+    # Terms
+    for tid in sorted(terms_out.keys()):
+        append_row(ws_term, H_TERM, terms_out[tid])
+
+    # Webpage->term junction (dedupe)
+    seen_wpt = set()
+    for row in wp_term_rows:
+        key = (row.get("webpage_id"), row.get("webpage_is_relevant_to"))
+        if key in seen_wpt:
+            continue
+        seen_wpt.add(key)
+        append_row(ws_wprel, H_WPREL, row)
+
+    # Term aliases (optional) – left empty for now.
+    # If you later add alias extraction sources, append rows to ws_alias here.
+
+    wb.save(xlsx_path)
+
+    # Basic stats output for logs
+    print("✅ XLSX populated successfully.")
+    print(f"   Stakeholders: {len(stakeholders_out)}")
+    print(f"   Websites: {len(websites_out)}")
+    print(f"   Webpages: {len(webpages_out)}")
+    print(f"   External refs: {len(extrefs_out)}")
+    print(f"   Webpage links (rows): {len(link_rows)}")
+    print(f"   Main content rows: {len(main_rows)}")
+    print(f"   FAQ rows: {len(faq_rows)}")
+    print(f"   Disclaimers: {len(disclaimers_out)}")
+    print(f"   Terms: {len(terms_out)}")
+
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--config", required=True)
-    parser.add_argument("--source", required=True)
-    parser.add_argument("--output", required=True)
-    parser.add_argument("--md-source", default="")
-    parser.add_argument("--html-source", default="")
-    args = parser.parse_args()
-
-    setup_tokenizer()
-    pre_scan_files(args.source, args.md_source, args.html_source)
-    
-    with open(args.config, 'r') as f:
-        config = yaml.safe_load(f)
-    
-    if not os.path.exists(args.output):
-        os.makedirs(args.output)
-        
-    all_data = {t: [] for t in config['tables']}
-    json_files = glob.glob(os.path.join(args.source, "*.json"))
-    
-    print(f"🚀 Processing {len(json_files)} files...")
-    
-    for jf in json_files:
-        try:
-            res = process_file(jf, config)
-            for t, rows in res.items():
-                all_data[t].extend(rows)
-        except Exception as e:
-            print(f"❌ Error in {jf}: {e}")
-            import traceback
-            traceback.print_exc()
-            
-    print("💾 Saving data...")
-    for t, data in all_data.items():
-        if data:
-            df = pd.DataFrame(data)
-            
-            # Ensure columns and order
-            if "columns" in config['tables'][t]:
-                cols = list(config['tables'][t]['columns'].keys())
-                for c in cols:
-                    if c not in df.columns: df[c] = None
-                df = df[cols]
-            
-            # 1. Save as Excel (Added per request)
-            xlsx_path = os.path.join(args.output, config['tables'][t]['filename'].replace('.csv', '.xlsx'))
-            print(f"   - Saving {xlsx_path}...")
-            # Requires 'openpyxl' installed
-            try:
-                df.to_excel(xlsx_path, index=False)
-            except Exception as e:
-                 print(f"   ⚠️ Failed to save Excel (check if openpyxl is installed): {e}")
-
-            # 2. Save as CSV
-            csv_path = os.path.join(args.output, config['tables'][t]['filename'])
-            print(f"   - Saving {csv_path}...")
-            df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+    main()
