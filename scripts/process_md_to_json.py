@@ -54,7 +54,7 @@ IP_AUSTRALIA_ENTITY: dict = {
         "name": "Australian Government",
         "sameAs":"https://www.wikidata.org/wiki/Q2991162"
     },
-    "sameAs": [ "https://www.wikidata.org/wiki/Q5973650",
+    "sameAs": [ "https://www.wikidata.org/wiki/Q5973154",
     "https://en.wikipedia.org/wiki/IP_Australia"
     ],
     "knowsAbout": [
