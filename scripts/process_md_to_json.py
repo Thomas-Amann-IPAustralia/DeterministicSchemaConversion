@@ -945,21 +945,135 @@ def load_metatable(csv_path: str | Path) -> dict[str, MetaRecord]:
     print(f"[INFO] Loaded {len(records)} records from metatable.")
     return records
 
+def _normalise_key(value: str) -> str:
+    return (value or "").strip().lower().rstrip("/")
+
+
+def _extract_udid_from_filename(md_path: Path) -> str:
+    """
+    Extract a leading UDID from filenames like:
+      B1013 - Respond to an unjustified threat.md
+      101-1 - How to avoid infringing others' intellectual property.md
+    """
+    stem = md_path.stem.strip()
+    match = re.match(r"^([A-Za-z]?\d+(?:-\d+)?)\b", stem)
+    return match.group(1).strip() if match else ""
+
+
+def _find_meta_by_udid_and_url(
+    metatable: dict[str, MetaRecord], udid: str, canonical_url: str
+) -> MetaRecord | None:
+    udid_key = _normalise_key(udid)
+    url_key = _normalise_key(canonical_url)
+    if not udid_key or not url_key:
+        return None
+
+    for rec in metatable.values():
+        if _normalise_key(rec.udid) == udid_key and _normalise_key(rec.canonical_url) == url_key:
+            return rec
+    return None
+
+
+def _find_meta_by_udid(
+    metatable: dict[str, MetaRecord], udid: str
+) -> MetaRecord | None:
+    udid_key = _normalise_key(udid)
+    if not udid_key:
+        return None
+
+    matches = [
+        rec for rec in metatable.values()
+        if _normalise_key(rec.udid) == udid_key
+    ]
+    if len(matches) == 1:
+        return matches[0]
+    return None
+
+
+def _find_meta_by_title_and_overtitle(
+    metatable: dict[str, MetaRecord], title: str, overtitle: str
+) -> MetaRecord | None:
+    title_key = _normalise_key(title)
+    overtitle_key = _normalise_key(overtitle)
+    if not title_key or not overtitle_key:
+        return None
+
+    matches = [
+        rec for rec in metatable.values()
+        if _normalise_key(rec.main_title) == title_key
+        and _normalise_key(rec.overtitle) == overtitle_key
+    ]
+    if len(matches) == 1:
+        return matches[0]
+    return None
+
 
 def match_meta(
-    parsed: ParsedMarkdown, metatable: dict[str, MetaRecord]
+    parsed: ParsedMarkdown,
+    metatable: dict[str, MetaRecord],
+    md_path: Path,
 ) -> MetaRecord | None:
-    """Match a parsed markdown document to its CSV metadata row."""
-    # Primary: exact URL match.
-    url_key = parsed.page_url.lower().rstrip("/")
-    if url_key in metatable:
-        return metatable[url_key]
+    """
+    Match a parsed markdown document to its CSV metadata row.
 
-    # Fallback: fuzzy title match.
-    for rec in metatable.values():
-        if rec.main_title.lower().strip() == parsed.title.lower().strip():
+    Match order:
+      1. Exact pair match on UDID and canonical URL
+      2. Exact canonical URL match
+      3. Exact UDID match from filename, if filename starts with the UDID
+      4. Exact pair match on title and overtitle
+      5. Otherwise fail, log, and return None
+    """
+    page_url_key = _normalise_key(parsed.page_url)
+    filename_udid = _extract_udid_from_filename(md_path)
+
+    # Try to derive an overtitle from the first section heading when present.
+    parsed_overtitle = ""
+    if parsed.sections:
+        parsed_overtitle = parsed.sections[0].heading.strip()
+
+    # 1. Exact pair match on UDID and canonical URL
+    if filename_udid and page_url_key:
+        rec = _find_meta_by_udid_and_url(metatable, filename_udid, page_url_key)
+        if rec:
+            print(
+                f"  [MATCH] {md_path.name} → UDID + canonical URL "
+                f"({filename_udid}, {page_url_key})"
+            )
             return rec
 
+    # 2. Exact canonical URL match
+    if page_url_key and page_url_key in metatable:
+        rec = metatable[page_url_key]
+        print(f"  [MATCH] {md_path.name} → canonical URL ({page_url_key})")
+        return rec
+
+    # 3. Exact UDID match from filename
+    if filename_udid:
+        rec = _find_meta_by_udid(metatable, filename_udid)
+        if rec:
+            print(f"  [MATCH] {md_path.name} → filename UDID ({filename_udid})")
+            return rec
+
+    # 4. Exact pair match on title and overtitle
+    if parsed.title and parsed_overtitle:
+        rec = _find_meta_by_title_and_overtitle(
+            metatable,
+            parsed.title,
+            parsed_overtitle,
+        )
+        if rec:
+            print(
+                f"  [MATCH] {md_path.name} → title + overtitle "
+                f"({parsed.title!r}, {parsed_overtitle!r})"
+            )
+            return rec
+
+    # 5. Fail safely
+    print(
+        f"  [NO MATCH] {md_path.name} → could not deterministically match "
+        f"(page_url={parsed.page_url!r}, filename_udid={filename_udid!r}, "
+        f"title={parsed.title!r}, parsed_overtitle={parsed_overtitle!r})"
+    )
     return None
 
 
@@ -1849,24 +1963,23 @@ def process_single_file(
     """Process one markdown file and write the JSON-LD output."""
     md_text = md_path.read_text(encoding="utf-8")
     parsed = parse_markdown(md_text)
-    meta = match_meta(parsed, metatable)
+    meta = match_meta(parsed, metatable, md_path)
 
-    if meta:
-        print(f"  [OK]  {md_path.name} → matched UDID: {meta.udid}")
-    else:
-        print(f"  [WARN] {md_path.name} → no CSV match found; using defaults.")
+    if not meta:
+        print(f"  [SKIP] {md_path.name} → no deterministic CSV match; JSON not generated.")
+        return None
+
+    print(f"  [OK]  {md_path.name} → matched UDID: {meta.udid}")
 
     jsonld = build_jsonld(parsed, meta, metatable)
     jsonld = _validate_and_repair_jsonld(jsonld)
 
-    # Determine output filename: prefer UDID-based naming.
-    if meta and meta.udid:
-        out_name = f"{meta.udid}_{_slugify(meta.main_title)}.json"
-    else:
-        out_name = f"{md_path.stem}.json"
-
+    out_name = f"{meta.udid}_{_slugify(meta.main_title)}.json"
     out_path = output_dir / out_name
-    out_path.write_text(json.dumps(jsonld, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_path.write_text(
+        json.dumps(jsonld, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
     return out_path
 
 
