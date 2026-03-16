@@ -12,7 +12,7 @@
         "sameAs": "https://www.wikidata.org/wiki/Q2991162"
       },
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q5973650",
+        "https://www.wikidata.org/wiki/Q5973154",
         "https://en.wikipedia.org/wiki/IP_Australia"
       ],
       "knowsAbout": [
@@ -43,8 +43,8 @@
     },
     {
       "@type": "WebPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#webpage",
-      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas",
       "name": "Considerations before enforcing your IP overseas - IP First Response",
       "description": "Find the right assistance to enforce your IP right in the case of infringement happening outside of Australia.",
       "identifier": "D1036",
@@ -86,7 +86,7 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "mainEntity": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#article"
       },
       "datePublished": "2025-02-28",
       "dateModified": "2025-12-02",
@@ -104,10 +104,10 @@
       "creditText": "Source: IP First Response initiative led by IP Australia",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-1-disclaimer"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#section-1-disclaimer"
         }
       ],
       "mentions": [
@@ -137,10 +137,10 @@
     },
     {
       "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#article",
       "description": "Find the right assistance to enforce your IP right in the case of infringement happening outside of Australia.",
       "mainEntityOfPage": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#webpage"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#webpage"
       },
       "inLanguage": "en-AU",
       "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -156,58 +156,58 @@
       "dateModified": "2025-12-02",
       "hasPart": [
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-1-disclaimer"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#section-1-disclaimer"
         }
       ]
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#section-1-disclaimer",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#section-1-disclaimer",
       "headline": "Disclaimer",
       "text": "Without careful attention to the local operating environment, you may risk undermining your IP right.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#article"
       }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq",
       "inLanguage": "en-AU",
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#webpage"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#webpage"
       },
       "mainEntity": [
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq-q1",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq-q1",
           "name": "What are the benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq-q1-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq-q1-a",
             "text": "In most cases, engaging a legal professional is likely to reduce the risks you may encounter in enforcing your IP rights in another country.\n Legal professionals can provide a wide range of legal services and develop a holistic IP enforcement strategy suited to your IP and business goals.\n They have the knowledge, training and experience in their country to guide you through a dispute or a conflict which can be highly stressful and draining.\n They have an in-depth knowledge of relevant international legislation and industry practices, with the ability to leverage both appropriately and proportionately.\n They are bound by codes of conduct, professional standards and ethical obligations to act in your best interests, stay away from conflicts of interests and unethical conduct.\n They can recognise common issues which come up and refer you to other professionals and services you may not be aware of."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq-q2",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq-q2",
           "name": "What are the risks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq-q2-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq-q2-a",
             "text": "It can be complicated to enforce your IP overseas, which can cause pressure on you and your business.\n Outcomes and costs can be less predictable in some jurisdictions than they would be in Australia.\n Some legal professionals have different specialties and may be more effective in their particular field of expertise. For instance, one lawyer may be highly experienced in dealing with multi-national trade marks, but not so experienced with patent licencing deals, or vice versa.\n Once you engage a legal professional for their service, they are obliged to follow your instructions. While they can advise you on certain courses of action, you have the ultimate decision. Using a legal professional can lead to a false sense of security if you do not understand and pay heed to their advice."
           }
         },
         {
           "@type": "Question",
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq-q3",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq-q3",
           "name": "What you need to proceed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforce-your-ip-overseas#faq-q3-a",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/considerations-enforcing-your-ip-overseas#faq-q3-a",
             "text": "Check international IP registers for someone else's rights \n\nA critical step in assessing potential infringement is to ascertain if the suspected party holds any valid registered intellectual property rights that could provide them with legal rights in the country in which infringement is suspected. \n\nYou can perform an initial check yourself - read about searching international IP registers here - but you may need to hire a professional IP search service to do a complete search. The IP professionals listed below will often conduct these searches as part of their services as it will be a critical step to understand your position.  \n\nContact a local representative or legal advisor in the relevant country \nSeeking support from a local legal practitioner or IP professional may be necessary for some actions. A local representative can advise you on the options that are appropriate for you in the relevant countries, and will have the legal authority to represent you in that country.  \n\n Australian IP professionals with relevant international experience may be able to refer you to an overseas representative.\n Australian law firms often have offices operating internationally which can coordinate actions for you across each country.\n- Government resources or reputable industry associations in the relevant country may provide a list of IP professionals you can contact.\n\nWhile it may be useful to seek the advice of an IP legal professional(who can start legal actions such as court in the jurisdiction), you might also wish to consult an IP strategic or commercialisation professionalabout your general IP strategy including ways to protect and commercialise your IP overseas.  \n\nPart of enforcing your rights in other countries, even in response to current suspected infringement, may involve registering your IP in another country. This consideration can be discussed with an IP professional familiar with the IP system in that country. \n\nSee what services the local IP office provides \nSome international IP offices provide information on enforcement in their jurisdictions and may have services to help you with dispute resolution or enforcement. You can find out the relevant IP office and what services they provide using the Directory of Intellectual Property Offices."
           }
         }

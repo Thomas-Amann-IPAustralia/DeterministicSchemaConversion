@@ -12,7 +12,7 @@
         "sameAs": "https://www.wikidata.org/wiki/Q2991162"
       },
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q5973650",
+        "https://www.wikidata.org/wiki/Q5973154",
         "https://en.wikipedia.org/wiki/IP_Australia"
       ],
       "knowsAbout": [
@@ -133,10 +133,7 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustified-threat#webpage"
       },
       "name": "Respond to an unjustified threat",
-      "serviceType": "Non-Government Third-Party Authority",
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      }
+      "serviceType": "Non-Government Third-Party Authority"
     },
     {
       "@type": "WebPageElement",

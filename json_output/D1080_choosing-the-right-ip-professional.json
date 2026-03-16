@@ -12,7 +12,7 @@
         "sameAs": "https://www.wikidata.org/wiki/Q2991162"
       },
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q5973650",
+        "https://www.wikidata.org/wiki/Q5973154",
         "https://en.wikipedia.org/wiki/IP_Australia"
       ],
       "knowsAbout": [
@@ -231,10 +231,7 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage"
       },
       "name": "Choosing the right IP professional",
-      "serviceType": "Commercial Third Party Service",
-      "provider": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      }
+      "serviceType": "Commercial Third Party Service"
     },
     {
       "@type": "WebPageElement",
