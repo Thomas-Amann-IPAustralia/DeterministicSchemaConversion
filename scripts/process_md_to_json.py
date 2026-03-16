@@ -1058,7 +1058,7 @@ def resolve_legislation(ip_right_field: str) -> list[tuple[str, str, str]]:
     entries. The field may contain multiple quoted keywords, e.g.:
         "Trade Mark", "Copyright"
     or a catch-all:
-        "Any dispute related to intellectual property"
+        "Any IP right"
     """
     normalised = ip_right_field.lower().replace('"', "").replace("'", "")
 
@@ -1109,7 +1109,7 @@ def resolve_about_topics(ip_right_field: str) -> list[dict]:
 
     Input examples:
         '"Trade Mark", "Copyright"'
-        '"Any dispute related to intellectual property"'
+        '"Any IP right"'
         '"Patent"'
     """
     if not ip_right_field or not ip_right_field.strip():
@@ -1277,28 +1277,29 @@ def build_jsonld(
     # IP Australia is always publisher and copyrightHolder (hardcoded).
     # The CSV "Provider" column drives only Service.provider / GovernmentService.serviceOperator.
     provider_entity: dict | None = None
-    provider_id: str = IP_AUSTRALIA_ID  # default
+    provider_id: str | None = None
 
-    if provider_entry and provider_entry.name.lower() not in ("self-help", "self help", ""):
-        # Check whether the provider IS IP Australia (avoid duplicate entity).
-        is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
-        if not is_ip_australia:
-            provider_id = (
-                f"{provider_entry.url.rstrip('/')}#organization"
-                if provider_entry.url
-                else f"{base_url}#provider-organization"
-            )
-            provider_entity = {
-                "@type": provider_org_type,
-                "@id": provider_id,
-                "name": provider_entry.name,
-            }
-            if provider_entry.url:
-                provider_entity["url"] = provider_entry.url
-            if provider_entry.same_as:
-                provider_entity["sameAs"] = provider_entry.same_as
-            if provider_entry.alternate_name:
-                provider_entity["alternateName"] = provider_entry.alternate_name
+if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
+    is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
+    if is_ip_australia:
+        provider_id = IP_AUSTRALIA_ID
+    else:
+        provider_id = (
+            f"{provider_entry.url.rstrip('/')}#organization"
+            if provider_entry.url
+            else f"{base_url}#provider-organization"
+        )
+        provider_entity = {
+            "@type": provider_org_type,
+            "@id": provider_id,
+            "name": provider_entry.name,
+        }
+        if provider_entry.url:
+            provider_entity["url"] = provider_entry.url
+        if provider_entry.same_as:
+            provider_entity["sameAs"] = provider_entry.same_as
+        if provider_entry.alternate_name:
+            provider_entity["alternateName"] = provider_entry.alternate_name
 
     # ── Classify sections and build sub-entities ──
     faq_questions: list[ParsedSection] = []
@@ -1667,16 +1668,15 @@ def build_jsonld(
     # GovernmentService-specific fields.
     if archetype_type == "GovernmentService":
         main_entity["serviceType"] = meta.archetype if meta else "Government Service"
-        # serviceOperator is derived from the CSV Provider column.
-        main_entity["serviceOperator"] = {"@id": provider_id}
-        # provider is also the dynamic entity from the CSV.
-        main_entity["provider"] = {"@id": provider_id}
+        if provider_id:
+            main_entity["serviceOperator"] = {"@id": provider_id}
+            main_entity["provider"] = {"@id": provider_id}
 
     # Service-specific fields (non-government / commercial).
     if archetype_type == "Service":
         main_entity["serviceType"] = meta.archetype if meta else "Service"
-        # provider is the dynamic entity from the CSV.
-        main_entity["provider"] = {"@id": provider_id}
+        if provider_id:
+            main_entity["provider"] = {"@id": provider_id}
 
     # HowTo reference (if applicable).
     # hasPart is only valid on CreativeWork subtypes (e.g. Article), not on
