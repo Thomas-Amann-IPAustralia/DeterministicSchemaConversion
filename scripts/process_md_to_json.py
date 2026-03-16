@@ -1393,10 +1393,10 @@ def build_jsonld(
     provider_entity: dict | None = None
     provider_id: str | None = None
 
-if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
-    is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
-    if is_ip_australia:
-        provider_id = IP_AUSTRALIA_ID
+    if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
+        is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
+        if is_ip_australia:
+            provider_id = IP_AUSTRALIA_ID
     else:
         provider_id = (
             f"{provider_entry.url.rstrip('/')}#organization"
