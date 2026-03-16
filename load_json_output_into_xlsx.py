@@ -17,6 +17,8 @@ Sheets populated (if present in workbook):
 - JUNCT_webpage_links
 - ENT_term
 - JUNCT_webpage_relevant_terms
+- JUNCT_term_alias
+- JUNCT_stakeholder_knowledge
 - ENT_disclaimer
 - JUNCT_disclaimer
 
@@ -33,11 +35,15 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import logging
 import os
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+log = logging.getLogger(__name__)
 
 import openpyxl
 
@@ -85,6 +91,17 @@ def slug_title_from_url(url: str) -> str:
         return slug[:1].upper() + slug[1:] if slug else url
     except Exception:
         return url
+
+STAKEHOLDER_TYPE_MAP: Dict[str, str] = {
+    "GovernmentOrganization": "Government",
+    "Organization": "Organization",
+}
+
+def normalize_stakeholder_type(types: List[str]) -> str:
+    for t in types:
+        if t in STAKEHOLDER_TYPE_MAP:
+            return STAKEHOLDER_TYPE_MAP[t]
+    return ", ".join(types)
 
 def ensure_sheet(wb: openpyxl.Workbook, name: str) -> Optional[openpyxl.worksheet.worksheet.Worksheet]:
     return wb[name] if name in wb.sheetnames else None
@@ -140,6 +157,10 @@ class Extracted:
     disclaimers: List[Dict[str, Any]]
     # JUNCT_disclaimer
     webpage_disclaimers: List[Dict[str, Any]]
+    # JUNCT_stakeholder_knowledge
+    stakeholder_knowledge: List[Dict[str, Any]] = field(default_factory=list)
+    # JUNCT_term_alias
+    term_aliases: List[Dict[str, Any]] = field(default_factory=list)
 
 
 def index_graph(graph: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
@@ -214,6 +235,7 @@ def extract_from_file(path: Path) -> Extracted:
         )
 
     # Stakeholders: Organization-ish nodes
+    stakeholder_knowledge: List[Dict[str, Any]] = []
     org_types = {"Organization", "GovernmentOrganization"}
     for node in graph:
         if not org_types.intersection(set(node_types(node))):
@@ -238,7 +260,7 @@ def extract_from_file(path: Path) -> Extracted:
             {
                 "stakeholder_id": stakeholder_id,
                 "stakeholder_uri": uri,
-                "stakeholder_type": ", ".join(node_types(node)),
+                "stakeholder_type": normalize_stakeholder_type(node_types(node)),
                 "stakeholder_name": name,
                 "stakeholder_alias": first_str(node.get("alternateName")),
                 "stakeholder_description": description,
@@ -246,6 +268,20 @@ def extract_from_file(path: Path) -> Extracted:
                 "stakeholder_same_as": same_as_str,
             }
         )
+
+        # JUNCT_stakeholder_knowledge from knowsAbout
+        for topic in as_list(node.get("knowsAbout")):
+            if not isinstance(topic, str) or not topic.strip():
+                continue
+            topic = topic.strip()
+            topic_term_id = stable_id("term_", topic)
+            stakeholder_knowledge.append(
+                {"stakeholder_id": stakeholder_id, "stakeholder_knows_about": topic_term_id}
+            )
+            # Ensure the term entity exists
+            terms.append(
+                {"term_id": topic_term_id, "term_to_define": topic, "wikidata_url": "", "internal_definition": ""}
+            )
 
     # WebPage (this is the main entry per file)
     wp_node = find_first(graph, "WebPage")
@@ -265,9 +301,17 @@ def extract_from_file(path: Path) -> Extracted:
             webpage_disclaimers=webpage_disclaimers,
         )
 
-    webpage_id = first_str(wp_node.get("identifier"))
     webpage_uri = first_str(wp_node.get("@id"))
     webpage_url = first_str(wp_node.get("url"))
+    webpage_id = first_str(wp_node.get("identifier")) or stable_id("wp_", webpage_uri or webpage_url)
+    if not webpage_id:
+        log.warning("skipping %s -- no webpage_id could be derived", path.name)
+        return Extracted(
+            websites=websites, stakeholders=stakeholders, webpages=webpages,
+            main_content=main_content, faqs=faqs, external_refs=external_refs,
+            webpage_links=webpage_links, terms=terms, webpage_terms=webpage_terms,
+            disclaimers=disclaimers, webpage_disclaimers=webpage_disclaimers,
+        )
     webpage_name = first_str(wp_node.get("name"))
     webpage_altname = first_str(wp_node.get("alternateName"))
     webpage_description = first_str(wp_node.get("description"))
@@ -344,6 +388,8 @@ def extract_from_file(path: Path) -> Extracted:
         same_as = first_str(thing.get("sameAs"))
         if not tname:
             continue
+        if not same_as:
+            log.info("term %r in %s has no wikidata_url (sameAs)", tname, path.name)
         term_id = stable_id("term_", tname, same_as)
         terms.append(
             {
@@ -357,7 +403,7 @@ def extract_from_file(path: Path) -> Extracted:
             {
                 "webpage_id": webpage_id,
                 "webpage_is_relevant_to": term_id,
-                "term_relevance_weight": 1.0,
+                "term_relevance_weight": "primary",
             }
         )
 
@@ -461,11 +507,39 @@ def extract_from_file(path: Path) -> Extracted:
             )
             display_order += 1
 
+    # Term aliases from keywords (JUNCT_term_alias)
+    term_aliases: List[Dict[str, Any]] = []
+    # Build a lowercase lookup of about-terms for matching keywords
+    about_terms_lower: Dict[str, str] = {}
+    for thing in about_list:
+        if isinstance(thing, dict):
+            tname = first_str(thing.get("name"))
+            same_as = first_str(thing.get("sameAs"))
+            if tname:
+                about_terms_lower[tname.lower()] = stable_id("term_", tname, same_as)
+    keywords = as_list(wp_node.get("keywords"))
+    for kw in keywords:
+        if not isinstance(kw, str) or not kw.strip():
+            continue
+        kw = kw.strip()
+        # Match keyword to an existing about-term (case-insensitive substring)
+        matched_term_id = None
+        kw_lower = kw.lower()
+        for tname_lower, tid in about_terms_lower.items():
+            if tname_lower in kw_lower or kw_lower in tname_lower:
+                matched_term_id = tid
+                break
+        if matched_term_id and kw_lower not in about_terms_lower:
+            term_aliases.append({"term_id": matched_term_id, "term_alias": kw})
+
     # Links:
     # - relatedLink (list of URLs)
-    # - mentions (often list of {"@id": "..."} or nodes)
+    # - mentions from WebPage (often list of {"@id": "..."} or nodes)
+    # - mentions from Article/main entity (captures legislation references)
     related_links = as_list(wp_node.get("relatedLink"))
     mentions = as_list(wp_node.get("mentions"))
+    if main_entity_node:
+        mentions.extend(as_list(main_entity_node.get("mentions")))
 
     all_link_urls: List[str] = []
     for v in related_links:
@@ -477,23 +551,38 @@ def extract_from_file(path: Path) -> Extracted:
             if mid.startswith("http"):
                 all_link_urls.append(mid)
 
+    # Legislation nodes -> external references with proper titles
+    legislation_nodes = find_all(graph, "Legislation")
+    legislation_urls: Dict[str, str] = {}  # url -> name
+    for leg in legislation_nodes:
+        leg_url = first_str(leg.get("url"))
+        leg_name = first_str(leg.get("name"))
+        if leg_url:
+            legislation_urls[leg_url] = leg_name or slug_title_from_url(leg_url)
+            # Also capture the @id if it's a URL (may differ from url field)
+            leg_id_url = first_str(leg.get("@id"))
+            if leg_id_url.startswith("http"):
+                legislation_urls[leg_id_url] = leg_name or slug_title_from_url(leg_id_url)
+                all_link_urls.append(leg_id_url)
+
     # Dedup URLs while preserving order
-    seen = set()
+    seen_urls: set = set()
     dedup_urls: List[str] = []
     for u in all_link_urls:
         u2 = u.strip()
-        if not u2 or u2 in seen:
+        if not u2 or u2 in seen_urls:
             continue
-        seen.add(u2)
+        seen_urls.add(u2)
         dedup_urls.append(u2)
 
     for url in dedup_urls:
-        # If internal but we cannot resolve identifier here, treat as external reference for now.
         ext_id = stable_id("extref_", url)
+        # Use legislation name if available, otherwise derive from URL
+        title = legislation_urls.get(url) or slug_title_from_url(url)
         external_refs.append(
             {
                 "external_ref_id": ext_id,
-                "destination_link_title": slug_title_from_url(url),
+                "destination_link_title": title,
                 "destination_link_url": url,
             }
         )
@@ -517,6 +606,8 @@ def extract_from_file(path: Path) -> Extracted:
         webpage_terms=webpage_terms,
         disclaimers=disclaimers,
         webpage_disclaimers=webpage_disclaimers,
+        stakeholder_knowledge=stakeholder_knowledge,
+        term_aliases=term_aliases,
     )
 
 
@@ -548,9 +639,15 @@ def load_all(json_dir: Path) -> Extracted:
     webpage_terms: List[Dict[str, Any]] = []
     disclaimers: List[Dict[str, Any]] = []
     webpage_disclaimers: List[Dict[str, Any]] = []
+    stakeholder_knowledge: List[Dict[str, Any]] = []
+    term_aliases: List[Dict[str, Any]] = []
 
     for p in sorted(json_dir.glob("*.json")):
-        ex = extract_from_file(p)
+        try:
+            ex = extract_from_file(p)
+        except Exception as exc:
+            log.error("failed to process %s: %s", p.name, exc)
+            continue
         websites.extend(ex.websites)
         stakeholders.extend(ex.stakeholders)
         webpages.extend(ex.webpages)
@@ -562,6 +659,8 @@ def load_all(json_dir: Path) -> Extracted:
         webpage_terms.extend(ex.webpage_terms)
         disclaimers.extend(ex.disclaimers)
         webpage_disclaimers.extend(ex.webpage_disclaimers)
+        stakeholder_knowledge.extend(ex.stakeholder_knowledge)
+        term_aliases.extend(ex.term_aliases)
 
     # Dedupe by stable keys
     websites = dedupe_rows(websites, ["website_uri", "website_url"])
@@ -575,6 +674,49 @@ def load_all(json_dir: Path) -> Extracted:
     webpage_links = dedupe_rows(webpage_links, ["webpage_id", "destination_webpage_id", "destination_external_ref_id"])
     webpage_terms = dedupe_rows(webpage_terms, ["webpage_id", "webpage_is_relevant_to"])
     webpage_disclaimers = dedupe_rows(webpage_disclaimers, ["webpage_id", "disclaimer_id"])
+    stakeholder_knowledge = dedupe_rows(stakeholder_knowledge, ["stakeholder_id", "stakeholder_knows_about"])
+    term_aliases = dedupe_rows(term_aliases, ["term_id", "term_alias"])
+
+    # --- Post-processing: resolve internal links (1C) ---
+    # Build URL/URI -> webpage_id lookup from all known webpages
+    url_to_wpid: Dict[str, str] = {}
+    for wp in webpages:
+        wpid = wp.get("webpage_id", "")
+        for key in ("webpage_url", "webpage_uri"):
+            u = wp.get(key, "")
+            if u:
+                url_to_wpid[u] = wpid
+                # Also map without fragment (e.g. strip #webpage)
+                base = u.split("#")[0]
+                if base and base not in url_to_wpid:
+                    url_to_wpid[base] = wpid
+
+    resolved_ext_urls: set = set()  # track ext_ref URLs that got resolved to internal
+    resolved_count = 0
+    for link in webpage_links:
+        ext_ref_id = link.get("destination_external_ref_id", "")
+        if link.get("destination_webpage_id") or not ext_ref_id:
+            continue
+        # Find the URL for this ext_ref_id
+        ext_url = ""
+        for er in external_refs:
+            if er.get("external_ref_id") == ext_ref_id:
+                ext_url = er.get("destination_link_url", "")
+                break
+        if not ext_url:
+            continue
+        # Try to resolve: check exact URL and base (without fragment)
+        target_wpid = url_to_wpid.get(ext_url) or url_to_wpid.get(ext_url.split("#")[0])
+        if target_wpid:
+            link["destination_webpage_id"] = target_wpid
+            link["destination_external_ref_id"] = ""
+            resolved_ext_urls.add(ext_url)
+            resolved_count += 1
+
+    # Remove external_refs that were resolved to internal links
+    if resolved_ext_urls:
+        external_refs = [er for er in external_refs if er.get("destination_link_url") not in resolved_ext_urls]
+        log.info("resolved %d internal links from external references", resolved_count)
 
     return Extracted(
         websites=websites,
@@ -588,6 +730,8 @@ def load_all(json_dir: Path) -> Extracted:
         webpage_terms=webpage_terms,
         disclaimers=disclaimers,
         webpage_disclaimers=webpage_disclaimers,
+        stakeholder_knowledge=stakeholder_knowledge,
+        term_aliases=term_aliases,
     )
 
 
@@ -607,6 +751,8 @@ def write_to_workbook(xlsx_path: Path, extracted: Extracted) -> None:
         "JUNCT_webpage_relevant_terms": extracted.webpage_terms,
         "ENT_disclaimer": extracted.disclaimers,
         "JUNCT_disclaimer": extracted.webpage_disclaimers,
+        "JUNCT_stakeholder_knowledge": extracted.stakeholder_knowledge,
+        "JUNCT_term_alias": extracted.term_aliases,
     }
 
     for sheet_name, rows in sheet_rows.items():
@@ -674,16 +820,22 @@ def main() -> int:
     extracted = load_all(json_dir)
     write_to_workbook(xlsx_path, extracted)
 
-    print("✅ Completed JSON->XLSX load")
-    print(f"   Repo root: {repo_root}")
-    print(f"   JSON dir:  {json_dir}")
-    print(f"   XLSX:      {xlsx_path}")
-    print(f"   WebPages:  {len(extracted.webpages)}")
-    print(f"   Content:   {len(extracted.main_content)}")
-    print(f"   FAQs:      {len(extracted.faqs)}")
-    print(f"   Ext refs:  {len(extracted.external_refs)}")
-    print(f"   Terms:     {len(extracted.terms)}")
-    print(f"   Orgs:      {len(extracted.stakeholders)}")
+    # Count how many internal links were resolved
+    internal_links = sum(1 for lk in extracted.webpage_links if lk.get("destination_webpage_id"))
+
+    print("Completed JSON->XLSX load")
+    print(f"   Repo root:     {repo_root}")
+    print(f"   JSON dir:      {json_dir}")
+    print(f"   XLSX:          {xlsx_path}")
+    print(f"   WebPages:      {len(extracted.webpages)}")
+    print(f"   Content:       {len(extracted.main_content)}")
+    print(f"   FAQs:          {len(extracted.faqs)}")
+    print(f"   Ext refs:      {len(extracted.external_refs)}")
+    print(f"   Links (total): {len(extracted.webpage_links)}  (internal: {internal_links})")
+    print(f"   Terms:         {len(extracted.terms)}")
+    print(f"   Term aliases:  {len(extracted.term_aliases)}")
+    print(f"   Orgs:          {len(extracted.stakeholders)}")
+    print(f"   Org knowledge: {len(extracted.stakeholder_knowledge)}")
     return 0
 
 
