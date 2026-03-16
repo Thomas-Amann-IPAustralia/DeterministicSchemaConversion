@@ -1393,27 +1393,27 @@ def build_jsonld(
     provider_entity: dict | None = None
     provider_id: str | None = None
 
-                    if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
-                        is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
-                        if is_ip_australia:
-                            provider_id = IP_AUSTRALIA_ID
-                    else:
-                        provider_id = (
-                            f"{provider_entry.url.rstrip('/')}#organization"
-                            if provider_entry.url
-                            else f"{base_url}#provider-organization"
-                        )
-                        provider_entity = {
-                            "@type": provider_org_type,
-                            "@id": provider_id,
-                            "name": provider_entry.name,
-                        }
-                        if provider_entry.url:
-                            provider_entity["url"] = provider_entry.url
-                        if provider_entry.same_as:
-                            provider_entity["sameAs"] = provider_entry.same_as
-                        if provider_entry.alternate_name:
-                            provider_entity["alternateName"] = provider_entry.alternate_name
+    if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
+        is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
+        if is_ip_australia:
+            provider_id = IP_AUSTRALIA_ID
+        else:
+            provider_id = (
+                f"{provider_entry.url.rstrip('/')}#organization"
+                if provider_entry.url
+                else f"{base_url}#provider-organization"
+            )
+            provider_entity = {
+                "@type": provider_org_type,
+                "@id": provider_id,
+                "name": provider_entry.name,
+            }
+            if provider_entry.url:
+                provider_entity["url"] = provider_entry.url
+            if provider_entry.same_as:
+                provider_entity["sameAs"] = provider_entry.same_as
+            if provider_entry.alternate_name:
+                provider_entity["alternateName"] = provider_entry.alternate_name
                 
                     # ── Classify sections and build sub-entities ──
                     faq_questions: list[ParsedSection] = []
