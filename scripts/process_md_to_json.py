@@ -1363,13 +1363,16 @@ def build_jsonld(
     udid = meta.udid if meta else ""
     main_title = _repair_mojibake((meta.main_title if meta else "") or parsed.title)
     description = _repair_mojibake((meta.description if meta else "").strip('"').strip())
+
     # Fix 4: Use placeholder sentinel when description is empty;
     # replaced by _validate_and_repair_jsonld() after build.
     if not description:
         description = _PLACEHOLDER_SENTINEL
+
     pub_date = _parse_date(meta.publication_date) if meta else ""
     mod_date = _parse_date(meta.last_updated) if meta else ""
     disclaimer = _repair_mojibake((meta.additional_disclaimer if meta else "").strip())
+
     copyright_year = ""
     if mod_date:
         try:
@@ -1393,155 +1396,164 @@ def build_jsonld(
     provider_entity: dict | None = None
     provider_id: str | None = None
 
-if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
-    is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
-    if is_ip_australia:
-        provider_id = IP_AUSTRALIA_ID
-    else:
-        provider_id = (
-            f"{provider_entry.url.rstrip('/')}#organization"
-            if provider_entry.url
-            else f"{base_url}#provider-organization"
+    if provider_entry and provider_entry.name.lower().strip() not in ("self-help", "self help", ""):
+        is_ip_australia = provider_entry.name.lower().strip() == "ip australia"
+        if is_ip_australia:
+            provider_id = IP_AUSTRALIA_ID
+        else:
+            provider_id = (
+                f"{provider_entry.url.rstrip('/')}#organization"
+                if provider_entry.url
+                else f"{base_url}#provider-organization"
+            )
+            provider_entity = {
+                "@type": provider_org_type,
+                "@id": provider_id,
+                "name": provider_entry.name,
+            }
+            if provider_entry.url:
+                provider_entity["url"] = provider_entry.url
+            if provider_entry.same_as:
+                provider_entity["sameAs"] = provider_entry.same_as
+            if provider_entry.alternate_name:
+                provider_entity["alternateName"] = provider_entry.alternate_name
+
+    # ── Classify sections and build sub-entities ──
+    faq_questions: list[ParsedSection] = []
+    content_sections: list[ParsedSection] = []
+    howto_steps: list[ParsedSection] = []
+    article_body_text = parsed.intro_text  # fallback
+
+    # Track whether the article body originated from a named section that
+    # will also appear as a WebPageElement. If True, we skip populating
+    # "text" on Service entities to avoid duplication.
+    article_body_from_section = False
+
+    # Check if the CSV overtitle appears as a heading; if so, skip it
+    # (it's a navigational label, not content).
+    overtitle_lower = (meta.overtitle.lower().strip() if meta else "")
+
+    for sec in parsed.sections:
+        if sec.classification == "excluded":
+            continue
+
+        # Skip overtitle headings (e.g. "Letter of demand" when the title
+        # is "Receiving a letter of demand").
+        if overtitle_lower and sec.heading.lower().strip() == overtitle_lower:
+            # If it has body content, treat it as intro.
+            if sec.body.strip():
+                article_body_text = _format_body_text(sec.body)
+            continue
+
+        # Check if this heading should supply the articleBody.
+        heading_lower = sec.heading.lower().strip().rstrip("?")
+        is_article_body_source = any(
+            hint in heading_lower for hint in ARTICLE_BODY_HEADINGS
         )
-        provider_entity = {
-            "@type": provider_org_type,
-            "@id": provider_id,
-            "name": provider_entry.name,
+
+        if is_article_body_source and sec.body.strip():
+            article_body_text = _format_body_text(sec.body)
+
+            # For Article types, this becomes the articleBody directly.
+            # For Service/GovernmentService types, we still need to keep
+            # this content as a section, since those types have no
+            # articleBody field.
+            if archetype_type != "Article":
+                content_sections.append(sec)
+                article_body_from_section = True
+            continue
+
+        if sec.classification == "faq":
+            faq_questions.append(sec)
+        elif sec.classification == "howto_step":
+            howto_steps.append(sec)
+        else:
+            content_sections.append(sec)
+
+    # ── Fix 3: If the page has no FAQ questions (only a "What is it?"
+    # section), override the archetype to Article to avoid duplicating the
+    # same body text in both "text" and a separate WebPageElement. ──
+    if not faq_questions and archetype_type != "Article":
+        # Check whether the only content sections are article-body sources
+        # (e.g. "What is it?", "Overview").
+        non_article_body_sections = [
+            s for s in content_sections
+            if not any(
+                hint in s.heading.lower().strip().rstrip("?")
+                for hint in ARTICLE_BODY_HEADINGS
+            )
+        ]
+        if not non_article_body_sections:
+            archetype_type = "Article"
+
+            # Remove article-body sections from content_sections since
+            # Article uses articleBody directly (no separate WebPageElement).
+            content_sections = [
+                s for s in content_sections
+                if not any(
+                    hint in s.heading.lower().strip().rstrip("?")
+                    for hint in ARTICLE_BODY_HEADINGS
+                )
+            ]
+
+    # ── Build section IDs ──
+    section_ids: list[str] = []
+    section_entities: list[dict] = []
+
+    for idx, sec in enumerate(content_sections, start=1):
+        slug = _slugify(sec.heading)
+        sec_id = f"{base_url}#section-{idx}-{slug}"
+        section_ids.append(sec_id)
+
+        # isPartOf must reference a CreativeWork. Article qualifies, but
+        # Service and GovernmentService do not, so sections fall back to
+        # the WebPage (which is always a CreativeWork).
+        is_part_of_id = (
+            f"{base_url}#{archetype_type.lower()}"
+            if archetype_type == "Article"
+            else f"{base_url}#webpage"
+        )
+
+        section_entities.append(
+            {
+                "@type": "WebPageElement",
+                "@id": sec_id,
+                "headline": sec.heading,
+                "text": _format_body_text(sec.body),
+                "position": idx,
+                "isPartOf": {"@id": is_part_of_id},
+            }
+        )
+
+    # ── Build FAQ entity ──
+    faq_id = f"{base_url}#faq"
+    faq_entity = None
+
+    if faq_questions:
+        q_entities = []
+        for qi, q in enumerate(faq_questions, start=1):
+            # Use a single fragment with dash separator (RFC 3986 compliance).
+            q_id = f"{base_url}#faq-q{qi}"
+            q_entities.append(
+                {
+                    "@type": "Question",
+                    "@id": q_id,
+                    "name": q.heading.rstrip("?").strip() + "?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "@id": f"{q_id}-a",
+                        "text": _format_body_text(q.body),
+                    },
+                }
+            )
+
+        faq_entity = {
+            "@type": "FAQPage",
+            "@id": faq_id,
+            "inLanguage": DEFAULT_LANGUAGE,
+            "isPartOf": {"@id": f"{base_url}#webpage"},
+            "mainEntity": q_entities,
         }
-        if provider_entry.url:
-            provider_entity["url"] = provider_entry.url
-        if provider_entry.same_as:
-            provider_entity["sameAs"] = provider_entry.same_as
-        if provider_entry.alternate_name:
-            provider_entity["alternateName"] = provider_entry.alternate_name
-                
-                    # ── Classify sections and build sub-entities ──
-                    faq_questions: list[ParsedSection] = []
-                    content_sections: list[ParsedSection] = []
-                    howto_steps: list[ParsedSection] = []
-                    article_body_text = parsed.intro_text  # fallback
-                    # Track whether the article body originated from a named section that
-                    # will also appear as a WebPageElement. If True, we skip populating
-                    # "text" on Service entities to avoid duplication.
-                    article_body_from_section = False
-                
-                    # Check if the CSV overtitle appears as a heading; if so, skip it
-                    # (it's a navigational label, not content).
-                    overtitle_lower = (meta.overtitle.lower().strip() if meta else "")
-                
-                    for sec in parsed.sections:
-                        if sec.classification == "excluded":
-                            continue
-                
-                        # Skip overtitle headings (e.g. "Letter of demand" when the title
-                        # is "Receiving a letter of demand").
-                        if overtitle_lower and sec.heading.lower().strip() == overtitle_lower:
-                            # If it has body content, treat it as intro.
-                            if sec.body.strip():
-                                article_body_text = _format_body_text(sec.body)
-                            continue
-                
-                        # Check if this heading should supply the articleBody.
-                        heading_lower = sec.heading.lower().strip().rstrip("?")
-                        is_article_body_source = any(
-                            hint in heading_lower for hint in ARTICLE_BODY_HEADINGS
-                        )
-                        if is_article_body_source and sec.body.strip():
-                            article_body_text = _format_body_text(sec.body)
-                            # For Article types, this becomes the articleBody directly.
-                            # For Service/GovernmentService types, we still need to keep
-                            # this content as a section, since those types have no
-                            # articleBody field.
-                            if archetype_type != "Article":
-                                content_sections.append(sec)
-                                article_body_from_section = True
-                            continue
-                
-                        if sec.classification == "faq":
-                            faq_questions.append(sec)
-                        elif sec.classification == "howto_step":
-                            howto_steps.append(sec)
-                        else:
-                            content_sections.append(sec)
-                
-                    # ── Fix 3: If the page has no FAQ questions (only a "What is it?"
-                    # section), override the archetype to Article to avoid duplicating the
-                    # same body text in both "text" and a separate WebPageElement. ──
-                    if not faq_questions and archetype_type != "Article":
-                        # Check whether the only content sections are article-body sources
-                        # (e.g. "What is it?", "Overview").
-                        non_article_body_sections = [
-                            s for s in content_sections
-                            if not any(
-                                hint in s.heading.lower().strip().rstrip("?")
-                                for hint in ARTICLE_BODY_HEADINGS
-                            )
-                        ]
-                        if not non_article_body_sections:
-                            archetype_type = "Article"
-                            # Remove article-body sections from content_sections since
-                            # Article uses articleBody directly (no separate WebPageElement).
-                            content_sections = [
-                                s for s in content_sections
-                                if not any(
-                                    hint in s.heading.lower().strip().rstrip("?")
-                                    for hint in ARTICLE_BODY_HEADINGS
-                                )
-                            ]
-                
-                    # ── Build section IDs ──
-                    section_ids: list[str] = []
-                    section_entities: list[dict] = []
-                    for idx, sec in enumerate(content_sections, start=1):
-                        slug = _slugify(sec.heading)
-                        sec_id = f"{base_url}#section-{idx}-{slug}"
-                        section_ids.append(sec_id)
-                        # isPartOf must reference a CreativeWork. Article qualifies, but
-                        # Service and GovernmentService do not, so sections fall back to
-                        # the WebPage (which is always a CreativeWork).
-                        is_part_of_id = (
-                            f"{base_url}#{archetype_type.lower()}"
-                            if archetype_type == "Article"
-                            else f"{base_url}#webpage"
-                        )
-                        section_entities.append(
-                            {
-                                "@type": "WebPageElement",
-                                "@id": sec_id,
-                                "headline": sec.heading,
-                                "text": _format_body_text(sec.body),
-                                "position": idx,
-                                "isPartOf": {"@id": is_part_of_id},
-                            }
-                        )
-                
-                    # ── Build FAQ entity ──
-                    faq_id = f"{base_url}#faq"
-                    faq_entity = None
-                    if faq_questions:
-                        q_entities = []
-                        for qi, q in enumerate(faq_questions, start=1):
-                            # Use a single fragment with dash separator (RFC 3986 compliance).
-                            q_id = f"{base_url}#faq-q{qi}"
-                            q_entities.append(
-                                {
-                                    "@type": "Question",
-                                    "@id": q_id,
-                                    "name": q.heading.rstrip("?").strip() + "?",
-                                    "acceptedAnswer": {
-                                        "@type": "Answer",
-                                        "@id": f"{q_id}-a",
-                                        "text": _format_body_text(q.body),
-                                    },
-                                }
-                            )
-                        faq_entity = {
-                            "@type": "FAQPage",
-                            "@id": faq_id,
-                            "inLanguage": DEFAULT_LANGUAGE,
-                            "isPartOf": {"@id": f"{base_url}#webpage"},
-                            "mainEntity": q_entities,
-                        }
                 
                     # ── Build HowTo entity (if applicable) ──
                     howto_entity = None
