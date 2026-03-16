@@ -1554,353 +1554,353 @@ def build_jsonld(
             "isPartOf": {"@id": f"{base_url}#webpage"},
             "mainEntity": q_entities,
         }
-                
-                    # ── Build HowTo entity (if applicable) ──
-                    howto_entity = None
-                    if howto_steps:
-                        step_entities = []
-                        for si, step in enumerate(howto_steps, start=1):
-                            step_entities.append(
-                                {
-                                    "@type": "HowToStep",
-                                    "position": si,
-                                    "name": step.heading,
-                                    "text": _format_body_text(step.body),
-                                }
-                            )
-                        howto_entity = {
-                            "@type": "HowTo",
-                            "@id": f"{base_url}#howto",
-                            "name": main_title,
-                            "step": step_entities,
-                        }
-                
-                    # ── Collect unique links ──
-                    IPFR_HOST = "ipfirstresponse.ipaustralia.gov.au"
-                    related_link_urls: list[str] = []       # plain URL strings for relatedLink
-                    internal_page_entities: list[dict] = []  # full WebPage stubs for @graph
-                    internal_page_refs: list[dict] = []      # @id refs for WebPage.mentions
-                    seen_link_urls: set[str] = set()
-                
-                    # Build a URL → MetaRecord lookup from the full metatable so that
-                    # internal IPFR links can be enriched with title and description.
-                    url_meta_map: dict[str, MetaRecord] = {}
-                    url_title_map: dict[str, str] = {}
-                    if metatable:
-                        for rec in metatable.values():
-                            if rec.canonical_url:
-                                key = rec.canonical_url.lower().rstrip("/")
-                                url_meta_map[key] = rec
-                                if rec.main_title:
-                                    url_title_map[key] = rec.main_title
-                
-                    # Filter out noisy links (feedback forms, email, images, CMS nodes).
-                    noise_patterns = ["qualtrics.com", "mailto:", "/sites/default/files/", "/node/"]
-                    for url, anchor in parsed.links:
-                        if any(p in url for p in noise_patterns):
-                            continue
-                        # Strip tracking parameters for deduplication.
-                        url = _strip_tracking_params(url)
-                        # Skip self-referencing URLs (the page linking to itself).
-                        if base_url and url.rstrip("/") == base_url.rstrip("/"):
-                            continue
-                        # Normalise for deduplication.
-                        dedup_key = url.rstrip("/").lower()
-                        if dedup_key not in seen_link_urls:
-                            seen_link_urls.add(dedup_key)
-                            clean_url = url.rstrip("/")
-                
-                            # relatedLink always gets a plain URL string (both
-                            # internal and external) per Schema.org spec.
-                            related_link_urls.append(clean_url)
-                
-                            # For internal IPFR links, also build a rich WebPage
-                            # entity for the @graph and a @id ref for mentions.
-                            if IPFR_HOST in url:
-                                page_id = f"{clean_url}#webpage"
-                                internal_page_refs.append({"@id": page_id})
-                
-                                # Strip query strings / fragments for metatable lookup.
-                                lookup_key = dedup_key.split("?")[0].split("#")[0].rstrip("/")
-                                linked_meta = url_meta_map.get(lookup_key)
-                
-                                if linked_meta:
-                                    page_entity: dict = {
-                                        "@type": "WebPage",
-                                        "@id": page_id,
-                                        "url": clean_url,
-                                        "name": f"{linked_meta.main_title} - {WEBSITE_NAME}",
-                                    }
-                                    desc = linked_meta.description.strip().strip('"')
-                                    if desc and desc.lower() != "null":
-                                        page_entity["description"] = desc
-                                    if linked_meta.udid:
-                                        page_entity["identifier"] = linked_meta.udid
-                                    page_entity["isPartOf"] = {"@id": WEBSITE_ID}
-                                    internal_page_entities.append(page_entity)
-                                else:
-                                    # No CSV match; build a minimal stub from the URL.
-                                    slug_name = _link_name_from_url(
-                                        clean_url, anchor, url_title_map
-                                    )
-                                    internal_page_entities.append(
-                                        {
-                                            "@type": "WebPage",
-                                            "@id": page_id,
-                                            "url": clean_url,
-                                            "name": f"{slug_name} - {WEBSITE_NAME}",
-                                            "isPartOf": {"@id": WEBSITE_ID},
-                                        }
-                                    )
-                
-                    # ── Legislation ──
-                    legislation_entries = resolve_legislation(meta.relevant_ip_right) if meta else []
-                    citation_refs = [{"@id": entry[0]} for entry in legislation_entries]
-                    legislation_entities = [
-                        {
-                            "@type": "Legislation",
-                            "@id": entry[0],
-                            "name": entry[1],
-                            "url": entry[0],
-                            "legislationType": entry[2],
-                        }
-                        for entry in legislation_entries
-                    ]
-                
-                    # ── Assemble hasPart references for the WebPage ──
-                    has_part_refs: list[dict] = []
-                    if faq_entity:
-                        has_part_refs.append({"@id": faq_id})
-                    for sid in section_ids:
-                        has_part_refs.append({"@id": sid})
-                
-                    # ── Build the disclaimer section if present ──
-                    disclaimer_section_id: str | None = None
-                    if disclaimer and disclaimer.lower() != "null":
-                        disclaimer_slug = "disclaimer"
-                        disclaimer_id = f"{base_url}#section-{len(content_sections) + 1}-{disclaimer_slug}"
-                        disclaimer_section_id = disclaimer_id
-                        # isPartOf target: Article (CreativeWork) or WebPage for Service types.
-                        disclaimer_parent_id = (
-                            f"{base_url}#{archetype_type.lower()}"
-                            if archetype_type == "Article"
-                            else f"{base_url}#webpage"
-                        )
-                        disclaimer_entity = {
-                            "@type": "WebPageElement",
-                            "@id": disclaimer_id,
-                            "headline": "Disclaimer",
-                            "text": disclaimer,
-                            "position": len(content_sections) + 1,
-                            "isPartOf": {"@id": disclaimer_parent_id},
-                        }
-                        section_entities.append(disclaimer_entity)
-                        has_part_refs.append({"@id": disclaimer_id})
-                
-                    # ── Standard disclaimer is represented via usageInfo on the WebPage ──
-                    # (No separate WebPageElement is created; this avoids triple-redundancy.)
-                
-                    # ── Build the WebPage entity ──
-                    # Fix 3: Always use the H1 heading from markdown (parsed.title) as the
-                    # canonical headline. CSV main_title is a fallback only.
-                    h1_title = parsed.title if (parsed.title and parsed.title != "Untitled") else main_title
-                    webpage_entity: dict = {
+
+    # ── Build HowTo entity (if applicable) ──
+    howto_entity = None
+    if howto_steps:
+        step_entities = []
+        for si, step in enumerate(howto_steps, start=1):
+            step_entities.append(
+                {
+                    "@type": "HowToStep",
+                    "position": si,
+                    "name": step.heading,
+                    "text": _format_body_text(step.body),
+                }
+            )
+        howto_entity = {
+            "@type": "HowTo",
+            "@id": f"{base_url}#howto",
+            "name": main_title,
+            "step": step_entities,
+        }
+
+    # ── Collect unique links ──
+    IPFR_HOST = "ipfirstresponse.ipaustralia.gov.au"
+    related_link_urls: list[str] = []       # plain URL strings for relatedLink
+    internal_page_entities: list[dict] = []  # full WebPage stubs for @graph
+    internal_page_refs: list[dict] = []      # @id refs for WebPage.mentions
+    seen_link_urls: set[str] = set()
+
+    # Build a URL → MetaRecord lookup from the full metatable so that
+    # internal IPFR links can be enriched with title and description.
+    url_meta_map: dict[str, MetaRecord] = {}
+    url_title_map: dict[str, str] = {}
+    if metatable:
+        for rec in metatable.values():
+            if rec.canonical_url:
+                key = rec.canonical_url.lower().rstrip("/")
+                url_meta_map[key] = rec
+                if rec.main_title:
+                    url_title_map[key] = rec.main_title
+
+    # Filter out noisy links (feedback forms, email, images, CMS nodes).
+    noise_patterns = ["qualtrics.com", "mailto:", "/sites/default/files/", "/node/"]
+    for url, anchor in parsed.links:
+        if any(p in url for p in noise_patterns):
+            continue
+        # Strip tracking parameters for deduplication.
+        url = _strip_tracking_params(url)
+        # Skip self-referencing URLs (the page linking to itself).
+        if base_url and url.rstrip("/") == base_url.rstrip("/"):
+            continue
+        # Normalise for deduplication.
+        dedup_key = url.rstrip("/").lower()
+        if dedup_key not in seen_link_urls:
+            seen_link_urls.add(dedup_key)
+            clean_url = url.rstrip("/")
+
+            # relatedLink always gets a plain URL string (both
+            # internal and external) per Schema.org spec.
+            related_link_urls.append(clean_url)
+
+            # For internal IPFR links, also build a rich WebPage
+            # entity for the @graph and a @id ref for mentions.
+            if IPFR_HOST in url:
+                page_id = f"{clean_url}#webpage"
+                internal_page_refs.append({"@id": page_id})
+
+                # Strip query strings / fragments for metatable lookup.
+                lookup_key = dedup_key.split("?")[0].split("#")[0].rstrip("/")
+                linked_meta = url_meta_map.get(lookup_key)
+
+                if linked_meta:
+                    page_entity: dict = {
                         "@type": "WebPage",
-                        "@id": f"{base_url}#webpage",
-                        "url": base_url,
-                        "name": f"{h1_title} - {WEBSITE_NAME}",
-                        "description": description,
-                        "identifier": udid,
-                        "about": about_things,
-                        "inLanguage": DEFAULT_LANGUAGE,
-                        "license": DEFAULT_LICENCE,
-                        "audience": {
-                            "@type": "BusinessAudience",
-                            "audienceType": "Small and medium businesses",
-                            "geographicArea": {"@type": "Country", "name": "Australia"},
-                            "alternateName": [
-                                "Startups",
-                                "Entrepreneurs",
-                                "SME",
-                                "Startup",
-                                "Small to Medium Enterprise",
-                                "Sole Trader",
-                                "Australian Small Business Owners"
-                            ],
-                        },
-                        # Fix 5: Always include the standard hardcoded disclaimer.
-                        "usageInfo": STANDARD_DISCLAIMER,
-                        # Fix 1: Publisher and copyrightHolder are always IP Australia.
-                        "publisher": {"@id": IP_AUSTRALIA_ID},
-                        "isPartOf": {"@id": WEBSITE_ID},
-                        "mainEntity": {"@id": f"{base_url}#{archetype_type.lower()}"},
+                        "@id": page_id,
+                        "url": clean_url,
+                        "name": f"{linked_meta.main_title} - {WEBSITE_NAME}",
                     }
-                    if pub_date:
-                        webpage_entity["datePublished"] = pub_date
-                    if mod_date:
-                        webpage_entity["dateModified"] = mod_date
-                
-                    # ── Add keywords (from CSV Keywords column) ──
-                    if meta and meta.keywords:
-                        webpage_entity["keywords"] = meta.keywords
-                    if copyright_year:
-                        webpage_entity["copyrightYear"] = copyright_year
-                        webpage_entity["copyrightHolder"] = {"@id": IP_AUSTRALIA_ID}
-                    webpage_entity["creditText"] = "Source: IP First Response initiative led by IP Australia"
-                    # For Service / GovernmentService types, "text" is a CreativeWork
-                    # property and is not valid on the main entity. Preserve any intro
-                    # body text (not already in a named section) on the WebPage instead.
-                    if archetype_type != "Article" and article_body_text and not article_body_from_section:
-                        webpage_entity["text"] = article_body_text
-                    if has_part_refs:
-                        webpage_entity["hasPart"] = has_part_refs
-                
-                    # ── Build the main content entity (Article / GovernmentService / Service) ──
-                    # Fix 3: Use H1 from markdown as the canonical title.
-                    # Fix 4: Use "name" for Service types; "headline" only for Article.
-                    #
-                    # Service and GovernmentService inherit from Thing > Intangible > Service,
-                    # NOT from CreativeWork. Only properties valid on the target type are
-                    # included; CreativeWork-specific properties (inLanguage, license,
-                    # publisher, author, text) are confined to Article and the WebPage.
-                    main_entity: dict = {
-                        "@type": archetype_type,
-                        "@id": f"{base_url}#{archetype_type.lower()}",
-                        "description": description,
-                        "mainEntityOfPage": {"@id": f"{base_url}#webpage"},
-                    }
-                
-                    # CreativeWork-only properties (valid on Article, not on Service types).
-                    if archetype_type == "Article":
-                        main_entity["inLanguage"] = DEFAULT_LANGUAGE
-                        main_entity["license"] = DEFAULT_LICENCE
-                        main_entity["publisher"] = {"@id": IP_AUSTRALIA_ID}
-                        main_entity["author"] = {"@id": IP_AUSTRALIA_ID}
-                
-                    # Fix 4: Articles use "headline"; Service types use "name".
-                    if archetype_type == "Article":
-                        main_entity["headline"] = h1_title
-                    else:
-                        main_entity["name"] = h1_title
-                
-                    # Article-specific fields.
-                    if archetype_type == "Article":
-                        main_entity["articleBody"] = article_body_text or description
-                        if pub_date:
-                            main_entity["datePublished"] = pub_date
-                        if mod_date:
-                            main_entity["dateModified"] = mod_date
-                
-                    # GovernmentService-specific fields.
-                    if archetype_type == "GovernmentService":
-                        main_entity["serviceType"] = meta.archetype if meta else "Government Service"
-                        if provider_id:
-                            main_entity["serviceOperator"] = {"@id": provider_id}
-                            main_entity["provider"] = {"@id": provider_id}
-                
-                    # Service-specific fields (non-government / commercial).
-                    if archetype_type == "Service":
-                        main_entity["serviceType"] = meta.archetype if meta else "Service"
-                        if provider_id:
-                            main_entity["provider"] = {"@id": provider_id}
-                
-                    # HowTo reference (if applicable).
-                    # hasPart is only valid on CreativeWork subtypes (e.g. Article), not on
-                    # Service or GovernmentService. For non-Article archetypes, the WebPage
-                    # (which IS a CreativeWork) already carries the hasPart references to
-                    # sections, FAQ and disclaimer; we add HowTo there too.
-                    if archetype_type == "Article":
-                        article_parts: list[dict] = []
-                        if howto_entity:
-                            article_parts.append({"@id": f"{base_url}#howto"})
-                        for sid in section_ids:
-                            article_parts.append({"@id": sid})
-                        if faq_entity:
-                            article_parts.append({"@id": faq_id})
-                        if disclaimer_section_id:
-                            article_parts.append({"@id": disclaimer_section_id})
-                        if article_parts:
-                            main_entity["hasPart"] = article_parts
-                    else:
-                        # For Service / GovernmentService, add HowTo to the WebPage's
-                        # hasPart (sections and FAQ are already there).
-                        if howto_entity:
-                            has_part_refs.append({"@id": f"{base_url}#howto"})
-                
-                    # "mentions" is a CreativeWork property, so it belongs on the Article
-                    # or the WebPage, not on Service / GovernmentService.
-                    #
-                    # Legislation citation_refs attach to the Article when the archetype
-                    # is Article, otherwise they fall through to the WebPage.
-                    #
-                    # Internal IPFR page references always attach to the WebPage so that
-                    # AI agents traversing the graph from the WebPage can discover
-                    # related pages within the site.  These are full WebPage objects
-                    # (with @id, url, name, description) emitted into the @graph, and
-                    # referenced here by @id.
-                    webpage_mentions: list[dict] = list(internal_page_refs)
-                    if citation_refs:
-                        if archetype_type == "Article":
-                            main_entity["mentions"] = citation_refs
-                        else:
-                            webpage_mentions.extend(citation_refs)
-                    if webpage_mentions:
-                        webpage_entity["mentions"] = webpage_mentions
-                
-                    # relatedLink: strictly plain URL strings (Schema.org expects URL
-                    # values).  Both internal and external links appear here as strings.
-                    if related_link_urls:
-                        webpage_entity["relatedLink"] = related_link_urls
-                
-                    # ── Assemble the @graph ──
-                    graph: list[dict] = []
-                
-                    # 1. IP Australia (always present as publisher & copyrightHolder).
-                    graph.append(dict(IP_AUSTRALIA_ENTITY))
-                
-                    # 1b. Dynamic service provider (if distinct from IP Australia).
-                    if provider_entity:
-                        graph.append(provider_entity)
-                
-                    # 2. WebSite (publisher is always IP Australia).
-                    graph.append(
+                    desc = linked_meta.description.strip().strip('"')
+                    if desc and desc.lower() != "null":
+                        page_entity["description"] = desc
+                    if linked_meta.udid:
+                        page_entity["identifier"] = linked_meta.udid
+                    page_entity["isPartOf"] = {"@id": WEBSITE_ID}
+                    internal_page_entities.append(page_entity)
+                else:
+                    # No CSV match; build a minimal stub from the URL.
+                    slug_name = _link_name_from_url(
+                        clean_url, anchor, url_title_map
+                    )
+                    internal_page_entities.append(
                         {
-                            "@type": "WebSite",
-                            "@id": WEBSITE_ID,
-                            "name": WEBSITE_NAME,
-                            "url": WEBSITE_URL,
-                            "publisher": {"@id": IP_AUSTRALIA_ID},
-                            "inLanguage": DEFAULT_LANGUAGE,
-                            "license": DEFAULT_LICENCE,
+                            "@type": "WebPage",
+                            "@id": page_id,
+                            "url": clean_url,
+                            "name": f"{slug_name} - {WEBSITE_NAME}",
+                            "isPartOf": {"@id": WEBSITE_ID},
                         }
                     )
-                
-                    # 3. WebPage.
-                    graph.append(webpage_entity)
-                
-                    # 4. Main content entity.
-                    graph.append(main_entity)
-                
-                    # 5. HowTo (if any).
-                    if howto_entity:
-                        graph.append(howto_entity)
-                
-                    # 6. Content sections.
-                    graph.extend(section_entities)
-                
-                    # 7. FAQ.
-                    if faq_entity:
-                        graph.append(faq_entity)
-                
-                    # 8. Legislation.
-                    graph.extend(legislation_entities)
-                
-                    # 9. Internal IPFR page stubs (rich WebPage entities for
-                    #    graph-traversable cross-page links via WebPage.mentions).
-                    graph.extend(internal_page_entities)
-                
-                    return {"@context": SCHEMA_CONTEXT, "@graph": graph}
-                
+
+    # ── Legislation ──
+    legislation_entries = resolve_legislation(meta.relevant_ip_right) if meta else []
+    citation_refs = [{"@id": entry[0]} for entry in legislation_entries]
+    legislation_entities = [
+        {
+            "@type": "Legislation",
+            "@id": entry[0],
+            "name": entry[1],
+            "url": entry[0],
+            "legislationType": entry[2],
+        }
+        for entry in legislation_entries
+    ]
+
+    # ── Assemble hasPart references for the WebPage ──
+    has_part_refs: list[dict] = []
+    if faq_entity:
+        has_part_refs.append({"@id": faq_id})
+    for sid in section_ids:
+        has_part_refs.append({"@id": sid})
+
+    # ── Build the disclaimer section if present ──
+    disclaimer_section_id: str | None = None
+    if disclaimer and disclaimer.lower() != "null":
+        disclaimer_slug = "disclaimer"
+        disclaimer_id = f"{base_url}#section-{len(content_sections) + 1}-{disclaimer_slug}"
+        disclaimer_section_id = disclaimer_id
+        # isPartOf target: Article (CreativeWork) or WebPage for Service types.
+        disclaimer_parent_id = (
+            f"{base_url}#{archetype_type.lower()}"
+            if archetype_type == "Article"
+            else f"{base_url}#webpage"
+        )
+        disclaimer_entity = {
+            "@type": "WebPageElement",
+            "@id": disclaimer_id,
+            "headline": "Disclaimer",
+            "text": disclaimer,
+            "position": len(content_sections) + 1,
+            "isPartOf": {"@id": disclaimer_parent_id},
+        }
+        section_entities.append(disclaimer_entity)
+        has_part_refs.append({"@id": disclaimer_id})
+
+    # ── Standard disclaimer is represented via usageInfo on the WebPage ──
+    # (No separate WebPageElement is created; this avoids triple-redundancy.)
+
+    # ── Build the WebPage entity ──
+    # Fix 3: Always use the H1 heading from markdown (parsed.title) as the
+    # canonical headline. CSV main_title is a fallback only.
+    h1_title = parsed.title if (parsed.title and parsed.title != "Untitled") else main_title
+    webpage_entity: dict = {
+        "@type": "WebPage",
+        "@id": f"{base_url}#webpage",
+        "url": base_url,
+        "name": f"{h1_title} - {WEBSITE_NAME}",
+        "description": description,
+        "identifier": udid,
+        "about": about_things,
+        "inLanguage": DEFAULT_LANGUAGE,
+        "license": DEFAULT_LICENCE,
+        "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "Small and medium businesses",
+            "geographicArea": {"@type": "Country", "name": "Australia"},
+            "alternateName": [
+                "Startups",
+                "Entrepreneurs",
+                "SME",
+                "Startup",
+                "Small to Medium Enterprise",
+                "Sole Trader",
+                "Australian Small Business Owners"
+            ],
+        },
+        # Fix 5: Always include the standard hardcoded disclaimer.
+        "usageInfo": STANDARD_DISCLAIMER,
+        # Fix 1: Publisher and copyrightHolder are always IP Australia.
+        "publisher": {"@id": IP_AUSTRALIA_ID},
+        "isPartOf": {"@id": WEBSITE_ID},
+        "mainEntity": {"@id": f"{base_url}#{archetype_type.lower()}"},
+    }
+    if pub_date:
+        webpage_entity["datePublished"] = pub_date
+    if mod_date:
+        webpage_entity["dateModified"] = mod_date
+
+    # ── Add keywords (from CSV Keywords column) ──
+    if meta and meta.keywords:
+        webpage_entity["keywords"] = meta.keywords
+    if copyright_year:
+        webpage_entity["copyrightYear"] = copyright_year
+        webpage_entity["copyrightHolder"] = {"@id": IP_AUSTRALIA_ID}
+    webpage_entity["creditText"] = "Source: IP First Response initiative led by IP Australia"
+    # For Service / GovernmentService types, "text" is a CreativeWork
+    # property and is not valid on the main entity. Preserve any intro
+    # body text (not already in a named section) on the WebPage instead.
+    if archetype_type != "Article" and article_body_text and not article_body_from_section:
+        webpage_entity["text"] = article_body_text
+    if has_part_refs:
+        webpage_entity["hasPart"] = has_part_refs
+
+    # ── Build the main content entity (Article / GovernmentService / Service) ──
+    # Fix 3: Use H1 from markdown as the canonical title.
+    # Fix 4: Use "name" for Service types; "headline" only for Article.
+    #
+    # Service and GovernmentService inherit from Thing > Intangible > Service,
+    # NOT from CreativeWork. Only properties valid on the target type are
+    # included; CreativeWork-specific properties (inLanguage, license,
+    # publisher, author, text) are confined to Article and the WebPage.
+    main_entity: dict = {
+        "@type": archetype_type,
+        "@id": f"{base_url}#{archetype_type.lower()}",
+        "description": description,
+        "mainEntityOfPage": {"@id": f"{base_url}#webpage"},
+    }
+
+    # CreativeWork-only properties (valid on Article, not on Service types).
+    if archetype_type == "Article":
+        main_entity["inLanguage"] = DEFAULT_LANGUAGE
+        main_entity["license"] = DEFAULT_LICENCE
+        main_entity["publisher"] = {"@id": IP_AUSTRALIA_ID}
+        main_entity["author"] = {"@id": IP_AUSTRALIA_ID}
+
+    # Fix 4: Articles use "headline"; Service types use "name".
+    if archetype_type == "Article":
+        main_entity["headline"] = h1_title
+    else:
+        main_entity["name"] = h1_title
+
+    # Article-specific fields.
+    if archetype_type == "Article":
+        main_entity["articleBody"] = article_body_text or description
+        if pub_date:
+            main_entity["datePublished"] = pub_date
+        if mod_date:
+            main_entity["dateModified"] = mod_date
+
+    # GovernmentService-specific fields.
+    if archetype_type == "GovernmentService":
+        main_entity["serviceType"] = meta.archetype if meta else "Government Service"
+        if provider_id:
+            main_entity["serviceOperator"] = {"@id": provider_id}
+            main_entity["provider"] = {"@id": provider_id}
+
+    # Service-specific fields (non-government / commercial).
+    if archetype_type == "Service":
+        main_entity["serviceType"] = meta.archetype if meta else "Service"
+        if provider_id:
+            main_entity["provider"] = {"@id": provider_id}
+
+    # HowTo reference (if applicable).
+    # hasPart is only valid on CreativeWork subtypes (e.g. Article), not on
+    # Service or GovernmentService. For non-Article archetypes, the WebPage
+    # (which IS a CreativeWork) already carries the hasPart references to
+    # sections, FAQ and disclaimer; we add HowTo there too.
+    if archetype_type == "Article":
+        article_parts: list[dict] = []
+        if howto_entity:
+            article_parts.append({"@id": f"{base_url}#howto"})
+        for sid in section_ids:
+            article_parts.append({"@id": sid})
+        if faq_entity:
+            article_parts.append({"@id": faq_id})
+        if disclaimer_section_id:
+            article_parts.append({"@id": disclaimer_section_id})
+        if article_parts:
+            main_entity["hasPart"] = article_parts
+    else:
+        # For Service / GovernmentService, add HowTo to the WebPage's
+        # hasPart (sections and FAQ are already there).
+        if howto_entity:
+            has_part_refs.append({"@id": f"{base_url}#howto"})
+
+    # "mentions" is a CreativeWork property, so it belongs on the Article
+    # or the WebPage, not on Service / GovernmentService.
+    #
+    # Legislation citation_refs attach to the Article when the archetype
+    # is Article, otherwise they fall through to the WebPage.
+    #
+    # Internal IPFR page references always attach to the WebPage so that
+    # AI agents traversing the graph from the WebPage can discover
+    # related pages within the site.  These are full WebPage objects
+    # (with @id, url, name, description) emitted into the @graph, and
+    # referenced here by @id.
+    webpage_mentions: list[dict] = list(internal_page_refs)
+    if citation_refs:
+        if archetype_type == "Article":
+            main_entity["mentions"] = citation_refs
+        else:
+            webpage_mentions.extend(citation_refs)
+    if webpage_mentions:
+        webpage_entity["mentions"] = webpage_mentions
+
+    # relatedLink: strictly plain URL strings (Schema.org expects URL
+    # values).  Both internal and external links appear here as strings.
+    if related_link_urls:
+        webpage_entity["relatedLink"] = related_link_urls
+
+    # ── Assemble the @graph ──
+    graph: list[dict] = []
+
+    # 1. IP Australia (always present as publisher & copyrightHolder).
+    graph.append(dict(IP_AUSTRALIA_ENTITY))
+
+    # 1b. Dynamic service provider (if distinct from IP Australia).
+    if provider_entity:
+        graph.append(provider_entity)
+
+    # 2. WebSite (publisher is always IP Australia).
+    graph.append(
+        {
+            "@type": "WebSite",
+            "@id": WEBSITE_ID,
+            "name": WEBSITE_NAME,
+            "url": WEBSITE_URL,
+            "publisher": {"@id": IP_AUSTRALIA_ID},
+            "inLanguage": DEFAULT_LANGUAGE,
+            "license": DEFAULT_LICENCE,
+        }
+    )
+
+    # 3. WebPage.
+    graph.append(webpage_entity)
+
+    # 4. Main content entity.
+    graph.append(main_entity)
+
+    # 5. HowTo (if any).
+    if howto_entity:
+        graph.append(howto_entity)
+
+    # 6. Content sections.
+    graph.extend(section_entities)
+
+    # 7. FAQ.
+    if faq_entity:
+        graph.append(faq_entity)
+
+    # 8. Legislation.
+    graph.extend(legislation_entities)
+
+    # 9. Internal IPFR page stubs (rich WebPage entities for
+    #    graph-traversable cross-page links via WebPage.mentions).
+    graph.extend(internal_page_entities)
+
+    return {"@context": SCHEMA_CONTEXT, "@graph": graph}
+
 
 # ──────────────────────────────────────────────────────────────────────
 # 11b. POST-BUILD VALIDATION
