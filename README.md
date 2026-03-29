@@ -26,15 +26,39 @@ The entire pipeline is orchestrated by a central configuration file. The system 
 | **Relevant-ip-right** | Legislation Trigger | Keywords (e.g., "Patent") trigger the injection of specific `citation` objects linking to the *Patents Act 1990*. |
 | **Provider** | Service Owner | Maps to specific `Organization` objects (e.g., `IP Australia`) in the output JSON. |
 
+Auto-discovered pages from the Sitemap Monitor receive an `A`-prefix UDID (e.g., `A1000`) to distinguish them from manually curated entries.
+
 ---
 
-## 3. Data Pipeline Architecture
+## 3. Primary Pipeline (Automated)
 
-The system operates in a linear, five-stage pipeline.
+The primary pipeline runs automatically every Sunday (or on manual trigger) and chains four stages:
+
+```
+Sitemap Monitor ──► Stage 1: Scrape ──► Stage 2: JSON-LD ──► Stage 5: Normalize
+(check_sitemap)     (scrape)             (process_json)       (stage5_normalization)
+```
+
+Each stage dispatches the next automatically when changes are detected.
+
+### Sitemap Monitor
+
+**Script:** `scripts/check_sitemap.py`
+**Workflow:** `.github/workflows/check_sitemap.yml`
+**Schedule:** Every Sunday at midnight UTC (also manually triggerable)
+
+**Operational Logic:**
+
+1. Fetches `sitemap.xml` from `ipfirstresponse.ipaustralia.gov.au` via Selenium stealth (site is behind a WAF).
+2. Filters for URLs containing `/options/`.
+3. Compares discovered URLs against the `Canonical-url` column in `metatable-Content.csv`.
+4. Appends new URLs to the CSV with auto-generated `A`-prefix UDIDs and titles derived from URL slugs. Existing rows are never modified or deleted.
+5. If new URLs are found, dispatches **Stage 1 (Scraper)**.
 
 ### Stage 1: Ingestion (Stealth Scraper)
 
 **Script:** `scripts/scraper.py`
+**Workflow:** `.github/workflows/scrape.yml`
 **Input:** `metatable-Content.csv`
 **Output:** `IPFR-Webpages-html/` (Raw HTML) & `IPFR-Webpages/` (Clean Markdown)
 
@@ -42,132 +66,143 @@ The system operates in a linear, five-stage pipeline.
 
 1. **Bot Evasion:** Utilizing `selenium-stealth`, the scraper mocks a Windows 10/Chrome environment, overriding `navigator.webdriver`, User-Agent, and WebGL vendor flags to bypass Government WAFs.
 2. **DOM Isolation:** Content is extracted via a priority cascade:
-* *Priority 1:* `<main>` tag (Semantic standard).
-* *Priority 2:* `.region-content` (GovCMS specific wrapper).
-* *Fallback:* `<body>`.
-
-
+   * *Priority 1:* `<main>` tag (Semantic standard).
+   * *Priority 2:* `.region-content` (GovCMS specific wrapper).
+   * *Fallback:* `<body>`.
 3. **Dual-State Serialization:**
-* **HTML Preservation:** The raw DOM of the isolated region is saved as `.html` to preserve nested `<div>` and `<ul>` structures for logic parsing.
-* **Markdown Normalization:** The content is passed through `markdownify` with custom Regex filters to strip UI noise (feedback widgets, "back to top" links) and normalize headers, producing a clean `.md` file for RAG ingestion.
-
-
+   * **HTML Preservation:** The raw DOM of the isolated region is saved as `.html`.
+   * **Markdown Normalization:** Content is passed through `markdownify` with custom Regex filters to strip UI noise, producing a clean `.md` file.
+4. If content changes are detected, dispatches **Stage 2 (JSON-LD Generation)**.
 
 ### Stage 2: Transformation (Semantic Processor)
 
 **Script:** `scripts/process_md_to_json.py`
+**Workflow:** `.github/workflows/process_json.yml`
 **Input:** `IPFR-Webpages/*.md`, `IPFR-Webpages-html/*.html`, `metatable-Content.csv`
 **Output:** `json_output/*.json`
 
 **Operational Logic:**
 
-1. **Metadata Association:** The script iterates `.md` files and matches them to the CSV Control Plane via URL, UDID, or Fuzzy Title Match.
-2. **Block Parsing:** The content is segmented into Key/Value blocks.
-* *HTML Parser:* Uses BeautifulSoup to extract text between `<h>` tags, preserving semantic structure.
-* *Markdown Fallback:* Splits content by `#` headers if HTML is invalid.
-
-
+1. **Metadata Association:** Matches `.md` files to the CSV Control Plane via URL, UDID, or Fuzzy Title Match.
+2. **Block Parsing:** Segments content into Key/Value blocks using HTML structure or Markdown headers.
 3. **Schema Construction:**
-* **Root Type:** Mapped from CSV Archetype (e.g., "Self-Help" → `schema:Article`).
-* **HowTo Extraction:** Detects headers containing "step" or "proceed" and parses child list items into `HowToStep` objects.
-* **FAQ Extraction:** Headers ending in `?` are automatically converted to `Question`/`Answer` objects.
-* **Placeholder Injection:** Specific fields (Step Names, Descriptions) are populated with explicit tokens: `xXx_PLACEHOLDER_xXx`.
-
-
-4. **Legislation Injection:** The `citation` array is populated by cross-referencing the `Relevant-ip-right` CSV column against an internal `LEGISLATION_MAP` (e.g., mapping "Trade Mark" to the *Trade Marks Act 1995*).
-
-### Stage 3: Enrichment (Safety-Gated AI)
-
-**Script:** `scripts/enrich_howto_steps.py`
-**Input:** `json_output/*.json`
-**Output:** `json_output-enriched/*.json`, `reports/after_action_report.csv`
-
-**Operational Logic:**
-
-1. **Recursive Traversal:** The script walks the JSON tree looking specifically for values matching `xXx_PLACEHOLDER_xXx`.
-2. **Contextual Prompting:**
-* *Scenario A (Step Name):* Reads the step `text`; generates a short imperative title.
-* *Scenario B (Description):* Reads the `headline` and sub-entities; generates a 160-char SEO summary.
-* *Scenario C (Service Type):* Infers Schema classification.
-
-
-3. **Semantic Diff Guardrail:** Post-generation, the script compares the Input JSON vs. Output JSON.
-* **Pass Condition:** Only values associated with known placeholders have changed.
-* **Fail Condition:** Any change to structure (keys added/removed), types (list → string), or non-placeholder values (dates, legal citations).
-* *Result:* If validation fails, the file is rejected to prevent "hallucinations."
-
-
-
-### Stage 4: Quality Assurance (Validation)
-
-**Script:** `scripts/validate_quality.py`
-**Input:** `json_output-enriched/` vs. `IPFR-Webpages-html/`
-**Output:** `reports/validation_reports/Validation_Report.csv`
-
-**Operational Logic:**
-
-1. **Identity Check:** Verifies the UDID in the filename (e.g., `B1005`) matches the `identifier` field in the JSON payload.
-2. **Schema Syntax:** Validates the presence of mandatory Schema.org keys (`@context`, `@type`, `headline`).
-3. **Semantic Grounding (Fuzzy Match):**
-* Compares the `description` and `text` fields in the JSON against the raw HTML.
-* Requires >85% similarity (via `difflib`) to ensure the Schema accurately reflects the webpage content.
-
-
-4. **FAQ Verification:** Ensures every `Question` object in the JSON actually exists as text in the source HTML (prevents invented questions).
-5. **Link Integrity:** Verifies that every `relatedLink` URL in the JSON exists as an `href` anchor in the source DOM.
+   * **Root Type:** Mapped from CSV Archetype (e.g., "Self-Help" → `schema:Article`).
+   * **HowTo Extraction:** Detects headers containing "step" or "proceed" and parses child list items into `HowToStep` objects.
+   * **FAQ Extraction:** Headers ending in `?` are converted to `Question`/`Answer` objects.
+   * **Placeholder Injection:** Specific fields populated with `xXx_PLACEHOLDER_xXx` tokens.
+4. **Legislation Injection:** The `citation` array is populated by cross-referencing `Relevant-ip-right` against an internal `LEGISLATION_MAP`.
+5. After completion, dispatches **Stage 5 (Normalization)**.
 
 ### Stage 5: Normalization (Relational Flattening)
 
 **Script:** `scripts/json_to_csv.py`
 **Configuration:** `scripts/schema_mapping.yaml`
+**Workflow:** `.github/workflows/stage5_normalization.yml`
 **Input:** `json_output-enriched/`, `IPFR-Webpages/`, `IPFR-Webpages-html/`
 **Output:** `sqlite_data/` (CSV & Excel)
 
 **Operational Logic:**
 
-1. **Registry Construction:** The system pre-scans all Markdown, HTML, and JSON assets to build a global `URL -> UDID` map. This enables the script to detect "Internal Links" and replace raw URLs with precise Document IDs (e.g., `B1005`) for knowledge graph integrity.
-2. **Schema Projection:** utilizing `jsonpath-ng`, the script flattens the hierarchical JSON-LD into 7 relational tables defined in the YAML config:
-* **Primary/Influences:** Core metadata and legislative citations.
-* **LinksTo:** Graph edges containing outbound links with computed internal resolution.
-* **HowTo/FAQ:** Exploded views of procedural steps and Q&A pairs.
-* **RawData:** Contains the full text payload of HTML, MD, and JSON versions.
-
-
-3. **Tokenization Metrics:** Uses OpenAI's `tiktoken` (cl100k_base encoding) to calculate and append precise token counts for every file version (HTML vs MD vs JSON). This data allows developers to optimize context-window usage for RAG applications.
+1. **Registry Construction:** Pre-scans all assets to build a global `URL → UDID` map for internal link resolution.
+2. **Schema Projection:** Flattens hierarchical JSON-LD into 7 relational tables (Primary, Influences, LinksTo, HowTo, FAQ, Semantic, RawData).
+3. **Tokenization Metrics:** Uses `tiktoken` (cl100k_base encoding) to calculate token counts for HTML, MD, and JSON versions.
 
 ---
 
-## 4. Directory Structure Map
+## 4. Optional Stages (Manual Trigger Only)
+
+These stages are not part of the automated pipeline. They can be triggered manually via GitHub Actions when needed.
+
+### Optional - LLM Enrichment
+
+**Script:** `scripts/enrich_howto_steps.py`
+**Workflow:** `.github/workflows/optional_enrich_json.yml`
+**Input:** `json_output/*.json`
+**Output:** `json_output-enriched/*.json`, `reports/after_action_report.csv`
+
+Replaces `xXx_PLACEHOLDER_xXx` tokens with LLM-generated content (step names, descriptions) using OpenAI. Protected by a Semantic Diff Guardrail that rejects any unauthorized structural changes.
+
+### Optional - Quality Validation
+
+**Script:** `scripts/validate_quality.py`
+**Workflow:** `.github/workflows/optional_validate_quality.yml`
+**Input:** `json_output-enriched/` vs. `IPFR-Webpages-html/`
+**Output:** `reports/validation_reports/Validation_Report_Extended.csv`
+
+Validates enriched JSON against source HTML: identity checks, schema syntax, semantic grounding (>85% similarity), FAQ verification, and link integrity.
+
+### Optional - Semantic Embeddings
+
+**Script:** `scripts/generate_embeddings.py`
+**Workflow:** `.github/workflows/optional_create_embeddings.yml`
+**Input:** `sqlite_data/Semantic.xlsx`
+**Output:** `sqlite_data/Semantic_Embeddings_Output.*`
+
+Generates vector embeddings via OpenAI `text-embedding-3-small` for RAG/semantic search applications.
+
+### Optional - Load JSON into XLSX
+
+**Script:** `scripts/load_json_output_into_xlsx.py`
+**Workflow:** `.github/workflows/optional_load_json_xlsx.yml`
+
+Legacy utility to populate an Excel template with JSON data.
+
+---
+
+## 5. Manual Triggering
+
+Any pipeline stage can be triggered manually via the GitHub Actions UI:
+
+1. Go to the **Actions** tab in the repository.
+2. Select the desired workflow from the left sidebar.
+3. Click **Run workflow** and select the branch.
+
+The automated dispatch chain (Sitemap → Scrape → JSON-LD → Normalize) will fire downstream stages automatically when changes are detected. Optional stages must always be triggered manually.
+
+---
+
+## 6. Directory Structure
 
 ```text
 DeterministicSchemaConversion/
-├── IPFR-Webpages/              # [Context] Cleaned Markdown (Human/LLM readable)
-├── IPFR-Webpages-html/         # [Context] Raw HTML (Source of Truth for Validation)
-├── json_output/                # [Intermediate] Schema containing xXx_PLACEHOLDER_xXx
-├── json_output-enriched/       # [Artifact] Final, Validated, AI-Enriched JSON-LD
-├── sqlite_data/                # [Artifact] Relational Tables (CSV/XLSX) with Token Counts
-├── reports/
-│   ├── validation_reports/     # [Log] QA Pass/Fail CSVs
-│   └── after_action_report.csv # [Log] AI modification audit trail
+├── .github/workflows/
+│   ├── check_sitemap.yml              # [Automated] Sitemap Monitor (weekly)
+│   ├── scrape.yml                     # [Automated] Stage 1 - Stealth Scraper
+│   ├── process_json.yml               # [Automated] Stage 2 - JSON-LD Generation
+│   ├── stage5_normalization.yml       # [Automated] Stage 5 - Relational Normalization
+│   ├── optional_enrich_json.yml       # [Optional]  LLM Enrichment
+│   ├── optional_validate_quality.yml  # [Optional]  Quality Validation
+│   ├── optional_create_embeddings.yml # [Optional]  Semantic Embeddings
+│   └── optional_load_json_xlsx.yml    # [Optional]  XLSX Loader
 ├── scripts/
-│   ├── scraper.py              # [Logic] Selenium Stealth implementation
-│   ├── process_md_to_json.py   # [Logic] Hybrid Parser & Schema Mapper
-│   ├── enrich_howto_steps.py   # [Logic] recursive_enrich() & perform_diff_check()
-│   ├── validate_quality.py     # [Logic] Structural & Semantic comparators
-│   ├── json_to_csv.py          # [Logic] Relational Flattener & Token Counter
-│   └── schema_mapping.yaml     # [Config] Mapping rules for Stage 5
-├── metatable-Content.csv       # [Config] The Control Plane
-└── sources.json                # [Config] Scraper target list
-
+│   ├── check_sitemap.py               # Sitemap monitor logic
+│   ├── scraper.py                     # Selenium stealth scraper
+│   ├── process_md_to_json.py          # Hybrid parser & Schema mapper
+│   ├── json_to_csv.py                 # Relational flattener & token counter
+│   ├── schema_mapping.yaml            # Table mapping config for Stage 5
+│   ├── enrich_howto_steps.py          # LLM enrichment with diff guardrail
+│   ├── validate_quality.py            # Structural & semantic validation
+│   ├── generate_embeddings.py         # Vector embedding generator
+│   └── load_json_output_into_xlsx.py  # Legacy XLSX loader
+├── metatable-Content.csv              # [Control Plane] Master manifest
+├── IPFR-Webpages/                     # [Stage 1 Output] Cleaned Markdown
+├── IPFR-Webpages-html/                # [Stage 1 Output] Raw HTML
+├── json_output/                       # [Stage 2 Output] JSON-LD with placeholders
+├── json_output-enriched/              # [Optional Output] AI-enriched JSON-LD
+├── sqlite_data/                       # [Stage 5 Output] Relational CSV/XLSX tables
+├── reports/                           # Validation reports & audit trails
+├── docs/                              # Architecture documentation
+├── requirements.txt                   # Python dependencies
+└── 260305_DB-Strcuture_05.xlsx        # Target database structure template
 ```
 
 ---
 
-## 5. Key Algorithms & Heuristics
+## 7. Key Algorithms & Heuristics
 
 ### The Archetype Mapper
 
-Located in `process_md_to_json.py`, this maps CSV metadata to Schema Types:
+Located in `scripts/process_md_to_json.py`, maps CSV metadata to Schema Types:
 
 | CSV Archetype | JSON-LD `@type` | Note |
 | --- | --- | --- |
@@ -178,7 +213,7 @@ Located in `process_md_to_json.py`, this maps CSV metadata to Schema Types:
 
 ### The Semantic Diff Check
 
-Located in `enrich_howto_steps.py`, this enforces the "Zero-Hallucination" policy:
+Located in `scripts/enrich_howto_steps.py`, enforces the "Zero-Hallucination" policy:
 
 1. **Topology Check:** `len(input_keys) == len(output_keys)`
 2. **Type Check:** `type(input_val) == type(output_val)`
@@ -186,7 +221,7 @@ Located in `enrich_howto_steps.py`, this enforces the "Zero-Hallucination" polic
 
 ### The Relational Tokenizer
 
-Located in `json_to_csv.py`, this calculates cost metrics:
+Located in `scripts/json_to_csv.py`, calculates cost metrics:
 
 1. **Encoding:** Loads `cl100k_base` (GPT-4 standard).
 2. **Resolution:** Calculates tokens for `HTML_Raw`, `MD_Raw`, and `JSON_Raw` independently.

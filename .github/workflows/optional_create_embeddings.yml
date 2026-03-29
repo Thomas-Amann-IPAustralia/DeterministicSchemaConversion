@@ -1,4 +1,4 @@
-name: Generate Semantic Embeddings
+name: Optional - Semantic Embeddings
 
 on:
   workflow_dispatch:
@@ -33,12 +33,12 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          
+
           # Add CSV, XLSX, and JSON
           git add sqlite_data/Semantic_Embeddings_Output.csv
           git add sqlite_data/Semantic_Embeddings_Output.xlsx
           git add sqlite_data/Semantic_Embeddings_Output.json
-          
+
           git commit -m "Update embeddings (CSV, XLSX & JSON) [skip ci]" || echo "No changes to commit"
           git push
 

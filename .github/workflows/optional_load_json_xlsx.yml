@@ -1,4 +1,4 @@
-name: Load JSON Output into XLSX
+name: Optional - Load JSON into XLSX
 
 on:
   workflow_dispatch:
@@ -46,7 +46,7 @@ jobs:
 
       - name: Run loader
         run: |
-          python load_json_output_into_xlsx.py \
+          python scripts/load_json_output_into_xlsx.py \
             --json_dir "${{ inputs.json_dir }}" \
             --xlsx_path "${{ inputs.xlsx_path }}"
 
