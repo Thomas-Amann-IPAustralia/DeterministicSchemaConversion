@@ -1,11 +1,11 @@
 name: Stage 1 - IPFR Scraper
 
 on:
-  schedule:
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   scrape-and-save:
@@ -27,24 +27,41 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Scraper
-        run: python scraper.py
+        run: python scripts/scraper.py
 
       - name: Commit and Push Changes
+        id: commit
         run: |
           git config --global user.name "IPFR Scraper Bot"
           git config --global user.email "actions@github.com"
-          
+
           # Add the Markdown folder
           git add IPFR-Webpages/
-          
-          # Add the NEW HTML folder
+
+          # Add the HTML folder
           git add IPFR-Webpages-html/
-          
+
           # Only commit if there are staged changes
           if ! git diff-index --quiet HEAD; then
             echo "Changes detected. Committing..."
             git commit -m "Scraper: Updated web content [skip ci]"
             git push
+            echo "changes_detected=true" >> "$GITHUB_OUTPUT"
           else
             echo "No changes detected."
+            echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Dispatch JSON-LD Generation
+        if: steps.commit.outputs.changes_detected == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'process_json.yml',
+              ref: context.ref || 'main'
+            })
+            console.log('Dispatched process_json.yml after content changes')

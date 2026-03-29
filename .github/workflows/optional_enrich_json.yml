@@ -1,4 +1,4 @@
-name: Stage 3 - Enrich JSON with LLM
+name: Optional - LLM Enrichment
 
 on:
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: after-action-report
-          path: after_action_report.csv
+          path: reports/after_action_report.csv
 
       - name: Upload Enriched JSON Files
         uses: actions/upload-artifact@v4
@@ -42,13 +42,11 @@ jobs:
           name: json-output-enriched
           path: json_output-enriched/
 
-      # Optional: Commit the new files back to the repo
-      # Uncomment the lines below if you want the changes committed automatically
       - name: Commit and Push changes
         run: |
            git config --global user.name "github-actions[bot]"
            git config --global user.email "github-actions[bot]@users.noreply.github.com"
            git add json_output-enriched/
-           git add after_action_report.csv
+           git add reports/after_action_report.csv
            git commit -m "Enriched JSON files with HowToStep names"
            git push

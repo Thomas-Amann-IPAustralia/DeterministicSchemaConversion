@@ -9,7 +9,7 @@ from openai import OpenAI
 # Configuration
 INPUT_DIR = 'json_output'
 OUTPUT_DIR = 'json_output-enriched'
-REPORT_FILE = 'after_action_report.csv'
+REPORT_FILE = 'reports/after_action_report.csv'
 BATCH_SIZE = 5
 
 # Define target placeholders
