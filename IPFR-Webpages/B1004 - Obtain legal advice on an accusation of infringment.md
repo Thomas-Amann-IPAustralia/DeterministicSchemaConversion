@@ -75,7 +75,7 @@ Many businesses use the services of IP lawyers or IP attorneys where they need a
 
 Your time is important and an expert's time can be expensive, so it can be useful to prepare before you meet with an IP lawyer or IP attorney. Consider:
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 * [Learning more about IP](https://www.ipaustralia.gov.au/understanding-ip/types-of-ip) and the specific IP type at the centre of the dispute. Having some basic knowledge will help you to better understand the professional's advice and recommendations.
 * Researching what the person accusing you of IP infringement is doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice.

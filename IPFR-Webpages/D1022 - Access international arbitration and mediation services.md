@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/access-internation
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 If you need to resolve an international dispute, one option is to use the [World Intellectual Property Organization (WIPO) Arbitration and Mediation Center](https://www.wipo.int/amc/en/center/background.html)  ('the WIPO Center').
 

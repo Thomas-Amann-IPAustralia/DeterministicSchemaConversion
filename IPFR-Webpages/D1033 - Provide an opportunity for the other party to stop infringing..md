@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/provide-opportunit
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 You can consider reaching out informally to the party who you suspect to be infringing your IP, before taking any legal or formal action against them.  
 

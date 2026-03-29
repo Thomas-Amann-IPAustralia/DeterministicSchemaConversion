@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/reach-agreement-ac
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 Parties involved in an IP dispute can negotiate a mutually acceptable commercial or financial agreement to resolve their dispute. While negotiation between parties often takes place as a preventative measure prior to launching a more formal action, it can also be used at any stage during a dispute process. 
 

@@ -26,7 +26,7 @@ In making a revocation decision, IP Australia can take account of a range of cir
 * not sufficiently distinctive
 * too similar to another registered trade mark.
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

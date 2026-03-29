@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/pause-use-conteste
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 You may choose to stop using a particular piece of intellectual property (IP) that has been contested. For example, if you receive a letter of demand or cease and desist request from someone claiming you were using their IP without permission, and you stop using their IP. In some cases, this might resolve a dispute and avoid the issue escalating further. 
 

@@ -8,9 +8,9 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/stop-infringing-go
 
 ### What is it?
 
-[![See how Toyota uses the Notice of Objection scheme to stop counterfeit products entering Australia.](/sites/default/files/images/2025-10/Toyota%20button%202.png)](/node/257)
-
 A Notice of Objection gives the Australian Border Force (ABF) permission to seize imported goods or copies of copyright material that are suspected to infringe on your trademark or copyright and are intended for commercial purposes. Without this legal document, the ABF cannot seize imported items that may violate your intellectual property rights. However, with your formal approval, even a single item that meets the criteria can be seized.   
+
+[![Easy English Button.](/sites/default/files/images/2026-02/Easy%20English%20button.png)](/node/319)
 
 If the importer claims the seized goods are legitimate and requests that they are released, it would become your responsibility to contest this claim and commence legal proceedings against the importer within 10 working days from the day the importer made the claim for release. If you choose not to take legal action, the goods will likely be released back to the importer. 
 
@@ -18,7 +18,7 @@ The scheme works better if you keep ABF informed about potential unapproved impo
 
 **Please Note:** A Notice of Objection [cannot act retrospectively](https://www.abf.gov.au/help-and-support-subsite/files/fact-sheets/protecting-intellectual-property.pdf)  for goods/copies that have already been imported. 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 
@@ -34,6 +34,8 @@ The scheme works better if you keep ABF informed about potential unapproved impo
 * This action does not permanently resolve the issue of your goods being counterfeited.
 * It doesn't take much for matters to escalate to court, potentially introducing higher risks and costs.
 * Escalation of the dispute could require you to defend/reaffirm your claim to your IP rights.
+
+[See how Toyota used the Notice of Objection scheme to stop counterfeit products entering Australia](/options/toyotas-approach-counterfeit-products "The Toyota story: What can SMEs learn from Toyota's approach to counterfeit products?")
 
 ### What are the possible outcomes?
 
@@ -72,7 +74,7 @@ If a seizure has occurred: 
 3. If the importer seeks to have the goods released, you will be notified and have 10 working days to start legal action against the importer.
 4. If the ABF does not receive a court order maintaining seizure of the goods/copies within 20 days of legal action commencing then they are still required to release the goods to the importer.
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 ### How much is this used?
 
@@ -107,6 +109,8 @@ To lodge a Notice of Objection under the *Copyright Act 1968*, you will require:
 * A completed Copyright Act 1968 Security Under Section 135 - Deed of Undertaking form (B466). The original deed must be mailed to the Department of Immigration and Border Protection.
 
 You can find more information in the ABF Guide to lodging a [Notice of Objection.](https://www.abf.gov.au/imports/files/fact-sheets/lodging-trademark-notice.pdf)  
+
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
 
 ### See also
 

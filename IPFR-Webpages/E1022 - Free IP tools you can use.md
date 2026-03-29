@@ -18,7 +18,7 @@ Many also include learning modules, alerts or visual maps so users can keep an e
 
 These services focus on publicly available data. Results are often limited to the scope of their own databases (e.g. IP Australia registers will only have data relating to applications submitted to IP Australia), and can be hard to interpret. If you are worried about copying, it's important to remember that only a court can confirm that infringement has occurred. It's also important to make sure that your confidential details are never be entered into public search tools. 
 
-[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+[![Link that says "Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options."](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
 ### See also
 

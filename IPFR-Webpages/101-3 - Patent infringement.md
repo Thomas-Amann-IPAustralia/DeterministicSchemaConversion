@@ -8,6 +8,8 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/patent-infringemen
 
 Patent infringement can occur when someone uses an invention protected by another person's patent without obtaining permission first. In Australia, granted patents give inventors the ability to control the use of their invention for up to 20 years (or up to 25 years for pharmaceutical patents). 
 
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
+
 ### What does a granted patent protect?
 
 When considering patent infringement, it is essential to understand what a granted patent protects. A patent protects any device, substance, method or process that's new, inventive and useful.1 A granted patent provides its owner with exclusive control over the invention. A patent protects the specific invention described and claimed in the patent document. This can include the particular way something is made, how it works or the specific process for doing something.
@@ -60,7 +62,7 @@ It is important to understand what does not constitute infringement. The *Patent
 
 Navigating patent infringement can be complex and often requires legal expertise. Experts can help work out exactly what a patent protects. They can interpret the legal language in the patent claims. Additionally, for infringement to happen, the patent must be legally valid. Patents can be challenged if, for example, the invention is not new or innovative. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.
 
-[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+[![Link that says "Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options."](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
 \
 

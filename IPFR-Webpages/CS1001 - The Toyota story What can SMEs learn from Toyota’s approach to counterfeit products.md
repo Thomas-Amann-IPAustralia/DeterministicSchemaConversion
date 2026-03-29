@@ -28,7 +28,7 @@ IP enforcement is therefore both a commercial and consumer protection priority. 
 
 **Toyota's use of the Notice of Objection scheme**
 
-![Toyota and ABF officers participating in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)](/sites/default/files/images/2025-08/workshop.png)
+![Toyota and Australian Border Force officers participating in an IP Enforcement workshop hosted by the Australian Border Force (image supplied by the Australian Border Force).](/sites/default/files/images/2025-08/workshop.png)
 
 *Toyota and ABF officers participating in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)*
 
@@ -51,7 +51,7 @@ However, counterfeit parts are getting increasingly sophisticated. They can look
 
 **One tool among many in the IP enforcement portfolio**
 
-![ABF officers inspecting automobile parts in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)](/sites/default/files/images/2025-08/workshop2.png)
+![A group of Australian Border Force officers in uniform standing around a table inspecting automobile parts.](/sites/default/files/images/2025-08/workshop2.png)
 
 *ABF officers inspecting automobile parts in an IP Enforcement workshop hosted by the ABF (image supplied by the ABF)*
 

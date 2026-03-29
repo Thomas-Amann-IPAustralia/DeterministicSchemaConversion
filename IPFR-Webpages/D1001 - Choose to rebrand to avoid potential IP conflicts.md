@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/choose-rebrand-avo
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 Rebranding your business can be an effective strategy to make sure you're not infringing existing trade marks, to avoid disputes with other parties, or to apply for a new trade mark after your application to register a trade mark hasn't been successful.  
 
@@ -24,7 +24,7 @@ Regardless of whether you have a strong claim to the use of a trade marked brand
 * The new brand would be a relatively simple change for you, with little loss of business advantage
 * The cost or effort of other actions (enforcing or defending your right) far outweighs the value of the right and cost of rebranding.
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

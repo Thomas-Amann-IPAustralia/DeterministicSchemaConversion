@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/assert-your-rights
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 Sometimes being accused of infringing someone else's intellectual property (IP) makes you aware of the other party's use of the contested IP for the first time. Looking into their allegations might lead you to suspect that it is actually you that has a stronger claim, and that it is your IP - not theirs - that is at risk of being infringed.  
 

@@ -16,7 +16,7 @@ Depending on your situation, it may be necessary to seek advice from more than o
 
 If you already have a trusted trade mark or patent attorney, you might talk to them about finding the right legal professional for your circumstances. Alternatively, you could search the [Trans-Tasman IP Attorney Board](https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm) register as a starting point. 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 **How about other types of IP professionals?** 
 
@@ -97,7 +97,7 @@ Anyone -- You do not have to be an IP rights owner to engage a legal professiona
 **Do your homework before you meet**\
 Your time is important and an expert's time can be expensive, so it's useful to prepare before you meet with IP lawyers or IP attorneys. Consider:  
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 * [Learning more about IP](https://www.ipaustralia.gov.au/understanding-ip/types-of-ip)  and your specific IP type. Having some basic knowledge will help you to better understand the professional's advice and recommendations.
 * Researching what your suspected infringers or competitors are doing in the market (including where they might be based and whether they have registered any IP rights) and being ready to share the results. This will help your IP lawyer or IP attorney to provide you with advice.

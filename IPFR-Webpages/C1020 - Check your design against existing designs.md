@@ -18,7 +18,7 @@ While not a guarantee against disputes, a freedom to operate search can reduce t
 
 **Determining if two designs are similar can be difficult without IP knowledge. You may wish to seek professional assistance from an IP attorney or other service which offers designs searches. For more information about what constitutes design infringement: see** [**Infringement 101 | Designs infringement**](https://ipfirstresponse.ipaustralia.gov.au/options/design-infringement) 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

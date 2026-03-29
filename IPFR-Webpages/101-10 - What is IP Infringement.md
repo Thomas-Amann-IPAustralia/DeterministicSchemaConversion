@@ -10,6 +10,8 @@ Intellectual property infringement occurs when someone uses, reproduces, or expl
 
 Understanding the basics of IP infringement is essential for anyone who creates, innovates, or operates a business in Australia. This article provides a general introduction to the concept of infringement and what it means for both IP owners and those who may use others' IP. 
 
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
+
 ### What does infringement mean?
 
 At its simplest, infringement occurs when someone uses another's protected creative work or invention without that person's permission or consent. Australian law gives creators and inventors legal protection and rights over their work. Australian IP law protects various types of intellectual creations. These include inventions with patents, distinctive brand names with registered trade marks, unique product appearances with registered designs, various creative works with copyright, and new plant varieties with plant breeders' rights. Each type of intellectual property grants its owner specific, exclusive rights.  
@@ -89,7 +91,7 @@ Even if someone is using IP in a way that appears to infringe, there may be lega
 * **Designs:** Making parts needed to repair a complex product is a defence.
 * **Plant breeders' rights**: Using a plant variety for the purpose of experimentation, further breeding, like cross breeding, or using the variety for private and non-commercial use.
 
-[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+[![Link that says "Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options."](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
 ### Example scenarios
 

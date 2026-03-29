@@ -10,6 +10,8 @@ Trade mark infringement can occur when someone uses a brand name, logo, slogan, 
 
 In Australia, there are laws protecting registered trade marks (specifically the *Trade Marks Act 1995* (Cth)). A registered trade mark gives its owners the exclusive right to use the trade mark in Australia and the ability to stop others from using the trade marks without permission.3
 
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
+
 ### What is protected under a registered trade mark?
 
 Understanding what a registered trade mark protects is essential to identifying infringement.4 A trade mark registered with IP Australia gives its owner exclusive rights based on two key components:5
@@ -50,7 +52,7 @@ This is when someone uses a trade mark that resembles or sounds almost exactly l
 
 **For example,** if "BLUE WAVE" with a wave picture is a registered trade mark for surfboards (see below), using "BLU WAIVES" with a similar wave design for surf gear could confuse customers into thinking they are from the same company.
 
-![[image: stylised blue wave]](/sites/default/files/images/2025-07/Picture2.png)
+![A logo for 'Blue Wave' showing two cresting waves in blue outline above the words BLUE WAVE, used as an example of a graphic trademark.](/sites/default/files/images/2025-07/Picture2.png)
 
 When looking at possible trade mark infringement, courts compare the registered trade mark with the alleged infringing trade mark and consider:
 
@@ -107,7 +109,7 @@ It is essential to recognise that trade mark protection has limitations. Let's s
 
 Navigating trade mark infringement can be complex and often requires legal expertise. Additionally, the registered trade mark must be legally valid. A registered trade mark may be challenged in court and sought to be cancelled during a claim of infringement. An expert can help navigate these issues and provide advice. This guide provides a starting point, but qualified professionals should assess specific cases.
 
-[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+[![Link that says "Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options."](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
                                                                                                                                                                                                                                                                                                  
 

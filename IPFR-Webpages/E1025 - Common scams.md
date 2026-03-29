@@ -29,7 +29,7 @@ You can also confirm any official notice by logging into IP Australia's [Online 
 
 If you suspect a scam, you may wish to report it to [Scamwatch](https://www.scamwatch.gov.au/)  or [ReportCyber](https://www.cyber.gov.au/report-and-recover/report), and keep any evidence such as screenshots or email headers. 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### See also
 

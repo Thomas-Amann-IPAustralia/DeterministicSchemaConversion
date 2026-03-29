@@ -17,20 +17,8 @@ Navigating intellectual property (IP) can be confusing. Different professionals 
 
 On this page:
 
-* Legal professionals
-
-  + Patent attorneys
-  + Trade mark attorneys
-  + Lawyers
-* Other IP professionals
-
-  + Commercialisation specialists
-  + Brand consultants
-  + Franchise and export consultants
-  + IP monitoring services
-  + Qualified Persons (QP) for Plant Breeder's Rights (PBR)
-  + IP valuation professionals
-  + IP search firms
+* Legal professionals (Patent attorneys, Trade mark attorneys, Lawyers)
+* Other IP professionals (Commercialisation specialists, Brand consultants, Franchise and export consultants, IP monitoring services, Qualified Persons (QP) for Plant Breeder's Rights (PBR), ,IP valuation professionals, IP search firms)
 * Government business support services
 
 ### Legal professionals

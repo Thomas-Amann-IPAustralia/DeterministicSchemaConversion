@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-mark
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The 'intermediaries' have a responsibility not to facilitate infringement.    
 
@@ -20,7 +20,7 @@ You can be proactive by listing your IP rights with different e-commerce platfor
 
 **Note:** It can be time-consuming for rights owners to monitor e-commerce platforms and submit IP complaints themselves. A time and cost-effective way to manage this process is often to engage IP professionals such as IP monitoring services. These IP professionals can use their experience and knowledge to identify and remove counterfeit goods across multiple online platforms.Beyond online marketplaces, many other digital platforms available to Australian users (including social media platforms to which users can upload content) also offer mechanisms that copyright owners can use to address or prevent infringement. These often include complaint forms and notice and takedown processes that copyright owners can use if they believe their rights have been infringed. They may also include bespoke tools copyright owners can choose use to proactively manage and enforce their rights on those platforms. For example,  automated content recognition/identification or screening tools (like YouTube Content ID or Meta Rights Manager) allow copyright owners to upload their content and find matches to content uploaded on platforms by third parties. Where matches are found, copyright owners may be able to seek to pre-emptively block or otherwise monetise the content (for example, through share of advertising revenue in some cases).
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

@@ -16,7 +16,7 @@ You can request removal of a trade mark if you believe the owner:
 * never intended to use the trade mark
 * hasn't used the trade mark in good faith.
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 **When can you file an application for removal for non-use?**
 
@@ -26,7 +26,7 @@ If you are filing an application for removal on the ground that the trade mark h
 
 | **For trade marks with a filing date 23 February 2019 or earlier;** | **For trade marks with a filing date 24 February 2019 or later;** |
 | --- | --- |
-| You can file after **5 years** or more have passed since the *filing date* of the application (and if you believe that a trade mark hasn't been used in three years.)  An image of the trade mark register highlighting the date of filing. | You can file after **3 years** have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.)     Image of the trade mark register highlighting the Entered on Register date |
+| You can file after **5 years** or more have passed since the *filing date* of the application (and if you believe that a trade mark hasn't been used in three years.)  Screenshot of the trade mark register highlighting the date of filing. | You can file after **3 years** have passed since the date of the particulars of the trade mark were entered in the Register (and if you believe that a trade mark hasn't been used in three years.)     Screenshot of the trade mark register highlighting the Entered on Register date |
 
 ### What are the benefits?
 

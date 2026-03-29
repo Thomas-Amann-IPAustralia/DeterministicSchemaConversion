@@ -14,13 +14,14 @@ Mediation can be used at any stage during a dispute process. It can be a prevent
 
 While mediation can be ordered by court, it is often a voluntary process whereby disputing parties agree to negotiate an outcome with help from a mediator. Parties can discuss the suitability of mediation as a method to resolve their IP dispute and agree to participate in the process via different ways, including communicating directly through telephone discussions, email correspondence or instructing their legal representatives to do so. 
 
+[![Easy English Button.](/sites/default/files/images/2026-02/Easy%20English%20button.png)](/node/318)
+
 Mediation is an attractive option for parties who:  
 
 * place a premium on the preservation or enhancement of their relationship, for instance when parties have an existing contractual or business relationship
 * seek to maintain control over the dispute settlement process, with some flexibility to shape the mediation procedures without procedural rules being imposed by others
 * value confidentiality, or
-
-want to reach a speedy settlement without damage to their reputations.  
+* want to reach a speedy settlement without damage to their reputations.
 
 **When is mediation not appropriate?** 
 
@@ -30,7 +31,7 @@ Mediation isn't for everyone. Mediation may not be suitable when:  
 * a party is certain that it has a straightforward case to the extent that there is no room for settlement or negotiation
 * deliberate counterfeiting or piracy has occurred.
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

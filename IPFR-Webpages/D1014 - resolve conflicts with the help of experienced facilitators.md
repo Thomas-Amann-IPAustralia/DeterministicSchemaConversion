@@ -6,7 +6,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/ADR](https://ipfir
 
 *This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy)  *and by* [*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
-![Overview of ADR options ](/sites/default/files/images/2026-01/GD2526_079%20-%20IP%20First%20Response%20Infographic-2.png)
+![An infographic titled 'What is Alternative Dispute Resolution (ADR)?' comparing three out-of-court resolution methods: Mediation (facilitated negotiation), Arbitration (where an arbitrator makes a binding decision), and Expert Determination (where a specialist decides specific issues).](/sites/default/files/images/2026-01/GD2526_079%20-%20IP%20First%20Response%20Infographic-2.png)
 
 ### What is it?
 
@@ -47,6 +47,8 @@ Expert determination is a process where one or more independent experts in the s
 * The parties need to agree as to whether they want the expert decision to be binding or not
 * The parties can select and nominate an expert together
 * It is suitable for highly technical issues in a specialist area as the expert would often have a high level of expertise and experience in the relevant industry.
+
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
 
 ### What are the benefits?
 

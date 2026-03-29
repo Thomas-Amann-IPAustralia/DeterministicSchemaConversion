@@ -8,6 +8,8 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/what-do-if-someone
 
 Discovering that someone might be using your intellectual property without permission can be both frustrating and concerning. Whether it is your brand name, invention, design, or creative work, knowing how to respond appropriately is vital for protecting your rights while avoiding unnecessary costs and complications. 
 
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
+
 ### First step, gather information
 
 Before taking any action, take time to assess the situation: 
@@ -36,7 +38,7 @@ Next, consider your options with IP Australia's [IP First Response](https://ipfi
 
 There are a variety of options available across a spectrum. 
 
-![[image, spectrum of options]](/sites/default/files/images/2025-07/Picture1.png)
+![A simple grey icon of an open envelope with a letter inside.](/sites/default/files/images/2025-07/Picture1.png)
 
 [**Take no immediate action**](https://ipfirstresponse.ipaustralia.gov.au/options/take-no-immediate-action) 
 

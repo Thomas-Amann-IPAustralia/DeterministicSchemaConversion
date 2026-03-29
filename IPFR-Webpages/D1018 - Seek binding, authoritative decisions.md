@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/court-patents](htt
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 If other efforts to resolve a dispute are unsuccessful or not appropriate for your situation, you may consider starting a legal claim in court. Going to court is usually a last resort. Court proceedings are expensive, time consuming and stressful and obtaining the outcome you seek is never guaranteed. 
 

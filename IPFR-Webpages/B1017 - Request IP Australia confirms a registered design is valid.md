@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/request-ip-austral
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 You can request an examination to certify your design when you file, or at any time during the registration period. A certified design gives you the legal right to take action against others who use it without permission. If you request certification, one of IP Australia's examiner~~'~~s will complete a full examination to check whether your design is new and distinctive. If your design passes the examination, IP Australia will issue you a certificate, and your design will then be 'certified'. 
 

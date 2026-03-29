@@ -6,6 +6,8 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/respond-unjustifie
 
 *This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
+![An infographic about how to respond to an unjustified threat including high level information about what is it, what to do first, how to spot an unjustified threat, what are the risks, what are your options, how to spot a possible scam.](/sites/default/files/images/2026-03/GD2526_079%20-%20IP%20First%20Response%20Infographic-4.png)
+
 ### What is it?
 
 Unjustified threats of IP infringement can disrupt your business, for example while you assess whether you can continue using the contested IP. If someone threatens to take legal action against you for infringing their Australian registered IP rights, and these threats are unjustified and received by you in Australia, you may be able to take action under Australia's 'unjustified threats' laws. Similarly, if someone threatens to take action against you in Australia for infringing copyright and these threats are unjustified, you may be able to take action under the 'groundless threats' provisions of Australian copyright law. 
@@ -27,7 +29,7 @@ It can be difficult to know whether a notice or correspondence amounts to an unj
 
 **It is always prudent to seek legal advice before deciding whether to start legal action.**There are often options other than court for responding to an unjustified threat -- like writing back to the other party to clarify your position -- before you decide whether to start legal action against them. An IP lawyer or IP attorney can help you decide on the best way to respond. 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 

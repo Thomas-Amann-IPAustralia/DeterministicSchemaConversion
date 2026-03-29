@@ -6,9 +6,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/de-escalate-and-re
 
 *This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
+![An infographic about how to de-escalate and resolve disputes, including what to be aware of, how to have a conversation, before you contact the other party, when to stop the conversation.](/sites/default/files/images/2026-03/GD2526_079%20-%20IP%20First%20Response%20Infographic-3.png)
+
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 If you have been contacted by someone accusing you of infringing their intellectual property (IP), you can consider responding with an invitation to work out a mutually acceptable solution. You might be able to reach a resolution via written correspondence or in-person discussions without escalating to formal legal action. 
 
@@ -18,7 +20,7 @@ You can respond in a way that lowers the risk of conflict and explores mutually 
 
 For more information on possible commercial solutions, see IP First Response's page: [Agree to a commercial arrangement](https://ipfirstresponse.ipaustralia.gov.au/options/agree-commercial-arrangement). 
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 
@@ -87,6 +89,8 @@ Before you engage in a conversation with the other party, consider gathering:
 * A confidentiality agreement template to protect commercial information during negotiations.
 
 If you cannot reach an agreement through direct negotiations, you may consider engaging in alternative dispute resolution (ADR). This can involve processes such as mediation or arbitration, where experienced third party facilitators will assist parties to resolve a dispute: [Learn more about alternative dispute resolution](https://ipfirstresponse.ipaustralia.gov.au/options/ADR).
+
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
 
 ### See also
 

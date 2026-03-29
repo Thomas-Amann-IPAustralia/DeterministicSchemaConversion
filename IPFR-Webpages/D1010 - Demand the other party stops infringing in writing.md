@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/demand-other-party
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 A letter of demand, or a cease and desist letter, can be an effective way of stopping infringing behaviour and avoiding the need for legal action. You can use this letter to communicate your concerns and demands. It's often one of the first actions taken if you are satisfied that an infringement is occurring. 
 
@@ -29,7 +29,7 @@ An effective letter of demand will:  
 
 **A letter of demand will also usually be more effective if it is sent by an IP lawyer or IP attorney on your behalf, rather than you sending it personally. However, you may want to consider the cost of obtaining this legal assistance against the monetary value of any compensation or licence fee you are seeking.**
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### What are the benefits?
 
@@ -116,7 +116,7 @@ Before taking this action, it might also be helpful to consider your goals and p
 
 It can be difficult to determine whether the other party's behaviour amounts to infringement. An IP lawyer or IP attorney can help you make this assessment and advise what steps would work best in your situation.  
 
-**Please note:** Making [informal contact](/options/provide-opportunity-other-party-stop-infringing "Provide an opportunity for the other party to stop infringing") before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, please consult an IP professional.    
+**Please note:** Making [informal contact](/options/informal-contact-stop-infringing "Provide an opportunity for the other party to stop infringing") before consulting with an IP professional can result in detrimental outcomes for you and your IP right. Please consider carefully if you want to undertake this action and are fully aware of the risks involved. If unsure, please consult an IP professional.    
 
 ### See also
 

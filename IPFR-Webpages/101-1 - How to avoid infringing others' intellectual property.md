@@ -14,6 +14,8 @@ It is crucial to understand that you can infringe on someone's IP rights without
 
 Understanding how to avoid infringing on others' rights from the beginning can save your business from serious consequences. With awareness and careful planning, you can minimise the risk of infringing on others' intellectual property rights.
 
+[**Used our tool in a tricky IP situation? We'd love to hear your story**](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_0pIAomXp4M4B142)
+
 ### Avoiding IP infringement
 
 **1. Conduct searches before you invest**
@@ -67,7 +69,7 @@ Professional advice is especially valuable in specific situations. Seeking early
 * You are developing products for highly competitive markets.
 * You receive a letter of demand or a 'cease and desist' letter.
 
-[![Deciding proactive steps you can take to avoid future IP headaches? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Proactive%20Navigator%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+[![Box with a link to the navigator tool.](/sites/default/files/images/2026-02/Proactive%20Navigator%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
 ### Want to give us feedback?
 

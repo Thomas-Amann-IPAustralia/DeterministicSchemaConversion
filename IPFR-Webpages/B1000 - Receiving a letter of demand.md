@@ -6,13 +6,13 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/receiving-letter-d
 
 *This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our*[*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
-![Start here - Letter of demand ](/sites/default/files/images/2026-01/GD2526_079%20-%20IP%20First%20Response%20Infographic-1.png)
+![An infographic flowchart titled 'Start here' outlining the six steps to take when receiving a Letter of Demand: Initial review, quick checks, understanding letter contents, watching for red flags, collecting evidence, and exploring options.](/sites/default/files/images/2026-01/GD2526_079%20-%20IP%20First%20Response%20Infographic-1.png)
 
 ### 
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](https://ipfirstresponse.ipaustralia.gov.au/options/what-ip-infringement?ref=infringement_info_button)
 
 In the context of intellectual property (IP) protection, a letter of demand (or a cease and desist letter) is a formal notice from someone who believes you are using their IP without permission. It's often the first formal step used in notifying someone of an IP issue. 
 
@@ -26,7 +26,7 @@ It is usually not a good idea to ignore a letter of demand without first seeking
 
 **Before responding to a letter of demand, you may want to show the letter and explain the situation to a qualified** [**IP legal professional**](https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-IP)  **who can explain your position and outline possible options.**
 
-[![Not sure if this applies to your situation? Start with our Navigator Tool](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
+[![Link to navigator tool that says "Not sure if this applies to your situation? Start with our Navigator Tool".](/sites/default/files/images/2026-02/Not%20sure%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=NotSure_button_experiment_v1)
 
 ### Common features in a letter of demand
 

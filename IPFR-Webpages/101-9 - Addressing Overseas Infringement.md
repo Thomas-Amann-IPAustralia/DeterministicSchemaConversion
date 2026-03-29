@@ -58,7 +58,7 @@ When addressing overseas infringement, you have a range of options, each carryin
 
 **Legal proceedings.**Court action is appropriate when the infringement is causing significant commercial damage or when other methods have been unsuccessful. Legal proceedings should be a last resort due to their costs, complexity, and uncertainty in foreign legal systems.
 
-[![Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options.](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
+[![Link that says "Need help deciding how to address an infringement issue? Start with our Navigator Tool to see all your options."](/sites/default/files/images/2026-02/Need%20to%20take%20action%20button.png)](https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement?utm_content=from101_button_experiment_v1)
 
 ### Practical tips
 

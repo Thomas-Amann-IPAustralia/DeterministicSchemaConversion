@@ -8,7 +8,7 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/ask-your-suppliers
 
 ### What is it?
 
-[![See information about what counts as infringement](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
+[![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
 One way to target infringing products is contacting the businesses that make, ship, or sell the suspected infringing goods and asking them to take action. These 'intermediaries' might include manufacturers, wholesalers, retailers, suppliers or importers. 
 

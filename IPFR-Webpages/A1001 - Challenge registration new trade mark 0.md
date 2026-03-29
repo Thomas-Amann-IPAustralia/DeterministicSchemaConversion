@@ -1,4 +1,4 @@
-PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark)"
+PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-0](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-registration-new-trade-mark-0)"
 
 ## Opposition process
 
