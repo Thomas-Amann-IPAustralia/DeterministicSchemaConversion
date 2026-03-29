@@ -44,7 +44,7 @@ jobs:
           fi
 
       - name: Dispatch Scraper
-        if: steps.sitemap.outputs.new_urls_found == 'true'
+        if: steps.sitemap.outputs.needs_rescrape == 'true'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -55,4 +55,8 @@ jobs:
               workflow_id: 'scrape.yml',
               ref: context.ref || 'main'
             })
-            console.log('Dispatched scrape.yml to process new URLs')
+            console.log(
+              `Dispatched scrape.yml: `
+              + `${{ steps.sitemap.outputs.new_url_count }} new URL(s), `
+              + `${{ steps.sitemap.outputs.updated_url_count }} updated URL(s)`
+            )

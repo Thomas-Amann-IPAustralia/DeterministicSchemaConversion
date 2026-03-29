@@ -5,6 +5,9 @@ Fetches the IPFR sitemap via Selenium stealth (site is behind a WAF),
 extracts /options/ URLs, compares against metatable-Content.csv,
 and appends new entries for any discovered pages.
 
+Also detects pages already in the CSV whose sitemap <lastmod> date is
+newer than the recorded Last-updated value, and flags them for re-scraping.
+
 Can be run manually or on a weekly schedule via GitHub Actions.
 """
 
@@ -13,6 +16,7 @@ import os
 import sys
 import re
 import logging
+from datetime import datetime
 from urllib.parse import urlparse
 from xml.etree import ElementTree
 
@@ -70,81 +74,117 @@ def initialize_driver():
 
 
 def fetch_sitemap(driver, url):
-    """Fetches sitemap XML content via Selenium and returns parsed URLs."""
+    """Fetches sitemap XML via the browser's XHR (bypasses Chrome's XML viewer)
+    and returns a dict mapping url -> lastmod string (or None if absent).
+
+    Handles sitemap index files by recursively fetching sub-sitemaps.
+    """
     logger.info(f"Fetching sitemap: {url}")
+
+    # Navigate first so cookies / WAF session tokens are established,
+    # then use a synchronous XHR inside the same browser context to retrieve
+    # the raw XML text before Chrome has a chance to render it into its
+    # shadow-DOM XML viewer (which hides <loc> tags from page_source).
     driver.get(url)
     WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.TAG_NAME, 'body'))
     )
 
-    page_source = driver.page_source
+    xml_text = driver.execute_script("""
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', arguments[0], false);
+        xhr.send(null);
+        return xhr.responseText;
+    """, url)
 
-    # The browser may wrap XML in an HTML document; extract the XML content.
-    # Try to find raw XML in the page source first.
-    urls = []
+    url_map = {}  # url -> lastmod (str or None)
 
-    # Try parsing as XML directly from page source
-    # Browsers often render XML inside <pre> or directly
     try:
-        # Strip any HTML wrapper the browser may add
-        xml_match = re.search(r'(<\?xml.*?\?>.*?</(?:urlset|sitemapindex)>)',
-                              page_source, re.DOTALL)
-        if xml_match:
-            xml_content = xml_match.group(1)
-        else:
-            # Try getting just the text content (browser-rendered XML)
-            body = driver.find_element(By.TAG_NAME, 'body')
-            xml_content = body.text
-            # If body text doesn't look like XML, try page_source with tag stripping
-            if '<loc>' not in xml_content and '<loc>' in page_source:
-                xml_content = page_source
+        # Strip default XML namespace so ElementTree findall paths stay simple
+        xml_clean = re.sub(r'\sxmlns(?::[^=]+)?="[^"]+"', '', xml_text)
+        root = ElementTree.fromstring(xml_clean)
 
-        # Parse XML - handle namespace
-        # Remove default namespace to simplify parsing
-        xml_content = re.sub(r'\sxmlns="[^"]+"', '', xml_content)
-        root = ElementTree.fromstring(xml_content)
-
-        # Check if this is a sitemap index
+        # Sitemap index — recurse into each sub-sitemap
         sitemapindex_entries = root.findall('.//sitemap/loc')
         if sitemapindex_entries:
             logger.info(f"Found sitemap index with {len(sitemapindex_entries)} sub-sitemaps")
-            for loc in sitemapindex_entries:
-                sub_urls = fetch_sitemap(driver, loc.text.strip())
-                urls.extend(sub_urls)
+            for loc_el in sitemapindex_entries:
+                sub_map = fetch_sitemap(driver, loc_el.text.strip())
+                url_map.update(sub_map)
         else:
-            # Regular sitemap - extract URLs
-            for loc in root.findall('.//url/loc'):
-                urls.append(loc.text.strip())
+            # Regular sitemap — collect loc + optional lastmod per <url> block
+            for url_el in root.findall('.//url'):
+                loc_el = url_el.find('loc')
+                if loc_el is None or not loc_el.text:
+                    continue
+                loc = loc_el.text.strip()
+                lastmod_el = url_el.find('lastmod')
+                lastmod = lastmod_el.text.strip() if lastmod_el is not None and lastmod_el.text else None
+                url_map[loc] = lastmod
 
     except ElementTree.ParseError:
-        # Fallback: extract URLs via regex from raw source
         logger.warning("XML parsing failed, falling back to regex extraction")
-        loc_matches = re.findall(r'<loc>\s*(https?://[^<]+)\s*</loc>', page_source)
-        urls.extend(loc_matches)
+        # Capture loc and the immediately following lastmod (if any)
+        for loc, lastmod in re.findall(
+            r'<loc>\s*(https?://[^<]+)\s*</loc>'
+            r'(?:\s*<lastmod>\s*([^<]*?)\s*</lastmod>)?',
+            xml_text
+        ):
+            url_map[loc.strip()] = lastmod.strip() if lastmod else None
 
-    logger.info(f"Extracted {len(urls)} total URLs from sitemap")
-    return urls
+    logger.info(f"Extracted {len(url_map)} total URLs from sitemap")
+    return url_map
 
 
-def filter_options_urls(urls):
-    """Filter URLs to only include /options/ paths."""
-    filtered = []
-    for url in urls:
-        parsed = urlparse(url)
-        if OPTIONS_PATH_PREFIX in parsed.path:
-            filtered.append(url)
-    return filtered
+def filter_options_urls(url_map):
+    """Filter url_map to only include /options/ paths."""
+    return {
+        url: lastmod
+        for url, lastmod in url_map.items()
+        if OPTIONS_PATH_PREFIX in urlparse(url).path
+    }
+
+
+def parse_sitemap_date(date_str):
+    """Parse an ISO 8601 lastmod string to a date object, or None."""
+    if not date_str:
+        return None
+    s = date_str.strip()
+    for fmt in ('%Y-%m-%dT%H:%M:%S%z', '%Y-%m-%dT%H:%M:%SZ', '%Y-%m-%d'):
+        try:
+            dt = datetime.strptime(s[:len(fmt)], fmt)
+            return dt.date()
+        except ValueError:
+            continue
+    logger.debug(f"Could not parse sitemap date: {date_str!r}")
+    return None
+
+
+def parse_csv_date(date_str):
+    """Parse a DD/MM/YYYY Last-updated string to a date object, or None."""
+    if not date_str:
+        return None
+    s = date_str.strip()
+    for fmt in ('%d/%m/%Y', '%-d/%-m/%Y', '%d/%m/%Y', '%d/%m/%y'):
+        try:
+            return datetime.strptime(s, fmt).date()
+        except ValueError:
+            continue
+    logger.debug(f"Could not parse CSV date: {date_str!r}")
+    return None
 
 
 def read_existing_csv(csv_path):
-    """Read existing CSV and return rows, fieldnames, and set of existing URLs."""
+    """Read existing CSV and return rows, fieldnames, set of existing URLs,
+    and a dict mapping url -> Last-updated string."""
     rows = []
     fieldnames = []
     existing_urls = set()
+    url_last_updated = {}
 
     if not os.path.exists(csv_path):
         logger.error(f"CSV file not found: {csv_path}")
-        return rows, fieldnames, existing_urls
+        return rows, fieldnames, existing_urls, url_last_updated
 
     with open(csv_path, mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
@@ -154,9 +194,10 @@ def read_existing_csv(csv_path):
             url = row.get('Canonical-url', '').strip()
             if url:
                 existing_urls.add(url)
+                url_last_updated[url] = row.get('Last-updated', '').strip()
 
     logger.info(f"Read {len(rows)} existing entries from CSV")
-    return rows, fieldnames, existing_urls
+    return rows, fieldnames, existing_urls, url_last_updated
 
 
 def get_next_udid(rows):
@@ -184,7 +225,6 @@ def title_from_slug(url):
     path = parsed.path.rstrip('/')
     slug = path.split('/')[-1]
     title = slug.replace('-', ' ').strip()
-    # Capitalize first letter only
     if title:
         title = title[0].upper() + title[1:]
     return title
@@ -206,7 +246,6 @@ def append_new_urls(csv_path, fieldnames, existing_rows, new_urls, next_udid_num
         new_rows.append(new_row)
         logger.info(f"  New entry: {udid} - {title} ({url})")
 
-    # Rewrite the full CSV to preserve formatting
     all_rows = existing_rows + new_rows
 
     with open(csv_path, mode='w', newline='', encoding='utf-8-sig') as f:
@@ -225,13 +264,12 @@ def set_github_output(name, value):
         with open(output_file, 'a') as f:
             f.write(f"{name}={value}\n")
     else:
-        # Running locally - just log it
         logger.info(f"[Output] {name}={value}")
 
 
 def main():
     # Read existing CSV
-    rows, fieldnames, existing_urls = read_existing_csv(CSV_FILE)
+    rows, fieldnames, existing_urls, url_last_updated = read_existing_csv(CSV_FILE)
     if not fieldnames:
         logger.critical(f"Could not read CSV headers from {CSV_FILE}")
         sys.exit(1)
@@ -243,30 +281,57 @@ def main():
         sys.exit(1)
 
     try:
-        # Fetch and parse sitemap
-        all_urls = fetch_sitemap(driver, SITEMAP_URL)
-        options_urls = filter_options_urls(all_urls)
-        logger.info(f"Found {len(options_urls)} /options/ URLs in sitemap")
+        # Fetch and parse sitemap (returns url -> lastmod dict)
+        all_url_map = fetch_sitemap(driver, SITEMAP_URL)
+        options_url_map = filter_options_urls(all_url_map)
+        logger.info(f"Found {len(options_url_map)} /options/ URLs in sitemap")
 
-        # Compare with existing CSV
-        new_urls = [url for url in options_urls if url not in existing_urls]
+        # --- Detect new pages (not yet in CSV) ---
+        new_urls = {url: lm for url, lm in options_url_map.items()
+                    if url not in existing_urls}
         logger.info(f"New URLs not in CSV: {len(new_urls)}")
 
+        # --- Detect updated pages (in CSV, but sitemap lastmod is newer) ---
+        updated_urls = {}
+        for url, lastmod in options_url_map.items():
+            if url not in existing_urls:
+                continue  # handled above as new
+            sitemap_date = parse_sitemap_date(lastmod)
+            csv_date = parse_csv_date(url_last_updated.get(url, ''))
+            if sitemap_date and csv_date and sitemap_date > csv_date:
+                updated_urls[url] = lastmod
+                logger.info(
+                    f"  Updated page detected: {url}"
+                    f" (sitemap: {sitemap_date}, csv: {csv_date})"
+                )
+
+        logger.info(f"Updated URLs (sitemap newer than CSV): {len(updated_urls)}")
+
+        # --- Act on new pages ---
         if new_urls:
             next_num = get_next_udid(rows)
-            append_new_urls(CSV_FILE, fieldnames, rows, new_urls, next_num)
-            set_github_output('new_urls_found', 'true')
-            set_github_output('new_url_count', str(len(new_urls)))
+            append_new_urls(CSV_FILE, fieldnames, rows, list(new_urls.keys()), next_num)
             logger.info(f"SUCCESS: Added {len(new_urls)} new URLs to {CSV_FILE}")
-        else:
-            set_github_output('new_urls_found', 'false')
-            set_github_output('new_url_count', '0')
-            logger.info("No new URLs found - CSV is up to date")
+
+        # --- Set GitHub Actions outputs ---
+        needs_rescrape = bool(new_urls or updated_urls)
+
+        set_github_output('new_urls_found',     'true' if new_urls else 'false')
+        set_github_output('new_url_count',      str(len(new_urls)))
+        set_github_output('updated_urls_found', 'true' if updated_urls else 'false')
+        set_github_output('updated_url_count',  str(len(updated_urls)))
+        set_github_output('needs_rescrape',     'true' if needs_rescrape else 'false')
+
+        if not needs_rescrape:
+            logger.info("No new or updated URLs found - CSV is up to date")
 
     except Exception as e:
         logger.error(f"Error during sitemap check: {e}")
-        set_github_output('new_urls_found', 'false')
-        set_github_output('new_url_count', '0')
+        set_github_output('new_urls_found',     'false')
+        set_github_output('new_url_count',      '0')
+        set_github_output('updated_urls_found', 'false')
+        set_github_output('updated_url_count',  '0')
+        set_github_output('needs_rescrape',     'false')
         sys.exit(1)
     finally:
         driver.quit()
