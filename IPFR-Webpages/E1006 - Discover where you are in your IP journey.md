@@ -6,6 +6,8 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/discover-where-you
 
 *This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our* [*IP First Response feedback form*](https://ipaustralia.au1.qualtrics.com/jfe/form/SV_6LKlgPWZqiheCiy) *and by*[*emailing us*](mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback%20on%20IP%20First%20Response)*.*
 
+![discover where you are in your ip journey, idea, readiness, development, protection, commercialisation, growth and expansion. ](/sites/default/files/images/2026-04/GD2526_079%20-%20IP%20First%20Response%20Infographic%20Phase%202%20Infographic%20%235%20REV.png)
+
 ### What is it?
 
 As a business owner, there's a lot of information to grapple with and working out which IP options apply to you can be tricky. By matching your current activities to common stages in the IP journey, you can quickly see what's most relevant now and what might come next. 
