@@ -15,13 +15,13 @@ logger = logging.getLogger(__name__)
 def generate_embeddings():
     # --- Configuration ---
     input_file = 'sqlite_data/Semantic.xlsx'
-    output_file_csv = 'sqlite_data/Semantic_Embeddings_Output.csv'
+    output_file_jsonl = 'sqlite_data/Semantic_Embeddings_Output.jsonl'
     output_file_xlsx = 'sqlite_data/Semantic_Embeddings_Output.xlsx'
     output_file_json = 'sqlite_data/Semantic_Embeddings_Output.json'
     
     logger.info("--- Starting Embedding Generation Workflow ---")
     logger.info(f"Target Input File: {input_file}")
-    logger.info(f"Target Output CSV: {output_file_csv}")
+    logger.info(f"Target Output JSONL: {output_file_jsonl}")
     logger.info(f"Target Output XLSX: {output_file_xlsx}")
     logger.info(f"Target Output JSON: {output_file_json}")
 
@@ -93,10 +93,13 @@ def generate_embeddings():
     
     # --- Save Outputs ---
     try:
-        # Save CSV
-        df.to_csv(output_file_csv, index=False)
-        logger.info(f"Saved CSV: {output_file_csv}")
-        
+        # Save JSONL (one record per line)
+        import json as _json
+        with open(output_file_jsonl, 'w', encoding='utf-8') as jf:
+            for record in df.to_dict(orient='records'):
+                jf.write(_json.dumps(record, ensure_ascii=False) + '\n')
+        logger.info(f"Saved JSONL: {output_file_jsonl}")
+
         # Save Excel
         df.to_excel(output_file_xlsx, index=False, engine='openpyxl')
         logger.info(f"Saved Excel: {output_file_xlsx}")

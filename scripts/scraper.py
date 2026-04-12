@@ -1,4 +1,4 @@
-import csv
+import json
 import os
 import sys
 import time
@@ -16,7 +16,7 @@ from selenium_stealth import stealth
 from markdownify import markdownify as md
 
 # --- Configuration ---
-CSV_FILE = 'metatable-Content.csv'
+JSONL_FILE = 'metatable-Content.jsonl'
 OUTPUT_DIR = 'IPFR-Webpages'
 HTML_OUTPUT_DIR = 'IPFR-Webpages-html'
 REPORTS_DIR = os.path.join('DeterministicSchemaConversion', 'reports', 'scrape_reports')
@@ -220,9 +220,9 @@ def fetch_and_convert(driver, url):
         return None, None, telemetry
 
 def main():
-    # Check if CSV exists
-    if not os.path.exists(CSV_FILE):
-        logger.critical(f"Error: {CSV_FILE} not found.")
+    # Check if JSONL exists
+    if not os.path.exists(JSONL_FILE):
+        logger.critical(f"Error: {JSONL_FILE} not found.")
         sys.exit(1)
 
     # Ensure output directories exist
@@ -240,59 +240,59 @@ def main():
     session_report = []
 
     try:
-        # Read the CSV File
-        logger.info(f"Reading targets from {CSV_FILE}...")
-        
-        with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
-            reader = csv.DictReader(f)
-            
-            for row in reader:
-                url = row.get('Canonical-url', '').strip()
-                udid = row.get('UDID', '').strip()
-                main_title = row.get('Main-title', '').strip()
+        # Read the JSONL File
+        logger.info(f"Reading targets from {JSONL_FILE}...")
 
-                # Validation
-                if not url or not url.lower().startswith('http'):
-                    logger.debug(f"Skipping row ID {udid}: Invalid URL '{url}'")
-                    continue
-                
-                clean_title = sanitize_filename(main_title)
-                filename = f"{udid} - {clean_title}.md"
+        with open(JSONL_FILE, mode='r', encoding='utf-8') as f:
+            rows = [json.loads(line) for line in f if line.strip()]
 
-                # Scrape
-                md_content, html_content, stats = fetch_and_convert(driver, url)
-                
-                # Add to Report
-                report_entry = {
-                    "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "UDID": udid,
-                    "Filename": filename,
-                    "URL": url,
-                    "Status": stats["status"],
-                    "Error_Message": stats["error"],
-                    "HTML_Size_Bytes": stats["html_len"],
-                    "MD_Size_Bytes": stats["md_len"],
-                    "Title_Detected": stats["title_found"]
-                }
-                session_report.append(report_entry)
+        for row in rows:
+            url = row.get('Canonical-url', '').strip()
+            udid = row.get('UDID', '').strip()
+            main_title = row.get('Main-title', '').strip()
 
-                if md_content and stats["status"] == "SUCCESS":
-                    # 1. Save Markdown
-                    md_filepath = os.path.join(OUTPUT_DIR, filename)
-                    with open(md_filepath, 'w', encoding='utf-8') as f_md:
-                        f_md.write(md_content)
-                    
-                    # 2. Save HTML
-                    base_name = os.path.splitext(filename)[0]
-                    html_filename = f"{base_name}-html.html"
-                    html_filepath = os.path.join(HTML_OUTPUT_DIR, html_filename)
-                    
-                    with open(html_filepath, 'w', encoding='utf-8') as f_html:
-                        f_html.write(html_content)
+            # Validation
+            if not url or not url.lower().startswith('http'):
+                logger.debug(f"Skipping row ID {udid}: Invalid URL '{url}'")
+                continue
 
-                    logger.info(f"  -> Saved: {filename}")
-                else:
-                    logger.warning(f"  -> Skipped: {filename} (Reason: {stats['error']})")
+            clean_title = sanitize_filename(main_title)
+            filename = f"{udid} - {clean_title}.md"
+
+            # Scrape
+            md_content, html_content, stats = fetch_and_convert(driver, url)
+
+            # Add to Report
+            report_entry = {
+                "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "UDID": udid,
+                "Filename": filename,
+                "URL": url,
+                "Status": stats["status"],
+                "Error_Message": stats["error"],
+                "HTML_Size_Bytes": stats["html_len"],
+                "MD_Size_Bytes": stats["md_len"],
+                "Title_Detected": stats["title_found"]
+            }
+            session_report.append(report_entry)
+
+            if md_content and stats["status"] == "SUCCESS":
+                # 1. Save Markdown
+                md_filepath = os.path.join(OUTPUT_DIR, filename)
+                with open(md_filepath, 'w', encoding='utf-8') as f_md:
+                    f_md.write(md_content)
+
+                # 2. Save HTML
+                base_name = os.path.splitext(filename)[0]
+                html_filename = f"{base_name}-html.html"
+                html_filepath = os.path.join(HTML_OUTPUT_DIR, html_filename)
+
+                with open(html_filepath, 'w', encoding='utf-8') as f_html:
+                    f_html.write(html_content)
+
+                logger.info(f"  -> Saved: {filename}")
+            else:
+                logger.warning(f"  -> Skipped: {filename} (Reason: {stats['error']})")
 
     except Exception as e:
         logger.critical(f"An unexpected error occurred during execution: {e}")

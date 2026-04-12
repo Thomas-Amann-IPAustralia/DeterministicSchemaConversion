@@ -23,7 +23,6 @@ Designed to run in a locked-down GitHub Actions environment with only openpyxl i
 from __future__ import annotations
 
 import argparse
-import csv
 import hashlib
 import json
 import os
@@ -851,18 +850,21 @@ def main() -> None:
             # If report path is relative, anchor it next to the XLSX for convenience
             if not os.path.isabs(report_path):
                 report_path = os.path.join(os.path.dirname(os.path.abspath(xlsx_path)), report_path)
+            # Normalise extension to .jsonl
+            if report_path.endswith(".csv"):
+                report_path = report_path[:-4] + ".jsonl"
 
-            with open(report_path, "w", newline="", encoding="utf-8") as f:
-                w = csv.writer(f)
-                w.writerow(["metric", "value"])
-                w.writerow(["webpages_total", len(webpages_out)])
-                w.writerow(["links_internal_resolved_rows", internal_resolved])
-                w.writerow(["links_external_rows", external_written])
-                w.writerow(["links_internal_unresolved_rows", internal_unresolved])
-                w.writerow([])
-                w.writerow(["source_webpage_id", "unresolved_internal_url"])
+            import json as _json
+            with open(report_path, "w", encoding="utf-8") as f:
+                metrics = {
+                    "webpages_total": len(webpages_out),
+                    "links_internal_resolved_rows": internal_resolved,
+                    "links_external_rows": external_written,
+                    "links_internal_unresolved_rows": internal_unresolved,
+                }
+                f.write(_json.dumps(metrics, ensure_ascii=False) + "\n")
                 for src, url in unresolved_internal:
-                    w.writerow([src, url])
+                    f.write(_json.dumps({"source_webpage_id": src, "unresolved_internal_url": url}, ensure_ascii=False) + "\n")
         except Exception as e:
             print(f"⚠️ Could not write link report to {report_path}: {e}")
 

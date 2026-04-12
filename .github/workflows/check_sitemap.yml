@@ -32,12 +32,12 @@ jobs:
         id: sitemap
         run: python scripts/check_sitemap.py
 
-      - name: Commit Updated CSV
+      - name: Commit Updated JSONL
         if: steps.sitemap.outputs.csv_changed == 'true'
         run: |
           git config --global user.name "IPFR Sitemap Bot"
           git config --global user.email "actions@github.com"
-          git add metatable-Content.csv
+          git add metatable-Content.jsonl
           if ! git diff --staged --quiet; then
             MSG="Sitemap Monitor:"
             if [ "${{ steps.sitemap.outputs.new_urls_found }}" == "true" ]; then

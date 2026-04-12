@@ -4,10 +4,10 @@ md_to_jsonld.py — Deterministic Markdown-to-Schema.org JSON-LD converter.
 
 Transforms cleaned government markdown files into structured, validated
 JSON-LD optimised for LLM and RAG consumption. Metadata is enriched via
-a companion CSV control plane (metatable-Content.csv).
+a companion JSONL control plane (metatable-Content.jsonl).
 
 Usage:
-    python md_to_jsonld.py --md-dir ./IPFR-Webpages --csv metatable-Content.csv --out ./json_output
+    python md_to_jsonld.py --md-dir ./IPFR-Webpages --csv metatable-Content.jsonl --out ./json_output
 
 Author:  IP First Response pipeline
 Licence: CC-BY-4.0
@@ -16,7 +16,6 @@ Licence: CC-BY-4.0
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import os
 import re
@@ -900,26 +899,29 @@ def _parse_keywords(raw: str) -> list[str]:
     return deduped
 
 
-def load_metatable(csv_path: str | Path) -> dict[str, MetaRecord]:
+def load_metatable(jsonl_path: str | Path) -> dict[str, MetaRecord]:
     """
-    Load the CSV control plane, returning a dict keyed by canonical URL
+    Load the JSONL control plane, returning a dict keyed by canonical URL
     (stripped and lowercased) for fast lookup.
     """
     records: dict[str, MetaRecord] = {}
-    csv_path = Path(csv_path)
-    if not csv_path.exists():
-        print(f"[WARN] Metatable not found at {csv_path}; proceeding without metadata.")
+    jsonl_path = Path(jsonl_path)
+    if not jsonl_path.exists():
+        print(f"[WARN] Metatable not found at {jsonl_path}; proceeding without metadata.")
         return records
 
-    with open(csv_path, newline="", encoding="utf-8-sig") as fh:
-        reader = csv.DictReader(fh)
-        for row in reader:
-            # The CSV has a trailing space on 'Archectype ' — handle that.
-            archetype_key = None
-            for k in row:
-                if k.strip().lower().startswith("archectype") or k.strip().lower().startswith("archetype"):
-                    archetype_key = k
-                    break
+    with open(jsonl_path, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            row = json.loads(line)
+
+            # Support both 'Archectype' (no trailing space) and legacy 'Archectype '
+            archetype_key = next(
+                (k for k in row if k.strip().lower().startswith(("archectype", "archetype"))),
+                None,
+            )
 
             rec = MetaRecord(
                 udid=row.get("UDID", "").strip(),
@@ -2014,8 +2016,8 @@ def main():
     parser.add_argument(
         "--csv",
         type=str,
-        default="./metatable-Content.csv",
-        help="Path to the metatable CSV control plane.",
+        default="./metatable-Content.jsonl",
+        help="Path to the metatable JSONL control plane.",
     )
     parser.add_argument(
         "--out",

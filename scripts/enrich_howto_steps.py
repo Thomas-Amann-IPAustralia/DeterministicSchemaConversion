@@ -1,6 +1,5 @@
 import os
 import json
-import csv
 import difflib
 import math
 import sys
@@ -9,7 +8,7 @@ from openai import OpenAI
 # Configuration
 INPUT_DIR = 'json_output'
 OUTPUT_DIR = 'json_output-enriched'
-REPORT_FILE = 'reports/after_action_report.csv'
+REPORT_FILE = 'reports/after_action_report.jsonl'
 BATCH_SIZE = 5
 
 # Define target placeholders
@@ -285,25 +284,19 @@ def process_files():
         print("::endgroup::")
         sys.stdout.flush()
 
-    # Write CSV Report
-    with open(REPORT_FILE, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = [
-            'Service Name', 'UDID', 'Diff Check Results', 
-            'Field Path', 'Original Placeholder', 'Context Snippet', 'Generated Value'
-        ]
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        
-        writer.writeheader()
+    # Write JSONL Report
+    with open(REPORT_FILE, 'w', encoding='utf-8') as jf:
         for row in report_rows:
-            writer.writerow({
+            record = {
                 'Service Name': row['service_name'],
                 'UDID': row['udid'],
                 'Diff Check Results': row['diff_status'],
                 'Field Path': row['field_path'],
                 'Original Placeholder': row['original_placeholder'],
                 'Context Snippet': row['context_snippet'],
-                'Generated Value': row['generated_value']
-            })
+                'Generated Value': row['generated_value'],
+            }
+            jf.write(json.dumps(record, ensure_ascii=False) + '\n')
             
     # Final Summary Log
     print("\n" + "="*40)

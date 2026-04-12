@@ -2,19 +2,19 @@
 Sitemap Monitor for IP First Response.
 
 Fetches the IPFR sitemap via Selenium stealth (site is behind a WAF),
-extracts /options/ URLs, compares against metatable-Content.csv,
+extracts /options/ URLs, compares against metatable-Content.jsonl,
 and appends new entries for any discovered pages.
 
-Also detects pages already in the CSV whose sitemap <lastmod> date is
+Also detects pages already in the JSONL whose sitemap <lastmod> date is
 newer than the recorded Last-updated value, and flags them for re-scraping.
 
-Detects and removes CSV entries whose URLs no longer appear in the sitemap,
+Detects and removes JSONL entries whose URLs no longer appear in the sitemap,
 logging each deletion loudly so they are easy to spot in the action log.
 
 Can be run manually or on a weekly schedule via GitHub Actions.
 """
 
-import csv
+import json
 import os
 import sys
 import re
@@ -33,7 +33,7 @@ from selenium_stealth import stealth
 
 # --- Configuration ---
 SITEMAP_URL = 'https://ipfirstresponse.ipaustralia.gov.au/sitemap.xml'
-CSV_FILE = 'metatable-Content.csv'
+JSONL_FILE = 'metatable-Content.jsonl'
 OPTIONS_PATH_PREFIX = '/options/'
 UDID_PREFIX = 'A'
 UDID_START = 1000
@@ -177,30 +177,31 @@ def parse_csv_date(date_str):
     return None
 
 
-def read_existing_csv(csv_path):
-    """Read existing CSV and return rows, fieldnames, set of existing URLs,
+def read_existing_jsonl(jsonl_path):
+    """Read existing JSONL and return rows, set of existing URLs,
     and a dict mapping url -> Last-updated string."""
     rows = []
-    fieldnames = []
     existing_urls = set()
     url_last_updated = {}
 
-    if not os.path.exists(csv_path):
-        logger.error(f"CSV file not found: {csv_path}")
-        return rows, fieldnames, existing_urls, url_last_updated
+    if not os.path.exists(jsonl_path):
+        logger.error(f"JSONL file not found: {jsonl_path}")
+        return rows, existing_urls, url_last_updated
 
-    with open(csv_path, mode='r', encoding='utf-8-sig') as f:
-        reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames
-        for row in reader:
+    with open(jsonl_path, mode='r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            row = json.loads(line)
             rows.append(row)
             url = row.get('Canonical-url', '').strip()
             if url:
                 existing_urls.add(url)
                 url_last_updated[url] = row.get('Last-updated', '').strip()
 
-    logger.info(f"Read {len(rows)} existing entries from CSV")
-    return rows, fieldnames, existing_urls, url_last_updated
+    logger.info(f"Read {len(rows)} existing entries from JSONL")
+    return rows, existing_urls, url_last_updated
 
 
 def get_next_udid(rows):
@@ -233,10 +234,24 @@ def title_from_slug(url):
     return title
 
 
-def append_new_urls(csv_path, fieldnames, existing_rows, new_urls, next_udid_num):
-    """Append new URL entries to the CSV file without modifying existing rows."""
-    new_rows = []
+def _write_jsonl(jsonl_path, rows):
+    """Write a list of row dicts to a JSONL file."""
+    with open(jsonl_path, mode='w', encoding='utf-8') as f:
+        for row in rows:
+            f.write(json.dumps(row, ensure_ascii=False) + '\n')
 
+
+def append_new_urls(jsonl_path, existing_rows, new_urls, next_udid_num):
+    """Append new URL entries to the JSONL file without modifying existing rows."""
+    # Derive the field order from the first existing row so new rows match
+    fieldnames = list(existing_rows[0].keys()) if existing_rows else [
+        'UDID', 'Overtitle', 'Main-title', 'Description', 'Canonical-url',
+        'Entry-point', 'Relevant-ip-right', 'Estimate-cost', 'Estimated-effort',
+        'Resolution-rate', 'Archectype', 'Provider', 'Publication-date',
+        'Last-updated', 'Additional-disclaimer', 'Keywords',
+    ]
+
+    new_rows = []
     for i, url in enumerate(sorted(new_urls)):
         udid = f"{UDID_PREFIX}{next_udid_num + i}"
         title = title_from_slug(url)
@@ -250,21 +265,17 @@ def append_new_urls(csv_path, fieldnames, existing_rows, new_urls, next_udid_num
         logger.info(f"  New entry: {udid} - {title} ({url})")
 
     all_rows = existing_rows + new_rows
+    _write_jsonl(jsonl_path, all_rows)
 
-    with open(csv_path, mode='w', newline='', encoding='utf-8-sig') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(all_rows)
-
-    logger.info(f"Appended {len(new_rows)} new entries to {csv_path}")
+    logger.info(f"Appended {len(new_rows)} new entries to {jsonl_path}")
     return new_rows
 
 
-def remove_deleted_urls(csv_path, fieldnames, existing_rows, deleted_urls):
+def remove_deleted_urls(jsonl_path, existing_rows, deleted_urls):
     """Remove rows for URLs no longer present in the sitemap.
 
     Logs each deletion loudly at WARNING/ERROR level so they are impossible
-    to miss in the GitHub Actions log, then rewrites the CSV without them.
+    to miss in the GitHub Actions log, then rewrites the JSONL without them.
     Returns the number of rows removed.
     """
     sep = "!" * 70
@@ -275,7 +286,7 @@ def remove_deleted_urls(csv_path, fieldnames, existing_rows, deleted_urls):
     )
     logger.warning(sep)
     for url in sorted(deleted_urls):
-        logger.error(f"  [DELETED FROM CSV] {url}")
+        logger.error(f"  [DELETED FROM JSONL] {url}")
     logger.warning(sep)
 
     kept_rows = [
@@ -284,14 +295,11 @@ def remove_deleted_urls(csv_path, fieldnames, existing_rows, deleted_urls):
     ]
     removed_count = len(existing_rows) - len(kept_rows)
 
-    with open(csv_path, mode='w', newline='', encoding='utf-8-sig') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(kept_rows)
+    _write_jsonl(jsonl_path, kept_rows)
 
     logger.warning(sep)
     logger.error(
-        f"!!! {removed_count} row(s) permanently deleted from {csv_path} !!!"
+        f"!!! {removed_count} row(s) permanently deleted from {jsonl_path} !!!"
     )
     logger.warning(sep)
     return removed_count
@@ -308,10 +316,10 @@ def set_github_output(name, value):
 
 
 def main():
-    # Read existing CSV
-    rows, fieldnames, existing_urls, url_last_updated = read_existing_csv(CSV_FILE)
-    if not fieldnames:
-        logger.critical(f"Could not read CSV headers from {CSV_FILE}")
+    # Read existing JSONL
+    rows, existing_urls, url_last_updated = read_existing_jsonl(JSONL_FILE)
+    if not rows:
+        logger.critical(f"Could not read entries from {JSONL_FILE}")
         sys.exit(1)
 
     # Initialize browser
@@ -326,12 +334,12 @@ def main():
         options_url_map = filter_options_urls(all_url_map)
         logger.info(f"Found {len(options_url_map)} /options/ URLs in sitemap")
 
-        # --- Detect new pages (not yet in CSV) ---
+        # --- Detect new pages (not yet in JSONL) ---
         new_urls = {url: lm for url, lm in options_url_map.items()
                     if url not in existing_urls}
-        logger.info(f"New URLs not in CSV: {len(new_urls)}")
+        logger.info(f"New URLs not in JSONL: {len(new_urls)}")
 
-        # --- Detect updated pages (in CSV, but sitemap lastmod is newer) ---
+        # --- Detect updated pages (in JSONL, but sitemap lastmod is newer) ---
         updated_urls = {}
         for url, lastmod in options_url_map.items():
             if url not in existing_urls:
@@ -345,33 +353,33 @@ def main():
                     f" (sitemap: {sitemap_date}, csv: {csv_date})"
                 )
 
-        logger.info(f"Updated URLs (sitemap newer than CSV): {len(updated_urls)}")
+        logger.info(f"Updated URLs (sitemap newer than JSONL): {len(updated_urls)}")
 
-        # --- Detect deleted pages (in CSV but absent from sitemap) ---
-        # Only compare /options/ URLs so non-options CSV rows are never flagged.
+        # --- Detect deleted pages (in JSONL but absent from sitemap) ---
+        # Only compare /options/ URLs so non-options JSONL rows are never flagged.
         existing_options_urls = {
             url for url in existing_urls
             if OPTIONS_PATH_PREFIX in urlparse(url).path
         }
         deleted_urls = existing_options_urls - set(options_url_map.keys())
-        logger.info(f"URLs in CSV but absent from sitemap: {len(deleted_urls)}")
+        logger.info(f"URLs in JSONL but absent from sitemap: {len(deleted_urls)}")
 
         # --- Act on new pages ---
         if new_urls:
             next_num = get_next_udid(rows)
-            append_new_urls(CSV_FILE, fieldnames, rows, list(new_urls.keys()), next_num)
-            logger.info(f"SUCCESS: Added {len(new_urls)} new URLs to {CSV_FILE}")
+            append_new_urls(JSONL_FILE, rows, list(new_urls.keys()), next_num)
+            logger.info(f"SUCCESS: Added {len(new_urls)} new URLs to {JSONL_FILE}")
 
         # --- Act on deleted pages ---
         if deleted_urls:
             # Re-read rows so we work on the post-append state when both
             # additions and deletions occur in the same run.
-            current_rows, _, _, _ = read_existing_csv(CSV_FILE)
-            remove_deleted_urls(CSV_FILE, fieldnames, current_rows, deleted_urls)
+            current_rows, _, _ = read_existing_jsonl(JSONL_FILE)
+            remove_deleted_urls(JSONL_FILE, current_rows, deleted_urls)
 
         # --- Set GitHub Actions outputs ---
         needs_rescrape = bool(new_urls or updated_urls)
-        csv_changed = bool(new_urls or deleted_urls)
+        jsonl_changed = bool(new_urls or deleted_urls)
 
         set_github_output('new_urls_found',     'true' if new_urls else 'false')
         set_github_output('new_url_count',      str(len(new_urls)))
@@ -380,10 +388,10 @@ def main():
         set_github_output('deleted_urls_found', 'true' if deleted_urls else 'false')
         set_github_output('deleted_url_count',  str(len(deleted_urls)))
         set_github_output('needs_rescrape',     'true' if needs_rescrape else 'false')
-        set_github_output('csv_changed',        'true' if csv_changed else 'false')
+        set_github_output('csv_changed',        'true' if jsonl_changed else 'false')
 
         if not (needs_rescrape or deleted_urls):
-            logger.info("No new, updated, or deleted URLs found - CSV is up to date")
+            logger.info("No new, updated, or deleted URLs found - JSONL is up to date")
 
     except Exception as e:
         logger.error(f"Error during sitemap check: {e}")

@@ -1,5 +1,4 @@
 import json
-import csv
 import os
 import glob
 import sys
@@ -30,7 +29,7 @@ CONFIG = {
     ]
 }
 
-OUTPUT_FILE = os.path.join(CONFIG["directories"]["output"], 'Validation_Report_Extended.csv')
+OUTPUT_FILE = os.path.join(CONFIG["directories"]["output"], 'Validation_Report_Extended.jsonl')
 
 # --- HELPERS ---
 
@@ -285,10 +284,11 @@ def main():
         aggregated_results.extend(validate_file(json_file, html_path, filename))
             
     try:
-        with open(OUTPUT_FILE, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerow(["File", "Category", "Check", "Details", "Score", "Status", "Context/Diff", "Suggested Action"])
-            writer.writerows(aggregated_results)
+        fieldnames = ["File", "Category", "Check", "Details", "Score", "Status", "Context/Diff", "Suggested Action"]
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+            for row in aggregated_results:
+                record = dict(zip(fieldnames, row))
+                f.write(json.dumps(record, ensure_ascii=False) + '\n')
         print(f"Validation complete. Report saved to {OUTPUT_FILE}")
     except PermissionError:
         print(f"ERROR: Could not write to {OUTPUT_FILE}. Close the file and try again.")
