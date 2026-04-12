@@ -1,0 +1,149 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government",
+        "sameAs": "https://www.wikidata.org/wiki/Q2991162"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973154",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Intellectual Property Disputes"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff",
+      "name": "What do I do if someone copies my stuff? - IP First Response",
+      "description": "When you think someone has copied your product, logo, idea or brand, it is called ‘suspected infringement’. The word ‘suspected’ is used because only a court can decide if infringement has actually occurred – but that doesn't mean you cannot take action.",
+      "identifier": "E1010",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Any IP right"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Startup",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#article"
+      },
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11",
+      "keywords": [
+        "Intellectual property rights",
+        "Court proceedings",
+        "IP disputes",
+        "What do i do if someone copies my",
+        "Product logo idea"
+      ],
+      "copyrightYear": 2025,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "mentions": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage"
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip",
+        "https://www.ipaustralia.gov.au/manage-my-ip/someone-is-using-my-ip/what-to-consider-before-taking-legal-action#:~:text=Check%20if%20the%20IP%20has,to%20challenge%20their%20IP%20right.",
+        "https://www.ipaustralia.gov.au/news-and-community/webinars/updated-advanced-trade-marks-enforcement",
+        "https://www.ipaustralia.gov.au/tools-and-research/business-resources",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#article",
+      "description": "When you think someone has copied your product, logo, idea or brand, it is called ‘suspected infringement’. The word ‘suspected’ is used because only a court can decide if infringement has actually occurred – but that doesn't mean you cannot take action.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/what-do-i-do-if-someone-copies-my-stuff#webpage"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "headline": "What do I do if someone copies my stuff?",
+      "articleBody": "When you think someone has copied your product, logo, idea or brand, it is called 'suspected infringement'. The word 'suspected' is used because only a court can decide if infringement has actually occurred - but that doesn't mean you cannot take action. \n\nDifferent types of IP are protected in different ways. You can only take action if your IP is protected by a specific right such as a registered trade mark, granted patent, certified design, or copyright. \n\nIf you don't have formal IP rights, it may still be possible to take action, but it can be harder. Some legal protections may still apply under consumer law, contract law or common law--but these usually require help from a legal professional. \n\nStart by working out: \n\n What exactly has been copied--your logo, invention, product, written work, name, style or something else.\n Whether what's been copied is actually protected by a registered or automatic IP right.\n Whether the use is actually unauthorised or illegal - some uses may be allowed, or may not amount to infringement under the law.\n\nIt's not always obvious whether infringement has happened. Even when someone copies your work, it may not be illegal. For example, your product might be copied legally if it isn't covered by a registered design or patent. \n\nTo figure out what's going on, many people start by: \n\n Checking their own IP rights (such as trade mark, patent, design or copyright status).\n Gathering evidence--like photos, screenshots, or product listings showing the suspected use.\n Looking at how similar the two things are, and whether there's confusion or copying.\n\nYou may wish to speak with a legal professional to assess whether the other person's behaviour may legally amount to infringement. Qualified experts for IP enforcement include lawyers who specialise in IP, as well as registered trade mark and patent attorneys.",
+      "datePublished": "2025-09-11",
+      "dateModified": "2025-09-11"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/navigator-tool-suspected-infringement",
+      "name": "Navigator tool suspected infringement - IP First Response",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    }
+  ]
+}
