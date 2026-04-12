@@ -8,6 +8,9 @@ and appends new entries for any discovered pages.
 Also detects pages already in the CSV whose sitemap <lastmod> date is
 newer than the recorded Last-updated value, and flags them for re-scraping.
 
+Detects and removes CSV entries whose URLs no longer appear in the sitemap,
+logging each deletion loudly so they are easy to spot in the action log.
+
 Can be run manually or on a weekly schedule via GitHub Actions.
 """
 
@@ -257,6 +260,43 @@ def append_new_urls(csv_path, fieldnames, existing_rows, new_urls, next_udid_num
     return new_rows
 
 
+def remove_deleted_urls(csv_path, fieldnames, existing_rows, deleted_urls):
+    """Remove rows for URLs no longer present in the sitemap.
+
+    Logs each deletion loudly at WARNING/ERROR level so they are impossible
+    to miss in the GitHub Actions log, then rewrites the CSV without them.
+    Returns the number of rows removed.
+    """
+    sep = "!" * 70
+    logger.warning(sep)
+    logger.warning(
+        f"!!! SITEMAP DELETION ALERT: "
+        f"{len(deleted_urls)} URL(s) no longer appear in the sitemap !!!"
+    )
+    logger.warning(sep)
+    for url in sorted(deleted_urls):
+        logger.error(f"  [DELETED FROM CSV] {url}")
+    logger.warning(sep)
+
+    kept_rows = [
+        row for row in existing_rows
+        if row.get('Canonical-url', '').strip() not in deleted_urls
+    ]
+    removed_count = len(existing_rows) - len(kept_rows)
+
+    with open(csv_path, mode='w', newline='', encoding='utf-8-sig') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(kept_rows)
+
+    logger.warning(sep)
+    logger.error(
+        f"!!! {removed_count} row(s) permanently deleted from {csv_path} !!!"
+    )
+    logger.warning(sep)
+    return removed_count
+
+
 def set_github_output(name, value):
     """Set a GitHub Actions output variable."""
     output_file = os.environ.get('GITHUB_OUTPUT')
@@ -307,23 +347,43 @@ def main():
 
         logger.info(f"Updated URLs (sitemap newer than CSV): {len(updated_urls)}")
 
+        # --- Detect deleted pages (in CSV but absent from sitemap) ---
+        # Only compare /options/ URLs so non-options CSV rows are never flagged.
+        existing_options_urls = {
+            url for url in existing_urls
+            if OPTIONS_PATH_PREFIX in urlparse(url).path
+        }
+        deleted_urls = existing_options_urls - set(options_url_map.keys())
+        logger.info(f"URLs in CSV but absent from sitemap: {len(deleted_urls)}")
+
         # --- Act on new pages ---
         if new_urls:
             next_num = get_next_udid(rows)
             append_new_urls(CSV_FILE, fieldnames, rows, list(new_urls.keys()), next_num)
             logger.info(f"SUCCESS: Added {len(new_urls)} new URLs to {CSV_FILE}")
 
+        # --- Act on deleted pages ---
+        if deleted_urls:
+            # Re-read rows so we work on the post-append state when both
+            # additions and deletions occur in the same run.
+            current_rows, _, _, _ = read_existing_csv(CSV_FILE)
+            remove_deleted_urls(CSV_FILE, fieldnames, current_rows, deleted_urls)
+
         # --- Set GitHub Actions outputs ---
         needs_rescrape = bool(new_urls or updated_urls)
+        csv_changed = bool(new_urls or deleted_urls)
 
         set_github_output('new_urls_found',     'true' if new_urls else 'false')
         set_github_output('new_url_count',      str(len(new_urls)))
         set_github_output('updated_urls_found', 'true' if updated_urls else 'false')
         set_github_output('updated_url_count',  str(len(updated_urls)))
+        set_github_output('deleted_urls_found', 'true' if deleted_urls else 'false')
+        set_github_output('deleted_url_count',  str(len(deleted_urls)))
         set_github_output('needs_rescrape',     'true' if needs_rescrape else 'false')
+        set_github_output('csv_changed',        'true' if csv_changed else 'false')
 
-        if not needs_rescrape:
-            logger.info("No new or updated URLs found - CSV is up to date")
+        if not (needs_rescrape or deleted_urls):
+            logger.info("No new, updated, or deleted URLs found - CSV is up to date")
 
     except Exception as e:
         logger.error(f"Error during sitemap check: {e}")
@@ -331,7 +391,10 @@ def main():
         set_github_output('new_url_count',      '0')
         set_github_output('updated_urls_found', 'false')
         set_github_output('updated_url_count',  '0')
+        set_github_output('deleted_urls_found', 'false')
+        set_github_output('deleted_url_count',  '0')
         set_github_output('needs_rescrape',     'false')
+        set_github_output('csv_changed',        'false')
         sys.exit(1)
     finally:
         driver.quit()

@@ -33,13 +33,20 @@ jobs:
         run: python scripts/check_sitemap.py
 
       - name: Commit Updated CSV
-        if: steps.sitemap.outputs.new_urls_found == 'true'
+        if: steps.sitemap.outputs.csv_changed == 'true'
         run: |
           git config --global user.name "IPFR Sitemap Bot"
           git config --global user.email "actions@github.com"
           git add metatable-Content.csv
           if ! git diff --staged --quiet; then
-            git commit -m "Sitemap Monitor: Added ${{ steps.sitemap.outputs.new_url_count }} new URLs [skip ci]"
+            MSG="Sitemap Monitor:"
+            if [ "${{ steps.sitemap.outputs.new_urls_found }}" == "true" ]; then
+              MSG="$MSG Added ${{ steps.sitemap.outputs.new_url_count }} new URL(s)."
+            fi
+            if [ "${{ steps.sitemap.outputs.deleted_urls_found }}" == "true" ]; then
+              MSG="$MSG DELETED ${{ steps.sitemap.outputs.deleted_url_count }} removed URL(s)."
+            fi
+            git commit -m "$MSG [skip ci]"
             git push
           fi
 
