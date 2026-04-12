@@ -260,6 +260,29 @@ def append_new_urls(csv_path, fieldnames, existing_rows, new_urls, next_udid_num
     return new_rows
 
 
+def stamp_last_updated(rows, updated_urls):
+    """Update the Last-updated column in memory for pages whose sitemap lastmod
+    is newer than the recorded value.
+
+    Converts the ISO 8601 lastmod date to DD/MM/YYYY and writes it into each
+    matching row dict.  Does not write to disk — the caller is responsible for
+    persisting the changes (either via a subsequent append_new_urls call or by
+    writing the rows directly).
+
+    Returns the number of rows modified.
+    """
+    count = 0
+    for row in rows:
+        url = row.get('Canonical-url', '').strip()
+        if url in updated_urls:
+            new_date = parse_sitemap_date(updated_urls[url])
+            if new_date:
+                row['Last-updated'] = new_date.strftime('%d/%m/%Y')
+                count += 1
+                logger.info(f"  Stamped Last-updated: {url} -> {row['Last-updated']}")
+    return count
+
+
 def remove_deleted_urls(csv_path, fieldnames, existing_rows, deleted_urls):
     """Remove rows for URLs no longer present in the sitemap.
 
@@ -356,22 +379,37 @@ def main():
         deleted_urls = existing_options_urls - set(options_url_map.keys())
         logger.info(f"URLs in CSV but absent from sitemap: {len(deleted_urls)}")
 
+        # --- Stamp Last-updated for updated pages (in-memory, before any write) ---
+        if updated_urls:
+            stamp_count = stamp_last_updated(rows, updated_urls)
+            logger.info(f"Stamped Last-updated for {stamp_count} row(s)")
+
         # --- Act on new pages ---
+        # append_new_urls rewrites the whole CSV, so it will persist the stamped
+        # Last-updated values from the step above at the same time.
         if new_urls:
             next_num = get_next_udid(rows)
             append_new_urls(CSV_FILE, fieldnames, rows, list(new_urls.keys()), next_num)
             logger.info(f"SUCCESS: Added {len(new_urls)} new URLs to {CSV_FILE}")
+        elif updated_urls:
+            # No new rows to append, but Last-updated was stamped in memory —
+            # write the modified rows to disk now.
+            with open(CSV_FILE, mode='w', newline='', encoding='utf-8-sig') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(rows)
+            logger.info(f"Wrote back Last-updated stamps for {len(updated_urls)} row(s)")
 
         # --- Act on deleted pages ---
         if deleted_urls:
-            # Re-read rows so we work on the post-append state when both
-            # additions and deletions occur in the same run.
+            # Re-read rows so we work on the post-append/stamp state when
+            # multiple change types occur in the same run.
             current_rows, _, _, _ = read_existing_csv(CSV_FILE)
             remove_deleted_urls(CSV_FILE, fieldnames, current_rows, deleted_urls)
 
         # --- Set GitHub Actions outputs ---
         needs_rescrape = bool(new_urls or updated_urls)
-        csv_changed = bool(new_urls or deleted_urls)
+        csv_changed = bool(new_urls or updated_urls or deleted_urls)
 
         set_github_output('new_urls_found',     'true' if new_urls else 'false')
         set_github_output('new_url_count',      str(len(new_urls)))

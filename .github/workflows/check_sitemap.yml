@@ -43,6 +43,9 @@ jobs:
             if [ "${{ steps.sitemap.outputs.new_urls_found }}" == "true" ]; then
               MSG="$MSG Added ${{ steps.sitemap.outputs.new_url_count }} new URL(s)."
             fi
+            if [ "${{ steps.sitemap.outputs.updated_urls_found }}" == "true" ]; then
+              MSG="$MSG Stamped Last-updated for ${{ steps.sitemap.outputs.updated_url_count }} URL(s)."
+            fi
             if [ "${{ steps.sitemap.outputs.deleted_urls_found }}" == "true" ]; then
               MSG="$MSG DELETED ${{ steps.sitemap.outputs.deleted_url_count }} removed URL(s)."
             fi
