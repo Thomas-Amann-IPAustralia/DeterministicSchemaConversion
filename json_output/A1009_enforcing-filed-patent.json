@@ -1,0 +1,233 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government",
+        "sameAs": "https://www.wikidata.org/wiki/Q2991162"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973154",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Intellectual Property Disputes"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent",
+      "name": "Enforcing a 'filed' patent - IP First Response",
+      "description": "A 'filed' patent refers to a patent application that has been lodged with IP Australia but has not yet been granted. Only granted patents can be enforced in...",
+      "identifier": "A1009",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Intellectual property"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Startup",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#article"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#section-1-patent-statuses"
+        }
+      ],
+      "relatedLink": [
+        "https://www.ipaustralia.gov.au/patents/how-to-apply-for-a-standard-patent",
+        "https://ipsearch.ipaustralia.gov.au/patents",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#article",
+      "description": "A 'filed' patent refers to a patent application that has been lodged with IP Australia but has not yet been granted. Only granted patents can be enforced in...",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#webpage"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "headline": "Enforcing a 'filed' patent",
+      "articleBody": "A 'filed' patent refers to a patent application that has been lodged with IP Australia but has not yet been granted. Only granted patents can be enforced in Australia. Filing begins the process of assessing whether an invention meets the legal requirements for a patent, such as being new, inventive and useful.\n\nAt this stage, the person who filed the patent (the applicant) cannot prevent others from using, selling or making the invention.\n\nOnly once the patent is formally granted do enforceable rights arise.\n\nHowever, the publication date can become significant later. If a patent is granted, the exclusive rights generally apply from the date the patent specification becomes open for public inspection (usually around 18 months from earliest priority date).",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#section-1-patent-statuses"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#section-1-patent-statuses",
+      "headline": "Patent statuses",
+      "text": "",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#article"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q1-a",
+            "text": "Creates an official record of the invention and its filing date.\n Submitting your application early ensures a competitive advantage over other applicants.\n A patent filing can make a company a more attractive investment, as it demonstrates the invention's value and potential marketability to investors.\n Allows the applicant to mark products as 'patent pending', which can discourage copying or commercial use by others."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q2-a",
+            "text": "The application may be refused if it does not meet the legal requirements for patentability.\n Publication of the application may make details of the invention visible to competitors before protection is confirmed."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q3-a",
+            "text": "If the patent is granted, the applicant gains enforceable exclusive rights that may date back to the publication date.\n If application is not granted (or withdrawn or lapses) there are no enforceable rights to claim."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q4-a",
+            "text": "Filing and examination fees are paid to IP Australia. Additional costs may arise if the applicant uses a registered patent attorney to prepare or manage the application."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q5-a",
+            "text": "Patent examination and grant can take several years, depending on the complexity of the invention and the examination workload. You can request IP Australia for expedited request to fast track the examination process if you have valid commercial reasons."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q6",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q6-a",
+            "text": "Patent applicants who have filed a patent application with IP Australia.\n Individuals or businesses responding to an allegation based on a patent that has only been filed but not yet granted."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q7",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q7-a",
+            "text": "The patent applicant (person or business that filed the application).\n IP Australia patent examiners assessing the application.\n- Optional: patent attorneys providing support or advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q8",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq-q8-a",
+            "text": "Confirmation that the patent application has been filed and is under examination.\n Awareness that only granted patents can be enforced in Australia.\n- Continued monitoring of the application's progress through IP Australia's online services."
+          }
+        }
+      ]
+    }
+  ]
+}
