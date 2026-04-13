@@ -20,6 +20,7 @@ import sys
 import re
 import logging
 from datetime import datetime
+from pathlib import Path
 from urllib.parse import urlparse
 from xml.etree import ElementTree
 
@@ -31,12 +32,19 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium_stealth import stealth
 
+from url_reconciler import (
+    ExistingPageSignatures,
+    reconcile_new_url,
+    JACCARD_THRESHOLD,
+)
+
 # --- Configuration ---
 SITEMAP_URL = 'https://ipfirstresponse.ipaustralia.gov.au/sitemap.xml'
 CSV_FILE = 'metatable-Content.csv'
 OPTIONS_PATH_PREFIX = '/options/'
 UDID_PREFIX = 'A'
 UDID_START = 1000
+MD_DIR = Path('IPFR-Webpages')
 
 # --- Logging ---
 logging.basicConfig(
@@ -233,6 +241,35 @@ def title_from_slug(url):
     return title
 
 
+def fetch_page_text(driver, url):
+    """Fetch the main text of a page using the stealth driver.
+
+    Used by the MinHash reconciliation step to compare a newly-discovered URL
+    against existing .md files.  Mirrors the selector priority in scraper.py:
+    tries <main>, then .region-content, then falls back to <body>.
+
+    Returns an empty string on any error so reconcile_new_url() safely
+    classifies the URL as a new page rather than crashing the run.
+    """
+    try:
+        driver.get(url)
+        WebDriverWait(driver, 30).until(
+            EC.presence_of_element_located((By.TAG_NAME, 'body'))
+        )
+        for selector in ('main', '.region-content'):
+            try:
+                el = driver.find_element(By.CSS_SELECTOR, selector)
+                text = el.text.strip()
+                if text:
+                    return text
+            except Exception:
+                continue
+        return driver.find_element(By.TAG_NAME, 'body').text.strip()
+    except Exception as exc:
+        logger.warning("fetch_page_text failed for %s: %s", url, exc)
+        return ""
+
+
 def append_new_urls(csv_path, fieldnames, existing_rows, new_urls, next_udid_num):
     """Append new URL entries to the CSV file without modifying existing rows."""
     new_rows = []
@@ -337,6 +374,17 @@ def main():
         logger.critical(f"Could not read CSV headers from {CSV_FILE}")
         sys.exit(1)
 
+    # Ensure Notes column exists for rename audit trail (not in original schema)
+    if 'Notes' not in fieldnames:
+        fieldnames = list(fieldnames) + ['Notes']
+        for row in rows:
+            row.setdefault('Notes', '')
+
+    # Build MinHash signatures from existing .md files before starting the browser.
+    # Rows without a corresponding .md file are silently skipped (safe fallback).
+    existing_signatures = ExistingPageSignatures(md_dir=MD_DIR)
+    existing_signatures.load_from_csv_rows(rows)
+
     # Initialize browser
     driver = initialize_driver()
     if not driver:
@@ -384,55 +432,121 @@ def main():
             stamp_count = stamp_last_updated(rows, updated_urls)
             logger.info(f"Stamped Last-updated for {stamp_count} row(s)")
 
-        # --- Act on new pages ---
-        # append_new_urls rewrites the whole CSV, so it will persist the stamped
-        # Last-updated values from the step above at the same time.
-        if new_urls:
+        # --- Reconcile new URLs: URL rename vs genuinely new page ---
+        # For each URL in the sitemap that isn't in the CSV, fetch its content
+        # and compare against existing .md files via MinHash Jaccard similarity.
+        # Renames update the existing row's Canonical-url in-place (UDID preserved).
+        # Genuinely new pages get a fresh A-prefix UDID as before.
+        rename_log: list[dict] = []
+        new_page_log: list[dict] = []
+
+        for url in sorted(new_urls.keys()):  # sorted for deterministic UDID assignment
+            try:
+                page_text = fetch_page_text(driver, url)
+            except Exception as exc:
+                logger.warning("Could not fetch %s for similarity check: %s", url, exc)
+                page_text = ""
+
+            decision = reconcile_new_url(url, page_text, existing_signatures)
+
+            if decision["verdict"] == "rename":
+                matched_udid = decision["udid"]
+                for row in rows:
+                    if row["UDID"] == matched_udid:
+                        old_url = row["Canonical-url"]
+                        row["Canonical-url"] = url
+                        row["Notes"] = (
+                            row.get("Notes", "").rstrip("; ")
+                            + f"; URL updated from {old_url} (Jaccard={decision['jaccard']:.3f})"
+                        ).lstrip("; ")
+                        logger.info(
+                            "Updated Canonical-url for %s: %s → %s",
+                            matched_udid, old_url, url,
+                        )
+                        rename_log.append(decision)
+                        break
+            else:
+                new_page_log.append(decision)
+
+        if rename_log:
+            logger.info(
+                "URL renames detected: %d  (Jaccard threshold: %.2f)",
+                len(rename_log), JACCARD_THRESHOLD,
+            )
+            for entry in rename_log:
+                logger.info(
+                    "  RENAME  UDID=%-8s  Jaccard=%.3f  %s  →  %s",
+                    entry["udid"], entry["jaccard"], entry["old_url"], entry["new_url"],
+                )
+        if new_page_log:
+            logger.info("New pages to add: %d", len(new_page_log))
+            for entry in new_page_log:
+                logger.info("  NEW     %s", entry["new_url"])
+
+        truly_new_urls = [d["new_url"] for d in new_page_log]
+
+        # --- Act on new/renamed pages ---
+        # append_new_urls rewrites the whole CSV, so it will persist renamed
+        # Canonical-urls and Last-updated stamps from the steps above at the same time.
+        if truly_new_urls:
             next_num = get_next_udid(rows)
-            append_new_urls(CSV_FILE, fieldnames, rows, list(new_urls.keys()), next_num)
-            logger.info(f"SUCCESS: Added {len(new_urls)} new URLs to {CSV_FILE}")
-        elif updated_urls:
-            # No new rows to append, but Last-updated was stamped in memory —
+            append_new_urls(CSV_FILE, fieldnames, rows, truly_new_urls, next_num)
+            logger.info(f"SUCCESS: Added {len(truly_new_urls)} new URL(s) to {CSV_FILE}")
+            if rename_log:
+                logger.info(f"Also persisted {len(rename_log)} URL rename(s)")
+        elif rename_log or updated_urls:
+            # No new rows to append, but renames/Last-updated were modified in memory —
             # write the modified rows to disk now.
             with open(CSV_FILE, mode='w', newline='', encoding='utf-8-sig') as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(rows)
-            logger.info(f"Wrote back Last-updated stamps for {len(updated_urls)} row(s)")
+            if rename_log:
+                logger.info(f"Wrote back {len(rename_log)} URL rename(s) to {CSV_FILE}")
+            if updated_urls:
+                logger.info(f"Wrote back Last-updated stamps for {len(updated_urls)} row(s)")
 
         # --- Act on deleted pages ---
         if deleted_urls:
             # Re-read rows so we work on the post-append/stamp state when
             # multiple change types occur in the same run.
             current_rows, _, _, _ = read_existing_csv(CSV_FILE)
+            # Notes may not yet be in re-read rows if this is the first run
+            # adding the column; initialise to avoid DictWriter KeyError.
+            for row in current_rows:
+                row.setdefault('Notes', '')
             remove_deleted_urls(CSV_FILE, fieldnames, current_rows, deleted_urls)
 
         # --- Set GitHub Actions outputs ---
-        needs_rescrape = bool(new_urls or updated_urls)
-        csv_changed = bool(new_urls or updated_urls or deleted_urls)
+        needs_rescrape = bool(truly_new_urls or updated_urls or rename_log)
+        csv_changed = bool(truly_new_urls or updated_urls or deleted_urls or rename_log)
 
-        set_github_output('new_urls_found',     'true' if new_urls else 'false')
-        set_github_output('new_url_count',      str(len(new_urls)))
-        set_github_output('updated_urls_found', 'true' if updated_urls else 'false')
-        set_github_output('updated_url_count',  str(len(updated_urls)))
-        set_github_output('deleted_urls_found', 'true' if deleted_urls else 'false')
-        set_github_output('deleted_url_count',  str(len(deleted_urls)))
-        set_github_output('needs_rescrape',     'true' if needs_rescrape else 'false')
-        set_github_output('csv_changed',        'true' if csv_changed else 'false')
+        set_github_output('new_urls_found',      'true' if truly_new_urls else 'false')
+        set_github_output('new_url_count',       str(len(truly_new_urls)))
+        set_github_output('renamed_urls_found',  'true' if rename_log else 'false')
+        set_github_output('renamed_url_count',   str(len(rename_log)))
+        set_github_output('updated_urls_found',  'true' if updated_urls else 'false')
+        set_github_output('updated_url_count',   str(len(updated_urls)))
+        set_github_output('deleted_urls_found',  'true' if deleted_urls else 'false')
+        set_github_output('deleted_url_count',   str(len(deleted_urls)))
+        set_github_output('needs_rescrape',      'true' if needs_rescrape else 'false')
+        set_github_output('csv_changed',         'true' if csv_changed else 'false')
 
         if not (needs_rescrape or deleted_urls):
-            logger.info("No new, updated, or deleted URLs found - CSV is up to date")
+            logger.info("No new, updated, renamed, or deleted URLs found - CSV is up to date")
 
     except Exception as e:
         logger.error(f"Error during sitemap check: {e}")
-        set_github_output('new_urls_found',     'false')
-        set_github_output('new_url_count',      '0')
-        set_github_output('updated_urls_found', 'false')
-        set_github_output('updated_url_count',  '0')
-        set_github_output('deleted_urls_found', 'false')
-        set_github_output('deleted_url_count',  '0')
-        set_github_output('needs_rescrape',     'false')
-        set_github_output('csv_changed',        'false')
+        set_github_output('new_urls_found',      'false')
+        set_github_output('new_url_count',       '0')
+        set_github_output('renamed_urls_found',  'false')
+        set_github_output('renamed_url_count',   '0')
+        set_github_output('updated_urls_found',  'false')
+        set_github_output('updated_url_count',   '0')
+        set_github_output('deleted_urls_found',  'false')
+        set_github_output('deleted_url_count',   '0')
+        set_github_output('needs_rescrape',      'false')
+        set_github_output('csv_changed',         'false')
         sys.exit(1)
     finally:
         driver.quit()
