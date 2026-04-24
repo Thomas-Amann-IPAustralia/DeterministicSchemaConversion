@@ -105,6 +105,10 @@ It's a good idea to ask for an indication of how much the entire process may cos
 
 By engaging an IP professional, they will aim to provide their services to achieve your intended outcome - but they are obliged to follow the instructions you provide them. While they can advise you on certain courses of action, you have the ultimate decision and responsibility. 
 
+**Copyright:** Trade mark attorneys and patent attorneys cannot provide legal advice in regards to copyright matters. If seeking legal advice for Copyright issues, an IP lawyer should be contacted. 
+
+[The Arts Law Centre of Australia's website](https://www.artslaw.com.au/services/common-questions/) indicates that it maintains a national referral panel of arts and entertainment lawyers to which it may refer eligible copyright owners where appropriate.
+
 **Where to find one:**
 
 To find an IP lawyer, you can search on your State or Territory's law society website:

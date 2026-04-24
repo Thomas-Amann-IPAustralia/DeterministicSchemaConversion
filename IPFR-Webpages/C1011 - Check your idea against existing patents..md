@@ -82,7 +82,7 @@ In smaller enterprises, this is more likely to be handled in-house, although pro
 
 * A clear description of your product, process or innovation.
 * Basic knowledge of what a patent is and what it protects.
-* Access to patent databases such as [AusPat](https://ipsearch.ipaustralia.gov.au/patents/), [Espacenet](https://worldwide.espacenet.com/) or [The Lens](https://www.lens.org/).
+* Access to patent databases such as [Australian Patent Search](https://ipsearch.ipaustralia.gov.au/patents/), [Espacenet](https://worldwide.espacenet.com/) or [The Lens](https://www.lens.org/).
 * Optional: A qualified patent attorney to perform a professional search and interpret results.
 * A decision on whether you want to search only in Australia or also internationally.
 

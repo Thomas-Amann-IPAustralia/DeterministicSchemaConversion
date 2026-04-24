@@ -10,11 +10,11 @@ PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/notify-online-mark
 
 [![Link to page containing information about what counts as infringement.](/sites/default/files/images/2025-08/Infringement%20Button%20-%20tighter_2.png)](/node/208)
 
-Online platforms such as e-commerce platforms, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The 'intermediaries' have a responsibility not to facilitate infringement.    
+Some large online marketplaces, social media sites and digital advertising providers provide an excellent mechanism to promote and sell your products to consumers around the world. However, a lot of infringing and counterfeiting activities occur in this space as well, which can undermine legitimate brands and damage their reputation. This can also include selling, reproducing or making available copies of material that is subject to copyright. The 'intermediaries' have a responsibility not to facilitate infringement.    
 
 If you notice infringement on a website or online platform, you can approach the owners of the site to request that they take down infringing content. To find out who owns a website, you can check their domain name's registration in the [Australian](https://www.auda.org.au/au-domain-names/domain-name-help/using-whois)  and [international WHOIS databases](https://lookup.icann.org/en). 
 
-Most e-commerce platforms and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods and material that infringes copyright. 
+Most e-commerce marketplaces and major digital advertisers/search engine providers have a notice and take-down mechanism for handling IP complaints, including those concerning counterfeit goods and material that infringes copyright. 
 
 You can be proactive by listing your IP rights with different e-commerce platforms before anyone tries to sell counterfeit goods. Some platforms, such as Amazon and Alibaba, invite you to add your trade marks and other kinds of IP rights to a brand registry. This is used in automated checks to detect infringing goods before they are even listed for sale. 
 
@@ -48,7 +48,7 @@ The outcomes of your complaints with online platforms can vary in accordance wit
 
 ### What might the costs be?
 
-Most online platforms will not charge you for making complaints or takedown requests.  
+Most online large online marketplaces and social media companies will not charge you for making complaints or takedown requests.  
 
 However, if you engage an IP professional such as brand monitoring services or IP attorneys to act on your behalf, this will incur additional fees.  
 
@@ -64,7 +64,7 @@ Some mechanisms offered by platforms may require you to be a seller or user with
 
 ### How much is this used?
 
-IP-related takedown notices submitted to platforms is likely in the **millions annually.**
+IP-related takedown notices submitted to platforms likely reach into the millions annually.
 
 ### Who's involved?
 

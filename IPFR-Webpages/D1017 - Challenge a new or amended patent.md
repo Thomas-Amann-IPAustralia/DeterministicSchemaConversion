@@ -53,7 +53,7 @@ In some cases, amendments made to the claims may provide opportunity for a furth
 
 Oppositions can take up to 12 months depending on the various stages outlined below. 
 
-* The *notice of intent* (NOI) to oppose a patent must be filed within 3 months of the publication of acceptance. The party opposing the patent must then file a *Statement of Grounds and Particulars* within a month from when the NOI is filed. Provided the opposition is not dismissed, the process will then enter the evidence stage.
+* The *notice of opposition* (NOO) to oppose a patent must be filed within 3 months of the publication of acceptance. The party opposing the patent must then file a *Statement of Grounds and Particulars* within a month from when the NOO is filed. Provided the opposition is not dismissed, the process will then enter the evidence stage.
 * The party opposing the patent must provide evidence which supports their opposition within 3 months of the Statement of Grounds and Particulars being filed.
 * The owner of the patent then has 3 months to provide evidence in response (defending or explaining why their patent should *not* be changed or revoked).
 * After this, the party opposing the patent has 3 months to provide evidence in reply.
