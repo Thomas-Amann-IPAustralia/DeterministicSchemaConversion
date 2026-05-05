@@ -118,7 +118,7 @@ You need to update this file in two situations:
 8. Select **"Commit directly to the main branch"** (or to your own branch if you created one)
 9. Click **Commit changes**
 
-> **Tip:** For easier editing, you can download the file, edit it in Microsoft Excel or Google Sheets, and then upload it back. To upload: navigate to the file on GitHub → click the three-dots menu → "Upload file" → drag your updated file onto the page.
+> **Tip:** For easier editing, you can copy the file content into a notepad document and save it with the suffix '.csv'. You can then open it in Microsoft Excel, save your changes, open it in notepad then copy and paste it back into the file.
 
 ### Column Reference
 
