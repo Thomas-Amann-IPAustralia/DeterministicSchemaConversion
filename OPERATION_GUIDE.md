@@ -238,7 +238,7 @@ All stages can be triggered manually from the GitHub Actions tab.
 - A red cross (✗) means it failed — see [Section 8](#8-troubleshooting-common-problems) for how to investigate
 - After a successful run, the output files will be automatically committed back to the repository. You should see a new commit appear in the file history.
 
-> **Note:** Stages take a few minutes to run (Stage 1 can take 15–30 minutes as it downloads every page). You do not need to keep the page open — GitHub will run it in the background.
+> **Note:** Stages take a few minutes to run (Stage 1 can take 15–30 minutes as it downloads every page). You do not need to keep the page open — GitHub will run it in the background. BUT if you want to see the system logs (to help trouble shoot) you'll need to click on the grey box with the spinning yellow dot. Zscaler doesn't let us look at system logs AFTER they've been generated. #ZeroTrustIsAMust
 
 ---
 
