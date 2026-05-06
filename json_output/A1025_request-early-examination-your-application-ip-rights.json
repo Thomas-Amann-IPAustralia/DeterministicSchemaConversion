@@ -31,11 +31,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#provider-organization",
-      "name": "Null"
-    },
-    {
       "@type": "WebSite",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
       "name": "IP First Response",
@@ -51,12 +46,23 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights",
       "name": "Request early examination of your application for IP rights - IP First Response",
-      "description": "Null",
+      "description": "Request that IP Australia examines your application more quickly, to help clarify the validity of your proposed IP right sooner.",
       "identifier": "A1025",
       "about": [
         {
           "@type": "Thing",
-          "name": "Null"
+          "name": "Patent",
+          "sameAs": "https://www.wikidata.org/wiki/Q253623"
+        },
+        {
+          "@type": "Thing",
+          "name": "Trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
+        },
+        {
+          "@type": "Thing",
+          "name": "Design",
+          "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         }
       ],
       "inLanguage": "en-AU",
@@ -91,9 +97,16 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "mainEntity": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#governmentservice"
       },
+      "datePublished": "2026-02-23",
       "dateModified": "2026-02-23",
+      "keywords": [
+        "Faster examination",
+        "Register or grant IP sooner",
+        "Checking validity of you IP right earlier",
+        "IP australia process"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -104,13 +117,36 @@
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#faq"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-1-for-patents"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-1-what-is-it"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-2-for-trade-marks"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-2-for-patents"
         },
         {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-3-for-registered-designs"
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-3-for-trade-marks"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-4-for-registered-designs"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
         }
       ],
       "relatedLink": [
@@ -123,66 +159,59 @@
       ]
     },
     {
-      "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article",
-      "description": "Null",
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#governmentservice",
+      "description": "Request that IP Australia examines your application more quickly, to help clarify the validity of your proposed IP right sooner.",
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage"
       },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
+      "name": "Request early examination of your application for IP rights",
+      "serviceType": "Government Service",
+      "serviceOperator": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
       },
-      "author": {
+      "provider": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "headline": "Request early examination of your application for IP rights",
-      "articleBody": "Expedited examination (sometimes called fast-track examination) is where IP Australia looks at your application faster than standard examination. This is available for some IP rights, including patents, trade marks and designs.  This process does not change the examination process outcome, it simply moves your application closer to the front of the queue, meaning the examination of your application will begin earlier than the normal waiting period for comparable applications. The deadline to respond to this report remains the same as regular examination timelines, but an earlier first examination report may help you make informed business decisions at an earlier stage.",
-      "dateModified": "2026-02-23",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-1-for-patents"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-2-for-trade-marks"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-3-for-registered-designs"
-        },
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#faq"
-        }
-      ]
+      }
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-1-for-patents",
-      "headline": "For patents",
-      "text": "IP Australia offers expedited examination that can reduce the wait time for a first examination report (office first action) to around 8 weeks in many cases, instead of the usual longer wait. You usually need to give a legitimate reason, such as getting ready to start making or selling your invention, dealing with suspected infringement, or using an international work sharing programs such as the Patent Prosecution Highway so that work done in another country can help with examination here.",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "Expedited examination (sometimes called fast-track examination) is where IP Australia looks at your application faster than standard examination. This is available for some IP rights, including patents, trade marks and designs.  This process does not change the examination process outcome, it simply moves your application closer to the front of the queue, meaning the examination of your application will begin earlier than the normal waiting period for comparable applications. The deadline to respond to this report remains the same as regular examination timelines, but an earlier first examination report may help you make informed business decisions at an earlier stage.",
       "position": 1,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage"
       }
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-2-for-trade-marks",
-      "headline": "For trade marks",
-      "text": "You or your representative can make a request for expedited examination if there is a genuine urgency. Common reasons can include a dispute with another business, plans to take action over suspected misuse of your brand, or other serious business reasons where timing is important. IP Australia examines most applications in the order they are filed, so an accepted expedited request may move your trade mark ahead of others that are waiting. The rules still apply in the same way - you simply get an earlier answer on whether your trade mark application can proceed.",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-2-for-patents",
+      "headline": "For patents",
+      "text": "IP Australia offers expedited examination that can reduce the wait time for a first examination report (office first action) to around 8 weeks in many cases, instead of the usual longer wait. You usually need to give a legitimate reason, such as getting ready to start making or selling your invention, dealing with suspected infringement, or using an international work sharing programs such as the Patent Prosecution Highway so that work done in another country can help with examination here.",
       "position": 2,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage"
       }
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-3-for-registered-designs",
-      "headline": "For registered designs",
-      "text": "You or your representative can make a written request through IP Australia's online services to ask that your design be examined sooner. A design owner or third party can make a written request to the Registrar to expedite the examination of their registration.\n\nIP Australia offers this process as a courtesy. Expedited examination is not mentioned in the legislation and is a business process. As a result, timelines for examination could vary based on operational requirements. Where possible, however, examinations of files with expedite requests will be processed before other requests.\n\nWhere possible, design applications with an accepted expedite request are examined before other files, but timing can still depend on IP Australia's workload, and there is no guarantee of a specific date. The examination itself is the same as usual and can still result in questions or a report asking you to fix problems.",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-3-for-trade-marks",
+      "headline": "For trade marks",
+      "text": "You or your representative can make a request for expedited examination if there is a genuine urgency. Common reasons can include a dispute with another business, plans to take action over suspected misuse of your brand, or other serious business reasons where timing is important. IP Australia examines most applications in the order they are filed, so an accepted expedited request may move your trade mark ahead of others that are waiting. The rules still apply in the same way - you simply get an earlier answer on whether your trade mark application can proceed.",
       "position": 3,
       "isPartOf": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#section-4-for-registered-designs",
+      "headline": "For registered designs",
+      "text": "You or your representative can make a written request through IP Australia's online services to ask that your design be examined sooner. A design owner or third party can make a written request to the Registrar to expedite the examination of their registration.\n\nIP Australia offers this process as a courtesy. Expedited examination is not mentioned in the legislation and is a business process. As a result, timelines for examination could vary based on operational requirements. Where possible, however, examinations of files with expedite requests will be processed before other requests.\n\nWhere possible, design applications with an accepted expedite request are examined before other files, but timing can still depend on IP Australia's workload, and there is no guarantee of a specific date. The examination itself is the same as usual and can still result in questions or a report asking you to fix problems.",
+      "position": 4,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage"
       }
     },
     {
@@ -274,6 +303,48 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
     }
   ]
 }

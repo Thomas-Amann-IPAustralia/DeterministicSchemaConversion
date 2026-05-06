@@ -31,11 +31,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#provider-organization",
-      "name": "Null"
-    },
-    {
       "@type": "WebSite",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
       "name": "IP First Response",
@@ -51,12 +46,13 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent",
       "name": "Enforcing a 'filed' patent - IP First Response",
-      "description": "Null",
+      "description": "Why a patent application which has only been filed cannot be used to enforce IP rights against others yet",
       "identifier": "A1009",
       "about": [
         {
           "@type": "Thing",
-          "name": "Null"
+          "name": "Patent",
+          "sameAs": "https://www.wikidata.org/wiki/Q253623"
         }
       ],
       "inLanguage": "en-AU",
@@ -93,7 +89,15 @@
       "mainEntity": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#article"
       },
+      "datePublished": "2026-02-23",
       "dateModified": "2026-02-23",
+      "keywords": [
+        "Meaning of 'filed' for patents",
+        "Filed vs granted patents",
+        "Enforcing patents before examination",
+        "When you can enforce your patent",
+        "Patent status meaning"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -102,6 +106,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#section-1-disclaimer"
         }
       ],
       "relatedLink": [
@@ -113,7 +120,7 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#article",
-      "description": "Null",
+      "description": "Why a patent application which has only been filed cannot be used to enforce IP rights against others yet",
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#webpage"
       },
@@ -127,12 +134,34 @@
       },
       "headline": "Enforcing a 'filed' patent",
       "articleBody": "A 'filed' patent refers to a patent application that has been lodged with IP Australia but has not yet been granted. Only granted patents can be enforced in Australia. Filing begins the process of assessing whether an invention meets the legal requirements for a patent, such as being new, inventive and useful.\n\nAt this stage, the person who filed the patent (the applicant) cannot prevent others from using, selling or making the invention.\n\nOnly once the patent is formally granted do enforceable rights arise.\n\nHowever, the publication date can become significant later. If a patent is granted, the exclusive rights generally apply from the date the patent specification becomes open for public inspection (usually around 18 months from earliest priority date).",
+      "datePublished": "2026-02-23",
       "dateModified": "2026-02-23",
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#section-1-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
         }
       ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#section-1-disclaimer",
+      "headline": "Disclaimer",
+      "text": "Filing a patent is just the first step in a long process, and does not guarantee the application will ultimatly be granted. Taking enforcement action at this stage requires advice from an IP professional.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/enforcing-filed-patent#article"
+      }
     },
     {
       "@type": "FAQPage",
@@ -223,6 +252,20 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
     }
   ]
 }
