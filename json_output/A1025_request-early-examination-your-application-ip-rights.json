@@ -31,11 +31,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#provider-organization",
-      "name": "Null"
-    },
-    {
       "@type": "WebSite",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
       "name": "IP First Response",
@@ -51,12 +46,23 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights",
       "name": "Request early examination of your application for IP rights - IP First Response",
-      "description": "Null",
+      "description": "Request that IP Australia examines your application more quickly, to help clarify the validity of your proposed IP right sooner.",
       "identifier": "A1025",
       "about": [
         {
           "@type": "Thing",
-          "name": "Null"
+          "name": "Patent",
+          "sameAs": "https://www.wikidata.org/wiki/Q253623"
+        },
+        {
+          "@type": "Thing",
+          "name": "Trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
+        },
+        {
+          "@type": "Thing",
+          "name": "Design",
+          "sameAs": "https://www.wikidata.org/wiki/Q1240325"
         }
       ],
       "inLanguage": "en-AU",
@@ -93,7 +99,18 @@
       "mainEntity": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article"
       },
+      "datePublished": "2026-05-05",
       "dateModified": "2026-02-23",
+      "keywords": [
+        "Expedited examination",
+        "Early examination",
+        "Fast-track examination",
+        "Patent application",
+        "Trade mark application",
+        "Design application",
+        "Suspected infringement",
+        "Commercial urgency"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -125,7 +142,7 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#article",
-      "description": "Null",
+      "description": "Request that IP Australia examines your application more quickly, to help clarify the validity of your proposed IP right sooner.",
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#webpage"
       },
@@ -139,6 +156,7 @@
       },
       "headline": "Request early examination of your application for IP rights",
       "articleBody": "Expedited examination (sometimes called fast-track examination) is where IP Australia looks at your application faster than standard examination. This is available for some IP rights, including patents, trade marks and designs.  This process does not change the examination process outcome, it simply moves your application closer to the front of the queue, meaning the examination of your application will begin earlier than the normal waiting period for comparable applications. The deadline to respond to this report remains the same as regular examination timelines, but an earlier first examination report may help you make informed business decisions at an earlier stage.",
+      "datePublished": "2026-05-05",
       "dateModified": "2026-02-23",
       "hasPart": [
         {
@@ -152,6 +170,26 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/request-early-examination-your-application-ip-rights#faq"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
         }
       ]
     },
@@ -274,6 +312,48 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
     }
   ]
 }

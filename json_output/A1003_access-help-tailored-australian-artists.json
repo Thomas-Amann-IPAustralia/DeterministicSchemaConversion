@@ -31,11 +31,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#provider-organization",
-      "name": "Null"
-    },
-    {
       "@type": "WebSite",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
       "name": "IP First Response",
@@ -51,12 +46,13 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists",
       "name": "Access help tailored to Australian artists - IP First Response",
-      "description": "Null",
+      "description": "Access free resources and low- or no-cost legal advice for Australian artists and arts organisations.",
       "identifier": "A1003",
       "about": [
         {
           "@type": "Thing",
-          "name": "Null"
+          "name": "Copyright",
+          "sameAs": "https://www.wikidata.org/wiki/Q12978"
         }
       ],
       "inLanguage": "en-AU",
@@ -94,6 +90,16 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#article"
       },
       "dateModified": "2026-02-23",
+      "keywords": [
+        "Australian artists",
+        "Arts law centre of australia",
+        "Copyright infringement",
+        "Legal advice for artists",
+        "Arts organisations",
+        "Copyright ownership",
+        "Community legal centre",
+        "Australian copyright council"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -120,7 +126,7 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#article",
-      "description": "Null",
+      "description": "Access free resources and low- or no-cost legal advice for Australian artists and arts organisations.",
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#webpage"
       },
@@ -134,7 +140,29 @@
       },
       "headline": "Access help tailored to Australian artists",
       "articleBody": "The Arts Law Centre of Australia (Arts Law) is Australia's national community legal centre for artists and the arts. It is a not-for-profit organisation that provides free or low-cost legal advice to Australian artists and arts organisations, as well as education and resources.\n\nYou can access Arts Law's information sheets  covering various copyright topics in relation to your circumstance. Eligible artists and arts organisations can seek legal advice through Arts Law's legal query form here.\n\nFurther information about the services that Arts Law offers, including who can use them, any costs that apply, how much time might be involved and what would be needed to proceed, may be accessed on its website.",
-      "dateModified": "2026-02-23"
+      "dateModified": "2026-02-23",
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
     },
     {
       "@type": "WebPage",

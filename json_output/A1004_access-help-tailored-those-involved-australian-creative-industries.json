@@ -31,11 +31,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#provider-organization",
-      "name": "Null"
-    },
-    {
       "@type": "WebSite",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
       "name": "IP First Response",
@@ -51,12 +46,13 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries",
       "name": "Access help tailored to those involved in Australian creative industries - IP First Response",
-      "description": "Null",
+      "description": "Access resources and no-cost written legal advice to understand copyright law and its application to all art forms.",
       "identifier": "A1004",
       "about": [
         {
           "@type": "Thing",
-          "name": "Null"
+          "name": "Copyright",
+          "sameAs": "https://www.wikidata.org/wiki/Q12978"
         }
       ],
       "inLanguage": "en-AU",
@@ -91,9 +87,19 @@
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
       },
       "mainEntity": {
-        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#article"
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#service"
       },
       "dateModified": "2026-02-23",
+      "keywords": [
+        "Australian creative industries",
+        "Australian copyright council",
+        "Copyright infringement",
+        "Copyright legal advice",
+        "Copyright fact sheets",
+        "Creators and consumers",
+        "Creative industry workers",
+        "Copyright enforcement options"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -102,6 +108,9 @@
       "hasPart": [
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#section-1-what-is-it"
         }
       ],
       "mentions": [
@@ -110,6 +119,12 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/infringement-101#webpage"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ],
       "relatedLink": [
@@ -126,28 +141,24 @@
       ]
     },
     {
-      "@type": "Article",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#article",
-      "description": "Null",
+      "@type": "Service",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#service",
+      "description": "Access resources and no-cost written legal advice to understand copyright law and its application to all art forms.",
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#webpage"
       },
-      "inLanguage": "en-AU",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "publisher": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "author": {
-        "@id": "https://www.ipaustralia.gov.au/#organization"
-      },
-      "headline": "Access help tailored to those involved in Australian creative industries",
-      "articleBody": "The Australian Copyright Council (ACC) is an independent, not-for-profit Community Legal Service (CLS). ACC promotes the understanding of copyright law and its application to all art forms.\n\nYou can access ACC's comprehensive, free fact sheet collection  for an overview of copyright law and rights in relation to your circumstances. You can also access information about services ACC has available on their website.",
-      "dateModified": "2026-02-23",
-      "hasPart": [
-        {
-          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#faq"
-        }
-      ]
+      "name": "Access help tailored to those involved in Australian creative industries",
+      "serviceType": "Non-Government Third-Party Authority"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#section-1-what-is-it",
+      "headline": "What is it?",
+      "text": "The Australian Copyright Council (ACC) is an independent, not-for-profit Community Legal Service (CLS). ACC promotes the understanding of copyright law and its application to all art forms.\n\nYou can access ACC's comprehensive, free fact sheet collection  for an overview of copyright law and rights in relation to your circumstances. You can also access information about services ACC has available on their website.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#webpage"
+      }
     },
     {
       "@type": "FAQPage",
@@ -228,6 +239,20 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
     },
     {
       "@type": "WebPage",

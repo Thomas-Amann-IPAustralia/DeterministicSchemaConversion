@@ -31,11 +31,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws#provider-organization",
-      "name": "Null"
-    },
-    {
       "@type": "WebSite",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
       "name": "IP First Response",
@@ -51,12 +46,38 @@
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws#webpage",
       "url": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws",
       "name": "Familiarise yourself with IP laws - IP First Response",
-      "description": "Null",
+      "description": "Explains the key laws, regulations and rules that form the legal backbone of IP rights in Australia.",
       "identifier": "A1010",
       "about": [
         {
           "@type": "Thing",
-          "name": "Null"
+          "name": "Trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
+        },
+        {
+          "@type": "Thing",
+          "name": "Patent",
+          "sameAs": "https://www.wikidata.org/wiki/Q253623"
+        },
+        {
+          "@type": "Thing",
+          "name": "Design",
+          "sameAs": "https://www.wikidata.org/wiki/Q1240325"
+        },
+        {
+          "@type": "Thing",
+          "name": "Plant breeder's rights",
+          "sameAs": "https://www.wikidata.org/wiki/Q695112"
+        },
+        {
+          "@type": "Thing",
+          "name": "Copyright",
+          "sameAs": "https://www.wikidata.org/wiki/Q12978"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unregistered trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
         }
       ],
       "inLanguage": "en-AU",
@@ -93,7 +114,22 @@
       "mainEntity": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws#article"
       },
+      "datePublished": "2026-02-23",
       "dateModified": "2026-02-23",
+      "keywords": [
+        "IP laws",
+        "Australian IP legislation",
+        "Patents act",
+        "Trade marks act",
+        "Designs act",
+        "Copyright act",
+        "Plant breeder's rights act",
+        "IP australia manuals",
+        "Federal register of legislation",
+        "Attorney-general's department",
+        "IP professionals",
+        "IP rights registration"
+      ],
       "copyrightYear": 2026,
       "copyrightHolder": {
         "@id": "https://www.ipaustralia.gov.au/#organization"
@@ -151,7 +187,7 @@
     {
       "@type": "Article",
       "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws#article",
-      "description": "Null",
+      "description": "Explains the key laws, regulations and rules that form the legal backbone of IP rights in Australia.",
       "mainEntityOfPage": {
         "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws#webpage"
       },
@@ -165,6 +201,7 @@
       },
       "headline": "Familiarise yourself with IP laws",
       "articleBody": "Australian intellectual property (IP) law is built on a mix of legislation (being Acts and Regulations), case law, conventions, international treaties, practice guidelines and non-legislative instruments. This framework sets out what rights exist, who owns them, and how they can be used, enforced or challenged.\n\nIP legislation is made at a federal level, by the Australian Government (sometimes called the Commonwealth Government). \n\nEach main IP right type has its own Act of the Commonwealth Parliament. The Acts lay the groundwork for the legal principles in IP law. Each Act is accompanied by associated Regulations which provide more detailed rules and procedures to administer the principles provided in the Acts. Case law interprets the legal principles provided in the legislation, including the Acts and Regulations, and creates legal precedent. Case law develops from decisions which are heard by the various courts with responsibility to hear IP disputes. Decisions issued by IP Australia help to illustrate how the law has been applied to real situations. IP professionals understand how these sources work together and can provide tailored advice for your situation. \n\nSome forms of IP (trade marks, patents, designs and plant breeder's rights) require formal registration for protection. However, copyright does not require formal registration for protection, which generally starts automatically once the material is created.\n\nIP Australia maintains practise and procedure manuals for how IP rights examiners assess IP applications and how they will approach the legal standards for each of the registered IP rights. These can provide additional insight into the rules and requirements for each of the registered IP rights. \n\n Trade Marks Manual of Practice and Procedure\n Patent Manual of Practice and Procedure\n Designs Examiners' Manual of Practice and Procedure\n Plant breeder's rights (PBR) Manual of Practice and Procedure\n\nAs IP laws are often complex, people often obtain help for their situation from a qualified IP professional.\n\nFive main Acts of Parliament each deal with specific types of IP:\n\n Patents Act 1990  - Sets up a system for protecting inventions that are new, useful and inventive.\n Trade Marks Act 1995  - Sets up a system for protecting signs used to distinguish goods or services.\n Designs Act 2003  - Sets up a system for protecting the visual appearance of products that are new and distinctive.\n Plant Breeder's Rights Act 1994  - Sets up a system for protecting new plant varieties.\n- Copyright Act 1968  - Sets up a system for protecting original literary, artistic and other creative works. Unlike the other IP types, this system does not need you to register your copyright for it to be protected but does require the work or subject matter to be expressed in a material form.",
+      "datePublished": "2026-02-23",
       "dateModified": "2026-02-23",
       "hasPart": [
         {
@@ -187,6 +224,38 @@
         },
         {
           "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/familiarise-yourself-ip-laws#faq"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
         }
       ]
     },
@@ -339,6 +408,76 @@
           }
         }
       ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder's Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder's Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
     }
   ]
 }
