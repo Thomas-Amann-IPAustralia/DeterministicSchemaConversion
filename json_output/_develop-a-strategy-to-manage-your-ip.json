@@ -1,0 +1,406 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government",
+        "sameAs": "https://www.wikidata.org/wiki/Q2991162"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973154",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Intellectual Property Disputes"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip",
+      "name": "Obtain advice to help manage your IP - IP First Response",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "identifier": "",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
+        },
+        {
+          "@type": "Thing",
+          "name": "Patent",
+          "sameAs": "https://www.wikidata.org/wiki/Q253623"
+        },
+        {
+          "@type": "Thing",
+          "name": "Design",
+          "sameAs": "https://www.wikidata.org/wiki/Q1240325"
+        },
+        {
+          "@type": "Thing",
+          "name": "Plant breeder's rights",
+          "sameAs": "https://www.wikidata.org/wiki/Q695112"
+        },
+        {
+          "@type": "Thing",
+          "name": "Copyright",
+          "sameAs": "https://www.wikidata.org/wiki/Q12978"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unregistered trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Startup",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#article"
+      },
+      "datePublished": "2025-07-28",
+      "dateModified": "2026-03-26",
+      "keywords": [
+        "Trade marks",
+        "IP strategy",
+        "Develop a strategy to manage your IP",
+        "Secure manage",
+        "Develop strategy manage"
+      ],
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#section-1-professional-ip-advice"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage"
+        }
+      ],
+      "relatedLink": [
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney",
+        "https://www.ipaustralia.gov.au/understanding-ip/types-of-ip",
+        "https://www.ttipattorney.gov.au/for-clients/how-to-engage-an-attorney/find-an-ip-attorney-or-firm#als_iptags=Trade%20marks&als_e=0",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip",
+        "https://www.ipaustralia.gov.au/understanding-ip/get-professional-assistance-with-your-ip/engaging-a-patent-attorney",
+        "https://www.ipaustralia.gov.au/about-us/contact-us/speak-with-us-on-yarnline",
+        "https://ipta.org.au/community/get-free-consultation"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#article",
+      "description": "Develop a  forward-looking intellectual property (IP) strategy that may help you take proactive steps to secure, manage and enforce your IP.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#webpage"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "author": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "headline": "Obtain advice to help manage your IP",
+      "articleBody": "If you want to avoid future headaches from IP issues, you can engage a qualified intellectual property professional --such as an IP lawyer or a registered patent or trade mark attorney--for tailored information and advice about your situation. \n\nEarly advice can surface hidden risks, clarify ownership questions, evaluate risks and map out a protection strategy before you invest time and money.\n\nIP Professionals typically ask for background materials (drawings, prototypes, brand concepts or draft agreements) and gain an understanding of your business, before explaining how the relevant legislation (for example the Trade Marks Act 1995 (Cth) or the Patents Act 1990 (Cth)) applies to your situation.\n\nIP Professionals can prepare or review some IP applications, contracts and confidentiality agreements, or guide you through due diligence checks when entering partnerships or launching products. It is a requirement for anyone preparing a Patent Application to be a registered IP attorney. \n\nAn IP professional can provide you with legal and strategic advice and act for you at different stages of IP protection and enforcement. Depending on their specialities and qualifications, they can: \n\n Help you develop an IP strategy for your business.\n Search for existing IP rights similar to your current or future IP.\n Prepare and file your application. For patent applications this must be done by a registered patent attorney.\n Develop confidentiality or non-disclosure agreements.\n Provide advice on enforcement options.\n Assist and represent you in taking enforcement actions.\n- Provide advice on taking your IP to international markets.\n\nBelow is a high-level indication of some of the various IP professionals that operate in this space and some general information about what they can (and can't) do. Note that not all of the information below is about legal professionals.\n\n|  |  |  |  |\n| --- | --- | --- | --- |\n| Role | What they can do | What they can't do | Other information |\n| IP lawyers (including Solicitors & Barristers) | Provide legal advice on IP and non-IP matters. Represent you in court and tribunals.  Draft and negotiate contracts, licences, and settlement agreements.  Handle litigation for suspected or alleged infringement.  Advise about professionals that will be able to help for other circumstances. | Cannot prepare patent applications or prepare patent specifications for others unless they are also a registered patent attorney.  Trade mark and design applications can be filed by anyone. | Must hold a current practising certificate regulated by a state/territory Law Societies.  Some lawyers specialise in IP law; others may work with an IP attorney for technical filings. |\n| Trade mark attorneys & patent attorneys | Prepare, file, and prosecute patent, trade mark, Plant Breeders Rights and design applications.  Advise on registrability, opposition, and enforcement strategies.  Represent you before IP Australia in hearings and oppositions.  Draft and file responses to adverse reports from IP Australia. | Not admitted legal practitioners unless dual-qualified; broader legal practice, advice and representation require a lawyer. | Must be registered with the Trans-Tasman IP Attorneys Board.  Qualified through specialist exams and supervised practice. |\n| Brand specialists | Advise on brand strategy, positioning, and naming.  Monitor for unauthorised use of your brand. Manage re-branding and brand reputation issues.  Conduct basic trade mark searches and recommend legal follow-up. | Cannot provide patent-attorney services (e.g., drafting or applying for patents).  Trade mark/design filings can be made by anyone, but legal or attorney input is recommended  Do not act in legal disputes or IP Australia hearings. | Often work in marketing or brand protection firms.  May collaborate with lawyers or IP attorneys when suspected infringement occurs.  Anyone can use Australian Trade Mark Search or TM Checker for a trade mark check. |\n| Commercialisation specialists | Help develop strategies to bring IP-based products or services to market.  Identify funding, licensing, or partnership opportunities.  Assist with business planning, market research, and go-to-market strategy. | Cannot provide patent-attorney services (e.g., drafting or applying for patents) unless registered as a patent attorney.  Do not act in legal disputes or IP Australia hearings. | May be part of government programs (e.g., AusIndustry, state innovation hubs) or private consultancies.  Often connect clients with relevant legal and technical experts.  Useful for turning IP into revenue. |\n| Accountants | Help identify IP assets via financial discussions (e.g., logos, designs, know-how).  Advise on tax, depreciation, and valuation of IP (e.g., capital gains, royalty income).  Assist with IP-friendly business structuring and exit strategies. | Cannotprovide legal advice or file patents unless also legally qualified and/or qualified as a patents attorney.  Do not act in legal disputes or IP Australia hearings. | Well-placed to spot potential IP that may otherwise be overlooked.  Can advise on tax and valuation implications of IP (especially for R&D, depreciation, sales/licensing).  Often collaborate with IP attorneys or lawyers. |\n| Business advisors | Support clients in recognising and valuing IP assets.  Guide strategy for utilising IP (e.g., branding, markets). | Cannot give legal advice or file patent applications unless also legally qualified.  Not registered patent or trade mark attorneys--so normally do not prepare or file IP applications.  Do not act in legal disputes or IP Australia hearings. | Often refer clients to lawyers or IP attorneys for protection and enforcement steps. |",
+      "datePublished": "2025-07-28",
+      "dateModified": "2026-03-26",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#section-1-professional-ip-advice"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04014/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02697/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A01232/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2004B00136/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04783/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B02512/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C1968A00063/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F2017L01649/latest/text"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#section-1-professional-ip-advice",
+      "headline": "Professional IP advice",
+      "text": "",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#article"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q1",
+          "name": "What are the benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q1-a",
+            "text": "IP professionals can provide a wide range of legal services and develop a holistic IP protection strategy suited to your IP and business goals.\n They can have the knowledge, training and experience to guide you through and provide information about what the next steps should be for your IP journey.\n- They are able to recognise common issues which come up and refer you to other professionals when needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q2",
+          "name": "What are the risks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q2-a",
+            "text": "Some legal professionals have different specialties and may be more effective in their particular field of expertise. For instance, your lawyer may be highly experienced in dealing with trade marks, but less familiar with patents, or vice versa.\n By engaging an IP professional, they will aim to provide their services on outcome your seeking and the instructions you provide. While they can advise you on certain courses of action, you have the ultimate decision. Using a professional can lead to a false sense of security if you do not understand or pay heed to their advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q3",
+          "name": "What are the possible outcomes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q3-a",
+            "text": "The outcomes of seeing a legal professional depend heavily on your individual circumstances."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q4",
+          "name": "What might the costs be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q4-a",
+            "text": "The total costs of engaging an IP professional will depend on factors such as their fees and the complexity of the matter. \n\nFor trade mark and patent attorneys, you can expect an average fee of: \n\n $400-1100 per hour for a patent attorney\n $1,000-2,000 total for a trade mark attorney  to file and register a single trade mark in one or two classes of goods and services\n\nSome professionals offer a free consultation to assess what services you need and an estimate of costs. \n\nIt's a good idea to ask your IP professional for an indication of how much the entire process may cost for the service you would like to use during your first meeting.\n\nFor other services, the cost will vary depending on the nature of the request. It can be useful to seek quotes for work involving other IP specialists."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q5",
+          "name": "How much time might be involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q5-a",
+            "text": "Your first consultation is likely to take place shortly after you contact the professional. However, the total length of time for engaging their service will vary greatly depending on what steps you decide to take or the services you decide to use."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q6",
+          "name": "How much is this used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q6-a",
+            "text": "Many Australian businesses use professional services frequently."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q7",
+          "name": "Who can use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q7-a",
+            "text": "Anyone; you do not have to be an IP rights owner to engage a professional."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q8",
+          "name": "Who's involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q8-a",
+            "text": "You\n IP professionals you engage for service"
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q9",
+          "name": "What do you need to proceed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/obtain-advice-help-manage-your-ip#faq-q9-a",
+            "text": "Do your homework before you meet \n\nYour time is important and an expert's time can be expensive, so it's useful to prepare before you meet with IP professionals. Consider: \n\n Learning more about IP  and your specific IP type. Having some basic knowledge will help you to better understand the professional's recommendations.\n Researching what your infringers or competitors are doing in the market (i.e. where they might be based or whether they have registered IP) and be ready to share the results. This will help your professional provide informed advice.\n What your goals are from talking to the IP professional, what do you want to achieve and how much time, effort and money are you willing to spend to make that happen.\n\nFinding an IP Professional\n\nTo find a registered Australian trade mark or patent attorney, you can search the Trans-Tasman IP Attorneys Board directory: Find an IP attorney or firm | Trans-Tasman IP Attorneys Board.  \n\nHere are some suggestions for choosing a professional for your IP:\n\n Ask for recommendations from other business owners or members of your industry association.\n Ask how much you'll be charged and how long the service will take.\n Don't assume that all legal professionals specialise in the type of IP that you have.\n- Try to determine if you can establish a trusting relationship. If you don't feel comfortable sharing relevant information, it could be difficult for an adviser to work in your best interests."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "name": "Patents Act 1990",
+      "url": "https://www.legislation.gov.au/C2004A04014/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "name": "Patents Regulations 1991",
+      "url": "https://www.legislation.gov.au/F1996B02697/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "name": "Designs Act 2003",
+      "url": "https://www.legislation.gov.au/C2004A01232/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "name": "Designs Regulations 2004",
+      "url": "https://www.legislation.gov.au/F2004B00136/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "name": "Plant Breeder's Rights Act 1994",
+      "url": "https://www.legislation.gov.au/C2004A04783/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "name": "Plant Breeder's Rights Regulations 1994",
+      "url": "https://www.legislation.gov.au/F1996B02512/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "name": "Copyright Act 1968",
+      "url": "https://www.legislation.gov.au/C1968A00063/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "name": "Copyright Regulations 2017",
+      "url": "https://www.legislation.gov.au/F2017L01649/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+      "name": "Choosing the right IP professional - IP First Response",
+      "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    }
+  ]
+}

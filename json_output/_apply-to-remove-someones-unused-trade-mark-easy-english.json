@@ -1,0 +1,212 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government",
+        "sameAs": "https://www.wikidata.org/wiki/Q2991162"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973154",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Intellectual Property Disputes"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english",
+      "name": "Apply to remove someone's unused trade mark (Easy English) - IP First Response",
+      "description": "Request IP Australia removes an unused  trade mark from the register.",
+      "identifier": "",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Trade mark",
+          "sameAs": "https://www.wikidata.org/wiki/Q165196"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Startup",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#governmentservice"
+      },
+      "dateModified": "2026-02-25",
+      "keywords": [
+        "Trade marks",
+        "Trade mark non-use",
+        "Trade mark registration",
+        "Trade mark non-use action",
+        "A trade mark from the register"
+      ],
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#faq"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#section-1-this-page-is-coming-soon"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#section-2-disclaimer"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/C2004A04969/latest/text"
+        },
+        {
+          "@id": "https://www.legislation.gov.au/F1996B00084/latest/text"
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use"
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#governmentservice",
+      "description": "Request IP Australia removes an unused  trade mark from the register.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#webpage"
+      },
+      "name": "Apply to remove someone's unused trade mark (Easy English)",
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#section-1-this-page-is-coming-soon",
+      "headline": "This page is coming soon",
+      "text": "We are working on this page. It will be ready soon.\nThis page will explain your options in simple words.",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#section-2-disclaimer",
+      "headline": "Disclaimer",
+      "text": "The application for removal/cessation of protection for non-use must be filed in an approved form",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#webpage"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#faq-q1",
+          "name": "Need help now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/apply-remove-someones-unused-trade-mark-easy-english#faq-q1-a",
+            "text": "This webpage has the same information now. It may be harder to read.\nRemove a trade mark from the register | IP Australia First Response"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "name": "Trade Marks Act 1995",
+      "url": "https://www.legislation.gov.au/C2004A04969/latest/text",
+      "legislationType": "Act"
+    },
+    {
+      "@type": "Legislation",
+      "@id": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "name": "Trade Marks Regulations 1995",
+      "url": "https://www.legislation.gov.au/F1996B00084/latest/text",
+      "legislationType": "Regulations"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/trade-mark-non-use",
+      "name": "Remove a trade mark from the register - IP First Response",
+      "description": "Request IP Australia removes an unused  trade mark from the register.",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    }
+  ]
+}

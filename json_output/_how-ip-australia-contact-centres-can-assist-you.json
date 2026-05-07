@@ -1,0 +1,283 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.ipaustralia.gov.au/#organization",
+      "name": "IP Australia",
+      "url": "https://www.ipaustralia.gov.au",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Australian Government",
+        "sameAs": "https://www.wikidata.org/wiki/Q2991162"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q5973154",
+        "https://en.wikipedia.org/wiki/IP_Australia"
+      ],
+      "knowsAbout": [
+        "Intellectual Property",
+        "Patents",
+        "Trade Marks",
+        "Design Rights",
+        "Plant Breeder's Rights",
+        "Intellectual Property Disputes"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "IP First Response content managers",
+        "email": "IPFirstResponse@IPAustralia.gov.au",
+        "description": "Feedback and enquiries regarding IP First Response"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website",
+      "name": "IP First Response",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/",
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you",
+      "name": "How IP Australia contact centres can assist you - IP First Response",
+      "description": "IP Australia offers assistance across a range of intellectual property matters. However, there are certain matters that IP Australia is not permitted to assist with. Find out if we can assist you before you call.",
+      "identifier": "",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Any IP right"
+        }
+      ],
+      "inLanguage": "en-AU",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and medium businesses",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "alternateName": [
+          "Startups",
+          "Entrepreneurs",
+          "SME",
+          "Startup",
+          "Small to Medium Enterprise",
+          "Sole Trader",
+          "Australian Small Business Owners"
+        ]
+      },
+      "usageInfo": {
+        "@type": "CreativeWork",
+        "name": "Disclaimer and Feedback Policy",
+        "text": "This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.",
+        "url": "mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"
+      },
+      "publisher": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#governmentservice"
+      },
+      "datePublished": "2026-04-29",
+      "dateModified": "2026-04-29",
+      "keywords": [
+        "Talk to a human",
+        "Need help",
+        "I want to check",
+        "What IP australia can help with",
+        "What IP australia cannot help with",
+        "Online service help",
+        "Application process",
+        "Questions about fees",
+        "Confirming corrospondence came from IP australia",
+        "Understanding IP australia processes"
+      ],
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "creditText": "Source: IP First Response initiative led by IP Australia",
+      "text": "IP Australia offers assistance across a range of intellectual property matters and is responsible for managing applications, oppositions, renewals and the public registers. However, there are certain matters that IP Australia is not permitted to assist with. IP Australia does not provide legal, financial, or business advice. For this type of advice, you should consult a suitably qualified IP professional when considering your intellectual property needs.",
+      "hasPart": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-1-general-enquiries"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-2-ip-australia-customer-service-line"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-3-providing-feedback-about-ip-australia"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-4-indigenous-knowledge"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-5-for-journalists-and-the-media"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-6-engagement-requests"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-7-translation-and-interpreting"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-8-hearing-and-speech-assistance"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#webpage"
+        },
+        {
+          "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#webpage"
+        }
+      ],
+      "relatedLink": [
+        "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+        "https://www.ag.gov.au/rights-and-protections/copyright",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries",
+        "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists",
+        "https://www.ipaustralia.gov.au/about-us/contact-us"
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#governmentservice",
+      "description": "IP Australia offers assistance across a range of intellectual property matters. However, there are certain matters that IP Australia is not permitted to assist with. Find out if we can assist you before you call.",
+      "mainEntityOfPage": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      },
+      "name": "How IP Australia contact centres can assist you",
+      "serviceType": "Government Service",
+      "serviceOperator": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      },
+      "provider": {
+        "@id": "https://www.ipaustralia.gov.au/#organization"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-1-general-enquiries",
+      "headline": "General enquiries",
+      "text": "Enquiries related to basic processes, navigation of Online services, opposition, renewal or registered IP rights, and procedures throughout the application journey are treated as general enquiries.\n\nEnquiries that are case‑specific or require specialised knowledge or support (in line with a defined process) will be escalated internally. \n\nYou can access the general enquiry service via;\n\n our live phone contact centre (accessed from Australia and also from overseas on a different phone number),\n a live chat function from your internet browser (with a live IP Australia agent on the other end of the chat), or\n submit an email to outline your question and receive a written response.\n\nTopics which our general enquiry service can assist with;\n\n Explaining the general intellectual property environment, including trade marks, patents, designs and plant breeders rights\n Assistance with questions about accessing IP Australia's online services and systems\n Answering questions about IP processes, applications and services offered by IP Australia\n Guiding you through key steps of an application's process for your specific intellectual property rights\n Assistance with understanding the processes involved in opposing someone else's application for IP rights\n General enquiries relating to fees payable to IP Australia, include fee types and amounts and how you can pay\n Assistance with understanding the processes involved in defending your rights from an IP Australia opposition process\n Helping you check whether correspondence you've received claiming to be from IP Australia is legitimate, including identifying potential scams or misleading communications.\n\nTopics our general enquiry service cannot assist with:\n\n Advice about what to do in your personal situation, this is the role of an attorney or lawyer. See Choosing the right IP professional | IP Australia First Response. This includes;\n\n + What you should or should not do, including what is best or safest to do\n + Defining if infringement has occurred\n + Business decisions\n Dealing with enforcing or defending your IP rights, infringement issues, or other business decisions relating to your IP. Including issues involving 'passing off', counterfeiting, or regulating business activities.\n Information about rights which are not administered by IP Australia, including copyright, trade secrets, GIs\n- Copyright is outside of IP Australia's scope. The contact centre cannot assist with copyright matters. You may find useful information and avenues for assistance at;\n\n + Copyright | Attorney-General's Department,\n + Access help tailored to those involved in Australian creative industries | IP Australia First Response\n + Access help tailored to Australian artists | IP Australia First Response",
+      "position": 1,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-2-ip-australia-customer-service-line",
+      "headline": "IP Australia Customer Service Line",
+      "text": "Availability: Monday to Friday, 9.00 am - 5.00 pm (local time, excluding public holidays).\n\nContact us | IP Australia",
+      "position": 2,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-3-providing-feedback-about-ip-australia",
+      "headline": "Providing feedback about IP Australia",
+      "text": "If you would like to provide feedback about your experience with IP Australia's services, content, support or processes, you can submit your comments using our online feedback form.\n[[RS1]](#_msocom_1) Contact us | IP Australia",
+      "position": 3,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-4-indigenous-knowledge",
+      "headline": "Indigenous knowledge",
+      "text": "Our free Yarnline service supports people to better understand Indigenous Knowledge and how intellectual property rights can help protect it. You can speak directly with a specialist or request a call back.\nAvailability: Monday to Friday, 9.00 am - 5.00 pm (local time, excluding national public holidays).\nPhone: 1800 316 949\n\nContact us | IP Australia",
+      "position": 4,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-5-for-journalists-and-the-media",
+      "headline": "For journalists and the media",
+      "text": "Dedicated contact details are available for journalists and media enquiries.\nAvailability: Media enquiries are handled during standard business hours, Monday to Friday, 9.00 am - 5.00 pm.\nEmail: media@ipaustralia.gov.au\nPhone: (02) 6283 2038\n\nContact us | IP Australia",
+      "position": 5,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-6-engagement-requests",
+      "headline": "Engagement requests",
+      "text": "If your organisation would like to learn more about intellectual property, you can organise an information session with our expert team, request educational resources, or invite us to participate in an event.\nAvailability: Requests are managed Monday to Friday, 9.00 am - 5.00 pm.\n\nContact us | IP Australia",
+      "position": 6,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-7-translation-and-interpreting",
+      "headline": "Translation and interpreting",
+      "text": "If you need translation or interpreting support, contact the Translating and Interpreting Service (TIS National).\nAvailability: 24 hours a day, 7 days a week.\nPhone: 13 14 50",
+      "position": 7,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#section-8-hearing-and-speech-assistance",
+      "headline": "Hearing and speech assistance",
+      "text": "If you are d/Deaf, hard of hearing or have a speech impairment, you can contact IP Australia through the National Relay Service (NRS).\nAvailability: 24 hours a day, except for Video Relay calls which operate limited hours.\nPhone: 1300 651 010 (via NRS)",
+      "position": 8,
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/how-ip-australia-contact-centres-can-assist-you#webpage"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/choosing-right-ip-professional",
+      "name": "Choosing the right IP professional - IP First Response",
+      "description": "Different professionals offer different expertise. Find out who does what, how they can help, and what to consider when choosing someone for your situation.",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-those-involved-australian-creative-industries",
+      "name": "Access help tailored those involved australian creative industries - IP First Response",
+      "description": "Access resources and no-cost written legal advice to understand copyright law and its application to all art forms.",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists#webpage",
+      "url": "https://ipfirstresponse.ipaustralia.gov.au/options/access-help-tailored-australian-artists",
+      "name": "Access help tailored australian artists - IP First Response",
+      "description": "Access free resources and low- or no-cost legal advice for Australian artists and arts organisations.",
+      "isPartOf": {
+        "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website"
+      }
+    }
+  ]
+}
