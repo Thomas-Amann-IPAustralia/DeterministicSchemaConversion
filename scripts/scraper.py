@@ -115,6 +115,61 @@ def sanitize_filename(name):
     cleaned = re.sub(r'[\\/*?:"<>|]', "", str(name))
     return cleaned.strip()
 
+
+def strip_bom_fieldnames(reader):
+    """Strip any stray BOM characters left on the first column name.
+
+    Python's `utf-8-sig` codec only strips a single BOM; a CSV that has
+    been written by a tool that prepends a BOM to an already-BOM'd file
+    will leave a `\\ufeff` glued to the first fieldname, silently breaking
+    every `row.get('UDID', ...)` lookup in the pipeline.
+    """
+    if reader.fieldnames and reader.fieldnames[0]:
+        reader.fieldnames[0] = reader.fieldnames[0].lstrip("﻿")
+
+
+def reconcile_output_dirs(expected_basenames, md_dir, html_dir, logger):
+    """Delete stale .md and .html files that don't correspond to any
+    current CSV row.  expected_basenames is the set of filename stems
+    (without extension) the scraper should have produced this run.
+
+    Returns (md_removed_count, html_removed_count).
+    """
+    md_removed = 0
+    html_removed = 0
+
+    if os.path.isdir(md_dir):
+        for entry in os.listdir(md_dir):
+            if not entry.endswith(".md"):
+                continue
+            stem = entry[:-3]
+            if stem in expected_basenames:
+                continue
+            path = os.path.join(md_dir, entry)
+            try:
+                os.remove(path)
+                md_removed += 1
+                logger.warning(f"  [RECONCILE] Removed stale markdown: {entry}")
+            except OSError as e:
+                logger.error(f"  [RECONCILE] Failed to remove {entry}: {e}")
+
+    if os.path.isdir(html_dir):
+        for entry in os.listdir(html_dir):
+            if not entry.endswith("-html.html"):
+                continue
+            stem = entry[: -len("-html.html")]
+            if stem in expected_basenames:
+                continue
+            path = os.path.join(html_dir, entry)
+            try:
+                os.remove(path)
+                html_removed += 1
+                logger.warning(f"  [RECONCILE] Removed stale html: {entry}")
+            except OSError as e:
+                logger.error(f"  [RECONCILE] Failed to remove {entry}: {e}")
+
+    return md_removed, html_removed
+
 def save_session_report(report_data):
     """Saves a rich CSV report of the scraping session."""
     if not os.path.exists(REPORTS_DIR):
@@ -243,9 +298,12 @@ def main():
         # Read the CSV File
         logger.info(f"Reading targets from {CSV_FILE}...")
         
+        expected_basenames = set()
+
         with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
-            
+            strip_bom_fieldnames(reader)
+
             for row in reader:
                 url = row.get('Canonical-url', '').strip()
                 udid = row.get('UDID', '').strip()
@@ -255,9 +313,17 @@ def main():
                 if not url or not url.lower().startswith('http'):
                     logger.debug(f"Skipping row ID {udid}: Invalid URL '{url}'")
                     continue
-                
+
+                if not udid:
+                    logger.error(
+                        f"  [x] Skipping row with empty UDID (title={main_title!r}, url={url!r}). "
+                        "Refusing to write file without a UDID prefix — check the CSV for missing/corrupt UDID values."
+                    )
+                    continue
+
                 clean_title = sanitize_filename(main_title)
                 filename = f"{udid} - {clean_title}.md"
+                expected_basenames.add(os.path.splitext(filename)[0])
 
                 # Scrape
                 md_content, html_content, stats = fetch_and_convert(driver, url)
@@ -299,6 +365,23 @@ def main():
     finally:
         driver.quit()
         save_session_report(session_report)
+
+        # Reconcile output directories: remove stale files left over from
+        # earlier runs when UDIDs/titles change or CSV rows are removed.
+        # Only runs if we built the expected set (i.e. CSV read succeeded).
+        if 'expected_basenames' in locals() and expected_basenames:
+            md_removed, html_removed = reconcile_output_dirs(
+                expected_basenames, OUTPUT_DIR, HTML_OUTPUT_DIR, logger
+            )
+            if md_removed or html_removed:
+                sep = "!" * 70
+                logger.warning(sep)
+                logger.warning(
+                    f"!!! RECONCILIATION: removed {md_removed} stale .md and "
+                    f"{html_removed} stale .html file(s) !!!"
+                )
+                logger.warning(sep)
+
         logger.info("--- Scrape Run Complete ---")
 
 if __name__ == "__main__":

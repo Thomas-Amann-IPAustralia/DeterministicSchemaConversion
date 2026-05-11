@@ -199,6 +199,11 @@ def read_existing_csv(csv_path):
 
     with open(csv_path, mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
+        # Defensive: utf-8-sig only strips a single BOM. If a tool wrote a
+        # second BOM into the file, it would stick to the first fieldname
+        # (e.g. '﻿UDID') and silently break every row.get('UDID', ...).
+        if reader.fieldnames and reader.fieldnames[0]:
+            reader.fieldnames[0] = reader.fieldnames[0].lstrip("﻿")
         fieldnames = reader.fieldnames
         for row in reader:
             rows.append(row)
