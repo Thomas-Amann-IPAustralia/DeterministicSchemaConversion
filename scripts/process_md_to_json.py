@@ -913,6 +913,11 @@ def load_metatable(csv_path: str | Path) -> dict[str, MetaRecord]:
 
     with open(csv_path, newline="", encoding="utf-8-sig") as fh:
         reader = csv.DictReader(fh)
+        # Defensive: utf-8-sig only strips a single BOM. A double-BOM in
+        # the source file would leave '﻿' glued to the first fieldname
+        # and silently zero out every row.get('UDID', ...) lookup.
+        if reader.fieldnames and reader.fieldnames[0]:
+            reader.fieldnames[0] = reader.fieldnames[0].lstrip("﻿")
         for row in reader:
             # The CSV has a trailing space on 'Archectype ' — handle that.
             archetype_key = None
