@@ -1,4 +1,4 @@
-PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent)"
+PageURL: "[https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-enforcement](https://ipfirstresponse.ipaustralia.gov.au/options/challenge-granted-patent-enforcement)"
 
 ## Patent re-examination
 
