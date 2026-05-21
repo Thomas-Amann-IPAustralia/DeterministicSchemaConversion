@@ -50,48 +50,44 @@ Topics our general enquiry service **cannot** assist with:
 
 Availability: Monday to Friday, 9.00 am - 5.00 pm (local time, excluding public holidays).
 
-[Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)
+Visit the [Contact us](https://www.ipaustralia.gov.au/about-us/contact-us)  page to access phone numbers and contact options for general enquiries.
 
 ### Providing feedback about IP Australia
 
-If you would like to provide feedback about your experience with IP Australia's services, content, support or processes, you can submit your comments using our online feedback form.\
-[[RS1]](#_msocom_1) [Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)
+If you would like to provide feedback about your experience with IP Australia's services, content, support or processes, you can submit your comments using our online feedback formor visit the [Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)  page.
 
 ### Indigenous knowledge
 
 Our free Yarnline service supports people to better understand Indigenous Knowledge and how intellectual property rights can help protect it. You can speak directly with a specialist or request a call back.\
 Availability: Monday to Friday, 9.00 am - 5.00 pm (local time, excluding national public holidays).\
-Phone: 1800 316 949
-
-[Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)
+Visit the [Contact us](https://www.ipaustralia.gov.au/about-us/contact-us)  page to access phone numbers and contact options for Yarnline.
 
 ### For journalists and the media
 
 Dedicated contact details are available for journalists and media enquiries.\
 Availability: Media enquiries are handled during standard business hours, Monday to Friday, 9.00 am - 5.00 pm.\
-Email: [media@ipaustralia.gov.au](mailto:media@ipaustralia.gov.au)\
-Phone: (02) 6283 2038
-
-[Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)
+Visit the [Contact us](https://www.ipaustralia.gov.au/about-us/contact-us)  page to access phone numbers and contact options for media enquiries.
 
 ### Engagement requests
 
 If your organisation would like to learn more about intellectual property, you can organise an information session with our expert team, request educational resources, or invite us to participate in an event.\
 Availability: Requests are managed Monday to Friday, 9.00 am - 5.00 pm.
 
-[Contact us | IP Australia](https://www.ipaustralia.gov.au/about-us/contact-us)
+Visit the [Contact us](https://www.ipaustralia.gov.au/about-us/contact-us)  page to access phone numbers and contact options for engagement requests.
 
 ### Translation and interpreting
 
 If you need translation or interpreting support, contact the Translating and Interpreting Service (TIS National).\
-Availability: 24 hours a day, 7 days a week.\
-Phone: 13 14 50
+Availability: 24 hours a day, 7 days a week.
+
+Visit the [Contact us](https://www.ipaustralia.gov.au/about-us/contact-us)  page to access translation and interpreting services.
 
 ### Hearing and speech assistance
 
 If you are d/Deaf, hard of hearing or have a speech impairment, you can contact IP Australia through the National Relay Service (NRS).\
-Availability: 24 hours a day, except for Video Relay calls which operate limited hours.\
-Phone: 1300 651 010 (via NRS)
+Availability: 24 hours a day, except for Video Relay calls which operate limited hours.
+
+Visit the [Contact us](https://www.ipaustralia.gov.au/about-us/contact-us)  page to find the National Relay Service phone number.
 
 ### Want to give us feedback?
 
