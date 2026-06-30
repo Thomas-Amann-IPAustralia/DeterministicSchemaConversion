@@ -80,22 +80,24 @@ map, legislation map, archetype → `@type` map) are all enumerated in
 `decision-tree.md` §3–§4 and embedded as JS objects at the top of the HTML file —
 they can be lifted directly into PHP arrays.
 
-## Open questions for sign-off
+## Resolved decisions
 
-These are flagged inline in `decision-tree.md`; they don't block the mock-up but
-the developer will need an answer:
+The four points originally flagged for sign-off are now settled and baked into
+both `decision-tree.md` and the HTML mock-up:
 
-1. **Auto-collapse rule (§2.1).** Today a Service/GovernmentService with no FAQ
-   and only intro sections is silently downgraded to `Article`. With explicit
-   block types this is probably unwanted — **recommend dropping it** and keeping
-   the author's archetype authoritative. Confirm?
-2. **Compound providers (§3).** e.g. *"ACCC, ASCS, AFP, IP Australia"*. Recommend
-   the author picks one primary provider from the dropdown and lists the rest as
-   related links, rather than the current "first recognised gov body" logic.
-   Confirm?
-3. **Entry-point representation (§7).** `DefinedTerm` in `keywords` (recommended,
-   machine-distinguishable) vs plain-text keywords. Confirm?
-4. **`@id` strategy for "Other" providers.** When a provider URL is supplied we
-   mint `<url>#organization`; otherwise `<page>#provider-organization`. Confirm
-   this is acceptable, or whether unknown providers should be inlined without a
-   stable `@id`.
+1. **Auto-collapse rule (§2.1) — removed.** The author's **Archetype** selection
+   is authoritative and always sets the main entity `@type`. The old "Fix 3"
+   heuristic that silently downgraded Service pages to `Article` is **not**
+   carried over.
+2. **Compound providers (§3) — single primary provider.** The structured
+   `provider` / `serviceOperator` slot takes one primary provider from the
+   dropdown; other involved bodies go in related links. Replaces the "first
+   recognised gov body" auto-pick.
+3. **Entry-point representation (§7) — `DefinedTerm`.** Journey stages are emitted
+   as structured `DefinedTerm` objects in `keywords`, so they're
+   machine-distinguishable from free-text keywords.
+4. **Provider `@id` (§3.1) — always mint a stable `@id`.** Providers with a URL →
+   `<url>#organization`; providers without a URL (incl. "Other") →
+   `https://ipfirstresponse.ipaustralia.gov.au/#organization-<name-slug>`
+   (site-namespaced, keyed on the name slug, so the same provider is consistent
+   across pages).

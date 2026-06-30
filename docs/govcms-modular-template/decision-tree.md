@@ -120,17 +120,16 @@ flowchart TD
 | `Commercial Third Party Service` | `Service` | `#service` | `name` | `WebPage.text` | the `WebPage` |
 | `Non-Government Third-Party Authority` | `Service` | `#service` | `name` | `WebPage.text` | the `WebPage` |
 
-### 2.1 Auto‑collapse rule (replicates existing "Fix 3")
+### 2.1 Auto‑collapse rule — **removed** (decision confirmed)
 
-If the archetype is a Service/GovernmentService **but** the page has **no FAQ
-items** and its only content blocks are intro‑style sections (e.g. "What is
-it?" / "Overview"), today's code downgrades the `@type` to `Article` to avoid
-duplicating the same body text in two places.
+Today's pipeline contains a heuristic ("Fix 3") that downgrades a
+Service/GovernmentService to `Article` when the page has no FAQ items and only
+intro‑style sections, to avoid duplicating body text.
 
-> **Recommendation for the modular build:** because block types are now explicit,
-> this implicit collapse is no longer necessary and is arguably surprising. Keep
-> the author's archetype choice authoritative. *Flagged for your decision — see
-> README "Open questions".*
+> **Decision (confirmed): the modular template does NOT replicate this.** Because
+> block types are now explicit, the implicit collapse is unnecessary and
+> surprising. The author's **Archetype** selection is **authoritative** and
+> always determines the main entity `@type`.
 
 ---
 
@@ -194,10 +193,27 @@ authors may override via fields 11a/11b):
 | Online Marketplaces | Organization | — | Q3390477 |
 | **Other…** (free text) | Organization | from 11a | from 11b |
 
-> **Compound providers** (e.g. *"ACCC, ASCS, AFP, IP Australia"*). Today the code
-> resolves the **first recognised government body**. In the modular template,
-> prefer letting the author pick the single primary provider from the dropdown
-> and list the rest as related links. *Flagged in README "Open questions".*
+> **Compound providers** (e.g. *"ACCC, ASCS, AFP, IP Australia"*). **Decision
+> (confirmed):** the structured `provider` / `serviceOperator` slot takes a
+> **single primary provider** chosen from the dropdown — the entity that actually
+> operates the service. Any other bodies involved are listed as **related links**
+> (§8), not as additional provider nodes. This keeps the provider node
+> authoritative and avoids ambiguous multi‑operator graphs. (Replaces the old
+> "first recognised government body" auto‑pick.)
+
+### 3.1 Provider `@id` minting — **always mint a stable `@id`** (decision confirmed)
+
+| Provider case | `@id` |
+|---------------|-------|
+| IP Australia | `https://www.ipaustralia.gov.au/#organization` (constant) |
+| Has a URL (registry default, or override field 11a) | `<provider-url>#organization` |
+| No URL (registry entry without a site, or "Other" free text) | `https://ipfirstresponse.ipaustralia.gov.au/#organization-<name-slug>` |
+
+The no‑URL case is **site‑namespaced and keyed on the provider name slug** (not
+page‑scoped), so the same provider reused across multiple pages resolves to the
+**same** node — keeping the linked‑data graph consistent. Example: "Legal
+service provider" →
+`https://ipfirstresponse.ipaustralia.gov.au/#organization-legal-service-provider`.
 
 ---
 
@@ -334,9 +350,10 @@ Recommended mapping — emit each selected stage as a `DefinedTerm` in
 ]
 ```
 
-> Simpler alternative: append the stage labels as plain‑text `keywords`. The
-> `DefinedTerm` form is preferred because it keeps the controlled vocabulary
-> machine‑distinguishable from free keywords. *Flagged in README "Open questions".*
+> **Decision (confirmed): use the `DefinedTerm` form.** Each journey stage is
+> emitted as a structured `DefinedTerm` (not a plain string), so consumers can
+> distinguish controlled journey‑stage tags from free‑text keywords. Author
+> free‑text keywords remain plain strings in the same `keywords` array.
 
 ---
 

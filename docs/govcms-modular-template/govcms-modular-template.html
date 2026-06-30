@@ -405,7 +405,12 @@ function buildGraph(){
       let ptype=reg.type||"Organization";
       if(archetype==="GovernmentService") ptype="GovernmentOrganization";
       const url=val("providerUrl")||reg.url||"";
-      providerId=url?url.replace(/\/+$/,"")+"#organization":base+"#provider-organization";
+      // @id strategy: providers with a URL → <url>#organization; providers
+      // without a URL ("Other", or registry entries with no site) get a stable,
+      // site-namespaced @id keyed on the name slug, so the same provider reused
+      // across pages resolves to the same node (consistent linked-data graph).
+      providerId=url ? url.replace(/\/+$/,"")+"#organization"
+                     : WEBSITE_URL+"#organization-"+slug(name);  // WEBSITE_URL ends in "/", matching WEBSITE_ID style
       providerEntity={"@type":ptype,"@id":providerId,"name":name};
       if(url) providerEntity.url=url;
       const sa=val("providerSameAs")?val("providerSameAs").split(",").map(s=>s.trim()).filter(Boolean):(reg.sameAs||[]);
