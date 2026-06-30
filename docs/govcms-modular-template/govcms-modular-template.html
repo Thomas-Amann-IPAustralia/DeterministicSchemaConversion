@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GovCMS Modular Schema Template — Field Mock-up & Live JSON-LD Preview</title>
+<style>
+  :root{
+    --navy:#0b2d4d; --blue:#1f6feb; --line:#d4dbe3; --bg:#f4f6f9;
+    --ok:#1a7f37; --warn:#9a6700; --chip:#eef3fb; --ink:#1b1b1b; --mut:#5a6b7b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.45}
+  header{background:var(--navy);color:#fff;padding:18px 24px}
+  header h1{margin:0 0 4px;font-size:19px}
+  header p{margin:0;font-size:13px;opacity:.85}
+  .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:start}
+  @media(max-width:1050px){.wrap{grid-template-columns:1fr}}
+  .form{padding:20px 24px;border-right:1px solid var(--line)}
+  .preview{padding:20px 24px;position:sticky;top:0;height:100vh;overflow:auto}
+  fieldset{border:1px solid var(--line);border-radius:8px;background:#fff;margin:0 0 16px;padding:14px 16px}
+  legend{font-weight:700;color:var(--navy);padding:0 6px;font-size:14px}
+  legend .tag{font-weight:400;color:var(--mut);font-size:11px}
+  label{display:block;font-weight:600;font-size:13px;margin:10px 0 3px}
+  .hint{font-weight:400;color:var(--mut);font-size:11.5px;margin:1px 0 0}
+  .maps{font-weight:400;color:var(--blue);font-size:11px;font-family:ui-monospace,Menlo,Consolas,monospace}
+  input[type=text],input[type=url],input[type=date],textarea,select{
+    width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:6px;font-size:13px;font-family:inherit;background:#fff}
+  textarea{min-height:62px;resize:vertical}
+  .req::after{content:" *";color:#c1121f}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .checks label{display:inline-flex;align-items:center;gap:5px;font-weight:500;font-size:12.5px;
+    background:var(--chip);border:1px solid var(--line);border-radius:20px;padding:4px 10px;margin:0;cursor:pointer}
+  .checks input{margin:0}
+  .block,.linkrow,.citerow{border:1px dashed var(--line);border-radius:7px;padding:10px 12px;margin:10px 0;background:#fbfcfe}
+  .block-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .btn{background:var(--blue);color:#fff;border:0;border-radius:6px;padding:7px 12px;font-size:12.5px;cursor:pointer;font-weight:600}
+  .btn.sec{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+  .btn.del{background:#fff;color:#c1121f;border:1px solid #e3b3b8;padding:3px 9px}
+  .btn.small{padding:4px 9px;font-size:11.5px}
+  .bar{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+  pre{background:#0d1117;color:#d7e0ea;border-radius:8px;padding:14px;font-size:11.5px;line-height:1.4;
+      overflow:auto;max-height:none;font-family:ui-monospace,Menlo,Consolas,monospace;white-space:pre;margin:8px 0 0}
+  .status{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600}
+  .status.ok{color:var(--ok)} .status.bad{color:#c1121f}
+  .pill{display:inline-block;font-size:10.5px;background:var(--chip);color:var(--navy);border:1px solid var(--line);
+        border-radius:4px;padding:1px 6px;margin-left:6px;font-family:ui-monospace,monospace}
+  .note{font-size:12px;color:var(--mut);background:#fffbe6;border:1px solid #f0e2a6;border-radius:6px;padding:8px 10px;margin:8px 0}
+  .hidden{display:none}
+  .count{font-size:11px;color:var(--mut)}
+  h3.sec{font-size:13px;color:var(--navy);margin:14px 0 4px;border-top:1px solid var(--line);padding-top:10px}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<header>
+  <h1>GovCMS Modular Schema Template — field mock-up &amp; live JSON-LD preview</h1>
+  <p>For the web developer. The <strong>left</strong> is exactly the set of CMS fields content owners need (free-text + dropdowns + repeatable blocks). The <strong>right</strong> is the Schema.org <code>@graph</code> the PHP converter should produce. Edit any field to see the output update. Read alongside <code>decision-tree.md</code>.</p>
+</header>
+
+<div class="wrap">
+  <!-- ───────────────────────── FORM ───────────────────────── -->
+  <form class="form" id="f" oninput="render()" onchange="render()">
+
+    <fieldset>
+      <legend>1 · Page metadata <span class="tag">(free text + dates)</span></legend>
+      <div class="row">
+        <div><label class="req">UDID</label><input type="text" id="udid" value="A1007">
+          <p class="maps">→ WebPage.identifier + output filename</p></div>
+        <div><label class="req">Canonical URL</label><input type="url" id="url" value="https://ipfirstresponse.ipaustralia.gov.au/options/considerations-when-using-artificial-intelligence-create-ip-0">
+          <p class="maps">→ base of every @id + WebPage.url</p></div>
+      </div>
+      <label>Overtitle <span class="hint">(navigational label; suppressed from content)</span></label>
+      <input type="text" id="overtitle" value="AI and IP rights">
+      <label class="req">Main title</label>
+      <input type="text" id="title" value="Considerations when using artificial intelligence to create IP">
+      <p class="maps">→ WebPage.name, main entity headline/name</p>
+      <label class="req">Description (SEO summary)</label>
+      <textarea id="desc">Things to think about before relying on artificial intelligence tools to help create content, designs or inventions for your business.</textarea>
+      <p class="maps">→ description on WebPage + main entity</p>
+      <div class="row">
+        <div><label>Publication date</label><input type="date" id="pub"><p class="maps">→ datePublished</p></div>
+        <div><label>Last updated</label><input type="date" id="mod" value="2026-02-23"><p class="maps">→ dateModified, copyrightYear</p></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2 · Classification <span class="tag">(pre-defined lists)</span></legend>
+      <label class="req">Archetype <span class="hint">(single-select → main content @type)</span></label>
+      <select id="archetype">
+        <option value="Self-Help Strategy">Self-Help Strategy → Article</option>
+        <option value="Government Service">Government Service → GovernmentService</option>
+        <option value="Commercial Third Party Service">Commercial Third Party Service → Service</option>
+        <option value="Non-Government Third-Party Authority">Non-Government Third-Party Authority → Service</option>
+      </select>
+      <p class="maps">→ main entity @type (see decision-tree §2)</p>
+
+      <h3 class="sec">Entry-point / journey stage <span class="hint">(multi-select, new field)</span></h3>
+      <div class="checks" id="entry">
+        <label><input type="checkbox" value="IP Basics">IP Basics</label>
+        <label><input type="checkbox" value="Infringement 101">Infringement 101</label>
+        <label><input type="checkbox" value="Proactive" checked>Proactive</label>
+        <label><input type="checkbox" value="Enforcement">Enforcement</label>
+        <label><input type="checkbox" value="Accused">Accused</label>
+        <label><input type="checkbox" value="Case Study">Case Study</label>
+      </div>
+      <p class="maps">→ WebPage.keywords[] as DefinedTerm (see §7)</p>
+
+      <h3 class="sec">Relevant IP right(s) <span class="hint">(multi-select → about[] + Legislation[])</span></h3>
+      <div class="checks" id="iprights">
+        <label><input type="checkbox" value="Trade mark" checked>Trade mark</label>
+        <label><input type="checkbox" value="Unregistered trade mark">Unregistered trade mark</label>
+        <label><input type="checkbox" value="Patent" checked>Patent</label>
+        <label><input type="checkbox" value="Design" checked>Design</label>
+        <label><input type="checkbox" value="PBR" checked>Plant Breeder's Rights (PBR)</label>
+        <label><input type="checkbox" value="Copyright" checked>Copyright</label>
+        <label><input type="checkbox" value="Any dispute">Any dispute (all legislation)</label>
+      </div>
+      <p class="maps">→ about[] Things (+Wikidata) &amp; auto-seeds Citations (see §4)</p>
+    </fieldset>
+
+    <fieldset id="providerset">
+      <legend>3 · Provider <span class="tag">(curated dropdown + Other)</span></legend>
+      <label>Provider</label>
+      <select id="provider">
+        <option value="Self-Help">Self-Help (no external provider)</option>
+        <option value="IP Australia">IP Australia</option>
+        <option value="Australian Border Force">Australian Border Force</option>
+        <option value="Australian Small Business and Family Enterprise Ombudsman">Aus Small Business &amp; Family Enterprise Ombudsman</option>
+        <option value="Court">Federal Court of Australia</option>
+        <option value="Trans-Tasman IP Attorneys Board">Trans-Tasman IP Attorneys Board</option>
+        <option value="auDA">.au Domain Administration (auDA)</option>
+        <option value="World Intellectual Property Office">World Intellectual Property Organization (WIPO)</option>
+        <option value="World Intellectual Property Office Arbitration and Mediation Center">WIPO Arbitration and Mediation Center</option>
+        <option value="Copyright Council">Australian Copyright Council</option>
+        <option value="Legal service provider">Legal service provider</option>
+        <option value="eCommerce provider">eCommerce provider</option>
+        <option value="Mediator">Mediator</option>
+        <option value="Arbitrator">Arbitrator</option>
+        <option value="Qualified Facilitator">Qualified facilitator</option>
+        <option value="Qualified Person">Qualified Person</option>
+        <option value="IP Insurers">IP Insurers</option>
+        <option value="IP professionals">IP professionals</option>
+        <option value="Online Marketplaces">Online Marketplaces</option>
+        <option value="__other">Other… (free text)</option>
+      </select>
+      <p class="maps">→ provider Organization node + main entity provider/serviceOperator (see §3)</p>
+      <div id="providerOther" class="hidden">
+        <label>Other provider name</label><input type="text" id="providerOtherName" placeholder="e.g. Acme Mediation Pty Ltd">
+      </div>
+      <div class="row">
+        <div><label>Provider URL <span class="hint">(override registry)</span></label><input type="url" id="providerUrl" placeholder="auto-filled from registry"></div>
+        <div><label>Provider sameAs <span class="hint">(override, comma-sep)</span></label><input type="text" id="providerSameAs" placeholder="auto-filled from registry"></div>
+      </div>
+      <div id="providerArticleNote" class="note hidden">Archetype is <strong>Article</strong>: Articles have no <code>provider</code>. Provider selection is ignored for this page.</div>
+    </fieldset>
+
+    <fieldset>
+      <legend id="introLegend">4 · Lead text → Article body <span class="tag">(rich text)</span></legend>
+      <textarea id="intro" placeholder="Intro / lead paragraphs…">Using artificial intelligence (AI) to create new material, such as logos, designs, written content or product ideas, is increasingly becoming common practice for businesses. Using AI can save time and give you fresh ideas, but it may also create new risks.</textarea>
+      <p class="maps" id="introMap">→ Article.articleBody (Article) · → WebPage.text (Service types)</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>5 · Modular content blocks <span class="tag">(repeatable paragraphs — explicit type)</span></legend>
+      <p class="hint">Each block's type is <strong>declared</strong>, not guessed. Add as many as needed; drag-order in CMS = output order.</p>
+      <div id="blocks"></div>
+      <div class="bar">
+        <button type="button" class="btn small" onclick="addBlock('Content section')">+ Content section</button>
+        <button type="button" class="btn small" onclick="addBlock('FAQ item')">+ FAQ item</button>
+        <button type="button" class="btn small" onclick="addBlock('HowTo step')">+ HowTo step</button>
+        <button type="button" class="btn small" onclick="addBlock('Image')">+ Image</button>
+        <span class="count" id="blockCount"></span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>6 · Disclaimers <span class="tag">(rich text)</span></legend>
+      <label>Standard disclaimer <span class="hint">(pre-filled; editable)</span></label>
+      <textarea id="stdDisclaimer">This IP First Response website has been designed to help IP rights holders navigate IP infringement and enforcement by making it visible, accessible, and to provide information about the factors involved in pursuing different options. It does not provide legal, business or other professional advice, and none of the content should be regarded as recommending a specific course of action. We welcome any feedback via our IP First Response feedback form and by emailing us.</textarea>
+      <p class="maps">→ WebPage.usageInfo (CreativeWork)</p>
+      <label>Additional disclaimer <span class="hint">(optional, page-specific)</span></label>
+      <textarea id="addDisclaimer" placeholder="Leave blank if none"></textarea>
+      <p class="maps">→ extra WebPageElement "Disclaimer" (only if non-empty)</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>7 · Citations <span class="tag">(auto-seeded from IP rights; editable)</span></legend>
+      <p class="hint">Seeded from your IP-right selection. Add or remove to override.</p>
+      <div id="cites"></div>
+      <div class="bar">
+        <button type="button" class="btn small sec" onclick="reseedCitations()">↺ Re-seed from IP rights</button>
+        <button type="button" class="btn small" onclick="addCitation('','','Act')">+ Citation</button>
+      </div>
+      <p class="maps">→ Legislation[] nodes + mentions refs</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>8 · Keywords &amp; related links</legend>
+      <label>Keywords <span class="hint">(comma-separated free text)</span></label>
+      <textarea id="keywords">Artificial intelligence, Generative AI, AI-generated content, IP ownership</textarea>
+      <p class="maps">→ WebPage.keywords[]</p>
+      <h3 class="sec">Related links</h3>
+      <div id="links"></div>
+      <div class="bar"><button type="button" class="btn small" onclick="addLink('','')">+ Related link</button></div>
+      <p class="maps">→ relatedLink[] + internal WebPage stubs (see §8)</p>
+    </fieldset>
+  </form>
+
+  <!-- ───────────────────────── PREVIEW ───────────────────────── -->
+  <div class="preview">
+    <div class="bar">
+      <strong style="color:var(--navy)">Live JSON-LD preview</strong>
+      <span id="valid" class="status ok">● valid JSON</span>
+      <span class="pill" id="nodeCount">0 nodes</span>
+      <button type="button" class="btn small sec" onclick="copyJson()">Copy</button>
+      <button type="button" class="btn small sec" onclick="downloadJson()">Download .json</button>
+    </div>
+    <p class="hint">This is generated by in-page JavaScript that mirrors <code>scripts/process_md_to_json.py</code>. It demonstrates the <em>intended</em> converter output; the production converter will be PHP.</p>
+    <pre id="out">{}</pre>
+  </div>
+</div>
+
+<script>
+/* ============================================================================
+   Constants mirrored from scripts/process_md_to_json.py
+   ============================================================================ */
+const SCHEMA="https://schema.org";
+const WEBSITE_ID="https://ipfirstresponse.ipaustralia.gov.au/#website";
+const WEBSITE_NAME="IP First Response";
+const WEBSITE_URL="https://ipfirstresponse.ipaustralia.gov.au/";
+const LANG="en-AU";
+const LICENCE="https://creativecommons.org/licenses/by/4.0/";
+const IPA_ID="https://www.ipaustralia.gov.au/#organization";
+
+const IPA_ENTITY={
+  "@type":"GovernmentOrganization","@id":IPA_ID,"name":"IP Australia","url":"https://www.ipaustralia.gov.au",
+  "parentOrganization":{"@type":"GovernmentOrganization","name":"Australian Government","sameAs":"https://www.wikidata.org/wiki/Q2991162"},
+  "sameAs":["https://www.wikidata.org/wiki/Q5973154","https://en.wikipedia.org/wiki/IP_Australia"],
+  "knowsAbout":["Intellectual Property","Patents","Trade Marks","Design Rights","Plant Breeder's Rights","Intellectual Property Disputes"],
+  "contactPoint":{"@type":"ContactPoint","contactType":"IP First Response content managers","email":"IPFirstResponse@IPAustralia.gov.au","description":"Feedback and enquiries regarding IP First Response"}
+};
+const AUDIENCE={"@type":"BusinessAudience","audienceType":"Small and medium businesses",
+  "geographicArea":{"@type":"Country","name":"Australia"},
+  "alternateName":["Startups","Entrepreneurs","SME","Startup","Small to Medium Enterprise","Sole Trader","Australian Small Business Owners"]};
+
+// Provider registry: label → {type,url,sameAs[],alt}
+const PROVIDERS={
+  "IP Australia":{type:"GovernmentOrganization",url:"https://www.ipaustralia.gov.au",sameAs:["https://www.wikidata.org/wiki/Q5973154"],alt:"Intellectual Property Australia"},
+  "Australian Border Force":{type:"GovernmentOrganization",url:"https://www.abf.gov.au",sameAs:["https://www.wikidata.org/wiki/Q17000879"],alt:"ABF"},
+  "Australian Small Business and Family Enterprise Ombudsman":{type:"GovernmentOrganization",url:"https://www.asbfeo.gov.au",sameAs:["https://www.asbfeo.gov.au"],alt:"ASBFEO"},
+  "Court":{type:"GovernmentOrganization",url:"https://www.fedcourt.gov.au",sameAs:["https://www.wikidata.org/wiki/Q1400030"],name:"Federal Court of Australia"},
+  "Trans-Tasman IP Attorneys Board":{type:"GovernmentOrganization",url:"https://www.ttipattorney.gov.au",sameAs:["https://www.ttipattorney.gov.au"],alt:"TTIPA"},
+  "auDA":{type:"NGO",url:"https://www.auda.org.au",sameAs:["https://www.wikidata.org/wiki/Q151602"],name:".au Domain Administration",alt:"auDA"},
+  "World Intellectual Property Office":{type:"NGO",url:"https://www.wipo.int",sameAs:["https://www.wikidata.org/wiki/Q177773"],name:"World Intellectual Property Organization",alt:"WIPO"},
+  "World Intellectual Property Office Arbitration and Mediation Center":{type:"NGO",url:"https://www.wipo.int/amc/en/",sameAs:["https://www.wikidata.org/wiki/Q177773"],name:"WIPO Arbitration and Mediation Center"},
+  "Copyright Council":{type:"NGO",url:"https://www.copyright.org.au",sameAs:["https://www.wikidata.org/wiki/Q4824042"],name:"Australian Copyright Council"},
+  "Legal service provider":{type:"Organization",url:""},
+  "eCommerce provider":{type:"Organization",url:"",name:"eCommerce provider"},
+  "Mediator":{type:"Organization",url:"",sameAs:["https://www.wikidata.org/wiki/Q4859473"]},
+  "Arbitrator":{type:"Organization",url:"",sameAs:["https://www.wikidata.org/wiki/Q105425483"]},
+  "Qualified Facilitator":{type:"Organization",url:"",name:"Qualified facilitator",sameAs:["https://www.wikidata.org/wiki/Q1150166"]},
+  "Qualified Person":{type:"Organization",url:""},
+  "IP Insurers":{type:"Organization",url:""},
+  "IP professionals":{type:"Organization",url:""},
+  "Online Marketplaces":{type:"Organization",url:"",sameAs:["https://www.wikidata.org/wiki/Q3390477"]}
+};
+
+// IP right → about Thing (+Wikidata) and legislation
+const TOPIC={
+  "Trade mark":{name:"Trade mark",sameAs:"https://www.wikidata.org/wiki/Q165196",leg:"trade mark"},
+  "Unregistered trade mark":{name:"Unregistered trade mark",sameAs:"https://www.wikidata.org/wiki/Q165196",leg:"trade mark"},
+  "Patent":{name:"Patent",sameAs:"https://www.wikidata.org/wiki/Q253623",leg:"patent"},
+  "Design":{name:"Design",sameAs:"https://www.wikidata.org/wiki/Q1240325",leg:"design"},
+  "PBR":{name:"Plant breeder's rights",sameAs:"https://www.wikidata.org/wiki/Q695112",leg:"pbr"},
+  "Copyright":{name:"Copyright",sameAs:"https://www.wikidata.org/wiki/Q12978",leg:"copyright"}
+};
+const LEGISLATION={
+  "trade mark":[["https://www.legislation.gov.au/C2004A04969/latest/text","Trade Marks Act 1995","Act"],["https://www.legislation.gov.au/F1996B00084/latest/text","Trade Marks Regulations 1995","Regulations"]],
+  "patent":[["https://www.legislation.gov.au/C2004A04014/latest/text","Patents Act 1990","Act"],["https://www.legislation.gov.au/F1996B02697/latest/text","Patents Regulations 1991","Regulations"]],
+  "design":[["https://www.legislation.gov.au/C2004A01232/latest/text","Designs Act 2003","Act"],["https://www.legislation.gov.au/F2004B00136/latest/text","Designs Regulations 2004","Regulations"]],
+  "pbr":[["https://www.legislation.gov.au/C2004A04783/latest/text","Plant Breeder's Rights Act 1994","Act"],["https://www.legislation.gov.au/F1996B02512/latest/text","Plant Breeder's Rights Regulations 1994","Regulations"]],
+  "copyright":[["https://www.legislation.gov.au/C1968A00063/latest/text","Copyright Act 1968","Act"],["https://www.legislation.gov.au/F2017L01649/latest/text","Copyright Regulations 2017","Regulations"]]
+};
+const ARCHETYPE_TYPE={
+  "Self-Help Strategy":"Article","Government Service":"GovernmentService",
+  "Commercial Third Party Service":"Service","Non-Government Third-Party Authority":"Service"
+};
+
+/* ============================================================================
+   Helpers
+   ============================================================================ */
+const $=id=>document.getElementById(id);
+const val=id=>($(id)?$(id).value:"").trim();
+function slug(t){return (t||"").normalize("NFKD").toLowerCase().replace(/[^\w\s-]/g,"").replace(/[\s_]+/g,"-").replace(/^-+|-+$/g,"");}
+function checks(id){return [...document.querySelectorAll(`#${id} input:checked`)].map(c=>c.value);}
+function mimeOf(u){const m={jpg:"image/jpeg",jpeg:"image/jpeg",png:"image/png",gif:"image/gif",svg:"image/svg+xml",webp:"image/webp",avif:"image/avif"};
+  const ext=((u||"").split(/[?#]/)[0].split(".").pop()||"").toLowerCase();return m[ext]||"";}
+
+/* ---- Repeatable: modular content blocks ---- */
+let blockSeq=0;
+function addBlock(type,heading="",body="",imageUrl=""){
+  blockSeq++;
+  const d=document.createElement("div"); d.className="block"; d.dataset.k=blockSeq;
+  d.innerHTML=`
+    <div class="block-head">
+      <select class="bt" onchange="render()">
+        <option ${type==="Content section"?"selected":""}>Content section</option>
+        <option ${type==="FAQ item"?"selected":""}>FAQ item</option>
+        <option ${type==="HowTo step"?"selected":""}>HowTo step</option>
+        <option ${type==="Image"?"selected":""}>Image</option>
+        <option ${type==="Internal note (not published)"?"selected":""}>Internal note (not published)</option>
+      </select>
+      <button type="button" class="btn del" onclick="this.closest('.block').remove();render()">Remove</button>
+    </div>
+    <div class="imgwrap hidden">
+      <label>Image URL <span class="hint">(→ ImageObject.contentUrl + url)</span></label>
+      <input type="url" class="bu" value="${(imageUrl||'').replace(/"/g,'&quot;')}" oninput="render()" placeholder="https://…/image.png">
+    </div>
+    <label class="bhl">Heading / question / step name</label>
+    <input type="text" class="bh" value="${heading.replace(/"/g,'&quot;')}" oninput="render()">
+    <label class="bbl">Body / answer / instructions</label>
+    <textarea class="bb" oninput="render()">${body}</textarea>`;
+  $("blocks").appendChild(d); render();
+}
+/* ---- Repeatable: citations ---- */
+function addCitation(name,url,type){
+  const d=document.createElement("div"); d.className="citerow";
+  d.innerHTML=`<div class="row">
+      <div><label>Name</label><input type="text" class="cn" value="${(name||'').replace(/"/g,'&quot;')}" oninput="render()"></div>
+      <div><label>Type</label><select class="ct" onchange="render()">
+        <option ${type==='Act'?'selected':''}>Act</option><option ${type==='Regulations'?'selected':''}>Regulations</option><option ${type==='Other'?'selected':''}>Other</option>
+      </select></div></div>
+    <label>URL</label><input type="url" class="cu" value="${url||''}" oninput="render()">
+    <div class="bar"><button type="button" class="btn del small" onclick="this.closest('.citerow').remove();render()">Remove</button></div>`;
+  $("cites").appendChild(d);
+}
+function reseedCitations(){
+  $("cites").innerHTML="";
+  legislationFor(checks("iprights")).forEach(e=>addCitation(e[1],e[0],e[2]));
+  render();
+}
+/* ---- Repeatable: related links ---- */
+function addLink(url,text,desc,ident){
+  const d=document.createElement("div"); d.className="linkrow";
+  d.innerHTML=`<div class="row">
+      <div><label>URL</label><input type="url" class="lu" value="${url||''}" oninput="render()"></div>
+      <div><label>Link text</label><input type="text" class="lt" value="${(text||'').replace(/"/g,'&quot;')}" oninput="render()"></div></div>
+    <div class="row">
+      <div><label>Description <span class="hint">(internal links only)</span></label><input type="text" class="ld" value="${(desc||'').replace(/"/g,'&quot;')}" oninput="render()"></div>
+      <div><label>Identifier / UDID <span class="hint">(internal links only)</span></label><input type="text" class="li" value="${(ident||'').replace(/"/g,'&quot;')}" oninput="render()"></div></div>
+    <p class="maps">Internal IPFR link → WebPage stub gains description + identifier</p>
+    <div class="bar"><button type="button" class="btn del small" onclick="this.closest('.linkrow').remove();render()">Remove</button></div>`;
+  $("links").appendChild(d);
+}
+
+/* ---- Legislation resolver ---- */
+function legislationFor(rights){
+  const out=[],seen=new Set();
+  const push=key=>(LEGISLATION[key]||[]).forEach(e=>{if(!seen.has(e[0])){seen.add(e[0]);out.push(e);}});
+  if(rights.includes("Any dispute")){Object.keys(LEGISLATION).forEach(push);return out;}
+  rights.forEach(r=>{const t=TOPIC[r]; if(t)push(t.leg);});
+  return out;
+}
+function aboutFor(rights){
+  if(rights.includes("Any dispute"))
+    return [{"@type":"Thing","name":"All intellectual property (IP)","description":"A topic which relates to all intellectual property","sameAs":"https://www.wikidata.org/wiki/Q108855835"}];
+  const out=[],seen=new Set();
+  rights.forEach(r=>{const t=TOPIC[r]; if(t&&!seen.has(t.name)){seen.add(t.name);const o={"@type":"Thing","name":t.name}; if(t.sameAs)o.sameAs=t.sameAs; out.push(o);}});
+  return out.length?out:[{"@type":"Thing","name":"Intellectual property"}];
+}
+
+/* ============================================================================
+   Build the @graph  (mirrors build_jsonld in process_md_to_json.py)
+   ============================================================================ */
+function buildGraph(){
+  const base=(val("url")||"").replace(/\/+$/,"");
+  const archetype=ARCHETYPE_TYPE[val("archetype")]||"Article";
+  const frag=archetype.toLowerCase();
+  const title=val("title")||"Untitled";
+  const desc=val("desc");
+  const rights=checks("iprights");
+
+  // ---- collect blocks ----
+  const sections=[],faqs=[],steps=[],images=[];
+  document.querySelectorAll("#blocks .block").forEach(b=>{
+    const t=b.querySelector(".bt").value, h=b.querySelector(".bh").value.trim(), body=b.querySelector(".bb").value.trim();
+    if(t==="Content section") sections.push({h,body});
+    else if(t==="FAQ item") faqs.push({h,body});
+    else if(t==="HowTo step") steps.push({h,body});
+    else if(t==="Image") images.push({h,body,url:b.querySelector(".bu").value.trim()});
+    // Internal note → ignored
+  });
+
+  // ---- provider ----
+  let providerId=null, providerEntity=null;
+  const pSel=val("provider");
+  if(pSel && pSel!=="Self-Help" && archetype!=="Article"){
+    if(pSel==="IP Australia"){ providerId=IPA_ID; }
+    else {
+      const reg=PROVIDERS[pSel]||{type:"Organization",url:""};
+      const name=(pSel==="__other")?(val("providerOtherName")||"Provider"):(reg.name||pSel);
+      let ptype=reg.type||"Organization";
+      if(archetype==="GovernmentService") ptype="GovernmentOrganization";
+      const url=val("providerUrl")||reg.url||"";
+      // @id strategy: providers with a URL → <url>#organization; providers
+      // without a URL ("Other", or registry entries with no site) get a stable,
+      // site-namespaced @id keyed on the name slug, so the same provider reused
+      // across pages resolves to the same node (consistent linked-data graph).
+      providerId=url ? url.replace(/\/+$/,"")+"#organization"
+                     : WEBSITE_URL+"#organization-"+slug(name);  // WEBSITE_URL ends in "/", matching WEBSITE_ID style
+      providerEntity={"@type":ptype,"@id":providerId,"name":name};
+      if(url) providerEntity.url=url;
+      const sa=val("providerSameAs")?val("providerSameAs").split(",").map(s=>s.trim()).filter(Boolean):(reg.sameAs||[]);
+      if(sa.length) providerEntity.sameAs=sa;
+      if(reg.alt) providerEntity.alternateName=reg.alt;
+    }
+  }
+
+  // ---- sections → WebPageElement ----
+  const isPartTarget = (archetype==="Article")?`${base}#${frag}`:`${base}#webpage`;
+  const sectionEntities=[], sectionIds=[];
+  sections.forEach((s,i)=>{
+    const id=`${base}#section-${i+1}-${slug(s.h)}`; sectionIds.push(id);
+    sectionEntities.push({"@type":"WebPageElement","@id":id,"headline":s.h,"text":s.body,"position":i+1,"isPartOf":{"@id":isPartTarget}});
+  });
+
+  // ---- FAQ ----
+  let faqEntity=null; const faqId=`${base}#faq`;
+  if(faqs.length){
+    faqEntity={"@type":"FAQPage","@id":faqId,"inLanguage":LANG,"isPartOf":{"@id":`${base}#webpage`},
+      "mainEntity":faqs.map((q,i)=>{const qid=`${base}#faq-q${i+1}`;
+        return {"@type":"Question","@id":qid,"name":q.h.replace(/\?+$/,"")+"?",
+          "acceptedAnswer":{"@type":"Answer","@id":qid+"-a","text":q.body}};})};
+  }
+
+  // ---- HowTo ----
+  let howtoEntity=null;
+  if(steps.length){
+    howtoEntity={"@type":"HowTo","@id":`${base}#howto`,"name":title,
+      "step":steps.map((s,i)=>({"@type":"HowToStep","position":i+1,"name":s.h,"text":s.body}))};
+  }
+
+  // ---- Images → ImageObject (one node per Image block) ----
+  const imageEntities=[], imageRefs=[];
+  images.forEach((im,i)=>{
+    if(!im.url) return;                       // skip incomplete image blocks
+    const id=`${base}#image-${i+1}-${slug(im.h)||(i+1)}`;
+    const node={"@type":"ImageObject","@id":id,"contentUrl":im.url,"url":im.url};
+    if(im.h){ node.name=im.h; node.caption=im.h; }   // heading = caption/alt text
+    if(im.body) node.description=im.body;            // body = longer description
+    const mime=mimeOf(im.url); if(mime) node.encodingFormat=mime;
+    imageEntities.push(node); imageRefs.push({"@id":id});
+  });
+
+  // ---- legislation (from editable citations list) ----
+  const legEntities=[], citationRefs=[];
+  document.querySelectorAll("#cites .citerow").forEach(c=>{
+    const n=c.querySelector(".cn").value.trim(), u=c.querySelector(".cu").value.trim(), t=c.querySelector(".ct").value;
+    if(!u) return;
+    citationRefs.push({"@id":u});
+    legEntities.push({"@type":"Legislation","@id":u,"name":n,"url":u,"legislationType":t});
+  });
+
+  // ---- related links ----
+  const relatedLinks=[], internalRefs=[], internalStubs=[]; const IPFR="ipfirstresponse.ipaustralia.gov.au"; const seen=new Set();
+  document.querySelectorAll("#links .linkrow").forEach(l=>{
+    let u=l.querySelector(".lu").value.trim(); const txt=l.querySelector(".lt").value.trim();
+    const ldesc=l.querySelector(".ld").value.trim(), lident=l.querySelector(".li").value.trim();
+    if(!u) return; u=u.replace(/\/+$/,""); const k=u.toLowerCase();
+    if(seen.has(k)||u===base) return; seen.add(k);
+    relatedLinks.push(u);
+    if(u.includes(IPFR)){ const pid=u+"#webpage"; internalRefs.push({"@id":pid});
+      const stub={"@type":"WebPage","@id":pid,"url":u,"name":`${txt||u.split("/").pop().replace(/-/g," ")} - ${WEBSITE_NAME}`};
+      if(ldesc) stub.description=ldesc;          // author-supplied, internal links
+      if(lident) stub.identifier=lident;         // author-supplied UDID
+      stub.isPartOf={"@id":WEBSITE_ID};
+      internalStubs.push(stub);}
+  });
+
+  // ---- intro/body text ----
+  const intro=val("intro");
+
+  // ---- disclaimers ----
+  const stdText=val("stdDisclaimer");
+  const addText=val("addDisclaimer");
+
+  // ---- keywords (DefinedTerm journey stages + plain keywords) ----
+  const kw=[];
+  checks("entry").forEach(s=>kw.push({"@type":"DefinedTerm","name":s,"inDefinedTermSet":"https://ipfirstresponse.ipaustralia.gov.au/#journey-stages"}));
+  val("keywords").split(",").map(s=>s.trim()).filter(Boolean).forEach(s=>kw.push(s));
+
+  // ---- WebPage ----
+  const hasPart=[];
+  if(faqEntity) hasPart.push({"@id":faqId});
+  sectionIds.forEach(id=>hasPart.push({"@id":id}));
+
+  const wp={"@type":"WebPage","@id":`${base}#webpage`,"url":base,
+    "name":`${title} - ${WEBSITE_NAME}`,"description":desc,"identifier":val("udid"),
+    "about":aboutFor(rights),"inLanguage":LANG,"license":LICENCE,"audience":AUDIENCE};
+  if(stdText) wp.usageInfo={"@type":"CreativeWork","name":"Disclaimer and Feedback Policy","text":stdText,
+    "url":"mailto:IPFirstResponse@IPAustralia.gov.au?subject=Feedback on IP First Response"};
+  wp.publisher={"@id":IPA_ID}; wp.isPartOf={"@id":WEBSITE_ID}; wp.mainEntity={"@id":`${base}#${frag}`};
+  if(val("pub")) wp.datePublished=val("pub");
+  if(val("mod")) wp.dateModified=val("mod");
+  if(kw.length) wp.keywords=kw;
+  if(val("mod")){ wp.copyrightYear=parseInt(val("mod").slice(0,4)); wp.copyrightHolder={"@id":IPA_ID}; }
+  wp.creditText="Source: IP First Response initiative led by IP Australia";
+
+  // additional disclaimer section
+  let addDiscId=null;
+  if(addText){ addDiscId=`${base}#section-${sections.length+1}-disclaimer`;
+    sectionEntities.push({"@type":"WebPageElement","@id":addDiscId,"headline":"Disclaimer","text":addText,
+      "position":sections.length+1,"isPartOf":{"@id":isPartTarget}});
+    hasPart.push({"@id":addDiscId});}
+
+  // body text on WebPage for Service types
+  if(archetype!=="Article" && intro) wp.text=intro;
+
+  // ---- main entity ----
+  const me={"@type":archetype,"@id":`${base}#${frag}`,"description":desc,"mainEntityOfPage":{"@id":`${base}#webpage`}};
+  if(archetype==="Article"){
+    me.inLanguage=LANG; me.license=LICENCE; me.publisher={"@id":IPA_ID}; me.author={"@id":IPA_ID};
+    me.headline=title; me.articleBody=intro||desc;
+    if(val("pub")) me.datePublished=val("pub");
+    if(val("mod")) me.dateModified=val("mod");
+  } else {
+    me.name=title; me.serviceType=val("archetype");
+    if(archetype==="GovernmentService" && providerId){ me.serviceOperator={"@id":providerId}; me.provider={"@id":providerId}; }
+    if(archetype==="Service" && providerId){ me.provider={"@id":providerId}; }
+  }
+
+  // hasPart / mentions placement
+  if(archetype==="Article"){
+    const parts=[];
+    if(howtoEntity) parts.push({"@id":`${base}#howto`});
+    sectionIds.forEach(id=>parts.push({"@id":id}));
+    if(faqEntity) parts.push({"@id":faqId});
+    if(addDiscId) parts.push({"@id":addDiscId});
+    if(parts.length) me.hasPart=parts;
+    if(citationRefs.length) me.mentions=citationRefs;
+    if(internalRefs.length) wp.mentions=internalRefs;
+  } else {
+    if(howtoEntity) hasPart.push({"@id":`${base}#howto`});
+    const mentions=[...internalRefs,...citationRefs];
+    if(mentions.length) wp.mentions=mentions;
+  }
+  if(hasPart.length) wp.hasPart=hasPart;
+  if(relatedLinks.length) wp.relatedLink=relatedLinks;
+  // Image refs attach via `image` to the same entity that owns the content:
+  // the Article for Self-Help, otherwise the WebPage for Service types.
+  if(imageRefs.length){ if(archetype==="Article") me.image=imageRefs; else wp.image=imageRefs; }
+
+  // ---- assemble @graph ----
+  const g=[JSON.parse(JSON.stringify(IPA_ENTITY))];
+  if(providerEntity) g.push(providerEntity);
+  g.push({"@type":"WebSite","@id":WEBSITE_ID,"name":WEBSITE_NAME,"url":WEBSITE_URL,"publisher":{"@id":IPA_ID},"inLanguage":LANG,"license":LICENCE});
+  g.push(wp); g.push(me);
+  if(howtoEntity) g.push(howtoEntity);
+  g.push(...sectionEntities);
+  if(faqEntity) g.push(faqEntity);
+  g.push(...imageEntities);
+  g.push(...legEntities);
+  g.push(...internalStubs);
+  return {"@context":SCHEMA,"@graph":g};
+}
+
+/* ============================================================================
+   Render + conditional UI
+   ============================================================================ */
+function render(){
+  // provider/intro conditional UI by archetype
+  const isArticle=ARCHETYPE_TYPE[val("archetype")]==="Article";
+  $("providerArticleNote").classList.toggle("hidden",!isArticle);
+  $("providerOther").classList.toggle("hidden", val("provider")!=="__other");
+  $("introLegend").innerHTML = isArticle
+    ? '4 · Lead text → Article body <span class="tag">(rich text)</span>'
+    : '4 · Lead text → WebPage.text <span class="tag">(rich text)</span>';
+  $("introMap").textContent = isArticle ? "→ Article.articleBody" : "→ WebPage.text (Service types have no articleBody)";
+  $("blockCount").textContent = `${document.querySelectorAll('#blocks .block').length} block(s)`;
+  // Per-block: reveal the Image URL field and relabel heading/body for Image type.
+  document.querySelectorAll("#blocks .block").forEach(b=>{
+    const isImg = b.querySelector(".bt").value==="Image";
+    b.querySelector(".imgwrap").classList.toggle("hidden", !isImg);
+    b.querySelector(".bhl").textContent = isImg ? "Caption / alt text (→ ImageObject.caption + name)" : "Heading / question / step name";
+    b.querySelector(".bbl").textContent = isImg ? "Image description, optional (→ ImageObject.description)" : "Body / answer / instructions";
+  });
+
+  let obj, ok=true;
+  try{ obj=buildGraph(); }catch(e){ ok=false; $("out").textContent="// build error: "+e.message; }
+  if(ok){
+    const txt=JSON.stringify(obj,null,2);
+    $("out").textContent=txt;
+    try{ JSON.parse(txt); $("valid").className="status ok"; $("valid").textContent="● valid JSON"; }
+    catch(e){ $("valid").className="status bad"; $("valid").textContent="● invalid JSON"; }
+    $("nodeCount").textContent=obj["@graph"].length+" nodes";
+  } else { $("valid").className="status bad"; $("valid").textContent="● build error"; }
+}
+function copyJson(){ navigator.clipboard&&navigator.clipboard.writeText($("out").textContent); }
+function downloadJson(){
+  const b=new Blob([$("out").textContent],{type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(b);
+  a.download=(val("udid")||"page")+"_"+slug(val("title"))+".json"; a.click();
+}
+
+/* ---- seed example content on load (the A1007 worked example) ---- */
+addBlock("Content section","Risks of what you input into AI","Consider whether anything you upload into an AI tool via prompts - such as pictures, drawings or text - could be protected IP. In some cases, uploading works to an AI model that you don't own the rights for could infringe on the rights of other IP rightsholders.");
+addBlock("Content section","Risks of errors","If you use AI to help with inventions or technical ideas, the outputs may not be correct, nor unique enough to apply for registration. AI tools can produce information that sounds confident but may not be accurate.");
+addBlock("FAQ item","Who owns IP generated with AI?","AI tools can create pictures, text, music, video and other outputs. If copyright protection is important to you, consider whether using generative AI tools affects that protection. Each AI tool has different terms and conditions; familiarise yourself with who owns the IP of created works.");
+addBlock("Image","Diagram: where IP risks arise when using generative AI","A flowchart showing the points at which intellectual property risks can emerge when prompting and reusing the outputs of generative AI tools.","https://ipfirstresponse.ipaustralia.gov.au/sites/default/files/2026-02/ai-ip-overview.png");
+addLink("https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement","Copyright infringement","What copyright infringement is and what to do if it happens to you.","101-5");
+addLink("https://www.ipaustralia.gov.au/understanding-ip/types-of-ip","Types of IP");
+reseedCitations();
+render();
+</script>
+</body>
+</html>
