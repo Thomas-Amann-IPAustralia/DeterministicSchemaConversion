@@ -171,6 +171,7 @@
         <button type="button" class="btn small" onclick="addBlock('Content section')">+ Content section</button>
         <button type="button" class="btn small" onclick="addBlock('FAQ item')">+ FAQ item</button>
         <button type="button" class="btn small" onclick="addBlock('HowTo step')">+ HowTo step</button>
+        <button type="button" class="btn small" onclick="addBlock('Image')">+ Image</button>
         <span class="count" id="blockCount"></span>
       </div>
     </fieldset>
@@ -295,10 +296,12 @@ const $=id=>document.getElementById(id);
 const val=id=>($(id)?$(id).value:"").trim();
 function slug(t){return (t||"").normalize("NFKD").toLowerCase().replace(/[^\w\s-]/g,"").replace(/[\s_]+/g,"-").replace(/^-+|-+$/g,"");}
 function checks(id){return [...document.querySelectorAll(`#${id} input:checked`)].map(c=>c.value);}
+function mimeOf(u){const m={jpg:"image/jpeg",jpeg:"image/jpeg",png:"image/png",gif:"image/gif",svg:"image/svg+xml",webp:"image/webp",avif:"image/avif"};
+  const ext=((u||"").split(/[?#]/)[0].split(".").pop()||"").toLowerCase();return m[ext]||"";}
 
 /* ---- Repeatable: modular content blocks ---- */
 let blockSeq=0;
-function addBlock(type,heading="",body=""){
+function addBlock(type,heading="",body="",imageUrl=""){
   blockSeq++;
   const d=document.createElement("div"); d.className="block"; d.dataset.k=blockSeq;
   d.innerHTML=`
@@ -307,13 +310,18 @@ function addBlock(type,heading="",body=""){
         <option ${type==="Content section"?"selected":""}>Content section</option>
         <option ${type==="FAQ item"?"selected":""}>FAQ item</option>
         <option ${type==="HowTo step"?"selected":""}>HowTo step</option>
+        <option ${type==="Image"?"selected":""}>Image</option>
         <option ${type==="Internal note (not published)"?"selected":""}>Internal note (not published)</option>
       </select>
       <button type="button" class="btn del" onclick="this.closest('.block').remove();render()">Remove</button>
     </div>
-    <label>Heading / question / step name</label>
+    <div class="imgwrap hidden">
+      <label>Image URL <span class="hint">(→ ImageObject.contentUrl + url)</span></label>
+      <input type="url" class="bu" value="${(imageUrl||'').replace(/"/g,'&quot;')}" oninput="render()" placeholder="https://…/image.png">
+    </div>
+    <label class="bhl">Heading / question / step name</label>
     <input type="text" class="bh" value="${heading.replace(/"/g,'&quot;')}" oninput="render()">
-    <label>Body / answer / instructions</label>
+    <label class="bbl">Body / answer / instructions</label>
     <textarea class="bb" oninput="render()">${body}</textarea>`;
   $("blocks").appendChild(d); render();
 }
@@ -335,11 +343,15 @@ function reseedCitations(){
   render();
 }
 /* ---- Repeatable: related links ---- */
-function addLink(url,text){
+function addLink(url,text,desc,ident){
   const d=document.createElement("div"); d.className="linkrow";
   d.innerHTML=`<div class="row">
       <div><label>URL</label><input type="url" class="lu" value="${url||''}" oninput="render()"></div>
       <div><label>Link text</label><input type="text" class="lt" value="${(text||'').replace(/"/g,'&quot;')}" oninput="render()"></div></div>
+    <div class="row">
+      <div><label>Description <span class="hint">(internal links only)</span></label><input type="text" class="ld" value="${(desc||'').replace(/"/g,'&quot;')}" oninput="render()"></div>
+      <div><label>Identifier / UDID <span class="hint">(internal links only)</span></label><input type="text" class="li" value="${(ident||'').replace(/"/g,'&quot;')}" oninput="render()"></div></div>
+    <p class="maps">Internal IPFR link → WebPage stub gains description + identifier</p>
     <div class="bar"><button type="button" class="btn del small" onclick="this.closest('.linkrow').remove();render()">Remove</button></div>`;
   $("links").appendChild(d);
 }
@@ -372,12 +384,13 @@ function buildGraph(){
   const rights=checks("iprights");
 
   // ---- collect blocks ----
-  const sections=[],faqs=[],steps=[];
+  const sections=[],faqs=[],steps=[],images=[];
   document.querySelectorAll("#blocks .block").forEach(b=>{
     const t=b.querySelector(".bt").value, h=b.querySelector(".bh").value.trim(), body=b.querySelector(".bb").value.trim();
     if(t==="Content section") sections.push({h,body});
     else if(t==="FAQ item") faqs.push({h,body});
     else if(t==="HowTo step") steps.push({h,body});
+    else if(t==="Image") images.push({h,body,url:b.querySelector(".bu").value.trim()});
     // Internal note → ignored
   });
 
@@ -425,6 +438,18 @@ function buildGraph(){
       "step":steps.map((s,i)=>({"@type":"HowToStep","position":i+1,"name":s.h,"text":s.body}))};
   }
 
+  // ---- Images → ImageObject (one node per Image block) ----
+  const imageEntities=[], imageRefs=[];
+  images.forEach((im,i)=>{
+    if(!im.url) return;                       // skip incomplete image blocks
+    const id=`${base}#image-${i+1}-${slug(im.h)||(i+1)}`;
+    const node={"@type":"ImageObject","@id":id,"contentUrl":im.url,"url":im.url};
+    if(im.h){ node.name=im.h; node.caption=im.h; }   // heading = caption/alt text
+    if(im.body) node.description=im.body;            // body = longer description
+    const mime=mimeOf(im.url); if(mime) node.encodingFormat=mime;
+    imageEntities.push(node); imageRefs.push({"@id":id});
+  });
+
   // ---- legislation (from editable citations list) ----
   const legEntities=[], citationRefs=[];
   document.querySelectorAll("#cites .citerow").forEach(c=>{
@@ -438,11 +463,16 @@ function buildGraph(){
   const relatedLinks=[], internalRefs=[], internalStubs=[]; const IPFR="ipfirstresponse.ipaustralia.gov.au"; const seen=new Set();
   document.querySelectorAll("#links .linkrow").forEach(l=>{
     let u=l.querySelector(".lu").value.trim(); const txt=l.querySelector(".lt").value.trim();
+    const ldesc=l.querySelector(".ld").value.trim(), lident=l.querySelector(".li").value.trim();
     if(!u) return; u=u.replace(/\/+$/,""); const k=u.toLowerCase();
     if(seen.has(k)||u===base) return; seen.add(k);
     relatedLinks.push(u);
     if(u.includes(IPFR)){ const pid=u+"#webpage"; internalRefs.push({"@id":pid});
-      internalStubs.push({"@type":"WebPage","@id":pid,"url":u,"name":`${txt||u.split("/").pop().replace(/-/g," ")} - ${WEBSITE_NAME}`,"isPartOf":{"@id":WEBSITE_ID}});}
+      const stub={"@type":"WebPage","@id":pid,"url":u,"name":`${txt||u.split("/").pop().replace(/-/g," ")} - ${WEBSITE_NAME}`};
+      if(ldesc) stub.description=ldesc;          // author-supplied, internal links
+      if(lident) stub.identifier=lident;         // author-supplied UDID
+      stub.isPartOf={"@id":WEBSITE_ID};
+      internalStubs.push(stub);}
   });
 
   // ---- intro/body text ----
@@ -514,6 +544,9 @@ function buildGraph(){
   }
   if(hasPart.length) wp.hasPart=hasPart;
   if(relatedLinks.length) wp.relatedLink=relatedLinks;
+  // Image refs attach via `image` to the same entity that owns the content:
+  // the Article for Self-Help, otherwise the WebPage for Service types.
+  if(imageRefs.length){ if(archetype==="Article") me.image=imageRefs; else wp.image=imageRefs; }
 
   // ---- assemble @graph ----
   const g=[JSON.parse(JSON.stringify(IPA_ENTITY))];
@@ -523,6 +556,7 @@ function buildGraph(){
   if(howtoEntity) g.push(howtoEntity);
   g.push(...sectionEntities);
   if(faqEntity) g.push(faqEntity);
+  g.push(...imageEntities);
   g.push(...legEntities);
   g.push(...internalStubs);
   return {"@context":SCHEMA,"@graph":g};
@@ -541,6 +575,13 @@ function render(){
     : '4 · Lead text → WebPage.text <span class="tag">(rich text)</span>';
   $("introMap").textContent = isArticle ? "→ Article.articleBody" : "→ WebPage.text (Service types have no articleBody)";
   $("blockCount").textContent = `${document.querySelectorAll('#blocks .block').length} block(s)`;
+  // Per-block: reveal the Image URL field and relabel heading/body for Image type.
+  document.querySelectorAll("#blocks .block").forEach(b=>{
+    const isImg = b.querySelector(".bt").value==="Image";
+    b.querySelector(".imgwrap").classList.toggle("hidden", !isImg);
+    b.querySelector(".bhl").textContent = isImg ? "Caption / alt text (→ ImageObject.caption + name)" : "Heading / question / step name";
+    b.querySelector(".bbl").textContent = isImg ? "Image description, optional (→ ImageObject.description)" : "Body / answer / instructions";
+  });
 
   let obj, ok=true;
   try{ obj=buildGraph(); }catch(e){ ok=false; $("out").textContent="// build error: "+e.message; }
@@ -563,7 +604,8 @@ function downloadJson(){
 addBlock("Content section","Risks of what you input into AI","Consider whether anything you upload into an AI tool via prompts - such as pictures, drawings or text - could be protected IP. In some cases, uploading works to an AI model that you don't own the rights for could infringe on the rights of other IP rightsholders.");
 addBlock("Content section","Risks of errors","If you use AI to help with inventions or technical ideas, the outputs may not be correct, nor unique enough to apply for registration. AI tools can produce information that sounds confident but may not be accurate.");
 addBlock("FAQ item","Who owns IP generated with AI?","AI tools can create pictures, text, music, video and other outputs. If copyright protection is important to you, consider whether using generative AI tools affects that protection. Each AI tool has different terms and conditions; familiarise yourself with who owns the IP of created works.");
-addLink("https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement","Copyright infringement");
+addBlock("Image","Diagram: where IP risks arise when using generative AI","A flowchart showing the points at which intellectual property risks can emerge when prompting and reusing the outputs of generative AI tools.","https://ipfirstresponse.ipaustralia.gov.au/sites/default/files/2026-02/ai-ip-overview.png");
+addLink("https://ipfirstresponse.ipaustralia.gov.au/options/copyright-infringement","Copyright infringement","What copyright infringement is and what to do if it happens to you.","101-5");
 addLink("https://www.ipaustralia.gov.au/understanding-ip/types-of-ip","Types of IP");
 reseedCitations();
 render();

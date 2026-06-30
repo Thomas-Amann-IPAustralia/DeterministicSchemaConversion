@@ -59,23 +59,33 @@ Decisions are resolved in this order (later decisions can depend on earlier ones
 | 11b | Provider sameAs (override) | URL (multi) | `link` (multi) | ✖ | override registry `sameAs` |
 | 12 | Keywords | tags / multi‑text | `string` (multi) or taxonomy | ✖ | `WebPage.keywords[]` |
 | 13 | Intro / lead text | rich text | `text_long` | ✖ | `Article.articleBody` **or** `WebPage.text` (see §2) |
-| 14 | **Modular content blocks** (repeatable) | **paragraphs** | `entity_reference_revisions` → Paragraph | ✖ | sections / FAQ / steps (see §5) |
+| 14 | **Modular content blocks** (repeatable) | **paragraphs** | `entity_reference_revisions` → Paragraph | ✖ | sections / FAQ / steps / images (see §5) |
 | 15 | Standard disclaimer | rich text (pre‑filled) | `text_long` | ✖ | `WebPage.usageInfo` (see §6) |
 | 16 | Additional disclaimer | rich text | `text_long` | ✖ | extra `WebPageElement` (see §6) |
 | 17 | **Citations** (repeatable, auto‑seeded) | paragraphs | `entity_reference_revisions` → Paragraph | ✖ | `Legislation[]` (see §4) |
-| 18 | Related links (repeatable) | link + text | `link` (multi) | ✖ | `relatedLink[]` + internal refs (see §8) |
+| 18 | **Related links** (repeatable) | **paragraphs** | `entity_reference_revisions` → Paragraph | ✖ | `relatedLink[]` + internal `WebPage` stubs (see §8) |
 
 **Modular content block** paragraph type (field 14) — each block has:
 
 | Sub‑field | Widget | Type | Notes |
 |-----------|--------|------|-------|
-| `block_type` | single‑select | `list_string` | `Content section` \| `FAQ item` \| `HowTo step` \| `Internal note (not published)` |
-| `heading` | text | `string` | section headline / FAQ question / step name |
-| `body` | rich text | `text_long` | section text / FAQ answer / step instructions |
+| `block_type` | single‑select | `list_string` | `Content section` \| `FAQ item` \| `HowTo step` \| `Image` \| `Internal note (not published)` |
+| `heading` | text | `string` | section headline / FAQ question / step name / **image caption + alt text** |
+| `body` | rich text | `text_long` | section text / FAQ answer / step instructions / **image description (optional)** |
+| `image_url` | URL | `link` | **Image blocks only** → `ImageObject.contentUrl` + `url` (show conditionally on `block_type = Image`) |
 
 **Citation** paragraph type (field 17) — each citation has `name`, `url`, and a
 `legislationType` select (`Act` \| `Regulations` \| `Other`). The list is
 **auto‑seeded** from the IP‑right selection (§4) but remains fully editable.
+
+**Related link** paragraph type (field 18) — each link has:
+
+| Sub‑field | Widget | Type | Notes |
+|-----------|--------|------|-------|
+| `url` | URL | `link` | the target (internal IPFR or external) |
+| `link_text` | text | `string` | display name; used for the internal stub `name` |
+| `description` | text | `string` | **internal links only** → `WebPage` stub `description` |
+| `identifier` | text | `string` | **internal links only** → `WebPage` stub `identifier` (UDID) |
 
 ---
 
@@ -241,6 +251,7 @@ flowchart TD
     TY -->|Content section| WPE["WebPageElement<br/>{ headline, text, position, isPartOf }"]
     TY -->|FAQ item| FAQ["Question inside FAQPage<br/>{ name, acceptedAnswer:Answer{ text } }"]
     TY -->|HowTo step| STP["HowToStep inside HowTo<br/>{ position, name, text }"]
+    TY -->|Image| IMG["ImageObject node<br/>{ contentUrl, url, name, caption,<br/>description, encodingFormat }<br/>referenced via image on Article/WebPage"]
     TY -->|Internal note| NOP["Not emitted to JSON-LD"]
 ```
 
@@ -249,7 +260,29 @@ flowchart TD
 | `Content section` | `WebPageElement` with `headline`, `text`, `position`, `isPartOf` | `…#section-{n}-{slug}` | listed in `hasPart` |
 | `FAQ item` | `Question` + nested `Answer` | `…#faq-q{n}` / `…#faq-q{n}-a` | one `FAQPage` (`…#faq`) |
 | `HowTo step` | `HowToStep` with `position`, `name`, `text` | *(positional, inside HowTo)* | one `HowTo` (`…#howto`) |
+| `Image` | `ImageObject` with `contentUrl`, `url`, `name`, `caption`, `description`, `encodingFormat` | `…#image-{n}-{slug}` | referenced via `image` on the `Article` (Self‑Help) or `WebPage` (Service types) |
 | `Internal note (not published)` | nothing | — | — |
+
+### 5.1 Image block field mapping
+
+`ImageObject` is a `CreativeWork`/`MediaObject`, so it is valid both as a node in
+the `@graph` and as the value of the `image` property on the page's content
+entity. Field mapping:
+
+| Block sub‑field | `ImageObject` property |
+|-----------------|------------------------|
+| `image_url` | `contentUrl` **and** `url` |
+| `heading` (relabelled "Caption / alt text") | `caption` **and** `name` |
+| `body` (relabelled "Image description") | `description` (omitted if blank) |
+| *(derived from file extension)* | `encodingFormat` — e.g. `.png` → `image/png`, `.svg` → `image/svg+xml` (omitted if unknown) |
+
+Rules:
+
+* One `ImageObject` node is emitted per Image block (no shared wrapper, unlike
+  FAQ/HowTo). An Image block with a blank `image_url` is **skipped**.
+* The node is referenced by `@id` from the `image` array on the **Article**
+  (when archetype = Self‑Help) or the **WebPage** (Service / GovernmentService),
+  mirroring how content sections attach via `isPartOf` (§2).
 
 **`isPartOf` target for sections** depends on archetype (§2):
 
@@ -312,17 +345,34 @@ Recommended mapping — emit each selected stage as a `DefinedTerm` in
 ```mermaid
 flowchart TD
     L[Related link row] --> M{host}
-    M -->|ipfirstresponse.ipaustralia.gov.au| INT["plain URL → relatedLink[]<br/>+ WebPage stub in @graph<br/>+ @id ref in WebPage.mentions"]
-    M -->|external| EXT["plain URL → relatedLink[]"]
+    M -->|ipfirstresponse.ipaustralia.gov.au| INT["plain URL → relatedLink[]<br/>+ WebPage stub in @graph<br/>(url, name, description, identifier, isPartOf)<br/>+ @id ref in WebPage.mentions"]
+    M -->|external| EXT["plain URL → relatedLink[]<br/>(description/identifier ignored)"]
     L --> N{noise?}
     N -->|qualtrics / mailto / /node/ / images| DROP[dropped]
 ```
 
 * All links (internal + external) appear as **plain URL strings** in
   `WebPage.relatedLink[]`.
-* Internal IPFR links additionally emit a `WebPage` stub node (`@type: WebPage`,
-  with `name`/`description`/`identifier` from the linked page's CMS record when
-  resolvable) and an `@id` reference under `WebPage.mentions`.
+* Internal IPFR links additionally emit a `WebPage` stub node and an `@id`
+  reference under `WebPage.mentions`. The stub's properties appear in this order:
+  `url`, `name`, then the **author‑supplied** `description` and `identifier`
+  (each emitted only when provided), then `isPartOf`. This matches the richer
+  output the automated extractor produces from the CSV control plane — e.g.:
+
+  ```json
+  {
+    "@type": "WebPage",
+    "@id": "https://…/options/arbitration#webpage",
+    "url": "https://…/options/arbitration",
+    "name": "Resolve IP issues with the help of a third party - IP First Response",
+    "description": "Agree to be bound by the decision of a highly qualified third-party assessment",
+    "identifier": "D1029",
+    "isPartOf": { "@id": "https://ipfirstresponse.ipaustralia.gov.au/#website" }
+  }
+  ```
+
+* `description` and `identifier` are **only** emitted for internal IPFR links
+  (external links are bare URL strings in `relatedLink[]`).
 * Noise links (Qualtrics feedback, `mailto:`, `/node/…`, images, tracking
   params) are dropped.
 
@@ -343,8 +393,9 @@ present; the rest are conditional.
 | 6 | `HowTo` | ≥1 HowTo‑step block (§5) |
 | 7 | `WebPageElement[]` (content sections + extra disclaimer) | ≥1 section block / additional disclaimer (§5–6) |
 | 8 | `FAQPage` | ≥1 FAQ block (§5) |
-| 9 | `Legislation[]` | from IP right(s) / citations (§4) |
-| 10 | Internal `WebPage` stubs | internal related links (§8) |
+| 9 | `ImageObject[]` | ≥1 Image block with a URL (§5) |
+| 10 | `Legislation[]` | from IP right(s) / citations (§4) |
+| 11 | Internal `WebPage` stubs | internal related links (§8) |
 
 ---
 

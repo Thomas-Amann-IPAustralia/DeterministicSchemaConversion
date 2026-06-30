@@ -47,6 +47,20 @@ output shape produced today by `scripts/process_md_to_json.py`, but driven by
 * **Provider** is a **curated dropdown + "Other"**; the converter auto-fills
   `url`/`sameAs`/`@type` from the registry, with override fields.
 
+## Additions after first review
+
+Driven by side-by-side testing against the automated extractor:
+
+* **Internal related links** now expose optional **`description`** and
+  **`identifier` (UDID)** fields. When the link is internal they enrich the
+  `WebPage` stub (matching the automated extractor, which pulls these from the
+  CSV control plane). See `decision-tree.md` §8.
+* **`Image`** is now a modular block type, producing a schema-valid
+  **`ImageObject`** node (`contentUrl`, `url`, `name`, `caption`, `description`,
+  auto-derived `encodingFormat`) referenced via `image` on the page's content
+  entity. The automated extractor captures no image metadata, so this is net-new
+  capability. See `decision-tree.md` §5.1.
+
 ## Suggested GovCMS / Drupal implementation
 
 | Template element | Recommended Drupal mechanism |
@@ -56,9 +70,9 @@ output shape produced today by `scripts/process_md_to_json.py`, but driven by
 | Entry-point, Relevant IP right(s) | `list_string` **multi-value** (checkboxes) or taxonomy term reference |
 | Keywords | `string` multi-value or free-tagging taxonomy |
 | Lead text, disclaimers, block bodies | `text_long` (rich text / CKEditor) |
-| Modular content blocks | **Paragraphs** module: one Paragraph type with a `block_type` `list_string` + `heading` + `body` |
+| Modular content blocks | **Paragraphs** module: one Paragraph type with a `block_type` `list_string` + `heading` + `body`, plus a conditional `image_url` (`link`) shown when `block_type = Image` |
 | Citations | Paragraphs type (`name`, `url`, `legislationType`), auto-seeded via a form-alter or default value callback keyed on the IP-right selection |
-| Related links | `link` multi-value field |
+| Related links | Paragraphs type (`url`, `link_text`, `description`, `identifier`); description/identifier apply to internal IPFR links only |
 | JSON-LD emission | a render/preprocess hook (or a computed field / normalizer) that walks the node + paragraphs and emits the `@graph` per `decision-tree.md` |
 
 The lookup tables the converter needs (provider registry, IP-topic → Wikidata
